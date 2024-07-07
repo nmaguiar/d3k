@@ -35,7 +35,7 @@ jobs:
       name: Build and push
       with:
         platforms: linux/amd64,linux/arm64
-        context: "{{defaultContext}}:build"
+        context: "{{defaultContext}}"
         push: true
         tags: nmaguiar/d3k:build
         file: Dockerfile
