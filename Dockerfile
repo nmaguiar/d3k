@@ -25,7 +25,6 @@ RUN apt-get update\
  && chmod a+x /usr/bin/helm\
  && usermod -aG docker user\
  && echo "user:Password1" | chpasswd\
- && ssh-keygen -A\
  && sed -i "s/AllowTcpForwarding no/AllowTcpForwarding yes/g" /etc/ssh/sshd_config\
  && sed -i "s/GatewayPorts no/GatewayPorts yes/g" /etc/ssh/sshd_config\
  && echo 'if [ ! -e ~/.openaf-ojobio-complete ] || [ $(find ~/.openaf-ojobio-complete -mmin +1440) ]; then curl -s https://ojob.io/autoComplete.sh -o ~/.openaf-ojobio-complete; fi' >> /etc/bash.bashrc\

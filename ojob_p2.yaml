@@ -1,10 +1,7 @@
 # Author: Nuno Aguiar
 todo:
-#- Setup reverse proxy
 - Start SSH daemon
 - Start docker
-#- Install VSCode extensions
-#- Prepare VSC settings
 - Start K3D
 - Start K3D socks server
 - Report
@@ -46,6 +43,7 @@ jobs:
     {{#if NOSSH}}
     echo SSH not started
     {{else}}
+    ssh-keygen -A
     sudo service ssh start
     {{/if}}
 
