@@ -11,6 +11,7 @@ RUN apt-get update\
  && opack install BouncyCastle\
  && opack install ojob-common\
  && opack install oafproc\
+ && opack install DockerRegistry\
  && ojob ojob.io/docker/k3d\
  && ojob ojob.io/kube/getKubectl path=/usr/bin\
  && ojob ojob.io/docker/compose path=/usr/bin\
