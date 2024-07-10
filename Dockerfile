@@ -43,7 +43,8 @@ RUN apt-get update\
  && echo "alias oaf-dark-theme='colorFormats.yaml op=set theme=thin-intense-bold'" >> /etc/bash.d3k\
  && echo "alias oafptab='oafp in=lines linesvisual=true linesjoin=true out=ctable'" >> /etc/bash.d3k\
  && echo "alias help='source /etc/bash.d3k'" >> /etc/bash.d3k\
- && echo "zcat /etc/d3k.gz" >> /etc/bash.d3k
+ && echo "zcat /etc/d3k.gz" >> /etc/bash.d3k\
+ && echo "stty sane" >> /etc/bash.d3k
 
 COPY ojob_p2.yaml /tmp/.p2.yaml
 COPY ojob_p1.sh /tmp/.p1.sh
