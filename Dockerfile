@@ -16,6 +16,10 @@ RUN apt-get update\
  && ojob ojob.io/kube/getKubectl path=/usr/bin\
  && ojob ojob.io/docker/compose path=/usr/bin\
  && ojob ojob.io/kube/getHelm path=/usr/bin\
+ && mkdir /opt/oaf/ojobs\
+ && /opt/oaf/ojob ojob.io/get job=ojob.io/oaf/colorFormats.yaml > /opt/oaf/ojobs/colorFormats.yaml\
+ && /opt/oaf/oaf --sb /opt/oaf/ojobs/colorFormats.yaml\
+ && chmod a+x /opt/oaf/ojobs/*\
  && adduser --gid 0 --uid 1001 --shell /bin/bash user\
  && echo "user ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/user\
  && chmod g+w /etc/passwd\
@@ -32,11 +36,18 @@ RUN apt-get update\
  && echo "source <(helm completion bash)" >> /etc/bash.bashrc\
  && echo "source <(kubectl completion bash)" >> /etc/bash.bashrc\
  && echo "source <(docker completion bash)" >> /etc/bash.bashrc\
- && echo "source <(skopeo completion bash)" >> /etc/bash.bashrc
+ && echo "source <(skopeo completion bash)" >> /etc/bash.bashrc\
+ && echo "source /etc/bash.d3k" >> /etc/bash.bashrc\
+ && echo "alias oaf-light-theme='colorFormats.yaml op=set theme=thin-light-bold'" >> /etc/bash.d3k\
+ && echo "alias oaf-dark-theme='colorFormats.yaml op=set theme=thin-intense-bold'" >> /etc/bash.d3k\
+ && echo "alias oafptab='oafp in=lines linesvisual=true linesjoin=true out=ctable'" >> /etc/bash.d3k\
+ && echo "alias help='source /etc/bash.d3k'" >> /etc/bash.d3k\
+ && echo "zcat /etc/d3k.gz" >> /etc/bash.d3k
 
 COPY ojob_p2.yaml /tmp/.p2.yaml
 COPY ojob_p1.sh /tmp/.p1.sh
 COPY status.js /usr/bin/status.js
+COPY welcome.txt /etc/d3k
 
 SHELL ["/bin/bash", "-c"]
 USER root
@@ -48,7 +59,8 @@ RUN chsh --shell /bin/bash user\
  && chmod a+x .p1.sh\
  && chown user: .p1.sh\
  && chown user: .p2.yaml\
- && chmod a+x /usr/bin/status.js
+ && chmod a+x /usr/bin/status.js\
+ && gzip /etc/d3k
 
 # -------------------
 FROM scratch as final
@@ -62,6 +74,7 @@ USER $USERNAME
 WORKDIR /home/user/
 ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
-    HOME=/home/user
+    HOME=/home/user \
+    PATH=$PATH:/opt/oaf:/opt/oaf/ojobs
 
 ENTRYPOINT ["/bin/sh", "/home/user/.p1.sh"]
