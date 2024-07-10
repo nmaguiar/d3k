@@ -37,6 +37,7 @@ RUN apt-get update\
  && echo "source <(kubectl completion bash)" >> /etc/bash.bashrc\
  && echo "source <(docker completion bash)" >> /etc/bash.bashrc\
  && echo "source <(skopeo completion bash)" >> /etc/bash.bashrc\
+ && echo "source <(k3d completion bash)" >> /etc/bash.bashrc\
  && echo "source /etc/bash.d3k" >> /etc/bash.bashrc\
  && echo "alias oaf-light-theme='colorFormats.yaml op=set theme=thin-light-bold'" >> /etc/bash.d3k\
  && echo "alias oaf-dark-theme='colorFormats.yaml op=set theme=thin-intense-bold'" >> /etc/bash.d3k\
