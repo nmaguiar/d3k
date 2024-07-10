@@ -4,6 +4,7 @@ todo:
 - Start docker
 - Start K3D
 - Start K3D socks server
+- Prepare restart script
 - Report
 
 ojob:
@@ -112,4 +113,26 @@ jobs:
     #while [[ $(kubectl get pods -n kube-system -l app=socks-server -o 'jsonpath={..status.conditions[?(@.type=="Ready")].status}') != "True" ]]; do
     #  sleep 2
     #done
+    {{/if}}
+
+# -----------------------------
+- name : Prepare restart script
+  deps :
+  - Start K3D socks server
+  lang : shell
+  exec : |
+    #!/usr/bin/env bash
+
+    echo "#!/usr/bin/bash" > /home/user/.restart
+    {{#if NOSSH}}
+    {{else}}
+    echo "sudo service ssh restart" >> /home/user/.restart
+    {{/if}}
+    {{#if NODOCKER}}
+    {{else}}
+    echo "sudo service docker restart" >> /home/user/.restart
+    {{/if}}
+    {{#if NOK8S}}
+    {{else}}
+    echo "while ! docker info >/dev/null 2>&1; do sleep 1; done && while ! k3d cluster start >/home/user/.restart.log 2>&1; do sleep 1; done" >> /home/user/.restart
     {{/if}}

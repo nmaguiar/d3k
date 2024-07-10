@@ -39,6 +39,7 @@ RUN apt-get update\
  && echo "source <(skopeo completion bash)" >> /etc/bash.bashrc\
  && echo "source <(k3d completion bash)" >> /etc/bash.bashrc\
  && echo "source /etc/bash.d3k" >> /etc/bash.bashrc\
+ && echo "if [ -e /home/user/.restart ]; then nohup /usr/bin/bash /home/user/.restart > /home/user/.restart.log 2>&1 & fi" >> /etc/bash.bashrc\
  && echo "alias oaf-light-theme='colorFormats.yaml op=set theme=thin-light-bold'" >> /etc/bash.d3k\
  && echo "alias oaf-dark-theme='colorFormats.yaml op=set theme=thin-intense-bold'" >> /etc/bash.d3k\
  && echo "alias oafptab='oafp in=lines linesvisual=true linesjoin=true out=ctable'" >> /etc/bash.d3k\
