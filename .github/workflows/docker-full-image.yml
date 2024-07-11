@@ -1,0 +1,38 @@
+name: Docker Full Image CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+    paths-ignore:
+    - '.github/**'
+  pull_request:
+    branches: [ "main" ]
+    paths-ignore:
+    - '.github/**'
+  schedule:
+    - cron: '28 1 * * 6'
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v3
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+    - name: Login to DockerHub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - uses: actions/checkout@v4
+      name: Checkout
+    - name: Full image build
+      run : |
+        docker run --name buildfull -ti --privileged --cgroupns=host nmaguiar/d3k:build /bin/sh -c "status.js && sleep 5 && k3d cluster stop"
+        docker commit buildfull nmaguiar/d3k:build-full
+        docker push nmaguiar/d3k:build-full
