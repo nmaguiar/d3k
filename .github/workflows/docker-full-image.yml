@@ -64,18 +64,6 @@ jobs:
         docker run --name buildfullx64 --privileged --cgroupns=host nmaguiar/d3k:build /bin/sh -c "status.js && sleep 5 && k3d cluster stop"
         docker commit buildfullx64 nmaguiar/d3k:build-full-amd64
         docker push nmaguiar/d3k:build-full-amd64
-    - name: Full image build arm64
-      run : |
-        docker run --name buildfulla64 --privileged --cgroupns=host --platform linux/arm64 nmaguiar/d3k:build /bin/sh -c "status.js && sleep 5 && k3d cluster stop"
-        docker commit buildfulla64 nmaguiar/d3k:build-full-arm64
-        docker push nmaguiar/d3k:build-full-arm64
-
-    - name: Create and push multi-arch manifest
-      run : |
-        docker manifest create nmaguiar/d3k:build-full \
-          --amend nmaguiar/d3k:build-full-amd64 \
-          --amend nmaguiar/d3k:build-full-arm64
-        docker manifest push nmaguiar/d3k:build-full
 
   build_manifest:
     runs-on: ubuntu-latest
