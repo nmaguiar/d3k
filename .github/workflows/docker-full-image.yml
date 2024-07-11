@@ -33,6 +33,6 @@ jobs:
       name: Checkout
     - name: Full image build
       run : |
-        docker run --name buildfull -ti --privileged --cgroupns=host nmaguiar/d3k:build /bin/sh -c "status.js && sleep 5 && k3d cluster stop"
+        docker run --name buildfull --privileged --cgroupns=host nmaguiar/d3k:build /bin/sh -c "status.js && sleep 5 && k3d cluster stop"
         docker commit buildfull nmaguiar/d3k:build-full
         docker push nmaguiar/d3k:build-full
