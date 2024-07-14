@@ -2083,12 +2083,13 @@
     - https://access.redhat.com/security/cve/CVE-2024-39894
     - https://lists.mindrot.org/pipermail/openssh-unix-announce/2024-July/000158.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-39894
+    - https://security.netapp.com/advisory/ntap-20240712-0004/
     - https://ubuntu.com/security/notices/USN-6887-1
     - https://www.cve.org/CVERecord?id=CVE-2024-39894
     - https://www.openssh.com/txt/release-9.8
     - https://www.openwall.com/lists/oss-security/2024/07/02/1
     PublishedDate: '2024-07-02T18:15:03.71Z'
-    LastModifiedDate: '2024-07-08T14:18:56.393Z'
+    LastModifiedDate: '2024-07-12T14:15:16.703Z'
   - VulnerabilityID: CVE-2024-39894
     PkgID: openssh-server@1:9.6p1-3ubuntu13.3
     PkgName: openssh-server
@@ -2124,12 +2125,13 @@
     - https://access.redhat.com/security/cve/CVE-2024-39894
     - https://lists.mindrot.org/pipermail/openssh-unix-announce/2024-July/000158.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-39894
+    - https://security.netapp.com/advisory/ntap-20240712-0004/
     - https://ubuntu.com/security/notices/USN-6887-1
     - https://www.cve.org/CVERecord?id=CVE-2024-39894
     - https://www.openssh.com/txt/release-9.8
     - https://www.openwall.com/lists/oss-security/2024/07/02/1
     PublishedDate: '2024-07-02T18:15:03.71Z'
-    LastModifiedDate: '2024-07-08T14:18:56.393Z'
+    LastModifiedDate: '2024-07-12T14:15:16.703Z'
   - VulnerabilityID: CVE-2024-39894
     PkgID: openssh-sftp-server@1:9.6p1-3ubuntu13.3
     PkgName: openssh-sftp-server
@@ -2165,12 +2167,13 @@
     - https://access.redhat.com/security/cve/CVE-2024-39894
     - https://lists.mindrot.org/pipermail/openssh-unix-announce/2024-July/000158.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-39894
+    - https://security.netapp.com/advisory/ntap-20240712-0004/
     - https://ubuntu.com/security/notices/USN-6887-1
     - https://www.cve.org/CVERecord?id=CVE-2024-39894
     - https://www.openssh.com/txt/release-9.8
     - https://www.openwall.com/lists/oss-security/2024/07/02/1
     PublishedDate: '2024-07-02T18:15:03.71Z'
-    LastModifiedDate: '2024-07-08T14:18:56.393Z'
+    LastModifiedDate: '2024-07-12T14:15:16.703Z'
   - VulnerabilityID: CVE-2024-2511
     PkgID: openssl@3.0.13-0ubuntu3.1
     PkgName: openssl
@@ -2750,7 +2753,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       cbl-mariner: 2
       ghsa: 2
       nvd: 2
@@ -3176,6 +3179,7 @@
       alma: 2
       amazon: 2
       bitnami: 4
+      cbl-mariner: 4
       nvd: 4
       oracle-oval: 2
       photon: 4
@@ -3646,7 +3650,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -3712,7 +3716,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -4212,6 +4216,7 @@
       alma: 2
       amazon: 2
       bitnami: 2
+      cbl-mariner: 2
       nvd: 2
       oracle-oval: 2
       photon: 2
@@ -4276,6 +4281,9 @@
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2024-24791
     - https://go.dev/cl/591255
@@ -4465,7 +4473,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       cbl-mariner: 2
       ghsa: 2
       nvd: 2
@@ -4891,6 +4899,7 @@
       alma: 2
       amazon: 2
       bitnami: 4
+      cbl-mariner: 4
       nvd: 4
       oracle-oval: 2
       photon: 4
@@ -5361,7 +5370,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -5427,7 +5436,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -5927,6 +5936,7 @@
       alma: 2
       amazon: 2
       bitnami: 2
+      cbl-mariner: 2
       nvd: 2
       oracle-oval: 2
       photon: 2
@@ -5991,6 +6001,9 @@
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2024-24791
     - https://go.dev/cl/591255
@@ -6031,6 +6044,9 @@
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2024-24791
     - https://go.dev/cl/591255
@@ -6071,6 +6087,9 @@
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2024-24791
     - https://go.dev/cl/591255
@@ -6111,6 +6130,9 @@
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2024-24791
     - https://go.dev/cl/591255
@@ -6185,6 +6207,9 @@
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2024-24791
     - https://go.dev/cl/591255
