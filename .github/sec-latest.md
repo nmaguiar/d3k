@@ -2254,13 +2254,15 @@
 │                        │      │                  ├ [2]: https://lists.mindrot.org/pipermail/openssh-unix-anno
 │                        │      │                  │      unce/2024-July/000158.html 
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
-│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6887-1 
-│                        │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
-│                        │      │                  ├ [6]: https://www.openssh.com/txt/release-9.8 
-│                        │      │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2024/07/0
+│                        │      │                  ├ [4]: https://security.netapp.com/advisory/ntap-20240712-00
+│                        │      │                  │      04/ 
+│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6887-1 
+│                        │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
+│                        │      │                  ├ [7]: https://www.openssh.com/txt/release-9.8 
+│                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2024/07/0
 │                        │      │                         2/1 
 │                        │      ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
-│                        │      ╰ LastModifiedDate: 2024-07-08T14:18:56.393Z 
+│                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.703Z 
 │                        ├ [44] ╭ VulnerabilityID : CVE-2024-39894 
 │                        │      ├ PkgID           : openssh-server@1:9.6p1-3ubuntu13.3 
 │                        │      ├ PkgName         : openssh-server 
@@ -2297,13 +2299,15 @@
 │                        │      │                  ├ [2]: https://lists.mindrot.org/pipermail/openssh-unix-anno
 │                        │      │                  │      unce/2024-July/000158.html 
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
-│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6887-1 
-│                        │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
-│                        │      │                  ├ [6]: https://www.openssh.com/txt/release-9.8 
-│                        │      │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2024/07/0
+│                        │      │                  ├ [4]: https://security.netapp.com/advisory/ntap-20240712-00
+│                        │      │                  │      04/ 
+│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6887-1 
+│                        │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
+│                        │      │                  ├ [7]: https://www.openssh.com/txt/release-9.8 
+│                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2024/07/0
 │                        │      │                         2/1 
 │                        │      ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
-│                        │      ╰ LastModifiedDate: 2024-07-08T14:18:56.393Z 
+│                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.703Z 
 │                        ├ [45] ╭ VulnerabilityID : CVE-2024-39894 
 │                        │      ├ PkgID           : openssh-sftp-server@1:9.6p1-3ubuntu13.3 
 │                        │      ├ PkgName         : openssh-sftp-server 
@@ -2340,13 +2344,15 @@
 │                        │      │                  ├ [2]: https://lists.mindrot.org/pipermail/openssh-unix-anno
 │                        │      │                  │      unce/2024-July/000158.html 
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
-│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6887-1 
-│                        │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
-│                        │      │                  ├ [6]: https://www.openssh.com/txt/release-9.8 
-│                        │      │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2024/07/0
+│                        │      │                  ├ [4]: https://security.netapp.com/advisory/ntap-20240712-00
+│                        │      │                  │      04/ 
+│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6887-1 
+│                        │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
+│                        │      │                  ├ [7]: https://www.openssh.com/txt/release-9.8 
+│                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2024/07/0
 │                        │      │                         2/1 
 │                        │      ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
-│                        │      ╰ LastModifiedDate: 2024-07-08T14:18:56.393Z 
+│                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.703Z 
 │                        ├ [46] ╭ VulnerabilityID : CVE-2024-2511 
 │                        │      ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : openssl 
@@ -3131,7 +3137,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
 │                        │      │                  ├ nvd        : 2 
@@ -3814,6 +3820,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 4 
+│                        │      │                  ├ cbl-mariner: 4 
 │                        │      │                  ├ nvd        : 4 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 4 
@@ -4511,7 +4518,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -4584,7 +4591,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -5174,6 +5181,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 2 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 2 
@@ -5250,9 +5258,12 @@
 │                               ├ Severity        : MEDIUM 
 │                               ├ VendorSeverity   ╭ bitnami: 3 
 │                               │                  ╰ redhat : 2 
-│                               ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                               │                  │         │           :N/A:H 
+│                               │                  │         ╰ V3Score : 7.5 
+│                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
 │                               │                            │           :N/A:H 
-│                               │                            ╰ V3Score : 7.5 
+│                               │                            ╰ V3Score : 5.9 
 │                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-24791 
 │                               │                  ├ [1]: https://go.dev/cl/591255 
 │                               │                  ├ [2]: https://go.dev/issue/67555 
@@ -5610,7 +5621,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
 │                        │      │                  ├ nvd        : 2 
@@ -6293,6 +6304,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 4 
+│                        │      │                  ├ cbl-mariner: 4 
 │                        │      │                  ├ nvd        : 4 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 4 
@@ -6990,7 +7002,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -7063,7 +7075,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -7653,6 +7665,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 2 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 2 
@@ -7729,9 +7742,12 @@
 │                               ├ Severity        : MEDIUM 
 │                               ├ VendorSeverity   ╭ bitnami: 3 
 │                               │                  ╰ redhat : 2 
-│                               ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                               │                  │         │           :N/A:H 
+│                               │                  │         ╰ V3Score : 7.5 
+│                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
 │                               │                            │           :N/A:H 
-│                               │                            ╰ V3Score : 7.5 
+│                               │                            ╰ V3Score : 5.9 
 │                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-24791 
 │                               │                  ├ [1]: https://go.dev/cl/591255 
 │                               │                  ├ [2]: https://go.dev/issue/67555 
@@ -7777,9 +7793,12 @@
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ╭ bitnami: 3 
 │                              │                  ╰ redhat : 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              │                  │         │           N/A:H 
+│                              │                  │         ╰ V3Score : 7.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                              │                            │           N/A:H 
-│                              │                            ╰ V3Score : 7.5 
+│                              │                            ╰ V3Score : 5.9 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-24791 
 │                              │                  ├ [1]: https://go.dev/cl/591255 
 │                              │                  ├ [2]: https://go.dev/issue/67555 
@@ -7825,9 +7844,12 @@
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ╭ bitnami: 3 
 │                              │                  ╰ redhat : 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              │                  │         │           N/A:H 
+│                              │                  │         ╰ V3Score : 7.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                              │                            │           N/A:H 
-│                              │                            ╰ V3Score : 7.5 
+│                              │                            ╰ V3Score : 5.9 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-24791 
 │                              │                  ├ [1]: https://go.dev/cl/591255 
 │                              │                  ├ [2]: https://go.dev/issue/67555 
@@ -7873,9 +7895,12 @@
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ╭ bitnami: 3 
 │                              │                  ╰ redhat : 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              │                  │         │           N/A:H 
+│                              │                  │         ╰ V3Score : 7.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                              │                            │           N/A:H 
-│                              │                            ╰ V3Score : 7.5 
+│                              │                            ╰ V3Score : 5.9 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-24791 
 │                              │                  ├ [1]: https://go.dev/cl/591255 
 │                              │                  ├ [2]: https://go.dev/issue/67555 
@@ -7961,9 +7986,12 @@
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ╭ bitnami: 3 
 │                              │                  ╰ redhat : 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              │                  │         │           N/A:H 
+│                              │                  │         ╰ V3Score : 7.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                              │                            │           N/A:H 
-│                              │                            ╰ V3Score : 7.5 
+│                              │                            ╰ V3Score : 5.9 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-24791 
 │                              │                  ├ [1]: https://go.dev/cl/591255 
 │                              │                  ├ [2]: https://go.dev/issue/67555 
