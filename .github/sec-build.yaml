@@ -1995,6 +1995,7 @@
       The OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.
     Severity: LOW
     VendorSeverity:
+      cbl-mariner: 2
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -2163,6 +2164,7 @@
       The OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.
     Severity: LOW
     VendorSeverity:
+      cbl-mariner: 2
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -3058,6 +3060,7 @@
       oracle-oval: 2
       photon: 4
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       bitnami:
@@ -3075,7 +3078,12 @@
     - https://access.redhat.com/security/cve/CVE-2024-24790
     - https://bugzilla.redhat.com/2292668
     - https://bugzilla.redhat.com/2292787
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2292668
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2292787
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24789
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790
     - https://errata.almalinux.org/9/ALSA-2024-4212.html
+    - https://errata.rockylinux.org/RLSA-2024:4212
     - https://github.com/golang/go/commit/051bdf3fd12a40307606ff9381138039c5f452f0 (1.21)
     - https://github.com/golang/go/commit/12d5810cdb1f73cf23d7a86462143e9463317fca (1.22)
     - https://github.com/golang/go/issues/67680
@@ -4095,6 +4103,7 @@
       oracle-oval: 2
       photon: 2
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       bitnami:
@@ -4112,7 +4121,12 @@
     - https://access.redhat.com/security/cve/CVE-2024-24789
     - https://bugzilla.redhat.com/2292668
     - https://bugzilla.redhat.com/2292787
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2292668
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2292787
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24789
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790
     - https://errata.almalinux.org/9/ALSA-2024-4212.html
+    - https://errata.rockylinux.org/RLSA-2024:4212
     - https://github.com/golang/go/commit/c8e40338cf00f3c1d86c8fb23863ad67a4c72bcc (1.21)
     - https://github.com/golang/go/commit/cf501ac0c5fe351a8582d20b43562027927906e7 (1.22)
     - https://github.com/golang/go/issues/66869
@@ -4778,6 +4792,7 @@
       oracle-oval: 2
       photon: 4
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       bitnami:
@@ -4795,7 +4810,12 @@
     - https://access.redhat.com/security/cve/CVE-2024-24790
     - https://bugzilla.redhat.com/2292668
     - https://bugzilla.redhat.com/2292787
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2292668
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2292787
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24789
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790
     - https://errata.almalinux.org/9/ALSA-2024-4212.html
+    - https://errata.rockylinux.org/RLSA-2024:4212
     - https://github.com/golang/go/commit/051bdf3fd12a40307606ff9381138039c5f452f0 (1.21)
     - https://github.com/golang/go/commit/12d5810cdb1f73cf23d7a86462143e9463317fca (1.22)
     - https://github.com/golang/go/issues/67680
@@ -5815,6 +5835,7 @@
       oracle-oval: 2
       photon: 2
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       bitnami:
@@ -5832,7 +5853,12 @@
     - https://access.redhat.com/security/cve/CVE-2024-24789
     - https://bugzilla.redhat.com/2292668
     - https://bugzilla.redhat.com/2292787
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2292668
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2292787
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24789
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790
     - https://errata.almalinux.org/9/ALSA-2024-4212.html
+    - https://errata.rockylinux.org/RLSA-2024:4212
     - https://github.com/golang/go/commit/c8e40338cf00f3c1d86c8fb23863ad67a4c72bcc (1.21)
     - https://github.com/golang/go/commit/cf501ac0c5fe351a8582d20b43562027927906e7 (1.22)
     - https://github.com/golang/go/issues/66869
