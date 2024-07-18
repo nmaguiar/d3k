@@ -2162,8 +2162,9 @@
 │                        │      │                   The OpenSSL 3.0 and 3.1 FIPS providers are affected by this
 │                        │      │                    issue. 
 │                        │      ├ Severity        : LOW 
-│                        │      ├ VendorSeverity   ╭ redhat: 1 
-│                        │      │                  ╰ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                        │      │                  ├ redhat     : 1 
+│                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:L 
 │                        │      │                           ╰ V3Score : 5.3 
@@ -2364,8 +2365,9 @@
 │                        │      │                   The OpenSSL 3.0 and 3.1 FIPS providers are affected by this
 │                        │      │                    issue. 
 │                        │      ├ Severity        : LOW 
-│                        │      ├ VendorSeverity   ╭ redhat: 1 
-│                        │      │                  ╰ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                        │      │                  ├ redhat     : 1 
+│                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:L 
 │                        │      │                           ╰ V3Score : 5.3 
@@ -3690,6 +3692,7 @@
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 4 
 │                        │      │                  ├ redhat     : 2 
+│                        │      │                  ├ rocky      : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                        │      │                  │         │           :H/A:H 
@@ -3706,24 +3709,31 @@
 │                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-24790 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2292668 
 │                        │      │                  ├ [4] : https://bugzilla.redhat.com/2292787 
-│                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2024-4212.html 
-│                        │      │                  ├ [6] : https://github.com/golang/go/commit/051bdf3fd12a4030
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2292668 
+│                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2292787 
+│                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  │       024-24789 
+│                        │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  │       024-24790 
+│                        │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-4212.html 
+│                        │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:4212 
+│                        │      │                  ├ [11]: https://github.com/golang/go/commit/051bdf3fd12a4030
 │                        │      │                  │       7606ff9381138039c5f452f0 (1.21) 
-│                        │      │                  ├ [7] : https://github.com/golang/go/commit/12d5810cdb1f73cf
+│                        │      │                  ├ [12]: https://github.com/golang/go/commit/12d5810cdb1f73cf
 │                        │      │                  │       23d7a86462143e9463317fca (1.22) 
-│                        │      │                  ├ [8] : https://github.com/golang/go/issues/67680 
-│                        │      │                  ├ [9] : https://go.dev/cl/590316 
-│                        │      │                  ├ [10]: https://go.dev/issue/67680 
-│                        │      │                  ├ [11]: https://groups.google.com/g/golang-announce/c/XbxouI
+│                        │      │                  ├ [13]: https://github.com/golang/go/issues/67680 
+│                        │      │                  ├ [14]: https://go.dev/cl/590316 
+│                        │      │                  ├ [15]: https://go.dev/issue/67680 
+│                        │      │                  ├ [16]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k 
-│                        │      │                  ├ [12]: https://groups.google.com/g/golang-announce/c/XbxouI
+│                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k/m/TuoGEhxIEwAJ 
-│                        │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2024-24790.html 
-│                        │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
-│                        │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-24790 
-│                        │      │                  ├ [16]: https://pkg.go.dev/vuln/GO-2024-2887 
-│                        │      │                  ├ [17]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-24790 
+│                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2024-24790.html 
+│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
+│                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2024-24790 
+│                        │      │                  ├ [21]: https://pkg.go.dev/vuln/GO-2024-2887 
+│                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-6886-1 
+│                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2024-24790 
 │                        │      ├ PublishedDate   : 2024-06-05T16:15:10.56Z 
 │                        │      ╰ LastModifiedDate: 2024-06-18T17:59:12.547Z 
 │                        ├ [5]  ╭ VulnerabilityID : CVE-2023-39325 
@@ -5051,6 +5061,7 @@
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 2 
 │                        │      │                  ├ redhat     : 2 
+│                        │      │                  ├ rocky      : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I
 │                        │      │                  │         │           :H/A:N 
@@ -5067,27 +5078,34 @@
 │                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-24789 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2292668 
 │                        │      │                  ├ [4] : https://bugzilla.redhat.com/2292787 
-│                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2024-4212.html 
-│                        │      │                  ├ [6] : https://github.com/golang/go/commit/c8e40338cf00f3c1
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2292668 
+│                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2292787 
+│                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  │       024-24789 
+│                        │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  │       024-24790 
+│                        │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-4212.html 
+│                        │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:4212 
+│                        │      │                  ├ [11]: https://github.com/golang/go/commit/c8e40338cf00f3c1
 │                        │      │                  │       d86c8fb23863ad67a4c72bcc (1.21) 
-│                        │      │                  ├ [7] : https://github.com/golang/go/commit/cf501ac0c5fe351a
+│                        │      │                  ├ [12]: https://github.com/golang/go/commit/cf501ac0c5fe351a
 │                        │      │                  │       8582d20b43562027927906e7 (1.22) 
-│                        │      │                  ├ [8] : https://github.com/golang/go/issues/66869 
-│                        │      │                  ├ [9] : https://go.dev/cl/585397 
-│                        │      │                  ├ [10]: https://go.dev/issue/66869 
-│                        │      │                  ├ [11]: https://groups.google.com/g/golang-announce/c/XbxouI
+│                        │      │                  ├ [13]: https://github.com/golang/go/issues/66869 
+│                        │      │                  ├ [14]: https://go.dev/cl/585397 
+│                        │      │                  ├ [15]: https://go.dev/issue/66869 
+│                        │      │                  ├ [16]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k 
-│                        │      │                  ├ [12]: https://groups.google.com/g/golang-announce/c/XbxouI
+│                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k/m/TuoGEhxIEwAJ 
-│                        │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2024-24789.html 
-│                        │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
-│                        │      │                  ├ [15]: https://lists.fedoraproject.org/archives/list/packag
+│                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2024-24789.html 
+│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
+│                        │      │                  ├ [20]: https://lists.fedoraproject.org/archives/list/packag
 │                        │      │                  │       e-announce@lists.fedoraproject.org/message/U5YAEIA6I
 │                        │      │                  │       UHUNGJ7AIXXPQT6D2GYENX7/ 
-│                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2024-24789 
-│                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2024-2888 
-│                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2024-24789 
+│                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2024-24789 
+│                        │      │                  ├ [22]: https://pkg.go.dev/vuln/GO-2024-2888 
+│                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-6886-1 
+│                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2024-24789 
 │                        │      ├ PublishedDate   : 2024-06-05T16:15:10.47Z 
 │                        │      ╰ LastModifiedDate: 2024-07-03T01:48:25.51Z 
 │                        ╰ [20] ╭ VulnerabilityID : CVE-2024-24791 
@@ -6174,6 +6192,7 @@
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 4 
 │                        │      │                  ├ redhat     : 2 
+│                        │      │                  ├ rocky      : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                        │      │                  │         │           :H/A:H 
@@ -6190,24 +6209,31 @@
 │                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-24790 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2292668 
 │                        │      │                  ├ [4] : https://bugzilla.redhat.com/2292787 
-│                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2024-4212.html 
-│                        │      │                  ├ [6] : https://github.com/golang/go/commit/051bdf3fd12a4030
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2292668 
+│                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2292787 
+│                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  │       024-24789 
+│                        │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  │       024-24790 
+│                        │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-4212.html 
+│                        │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:4212 
+│                        │      │                  ├ [11]: https://github.com/golang/go/commit/051bdf3fd12a4030
 │                        │      │                  │       7606ff9381138039c5f452f0 (1.21) 
-│                        │      │                  ├ [7] : https://github.com/golang/go/commit/12d5810cdb1f73cf
+│                        │      │                  ├ [12]: https://github.com/golang/go/commit/12d5810cdb1f73cf
 │                        │      │                  │       23d7a86462143e9463317fca (1.22) 
-│                        │      │                  ├ [8] : https://github.com/golang/go/issues/67680 
-│                        │      │                  ├ [9] : https://go.dev/cl/590316 
-│                        │      │                  ├ [10]: https://go.dev/issue/67680 
-│                        │      │                  ├ [11]: https://groups.google.com/g/golang-announce/c/XbxouI
+│                        │      │                  ├ [13]: https://github.com/golang/go/issues/67680 
+│                        │      │                  ├ [14]: https://go.dev/cl/590316 
+│                        │      │                  ├ [15]: https://go.dev/issue/67680 
+│                        │      │                  ├ [16]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k 
-│                        │      │                  ├ [12]: https://groups.google.com/g/golang-announce/c/XbxouI
+│                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k/m/TuoGEhxIEwAJ 
-│                        │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2024-24790.html 
-│                        │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
-│                        │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-24790 
-│                        │      │                  ├ [16]: https://pkg.go.dev/vuln/GO-2024-2887 
-│                        │      │                  ├ [17]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-24790 
+│                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2024-24790.html 
+│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
+│                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2024-24790 
+│                        │      │                  ├ [21]: https://pkg.go.dev/vuln/GO-2024-2887 
+│                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-6886-1 
+│                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2024-24790 
 │                        │      ├ PublishedDate   : 2024-06-05T16:15:10.56Z 
 │                        │      ╰ LastModifiedDate: 2024-06-18T17:59:12.547Z 
 │                        ├ [5]  ╭ VulnerabilityID : CVE-2023-39325 
@@ -7535,6 +7561,7 @@
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 2 
 │                        │      │                  ├ redhat     : 2 
+│                        │      │                  ├ rocky      : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I
 │                        │      │                  │         │           :H/A:N 
@@ -7551,27 +7578,34 @@
 │                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-24789 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2292668 
 │                        │      │                  ├ [4] : https://bugzilla.redhat.com/2292787 
-│                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2024-4212.html 
-│                        │      │                  ├ [6] : https://github.com/golang/go/commit/c8e40338cf00f3c1
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2292668 
+│                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2292787 
+│                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  │       024-24789 
+│                        │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  │       024-24790 
+│                        │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-4212.html 
+│                        │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:4212 
+│                        │      │                  ├ [11]: https://github.com/golang/go/commit/c8e40338cf00f3c1
 │                        │      │                  │       d86c8fb23863ad67a4c72bcc (1.21) 
-│                        │      │                  ├ [7] : https://github.com/golang/go/commit/cf501ac0c5fe351a
+│                        │      │                  ├ [12]: https://github.com/golang/go/commit/cf501ac0c5fe351a
 │                        │      │                  │       8582d20b43562027927906e7 (1.22) 
-│                        │      │                  ├ [8] : https://github.com/golang/go/issues/66869 
-│                        │      │                  ├ [9] : https://go.dev/cl/585397 
-│                        │      │                  ├ [10]: https://go.dev/issue/66869 
-│                        │      │                  ├ [11]: https://groups.google.com/g/golang-announce/c/XbxouI
+│                        │      │                  ├ [13]: https://github.com/golang/go/issues/66869 
+│                        │      │                  ├ [14]: https://go.dev/cl/585397 
+│                        │      │                  ├ [15]: https://go.dev/issue/66869 
+│                        │      │                  ├ [16]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k 
-│                        │      │                  ├ [12]: https://groups.google.com/g/golang-announce/c/XbxouI
+│                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k/m/TuoGEhxIEwAJ 
-│                        │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2024-24789.html 
-│                        │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
-│                        │      │                  ├ [15]: https://lists.fedoraproject.org/archives/list/packag
+│                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2024-24789.html 
+│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
+│                        │      │                  ├ [20]: https://lists.fedoraproject.org/archives/list/packag
 │                        │      │                  │       e-announce@lists.fedoraproject.org/message/U5YAEIA6I
 │                        │      │                  │       UHUNGJ7AIXXPQT6D2GYENX7/ 
-│                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2024-24789 
-│                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2024-2888 
-│                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2024-24789 
+│                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2024-24789 
+│                        │      │                  ├ [22]: https://pkg.go.dev/vuln/GO-2024-2888 
+│                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-6886-1 
+│                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2024-24789 
 │                        │      ├ PublishedDate   : 2024-06-05T16:15:10.47Z 
 │                        │      ╰ LastModifiedDate: 2024-07-03T01:48:25.51Z 
 │                        ╰ [20] ╭ VulnerabilityID : CVE-2024-24791 
