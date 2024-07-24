@@ -2,7 +2,415 @@
 ╭ [0]  ╭ Target         : nmaguiar/d3k:build (ubuntu 24.04) 
 │      ├ Class          : os-pkgs 
 │      ├ Type           : ubuntu 
-│      ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2016-2781 
+│      ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2024-0760 
+│                        │      ├ PkgID           : bind9-dnsutils@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-dnsutils 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-dnsutils@9.18.24-0ubuntu5?arch=
+│                        │      │                  │       amd64&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : c8db8e7046d33840 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-0760 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
+│                        │      │                   potentially causing the server to become unstable while the
+│                        │      │                    attack is in progress. The server may recover after the
+│                        │      │                   attack ceases. Use of ACLs will not mitigate the attack. 
+│                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
+│                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
+│                        ├ [1]  ╭ VulnerabilityID : CVE-2024-1737 
+│                        │      ├ PkgID           : bind9-dnsutils@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-dnsutils 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-dnsutils@9.18.24-0ubuntu5?arch=
+│                        │      │                  │       amd64&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : c8db8e7046d33840 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-1737 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant numbers of RRs for the same hostname (of any
+│                        │      │                   RTYPE) can suffer from degraded performance as content is
+│                        │      │                   being added or updated, and also when handling client
+│                        │      │                   queries for this name.
+│                        │      │                   This issue affects BIND 9 versions 9.11.0 through 9.11.37,
+│                        │      │                   9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0
+│                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
+│                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.713Z 
+│                        ├ [2]  ╭ VulnerabilityID : CVE-2024-1975 
+│                        │      ├ PkgID           : bind9-dnsutils@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-dnsutils 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-dnsutils@9.18.24-0ubuntu5?arch=
+│                        │      │                  │       amd64&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : c8db8e7046d33840 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-1975 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
+│                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
+│                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
+│                        │      │                   exhaust resolver CPU resources by sending a stream of
+│                        │      │                   SIG(0) signed requests.
+│                        │      │                   This issue affects BIND 9 versions 9.0.0 through 9.11.37,
+│                        │      │                   9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0
+│                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
+│                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
+│                        ├ [3]  ╭ VulnerabilityID : CVE-2024-4076 
+│                        │      ├ PkgID           : bind9-dnsutils@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-dnsutils 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-dnsutils@9.18.24-0ubuntu5?arch=
+│                        │      │                  │       amd64&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : c8db8e7046d33840 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-4076 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : Client queries that trigger serving stale data and that
+│                        │      │                   also require lookups in local authoritative zone data may
+│                        │      │                   result in an assertion failure.
+│                        │      │                   This issue affects BIND 9 versions 9.16.13 through 9.16.50,
+│                        │      │                    9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.33-S1
+│                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
+│                        │      │                   9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
+│                        ├ [4]  ╭ VulnerabilityID : CVE-2024-0760 
+│                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-host 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-host@9.18.24-0ubuntu5?arch=amd6
+│                        │      │                  │       4&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : cced76047e214126 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-0760 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
+│                        │      │                   potentially causing the server to become unstable while the
+│                        │      │                    attack is in progress. The server may recover after the
+│                        │      │                   attack ceases. Use of ACLs will not mitigate the attack. 
+│                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
+│                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
+│                        ├ [5]  ╭ VulnerabilityID : CVE-2024-1737 
+│                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-host 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-host@9.18.24-0ubuntu5?arch=amd6
+│                        │      │                  │       4&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : cced76047e214126 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-1737 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant numbers of RRs for the same hostname (of any
+│                        │      │                   RTYPE) can suffer from degraded performance as content is
+│                        │      │                   being added or updated, and also when handling client
+│                        │      │                   queries for this name.
+│                        │      │                   This issue affects BIND 9 versions 9.11.0 through 9.11.37,
+│                        │      │                   9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0
+│                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
+│                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.713Z 
+│                        ├ [6]  ╭ VulnerabilityID : CVE-2024-1975 
+│                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-host 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-host@9.18.24-0ubuntu5?arch=amd6
+│                        │      │                  │       4&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : cced76047e214126 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-1975 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
+│                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
+│                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
+│                        │      │                   exhaust resolver CPU resources by sending a stream of
+│                        │      │                   SIG(0) signed requests.
+│                        │      │                   This issue affects BIND 9 versions 9.0.0 through 9.11.37,
+│                        │      │                   9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0
+│                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
+│                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
+│                        ├ [7]  ╭ VulnerabilityID : CVE-2024-4076 
+│                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-host 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-host@9.18.24-0ubuntu5?arch=amd6
+│                        │      │                  │       4&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : cced76047e214126 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-4076 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : Client queries that trigger serving stale data and that
+│                        │      │                   also require lookups in local authoritative zone data may
+│                        │      │                   result in an assertion failure.
+│                        │      │                   This issue affects BIND 9 versions 9.16.13 through 9.16.50,
+│                        │      │                    9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.33-S1
+│                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
+│                        │      │                   9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
+│                        ├ [8]  ╭ VulnerabilityID : CVE-2024-0760 
+│                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-libs 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-libs@9.18.24-0ubuntu5?arch=amd6
+│                        │      │                  │       4&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : d887e5dcf221334e 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-0760 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
+│                        │      │                   potentially causing the server to become unstable while the
+│                        │      │                    attack is in progress. The server may recover after the
+│                        │      │                   attack ceases. Use of ACLs will not mitigate the attack. 
+│                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
+│                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
+│                        ├ [9]  ╭ VulnerabilityID : CVE-2024-1737 
+│                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-libs 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-libs@9.18.24-0ubuntu5?arch=amd6
+│                        │      │                  │       4&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : d887e5dcf221334e 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-1737 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant numbers of RRs for the same hostname (of any
+│                        │      │                   RTYPE) can suffer from degraded performance as content is
+│                        │      │                   being added or updated, and also when handling client
+│                        │      │                   queries for this name.
+│                        │      │                   This issue affects BIND 9 versions 9.11.0 through 9.11.37,
+│                        │      │                   9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0
+│                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
+│                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.713Z 
+│                        ├ [10] ╭ VulnerabilityID : CVE-2024-1975 
+│                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-libs 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-libs@9.18.24-0ubuntu5?arch=amd6
+│                        │      │                  │       4&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : d887e5dcf221334e 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-1975 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
+│                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
+│                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
+│                        │      │                   exhaust resolver CPU resources by sending a stream of
+│                        │      │                   SIG(0) signed requests.
+│                        │      │                   This issue affects BIND 9 versions 9.0.0 through 9.11.37,
+│                        │      │                   9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0
+│                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
+│                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
+│                        ├ [11] ╭ VulnerabilityID : CVE-2024-4076 
+│                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : bind9-libs 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-libs@9.18.24-0ubuntu5?arch=amd6
+│                        │      │                  │       4&distro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : d887e5dcf221334e 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-4076 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : Client queries that trigger serving stale data and that
+│                        │      │                   also require lookups in local authoritative zone data may
+│                        │      │                   result in an assertion failure.
+│                        │      │                   This issue affects BIND 9 versions 9.16.13 through 9.16.50,
+│                        │      │                    9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.33-S1
+│                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
+│                        │      │                   9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
+│                        ├ [12] ╭ VulnerabilityID : CVE-2016-2781 
 │                        │      ├ PkgID           : coreutils@9.4-3ubuntu6 
 │                        │      ├ PkgName         : coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/coreutils@9.4-3ubuntu6?arch=amd64&dis
@@ -54,7 +462,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2016-2781 
 │                        │      ├ PublishedDate   : 2017-02-07T15:59:00.333Z 
 │                        │      ╰ LastModifiedDate: 2023-11-07T02:32:03.347Z 
-│                        ├ [1]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [13] ╭ VulnerabilityID : CVE-2023-34969 
 │                        │      ├ PkgID           : dbus@1.14.10-4ubuntu4 
 │                        │      ├ PkgName         : dbus 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus@1.14.10-4ubuntu4?arch=amd64&dist
@@ -106,7 +514,7 @@
 │                        │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       023-34969 
 │                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2023-4569.html 
-│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4498 
+│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4569 
 │                        │      │                  ├ [7] : https://gitlab.freedesktop.org/dbus/dbus/-/issues/457 
 │                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2023-34969.html 
 │                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2023-4569.html 
@@ -122,7 +530,7 @@
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │      ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │      ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [2]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [14] ╭ VulnerabilityID : CVE-2023-34969 
 │                        │      ├ PkgID           : dbus-bin@1.14.10-4ubuntu4 
 │                        │      ├ PkgName         : dbus-bin 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus-bin@1.14.10-4ubuntu4?arch=amd64&
@@ -174,7 +582,7 @@
 │                        │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       023-34969 
 │                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2023-4569.html 
-│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4498 
+│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4569 
 │                        │      │                  ├ [7] : https://gitlab.freedesktop.org/dbus/dbus/-/issues/457 
 │                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2023-34969.html 
 │                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2023-4569.html 
@@ -190,7 +598,7 @@
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │      ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │      ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [3]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [15] ╭ VulnerabilityID : CVE-2023-34969 
 │                        │      ├ PkgID           : dbus-daemon@1.14.10-4ubuntu4 
 │                        │      ├ PkgName         : dbus-daemon 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus-daemon@1.14.10-4ubuntu4?arch=amd
@@ -242,7 +650,7 @@
 │                        │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       023-34969 
 │                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2023-4569.html 
-│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4498 
+│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4569 
 │                        │      │                  ├ [7] : https://gitlab.freedesktop.org/dbus/dbus/-/issues/457 
 │                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2023-34969.html 
 │                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2023-4569.html 
@@ -258,7 +666,7 @@
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │      ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │      ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [4]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [16] ╭ VulnerabilityID : CVE-2023-34969 
 │                        │      ├ PkgID           : dbus-session-bus-common@1.14.10-4ubuntu4 
 │                        │      ├ PkgName         : dbus-session-bus-common 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus-session-bus-common@1.14.10-4ubun
@@ -310,7 +718,7 @@
 │                        │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       023-34969 
 │                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2023-4569.html 
-│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4498 
+│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4569 
 │                        │      │                  ├ [7] : https://gitlab.freedesktop.org/dbus/dbus/-/issues/457 
 │                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2023-34969.html 
 │                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2023-4569.html 
@@ -326,7 +734,7 @@
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │      ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │      ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [5]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [17] ╭ VulnerabilityID : CVE-2023-34969 
 │                        │      ├ PkgID           : dbus-system-bus-common@1.14.10-4ubuntu4 
 │                        │      ├ PkgName         : dbus-system-bus-common 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus-system-bus-common@1.14.10-4ubunt
@@ -378,7 +786,7 @@
 │                        │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       023-34969 
 │                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2023-4569.html 
-│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4498 
+│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4569 
 │                        │      │                  ├ [7] : https://gitlab.freedesktop.org/dbus/dbus/-/issues/457 
 │                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2023-34969.html 
 │                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2023-4569.html 
@@ -394,7 +802,7 @@
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │      ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │      ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [6]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [18] ╭ VulnerabilityID : CVE-2023-34969 
 │                        │      ├ PkgID           : dbus-user-session@1.14.10-4ubuntu4 
 │                        │      ├ PkgName         : dbus-user-session 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus-user-session@1.14.10-4ubuntu4?ar
@@ -446,7 +854,7 @@
 │                        │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       023-34969 
 │                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2023-4569.html 
-│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4498 
+│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4569 
 │                        │      │                  ├ [7] : https://gitlab.freedesktop.org/dbus/dbus/-/issues/457 
 │                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2023-34969.html 
 │                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2023-4569.html 
@@ -462,7 +870,7 @@
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │      ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │      ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [7]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [19] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : dirmngr@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : dirmngr 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dirmngr@2.4.4-2ubuntu17?arch=amd64&di
@@ -506,7 +914,143 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [8]  ╭ VulnerabilityID : CVE-2018-1000021 
+│                        ├ [20] ╭ VulnerabilityID : CVE-2024-0760 
+│                        │      ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : dnsutils 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&di
+│                        │      │                  │       stro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : cd49b02017bdc9f8 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-0760 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
+│                        │      │                   potentially causing the server to become unstable while the
+│                        │      │                    attack is in progress. The server may recover after the
+│                        │      │                   attack ceases. Use of ACLs will not mitigate the attack. 
+│                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
+│                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
+│                        ├ [21] ╭ VulnerabilityID : CVE-2024-1737 
+│                        │      ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : dnsutils 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&di
+│                        │      │                  │       stro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : cd49b02017bdc9f8 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-1737 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant numbers of RRs for the same hostname (of any
+│                        │      │                   RTYPE) can suffer from degraded performance as content is
+│                        │      │                   being added or updated, and also when handling client
+│                        │      │                   queries for this name.
+│                        │      │                   This issue affects BIND 9 versions 9.11.0 through 9.11.37,
+│                        │      │                   9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0
+│                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
+│                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.713Z 
+│                        ├ [22] ╭ VulnerabilityID : CVE-2024-1975 
+│                        │      ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : dnsutils 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&di
+│                        │      │                  │       stro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : cd49b02017bdc9f8 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-1975 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
+│                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
+│                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
+│                        │      │                   exhaust resolver CPU resources by sending a stream of
+│                        │      │                   SIG(0) signed requests.
+│                        │      │                   This issue affects BIND 9 versions 9.0.0 through 9.11.37,
+│                        │      │                   9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0
+│                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
+│                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
+│                        ├ [23] ╭ VulnerabilityID : CVE-2024-4076 
+│                        │      ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
+│                        │      ├ PkgName         : dnsutils 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&di
+│                        │      │                  │       stro=ubuntu-24.04&epoch=1 
+│                        │      │                  ╰ UID : cd49b02017bdc9f8 
+│                        │      ├ InstalledVersion: 1:9.18.24-0ubuntu5 
+│                        │      ├ FixedVersion    : 1:9.18.28-0ubuntu0.24.04.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd
+│                        │      │                  │         62609cbde5d67e616b934 
+│                        │      │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9c
+│                        │      │                            bea1cac9c2e341c357807 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-4076 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Description     : Client queries that trigger serving stale data and that
+│                        │      │                   also require lookups in local authoritative zone data may
+│                        │      │                   result in an assertion failure.
+│                        │      │                   This issue affects BIND 9 versions 9.16.13 through 9.16.50,
+│                        │      │                    9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.33-S1
+│                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
+│                        │      │                   9.18.11-S1 through 9.18.27-S1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
+│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
+│                        ├ [24] ╭ VulnerabilityID : CVE-2018-1000021 
 │                        │      ├ PkgID           : git@1:2.43.0-1ubuntu7.1 
 │                        │      ├ PkgName         : git 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.43.0-1ubuntu7.1?arch=amd64&dist
@@ -554,7 +1098,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2018-1000021 
 │                        │      ├ PublishedDate   : 2018-02-09T23:29:00.557Z 
 │                        │      ╰ LastModifiedDate: 2018-03-06T19:34:06.18Z 
-│                        ├ [9]  ╭ VulnerabilityID : CVE-2018-1000021 
+│                        ├ [25] ╭ VulnerabilityID : CVE-2018-1000021 
 │                        │      ├ PkgID           : git-man@1:2.43.0-1ubuntu7.1 
 │                        │      ├ PkgName         : git-man 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git-man@2.43.0-1ubuntu7.1?arch=all&di
@@ -602,7 +1146,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2018-1000021 
 │                        │      ├ PublishedDate   : 2018-02-09T23:29:00.557Z 
 │                        │      ╰ LastModifiedDate: 2018-03-06T19:34:06.18Z 
-│                        ├ [10] ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [26] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : gnupg@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : gnupg 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gnupg@2.4.4-2ubuntu17?arch=all&distro
@@ -646,7 +1190,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [11] ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [27] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : gnupg-l10n@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : gnupg-l10n 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gnupg-l10n@2.4.4-2ubuntu17?arch=all&d
@@ -690,7 +1234,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [12] ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [28] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : gnupg-utils@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : gnupg-utils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gnupg-utils@2.4.4-2ubuntu17?arch=amd6
@@ -734,7 +1278,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [13] ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [29] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : gpg@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : gpg 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpg@2.4.4-2ubuntu17?arch=amd64&distro
@@ -778,7 +1322,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [14] ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [30] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : gpg-agent@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : gpg-agent 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpg-agent@2.4.4-2ubuntu17?arch=amd64&
@@ -822,7 +1366,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [15] ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [31] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : gpg-wks-client@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : gpg-wks-client 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpg-wks-client@2.4.4-2ubuntu17?arch=a
@@ -866,7 +1410,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [16] ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [32] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : gpgconf@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : gpgconf 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpgconf@2.4.4-2ubuntu17?arch=amd64&di
@@ -910,7 +1454,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [17] ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [33] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : gpgsm@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : gpgsm 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpgsm@2.4.4-2ubuntu17?arch=amd64&dist
@@ -954,7 +1498,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [18] ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [34] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : gpgv@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : gpgv 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17?arch=amd64&distr
@@ -998,7 +1542,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [19] ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [35] ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : keyboxd@2.4.4-2ubuntu17 
 │                        │      ├ PkgName         : keyboxd 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/keyboxd@2.4.4-2ubuntu17?arch=amd64&di
@@ -1042,7 +1586,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │      ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [20] ╭ VulnerabilityID : CVE-2024-26462 
+│                        ├ [36] ╭ VulnerabilityID : CVE-2024-26462 
 │                        │      ├ PkgID           : krb5-locales@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : krb5-locales 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/krb5-locales@1.20.1-6ubuntu2?arch=all
@@ -1081,7 +1625,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-26462 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.857Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:01.053Z 
-│                        ├ [21] ╭ VulnerabilityID : CVE-2024-26458 
+│                        ├ [37] ╭ VulnerabilityID : CVE-2024-26458 
 │                        │      ├ PkgID           : krb5-locales@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : krb5-locales 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/krb5-locales@1.20.1-6ubuntu2?arch=all
@@ -1136,7 +1680,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.47Z 
-│                        ├ [22] ╭ VulnerabilityID : CVE-2024-26461 
+│                        ├ [38] ╭ VulnerabilityID : CVE-2024-26461 
 │                        │      ├ PkgID           : krb5-locales@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : krb5-locales 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/krb5-locales@1.20.1-6ubuntu2?arch=all
@@ -1191,7 +1735,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
-│                        ├ [23] ╭ VulnerabilityID : CVE-2016-20013 
+│                        ├ [39] ╭ VulnerabilityID : CVE-2016-20013 
 │                        │      ├ PkgID           : libc-bin@2.39-0ubuntu8.2 
 │                        │      ├ PkgName         : libc-bin 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-bin@2.39-0ubuntu8.2?arch=amd64&d
@@ -1227,7 +1771,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2016-20013 
 │                        │      ├ PublishedDate   : 2022-02-19T05:15:09.413Z 
 │                        │      ╰ LastModifiedDate: 2022-03-03T16:43:19.667Z 
-│                        ├ [24] ╭ VulnerabilityID : CVE-2016-20013 
+│                        ├ [40] ╭ VulnerabilityID : CVE-2016-20013 
 │                        │      ├ PkgID           : libc6@2.39-0ubuntu8.2 
 │                        │      ├ PkgName         : libc6 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc6@2.39-0ubuntu8.2?arch=amd64&dist
@@ -1263,7 +1807,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2016-20013 
 │                        │      ├ PublishedDate   : 2022-02-19T05:15:09.413Z 
 │                        │      ╰ LastModifiedDate: 2022-03-03T16:43:19.667Z 
-│                        ├ [25] ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [41] ╭ VulnerabilityID : CVE-2023-34969 
 │                        │      ├ PkgID           : libdbus-1-3@1.14.10-4ubuntu4 
 │                        │      ├ PkgName         : libdbus-1-3 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libdbus-1-3@1.14.10-4ubuntu4?arch=amd
@@ -1315,7 +1859,7 @@
 │                        │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       023-34969 
 │                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2023-4569.html 
-│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4498 
+│                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2023:4569 
 │                        │      │                  ├ [7] : https://gitlab.freedesktop.org/dbus/dbus/-/issues/457 
 │                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2023-34969.html 
 │                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2023-4569.html 
@@ -1331,7 +1875,7 @@
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │      ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │      ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [26] ╭ VulnerabilityID : CVE-2024-2236 
+│                        ├ [42] ╭ VulnerabilityID : CVE-2024-2236 
 │                        │      ├ PkgID           : libgcrypt20@1.10.3-2build1 
 │                        │      ├ PkgName         : libgcrypt20 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgcrypt20@1.10.3-2build1?arch=amd64
@@ -1371,7 +1915,7 @@
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-2236 
 │                        │      ├ PublishedDate   : 2024-03-06T22:15:57.977Z 
 │                        │      ╰ LastModifiedDate: 2024-04-25T17:15:49.467Z 
-│                        ├ [27] ╭ VulnerabilityID : CVE-2024-26462 
+│                        ├ [43] ╭ VulnerabilityID : CVE-2024-26462 
 │                        │      ├ PkgID           : libgssapi-krb5-2@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libgssapi-krb5-2 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.20.1-6ubuntu2?arch
@@ -1410,7 +1954,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-26462 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.857Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:01.053Z 
-│                        ├ [28] ╭ VulnerabilityID : CVE-2024-26458 
+│                        ├ [44] ╭ VulnerabilityID : CVE-2024-26458 
 │                        │      ├ PkgID           : libgssapi-krb5-2@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libgssapi-krb5-2 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.20.1-6ubuntu2?arch
@@ -1465,7 +2009,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.47Z 
-│                        ├ [29] ╭ VulnerabilityID : CVE-2024-26461 
+│                        ├ [45] ╭ VulnerabilityID : CVE-2024-26461 
 │                        │      ├ PkgID           : libgssapi-krb5-2@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libgssapi-krb5-2 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.20.1-6ubuntu2?arch
@@ -1520,7 +2064,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
-│                        ├ [30] ╭ VulnerabilityID : CVE-2024-26462 
+│                        ├ [46] ╭ VulnerabilityID : CVE-2024-26462 
 │                        │      ├ PkgID           : libk5crypto3@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libk5crypto3 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.20.1-6ubuntu2?arch=amd
@@ -1559,7 +2103,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-26462 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.857Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:01.053Z 
-│                        ├ [31] ╭ VulnerabilityID : CVE-2024-26458 
+│                        ├ [47] ╭ VulnerabilityID : CVE-2024-26458 
 │                        │      ├ PkgID           : libk5crypto3@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libk5crypto3 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.20.1-6ubuntu2?arch=amd
@@ -1614,7 +2158,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.47Z 
-│                        ├ [32] ╭ VulnerabilityID : CVE-2024-26461 
+│                        ├ [48] ╭ VulnerabilityID : CVE-2024-26461 
 │                        │      ├ PkgID           : libk5crypto3@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libk5crypto3 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.20.1-6ubuntu2?arch=amd
@@ -1669,7 +2213,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
-│                        ├ [33] ╭ VulnerabilityID : CVE-2024-26462 
+│                        ├ [49] ╭ VulnerabilityID : CVE-2024-26462 
 │                        │      ├ PkgID           : libkrb5-3@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libkrb5-3 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.20.1-6ubuntu2?arch=amd64&
@@ -1708,7 +2252,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-26462 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.857Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:01.053Z 
-│                        ├ [34] ╭ VulnerabilityID : CVE-2024-26458 
+│                        ├ [50] ╭ VulnerabilityID : CVE-2024-26458 
 │                        │      ├ PkgID           : libkrb5-3@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libkrb5-3 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.20.1-6ubuntu2?arch=amd64&
@@ -1763,7 +2307,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.47Z 
-│                        ├ [35] ╭ VulnerabilityID : CVE-2024-26461 
+│                        ├ [51] ╭ VulnerabilityID : CVE-2024-26461 
 │                        │      ├ PkgID           : libkrb5-3@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libkrb5-3 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.20.1-6ubuntu2?arch=amd64&
@@ -1818,7 +2362,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
-│                        ├ [36] ╭ VulnerabilityID : CVE-2024-26462 
+│                        ├ [52] ╭ VulnerabilityID : CVE-2024-26462 
 │                        │      ├ PkgID           : libkrb5support0@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libkrb5support0 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2?arch=
@@ -1857,7 +2401,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-26462 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.857Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:01.053Z 
-│                        ├ [37] ╭ VulnerabilityID : CVE-2024-26458 
+│                        ├ [53] ╭ VulnerabilityID : CVE-2024-26458 
 │                        │      ├ PkgID           : libkrb5support0@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libkrb5support0 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2?arch=
@@ -1912,7 +2456,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.47Z 
-│                        ├ [38] ╭ VulnerabilityID : CVE-2024-26461 
+│                        ├ [54] ╭ VulnerabilityID : CVE-2024-26461 
 │                        │      ├ PkgID           : libkrb5support0@1.20.1-6ubuntu2 
 │                        │      ├ PkgName         : libkrb5support0 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2?arch=
@@ -1967,7 +2511,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
-│                        ├ [39] ╭ VulnerabilityID : CVE-2020-22916 
+│                        ├ [55] ╭ VulnerabilityID : CVE-2020-22916 
 │                        │      ├ PkgID           : liblzma5@5.6.1+really5.4.5-1 
 │                        │      ├ PkgName         : liblzma5 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/liblzma5@5.6.1%2Breally5.4.5-1?arch=a
@@ -2017,7 +2561,7 @@
 │                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2020-22916 
 │                        │      ├ PublishedDate   : 2023-08-22T19:16:19.407Z 
 │                        │      ╰ LastModifiedDate: 2024-07-18T16:15:05.387Z 
-│                        ├ [40] ╭ VulnerabilityID : CVE-2024-2511 
+│                        ├ [56] ╭ VulnerabilityID : CVE-2024-2511 
 │                        │      ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : libssl3t64 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=amd
@@ -2096,7 +2640,7 @@
 │                        │      │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
 │                        │      ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
 │                        │      ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-│                        ├ [41] ╭ VulnerabilityID : CVE-2024-4603 
+│                        ├ [57] ╭ VulnerabilityID : CVE-2024-4603 
 │                        │      ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : libssl3t64 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=amd
@@ -2188,7 +2732,7 @@
 │                        │      │                  ╰ [9]: https://www.openssl.org/news/secadv/20240516.txt 
 │                        │      ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
 │                        │      ╰ LastModifiedDate: 2024-06-21T19:15:30.783Z 
-│                        ├ [42] ╭ VulnerabilityID : CVE-2024-4741 
+│                        ├ [58] ╭ VulnerabilityID : CVE-2024-4741 
 │                        │      ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : libssl3t64 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=amd
@@ -2222,7 +2766,7 @@
 │                        │                         ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2024-4741 
 │                        │                         ├ [2]: https://www.cve.org/CVERecord?id=CVE-2024-4741 
 │                        │                         ╰ [3]: https://www.openssl.org/news/secadv/20240528.txt 
-│                        ├ [43] ╭ VulnerabilityID : CVE-2024-2511 
+│                        ├ [59] ╭ VulnerabilityID : CVE-2024-2511 
 │                        │      ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : openssl 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64&
@@ -2301,7 +2845,7 @@
 │                        │      │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
 │                        │      ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
 │                        │      ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-│                        ├ [44] ╭ VulnerabilityID : CVE-2024-4603 
+│                        ├ [60] ╭ VulnerabilityID : CVE-2024-4603 
 │                        │      ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : openssl 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64&
@@ -2393,7 +2937,7 @@
 │                        │      │                  ╰ [9]: https://www.openssl.org/news/secadv/20240516.txt 
 │                        │      ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
 │                        │      ╰ LastModifiedDate: 2024-06-21T19:15:30.783Z 
-│                        ├ [45] ╭ VulnerabilityID : CVE-2024-4741 
+│                        ├ [61] ╭ VulnerabilityID : CVE-2024-4741 
 │                        │      ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : openssl 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64&
@@ -2427,7 +2971,7 @@
 │                        │                         ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2024-4741 
 │                        │                         ├ [2]: https://www.cve.org/CVERecord?id=CVE-2024-4741 
 │                        │                         ╰ [3]: https://www.openssl.org/news/secadv/20240528.txt 
-│                        ├ [46] ╭ VulnerabilityID : CVE-2018-6952 
+│                        ├ [62] ╭ VulnerabilityID : CVE-2018-6952 
 │                        │      ├ PkgID           : patch@2.7.6-7build3 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -2477,7 +3021,7 @@
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                        │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                        │      ╰ LastModifiedDate: 2019-04-17T20:29:01.727Z 
-│                        ├ [47] ╭ VulnerabilityID : CVE-2021-45261 
+│                        ├ [63] ╭ VulnerabilityID : CVE-2021-45261 
 │                        │      ├ PkgID           : patch@2.7.6-7build3 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -2517,7 +3061,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                        │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                        │      ╰ LastModifiedDate: 2021-12-28T14:24:34.243Z 
-│                        ├ [48] ╭ VulnerabilityID : CVE-2021-4217 
+│                        ├ [64] ╭ VulnerabilityID : CVE-2021-4217 
 │                        │      ├ PkgID           : unzip@6.0-28ubuntu4 
 │                        │      ├ PkgName         : unzip 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/unzip@6.0-28ubuntu4?arch=amd64&distro
@@ -2563,7 +3107,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-4217 
 │                        │      ├ PublishedDate   : 2022-08-24T16:15:10.09Z 
 │                        │      ╰ LastModifiedDate: 2022-11-29T15:45:16.2Z 
-│                        ├ [49] ╭ VulnerabilityID : CVE-2021-31879 
+│                        ├ [65] ╭ VulnerabilityID : CVE-2021-31879 
 │                        │      ├ PkgID           : wget@1.21.4-1ubuntu4.1 
 │                        │      ├ PkgName         : wget 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.21.4-1ubuntu4.1?arch=amd64&dis
@@ -2610,7 +3154,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
 │                        │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                        │      ╰ LastModifiedDate: 2022-05-13T20:52:24.793Z 
-│                        ╰ [50] ╭ VulnerabilityID : CVE-2020-22916 
+│                        ╰ [66] ╭ VulnerabilityID : CVE-2020-22916 
 │                               ├ PkgID           : xz-utils@5.6.1+really5.4.5-1 
 │                               ├ PkgName         : xz-utils 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xz-utils@5.6.1%2Breally5.4.5-1?arch=a
@@ -2660,9 +3204,141 @@
 │                               │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2020-22916 
 │                               ├ PublishedDate   : 2023-08-22T19:16:19.407Z 
 │                               ╰ LastModifiedDate: 2024-07-18T16:15:05.387Z 
-├ [1]  ╭ Target: Java 
-│      ├ Class : lang-pkgs 
-│      ╰ Type  : jar 
+├ [1]  ╭ Target         : Java 
+│      ├ Class          : lang-pkgs 
+│      ├ Type           : jar 
+│      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-25638 
+│                        │     ├ PkgName         : dnsjava:dnsjava 
+│                        │     ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/dnsjava/dnsjava@3.5.3 
+│                        │     │                  ╰ UID : d3e14c8362eb4071 
+│                        │     ├ InstalledVersion: 3.5.3 
+│                        │     ├ FixedVersion    : 3.6.0 
+│                        │     ├ Status          : fixed 
+│                        │     ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd6
+│                        │     │                  │         2609cbde5d67e616b934 
+│                        │     │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9cb
+│                        │     │                            ea1cac9c2e341c357807 
+│                        │     ├ SeveritySource  : ghsa 
+│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-25638 
+│                        │     ├ DataSource       ╭ ID  : ghsa 
+│                        │     │                  ├ Name: GitHub Security Advisory Maven 
+│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                        │     │                          cosystem%3Amaven 
+│                        │     ├ Title           : dnsjava: Improper response validation allowing DNSSEC bypass 
+│                        │     ├ Description     : dnsjava is an implementation of DNS in Java. Records in DNS
+│                        │     │                   replies are not checked for their relevance to the query,
+│                        │     │                   allowing an attacker to respond with RRs from different
+│                        │     │                   zones. This vulnerability is fixed in 3.6.0. 
+│                        │     ├ Severity        : HIGH 
+│                        │     ├ CweIDs           ╭ [0]: CWE-345 
+│                        │     │                  ╰ [1]: CWE-349 
+│                        │     ├ VendorSeverity   ╭ ghsa  : 3 
+│                        │     │                  ╰ redhat: 3 
+│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H
+│                        │     │                  │        │           /A:L 
+│                        │     │                  │        ╰ V3Score : 8.9 
+│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H
+│                        │     │                           │           /A:L 
+│                        │     │                           ╰ V3Score : 8.9 
+│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-25638 
+│                        │     │                  ├ [1]: https://github.com/dnsjava/dnsjava 
+│                        │     │                  ├ [2]: https://github.com/dnsjava/dnsjava/commit/bc51df1c455e
+│                        │     │                  │      6c9fb7cbd42fcb6d62d16047818d 
+│                        │     │                  ├ [3]: https://github.com/dnsjava/dnsjava/security/advisories
+│                        │     │                  │      /GHSA-cfxw-4h78-h7fw 
+│                        │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-25638 
+│                        │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-25638 
+│                        │     ├ PublishedDate   : 2024-07-22T14:15:04.593Z 
+│                        │     ╰ LastModifiedDate: 2024-07-22T14:15:04.593Z 
+│                        ├ [1] ╭ VulnerabilityID : GHSA-crjg-w57m-rqqf 
+│                        │     ├ PkgName         : dnsjava:dnsjava 
+│                        │     ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/dnsjava/dnsjava@3.5.3 
+│                        │     │                  ╰ UID : d3e14c8362eb4071 
+│                        │     ├ InstalledVersion: 3.5.3 
+│                        │     ├ FixedVersion    : 3.6.0 
+│                        │     ├ Status          : fixed 
+│                        │     ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd6
+│                        │     │                  │         2609cbde5d67e616b934 
+│                        │     │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9cb
+│                        │     │                            ea1cac9c2e341c357807 
+│                        │     ├ SeveritySource  : ghsa 
+│                        │     ├ PrimaryURL      : https://github.com/advisories/GHSA-crjg-w57m-rqqf 
+│                        │     ├ DataSource       ╭ ID  : ghsa 
+│                        │     │                  ├ Name: GitHub Security Advisory Maven 
+│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                        │     │                          cosystem%3Amaven 
+│                        │     ├ Title           : DNSJava vulnerable to KeyTrap - Denial-of-Service
+│                        │     │                   Algorithmic Complexity Attacks 
+│                        │     ├ Description     : ### Impact
+│                        │     │                   Users using the `ValidatingResolver` for DNSSEC validation
+│                        │     │                   can run into CPU exhaustion with specially crafted
+│                        │     │                   DNSSEC-signed zones.
+│                        │     │                   
+│                        │     │                   ### Patches
+│                        │     │                   Users should upgrade to dnsjava v3.6.0
+│                        │     │                   
+│                        │     │                   ### Workarounds
+│                        │     │                   Although not recommended, only using a non-validating
+│                        │     │                   resolver, will remove the vulnerability. 
+│                        │     │                   
+│                        │     │                   ### References
+│                        │     │                   https://www.athene-center.de/en/keytrap 
+│                        │     ├ Severity        : MEDIUM 
+│                        │     ├ VendorSeverity   ─ ghsa: 2 
+│                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H 
+│                        │     │                         ╰ V3Score : 6.5 
+│                        │     ╰ References       ╭ [0]: https://github.com/dnsjava/dnsjava 
+│                        │                        ├ [1]: https://github.com/dnsjava/dnsjava/commit/07ac36a11578
+│                        │                        │      cc1bce0cd8ddf2fe568f062aee78 
+│                        │                        ├ [2]: https://github.com/dnsjava/dnsjava/commit/3ddc45ce8cdb
+│                        │                        │      5c2274e10b7401416f497694e1cf 
+│                        │                        ╰ [3]: https://github.com/dnsjava/dnsjava/security/advisories
+│                        │                               /GHSA-crjg-w57m-rqqf 
+│                        ╰ [2] ╭ VulnerabilityID : GHSA-mmwx-rj87-vfgr 
+│                              ├ PkgName         : dnsjava:dnsjava 
+│                              ├ PkgPath         : opt/oaf/openaf.jar 
+│                              ├ PkgIdentifier    ╭ PURL: pkg:maven/dnsjava/dnsjava@3.5.3 
+│                              │                  ╰ UID : d3e14c8362eb4071 
+│                              ├ InstalledVersion: 3.5.3 
+│                              ├ FixedVersion    : 3.6.0 
+│                              ├ Status          : fixed 
+│                              ├ Layer            ╭ Digest: sha256:ad76ed7f531831a84634a1bea51990e8c4c87973cfd6
+│                              │                  │         2609cbde5d67e616b934 
+│                              │                  ╰ DiffID: sha256:9b5af13358f18c2b59653ecf03d8c364e1e4421db9cb
+│                              │                            ea1cac9c2e341c357807 
+│                              ├ SeveritySource  : ghsa 
+│                              ├ PrimaryURL      : https://github.com/advisories/GHSA-mmwx-rj87-vfgr 
+│                              ├ DataSource       ╭ ID  : ghsa 
+│                              │                  ├ Name: GitHub Security Advisory Maven 
+│                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                              │                          cosystem%3Amaven 
+│                              ├ Title           : DNSJava affected by KeyTrap - NSEC3 closest encloser proof
+│                              │                   can exhaust CPU resources 
+│                              ├ Description     : ### Impact
+│                              │                   Users using the `ValidatingResolver` for DNSSEC validation
+│                              │                   can run into CPU exhaustion with specially crafted
+│                              │                   DNSSEC-signed zones.
+│                              │                   
+│                              │                   ### Patches
+│                              │                   Users should upgrade to dnsjava v3.6.0
+│                              │                   
+│                              │                   ### Workarounds
+│                              │                   Although not recommended, only using a non-validating
+│                              │                   resolver, will remove the vulnerability.
+│                              │                   
+│                              │                   ### References
+│                              │                   https://www.athene-center.de/en/keytrap 
+│                              ├ Severity        : MEDIUM 
+│                              ├ VendorSeverity   ─ ghsa: 2 
+│                              ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H 
+│                              │                         ╰ V3Score : 6.5 
+│                              ╰ References       ╭ [0]: https://github.com/dnsjava/dnsjava 
+│                                                 ├ [1]: https://github.com/dnsjava/dnsjava/commit/711af79be321
+│                                                 │      4f52daa5c846b95766dc0a075116 
+│                                                 ╰ [2]: https://github.com/dnsjava/dnsjava/security/advisories
+│                                                        /GHSA-mmwx-rj87-vfgr 
 ├ [2]  ╭ Target         : home/user/.krew/store/krew/v0.4.4/krew 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -2745,7 +3421,7 @@
 │                        │      │                  ├ [10] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-
 │                        │      │                  │        2023-44487 
 │                        │      │                  ├ [11] : https://errata.almalinux.org/9/ALSA-2023-6077.html 
-│                        │      │                  ├ [12] : https://errata.rockylinux.org/RLSA-2023:5863 
+│                        │      │                  ├ [12] : https://errata.rockylinux.org/RLSA-2023:6077 
 │                        │      │                  ├ [13] : https://github.com/golang/go/commit/24ae2d927285c69
 │                        │      │                  │        7440fdde3ad7f26028354bcf3 [golang- 1.21] 
 │                        │      │                  ├ [14] : https://github.com/golang/go/commit/e175f27f58aa7b9
@@ -3011,7 +3687,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -3174,7 +3850,7 @@
 │                        │      │                  ├ [36] : https://edg.io/lp/blog/resets-leaks-ddos-and-the-ta
 │                        │      │                  │        le-of-a-hidden-cve 
 │                        │      │                  ├ [37] : https://errata.almalinux.org/9/ALSA-2023-6746.html 
-│                        │      │                  ├ [38] : https://errata.rockylinux.org/RLSA-2023:5928 
+│                        │      │                  ├ [38] : https://errata.rockylinux.org/RLSA-2023:5838 
 │                        │      │                  ├ [39] : https://forums.swift.org/t/swift-nio-http2-security
 │                        │      │                  │        -update-cve-2023-44487-http-2-dos/67764 
 │                        │      │                  ├ [40] : https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e
@@ -3643,7 +4319,7 @@
 │                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-24783 
 │                        │      │                  ├ [16]: https://errata.almalinux.org/9/ALSA-2024-2724.html 
-│                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2024:3346 
+│                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2024:2724 
 │                        │      │                  ├ [18]: https://go.dev/cl/576155 
 │                        │      │                  ├ [19]: https://go.dev/issue/65051 
 │                        │      │                  ├ [20]: https://groups.google.com/g/golang-announce/c/YgW0sx
@@ -3824,7 +4500,7 @@
 │                        │      │                  ├ [10] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-
 │                        │      │                  │        2023-44487 
 │                        │      │                  ├ [11] : https://errata.almalinux.org/9/ALSA-2023-6077.html 
-│                        │      │                  ├ [12] : https://errata.rockylinux.org/RLSA-2023:5863 
+│                        │      │                  ├ [12] : https://errata.rockylinux.org/RLSA-2023:6077 
 │                        │      │                  ├ [13] : https://github.com/golang/go/commit/24ae2d927285c69
 │                        │      │                  │        7440fdde3ad7f26028354bcf3 [golang- 1.21] 
 │                        │      │                  ├ [14] : https://github.com/golang/go/commit/e175f27f58aa7b9
@@ -4202,7 +4878,7 @@
 │                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-24783 
 │                        │      │                  ├ [16]: https://errata.almalinux.org/9/ALSA-2024-2724.html 
-│                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2024:3346 
+│                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2024:2724 
 │                        │      │                  ├ [18]: https://go.dev/cl/576155 
 │                        │      │                  ├ [19]: https://go.dev/issue/65051 
 │                        │      │                  ├ [20]: https://groups.google.com/g/golang-announce/c/YgW0sx
@@ -4407,7 +5083,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4561,7 +5237,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -4703,7 +5379,7 @@
 │                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-24783 
 │                        │      │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2024-2724.html 
-│                        │      │                  ├ [16]: https://errata.rockylinux.org/RLSA-2024:3346 
+│                        │      │                  ├ [16]: https://errata.rockylinux.org/RLSA-2024:2724 
 │                        │      │                  ├ [17]: https://github.com/golang/go/commit/20586c0dbe03d144
 │                        │      │                  │       f914155f879fa5ee287591a1 (go1.21.8) 
 │                        │      │                  ├ [18]: https://github.com/golang/go/commit/3a855208e3efed2e
@@ -4757,7 +5433,7 @@
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
-│                        │      │                  ├ rocky      : 3 
+│                        │      │                  ├ rocky      : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:L 
@@ -4768,38 +5444,29 @@
 │                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2023-45290 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2268017 
 │                        │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2268017 
-│                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2268018 
-│                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2268019 
-│                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2268273 
-│                        │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                        │      │                  │       023-45288 
-│                        │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                        │      │                  │       023-45289 
-│                        │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       023-45290 
-│                        │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                        │      │                  │       024-24783 
-│                        │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2024-3831.html 
-│                        │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2024:3346 
-│                        │      │                  ├ [14]: https://github.com/golang/go/commit/041a47712e765e94
+│                        │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2024-3831.html 
+│                        │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2024:3830 
+│                        │      │                  ├ [8] : https://github.com/golang/go/commit/041a47712e765e94
 │                        │      │                  │       f86d841c3110c840e76d8f82 (go1.22.1) 
-│                        │      │                  ├ [15]: https://github.com/golang/go/commit/bf80213b121074f4
+│                        │      │                  ├ [9] : https://github.com/golang/go/commit/bf80213b121074f4
 │                        │      │                  │       ad9b449410a4d13bae5e9be0 (go1.21.8) 
-│                        │      │                  ├ [16]: https://github.com/golang/go/issues/65383 
-│                        │      │                  ├ [17]: https://go.dev/cl/569341 
-│                        │      │                  ├ [18]: https://go.dev/issue/65383 
-│                        │      │                  ├ [19]: https://groups.google.com/g/golang-announce/c/5pwGVU
+│                        │      │                  ├ [10]: https://github.com/golang/go/issues/65383 
+│                        │      │                  ├ [11]: https://go.dev/cl/569341 
+│                        │      │                  ├ [12]: https://go.dev/issue/65383 
+│                        │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
-│                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2023-45290.html 
-│                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2024-3831.html 
-│                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2023-45290 
-│                        │      │                  ├ [23]: https://pkg.go.dev/vuln/GO-2024-2599 
-│                        │      │                  ├ [24]: https://security.netapp.com/advisory/ntap-20240329-0
+│                        │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2023-45290.html 
+│                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-3831.html 
+│                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2023-45290 
+│                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2024-2599 
+│                        │      │                  ├ [18]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       004 
-│                        │      │                  ├ [25]: https://security.netapp.com/advisory/ntap-20240329-0
+│                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       004/ 
-│                        │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2023-45290 
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6886-1 
+│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-45290 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.21Z 
 │                        │      ╰ LastModifiedDate: 2024-05-01T17:15:26.04Z 
 │                        ├ [16] ╭ VulnerabilityID : CVE-2024-24783 
@@ -4858,7 +5525,7 @@
 │                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-24783 
 │                        │      │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2024-2724.html 
-│                        │      │                  ├ [16]: https://errata.rockylinux.org/RLSA-2024:3346 
+│                        │      │                  ├ [16]: https://errata.rockylinux.org/RLSA-2024:2724 
 │                        │      │                  ├ [17]: https://github.com/advisories/GHSA-3q2c-pvp5-3cqp 
 │                        │      │                  ├ [18]: https://github.com/golang/go/commit/337b8e9cbfa749d9
 │                        │      │                  │       d5c899e0dc358e2208d5e54f (go1.22.1) 
@@ -5165,7 +5832,8 @@
 │                               │                   causes one subsequent request using that connection to fail
 │                               │                   . 
 │                               ├ Severity        : MEDIUM 
-│                               ├ VendorSeverity   ╭ bitnami: 3 
+│                               ├ VendorSeverity   ╭ amazon : 2 
+│                               │                  ├ bitnami: 3 
 │                               │                  ╰ redhat : 2 
 │                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                               │                  │         │           :N/A:H 
@@ -5265,7 +5933,7 @@
 │                        │      │                  ├ [10] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-
 │                        │      │                  │        2023-44487 
 │                        │      │                  ├ [11] : https://errata.almalinux.org/9/ALSA-2023-6077.html 
-│                        │      │                  ├ [12] : https://errata.rockylinux.org/RLSA-2023:5863 
+│                        │      │                  ├ [12] : https://errata.rockylinux.org/RLSA-2023:6077 
 │                        │      │                  ├ [13] : https://github.com/golang/go/commit/24ae2d927285c69
 │                        │      │                  │        7440fdde3ad7f26028354bcf3 [golang- 1.21] 
 │                        │      │                  ├ [14] : https://github.com/golang/go/commit/e175f27f58aa7b9
@@ -5531,7 +6199,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -5694,7 +6362,7 @@
 │                        │      │                  ├ [36] : https://edg.io/lp/blog/resets-leaks-ddos-and-the-ta
 │                        │      │                  │        le-of-a-hidden-cve 
 │                        │      │                  ├ [37] : https://errata.almalinux.org/9/ALSA-2023-6746.html 
-│                        │      │                  ├ [38] : https://errata.rockylinux.org/RLSA-2023:5928 
+│                        │      │                  ├ [38] : https://errata.rockylinux.org/RLSA-2023:5838 
 │                        │      │                  ├ [39] : https://forums.swift.org/t/swift-nio-http2-security
 │                        │      │                  │        -update-cve-2023-44487-http-2-dos/67764 
 │                        │      │                  ├ [40] : https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e
@@ -6163,7 +6831,7 @@
 │                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-24783 
 │                        │      │                  ├ [16]: https://errata.almalinux.org/9/ALSA-2024-2724.html 
-│                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2024:3346 
+│                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2024:2724 
 │                        │      │                  ├ [18]: https://go.dev/cl/576155 
 │                        │      │                  ├ [19]: https://go.dev/issue/65051 
 │                        │      │                  ├ [20]: https://groups.google.com/g/golang-announce/c/YgW0sx
@@ -6344,7 +7012,7 @@
 │                        │      │                  ├ [10] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-
 │                        │      │                  │        2023-44487 
 │                        │      │                  ├ [11] : https://errata.almalinux.org/9/ALSA-2023-6077.html 
-│                        │      │                  ├ [12] : https://errata.rockylinux.org/RLSA-2023:5863 
+│                        │      │                  ├ [12] : https://errata.rockylinux.org/RLSA-2023:6077 
 │                        │      │                  ├ [13] : https://github.com/golang/go/commit/24ae2d927285c69
 │                        │      │                  │        7440fdde3ad7f26028354bcf3 [golang- 1.21] 
 │                        │      │                  ├ [14] : https://github.com/golang/go/commit/e175f27f58aa7b9
@@ -6722,7 +7390,7 @@
 │                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-24783 
 │                        │      │                  ├ [16]: https://errata.almalinux.org/9/ALSA-2024-2724.html 
-│                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2024:3346 
+│                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2024:2724 
 │                        │      │                  ├ [18]: https://go.dev/cl/576155 
 │                        │      │                  ├ [19]: https://go.dev/issue/65051 
 │                        │      │                  ├ [20]: https://groups.google.com/g/golang-announce/c/YgW0sx
@@ -6927,7 +7595,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7081,7 +7749,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -7223,7 +7891,7 @@
 │                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-24783 
 │                        │      │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2024-2724.html 
-│                        │      │                  ├ [16]: https://errata.rockylinux.org/RLSA-2024:3346 
+│                        │      │                  ├ [16]: https://errata.rockylinux.org/RLSA-2024:2724 
 │                        │      │                  ├ [17]: https://github.com/golang/go/commit/20586c0dbe03d144
 │                        │      │                  │       f914155f879fa5ee287591a1 (go1.21.8) 
 │                        │      │                  ├ [18]: https://github.com/golang/go/commit/3a855208e3efed2e
@@ -7277,7 +7945,7 @@
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
-│                        │      │                  ├ rocky      : 3 
+│                        │      │                  ├ rocky      : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:L 
@@ -7288,38 +7956,29 @@
 │                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2023-45290 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2268017 
 │                        │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2268017 
-│                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2268018 
-│                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2268019 
-│                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2268273 
-│                        │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                        │      │                  │       023-45288 
-│                        │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                        │      │                  │       023-45289 
-│                        │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       023-45290 
-│                        │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                        │      │                  │       024-24783 
-│                        │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2024-3831.html 
-│                        │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2024:3346 
-│                        │      │                  ├ [14]: https://github.com/golang/go/commit/041a47712e765e94
+│                        │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2024-3831.html 
+│                        │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2024:3830 
+│                        │      │                  ├ [8] : https://github.com/golang/go/commit/041a47712e765e94
 │                        │      │                  │       f86d841c3110c840e76d8f82 (go1.22.1) 
-│                        │      │                  ├ [15]: https://github.com/golang/go/commit/bf80213b121074f4
+│                        │      │                  ├ [9] : https://github.com/golang/go/commit/bf80213b121074f4
 │                        │      │                  │       ad9b449410a4d13bae5e9be0 (go1.21.8) 
-│                        │      │                  ├ [16]: https://github.com/golang/go/issues/65383 
-│                        │      │                  ├ [17]: https://go.dev/cl/569341 
-│                        │      │                  ├ [18]: https://go.dev/issue/65383 
-│                        │      │                  ├ [19]: https://groups.google.com/g/golang-announce/c/5pwGVU
+│                        │      │                  ├ [10]: https://github.com/golang/go/issues/65383 
+│                        │      │                  ├ [11]: https://go.dev/cl/569341 
+│                        │      │                  ├ [12]: https://go.dev/issue/65383 
+│                        │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
-│                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2023-45290.html 
-│                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2024-3831.html 
-│                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2023-45290 
-│                        │      │                  ├ [23]: https://pkg.go.dev/vuln/GO-2024-2599 
-│                        │      │                  ├ [24]: https://security.netapp.com/advisory/ntap-20240329-0
+│                        │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2023-45290.html 
+│                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-3831.html 
+│                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2023-45290 
+│                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2024-2599 
+│                        │      │                  ├ [18]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       004 
-│                        │      │                  ├ [25]: https://security.netapp.com/advisory/ntap-20240329-0
+│                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       004/ 
-│                        │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2023-45290 
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6886-1 
+│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-45290 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.21Z 
 │                        │      ╰ LastModifiedDate: 2024-05-01T17:15:26.04Z 
 │                        ├ [16] ╭ VulnerabilityID : CVE-2024-24783 
@@ -7378,7 +8037,7 @@
 │                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-24783 
 │                        │      │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2024-2724.html 
-│                        │      │                  ├ [16]: https://errata.rockylinux.org/RLSA-2024:3346 
+│                        │      │                  ├ [16]: https://errata.rockylinux.org/RLSA-2024:2724 
 │                        │      │                  ├ [17]: https://github.com/advisories/GHSA-3q2c-pvp5-3cqp 
 │                        │      │                  ├ [18]: https://github.com/golang/go/commit/337b8e9cbfa749d9
 │                        │      │                  │       d5c899e0dc358e2208d5e54f (go1.22.1) 
@@ -7685,7 +8344,8 @@
 │                               │                   causes one subsequent request using that connection to fail
 │                               │                   . 
 │                               ├ Severity        : MEDIUM 
-│                               ├ VendorSeverity   ╭ bitnami: 3 
+│                               ├ VendorSeverity   ╭ amazon : 2 
+│                               │                  ├ bitnami: 3 
 │                               │                  ╰ redhat : 2 
 │                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                               │                  │         │           :N/A:H 
@@ -7736,7 +8396,8 @@
 │                              │                   proxy with an invalid connection, and causes one subsequent
 │                              │                   request using that connection to fail. 
 │                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ╭ bitnami: 3 
+│                              ├ VendorSeverity   ╭ amazon : 2 
+│                              │                  ├ bitnami: 3 
 │                              │                  ╰ redhat : 2 
 │                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                              │                  │         │           N/A:H 
