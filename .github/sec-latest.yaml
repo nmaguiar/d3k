@@ -2,6 +2,381 @@
   Class: os-pkgs
   Type: ubuntu
   Vulnerabilities:
+  - VulnerabilityID: CVE-2024-0760
+    PkgID: bind9-dnsutils@1:9.18.24-0ubuntu5
+    PkgName: bind9-dnsutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-dnsutils@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: c8db8e7046d33840
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-0760
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      A malicious client can send many DNS messages over TCP, potentially causing the server to become unstable while the attack is in progress. The server may recover after the attack ceases. Use of ACLs will not mitigate the attack. 
+      This issue affects BIND 9 versions 9.18.1 through 9.18.27, 9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-0760
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-0760
+    PublishedDate: '2024-07-23T15:15:03.52Z'
+    LastModifiedDate: '2024-07-23T16:15:04.62Z'
+  - VulnerabilityID: CVE-2024-1737
+    PkgID: bind9-dnsutils@1:9.18.24-0ubuntu5
+    PkgName: bind9-dnsutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-dnsutils@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: c8db8e7046d33840
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-1737
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      Resolver caches and authoritative zone databases that hold significant numbers of RRs for the same hostname (of any RTYPE) can suffer from degraded performance as content is being added or updated, and also when handling client queries for this name.
+      This issue affects BIND 9 versions 9.11.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-1737
+    - https://kb.isc.org/docs/rrset-limits-in-zones
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-1737
+    PublishedDate: '2024-07-23T15:15:03.74Z'
+    LastModifiedDate: '2024-07-23T16:15:04.713Z'
+  - VulnerabilityID: CVE-2024-1975
+    PkgID: bind9-dnsutils@1:9.18.24-0ubuntu5
+    PkgName: bind9-dnsutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-dnsutils@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: c8db8e7046d33840
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-1975
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      If a server hosts a zone containing a "KEY" Resource Record, or a resolver DNSSEC-validates a "KEY" Resource Record from a DNSSEC-signed domain in cache, a client can exhaust resolver CPU resources by sending a stream of SIG(0) signed requests.
+      This issue affects BIND 9 versions 9.0.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-1975
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-1975
+    PublishedDate: '2024-07-23T15:15:03.943Z'
+    LastModifiedDate: '2024-07-23T16:15:04.797Z'
+  - VulnerabilityID: CVE-2024-4076
+    PkgID: bind9-dnsutils@1:9.18.24-0ubuntu5
+    PkgName: bind9-dnsutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-dnsutils@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: c8db8e7046d33840
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-4076
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      Client queries that trigger serving stale data and that also require lookups in local authoritative zone data may result in an assertion failure.
+      This issue affects BIND 9 versions 9.16.13 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.33-S1 through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-4076
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-4076
+    PublishedDate: '2024-07-23T15:15:05.5Z'
+    LastModifiedDate: '2024-07-23T16:15:06.287Z'
+  - VulnerabilityID: CVE-2024-0760
+    PkgID: bind9-host@1:9.18.24-0ubuntu5
+    PkgName: bind9-host
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-host@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: cced76047e214126
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-0760
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      A malicious client can send many DNS messages over TCP, potentially causing the server to become unstable while the attack is in progress. The server may recover after the attack ceases. Use of ACLs will not mitigate the attack. 
+      This issue affects BIND 9 versions 9.18.1 through 9.18.27, 9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-0760
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-0760
+    PublishedDate: '2024-07-23T15:15:03.52Z'
+    LastModifiedDate: '2024-07-23T16:15:04.62Z'
+  - VulnerabilityID: CVE-2024-1737
+    PkgID: bind9-host@1:9.18.24-0ubuntu5
+    PkgName: bind9-host
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-host@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: cced76047e214126
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-1737
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      Resolver caches and authoritative zone databases that hold significant numbers of RRs for the same hostname (of any RTYPE) can suffer from degraded performance as content is being added or updated, and also when handling client queries for this name.
+      This issue affects BIND 9 versions 9.11.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-1737
+    - https://kb.isc.org/docs/rrset-limits-in-zones
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-1737
+    PublishedDate: '2024-07-23T15:15:03.74Z'
+    LastModifiedDate: '2024-07-23T16:15:04.713Z'
+  - VulnerabilityID: CVE-2024-1975
+    PkgID: bind9-host@1:9.18.24-0ubuntu5
+    PkgName: bind9-host
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-host@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: cced76047e214126
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-1975
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      If a server hosts a zone containing a "KEY" Resource Record, or a resolver DNSSEC-validates a "KEY" Resource Record from a DNSSEC-signed domain in cache, a client can exhaust resolver CPU resources by sending a stream of SIG(0) signed requests.
+      This issue affects BIND 9 versions 9.0.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-1975
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-1975
+    PublishedDate: '2024-07-23T15:15:03.943Z'
+    LastModifiedDate: '2024-07-23T16:15:04.797Z'
+  - VulnerabilityID: CVE-2024-4076
+    PkgID: bind9-host@1:9.18.24-0ubuntu5
+    PkgName: bind9-host
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-host@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: cced76047e214126
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-4076
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      Client queries that trigger serving stale data and that also require lookups in local authoritative zone data may result in an assertion failure.
+      This issue affects BIND 9 versions 9.16.13 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.33-S1 through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-4076
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-4076
+    PublishedDate: '2024-07-23T15:15:05.5Z'
+    LastModifiedDate: '2024-07-23T16:15:06.287Z'
+  - VulnerabilityID: CVE-2024-0760
+    PkgID: bind9-libs@1:9.18.24-0ubuntu5
+    PkgName: bind9-libs
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-libs@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: d887e5dcf221334e
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-0760
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      A malicious client can send many DNS messages over TCP, potentially causing the server to become unstable while the attack is in progress. The server may recover after the attack ceases. Use of ACLs will not mitigate the attack. 
+      This issue affects BIND 9 versions 9.18.1 through 9.18.27, 9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-0760
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-0760
+    PublishedDate: '2024-07-23T15:15:03.52Z'
+    LastModifiedDate: '2024-07-23T16:15:04.62Z'
+  - VulnerabilityID: CVE-2024-1737
+    PkgID: bind9-libs@1:9.18.24-0ubuntu5
+    PkgName: bind9-libs
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-libs@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: d887e5dcf221334e
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-1737
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      Resolver caches and authoritative zone databases that hold significant numbers of RRs for the same hostname (of any RTYPE) can suffer from degraded performance as content is being added or updated, and also when handling client queries for this name.
+      This issue affects BIND 9 versions 9.11.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-1737
+    - https://kb.isc.org/docs/rrset-limits-in-zones
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-1737
+    PublishedDate: '2024-07-23T15:15:03.74Z'
+    LastModifiedDate: '2024-07-23T16:15:04.713Z'
+  - VulnerabilityID: CVE-2024-1975
+    PkgID: bind9-libs@1:9.18.24-0ubuntu5
+    PkgName: bind9-libs
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-libs@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: d887e5dcf221334e
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-1975
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      If a server hosts a zone containing a "KEY" Resource Record, or a resolver DNSSEC-validates a "KEY" Resource Record from a DNSSEC-signed domain in cache, a client can exhaust resolver CPU resources by sending a stream of SIG(0) signed requests.
+      This issue affects BIND 9 versions 9.0.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-1975
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-1975
+    PublishedDate: '2024-07-23T15:15:03.943Z'
+    LastModifiedDate: '2024-07-23T16:15:04.797Z'
+  - VulnerabilityID: CVE-2024-4076
+    PkgID: bind9-libs@1:9.18.24-0ubuntu5
+    PkgName: bind9-libs
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-libs@9.18.24-0ubuntu5?arch=amd64&distro=ubuntu-24.04&epoch=1
+      UID: d887e5dcf221334e
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-4076
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      Client queries that trigger serving stale data and that also require lookups in local authoritative zone data may result in an assertion failure.
+      This issue affects BIND 9 versions 9.16.13 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.33-S1 through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-4076
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-4076
+    PublishedDate: '2024-07-23T15:15:05.5Z'
+    LastModifiedDate: '2024-07-23T16:15:06.287Z'
   - VulnerabilityID: CVE-2016-2781
     PkgID: coreutils@9.4-3ubuntu6
     PkgName: coreutils
@@ -96,7 +471,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
     - https://errata.almalinux.org/9/ALSA-2023-4569.html
-    - https://errata.rockylinux.org/RLSA-2023:4498
+    - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
     - https://linux.oracle.com/errata/ELSA-2023-4569.html
@@ -152,7 +527,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
     - https://errata.almalinux.org/9/ALSA-2023-4569.html
-    - https://errata.rockylinux.org/RLSA-2023:4498
+    - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
     - https://linux.oracle.com/errata/ELSA-2023-4569.html
@@ -208,7 +583,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
     - https://errata.almalinux.org/9/ALSA-2023-4569.html
-    - https://errata.rockylinux.org/RLSA-2023:4498
+    - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
     - https://linux.oracle.com/errata/ELSA-2023-4569.html
@@ -264,7 +639,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
     - https://errata.almalinux.org/9/ALSA-2023-4569.html
-    - https://errata.rockylinux.org/RLSA-2023:4498
+    - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
     - https://linux.oracle.com/errata/ELSA-2023-4569.html
@@ -320,7 +695,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
     - https://errata.almalinux.org/9/ALSA-2023-4569.html
-    - https://errata.rockylinux.org/RLSA-2023:4498
+    - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
     - https://linux.oracle.com/errata/ELSA-2023-4569.html
@@ -376,7 +751,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
     - https://errata.almalinux.org/9/ALSA-2023-4569.html
-    - https://errata.rockylinux.org/RLSA-2023:4498
+    - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
     - https://linux.oracle.com/errata/ELSA-2023-4569.html
@@ -432,6 +807,131 @@
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
     LastModifiedDate: '2023-05-26T16:31:34.07Z'
+  - VulnerabilityID: CVE-2024-0760
+    PkgID: dnsutils@1:9.18.24-0ubuntu5
+    PkgName: dnsutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&distro=ubuntu-24.04&epoch=1
+      UID: cd49b02017bdc9f8
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-0760
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      A malicious client can send many DNS messages over TCP, potentially causing the server to become unstable while the attack is in progress. The server may recover after the attack ceases. Use of ACLs will not mitigate the attack. 
+      This issue affects BIND 9 versions 9.18.1 through 9.18.27, 9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-0760
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-0760
+    PublishedDate: '2024-07-23T15:15:03.52Z'
+    LastModifiedDate: '2024-07-23T16:15:04.62Z'
+  - VulnerabilityID: CVE-2024-1737
+    PkgID: dnsutils@1:9.18.24-0ubuntu5
+    PkgName: dnsutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&distro=ubuntu-24.04&epoch=1
+      UID: cd49b02017bdc9f8
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-1737
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      Resolver caches and authoritative zone databases that hold significant numbers of RRs for the same hostname (of any RTYPE) can suffer from degraded performance as content is being added or updated, and also when handling client queries for this name.
+      This issue affects BIND 9 versions 9.11.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-1737
+    - https://kb.isc.org/docs/rrset-limits-in-zones
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-1737
+    PublishedDate: '2024-07-23T15:15:03.74Z'
+    LastModifiedDate: '2024-07-23T16:15:04.713Z'
+  - VulnerabilityID: CVE-2024-1975
+    PkgID: dnsutils@1:9.18.24-0ubuntu5
+    PkgName: dnsutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&distro=ubuntu-24.04&epoch=1
+      UID: cd49b02017bdc9f8
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-1975
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      If a server hosts a zone containing a "KEY" Resource Record, or a resolver DNSSEC-validates a "KEY" Resource Record from a DNSSEC-signed domain in cache, a client can exhaust resolver CPU resources by sending a stream of SIG(0) signed requests.
+      This issue affects BIND 9 versions 9.0.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-1975
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-1975
+    PublishedDate: '2024-07-23T15:15:03.943Z'
+    LastModifiedDate: '2024-07-23T16:15:04.797Z'
+  - VulnerabilityID: CVE-2024-4076
+    PkgID: dnsutils@1:9.18.24-0ubuntu5
+    PkgName: dnsutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&distro=ubuntu-24.04&epoch=1
+      UID: cd49b02017bdc9f8
+    InstalledVersion: 1:9.18.24-0ubuntu5
+    FixedVersion: 1:9.18.28-0ubuntu0.24.04.1
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-4076
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Description: |-
+      Client queries that trigger serving stale data and that also require lookups in local authoritative zone data may result in an assertion failure.
+      This issue affects BIND 9 versions 9.16.13 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.33-S1 through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/23/1
+    - https://kb.isc.org/docs/cve-2024-4076
+    - https://ubuntu.com/security/notices/USN-6909-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-4076
+    PublishedDate: '2024-07-23T15:15:05.5Z'
+    LastModifiedDate: '2024-07-23T16:15:06.287Z'
   - VulnerabilityID: CVE-2018-1000021
     PkgID: git@1:2.43.0-1ubuntu7.1
     PkgName: git
@@ -1218,7 +1718,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
     - https://errata.almalinux.org/9/ALSA-2023-4569.html
-    - https://errata.rockylinux.org/RLSA-2023:4498
+    - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
     - https://linux.oracle.com/errata/ELSA-2023-4569.html
@@ -2582,6 +3082,135 @@
 - Target: Java
   Class: lang-pkgs
   Type: jar
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2024-25638
+    PkgName: dnsjava:dnsjava
+    PkgPath: opt/oaf/openaf.jar
+    PkgIdentifier:
+      PURL: pkg:maven/dnsjava/dnsjava@3.5.3
+      UID: d3e14c8362eb4071
+    InstalledVersion: 3.5.3
+    FixedVersion: 3.6.0
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-25638
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Title: 'dnsjava: Improper response validation allowing DNSSEC bypass'
+    Description: dnsjava is an implementation of DNS in Java. Records in DNS replies are not checked for their relevance to the query, allowing an attacker to respond with RRs from different zones. This vulnerability is fixed in 3.6.0.
+    Severity: HIGH
+    CweIDs:
+    - CWE-345
+    - CWE-349
+    VendorSeverity:
+      ghsa: 3
+      redhat: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L
+        V3Score: 8.9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L
+        V3Score: 8.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2024-25638
+    - https://github.com/dnsjava/dnsjava
+    - https://github.com/dnsjava/dnsjava/commit/bc51df1c455e6c9fb7cbd42fcb6d62d16047818d
+    - https://github.com/dnsjava/dnsjava/security/advisories/GHSA-cfxw-4h78-h7fw
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-25638
+    - https://www.cve.org/CVERecord?id=CVE-2024-25638
+    PublishedDate: '2024-07-22T14:15:04.593Z'
+    LastModifiedDate: '2024-07-22T14:15:04.593Z'
+  - VulnerabilityID: GHSA-crjg-w57m-rqqf
+    PkgName: dnsjava:dnsjava
+    PkgPath: opt/oaf/openaf.jar
+    PkgIdentifier:
+      PURL: pkg:maven/dnsjava/dnsjava@3.5.3
+      UID: d3e14c8362eb4071
+    InstalledVersion: 3.5.3
+    FixedVersion: 3.6.0
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ghsa
+    PrimaryURL: https://github.com/advisories/GHSA-crjg-w57m-rqqf
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Title: DNSJava vulnerable to KeyTrap - Denial-of-Service Algorithmic Complexity Attacks
+    Description: |
+      ### Impact
+      Users using the `ValidatingResolver` for DNSSEC validation can run into CPU exhaustion with specially crafted DNSSEC-signed zones.
+
+      ### Patches
+      Users should upgrade to dnsjava v3.6.0
+
+      ### Workarounds
+      Although not recommended, only using a non-validating resolver, will remove the vulnerability. 
+
+      ### References
+      https://www.athene-center.de/en/keytrap
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://github.com/dnsjava/dnsjava
+    - https://github.com/dnsjava/dnsjava/commit/07ac36a11578cc1bce0cd8ddf2fe568f062aee78
+    - https://github.com/dnsjava/dnsjava/commit/3ddc45ce8cdb5c2274e10b7401416f497694e1cf
+    - https://github.com/dnsjava/dnsjava/security/advisories/GHSA-crjg-w57m-rqqf
+  - VulnerabilityID: GHSA-mmwx-rj87-vfgr
+    PkgName: dnsjava:dnsjava
+    PkgPath: opt/oaf/openaf.jar
+    PkgIdentifier:
+      PURL: pkg:maven/dnsjava/dnsjava@3.5.3
+      UID: d3e14c8362eb4071
+    InstalledVersion: 3.5.3
+    FixedVersion: 3.6.0
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ghsa
+    PrimaryURL: https://github.com/advisories/GHSA-mmwx-rj87-vfgr
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Title: DNSJava affected by KeyTrap - NSEC3 closest encloser proof can exhaust CPU resources
+    Description: |
+      ### Impact
+      Users using the `ValidatingResolver` for DNSSEC validation can run into CPU exhaustion with specially crafted DNSSEC-signed zones.
+
+      ### Patches
+      Users should upgrade to dnsjava v3.6.0
+
+      ### Workarounds
+      Although not recommended, only using a non-validating resolver, will remove the vulnerability.
+
+      ### References
+      https://www.athene-center.de/en/keytrap
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://github.com/dnsjava/dnsjava
+    - https://github.com/dnsjava/dnsjava/commit/711af79be3214f52daa5c846b95766dc0a075116
+    - https://github.com/dnsjava/dnsjava/security/advisories/GHSA-mmwx-rj87-vfgr
 - Target: home/user/.krew/store/krew/v0.4.4/krew
   Class: lang-pkgs
   Type: gobinary
@@ -2646,7 +3275,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
     - https://errata.almalinux.org/9/ALSA-2023-6077.html
-    - https://errata.rockylinux.org/RLSA-2023:5863
+    - https://errata.rockylinux.org/RLSA-2023:6077
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
     - https://github.com/golang/go/issues/63417
@@ -2762,7 +3391,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -2892,7 +3521,7 @@
     - https://discuss.hashicorp.com/t/hcsec-2023-32-vault-consul-and-boundary-affected-by-http-2-rapid-reset-denial-of-service-vulnerability-cve-2023-44487/59715
     - https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve
     - https://errata.almalinux.org/9/ALSA-2023-6746.html
-    - https://errata.rockylinux.org/RLSA-2023:5928
+    - https://errata.rockylinux.org/RLSA-2023:5838
     - https://forums.swift.org/t/swift-nio-http2-security-update-cve-2023-44487-http-2-dos/67764
     - https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088
     - https://github.com/Azure/AKS/issues/3947
@@ -3147,7 +3776,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:3346
+    - https://errata.rockylinux.org/RLSA-2024:2724
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
     - https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M
@@ -3295,7 +3924,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
     - https://errata.almalinux.org/9/ALSA-2023-6077.html
-    - https://errata.rockylinux.org/RLSA-2023:5863
+    - https://errata.rockylinux.org/RLSA-2023:6077
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
     - https://github.com/golang/go/issues/63417
@@ -3490,7 +4119,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:3346
+    - https://errata.rockylinux.org/RLSA-2024:2724
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
     - https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M
@@ -3672,7 +4301,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -3804,7 +4433,7 @@
     Severity: MEDIUM
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -3931,7 +4560,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:3346
+    - https://errata.rockylinux.org/RLSA-2024:2724
     - https://github.com/golang/go/commit/20586c0dbe03d144f914155f879fa5ee287591a1 (go1.21.8)
     - https://github.com/golang/go/commit/3a855208e3efed2e9d7c20ad023f1fa78afcc0be (go1.22.1)
     - https://github.com/golang/go/issues/65065
@@ -3972,7 +4601,7 @@
       cbl-mariner: 2
       oracle-oval: 2
       redhat: 2
-      rocky: 3
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -3984,15 +4613,9 @@
     - https://access.redhat.com/security/cve/CVE-2023-45290
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268017
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2268018
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2268019
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2268273
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45288
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-3831.html
-    - https://errata.rockylinux.org/RLSA-2024:3346
+    - https://errata.rockylinux.org/RLSA-2024:3830
     - https://github.com/golang/go/commit/041a47712e765e94f86d841c3110c840e76d8f82 (go1.22.1)
     - https://github.com/golang/go/commit/bf80213b121074f4ad9b449410a4d13bae5e9be0 (go1.21.8)
     - https://github.com/golang/go/issues/65383
@@ -4057,7 +4680,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:3346
+    - https://errata.rockylinux.org/RLSA-2024:2724
     - https://github.com/advisories/GHSA-3q2c-pvp5-3cqp
     - https://github.com/golang/go/commit/337b8e9cbfa749d9d5c899e0dc358e2208d5e54f (go1.22.1)
     - https://github.com/golang/go/commit/be5b52bea674190ef7de272664be6c7ae93ec5a0 (go1.21.8)
@@ -4312,6 +4935,7 @@
     Description: 'The net/http HTTP/1.1 client mishandled the case where a server responds to a request with an "Expect: 100-continue" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail. An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending "Expect: 100-continue" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.'
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 2
       bitnami: 3
       redhat: 2
     CVSS:
@@ -4395,7 +5019,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
     - https://errata.almalinux.org/9/ALSA-2023-6077.html
-    - https://errata.rockylinux.org/RLSA-2023:5863
+    - https://errata.rockylinux.org/RLSA-2023:6077
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
     - https://github.com/golang/go/issues/63417
@@ -4511,7 +5135,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -4641,7 +5265,7 @@
     - https://discuss.hashicorp.com/t/hcsec-2023-32-vault-consul-and-boundary-affected-by-http-2-rapid-reset-denial-of-service-vulnerability-cve-2023-44487/59715
     - https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve
     - https://errata.almalinux.org/9/ALSA-2023-6746.html
-    - https://errata.rockylinux.org/RLSA-2023:5928
+    - https://errata.rockylinux.org/RLSA-2023:5838
     - https://forums.swift.org/t/swift-nio-http2-security-update-cve-2023-44487-http-2-dos/67764
     - https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088
     - https://github.com/Azure/AKS/issues/3947
@@ -4896,7 +5520,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:3346
+    - https://errata.rockylinux.org/RLSA-2024:2724
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
     - https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M
@@ -5044,7 +5668,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
     - https://errata.almalinux.org/9/ALSA-2023-6077.html
-    - https://errata.rockylinux.org/RLSA-2023:5863
+    - https://errata.rockylinux.org/RLSA-2023:6077
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
     - https://github.com/golang/go/issues/63417
@@ -5239,7 +5863,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:3346
+    - https://errata.rockylinux.org/RLSA-2024:2724
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
     - https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M
@@ -5421,7 +6045,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -5553,7 +6177,7 @@
     Severity: MEDIUM
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -5680,7 +6304,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:3346
+    - https://errata.rockylinux.org/RLSA-2024:2724
     - https://github.com/golang/go/commit/20586c0dbe03d144f914155f879fa5ee287591a1 (go1.21.8)
     - https://github.com/golang/go/commit/3a855208e3efed2e9d7c20ad023f1fa78afcc0be (go1.22.1)
     - https://github.com/golang/go/issues/65065
@@ -5721,7 +6345,7 @@
       cbl-mariner: 2
       oracle-oval: 2
       redhat: 2
-      rocky: 3
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -5733,15 +6357,9 @@
     - https://access.redhat.com/security/cve/CVE-2023-45290
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268017
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2268018
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2268019
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2268273
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45288
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-3831.html
-    - https://errata.rockylinux.org/RLSA-2024:3346
+    - https://errata.rockylinux.org/RLSA-2024:3830
     - https://github.com/golang/go/commit/041a47712e765e94f86d841c3110c840e76d8f82 (go1.22.1)
     - https://github.com/golang/go/commit/bf80213b121074f4ad9b449410a4d13bae5e9be0 (go1.21.8)
     - https://github.com/golang/go/issues/65383
@@ -5806,7 +6424,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:3346
+    - https://errata.rockylinux.org/RLSA-2024:2724
     - https://github.com/advisories/GHSA-3q2c-pvp5-3cqp
     - https://github.com/golang/go/commit/337b8e9cbfa749d9d5c899e0dc358e2208d5e54f (go1.22.1)
     - https://github.com/golang/go/commit/be5b52bea674190ef7de272664be6c7ae93ec5a0 (go1.21.8)
@@ -6061,6 +6679,7 @@
     Description: 'The net/http HTTP/1.1 client mishandled the case where a server responds to a request with an "Expect: 100-continue" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail. An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending "Expect: 100-continue" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.'
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 2
       bitnami: 3
       redhat: 2
     CVSS:
@@ -6104,6 +6723,7 @@
     Description: 'The net/http HTTP/1.1 client mishandled the case where a server responds to a request with an "Expect: 100-continue" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail. An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending "Expect: 100-continue" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.'
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 2
       bitnami: 3
       redhat: 2
     CVSS:
@@ -6147,6 +6767,7 @@
     Description: 'The net/http HTTP/1.1 client mishandled the case where a server responds to a request with an "Expect: 100-continue" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail. An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending "Expect: 100-continue" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.'
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 2
       bitnami: 3
       redhat: 2
     CVSS:
@@ -6190,6 +6811,7 @@
     Description: 'The net/http HTTP/1.1 client mishandled the case where a server responds to a request with an "Expect: 100-continue" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail. An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending "Expect: 100-continue" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.'
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 2
       bitnami: 3
       redhat: 2
     CVSS:
@@ -6267,6 +6889,7 @@
     Description: 'The net/http HTTP/1.1 client mishandled the case where a server responds to a request with an "Expect: 100-continue" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail. An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending "Expect: 100-continue" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.'
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 2
       bitnami: 3
       redhat: 2
     CVSS:
