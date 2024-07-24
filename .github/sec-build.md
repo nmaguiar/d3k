@@ -20,6 +20,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: A flood of DNS messages over TCP may make the
+│                        │      │                   server unstable 
 │                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
 │                        │      │                   potentially causing the server to become unstable while the
 │                        │      │                    attack is in progress. The server may recover after the
@@ -27,11 +29,17 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-0760 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-0760 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
 │                        ├ [1]  ╭ VulnerabilityID : CVE-2024-1737 
@@ -52,6 +60,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant ... 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -88,6 +98,7 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind9: bind: SIG(0) can be used to exhaust CPU resources 
 │                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
 │                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
 │                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
@@ -98,11 +109,17 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2024-4076 
@@ -123,6 +140,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: Assertion failure when serving both stale
+│                        │      │                   cache data and authoritative zone content 
 │                        │      ├ Description     : Client queries that trigger serving stale data and that
 │                        │      │                   also require lookups in local authoritative zone data may
 │                        │      │                   result in an assertion failure.
@@ -131,11 +150,17 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2024-0760 
@@ -156,6 +181,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: A flood of DNS messages over TCP may make the
+│                        │      │                   server unstable 
 │                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
 │                        │      │                   potentially causing the server to become unstable while the
 │                        │      │                    attack is in progress. The server may recover after the
@@ -163,11 +190,17 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-0760 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-0760 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
 │                        ├ [5]  ╭ VulnerabilityID : CVE-2024-1737 
@@ -188,6 +221,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant ... 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -224,6 +259,7 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind9: bind: SIG(0) can be used to exhaust CPU resources 
 │                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
 │                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
 │                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
@@ -234,11 +270,17 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2024-4076 
@@ -259,6 +301,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: Assertion failure when serving both stale
+│                        │      │                   cache data and authoritative zone content 
 │                        │      ├ Description     : Client queries that trigger serving stale data and that
 │                        │      │                   also require lookups in local authoritative zone data may
 │                        │      │                   result in an assertion failure.
@@ -267,11 +311,17 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2024-0760 
@@ -292,6 +342,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: A flood of DNS messages over TCP may make the
+│                        │      │                   server unstable 
 │                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
 │                        │      │                   potentially causing the server to become unstable while the
 │                        │      │                    attack is in progress. The server may recover after the
@@ -299,11 +351,17 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-0760 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-0760 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
 │                        ├ [9]  ╭ VulnerabilityID : CVE-2024-1737 
@@ -324,6 +382,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant ... 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -360,6 +420,7 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind9: bind: SIG(0) can be used to exhaust CPU resources 
 │                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
 │                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
 │                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
@@ -370,11 +431,17 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
 │                        ├ [11] ╭ VulnerabilityID : CVE-2024-4076 
@@ -395,6 +462,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: Assertion failure when serving both stale
+│                        │      │                   cache data and authoritative zone content 
 │                        │      ├ Description     : Client queries that trigger serving stale data and that
 │                        │      │                   also require lookups in local authoritative zone data may
 │                        │      │                   result in an assertion failure.
@@ -403,11 +472,17 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2016-2781 
@@ -932,6 +1007,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: A flood of DNS messages over TCP may make the
+│                        │      │                   server unstable 
 │                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
 │                        │      │                   potentially causing the server to become unstable while the
 │                        │      │                    attack is in progress. The server may recover after the
@@ -939,11 +1016,17 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-0760 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-0760 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
 │                        ├ [21] ╭ VulnerabilityID : CVE-2024-1737 
@@ -964,6 +1047,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant ... 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -1000,6 +1085,7 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind9: bind: SIG(0) can be used to exhaust CPU resources 
 │                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
 │                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
 │                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
@@ -1010,11 +1096,17 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
 │                        ├ [23] ╭ VulnerabilityID : CVE-2024-4076 
@@ -1035,6 +1127,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: Assertion failure when serving both stale
+│                        │      │                   cache data and authoritative zone content 
 │                        │      ├ Description     : Client queries that trigger serving stale data and that
 │                        │      │                   also require lookups in local authoritative zone data may
 │                        │      │                   result in an assertion failure.
@@ -1043,11 +1137,17 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
 │                        ├ [24] ╭ VulnerabilityID : CVE-2018-1000021 
@@ -3687,7 +3787,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -5083,7 +5183,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -5237,7 +5337,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -6199,7 +6299,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -7595,7 +7695,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7749,7 +7849,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
