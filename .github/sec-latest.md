@@ -20,6 +20,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: A flood of DNS messages over TCP may make the
+│                        │      │                   server unstable 
 │                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
 │                        │      │                   potentially causing the server to become unstable while the
 │                        │      │                    attack is in progress. The server may recover after the
@@ -27,11 +29,17 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-0760 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-0760 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
 │                        ├ [1]  ╭ VulnerabilityID : CVE-2024-1737 
@@ -52,6 +60,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant ... 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -88,6 +98,7 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind9: bind: SIG(0) can be used to exhaust CPU resources 
 │                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
 │                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
 │                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
@@ -98,11 +109,17 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2024-4076 
@@ -123,6 +140,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: Assertion failure when serving both stale
+│                        │      │                   cache data and authoritative zone content 
 │                        │      ├ Description     : Client queries that trigger serving stale data and that
 │                        │      │                   also require lookups in local authoritative zone data may
 │                        │      │                   result in an assertion failure.
@@ -131,11 +150,17 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2024-0760 
@@ -156,6 +181,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: A flood of DNS messages over TCP may make the
+│                        │      │                   server unstable 
 │                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
 │                        │      │                   potentially causing the server to become unstable while the
 │                        │      │                    attack is in progress. The server may recover after the
@@ -163,11 +190,17 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-0760 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-0760 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
 │                        ├ [5]  ╭ VulnerabilityID : CVE-2024-1737 
@@ -188,6 +221,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant ... 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -224,6 +259,7 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind9: bind: SIG(0) can be used to exhaust CPU resources 
 │                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
 │                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
 │                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
@@ -234,11 +270,17 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2024-4076 
@@ -259,6 +301,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: Assertion failure when serving both stale
+│                        │      │                   cache data and authoritative zone content 
 │                        │      ├ Description     : Client queries that trigger serving stale data and that
 │                        │      │                   also require lookups in local authoritative zone data may
 │                        │      │                   result in an assertion failure.
@@ -267,11 +311,17 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2024-0760 
@@ -292,6 +342,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: A flood of DNS messages over TCP may make the
+│                        │      │                   server unstable 
 │                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
 │                        │      │                   potentially causing the server to become unstable while the
 │                        │      │                    attack is in progress. The server may recover after the
@@ -299,11 +351,17 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-0760 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-0760 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
 │                        ├ [9]  ╭ VulnerabilityID : CVE-2024-1737 
@@ -324,6 +382,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant ... 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -360,6 +420,7 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind9: bind: SIG(0) can be used to exhaust CPU resources 
 │                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
 │                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
 │                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
@@ -370,11 +431,17 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
 │                        ├ [11] ╭ VulnerabilityID : CVE-2024-4076 
@@ -395,6 +462,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: Assertion failure when serving both stale
+│                        │      │                   cache data and authoritative zone content 
 │                        │      ├ Description     : Client queries that trigger serving stale data and that
 │                        │      │                   also require lookups in local authoritative zone data may
 │                        │      │                   result in an assertion failure.
@@ -403,11 +472,17 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2016-2781 
@@ -932,6 +1007,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: A flood of DNS messages over TCP may make the
+│                        │      │                   server unstable 
 │                        │      ├ Description     : A malicious client can send many DNS messages over TCP,
 │                        │      │                   potentially causing the server to become unstable while the
 │                        │      │                    attack is in progress. The server may recover after the
@@ -939,11 +1016,17 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-0760 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-0760 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-0760 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-0760 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
 │                        ├ [21] ╭ VulnerabilityID : CVE-2024-1737 
@@ -964,6 +1047,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
+│                        │      │                   significant ... 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -1000,6 +1085,7 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind9: bind: SIG(0) can be used to exhaust CPU resources 
 │                        │      ├ Description     : If a server hosts a zone containing a "KEY" Resource
 │                        │      │                   Record, or a resolver DNSSEC-validates a "KEY" Resource
 │                        │      │                   Record from a DNSSEC-signed domain in cache, a client can
@@ -1010,11 +1096,17 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
 │                        ├ [23] ╭ VulnerabilityID : CVE-2024-4076 
@@ -1035,6 +1127,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : bind: bind9: Assertion failure when serving both stale
+│                        │      │                   cache data and authoritative zone content 
 │                        │      ├ Description     : Client queries that trigger serving stale data and that
 │                        │      │                   also require lookups in local authoritative zone data may
 │                        │      │                   result in an assertion failure.
@@ -1043,11 +1137,17 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
 │                        ├ [24] ╭ VulnerabilityID : CVE-2018-1000021 
@@ -2797,20 +2897,25 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:
 │                        │      │                           │           N/A:N 
 │                        │      │                           ╰ V3Score : 3.1 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/03/6 
-│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-39894 
-│                        │      │                  ├ [2]: https://lists.mindrot.org/pipermail/openssh-unix-anno
-│                        │      │                  │      unce/2024-July/000158.html 
-│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
-│                        │      │                  ├ [4]: https://security.netapp.com/advisory/ntap-20240712-00
-│                        │      │                  │      04/ 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6887-1 
-│                        │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
-│                        │      │                  ├ [7]: https://www.openssh.com/txt/release-9.8 
-│                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2024/07/0
-│                        │      │                         2/1 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/0
+│                        │      │                  │       3/6 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/4 
+│                        │      │                  ├ [2] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/6 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-39894 
+│                        │      │                  ├ [4] : https://lists.mindrot.org/pipermail/openssh-unix-ann
+│                        │      │                  │       ounce/2024-July/000158.html 
+│                        │      │                  ├ [5] : https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
+│                        │      │                  ├ [6] : https://security.netapp.com/advisory/ntap-20240712-0
+│                        │      │                  │       004/ 
+│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6887-1 
+│                        │      │                  ├ [8] : https://www.cve.org/CVERecord?id=CVE-2024-39894 
+│                        │      │                  ├ [9] : https://www.openssh.com/txt/release-9.8 
+│                        │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2024/07/
+│                        │      │                          02/1 
 │                        │      ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
-│                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.703Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T22:15:08.883Z 
 │                        ├ [60] ╭ VulnerabilityID : CVE-2024-39894 
 │                        │      ├ PkgID           : openssh-server@1:9.6p1-3ubuntu13.3 
 │                        │      ├ PkgName         : openssh-server 
@@ -2842,20 +2947,25 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:
 │                        │      │                           │           N/A:N 
 │                        │      │                           ╰ V3Score : 3.1 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/03/6 
-│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-39894 
-│                        │      │                  ├ [2]: https://lists.mindrot.org/pipermail/openssh-unix-anno
-│                        │      │                  │      unce/2024-July/000158.html 
-│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
-│                        │      │                  ├ [4]: https://security.netapp.com/advisory/ntap-20240712-00
-│                        │      │                  │      04/ 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6887-1 
-│                        │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
-│                        │      │                  ├ [7]: https://www.openssh.com/txt/release-9.8 
-│                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2024/07/0
-│                        │      │                         2/1 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/0
+│                        │      │                  │       3/6 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/4 
+│                        │      │                  ├ [2] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/6 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-39894 
+│                        │      │                  ├ [4] : https://lists.mindrot.org/pipermail/openssh-unix-ann
+│                        │      │                  │       ounce/2024-July/000158.html 
+│                        │      │                  ├ [5] : https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
+│                        │      │                  ├ [6] : https://security.netapp.com/advisory/ntap-20240712-0
+│                        │      │                  │       004/ 
+│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6887-1 
+│                        │      │                  ├ [8] : https://www.cve.org/CVERecord?id=CVE-2024-39894 
+│                        │      │                  ├ [9] : https://www.openssh.com/txt/release-9.8 
+│                        │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2024/07/
+│                        │      │                          02/1 
 │                        │      ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
-│                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.703Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T22:15:08.883Z 
 │                        ├ [61] ╭ VulnerabilityID : CVE-2024-39894 
 │                        │      ├ PkgID           : openssh-sftp-server@1:9.6p1-3ubuntu13.3 
 │                        │      ├ PkgName         : openssh-sftp-server 
@@ -2887,20 +2997,25 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:
 │                        │      │                           │           N/A:N 
 │                        │      │                           ╰ V3Score : 3.1 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/03/6 
-│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-39894 
-│                        │      │                  ├ [2]: https://lists.mindrot.org/pipermail/openssh-unix-anno
-│                        │      │                  │      unce/2024-July/000158.html 
-│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
-│                        │      │                  ├ [4]: https://security.netapp.com/advisory/ntap-20240712-00
-│                        │      │                  │      04/ 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6887-1 
-│                        │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
-│                        │      │                  ├ [7]: https://www.openssh.com/txt/release-9.8 
-│                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2024/07/0
-│                        │      │                         2/1 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/0
+│                        │      │                  │       3/6 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/4 
+│                        │      │                  ├ [2] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/6 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-39894 
+│                        │      │                  ├ [4] : https://lists.mindrot.org/pipermail/openssh-unix-ann
+│                        │      │                  │       ounce/2024-July/000158.html 
+│                        │      │                  ├ [5] : https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
+│                        │      │                  ├ [6] : https://security.netapp.com/advisory/ntap-20240712-0
+│                        │      │                  │       004/ 
+│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6887-1 
+│                        │      │                  ├ [8] : https://www.cve.org/CVERecord?id=CVE-2024-39894 
+│                        │      │                  ├ [9] : https://www.openssh.com/txt/release-9.8 
+│                        │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2024/07/
+│                        │      │                          02/1 
 │                        │      ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
-│                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.703Z 
+│                        │      ╰ LastModifiedDate: 2024-07-23T22:15:08.883Z 
 │                        ├ [62] ╭ VulnerabilityID : CVE-2024-2511 
 │                        │      ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : openssl 
@@ -3822,7 +3937,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -5218,7 +5333,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -5372,7 +5487,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -6334,7 +6449,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -7730,7 +7845,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7884,7 +7999,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -8746,65 +8861,7 @@
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
 │                              ├ PublishedDate   : 2024-07-02T22:15:04.833Z 
 │                              ╰ LastModifiedDate: 2024-07-08T14:17:39.083Z 
-├ [8]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
-│      ├ Class  : secret 
-│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                      ├ Category : AsymmetricPrivateKey 
-│                      ├ Severity : HIGH 
-│                      ├ Title    : Asymmetric Private Key 
-│                      ├ StartLine: 1 
-│                      ├ EndLine  : 1 
-│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : -----BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *****************************-----END OPENSSH
-│                      │                   │     │              PRIVATE KEY----- 
-│                      │                   │     ├ IsCause    : true 
-│                      │                   │     ├ Annotation :  
-│                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: -----BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *****************************-----END OPENSSH
-│                      │                   │     │              PRIVATE KEY----- 
-│                      │                   │     ├ FirstCause : true 
-│                      │                   │     ╰ LastCause  : true 
-│                      │                   ╰ [1] ╭ Number    : 2 
-│                      │                         ├ Content   :  
-│                      │                         ├ IsCause   : false 
-│                      │                         ├ Annotation:  
-│                      │                         ├ Truncated : false 
-│                      │                         ├ FirstCause: false 
-│                      │                         ╰ LastCause : false 
-│                      ├ Match    : BEGIN OPENSSH PRIVATE
-│                      │            KEY-----*******************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            **-----END OPENSSH PRI 
-│                      ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
-│                                  │            ca695957 
-│                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
-│                                  │            cbee3664 
-│                                  ╰ CreatedBy: COPY / / # buildkit 
-├ [9]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+├ [8]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                      ├ Category : AsymmetricPrivateKey 
@@ -8856,7 +8913,181 @@
 │                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
 │                                  │            cbee3664 
 │                                  ╰ CreatedBy: COPY / / # buildkit 
-╰ [10] ╭ Target : /etc/ssh/ssh_host_rsa_key 
+├ [9]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
+│      ├ Class  : secret 
+│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                      ├ Category : AsymmetricPrivateKey 
+│                      ├ Severity : HIGH 
+│                      ├ Title    : Asymmetric Private Key 
+│                      ├ StartLine: 1 
+│                      ├ EndLine  : 1 
+│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                      │                   │     ├ Content    : -----BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********-----END OPENSSH PRIVATE KEY----- 
+│                      │                   │     ├ IsCause    : true 
+│                      │                   │     ├ Annotation :  
+│                      │                   │     ├ Truncated  : false 
+│                      │                   │     ├ Highlighted: -----BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********-----END OPENSSH PRIVATE KEY----- 
+│                      │                   │     ├ FirstCause : true 
+│                      │                   │     ╰ LastCause  : true 
+│                      │                   ╰ [1] ╭ Number    : 2 
+│                      │                         ├ Content   :  
+│                      │                         ├ IsCause   : false 
+│                      │                         ├ Annotation:  
+│                      │                         ├ Truncated : false 
+│                      │                         ├ FirstCause: false 
+│                      │                         ╰ LastCause : false 
+│                      ├ Match    : BEGIN OPENSSH PRIVATE
+│                      │            KEY-----*******************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            **************************************************************************-
+│                      │            ----END OPENSSH PRI 
+│                      ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
+│                                  │            ca695957 
+│                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
+│                                  │            cbee3664 
+│                                  ╰ CreatedBy: COPY / / # buildkit 
+╰ [10] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
        ├ Class  : secret 
        ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                        ├ Category : AsymmetricPrivateKey 
@@ -8875,52 +9106,8 @@
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********-----END OPENSSH PRIVATE KEY----- 
+                       │                   │     │              *****************************-----END OPENSSH
+                       │                   │     │              PRIVATE KEY----- 
                        │                   │     ├ IsCause    : true 
                        │                   │     ├ Annotation :  
                        │                   │     ├ Truncated  : false 
@@ -8934,52 +9121,8 @@
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********-----END OPENSSH PRIVATE KEY----- 
+                       │                   │     │              *****************************-----END OPENSSH
+                       │                   │     │              PRIVATE KEY----- 
                        │                   │     ├ FirstCause : true 
                        │                   │     ╰ LastCause  : true 
                        │                   ╰ [1] ╭ Number    : 2 
@@ -8996,35 +9139,7 @@
                        │            ***************************************************************************
                        │            ***************************************************************************
                        │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            **************************************************************************-
-                       │            ----END OPENSSH PRI 
+                       │            **-----END OPENSSH PRI 
                        ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
                                    │            ca695957 
                                    ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
