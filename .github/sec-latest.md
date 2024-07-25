@@ -41,7 +41,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [1]  ╭ VulnerabilityID : CVE-2024-1737 
 │                        │      ├ PkgID           : bind9-dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-dnsutils 
@@ -60,8 +60,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
-│                        │      │                   significant ... 
+│                        │      ├ Title           : bind: bind9: BIND's database will be slow if a very large
+│                        │      │                   number of RRs exist at the same nam 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -72,14 +72,20 @@
 │                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [2]: https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [3]: https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.713Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [2]  ╭ VulnerabilityID : CVE-2024-1975 
 │                        │      ├ PkgID           : bind9-dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-dnsutils 
@@ -121,7 +127,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2024-4076 
 │                        │      ├ PkgID           : bind9-dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-dnsutils 
@@ -162,7 +168,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2024-0760 
 │                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-host 
@@ -202,7 +208,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [5]  ╭ VulnerabilityID : CVE-2024-1737 
 │                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-host 
@@ -221,8 +227,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
-│                        │      │                   significant ... 
+│                        │      ├ Title           : bind: bind9: BIND's database will be slow if a very large
+│                        │      │                   number of RRs exist at the same nam 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -233,14 +239,20 @@
 │                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [2]: https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [3]: https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.713Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [6]  ╭ VulnerabilityID : CVE-2024-1975 
 │                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-host 
@@ -282,7 +294,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2024-4076 
 │                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-host 
@@ -323,7 +335,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2024-0760 
 │                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-libs 
@@ -363,7 +375,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [9]  ╭ VulnerabilityID : CVE-2024-1737 
 │                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-libs 
@@ -382,8 +394,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
-│                        │      │                   significant ... 
+│                        │      ├ Title           : bind: bind9: BIND's database will be slow if a very large
+│                        │      │                   number of RRs exist at the same nam 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -394,14 +406,20 @@
 │                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [2]: https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [3]: https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.713Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2024-1975 
 │                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-libs 
@@ -443,7 +461,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [11] ╭ VulnerabilityID : CVE-2024-4076 
 │                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-libs 
@@ -484,7 +502,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2016-2781 
 │                        │      ├ PkgID           : coreutils@9.4-3ubuntu6 
 │                        │      ├ PkgName         : coreutils 
@@ -1028,7 +1046,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.62Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [21] ╭ VulnerabilityID : CVE-2024-1737 
 │                        │      ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : dnsutils 
@@ -1047,8 +1065,8 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                        │      ├ Title           : Resolver caches and authoritative zone databases that hold
-│                        │      │                   significant ... 
+│                        │      ├ Title           : bind: bind9: BIND's database will be slow if a very large
+│                        │      │                   number of RRs exist at the same nam 
 │                        │      ├ Description     : Resolver caches and authoritative zone databases that hold
 │                        │      │                   significant numbers of RRs for the same hostname (of any
 │                        │      │                   RTYPE) can suffer from degraded performance as content is
@@ -1059,14 +1077,20 @@
 │                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [2]: https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [2]: https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [3]: https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.713Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [22] ╭ VulnerabilityID : CVE-2024-1975 
 │                        │      ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : dnsutils 
@@ -1108,7 +1132,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:04.797Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [23] ╭ VulnerabilityID : CVE-2024-4076 
 │                        │      ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : dnsutils 
@@ -1149,7 +1173,7 @@
 │                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
-│                        │      ╰ LastModifiedDate: 2024-07-23T16:15:06.287Z 
+│                        │      ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [24] ╭ VulnerabilityID : CVE-2018-1000021 
 │                        │      ├ PkgID           : git@1:2.43.0-1ubuntu7.1 
 │                        │      ├ PkgName         : git 
@@ -3500,7 +3524,7 @@
 │                        │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-25638 
 │                        │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-25638 
 │                        │     ├ PublishedDate   : 2024-07-22T14:15:04.593Z 
-│                        │     ╰ LastModifiedDate: 2024-07-22T14:15:04.593Z 
+│                        │     ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
 │                        ├ [1] ╭ VulnerabilityID : GHSA-crjg-w57m-rqqf 
 │                        │     ├ PkgName         : dnsjava:dnsjava 
 │                        │     ├ PkgPath         : opt/oaf/openaf.jar 
@@ -8861,7 +8885,65 @@
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
 │                              ├ PublishedDate   : 2024-07-02T22:15:04.833Z 
 │                              ╰ LastModifiedDate: 2024-07-08T14:17:39.083Z 
-├ [8]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+├ [8]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
+│      ├ Class  : secret 
+│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                      ├ Category : AsymmetricPrivateKey 
+│                      ├ Severity : HIGH 
+│                      ├ Title    : Asymmetric Private Key 
+│                      ├ StartLine: 1 
+│                      ├ EndLine  : 1 
+│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                      │                   │     ├ Content    : -----BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              *****************************-----END OPENSSH
+│                      │                   │     │              PRIVATE KEY----- 
+│                      │                   │     ├ IsCause    : true 
+│                      │                   │     ├ Annotation :  
+│                      │                   │     ├ Truncated  : false 
+│                      │                   │     ├ Highlighted: -----BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              *****************************-----END OPENSSH
+│                      │                   │     │              PRIVATE KEY----- 
+│                      │                   │     ├ FirstCause : true 
+│                      │                   │     ╰ LastCause  : true 
+│                      │                   ╰ [1] ╭ Number    : 2 
+│                      │                         ├ Content   :  
+│                      │                         ├ IsCause   : false 
+│                      │                         ├ Annotation:  
+│                      │                         ├ Truncated : false 
+│                      │                         ├ FirstCause: false 
+│                      │                         ╰ LastCause : false 
+│                      ├ Match    : BEGIN OPENSSH PRIVATE
+│                      │            KEY-----*******************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            **-----END OPENSSH PRI 
+│                      ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
+│                                  │            ca695957 
+│                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
+│                                  │            cbee3664 
+│                                  ╰ CreatedBy: COPY / / # buildkit 
+├ [9]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                      ├ Category : AsymmetricPrivateKey 
@@ -8913,181 +8995,7 @@
 │                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
 │                                  │            cbee3664 
 │                                  ╰ CreatedBy: COPY / / # buildkit 
-├ [9]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
-│      ├ Class  : secret 
-│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                      ├ Category : AsymmetricPrivateKey 
-│                      ├ Severity : HIGH 
-│                      ├ Title    : Asymmetric Private Key 
-│                      ├ StartLine: 1 
-│                      ├ EndLine  : 1 
-│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : -----BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********-----END OPENSSH PRIVATE KEY----- 
-│                      │                   │     ├ IsCause    : true 
-│                      │                   │     ├ Annotation :  
-│                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: -----BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********-----END OPENSSH PRIVATE KEY----- 
-│                      │                   │     ├ FirstCause : true 
-│                      │                   │     ╰ LastCause  : true 
-│                      │                   ╰ [1] ╭ Number    : 2 
-│                      │                         ├ Content   :  
-│                      │                         ├ IsCause   : false 
-│                      │                         ├ Annotation:  
-│                      │                         ├ Truncated : false 
-│                      │                         ├ FirstCause: false 
-│                      │                         ╰ LastCause : false 
-│                      ├ Match    : BEGIN OPENSSH PRIVATE
-│                      │            KEY-----*******************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            **************************************************************************-
-│                      │            ----END OPENSSH PRI 
-│                      ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
-│                                  │            ca695957 
-│                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
-│                                  │            cbee3664 
-│                                  ╰ CreatedBy: COPY / / # buildkit 
-╰ [10] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
+╰ [10] ╭ Target : /etc/ssh/ssh_host_rsa_key 
        ├ Class  : secret 
        ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                        ├ Category : AsymmetricPrivateKey 
@@ -9106,8 +9014,52 @@
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              *****************************-----END OPENSSH
-                       │                   │     │              PRIVATE KEY----- 
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********-----END OPENSSH PRIVATE KEY----- 
                        │                   │     ├ IsCause    : true 
                        │                   │     ├ Annotation :  
                        │                   │     ├ Truncated  : false 
@@ -9121,8 +9073,52 @@
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              *****************************-----END OPENSSH
-                       │                   │     │              PRIVATE KEY----- 
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********-----END OPENSSH PRIVATE KEY----- 
                        │                   │     ├ FirstCause : true 
                        │                   │     ╰ LastCause  : true 
                        │                   ╰ [1] ╭ Number    : 2 
@@ -9139,7 +9135,35 @@
                        │            ***************************************************************************
                        │            ***************************************************************************
                        │            ***************************************************************************
-                       │            **-----END OPENSSH PRI 
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            **************************************************************************-
+                       │            ----END OPENSSH PRI 
                        ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
                                    │            ca695957 
                                    ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
