@@ -2730,6 +2730,7 @@
     - http://www.openwall.com/lists/oss-security/2024/07/03/6
     - http://www.openwall.com/lists/oss-security/2024/07/23/4
     - http://www.openwall.com/lists/oss-security/2024/07/23/6
+    - http://www.openwall.com/lists/oss-security/2024/07/28/3
     - https://access.redhat.com/security/cve/CVE-2024-39894
     - https://lists.mindrot.org/pipermail/openssh-unix-announce/2024-July/000158.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-39894
@@ -2739,7 +2740,7 @@
     - https://www.openssh.com/txt/release-9.8
     - https://www.openwall.com/lists/oss-security/2024/07/02/1
     PublishedDate: '2024-07-02T18:15:03.71Z'
-    LastModifiedDate: '2024-07-23T22:15:08.883Z'
+    LastModifiedDate: '2024-07-28T21:15:10.38Z'
   - VulnerabilityID: CVE-2024-39894
     PkgID: openssh-server@1:9.6p1-3ubuntu13.3
     PkgName: openssh-server
@@ -2774,6 +2775,7 @@
     - http://www.openwall.com/lists/oss-security/2024/07/03/6
     - http://www.openwall.com/lists/oss-security/2024/07/23/4
     - http://www.openwall.com/lists/oss-security/2024/07/23/6
+    - http://www.openwall.com/lists/oss-security/2024/07/28/3
     - https://access.redhat.com/security/cve/CVE-2024-39894
     - https://lists.mindrot.org/pipermail/openssh-unix-announce/2024-July/000158.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-39894
@@ -2783,7 +2785,7 @@
     - https://www.openssh.com/txt/release-9.8
     - https://www.openwall.com/lists/oss-security/2024/07/02/1
     PublishedDate: '2024-07-02T18:15:03.71Z'
-    LastModifiedDate: '2024-07-23T22:15:08.883Z'
+    LastModifiedDate: '2024-07-28T21:15:10.38Z'
   - VulnerabilityID: CVE-2024-39894
     PkgID: openssh-sftp-server@1:9.6p1-3ubuntu13.3
     PkgName: openssh-sftp-server
@@ -2818,6 +2820,7 @@
     - http://www.openwall.com/lists/oss-security/2024/07/03/6
     - http://www.openwall.com/lists/oss-security/2024/07/23/4
     - http://www.openwall.com/lists/oss-security/2024/07/23/6
+    - http://www.openwall.com/lists/oss-security/2024/07/28/3
     - https://access.redhat.com/security/cve/CVE-2024-39894
     - https://lists.mindrot.org/pipermail/openssh-unix-announce/2024-July/000158.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-39894
@@ -2827,7 +2830,7 @@
     - https://www.openssh.com/txt/release-9.8
     - https://www.openwall.com/lists/oss-security/2024/07/02/1
     PublishedDate: '2024-07-02T18:15:03.71Z'
-    LastModifiedDate: '2024-07-23T22:15:08.883Z'
+    LastModifiedDate: '2024-07-28T21:15:10.38Z'
   - VulnerabilityID: CVE-2024-2511
     PkgID: openssl@3.0.13-0ubuntu3.1
     PkgName: openssl
@@ -3541,7 +3544,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -4451,7 +4454,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -4518,7 +4521,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -5286,7 +5289,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -6196,7 +6199,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -6263,7 +6266,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
