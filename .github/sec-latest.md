@@ -2734,6 +2734,7 @@
 │                        │      ├ Severity        : LOW 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ oracle-oval: 1 
+│                        │      │                  ├ photon     : 1 
 │                        │      │                  ├ redhat     : 1 
 │                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
@@ -2770,10 +2771,11 @@
 │                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2024-4032 
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
-│                        │      │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [21]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
+│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [22]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -2810,6 +2812,7 @@
 │                        │      ├ Severity        : LOW 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ oracle-oval: 1 
+│                        │      │                  ├ photon     : 1 
 │                        │      │                  ├ redhat     : 1 
 │                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
@@ -2846,10 +2849,11 @@
 │                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2024-4032 
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
-│                        │      │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [21]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
+│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [22]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -2886,6 +2890,7 @@
 │                        │      ├ Severity        : LOW 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ oracle-oval: 1 
+│                        │      │                  ├ photon     : 1 
 │                        │      │                  ├ redhat     : 1 
 │                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
@@ -2922,10 +2927,11 @@
 │                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2024-4032 
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
-│                        │      │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [21]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
+│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [22]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -3618,6 +3624,7 @@
 │                        │      ├ Severity        : LOW 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ oracle-oval: 1 
+│                        │      │                  ├ photon     : 1 
 │                        │      │                  ├ redhat     : 1 
 │                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
@@ -3654,10 +3661,11 @@
 │                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2024-4032 
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
-│                        │      │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [21]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
+│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [22]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -3694,6 +3702,7 @@
 │                        │      ├ Severity        : LOW 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ oracle-oval: 1 
+│                        │      │                  ├ photon     : 1 
 │                        │      │                  ├ redhat     : 1 
 │                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
@@ -3730,10 +3739,11 @@
 │                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2024-4032 
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
-│                        │      │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [21]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
+│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [22]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -4363,7 +4373,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -5756,7 +5766,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -5922,7 +5932,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -6886,7 +6896,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -8279,7 +8289,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -8445,7 +8455,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -9064,7 +9074,102 @@
 ├ [4]  ╭ Target         : usr/bin/docker-compose 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
-│      ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-24791 
+│      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-41110 
+│                        │     ├ PkgName         : github.com/docker/docker 
+│                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/docker/docker@v27.0.1-rc.1%2Bin
+│                        │     │                  │       compatible 
+│                        │     │                  ╰ UID : 990b93d9bdd6f02e 
+│                        │     ├ InstalledVersion: v27.0.1-rc.1+incompatible 
+│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                        │     ├ Status          : fixed 
+│                        │     ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc3264
+│                        │     │                  │         21ea318f623cca695957 
+│                        │     │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e
+│                        │     │                            855b8886008bcbee3664 
+│                        │     ├ SeveritySource  : ghsa 
+│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-41110 
+│                        │     ├ DataSource       ╭ ID  : ghsa 
+│                        │     │                  ├ Name: GitHub Security Advisory Go 
+│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                        │     │                          cosystem%3Ago 
+│                        │     ├ Title           : moby: Authz zero length regression 
+│                        │     ├ Description     : Moby is an open-source project created by Docker for
+│                        │     │                   software containerization. A security vulnerability has been
+│                        │     │                    detected in certain versions of Docker Engine, which could
+│                        │     │                   allow an attacker to bypass authorization plugins (AuthZ)
+│                        │     │                   under specific circumstances. The base likelihood of this
+│                        │     │                   being exploited is low.
+│                        │     │                   
+│                        │     │                   Using a specially-crafted API request, an Engine API client
+│                        │     │                   could make the daemon forward the request or response to an
+│                        │     │                   authorization plugin without the body. In certain
+│                        │     │                   circumstances, the authorization plugin may allow a request
+│                        │     │                   which it would have otherwise denied if the body had been
+│                        │     │                   forwarded to it.
+│                        │     │                   
+│                        │     │                   A security issue was discovered In 2018, where an attacker
+│                        │     │                   could bypass AuthZ plugins using a specially crafted API
+│                        │     │                   request. This could lead to unauthorized actions, including
+│                        │     │                   privilege escalation. Although this issue was fixed in
+│                        │     │                   Docker Engine v18.09.1 in January 2019, the fix was not
+│                        │     │                   carried forward to later major versions, resulting in a
+│                        │     │                   regression. Anyone who depends on authorization plugins that
+│                        │     │                    introspect the request and/or response body to make access
+│                        │     │                   control decisions is potentially impacted.
+│                        │     │                   
+│                        │     │                   Docker EE v19.03.x and all versions of Mirantis Container
+│                        │     │                   Runtime are not vulnerable.
+│                        │     │                   
+│                        │     │                   docker-ce v27.1.1 containes patches to fix the
+│                        │     │                   vulnerability. Patches have also been merged into the
+│                        │     │                   master, 19.03, 20.0, 23.0, 24.0, 25.0, 26.0, and 26.1
+│                        │     │                   release branches. If one is unable to upgrade immediately,
+│                        │     │                   avoid using AuthZ plugins and/or restrict access to the
+│                        │     │                   Docker API to trusted parties, following the principle of
+│                        │     │                   least privilege. 
+│                        │     ├ Severity        : CRITICAL 
+│                        │     ├ CweIDs           ╭ [0]: CWE-187 
+│                        │     │                  ├ [1]: CWE-444 
+│                        │     │                  ╰ [2]: CWE-863 
+│                        │     ├ VendorSeverity   ╭ ghsa  : 4 
+│                        │     │                  ╰ redhat: 4 
+│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
+│                        │     │                  │        │           /A:H 
+│                        │     │                  │        ╰ V3Score : 10 
+│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
+│                        │     │                           │           /A:H 
+│                        │     │                           ╰ V3Score : 9.9 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-41110 
+│                        │     │                  ├ [1] : https://github.com/moby/moby 
+│                        │     │                  ├ [2] : https://github.com/moby/moby/commit/411e817ddf710ff8e
+│                        │     │                  │       08fa193da80cb78af708191 
+│                        │     │                  ├ [3] : https://github.com/moby/moby/commit/42f40b1d6dd756234
+│                        │     │                  │       2f832b9cd2adf9e668eeb76 
+│                        │     │                  ├ [4] : https://github.com/moby/moby/commit/65cc597cea28cdc25
+│                        │     │                  │       bea3b8a86384b4251872919 
+│                        │     │                  ├ [5] : https://github.com/moby/moby/commit/852759a7df454cbf8
+│                        │     │                  │       8db4e954c919becd48faa9b 
+│                        │     │                  ├ [6] : https://github.com/moby/moby/commit/a31260625655cff9a
+│                        │     │                  │       e226b51757915e275e304b0 
+│                        │     │                  ├ [7] : https://github.com/moby/moby/commit/a79fabbfe84117696
+│                        │     │                  │       a19671f4aa88b82d0f64fc1 
+│                        │     │                  ├ [8] : https://github.com/moby/moby/commit/ae160b4edddb72ef4
+│                        │     │                  │       bd71f66b975a1a1cc434f00 
+│                        │     │                  ├ [9] : https://github.com/moby/moby/commit/ae2b3666c517c96cb
+│                        │     │                  │       c2adf1af5591a6b00d4ec0f 
+│                        │     │                  ├ [10]: https://github.com/moby/moby/commit/cc13f952511154a28
+│                        │     │                  │       66bddbb7dddebfe9e83b801 
+│                        │     │                  ├ [11]: https://github.com/moby/moby/commit/fc274cd2ff4cf3b48
+│                        │     │                  │       c91697fb327dd1fb95588fb 
+│                        │     │                  ├ [12]: https://github.com/moby/moby/security/advisories/GHSA
+│                        │     │                  │       -v23v-6jw2-98fq 
+│                        │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-41110 
+│                        │     │                  ├ [14]: https://www.cve.org/CVERecord?id=CVE-2024-41110 
+│                        │     │                  ╰ [15]: https://www.docker.com/blog/docker-security-advisory-
+│                        │     │                          docker-engine-authz-plugin 
+│                        │     ├ PublishedDate   : 2024-07-24T17:15:11.053Z 
+│                        │     ╰ LastModifiedDate: 2024-07-30T20:15:04.567Z 
+│                        ╰ [1] ╭ VulnerabilityID : CVE-2024-24791 
 │                              ├ PkgName         : stdlib 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@1.21.11 
 │                              │                  ╰ UID : 9f8d2ad52f383de2 
@@ -9117,7 +9222,102 @@
 ├ [5]  ╭ Target         : usr/bin/helm 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
-│      ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-24791 
+│      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-41110 
+│                        │     ├ PkgName         : github.com/docker/docker 
+│                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/docker/docker@v25.0.5%2Bincompa
+│                        │     │                  │       tible 
+│                        │     │                  ╰ UID : e4c7c8ca065174dd 
+│                        │     ├ InstalledVersion: v25.0.5+incompatible 
+│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                        │     ├ Status          : fixed 
+│                        │     ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc3264
+│                        │     │                  │         21ea318f623cca695957 
+│                        │     │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e
+│                        │     │                            855b8886008bcbee3664 
+│                        │     ├ SeveritySource  : ghsa 
+│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-41110 
+│                        │     ├ DataSource       ╭ ID  : ghsa 
+│                        │     │                  ├ Name: GitHub Security Advisory Go 
+│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                        │     │                          cosystem%3Ago 
+│                        │     ├ Title           : moby: Authz zero length regression 
+│                        │     ├ Description     : Moby is an open-source project created by Docker for
+│                        │     │                   software containerization. A security vulnerability has been
+│                        │     │                    detected in certain versions of Docker Engine, which could
+│                        │     │                   allow an attacker to bypass authorization plugins (AuthZ)
+│                        │     │                   under specific circumstances. The base likelihood of this
+│                        │     │                   being exploited is low.
+│                        │     │                   
+│                        │     │                   Using a specially-crafted API request, an Engine API client
+│                        │     │                   could make the daemon forward the request or response to an
+│                        │     │                   authorization plugin without the body. In certain
+│                        │     │                   circumstances, the authorization plugin may allow a request
+│                        │     │                   which it would have otherwise denied if the body had been
+│                        │     │                   forwarded to it.
+│                        │     │                   
+│                        │     │                   A security issue was discovered In 2018, where an attacker
+│                        │     │                   could bypass AuthZ plugins using a specially crafted API
+│                        │     │                   request. This could lead to unauthorized actions, including
+│                        │     │                   privilege escalation. Although this issue was fixed in
+│                        │     │                   Docker Engine v18.09.1 in January 2019, the fix was not
+│                        │     │                   carried forward to later major versions, resulting in a
+│                        │     │                   regression. Anyone who depends on authorization plugins that
+│                        │     │                    introspect the request and/or response body to make access
+│                        │     │                   control decisions is potentially impacted.
+│                        │     │                   
+│                        │     │                   Docker EE v19.03.x and all versions of Mirantis Container
+│                        │     │                   Runtime are not vulnerable.
+│                        │     │                   
+│                        │     │                   docker-ce v27.1.1 containes patches to fix the
+│                        │     │                   vulnerability. Patches have also been merged into the
+│                        │     │                   master, 19.03, 20.0, 23.0, 24.0, 25.0, 26.0, and 26.1
+│                        │     │                   release branches. If one is unable to upgrade immediately,
+│                        │     │                   avoid using AuthZ plugins and/or restrict access to the
+│                        │     │                   Docker API to trusted parties, following the principle of
+│                        │     │                   least privilege. 
+│                        │     ├ Severity        : CRITICAL 
+│                        │     ├ CweIDs           ╭ [0]: CWE-187 
+│                        │     │                  ├ [1]: CWE-444 
+│                        │     │                  ╰ [2]: CWE-863 
+│                        │     ├ VendorSeverity   ╭ ghsa  : 4 
+│                        │     │                  ╰ redhat: 4 
+│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
+│                        │     │                  │        │           /A:H 
+│                        │     │                  │        ╰ V3Score : 10 
+│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
+│                        │     │                           │           /A:H 
+│                        │     │                           ╰ V3Score : 9.9 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-41110 
+│                        │     │                  ├ [1] : https://github.com/moby/moby 
+│                        │     │                  ├ [2] : https://github.com/moby/moby/commit/411e817ddf710ff8e
+│                        │     │                  │       08fa193da80cb78af708191 
+│                        │     │                  ├ [3] : https://github.com/moby/moby/commit/42f40b1d6dd756234
+│                        │     │                  │       2f832b9cd2adf9e668eeb76 
+│                        │     │                  ├ [4] : https://github.com/moby/moby/commit/65cc597cea28cdc25
+│                        │     │                  │       bea3b8a86384b4251872919 
+│                        │     │                  ├ [5] : https://github.com/moby/moby/commit/852759a7df454cbf8
+│                        │     │                  │       8db4e954c919becd48faa9b 
+│                        │     │                  ├ [6] : https://github.com/moby/moby/commit/a31260625655cff9a
+│                        │     │                  │       e226b51757915e275e304b0 
+│                        │     │                  ├ [7] : https://github.com/moby/moby/commit/a79fabbfe84117696
+│                        │     │                  │       a19671f4aa88b82d0f64fc1 
+│                        │     │                  ├ [8] : https://github.com/moby/moby/commit/ae160b4edddb72ef4
+│                        │     │                  │       bd71f66b975a1a1cc434f00 
+│                        │     │                  ├ [9] : https://github.com/moby/moby/commit/ae2b3666c517c96cb
+│                        │     │                  │       c2adf1af5591a6b00d4ec0f 
+│                        │     │                  ├ [10]: https://github.com/moby/moby/commit/cc13f952511154a28
+│                        │     │                  │       66bddbb7dddebfe9e83b801 
+│                        │     │                  ├ [11]: https://github.com/moby/moby/commit/fc274cd2ff4cf3b48
+│                        │     │                  │       c91697fb327dd1fb95588fb 
+│                        │     │                  ├ [12]: https://github.com/moby/moby/security/advisories/GHSA
+│                        │     │                  │       -v23v-6jw2-98fq 
+│                        │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-41110 
+│                        │     │                  ├ [14]: https://www.cve.org/CVERecord?id=CVE-2024-41110 
+│                        │     │                  ╰ [15]: https://www.docker.com/blog/docker-security-advisory-
+│                        │     │                          docker-engine-authz-plugin 
+│                        │     ├ PublishedDate   : 2024-07-24T17:15:11.053Z 
+│                        │     ╰ LastModifiedDate: 2024-07-30T20:15:04.567Z 
+│                        ╰ [1] ╭ VulnerabilityID : CVE-2024-24791 
 │                              ├ PkgName         : stdlib 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@1.22.4 
 │                              │                  ╰ UID : dd1d5fe8c33c83a7 
@@ -9223,7 +9423,102 @@
 ├ [7]  ╭ Target         : usr/local/bin/k3d 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
-│      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
+│      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-41110 
+│                        │     ├ PkgName         : github.com/docker/docker 
+│                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/docker/docker@v27.0.3%2Bincompa
+│                        │     │                  │       tible 
+│                        │     │                  ╰ UID : 86ad2fe7aa350ba4 
+│                        │     ├ InstalledVersion: v27.0.3+incompatible 
+│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                        │     ├ Status          : fixed 
+│                        │     ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc3264
+│                        │     │                  │         21ea318f623cca695957 
+│                        │     │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e
+│                        │     │                            855b8886008bcbee3664 
+│                        │     ├ SeveritySource  : ghsa 
+│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-41110 
+│                        │     ├ DataSource       ╭ ID  : ghsa 
+│                        │     │                  ├ Name: GitHub Security Advisory Go 
+│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                        │     │                          cosystem%3Ago 
+│                        │     ├ Title           : moby: Authz zero length regression 
+│                        │     ├ Description     : Moby is an open-source project created by Docker for
+│                        │     │                   software containerization. A security vulnerability has been
+│                        │     │                    detected in certain versions of Docker Engine, which could
+│                        │     │                   allow an attacker to bypass authorization plugins (AuthZ)
+│                        │     │                   under specific circumstances. The base likelihood of this
+│                        │     │                   being exploited is low.
+│                        │     │                   
+│                        │     │                   Using a specially-crafted API request, an Engine API client
+│                        │     │                   could make the daemon forward the request or response to an
+│                        │     │                   authorization plugin without the body. In certain
+│                        │     │                   circumstances, the authorization plugin may allow a request
+│                        │     │                   which it would have otherwise denied if the body had been
+│                        │     │                   forwarded to it.
+│                        │     │                   
+│                        │     │                   A security issue was discovered In 2018, where an attacker
+│                        │     │                   could bypass AuthZ plugins using a specially crafted API
+│                        │     │                   request. This could lead to unauthorized actions, including
+│                        │     │                   privilege escalation. Although this issue was fixed in
+│                        │     │                   Docker Engine v18.09.1 in January 2019, the fix was not
+│                        │     │                   carried forward to later major versions, resulting in a
+│                        │     │                   regression. Anyone who depends on authorization plugins that
+│                        │     │                    introspect the request and/or response body to make access
+│                        │     │                   control decisions is potentially impacted.
+│                        │     │                   
+│                        │     │                   Docker EE v19.03.x and all versions of Mirantis Container
+│                        │     │                   Runtime are not vulnerable.
+│                        │     │                   
+│                        │     │                   docker-ce v27.1.1 containes patches to fix the
+│                        │     │                   vulnerability. Patches have also been merged into the
+│                        │     │                   master, 19.03, 20.0, 23.0, 24.0, 25.0, 26.0, and 26.1
+│                        │     │                   release branches. If one is unable to upgrade immediately,
+│                        │     │                   avoid using AuthZ plugins and/or restrict access to the
+│                        │     │                   Docker API to trusted parties, following the principle of
+│                        │     │                   least privilege. 
+│                        │     ├ Severity        : CRITICAL 
+│                        │     ├ CweIDs           ╭ [0]: CWE-187 
+│                        │     │                  ├ [1]: CWE-444 
+│                        │     │                  ╰ [2]: CWE-863 
+│                        │     ├ VendorSeverity   ╭ ghsa  : 4 
+│                        │     │                  ╰ redhat: 4 
+│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
+│                        │     │                  │        │           /A:H 
+│                        │     │                  │        ╰ V3Score : 10 
+│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
+│                        │     │                           │           /A:H 
+│                        │     │                           ╰ V3Score : 9.9 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-41110 
+│                        │     │                  ├ [1] : https://github.com/moby/moby 
+│                        │     │                  ├ [2] : https://github.com/moby/moby/commit/411e817ddf710ff8e
+│                        │     │                  │       08fa193da80cb78af708191 
+│                        │     │                  ├ [3] : https://github.com/moby/moby/commit/42f40b1d6dd756234
+│                        │     │                  │       2f832b9cd2adf9e668eeb76 
+│                        │     │                  ├ [4] : https://github.com/moby/moby/commit/65cc597cea28cdc25
+│                        │     │                  │       bea3b8a86384b4251872919 
+│                        │     │                  ├ [5] : https://github.com/moby/moby/commit/852759a7df454cbf8
+│                        │     │                  │       8db4e954c919becd48faa9b 
+│                        │     │                  ├ [6] : https://github.com/moby/moby/commit/a31260625655cff9a
+│                        │     │                  │       e226b51757915e275e304b0 
+│                        │     │                  ├ [7] : https://github.com/moby/moby/commit/a79fabbfe84117696
+│                        │     │                  │       a19671f4aa88b82d0f64fc1 
+│                        │     │                  ├ [8] : https://github.com/moby/moby/commit/ae160b4edddb72ef4
+│                        │     │                  │       bd71f66b975a1a1cc434f00 
+│                        │     │                  ├ [9] : https://github.com/moby/moby/commit/ae2b3666c517c96cb
+│                        │     │                  │       c2adf1af5591a6b00d4ec0f 
+│                        │     │                  ├ [10]: https://github.com/moby/moby/commit/cc13f952511154a28
+│                        │     │                  │       66bddbb7dddebfe9e83b801 
+│                        │     │                  ├ [11]: https://github.com/moby/moby/commit/fc274cd2ff4cf3b48
+│                        │     │                  │       c91697fb327dd1fb95588fb 
+│                        │     │                  ├ [12]: https://github.com/moby/moby/security/advisories/GHSA
+│                        │     │                  │       -v23v-6jw2-98fq 
+│                        │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-41110 
+│                        │     │                  ├ [14]: https://www.cve.org/CVERecord?id=CVE-2024-41110 
+│                        │     │                  ╰ [15]: https://www.docker.com/blog/docker-security-advisory-
+│                        │     │                          docker-engine-authz-plugin 
+│                        │     ├ PublishedDate   : 2024-07-24T17:15:11.053Z 
+│                        │     ╰ LastModifiedDate: 2024-07-30T20:15:04.567Z 
+│                        ├ [1] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
 │                        │     ├ PkgName         : google.golang.org/grpc 
 │                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.64.0 
 │                        │     │                  ╰ UID : 561fc541b93a7bc5 
@@ -9263,7 +9558,7 @@
 │                        │                        │      7a7786754d1fe05264c3021eb 
 │                        │                        ╰ [2]: https://github.com/grpc/grpc-go/security/advisories/GH
 │                        │                               SA-xr7q-jx4m-x55m 
-│                        ╰ [1] ╭ VulnerabilityID : CVE-2024-24791 
+│                        ╰ [2] ╭ VulnerabilityID : CVE-2024-24791 
 │                              ├ PkgName         : stdlib 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@1.22.4 
 │                              │                  ╰ UID : ca762442d314bc93 
@@ -9313,7 +9608,7 @@
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
 │                              ├ PublishedDate   : 2024-07-02T22:15:04.833Z 
 │                              ╰ LastModifiedDate: 2024-07-08T14:17:39.083Z 
-├ [8]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
+├ [8]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                      ├ Category : AsymmetricPrivateKey 
@@ -9322,181 +9617,7 @@
 │                      ├ StartLine: 1 
 │                      ├ EndLine  : 1 
 │                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : -----BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********-----END OPENSSH PRIVATE KEY----- 
-│                      │                   │     ├ IsCause    : true 
-│                      │                   │     ├ Annotation :  
-│                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: -----BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********-----END OPENSSH PRIVATE KEY----- 
-│                      │                   │     ├ FirstCause : true 
-│                      │                   │     ╰ LastCause  : true 
-│                      │                   ╰ [1] ╭ Number    : 2 
-│                      │                         ├ Content   :  
-│                      │                         ├ IsCause   : false 
-│                      │                         ├ Annotation:  
-│                      │                         ├ Truncated : false 
-│                      │                         ├ FirstCause: false 
-│                      │                         ╰ LastCause : false 
-│                      ├ Match    : BEGIN OPENSSH PRIVATE
-│                      │            KEY-----*******************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            **************************************************************************-
-│                      │            ----END OPENSSH PRI 
-│                      ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
-│                                  │            ca695957 
-│                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
-│                                  │            cbee3664 
-│                                  ╰ CreatedBy: COPY / / # buildkit 
-├ [9]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
-│      ├ Class  : secret 
-│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                      ├ Category : AsymmetricPrivateKey 
-│                      ├ Severity : HIGH 
-│                      ├ Title    : Asymmetric Private Key 
-│                      ├ StartLine: 1 
-│                      ├ EndLine  : 1 
-│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : -----BEGIN OPENSSH PRIVATE
+│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
 │                      │                   │     │              KEY-----***************************************
 │                      │                   │     │              ***********************************************
 │                      │                   │     │              ***********************************************
@@ -9507,11 +9628,11 @@
 │                      │                   │     │              ***********************************************
 │                      │                   │     │              ***********************************************
 │                      │                   │     │              *****************************-----END OPENSSH
-│                      │                   │     │              PRIVATE KEY----- 
+│                      │                   │     │              PRI 
 │                      │                   │     ├ IsCause    : true 
 │                      │                   │     ├ Annotation :  
 │                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: -----BEGIN OPENSSH PRIVATE
+│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
 │                      │                   │     │              KEY-----***************************************
 │                      │                   │     │              ***********************************************
 │                      │                   │     │              ***********************************************
@@ -9522,7 +9643,7 @@
 │                      │                   │     │              ***********************************************
 │                      │                   │     │              ***********************************************
 │                      │                   │     │              *****************************-----END OPENSSH
-│                      │                   │     │              PRIVATE KEY----- 
+│                      │                   │     │              PRI 
 │                      │                   │     ├ FirstCause : true 
 │                      │                   │     ╰ LastCause  : true 
 │                      │                   ╰ [1] ╭ Number    : 2 
@@ -9545,7 +9666,57 @@
 │                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
 │                                  │            cbee3664 
 │                                  ╰ CreatedBy: COPY / / # buildkit 
-╰ [10] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+├ [9]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+│      ├ Class  : secret 
+│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                      ├ Category : AsymmetricPrivateKey 
+│                      ├ Severity : HIGH 
+│                      ├ Title    : Asymmetric Private Key 
+│                      ├ StartLine: 1 
+│                      ├ EndLine  : 1 
+│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              *********************-----END OPENSSH PRI 
+│                      │                   │     ├ IsCause    : true 
+│                      │                   │     ├ Annotation :  
+│                      │                   │     ├ Truncated  : false 
+│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              *********************-----END OPENSSH PRI 
+│                      │                   │     ├ FirstCause : true 
+│                      │                   │     ╰ LastCause  : true 
+│                      │                   ╰ [1] ╭ Number    : 2 
+│                      │                         ├ Content   :  
+│                      │                         ├ IsCause   : false 
+│                      │                         ├ Annotation:  
+│                      │                         ├ Truncated : false 
+│                      │                         ├ FirstCause: false 
+│                      │                         ╰ LastCause : false 
+│                      ├ Match    : BEGIN OPENSSH PRIVATE
+│                      │            KEY-----*******************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            **************************************************-----END OPENSSH PRI 
+│                      ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
+│                                  │            ca695957 
+│                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
+│                                  │            cbee3664 
+│                                  ╰ CreatedBy: COPY / / # buildkit 
+╰ [10] ╭ Target : /etc/ssh/ssh_host_rsa_key 
        ├ Class  : secret 
        ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                        ├ Category : AsymmetricPrivateKey 
@@ -9554,7 +9725,7 @@
                        ├ StartLine: 1 
                        ├ EndLine  : 1 
                        ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-                       │                   │     ├ Content    : -----BEGIN OPENSSH PRIVATE
+                       │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
@@ -9562,12 +9733,58 @@
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              *********************-----END OPENSSH PRIVATE
-                       │                   │     │              KEY----- 
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********-----END OPENSSH PRI 
                        │                   │     ├ IsCause    : true 
                        │                   │     ├ Annotation :  
                        │                   │     ├ Truncated  : false 
-                       │                   │     ├ Highlighted: -----BEGIN OPENSSH PRIVATE
+                       │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
@@ -9575,8 +9792,54 @@
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              *********************-----END OPENSSH PRIVATE
-                       │                   │     │              KEY----- 
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********-----END OPENSSH PRI 
                        │                   │     ├ FirstCause : true 
                        │                   │     ╰ LastCause  : true 
                        │                   ╰ [1] ╭ Number    : 2 
@@ -9591,7 +9854,37 @@
                        │            ***************************************************************************
                        │            ***************************************************************************
                        │            ***************************************************************************
-                       │            **************************************************-----END OPENSSH PRI 
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            **************************************************************************-
+                       │            ----END OPENSSH PRI 
                        ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
                                    │            ca695957 
                                    ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
