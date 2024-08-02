@@ -2374,7 +2374,8 @@
 │                        │      │                  │       md64&distro=ubuntu-24.04 
 │                        │      │                  ╰ UID : 6abc2d56578f8d0b 
 │                        │      ├ InstalledVersion: 3.12.3-1 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 3.12.3-1ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:890738c1120ef857a706339a9abb6bc9b3b13a1b3ba
 │                        │      │                  │         871f058ba3190a5c03739 
 │                        │      │                  ╰ DiffID: sha256:86f06b1e34e1cde69cfa7bd5404ce181b0f7340f451
@@ -2438,10 +2439,11 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
-│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-6941-1 
+│                        │      │                  ├ [22]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [23]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [24]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -2452,7 +2454,8 @@
 │                        │      │                  │       d64&distro=ubuntu-24.04 
 │                        │      │                  ╰ UID : 7948ff34722c355e 
 │                        │      ├ InstalledVersion: 3.12.3-1 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 3.12.3-1ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:890738c1120ef857a706339a9abb6bc9b3b13a1b3ba
 │                        │      │                  │         871f058ba3190a5c03739 
 │                        │      │                  ╰ DiffID: sha256:86f06b1e34e1cde69cfa7bd5404ce181b0f7340f451
@@ -2516,10 +2519,11 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
-│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-6941-1 
+│                        │      │                  ├ [22]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [23]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [24]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -2530,7 +2534,8 @@
 │                        │      │                  │       distro=ubuntu-24.04 
 │                        │      │                  ╰ UID : 5dda9aea5ff20f4d 
 │                        │      ├ InstalledVersion: 3.12.3-1 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 3.12.3-1ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:890738c1120ef857a706339a9abb6bc9b3b13a1b3ba
 │                        │      │                  │         871f058ba3190a5c03739 
 │                        │      │                  ╰ DiffID: sha256:86f06b1e34e1cde69cfa7bd5404ce181b0f7340f451
@@ -2594,10 +2599,11 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
-│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-6941-1 
+│                        │      │                  ├ [22]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [23]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [24]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -3446,7 +3452,8 @@
 │                        │      │                  │       =ubuntu-24.04 
 │                        │      │                  ╰ UID : b19cff70bc508fba 
 │                        │      ├ InstalledVersion: 3.12.3-1 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 3.12.3-1ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:890738c1120ef857a706339a9abb6bc9b3b13a1b3ba
 │                        │      │                  │         871f058ba3190a5c03739 
 │                        │      │                  ╰ DiffID: sha256:86f06b1e34e1cde69cfa7bd5404ce181b0f7340f451
@@ -3510,10 +3517,11 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
-│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-6941-1 
+│                        │      │                  ├ [22]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [23]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [24]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -3524,7 +3532,8 @@
 │                        │      │                  │       4&distro=ubuntu-24.04 
 │                        │      │                  ╰ UID : 143ad74ca61b739c 
 │                        │      ├ InstalledVersion: 3.12.3-1 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 3.12.3-1ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:890738c1120ef857a706339a9abb6bc9b3b13a1b3ba
 │                        │      │                  │         871f058ba3190a5c03739 
 │                        │      │                  ╰ DiffID: sha256:86f06b1e34e1cde69cfa7bd5404ce181b0f7340f451
@@ -3588,10 +3597,11 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
-│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-6941-1 
+│                        │      │                  ├ [22]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [23]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [24]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -4221,7 +4231,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -4779,7 +4789,7 @@
 │                        │      │                  ╰ [234]: https://www.theregister.com/2023/10/10/http2_rapid_
 │                        │      │                           reset_zeroday/ 
 │                        │      ├ PublishedDate   : 2023-10-10T14:15:10.883Z 
-│                        │      ╰ LastModifiedDate: 2024-06-27T18:34:22.11Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:44:53.5Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2023-45288 
 │                        │      ├ PkgName         : golang.org/x/net 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.12.0 
@@ -5617,7 +5627,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -5691,7 +5701,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -6743,7 +6753,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -7301,7 +7311,7 @@
 │                        │      │                  ╰ [234]: https://www.theregister.com/2023/10/10/http2_rapid_
 │                        │      │                           reset_zeroday/ 
 │                        │      ├ PublishedDate   : 2023-10-10T14:15:10.883Z 
-│                        │      ╰ LastModifiedDate: 2024-06-27T18:34:22.11Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:44:53.5Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2023-45288 
 │                        │      ├ PkgName         : golang.org/x/net 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.12.0 
@@ -8139,7 +8149,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -8213,7 +8223,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -8979,7 +8989,7 @@
 │                              │                  │       tible 
 │                              │                  ╰ UID : e4c7c8ca065174dd 
 │                              ├ InstalledVersion: v25.0.5+incompatible 
-│                              ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                              ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
 │                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:890738c1120ef857a706339a9abb6bc9b3b13a1b3ba8
 │                              │                  │         71f058ba3190a5c03739 
@@ -9030,7 +9040,8 @@
 │                              ├ CweIDs           ╭ [0]: CWE-187 
 │                              │                  ├ [1]: CWE-444 
 │                              │                  ╰ [2]: CWE-863 
-│                              ├ VendorSeverity   ╭ ghsa  : 4 
+│                              ├ VendorSeverity   ╭ amazon: 3 
+│                              │                  ├ ghsa  : 4 
 │                              │                  ╰ redhat: 4 
 │                              ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
 │                              │                  │        │           /A:H 
@@ -9080,7 +9091,7 @@
 │                        │     │                  │       tible 
 │                        │     │                  ╰ UID : 86ad2fe7aa350ba4 
 │                        │     ├ InstalledVersion: v27.0.3+incompatible 
-│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
 │                        │     ├ Status          : fixed 
 │                        │     ├ Layer            ╭ Digest: sha256:890738c1120ef857a706339a9abb6bc9b3b13a1b3ba8
 │                        │     │                  │         71f058ba3190a5c03739 
@@ -9131,7 +9142,8 @@
 │                        │     ├ CweIDs           ╭ [0]: CWE-187 
 │                        │     │                  ├ [1]: CWE-444 
 │                        │     │                  ╰ [2]: CWE-863 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 4 
+│                        │     ├ VendorSeverity   ╭ amazon: 3 
+│                        │     │                  ├ ghsa  : 4 
 │                        │     │                  ╰ redhat: 4 
 │                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
 │                        │     │                  │        │           /A:H 
