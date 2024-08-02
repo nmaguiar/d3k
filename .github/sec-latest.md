@@ -29,6 +29,7 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -43,7 +44,7 @@
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.347Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:45:59.803Z 
 │                        ├ [1]  ╭ VulnerabilityID : CVE-2024-1737 
 │                        │      ├ PkgID           : bind9-dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-dnsutils 
@@ -74,6 +75,7 @@
 │                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -87,9 +89,10 @@
 │                        │      │                  ├ [4]: https://kb.isc.org/docs/rrset-limits-in-zones 
 │                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
 │                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.487Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [2]  ╭ VulnerabilityID : CVE-2024-1975 
 │                        │      ├ PkgID           : bind9-dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-dnsutils 
@@ -119,6 +122,7 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -131,9 +135,10 @@
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
 │                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.57Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2024-4076 
 │                        │      ├ PkgID           : bind9-dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-dnsutils 
@@ -162,6 +167,7 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-617 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -176,7 +182,7 @@
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.657Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2024-0760 
 │                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-host 
@@ -204,6 +210,7 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -218,7 +225,7 @@
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.347Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:45:59.803Z 
 │                        ├ [5]  ╭ VulnerabilityID : CVE-2024-1737 
 │                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-host 
@@ -249,6 +256,7 @@
 │                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -262,9 +270,10 @@
 │                        │      │                  ├ [4]: https://kb.isc.org/docs/rrset-limits-in-zones 
 │                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
 │                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.487Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [6]  ╭ VulnerabilityID : CVE-2024-1975 
 │                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-host 
@@ -294,6 +303,7 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -306,9 +316,10 @@
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
 │                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.57Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2024-4076 
 │                        │      ├ PkgID           : bind9-host@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-host 
@@ -337,6 +348,7 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-617 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -351,7 +363,7 @@
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.657Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2024-0760 
 │                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-libs 
@@ -379,6 +391,7 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -393,7 +406,7 @@
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.347Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:45:59.803Z 
 │                        ├ [9]  ╭ VulnerabilityID : CVE-2024-1737 
 │                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-libs 
@@ -424,6 +437,7 @@
 │                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -437,9 +451,10 @@
 │                        │      │                  ├ [4]: https://kb.isc.org/docs/rrset-limits-in-zones 
 │                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
 │                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.487Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2024-1975 
 │                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-libs 
@@ -469,6 +484,7 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -481,9 +497,10 @@
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
 │                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.57Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [11] ╭ VulnerabilityID : CVE-2024-4076 
 │                        │      ├ PkgID           : bind9-libs@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : bind9-libs 
@@ -512,6 +529,7 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-617 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -526,7 +544,7 @@
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.657Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2016-2781 
 │                        │      ├ PkgID           : coreutils@9.4-3ubuntu6 
 │                        │      ├ PkgName         : coreutils 
@@ -1058,6 +1076,7 @@
 │                        │      │                   This issue affects BIND 9 versions 9.18.1 through 9.18.27,
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -1072,7 +1091,7 @@
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.347Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:45:59.803Z 
 │                        ├ [21] ╭ VulnerabilityID : CVE-2024-1737 
 │                        │      ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : dnsutils 
@@ -1103,6 +1122,7 @@
 │                        │      │                   through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -1116,9 +1136,10 @@
 │                        │      │                  ├ [4]: https://kb.isc.org/docs/rrset-limits-in-zones 
 │                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
 │                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.487Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [22] ╭ VulnerabilityID : CVE-2024-1975 
 │                        │      ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : dnsutils 
@@ -1148,6 +1169,7 @@
 │                        │      │                   through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -1160,9 +1182,10 @@
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
 │                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.57Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [23] ╭ VulnerabilityID : CVE-2024-4076 
 │                        │      ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
 │                        │      ├ PkgName         : dnsutils 
@@ -1191,6 +1214,7 @@
 │                        │      │                    through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-617 
 │                        │      ├ VendorSeverity   ╭ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
@@ -1205,7 +1229,7 @@
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
-│                        │      ╰ LastModifiedDate: 2024-07-31T11:15:10.657Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [24] ╭ VulnerabilityID : CVE-2018-1000021 
 │                        │      ├ PkgID           : git@1:2.43.0-1ubuntu7.1 
 │                        │      ├ PkgName         : git 
@@ -3074,7 +3098,8 @@
 │                        │      │                  │       md64&distro=ubuntu-24.04 
 │                        │      │                  ╰ UID : 6abc2d56578f8d0b 
 │                        │      ├ InstalledVersion: 3.12.3-1 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 3.12.3-1ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326
 │                        │      │                  │         421ea318f623cca695957 
 │                        │      │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9
@@ -3138,10 +3163,11 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
-│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-6941-1 
+│                        │      │                  ├ [22]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [23]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [24]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -3152,7 +3178,8 @@
 │                        │      │                  │       d64&distro=ubuntu-24.04 
 │                        │      │                  ╰ UID : 7948ff34722c355e 
 │                        │      ├ InstalledVersion: 3.12.3-1 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 3.12.3-1ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326
 │                        │      │                  │         421ea318f623cca695957 
 │                        │      │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9
@@ -3216,10 +3243,11 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
-│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-6941-1 
+│                        │      │                  ├ [22]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [23]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [24]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -3230,7 +3258,8 @@
 │                        │      │                  │       distro=ubuntu-24.04 
 │                        │      │                  ╰ UID : 5dda9aea5ff20f4d 
 │                        │      ├ InstalledVersion: 3.12.3-1 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 3.12.3-1ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326
 │                        │      │                  │         421ea318f623cca695957 
 │                        │      │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9
@@ -3294,10 +3323,11 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
-│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-6941-1 
+│                        │      │                  ├ [22]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [23]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [24]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -4302,7 +4332,8 @@
 │                        │      │                  │       =ubuntu-24.04 
 │                        │      │                  ╰ UID : b19cff70bc508fba 
 │                        │      ├ InstalledVersion: 3.12.3-1 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 3.12.3-1ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326
 │                        │      │                  │         421ea318f623cca695957 
 │                        │      │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9
@@ -4366,10 +4397,11 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
-│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-6941-1 
+│                        │      │                  ├ [22]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [23]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [24]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -4380,7 +4412,8 @@
 │                        │      │                  │       4&distro=ubuntu-24.04 
 │                        │      │                  ╰ UID : 143ad74ca61b739c 
 │                        │      ├ InstalledVersion: 3.12.3-1 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 3.12.3-1ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326
 │                        │      │                  │         421ea318f623cca695957 
 │                        │      │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9
@@ -4444,10 +4477,11 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240726-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6928-1 
-│                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
-│                        │      │                  ├ [22]: https://www.iana.org/assignments/iana-ipv4-special-r
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-6941-1 
+│                        │      │                  ├ [22]: https://www.cve.org/CVERecord?id=CVE-2024-4032 
+│                        │      │                  ├ [23]: https://www.iana.org/assignments/iana-ipv4-special-r
 │                        │      │                  │       egistry/iana-ipv4-special-registry.xhtml 
-│                        │      │                  ╰ [23]: https://www.iana.org/assignments/iana-ipv6-special-r
+│                        │      │                  ╰ [24]: https://www.iana.org/assignments/iana-ipv6-special-r
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
@@ -5077,7 +5111,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -5635,7 +5669,7 @@
 │                        │      │                  ╰ [234]: https://www.theregister.com/2023/10/10/http2_rapid_
 │                        │      │                           reset_zeroday/ 
 │                        │      ├ PublishedDate   : 2023-10-10T14:15:10.883Z 
-│                        │      ╰ LastModifiedDate: 2024-06-27T18:34:22.11Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:44:53.5Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2023-45288 
 │                        │      ├ PkgName         : golang.org/x/net 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.12.0 
@@ -6473,7 +6507,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -6547,7 +6581,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7599,7 +7633,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -8157,7 +8191,7 @@
 │                        │      │                  ╰ [234]: https://www.theregister.com/2023/10/10/http2_rapid_
 │                        │      │                           reset_zeroday/ 
 │                        │      ├ PublishedDate   : 2023-10-10T14:15:10.883Z 
-│                        │      ╰ LastModifiedDate: 2024-06-27T18:34:22.11Z 
+│                        │      ╰ LastModifiedDate: 2024-08-01T13:44:53.5Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2023-45288 
 │                        │      ├ PkgName         : golang.org/x/net 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.12.0 
@@ -8995,7 +9029,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -9069,7 +9103,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -9782,7 +9816,7 @@
 │                        │     │                  │       compatible 
 │                        │     │                  ╰ UID : 990b93d9bdd6f02e 
 │                        │     ├ InstalledVersion: v27.0.1-rc.1+incompatible 
-│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
 │                        │     ├ Status          : fixed 
 │                        │     ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc3264
 │                        │     │                  │         21ea318f623cca695957 
@@ -9833,7 +9867,8 @@
 │                        │     ├ CweIDs           ╭ [0]: CWE-187 
 │                        │     │                  ├ [1]: CWE-444 
 │                        │     │                  ╰ [2]: CWE-863 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 4 
+│                        │     ├ VendorSeverity   ╭ amazon: 3 
+│                        │     │                  ├ ghsa  : 4 
 │                        │     │                  ╰ redhat: 4 
 │                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
 │                        │     │                  │        │           /A:H 
@@ -9930,7 +9965,7 @@
 │                        │     │                  │       tible 
 │                        │     │                  ╰ UID : e4c7c8ca065174dd 
 │                        │     ├ InstalledVersion: v25.0.5+incompatible 
-│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
 │                        │     ├ Status          : fixed 
 │                        │     ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc3264
 │                        │     │                  │         21ea318f623cca695957 
@@ -9981,7 +10016,8 @@
 │                        │     ├ CweIDs           ╭ [0]: CWE-187 
 │                        │     │                  ├ [1]: CWE-444 
 │                        │     │                  ╰ [2]: CWE-863 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 4 
+│                        │     ├ VendorSeverity   ╭ amazon: 3 
+│                        │     │                  ├ ghsa  : 4 
 │                        │     │                  ╰ redhat: 4 
 │                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
 │                        │     │                  │        │           /A:H 
@@ -10131,7 +10167,7 @@
 │                        │     │                  │       tible 
 │                        │     │                  ╰ UID : 86ad2fe7aa350ba4 
 │                        │     ├ InstalledVersion: v27.0.3+incompatible 
-│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
 │                        │     ├ Status          : fixed 
 │                        │     ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc3264
 │                        │     │                  │         21ea318f623cca695957 
@@ -10182,7 +10218,8 @@
 │                        │     ├ CweIDs           ╭ [0]: CWE-187 
 │                        │     │                  ├ [1]: CWE-444 
 │                        │     │                  ╰ [2]: CWE-863 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 4 
+│                        │     ├ VendorSeverity   ╭ amazon: 3 
+│                        │     │                  ├ ghsa  : 4 
 │                        │     │                  ╰ redhat: 4 
 │                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
 │                        │     │                  │        │           /A:H 
