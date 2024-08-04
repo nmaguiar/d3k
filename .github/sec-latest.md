@@ -30,7 +30,8 @@
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -76,7 +77,8 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -123,7 +125,8 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -168,7 +171,8 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -211,7 +215,8 @@
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -257,7 +262,8 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -304,7 +310,8 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -349,7 +356,8 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -392,7 +400,8 @@
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -438,7 +447,8 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -485,7 +495,8 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -530,7 +541,8 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -1077,7 +1089,8 @@
 │                        │      │                   9.19.0 through 9.19.24, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -1123,7 +1136,8 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -1170,7 +1184,8 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -1215,7 +1230,8 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 3 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
