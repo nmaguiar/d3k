@@ -28,6 +28,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -71,6 +72,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -116,6 +118,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -160,6 +163,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -203,6 +207,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -246,6 +251,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -291,6 +297,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -335,6 +342,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -378,6 +386,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -421,6 +430,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -466,6 +476,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -510,6 +521,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -983,6 +995,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -1026,6 +1039,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -1071,6 +1085,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -1115,6 +1130,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
