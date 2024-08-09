@@ -1779,7 +1779,8 @@
       PURL: pkg:deb/ubuntu/krb5-locales@1.20.1-6ubuntu2?arch=all&distro=ubuntu-24.04
       UID: cea867423b688b2
     InstalledVersion: 1.20.1-6ubuntu2
-    Status: affected
+    FixedVersion: 1.20.1-6ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
@@ -1805,6 +1806,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-37370
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://nvd.nist.gov/vuln/detail/CVE-2024-37370
+    - https://ubuntu.com/security/notices/USN-6947-1
     - https://web.mit.edu/kerberos/www/advisories/
     - https://web.mit.edu/kerberos/www/krb5-1.21/
     - https://www.cve.org/CVERecord?id=CVE-2024-37370
@@ -1817,7 +1819,8 @@
       PURL: pkg:deb/ubuntu/krb5-locales@1.20.1-6ubuntu2?arch=all&distro=ubuntu-24.04
       UID: cea867423b688b2
     InstalledVersion: 1.20.1-6ubuntu2
-    Status: affected
+    FixedVersion: 1.20.1-6ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
@@ -1843,6 +1846,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-37371
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://nvd.nist.gov/vuln/detail/CVE-2024-37371
+    - https://ubuntu.com/security/notices/USN-6947-1
     - https://web.mit.edu/kerberos/www/advisories/
     - https://web.mit.edu/kerberos/www/krb5-1.21/
     - https://www.cve.org/CVERecord?id=CVE-2024-37371
@@ -2263,7 +2267,8 @@
       PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.20.1-6ubuntu2?arch=amd64&distro=ubuntu-24.04
       UID: 107365047477de89
     InstalledVersion: 1.20.1-6ubuntu2
-    Status: affected
+    FixedVersion: 1.20.1-6ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
@@ -2289,6 +2294,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-37370
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://nvd.nist.gov/vuln/detail/CVE-2024-37370
+    - https://ubuntu.com/security/notices/USN-6947-1
     - https://web.mit.edu/kerberos/www/advisories/
     - https://web.mit.edu/kerberos/www/krb5-1.21/
     - https://www.cve.org/CVERecord?id=CVE-2024-37370
@@ -2301,7 +2307,8 @@
       PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.20.1-6ubuntu2?arch=amd64&distro=ubuntu-24.04
       UID: 107365047477de89
     InstalledVersion: 1.20.1-6ubuntu2
-    Status: affected
+    FixedVersion: 1.20.1-6ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
@@ -2327,6 +2334,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-37371
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://nvd.nist.gov/vuln/detail/CVE-2024-37371
+    - https://ubuntu.com/security/notices/USN-6947-1
     - https://web.mit.edu/kerberos/www/advisories/
     - https://web.mit.edu/kerberos/www/krb5-1.21/
     - https://www.cve.org/CVERecord?id=CVE-2024-37371
@@ -2482,7 +2490,8 @@
       PURL: pkg:deb/ubuntu/libk5crypto3@1.20.1-6ubuntu2?arch=amd64&distro=ubuntu-24.04
       UID: c57982d130496c50
     InstalledVersion: 1.20.1-6ubuntu2
-    Status: affected
+    FixedVersion: 1.20.1-6ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
@@ -2508,6 +2517,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-37370
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://nvd.nist.gov/vuln/detail/CVE-2024-37370
+    - https://ubuntu.com/security/notices/USN-6947-1
     - https://web.mit.edu/kerberos/www/advisories/
     - https://web.mit.edu/kerberos/www/krb5-1.21/
     - https://www.cve.org/CVERecord?id=CVE-2024-37370
@@ -2520,7 +2530,8 @@
       PURL: pkg:deb/ubuntu/libk5crypto3@1.20.1-6ubuntu2?arch=amd64&distro=ubuntu-24.04
       UID: c57982d130496c50
     InstalledVersion: 1.20.1-6ubuntu2
-    Status: affected
+    FixedVersion: 1.20.1-6ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
@@ -2546,6 +2557,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-37371
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://nvd.nist.gov/vuln/detail/CVE-2024-37371
+    - https://ubuntu.com/security/notices/USN-6947-1
     - https://web.mit.edu/kerberos/www/advisories/
     - https://web.mit.edu/kerberos/www/krb5-1.21/
     - https://www.cve.org/CVERecord?id=CVE-2024-37371
@@ -2701,7 +2713,8 @@
       PURL: pkg:deb/ubuntu/libkrb5-3@1.20.1-6ubuntu2?arch=amd64&distro=ubuntu-24.04
       UID: ac9ec2f6f1be7179
     InstalledVersion: 1.20.1-6ubuntu2
-    Status: affected
+    FixedVersion: 1.20.1-6ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
@@ -2727,6 +2740,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-37370
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://nvd.nist.gov/vuln/detail/CVE-2024-37370
+    - https://ubuntu.com/security/notices/USN-6947-1
     - https://web.mit.edu/kerberos/www/advisories/
     - https://web.mit.edu/kerberos/www/krb5-1.21/
     - https://www.cve.org/CVERecord?id=CVE-2024-37370
@@ -2739,7 +2753,8 @@
       PURL: pkg:deb/ubuntu/libkrb5-3@1.20.1-6ubuntu2?arch=amd64&distro=ubuntu-24.04
       UID: ac9ec2f6f1be7179
     InstalledVersion: 1.20.1-6ubuntu2
-    Status: affected
+    FixedVersion: 1.20.1-6ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
@@ -2765,6 +2780,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-37371
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://nvd.nist.gov/vuln/detail/CVE-2024-37371
+    - https://ubuntu.com/security/notices/USN-6947-1
     - https://web.mit.edu/kerberos/www/advisories/
     - https://web.mit.edu/kerberos/www/krb5-1.21/
     - https://www.cve.org/CVERecord?id=CVE-2024-37371
@@ -2920,7 +2936,8 @@
       PURL: pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2?arch=amd64&distro=ubuntu-24.04
       UID: f0110046a9da43ea
     InstalledVersion: 1.20.1-6ubuntu2
-    Status: affected
+    FixedVersion: 1.20.1-6ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
@@ -2946,6 +2963,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-37370
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://nvd.nist.gov/vuln/detail/CVE-2024-37370
+    - https://ubuntu.com/security/notices/USN-6947-1
     - https://web.mit.edu/kerberos/www/advisories/
     - https://web.mit.edu/kerberos/www/krb5-1.21/
     - https://www.cve.org/CVERecord?id=CVE-2024-37370
@@ -2958,7 +2976,8 @@
       PURL: pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2?arch=amd64&distro=ubuntu-24.04
       UID: f0110046a9da43ea
     InstalledVersion: 1.20.1-6ubuntu2
-    Status: affected
+    FixedVersion: 1.20.1-6ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
@@ -2984,6 +3003,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-37371
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://nvd.nist.gov/vuln/detail/CVE-2024-37371
+    - https://ubuntu.com/security/notices/USN-6947-1
     - https://web.mit.edu/kerberos/www/advisories/
     - https://web.mit.edu/kerberos/www/krb5-1.21/
     - https://www.cve.org/CVERecord?id=CVE-2024-37371
@@ -6040,7 +6060,7 @@
       alma: 3
       amazon: 2
       bitnami: 3
-      cbl-mariner: 2
+      cbl-mariner: 3
       oracle-oval: 3
       redhat: 2
       rocky: 3
@@ -7790,7 +7810,7 @@
       alma: 3
       amazon: 2
       bitnami: 3
-      cbl-mariner: 2
+      cbl-mariner: 3
       oracle-oval: 3
       redhat: 2
       rocky: 3
