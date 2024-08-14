@@ -74,6 +74,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -87,6 +88,8 @@
     - https://access.redhat.com/security/cve/CVE-2024-1737
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
+    - https://linux.oracle.com/cve/CVE-2024-1737.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-1737
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://ubuntu.com/security/notices/USN-6909-2
@@ -121,6 +124,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -133,6 +137,8 @@
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
     - https://access.redhat.com/security/cve/CVE-2024-1975
     - https://kb.isc.org/docs/cve-2024-1975
+    - https://linux.oracle.com/cve/CVE-2024-1975.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-1975
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://ubuntu.com/security/notices/USN-6909-2
@@ -167,6 +173,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -179,6 +186,8 @@
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
     - https://access.redhat.com/security/cve/CVE-2024-4076
     - https://kb.isc.org/docs/cve-2024-4076
+    - https://linux.oracle.com/cve/CVE-2024-4076.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-4076
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://www.cve.org/CVERecord?id=CVE-2024-4076
@@ -256,6 +265,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -269,6 +279,8 @@
     - https://access.redhat.com/security/cve/CVE-2024-1737
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
+    - https://linux.oracle.com/cve/CVE-2024-1737.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-1737
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://ubuntu.com/security/notices/USN-6909-2
@@ -303,6 +315,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -315,6 +328,8 @@
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
     - https://access.redhat.com/security/cve/CVE-2024-1975
     - https://kb.isc.org/docs/cve-2024-1975
+    - https://linux.oracle.com/cve/CVE-2024-1975.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-1975
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://ubuntu.com/security/notices/USN-6909-2
@@ -349,6 +364,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -361,6 +377,8 @@
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
     - https://access.redhat.com/security/cve/CVE-2024-4076
     - https://kb.isc.org/docs/cve-2024-4076
+    - https://linux.oracle.com/cve/CVE-2024-4076.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-4076
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://www.cve.org/CVERecord?id=CVE-2024-4076
@@ -438,6 +456,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -451,6 +470,8 @@
     - https://access.redhat.com/security/cve/CVE-2024-1737
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
+    - https://linux.oracle.com/cve/CVE-2024-1737.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-1737
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://ubuntu.com/security/notices/USN-6909-2
@@ -485,6 +506,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -497,6 +519,8 @@
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
     - https://access.redhat.com/security/cve/CVE-2024-1975
     - https://kb.isc.org/docs/cve-2024-1975
+    - https://linux.oracle.com/cve/CVE-2024-1975.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-1975
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://ubuntu.com/security/notices/USN-6909-2
@@ -531,6 +555,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -543,6 +568,8 @@
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
     - https://access.redhat.com/security/cve/CVE-2024-4076
     - https://kb.isc.org/docs/cve-2024-4076
+    - https://linux.oracle.com/cve/CVE-2024-4076.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-4076
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://www.cve.org/CVERecord?id=CVE-2024-4076
@@ -1105,6 +1132,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -1118,6 +1146,8 @@
     - https://access.redhat.com/security/cve/CVE-2024-1737
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
+    - https://linux.oracle.com/cve/CVE-2024-1737.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-1737
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://ubuntu.com/security/notices/USN-6909-2
@@ -1152,6 +1182,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -1164,6 +1195,8 @@
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
     - https://access.redhat.com/security/cve/CVE-2024-1975
     - https://kb.isc.org/docs/cve-2024-1975
+    - https://linux.oracle.com/cve/CVE-2024-1975.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-1975
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://ubuntu.com/security/notices/USN-6909-2
@@ -1198,6 +1231,7 @@
     VendorSeverity:
       amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -1210,6 +1244,8 @@
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
     - https://access.redhat.com/security/cve/CVE-2024-4076
     - https://kb.isc.org/docs/cve-2024-4076
+    - https://linux.oracle.com/cve/CVE-2024-4076.html
+    - https://linux.oracle.com/errata/ELSA-2024-5231.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-4076
     - https://ubuntu.com/security/notices/USN-6909-1
     - https://www.cve.org/CVERecord?id=CVE-2024-4076
@@ -3135,50 +3171,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
     LastModifiedDate: '2024-05-14T15:09:00.787Z'
-  - VulnerabilityID: CVE-2020-22916
-    PkgID: liblzma5@5.6.1+really5.4.5-1
-    PkgName: liblzma5
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/liblzma5@5.6.1%2Breally5.4.5-1?arch=amd64&distro=ubuntu-24.04
-      UID: 6e42cec41f371b3c
-    InstalledVersion: 5.6.1+really5.4.5-1
-    Status: affected
-    Layer:
-      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
-      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2020-22916
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: Denial of service via decompression of crafted file
-    Description: 'An issue discovered in XZ 5.2.5 allows attackers to cause a denial of service via decompression of a crafted file. NOTE: the vendor disputes the claims of "endless output" and "denial of service" because decompression of the 17,486 bytes always results in 114,881,179 bytes, which is often a reasonable size increase.'
-    Severity: MEDIUM
-    VendorSeverity:
-      nvd: 2
-      redhat: 1
-      ubuntu: 2
-    CVSS:
-      nvd:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
-        V3Score: 5.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
-        V3Score: 5.5
-    References:
-    - http://web.archive.org/web/20230918084612/https://github.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of-service-vulnerability
-    - https://access.redhat.com/security/cve/CVE-2020-22916
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2234987
-    - https://bugzilla.suse.com/show_bug.cgi?id=1214590
-    - https://github.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of-service-vulnerability
-    - https://github.com/tukaani-project/xz/issues/61
-    - https://nvd.nist.gov/vuln/detail/CVE-2020-22916
-    - https://security-tracker.debian.org/tracker/CVE-2020-22916
-    - https://tukaani.org/xz/
-    - https://www.cve.org/CVERecord?id=CVE-2020-22916
-    PublishedDate: '2023-08-22T19:16:19.407Z'
-    LastModifiedDate: '2024-08-04T15:15:49.027Z'
   - VulnerabilityID: CVE-2024-4032
     PkgID: libpython3.12-minimal@3.12.3-1
     PkgName: libpython3.12-minimal
@@ -3483,6 +3475,8 @@
 
       The OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.
     Severity: LOW
+    CweIDs:
+    - CWE-834
     VendorSeverity:
       amazon: 2
       azure: 2
@@ -3506,7 +3500,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-4603
     - https://www.openssl.org/news/secadv/20240516.txt
     PublishedDate: '2024-05-16T16:15:10.643Z'
-    LastModifiedDate: '2024-06-21T19:15:30.783Z'
+    LastModifiedDate: '2024-08-13T16:35:05.013Z'
   - VulnerabilityID: CVE-2024-4741
     PkgID: libssl3t64@3.0.13-0ubuntu3.1
     PkgName: libssl3t64
@@ -3910,6 +3904,8 @@
 
       The OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.
     Severity: LOW
+    CweIDs:
+    - CWE-834
     VendorSeverity:
       amazon: 2
       azure: 2
@@ -3933,7 +3929,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-4603
     - https://www.openssl.org/news/secadv/20240516.txt
     PublishedDate: '2024-05-16T16:15:10.643Z'
-    LastModifiedDate: '2024-06-21T19:15:30.783Z'
+    LastModifiedDate: '2024-08-13T16:35:05.013Z'
   - VulnerabilityID: CVE-2024-4741
     PkgID: openssl@3.0.13-0ubuntu3.1
     PkgName: openssl
@@ -4394,50 +4390,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2021-31879
     PublishedDate: '2021-04-29T05:15:08.707Z'
     LastModifiedDate: '2022-05-13T20:52:24.793Z'
-  - VulnerabilityID: CVE-2020-22916
-    PkgID: xz-utils@5.6.1+really5.4.5-1
-    PkgName: xz-utils
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/xz-utils@5.6.1%2Breally5.4.5-1?arch=amd64&distro=ubuntu-24.04
-      UID: 24d71d4a36d15d58
-    InstalledVersion: 5.6.1+really5.4.5-1
-    Status: affected
-    Layer:
-      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
-      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2020-22916
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: Denial of service via decompression of crafted file
-    Description: 'An issue discovered in XZ 5.2.5 allows attackers to cause a denial of service via decompression of a crafted file. NOTE: the vendor disputes the claims of "endless output" and "denial of service" because decompression of the 17,486 bytes always results in 114,881,179 bytes, which is often a reasonable size increase.'
-    Severity: MEDIUM
-    VendorSeverity:
-      nvd: 2
-      redhat: 1
-      ubuntu: 2
-    CVSS:
-      nvd:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
-        V3Score: 5.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
-        V3Score: 5.5
-    References:
-    - http://web.archive.org/web/20230918084612/https://github.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of-service-vulnerability
-    - https://access.redhat.com/security/cve/CVE-2020-22916
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2234987
-    - https://bugzilla.suse.com/show_bug.cgi?id=1214590
-    - https://github.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of-service-vulnerability
-    - https://github.com/tukaani-project/xz/issues/61
-    - https://nvd.nist.gov/vuln/detail/CVE-2020-22916
-    - https://security-tracker.debian.org/tracker/CVE-2020-22916
-    - https://tukaani.org/xz/
-    - https://www.cve.org/CVERecord?id=CVE-2020-22916
-    PublishedDate: '2023-08-22T19:16:19.407Z'
-    LastModifiedDate: '2024-08-04T15:15:49.027Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
@@ -4750,7 +4702,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -5058,6 +5010,7 @@
     - https://ubuntu.com/security/notices/USN-6754-1
     - https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records
     - https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records/
+    - https://www.cisa.gov/known-exploited-vulnerabilities-catalog
     - https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487
     - https://www.cve.org/CVERecord?id=CVE-2023-44487
     - https://www.darkreading.com/cloud/internet-wide-zero-day-bug-fuels-largest-ever-ddos-event
@@ -5661,7 +5614,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -5728,7 +5681,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -6500,7 +6453,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -6808,6 +6761,7 @@
     - https://ubuntu.com/security/notices/USN-6754-1
     - https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records
     - https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records/
+    - https://www.cisa.gov/known-exploited-vulnerabilities-catalog
     - https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487
     - https://www.cve.org/CVERecord?id=CVE-2023-44487
     - https://www.darkreading.com/cloud/internet-wide-zero-day-bug-fuels-largest-ever-ddos-event
@@ -7411,7 +7365,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -7478,7 +7432,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
