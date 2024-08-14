@@ -77,23 +77,28 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1737 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [4]: https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [4] : https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-1737.html 
+│                        │      │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [2]  ╭ VulnerabilityID : CVE-2024-1975 
@@ -126,11 +131,12 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
@@ -138,10 +144,12 @@
 │                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
 │                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1975 
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2024-4076 
@@ -173,11 +181,12 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
@@ -185,9 +194,11 @@
 │                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
 │                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-4076 
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-4076.html 
+│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2024-0760 
@@ -265,23 +276,28 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1737 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [4]: https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [4] : https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-1737.html 
+│                        │      │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [6]  ╭ VulnerabilityID : CVE-2024-1975 
@@ -314,11 +330,12 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
@@ -326,10 +343,12 @@
 │                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
 │                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1975 
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2024-4076 
@@ -361,11 +380,12 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
@@ -373,9 +393,11 @@
 │                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
 │                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-4076 
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-4076.html 
+│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2024-0760 
@@ -453,23 +475,28 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1737 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [4]: https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [4] : https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-1737.html 
+│                        │      │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2024-1975 
@@ -502,11 +529,12 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
@@ -514,10 +542,12 @@
 │                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
 │                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1975 
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [11] ╭ VulnerabilityID : CVE-2024-4076 
@@ -549,11 +579,12 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
@@ -561,9 +592,11 @@
 │                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
 │                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-4076 
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-4076.html 
+│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2016-2781 
@@ -1201,23 +1234,28 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1737 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [4]: https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [4] : https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-1737.html 
+│                        │      │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [23] ╭ VulnerabilityID : CVE-2024-1975 
@@ -1250,11 +1288,12 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
@@ -1262,10 +1301,12 @@
 │                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
 │                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1975 
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [24] ╭ VulnerabilityID : CVE-2024-4076 
@@ -1297,11 +1338,12 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ amazon: 3 
-│                        │      │                  ├ azure : 3 
-│                        │      │                  ├ photon: 3 
-│                        │      │                  ├ redhat: 3 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
@@ -1309,9 +1351,11 @@
 │                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
 │                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-4076 
 │                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-4076.html 
+│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5231.html 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [25] ╭ VulnerabilityID : CVE-2018-1000021 
@@ -3302,57 +3346,7 @@
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
-│                        ├ [68] ╭ VulnerabilityID : CVE-2020-22916 
-│                        │      ├ PkgID           : liblzma5@5.6.1+really5.4.5-1 
-│                        │      ├ PkgName         : liblzma5 
-│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/liblzma5@5.6.1%2Breally5.4.5-1?arch=a
-│                        │      │                  │       md64&distro=ubuntu-24.04 
-│                        │      │                  ╰ UID : 6e42cec41f371b3c 
-│                        │      ├ InstalledVersion: 5.6.1+really5.4.5-1 
-│                        │      ├ Status          : affected 
-│                        │      ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326
-│                        │      │                  │         421ea318f623cca695957 
-│                        │      │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9
-│                        │      │                            e855b8886008bcbee3664 
-│                        │      ├ SeveritySource  : ubuntu 
-│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2020-22916 
-│                        │      ├ DataSource       ╭ ID  : ubuntu 
-│                        │      │                  ├ Name: Ubuntu CVE Tracker 
-│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                        │      ├ Title           : Denial of service via decompression of crafted file 
-│                        │      ├ Description     : An issue discovered in XZ 5.2.5 allows attackers to cause a
-│                        │      │                    denial of service via decompression of a crafted file.
-│                        │      │                   NOTE: the vendor disputes the claims of "endless output"
-│                        │      │                   and "denial of service" because decompression of the 17,486
-│                        │      │                    bytes always results in 114,881,179 bytes, which is often
-│                        │      │                   a reasonable size increase. 
-│                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ nvd   : 2 
-│                        │      │                  ├ redhat: 1 
-│                        │      │                  ╰ ubuntu: 2 
-│                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
-│                        │      │                  │        │           N/A:H 
-│                        │      │                  │        ╰ V3Score : 5.5 
-│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
-│                        │      │                           │           N/A:H 
-│                        │      │                           ╰ V3Score : 5.5 
-│                        │      ├ References       ╭ [0]: http://web.archive.org/web/20230918084612/https://git
-│                        │      │                  │      hub.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of
-│                        │      │                  │      -service-vulnerability 
-│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2020-22916 
-│                        │      │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2234987 
-│                        │      │                  ├ [3]: https://bugzilla.suse.com/show_bug.cgi?id=1214590 
-│                        │      │                  ├ [4]: https://github.com/snappyJack/CVE-request-XZ-5.2.5-ha
-│                        │      │                  │      s-denial-of-service-vulnerability 
-│                        │      │                  ├ [5]: https://github.com/tukaani-project/xz/issues/61 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2020-22916 
-│                        │      │                  ├ [7]: https://security-tracker.debian.org/tracker/CVE-2020-
-│                        │      │                  │      22916 
-│                        │      │                  ├ [8]: https://tukaani.org/xz/ 
-│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2020-22916 
-│                        │      ├ PublishedDate   : 2023-08-22T19:16:19.407Z 
-│                        │      ╰ LastModifiedDate: 2024-08-04T15:15:49.027Z 
-│                        ├ [69] ╭ VulnerabilityID : CVE-2024-4032 
+│                        ├ [68] ╭ VulnerabilityID : CVE-2024-4032 
 │                        │      ├ PkgID           : libpython3.12-minimal@3.12.3-1 
 │                        │      ├ PkgName         : libpython3.12-minimal 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-minimal@3.12.3-1?arch=a
@@ -3432,7 +3426,7 @@
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
-│                        ├ [70] ╭ VulnerabilityID : CVE-2024-4032 
+│                        ├ [69] ╭ VulnerabilityID : CVE-2024-4032 
 │                        │      ├ PkgID           : libpython3.12-stdlib@3.12.3-1 
 │                        │      ├ PkgName         : libpython3.12-stdlib 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-stdlib@3.12.3-1?arch=am
@@ -3512,7 +3506,7 @@
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
-│                        ├ [71] ╭ VulnerabilityID : CVE-2024-4032 
+│                        ├ [70] ╭ VulnerabilityID : CVE-2024-4032 
 │                        │      ├ PkgID           : libpython3.12t64@3.12.3-1 
 │                        │      ├ PkgName         : libpython3.12t64 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12t64@3.12.3-1?arch=amd64&
@@ -3592,7 +3586,7 @@
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
-│                        ├ [72] ╭ VulnerabilityID : CVE-2024-2511 
+│                        ├ [71] ╭ VulnerabilityID : CVE-2024-2511 
 │                        │      ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : libssl3t64 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=amd
@@ -3673,7 +3667,7 @@
 │                        │      │                  ╰ [11]: https://www.openssl.org/news/vulnerabilities.html 
 │                        │      ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
 │                        │      ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-│                        ├ [73] ╭ VulnerabilityID : CVE-2024-4603 
+│                        ├ [72] ╭ VulnerabilityID : CVE-2024-4603 
 │                        │      ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : libssl3t64 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=amd
@@ -3742,6 +3736,7 @@
 │                        │      │                   The OpenSSL 3.0 and 3.1 FIPS providers are affected by this
 │                        │      │                    issue. 
 │                        │      ├ Severity        : LOW 
+│                        │      ├ CweIDs           ─ [0]: CWE-834 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -3768,8 +3763,8 @@
 │                        │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2024-4603 
 │                        │      │                  ╰ [10]: https://www.openssl.org/news/secadv/20240516.txt 
 │                        │      ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
-│                        │      ╰ LastModifiedDate: 2024-06-21T19:15:30.783Z 
-│                        ├ [74] ╭ VulnerabilityID : CVE-2024-4741 
+│                        │      ╰ LastModifiedDate: 2024-08-13T16:35:05.013Z 
+│                        ├ [73] ╭ VulnerabilityID : CVE-2024-4741 
 │                        │      ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : libssl3t64 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=amd
@@ -3806,7 +3801,7 @@
 │                        │                         ├ [2]: https://ubuntu.com/security/notices/USN-6937-1 
 │                        │                         ├ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4741 
 │                        │                         ╰ [4]: https://www.openssl.org/news/secadv/20240528.txt 
-│                        ├ [75] ╭ VulnerabilityID : CVE-2024-5535 
+│                        ├ [74] ╭ VulnerabilityID : CVE-2024-5535 
 │                        │      ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : libssl3t64 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=amd
@@ -3971,7 +3966,7 @@
 │                        │      │                  ╰ [14]: https://www.openssl.org/news/secadv/20240627.txt 
 │                        │      ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
 │                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.79Z 
-│                        ├ [76] ╭ VulnerabilityID : CVE-2024-39894 
+│                        ├ [75] ╭ VulnerabilityID : CVE-2024-39894 
 │                        │      ├ PkgID           : openssh-client@1:9.6p1-3ubuntu13.3 
 │                        │      ├ PkgName         : openssh-client 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.6p1-3ubuntu13.3?arch
@@ -4023,7 +4018,7 @@
 │                        │      │                          02/1 
 │                        │      ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T21:15:10.38Z 
-│                        ├ [77] ╭ VulnerabilityID : CVE-2024-39894 
+│                        ├ [76] ╭ VulnerabilityID : CVE-2024-39894 
 │                        │      ├ PkgID           : openssh-server@1:9.6p1-3ubuntu13.3 
 │                        │      ├ PkgName         : openssh-server 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.6p1-3ubuntu13.3?arch
@@ -4075,7 +4070,7 @@
 │                        │      │                          02/1 
 │                        │      ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T21:15:10.38Z 
-│                        ├ [78] ╭ VulnerabilityID : CVE-2024-39894 
+│                        ├ [77] ╭ VulnerabilityID : CVE-2024-39894 
 │                        │      ├ PkgID           : openssh-sftp-server@1:9.6p1-3ubuntu13.3 
 │                        │      ├ PkgName         : openssh-sftp-server 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.6p1-3ubuntu13.3
@@ -4127,7 +4122,7 @@
 │                        │      │                          02/1 
 │                        │      ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T21:15:10.38Z 
-│                        ├ [79] ╭ VulnerabilityID : CVE-2024-2511 
+│                        ├ [78] ╭ VulnerabilityID : CVE-2024-2511 
 │                        │      ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : openssl 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64&
@@ -4208,7 +4203,7 @@
 │                        │      │                  ╰ [11]: https://www.openssl.org/news/vulnerabilities.html 
 │                        │      ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
 │                        │      ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-│                        ├ [80] ╭ VulnerabilityID : CVE-2024-4603 
+│                        ├ [79] ╭ VulnerabilityID : CVE-2024-4603 
 │                        │      ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : openssl 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64&
@@ -4277,6 +4272,7 @@
 │                        │      │                   The OpenSSL 3.0 and 3.1 FIPS providers are affected by this
 │                        │      │                    issue. 
 │                        │      ├ Severity        : LOW 
+│                        │      ├ CweIDs           ─ [0]: CWE-834 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4303,8 +4299,8 @@
 │                        │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2024-4603 
 │                        │      │                  ╰ [10]: https://www.openssl.org/news/secadv/20240516.txt 
 │                        │      ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
-│                        │      ╰ LastModifiedDate: 2024-06-21T19:15:30.783Z 
-│                        ├ [81] ╭ VulnerabilityID : CVE-2024-4741 
+│                        │      ╰ LastModifiedDate: 2024-08-13T16:35:05.013Z 
+│                        ├ [80] ╭ VulnerabilityID : CVE-2024-4741 
 │                        │      ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : openssl 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64&
@@ -4341,7 +4337,7 @@
 │                        │                         ├ [2]: https://ubuntu.com/security/notices/USN-6937-1 
 │                        │                         ├ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4741 
 │                        │                         ╰ [4]: https://www.openssl.org/news/secadv/20240528.txt 
-│                        ├ [82] ╭ VulnerabilityID : CVE-2024-5535 
+│                        ├ [81] ╭ VulnerabilityID : CVE-2024-5535 
 │                        │      ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │      ├ PkgName         : openssl 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64&
@@ -4506,7 +4502,7 @@
 │                        │      │                  ╰ [14]: https://www.openssl.org/news/secadv/20240627.txt 
 │                        │      ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
 │                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.79Z 
-│                        ├ [83] ╭ VulnerabilityID : CVE-2018-6952 
+│                        ├ [82] ╭ VulnerabilityID : CVE-2018-6952 
 │                        │      ├ PkgID           : patch@2.7.6-7build3 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -4556,7 +4552,7 @@
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                        │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                        │      ╰ LastModifiedDate: 2019-04-17T20:29:01.727Z 
-│                        ├ [84] ╭ VulnerabilityID : CVE-2021-45261 
+│                        ├ [83] ╭ VulnerabilityID : CVE-2021-45261 
 │                        │      ├ PkgID           : patch@2.7.6-7build3 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -4596,7 +4592,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                        │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                        │      ╰ LastModifiedDate: 2021-12-28T14:24:34.243Z 
-│                        ├ [85] ╭ VulnerabilityID : CVE-2024-4032 
+│                        ├ [84] ╭ VulnerabilityID : CVE-2024-4032 
 │                        │      ├ PkgID           : python3.12@3.12.3-1 
 │                        │      ├ PkgName         : python3.12 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.3-1?arch=amd64&distro
@@ -4676,7 +4672,7 @@
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
-│                        ├ [86] ╭ VulnerabilityID : CVE-2024-4032 
+│                        ├ [85] ╭ VulnerabilityID : CVE-2024-4032 
 │                        │      ├ PkgID           : python3.12-minimal@3.12.3-1 
 │                        │      ├ PkgName         : python3.12-minimal 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.3-1?arch=amd6
@@ -4756,7 +4752,7 @@
 │                        │      │                          egistry/iana-ipv6-special-registry.xhtml 
 │                        │      ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │      ╰ LastModifiedDate: 2024-07-28T14:15:10.783Z 
-│                        ├ [87] ╭ VulnerabilityID : CVE-2021-4217 
+│                        ├ [86] ╭ VulnerabilityID : CVE-2021-4217 
 │                        │      ├ PkgID           : unzip@6.0-28ubuntu4 
 │                        │      ├ PkgName         : unzip 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/unzip@6.0-28ubuntu4?arch=amd64&distro
@@ -4802,103 +4798,53 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-4217 
 │                        │      ├ PublishedDate   : 2022-08-24T16:15:10.09Z 
 │                        │      ╰ LastModifiedDate: 2022-11-29T15:45:16.2Z 
-│                        ├ [88] ╭ VulnerabilityID : CVE-2021-31879 
-│                        │      ├ PkgID           : wget@1.21.4-1ubuntu4.1 
-│                        │      ├ PkgName         : wget 
-│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.21.4-1ubuntu4.1?arch=amd64&dis
-│                        │      │                  │       tro=ubuntu-24.04 
-│                        │      │                  ╰ UID : c8e745844c2a57d8 
-│                        │      ├ InstalledVersion: 1.21.4-1ubuntu4.1 
-│                        │      ├ Status          : affected 
-│                        │      ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326
-│                        │      │                  │         421ea318f623cca695957 
-│                        │      │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9
-│                        │      │                            e855b8886008bcbee3664 
-│                        │      ├ SeveritySource  : ubuntu 
-│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2021-31879 
-│                        │      ├ DataSource       ╭ ID  : ubuntu 
-│                        │      │                  ├ Name: Ubuntu CVE Tracker 
-│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                        │      ├ Title           : wget: authorization header disclosure on redirect 
-│                        │      ├ Description     : GNU Wget through 1.21.1 does not omit the Authorization
-│                        │      │                   header upon a redirect to a different origin, a related
-│                        │      │                   issue to CVE-2018-1000007. 
-│                        │      ├ Severity        : MEDIUM 
-│                        │      ├ CweIDs           ─ [0]: CWE-601 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
-│                        │      │                  ├ cbl-mariner: 2 
-│                        │      │                  ├ nvd        : 2 
-│                        │      │                  ├ photon     : 2 
-│                        │      │                  ├ redhat     : 2 
-│                        │      │                  ╰ ubuntu     : 2 
-│                        │      ├ CVSS             ╭ nvd    ╭ V2Vector: AV:N/AC:M/Au:N/C:P/I:P/A:N 
-│                        │      │                  │        ├ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
-│                        │      │                  │        │           L/A:N 
-│                        │      │                  │        ├ V2Score : 5.8 
-│                        │      │                  │        ╰ V3Score : 6.1 
-│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:
-│                        │      │                           │           N/A:N 
-│                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2021-31879 
-│                        │      │                  ├ [1]: https://mail.gnu.org/archive/html/bug-wget/2021-02/ms
-│                        │      │                  │      g00002.html 
-│                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2021-31879 
-│                        │      │                  ├ [3]: https://savannah.gnu.org/bugs/?56909 
-│                        │      │                  ├ [4]: https://security.netapp.com/advisory/ntap-20210618-00
-│                        │      │                  │      02/ 
-│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
-│                        │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
-│                        │      ╰ LastModifiedDate: 2022-05-13T20:52:24.793Z 
-│                        ╰ [89] ╭ VulnerabilityID : CVE-2020-22916 
-│                               ├ PkgID           : xz-utils@5.6.1+really5.4.5-1 
-│                               ├ PkgName         : xz-utils 
-│                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xz-utils@5.6.1%2Breally5.4.5-1?arch=a
-│                               │                  │       md64&distro=ubuntu-24.04 
-│                               │                  ╰ UID : 24d71d4a36d15d58 
-│                               ├ InstalledVersion: 5.6.1+really5.4.5-1 
+│                        ╰ [87] ╭ VulnerabilityID : CVE-2021-31879 
+│                               ├ PkgID           : wget@1.21.4-1ubuntu4.1 
+│                               ├ PkgName         : wget 
+│                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.21.4-1ubuntu4.1?arch=amd64&dis
+│                               │                  │       tro=ubuntu-24.04 
+│                               │                  ╰ UID : c8e745844c2a57d8 
+│                               ├ InstalledVersion: 1.21.4-1ubuntu4.1 
 │                               ├ Status          : affected 
 │                               ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326
 │                               │                  │         421ea318f623cca695957 
 │                               │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9
 │                               │                            e855b8886008bcbee3664 
 │                               ├ SeveritySource  : ubuntu 
-│                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2020-22916 
+│                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2021-31879 
 │                               ├ DataSource       ╭ ID  : ubuntu 
 │                               │                  ├ Name: Ubuntu CVE Tracker 
 │                               │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                               ├ Title           : Denial of service via decompression of crafted file 
-│                               ├ Description     : An issue discovered in XZ 5.2.5 allows attackers to cause a
-│                               │                    denial of service via decompression of a crafted file.
-│                               │                   NOTE: the vendor disputes the claims of "endless output"
-│                               │                   and "denial of service" because decompression of the 17,486
-│                               │                    bytes always results in 114,881,179 bytes, which is often
-│                               │                   a reasonable size increase. 
+│                               ├ Title           : wget: authorization header disclosure on redirect 
+│                               ├ Description     : GNU Wget through 1.21.1 does not omit the Authorization
+│                               │                   header upon a redirect to a different origin, a related
+│                               │                   issue to CVE-2018-1000007. 
 │                               ├ Severity        : MEDIUM 
-│                               ├ VendorSeverity   ╭ nvd   : 2 
-│                               │                  ├ redhat: 1 
-│                               │                  ╰ ubuntu: 2 
-│                               ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
-│                               │                  │        │           N/A:H 
-│                               │                  │        ╰ V3Score : 5.5 
-│                               │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
-│                               │                           │           N/A:H 
-│                               │                           ╰ V3Score : 5.5 
-│                               ├ References       ╭ [0]: http://web.archive.org/web/20230918084612/https://git
-│                               │                  │      hub.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of
-│                               │                  │      -service-vulnerability 
-│                               │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2020-22916 
-│                               │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2234987 
-│                               │                  ├ [3]: https://bugzilla.suse.com/show_bug.cgi?id=1214590 
-│                               │                  ├ [4]: https://github.com/snappyJack/CVE-request-XZ-5.2.5-ha
-│                               │                  │      s-denial-of-service-vulnerability 
-│                               │                  ├ [5]: https://github.com/tukaani-project/xz/issues/61 
-│                               │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2020-22916 
-│                               │                  ├ [7]: https://security-tracker.debian.org/tracker/CVE-2020-
-│                               │                  │      22916 
-│                               │                  ├ [8]: https://tukaani.org/xz/ 
-│                               │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2020-22916 
-│                               ├ PublishedDate   : 2023-08-22T19:16:19.407Z 
-│                               ╰ LastModifiedDate: 2024-08-04T15:15:49.027Z 
+│                               ├ CweIDs           ─ [0]: CWE-601 
+│                               ├ VendorSeverity   ╭ amazon     : 2 
+│                               │                  ├ cbl-mariner: 2 
+│                               │                  ├ nvd        : 2 
+│                               │                  ├ photon     : 2 
+│                               │                  ├ redhat     : 2 
+│                               │                  ╰ ubuntu     : 2 
+│                               ├ CVSS             ╭ nvd    ╭ V2Vector: AV:N/AC:M/Au:N/C:P/I:P/A:N 
+│                               │                  │        ├ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
+│                               │                  │        │           L/A:N 
+│                               │                  │        ├ V2Score : 5.8 
+│                               │                  │        ╰ V3Score : 6.1 
+│                               │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:
+│                               │                           │           N/A:N 
+│                               │                           ╰ V3Score : 6.5 
+│                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2021-31879 
+│                               │                  ├ [1]: https://mail.gnu.org/archive/html/bug-wget/2021-02/ms
+│                               │                  │      g00002.html 
+│                               │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2021-31879 
+│                               │                  ├ [3]: https://savannah.gnu.org/bugs/?56909 
+│                               │                  ├ [4]: https://security.netapp.com/advisory/ntap-20210618-00
+│                               │                  │      02/ 
+│                               │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
+│                               ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
+│                               ╰ LastModifiedDate: 2022-05-13T20:52:24.793Z 
 ├ [1]  ╭ Target         : Java 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : jar 
@@ -5382,7 +5328,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -5908,38 +5854,40 @@
 │                        │      │                  ├ [215]: https://www.bleepingcomputer.com/news/security/new-
 │                        │      │                  │        http-2-rapid-reset-zero-day-attack-breaks-ddos-reco
 │                        │      │                  │        rds/ 
-│                        │      │                  ├ [216]: https://www.cisa.gov/news-events/alerts/2023/10/10/
+│                        │      │                  ├ [216]: https://www.cisa.gov/known-exploited-vulnerabilitie
+│                        │      │                  │        s-catalog 
+│                        │      │                  ├ [217]: https://www.cisa.gov/news-events/alerts/2023/10/10/
 │                        │      │                  │        http2-rapid-reset-vulnerability-cve-2023-44487 
-│                        │      │                  ├ [217]: https://www.cve.org/CVERecord?id=CVE-2023-44487 
-│                        │      │                  ├ [218]: https://www.darkreading.com/cloud/internet-wide-zer
+│                        │      │                  ├ [218]: https://www.cve.org/CVERecord?id=CVE-2023-44487 
+│                        │      │                  ├ [219]: https://www.darkreading.com/cloud/internet-wide-zer
 │                        │      │                  │        o-day-bug-fuels-largest-ever-ddos-event 
-│                        │      │                  ├ [219]: https://www.debian.org/security/2023/dsa-5521 
-│                        │      │                  ├ [220]: https://www.debian.org/security/2023/dsa-5522 
-│                        │      │                  ├ [221]: https://www.debian.org/security/2023/dsa-5540 
-│                        │      │                  ├ [222]: https://www.debian.org/security/2023/dsa-5549 
-│                        │      │                  ├ [223]: https://www.debian.org/security/2023/dsa-5558 
-│                        │      │                  ├ [224]: https://www.debian.org/security/2023/dsa-5570 
-│                        │      │                  ├ [225]: https://www.eclipse.org/lists/jetty-announce/msg001
+│                        │      │                  ├ [220]: https://www.debian.org/security/2023/dsa-5521 
+│                        │      │                  ├ [221]: https://www.debian.org/security/2023/dsa-5522 
+│                        │      │                  ├ [222]: https://www.debian.org/security/2023/dsa-5540 
+│                        │      │                  ├ [223]: https://www.debian.org/security/2023/dsa-5549 
+│                        │      │                  ├ [224]: https://www.debian.org/security/2023/dsa-5558 
+│                        │      │                  ├ [225]: https://www.debian.org/security/2023/dsa-5570 
+│                        │      │                  ├ [226]: https://www.eclipse.org/lists/jetty-announce/msg001
 │                        │      │                  │        81.html 
-│                        │      │                  ├ [226]: https://www.haproxy.com/blog/haproxy-is-not-affecte
+│                        │      │                  ├ [227]: https://www.haproxy.com/blog/haproxy-is-not-affecte
 │                        │      │                  │        d-by-the-http-2-rapid-reset-attack-cve-2023-44487 
-│                        │      │                  ├ [227]: https://www.mail-archive.com/haproxy@formilux.org/m
+│                        │      │                  ├ [228]: https://www.mail-archive.com/haproxy@formilux.org/m
 │                        │      │                  │        sg44134.html 
-│                        │      │                  ├ [228]: https://www.netlify.com/blog/netlify-successfully-m
-│                        │      │                  │        itigates-cve-2023-44487 
 │                        │      │                  ├ [229]: https://www.netlify.com/blog/netlify-successfully-m
+│                        │      │                  │        itigates-cve-2023-44487 
+│                        │      │                  ├ [230]: https://www.netlify.com/blog/netlify-successfully-m
 │                        │      │                  │        itigates-cve-2023-44487/ 
-│                        │      │                  ├ [230]: https://www.nginx.com/blog/http-2-rapid-reset-attac
-│                        │      │                  │        k-impacting-f5-nginx-products 
 │                        │      │                  ├ [231]: https://www.nginx.com/blog/http-2-rapid-reset-attac
+│                        │      │                  │        k-impacting-f5-nginx-products 
+│                        │      │                  ├ [232]: https://www.nginx.com/blog/http-2-rapid-reset-attac
 │                        │      │                  │        k-impacting-f5-nginx-products/ 
-│                        │      │                  ├ [232]: https://www.openwall.com/lists/oss-security/2023/10
+│                        │      │                  ├ [233]: https://www.openwall.com/lists/oss-security/2023/10
 │                        │      │                  │        /10/6 
-│                        │      │                  ├ [233]: https://www.phoronix.com/news/HTTP2-Rapid-Reset-Att
+│                        │      │                  ├ [234]: https://www.phoronix.com/news/HTTP2-Rapid-Reset-Att
 │                        │      │                  │        ack 
-│                        │      │                  ├ [234]: https://www.theregister.com/2023/10/10/http2_rapid_
+│                        │      │                  ├ [235]: https://www.theregister.com/2023/10/10/http2_rapid_
 │                        │      │                  │        reset_zeroday 
-│                        │      │                  ╰ [235]: https://www.theregister.com/2023/10/10/http2_rapid_
+│                        │      │                  ╰ [236]: https://www.theregister.com/2023/10/10/http2_rapid_
 │                        │      │                           reset_zeroday/ 
 │                        │      ├ PublishedDate   : 2023-10-10T14:15:10.883Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:44:53.5Z 
@@ -6780,7 +6728,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -6854,7 +6802,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7901,7 +7849,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -8427,38 +8375,40 @@
 │                        │      │                  ├ [215]: https://www.bleepingcomputer.com/news/security/new-
 │                        │      │                  │        http-2-rapid-reset-zero-day-attack-breaks-ddos-reco
 │                        │      │                  │        rds/ 
-│                        │      │                  ├ [216]: https://www.cisa.gov/news-events/alerts/2023/10/10/
+│                        │      │                  ├ [216]: https://www.cisa.gov/known-exploited-vulnerabilitie
+│                        │      │                  │        s-catalog 
+│                        │      │                  ├ [217]: https://www.cisa.gov/news-events/alerts/2023/10/10/
 │                        │      │                  │        http2-rapid-reset-vulnerability-cve-2023-44487 
-│                        │      │                  ├ [217]: https://www.cve.org/CVERecord?id=CVE-2023-44487 
-│                        │      │                  ├ [218]: https://www.darkreading.com/cloud/internet-wide-zer
+│                        │      │                  ├ [218]: https://www.cve.org/CVERecord?id=CVE-2023-44487 
+│                        │      │                  ├ [219]: https://www.darkreading.com/cloud/internet-wide-zer
 │                        │      │                  │        o-day-bug-fuels-largest-ever-ddos-event 
-│                        │      │                  ├ [219]: https://www.debian.org/security/2023/dsa-5521 
-│                        │      │                  ├ [220]: https://www.debian.org/security/2023/dsa-5522 
-│                        │      │                  ├ [221]: https://www.debian.org/security/2023/dsa-5540 
-│                        │      │                  ├ [222]: https://www.debian.org/security/2023/dsa-5549 
-│                        │      │                  ├ [223]: https://www.debian.org/security/2023/dsa-5558 
-│                        │      │                  ├ [224]: https://www.debian.org/security/2023/dsa-5570 
-│                        │      │                  ├ [225]: https://www.eclipse.org/lists/jetty-announce/msg001
+│                        │      │                  ├ [220]: https://www.debian.org/security/2023/dsa-5521 
+│                        │      │                  ├ [221]: https://www.debian.org/security/2023/dsa-5522 
+│                        │      │                  ├ [222]: https://www.debian.org/security/2023/dsa-5540 
+│                        │      │                  ├ [223]: https://www.debian.org/security/2023/dsa-5549 
+│                        │      │                  ├ [224]: https://www.debian.org/security/2023/dsa-5558 
+│                        │      │                  ├ [225]: https://www.debian.org/security/2023/dsa-5570 
+│                        │      │                  ├ [226]: https://www.eclipse.org/lists/jetty-announce/msg001
 │                        │      │                  │        81.html 
-│                        │      │                  ├ [226]: https://www.haproxy.com/blog/haproxy-is-not-affecte
+│                        │      │                  ├ [227]: https://www.haproxy.com/blog/haproxy-is-not-affecte
 │                        │      │                  │        d-by-the-http-2-rapid-reset-attack-cve-2023-44487 
-│                        │      │                  ├ [227]: https://www.mail-archive.com/haproxy@formilux.org/m
+│                        │      │                  ├ [228]: https://www.mail-archive.com/haproxy@formilux.org/m
 │                        │      │                  │        sg44134.html 
-│                        │      │                  ├ [228]: https://www.netlify.com/blog/netlify-successfully-m
-│                        │      │                  │        itigates-cve-2023-44487 
 │                        │      │                  ├ [229]: https://www.netlify.com/blog/netlify-successfully-m
+│                        │      │                  │        itigates-cve-2023-44487 
+│                        │      │                  ├ [230]: https://www.netlify.com/blog/netlify-successfully-m
 │                        │      │                  │        itigates-cve-2023-44487/ 
-│                        │      │                  ├ [230]: https://www.nginx.com/blog/http-2-rapid-reset-attac
-│                        │      │                  │        k-impacting-f5-nginx-products 
 │                        │      │                  ├ [231]: https://www.nginx.com/blog/http-2-rapid-reset-attac
+│                        │      │                  │        k-impacting-f5-nginx-products 
+│                        │      │                  ├ [232]: https://www.nginx.com/blog/http-2-rapid-reset-attac
 │                        │      │                  │        k-impacting-f5-nginx-products/ 
-│                        │      │                  ├ [232]: https://www.openwall.com/lists/oss-security/2023/10
+│                        │      │                  ├ [233]: https://www.openwall.com/lists/oss-security/2023/10
 │                        │      │                  │        /10/6 
-│                        │      │                  ├ [233]: https://www.phoronix.com/news/HTTP2-Rapid-Reset-Att
+│                        │      │                  ├ [234]: https://www.phoronix.com/news/HTTP2-Rapid-Reset-Att
 │                        │      │                  │        ack 
-│                        │      │                  ├ [234]: https://www.theregister.com/2023/10/10/http2_rapid_
+│                        │      │                  ├ [235]: https://www.theregister.com/2023/10/10/http2_rapid_
 │                        │      │                  │        reset_zeroday 
-│                        │      │                  ╰ [235]: https://www.theregister.com/2023/10/10/http2_rapid_
+│                        │      │                  ╰ [236]: https://www.theregister.com/2023/10/10/http2_rapid_
 │                        │      │                           reset_zeroday/ 
 │                        │      ├ PublishedDate   : 2023-10-10T14:15:10.883Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:44:53.5Z 
@@ -9299,7 +9249,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -9373,7 +9323,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
