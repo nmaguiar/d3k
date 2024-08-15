@@ -1157,6 +1157,7 @@
 │                        │      ├ Description     : Kerberos 5 (aka krb5) 1.21.2 contains a memory leak
 │                        │      │                   vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c. 
 │                        │      ├ Severity        : LOW 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ cbl-mariner: 3 
@@ -1191,7 +1192,7 @@
 │                        │      │                  │       011/ 
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
-│                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
+│                        │      ╰ LastModifiedDate: 2024-08-14T16:35:10.207Z 
 │                        ├ [23] ╭ VulnerabilityID : CVE-2016-20013 
 │                        │      ├ PkgID           : libc-bin@2.39-0ubuntu8.2 
 │                        │      ├ PkgName         : libc-bin 
@@ -1487,6 +1488,7 @@
 │                        │      ├ Description     : Kerberos 5 (aka krb5) 1.21.2 contains a memory leak
 │                        │      │                   vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c. 
 │                        │      ├ Severity        : LOW 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ cbl-mariner: 3 
@@ -1521,7 +1523,7 @@
 │                        │      │                  │       011/ 
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
-│                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
+│                        │      ╰ LastModifiedDate: 2024-08-14T16:35:10.207Z 
 │                        ├ [30] ╭ VulnerabilityID : CVE-2024-26462 
 │                        │      ├ PkgID           : libk5crypto3@1.20.1-6ubuntu2.1 
 │                        │      ├ PkgName         : libk5crypto3 
@@ -1637,6 +1639,7 @@
 │                        │      ├ Description     : Kerberos 5 (aka krb5) 1.21.2 contains a memory leak
 │                        │      │                   vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c. 
 │                        │      ├ Severity        : LOW 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ cbl-mariner: 3 
@@ -1671,7 +1674,7 @@
 │                        │      │                  │       011/ 
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
-│                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
+│                        │      ╰ LastModifiedDate: 2024-08-14T16:35:10.207Z 
 │                        ├ [33] ╭ VulnerabilityID : CVE-2024-26462 
 │                        │      ├ PkgID           : libkrb5-3@1.20.1-6ubuntu2.1 
 │                        │      ├ PkgName         : libkrb5-3 
@@ -1787,6 +1790,7 @@
 │                        │      ├ Description     : Kerberos 5 (aka krb5) 1.21.2 contains a memory leak
 │                        │      │                   vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c. 
 │                        │      ├ Severity        : LOW 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ cbl-mariner: 3 
@@ -1821,7 +1825,7 @@
 │                        │      │                  │       011/ 
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
-│                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
+│                        │      ╰ LastModifiedDate: 2024-08-14T16:35:10.207Z 
 │                        ├ [36] ╭ VulnerabilityID : CVE-2024-26462 
 │                        │      ├ PkgID           : libkrb5support0@1.20.1-6ubuntu2.1 
 │                        │      ├ PkgName         : libkrb5support0 
@@ -1937,6 +1941,7 @@
 │                        │      ├ Description     : Kerberos 5 (aka krb5) 1.21.2 contains a memory leak
 │                        │      │                   vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c. 
 │                        │      ├ Severity        : LOW 
+│                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ cbl-mariner: 3 
@@ -1971,7 +1976,7 @@
 │                        │      │                  │       011/ 
 │                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │      ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
-│                        │      ╰ LastModifiedDate: 2024-05-14T15:09:00.787Z 
+│                        │      ╰ LastModifiedDate: 2024-08-14T16:35:10.207Z 
 │                        ├ [39] ╭ VulnerabilityID : CVE-2018-6952 
 │                        │      ├ PkgID           : patch@2.7.6-7build3 
 │                        │      ├ PkgName         : patch 
@@ -3068,7 +3073,7 @@
 │                        │      │                  ╰ [236]: https://www.theregister.com/2023/10/10/http2_rapid_
 │                        │      │                           reset_zeroday/ 
 │                        │      ├ PublishedDate   : 2023-10-10T14:15:10.883Z 
-│                        │      ╰ LastModifiedDate: 2024-08-01T13:44:53.5Z 
+│                        │      ╰ LastModifiedDate: 2024-08-14T19:57:18.86Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2023-45288 
 │                        │      ├ PkgName         : golang.org/x/net 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.12.0 
@@ -3238,7 +3243,7 @@
 │                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k/m/TuoGEhxIEwAJ 
 │                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2024-24790.html 
-│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
+│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-5291.html 
 │                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2024-24790 
 │                        │      │                  ├ [21]: https://pkg.go.dev/vuln/GO-2024-2887 
 │                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-6886-1 
@@ -4254,7 +4259,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ cbl-mariner: 2 
-│                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ├ rocky      : 2 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -4281,7 +4286,7 @@
 │                        │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2023-45290.html 
-│                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-3831.html 
+│                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-5258.html 
 │                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2023-45290 
 │                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2024-2599 
 │                        │      │                  ├ [18]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -4360,7 +4365,7 @@
 │                        │      │                  ├ [23]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [24]: https://linux.oracle.com/cve/CVE-2024-24783.html 
-│                        │      │                  ├ [25]: https://linux.oracle.com/errata/ELSA-2024-3346.html 
+│                        │      │                  ├ [25]: https://linux.oracle.com/errata/ELSA-2024-5258.html 
 │                        │      │                  ├ [26]: https://nvd.nist.gov/vuln/detail/CVE-2024-24783 
 │                        │      │                  ├ [27]: https://pkg.go.dev/vuln/GO-2024-2598 
 │                        │      │                  ├ [28]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -4452,7 +4457,7 @@
 │                        │      │                  ├ [31]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [32]: https://linux.oracle.com/cve/CVE-2024-24784.html 
-│                        │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2024-3259.html 
+│                        │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2024-5258.html 
 │                        │      │                  ├ [34]: https://nvd.nist.gov/vuln/detail/CVE-2024-24784 
 │                        │      │                  ├ [35]: https://pkg.go.dev/vuln/GO-2024-2609 
 │                        │      │                  ├ [36]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -4618,7 +4623,7 @@
 │                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k/m/TuoGEhxIEwAJ 
 │                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2024-24789.html 
-│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
+│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-5291.html 
 │                        │      │                  ├ [20]: https://lists.fedoraproject.org/archives/list/packag
 │                        │      │                  │       e-announce@lists.fedoraproject.org/message/U5YAEIA6I
 │                        │      │                  │       UHUNGJ7AIXXPQT6D2GYENX7/ 
@@ -5589,7 +5594,7 @@
 │                        │      │                  ╰ [236]: https://www.theregister.com/2023/10/10/http2_rapid_
 │                        │      │                           reset_zeroday/ 
 │                        │      ├ PublishedDate   : 2023-10-10T14:15:10.883Z 
-│                        │      ╰ LastModifiedDate: 2024-08-01T13:44:53.5Z 
+│                        │      ╰ LastModifiedDate: 2024-08-14T19:57:18.86Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2023-45288 
 │                        │      ├ PkgName         : golang.org/x/net 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.12.0 
@@ -5759,7 +5764,7 @@
 │                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k/m/TuoGEhxIEwAJ 
 │                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2024-24790.html 
-│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
+│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-5291.html 
 │                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2024-24790 
 │                        │      │                  ├ [21]: https://pkg.go.dev/vuln/GO-2024-2887 
 │                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-6886-1 
@@ -6775,7 +6780,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ cbl-mariner: 2 
-│                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ├ rocky      : 2 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -6802,7 +6807,7 @@
 │                        │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2023-45290.html 
-│                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-3831.html 
+│                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-5258.html 
 │                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2023-45290 
 │                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2024-2599 
 │                        │      │                  ├ [18]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -6881,7 +6886,7 @@
 │                        │      │                  ├ [23]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [24]: https://linux.oracle.com/cve/CVE-2024-24783.html 
-│                        │      │                  ├ [25]: https://linux.oracle.com/errata/ELSA-2024-3346.html 
+│                        │      │                  ├ [25]: https://linux.oracle.com/errata/ELSA-2024-5258.html 
 │                        │      │                  ├ [26]: https://nvd.nist.gov/vuln/detail/CVE-2024-24783 
 │                        │      │                  ├ [27]: https://pkg.go.dev/vuln/GO-2024-2598 
 │                        │      │                  ├ [28]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -6973,7 +6978,7 @@
 │                        │      │                  ├ [31]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [32]: https://linux.oracle.com/cve/CVE-2024-24784.html 
-│                        │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2024-3259.html 
+│                        │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2024-5258.html 
 │                        │      │                  ├ [34]: https://nvd.nist.gov/vuln/detail/CVE-2024-24784 
 │                        │      │                  ├ [35]: https://pkg.go.dev/vuln/GO-2024-2609 
 │                        │      │                  ├ [36]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -7139,7 +7144,7 @@
 │                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/XbxouI
 │                        │      │                  │       9gY7k/m/TuoGEhxIEwAJ 
 │                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2024-24789.html 
-│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-4237.html 
+│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2024-5291.html 
 │                        │      │                  ├ [20]: https://lists.fedoraproject.org/archives/list/packag
 │                        │      │                  │       e-announce@lists.fedoraproject.org/message/U5YAEIA6I
 │                        │      │                  │       UHUNGJ7AIXXPQT6D2GYENX7/ 
