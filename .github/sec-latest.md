@@ -98,7 +98,8 @@
 │                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
 │                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [2]  ╭ VulnerabilityID : CVE-2024-1975 
@@ -140,16 +141,19 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1975 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-1975.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [4] : https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2024-5390.html 
+│                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2024-4076 
@@ -297,7 +301,8 @@
 │                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
 │                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [6]  ╭ VulnerabilityID : CVE-2024-1975 
@@ -339,16 +344,19 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1975 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-1975.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [4] : https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2024-5390.html 
+│                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2024-4076 
@@ -496,7 +504,8 @@
 │                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
 │                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2024-1975 
@@ -538,16 +547,19 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1975 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-1975.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [4] : https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2024-5390.html 
+│                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [11] ╭ VulnerabilityID : CVE-2024-4076 
@@ -1255,7 +1267,8 @@
 │                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
 │                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
 │                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [23] ╭ VulnerabilityID : CVE-2024-1975 
@@ -1297,16 +1310,19 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-1975 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-1975.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [4] : https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2024-5390.html 
+│                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [24] ╭ VulnerabilityID : CVE-2024-4076 
@@ -1916,6 +1932,7 @@
 │                        │      │                   vulnerability in /krb5/src/kdc/ndr.c. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon: 2 
+│                        │      │                  ├ azure : 3 
 │                        │      │                  ├ photon: 2 
 │                        │      │                  ├ redhat: 2 
 │                        │      │                  ╰ ubuntu: 2 
@@ -1958,6 +1975,7 @@
 │                        │      │                   truncated to the application. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
@@ -2002,6 +2020,7 @@
 │                        │      │                   fields. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
@@ -2100,6 +2119,7 @@
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 1 
 │                        │      │                  ├ photon     : 2 
@@ -2447,6 +2467,7 @@
 │                        │      │                   vulnerability in /krb5/src/kdc/ndr.c. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon: 2 
+│                        │      │                  ├ azure : 3 
 │                        │      │                  ├ photon: 2 
 │                        │      │                  ├ redhat: 2 
 │                        │      │                  ╰ ubuntu: 2 
@@ -2489,6 +2510,7 @@
 │                        │      │                   truncated to the application. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
@@ -2533,6 +2555,7 @@
 │                        │      │                   fields. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
@@ -2631,6 +2654,7 @@
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 1 
 │                        │      │                  ├ photon     : 2 
@@ -2686,6 +2710,7 @@
 │                        │      │                   vulnerability in /krb5/src/kdc/ndr.c. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon: 2 
+│                        │      │                  ├ azure : 3 
 │                        │      │                  ├ photon: 2 
 │                        │      │                  ├ redhat: 2 
 │                        │      │                  ╰ ubuntu: 2 
@@ -2728,6 +2753,7 @@
 │                        │      │                   truncated to the application. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
@@ -2772,6 +2798,7 @@
 │                        │      │                   fields. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
@@ -2870,6 +2897,7 @@
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 1 
 │                        │      │                  ├ photon     : 2 
@@ -2925,6 +2953,7 @@
 │                        │      │                   vulnerability in /krb5/src/kdc/ndr.c. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon: 2 
+│                        │      │                  ├ azure : 3 
 │                        │      │                  ├ photon: 2 
 │                        │      │                  ├ redhat: 2 
 │                        │      │                  ╰ ubuntu: 2 
@@ -2967,6 +2996,7 @@
 │                        │      │                   truncated to the application. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
@@ -3011,6 +3041,7 @@
 │                        │      │                   fields. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
@@ -3109,6 +3140,7 @@
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 1 
 │                        │      │                  ├ photon     : 2 
@@ -3164,6 +3196,7 @@
 │                        │      │                   vulnerability in /krb5/src/kdc/ndr.c. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon: 2 
+│                        │      │                  ├ azure : 3 
 │                        │      │                  ├ photon: 2 
 │                        │      │                  ├ redhat: 2 
 │                        │      │                  ╰ ubuntu: 2 
@@ -3206,6 +3239,7 @@
 │                        │      │                   truncated to the application. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
@@ -3250,6 +3284,7 @@
 │                        │      │                   fields. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
@@ -3348,6 +3383,7 @@
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 1 
 │                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 1 
 │                        │      │                  ├ photon     : 2 
@@ -5363,7 +5399,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -6763,7 +6799,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -6837,7 +6873,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7517,6 +7553,7 @@
 │                               │                   . 
 │                               ├ Severity        : MEDIUM 
 │                               ├ VendorSeverity   ╭ amazon : 2 
+│                               │                  ├ azure  : 3 
 │                               │                  ├ bitnami: 3 
 │                               │                  ├ photon : 3 
 │                               │                  ╰ redhat : 2 
@@ -7884,7 +7921,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -9284,7 +9321,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -9358,7 +9395,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -10038,6 +10075,7 @@
 │                               │                   . 
 │                               ├ Severity        : MEDIUM 
 │                               ├ VendorSeverity   ╭ amazon : 2 
+│                               │                  ├ azure  : 3 
 │                               │                  ├ bitnami: 3 
 │                               │                  ├ photon : 3 
 │                               │                  ╰ redhat : 2 
@@ -10188,6 +10226,7 @@
 │                              │                   request using that connection to fail. 
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ╭ amazon : 2 
+│                              │                  ├ azure  : 3 
 │                              │                  ├ bitnami: 3 
 │                              │                  ├ photon : 3 
 │                              │                  ╰ redhat : 2 
@@ -10338,6 +10377,7 @@
 │                              │                   request using that connection to fail. 
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ╭ amazon : 2 
+│                              │                  ├ azure  : 3 
 │                              │                  ├ bitnami: 3 
 │                              │                  ├ photon : 3 
 │                              │                  ╰ redhat : 2 
@@ -10391,6 +10431,7 @@
 │                              │                   request using that connection to fail. 
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ╭ amazon : 2 
+│                              │                  ├ azure  : 3 
 │                              │                  ├ bitnami: 3 
 │                              │                  ├ photon : 3 
 │                              │                  ╰ redhat : 2 
@@ -10581,6 +10622,7 @@
 │                              │                   request using that connection to fail. 
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ╭ amazon : 2 
+│                              │                  ├ azure  : 3 
 │                              │                  ├ bitnami: 3 
 │                              │                  ├ photon : 3 
 │                              │                  ╰ redhat : 2 
