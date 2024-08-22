@@ -72,6 +72,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -86,7 +87,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1737
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
     - https://linux.oracle.com/cve/CVE-2024-1737.html
@@ -124,6 +129,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -138,7 +144,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1975
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1975
     - https://linux.oracle.com/cve/CVE-2024-1975.html
     - https://linux.oracle.com/errata/ELSA-2024-5524.html
@@ -175,6 +185,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -189,7 +200,12 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5390
     - https://access.redhat.com/security/cve/CVE-2024-4076
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://bugzilla.redhat.com/2298904
+    - https://errata.almalinux.org/8/ALSA-2024-5390.html
     - https://kb.isc.org/docs/cve-2024-4076
     - https://linux.oracle.com/cve/CVE-2024-4076.html
     - https://linux.oracle.com/errata/ELSA-2024-5390.html
@@ -268,6 +284,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -282,7 +299,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1737
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
     - https://linux.oracle.com/cve/CVE-2024-1737.html
@@ -320,6 +341,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -334,7 +356,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1975
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1975
     - https://linux.oracle.com/cve/CVE-2024-1975.html
     - https://linux.oracle.com/errata/ELSA-2024-5524.html
@@ -371,6 +397,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -385,7 +412,12 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5390
     - https://access.redhat.com/security/cve/CVE-2024-4076
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://bugzilla.redhat.com/2298904
+    - https://errata.almalinux.org/8/ALSA-2024-5390.html
     - https://kb.isc.org/docs/cve-2024-4076
     - https://linux.oracle.com/cve/CVE-2024-4076.html
     - https://linux.oracle.com/errata/ELSA-2024-5390.html
@@ -464,6 +496,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -478,7 +511,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1737
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
     - https://linux.oracle.com/cve/CVE-2024-1737.html
@@ -516,6 +553,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -530,7 +568,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1975
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1975
     - https://linux.oracle.com/cve/CVE-2024-1975.html
     - https://linux.oracle.com/errata/ELSA-2024-5524.html
@@ -567,6 +609,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -581,7 +624,12 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5390
     - https://access.redhat.com/security/cve/CVE-2024-4076
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://bugzilla.redhat.com/2298904
+    - https://errata.almalinux.org/8/ALSA-2024-5390.html
     - https://kb.isc.org/docs/cve-2024-4076
     - https://linux.oracle.com/cve/CVE-2024-4076.html
     - https://linux.oracle.com/errata/ELSA-2024-5390.html
@@ -1146,6 +1194,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -1160,7 +1209,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1737
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
     - https://linux.oracle.com/cve/CVE-2024-1737.html
@@ -1198,6 +1251,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -1212,7 +1266,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1975
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1975
     - https://linux.oracle.com/cve/CVE-2024-1975.html
     - https://linux.oracle.com/errata/ELSA-2024-5524.html
@@ -1249,6 +1307,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       cbl-mariner: 3
@@ -1263,7 +1322,12 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
+    - https://access.redhat.com/errata/RHSA-2024:5390
     - https://access.redhat.com/security/cve/CVE-2024-4076
+    - https://bugzilla.redhat.com/2298893
+    - https://bugzilla.redhat.com/2298901
+    - https://bugzilla.redhat.com/2298904
+    - https://errata.almalinux.org/8/ALSA-2024-5390.html
     - https://kb.isc.org/docs/cve-2024-4076
     - https://linux.oracle.com/cve/CVE-2024-4076.html
     - https://linux.oracle.com/errata/ELSA-2024-5390.html
@@ -1859,6 +1923,7 @@
     Description: In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -1870,7 +1935,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
         V3Score: 7.4
     References:
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37370
+    - https://bugzilla.redhat.com/2294676
+    - https://bugzilla.redhat.com/2294677
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37370.html
     - https://linux.oracle.com/errata/ELSA-2024-5312.html
@@ -1903,6 +1972,7 @@
     Description: In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can cause invalid memory reads during GSS message token handling by sending message tokens with invalid length fields.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -1914,7 +1984,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.5
     References:
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37371
+    - https://bugzilla.redhat.com/2294676
+    - https://bugzilla.redhat.com/2294677
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37371.html
     - https://linux.oracle.com/errata/ELSA-2024-5312.html
@@ -2376,6 +2450,7 @@
     Description: In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -2387,7 +2462,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
         V3Score: 7.4
     References:
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37370
+    - https://bugzilla.redhat.com/2294676
+    - https://bugzilla.redhat.com/2294677
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37370.html
     - https://linux.oracle.com/errata/ELSA-2024-5312.html
@@ -2420,6 +2499,7 @@
     Description: In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can cause invalid memory reads during GSS message token handling by sending message tokens with invalid length fields.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -2431,7 +2511,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.5
     References:
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37371
+    - https://bugzilla.redhat.com/2294676
+    - https://bugzilla.redhat.com/2294677
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37371.html
     - https://linux.oracle.com/errata/ELSA-2024-5312.html
@@ -2611,6 +2695,7 @@
     Description: In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -2622,7 +2707,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
         V3Score: 7.4
     References:
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37370
+    - https://bugzilla.redhat.com/2294676
+    - https://bugzilla.redhat.com/2294677
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37370.html
     - https://linux.oracle.com/errata/ELSA-2024-5312.html
@@ -2655,6 +2744,7 @@
     Description: In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can cause invalid memory reads during GSS message token handling by sending message tokens with invalid length fields.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -2666,7 +2756,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.5
     References:
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37371
+    - https://bugzilla.redhat.com/2294676
+    - https://bugzilla.redhat.com/2294677
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37371.html
     - https://linux.oracle.com/errata/ELSA-2024-5312.html
@@ -2846,6 +2940,7 @@
     Description: In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -2857,7 +2952,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
         V3Score: 7.4
     References:
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37370
+    - https://bugzilla.redhat.com/2294676
+    - https://bugzilla.redhat.com/2294677
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37370.html
     - https://linux.oracle.com/errata/ELSA-2024-5312.html
@@ -2890,6 +2989,7 @@
     Description: In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can cause invalid memory reads during GSS message token handling by sending message tokens with invalid length fields.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -2901,7 +3001,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.5
     References:
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37371
+    - https://bugzilla.redhat.com/2294676
+    - https://bugzilla.redhat.com/2294677
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37371.html
     - https://linux.oracle.com/errata/ELSA-2024-5312.html
@@ -3081,6 +3185,7 @@
     Description: In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -3092,7 +3197,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
         V3Score: 7.4
     References:
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37370
+    - https://bugzilla.redhat.com/2294676
+    - https://bugzilla.redhat.com/2294677
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37370.html
     - https://linux.oracle.com/errata/ELSA-2024-5312.html
@@ -3125,6 +3234,7 @@
     Description: In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can cause invalid memory reads during GSS message token handling by sending message tokens with invalid length fields.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -3136,7 +3246,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.5
     References:
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37371
+    - https://bugzilla.redhat.com/2294676
+    - https://bugzilla.redhat.com/2294677
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37371.html
     - https://linux.oracle.com/errata/ELSA-2024-5312.html
@@ -4863,7 +4977,7 @@
       photon: 3
       redhat: 3
       rocky: 3
-      ubuntu: 2
+      ubuntu: 3
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
@@ -6616,7 +6730,7 @@
       photon: 3
       redhat: 3
       rocky: 3
-      ubuntu: 2
+      ubuntu: 3
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
