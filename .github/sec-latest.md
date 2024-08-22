@@ -77,7 +77,8 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -91,16 +92,20 @@
 │                        │      │                  │       3/1 
 │                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
 │                        │      │                  │       1/2 
-│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1737 
-│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [4] : https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-1737.html 
-│                        │      │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
-│                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
-│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-6909-3 
-│                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5524 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2024-5524.html 
+│                        │      │                  ├ [7] : https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [8] : https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-1737.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-5524.html 
+│                        │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [14]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [2]  ╭ VulnerabilityID : CVE-2024-1975 
@@ -133,7 +138,8 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -147,15 +153,19 @@
 │                        │      │                  │       3/1 
 │                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
 │                        │      │                  │       1/2 
-│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1975 
-│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4] : https://linux.oracle.com/cve/CVE-2024-1975.html 
-│                        │      │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
-│                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-3 
-│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5524 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2024-5524.html 
+│                        │      │                  ├ [7] : https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
+│                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2024-4076 
@@ -187,7 +197,8 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -197,15 +208,22 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-4076 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-4076.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5390 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://bugzilla.redhat.com/2298904 
+│                        │      │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2024-5390.html 
+│                        │      │                  ├ [8] : https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-4076.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
+│                        │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2024-0760 
@@ -283,7 +301,8 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -297,16 +316,20 @@
 │                        │      │                  │       3/1 
 │                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
 │                        │      │                  │       1/2 
-│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1737 
-│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [4] : https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-1737.html 
-│                        │      │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
-│                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
-│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-6909-3 
-│                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5524 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2024-5524.html 
+│                        │      │                  ├ [7] : https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [8] : https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-1737.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-5524.html 
+│                        │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [14]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [6]  ╭ VulnerabilityID : CVE-2024-1975 
@@ -339,7 +362,8 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -353,15 +377,19 @@
 │                        │      │                  │       3/1 
 │                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
 │                        │      │                  │       1/2 
-│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1975 
-│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4] : https://linux.oracle.com/cve/CVE-2024-1975.html 
-│                        │      │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
-│                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-3 
-│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5524 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2024-5524.html 
+│                        │      │                  ├ [7] : https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
+│                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2024-4076 
@@ -393,7 +421,8 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -403,15 +432,22 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-4076 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-4076.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5390 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://bugzilla.redhat.com/2298904 
+│                        │      │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2024-5390.html 
+│                        │      │                  ├ [8] : https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-4076.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
+│                        │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2024-0760 
@@ -489,7 +525,8 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -503,16 +540,20 @@
 │                        │      │                  │       3/1 
 │                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
 │                        │      │                  │       1/2 
-│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1737 
-│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [4] : https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-1737.html 
-│                        │      │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
-│                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
-│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-6909-3 
-│                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5524 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2024-5524.html 
+│                        │      │                  ├ [7] : https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [8] : https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-1737.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-5524.html 
+│                        │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [14]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2024-1975 
@@ -545,7 +586,8 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -559,15 +601,19 @@
 │                        │      │                  │       3/1 
 │                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
 │                        │      │                  │       1/2 
-│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1975 
-│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4] : https://linux.oracle.com/cve/CVE-2024-1975.html 
-│                        │      │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
-│                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-3 
-│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5524 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2024-5524.html 
+│                        │      │                  ├ [7] : https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
+│                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [11] ╭ VulnerabilityID : CVE-2024-4076 
@@ -599,7 +645,8 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -609,15 +656,22 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-4076 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-4076.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5390 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://bugzilla.redhat.com/2298904 
+│                        │      │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2024-5390.html 
+│                        │      │                  ├ [8] : https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-4076.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
+│                        │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2016-2781 
@@ -1256,7 +1310,8 @@
 │                        │      │                   through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -1270,16 +1325,20 @@
 │                        │      │                  │       3/1 
 │                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
 │                        │      │                  │       1/2 
-│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1737 
-│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1737 
-│                        │      │                  ├ [4] : https://kb.isc.org/docs/rrset-limits-in-zones 
-│                        │      │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-1737.html 
-│                        │      │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
-│                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
-│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-6909-3 
-│                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5524 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-1737 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2024-5524.html 
+│                        │      │                  ├ [7] : https://kb.isc.org/docs/cve-2024-1737 
+│                        │      │                  ├ [8] : https://kb.isc.org/docs/rrset-limits-in-zones 
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-1737.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-5524.html 
+│                        │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-1737 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [14]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
 │                        ├ [23] ╭ VulnerabilityID : CVE-2024-1975 
@@ -1312,7 +1371,8 @@
 │                        │      │                   through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -1326,15 +1386,19 @@
 │                        │      │                  │       3/1 
 │                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
 │                        │      │                  │       1/2 
-│                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-1975 
-│                        │      │                  ├ [3] : https://kb.isc.org/docs/cve-2024-1975 
-│                        │      │                  ├ [4] : https://linux.oracle.com/cve/CVE-2024-1975.html 
-│                        │      │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
-│                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
-│                        │      │                  ├ [7] : https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-6909-2 
-│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6909-3 
-│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5524 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-1975 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2024-5524.html 
+│                        │      │                  ├ [7] : https://kb.isc.org/docs/cve-2024-1975 
+│                        │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2024-1975.html 
+│                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2024-5524.html 
+│                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-1975 
+│                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-2 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-6909-3 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
 │                        ├ [24] ╭ VulnerabilityID : CVE-2024-4076 
@@ -1366,7 +1430,8 @@
 │                        │      │                   9.18.11-S1 through 9.18.27-S1. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-617 
-│                        │      ├ VendorSeverity   ╭ amazon     : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -1376,15 +1441,22 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/07/23/1 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2024/07/31/2 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2024-4076 
-│                        │      │                  ├ [3]: https://kb.isc.org/docs/cve-2024-4076 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-4076.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
-│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-6909-1 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
+│                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/07/2
+│                        │      │                  │       3/1 
+│                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/07/3
+│                        │      │                  │       1/2 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:5390 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-4076 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2298893 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2298901 
+│                        │      │                  ├ [6] : https://bugzilla.redhat.com/2298904 
+│                        │      │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2024-5390.html 
+│                        │      │                  ├ [8] : https://kb.isc.org/docs/cve-2024-4076 
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-4076.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-5390.html 
+│                        │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-4076 
+│                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6909-1 
+│                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │      ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │      ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
 │                        ├ [25] ╭ VulnerabilityID : CVE-2018-1000021 
@@ -1987,7 +2059,8 @@
 │                        │      │                   GSS krb5 wrap token, causing the unwrapped token to appear
 │                        │      │                   truncated to the application. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 2 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
@@ -1996,16 +2069,20 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           H/A:H 
 │                        │      │                           ╰ V3Score : 7.4 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-37370 
-│                        │      │                  ├ [1]: https://github.com/krb5/krb5/commit/55fbf435edbe2e92d
-│                        │      │                  │      d8101669b1ce7144bc96fef 
-│                        │      │                  ├ [2]: https://linux.oracle.com/cve/CVE-2024-37370.html 
-│                        │      │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2024-5312.html 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-37370 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6947-1 
-│                        │      │                  ├ [6]: https://web.mit.edu/kerberos/www/advisories/ 
-│                        │      │                  ├ [7]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
+│                        │      │                  │       dd8101669b1ce7144bc96fef 
+│                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37370.html 
+│                        │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2024-5312.html 
+│                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-37370 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6947-1 
+│                        │      │                  ├ [10]: https://web.mit.edu/kerberos/www/advisories/ 
+│                        │      │                  ├ [11]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
+│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
 │                        │      ├ PublishedDate   : 2024-06-28T22:15:02.293Z 
 │                        │      ╰ LastModifiedDate: 2024-07-01T12:37:24.22Z 
 │                        ├ [39] ╭ VulnerabilityID : CVE-2024-37371 
@@ -2032,7 +2109,8 @@
 │                        │      │                   handling by sending message tokens with invalid length
 │                        │      │                   fields. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 2 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
@@ -2041,16 +2119,20 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-37371 
-│                        │      │                  ├ [1]: https://github.com/krb5/krb5/commit/55fbf435edbe2e92d
-│                        │      │                  │      d8101669b1ce7144bc96fef 
-│                        │      │                  ├ [2]: https://linux.oracle.com/cve/CVE-2024-37371.html 
-│                        │      │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2024-5312.html 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-37371 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6947-1 
-│                        │      │                  ├ [6]: https://web.mit.edu/kerberos/www/advisories/ 
-│                        │      │                  ├ [7]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37371 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
+│                        │      │                  │       dd8101669b1ce7144bc96fef 
+│                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37371.html 
+│                        │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2024-5312.html 
+│                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-37371 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6947-1 
+│                        │      │                  ├ [10]: https://web.mit.edu/kerberos/www/advisories/ 
+│                        │      │                  ├ [11]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
+│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
 │                        │      ├ PublishedDate   : 2024-06-28T23:15:11.603Z 
 │                        │      ╰ LastModifiedDate: 2024-07-01T12:37:24.22Z 
 │                        ├ [40] ╭ VulnerabilityID : CVE-2024-26458 
@@ -2526,7 +2608,8 @@
 │                        │      │                   GSS krb5 wrap token, causing the unwrapped token to appear
 │                        │      │                   truncated to the application. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 2 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
@@ -2535,16 +2618,20 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           H/A:H 
 │                        │      │                           ╰ V3Score : 7.4 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-37370 
-│                        │      │                  ├ [1]: https://github.com/krb5/krb5/commit/55fbf435edbe2e92d
-│                        │      │                  │      d8101669b1ce7144bc96fef 
-│                        │      │                  ├ [2]: https://linux.oracle.com/cve/CVE-2024-37370.html 
-│                        │      │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2024-5312.html 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-37370 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6947-1 
-│                        │      │                  ├ [6]: https://web.mit.edu/kerberos/www/advisories/ 
-│                        │      │                  ├ [7]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
+│                        │      │                  │       dd8101669b1ce7144bc96fef 
+│                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37370.html 
+│                        │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2024-5312.html 
+│                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-37370 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6947-1 
+│                        │      │                  ├ [10]: https://web.mit.edu/kerberos/www/advisories/ 
+│                        │      │                  ├ [11]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
+│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
 │                        │      ├ PublishedDate   : 2024-06-28T22:15:02.293Z 
 │                        │      ╰ LastModifiedDate: 2024-07-01T12:37:24.22Z 
 │                        ├ [50] ╭ VulnerabilityID : CVE-2024-37371 
@@ -2571,7 +2658,8 @@
 │                        │      │                   handling by sending message tokens with invalid length
 │                        │      │                   fields. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 2 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
@@ -2580,16 +2668,20 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-37371 
-│                        │      │                  ├ [1]: https://github.com/krb5/krb5/commit/55fbf435edbe2e92d
-│                        │      │                  │      d8101669b1ce7144bc96fef 
-│                        │      │                  ├ [2]: https://linux.oracle.com/cve/CVE-2024-37371.html 
-│                        │      │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2024-5312.html 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-37371 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6947-1 
-│                        │      │                  ├ [6]: https://web.mit.edu/kerberos/www/advisories/ 
-│                        │      │                  ├ [7]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37371 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
+│                        │      │                  │       dd8101669b1ce7144bc96fef 
+│                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37371.html 
+│                        │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2024-5312.html 
+│                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-37371 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6947-1 
+│                        │      │                  ├ [10]: https://web.mit.edu/kerberos/www/advisories/ 
+│                        │      │                  ├ [11]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
+│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
 │                        │      ├ PublishedDate   : 2024-06-28T23:15:11.603Z 
 │                        │      ╰ LastModifiedDate: 2024-07-01T12:37:24.22Z 
 │                        ├ [51] ╭ VulnerabilityID : CVE-2024-26458 
@@ -2769,7 +2861,8 @@
 │                        │      │                   GSS krb5 wrap token, causing the unwrapped token to appear
 │                        │      │                   truncated to the application. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 2 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
@@ -2778,16 +2871,20 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           H/A:H 
 │                        │      │                           ╰ V3Score : 7.4 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-37370 
-│                        │      │                  ├ [1]: https://github.com/krb5/krb5/commit/55fbf435edbe2e92d
-│                        │      │                  │      d8101669b1ce7144bc96fef 
-│                        │      │                  ├ [2]: https://linux.oracle.com/cve/CVE-2024-37370.html 
-│                        │      │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2024-5312.html 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-37370 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6947-1 
-│                        │      │                  ├ [6]: https://web.mit.edu/kerberos/www/advisories/ 
-│                        │      │                  ├ [7]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
+│                        │      │                  │       dd8101669b1ce7144bc96fef 
+│                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37370.html 
+│                        │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2024-5312.html 
+│                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-37370 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6947-1 
+│                        │      │                  ├ [10]: https://web.mit.edu/kerberos/www/advisories/ 
+│                        │      │                  ├ [11]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
+│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
 │                        │      ├ PublishedDate   : 2024-06-28T22:15:02.293Z 
 │                        │      ╰ LastModifiedDate: 2024-07-01T12:37:24.22Z 
 │                        ├ [55] ╭ VulnerabilityID : CVE-2024-37371 
@@ -2814,7 +2911,8 @@
 │                        │      │                   handling by sending message tokens with invalid length
 │                        │      │                   fields. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 2 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
@@ -2823,16 +2921,20 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-37371 
-│                        │      │                  ├ [1]: https://github.com/krb5/krb5/commit/55fbf435edbe2e92d
-│                        │      │                  │      d8101669b1ce7144bc96fef 
-│                        │      │                  ├ [2]: https://linux.oracle.com/cve/CVE-2024-37371.html 
-│                        │      │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2024-5312.html 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-37371 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6947-1 
-│                        │      │                  ├ [6]: https://web.mit.edu/kerberos/www/advisories/ 
-│                        │      │                  ├ [7]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37371 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
+│                        │      │                  │       dd8101669b1ce7144bc96fef 
+│                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37371.html 
+│                        │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2024-5312.html 
+│                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-37371 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6947-1 
+│                        │      │                  ├ [10]: https://web.mit.edu/kerberos/www/advisories/ 
+│                        │      │                  ├ [11]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
+│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
 │                        │      ├ PublishedDate   : 2024-06-28T23:15:11.603Z 
 │                        │      ╰ LastModifiedDate: 2024-07-01T12:37:24.22Z 
 │                        ├ [56] ╭ VulnerabilityID : CVE-2024-26458 
@@ -3012,7 +3114,8 @@
 │                        │      │                   GSS krb5 wrap token, causing the unwrapped token to appear
 │                        │      │                   truncated to the application. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 2 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
@@ -3021,16 +3124,20 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           H/A:H 
 │                        │      │                           ╰ V3Score : 7.4 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-37370 
-│                        │      │                  ├ [1]: https://github.com/krb5/krb5/commit/55fbf435edbe2e92d
-│                        │      │                  │      d8101669b1ce7144bc96fef 
-│                        │      │                  ├ [2]: https://linux.oracle.com/cve/CVE-2024-37370.html 
-│                        │      │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2024-5312.html 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-37370 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6947-1 
-│                        │      │                  ├ [6]: https://web.mit.edu/kerberos/www/advisories/ 
-│                        │      │                  ├ [7]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
+│                        │      │                  │       dd8101669b1ce7144bc96fef 
+│                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37370.html 
+│                        │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2024-5312.html 
+│                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-37370 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6947-1 
+│                        │      │                  ├ [10]: https://web.mit.edu/kerberos/www/advisories/ 
+│                        │      │                  ├ [11]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
+│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
 │                        │      ├ PublishedDate   : 2024-06-28T22:15:02.293Z 
 │                        │      ╰ LastModifiedDate: 2024-07-01T12:37:24.22Z 
 │                        ├ [60] ╭ VulnerabilityID : CVE-2024-37371 
@@ -3057,7 +3164,8 @@
 │                        │      │                   handling by sending message tokens with invalid length
 │                        │      │                   fields. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 2 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
@@ -3066,16 +3174,20 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-37371 
-│                        │      │                  ├ [1]: https://github.com/krb5/krb5/commit/55fbf435edbe2e92d
-│                        │      │                  │      d8101669b1ce7144bc96fef 
-│                        │      │                  ├ [2]: https://linux.oracle.com/cve/CVE-2024-37371.html 
-│                        │      │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2024-5312.html 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-37371 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6947-1 
-│                        │      │                  ├ [6]: https://web.mit.edu/kerberos/www/advisories/ 
-│                        │      │                  ├ [7]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37371 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
+│                        │      │                  │       dd8101669b1ce7144bc96fef 
+│                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37371.html 
+│                        │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2024-5312.html 
+│                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-37371 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6947-1 
+│                        │      │                  ├ [10]: https://web.mit.edu/kerberos/www/advisories/ 
+│                        │      │                  ├ [11]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
+│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
 │                        │      ├ PublishedDate   : 2024-06-28T23:15:11.603Z 
 │                        │      ╰ LastModifiedDate: 2024-07-01T12:37:24.22Z 
 │                        ├ [61] ╭ VulnerabilityID : CVE-2024-26458 
@@ -3255,7 +3367,8 @@
 │                        │      │                   GSS krb5 wrap token, causing the unwrapped token to appear
 │                        │      │                   truncated to the application. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 2 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
@@ -3264,16 +3377,20 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           H/A:H 
 │                        │      │                           ╰ V3Score : 7.4 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-37370 
-│                        │      │                  ├ [1]: https://github.com/krb5/krb5/commit/55fbf435edbe2e92d
-│                        │      │                  │      d8101669b1ce7144bc96fef 
-│                        │      │                  ├ [2]: https://linux.oracle.com/cve/CVE-2024-37370.html 
-│                        │      │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2024-5312.html 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-37370 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6947-1 
-│                        │      │                  ├ [6]: https://web.mit.edu/kerberos/www/advisories/ 
-│                        │      │                  ├ [7]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
+│                        │      │                  │       dd8101669b1ce7144bc96fef 
+│                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37370.html 
+│                        │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2024-5312.html 
+│                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-37370 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6947-1 
+│                        │      │                  ├ [10]: https://web.mit.edu/kerberos/www/advisories/ 
+│                        │      │                  ├ [11]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
+│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
 │                        │      ├ PublishedDate   : 2024-06-28T22:15:02.293Z 
 │                        │      ╰ LastModifiedDate: 2024-07-01T12:37:24.22Z 
 │                        ├ [65] ╭ VulnerabilityID : CVE-2024-37371 
@@ -3300,7 +3417,8 @@
 │                        │      │                   handling by sending message tokens with invalid length
 │                        │      │                   fields. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 2 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
@@ -3309,16 +3427,20 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-37371 
-│                        │      │                  ├ [1]: https://github.com/krb5/krb5/commit/55fbf435edbe2e92d
-│                        │      │                  │      d8101669b1ce7144bc96fef 
-│                        │      │                  ├ [2]: https://linux.oracle.com/cve/CVE-2024-37371.html 
-│                        │      │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2024-5312.html 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-37371 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6947-1 
-│                        │      │                  ├ [6]: https://web.mit.edu/kerberos/www/advisories/ 
-│                        │      │                  ├ [7]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37371 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
+│                        │      │                  │       dd8101669b1ce7144bc96fef 
+│                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37371.html 
+│                        │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2024-5312.html 
+│                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-37371 
+│                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-6947-1 
+│                        │      │                  ├ [10]: https://web.mit.edu/kerberos/www/advisories/ 
+│                        │      │                  ├ [11]: https://web.mit.edu/kerberos/www/krb5-1.21/ 
+│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
 │                        │      ├ PublishedDate   : 2024-06-28T23:15:11.603Z 
 │                        │      ╰ LastModifiedDate: 2024-07-01T12:37:24.22Z 
 │                        ├ [66] ╭ VulnerabilityID : CVE-2024-26458 
@@ -5493,7 +5615,7 @@
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 3 
 │                        │      │                  ├ rocky      : 3 
-│                        │      │                  ╰ ubuntu     : 2 
+│                        │      │                  ╰ ubuntu     : 3 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │      │                  │         │           :N/A:H 
 │                        │      │                  │         ╰ V3Score : 7.5 
@@ -8016,7 +8138,7 @@
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 3 
 │                        │      │                  ├ rocky      : 3 
-│                        │      │                  ╰ ubuntu     : 2 
+│                        │      │                  ╰ ubuntu     : 3 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │      │                  │         │           :N/A:H 
 │                        │      │                  │         ╰ V3Score : 7.5 
