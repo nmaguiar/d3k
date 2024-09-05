@@ -2073,6 +2073,7 @@
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ nvd        : 3 
 │                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -2081,11 +2082,11 @@
 │                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           H/A:H 
 │                        │      │                           ╰ V3Score : 7.4 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
-│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-6166.html 
 │                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
 │                        │      │                  │       dd8101669b1ce7144bc96fef 
 │                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37370.html 
@@ -2127,6 +2128,7 @@
 │                        │      │                  ├ cbl-mariner: 4 
 │                        │      │                  ├ nvd        : 4 
 │                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ photon     : 4 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -2135,11 +2137,11 @@
 │                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37371 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
-│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-6166.html 
 │                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
 │                        │      │                  │       dd8101669b1ce7144bc96fef 
 │                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37371.html 
@@ -2631,6 +2633,7 @@
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ nvd        : 3 
 │                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -2639,11 +2642,11 @@
 │                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           H/A:H 
 │                        │      │                           ╰ V3Score : 7.4 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
-│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-6166.html 
 │                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
 │                        │      │                  │       dd8101669b1ce7144bc96fef 
 │                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37370.html 
@@ -2685,6 +2688,7 @@
 │                        │      │                  ├ cbl-mariner: 4 
 │                        │      │                  ├ nvd        : 4 
 │                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ photon     : 4 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -2693,11 +2697,11 @@
 │                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37371 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
-│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-6166.html 
 │                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
 │                        │      │                  │       dd8101669b1ce7144bc96fef 
 │                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37371.html 
@@ -2892,6 +2896,7 @@
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ nvd        : 3 
 │                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -2900,11 +2905,11 @@
 │                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           H/A:H 
 │                        │      │                           ╰ V3Score : 7.4 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
-│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-6166.html 
 │                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
 │                        │      │                  │       dd8101669b1ce7144bc96fef 
 │                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37370.html 
@@ -2946,6 +2951,7 @@
 │                        │      │                  ├ cbl-mariner: 4 
 │                        │      │                  ├ nvd        : 4 
 │                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ photon     : 4 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -2954,11 +2960,11 @@
 │                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37371 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
-│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-6166.html 
 │                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
 │                        │      │                  │       dd8101669b1ce7144bc96fef 
 │                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37371.html 
@@ -3153,6 +3159,7 @@
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ nvd        : 3 
 │                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -3161,11 +3168,11 @@
 │                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           H/A:H 
 │                        │      │                           ╰ V3Score : 7.4 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
-│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-6166.html 
 │                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
 │                        │      │                  │       dd8101669b1ce7144bc96fef 
 │                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37370.html 
@@ -3207,6 +3214,7 @@
 │                        │      │                  ├ cbl-mariner: 4 
 │                        │      │                  ├ nvd        : 4 
 │                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ photon     : 4 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -3215,11 +3223,11 @@
 │                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37371 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
-│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-6166.html 
 │                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
 │                        │      │                  │       dd8101669b1ce7144bc96fef 
 │                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37371.html 
@@ -3414,6 +3422,7 @@
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ nvd        : 3 
 │                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -3422,11 +3431,11 @@
 │                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           H/A:H 
 │                        │      │                           ╰ V3Score : 7.4 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
-│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-6166.html 
 │                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
 │                        │      │                  │       dd8101669b1ce7144bc96fef 
 │                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37370.html 
@@ -3468,6 +3477,7 @@
 │                        │      │                  ├ cbl-mariner: 4 
 │                        │      │                  ├ nvd        : 4 
 │                        │      │                  ├ oracle-oval: 2 
+│                        │      │                  ├ photon     : 4 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -3476,11 +3486,11 @@
 │                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 6.5 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:5312 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37371 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2294676 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2294677 
-│                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-5312.html 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-6166.html 
 │                        │      │                  ├ [5] : https://github.com/krb5/krb5/commit/55fbf435edbe2e92
 │                        │      │                  │       dd8101669b1ce7144bc96fef 
 │                        │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-37371.html 
@@ -3878,8 +3888,7 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                        │      ├ Title           : Issue summary: Applications performing certificate name
-│                        │      │                   checks (e.g.,  ... 
+│                        │      ├ Title           : openssl: Possible denial of service in X.509 name checks 
 │                        │      ├ Description     : Issue summary: Applications performing certificate name
 │                        │      │                   checks (e.g., TLS
 │                        │      │                   clients checking server certificates) may attempt to read
@@ -3922,18 +3931,26 @@
 │                        │      │                   by this issue. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-843 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
-│                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/05f360d9e84
+│                        │      ├ VendorSeverity   ╭ redhat: 2 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 5.9 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-6119 
+│                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/05f360d9e84
 │                        │      │                  │      9a1b277db628f1f13083a7f8dd04f 
-│                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/06d1dc3fa96
+│                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/06d1dc3fa96
 │                        │      │                  │      a2ba5a3e22735a033012aadc9f0d6 
-│                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/621f3729831
+│                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/621f3729831
 │                        │      │                  │      b05ee828a3203eddb621d014ff2b2 
-│                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7dfcee2cd2a
+│                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/7dfcee2cd2a
 │                        │      │                  │      63b2c64b9b4b0850be64cb695b0a0 
-│                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20240903.txt 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6986-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
+│                        │      │                  ├ [5]: https://github.com/openssl/openssl/security/advisorie
+│                        │      │                  │      s/GHSA-5qrj-vq78-58fj 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
+│                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20240903.txt 
+│                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-6986-1 
+│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
 │                        │      ├ PublishedDate   : 2024-09-03T16:15:07.177Z 
 │                        │      ╰ LastModifiedDate: 2024-09-03T21:35:12.987Z 
 │                        ├ [72] ╭ VulnerabilityID : CVE-2024-2511 
@@ -4283,7 +4300,7 @@
 │                        │      ├ Severity        : LOW 
 │                        │      ├ CweIDs           ─ [0]: CWE-200 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
-│                        │      │                  ├ azure      : 4 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 4 
 │                        │      │                  ├ photon     : 4 
 │                        │      │                  ├ redhat     : 1 
@@ -4494,8 +4511,7 @@
 │                        │      ├ DataSource       ╭ ID  : ubuntu 
 │                        │      │                  ├ Name: Ubuntu CVE Tracker 
 │                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                        │      ├ Title           : Issue summary: Applications performing certificate name
-│                        │      │                   checks (e.g.,  ... 
+│                        │      ├ Title           : openssl: Possible denial of service in X.509 name checks 
 │                        │      ├ Description     : Issue summary: Applications performing certificate name
 │                        │      │                   checks (e.g., TLS
 │                        │      │                   clients checking server certificates) may attempt to read
@@ -4538,18 +4554,26 @@
 │                        │      │                   by this issue. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-843 
-│                        │      ├ VendorSeverity   ─ ubuntu: 2 
-│                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/05f360d9e84
+│                        │      ├ VendorSeverity   ╭ redhat: 2 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           N/A:H 
+│                        │      │                           ╰ V3Score : 5.9 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-6119 
+│                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/05f360d9e84
 │                        │      │                  │      9a1b277db628f1f13083a7f8dd04f 
-│                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/06d1dc3fa96
+│                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/06d1dc3fa96
 │                        │      │                  │      a2ba5a3e22735a033012aadc9f0d6 
-│                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/621f3729831
+│                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/621f3729831
 │                        │      │                  │      b05ee828a3203eddb621d014ff2b2 
-│                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7dfcee2cd2a
+│                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/7dfcee2cd2a
 │                        │      │                  │      63b2c64b9b4b0850be64cb695b0a0 
-│                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20240903.txt 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-6986-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
+│                        │      │                  ├ [5]: https://github.com/openssl/openssl/security/advisorie
+│                        │      │                  │      s/GHSA-5qrj-vq78-58fj 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
+│                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20240903.txt 
+│                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-6986-1 
+│                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
 │                        │      ├ PublishedDate   : 2024-09-03T16:15:07.177Z 
 │                        │      ╰ LastModifiedDate: 2024-09-03T21:35:12.987Z 
 │                        ├ [80] ╭ VulnerabilityID : CVE-2024-2511 
@@ -4899,7 +4923,7 @@
 │                        │      ├ Severity        : LOW 
 │                        │      ├ CweIDs           ─ [0]: CWE-200 
 │                        │      ├ VendorSeverity   ╭ amazon     : 2 
-│                        │      │                  ├ azure      : 4 
+│                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 4 
 │                        │      │                  ├ photon     : 4 
 │                        │      │                  ├ redhat     : 1 
@@ -5325,14 +5349,16 @@
 │                        │     │                           ╰ V3Score : 8.9 
 │                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-25638 
 │                        │     │                  ├ [1]: https://github.com/dnsjava/dnsjava 
-│                        │     │                  ├ [2]: https://github.com/dnsjava/dnsjava/commit/bc51df1c455e
+│                        │     │                  ├ [2]: https://github.com/dnsjava/dnsjava/commit/2073a0cdea2c
+│                        │     │                  │      560465f7ac0cc56f202e6fc39705 
+│                        │     │                  ├ [3]: https://github.com/dnsjava/dnsjava/commit/bc51df1c455e
 │                        │     │                  │      6c9fb7cbd42fcb6d62d16047818d 
-│                        │     │                  ├ [3]: https://github.com/dnsjava/dnsjava/security/advisories
+│                        │     │                  ├ [4]: https://github.com/dnsjava/dnsjava/security/advisories
 │                        │     │                  │      /GHSA-cfxw-4h78-h7fw 
-│                        │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-25638 
-│                        │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-25638 
+│                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-25638 
+│                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-25638 
 │                        │     ├ PublishedDate   : 2024-07-22T14:15:04.593Z 
-│                        │     ╰ LastModifiedDate: 2024-07-24T12:55:13.223Z 
+│                        │     ╰ LastModifiedDate: 2024-09-04T15:15:13.637Z 
 │                        ├ [1] ╭ VulnerabilityID : GHSA-crjg-w57m-rqqf 
 │                        │     ├ PkgName         : dnsjava:dnsjava 
 │                        │     ├ PkgPath         : opt/oaf/openaf.jar 
@@ -5371,13 +5397,15 @@
 │                        │     ├ VendorSeverity   ─ ghsa: 2 
 │                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H 
 │                        │     │                         ╰ V3Score : 6.5 
-│                        │     ╰ References       ╭ [0]: https://github.com/dnsjava/dnsjava 
-│                        │                        ├ [1]: https://github.com/dnsjava/dnsjava/commit/07ac36a11578
+│                        │     ╰ References       ╭ [0]: https://github.com/advisories/GHSA-8459-gg55-8qjj 
+│                        │                        ├ [1]: https://github.com/dnsjava/dnsjava 
+│                        │                        ├ [2]: https://github.com/dnsjava/dnsjava/commit/07ac36a11578
 │                        │                        │      cc1bce0cd8ddf2fe568f062aee78 
-│                        │                        ├ [2]: https://github.com/dnsjava/dnsjava/commit/3ddc45ce8cdb
+│                        │                        ├ [3]: https://github.com/dnsjava/dnsjava/commit/3ddc45ce8cdb
 │                        │                        │      5c2274e10b7401416f497694e1cf 
-│                        │                        ╰ [3]: https://github.com/dnsjava/dnsjava/security/advisories
-│                        │                               /GHSA-crjg-w57m-rqqf 
+│                        │                        ├ [4]: https://github.com/dnsjava/dnsjava/security/advisories
+│                        │                        │      /GHSA-crjg-w57m-rqqf 
+│                        │                        ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2023-50387 
 │                        ╰ [2] ╭ VulnerabilityID : GHSA-mmwx-rj87-vfgr 
 │                              ├ PkgName         : dnsjava:dnsjava 
 │                              ├ PkgPath         : opt/oaf/openaf.jar 
@@ -5416,11 +5444,13 @@
 │                              ├ VendorSeverity   ─ ghsa: 2 
 │                              ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H 
 │                              │                         ╰ V3Score : 6.5 
-│                              ╰ References       ╭ [0]: https://github.com/dnsjava/dnsjava 
-│                                                 ├ [1]: https://github.com/dnsjava/dnsjava/commit/711af79be321
+│                              ╰ References       ╭ [0]: https://github.com/advisories/GHSA-pv4h-p8jr-6cv2 
+│                                                 ├ [1]: https://github.com/dnsjava/dnsjava 
+│                                                 ├ [2]: https://github.com/dnsjava/dnsjava/commit/711af79be321
 │                                                 │      4f52daa5c846b95766dc0a075116 
-│                                                 ╰ [2]: https://github.com/dnsjava/dnsjava/security/advisories
-│                                                        /GHSA-mmwx-rj87-vfgr 
+│                                                 ├ [3]: https://github.com/dnsjava/dnsjava/security/advisories
+│                                                 │      /GHSA-mmwx-rj87-vfgr 
+│                                                 ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2023-50868 
 ├ [2]  ╭ Target         : home/user/.krew/store/krew/v0.4.4/krew 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -7665,7 +7695,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -10193,7 +10223,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
