@@ -87,12 +87,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1737
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
-    - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
     - https://linux.oracle.com/cve/CVE-2024-1737.html
@@ -145,12 +144,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1975
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
-    - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1975
     - https://linux.oracle.com/cve/CVE-2024-1975.html
     - https://linux.oracle.com/errata/ELSA-2024-5524.html
@@ -202,12 +200,12 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5390
     - https://access.redhat.com/security/cve/CVE-2024-4076
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
     - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5390.html
     - https://kb.isc.org/docs/cve-2024-4076
     - https://linux.oracle.com/cve/CVE-2024-4076.html
     - https://linux.oracle.com/errata/ELSA-2024-5390.html
@@ -301,12 +299,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1737
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
-    - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
     - https://linux.oracle.com/cve/CVE-2024-1737.html
@@ -359,12 +356,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1975
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
-    - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1975
     - https://linux.oracle.com/cve/CVE-2024-1975.html
     - https://linux.oracle.com/errata/ELSA-2024-5524.html
@@ -416,12 +412,12 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5390
     - https://access.redhat.com/security/cve/CVE-2024-4076
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
     - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5390.html
     - https://kb.isc.org/docs/cve-2024-4076
     - https://linux.oracle.com/cve/CVE-2024-4076.html
     - https://linux.oracle.com/errata/ELSA-2024-5390.html
@@ -515,12 +511,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1737
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
-    - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
     - https://linux.oracle.com/cve/CVE-2024-1737.html
@@ -573,12 +568,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1975
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
-    - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1975
     - https://linux.oracle.com/cve/CVE-2024-1975.html
     - https://linux.oracle.com/errata/ELSA-2024-5524.html
@@ -630,12 +624,12 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5390
     - https://access.redhat.com/security/cve/CVE-2024-4076
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
     - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5390.html
     - https://kb.isc.org/docs/cve-2024-4076
     - https://linux.oracle.com/cve/CVE-2024-4076.html
     - https://linux.oracle.com/errata/ELSA-2024-5390.html
@@ -729,6 +723,7 @@
     VendorSeverity:
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 1
       ubuntu: 2
     CVSS:
@@ -788,12 +783,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.2
     References:
-    - https://access.redhat.com/errata/RHSA-2023:4569
+    - https://access.redhat.com/errata/RHSA-2023:4498
     - https://access.redhat.com/security/cve/CVE-2023-34969
     - https://bugzilla.redhat.com/2213166
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
-    - https://errata.almalinux.org/9/ALSA-2023-4569.html
+    - https://errata.almalinux.org/8/ALSA-2023-4498.html
     - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
@@ -844,12 +839,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.2
     References:
-    - https://access.redhat.com/errata/RHSA-2023:4569
+    - https://access.redhat.com/errata/RHSA-2023:4498
     - https://access.redhat.com/security/cve/CVE-2023-34969
     - https://bugzilla.redhat.com/2213166
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
-    - https://errata.almalinux.org/9/ALSA-2023-4569.html
+    - https://errata.almalinux.org/8/ALSA-2023-4498.html
     - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
@@ -900,12 +895,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.2
     References:
-    - https://access.redhat.com/errata/RHSA-2023:4569
+    - https://access.redhat.com/errata/RHSA-2023:4498
     - https://access.redhat.com/security/cve/CVE-2023-34969
     - https://bugzilla.redhat.com/2213166
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
-    - https://errata.almalinux.org/9/ALSA-2023-4569.html
+    - https://errata.almalinux.org/8/ALSA-2023-4498.html
     - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
@@ -956,12 +951,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.2
     References:
-    - https://access.redhat.com/errata/RHSA-2023:4569
+    - https://access.redhat.com/errata/RHSA-2023:4498
     - https://access.redhat.com/security/cve/CVE-2023-34969
     - https://bugzilla.redhat.com/2213166
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
-    - https://errata.almalinux.org/9/ALSA-2023-4569.html
+    - https://errata.almalinux.org/8/ALSA-2023-4498.html
     - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
@@ -1012,12 +1007,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.2
     References:
-    - https://access.redhat.com/errata/RHSA-2023:4569
+    - https://access.redhat.com/errata/RHSA-2023:4498
     - https://access.redhat.com/security/cve/CVE-2023-34969
     - https://bugzilla.redhat.com/2213166
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
-    - https://errata.almalinux.org/9/ALSA-2023-4569.html
+    - https://errata.almalinux.org/8/ALSA-2023-4498.html
     - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
@@ -1068,12 +1063,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.2
     References:
-    - https://access.redhat.com/errata/RHSA-2023:4569
+    - https://access.redhat.com/errata/RHSA-2023:4498
     - https://access.redhat.com/security/cve/CVE-2023-34969
     - https://bugzilla.redhat.com/2213166
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
-    - https://errata.almalinux.org/9/ALSA-2023-4569.html
+    - https://errata.almalinux.org/8/ALSA-2023-4498.html
     - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
@@ -1215,12 +1210,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1737
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
-    - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1737
     - https://kb.isc.org/docs/rrset-limits-in-zones
     - https://linux.oracle.com/cve/CVE-2024-1737.html
@@ -1273,12 +1267,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5524
     - https://access.redhat.com/security/cve/CVE-2024-1975
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
-    - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5524.html
     - https://kb.isc.org/docs/cve-2024-1975
     - https://linux.oracle.com/cve/CVE-2024-1975.html
     - https://linux.oracle.com/errata/ELSA-2024-5524.html
@@ -1330,12 +1323,12 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/07/23/1
     - http://www.openwall.com/lists/oss-security/2024/07/31/2
-    - https://access.redhat.com/errata/RHSA-2024:5231
+    - https://access.redhat.com/errata/RHSA-2024:5390
     - https://access.redhat.com/security/cve/CVE-2024-4076
     - https://bugzilla.redhat.com/2298893
     - https://bugzilla.redhat.com/2298901
     - https://bugzilla.redhat.com/2298904
-    - https://errata.almalinux.org/9/ALSA-2024-5231.html
+    - https://errata.almalinux.org/8/ALSA-2024-5390.html
     - https://kb.isc.org/docs/cve-2024-4076
     - https://linux.oracle.com/cve/CVE-2024-4076.html
     - https://linux.oracle.com/errata/ELSA-2024-5390.html
@@ -1948,11 +1941,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
         V3Score: 7.4
     References:
-    - https://access.redhat.com/errata/RHSA-2024:6166
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37370
     - https://bugzilla.redhat.com/2294676
     - https://bugzilla.redhat.com/2294677
-    - https://errata.almalinux.org/9/ALSA-2024-6166.html
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37370.html
     - https://linux.oracle.com/errata/ELSA-2024-6166.html
@@ -2002,11 +1995,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2024:6166
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37371
     - https://bugzilla.redhat.com/2294676
     - https://bugzilla.redhat.com/2294677
-    - https://errata.almalinux.org/9/ALSA-2024-6166.html
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37371.html
     - https://linux.oracle.com/errata/ELSA-2024-6166.html
@@ -2234,6 +2227,7 @@
     VendorSeverity:
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 1
       ubuntu: 2
     CVSS:
@@ -2290,6 +2284,7 @@
     VendorSeverity:
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 1
       ubuntu: 2
     CVSS:
@@ -2349,12 +2344,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.2
     References:
-    - https://access.redhat.com/errata/RHSA-2023:4569
+    - https://access.redhat.com/errata/RHSA-2023:4498
     - https://access.redhat.com/security/cve/CVE-2023-34969
     - https://bugzilla.redhat.com/2213166
     - https://bugzilla.redhat.com/show_bug.cgi?id=2213166
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34969
-    - https://errata.almalinux.org/9/ALSA-2023-4569.html
+    - https://errata.almalinux.org/8/ALSA-2023-4498.html
     - https://errata.rockylinux.org/RLSA-2023:4569
     - https://gitlab.freedesktop.org/dbus/dbus/-/issues/457
     - https://linux.oracle.com/cve/CVE-2023-34969.html
@@ -2486,11 +2481,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
         V3Score: 7.4
     References:
-    - https://access.redhat.com/errata/RHSA-2024:6166
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37370
     - https://bugzilla.redhat.com/2294676
     - https://bugzilla.redhat.com/2294677
-    - https://errata.almalinux.org/9/ALSA-2024-6166.html
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37370.html
     - https://linux.oracle.com/errata/ELSA-2024-6166.html
@@ -2540,11 +2535,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2024:6166
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37371
     - https://bugzilla.redhat.com/2294676
     - https://bugzilla.redhat.com/2294677
-    - https://errata.almalinux.org/9/ALSA-2024-6166.html
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37371.html
     - https://linux.oracle.com/errata/ELSA-2024-6166.html
@@ -2741,11 +2736,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
         V3Score: 7.4
     References:
-    - https://access.redhat.com/errata/RHSA-2024:6166
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37370
     - https://bugzilla.redhat.com/2294676
     - https://bugzilla.redhat.com/2294677
-    - https://errata.almalinux.org/9/ALSA-2024-6166.html
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37370.html
     - https://linux.oracle.com/errata/ELSA-2024-6166.html
@@ -2795,11 +2790,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2024:6166
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37371
     - https://bugzilla.redhat.com/2294676
     - https://bugzilla.redhat.com/2294677
-    - https://errata.almalinux.org/9/ALSA-2024-6166.html
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37371.html
     - https://linux.oracle.com/errata/ELSA-2024-6166.html
@@ -2996,11 +2991,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
         V3Score: 7.4
     References:
-    - https://access.redhat.com/errata/RHSA-2024:6166
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37370
     - https://bugzilla.redhat.com/2294676
     - https://bugzilla.redhat.com/2294677
-    - https://errata.almalinux.org/9/ALSA-2024-6166.html
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37370.html
     - https://linux.oracle.com/errata/ELSA-2024-6166.html
@@ -3050,11 +3045,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2024:6166
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37371
     - https://bugzilla.redhat.com/2294676
     - https://bugzilla.redhat.com/2294677
-    - https://errata.almalinux.org/9/ALSA-2024-6166.html
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37371.html
     - https://linux.oracle.com/errata/ELSA-2024-6166.html
@@ -3251,11 +3246,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
         V3Score: 7.4
     References:
-    - https://access.redhat.com/errata/RHSA-2024:6166
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37370
     - https://bugzilla.redhat.com/2294676
     - https://bugzilla.redhat.com/2294677
-    - https://errata.almalinux.org/9/ALSA-2024-6166.html
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37370.html
     - https://linux.oracle.com/errata/ELSA-2024-6166.html
@@ -3305,11 +3300,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2024:6166
+    - https://access.redhat.com/errata/RHSA-2024:5312
     - https://access.redhat.com/security/cve/CVE-2024-37371
     - https://bugzilla.redhat.com/2294676
     - https://bugzilla.redhat.com/2294677
-    - https://errata.almalinux.org/9/ALSA-2024-6166.html
+    - https://errata.almalinux.org/8/ALSA-2024-5312.html
     - https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef
     - https://linux.oracle.com/cve/CVE-2024-37371.html
     - https://linux.oracle.com/errata/ELSA-2024-6166.html
@@ -3455,7 +3450,7 @@
     CweIDs:
     - CWE-697
     VendorSeverity:
-      alma: 1
+      alma: 2
       bitnami: 3
       oracle-oval: 2
       photon: 1
@@ -3470,10 +3465,13 @@
         V3Score: 3.7
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/17/3
-    - https://access.redhat.com/errata/RHSA-2024:4779
+    - https://access.redhat.com/errata/RHSA-2024:5962
     - https://access.redhat.com/security/cve/CVE-2024-4032
     - https://bugzilla.redhat.com/2292921
-    - https://errata.almalinux.org/9/ALSA-2024-4779.html
+    - https://bugzilla.redhat.com/2297771
+    - https://bugzilla.redhat.com/2302255
+    - https://bugzilla.redhat.com/2307370
+    - https://errata.almalinux.org/8/ALSA-2024-5962.html
     - https://github.com/advisories/GHSA-mh6q-v4mp-2cc7
     - https://github.com/python/cpython/commit/22adf29da8d99933ffed8647d3e0726edd16f7f8
     - https://github.com/python/cpython/commit/40d75c2b7f5c67e254d0a025e0f2e2c7ada7f69f
@@ -3523,7 +3521,7 @@
     CweIDs:
     - CWE-697
     VendorSeverity:
-      alma: 1
+      alma: 2
       bitnami: 3
       oracle-oval: 2
       photon: 1
@@ -3538,10 +3536,13 @@
         V3Score: 3.7
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/17/3
-    - https://access.redhat.com/errata/RHSA-2024:4779
+    - https://access.redhat.com/errata/RHSA-2024:5962
     - https://access.redhat.com/security/cve/CVE-2024-4032
     - https://bugzilla.redhat.com/2292921
-    - https://errata.almalinux.org/9/ALSA-2024-4779.html
+    - https://bugzilla.redhat.com/2297771
+    - https://bugzilla.redhat.com/2302255
+    - https://bugzilla.redhat.com/2307370
+    - https://errata.almalinux.org/8/ALSA-2024-5962.html
     - https://github.com/advisories/GHSA-mh6q-v4mp-2cc7
     - https://github.com/python/cpython/commit/22adf29da8d99933ffed8647d3e0726edd16f7f8
     - https://github.com/python/cpython/commit/40d75c2b7f5c67e254d0a025e0f2e2c7ada7f69f
@@ -3591,7 +3592,7 @@
     CweIDs:
     - CWE-697
     VendorSeverity:
-      alma: 1
+      alma: 2
       bitnami: 3
       oracle-oval: 2
       photon: 1
@@ -3606,10 +3607,13 @@
         V3Score: 3.7
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/17/3
-    - https://access.redhat.com/errata/RHSA-2024:4779
+    - https://access.redhat.com/errata/RHSA-2024:5962
     - https://access.redhat.com/security/cve/CVE-2024-4032
     - https://bugzilla.redhat.com/2292921
-    - https://errata.almalinux.org/9/ALSA-2024-4779.html
+    - https://bugzilla.redhat.com/2297771
+    - https://bugzilla.redhat.com/2302255
+    - https://bugzilla.redhat.com/2307370
+    - https://errata.almalinux.org/8/ALSA-2024-5962.html
     - https://github.com/advisories/GHSA-mh6q-v4mp-2cc7
     - https://github.com/python/cpython/commit/22adf29da8d99933ffed8647d3e0726edd16f7f8
     - https://github.com/python/cpython/commit/40d75c2b7f5c67e254d0a025e0f2e2c7ada7f69f
@@ -3967,7 +3971,7 @@
     - CWE-200
     VendorSeverity:
       amazon: 2
-      azure: 2
+      azure: 4
       cbl-mariner: 4
       photon: 4
       redhat: 1
@@ -4467,7 +4471,7 @@
     - CWE-200
     VendorSeverity:
       amazon: 2
-      azure: 2
+      azure: 4
       cbl-mariner: 4
       photon: 4
       redhat: 1
@@ -4615,7 +4619,7 @@
     CweIDs:
     - CWE-697
     VendorSeverity:
-      alma: 1
+      alma: 2
       bitnami: 3
       oracle-oval: 2
       photon: 1
@@ -4630,10 +4634,13 @@
         V3Score: 3.7
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/17/3
-    - https://access.redhat.com/errata/RHSA-2024:4779
+    - https://access.redhat.com/errata/RHSA-2024:5962
     - https://access.redhat.com/security/cve/CVE-2024-4032
     - https://bugzilla.redhat.com/2292921
-    - https://errata.almalinux.org/9/ALSA-2024-4779.html
+    - https://bugzilla.redhat.com/2297771
+    - https://bugzilla.redhat.com/2302255
+    - https://bugzilla.redhat.com/2307370
+    - https://errata.almalinux.org/8/ALSA-2024-5962.html
     - https://github.com/advisories/GHSA-mh6q-v4mp-2cc7
     - https://github.com/python/cpython/commit/22adf29da8d99933ffed8647d3e0726edd16f7f8
     - https://github.com/python/cpython/commit/40d75c2b7f5c67e254d0a025e0f2e2c7ada7f69f
@@ -4683,7 +4690,7 @@
     CweIDs:
     - CWE-697
     VendorSeverity:
-      alma: 1
+      alma: 2
       bitnami: 3
       oracle-oval: 2
       photon: 1
@@ -4698,10 +4705,13 @@
         V3Score: 3.7
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/17/3
-    - https://access.redhat.com/errata/RHSA-2024:4779
+    - https://access.redhat.com/errata/RHSA-2024:5962
     - https://access.redhat.com/security/cve/CVE-2024-4032
     - https://bugzilla.redhat.com/2292921
-    - https://errata.almalinux.org/9/ALSA-2024-4779.html
+    - https://bugzilla.redhat.com/2297771
+    - https://bugzilla.redhat.com/2302255
+    - https://bugzilla.redhat.com/2307370
+    - https://errata.almalinux.org/8/ALSA-2024-5962.html
     - https://github.com/advisories/GHSA-mh6q-v4mp-2cc7
     - https://github.com/python/cpython/commit/22adf29da8d99933ffed8647d3e0726edd16f7f8
     - https://github.com/python/cpython/commit/40d75c2b7f5c67e254d0a025e0f2e2c7ada7f69f
@@ -4769,6 +4779,276 @@
     - https://www.cve.org/CVERecord?id=CVE-2021-4217
     PublishedDate: '2022-08-24T16:15:10.09Z'
     LastModifiedDate: '2022-11-29T15:45:16.2Z'
+  - VulnerabilityID: CVE-2024-41957
+    PkgID: vim@2:9.1.0016-1ubuntu7.1
+    PkgName: vim
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/vim@9.1.0016-1ubuntu7.1?arch=amd64&distro=ubuntu-24.04&epoch=2
+      UID: 437b325e3d14c912
+    InstalledVersion: 2:9.1.0016-1ubuntu7.1
+    FixedVersion: 2:9.1.0016-1ubuntu7.2
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-41957
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'vim: Double-free/use-after-free vulnerability with Vim editor'
+    Description: |-
+      Vim is an open source command line text editor. Vim < v9.1.0647 has double free in src/alloc.c:616. When closing a window, the corresponding tagstack data will be cleared and freed. However a bit later, the quickfix list belonging to that window will also be cleared and if that quickfix list points to the same tagstack data, Vim will try to free it again, resulting in a double-free/use-after-free access exception. Impact is low since the user must intentionally execute vim with several non-default flags,
+      but it may cause a crash of Vim. The issue has been fixed as of Vim patch v9.1.0647
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-415
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 4.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2024-41957
+    - https://github.com/vim/vim/commit/8a0bbe7b8aad6f8da28dee218c01bc8a0185a
+    - https://github.com/vim/vim/security/advisories/GHSA-f9cr-gv85-hcr4
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-41957
+    - https://ubuntu.com/security/notices/USN-6993-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-41957
+    PublishedDate: '2024-08-01T22:15:29.367Z'
+    LastModifiedDate: '2024-08-09T14:14:01.19Z'
+  - VulnerabilityID: CVE-2024-43374
+    PkgID: vim@2:9.1.0016-1ubuntu7.1
+    PkgName: vim
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/vim@9.1.0016-1ubuntu7.1?arch=amd64&distro=ubuntu-24.04&epoch=2
+      UID: 437b325e3d14c912
+    InstalledVersion: 2:9.1.0016-1ubuntu7.1
+    FixedVersion: 2:9.1.0016-1ubuntu7.2
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-43374
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'vim: use-after-free in alist_add() in src/arglist.c'
+    Description: The UNIX editor Vim prior to version 9.1.0678 has a use-after-free error in argument list handling. When adding a new file to the argument list, this triggers `Buf*` autocommands. If in such an autocommand the buffer that was just opened is closed (including the window where it is shown), this causes the window structure to be freed which contains a reference to the argument list that we are actually modifying. Once the autocommands are completed, the references to the window and argument list are no longer valid and as such cause an use-after-free. Impact is low since the user must either intentionally add some unusual autocommands that wipe a buffer during creation (either manually or by sourcing a malicious plugin), but it will crash Vim. The issue has been fixed as of Vim patch v9.1.0678.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-416
+    VendorSeverity:
+      azure: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2024-43374
+    - https://github.com/vim/vim/commit/0a6e57b09bc8c76691b367a5babfb79b31b770e8
+    - https://github.com/vim/vim/commit/0a6e57b09bc8c76691b367a5babfb79b31b770e8 (v9.1.0678)
+    - https://github.com/vim/vim/security/GHSA-2w8m-443v-cgvw
+    - https://github.com/vim/vim/security/advisories/GHSA-2w8m-443v-cgvw
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-43374
+    - https://ubuntu.com/security/notices/USN-6993-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-43374
+    PublishedDate: '2024-08-16T02:15:17.687Z'
+    LastModifiedDate: '2024-08-19T13:00:23.117Z'
+  - VulnerabilityID: CVE-2024-41957
+    PkgID: vim-common@2:9.1.0016-1ubuntu7.1
+    PkgName: vim-common
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/vim-common@9.1.0016-1ubuntu7.1?arch=all&distro=ubuntu-24.04&epoch=2
+      UID: 5d99535b04be45d7
+    InstalledVersion: 2:9.1.0016-1ubuntu7.1
+    FixedVersion: 2:9.1.0016-1ubuntu7.2
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-41957
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'vim: Double-free/use-after-free vulnerability with Vim editor'
+    Description: |-
+      Vim is an open source command line text editor. Vim < v9.1.0647 has double free in src/alloc.c:616. When closing a window, the corresponding tagstack data will be cleared and freed. However a bit later, the quickfix list belonging to that window will also be cleared and if that quickfix list points to the same tagstack data, Vim will try to free it again, resulting in a double-free/use-after-free access exception. Impact is low since the user must intentionally execute vim with several non-default flags,
+      but it may cause a crash of Vim. The issue has been fixed as of Vim patch v9.1.0647
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-415
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 4.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2024-41957
+    - https://github.com/vim/vim/commit/8a0bbe7b8aad6f8da28dee218c01bc8a0185a
+    - https://github.com/vim/vim/security/advisories/GHSA-f9cr-gv85-hcr4
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-41957
+    - https://ubuntu.com/security/notices/USN-6993-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-41957
+    PublishedDate: '2024-08-01T22:15:29.367Z'
+    LastModifiedDate: '2024-08-09T14:14:01.19Z'
+  - VulnerabilityID: CVE-2024-43374
+    PkgID: vim-common@2:9.1.0016-1ubuntu7.1
+    PkgName: vim-common
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/vim-common@9.1.0016-1ubuntu7.1?arch=all&distro=ubuntu-24.04&epoch=2
+      UID: 5d99535b04be45d7
+    InstalledVersion: 2:9.1.0016-1ubuntu7.1
+    FixedVersion: 2:9.1.0016-1ubuntu7.2
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-43374
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'vim: use-after-free in alist_add() in src/arglist.c'
+    Description: The UNIX editor Vim prior to version 9.1.0678 has a use-after-free error in argument list handling. When adding a new file to the argument list, this triggers `Buf*` autocommands. If in such an autocommand the buffer that was just opened is closed (including the window where it is shown), this causes the window structure to be freed which contains a reference to the argument list that we are actually modifying. Once the autocommands are completed, the references to the window and argument list are no longer valid and as such cause an use-after-free. Impact is low since the user must either intentionally add some unusual autocommands that wipe a buffer during creation (either manually or by sourcing a malicious plugin), but it will crash Vim. The issue has been fixed as of Vim patch v9.1.0678.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-416
+    VendorSeverity:
+      azure: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2024-43374
+    - https://github.com/vim/vim/commit/0a6e57b09bc8c76691b367a5babfb79b31b770e8
+    - https://github.com/vim/vim/commit/0a6e57b09bc8c76691b367a5babfb79b31b770e8 (v9.1.0678)
+    - https://github.com/vim/vim/security/GHSA-2w8m-443v-cgvw
+    - https://github.com/vim/vim/security/advisories/GHSA-2w8m-443v-cgvw
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-43374
+    - https://ubuntu.com/security/notices/USN-6993-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-43374
+    PublishedDate: '2024-08-16T02:15:17.687Z'
+    LastModifiedDate: '2024-08-19T13:00:23.117Z'
+  - VulnerabilityID: CVE-2024-41957
+    PkgID: vim-runtime@2:9.1.0016-1ubuntu7.1
+    PkgName: vim-runtime
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/vim-runtime@9.1.0016-1ubuntu7.1?arch=all&distro=ubuntu-24.04&epoch=2
+      UID: bdd9c3901041c5d9
+    InstalledVersion: 2:9.1.0016-1ubuntu7.1
+    FixedVersion: 2:9.1.0016-1ubuntu7.2
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-41957
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'vim: Double-free/use-after-free vulnerability with Vim editor'
+    Description: |-
+      Vim is an open source command line text editor. Vim < v9.1.0647 has double free in src/alloc.c:616. When closing a window, the corresponding tagstack data will be cleared and freed. However a bit later, the quickfix list belonging to that window will also be cleared and if that quickfix list points to the same tagstack data, Vim will try to free it again, resulting in a double-free/use-after-free access exception. Impact is low since the user must intentionally execute vim with several non-default flags,
+      but it may cause a crash of Vim. The issue has been fixed as of Vim patch v9.1.0647
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-415
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 4.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2024-41957
+    - https://github.com/vim/vim/commit/8a0bbe7b8aad6f8da28dee218c01bc8a0185a
+    - https://github.com/vim/vim/security/advisories/GHSA-f9cr-gv85-hcr4
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-41957
+    - https://ubuntu.com/security/notices/USN-6993-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-41957
+    PublishedDate: '2024-08-01T22:15:29.367Z'
+    LastModifiedDate: '2024-08-09T14:14:01.19Z'
+  - VulnerabilityID: CVE-2024-43374
+    PkgID: vim-runtime@2:9.1.0016-1ubuntu7.1
+    PkgName: vim-runtime
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/vim-runtime@9.1.0016-1ubuntu7.1?arch=all&distro=ubuntu-24.04&epoch=2
+      UID: bdd9c3901041c5d9
+    InstalledVersion: 2:9.1.0016-1ubuntu7.1
+    FixedVersion: 2:9.1.0016-1ubuntu7.2
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-43374
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'vim: use-after-free in alist_add() in src/arglist.c'
+    Description: The UNIX editor Vim prior to version 9.1.0678 has a use-after-free error in argument list handling. When adding a new file to the argument list, this triggers `Buf*` autocommands. If in such an autocommand the buffer that was just opened is closed (including the window where it is shown), this causes the window structure to be freed which contains a reference to the argument list that we are actually modifying. Once the autocommands are completed, the references to the window and argument list are no longer valid and as such cause an use-after-free. Impact is low since the user must either intentionally add some unusual autocommands that wipe a buffer during creation (either manually or by sourcing a malicious plugin), but it will crash Vim. The issue has been fixed as of Vim patch v9.1.0678.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-416
+    VendorSeverity:
+      azure: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2024-43374
+    - https://github.com/vim/vim/commit/0a6e57b09bc8c76691b367a5babfb79b31b770e8
+    - https://github.com/vim/vim/commit/0a6e57b09bc8c76691b367a5babfb79b31b770e8 (v9.1.0678)
+    - https://github.com/vim/vim/security/GHSA-2w8m-443v-cgvw
+    - https://github.com/vim/vim/security/advisories/GHSA-2w8m-443v-cgvw
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-43374
+    - https://ubuntu.com/security/notices/USN-6993-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-43374
+    PublishedDate: '2024-08-16T02:15:17.687Z'
+    LastModifiedDate: '2024-08-19T13:00:23.117Z'
   - VulnerabilityID: CVE-2021-31879
     PkgID: wget@1.21.4-1ubuntu4.1
     PkgName: wget
@@ -4816,6 +5096,96 @@
     - https://www.cve.org/CVERecord?id=CVE-2021-31879
     PublishedDate: '2021-04-29T05:15:08.707Z'
     LastModifiedDate: '2022-05-13T20:52:24.793Z'
+  - VulnerabilityID: CVE-2024-41957
+    PkgID: xxd@2:9.1.0016-1ubuntu7.1
+    PkgName: xxd
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/xxd@9.1.0016-1ubuntu7.1?arch=amd64&distro=ubuntu-24.04&epoch=2
+      UID: adb80260d3733ee7
+    InstalledVersion: 2:9.1.0016-1ubuntu7.1
+    FixedVersion: 2:9.1.0016-1ubuntu7.2
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-41957
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'vim: Double-free/use-after-free vulnerability with Vim editor'
+    Description: |-
+      Vim is an open source command line text editor. Vim < v9.1.0647 has double free in src/alloc.c:616. When closing a window, the corresponding tagstack data will be cleared and freed. However a bit later, the quickfix list belonging to that window will also be cleared and if that quickfix list points to the same tagstack data, Vim will try to free it again, resulting in a double-free/use-after-free access exception. Impact is low since the user must intentionally execute vim with several non-default flags,
+      but it may cause a crash of Vim. The issue has been fixed as of Vim patch v9.1.0647
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-415
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 4.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2024-41957
+    - https://github.com/vim/vim/commit/8a0bbe7b8aad6f8da28dee218c01bc8a0185a
+    - https://github.com/vim/vim/security/advisories/GHSA-f9cr-gv85-hcr4
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-41957
+    - https://ubuntu.com/security/notices/USN-6993-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-41957
+    PublishedDate: '2024-08-01T22:15:29.367Z'
+    LastModifiedDate: '2024-08-09T14:14:01.19Z'
+  - VulnerabilityID: CVE-2024-43374
+    PkgID: xxd@2:9.1.0016-1ubuntu7.1
+    PkgName: xxd
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/xxd@9.1.0016-1ubuntu7.1?arch=amd64&distro=ubuntu-24.04&epoch=2
+      UID: adb80260d3733ee7
+    InstalledVersion: 2:9.1.0016-1ubuntu7.1
+    FixedVersion: 2:9.1.0016-1ubuntu7.2
+    Status: fixed
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-43374
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'vim: use-after-free in alist_add() in src/arglist.c'
+    Description: The UNIX editor Vim prior to version 9.1.0678 has a use-after-free error in argument list handling. When adding a new file to the argument list, this triggers `Buf*` autocommands. If in such an autocommand the buffer that was just opened is closed (including the window where it is shown), this causes the window structure to be freed which contains a reference to the argument list that we are actually modifying. Once the autocommands are completed, the references to the window and argument list are no longer valid and as such cause an use-after-free. Impact is low since the user must either intentionally add some unusual autocommands that wipe a buffer during creation (either manually or by sourcing a malicious plugin), but it will crash Vim. The issue has been fixed as of Vim patch v9.1.0678.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-416
+    VendorSeverity:
+      azure: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2024-43374
+    - https://github.com/vim/vim/commit/0a6e57b09bc8c76691b367a5babfb79b31b770e8
+    - https://github.com/vim/vim/commit/0a6e57b09bc8c76691b367a5babfb79b31b770e8 (v9.1.0678)
+    - https://github.com/vim/vim/security/GHSA-2w8m-443v-cgvw
+    - https://github.com/vim/vim/security/advisories/GHSA-2w8m-443v-cgvw
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-43374
+    - https://ubuntu.com/security/notices/USN-6993-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-43374
+    PublishedDate: '2024-08-16T02:15:17.687Z'
+    LastModifiedDate: '2024-08-19T13:00:23.117Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
@@ -5006,7 +5376,7 @@
         V3Score: 7.5
     References:
     - golang.org/x/net
-    - https://access.redhat.com/errata/RHSA-2023:6077
+    - https://access.redhat.com/errata/RHSA-2023:5863
     - https://access.redhat.com/security/cve/CVE-2023-39325
     - https://access.redhat.com/security/cve/CVE-2023-44487
     - https://access.redhat.com/security/vulnerabilities/RHSB-2023-003
@@ -5016,7 +5386,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2243296
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
-    - https://errata.almalinux.org/9/ALSA-2023-6077.html
+    - https://errata.almalinux.org/8/ALSA-2023-5863.html
     - https://errata.rockylinux.org/RLSA-2023:6077
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
@@ -5151,12 +5521,16 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
         V3Score: 6.1
     References:
-    - https://access.redhat.com/errata/RHSA-2023:6474
+    - https://access.redhat.com/errata/RHSA-2023:6939
     - https://access.redhat.com/security/cve/CVE-2023-3978
+    - https://bugzilla.redhat.com/2163037
     - https://bugzilla.redhat.com/2174485
+    - https://bugzilla.redhat.com/2175721
     - https://bugzilla.redhat.com/2178358
     - https://bugzilla.redhat.com/2178488
     - https://bugzilla.redhat.com/2178492
+    - https://bugzilla.redhat.com/2182883
+    - https://bugzilla.redhat.com/2182884
     - https://bugzilla.redhat.com/2184481
     - https://bugzilla.redhat.com/2184482
     - https://bugzilla.redhat.com/2184483
@@ -5166,7 +5540,7 @@
     - https://bugzilla.redhat.com/2196029
     - https://bugzilla.redhat.com/2222167
     - https://bugzilla.redhat.com/2228689
-    - https://errata.almalinux.org/9/ALSA-2023-6474.html
+    - https://errata.almalinux.org/8/ALSA-2023-6939.html
     - https://go.dev/cl/514896
     - https://go.dev/issue/61615
     - https://linux.oracle.com/cve/CVE-2023-3978.html
@@ -5231,7 +5605,7 @@
     - http://www.openwall.com/lists/oss-security/2023/10/18/8
     - http://www.openwall.com/lists/oss-security/2023/10/19/6
     - http://www.openwall.com/lists/oss-security/2023/10/20/8
-    - https://access.redhat.com/errata/RHSA-2023:6746
+    - https://access.redhat.com/errata/RHSA-2024:1444
     - https://access.redhat.com/security/cve/CVE-2023-44487
     - https://access.redhat.com/security/cve/cve-2023-44487
     - https://akka.io/security/akka-http-cve-2023-44487.html
@@ -5250,6 +5624,7 @@
     - https://blog.vespa.ai/cve-2023-44487/
     - https://bugzilla.proxmox.com/show_bug.cgi?id=4988
     - https://bugzilla.redhat.com/2242803
+    - https://bugzilla.redhat.com/2264574
     - https://bugzilla.redhat.com/show_bug.cgi?id=2242803
     - https://bugzilla.suse.com/show_bug.cgi?id=1216123
     - https://cgit.freebsd.org/ports/commit/?id=c64c329c2c1752f46b73e3e6ce9f4329be6629f9
@@ -5262,7 +5637,7 @@
     - https://devblogs.microsoft.com/dotnet/october-2023-updates/
     - https://discuss.hashicorp.com/t/hcsec-2023-32-vault-consul-and-boundary-affected-by-http-2-rapid-reset-denial-of-service-vulnerability-cve-2023-44487/59715
     - https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve
-    - https://errata.almalinux.org/9/ALSA-2023-6746.html
+    - https://errata.almalinux.org/8/ALSA-2024-1444.html
     - https://errata.rockylinux.org/RLSA-2023:5838
     - https://forums.swift.org/t/swift-nio-http2-security-update-cve-2023-44487-http-2-dos/67764
     - https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088
@@ -5509,7 +5884,7 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/04/03/16
     - http://www.openwall.com/lists/oss-security/2024/04/05/4
-    - https://access.redhat.com/errata/RHSA-2024:2724
+    - https://access.redhat.com/errata/RHSA-2024:3346
     - https://access.redhat.com/security/cve/CVE-2023-45288
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268018
@@ -5523,7 +5898,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
-    - https://errata.almalinux.org/9/ALSA-2024-2724.html
+    - https://errata.almalinux.org/8/ALSA-2024-3346.html
     - https://errata.rockylinux.org/RLSA-2024:2724
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
@@ -5587,15 +5962,16 @@
         V3Score: 6.7
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/04/1
-    - https://access.redhat.com/errata/RHSA-2024:4212
+    - https://access.redhat.com/errata/RHSA-2024:5291
     - https://access.redhat.com/security/cve/CVE-2024-24790
+    - https://bugzilla.redhat.com/2279814
     - https://bugzilla.redhat.com/2292668
     - https://bugzilla.redhat.com/2292787
     - https://bugzilla.redhat.com/show_bug.cgi?id=2292668
     - https://bugzilla.redhat.com/show_bug.cgi?id=2292787
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24789
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790
-    - https://errata.almalinux.org/9/ALSA-2024-4212.html
+    - https://errata.almalinux.org/8/ALSA-2024-5291.html
     - https://errata.rockylinux.org/RLSA-2024:4212
     - https://github.com/golang/go/commit/051bdf3fd12a40307606ff9381138039c5f452f0 (1.21)
     - https://github.com/golang/go/commit/12d5810cdb1f73cf23d7a86462143e9463317fca (1.22)
@@ -5661,7 +6037,7 @@
         V3Score: 7.5
     References:
     - golang.org/x/net
-    - https://access.redhat.com/errata/RHSA-2023:6077
+    - https://access.redhat.com/errata/RHSA-2023:5863
     - https://access.redhat.com/security/cve/CVE-2023-39325
     - https://access.redhat.com/security/cve/CVE-2023-44487
     - https://access.redhat.com/security/vulnerabilities/RHSB-2023-003
@@ -5671,7 +6047,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2243296
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
-    - https://errata.almalinux.org/9/ALSA-2023-6077.html
+    - https://errata.almalinux.org/8/ALSA-2023-5863.html
     - https://errata.rockylinux.org/RLSA-2023:6077
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
@@ -5856,7 +6232,7 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/04/03/16
     - http://www.openwall.com/lists/oss-security/2024/04/05/4
-    - https://access.redhat.com/errata/RHSA-2024:2724
+    - https://access.redhat.com/errata/RHSA-2024:3346
     - https://access.redhat.com/security/cve/CVE-2023-45288
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268018
@@ -5870,7 +6246,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
-    - https://errata.almalinux.org/9/ALSA-2024-2724.html
+    - https://errata.almalinux.org/8/ALSA-2024-3346.html
     - https://errata.rockylinux.org/RLSA-2024:2724
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
@@ -5935,22 +6311,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2023:6474
+    - https://access.redhat.com/errata/RHSA-2023:7202
     - https://access.redhat.com/security/cve/CVE-2023-29406
-    - https://bugzilla.redhat.com/2174485
-    - https://bugzilla.redhat.com/2178358
-    - https://bugzilla.redhat.com/2178488
-    - https://bugzilla.redhat.com/2178492
-    - https://bugzilla.redhat.com/2184481
-    - https://bugzilla.redhat.com/2184482
-    - https://bugzilla.redhat.com/2184483
-    - https://bugzilla.redhat.com/2184484
-    - https://bugzilla.redhat.com/2196026
-    - https://bugzilla.redhat.com/2196027
-    - https://bugzilla.redhat.com/2196029
     - https://bugzilla.redhat.com/2222167
-    - https://bugzilla.redhat.com/2228689
-    - https://errata.almalinux.org/9/ALSA-2023-6474.html
+    - https://errata.almalinux.org/8/ALSA-2023-7202.html
     - https://github.com/golang/go/commit/312920c00aac9897b2a0693e752390b5b0711a5a (go1.20.6)
     - https://github.com/golang/go/commit/5fa6923b1ea891400153d04ddf1545e23b40041b (go1.19.11)
     - https://github.com/golang/go/issues/60374
@@ -6009,14 +6373,18 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2023:7766
+    - https://access.redhat.com/errata/RHSA-2024:0121
     - https://access.redhat.com/security/cve/CVE-2023-29409
+    - https://bugzilla.redhat.com/2124669
+    - https://bugzilla.redhat.com/2132867
+    - https://bugzilla.redhat.com/2132868
+    - https://bugzilla.redhat.com/2132872
     - https://bugzilla.redhat.com/2228743
     - https://bugzilla.redhat.com/2237773
     - https://bugzilla.redhat.com/2237776
     - https://bugzilla.redhat.com/2237777
     - https://bugzilla.redhat.com/2237778
-    - https://errata.almalinux.org/9/ALSA-2023-7766.html
+    - https://errata.almalinux.org/8/ALSA-2024-0121.html
     - https://go.dev/cl/515257
     - https://go.dev/issue/61460
     - https://groups.google.com/g/golang-announce/c/X0b6CsSAaYI/m/Efv5DbZ9AwAJ
@@ -6073,12 +6441,18 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
         V3Score: 6.1
     References:
-    - https://access.redhat.com/errata/RHSA-2024:2160
+    - https://access.redhat.com/errata/RHSA-2024:0121
     - https://access.redhat.com/security/cve/CVE-2023-39318
+    - https://bugzilla.redhat.com/2124669
+    - https://bugzilla.redhat.com/2132867
+    - https://bugzilla.redhat.com/2132868
+    - https://bugzilla.redhat.com/2132872
+    - https://bugzilla.redhat.com/2228743
     - https://bugzilla.redhat.com/2237773
     - https://bugzilla.redhat.com/2237776
-    - https://bugzilla.redhat.com/2253330
-    - https://errata.almalinux.org/9/ALSA-2024-2160.html
+    - https://bugzilla.redhat.com/2237777
+    - https://bugzilla.redhat.com/2237778
+    - https://errata.almalinux.org/8/ALSA-2024-0121.html
     - https://github.com/golang/go/commit/023b542edf38e2a1f87fcefb9f75ff2f99401b4c (go1.20.8)
     - https://github.com/golang/go/commit/b0e1d3ea26e8e8fce7726690c9ef0597e60739fb (go1.21.1)
     - https://go.dev/cl/526156
@@ -6140,12 +6514,18 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
         V3Score: 6.1
     References:
-    - https://access.redhat.com/errata/RHSA-2024:2160
+    - https://access.redhat.com/errata/RHSA-2024:0121
     - https://access.redhat.com/security/cve/CVE-2023-39319
+    - https://bugzilla.redhat.com/2124669
+    - https://bugzilla.redhat.com/2132867
+    - https://bugzilla.redhat.com/2132868
+    - https://bugzilla.redhat.com/2132872
+    - https://bugzilla.redhat.com/2228743
     - https://bugzilla.redhat.com/2237773
     - https://bugzilla.redhat.com/2237776
-    - https://bugzilla.redhat.com/2253330
-    - https://errata.almalinux.org/9/ALSA-2024-2160.html
+    - https://bugzilla.redhat.com/2237777
+    - https://bugzilla.redhat.com/2237778
+    - https://errata.almalinux.org/8/ALSA-2024-0121.html
     - https://github.com/golang/go/commit/2070531d2f53df88e312edace6c8dfc9686ab2f5 (go1.20.8)
     - https://github.com/golang/go/commit/bbd043ff0d6d59f1a9232d31ecd5eacf6507bf6a (go1.21.1)
     - https://go.dev/cl/526157
@@ -6204,11 +6584,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2024:2272
+    - https://access.redhat.com/errata/RHSA-2024:0887
     - https://access.redhat.com/security/cve/CVE-2023-39326
-    - https://bugzilla.redhat.com/2253193
+    - https://bugzilla.redhat.com/2253323
     - https://bugzilla.redhat.com/2253330
-    - https://errata.almalinux.org/9/ALSA-2024-2272.html
+    - https://errata.almalinux.org/8/ALSA-2024-0887.html
     - https://github.com/golang/go/commit/6446af942e2e2b161c4ec1b60d9703a2b55dc4dd (go1.20.12)
     - https://github.com/golang/go/commit/ec8c526e4be720e94b98ca509e6364f0efaf28f7 (go1.21.5)
     - https://go.dev/cl/547335
@@ -6297,7 +6677,7 @@
         V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2024/03/08/4
-    - https://access.redhat.com/errata/RHSA-2024:2724
+    - https://access.redhat.com/errata/RHSA-2024:3346
     - https://access.redhat.com/security/cve/CVE-2023-45289
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268018
@@ -6311,7 +6691,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
-    - https://errata.almalinux.org/9/ALSA-2024-2724.html
+    - https://errata.almalinux.org/8/ALSA-2024-3346.html
     - https://errata.rockylinux.org/RLSA-2024:2724
     - https://github.com/golang/go/commit/20586c0dbe03d144f914155f879fa5ee287591a1 (go1.21.8)
     - https://github.com/golang/go/commit/3a855208e3efed2e9d7c20ad023f1fa78afcc0be (go1.22.1)
@@ -6348,7 +6728,7 @@
     Description: When parsing a multipart form (either explicitly with Request.ParseMultipartForm or implicitly with Request.FormValue, Request.PostFormValue, or Request.FormFile), limits on the total size of the parsed form were not applied to the memory consumed while reading a single form line. This permits a maliciously crafted input containing very long lines to cause allocation of arbitrarily large amounts of memory, potentially leading to memory exhaustion. With fix, the ParseMultipartForm function now correctly limits the maximum size of form lines.
     Severity: MEDIUM
     VendorSeverity:
-      alma: 2
+      alma: 3
       amazon: 2
       cbl-mariner: 2
       oracle-oval: 3
@@ -6361,12 +6741,19 @@
         V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2024/03/08/4
-    - https://access.redhat.com/errata/RHSA-2024:3831
+    - https://access.redhat.com/errata/RHSA-2024:5258
     - https://access.redhat.com/security/cve/CVE-2023-45290
+    - https://bugzilla.redhat.com/2262921
     - https://bugzilla.redhat.com/2268017
+    - https://bugzilla.redhat.com/2268019
+    - https://bugzilla.redhat.com/2268021
+    - https://bugzilla.redhat.com/2274767
+    - https://bugzilla.redhat.com/2292668
+    - https://bugzilla.redhat.com/2294000
+    - https://bugzilla.redhat.com/2295010
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268017
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
-    - https://errata.almalinux.org/9/ALSA-2024-3831.html
+    - https://errata.almalinux.org/8/ALSA-2024-5258.html
     - https://errata.rockylinux.org/RLSA-2024:3830
     - https://github.com/golang/go/commit/041a47712e765e94f86d841c3110c840e76d8f82 (go1.22.1)
     - https://github.com/golang/go/commit/bf80213b121074f4ad9b449410a4d13bae5e9be0 (go1.21.8)
@@ -6404,7 +6791,7 @@
     Description: Verifying a certificate chain which contains a certificate with an unknown public key algorithm will cause Certificate.Verify to panic. This affects all crypto/tls clients, and servers that set Config.ClientAuth to VerifyClientCertIfGiven or RequireAndVerifyClientCert. The default behavior is for TLS servers to not verify client certificates.
     Severity: MEDIUM
     VendorSeverity:
-      alma: 2
+      alma: 3
       amazon: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -6417,9 +6804,16 @@
         V3Score: 5.9
     References:
     - http://www.openwall.com/lists/oss-security/2024/03/08/4
-    - https://access.redhat.com/errata/RHSA-2024:6195
+    - https://access.redhat.com/errata/RHSA-2024:5258
     - https://access.redhat.com/security/cve/CVE-2024-24783
+    - https://bugzilla.redhat.com/2262921
+    - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268019
+    - https://bugzilla.redhat.com/2268021
+    - https://bugzilla.redhat.com/2274767
+    - https://bugzilla.redhat.com/2292668
+    - https://bugzilla.redhat.com/2294000
+    - https://bugzilla.redhat.com/2295010
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268017
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268018
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268019
@@ -6428,7 +6822,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
-    - https://errata.almalinux.org/9/ALSA-2024-6195.html
+    - https://errata.almalinux.org/8/ALSA-2024-5258.html
     - https://errata.rockylinux.org/RLSA-2024:2724
     - https://github.com/advisories/GHSA-3q2c-pvp5-3cqp
     - https://github.com/golang/go/commit/337b8e9cbfa749d9d5c899e0dc358e2208d5e54f (go1.22.1)
@@ -6470,7 +6864,7 @@
       alma: 3
       amazon: 2
       bitnami: 3
-      cbl-mariner: 2
+      cbl-mariner: 3
       oracle-oval: 3
       photon: 3
       redhat: 2
@@ -6485,15 +6879,16 @@
         V3Score: 5.4
     References:
     - http://www.openwall.com/lists/oss-security/2024/03/08/4
-    - https://access.redhat.com/errata/RHSA-2024:2562
+    - https://access.redhat.com/errata/RHSA-2024:5258
     - https://access.redhat.com/security/cve/CVE-2024-24784
     - https://bugzilla.redhat.com/2262921
     - https://bugzilla.redhat.com/2268017
-    - https://bugzilla.redhat.com/2268018
     - https://bugzilla.redhat.com/2268019
     - https://bugzilla.redhat.com/2268021
-    - https://bugzilla.redhat.com/2268022
-    - https://bugzilla.redhat.com/2268273
+    - https://bugzilla.redhat.com/2274767
+    - https://bugzilla.redhat.com/2292668
+    - https://bugzilla.redhat.com/2294000
+    - https://bugzilla.redhat.com/2295010
     - https://bugzilla.redhat.com/show_bug.cgi?id=2262921
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268017
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268018
@@ -6508,7 +6903,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24784
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24785
-    - https://errata.almalinux.org/9/ALSA-2024-2562.html
+    - https://errata.almalinux.org/8/ALSA-2024-5258.html
     - https://errata.rockylinux.org/RLSA-2024:2562
     - https://github.com/golang/go/commit/263c059b09fdd40d9dd945f2ecb20c89ea28efe5 (go1.21.8)
     - https://github.com/golang/go/commit/5330cd225ba54c7dc78c1b46dcdf61a4671a632c (go1.22.1)
@@ -6558,9 +6953,8 @@
         V3Score: 6.5
     References:
     - http://www.openwall.com/lists/oss-security/2024/03/08/4
-    - https://access.redhat.com/errata/RHSA-2024:2562
+    - https://access.redhat.com/errata/RHSA-2024:3259
     - https://access.redhat.com/security/cve/CVE-2024-24785
-    - https://bugzilla.redhat.com/2262921
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268018
     - https://bugzilla.redhat.com/2268019
@@ -6581,7 +6975,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24784
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24785
-    - https://errata.almalinux.org/9/ALSA-2024-2562.html
+    - https://errata.almalinux.org/8/ALSA-2024-3259.html
     - https://errata.rockylinux.org/RLSA-2024:2562
     - https://github.com/golang/go/commit/056b0edcb8c152152021eebf4cf42adbfbe77992 (go1.22.1)
     - https://github.com/golang/go/commit/3643147a29352ca2894fd5d0d2069bc4b4335a7e (go1.21.8)
@@ -6643,15 +7037,16 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/04/1
-    - https://access.redhat.com/errata/RHSA-2024:4212
+    - https://access.redhat.com/errata/RHSA-2024:5291
     - https://access.redhat.com/security/cve/CVE-2024-24789
+    - https://bugzilla.redhat.com/2279814
     - https://bugzilla.redhat.com/2292668
     - https://bugzilla.redhat.com/2292787
     - https://bugzilla.redhat.com/show_bug.cgi?id=2292668
     - https://bugzilla.redhat.com/show_bug.cgi?id=2292787
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24789
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790
-    - https://errata.almalinux.org/9/ALSA-2024-4212.html
+    - https://errata.almalinux.org/8/ALSA-2024-5291.html
     - https://errata.rockylinux.org/RLSA-2024:4212
     - https://github.com/golang/go/commit/c8e40338cf00f3c1d86c8fb23863ad67a4c72bcc (1.21)
     - https://github.com/golang/go/commit/cf501ac0c5fe351a8582d20b43562027927906e7 (1.22)
@@ -6764,7 +7159,7 @@
         V3Score: 7.5
     References:
     - golang.org/x/net
-    - https://access.redhat.com/errata/RHSA-2023:6077
+    - https://access.redhat.com/errata/RHSA-2023:5863
     - https://access.redhat.com/security/cve/CVE-2023-39325
     - https://access.redhat.com/security/cve/CVE-2023-44487
     - https://access.redhat.com/security/vulnerabilities/RHSB-2023-003
@@ -6774,7 +7169,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2243296
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
-    - https://errata.almalinux.org/9/ALSA-2023-6077.html
+    - https://errata.almalinux.org/8/ALSA-2023-5863.html
     - https://errata.rockylinux.org/RLSA-2023:6077
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
@@ -6909,12 +7304,16 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
         V3Score: 6.1
     References:
-    - https://access.redhat.com/errata/RHSA-2023:6474
+    - https://access.redhat.com/errata/RHSA-2023:6939
     - https://access.redhat.com/security/cve/CVE-2023-3978
+    - https://bugzilla.redhat.com/2163037
     - https://bugzilla.redhat.com/2174485
+    - https://bugzilla.redhat.com/2175721
     - https://bugzilla.redhat.com/2178358
     - https://bugzilla.redhat.com/2178488
     - https://bugzilla.redhat.com/2178492
+    - https://bugzilla.redhat.com/2182883
+    - https://bugzilla.redhat.com/2182884
     - https://bugzilla.redhat.com/2184481
     - https://bugzilla.redhat.com/2184482
     - https://bugzilla.redhat.com/2184483
@@ -6924,7 +7323,7 @@
     - https://bugzilla.redhat.com/2196029
     - https://bugzilla.redhat.com/2222167
     - https://bugzilla.redhat.com/2228689
-    - https://errata.almalinux.org/9/ALSA-2023-6474.html
+    - https://errata.almalinux.org/8/ALSA-2023-6939.html
     - https://go.dev/cl/514896
     - https://go.dev/issue/61615
     - https://linux.oracle.com/cve/CVE-2023-3978.html
@@ -6989,7 +7388,7 @@
     - http://www.openwall.com/lists/oss-security/2023/10/18/8
     - http://www.openwall.com/lists/oss-security/2023/10/19/6
     - http://www.openwall.com/lists/oss-security/2023/10/20/8
-    - https://access.redhat.com/errata/RHSA-2023:6746
+    - https://access.redhat.com/errata/RHSA-2024:1444
     - https://access.redhat.com/security/cve/CVE-2023-44487
     - https://access.redhat.com/security/cve/cve-2023-44487
     - https://akka.io/security/akka-http-cve-2023-44487.html
@@ -7008,6 +7407,7 @@
     - https://blog.vespa.ai/cve-2023-44487/
     - https://bugzilla.proxmox.com/show_bug.cgi?id=4988
     - https://bugzilla.redhat.com/2242803
+    - https://bugzilla.redhat.com/2264574
     - https://bugzilla.redhat.com/show_bug.cgi?id=2242803
     - https://bugzilla.suse.com/show_bug.cgi?id=1216123
     - https://cgit.freebsd.org/ports/commit/?id=c64c329c2c1752f46b73e3e6ce9f4329be6629f9
@@ -7020,7 +7420,7 @@
     - https://devblogs.microsoft.com/dotnet/october-2023-updates/
     - https://discuss.hashicorp.com/t/hcsec-2023-32-vault-consul-and-boundary-affected-by-http-2-rapid-reset-denial-of-service-vulnerability-cve-2023-44487/59715
     - https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve
-    - https://errata.almalinux.org/9/ALSA-2023-6746.html
+    - https://errata.almalinux.org/8/ALSA-2024-1444.html
     - https://errata.rockylinux.org/RLSA-2023:5838
     - https://forums.swift.org/t/swift-nio-http2-security-update-cve-2023-44487-http-2-dos/67764
     - https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088
@@ -7267,7 +7667,7 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/04/03/16
     - http://www.openwall.com/lists/oss-security/2024/04/05/4
-    - https://access.redhat.com/errata/RHSA-2024:2724
+    - https://access.redhat.com/errata/RHSA-2024:3346
     - https://access.redhat.com/security/cve/CVE-2023-45288
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268018
@@ -7281,7 +7681,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
-    - https://errata.almalinux.org/9/ALSA-2024-2724.html
+    - https://errata.almalinux.org/8/ALSA-2024-3346.html
     - https://errata.rockylinux.org/RLSA-2024:2724
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
@@ -7345,15 +7745,16 @@
         V3Score: 6.7
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/04/1
-    - https://access.redhat.com/errata/RHSA-2024:4212
+    - https://access.redhat.com/errata/RHSA-2024:5291
     - https://access.redhat.com/security/cve/CVE-2024-24790
+    - https://bugzilla.redhat.com/2279814
     - https://bugzilla.redhat.com/2292668
     - https://bugzilla.redhat.com/2292787
     - https://bugzilla.redhat.com/show_bug.cgi?id=2292668
     - https://bugzilla.redhat.com/show_bug.cgi?id=2292787
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24789
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790
-    - https://errata.almalinux.org/9/ALSA-2024-4212.html
+    - https://errata.almalinux.org/8/ALSA-2024-5291.html
     - https://errata.rockylinux.org/RLSA-2024:4212
     - https://github.com/golang/go/commit/051bdf3fd12a40307606ff9381138039c5f452f0 (1.21)
     - https://github.com/golang/go/commit/12d5810cdb1f73cf23d7a86462143e9463317fca (1.22)
@@ -7419,7 +7820,7 @@
         V3Score: 7.5
     References:
     - golang.org/x/net
-    - https://access.redhat.com/errata/RHSA-2023:6077
+    - https://access.redhat.com/errata/RHSA-2023:5863
     - https://access.redhat.com/security/cve/CVE-2023-39325
     - https://access.redhat.com/security/cve/CVE-2023-44487
     - https://access.redhat.com/security/vulnerabilities/RHSB-2023-003
@@ -7429,7 +7830,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2243296
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
-    - https://errata.almalinux.org/9/ALSA-2023-6077.html
+    - https://errata.almalinux.org/8/ALSA-2023-5863.html
     - https://errata.rockylinux.org/RLSA-2023:6077
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
@@ -7614,7 +8015,7 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/04/03/16
     - http://www.openwall.com/lists/oss-security/2024/04/05/4
-    - https://access.redhat.com/errata/RHSA-2024:2724
+    - https://access.redhat.com/errata/RHSA-2024:3346
     - https://access.redhat.com/security/cve/CVE-2023-45288
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268018
@@ -7628,7 +8029,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
-    - https://errata.almalinux.org/9/ALSA-2024-2724.html
+    - https://errata.almalinux.org/8/ALSA-2024-3346.html
     - https://errata.rockylinux.org/RLSA-2024:2724
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
@@ -7693,22 +8094,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2023:6474
+    - https://access.redhat.com/errata/RHSA-2023:7202
     - https://access.redhat.com/security/cve/CVE-2023-29406
-    - https://bugzilla.redhat.com/2174485
-    - https://bugzilla.redhat.com/2178358
-    - https://bugzilla.redhat.com/2178488
-    - https://bugzilla.redhat.com/2178492
-    - https://bugzilla.redhat.com/2184481
-    - https://bugzilla.redhat.com/2184482
-    - https://bugzilla.redhat.com/2184483
-    - https://bugzilla.redhat.com/2184484
-    - https://bugzilla.redhat.com/2196026
-    - https://bugzilla.redhat.com/2196027
-    - https://bugzilla.redhat.com/2196029
     - https://bugzilla.redhat.com/2222167
-    - https://bugzilla.redhat.com/2228689
-    - https://errata.almalinux.org/9/ALSA-2023-6474.html
+    - https://errata.almalinux.org/8/ALSA-2023-7202.html
     - https://github.com/golang/go/commit/312920c00aac9897b2a0693e752390b5b0711a5a (go1.20.6)
     - https://github.com/golang/go/commit/5fa6923b1ea891400153d04ddf1545e23b40041b (go1.19.11)
     - https://github.com/golang/go/issues/60374
@@ -7767,14 +8156,18 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2023:7766
+    - https://access.redhat.com/errata/RHSA-2024:0121
     - https://access.redhat.com/security/cve/CVE-2023-29409
+    - https://bugzilla.redhat.com/2124669
+    - https://bugzilla.redhat.com/2132867
+    - https://bugzilla.redhat.com/2132868
+    - https://bugzilla.redhat.com/2132872
     - https://bugzilla.redhat.com/2228743
     - https://bugzilla.redhat.com/2237773
     - https://bugzilla.redhat.com/2237776
     - https://bugzilla.redhat.com/2237777
     - https://bugzilla.redhat.com/2237778
-    - https://errata.almalinux.org/9/ALSA-2023-7766.html
+    - https://errata.almalinux.org/8/ALSA-2024-0121.html
     - https://go.dev/cl/515257
     - https://go.dev/issue/61460
     - https://groups.google.com/g/golang-announce/c/X0b6CsSAaYI/m/Efv5DbZ9AwAJ
@@ -7831,12 +8224,18 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
         V3Score: 6.1
     References:
-    - https://access.redhat.com/errata/RHSA-2024:2160
+    - https://access.redhat.com/errata/RHSA-2024:0121
     - https://access.redhat.com/security/cve/CVE-2023-39318
+    - https://bugzilla.redhat.com/2124669
+    - https://bugzilla.redhat.com/2132867
+    - https://bugzilla.redhat.com/2132868
+    - https://bugzilla.redhat.com/2132872
+    - https://bugzilla.redhat.com/2228743
     - https://bugzilla.redhat.com/2237773
     - https://bugzilla.redhat.com/2237776
-    - https://bugzilla.redhat.com/2253330
-    - https://errata.almalinux.org/9/ALSA-2024-2160.html
+    - https://bugzilla.redhat.com/2237777
+    - https://bugzilla.redhat.com/2237778
+    - https://errata.almalinux.org/8/ALSA-2024-0121.html
     - https://github.com/golang/go/commit/023b542edf38e2a1f87fcefb9f75ff2f99401b4c (go1.20.8)
     - https://github.com/golang/go/commit/b0e1d3ea26e8e8fce7726690c9ef0597e60739fb (go1.21.1)
     - https://go.dev/cl/526156
@@ -7898,12 +8297,18 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
         V3Score: 6.1
     References:
-    - https://access.redhat.com/errata/RHSA-2024:2160
+    - https://access.redhat.com/errata/RHSA-2024:0121
     - https://access.redhat.com/security/cve/CVE-2023-39319
+    - https://bugzilla.redhat.com/2124669
+    - https://bugzilla.redhat.com/2132867
+    - https://bugzilla.redhat.com/2132868
+    - https://bugzilla.redhat.com/2132872
+    - https://bugzilla.redhat.com/2228743
     - https://bugzilla.redhat.com/2237773
     - https://bugzilla.redhat.com/2237776
-    - https://bugzilla.redhat.com/2253330
-    - https://errata.almalinux.org/9/ALSA-2024-2160.html
+    - https://bugzilla.redhat.com/2237777
+    - https://bugzilla.redhat.com/2237778
+    - https://errata.almalinux.org/8/ALSA-2024-0121.html
     - https://github.com/golang/go/commit/2070531d2f53df88e312edace6c8dfc9686ab2f5 (go1.20.8)
     - https://github.com/golang/go/commit/bbd043ff0d6d59f1a9232d31ecd5eacf6507bf6a (go1.21.1)
     - https://go.dev/cl/526157
@@ -7962,11 +8367,11 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2024:2272
+    - https://access.redhat.com/errata/RHSA-2024:0887
     - https://access.redhat.com/security/cve/CVE-2023-39326
-    - https://bugzilla.redhat.com/2253193
+    - https://bugzilla.redhat.com/2253323
     - https://bugzilla.redhat.com/2253330
-    - https://errata.almalinux.org/9/ALSA-2024-2272.html
+    - https://errata.almalinux.org/8/ALSA-2024-0887.html
     - https://github.com/golang/go/commit/6446af942e2e2b161c4ec1b60d9703a2b55dc4dd (go1.20.12)
     - https://github.com/golang/go/commit/ec8c526e4be720e94b98ca509e6364f0efaf28f7 (go1.21.5)
     - https://go.dev/cl/547335
@@ -8055,7 +8460,7 @@
         V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2024/03/08/4
-    - https://access.redhat.com/errata/RHSA-2024:2724
+    - https://access.redhat.com/errata/RHSA-2024:3346
     - https://access.redhat.com/security/cve/CVE-2023-45289
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268018
@@ -8069,7 +8474,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
-    - https://errata.almalinux.org/9/ALSA-2024-2724.html
+    - https://errata.almalinux.org/8/ALSA-2024-3346.html
     - https://errata.rockylinux.org/RLSA-2024:2724
     - https://github.com/golang/go/commit/20586c0dbe03d144f914155f879fa5ee287591a1 (go1.21.8)
     - https://github.com/golang/go/commit/3a855208e3efed2e9d7c20ad023f1fa78afcc0be (go1.22.1)
@@ -8106,7 +8511,7 @@
     Description: When parsing a multipart form (either explicitly with Request.ParseMultipartForm or implicitly with Request.FormValue, Request.PostFormValue, or Request.FormFile), limits on the total size of the parsed form were not applied to the memory consumed while reading a single form line. This permits a maliciously crafted input containing very long lines to cause allocation of arbitrarily large amounts of memory, potentially leading to memory exhaustion. With fix, the ParseMultipartForm function now correctly limits the maximum size of form lines.
     Severity: MEDIUM
     VendorSeverity:
-      alma: 2
+      alma: 3
       amazon: 2
       cbl-mariner: 2
       oracle-oval: 3
@@ -8119,12 +8524,19 @@
         V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2024/03/08/4
-    - https://access.redhat.com/errata/RHSA-2024:3831
+    - https://access.redhat.com/errata/RHSA-2024:5258
     - https://access.redhat.com/security/cve/CVE-2023-45290
+    - https://bugzilla.redhat.com/2262921
     - https://bugzilla.redhat.com/2268017
+    - https://bugzilla.redhat.com/2268019
+    - https://bugzilla.redhat.com/2268021
+    - https://bugzilla.redhat.com/2274767
+    - https://bugzilla.redhat.com/2292668
+    - https://bugzilla.redhat.com/2294000
+    - https://bugzilla.redhat.com/2295010
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268017
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
-    - https://errata.almalinux.org/9/ALSA-2024-3831.html
+    - https://errata.almalinux.org/8/ALSA-2024-5258.html
     - https://errata.rockylinux.org/RLSA-2024:3830
     - https://github.com/golang/go/commit/041a47712e765e94f86d841c3110c840e76d8f82 (go1.22.1)
     - https://github.com/golang/go/commit/bf80213b121074f4ad9b449410a4d13bae5e9be0 (go1.21.8)
@@ -8162,7 +8574,7 @@
     Description: Verifying a certificate chain which contains a certificate with an unknown public key algorithm will cause Certificate.Verify to panic. This affects all crypto/tls clients, and servers that set Config.ClientAuth to VerifyClientCertIfGiven or RequireAndVerifyClientCert. The default behavior is for TLS servers to not verify client certificates.
     Severity: MEDIUM
     VendorSeverity:
-      alma: 2
+      alma: 3
       amazon: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -8175,9 +8587,16 @@
         V3Score: 5.9
     References:
     - http://www.openwall.com/lists/oss-security/2024/03/08/4
-    - https://access.redhat.com/errata/RHSA-2024:6195
+    - https://access.redhat.com/errata/RHSA-2024:5258
     - https://access.redhat.com/security/cve/CVE-2024-24783
+    - https://bugzilla.redhat.com/2262921
+    - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268019
+    - https://bugzilla.redhat.com/2268021
+    - https://bugzilla.redhat.com/2274767
+    - https://bugzilla.redhat.com/2292668
+    - https://bugzilla.redhat.com/2294000
+    - https://bugzilla.redhat.com/2295010
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268017
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268018
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268019
@@ -8186,7 +8605,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
-    - https://errata.almalinux.org/9/ALSA-2024-6195.html
+    - https://errata.almalinux.org/8/ALSA-2024-5258.html
     - https://errata.rockylinux.org/RLSA-2024:2724
     - https://github.com/advisories/GHSA-3q2c-pvp5-3cqp
     - https://github.com/golang/go/commit/337b8e9cbfa749d9d5c899e0dc358e2208d5e54f (go1.22.1)
@@ -8228,7 +8647,7 @@
       alma: 3
       amazon: 2
       bitnami: 3
-      cbl-mariner: 2
+      cbl-mariner: 3
       oracle-oval: 3
       photon: 3
       redhat: 2
@@ -8243,15 +8662,16 @@
         V3Score: 5.4
     References:
     - http://www.openwall.com/lists/oss-security/2024/03/08/4
-    - https://access.redhat.com/errata/RHSA-2024:2562
+    - https://access.redhat.com/errata/RHSA-2024:5258
     - https://access.redhat.com/security/cve/CVE-2024-24784
     - https://bugzilla.redhat.com/2262921
     - https://bugzilla.redhat.com/2268017
-    - https://bugzilla.redhat.com/2268018
     - https://bugzilla.redhat.com/2268019
     - https://bugzilla.redhat.com/2268021
-    - https://bugzilla.redhat.com/2268022
-    - https://bugzilla.redhat.com/2268273
+    - https://bugzilla.redhat.com/2274767
+    - https://bugzilla.redhat.com/2292668
+    - https://bugzilla.redhat.com/2294000
+    - https://bugzilla.redhat.com/2295010
     - https://bugzilla.redhat.com/show_bug.cgi?id=2262921
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268017
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268018
@@ -8266,7 +8686,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24784
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24785
-    - https://errata.almalinux.org/9/ALSA-2024-2562.html
+    - https://errata.almalinux.org/8/ALSA-2024-5258.html
     - https://errata.rockylinux.org/RLSA-2024:2562
     - https://github.com/golang/go/commit/263c059b09fdd40d9dd945f2ecb20c89ea28efe5 (go1.21.8)
     - https://github.com/golang/go/commit/5330cd225ba54c7dc78c1b46dcdf61a4671a632c (go1.22.1)
@@ -8316,9 +8736,8 @@
         V3Score: 6.5
     References:
     - http://www.openwall.com/lists/oss-security/2024/03/08/4
-    - https://access.redhat.com/errata/RHSA-2024:2562
+    - https://access.redhat.com/errata/RHSA-2024:3259
     - https://access.redhat.com/security/cve/CVE-2024-24785
-    - https://bugzilla.redhat.com/2262921
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268018
     - https://bugzilla.redhat.com/2268019
@@ -8339,7 +8758,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24784
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24785
-    - https://errata.almalinux.org/9/ALSA-2024-2562.html
+    - https://errata.almalinux.org/8/ALSA-2024-3259.html
     - https://errata.rockylinux.org/RLSA-2024:2562
     - https://github.com/golang/go/commit/056b0edcb8c152152021eebf4cf42adbfbe77992 (go1.22.1)
     - https://github.com/golang/go/commit/3643147a29352ca2894fd5d0d2069bc4b4335a7e (go1.21.8)
@@ -8401,15 +8820,16 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/04/1
-    - https://access.redhat.com/errata/RHSA-2024:4212
+    - https://access.redhat.com/errata/RHSA-2024:5291
     - https://access.redhat.com/security/cve/CVE-2024-24789
+    - https://bugzilla.redhat.com/2279814
     - https://bugzilla.redhat.com/2292668
     - https://bugzilla.redhat.com/2292787
     - https://bugzilla.redhat.com/show_bug.cgi?id=2292668
     - https://bugzilla.redhat.com/show_bug.cgi?id=2292787
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24789
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790
-    - https://errata.almalinux.org/9/ALSA-2024-4212.html
+    - https://errata.almalinux.org/8/ALSA-2024-5291.html
     - https://errata.rockylinux.org/RLSA-2024:4212
     - https://github.com/golang/go/commit/c8e40338cf00f3c1d86c8fb23863ad67a4c72bcc (1.21)
     - https://github.com/golang/go/commit/cf501ac0c5fe351a8582d20b43562027927906e7 (1.22)
@@ -8882,37 +9302,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-24791
     PublishedDate: '2024-07-02T22:15:04.833Z'
     LastModifiedDate: '2024-07-08T14:17:39.083Z'
-- Target: /etc/ssh/ssh_host_ecdsa_key
-  Class: secret
-  Secrets:
-  - RuleID: private-key
-    Category: AsymmetricPrivateKey
-    Severity: HIGH
-    Title: Asymmetric Private Key
-    StartLine: 1
-    EndLine: 1
-    Code:
-      Lines:
-      - Number: 1
-        Content: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        IsCause: true
-        Annotation: ''
-        Truncated: false
-        Highlighted: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        FirstCause: true
-        LastCause: true
-      - Number: 2
-        Content: ''
-        IsCause: false
-        Annotation: ''
-        Truncated: false
-        FirstCause: false
-        LastCause: false
-    Match: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-    Layer:
-      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
-      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
-      CreatedBy: 'COPY / / # buildkit'
 - Target: /etc/ssh/ssh_host_ed25519_key
   Class: secret
   Secrets:
@@ -8971,6 +9360,37 @@
         FirstCause: false
         LastCause: false
     Match: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+    Layer:
+      Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
+      DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
+      CreatedBy: 'COPY / / # buildkit'
+- Target: /etc/ssh/ssh_host_ecdsa_key
+  Class: secret
+  Secrets:
+  - RuleID: private-key
+    Category: AsymmetricPrivateKey
+    Severity: HIGH
+    Title: Asymmetric Private Key
+    StartLine: 1
+    EndLine: 1
+    Code:
+      Lines:
+      - Number: 1
+        Content: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+        FirstCause: true
+        LastCause: true
+      - Number: 2
+        Content: ''
+        IsCause: false
+        Annotation: ''
+        Truncated: false
+        FirstCause: false
+        LastCause: false
+    Match: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
     Layer:
       Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623cca695957
       DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008bcbee3664
