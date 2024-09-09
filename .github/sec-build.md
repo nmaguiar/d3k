@@ -2752,7 +2752,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -3998,9 +3998,9 @@
 │                        │      ├ DataSource       ╭ ID  : govulndb 
 │                        │      │                  ├ Name: The Go Vulnerability Database 
 │                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │      ├ Title           : encoding/gob: Calling Decoder.Decode on a message which
-│                        │      │                   contains deeply nested structures can cause a panic due to
-│                        │      │                   stack exhaustion 
+│                        │      ├ Title           : encoding/gob: golang: Calling Decoder.Decode on a message
+│                        │      │                   which contains deeply nested structures can cause a panic
+│                        │      │                   due to stack exhaustion 
 │                        │      ├ Description     : Calling Decoder.Decode on a message which contains deeply
 │                        │      │                   nested structures can cause a panic due to stack
 │                        │      │                   exhaustion. This is a follow-up to CVE-2022-30635. 
@@ -4195,7 +4195,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4269,7 +4269,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4982,8 +4982,9 @@
 │                        │      ├ DataSource       ╭ ID  : govulndb 
 │                        │      │                  ├ Name: The Go Vulnerability Database 
 │                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │      ├ Title           : go/parser: Calling any of the Parse functions containing
-│                        │      │                   deeply nested literals can cause a panic/stack exhaustion 
+│                        │      ├ Title           : go/parser: golang: Calling any of the Parse functions
+│                        │      │                   containing deeply nested literals can cause a panic/stack
+│                        │      │                   exhaustion 
 │                        │      ├ Description     : Calling any of the Parse functions on Go source code which
 │                        │      │                   contains deeply nested literals can cause a panic due to
 │                        │      │                   stack exhaustion. 
@@ -5384,7 +5385,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -6630,9 +6631,9 @@
 │                        │      ├ DataSource       ╭ ID  : govulndb 
 │                        │      │                  ├ Name: The Go Vulnerability Database 
 │                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │      ├ Title           : encoding/gob: Calling Decoder.Decode on a message which
-│                        │      │                   contains deeply nested structures can cause a panic due to
-│                        │      │                   stack exhaustion 
+│                        │      ├ Title           : encoding/gob: golang: Calling Decoder.Decode on a message
+│                        │      │                   which contains deeply nested structures can cause a panic
+│                        │      │                   due to stack exhaustion 
 │                        │      ├ Description     : Calling Decoder.Decode on a message which contains deeply
 │                        │      │                   nested structures can cause a panic due to stack
 │                        │      │                   exhaustion. This is a follow-up to CVE-2022-30635. 
@@ -6827,7 +6828,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -6901,7 +6902,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7614,8 +7615,9 @@
 │                        │      ├ DataSource       ╭ ID  : govulndb 
 │                        │      │                  ├ Name: The Go Vulnerability Database 
 │                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │      ├ Title           : go/parser: Calling any of the Parse functions containing
-│                        │      │                   deeply nested literals can cause a panic/stack exhaustion 
+│                        │      ├ Title           : go/parser: golang: Calling any of the Parse functions
+│                        │      │                   containing deeply nested literals can cause a panic/stack
+│                        │      │                   exhaustion 
 │                        │      ├ Description     : Calling any of the Parse functions on Go source code which
 │                        │      │                   contains deeply nested literals can cause a panic due to
 │                        │      │                   stack exhaustion. 
@@ -7686,9 +7688,9 @@
 │                        │     ├ DataSource       ╭ ID  : govulndb 
 │                        │     │                  ├ Name: The Go Vulnerability Database 
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │     ├ Title           : encoding/gob: Calling Decoder.Decode on a message which
-│                        │     │                   contains deeply nested structures can cause a panic due to
-│                        │     │                   stack exhaustion 
+│                        │     ├ Title           : encoding/gob: golang: Calling Decoder.Decode on a message
+│                        │     │                   which contains deeply nested structures can cause a panic
+│                        │     │                   due to stack exhaustion 
 │                        │     ├ Description     : Calling Decoder.Decode on a message which contains deeply
 │                        │     │                   nested structures can cause a panic due to stack exhaustion.
 │                        │     │                    This is a follow-up to CVE-2022-30635. 
@@ -7721,8 +7723,9 @@
 │                        │     ├ DataSource       ╭ ID  : govulndb 
 │                        │     │                  ├ Name: The Go Vulnerability Database 
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │     ├ Title           : go/parser: Calling any of the Parse functions containing
-│                        │     │                   deeply nested literals can cause a panic/stack exhaustion 
+│                        │     ├ Title           : go/parser: golang: Calling any of the Parse functions
+│                        │     │                   containing deeply nested literals can cause a panic/stack
+│                        │     │                   exhaustion 
 │                        │     ├ Description     : Calling any of the Parse functions on Go source code which
 │                        │     │                   contains deeply nested literals can cause a panic due to
 │                        │     │                   stack exhaustion. 
@@ -7793,9 +7796,9 @@
 │                        │     ├ DataSource       ╭ ID  : govulndb 
 │                        │     │                  ├ Name: The Go Vulnerability Database 
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │     ├ Title           : encoding/gob: Calling Decoder.Decode on a message which
-│                        │     │                   contains deeply nested structures can cause a panic due to
-│                        │     │                   stack exhaustion 
+│                        │     ├ Title           : encoding/gob: golang: Calling Decoder.Decode on a message
+│                        │     │                   which contains deeply nested structures can cause a panic
+│                        │     │                   due to stack exhaustion 
 │                        │     ├ Description     : Calling Decoder.Decode on a message which contains deeply
 │                        │     │                   nested structures can cause a panic due to stack exhaustion.
 │                        │     │                    This is a follow-up to CVE-2022-30635. 
@@ -7828,8 +7831,9 @@
 │                        │     ├ DataSource       ╭ ID  : govulndb 
 │                        │     │                  ├ Name: The Go Vulnerability Database 
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │     ├ Title           : go/parser: Calling any of the Parse functions containing
-│                        │     │                   deeply nested literals can cause a panic/stack exhaustion 
+│                        │     ├ Title           : go/parser: golang: Calling any of the Parse functions
+│                        │     │                   containing deeply nested literals can cause a panic/stack
+│                        │     │                   exhaustion 
 │                        │     ├ Description     : Calling any of the Parse functions on Go source code which
 │                        │     │                   contains deeply nested literals can cause a panic due to
 │                        │     │                   stack exhaustion. 
@@ -7900,9 +7904,9 @@
 │                        │     ├ DataSource       ╭ ID  : govulndb 
 │                        │     │                  ├ Name: The Go Vulnerability Database 
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │     ├ Title           : encoding/gob: Calling Decoder.Decode on a message which
-│                        │     │                   contains deeply nested structures can cause a panic due to
-│                        │     │                   stack exhaustion 
+│                        │     ├ Title           : encoding/gob: golang: Calling Decoder.Decode on a message
+│                        │     │                   which contains deeply nested structures can cause a panic
+│                        │     │                   due to stack exhaustion 
 │                        │     ├ Description     : Calling Decoder.Decode on a message which contains deeply
 │                        │     │                   nested structures can cause a panic due to stack exhaustion.
 │                        │     │                    This is a follow-up to CVE-2022-30635. 
@@ -7935,8 +7939,9 @@
 │                        │     ├ DataSource       ╭ ID  : govulndb 
 │                        │     │                  ├ Name: The Go Vulnerability Database 
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │     ├ Title           : go/parser: Calling any of the Parse functions containing
-│                        │     │                   deeply nested literals can cause a panic/stack exhaustion 
+│                        │     ├ Title           : go/parser: golang: Calling any of the Parse functions
+│                        │     │                   containing deeply nested literals can cause a panic/stack
+│                        │     │                   exhaustion 
 │                        │     ├ Description     : Calling any of the Parse functions on Go source code which
 │                        │     │                   contains deeply nested literals can cause a panic due to
 │                        │     │                   stack exhaustion. 
@@ -8145,9 +8150,9 @@
 │                        │     ├ DataSource       ╭ ID  : govulndb 
 │                        │     │                  ├ Name: The Go Vulnerability Database 
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │     ├ Title           : encoding/gob: Calling Decoder.Decode on a message which
-│                        │     │                   contains deeply nested structures can cause a panic due to
-│                        │     │                   stack exhaustion 
+│                        │     ├ Title           : encoding/gob: golang: Calling Decoder.Decode on a message
+│                        │     │                   which contains deeply nested structures can cause a panic
+│                        │     │                   due to stack exhaustion 
 │                        │     ├ Description     : Calling Decoder.Decode on a message which contains deeply
 │                        │     │                   nested structures can cause a panic due to stack exhaustion.
 │                        │     │                    This is a follow-up to CVE-2022-30635. 
@@ -8180,8 +8185,9 @@
 │                        │     ├ DataSource       ╭ ID  : govulndb 
 │                        │     │                  ├ Name: The Go Vulnerability Database 
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                        │     ├ Title           : go/parser: Calling any of the Parse functions containing
-│                        │     │                   deeply nested literals can cause a panic/stack exhaustion 
+│                        │     ├ Title           : go/parser: golang: Calling any of the Parse functions
+│                        │     │                   containing deeply nested literals can cause a panic/stack
+│                        │     │                   exhaustion 
 │                        │     ├ Description     : Calling any of the Parse functions on Go source code which
 │                        │     │                   contains deeply nested literals can cause a panic due to
 │                        │     │                   stack exhaustion. 
