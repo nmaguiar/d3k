@@ -4144,7 +4144,7 @@
     - CWE-200
     VendorSeverity:
       amazon: 2
-      azure: 2
+      azure: 4
       cbl-mariner: 4
       photon: 4
       redhat: 1
@@ -4684,7 +4684,7 @@
     - CWE-200
     VendorSeverity:
       amazon: 2
-      azure: 2
+      azure: 4
       cbl-mariner: 4
       photon: 4
       redhat: 1
@@ -5714,7 +5714,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -6020,6 +6020,7 @@
     - https://ubuntu.com/security/notices/USN-6505-1
     - https://ubuntu.com/security/notices/USN-6574-1
     - https://ubuntu.com/security/notices/USN-6754-1
+    - https://ubuntu.com/security/notices/USN-6994-1
     - https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records
     - https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records/
     - https://www.cisa.gov/known-exploited-vulnerabilities-catalog
@@ -6506,7 +6507,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3106
     - https://www.cve.org/CVERecord?id=CVE-2024-34156
     PublishedDate: '2024-09-06T21:15:12.02Z'
-    LastModifiedDate: '2024-09-06T21:15:12.02Z'
+    LastModifiedDate: '2024-09-09T15:35:07.573Z'
   - VulnerabilityID: CVE-2023-29406
     PkgName: stdlib
     PkgIdentifier:
@@ -6669,7 +6670,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -6736,7 +6737,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -7086,7 +7087,7 @@
       alma: 3
       amazon: 2
       bitnami: 3
-      cbl-mariner: 3
+      cbl-mariner: 2
       oracle-oval: 3
       photon: 3
       redhat: 2
@@ -7361,7 +7362,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3105
     - https://www.cve.org/CVERecord?id=CVE-2024-34155
     PublishedDate: '2024-09-06T21:15:11.947Z'
-    LastModifiedDate: '2024-09-06T21:15:11.947Z'
+    LastModifiedDate: '2024-09-09T13:03:38.303Z'
   - VulnerabilityID: CVE-2024-34158
     PkgName: stdlib
     PkgIdentifier:
@@ -7381,6 +7382,8 @@
     Title: 'go/build/constraint: golang: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion'
     Description: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-674
     VendorSeverity:
       redhat: 2
     CVSS:
@@ -7396,7 +7399,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3107
     - https://www.cve.org/CVERecord?id=CVE-2024-34158
     PublishedDate: '2024-09-06T21:15:12.083Z'
-    LastModifiedDate: '2024-09-06T21:15:12.083Z'
+    LastModifiedDate: '2024-09-09T14:35:01.17Z'
 - Target: tmp/tmp.xCGmQehOaY/krew-linux_amd64
   Class: lang-pkgs
   Type: gobinary
@@ -7577,7 +7580,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -7883,6 +7886,7 @@
     - https://ubuntu.com/security/notices/USN-6505-1
     - https://ubuntu.com/security/notices/USN-6574-1
     - https://ubuntu.com/security/notices/USN-6754-1
+    - https://ubuntu.com/security/notices/USN-6994-1
     - https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records
     - https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records/
     - https://www.cisa.gov/known-exploited-vulnerabilities-catalog
@@ -8369,7 +8373,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3106
     - https://www.cve.org/CVERecord?id=CVE-2024-34156
     PublishedDate: '2024-09-06T21:15:12.02Z'
-    LastModifiedDate: '2024-09-06T21:15:12.02Z'
+    LastModifiedDate: '2024-09-09T15:35:07.573Z'
   - VulnerabilityID: CVE-2023-29406
     PkgName: stdlib
     PkgIdentifier:
@@ -8532,7 +8536,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -8599,7 +8603,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 3
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -8949,7 +8953,7 @@
       alma: 3
       amazon: 2
       bitnami: 3
-      cbl-mariner: 3
+      cbl-mariner: 2
       oracle-oval: 3
       photon: 3
       redhat: 2
@@ -9224,7 +9228,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3105
     - https://www.cve.org/CVERecord?id=CVE-2024-34155
     PublishedDate: '2024-09-06T21:15:11.947Z'
-    LastModifiedDate: '2024-09-06T21:15:11.947Z'
+    LastModifiedDate: '2024-09-09T13:03:38.303Z'
   - VulnerabilityID: CVE-2024-34158
     PkgName: stdlib
     PkgIdentifier:
@@ -9244,6 +9248,8 @@
     Title: 'go/build/constraint: golang: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion'
     Description: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-674
     VendorSeverity:
       redhat: 2
     CVSS:
@@ -9259,7 +9265,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3107
     - https://www.cve.org/CVERecord?id=CVE-2024-34158
     PublishedDate: '2024-09-06T21:15:12.083Z'
-    LastModifiedDate: '2024-09-06T21:15:12.083Z'
+    LastModifiedDate: '2024-09-09T14:35:01.17Z'
 - Target: usr/bin/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -9363,7 +9369,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3106
     - https://www.cve.org/CVERecord?id=CVE-2024-34156
     PublishedDate: '2024-09-06T21:15:12.02Z'
-    LastModifiedDate: '2024-09-06T21:15:12.02Z'
+    LastModifiedDate: '2024-09-09T15:35:07.573Z'
   - VulnerabilityID: CVE-2024-24791
     PkgName: stdlib
     PkgIdentifier:
@@ -9440,7 +9446,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3105
     - https://www.cve.org/CVERecord?id=CVE-2024-34155
     PublishedDate: '2024-09-06T21:15:11.947Z'
-    LastModifiedDate: '2024-09-06T21:15:11.947Z'
+    LastModifiedDate: '2024-09-09T13:03:38.303Z'
   - VulnerabilityID: CVE-2024-34158
     PkgName: stdlib
     PkgIdentifier:
@@ -9460,6 +9466,8 @@
     Title: 'go/build/constraint: golang: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion'
     Description: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-674
     VendorSeverity:
       redhat: 2
     CVSS:
@@ -9475,7 +9483,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3107
     - https://www.cve.org/CVERecord?id=CVE-2024-34158
     PublishedDate: '2024-09-06T21:15:12.083Z'
-    LastModifiedDate: '2024-09-06T21:15:12.083Z'
+    LastModifiedDate: '2024-09-09T14:35:01.17Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -9579,7 +9587,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3106
     - https://www.cve.org/CVERecord?id=CVE-2024-34156
     PublishedDate: '2024-09-06T21:15:12.02Z'
-    LastModifiedDate: '2024-09-06T21:15:12.02Z'
+    LastModifiedDate: '2024-09-09T15:35:07.573Z'
   - VulnerabilityID: CVE-2024-24791
     PkgName: stdlib
     PkgIdentifier:
@@ -9656,7 +9664,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3105
     - https://www.cve.org/CVERecord?id=CVE-2024-34155
     PublishedDate: '2024-09-06T21:15:11.947Z'
-    LastModifiedDate: '2024-09-06T21:15:11.947Z'
+    LastModifiedDate: '2024-09-09T13:03:38.303Z'
   - VulnerabilityID: CVE-2024-34158
     PkgName: stdlib
     PkgIdentifier:
@@ -9676,6 +9684,8 @@
     Title: 'go/build/constraint: golang: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion'
     Description: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-674
     VendorSeverity:
       redhat: 2
     CVSS:
@@ -9691,7 +9701,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3107
     - https://www.cve.org/CVERecord?id=CVE-2024-34158
     PublishedDate: '2024-09-06T21:15:12.083Z'
-    LastModifiedDate: '2024-09-06T21:15:12.083Z'
+    LastModifiedDate: '2024-09-09T14:35:01.17Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -9730,7 +9740,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3106
     - https://www.cve.org/CVERecord?id=CVE-2024-34156
     PublishedDate: '2024-09-06T21:15:12.02Z'
-    LastModifiedDate: '2024-09-06T21:15:12.02Z'
+    LastModifiedDate: '2024-09-09T15:35:07.573Z'
   - VulnerabilityID: CVE-2024-24791
     PkgName: stdlib
     PkgIdentifier:
@@ -9807,7 +9817,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3105
     - https://www.cve.org/CVERecord?id=CVE-2024-34155
     PublishedDate: '2024-09-06T21:15:11.947Z'
-    LastModifiedDate: '2024-09-06T21:15:11.947Z'
+    LastModifiedDate: '2024-09-09T13:03:38.303Z'
   - VulnerabilityID: CVE-2024-34158
     PkgName: stdlib
     PkgIdentifier:
@@ -9827,6 +9837,8 @@
     Title: 'go/build/constraint: golang: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion'
     Description: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-674
     VendorSeverity:
       redhat: 2
     CVSS:
@@ -9842,7 +9854,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3107
     - https://www.cve.org/CVERecord?id=CVE-2024-34158
     PublishedDate: '2024-09-06T21:15:12.083Z'
-    LastModifiedDate: '2024-09-06T21:15:12.083Z'
+    LastModifiedDate: '2024-09-09T14:35:01.17Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -9980,7 +9992,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3106
     - https://www.cve.org/CVERecord?id=CVE-2024-34156
     PublishedDate: '2024-09-06T21:15:12.02Z'
-    LastModifiedDate: '2024-09-06T21:15:12.02Z'
+    LastModifiedDate: '2024-09-09T15:35:07.573Z'
   - VulnerabilityID: CVE-2024-24791
     PkgName: stdlib
     PkgIdentifier:
@@ -10057,7 +10069,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3105
     - https://www.cve.org/CVERecord?id=CVE-2024-34155
     PublishedDate: '2024-09-06T21:15:11.947Z'
-    LastModifiedDate: '2024-09-06T21:15:11.947Z'
+    LastModifiedDate: '2024-09-09T13:03:38.303Z'
   - VulnerabilityID: CVE-2024-34158
     PkgName: stdlib
     PkgIdentifier:
@@ -10077,6 +10089,8 @@
     Title: 'go/build/constraint: golang: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion'
     Description: Calling Parse on a "// +build" build tag line with deeply nested expressions can cause a panic due to stack exhaustion.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-674
     VendorSeverity:
       redhat: 2
     CVSS:
@@ -10092,7 +10106,7 @@
     - https://pkg.go.dev/vuln/GO-2024-3107
     - https://www.cve.org/CVERecord?id=CVE-2024-34158
     PublishedDate: '2024-09-06T21:15:12.083Z'
-    LastModifiedDate: '2024-09-06T21:15:12.083Z'
+    LastModifiedDate: '2024-09-09T14:35:01.17Z'
 - Target: /etc/ssh/ssh_host_ed25519_key
   Class: secret
   Secrets:
