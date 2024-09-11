@@ -4006,10 +4006,14 @@
 │                        │      │                   nested structures can cause a panic due to stack
 │                        │      │                   exhaustion. This is a follow-up to CVE-2022-30635. 
 │                        │      ├ Severity        : HIGH 
-│                        │      ├ VendorSeverity   ─ redhat: 3 
-│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                        │      │                           │           N/A:H 
-│                        │      │                           ╰ V3Score : 7.5 
+│                        │      ├ VendorSeverity   ╭ bitnami: 3 
+│                        │      │                  ╰ redhat : 3 
+│                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                  │         │           :N/A:H 
+│                        │      │                  │         ╰ V3Score : 7.5 
+│                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                            │           :N/A:H 
+│                        │      │                            ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │      │                  ├ [1]: https://go.dev/cl/611239 
 │                        │      │                  ├ [2]: https://go.dev/issue/69139 
@@ -4684,7 +4688,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 2 
+│                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -5026,10 +5030,14 @@
 │                               │                   exhaustion. 
 │                               ├ Severity        : MEDIUM 
 │                               ├ CweIDs           ─ [0]: CWE-674 
-│                               ├ VendorSeverity   ─ redhat: 2 
-│                               ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
-│                               │                           │           N/A:H 
-│                               │                           ╰ V3Score : 5.9 
+│                               ├ VendorSeverity   ╭ bitnami: 3 
+│                               │                  ╰ redhat : 2 
+│                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                               │                  │         │           :N/A:H 
+│                               │                  │         ╰ V3Score : 7.5 
+│                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
+│                               │                            │           :N/A:H 
+│                               │                            ╰ V3Score : 5.9 
 │                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34158 
 │                               │                  ├ [1]: https://go.dev/cl/611240 
 │                               │                  ├ [2]: https://go.dev/issue/69141 
@@ -6641,10 +6649,14 @@
 │                        │      │                   nested structures can cause a panic due to stack
 │                        │      │                   exhaustion. This is a follow-up to CVE-2022-30635. 
 │                        │      ├ Severity        : HIGH 
-│                        │      ├ VendorSeverity   ─ redhat: 3 
-│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                        │      │                           │           N/A:H 
-│                        │      │                           ╰ V3Score : 7.5 
+│                        │      ├ VendorSeverity   ╭ bitnami: 3 
+│                        │      │                  ╰ redhat : 3 
+│                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                  │         │           :N/A:H 
+│                        │      │                  │         ╰ V3Score : 7.5 
+│                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                            │           :N/A:H 
+│                        │      │                            ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │      │                  ├ [1]: https://go.dev/cl/611239 
 │                        │      │                  ├ [2]: https://go.dev/issue/69139 
@@ -7319,7 +7331,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 2 
+│                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -7661,10 +7673,14 @@
 │                               │                   exhaustion. 
 │                               ├ Severity        : MEDIUM 
 │                               ├ CweIDs           ─ [0]: CWE-674 
-│                               ├ VendorSeverity   ─ redhat: 2 
-│                               ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
-│                               │                           │           N/A:H 
-│                               │                           ╰ V3Score : 5.9 
+│                               ├ VendorSeverity   ╭ bitnami: 3 
+│                               │                  ╰ redhat : 2 
+│                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                               │                  │         │           :N/A:H 
+│                               │                  │         ╰ V3Score : 7.5 
+│                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
+│                               │                            │           :N/A:H 
+│                               │                            ╰ V3Score : 5.9 
 │                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34158 
 │                               │                  ├ [1]: https://go.dev/cl/611240 
 │                               │                  ├ [2]: https://go.dev/issue/69141 
@@ -7699,10 +7715,14 @@
 │                        │     │                   nested structures can cause a panic due to stack exhaustion.
 │                        │     │                    This is a follow-up to CVE-2022-30635. 
 │                        │     ├ Severity        : HIGH 
-│                        │     ├ VendorSeverity   ─ redhat: 3 
-│                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
-│                        │     │                           │           /A:H 
-│                        │     │                           ╰ V3Score : 7.5 
+│                        │     ├ VendorSeverity   ╭ bitnami: 3 
+│                        │     │                  ╰ redhat : 3 
+│                        │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                  │         │           N/A:H 
+│                        │     │                  │         ╰ V3Score : 7.5 
+│                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                            │           N/A:H 
+│                        │     │                            ╰ V3Score : 7.5 
 │                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │     │                  ├ [1]: https://go.dev/cl/611239 
 │                        │     │                  ├ [2]: https://go.dev/issue/69139 
@@ -7770,10 +7790,14 @@
 │                              │                   . 
 │                              ├ Severity        : MEDIUM 
 │                              ├ CweIDs           ─ [0]: CWE-674 
-│                              ├ VendorSeverity   ─ redhat: 2 
-│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
-│                              │                           │           /A:H 
-│                              │                           ╰ V3Score : 5.9 
+│                              ├ VendorSeverity   ╭ bitnami: 3 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              │                  │         │           N/A:H 
+│                              │                  │         ╰ V3Score : 7.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                              │                            │           N/A:H 
+│                              │                            ╰ V3Score : 5.9 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34158 
 │                              │                  ├ [1]: https://go.dev/cl/611240 
 │                              │                  ├ [2]: https://go.dev/issue/69141 
@@ -7808,10 +7832,14 @@
 │                        │     │                   nested structures can cause a panic due to stack exhaustion.
 │                        │     │                    This is a follow-up to CVE-2022-30635. 
 │                        │     ├ Severity        : HIGH 
-│                        │     ├ VendorSeverity   ─ redhat: 3 
-│                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
-│                        │     │                           │           /A:H 
-│                        │     │                           ╰ V3Score : 7.5 
+│                        │     ├ VendorSeverity   ╭ bitnami: 3 
+│                        │     │                  ╰ redhat : 3 
+│                        │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                  │         │           N/A:H 
+│                        │     │                  │         ╰ V3Score : 7.5 
+│                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                            │           N/A:H 
+│                        │     │                            ╰ V3Score : 7.5 
 │                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │     │                  ├ [1]: https://go.dev/cl/611239 
 │                        │     │                  ├ [2]: https://go.dev/issue/69139 
@@ -7879,10 +7907,14 @@
 │                              │                   . 
 │                              ├ Severity        : MEDIUM 
 │                              ├ CweIDs           ─ [0]: CWE-674 
-│                              ├ VendorSeverity   ─ redhat: 2 
-│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
-│                              │                           │           /A:H 
-│                              │                           ╰ V3Score : 5.9 
+│                              ├ VendorSeverity   ╭ bitnami: 3 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              │                  │         │           N/A:H 
+│                              │                  │         ╰ V3Score : 7.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                              │                            │           N/A:H 
+│                              │                            ╰ V3Score : 5.9 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34158 
 │                              │                  ├ [1]: https://go.dev/cl/611240 
 │                              │                  ├ [2]: https://go.dev/issue/69141 
@@ -7917,10 +7949,14 @@
 │                        │     │                   nested structures can cause a panic due to stack exhaustion.
 │                        │     │                    This is a follow-up to CVE-2022-30635. 
 │                        │     ├ Severity        : HIGH 
-│                        │     ├ VendorSeverity   ─ redhat: 3 
-│                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
-│                        │     │                           │           /A:H 
-│                        │     │                           ╰ V3Score : 7.5 
+│                        │     ├ VendorSeverity   ╭ bitnami: 3 
+│                        │     │                  ╰ redhat : 3 
+│                        │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                  │         │           N/A:H 
+│                        │     │                  │         ╰ V3Score : 7.5 
+│                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                            │           N/A:H 
+│                        │     │                            ╰ V3Score : 7.5 
 │                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │     │                  ├ [1]: https://go.dev/cl/611239 
 │                        │     │                  ├ [2]: https://go.dev/issue/69139 
@@ -7988,10 +8024,14 @@
 │                              │                   . 
 │                              ├ Severity        : MEDIUM 
 │                              ├ CweIDs           ─ [0]: CWE-674 
-│                              ├ VendorSeverity   ─ redhat: 2 
-│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
-│                              │                           │           /A:H 
-│                              │                           ╰ V3Score : 5.9 
+│                              ├ VendorSeverity   ╭ bitnami: 3 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              │                  │         │           N/A:H 
+│                              │                  │         ╰ V3Score : 7.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                              │                            │           N/A:H 
+│                              │                            ╰ V3Score : 5.9 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34158 
 │                              │                  ├ [1]: https://go.dev/cl/611240 
 │                              │                  ├ [2]: https://go.dev/issue/69141 
@@ -8164,10 +8204,14 @@
 │                        │     │                   nested structures can cause a panic due to stack exhaustion.
 │                        │     │                    This is a follow-up to CVE-2022-30635. 
 │                        │     ├ Severity        : HIGH 
-│                        │     ├ VendorSeverity   ─ redhat: 3 
-│                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
-│                        │     │                           │           /A:H 
-│                        │     │                           ╰ V3Score : 7.5 
+│                        │     ├ VendorSeverity   ╭ bitnami: 3 
+│                        │     │                  ╰ redhat : 3 
+│                        │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                  │         │           N/A:H 
+│                        │     │                  │         ╰ V3Score : 7.5 
+│                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                            │           N/A:H 
+│                        │     │                            ╰ V3Score : 7.5 
 │                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │     │                  ├ [1]: https://go.dev/cl/611239 
 │                        │     │                  ├ [2]: https://go.dev/issue/69139 
@@ -8235,10 +8279,14 @@
 │                              │                   . 
 │                              ├ Severity        : MEDIUM 
 │                              ├ CweIDs           ─ [0]: CWE-674 
-│                              ├ VendorSeverity   ─ redhat: 2 
-│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
-│                              │                           │           /A:H 
-│                              │                           ╰ V3Score : 5.9 
+│                              ├ VendorSeverity   ╭ bitnami: 3 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              │                  │         │           N/A:H 
+│                              │                  │         ╰ V3Score : 7.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                              │                            │           N/A:H 
+│                              │                            ╰ V3Score : 5.9 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34158 
 │                              │                  ├ [1]: https://go.dev/cl/611240 
 │                              │                  ├ [2]: https://go.dev/issue/69141 
@@ -8248,57 +8296,7 @@
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
 │                              ├ PublishedDate   : 2024-09-06T21:15:12.083Z 
 │                              ╰ LastModifiedDate: 2024-09-09T14:35:01.17Z 
-├ [8]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
-│      ├ Class  : secret 
-│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                      ├ Category : AsymmetricPrivateKey 
-│                      ├ Severity : HIGH 
-│                      ├ Title    : Asymmetric Private Key 
-│                      ├ StartLine: 1 
-│                      ├ EndLine  : 1 
-│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *********************-----END OPENSSH PRI 
-│                      │                   │     ├ IsCause    : true 
-│                      │                   │     ├ Annotation :  
-│                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *********************-----END OPENSSH PRI 
-│                      │                   │     ├ FirstCause : true 
-│                      │                   │     ╰ LastCause  : true 
-│                      │                   ╰ [1] ╭ Number    : 2 
-│                      │                         ├ Content   :  
-│                      │                         ├ IsCause   : false 
-│                      │                         ├ Annotation:  
-│                      │                         ├ Truncated : false 
-│                      │                         ├ FirstCause: false 
-│                      │                         ╰ LastCause : false 
-│                      ├ Match    : BEGIN OPENSSH PRIVATE
-│                      │            KEY-----*******************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            **************************************************-----END OPENSSH PRI 
-│                      ╰ Layer     ╭ Digest   : sha256:3968fa7e0cfdfd43b85685e1d925fa009da93747f6f003a02af25051
-│                                  │            273f144b 
-│                                  ├ DiffID   : sha256:44ee436475accbd2ace7be9fa56282e87205a10cbc0b8690f145637e
-│                                  │            5dcd66b4 
-│                                  ╰ CreatedBy: COPY / / # buildkit 
-├ [9]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
+├ [8]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                      ├ Category : AsymmetricPrivateKey 
@@ -8472,7 +8470,65 @@
 │                                  ├ DiffID   : sha256:44ee436475accbd2ace7be9fa56282e87205a10cbc0b8690f145637e
 │                                  │            5dcd66b4 
 │                                  ╰ CreatedBy: COPY / / # buildkit 
-╰ [10] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
+├ [9]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
+│      ├ Class  : secret 
+│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                      ├ Category : AsymmetricPrivateKey 
+│                      ├ Severity : HIGH 
+│                      ├ Title    : Asymmetric Private Key 
+│                      ├ StartLine: 1 
+│                      ├ EndLine  : 1 
+│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              *****************************-----END OPENSSH
+│                      │                   │     │              PRI 
+│                      │                   │     ├ IsCause    : true 
+│                      │                   │     ├ Annotation :  
+│                      │                   │     ├ Truncated  : false 
+│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              *****************************-----END OPENSSH
+│                      │                   │     │              PRI 
+│                      │                   │     ├ FirstCause : true 
+│                      │                   │     ╰ LastCause  : true 
+│                      │                   ╰ [1] ╭ Number    : 2 
+│                      │                         ├ Content   :  
+│                      │                         ├ IsCause   : false 
+│                      │                         ├ Annotation:  
+│                      │                         ├ Truncated : false 
+│                      │                         ├ FirstCause: false 
+│                      │                         ╰ LastCause : false 
+│                      ├ Match    : BEGIN OPENSSH PRIVATE
+│                      │            KEY-----*******************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            **-----END OPENSSH PRI 
+│                      ╰ Layer     ╭ Digest   : sha256:3968fa7e0cfdfd43b85685e1d925fa009da93747f6f003a02af25051
+│                                  │            273f144b 
+│                                  ├ DiffID   : sha256:44ee436475accbd2ace7be9fa56282e87205a10cbc0b8690f145637e
+│                                  │            5dcd66b4 
+│                                  ╰ CreatedBy: COPY / / # buildkit 
+╰ [10] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
        ├ Class  : secret 
        ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                        ├ Category : AsymmetricPrivateKey 
@@ -8489,10 +8545,7 @@
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              *****************************-----END OPENSSH
-                       │                   │     │              PRI 
+                       │                   │     │              *********************-----END OPENSSH PRI 
                        │                   │     ├ IsCause    : true 
                        │                   │     ├ Annotation :  
                        │                   │     ├ Truncated  : false 
@@ -8504,10 +8557,7 @@
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              ***********************************************
-                       │                   │     │              *****************************-----END OPENSSH
-                       │                   │     │              PRI 
+                       │                   │     │              *********************-----END OPENSSH PRI 
                        │                   │     ├ FirstCause : true 
                        │                   │     ╰ LastCause  : true 
                        │                   ╰ [1] ╭ Number    : 2 
@@ -8522,9 +8572,7 @@
                        │            ***************************************************************************
                        │            ***************************************************************************
                        │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            ***************************************************************************
-                       │            **-----END OPENSSH PRI 
+                       │            **************************************************-----END OPENSSH PRI 
                        ╰ Layer     ╭ Digest   : sha256:3968fa7e0cfdfd43b85685e1d925fa009da93747f6f003a02af25051
                                    │            273f144b 
                                    ├ DiffID   : sha256:44ee436475accbd2ace7be9fa56282e87205a10cbc0b8690f145637e
