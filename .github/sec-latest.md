@@ -805,7 +805,47 @@
 │                        │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-7264 
 │                        │       ├ PublishedDate   : 2024-07-31T08:15:02.657Z 
 │                        │       ╰ LastModifiedDate: 2024-08-12T17:30:51.88Z 
-│                        ├ [14]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [14]  ╭ VulnerabilityID : CVE-2024-8096 
+│                        │       ├ PkgID           : curl@8.5.0-2ubuntu10.1 
+│                        │       ├ PkgName         : curl 
+│                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.1?arch=amd64&di
+│                        │       │                  │       stro=ubuntu-24.04 
+│                        │       │                  ╰ UID : c868e8a2acd441e1 
+│                        │       ├ InstalledVersion: 8.5.0-2ubuntu10.1 
+│                        │       ├ Status          : affected 
+│                        │       ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc32
+│                        │       │                  │         6421ea318f623cca695957 
+│                        │       │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc
+│                        │       │                            9e855b8886008bcbee3664 
+│                        │       ├ SeveritySource  : ubuntu 
+│                        │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-8096 
+│                        │       ├ DataSource       ╭ ID  : ubuntu 
+│                        │       │                  ├ Name: Ubuntu CVE Tracker 
+│                        │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │       ├ Title           : curl: OCSP stapling bypass with GnuTLS 
+│                        │       ├ Description     : When curl is told to use the Certificate Status Request
+│                        │       │                   TLS extension, often referred to as OCSP stapling, to
+│                        │       │                   verify that the server certificate is valid, it might fail
+│                        │       │                    to detect some OCSP problems and instead wrongly consider
+│                        │       │                    the response as fine.  If the returned status reports
+│                        │       │                   another error than 'revoked' (like for example
+│                        │       │                   'unauthorized') it is not treated as a bad certficate. 
+│                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs           ─ [0]: CWE-295 
+│                        │       ├ VendorSeverity   ╭ redhat: 2 
+│                        │       │                  ╰ ubuntu: 2 
+│                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I
+│                        │       │                           │           :L/A:N 
+│                        │       │                           ╰ V3Score : 6.5 
+│                        │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-8096 
+│                        │       │                  ├ [1]: https://curl.se/docs/CVE-2024-8096.html 
+│                        │       │                  ├ [2]: https://curl.se/docs/CVE-2024-8096.json 
+│                        │       │                  ├ [3]: https://hackerone.com/reports/2669852 
+│                        │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-8096 
+│                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-8096 
+│                        │       ├ PublishedDate   : 2024-09-11T10:15:02.883Z 
+│                        │       ╰ LastModifiedDate: 2024-09-11T16:26:11.92Z 
+│                        ├ [15]  ╭ VulnerabilityID : CVE-2023-34969 
 │                        │       ├ PkgID           : dbus@1.14.10-4ubuntu4 
 │                        │       ├ PkgName         : dbus 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus@1.14.10-4ubuntu4?arch=amd64&dis
@@ -873,7 +913,7 @@
 │                        │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │       ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │       ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [15]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [16]  ╭ VulnerabilityID : CVE-2023-34969 
 │                        │       ├ PkgID           : dbus-bin@1.14.10-4ubuntu4 
 │                        │       ├ PkgName         : dbus-bin 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus-bin@1.14.10-4ubuntu4?arch=amd64
@@ -941,7 +981,7 @@
 │                        │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │       ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │       ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [16]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [17]  ╭ VulnerabilityID : CVE-2023-34969 
 │                        │       ├ PkgID           : dbus-daemon@1.14.10-4ubuntu4 
 │                        │       ├ PkgName         : dbus-daemon 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus-daemon@1.14.10-4ubuntu4?arch=am
@@ -1009,7 +1049,7 @@
 │                        │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │       ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │       ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [17]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [18]  ╭ VulnerabilityID : CVE-2023-34969 
 │                        │       ├ PkgID           : dbus-session-bus-common@1.14.10-4ubuntu4 
 │                        │       ├ PkgName         : dbus-session-bus-common 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus-session-bus-common@1.14.10-4ubu
@@ -1077,7 +1117,7 @@
 │                        │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │       ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │       ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [18]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [19]  ╭ VulnerabilityID : CVE-2023-34969 
 │                        │       ├ PkgID           : dbus-system-bus-common@1.14.10-4ubuntu4 
 │                        │       ├ PkgName         : dbus-system-bus-common 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus-system-bus-common@1.14.10-4ubun
@@ -1145,7 +1185,7 @@
 │                        │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │       ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │       ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [19]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [20]  ╭ VulnerabilityID : CVE-2023-34969 
 │                        │       ├ PkgID           : dbus-user-session@1.14.10-4ubuntu4 
 │                        │       ├ PkgName         : dbus-user-session 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dbus-user-session@1.14.10-4ubuntu4?a
@@ -1213,7 +1253,7 @@
 │                        │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │       ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │       ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [20]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [21]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : dirmngr@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : dirmngr 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dirmngr@2.4.4-2ubuntu17?arch=amd64&d
@@ -1258,7 +1298,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [21]  ╭ VulnerabilityID : CVE-2024-0760 
+│                        ├ [22]  ╭ VulnerabilityID : CVE-2024-0760 
 │                        │       ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
 │                        │       ├ PkgName         : dnsutils 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&d
@@ -1306,7 +1346,7 @@
 │                        │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-0760 
 │                        │       ├ PublishedDate   : 2024-07-23T15:15:03.52Z 
 │                        │       ╰ LastModifiedDate: 2024-08-01T13:45:59.803Z 
-│                        ├ [22]  ╭ VulnerabilityID : CVE-2024-1737 
+│                        ├ [23]  ╭ VulnerabilityID : CVE-2024-1737 
 │                        │       ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
 │                        │       ├ PkgName         : dnsutils 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&d
@@ -1369,7 +1409,7 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-1737 
 │                        │       ├ PublishedDate   : 2024-07-23T15:15:03.74Z 
 │                        │       ╰ LastModifiedDate: 2024-08-01T13:46:11.85Z 
-│                        ├ [23]  ╭ VulnerabilityID : CVE-2024-1975 
+│                        ├ [24]  ╭ VulnerabilityID : CVE-2024-1975 
 │                        │       ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
 │                        │       ├ PkgName         : dnsutils 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&d
@@ -1430,7 +1470,7 @@
 │                        │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-1975 
 │                        │       ├ PublishedDate   : 2024-07-23T15:15:03.943Z 
 │                        │       ╰ LastModifiedDate: 2024-08-01T13:46:16.177Z 
-│                        ├ [24]  ╭ VulnerabilityID : CVE-2024-4076 
+│                        ├ [25]  ╭ VulnerabilityID : CVE-2024-4076 
 │                        │       ├ PkgID           : dnsutils@1:9.18.24-0ubuntu5 
 │                        │       ├ PkgName         : dnsutils 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dnsutils@9.18.24-0ubuntu5?arch=all&d
@@ -1488,7 +1528,7 @@
 │                        │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-4076 
 │                        │       ├ PublishedDate   : 2024-07-23T15:15:05.5Z 
 │                        │       ╰ LastModifiedDate: 2024-08-01T13:59:24.073Z 
-│                        ├ [25]  ╭ VulnerabilityID : CVE-2018-1000021 
+│                        ├ [26]  ╭ VulnerabilityID : CVE-2018-1000021 
 │                        │       ├ PkgID           : git@1:2.43.0-1ubuntu7.1 
 │                        │       ├ PkgName         : git 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.43.0-1ubuntu7.1?arch=amd64&dis
@@ -1537,7 +1577,7 @@
 │                        │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2018-1000021 
 │                        │       ├ PublishedDate   : 2018-02-09T23:29:00.557Z 
 │                        │       ╰ LastModifiedDate: 2018-03-06T19:34:06.18Z 
-│                        ├ [26]  ╭ VulnerabilityID : CVE-2018-1000021 
+│                        ├ [27]  ╭ VulnerabilityID : CVE-2018-1000021 
 │                        │       ├ PkgID           : git-man@1:2.43.0-1ubuntu7.1 
 │                        │       ├ PkgName         : git-man 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git-man@2.43.0-1ubuntu7.1?arch=all&d
@@ -1586,7 +1626,7 @@
 │                        │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2018-1000021 
 │                        │       ├ PublishedDate   : 2018-02-09T23:29:00.557Z 
 │                        │       ╰ LastModifiedDate: 2018-03-06T19:34:06.18Z 
-│                        ├ [27]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [28]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : gnupg@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : gnupg 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gnupg@2.4.4-2ubuntu17?arch=all&distr
@@ -1631,7 +1671,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [28]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [29]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : gnupg-l10n@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : gnupg-l10n 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gnupg-l10n@2.4.4-2ubuntu17?arch=all&
@@ -1676,7 +1716,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [29]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [30]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : gnupg-utils@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : gnupg-utils 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gnupg-utils@2.4.4-2ubuntu17?arch=amd
@@ -1721,7 +1761,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [30]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [31]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : gpg@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : gpg 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpg@2.4.4-2ubuntu17?arch=amd64&distr
@@ -1766,7 +1806,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [31]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [32]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : gpg-agent@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : gpg-agent 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpg-agent@2.4.4-2ubuntu17?arch=amd64
@@ -1811,7 +1851,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [32]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [33]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : gpg-wks-client@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : gpg-wks-client 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpg-wks-client@2.4.4-2ubuntu17?arch=
@@ -1856,7 +1896,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [33]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [34]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : gpgconf@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : gpgconf 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpgconf@2.4.4-2ubuntu17?arch=amd64&d
@@ -1901,7 +1941,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [34]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [35]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : gpgsm@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : gpgsm 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpgsm@2.4.4-2ubuntu17?arch=amd64&dis
@@ -1946,7 +1986,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [35]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [36]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : gpgv@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : gpgv 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17?arch=amd64&dist
@@ -1991,7 +2031,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [36]  ╭ VulnerabilityID : CVE-2022-3219 
+│                        ├ [37]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │       ├ PkgID           : keyboxd@2.4.4-2ubuntu17 
 │                        │       ├ PkgName         : keyboxd 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/keyboxd@2.4.4-2ubuntu17?arch=amd64&d
@@ -2036,7 +2076,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                        │       ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
 │                        │       ╰ LastModifiedDate: 2023-05-26T16:31:34.07Z 
-│                        ├ [37]  ╭ VulnerabilityID : CVE-2024-26462 
+│                        ├ [38]  ╭ VulnerabilityID : CVE-2024-26462 
 │                        │       ├ PkgID           : krb5-locales@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : krb5-locales 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/krb5-locales@1.20.1-6ubuntu2?arch=al
@@ -2076,7 +2116,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-26462 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.857Z 
 │                        │       ╰ LastModifiedDate: 2024-05-14T15:09:01.053Z 
-│                        ├ [38]  ╭ VulnerabilityID : CVE-2024-37370 
+│                        ├ [39]  ╭ VulnerabilityID : CVE-2024-37370 
 │                        │       ├ PkgID           : krb5-locales@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : krb5-locales 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/krb5-locales@1.20.1-6ubuntu2?arch=al
@@ -2131,7 +2171,7 @@
 │                        │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
 │                        │       ├ PublishedDate   : 2024-06-28T22:15:02.293Z 
 │                        │       ╰ LastModifiedDate: 2024-08-27T17:48:12.297Z 
-│                        ├ [39]  ╭ VulnerabilityID : CVE-2024-37371 
+│                        ├ [40]  ╭ VulnerabilityID : CVE-2024-37371 
 │                        │       ├ PkgID           : krb5-locales@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : krb5-locales 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/krb5-locales@1.20.1-6ubuntu2?arch=al
@@ -2186,7 +2226,7 @@
 │                        │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
 │                        │       ├ PublishedDate   : 2024-06-28T23:15:11.603Z 
 │                        │       ╰ LastModifiedDate: 2024-08-27T17:47:30.89Z 
-│                        ├ [40]  ╭ VulnerabilityID : CVE-2024-26458 
+│                        ├ [41]  ╭ VulnerabilityID : CVE-2024-26458 
 │                        │       ├ PkgID           : krb5-locales@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : krb5-locales 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/krb5-locales@1.20.1-6ubuntu2?arch=al
@@ -2242,7 +2282,7 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                        │       ╰ LastModifiedDate: 2024-05-14T15:09:00.47Z 
-│                        ├ [41]  ╭ VulnerabilityID : CVE-2024-26461 
+│                        ├ [42]  ╭ VulnerabilityID : CVE-2024-26461 
 │                        │       ├ PkgID           : krb5-locales@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : krb5-locales 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/krb5-locales@1.20.1-6ubuntu2?arch=al
@@ -2300,7 +2340,7 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │       ╰ LastModifiedDate: 2024-08-14T16:35:10.207Z 
-│                        ├ [42]  ╭ VulnerabilityID : CVE-2016-20013 
+│                        ├ [43]  ╭ VulnerabilityID : CVE-2016-20013 
 │                        │       ├ PkgID           : libc-bin@2.39-0ubuntu8.2 
 │                        │       ├ PkgName         : libc-bin 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-bin@2.39-0ubuntu8.2?arch=amd64&
@@ -2337,7 +2377,7 @@
 │                        │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2016-20013 
 │                        │       ├ PublishedDate   : 2022-02-19T05:15:09.413Z 
 │                        │       ╰ LastModifiedDate: 2022-03-03T16:43:19.667Z 
-│                        ├ [43]  ╭ VulnerabilityID : CVE-2016-20013 
+│                        ├ [44]  ╭ VulnerabilityID : CVE-2016-20013 
 │                        │       ├ PkgID           : libc6@2.39-0ubuntu8.2 
 │                        │       ├ PkgName         : libc6 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc6@2.39-0ubuntu8.2?arch=amd64&dis
@@ -2374,7 +2414,7 @@
 │                        │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2016-20013 
 │                        │       ├ PublishedDate   : 2022-02-19T05:15:09.413Z 
 │                        │       ╰ LastModifiedDate: 2022-03-03T16:43:19.667Z 
-│                        ├ [44]  ╭ VulnerabilityID : CVE-2024-7264 
+│                        ├ [45]  ╭ VulnerabilityID : CVE-2024-7264 
 │                        │       ├ PkgID           : libcurl3t64-gnutls@8.5.0-2ubuntu10.1 
 │                        │       ├ PkgName         : libcurl3t64-gnutls 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl3t64-gnutls@8.5.0-2ubuntu10.1
@@ -2433,7 +2473,47 @@
 │                        │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-7264 
 │                        │       ├ PublishedDate   : 2024-07-31T08:15:02.657Z 
 │                        │       ╰ LastModifiedDate: 2024-08-12T17:30:51.88Z 
-│                        ├ [45]  ╭ VulnerabilityID : CVE-2024-7264 
+│                        ├ [46]  ╭ VulnerabilityID : CVE-2024-8096 
+│                        │       ├ PkgID           : libcurl3t64-gnutls@8.5.0-2ubuntu10.1 
+│                        │       ├ PkgName         : libcurl3t64-gnutls 
+│                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl3t64-gnutls@8.5.0-2ubuntu10.1
+│                        │       │                  │       ?arch=amd64&distro=ubuntu-24.04 
+│                        │       │                  ╰ UID : 531c4b0dddf45e74 
+│                        │       ├ InstalledVersion: 8.5.0-2ubuntu10.1 
+│                        │       ├ Status          : affected 
+│                        │       ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc32
+│                        │       │                  │         6421ea318f623cca695957 
+│                        │       │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc
+│                        │       │                            9e855b8886008bcbee3664 
+│                        │       ├ SeveritySource  : ubuntu 
+│                        │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-8096 
+│                        │       ├ DataSource       ╭ ID  : ubuntu 
+│                        │       │                  ├ Name: Ubuntu CVE Tracker 
+│                        │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │       ├ Title           : curl: OCSP stapling bypass with GnuTLS 
+│                        │       ├ Description     : When curl is told to use the Certificate Status Request
+│                        │       │                   TLS extension, often referred to as OCSP stapling, to
+│                        │       │                   verify that the server certificate is valid, it might fail
+│                        │       │                    to detect some OCSP problems and instead wrongly consider
+│                        │       │                    the response as fine.  If the returned status reports
+│                        │       │                   another error than 'revoked' (like for example
+│                        │       │                   'unauthorized') it is not treated as a bad certficate. 
+│                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs           ─ [0]: CWE-295 
+│                        │       ├ VendorSeverity   ╭ redhat: 2 
+│                        │       │                  ╰ ubuntu: 2 
+│                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I
+│                        │       │                           │           :L/A:N 
+│                        │       │                           ╰ V3Score : 6.5 
+│                        │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-8096 
+│                        │       │                  ├ [1]: https://curl.se/docs/CVE-2024-8096.html 
+│                        │       │                  ├ [2]: https://curl.se/docs/CVE-2024-8096.json 
+│                        │       │                  ├ [3]: https://hackerone.com/reports/2669852 
+│                        │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-8096 
+│                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-8096 
+│                        │       ├ PublishedDate   : 2024-09-11T10:15:02.883Z 
+│                        │       ╰ LastModifiedDate: 2024-09-11T16:26:11.92Z 
+│                        ├ [47]  ╭ VulnerabilityID : CVE-2024-7264 
 │                        │       ├ PkgID           : libcurl4t64@8.5.0-2ubuntu10.1 
 │                        │       ├ PkgName         : libcurl4t64 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.1?arch=a
@@ -2492,7 +2572,47 @@
 │                        │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-7264 
 │                        │       ├ PublishedDate   : 2024-07-31T08:15:02.657Z 
 │                        │       ╰ LastModifiedDate: 2024-08-12T17:30:51.88Z 
-│                        ├ [46]  ╭ VulnerabilityID : CVE-2023-34969 
+│                        ├ [48]  ╭ VulnerabilityID : CVE-2024-8096 
+│                        │       ├ PkgID           : libcurl4t64@8.5.0-2ubuntu10.1 
+│                        │       ├ PkgName         : libcurl4t64 
+│                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.1?arch=a
+│                        │       │                  │       md64&distro=ubuntu-24.04 
+│                        │       │                  ╰ UID : 33bac522a0adf46 
+│                        │       ├ InstalledVersion: 8.5.0-2ubuntu10.1 
+│                        │       ├ Status          : affected 
+│                        │       ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc32
+│                        │       │                  │         6421ea318f623cca695957 
+│                        │       │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc
+│                        │       │                            9e855b8886008bcbee3664 
+│                        │       ├ SeveritySource  : ubuntu 
+│                        │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-8096 
+│                        │       ├ DataSource       ╭ ID  : ubuntu 
+│                        │       │                  ├ Name: Ubuntu CVE Tracker 
+│                        │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │       ├ Title           : curl: OCSP stapling bypass with GnuTLS 
+│                        │       ├ Description     : When curl is told to use the Certificate Status Request
+│                        │       │                   TLS extension, often referred to as OCSP stapling, to
+│                        │       │                   verify that the server certificate is valid, it might fail
+│                        │       │                    to detect some OCSP problems and instead wrongly consider
+│                        │       │                    the response as fine.  If the returned status reports
+│                        │       │                   another error than 'revoked' (like for example
+│                        │       │                   'unauthorized') it is not treated as a bad certficate. 
+│                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs           ─ [0]: CWE-295 
+│                        │       ├ VendorSeverity   ╭ redhat: 2 
+│                        │       │                  ╰ ubuntu: 2 
+│                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I
+│                        │       │                           │           :L/A:N 
+│                        │       │                           ╰ V3Score : 6.5 
+│                        │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-8096 
+│                        │       │                  ├ [1]: https://curl.se/docs/CVE-2024-8096.html 
+│                        │       │                  ├ [2]: https://curl.se/docs/CVE-2024-8096.json 
+│                        │       │                  ├ [3]: https://hackerone.com/reports/2669852 
+│                        │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-8096 
+│                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-8096 
+│                        │       ├ PublishedDate   : 2024-09-11T10:15:02.883Z 
+│                        │       ╰ LastModifiedDate: 2024-09-11T16:26:11.92Z 
+│                        ├ [49]  ╭ VulnerabilityID : CVE-2023-34969 
 │                        │       ├ PkgID           : libdbus-1-3@1.14.10-4ubuntu4 
 │                        │       ├ PkgName         : libdbus-1-3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libdbus-1-3@1.14.10-4ubuntu4?arch=am
@@ -2560,7 +2680,7 @@
 │                        │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2023-34969 
 │                        │       ├ PublishedDate   : 2023-06-08T03:15:08.97Z 
 │                        │       ╰ LastModifiedDate: 2023-12-27T16:36:58.353Z 
-│                        ├ [47]  ╭ VulnerabilityID : CVE-2024-45490 
+│                        ├ [50]  ╭ VulnerabilityID : CVE-2024-45490 
 │                        │       ├ PkgID           : libexpat1@2.6.1-2build1 
 │                        │       ├ PkgName         : libexpat1 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.6.1-2build1?arch=amd64&d
@@ -2602,7 +2722,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-45490 
 │                        │       ├ PublishedDate   : 2024-08-30T03:15:03.757Z 
 │                        │       ╰ LastModifiedDate: 2024-09-04T14:28:19.313Z 
-│                        ├ [48]  ╭ VulnerabilityID : CVE-2024-45491 
+│                        ├ [51]  ╭ VulnerabilityID : CVE-2024-45491 
 │                        │       ├ PkgID           : libexpat1@2.6.1-2build1 
 │                        │       ├ PkgName         : libexpat1 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.6.1-2build1?arch=amd64&d
@@ -2645,7 +2765,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-45491 
 │                        │       ├ PublishedDate   : 2024-08-30T03:15:03.85Z 
 │                        │       ╰ LastModifiedDate: 2024-09-04T14:28:33.953Z 
-│                        ├ [49]  ╭ VulnerabilityID : CVE-2024-45492 
+│                        ├ [52]  ╭ VulnerabilityID : CVE-2024-45492 
 │                        │       ├ PkgID           : libexpat1@2.6.1-2build1 
 │                        │       ├ PkgName         : libexpat1 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.6.1-2build1?arch=amd64&d
@@ -2688,7 +2808,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-45492 
 │                        │       ├ PublishedDate   : 2024-08-30T03:15:03.93Z 
 │                        │       ╰ LastModifiedDate: 2024-09-04T14:28:41.76Z 
-│                        ├ [50]  ╭ VulnerabilityID : CVE-2024-2236 
+│                        ├ [53]  ╭ VulnerabilityID : CVE-2024-2236 
 │                        │       ├ PkgID           : libgcrypt20@1.10.3-2build1 
 │                        │       ├ PkgName         : libgcrypt20 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgcrypt20@1.10.3-2build1?arch=amd6
@@ -2731,7 +2851,7 @@
 │                        │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-2236 
 │                        │       ├ PublishedDate   : 2024-03-06T22:15:57.977Z 
 │                        │       ╰ LastModifiedDate: 2024-04-25T17:15:49.467Z 
-│                        ├ [51]  ╭ VulnerabilityID : CVE-2024-26462 
+│                        ├ [54]  ╭ VulnerabilityID : CVE-2024-26462 
 │                        │       ├ PkgID           : libgssapi-krb5-2@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libgssapi-krb5-2 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.20.1-6ubuntu2?arc
@@ -2771,7 +2891,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-26462 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.857Z 
 │                        │       ╰ LastModifiedDate: 2024-05-14T15:09:01.053Z 
-│                        ├ [52]  ╭ VulnerabilityID : CVE-2024-37370 
+│                        ├ [55]  ╭ VulnerabilityID : CVE-2024-37370 
 │                        │       ├ PkgID           : libgssapi-krb5-2@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libgssapi-krb5-2 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.20.1-6ubuntu2?arc
@@ -2826,7 +2946,7 @@
 │                        │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
 │                        │       ├ PublishedDate   : 2024-06-28T22:15:02.293Z 
 │                        │       ╰ LastModifiedDate: 2024-08-27T17:48:12.297Z 
-│                        ├ [53]  ╭ VulnerabilityID : CVE-2024-37371 
+│                        ├ [56]  ╭ VulnerabilityID : CVE-2024-37371 
 │                        │       ├ PkgID           : libgssapi-krb5-2@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libgssapi-krb5-2 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.20.1-6ubuntu2?arc
@@ -2881,7 +3001,7 @@
 │                        │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
 │                        │       ├ PublishedDate   : 2024-06-28T23:15:11.603Z 
 │                        │       ╰ LastModifiedDate: 2024-08-27T17:47:30.89Z 
-│                        ├ [54]  ╭ VulnerabilityID : CVE-2024-26458 
+│                        ├ [57]  ╭ VulnerabilityID : CVE-2024-26458 
 │                        │       ├ PkgID           : libgssapi-krb5-2@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libgssapi-krb5-2 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.20.1-6ubuntu2?arc
@@ -2937,7 +3057,7 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                        │       ╰ LastModifiedDate: 2024-05-14T15:09:00.47Z 
-│                        ├ [55]  ╭ VulnerabilityID : CVE-2024-26461 
+│                        ├ [58]  ╭ VulnerabilityID : CVE-2024-26461 
 │                        │       ├ PkgID           : libgssapi-krb5-2@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libgssapi-krb5-2 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.20.1-6ubuntu2?arc
@@ -2995,7 +3115,7 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │       ╰ LastModifiedDate: 2024-08-14T16:35:10.207Z 
-│                        ├ [56]  ╭ VulnerabilityID : CVE-2024-26462 
+│                        ├ [59]  ╭ VulnerabilityID : CVE-2024-26462 
 │                        │       ├ PkgID           : libk5crypto3@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libk5crypto3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.20.1-6ubuntu2?arch=am
@@ -3035,7 +3155,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-26462 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.857Z 
 │                        │       ╰ LastModifiedDate: 2024-05-14T15:09:01.053Z 
-│                        ├ [57]  ╭ VulnerabilityID : CVE-2024-37370 
+│                        ├ [60]  ╭ VulnerabilityID : CVE-2024-37370 
 │                        │       ├ PkgID           : libk5crypto3@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libk5crypto3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.20.1-6ubuntu2?arch=am
@@ -3090,7 +3210,7 @@
 │                        │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
 │                        │       ├ PublishedDate   : 2024-06-28T22:15:02.293Z 
 │                        │       ╰ LastModifiedDate: 2024-08-27T17:48:12.297Z 
-│                        ├ [58]  ╭ VulnerabilityID : CVE-2024-37371 
+│                        ├ [61]  ╭ VulnerabilityID : CVE-2024-37371 
 │                        │       ├ PkgID           : libk5crypto3@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libk5crypto3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.20.1-6ubuntu2?arch=am
@@ -3145,7 +3265,7 @@
 │                        │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
 │                        │       ├ PublishedDate   : 2024-06-28T23:15:11.603Z 
 │                        │       ╰ LastModifiedDate: 2024-08-27T17:47:30.89Z 
-│                        ├ [59]  ╭ VulnerabilityID : CVE-2024-26458 
+│                        ├ [62]  ╭ VulnerabilityID : CVE-2024-26458 
 │                        │       ├ PkgID           : libk5crypto3@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libk5crypto3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.20.1-6ubuntu2?arch=am
@@ -3201,7 +3321,7 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                        │       ╰ LastModifiedDate: 2024-05-14T15:09:00.47Z 
-│                        ├ [60]  ╭ VulnerabilityID : CVE-2024-26461 
+│                        ├ [63]  ╭ VulnerabilityID : CVE-2024-26461 
 │                        │       ├ PkgID           : libk5crypto3@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libk5crypto3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.20.1-6ubuntu2?arch=am
@@ -3259,7 +3379,7 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │       ╰ LastModifiedDate: 2024-08-14T16:35:10.207Z 
-│                        ├ [61]  ╭ VulnerabilityID : CVE-2024-26462 
+│                        ├ [64]  ╭ VulnerabilityID : CVE-2024-26462 
 │                        │       ├ PkgID           : libkrb5-3@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libkrb5-3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.20.1-6ubuntu2?arch=amd64
@@ -3299,7 +3419,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-26462 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.857Z 
 │                        │       ╰ LastModifiedDate: 2024-05-14T15:09:01.053Z 
-│                        ├ [62]  ╭ VulnerabilityID : CVE-2024-37370 
+│                        ├ [65]  ╭ VulnerabilityID : CVE-2024-37370 
 │                        │       ├ PkgID           : libkrb5-3@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libkrb5-3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.20.1-6ubuntu2?arch=amd64
@@ -3354,7 +3474,7 @@
 │                        │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
 │                        │       ├ PublishedDate   : 2024-06-28T22:15:02.293Z 
 │                        │       ╰ LastModifiedDate: 2024-08-27T17:48:12.297Z 
-│                        ├ [63]  ╭ VulnerabilityID : CVE-2024-37371 
+│                        ├ [66]  ╭ VulnerabilityID : CVE-2024-37371 
 │                        │       ├ PkgID           : libkrb5-3@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libkrb5-3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.20.1-6ubuntu2?arch=amd64
@@ -3409,7 +3529,7 @@
 │                        │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
 │                        │       ├ PublishedDate   : 2024-06-28T23:15:11.603Z 
 │                        │       ╰ LastModifiedDate: 2024-08-27T17:47:30.89Z 
-│                        ├ [64]  ╭ VulnerabilityID : CVE-2024-26458 
+│                        ├ [67]  ╭ VulnerabilityID : CVE-2024-26458 
 │                        │       ├ PkgID           : libkrb5-3@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libkrb5-3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.20.1-6ubuntu2?arch=amd64
@@ -3465,7 +3585,7 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                        │       ╰ LastModifiedDate: 2024-05-14T15:09:00.47Z 
-│                        ├ [65]  ╭ VulnerabilityID : CVE-2024-26461 
+│                        ├ [68]  ╭ VulnerabilityID : CVE-2024-26461 
 │                        │       ├ PkgID           : libkrb5-3@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libkrb5-3 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.20.1-6ubuntu2?arch=amd64
@@ -3523,7 +3643,7 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │       ╰ LastModifiedDate: 2024-08-14T16:35:10.207Z 
-│                        ├ [66]  ╭ VulnerabilityID : CVE-2024-26462 
+│                        ├ [69]  ╭ VulnerabilityID : CVE-2024-26462 
 │                        │       ├ PkgID           : libkrb5support0@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libkrb5support0 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2?arch
@@ -3563,7 +3683,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-26462 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.857Z 
 │                        │       ╰ LastModifiedDate: 2024-05-14T15:09:01.053Z 
-│                        ├ [67]  ╭ VulnerabilityID : CVE-2024-37370 
+│                        ├ [70]  ╭ VulnerabilityID : CVE-2024-37370 
 │                        │       ├ PkgID           : libkrb5support0@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libkrb5support0 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2?arch
@@ -3618,7 +3738,7 @@
 │                        │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37370 
 │                        │       ├ PublishedDate   : 2024-06-28T22:15:02.293Z 
 │                        │       ╰ LastModifiedDate: 2024-08-27T17:48:12.297Z 
-│                        ├ [68]  ╭ VulnerabilityID : CVE-2024-37371 
+│                        ├ [71]  ╭ VulnerabilityID : CVE-2024-37371 
 │                        │       ├ PkgID           : libkrb5support0@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libkrb5support0 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2?arch
@@ -3673,7 +3793,7 @@
 │                        │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-37371 
 │                        │       ├ PublishedDate   : 2024-06-28T23:15:11.603Z 
 │                        │       ╰ LastModifiedDate: 2024-08-27T17:47:30.89Z 
-│                        ├ [69]  ╭ VulnerabilityID : CVE-2024-26458 
+│                        ├ [72]  ╭ VulnerabilityID : CVE-2024-26458 
 │                        │       ├ PkgID           : libkrb5support0@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libkrb5support0 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2?arch
@@ -3729,7 +3849,7 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                        │       ╰ LastModifiedDate: 2024-05-14T15:09:00.47Z 
-│                        ├ [70]  ╭ VulnerabilityID : CVE-2024-26461 
+│                        ├ [73]  ╭ VulnerabilityID : CVE-2024-26461 
 │                        │       ├ PkgID           : libkrb5support0@1.20.1-6ubuntu2 
 │                        │       ├ PkgName         : libkrb5support0 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2?arch
@@ -3787,7 +3907,136 @@
 │                        │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                        │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                        │       ╰ LastModifiedDate: 2024-08-14T16:35:10.207Z 
-│                        ├ [71]  ╭ VulnerabilityID : CVE-2024-4032 
+│                        ├ [74]  ╭ VulnerabilityID : CVE-2023-27043 
+│                        │       ├ PkgID           : libpython3.12-minimal@3.12.3-1 
+│                        │       ├ PkgName         : libpython3.12-minimal 
+│                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-minimal@3.12.3-1?arch=
+│                        │       │                  │       amd64&distro=ubuntu-24.04 
+│                        │       │                  ╰ UID : 6abc2d56578f8d0b 
+│                        │       ├ InstalledVersion: 3.12.3-1 
+│                        │       ├ Status          : affected 
+│                        │       ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc32
+│                        │       │                  │         6421ea318f623cca695957 
+│                        │       │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc
+│                        │       │                            9e855b8886008bcbee3664 
+│                        │       ├ SeveritySource  : ubuntu 
+│                        │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-27043 
+│                        │       ├ DataSource       ╭ ID  : ubuntu 
+│                        │       │                  ├ Name: Ubuntu CVE Tracker 
+│                        │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │       ├ Title           : python: Parsing errors in email/_parseaddr.py lead to
+│                        │       │                   incorrect value in email address part of tuple 
+│                        │       ├ Description     : The email module of Python through 3.11.3 incorrectly
+│                        │       │                   parses e-mail addresses that contain a special character.
+│                        │       │                   The wrong portion of an RFC2822 header is identified as
+│                        │       │                   the value of the addr-spec. In some applications, an
+│                        │       │                   attacker can bypass a protection mechanism in which
+│                        │       │                   application access is granted only after verifying receipt
+│                        │       │                    of e-mail to a specific domain (e.g., only
+│                        │       │                   @company.example.com addresses may be used for signup).
+│                        │       │                   This occurs in email/_parseaddr.py in recent versions of
+│                        │       │                   Python. 
+│                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs           ─ [0]: CWE-20 
+│                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ bitnami    : 2 
+│                        │       │                  ├ nvd        : 2 
+│                        │       │                  ├ oracle-oval: 2 
+│                        │       │                  ├ photon     : 2 
+│                        │       │                  ├ redhat     : 2 
+│                        │       │                  ├ rocky      : 2 
+│                        │       │                  ╰ ubuntu     : 2 
+│                        │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                  │         │           I:L/A:N 
+│                        │       │                  │         ╰ V3Score : 5.3 
+│                        │       │                  ├ nvd     ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                  │         │           I:L/A:N 
+│                        │       │                  │         ╰ V3Score : 5.3 
+│                        │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                            │           I:L/A:N 
+│                        │       │                            ╰ V3Score : 5.3 
+│                        │       ├ References       ╭ [0] : http://python.org 
+│                        │       │                  ├ [1] : https://access.redhat.com/articles/7051467 
+│                        │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:2292 
+│                        │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2023-27043 
+│                        │       │                  ├ [4] : https://bugzilla.redhat.com/2196183 
+│                        │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2196183 
+│                        │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-
+│                        │       │                  │       2023-27043 
+│                        │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2024-2292.html 
+│                        │       │                  ├ [8] : https://errata.rockylinux.org/RLSA-2024:0256 
+│                        │       │                  ├ [9] : https://github.com/python/cpython/issues/102988 
+│                        │       │                  ├ [10]: https://github.com/python/cpython/pull/102990 
+│                        │       │                  ├ [11]: https://github.com/python/cpython/pull/105127 
+│                        │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2023-27043.html 
+│                        │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-3062.html 
+│                        │       │                  ├ [14]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/4ZAEF
+│                        │       │                  │       SFZDNBNJPNOUTLG5COISGQDLMGV/ 
+│                        │       │                  ├ [15]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/75DTH
+│                        │       │                  │       STNOFFNAWHXKMDXS7EJWC6W2FUC/ 
+│                        │       │                  ├ [16]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/ARI7V
+│                        │       │                  │       DSNTQVXRQFM6IK5GSSLEIYV4VZH/ 
+│                        │       │                  ├ [17]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/BQAKL
+│                        │       │                  │       UJMHFGVBRDPEY57BJGNCE5UUPHW/ 
+│                        │       │                  ├ [18]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/HXYVP
+│                        │       │                  │       EZUA3465AEFX5JVFVP7KIFZMF3N/ 
+│                        │       │                  ├ [19]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/N6M5I
+│                        │       │                  │       6OQHJABNEYY555HUMMKX3Y4P25Z/ 
+│                        │       │                  ├ [20]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/NEUNZ
+│                        │       │                  │       SZ3CVSM2QWVYH3N2XGOCDWNYUA3/ 
+│                        │       │                  ├ [21]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/ORLXS
+│                        │       │                  │       5YTKN65E2Q2NWKXMFS5FWQHRNZW/ 
+│                        │       │                  ├ [22]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/P2MAI
+│                        │       │                  │       CLFDDO3QVNHTZ2OCERZQ34R2PIC/ 
+│                        │       │                  ├ [23]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/P2W2B
+│                        │       │                  │       ZQIHMCKRI5FNBJERFYMS5PK6TAH/ 
+│                        │       │                  ├ [24]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/PHVGR
+│                        │       │                  │       KQAGANCSGFI3QMYOCIMS4IFOZA5/ 
+│                        │       │                  ├ [25]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/PU6Y2
+│                        │       │                  │       S5CBN5BWCBDAJFTGIBZLK3S2G3J/ 
+│                        │       │                  ├ [26]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/QDRDD
+│                        │       │                  │       PDN3VFIYXJIYEABY6USX5EU66AG/ 
+│                        │       │                  ├ [27]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/RDDC2
+│                        │       │                  │       VOX7OQC6OHMYTVD4HLFZIV6PYBC/ 
+│                        │       │                  ├ [28]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/SINP4
+│                        │       │                  │       OVYNB2AGDYI2GS37EMW3H3F7XPZ/ 
+│                        │       │                  ├ [29]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/SOX7B
+│                        │       │                  │       CN6YL7B3RFPEEXPIU5CMTEHJOKR/ 
+│                        │       │                  ├ [30]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/VZXC3
+│                        │       │                  │       2CJ7TWDPJO6GY2XIQRO7JZX5FLP/ 
+│                        │       │                  ├ [31]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/XWMBD
+│                        │       │                  │       4LNHWEXRI6YVFWJMTJQUL5WOFTS/ 
+│                        │       │                  ├ [32]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/YQVY5
+│                        │       │                  │       C5REXWJIORJIL2FIL3ALOEJEF72/ 
+│                        │       │                  ├ [33]: https://nvd.nist.gov/vuln/detail/CVE-2023-27043 
+│                        │       │                  ├ [34]: https://python-security.readthedocs.io/vuln/email-p
+│                        │       │                  │       arseaddr-realname.html 
+│                        │       │                  ├ [35]: https://security.netapp.com/advisory/ntap-20230601-
+│                        │       │                  │       0003/ 
+│                        │       │                  ╰ [36]: https://www.cve.org/CVERecord?id=CVE-2023-27043 
+│                        │       ├ PublishedDate   : 2023-04-19T00:15:07.973Z 
+│                        │       ╰ LastModifiedDate: 2024-02-26T16:27:45.78Z 
+│                        ├ [75]  ╭ VulnerabilityID : CVE-2024-4032 
 │                        │       ├ PkgID           : libpython3.12-minimal@3.12.3-1 
 │                        │       ├ PkgName         : libpython3.12-minimal 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-minimal@3.12.3-1?arch=
@@ -3872,7 +4121,136 @@
 │                        │       │                          registry/iana-ipv6-special-registry.xhtml 
 │                        │       ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │       ╰ LastModifiedDate: 2024-08-29T21:35:11.017Z 
-│                        ├ [72]  ╭ VulnerabilityID : CVE-2024-4032 
+│                        ├ [76]  ╭ VulnerabilityID : CVE-2023-27043 
+│                        │       ├ PkgID           : libpython3.12-stdlib@3.12.3-1 
+│                        │       ├ PkgName         : libpython3.12-stdlib 
+│                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-stdlib@3.12.3-1?arch=a
+│                        │       │                  │       md64&distro=ubuntu-24.04 
+│                        │       │                  ╰ UID : 7948ff34722c355e 
+│                        │       ├ InstalledVersion: 3.12.3-1 
+│                        │       ├ Status          : affected 
+│                        │       ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc32
+│                        │       │                  │         6421ea318f623cca695957 
+│                        │       │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc
+│                        │       │                            9e855b8886008bcbee3664 
+│                        │       ├ SeveritySource  : ubuntu 
+│                        │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-27043 
+│                        │       ├ DataSource       ╭ ID  : ubuntu 
+│                        │       │                  ├ Name: Ubuntu CVE Tracker 
+│                        │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │       ├ Title           : python: Parsing errors in email/_parseaddr.py lead to
+│                        │       │                   incorrect value in email address part of tuple 
+│                        │       ├ Description     : The email module of Python through 3.11.3 incorrectly
+│                        │       │                   parses e-mail addresses that contain a special character.
+│                        │       │                   The wrong portion of an RFC2822 header is identified as
+│                        │       │                   the value of the addr-spec. In some applications, an
+│                        │       │                   attacker can bypass a protection mechanism in which
+│                        │       │                   application access is granted only after verifying receipt
+│                        │       │                    of e-mail to a specific domain (e.g., only
+│                        │       │                   @company.example.com addresses may be used for signup).
+│                        │       │                   This occurs in email/_parseaddr.py in recent versions of
+│                        │       │                   Python. 
+│                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs           ─ [0]: CWE-20 
+│                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ bitnami    : 2 
+│                        │       │                  ├ nvd        : 2 
+│                        │       │                  ├ oracle-oval: 2 
+│                        │       │                  ├ photon     : 2 
+│                        │       │                  ├ redhat     : 2 
+│                        │       │                  ├ rocky      : 2 
+│                        │       │                  ╰ ubuntu     : 2 
+│                        │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                  │         │           I:L/A:N 
+│                        │       │                  │         ╰ V3Score : 5.3 
+│                        │       │                  ├ nvd     ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                  │         │           I:L/A:N 
+│                        │       │                  │         ╰ V3Score : 5.3 
+│                        │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                            │           I:L/A:N 
+│                        │       │                            ╰ V3Score : 5.3 
+│                        │       ├ References       ╭ [0] : http://python.org 
+│                        │       │                  ├ [1] : https://access.redhat.com/articles/7051467 
+│                        │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:2292 
+│                        │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2023-27043 
+│                        │       │                  ├ [4] : https://bugzilla.redhat.com/2196183 
+│                        │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2196183 
+│                        │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-
+│                        │       │                  │       2023-27043 
+│                        │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2024-2292.html 
+│                        │       │                  ├ [8] : https://errata.rockylinux.org/RLSA-2024:0256 
+│                        │       │                  ├ [9] : https://github.com/python/cpython/issues/102988 
+│                        │       │                  ├ [10]: https://github.com/python/cpython/pull/102990 
+│                        │       │                  ├ [11]: https://github.com/python/cpython/pull/105127 
+│                        │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2023-27043.html 
+│                        │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-3062.html 
+│                        │       │                  ├ [14]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/4ZAEF
+│                        │       │                  │       SFZDNBNJPNOUTLG5COISGQDLMGV/ 
+│                        │       │                  ├ [15]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/75DTH
+│                        │       │                  │       STNOFFNAWHXKMDXS7EJWC6W2FUC/ 
+│                        │       │                  ├ [16]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/ARI7V
+│                        │       │                  │       DSNTQVXRQFM6IK5GSSLEIYV4VZH/ 
+│                        │       │                  ├ [17]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/BQAKL
+│                        │       │                  │       UJMHFGVBRDPEY57BJGNCE5UUPHW/ 
+│                        │       │                  ├ [18]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/HXYVP
+│                        │       │                  │       EZUA3465AEFX5JVFVP7KIFZMF3N/ 
+│                        │       │                  ├ [19]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/N6M5I
+│                        │       │                  │       6OQHJABNEYY555HUMMKX3Y4P25Z/ 
+│                        │       │                  ├ [20]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/NEUNZ
+│                        │       │                  │       SZ3CVSM2QWVYH3N2XGOCDWNYUA3/ 
+│                        │       │                  ├ [21]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/ORLXS
+│                        │       │                  │       5YTKN65E2Q2NWKXMFS5FWQHRNZW/ 
+│                        │       │                  ├ [22]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/P2MAI
+│                        │       │                  │       CLFDDO3QVNHTZ2OCERZQ34R2PIC/ 
+│                        │       │                  ├ [23]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/P2W2B
+│                        │       │                  │       ZQIHMCKRI5FNBJERFYMS5PK6TAH/ 
+│                        │       │                  ├ [24]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/PHVGR
+│                        │       │                  │       KQAGANCSGFI3QMYOCIMS4IFOZA5/ 
+│                        │       │                  ├ [25]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/PU6Y2
+│                        │       │                  │       S5CBN5BWCBDAJFTGIBZLK3S2G3J/ 
+│                        │       │                  ├ [26]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/QDRDD
+│                        │       │                  │       PDN3VFIYXJIYEABY6USX5EU66AG/ 
+│                        │       │                  ├ [27]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/RDDC2
+│                        │       │                  │       VOX7OQC6OHMYTVD4HLFZIV6PYBC/ 
+│                        │       │                  ├ [28]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/SINP4
+│                        │       │                  │       OVYNB2AGDYI2GS37EMW3H3F7XPZ/ 
+│                        │       │                  ├ [29]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/SOX7B
+│                        │       │                  │       CN6YL7B3RFPEEXPIU5CMTEHJOKR/ 
+│                        │       │                  ├ [30]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/VZXC3
+│                        │       │                  │       2CJ7TWDPJO6GY2XIQRO7JZX5FLP/ 
+│                        │       │                  ├ [31]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/XWMBD
+│                        │       │                  │       4LNHWEXRI6YVFWJMTJQUL5WOFTS/ 
+│                        │       │                  ├ [32]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/YQVY5
+│                        │       │                  │       C5REXWJIORJIL2FIL3ALOEJEF72/ 
+│                        │       │                  ├ [33]: https://nvd.nist.gov/vuln/detail/CVE-2023-27043 
+│                        │       │                  ├ [34]: https://python-security.readthedocs.io/vuln/email-p
+│                        │       │                  │       arseaddr-realname.html 
+│                        │       │                  ├ [35]: https://security.netapp.com/advisory/ntap-20230601-
+│                        │       │                  │       0003/ 
+│                        │       │                  ╰ [36]: https://www.cve.org/CVERecord?id=CVE-2023-27043 
+│                        │       ├ PublishedDate   : 2023-04-19T00:15:07.973Z 
+│                        │       ╰ LastModifiedDate: 2024-02-26T16:27:45.78Z 
+│                        ├ [77]  ╭ VulnerabilityID : CVE-2024-4032 
 │                        │       ├ PkgID           : libpython3.12-stdlib@3.12.3-1 
 │                        │       ├ PkgName         : libpython3.12-stdlib 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-stdlib@3.12.3-1?arch=a
@@ -3957,7 +4335,136 @@
 │                        │       │                          registry/iana-ipv6-special-registry.xhtml 
 │                        │       ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │       ╰ LastModifiedDate: 2024-08-29T21:35:11.017Z 
-│                        ├ [73]  ╭ VulnerabilityID : CVE-2024-4032 
+│                        ├ [78]  ╭ VulnerabilityID : CVE-2023-27043 
+│                        │       ├ PkgID           : libpython3.12t64@3.12.3-1 
+│                        │       ├ PkgName         : libpython3.12t64 
+│                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12t64@3.12.3-1?arch=amd64
+│                        │       │                  │       &distro=ubuntu-24.04 
+│                        │       │                  ╰ UID : 5dda9aea5ff20f4d 
+│                        │       ├ InstalledVersion: 3.12.3-1 
+│                        │       ├ Status          : affected 
+│                        │       ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc32
+│                        │       │                  │         6421ea318f623cca695957 
+│                        │       │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc
+│                        │       │                            9e855b8886008bcbee3664 
+│                        │       ├ SeveritySource  : ubuntu 
+│                        │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-27043 
+│                        │       ├ DataSource       ╭ ID  : ubuntu 
+│                        │       │                  ├ Name: Ubuntu CVE Tracker 
+│                        │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │       ├ Title           : python: Parsing errors in email/_parseaddr.py lead to
+│                        │       │                   incorrect value in email address part of tuple 
+│                        │       ├ Description     : The email module of Python through 3.11.3 incorrectly
+│                        │       │                   parses e-mail addresses that contain a special character.
+│                        │       │                   The wrong portion of an RFC2822 header is identified as
+│                        │       │                   the value of the addr-spec. In some applications, an
+│                        │       │                   attacker can bypass a protection mechanism in which
+│                        │       │                   application access is granted only after verifying receipt
+│                        │       │                    of e-mail to a specific domain (e.g., only
+│                        │       │                   @company.example.com addresses may be used for signup).
+│                        │       │                   This occurs in email/_parseaddr.py in recent versions of
+│                        │       │                   Python. 
+│                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs           ─ [0]: CWE-20 
+│                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ bitnami    : 2 
+│                        │       │                  ├ nvd        : 2 
+│                        │       │                  ├ oracle-oval: 2 
+│                        │       │                  ├ photon     : 2 
+│                        │       │                  ├ redhat     : 2 
+│                        │       │                  ├ rocky      : 2 
+│                        │       │                  ╰ ubuntu     : 2 
+│                        │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                  │         │           I:L/A:N 
+│                        │       │                  │         ╰ V3Score : 5.3 
+│                        │       │                  ├ nvd     ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                  │         │           I:L/A:N 
+│                        │       │                  │         ╰ V3Score : 5.3 
+│                        │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                            │           I:L/A:N 
+│                        │       │                            ╰ V3Score : 5.3 
+│                        │       ├ References       ╭ [0] : http://python.org 
+│                        │       │                  ├ [1] : https://access.redhat.com/articles/7051467 
+│                        │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:2292 
+│                        │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2023-27043 
+│                        │       │                  ├ [4] : https://bugzilla.redhat.com/2196183 
+│                        │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2196183 
+│                        │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-
+│                        │       │                  │       2023-27043 
+│                        │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2024-2292.html 
+│                        │       │                  ├ [8] : https://errata.rockylinux.org/RLSA-2024:0256 
+│                        │       │                  ├ [9] : https://github.com/python/cpython/issues/102988 
+│                        │       │                  ├ [10]: https://github.com/python/cpython/pull/102990 
+│                        │       │                  ├ [11]: https://github.com/python/cpython/pull/105127 
+│                        │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2023-27043.html 
+│                        │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-3062.html 
+│                        │       │                  ├ [14]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/4ZAEF
+│                        │       │                  │       SFZDNBNJPNOUTLG5COISGQDLMGV/ 
+│                        │       │                  ├ [15]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/75DTH
+│                        │       │                  │       STNOFFNAWHXKMDXS7EJWC6W2FUC/ 
+│                        │       │                  ├ [16]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/ARI7V
+│                        │       │                  │       DSNTQVXRQFM6IK5GSSLEIYV4VZH/ 
+│                        │       │                  ├ [17]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/BQAKL
+│                        │       │                  │       UJMHFGVBRDPEY57BJGNCE5UUPHW/ 
+│                        │       │                  ├ [18]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/HXYVP
+│                        │       │                  │       EZUA3465AEFX5JVFVP7KIFZMF3N/ 
+│                        │       │                  ├ [19]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/N6M5I
+│                        │       │                  │       6OQHJABNEYY555HUMMKX3Y4P25Z/ 
+│                        │       │                  ├ [20]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/NEUNZ
+│                        │       │                  │       SZ3CVSM2QWVYH3N2XGOCDWNYUA3/ 
+│                        │       │                  ├ [21]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/ORLXS
+│                        │       │                  │       5YTKN65E2Q2NWKXMFS5FWQHRNZW/ 
+│                        │       │                  ├ [22]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/P2MAI
+│                        │       │                  │       CLFDDO3QVNHTZ2OCERZQ34R2PIC/ 
+│                        │       │                  ├ [23]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/P2W2B
+│                        │       │                  │       ZQIHMCKRI5FNBJERFYMS5PK6TAH/ 
+│                        │       │                  ├ [24]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/PHVGR
+│                        │       │                  │       KQAGANCSGFI3QMYOCIMS4IFOZA5/ 
+│                        │       │                  ├ [25]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/PU6Y2
+│                        │       │                  │       S5CBN5BWCBDAJFTGIBZLK3S2G3J/ 
+│                        │       │                  ├ [26]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/QDRDD
+│                        │       │                  │       PDN3VFIYXJIYEABY6USX5EU66AG/ 
+│                        │       │                  ├ [27]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/RDDC2
+│                        │       │                  │       VOX7OQC6OHMYTVD4HLFZIV6PYBC/ 
+│                        │       │                  ├ [28]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/SINP4
+│                        │       │                  │       OVYNB2AGDYI2GS37EMW3H3F7XPZ/ 
+│                        │       │                  ├ [29]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/SOX7B
+│                        │       │                  │       CN6YL7B3RFPEEXPIU5CMTEHJOKR/ 
+│                        │       │                  ├ [30]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/VZXC3
+│                        │       │                  │       2CJ7TWDPJO6GY2XIQRO7JZX5FLP/ 
+│                        │       │                  ├ [31]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/XWMBD
+│                        │       │                  │       4LNHWEXRI6YVFWJMTJQUL5WOFTS/ 
+│                        │       │                  ├ [32]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/YQVY5
+│                        │       │                  │       C5REXWJIORJIL2FIL3ALOEJEF72/ 
+│                        │       │                  ├ [33]: https://nvd.nist.gov/vuln/detail/CVE-2023-27043 
+│                        │       │                  ├ [34]: https://python-security.readthedocs.io/vuln/email-p
+│                        │       │                  │       arseaddr-realname.html 
+│                        │       │                  ├ [35]: https://security.netapp.com/advisory/ntap-20230601-
+│                        │       │                  │       0003/ 
+│                        │       │                  ╰ [36]: https://www.cve.org/CVERecord?id=CVE-2023-27043 
+│                        │       ├ PublishedDate   : 2023-04-19T00:15:07.973Z 
+│                        │       ╰ LastModifiedDate: 2024-02-26T16:27:45.78Z 
+│                        ├ [79]  ╭ VulnerabilityID : CVE-2024-4032 
 │                        │       ├ PkgID           : libpython3.12t64@3.12.3-1 
 │                        │       ├ PkgName         : libpython3.12t64 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12t64@3.12.3-1?arch=amd64
@@ -4042,7 +4549,7 @@
 │                        │       │                          registry/iana-ipv6-special-registry.xhtml 
 │                        │       ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │       ╰ LastModifiedDate: 2024-08-29T21:35:11.017Z 
-│                        ├ [74]  ╭ VulnerabilityID : CVE-2024-41996 
+│                        ├ [80]  ╭ VulnerabilityID : CVE-2024-41996 
 │                        │       ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : libssl3t64 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=am
@@ -4091,7 +4598,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                        │       ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                        │       ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                        ├ [75]  ╭ VulnerabilityID : CVE-2024-6119 
+│                        ├ [81]  ╭ VulnerabilityID : CVE-2024-6119 
 │                        │       ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : libssl3t64 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=am
@@ -4152,7 +4659,8 @@
 │                        │       │                    by this issue. 
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-843 
-│                        │       ├ VendorSeverity   ╭ redhat: 2 
+│                        │       ├ VendorSeverity   ╭ photon: 3 
+│                        │       │                  ├ redhat: 2 
 │                        │       │                  ╰ ubuntu: 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
 │                        │       │                           │           :N/A:H 
@@ -4174,7 +4682,7 @@
 │                        │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
 │                        │       ├ PublishedDate   : 2024-09-03T16:15:07.177Z 
 │                        │       ╰ LastModifiedDate: 2024-09-03T21:35:12.987Z 
-│                        ├ [76]  ╭ VulnerabilityID : CVE-2024-2511 
+│                        ├ [82]  ╭ VulnerabilityID : CVE-2024-2511 
 │                        │       ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : libssl3t64 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=am
@@ -4255,7 +4763,7 @@
 │                        │       │                  ╰ [11]: https://www.openssl.org/news/vulnerabilities.html 
 │                        │       ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
 │                        │       ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-│                        ├ [77]  ╭ VulnerabilityID : CVE-2024-4603 
+│                        ├ [83]  ╭ VulnerabilityID : CVE-2024-4603 
 │                        │       ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : libssl3t64 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=am
@@ -4352,7 +4860,7 @@
 │                        │       │                  ╰ [10]: https://www.openssl.org/news/secadv/20240516.txt 
 │                        │       ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
 │                        │       ╰ LastModifiedDate: 2024-08-13T16:35:05.013Z 
-│                        ├ [78]  ╭ VulnerabilityID : CVE-2024-4741 
+│                        ├ [84]  ╭ VulnerabilityID : CVE-2024-4741 
 │                        │       ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : libssl3t64 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=am
@@ -4389,7 +4897,7 @@
 │                        │                          ├ [2]: https://ubuntu.com/security/notices/USN-6937-1 
 │                        │                          ├ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4741 
 │                        │                          ╰ [4]: https://www.openssl.org/news/secadv/20240528.txt 
-│                        ├ [79]  ╭ VulnerabilityID : CVE-2024-5535 
+│                        ├ [85]  ╭ VulnerabilityID : CVE-2024-5535 
 │                        │       ├ PkgID           : libssl3t64@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : libssl3t64 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.1?arch=am
@@ -4555,7 +5063,7 @@
 │                        │       │                  ╰ [14]: https://www.openssl.org/news/secadv/20240627.txt 
 │                        │       ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
 │                        │       ╰ LastModifiedDate: 2024-07-12T14:15:16.79Z 
-│                        ├ [80]  ╭ VulnerabilityID : CVE-2024-39894 
+│                        ├ [86]  ╭ VulnerabilityID : CVE-2024-39894 
 │                        │       ├ PkgID           : openssh-client@1:9.6p1-3ubuntu13.3 
 │                        │       ├ PkgName         : openssh-client 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.6p1-3ubuntu13.3?arc
@@ -4596,19 +5104,22 @@
 │                        │       │                  ├ [3] : http://www.openwall.com/lists/oss-security/2024/07/
 │                        │       │                  │       28/3 
 │                        │       │                  ├ [4] : https://access.redhat.com/security/cve/CVE-2024-39894 
-│                        │       │                  ├ [5] : https://lists.mindrot.org/pipermail/openssh-unix-an
+│                        │       │                  ├ [5] : https://crzphil.github.io/posts/ssh-obfuscation-byp
+│                        │       │                  │       ass/ 
+│                        │       │                  ├ [6] : https://lists.mindrot.org/pipermail/openssh-unix-an
 │                        │       │                  │       nounce/2024-July/000158.html 
-│                        │       │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
-│                        │       │                  ├ [7] : https://security.netapp.com/advisory/ntap-20240712-
+│                        │       │                  ├ [7] : https://news.ycombinator.com/item?id=41508530 
+│                        │       │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
+│                        │       │                  ├ [9] : https://security.netapp.com/advisory/ntap-20240712-
 │                        │       │                  │       0004/ 
-│                        │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-6887-1 
-│                        │       │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2024-39894 
-│                        │       │                  ├ [10]: https://www.openssh.com/txt/release-9.8 
-│                        │       │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2024/07
+│                        │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-6887-1 
+│                        │       │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
+│                        │       │                  ├ [12]: https://www.openssh.com/txt/release-9.8 
+│                        │       │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2024/07
 │                        │       │                          /02/1 
 │                        │       ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
-│                        │       ╰ LastModifiedDate: 2024-07-28T21:15:10.38Z 
-│                        ├ [81]  ╭ VulnerabilityID : CVE-2024-39894 
+│                        │       ╰ LastModifiedDate: 2024-09-11T16:15:06.003Z 
+│                        ├ [87]  ╭ VulnerabilityID : CVE-2024-39894 
 │                        │       ├ PkgID           : openssh-server@1:9.6p1-3ubuntu13.3 
 │                        │       ├ PkgName         : openssh-server 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.6p1-3ubuntu13.3?arc
@@ -4649,19 +5160,22 @@
 │                        │       │                  ├ [3] : http://www.openwall.com/lists/oss-security/2024/07/
 │                        │       │                  │       28/3 
 │                        │       │                  ├ [4] : https://access.redhat.com/security/cve/CVE-2024-39894 
-│                        │       │                  ├ [5] : https://lists.mindrot.org/pipermail/openssh-unix-an
+│                        │       │                  ├ [5] : https://crzphil.github.io/posts/ssh-obfuscation-byp
+│                        │       │                  │       ass/ 
+│                        │       │                  ├ [6] : https://lists.mindrot.org/pipermail/openssh-unix-an
 │                        │       │                  │       nounce/2024-July/000158.html 
-│                        │       │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
-│                        │       │                  ├ [7] : https://security.netapp.com/advisory/ntap-20240712-
+│                        │       │                  ├ [7] : https://news.ycombinator.com/item?id=41508530 
+│                        │       │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
+│                        │       │                  ├ [9] : https://security.netapp.com/advisory/ntap-20240712-
 │                        │       │                  │       0004/ 
-│                        │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-6887-1 
-│                        │       │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2024-39894 
-│                        │       │                  ├ [10]: https://www.openssh.com/txt/release-9.8 
-│                        │       │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2024/07
+│                        │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-6887-1 
+│                        │       │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
+│                        │       │                  ├ [12]: https://www.openssh.com/txt/release-9.8 
+│                        │       │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2024/07
 │                        │       │                          /02/1 
 │                        │       ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
-│                        │       ╰ LastModifiedDate: 2024-07-28T21:15:10.38Z 
-│                        ├ [82]  ╭ VulnerabilityID : CVE-2024-39894 
+│                        │       ╰ LastModifiedDate: 2024-09-11T16:15:06.003Z 
+│                        ├ [88]  ╭ VulnerabilityID : CVE-2024-39894 
 │                        │       ├ PkgID           : openssh-sftp-server@1:9.6p1-3ubuntu13.3 
 │                        │       ├ PkgName         : openssh-sftp-server 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.6p1-3ubuntu13.
@@ -4702,19 +5216,22 @@
 │                        │       │                  ├ [3] : http://www.openwall.com/lists/oss-security/2024/07/
 │                        │       │                  │       28/3 
 │                        │       │                  ├ [4] : https://access.redhat.com/security/cve/CVE-2024-39894 
-│                        │       │                  ├ [5] : https://lists.mindrot.org/pipermail/openssh-unix-an
+│                        │       │                  ├ [5] : https://crzphil.github.io/posts/ssh-obfuscation-byp
+│                        │       │                  │       ass/ 
+│                        │       │                  ├ [6] : https://lists.mindrot.org/pipermail/openssh-unix-an
 │                        │       │                  │       nounce/2024-July/000158.html 
-│                        │       │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
-│                        │       │                  ├ [7] : https://security.netapp.com/advisory/ntap-20240712-
+│                        │       │                  ├ [7] : https://news.ycombinator.com/item?id=41508530 
+│                        │       │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-39894 
+│                        │       │                  ├ [9] : https://security.netapp.com/advisory/ntap-20240712-
 │                        │       │                  │       0004/ 
-│                        │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-6887-1 
-│                        │       │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2024-39894 
-│                        │       │                  ├ [10]: https://www.openssh.com/txt/release-9.8 
-│                        │       │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2024/07
+│                        │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-6887-1 
+│                        │       │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2024-39894 
+│                        │       │                  ├ [12]: https://www.openssh.com/txt/release-9.8 
+│                        │       │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2024/07
 │                        │       │                          /02/1 
 │                        │       ├ PublishedDate   : 2024-07-02T18:15:03.71Z 
-│                        │       ╰ LastModifiedDate: 2024-07-28T21:15:10.38Z 
-│                        ├ [83]  ╭ VulnerabilityID : CVE-2024-41996 
+│                        │       ╰ LastModifiedDate: 2024-09-11T16:15:06.003Z 
+│                        ├ [89]  ╭ VulnerabilityID : CVE-2024-41996 
 │                        │       ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : openssl 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64
@@ -4763,7 +5280,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                        │       ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                        │       ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                        ├ [84]  ╭ VulnerabilityID : CVE-2024-6119 
+│                        ├ [90]  ╭ VulnerabilityID : CVE-2024-6119 
 │                        │       ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : openssl 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64
@@ -4824,7 +5341,8 @@
 │                        │       │                    by this issue. 
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-843 
-│                        │       ├ VendorSeverity   ╭ redhat: 2 
+│                        │       ├ VendorSeverity   ╭ photon: 3 
+│                        │       │                  ├ redhat: 2 
 │                        │       │                  ╰ ubuntu: 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
 │                        │       │                           │           :N/A:H 
@@ -4846,7 +5364,7 @@
 │                        │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
 │                        │       ├ PublishedDate   : 2024-09-03T16:15:07.177Z 
 │                        │       ╰ LastModifiedDate: 2024-09-03T21:35:12.987Z 
-│                        ├ [85]  ╭ VulnerabilityID : CVE-2024-2511 
+│                        ├ [91]  ╭ VulnerabilityID : CVE-2024-2511 
 │                        │       ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : openssl 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64
@@ -4927,7 +5445,7 @@
 │                        │       │                  ╰ [11]: https://www.openssl.org/news/vulnerabilities.html 
 │                        │       ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
 │                        │       ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-│                        ├ [86]  ╭ VulnerabilityID : CVE-2024-4603 
+│                        ├ [92]  ╭ VulnerabilityID : CVE-2024-4603 
 │                        │       ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : openssl 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64
@@ -5024,7 +5542,7 @@
 │                        │       │                  ╰ [10]: https://www.openssl.org/news/secadv/20240516.txt 
 │                        │       ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
 │                        │       ╰ LastModifiedDate: 2024-08-13T16:35:05.013Z 
-│                        ├ [87]  ╭ VulnerabilityID : CVE-2024-4741 
+│                        ├ [93]  ╭ VulnerabilityID : CVE-2024-4741 
 │                        │       ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : openssl 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64
@@ -5061,7 +5579,7 @@
 │                        │                          ├ [2]: https://ubuntu.com/security/notices/USN-6937-1 
 │                        │                          ├ [3]: https://www.cve.org/CVERecord?id=CVE-2024-4741 
 │                        │                          ╰ [4]: https://www.openssl.org/news/secadv/20240528.txt 
-│                        ├ [88]  ╭ VulnerabilityID : CVE-2024-5535 
+│                        ├ [94]  ╭ VulnerabilityID : CVE-2024-5535 
 │                        │       ├ PkgID           : openssl@3.0.13-0ubuntu3.1 
 │                        │       ├ PkgName         : openssl 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.0.13-0ubuntu3.1?arch=amd64
@@ -5227,7 +5745,7 @@
 │                        │       │                  ╰ [14]: https://www.openssl.org/news/secadv/20240627.txt 
 │                        │       ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
 │                        │       ╰ LastModifiedDate: 2024-07-12T14:15:16.79Z 
-│                        ├ [89]  ╭ VulnerabilityID : CVE-2018-6952 
+│                        ├ [95]  ╭ VulnerabilityID : CVE-2018-6952 
 │                        │       ├ PkgID           : patch@2.7.6-7build3 
 │                        │       ├ PkgName         : patch 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distr
@@ -5277,7 +5795,7 @@
 │                        │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                        │       ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                        │       ╰ LastModifiedDate: 2019-04-17T20:29:01.727Z 
-│                        ├ [90]  ╭ VulnerabilityID : CVE-2021-45261 
+│                        ├ [96]  ╭ VulnerabilityID : CVE-2021-45261 
 │                        │       ├ PkgID           : patch@2.7.6-7build3 
 │                        │       ├ PkgName         : patch 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distr
@@ -5317,7 +5835,136 @@
 │                        │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                        │       ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                        │       ╰ LastModifiedDate: 2021-12-28T14:24:34.243Z 
-│                        ├ [91]  ╭ VulnerabilityID : CVE-2024-4032 
+│                        ├ [97]  ╭ VulnerabilityID : CVE-2023-27043 
+│                        │       ├ PkgID           : python3.12@3.12.3-1 
+│                        │       ├ PkgName         : python3.12 
+│                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.3-1?arch=amd64&distr
+│                        │       │                  │       o=ubuntu-24.04 
+│                        │       │                  ╰ UID : b19cff70bc508fba 
+│                        │       ├ InstalledVersion: 3.12.3-1 
+│                        │       ├ Status          : affected 
+│                        │       ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc32
+│                        │       │                  │         6421ea318f623cca695957 
+│                        │       │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc
+│                        │       │                            9e855b8886008bcbee3664 
+│                        │       ├ SeveritySource  : ubuntu 
+│                        │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-27043 
+│                        │       ├ DataSource       ╭ ID  : ubuntu 
+│                        │       │                  ├ Name: Ubuntu CVE Tracker 
+│                        │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │       ├ Title           : python: Parsing errors in email/_parseaddr.py lead to
+│                        │       │                   incorrect value in email address part of tuple 
+│                        │       ├ Description     : The email module of Python through 3.11.3 incorrectly
+│                        │       │                   parses e-mail addresses that contain a special character.
+│                        │       │                   The wrong portion of an RFC2822 header is identified as
+│                        │       │                   the value of the addr-spec. In some applications, an
+│                        │       │                   attacker can bypass a protection mechanism in which
+│                        │       │                   application access is granted only after verifying receipt
+│                        │       │                    of e-mail to a specific domain (e.g., only
+│                        │       │                   @company.example.com addresses may be used for signup).
+│                        │       │                   This occurs in email/_parseaddr.py in recent versions of
+│                        │       │                   Python. 
+│                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs           ─ [0]: CWE-20 
+│                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ bitnami    : 2 
+│                        │       │                  ├ nvd        : 2 
+│                        │       │                  ├ oracle-oval: 2 
+│                        │       │                  ├ photon     : 2 
+│                        │       │                  ├ redhat     : 2 
+│                        │       │                  ├ rocky      : 2 
+│                        │       │                  ╰ ubuntu     : 2 
+│                        │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                  │         │           I:L/A:N 
+│                        │       │                  │         ╰ V3Score : 5.3 
+│                        │       │                  ├ nvd     ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                  │         │           I:L/A:N 
+│                        │       │                  │         ╰ V3Score : 5.3 
+│                        │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                            │           I:L/A:N 
+│                        │       │                            ╰ V3Score : 5.3 
+│                        │       ├ References       ╭ [0] : http://python.org 
+│                        │       │                  ├ [1] : https://access.redhat.com/articles/7051467 
+│                        │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:2292 
+│                        │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2023-27043 
+│                        │       │                  ├ [4] : https://bugzilla.redhat.com/2196183 
+│                        │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2196183 
+│                        │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-
+│                        │       │                  │       2023-27043 
+│                        │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2024-2292.html 
+│                        │       │                  ├ [8] : https://errata.rockylinux.org/RLSA-2024:0256 
+│                        │       │                  ├ [9] : https://github.com/python/cpython/issues/102988 
+│                        │       │                  ├ [10]: https://github.com/python/cpython/pull/102990 
+│                        │       │                  ├ [11]: https://github.com/python/cpython/pull/105127 
+│                        │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2023-27043.html 
+│                        │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-3062.html 
+│                        │       │                  ├ [14]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/4ZAEF
+│                        │       │                  │       SFZDNBNJPNOUTLG5COISGQDLMGV/ 
+│                        │       │                  ├ [15]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/75DTH
+│                        │       │                  │       STNOFFNAWHXKMDXS7EJWC6W2FUC/ 
+│                        │       │                  ├ [16]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/ARI7V
+│                        │       │                  │       DSNTQVXRQFM6IK5GSSLEIYV4VZH/ 
+│                        │       │                  ├ [17]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/BQAKL
+│                        │       │                  │       UJMHFGVBRDPEY57BJGNCE5UUPHW/ 
+│                        │       │                  ├ [18]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/HXYVP
+│                        │       │                  │       EZUA3465AEFX5JVFVP7KIFZMF3N/ 
+│                        │       │                  ├ [19]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/N6M5I
+│                        │       │                  │       6OQHJABNEYY555HUMMKX3Y4P25Z/ 
+│                        │       │                  ├ [20]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/NEUNZ
+│                        │       │                  │       SZ3CVSM2QWVYH3N2XGOCDWNYUA3/ 
+│                        │       │                  ├ [21]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/ORLXS
+│                        │       │                  │       5YTKN65E2Q2NWKXMFS5FWQHRNZW/ 
+│                        │       │                  ├ [22]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/P2MAI
+│                        │       │                  │       CLFDDO3QVNHTZ2OCERZQ34R2PIC/ 
+│                        │       │                  ├ [23]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/P2W2B
+│                        │       │                  │       ZQIHMCKRI5FNBJERFYMS5PK6TAH/ 
+│                        │       │                  ├ [24]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/PHVGR
+│                        │       │                  │       KQAGANCSGFI3QMYOCIMS4IFOZA5/ 
+│                        │       │                  ├ [25]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/PU6Y2
+│                        │       │                  │       S5CBN5BWCBDAJFTGIBZLK3S2G3J/ 
+│                        │       │                  ├ [26]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/QDRDD
+│                        │       │                  │       PDN3VFIYXJIYEABY6USX5EU66AG/ 
+│                        │       │                  ├ [27]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/RDDC2
+│                        │       │                  │       VOX7OQC6OHMYTVD4HLFZIV6PYBC/ 
+│                        │       │                  ├ [28]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/SINP4
+│                        │       │                  │       OVYNB2AGDYI2GS37EMW3H3F7XPZ/ 
+│                        │       │                  ├ [29]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/SOX7B
+│                        │       │                  │       CN6YL7B3RFPEEXPIU5CMTEHJOKR/ 
+│                        │       │                  ├ [30]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/VZXC3
+│                        │       │                  │       2CJ7TWDPJO6GY2XIQRO7JZX5FLP/ 
+│                        │       │                  ├ [31]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/XWMBD
+│                        │       │                  │       4LNHWEXRI6YVFWJMTJQUL5WOFTS/ 
+│                        │       │                  ├ [32]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/YQVY5
+│                        │       │                  │       C5REXWJIORJIL2FIL3ALOEJEF72/ 
+│                        │       │                  ├ [33]: https://nvd.nist.gov/vuln/detail/CVE-2023-27043 
+│                        │       │                  ├ [34]: https://python-security.readthedocs.io/vuln/email-p
+│                        │       │                  │       arseaddr-realname.html 
+│                        │       │                  ├ [35]: https://security.netapp.com/advisory/ntap-20230601-
+│                        │       │                  │       0003/ 
+│                        │       │                  ╰ [36]: https://www.cve.org/CVERecord?id=CVE-2023-27043 
+│                        │       ├ PublishedDate   : 2023-04-19T00:15:07.973Z 
+│                        │       ╰ LastModifiedDate: 2024-02-26T16:27:45.78Z 
+│                        ├ [98]  ╭ VulnerabilityID : CVE-2024-4032 
 │                        │       ├ PkgID           : python3.12@3.12.3-1 
 │                        │       ├ PkgName         : python3.12 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.3-1?arch=amd64&distr
@@ -5402,7 +6049,136 @@
 │                        │       │                          registry/iana-ipv6-special-registry.xhtml 
 │                        │       ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │       ╰ LastModifiedDate: 2024-08-29T21:35:11.017Z 
-│                        ├ [92]  ╭ VulnerabilityID : CVE-2024-4032 
+│                        ├ [99]  ╭ VulnerabilityID : CVE-2023-27043 
+│                        │       ├ PkgID           : python3.12-minimal@3.12.3-1 
+│                        │       ├ PkgName         : python3.12-minimal 
+│                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.3-1?arch=amd
+│                        │       │                  │       64&distro=ubuntu-24.04 
+│                        │       │                  ╰ UID : 143ad74ca61b739c 
+│                        │       ├ InstalledVersion: 3.12.3-1 
+│                        │       ├ Status          : affected 
+│                        │       ├ Layer            ╭ Digest: sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc32
+│                        │       │                  │         6421ea318f623cca695957 
+│                        │       │                  ╰ DiffID: sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc
+│                        │       │                            9e855b8886008bcbee3664 
+│                        │       ├ SeveritySource  : ubuntu 
+│                        │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-27043 
+│                        │       ├ DataSource       ╭ ID  : ubuntu 
+│                        │       │                  ├ Name: Ubuntu CVE Tracker 
+│                        │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │       ├ Title           : python: Parsing errors in email/_parseaddr.py lead to
+│                        │       │                   incorrect value in email address part of tuple 
+│                        │       ├ Description     : The email module of Python through 3.11.3 incorrectly
+│                        │       │                   parses e-mail addresses that contain a special character.
+│                        │       │                   The wrong portion of an RFC2822 header is identified as
+│                        │       │                   the value of the addr-spec. In some applications, an
+│                        │       │                   attacker can bypass a protection mechanism in which
+│                        │       │                   application access is granted only after verifying receipt
+│                        │       │                    of e-mail to a specific domain (e.g., only
+│                        │       │                   @company.example.com addresses may be used for signup).
+│                        │       │                   This occurs in email/_parseaddr.py in recent versions of
+│                        │       │                   Python. 
+│                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs           ─ [0]: CWE-20 
+│                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ bitnami    : 2 
+│                        │       │                  ├ nvd        : 2 
+│                        │       │                  ├ oracle-oval: 2 
+│                        │       │                  ├ photon     : 2 
+│                        │       │                  ├ redhat     : 2 
+│                        │       │                  ├ rocky      : 2 
+│                        │       │                  ╰ ubuntu     : 2 
+│                        │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                  │         │           I:L/A:N 
+│                        │       │                  │         ╰ V3Score : 5.3 
+│                        │       │                  ├ nvd     ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                  │         │           I:L/A:N 
+│                        │       │                  │         ╰ V3Score : 5.3 
+│                        │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                            │           I:L/A:N 
+│                        │       │                            ╰ V3Score : 5.3 
+│                        │       ├ References       ╭ [0] : http://python.org 
+│                        │       │                  ├ [1] : https://access.redhat.com/articles/7051467 
+│                        │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:2292 
+│                        │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2023-27043 
+│                        │       │                  ├ [4] : https://bugzilla.redhat.com/2196183 
+│                        │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2196183 
+│                        │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-
+│                        │       │                  │       2023-27043 
+│                        │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2024-2292.html 
+│                        │       │                  ├ [8] : https://errata.rockylinux.org/RLSA-2024:0256 
+│                        │       │                  ├ [9] : https://github.com/python/cpython/issues/102988 
+│                        │       │                  ├ [10]: https://github.com/python/cpython/pull/102990 
+│                        │       │                  ├ [11]: https://github.com/python/cpython/pull/105127 
+│                        │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2023-27043.html 
+│                        │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-3062.html 
+│                        │       │                  ├ [14]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/4ZAEF
+│                        │       │                  │       SFZDNBNJPNOUTLG5COISGQDLMGV/ 
+│                        │       │                  ├ [15]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/75DTH
+│                        │       │                  │       STNOFFNAWHXKMDXS7EJWC6W2FUC/ 
+│                        │       │                  ├ [16]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/ARI7V
+│                        │       │                  │       DSNTQVXRQFM6IK5GSSLEIYV4VZH/ 
+│                        │       │                  ├ [17]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/BQAKL
+│                        │       │                  │       UJMHFGVBRDPEY57BJGNCE5UUPHW/ 
+│                        │       │                  ├ [18]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/HXYVP
+│                        │       │                  │       EZUA3465AEFX5JVFVP7KIFZMF3N/ 
+│                        │       │                  ├ [19]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/N6M5I
+│                        │       │                  │       6OQHJABNEYY555HUMMKX3Y4P25Z/ 
+│                        │       │                  ├ [20]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/NEUNZ
+│                        │       │                  │       SZ3CVSM2QWVYH3N2XGOCDWNYUA3/ 
+│                        │       │                  ├ [21]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/ORLXS
+│                        │       │                  │       5YTKN65E2Q2NWKXMFS5FWQHRNZW/ 
+│                        │       │                  ├ [22]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/P2MAI
+│                        │       │                  │       CLFDDO3QVNHTZ2OCERZQ34R2PIC/ 
+│                        │       │                  ├ [23]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/P2W2B
+│                        │       │                  │       ZQIHMCKRI5FNBJERFYMS5PK6TAH/ 
+│                        │       │                  ├ [24]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/PHVGR
+│                        │       │                  │       KQAGANCSGFI3QMYOCIMS4IFOZA5/ 
+│                        │       │                  ├ [25]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/PU6Y2
+│                        │       │                  │       S5CBN5BWCBDAJFTGIBZLK3S2G3J/ 
+│                        │       │                  ├ [26]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/QDRDD
+│                        │       │                  │       PDN3VFIYXJIYEABY6USX5EU66AG/ 
+│                        │       │                  ├ [27]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/RDDC2
+│                        │       │                  │       VOX7OQC6OHMYTVD4HLFZIV6PYBC/ 
+│                        │       │                  ├ [28]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/SINP4
+│                        │       │                  │       OVYNB2AGDYI2GS37EMW3H3F7XPZ/ 
+│                        │       │                  ├ [29]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/SOX7B
+│                        │       │                  │       CN6YL7B3RFPEEXPIU5CMTEHJOKR/ 
+│                        │       │                  ├ [30]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/VZXC3
+│                        │       │                  │       2CJ7TWDPJO6GY2XIQRO7JZX5FLP/ 
+│                        │       │                  ├ [31]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/XWMBD
+│                        │       │                  │       4LNHWEXRI6YVFWJMTJQUL5WOFTS/ 
+│                        │       │                  ├ [32]: https://lists.fedoraproject.org/archives/list/packa
+│                        │       │                  │       ge-announce%40lists.fedoraproject.org/message/YQVY5
+│                        │       │                  │       C5REXWJIORJIL2FIL3ALOEJEF72/ 
+│                        │       │                  ├ [33]: https://nvd.nist.gov/vuln/detail/CVE-2023-27043 
+│                        │       │                  ├ [34]: https://python-security.readthedocs.io/vuln/email-p
+│                        │       │                  │       arseaddr-realname.html 
+│                        │       │                  ├ [35]: https://security.netapp.com/advisory/ntap-20230601-
+│                        │       │                  │       0003/ 
+│                        │       │                  ╰ [36]: https://www.cve.org/CVERecord?id=CVE-2023-27043 
+│                        │       ├ PublishedDate   : 2023-04-19T00:15:07.973Z 
+│                        │       ╰ LastModifiedDate: 2024-02-26T16:27:45.78Z 
+│                        ├ [100] ╭ VulnerabilityID : CVE-2024-4032 
 │                        │       ├ PkgID           : python3.12-minimal@3.12.3-1 
 │                        │       ├ PkgName         : python3.12-minimal 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.3-1?arch=amd
@@ -5487,7 +6263,7 @@
 │                        │       │                          registry/iana-ipv6-special-registry.xhtml 
 │                        │       ├ PublishedDate   : 2024-06-17T15:15:52.517Z 
 │                        │       ╰ LastModifiedDate: 2024-08-29T21:35:11.017Z 
-│                        ├ [93]  ╭ VulnerabilityID : CVE-2021-4217 
+│                        ├ [101] ╭ VulnerabilityID : CVE-2021-4217 
 │                        │       ├ PkgID           : unzip@6.0-28ubuntu4 
 │                        │       ├ PkgName         : unzip 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/unzip@6.0-28ubuntu4?arch=amd64&distr
@@ -5533,7 +6309,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-4217 
 │                        │       ├ PublishedDate   : 2022-08-24T16:15:10.09Z 
 │                        │       ╰ LastModifiedDate: 2022-11-29T15:45:16.2Z 
-│                        ├ [94]  ╭ VulnerabilityID : CVE-2024-41957 
+│                        ├ [102] ╭ VulnerabilityID : CVE-2024-41957 
 │                        │       ├ PkgID           : vim@2:9.1.0016-1ubuntu7.1 
 │                        │       ├ PkgName         : vim 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0016-1ubuntu7.1?arch=amd64&d
@@ -5588,7 +6364,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-41957 
 │                        │       ├ PublishedDate   : 2024-08-01T22:15:29.367Z 
 │                        │       ╰ LastModifiedDate: 2024-08-09T14:14:01.19Z 
-│                        ├ [95]  ╭ VulnerabilityID : CVE-2024-43374 
+│                        ├ [103] ╭ VulnerabilityID : CVE-2024-43374 
 │                        │       ├ PkgID           : vim@2:9.1.0016-1ubuntu7.1 
 │                        │       ├ PkgName         : vim 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0016-1ubuntu7.1?arch=amd64&d
@@ -5646,7 +6422,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-43374 
 │                        │       ├ PublishedDate   : 2024-08-16T02:15:17.687Z 
 │                        │       ╰ LastModifiedDate: 2024-08-19T13:00:23.117Z 
-│                        ├ [96]  ╭ VulnerabilityID : CVE-2024-41957 
+│                        ├ [104] ╭ VulnerabilityID : CVE-2024-41957 
 │                        │       ├ PkgID           : vim-common@2:9.1.0016-1ubuntu7.1 
 │                        │       ├ PkgName         : vim-common 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0016-1ubuntu7.1?arch=
@@ -5701,7 +6477,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-41957 
 │                        │       ├ PublishedDate   : 2024-08-01T22:15:29.367Z 
 │                        │       ╰ LastModifiedDate: 2024-08-09T14:14:01.19Z 
-│                        ├ [97]  ╭ VulnerabilityID : CVE-2024-43374 
+│                        ├ [105] ╭ VulnerabilityID : CVE-2024-43374 
 │                        │       ├ PkgID           : vim-common@2:9.1.0016-1ubuntu7.1 
 │                        │       ├ PkgName         : vim-common 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0016-1ubuntu7.1?arch=
@@ -5759,7 +6535,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-43374 
 │                        │       ├ PublishedDate   : 2024-08-16T02:15:17.687Z 
 │                        │       ╰ LastModifiedDate: 2024-08-19T13:00:23.117Z 
-│                        ├ [98]  ╭ VulnerabilityID : CVE-2024-41957 
+│                        ├ [106] ╭ VulnerabilityID : CVE-2024-41957 
 │                        │       ├ PkgID           : vim-runtime@2:9.1.0016-1ubuntu7.1 
 │                        │       ├ PkgName         : vim-runtime 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0016-1ubuntu7.1?arch
@@ -5814,7 +6590,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-41957 
 │                        │       ├ PublishedDate   : 2024-08-01T22:15:29.367Z 
 │                        │       ╰ LastModifiedDate: 2024-08-09T14:14:01.19Z 
-│                        ├ [99]  ╭ VulnerabilityID : CVE-2024-43374 
+│                        ├ [107] ╭ VulnerabilityID : CVE-2024-43374 
 │                        │       ├ PkgID           : vim-runtime@2:9.1.0016-1ubuntu7.1 
 │                        │       ├ PkgName         : vim-runtime 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0016-1ubuntu7.1?arch
@@ -5872,7 +6648,7 @@
 │                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-43374 
 │                        │       ├ PublishedDate   : 2024-08-16T02:15:17.687Z 
 │                        │       ╰ LastModifiedDate: 2024-08-19T13:00:23.117Z 
-│                        ├ [100] ╭ VulnerabilityID : CVE-2021-31879 
+│                        ├ [108] ╭ VulnerabilityID : CVE-2021-31879 
 │                        │       ├ PkgID           : wget@1.21.4-1ubuntu4.1 
 │                        │       ├ PkgName         : wget 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.21.4-1ubuntu4.1?arch=amd64&di
@@ -5919,7 +6695,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
 │                        │       ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                        │       ╰ LastModifiedDate: 2022-05-13T20:52:24.793Z 
-│                        ├ [101] ╭ VulnerabilityID : CVE-2024-41957 
+│                        ├ [109] ╭ VulnerabilityID : CVE-2024-41957 
 │                        │       ├ PkgID           : xxd@2:9.1.0016-1ubuntu7.1 
 │                        │       ├ PkgName         : xxd 
 │                        │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0016-1ubuntu7.1?arch=amd64&d
@@ -5974,7 +6750,7 @@
 │                        │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-41957 
 │                        │       ├ PublishedDate   : 2024-08-01T22:15:29.367Z 
 │                        │       ╰ LastModifiedDate: 2024-08-09T14:14:01.19Z 
-│                        ╰ [102] ╭ VulnerabilityID : CVE-2024-43374 
+│                        ╰ [110] ╭ VulnerabilityID : CVE-2024-43374 
 │                                ├ PkgID           : xxd@2:9.1.0016-1ubuntu7.1 
 │                                ├ PkgName         : xxd 
 │                                ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0016-1ubuntu7.1?arch=amd64&d
@@ -6521,7 +7297,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -7969,7 +8745,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -8123,7 +8899,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -9164,7 +9940,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -10612,7 +11388,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -10766,7 +11542,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
