@@ -2751,7 +2751,7 @@
 │                        │       │                   SIZE_MAX). 
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-190 
-│                        │       ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                        │       ├ VendorSeverity   ╭ cbl-mariner: 4 
 │                        │       │                  ├ nvd        : 4 
 │                        │       │                  ├ photon     : 4 
 │                        │       │                  ├ redhat     : 2 
@@ -5039,7 +5039,7 @@
 │                        │       ├ Severity        : LOW 
 │                        │       ├ CweIDs           ─ [0]: CWE-200 
 │                        │       ├ VendorSeverity   ╭ amazon     : 2 
-│                        │       │                  ├ azure      : 2 
+│                        │       │                  ├ azure      : 4 
 │                        │       │                  ├ cbl-mariner: 4 
 │                        │       │                  ├ photon     : 4 
 │                        │       │                  ├ redhat     : 1 
@@ -5721,7 +5721,7 @@
 │                        │       ├ Severity        : LOW 
 │                        │       ├ CweIDs           ─ [0]: CWE-200 
 │                        │       ├ VendorSeverity   ╭ amazon     : 2 
-│                        │       │                  ├ azure      : 2 
+│                        │       │                  ├ azure      : 4 
 │                        │       │                  ├ cbl-mariner: 4 
 │                        │       │                  ├ photon     : 4 
 │                        │       │                  ├ redhat     : 1 
@@ -9243,7 +9243,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 2 
+│                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -11886,7 +11886,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 2 
+│                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
