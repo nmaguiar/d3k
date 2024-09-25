@@ -2827,7 +2827,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-190 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
-│                        │       │                  ├ cbl-mariner: 4 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ nvd        : 4 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 4 
@@ -10830,7 +10830,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -13485,7 +13485,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
