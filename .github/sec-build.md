@@ -2626,7 +2626,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -3880,7 +3880,8 @@
 │                        │      │                   nested structures can cause a panic due to stack
 │                        │      │                   exhaustion. This is a follow-up to CVE-2022-30635. 
 │                        │      ├ Severity        : HIGH 
-│                        │      ├ VendorSeverity   ╭ bitnami    : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ╰ redhat     : 3 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -3889,15 +3890,18 @@
 │                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │      │                            │           :N/A:H 
 │                        │      │                            ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34156 
-│                        │      │                  ├ [1]: https://go.dev/cl/611239 
-│                        │      │                  ├ [2]: https://go.dev/issue/69139 
-│                        │      │                  ├ [3]: https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-34156.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6947.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-34156 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3106 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-34156 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6947 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34156 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2310528 
+│                        │      │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2024-6947.html 
+│                        │      │                  ├ [4] : https://go.dev/cl/611239 
+│                        │      │                  ├ [5] : https://go.dev/issue/69139 
+│                        │      │                  ├ [6] : https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
+│                        │      │                  ├ [7] : https://linux.oracle.com/cve/CVE-2024-34156.html 
+│                        │      │                  ├ [8] : https://linux.oracle.com/errata/ELSA-2024-6947.html 
+│                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-34156 
+│                        │      │                  ├ [10]: https://pkg.go.dev/vuln/GO-2024-3106 
+│                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-34156 
 │                        │      ├ PublishedDate   : 2024-09-06T21:15:12.02Z 
 │                        │      ╰ LastModifiedDate: 2024-09-09T15:35:07.573Z 
 │                        ├ [9]  ╭ VulnerabilityID : CVE-2023-29406 
@@ -4077,7 +4081,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4151,7 +4155,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4425,7 +4429,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ cbl-mariner: 2 
-│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ├ rocky      : 2 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -4452,7 +4456,7 @@
 │                        │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2023-45290.html 
-│                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-5258.html 
+│                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-6969.html 
 │                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2023-45290 
 │                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2024-2599 
 │                        │      │                  ├ [18]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -4528,7 +4532,7 @@
 │                        │      │                  ├ [20]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [21]: https://linux.oracle.com/cve/CVE-2024-24783.html 
-│                        │      │                  ├ [22]: https://linux.oracle.com/errata/ELSA-2024-6195.html 
+│                        │      │                  ├ [22]: https://linux.oracle.com/errata/ELSA-2024-6969.html 
 │                        │      │                  ├ [23]: https://nvd.nist.gov/vuln/detail/CVE-2024-24783 
 │                        │      │                  ├ [24]: https://pkg.go.dev/vuln/GO-2024-2598 
 │                        │      │                  ├ [25]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -4565,8 +4569,8 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 2 
-│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ├ rocky      : 3 
@@ -4621,7 +4625,7 @@
 │                        │      │                  ├ [31]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [32]: https://linux.oracle.com/cve/CVE-2024-24784.html 
-│                        │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2024-5258.html 
+│                        │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2024-6969.html 
 │                        │      │                  ├ [34]: https://nvd.nist.gov/vuln/detail/CVE-2024-24784 
 │                        │      │                  ├ [35]: https://pkg.go.dev/vuln/GO-2024-2609 
 │                        │      │                  ├ [36]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -4828,10 +4832,11 @@
 │                        │      │                   causes one subsequent request using that connection to fail
 │                        │      │                   . 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ╰ redhat     : 2 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -4840,16 +4845,22 @@
 │                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
 │                        │      │                            │           :N/A:H 
 │                        │      │                            ╰ V3Score : 5.9 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-24791 
-│                        │      │                  ├ [1]: https://go.dev/cl/591255 
-│                        │      │                  ├ [2]: https://go.dev/issue/67555 
-│                        │      │                  ├ [3]: https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/
-│                        │      │                  │      m/6MMoAZkMAgAJ 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-24791.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-24791 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-2963 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6913 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-24791 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2295310 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2310527 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2310528 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2310529 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2024-6913.html 
+│                        │      │                  ├ [7] : https://go.dev/cl/591255 
+│                        │      │                  ├ [8] : https://go.dev/issue/67555 
+│                        │      │                  ├ [9] : https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY
+│                        │      │                  │       /m/6MMoAZkMAgAJ 
+│                        │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-24791.html 
+│                        │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2024-6969.html 
+│                        │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-24791 
+│                        │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2024-2963 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
 │                        │      ├ PublishedDate   : 2024-07-02T22:15:04.833Z 
 │                        │      ╰ LastModifiedDate: 2024-07-08T14:17:39.083Z 
 │                        ├ [22] ╭ VulnerabilityID : CVE-2024-34155 
@@ -4874,20 +4885,27 @@
 │                        │      │                   contains deeply nested literals can cause a panic due to
 │                        │      │                   stack exhaustion. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ oracle-oval: 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ╰ redhat     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 5.9 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34155 
-│                        │      │                  ├ [1]: https://go.dev/cl/611238 
-│                        │      │                  ├ [2]: https://go.dev/issue/69138 
-│                        │      │                  ├ [3]: https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-34155.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-34155 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3105 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-34155 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6913 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34155 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2295310 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2310527 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2310528 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2310529 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2024-6913.html 
+│                        │      │                  ├ [7] : https://go.dev/cl/611238 
+│                        │      │                  ├ [8] : https://go.dev/issue/69138 
+│                        │      │                  ├ [9] : https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
+│                        │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-34155.html 
+│                        │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
+│                        │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-34155 
+│                        │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2024-3105 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-34155 
 │                        │      ├ PublishedDate   : 2024-09-06T21:15:11.947Z 
 │                        │      ╰ LastModifiedDate: 2024-09-09T13:03:38.303Z 
 │                        ╰ [23] ╭ VulnerabilityID : CVE-2024-34158 
@@ -4913,7 +4931,8 @@
 │                               │                   exhaustion. 
 │                               ├ Severity        : MEDIUM 
 │                               ├ CweIDs           ─ [0]: CWE-674 
-│                               ├ VendorSeverity   ╭ bitnami    : 3 
+│                               ├ VendorSeverity   ╭ alma       : 3 
+│                               │                  ├ bitnami    : 3 
 │                               │                  ├ oracle-oval: 3 
 │                               │                  ╰ redhat     : 2 
 │                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -4922,15 +4941,21 @@
 │                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
 │                               │                            │           :N/A:H 
 │                               │                            ╰ V3Score : 5.9 
-│                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34158 
-│                               │                  ├ [1]: https://go.dev/cl/611240 
-│                               │                  ├ [2]: https://go.dev/issue/69141 
-│                               │                  ├ [3]: https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
-│                               │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-34158.html 
-│                               │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
-│                               │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-34158 
-│                               │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3107 
-│                               │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
+│                               ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6913 
+│                               │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34158 
+│                               │                  ├ [2] : https://bugzilla.redhat.com/2295310 
+│                               │                  ├ [3] : https://bugzilla.redhat.com/2310527 
+│                               │                  ├ [4] : https://bugzilla.redhat.com/2310528 
+│                               │                  ├ [5] : https://bugzilla.redhat.com/2310529 
+│                               │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2024-6913.html 
+│                               │                  ├ [7] : https://go.dev/cl/611240 
+│                               │                  ├ [8] : https://go.dev/issue/69141 
+│                               │                  ├ [9] : https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
+│                               │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-34158.html 
+│                               │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
+│                               │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-34158 
+│                               │                  ├ [13]: https://pkg.go.dev/vuln/GO-2024-3107 
+│                               │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
 │                               ├ PublishedDate   : 2024-09-06T21:15:12.083Z 
 │                               ╰ LastModifiedDate: 2024-09-09T14:35:01.17Z 
 ├ [3]  ╭ Target         : tmp/tmp.tQGuLjDtXR/krew-linux_amd64 
@@ -5281,7 +5306,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -6535,7 +6560,8 @@
 │                        │      │                   nested structures can cause a panic due to stack
 │                        │      │                   exhaustion. This is a follow-up to CVE-2022-30635. 
 │                        │      ├ Severity        : HIGH 
-│                        │      ├ VendorSeverity   ╭ bitnami    : 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ╰ redhat     : 3 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -6544,15 +6570,18 @@
 │                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │      │                            │           :N/A:H 
 │                        │      │                            ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34156 
-│                        │      │                  ├ [1]: https://go.dev/cl/611239 
-│                        │      │                  ├ [2]: https://go.dev/issue/69139 
-│                        │      │                  ├ [3]: https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-34156.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6947.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-34156 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3106 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-34156 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6947 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34156 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2310528 
+│                        │      │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2024-6947.html 
+│                        │      │                  ├ [4] : https://go.dev/cl/611239 
+│                        │      │                  ├ [5] : https://go.dev/issue/69139 
+│                        │      │                  ├ [6] : https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
+│                        │      │                  ├ [7] : https://linux.oracle.com/cve/CVE-2024-34156.html 
+│                        │      │                  ├ [8] : https://linux.oracle.com/errata/ELSA-2024-6947.html 
+│                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-34156 
+│                        │      │                  ├ [10]: https://pkg.go.dev/vuln/GO-2024-3106 
+│                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-34156 
 │                        │      ├ PublishedDate   : 2024-09-06T21:15:12.02Z 
 │                        │      ╰ LastModifiedDate: 2024-09-09T15:35:07.573Z 
 │                        ├ [9]  ╭ VulnerabilityID : CVE-2023-29406 
@@ -6732,7 +6761,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -6806,7 +6835,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7080,7 +7109,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ cbl-mariner: 2 
-│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ├ rocky      : 2 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -7107,7 +7136,7 @@
 │                        │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2023-45290.html 
-│                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-5258.html 
+│                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-6969.html 
 │                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2023-45290 
 │                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2024-2599 
 │                        │      │                  ├ [18]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -7183,7 +7212,7 @@
 │                        │      │                  ├ [20]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [21]: https://linux.oracle.com/cve/CVE-2024-24783.html 
-│                        │      │                  ├ [22]: https://linux.oracle.com/errata/ELSA-2024-6195.html 
+│                        │      │                  ├ [22]: https://linux.oracle.com/errata/ELSA-2024-6969.html 
 │                        │      │                  ├ [23]: https://nvd.nist.gov/vuln/detail/CVE-2024-24783 
 │                        │      │                  ├ [24]: https://pkg.go.dev/vuln/GO-2024-2598 
 │                        │      │                  ├ [25]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -7220,8 +7249,8 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 2 
-│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ├ rocky      : 3 
@@ -7276,7 +7305,7 @@
 │                        │      │                  ├ [31]: https://groups.google.com/g/golang-announce/c/5pwGVU
 │                        │      │                  │       PoMbg 
 │                        │      │                  ├ [32]: https://linux.oracle.com/cve/CVE-2024-24784.html 
-│                        │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2024-5258.html 
+│                        │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2024-6969.html 
 │                        │      │                  ├ [34]: https://nvd.nist.gov/vuln/detail/CVE-2024-24784 
 │                        │      │                  ├ [35]: https://pkg.go.dev/vuln/GO-2024-2609 
 │                        │      │                  ├ [36]: https://security.netapp.com/advisory/ntap-20240329-0
@@ -7483,10 +7512,11 @@
 │                        │      │                   causes one subsequent request using that connection to fail
 │                        │      │                   . 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ╰ redhat     : 2 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -7495,16 +7525,22 @@
 │                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
 │                        │      │                            │           :N/A:H 
 │                        │      │                            ╰ V3Score : 5.9 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-24791 
-│                        │      │                  ├ [1]: https://go.dev/cl/591255 
-│                        │      │                  ├ [2]: https://go.dev/issue/67555 
-│                        │      │                  ├ [3]: https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/
-│                        │      │                  │      m/6MMoAZkMAgAJ 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-24791.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-24791 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-2963 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6913 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-24791 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2295310 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2310527 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2310528 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2310529 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2024-6913.html 
+│                        │      │                  ├ [7] : https://go.dev/cl/591255 
+│                        │      │                  ├ [8] : https://go.dev/issue/67555 
+│                        │      │                  ├ [9] : https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY
+│                        │      │                  │       /m/6MMoAZkMAgAJ 
+│                        │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-24791.html 
+│                        │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2024-6969.html 
+│                        │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-24791 
+│                        │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2024-2963 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
 │                        │      ├ PublishedDate   : 2024-07-02T22:15:04.833Z 
 │                        │      ╰ LastModifiedDate: 2024-07-08T14:17:39.083Z 
 │                        ├ [22] ╭ VulnerabilityID : CVE-2024-34155 
@@ -7529,20 +7565,27 @@
 │                        │      │                   contains deeply nested literals can cause a panic due to
 │                        │      │                   stack exhaustion. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ oracle-oval: 3 
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ╰ redhat     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 5.9 
-│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34155 
-│                        │      │                  ├ [1]: https://go.dev/cl/611238 
-│                        │      │                  ├ [2]: https://go.dev/issue/69138 
-│                        │      │                  ├ [3]: https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
-│                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-34155.html 
-│                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-34155 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3105 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-34155 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6913 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34155 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2295310 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2310527 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2310528 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2310529 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2024-6913.html 
+│                        │      │                  ├ [7] : https://go.dev/cl/611238 
+│                        │      │                  ├ [8] : https://go.dev/issue/69138 
+│                        │      │                  ├ [9] : https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
+│                        │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-34155.html 
+│                        │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
+│                        │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-34155 
+│                        │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2024-3105 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-34155 
 │                        │      ├ PublishedDate   : 2024-09-06T21:15:11.947Z 
 │                        │      ╰ LastModifiedDate: 2024-09-09T13:03:38.303Z 
 │                        ╰ [23] ╭ VulnerabilityID : CVE-2024-34158 
@@ -7568,7 +7611,8 @@
 │                               │                   exhaustion. 
 │                               ├ Severity        : MEDIUM 
 │                               ├ CweIDs           ─ [0]: CWE-674 
-│                               ├ VendorSeverity   ╭ bitnami    : 3 
+│                               ├ VendorSeverity   ╭ alma       : 3 
+│                               │                  ├ bitnami    : 3 
 │                               │                  ├ oracle-oval: 3 
 │                               │                  ╰ redhat     : 2 
 │                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -7577,15 +7621,21 @@
 │                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
 │                               │                            │           :N/A:H 
 │                               │                            ╰ V3Score : 5.9 
-│                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34158 
-│                               │                  ├ [1]: https://go.dev/cl/611240 
-│                               │                  ├ [2]: https://go.dev/issue/69141 
-│                               │                  ├ [3]: https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
-│                               │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-34158.html 
-│                               │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
-│                               │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-34158 
-│                               │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3107 
-│                               │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
+│                               ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6913 
+│                               │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34158 
+│                               │                  ├ [2] : https://bugzilla.redhat.com/2295310 
+│                               │                  ├ [3] : https://bugzilla.redhat.com/2310527 
+│                               │                  ├ [4] : https://bugzilla.redhat.com/2310528 
+│                               │                  ├ [5] : https://bugzilla.redhat.com/2310529 
+│                               │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2024-6913.html 
+│                               │                  ├ [7] : https://go.dev/cl/611240 
+│                               │                  ├ [8] : https://go.dev/issue/69141 
+│                               │                  ├ [9] : https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
+│                               │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-34158.html 
+│                               │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
+│                               │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-34158 
+│                               │                  ├ [13]: https://pkg.go.dev/vuln/GO-2024-3107 
+│                               │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
 │                               ├ PublishedDate   : 2024-09-06T21:15:12.083Z 
 │                               ╰ LastModifiedDate: 2024-09-09T14:35:01.17Z 
 ├ [4]  ╭ Target: usr/bin/docker-compose 
@@ -7619,7 +7669,8 @@
 │                        │     │                   nested structures can cause a panic due to stack exhaustion.
 │                        │     │                    This is a follow-up to CVE-2022-30635. 
 │                        │     ├ Severity        : HIGH 
-│                        │     ├ VendorSeverity   ╭ bitnami    : 3 
+│                        │     ├ VendorSeverity   ╭ alma       : 3 
+│                        │     │                  ├ bitnami    : 3 
 │                        │     │                  ├ oracle-oval: 3 
 │                        │     │                  ╰ redhat     : 3 
 │                        │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -7628,15 +7679,18 @@
 │                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │     │                            │           N/A:H 
 │                        │     │                            ╰ V3Score : 7.5 
-│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34156 
-│                        │     │                  ├ [1]: https://go.dev/cl/611239 
-│                        │     │                  ├ [2]: https://go.dev/issue/69139 
-│                        │     │                  ├ [3]: https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
-│                        │     │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-34156.html 
-│                        │     │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6947.html 
-│                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-34156 
-│                        │     │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3106 
-│                        │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-34156 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6947 
+│                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34156 
+│                        │     │                  ├ [2] : https://bugzilla.redhat.com/2310528 
+│                        │     │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2024-6947.html 
+│                        │     │                  ├ [4] : https://go.dev/cl/611239 
+│                        │     │                  ├ [5] : https://go.dev/issue/69139 
+│                        │     │                  ├ [6] : https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
+│                        │     │                  ├ [7] : https://linux.oracle.com/cve/CVE-2024-34156.html 
+│                        │     │                  ├ [8] : https://linux.oracle.com/errata/ELSA-2024-6947.html 
+│                        │     │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-34156 
+│                        │     │                  ├ [10]: https://pkg.go.dev/vuln/GO-2024-3106 
+│                        │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-34156 
 │                        │     ├ PublishedDate   : 2024-09-06T21:15:12.02Z 
 │                        │     ╰ LastModifiedDate: 2024-09-09T15:35:07.573Z 
 │                        ├ [1] ╭ VulnerabilityID : CVE-2024-34155 
@@ -7661,20 +7715,27 @@
 │                        │     │                   contains deeply nested literals can cause a panic due to
 │                        │     │                   stack exhaustion. 
 │                        │     ├ Severity        : MEDIUM 
-│                        │     ├ VendorSeverity   ╭ oracle-oval: 3 
+│                        │     ├ VendorSeverity   ╭ alma       : 3 
+│                        │     │                  ├ oracle-oval: 3 
 │                        │     │                  ╰ redhat     : 2 
 │                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
 │                        │     │                           │           /A:H 
 │                        │     │                           ╰ V3Score : 5.9 
-│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34155 
-│                        │     │                  ├ [1]: https://go.dev/cl/611238 
-│                        │     │                  ├ [2]: https://go.dev/issue/69138 
-│                        │     │                  ├ [3]: https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
-│                        │     │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-34155.html 
-│                        │     │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
-│                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-34155 
-│                        │     │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3105 
-│                        │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-34155 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6913 
+│                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34155 
+│                        │     │                  ├ [2] : https://bugzilla.redhat.com/2295310 
+│                        │     │                  ├ [3] : https://bugzilla.redhat.com/2310527 
+│                        │     │                  ├ [4] : https://bugzilla.redhat.com/2310528 
+│                        │     │                  ├ [5] : https://bugzilla.redhat.com/2310529 
+│                        │     │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2024-6913.html 
+│                        │     │                  ├ [7] : https://go.dev/cl/611238 
+│                        │     │                  ├ [8] : https://go.dev/issue/69138 
+│                        │     │                  ├ [9] : https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
+│                        │     │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-34155.html 
+│                        │     │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
+│                        │     │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-34155 
+│                        │     │                  ├ [13]: https://pkg.go.dev/vuln/GO-2024-3105 
+│                        │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-34155 
 │                        │     ├ PublishedDate   : 2024-09-06T21:15:11.947Z 
 │                        │     ╰ LastModifiedDate: 2024-09-09T13:03:38.303Z 
 │                        ╰ [2] ╭ VulnerabilityID : CVE-2024-34158 
@@ -7700,7 +7761,8 @@
 │                              │                   . 
 │                              ├ Severity        : MEDIUM 
 │                              ├ CweIDs           ─ [0]: CWE-674 
-│                              ├ VendorSeverity   ╭ bitnami    : 3 
+│                              ├ VendorSeverity   ╭ alma       : 3 
+│                              │                  ├ bitnami    : 3 
 │                              │                  ├ oracle-oval: 3 
 │                              │                  ╰ redhat     : 2 
 │                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -7709,15 +7771,21 @@
 │                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                              │                            │           N/A:H 
 │                              │                            ╰ V3Score : 5.9 
-│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-34158 
-│                              │                  ├ [1]: https://go.dev/cl/611240 
-│                              │                  ├ [2]: https://go.dev/issue/69141 
-│                              │                  ├ [3]: https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
-│                              │                  ├ [4]: https://linux.oracle.com/cve/CVE-2024-34158.html 
-│                              │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
-│                              │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-34158 
-│                              │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3107 
-│                              │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
+│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6913 
+│                              │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34158 
+│                              │                  ├ [2] : https://bugzilla.redhat.com/2295310 
+│                              │                  ├ [3] : https://bugzilla.redhat.com/2310527 
+│                              │                  ├ [4] : https://bugzilla.redhat.com/2310528 
+│                              │                  ├ [5] : https://bugzilla.redhat.com/2310529 
+│                              │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2024-6913.html 
+│                              │                  ├ [7] : https://go.dev/cl/611240 
+│                              │                  ├ [8] : https://go.dev/issue/69141 
+│                              │                  ├ [9] : https://groups.google.com/g/golang-dev/c/S9POB9NCTdk 
+│                              │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-34158.html 
+│                              │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2024-6913.html 
+│                              │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-34158 
+│                              │                  ├ [13]: https://pkg.go.dev/vuln/GO-2024-3107 
+│                              │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
 │                              ├ PublishedDate   : 2024-09-06T21:15:12.083Z 
 │                              ╰ LastModifiedDate: 2024-09-09T14:35:01.17Z 
 ├ [7]  ╭ Target         : usr/local/bin/k3d 
