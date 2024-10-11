@@ -4086,7 +4086,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 3 
+│                        │       │                  ├ cbl-mariner: 1 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -4656,7 +4656,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 3 
+│                        │       │                  ├ cbl-mariner: 1 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -5226,7 +5226,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 3 
+│                        │       │                  ├ cbl-mariner: 1 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -5856,9 +5856,11 @@
 │                        │       │                   become available. 
 │                        │       ├ Severity        : LOW 
 │                        │       ├ CweIDs           ─ [0]: CWE-200 
-│                        │       ├ VendorSeverity   ╭ amazon     : 2 
+│                        │       ├ VendorSeverity   ╭ alma       : 1 
+│                        │       │                  ├ amazon     : 2 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ cbl-mariner: 4 
+│                        │       │                  ├ oracle-oval: 1 
 │                        │       │                  ├ photon     : 4 
 │                        │       │                  ├ redhat     : 1 
 │                        │       │                  ╰ ubuntu     : 1 
@@ -5869,26 +5871,31 @@
 │                        │       │                  │       27/1 
 │                        │       │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/06/
 │                        │       │                  │       28/4 
-│                        │       │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-5535 
-│                        │       │                  ├ [3] : https://github.com/openssl/openssl/commit/4ada436a1
+│                        │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:7848 
+│                        │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-5535 
+│                        │       │                  ├ [4] : https://bugzilla.redhat.com/2294581 
+│                        │       │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2024-7848.html 
+│                        │       │                  ├ [6] : https://github.com/openssl/openssl/commit/4ada436a1
 │                        │       │                  │       946cbb24db5ab4ca082b69c1bc10f37 
-│                        │       │                  ├ [4] : https://github.com/openssl/openssl/commit/99fb785a5
+│                        │       │                  ├ [7] : https://github.com/openssl/openssl/commit/99fb785a5
 │                        │       │                  │       f85315b95288921a321a935ea29a51e 
-│                        │       │                  ├ [5] : https://github.com/openssl/openssl/commit/cf6f91f61
+│                        │       │                  ├ [8] : https://github.com/openssl/openssl/commit/cf6f91f61
 │                        │       │                  │       21f4db167405db2f0de410a456f260c 
-│                        │       │                  ├ [6] : https://github.com/openssl/openssl/commit/e86ac436f
+│                        │       │                  ├ [9] : https://github.com/openssl/openssl/commit/e86ac436f
 │                        │       │                  │       0bd54d4517745483e2315650fae7b2c 
-│                        │       │                  ├ [7] : https://github.openssl.org/openssl/extended-release
+│                        │       │                  ├ [10]: https://github.openssl.org/openssl/extended-release
 │                        │       │                  │       s/commit/9947251413065a05189a63c9b7a6c1d4e224c21c 
-│                        │       │                  ├ [8] : https://github.openssl.org/openssl/extended-release
+│                        │       │                  ├ [11]: https://github.openssl.org/openssl/extended-release
 │                        │       │                  │       s/commit/b78ec0824da857223486660177d3b1f255c65d87 
-│                        │       │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-5535 
-│                        │       │                  ├ [10]: https://openssl.org/news/secadv/20240627.txt 
-│                        │       │                  ├ [11]: https://security.netapp.com/advisory/ntap-20240712-
+│                        │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-5535.html 
+│                        │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-7848.html 
+│                        │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-5535 
+│                        │       │                  ├ [15]: https://openssl.org/news/secadv/20240627.txt 
+│                        │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240712-
 │                        │       │                  │       0005/ 
-│                        │       │                  ├ [12]: https://ubuntu.com/security/notices/USN-6937-1 
-│                        │       │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
-│                        │       │                  ╰ [14]: https://www.openssl.org/news/secadv/20240627.txt 
+│                        │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-6937-1 
+│                        │       │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
+│                        │       │                  ╰ [19]: https://www.openssl.org/news/secadv/20240627.txt 
 │                        │       ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
 │                        │       ╰ LastModifiedDate: 2024-07-12T14:15:16.79Z 
 │                        ├ [91]  ╭ VulnerabilityID : CVE-2024-39894 
@@ -6553,9 +6560,11 @@
 │                        │       │                   become available. 
 │                        │       ├ Severity        : LOW 
 │                        │       ├ CweIDs           ─ [0]: CWE-200 
-│                        │       ├ VendorSeverity   ╭ amazon     : 2 
+│                        │       ├ VendorSeverity   ╭ alma       : 1 
+│                        │       │                  ├ amazon     : 2 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ cbl-mariner: 4 
+│                        │       │                  ├ oracle-oval: 1 
 │                        │       │                  ├ photon     : 4 
 │                        │       │                  ├ redhat     : 1 
 │                        │       │                  ╰ ubuntu     : 1 
@@ -6566,26 +6575,31 @@
 │                        │       │                  │       27/1 
 │                        │       │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/06/
 │                        │       │                  │       28/4 
-│                        │       │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-5535 
-│                        │       │                  ├ [3] : https://github.com/openssl/openssl/commit/4ada436a1
+│                        │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:7848 
+│                        │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-5535 
+│                        │       │                  ├ [4] : https://bugzilla.redhat.com/2294581 
+│                        │       │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2024-7848.html 
+│                        │       │                  ├ [6] : https://github.com/openssl/openssl/commit/4ada436a1
 │                        │       │                  │       946cbb24db5ab4ca082b69c1bc10f37 
-│                        │       │                  ├ [4] : https://github.com/openssl/openssl/commit/99fb785a5
+│                        │       │                  ├ [7] : https://github.com/openssl/openssl/commit/99fb785a5
 │                        │       │                  │       f85315b95288921a321a935ea29a51e 
-│                        │       │                  ├ [5] : https://github.com/openssl/openssl/commit/cf6f91f61
+│                        │       │                  ├ [8] : https://github.com/openssl/openssl/commit/cf6f91f61
 │                        │       │                  │       21f4db167405db2f0de410a456f260c 
-│                        │       │                  ├ [6] : https://github.com/openssl/openssl/commit/e86ac436f
+│                        │       │                  ├ [9] : https://github.com/openssl/openssl/commit/e86ac436f
 │                        │       │                  │       0bd54d4517745483e2315650fae7b2c 
-│                        │       │                  ├ [7] : https://github.openssl.org/openssl/extended-release
+│                        │       │                  ├ [10]: https://github.openssl.org/openssl/extended-release
 │                        │       │                  │       s/commit/9947251413065a05189a63c9b7a6c1d4e224c21c 
-│                        │       │                  ├ [8] : https://github.openssl.org/openssl/extended-release
+│                        │       │                  ├ [11]: https://github.openssl.org/openssl/extended-release
 │                        │       │                  │       s/commit/b78ec0824da857223486660177d3b1f255c65d87 
-│                        │       │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-5535 
-│                        │       │                  ├ [10]: https://openssl.org/news/secadv/20240627.txt 
-│                        │       │                  ├ [11]: https://security.netapp.com/advisory/ntap-20240712-
+│                        │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-5535.html 
+│                        │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-7848.html 
+│                        │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-5535 
+│                        │       │                  ├ [15]: https://openssl.org/news/secadv/20240627.txt 
+│                        │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240712-
 │                        │       │                  │       0005/ 
-│                        │       │                  ├ [12]: https://ubuntu.com/security/notices/USN-6937-1 
-│                        │       │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
-│                        │       │                  ╰ [14]: https://www.openssl.org/news/secadv/20240627.txt 
+│                        │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-6937-1 
+│                        │       │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
+│                        │       │                  ╰ [19]: https://www.openssl.org/news/secadv/20240627.txt 
 │                        │       ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
 │                        │       ╰ LastModifiedDate: 2024-07-12T14:15:16.79Z 
 │                        ├ [100] ╭ VulnerabilityID : CVE-2018-6952 
@@ -7112,7 +7126,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 3 
+│                        │       │                  ├ cbl-mariner: 1 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -7682,7 +7696,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 3 
+│                        │       │                  ├ cbl-mariner: 1 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -9065,9 +9079,10 @@
 │                        │      │                  ├ [98] : https://security.netapp.com/advisory/ntap-20231110-
 │                        │      │                  │        0008/ 
 │                        │      │                  ├ [99] : https://ubuntu.com/security/notices/USN-6574-1 
-│                        │      │                  ├ [100]: https://www.cisa.gov/news-events/alerts/2023/10/10/
+│                        │      │                  ├ [100]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ├ [101]: https://www.cisa.gov/news-events/alerts/2023/10/10/
 │                        │      │                  │        http2-rapid-reset-vulnerability-cve-2023-44487 
-│                        │      │                  ╰ [101]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
+│                        │      │                  ╰ [102]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
 │                        │      ├ PublishedDate   : 2023-10-11T22:15:09.88Z 
 │                        │      ╰ LastModifiedDate: 2024-04-28T04:15:09.877Z 
 │                        ├ [1]  ╭ VulnerabilityID : CVE-2023-3978 
@@ -10153,9 +10168,10 @@
 │                        │      │                  ├ [98] : https://security.netapp.com/advisory/ntap-20231110-
 │                        │      │                  │        0008/ 
 │                        │      │                  ├ [99] : https://ubuntu.com/security/notices/USN-6574-1 
-│                        │      │                  ├ [100]: https://www.cisa.gov/news-events/alerts/2023/10/10/
+│                        │      │                  ├ [100]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ├ [101]: https://www.cisa.gov/news-events/alerts/2023/10/10/
 │                        │      │                  │        http2-rapid-reset-vulnerability-cve-2023-44487 
-│                        │      │                  ╰ [101]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
+│                        │      │                  ╰ [102]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
 │                        │      ├ PublishedDate   : 2023-10-11T22:15:09.88Z 
 │                        │      ╰ LastModifiedDate: 2024-04-28T04:15:09.877Z 
 │                        ├ [6]  ╭ VulnerabilityID : CVE-2023-45283 
@@ -10453,7 +10469,8 @@
 │                        │      │                  ├ [26]: https://security.gentoo.org/glsa/202311-09 
 │                        │      │                  ├ [27]: https://security.netapp.com/advisory/ntap-20230814-0
 │                        │      │                  │       002/ 
-│                        │      │                  ╰ [28]: https://www.cve.org/CVERecord?id=CVE-2023-29406 
+│                        │      │                  ├ [28]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ╰ [29]: https://www.cve.org/CVERecord?id=CVE-2023-29406 
 │                        │      ├ PublishedDate   : 2023-07-11T20:15:10.643Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:14.727Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2023-29409 
@@ -10597,8 +10614,9 @@
 │                        │      │                  ├ [17]: https://security.netapp.com/advisory/ntap-20231020-0
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-6574-1 
-│                        │      │                  ├ [19]: https://vuln.go.dev/ID/GO-2023-2041.json 
-│                        │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2023-39318 
+│                        │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ├ [20]: https://vuln.go.dev/ID/GO-2023-2041.json 
+│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-39318 
 │                        │      ├ PublishedDate   : 2023-09-08T17:15:27.823Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:17.43Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2023-39319 
@@ -10671,8 +10689,9 @@
 │                        │      │                  ├ [17]: https://security.netapp.com/advisory/ntap-20231020-0
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-6574-1 
-│                        │      │                  ├ [19]: https://vuln.go.dev/ID/GO-2023-2043.json 
-│                        │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2023-39319 
+│                        │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ├ [20]: https://vuln.go.dev/ID/GO-2023-2043.json 
+│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-39319 
 │                        │      ├ PublishedDate   : 2023-09-08T17:15:27.91Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:17.543Z 
 │                        ├ [13] ╭ VulnerabilityID : CVE-2023-39326 
@@ -11192,8 +11211,9 @@
 │                        │      │                  ├ [36]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       008/ 
 │                        │      │                  ├ [37]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ├ [38]: https://vuln.go.dev/ID/GO-2024-2610.json 
-│                        │      │                  ╰ [39]: https://www.cve.org/CVERecord?id=CVE-2024-24785 
+│                        │      │                  ├ [38]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ├ [39]: https://vuln.go.dev/ID/GO-2024-2610.json 
+│                        │      │                  ╰ [40]: https://www.cve.org/CVERecord?id=CVE-2024-24785 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.777Z 
 │                        │      ╰ LastModifiedDate: 2024-05-01T17:15:29.61Z 
 │                        ├ [20] ╭ VulnerabilityID : CVE-2024-24789 
@@ -11796,9 +11816,10 @@
 │                        │      │                  ├ [98] : https://security.netapp.com/advisory/ntap-20231110-
 │                        │      │                  │        0008/ 
 │                        │      │                  ├ [99] : https://ubuntu.com/security/notices/USN-6574-1 
-│                        │      │                  ├ [100]: https://www.cisa.gov/news-events/alerts/2023/10/10/
+│                        │      │                  ├ [100]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ├ [101]: https://www.cisa.gov/news-events/alerts/2023/10/10/
 │                        │      │                  │        http2-rapid-reset-vulnerability-cve-2023-44487 
-│                        │      │                  ╰ [101]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
+│                        │      │                  ╰ [102]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
 │                        │      ├ PublishedDate   : 2023-10-11T22:15:09.88Z 
 │                        │      ╰ LastModifiedDate: 2024-04-28T04:15:09.877Z 
 │                        ├ [1]  ╭ VulnerabilityID : CVE-2023-3978 
@@ -12884,9 +12905,10 @@
 │                        │      │                  ├ [98] : https://security.netapp.com/advisory/ntap-20231110-
 │                        │      │                  │        0008/ 
 │                        │      │                  ├ [99] : https://ubuntu.com/security/notices/USN-6574-1 
-│                        │      │                  ├ [100]: https://www.cisa.gov/news-events/alerts/2023/10/10/
+│                        │      │                  ├ [100]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ├ [101]: https://www.cisa.gov/news-events/alerts/2023/10/10/
 │                        │      │                  │        http2-rapid-reset-vulnerability-cve-2023-44487 
-│                        │      │                  ╰ [101]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
+│                        │      │                  ╰ [102]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
 │                        │      ├ PublishedDate   : 2023-10-11T22:15:09.88Z 
 │                        │      ╰ LastModifiedDate: 2024-04-28T04:15:09.877Z 
 │                        ├ [6]  ╭ VulnerabilityID : CVE-2023-45283 
@@ -13184,7 +13206,8 @@
 │                        │      │                  ├ [26]: https://security.gentoo.org/glsa/202311-09 
 │                        │      │                  ├ [27]: https://security.netapp.com/advisory/ntap-20230814-0
 │                        │      │                  │       002/ 
-│                        │      │                  ╰ [28]: https://www.cve.org/CVERecord?id=CVE-2023-29406 
+│                        │      │                  ├ [28]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ╰ [29]: https://www.cve.org/CVERecord?id=CVE-2023-29406 
 │                        │      ├ PublishedDate   : 2023-07-11T20:15:10.643Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:14.727Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2023-29409 
@@ -13328,8 +13351,9 @@
 │                        │      │                  ├ [17]: https://security.netapp.com/advisory/ntap-20231020-0
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-6574-1 
-│                        │      │                  ├ [19]: https://vuln.go.dev/ID/GO-2023-2041.json 
-│                        │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2023-39318 
+│                        │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ├ [20]: https://vuln.go.dev/ID/GO-2023-2041.json 
+│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-39318 
 │                        │      ├ PublishedDate   : 2023-09-08T17:15:27.823Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:17.43Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2023-39319 
@@ -13402,8 +13426,9 @@
 │                        │      │                  ├ [17]: https://security.netapp.com/advisory/ntap-20231020-0
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-6574-1 
-│                        │      │                  ├ [19]: https://vuln.go.dev/ID/GO-2023-2043.json 
-│                        │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2023-39319 
+│                        │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ├ [20]: https://vuln.go.dev/ID/GO-2023-2043.json 
+│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-39319 
 │                        │      ├ PublishedDate   : 2023-09-08T17:15:27.91Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:17.543Z 
 │                        ├ [13] ╭ VulnerabilityID : CVE-2023-39326 
@@ -13923,8 +13948,9 @@
 │                        │      │                  ├ [36]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       008/ 
 │                        │      │                  ├ [37]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ├ [38]: https://vuln.go.dev/ID/GO-2024-2610.json 
-│                        │      │                  ╰ [39]: https://www.cve.org/CVERecord?id=CVE-2024-24785 
+│                        │      │                  ├ [38]: https://ubuntu.com/security/notices/USN-7061-1 
+│                        │      │                  ├ [39]: https://vuln.go.dev/ID/GO-2024-2610.json 
+│                        │      │                  ╰ [40]: https://www.cve.org/CVERecord?id=CVE-2024-24785 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.777Z 
 │                        │      ╰ LastModifiedDate: 2024-05-01T17:15:29.61Z 
 │                        ├ [20] ╭ VulnerabilityID : CVE-2024-24789 
