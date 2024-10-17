@@ -1981,6 +1981,7 @@
 │                        │       ├ Severity        : LOW 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 1 
 │                        │       │                  ├ photon     : 2 
@@ -2381,6 +2382,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-611 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 4 
 │                        │       │                  ├ cbl-mariner: 4 
 │                        │       │                  ├ nvd        : 4 
 │                        │       │                  ├ oracle-oval: 2 
@@ -2391,9 +2393,9 @@
 │                        │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                        │       │                  │        │           :H/A:H 
 │                        │       │                  │        ╰ V3Score : 9.8 
-│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │       │                           │           :L/A:L 
-│                        │       │                           ╰ V3Score : 5.1 
+│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │       │                           │           :N/A:H 
+│                        │       │                           ╰ V3Score : 7.5 
 │                        │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6754 
 │                        │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-45490 
 │                        │       │                  ├ [2] : https://bugzilla.redhat.com/2308615 
@@ -2450,6 +2452,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-190 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ nvd        : 4 
 │                        │       │                  ├ oracle-oval: 2 
@@ -2519,6 +2522,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-190 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ nvd        : 4 
 │                        │       │                  ├ oracle-oval: 2 
@@ -2776,6 +2780,7 @@
 │                        │       ├ Severity        : LOW 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 1 
 │                        │       │                  ├ photon     : 2 
@@ -3040,6 +3045,7 @@
 │                        │       ├ Severity        : LOW 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 1 
 │                        │       │                  ├ photon     : 2 
@@ -3304,6 +3310,7 @@
 │                        │       ├ Severity        : LOW 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 1 
 │                        │       │                  ├ photon     : 2 
@@ -3568,6 +3575,7 @@
 │                        │       ├ Severity        : LOW 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 1 
 │                        │       │                  ├ photon     : 2 
@@ -3825,6 +3833,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-1333 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ nvd        : 3 
@@ -3914,6 +3923,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-94 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 2 
@@ -4000,6 +4010,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-835 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ redhat     : 2 
@@ -4094,7 +4105,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 1 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -4396,6 +4407,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-1333 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ nvd        : 3 
@@ -4485,6 +4497,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-94 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 2 
@@ -4571,6 +4584,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-835 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ redhat     : 2 
@@ -4665,7 +4679,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 1 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -4967,6 +4981,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-1333 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ nvd        : 3 
@@ -5056,6 +5071,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-94 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 2 
@@ -5142,6 +5158,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-835 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ redhat     : 2 
@@ -5236,7 +5253,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 1 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -6864,6 +6881,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-1333 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ nvd        : 3 
@@ -6953,6 +6971,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-94 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 2 
@@ -7039,6 +7058,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-835 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ redhat     : 2 
@@ -7133,7 +7153,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 1 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -7435,6 +7455,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-1333 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ nvd        : 3 
@@ -7524,6 +7545,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-94 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 2 
@@ -7610,6 +7632,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-835 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
+│                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ redhat     : 2 
@@ -7704,7 +7727,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 1 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -10447,7 +10470,7 @@
 │                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │      │                            │           :N/A:H 
 │                        │      │                            ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -10456,7 +10479,7 @@
 │                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2310528 
 │                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-34156 
-│                        │      │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │      │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │      │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:7204 
 │                        │      │                  ├ [10]: https://go.dev/cl/611239 
 │                        │      │                  ├ [11]: https://go.dev/issue/69139 
@@ -11476,7 +11499,7 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 5.9 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34155 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -11494,7 +11517,7 @@
 │                        │      │                  │       024-34156 
 │                        │      │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-34158 
-│                        │      │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │      │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │      │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                        │      │                  ├ [16]: https://go.dev/cl/611238 
 │                        │      │                  ├ [17]: https://go.dev/issue/69138 
@@ -11541,7 +11564,7 @@
 │                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
 │                               │                            │           :N/A:H 
 │                               │                            ╰ V3Score : 5.9 
-│                               ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                               ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                               │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34158 
 │                               │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                               │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -11559,7 +11582,7 @@
 │                               │                  │       024-34156 
 │                               │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                               │                  │       024-34158 
-│                               │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                               │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                               │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                               │                  ├ [16]: https://go.dev/cl/611240 
 │                               │                  ├ [17]: https://go.dev/issue/69141 
@@ -13187,7 +13210,7 @@
 │                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │      │                            │           :N/A:H 
 │                        │      │                            ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -13196,7 +13219,7 @@
 │                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2310528 
 │                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-34156 
-│                        │      │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │      │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │      │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:7204 
 │                        │      │                  ├ [10]: https://go.dev/cl/611239 
 │                        │      │                  ├ [11]: https://go.dev/issue/69139 
@@ -14216,7 +14239,7 @@
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                        │      │                           │           N/A:H 
 │                        │      │                           ╰ V3Score : 5.9 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34155 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -14234,7 +14257,7 @@
 │                        │      │                  │       024-34156 
 │                        │      │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       024-34158 
-│                        │      │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │      │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │      │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                        │      │                  ├ [16]: https://go.dev/cl/611238 
 │                        │      │                  ├ [17]: https://go.dev/issue/69138 
@@ -14281,7 +14304,7 @@
 │                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
 │                               │                            │           :N/A:H 
 │                               │                            ╰ V3Score : 5.9 
-│                               ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                               ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                               │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34158 
 │                               │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                               │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -14299,7 +14322,7 @@
 │                               │                  │       024-34156 
 │                               │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                               │                  │       024-34158 
-│                               │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                               │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                               │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                               │                  ├ [16]: https://go.dev/cl/611240 
 │                               │                  ├ [17]: https://go.dev/issue/69141 
@@ -14446,7 +14469,7 @@
 │                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │     │                            │           N/A:H 
 │                        │     │                            ╰ V3Score : 7.5 
-│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │     │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │     │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -14455,7 +14478,7 @@
 │                        │     │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2310528 
 │                        │     │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                        │     │                  │       24-34156 
-│                        │     │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │     │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │     │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:7204 
 │                        │     │                  ├ [10]: https://go.dev/cl/611239 
 │                        │     │                  ├ [11]: https://go.dev/issue/69139 
@@ -14572,7 +14595,7 @@
 │                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
 │                        │     │                           │           /A:H 
 │                        │     │                           ╰ V3Score : 5.9 
-│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34155 
 │                        │     │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │     │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -14590,7 +14613,7 @@
 │                        │     │                  │       24-34156 
 │                        │     │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                        │     │                  │       24-34158 
-│                        │     │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │     │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │     │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                        │     │                  ├ [16]: https://go.dev/cl/611238 
 │                        │     │                  ├ [17]: https://go.dev/issue/69138 
@@ -14637,7 +14660,7 @@
 │                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                              │                            │           N/A:H 
 │                              │                            ╰ V3Score : 5.9 
-│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                              │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34158 
 │                              │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                              │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -14655,7 +14678,7 @@
 │                              │                  │       24-34156 
 │                              │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                              │                  │       24-34158 
-│                              │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                              │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                              │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                              │                  ├ [16]: https://go.dev/cl/611240 
 │                              │                  ├ [17]: https://go.dev/issue/69141 
@@ -14802,7 +14825,7 @@
 │                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │     │                            │           N/A:H 
 │                        │     │                            ╰ V3Score : 7.5 
-│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │     │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │     │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -14811,7 +14834,7 @@
 │                        │     │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2310528 
 │                        │     │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                        │     │                  │       24-34156 
-│                        │     │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │     │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │     │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:7204 
 │                        │     │                  ├ [10]: https://go.dev/cl/611239 
 │                        │     │                  ├ [11]: https://go.dev/issue/69139 
@@ -14928,7 +14951,7 @@
 │                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
 │                        │     │                           │           /A:H 
 │                        │     │                           ╰ V3Score : 5.9 
-│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34155 
 │                        │     │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │     │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -14946,7 +14969,7 @@
 │                        │     │                  │       24-34156 
 │                        │     │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                        │     │                  │       24-34158 
-│                        │     │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │     │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │     │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                        │     │                  ├ [16]: https://go.dev/cl/611238 
 │                        │     │                  ├ [17]: https://go.dev/issue/69138 
@@ -14993,7 +15016,7 @@
 │                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                              │                            │           N/A:H 
 │                              │                            ╰ V3Score : 5.9 
-│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                              │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34158 
 │                              │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                              │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -15011,7 +15034,7 @@
 │                              │                  │       24-34156 
 │                              │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                              │                  │       24-34158 
-│                              │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                              │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                              │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                              │                  ├ [16]: https://go.dev/cl/611240 
 │                              │                  ├ [17]: https://go.dev/issue/69141 
@@ -15060,7 +15083,7 @@
 │                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │     │                            │           N/A:H 
 │                        │     │                            ╰ V3Score : 7.5 
-│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │     │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │     │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -15069,7 +15092,7 @@
 │                        │     │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2310528 
 │                        │     │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                        │     │                  │       24-34156 
-│                        │     │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │     │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │     │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:7204 
 │                        │     │                  ├ [10]: https://go.dev/cl/611239 
 │                        │     │                  ├ [11]: https://go.dev/issue/69139 
@@ -15186,7 +15209,7 @@
 │                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
 │                        │     │                           │           /A:H 
 │                        │     │                           ╰ V3Score : 5.9 
-│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34155 
 │                        │     │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │     │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -15204,7 +15227,7 @@
 │                        │     │                  │       24-34156 
 │                        │     │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                        │     │                  │       24-34158 
-│                        │     │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │     │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │     │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                        │     │                  ├ [16]: https://go.dev/cl/611238 
 │                        │     │                  ├ [17]: https://go.dev/issue/69138 
@@ -15251,7 +15274,7 @@
 │                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                              │                            │           N/A:H 
 │                              │                            ╰ V3Score : 5.9 
-│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                              │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34158 
 │                              │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                              │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -15269,7 +15292,7 @@
 │                              │                  │       24-34156 
 │                              │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                              │                  │       24-34158 
-│                              │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                              │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                              │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                              │                  ├ [16]: https://go.dev/cl/611240 
 │                              │                  ├ [17]: https://go.dev/issue/69141 
@@ -15456,7 +15479,7 @@
 │                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │     │                            │           N/A:H 
 │                        │     │                            ╰ V3Score : 7.5 
-│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34156 
 │                        │     │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │     │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -15465,7 +15488,7 @@
 │                        │     │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2310528 
 │                        │     │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                        │     │                  │       24-34156 
-│                        │     │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │     │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │     │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:7204 
 │                        │     │                  ├ [10]: https://go.dev/cl/611239 
 │                        │     │                  ├ [11]: https://go.dev/issue/69139 
@@ -15582,7 +15605,7 @@
 │                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
 │                        │     │                           │           /A:H 
 │                        │     │                           ╰ V3Score : 5.9 
-│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34155 
 │                        │     │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                        │     │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -15600,7 +15623,7 @@
 │                        │     │                  │       24-34156 
 │                        │     │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                        │     │                  │       24-34158 
-│                        │     │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                        │     │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                        │     │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                        │     │                  ├ [16]: https://go.dev/cl/611238 
 │                        │     │                  ├ [17]: https://go.dev/issue/69138 
@@ -15647,7 +15670,7 @@
 │                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                              │                            │           N/A:H 
 │                              │                            ╰ V3Score : 5.9 
-│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8039 
+│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:8112 
 │                              │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-34158 
 │                              │                  ├ [2] : https://bugzilla.redhat.com/2310527 
 │                              │                  ├ [3] : https://bugzilla.redhat.com/2310528 
@@ -15665,7 +15688,7 @@
 │                              │                  │       24-34156 
 │                              │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                              │                  │       24-34158 
-│                              │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8039.html 
+│                              │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2024-8112.html 
 │                              │                  ├ [15]: https://errata.rockylinux.org/RLSA-2024:6913 
 │                              │                  ├ [16]: https://go.dev/cl/611240 
 │                              │                  ├ [17]: https://go.dev/issue/69141 
@@ -15677,181 +15700,7 @@
 │                              │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
 │                              ├ PublishedDate   : 2024-09-06T21:15:12.083Z 
 │                              ╰ LastModifiedDate: 2024-09-09T14:35:01.17Z 
-├ [8]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
-│      ├ Class  : secret 
-│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                      ├ Category : AsymmetricPrivateKey 
-│                      ├ Severity : HIGH 
-│                      ├ Title    : Asymmetric Private Key 
-│                      ├ StartLine: 1 
-│                      ├ EndLine  : 1 
-│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********-----END OPENSSH PRI 
-│                      │                   │     ├ IsCause    : true 
-│                      │                   │     ├ Annotation :  
-│                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              ***********-----END OPENSSH PRI 
-│                      │                   │     ├ FirstCause : true 
-│                      │                   │     ╰ LastCause  : true 
-│                      │                   ╰ [1] ╭ Number    : 2 
-│                      │                         ├ Content   :  
-│                      │                         ├ IsCause   : false 
-│                      │                         ├ Annotation:  
-│                      │                         ├ Truncated : false 
-│                      │                         ├ FirstCause: false 
-│                      │                         ╰ LastCause : false 
-│                      ├ Match    : BEGIN OPENSSH PRIVATE
-│                      │            KEY-----*******************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            ***************************************************************************
-│                      │            **************************************************************************-
-│                      │            ----END OPENSSH PRI 
-│                      ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
-│                                  │            ca695957 
-│                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
-│                                  │            cbee3664 
-│                                  ╰ CreatedBy: COPY / / # buildkit 
-├ [9]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
+├ [8]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                      ├ Category : AsymmetricPrivateKey 
@@ -15909,7 +15758,57 @@
 │                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
 │                                  │            cbee3664 
 │                                  ╰ CreatedBy: COPY / / # buildkit 
-╰ [10] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+├ [9]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+│      ├ Class  : secret 
+│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                      ├ Category : AsymmetricPrivateKey 
+│                      ├ Severity : HIGH 
+│                      ├ Title    : Asymmetric Private Key 
+│                      ├ StartLine: 1 
+│                      ├ EndLine  : 1 
+│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              *********************-----END OPENSSH PRI 
+│                      │                   │     ├ IsCause    : true 
+│                      │                   │     ├ Annotation :  
+│                      │                   │     ├ Truncated  : false 
+│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              *********************-----END OPENSSH PRI 
+│                      │                   │     ├ FirstCause : true 
+│                      │                   │     ╰ LastCause  : true 
+│                      │                   ╰ [1] ╭ Number    : 2 
+│                      │                         ├ Content   :  
+│                      │                         ├ IsCause   : false 
+│                      │                         ├ Annotation:  
+│                      │                         ├ Truncated : false 
+│                      │                         ├ FirstCause: false 
+│                      │                         ╰ LastCause : false 
+│                      ├ Match    : BEGIN OPENSSH PRIVATE
+│                      │            KEY-----*******************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            ***************************************************************************
+│                      │            **************************************************-----END OPENSSH PRI 
+│                      ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
+│                                  │            ca695957 
+│                                  ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
+│                                  │            cbee3664 
+│                                  ╰ CreatedBy: COPY / / # buildkit 
+╰ [10] ╭ Target : /etc/ssh/ssh_host_rsa_key 
        ├ Class  : secret 
        ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                        ├ Category : AsymmetricPrivateKey 
@@ -15926,7 +15825,54 @@
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              *********************-----END OPENSSH PRI 
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********-----END OPENSSH PRI 
                        │                   │     ├ IsCause    : true 
                        │                   │     ├ Annotation :  
                        │                   │     ├ Truncated  : false 
@@ -15938,7 +15884,54 @@
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              *********************-----END OPENSSH PRI 
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********************************************
+                       │                   │     │              ***********-----END OPENSSH PRI 
                        │                   │     ├ FirstCause : true 
                        │                   │     ╰ LastCause  : true 
                        │                   ╰ [1] ╭ Number    : 2 
@@ -15953,7 +15946,37 @@
                        │            ***************************************************************************
                        │            ***************************************************************************
                        │            ***************************************************************************
-                       │            **************************************************-----END OPENSSH PRI 
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            ***************************************************************************
+                       │            **************************************************************************-
+                       │            ----END OPENSSH PRI 
                        ╰ Layer     ╭ Digest   : sha256:866dc9d4fb04d58062874c4d8167686fc9ce65dc326421ea318f623c
                                    │            ca695957 
                                    ├ DiffID   : sha256:de92c912de09d845e8718ad62aefec2f2a519bf6fc9e855b8886008b
