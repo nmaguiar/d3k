@@ -2382,8 +2382,8 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-611 
 │                        │       ├ VendorSeverity   ╭ alma       : 2 
-│                        │       │                  ├ azure      : 4 
-│                        │       │                  ├ cbl-mariner: 4 
+│                        │       │                  ├ azure      : 3 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ nvd        : 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 4 
@@ -4101,7 +4101,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 3 
+│                        │       │                  ├ cbl-mariner: 1 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -4671,7 +4671,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 3 
+│                        │       │                  ├ cbl-mariner: 1 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -5241,7 +5241,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 3 
+│                        │       │                  ├ cbl-mariner: 1 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -7137,7 +7137,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 3 
+│                        │       │                  ├ cbl-mariner: 1 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -7707,7 +7707,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 3 
+│                        │       │                  ├ cbl-mariner: 1 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -8048,9 +8048,10 @@
 │                        │       │                   this issue. 
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-122 
-│                        │       ├ VendorSeverity   ╭ photon: 2 
-│                        │       │                  ├ redhat: 1 
-│                        │       │                  ╰ ubuntu: 2 
+│                        │       ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                        │       │                  ├ photon     : 2 
+│                        │       │                  ├ redhat     : 1 
+│                        │       │                  ╰ ubuntu     : 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I
 │                        │       │                           │           :L/A:L 
 │                        │       │                           ╰ V3Score : 4.5 
@@ -8223,9 +8224,10 @@
 │                        │       │                   this issue. 
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-122 
-│                        │       ├ VendorSeverity   ╭ photon: 2 
-│                        │       │                  ├ redhat: 1 
-│                        │       │                  ╰ ubuntu: 2 
+│                        │       ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                        │       │                  ├ photon     : 2 
+│                        │       │                  ├ redhat     : 1 
+│                        │       │                  ╰ ubuntu     : 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I
 │                        │       │                           │           :L/A:L 
 │                        │       │                           ╰ V3Score : 4.5 
@@ -8398,9 +8400,10 @@
 │                        │       │                   this issue. 
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-122 
-│                        │       ├ VendorSeverity   ╭ photon: 2 
-│                        │       │                  ├ redhat: 1 
-│                        │       │                  ╰ ubuntu: 2 
+│                        │       ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                        │       │                  ├ photon     : 2 
+│                        │       │                  ├ redhat     : 1 
+│                        │       │                  ╰ ubuntu     : 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I
 │                        │       │                           │           :L/A:L 
 │                        │       │                           ╰ V3Score : 4.5 
@@ -8620,9 +8623,10 @@
 │                                │                   this issue. 
 │                                ├ Severity        : MEDIUM 
 │                                ├ CweIDs           ─ [0]: CWE-122 
-│                                ├ VendorSeverity   ╭ photon: 2 
-│                                │                  ├ redhat: 1 
-│                                │                  ╰ ubuntu: 2 
+│                                ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                                │                  ├ photon     : 2 
+│                                │                  ├ redhat     : 1 
+│                                │                  ╰ ubuntu     : 2 
 │                                ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I
 │                                │                           │           :L/A:L 
 │                                │                           ╰ V3Score : 4.5 
@@ -11152,7 +11156,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -13915,7 +13919,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
