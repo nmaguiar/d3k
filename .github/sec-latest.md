@@ -2386,7 +2386,7 @@
 │                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ nvd        : 3 
 │                        │       │                  ├ oracle-oval: 2 
-│                        │       │                  ├ photon     : 4 
+│                        │       │                  ├ photon     : 3 
 │                        │       │                  ├ redhat     : 2 
 │                        │       │                  ├ rocky      : 2 
 │                        │       │                  ╰ ubuntu     : 2 
@@ -4101,7 +4101,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 1 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -4671,7 +4671,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 1 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -5241,7 +5241,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 1 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -7137,7 +7137,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 1 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -7707,7 +7707,7 @@
 │                        │       ├ CweIDs           ─ [0]: CWE-697 
 │                        │       ├ VendorSeverity   ╭ alma       : 1 
 │                        │       │                  ├ bitnami    : 3 
-│                        │       │                  ├ cbl-mariner: 1 
+│                        │       │                  ├ cbl-mariner: 3 
 │                        │       │                  ├ oracle-oval: 2 
 │                        │       │                  ├ photon     : 1 
 │                        │       │                  ├ redhat     : 1 
@@ -10740,7 +10740,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -10821,7 +10821,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -13503,7 +13503,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -13584,7 +13584,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
