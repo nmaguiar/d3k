@@ -907,7 +907,7 @@
 │                        │       │                  ╰ [9]: https://www.oracle.com/security-alerts/cpuoct2024.ht
 │                        │       │                         ml#AppendixMSQL 
 │                        │       ├ PublishedDate   : 2024-07-31T08:15:02.657Z 
-│                        │       ╰ LastModifiedDate: 2024-08-12T17:30:51.88Z 
+│                        │       ╰ LastModifiedDate: 2024-10-30T20:35:40.303Z 
 │                        ├ [14]  ╭ VulnerabilityID : CVE-2024-8096 
 │                        │       ├ PkgID           : curl@8.5.0-2ubuntu10.1 
 │                        │       ├ PkgName         : curl 
@@ -1884,9 +1884,9 @@
 │                        │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                        │       │                  │        │           :N/A:N 
 │                        │       │                  │        ╰ V3Score : 7.5 
-│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
-│                        │       │                           │           :H/A:H 
-│                        │       │                           ╰ V3Score : 7.4 
+│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
+│                        │       │                           │           :N/A:N 
+│                        │       │                           ╰ V3Score : 7.5 
 │                        │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
 │                        │       │                  ├ [2] : https://bugzilla.redhat.com/2294676 
@@ -2207,7 +2207,7 @@
 │                        │       │                  ╰ [9]: https://www.oracle.com/security-alerts/cpuoct2024.ht
 │                        │       │                         ml#AppendixMSQL 
 │                        │       ├ PublishedDate   : 2024-07-31T08:15:02.657Z 
-│                        │       ╰ LastModifiedDate: 2024-08-12T17:30:51.88Z 
+│                        │       ╰ LastModifiedDate: 2024-10-30T20:35:40.303Z 
 │                        ├ [40]  ╭ VulnerabilityID : CVE-2024-8096 
 │                        │       ├ PkgID           : libcurl3t64-gnutls@8.5.0-2ubuntu10.1 
 │                        │       ├ PkgName         : libcurl3t64-gnutls 
@@ -2312,7 +2312,7 @@
 │                        │       │                  ╰ [9]: https://www.oracle.com/security-alerts/cpuoct2024.ht
 │                        │       │                         ml#AppendixMSQL 
 │                        │       ├ PublishedDate   : 2024-07-31T08:15:02.657Z 
-│                        │       ╰ LastModifiedDate: 2024-08-12T17:30:51.88Z 
+│                        │       ╰ LastModifiedDate: 2024-10-30T20:35:40.303Z 
 │                        ├ [42]  ╭ VulnerabilityID : CVE-2024-8096 
 │                        │       ├ PkgID           : libcurl4t64@8.5.0-2ubuntu10.1 
 │                        │       ├ PkgName         : libcurl4t64 
@@ -2683,9 +2683,9 @@
 │                        │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                        │       │                  │        │           :N/A:N 
 │                        │       │                  │        ╰ V3Score : 7.5 
-│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
-│                        │       │                           │           :H/A:H 
-│                        │       │                           ╰ V3Score : 7.4 
+│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
+│                        │       │                           │           :N/A:N 
+│                        │       │                           ╰ V3Score : 7.5 
 │                        │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
 │                        │       │                  ├ [2] : https://bugzilla.redhat.com/2294676 
@@ -2948,9 +2948,9 @@
 │                        │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                        │       │                  │        │           :N/A:N 
 │                        │       │                  │        ╰ V3Score : 7.5 
-│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
-│                        │       │                           │           :H/A:H 
-│                        │       │                           ╰ V3Score : 7.4 
+│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
+│                        │       │                           │           :N/A:N 
+│                        │       │                           ╰ V3Score : 7.5 
 │                        │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
 │                        │       │                  ├ [2] : https://bugzilla.redhat.com/2294676 
@@ -3213,9 +3213,9 @@
 │                        │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                        │       │                  │        │           :N/A:N 
 │                        │       │                  │        ╰ V3Score : 7.5 
-│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
-│                        │       │                           │           :H/A:H 
-│                        │       │                           ╰ V3Score : 7.4 
+│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
+│                        │       │                           │           :N/A:N 
+│                        │       │                           ╰ V3Score : 7.5 
 │                        │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
 │                        │       │                  ├ [2] : https://bugzilla.redhat.com/2294676 
@@ -3478,9 +3478,9 @@
 │                        │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                        │       │                  │        │           :N/A:N 
 │                        │       │                  │        ╰ V3Score : 7.5 
-│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
-│                        │       │                           │           :H/A:H 
-│                        │       │                           ╰ V3Score : 7.4 
+│                        │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
+│                        │       │                           │           :N/A:N 
+│                        │       │                           ╰ V3Score : 7.5 
 │                        │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6166 
 │                        │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-37370 
 │                        │       │                  ├ [2] : https://bugzilla.redhat.com/2294676 
@@ -9116,7 +9116,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -10592,7 +10592,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -10667,7 +10667,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -11885,7 +11885,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -13361,7 +13361,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -13436,7 +13436,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
