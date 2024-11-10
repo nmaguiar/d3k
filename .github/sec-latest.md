@@ -1008,7 +1008,8 @@
 │                        │       │                   insecure HTTP earlier
 │                        │       │                   than otherwise intended. 
 │                        │       ├ Severity        : LOW 
-│                        │       ├ VendorSeverity   ─ ubuntu: 1 
+│                        │       ├ VendorSeverity   ╭ photon: 2 
+│                        │       │                  ╰ ubuntu: 1 
 │                        │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2024-9681.html 
 │                        │       │                  ├ [1]: https://curl.se/docs/CVE-2024-9681.json 
 │                        │       │                  ├ [2]: https://hackerone.com/reports/2764830 
@@ -2371,7 +2372,8 @@
 │                        │       │                   insecure HTTP earlier
 │                        │       │                   than otherwise intended. 
 │                        │       ├ Severity        : LOW 
-│                        │       ├ VendorSeverity   ─ ubuntu: 1 
+│                        │       ├ VendorSeverity   ╭ photon: 2 
+│                        │       │                  ╰ ubuntu: 1 
 │                        │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2024-9681.html 
 │                        │       │                  ├ [1]: https://curl.se/docs/CVE-2024-9681.json 
 │                        │       │                  ├ [2]: https://hackerone.com/reports/2764830 
@@ -2539,7 +2541,8 @@
 │                        │       │                   insecure HTTP earlier
 │                        │       │                   than otherwise intended. 
 │                        │       ├ Severity        : LOW 
-│                        │       ├ VendorSeverity   ─ ubuntu: 1 
+│                        │       ├ VendorSeverity   ╭ photon: 2 
+│                        │       │                  ╰ ubuntu: 1 
 │                        │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2024-9681.html 
 │                        │       │                  ├ [1]: https://curl.se/docs/CVE-2024-9681.json 
 │                        │       │                  ├ [2]: https://hackerone.com/reports/2764830 
@@ -8945,13 +8948,17 @@
 │                              │                    be vulnerable to a open redirect attack or to a SSRF attack
 │                              │                    if the URI 
 │                              │                   is used after passing validation checks. 
-│                              ├ Severity        : LOW 
+│                              ├ Severity        : MEDIUM 
 │                              ├ CweIDs           ─ [0]: CWE-1286 
-│                              ├ VendorSeverity   ╭ ghsa  : 1 
+│                              ├ VendorSeverity   ╭ ghsa  : 2 
+│                              │                  ├ nvd   : 2 
 │                              │                  ╰ redhat: 1 
 │                              ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L
 │                              │                  │        │           /A:N 
 │                              │                  │        ╰ V3Score : 3.7 
+│                              │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
+│                              │                  │        │           /A:N 
+│                              │                  │        ╰ V3Score : 5.3 
 │                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L
 │                              │                           │           /A:N 
 │                              │                           ╰ V3Score : 3.7 
@@ -8965,7 +8972,7 @@
 │                              │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-6763 
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-6763 
 │                              ├ PublishedDate   : 2024-10-14T16:15:04.163Z 
-│                              ╰ LastModifiedDate: 2024-10-15T12:57:46.88Z 
+│                              ╰ LastModifiedDate: 2024-11-08T21:15:57.677Z 
 ├ [2]  ╭ Target         : home/user/.krew/store/krew/v0.4.4/krew 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -9315,7 +9322,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -10791,7 +10798,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -10866,7 +10873,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -11296,7 +11303,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -12102,7 +12109,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -13578,7 +13585,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -13653,7 +13660,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -14083,7 +14090,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
