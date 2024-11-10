@@ -112,7 +112,8 @@
 │                        │      │                   insecure HTTP earlier
 │                        │      │                   than otherwise intended. 
 │                        │      ├ Severity        : LOW 
-│                        │      ├ VendorSeverity   ─ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ photon: 2 
+│                        │      │                  ╰ ubuntu: 1 
 │                        │      ├ References       ╭ [0]: https://curl.se/docs/CVE-2024-9681.html 
 │                        │      │                  ├ [1]: https://curl.se/docs/CVE-2024-9681.json 
 │                        │      │                  ├ [2]: https://hackerone.com/reports/2764830 
@@ -982,7 +983,8 @@
 │                        │      │                   insecure HTTP earlier
 │                        │      │                   than otherwise intended. 
 │                        │      ├ Severity        : LOW 
-│                        │      ├ VendorSeverity   ─ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ photon: 2 
+│                        │      │                  ╰ ubuntu: 1 
 │                        │      ├ References       ╭ [0]: https://curl.se/docs/CVE-2024-9681.html 
 │                        │      │                  ├ [1]: https://curl.se/docs/CVE-2024-9681.json 
 │                        │      │                  ├ [2]: https://hackerone.com/reports/2764830 
@@ -1045,7 +1047,8 @@
 │                        │      │                   insecure HTTP earlier
 │                        │      │                   than otherwise intended. 
 │                        │      ├ Severity        : LOW 
-│                        │      ├ VendorSeverity   ─ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ photon: 2 
+│                        │      │                  ╰ ubuntu: 1 
 │                        │      ├ References       ╭ [0]: https://curl.se/docs/CVE-2024-9681.html 
 │                        │      │                  ├ [1]: https://curl.se/docs/CVE-2024-9681.json 
 │                        │      │                  ├ [2]: https://hackerone.com/reports/2764830 
@@ -1993,13 +1996,17 @@
 │                              │                    be vulnerable to a open redirect attack or to a SSRF attack
 │                              │                    if the URI 
 │                              │                   is used after passing validation checks. 
-│                              ├ Severity        : LOW 
+│                              ├ Severity        : MEDIUM 
 │                              ├ CweIDs           ─ [0]: CWE-1286 
-│                              ├ VendorSeverity   ╭ ghsa  : 1 
+│                              ├ VendorSeverity   ╭ ghsa  : 2 
+│                              │                  ├ nvd   : 2 
 │                              │                  ╰ redhat: 1 
 │                              ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L
 │                              │                  │        │           /A:N 
 │                              │                  │        ╰ V3Score : 3.7 
+│                              │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
+│                              │                  │        │           /A:N 
+│                              │                  │        ╰ V3Score : 5.3 
 │                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L
 │                              │                           │           /A:N 
 │                              │                           ╰ V3Score : 3.7 
@@ -2013,7 +2020,7 @@
 │                              │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-6763 
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-6763 
 │                              ├ PublishedDate   : 2024-10-14T16:15:04.163Z 
-│                              ╰ LastModifiedDate: 2024-10-15T12:57:46.88Z 
+│                              ╰ LastModifiedDate: 2024-11-08T21:15:57.677Z 
 ├ [2]  ╭ Target         : home/user/.krew/store/krew/v0.4.4/krew 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -2363,7 +2370,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -3839,7 +3846,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -3914,7 +3921,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4344,7 +4351,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -5150,7 +5157,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -6626,7 +6633,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -6701,7 +6708,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7131,7 +7138,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -7734,47 +7741,7 @@
 │                                                 │      7a7786754d1fe05264c3021eb 
 │                                                 ╰ [2]: https://github.com/grpc/grpc-go/security/advisories/GH
 │                                                        SA-xr7q-jx4m-x55m 
-├ [8]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
-│      ├ Class  : secret 
-│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                      ├ Category : AsymmetricPrivateKey 
-│                      ├ Severity : HIGH 
-│                      ├ Title    : Asymmetric Private Key 
-│                      ├ StartLine: 1 
-│                      ├ EndLine  : 1 
-│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *****************************-----END OPENSSH
-│                      │                   │     │              PRI 
-│                      │                   │     ├ IsCause    : true 
-│                      │                   │     ├ Annotation :  
-│                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *****************************-----END OPENSSH
-│                      │                   │     │              PRI 
-│                      │                   │     ├ FirstCause : true 
-│                      │                   │     ╰ LastCause  : true 
-│                      │                   ╰ [1] ╭ Number    : 2 
-│                      │                         ├ Content   :  
-│                      │                         ├ IsCause   : false 
-│                      │                         ├ Annotation:  
-│                      │                         ├ Truncated : false 
-│                      │                         ├ FirstCause: false 
-│                      │                         ╰ LastCause : false 
-│                      ├ Match    : BEGIN OPENSSH PRIVATE
-│                      │            KEY-----*******************************************************************
-│                      │            ***************************************************************************
-│                      │            **-----END OPENSSH PRI 
-│                      ╰ Layer     ╭ Digest   : sha256:e58005c3359307ebb200d92631d8a9f28a4ae0200eed7cf5afcbe282
-│                                  │            c0f6671d 
-│                                  ├ DiffID   : sha256:b432d88d7f6735f4cf2f719946730f190019d6df61663c6a7d93c00a
-│                                  │            9b3b5417 
-│                                  ╰ CreatedBy: COPY / / # buildkit 
-├ [9]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+├ [8]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                      ├ Category : AsymmetricPrivateKey 
@@ -7812,7 +7779,46 @@
 │                                  ├ DiffID   : sha256:b432d88d7f6735f4cf2f719946730f190019d6df61663c6a7d93c00a
 │                                  │            9b3b5417 
 │                                  ╰ CreatedBy: COPY / / # buildkit 
-╰ [10] ╭ Target : /etc/ssh/ssh_host_rsa_key 
+├ [9]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
+│      ├ Class  : secret 
+│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                      ├ Category : AsymmetricPrivateKey 
+│                      ├ Severity : HIGH 
+│                      ├ Title    : Asymmetric Private Key 
+│                      ├ StartLine: 1 
+│                      ├ EndLine  : 1 
+│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********-----END OPENSSH PRI 
+│                      │                   │     ├ IsCause    : true 
+│                      │                   │     ├ Annotation :  
+│                      │                   │     ├ Truncated  : false 
+│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********-----END OPENSSH PRI 
+│                      │                   │     ├ FirstCause : true 
+│                      │                   │     ╰ LastCause  : true 
+│                      │                   ╰ [1] ╭ Number    : 2 
+│                      │                         ├ Content   :  
+│                      │                         ├ IsCause   : false 
+│                      │                         ├ Annotation:  
+│                      │                         ├ Truncated : false 
+│                      │                         ├ FirstCause: false 
+│                      │                         ╰ LastCause : false 
+│                      ├ Match    : BEGIN OPENSSH PRIVATE
+│                      │            KEY-----*******************************************************************
+│                      │            ***************************************************************************
+│                      │            **************************************************************************-
+│                      │            ----END OPENSSH PRI 
+│                      ╰ Layer     ╭ Digest   : sha256:e58005c3359307ebb200d92631d8a9f28a4ae0200eed7cf5afcbe282
+│                                  │            c0f6671d 
+│                                  ├ DiffID   : sha256:b432d88d7f6735f4cf2f719946730f190019d6df61663c6a7d93c00a
+│                                  │            9b3b5417 
+│                                  ╰ CreatedBy: COPY / / # buildkit 
+╰ [10] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
        ├ Class  : secret 
        ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                        ├ Category : AsymmetricPrivateKey 
@@ -7824,14 +7830,16 @@
                        │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********-----END OPENSSH PRI 
+                       │                   │     │              *****************************-----END OPENSSH
+                       │                   │     │              PRI 
                        │                   │     ├ IsCause    : true 
                        │                   │     ├ Annotation :  
                        │                   │     ├ Truncated  : false 
                        │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********-----END OPENSSH PRI 
+                       │                   │     │              *****************************-----END OPENSSH
+                       │                   │     │              PRI 
                        │                   │     ├ FirstCause : true 
                        │                   │     ╰ LastCause  : true 
                        │                   ╰ [1] ╭ Number    : 2 
@@ -7844,8 +7852,7 @@
                        ├ Match    : BEGIN OPENSSH PRIVATE
                        │            KEY-----*******************************************************************
                        │            ***************************************************************************
-                       │            **************************************************************************-
-                       │            ----END OPENSSH PRI 
+                       │            **-----END OPENSSH PRI 
                        ╰ Layer     ╭ Digest   : sha256:e58005c3359307ebb200d92631d8a9f28a4ae0200eed7cf5afcbe282
                                    │            c0f6671d 
                                    ├ DiffID   : sha256:b432d88d7f6735f4cf2f719946730f190019d6df61663c6a7d93c00a
