@@ -2342,9 +2342,10 @@
 │                        │      │                  │        0008/ 
 │                        │      │                  ├ [99] : https://ubuntu.com/security/notices/USN-6574-1 
 │                        │      │                  ├ [100]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ├ [101]: https://www.cisa.gov/news-events/alerts/2023/10/10/
+│                        │      │                  ├ [101]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [102]: https://www.cisa.gov/news-events/alerts/2023/10/10/
 │                        │      │                  │        http2-rapid-reset-vulnerability-cve-2023-44487 
-│                        │      │                  ╰ [102]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
+│                        │      │                  ╰ [103]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
 │                        │      ├ PublishedDate   : 2023-10-11T22:15:09.88Z 
 │                        │      ╰ LastModifiedDate: 2024-04-28T04:15:09.877Z 
 │                        ├ [1]  ╭ VulnerabilityID : CVE-2023-3978 
@@ -3037,8 +3038,10 @@
 │                        │      │                  ├ [31]: https://security.netapp.com/advisory/ntap-20240419-0
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [32]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ├ [33]: https://www.cve.org/CVERecord?id=CVE-2023-45288 
-│                        │      │                  ╰ [34]: https://www.kb.cert.org/vuls/id/421644 
+│                        │      │                  ├ [33]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [34]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ├ [35]: https://www.cve.org/CVERecord?id=CVE-2023-45288 
+│                        │      │                  ╰ [36]: https://www.kb.cert.org/vuls/id/421644 
 │                        │      ├ PublishedDate   : 2024-04-04T21:15:16.113Z 
 │                        │      ╰ LastModifiedDate: 2024-08-26T21:35:02.457Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2024-24790 
@@ -3113,7 +3116,8 @@
 │                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2024-24790 
 │                        │      │                  ├ [21]: https://pkg.go.dev/vuln/GO-2024-2887 
 │                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2024-24790 
+│                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2024-24790 
 │                        │      ├ PublishedDate   : 2024-06-05T16:15:10.56Z 
 │                        │      ╰ LastModifiedDate: 2024-09-03T18:35:07.483Z 
 │                        ├ [5]  ╭ VulnerabilityID : CVE-2023-39325 
@@ -3432,9 +3436,10 @@
 │                        │      │                  │        0008/ 
 │                        │      │                  ├ [99] : https://ubuntu.com/security/notices/USN-6574-1 
 │                        │      │                  ├ [100]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ├ [101]: https://www.cisa.gov/news-events/alerts/2023/10/10/
+│                        │      │                  ├ [101]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [102]: https://www.cisa.gov/news-events/alerts/2023/10/10/
 │                        │      │                  │        http2-rapid-reset-vulnerability-cve-2023-44487 
-│                        │      │                  ╰ [102]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
+│                        │      │                  ╰ [103]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
 │                        │      ├ PublishedDate   : 2023-10-11T22:15:09.88Z 
 │                        │      ╰ LastModifiedDate: 2024-04-28T04:15:09.877Z 
 │                        ├ [6]  ╭ VulnerabilityID : CVE-2023-45283 
@@ -3601,8 +3606,10 @@
 │                        │      │                  ├ [31]: https://security.netapp.com/advisory/ntap-20240419-0
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [32]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ├ [33]: https://www.cve.org/CVERecord?id=CVE-2023-45288 
-│                        │      │                  ╰ [34]: https://www.kb.cert.org/vuls/id/421644 
+│                        │      │                  ├ [33]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [34]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ├ [35]: https://www.cve.org/CVERecord?id=CVE-2023-45288 
+│                        │      │                  ╰ [36]: https://www.kb.cert.org/vuls/id/421644 
 │                        │      ├ PublishedDate   : 2024-04-04T21:15:16.113Z 
 │                        │      ╰ LastModifiedDate: 2024-08-26T21:35:02.457Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2024-34156 
@@ -3666,7 +3673,9 @@
 │                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2024-34156 
 │                        │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2024-3106 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-7081-1 
-│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2024-34156 
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2024-34156 
 │                        │      ├ PublishedDate   : 2024-09-06T21:15:12.02Z 
 │                        │      ╰ LastModifiedDate: 2024-09-09T15:35:07.573Z 
 │                        ├ [9]  ╭ VulnerabilityID : CVE-2023-29406 
@@ -3745,7 +3754,8 @@
 │                        │      │                  ├ [27]: https://security.netapp.com/advisory/ntap-20230814-0
 │                        │      │                  │       002/ 
 │                        │      │                  ├ [28]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ╰ [29]: https://www.cve.org/CVERecord?id=CVE-2023-29406 
+│                        │      │                  ├ [29]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ╰ [30]: https://www.cve.org/CVERecord?id=CVE-2023-29406 
 │                        │      ├ PublishedDate   : 2023-07-11T20:15:10.643Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:14.727Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2023-29409 
@@ -3890,8 +3900,9 @@
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-6574-1 
 │                        │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ├ [20]: https://vuln.go.dev/ID/GO-2023-2041.json 
-│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-39318 
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [21]: https://vuln.go.dev/ID/GO-2023-2041.json 
+│                        │      │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2023-39318 
 │                        │      ├ PublishedDate   : 2023-09-08T17:15:27.823Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:17.43Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2023-39319 
@@ -3965,8 +3976,9 @@
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-6574-1 
 │                        │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ├ [20]: https://vuln.go.dev/ID/GO-2023-2043.json 
-│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-39319 
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [21]: https://vuln.go.dev/ID/GO-2023-2043.json 
+│                        │      │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2023-39319 
 │                        │      ├ PublishedDate   : 2023-09-08T17:15:27.91Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:17.543Z 
 │                        ├ [13] ╭ VulnerabilityID : CVE-2023-39326 
@@ -4242,7 +4254,9 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-45290 
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2023-45290 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.21Z 
 │                        │      ╰ LastModifiedDate: 2024-11-07T11:35:02.48Z 
 │                        ├ [17] ╭ VulnerabilityID : CVE-2024-24783 
@@ -4323,7 +4337,9 @@
 │                        │      │                  ├ [26]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       005/ 
 │                        │      │                  ├ [27]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [28]: https://www.cve.org/CVERecord?id=CVE-2024-24783 
+│                        │      │                  ├ [28]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [29]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [30]: https://www.cve.org/CVERecord?id=CVE-2024-24783 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.683Z 
 │                        │      ╰ LastModifiedDate: 2024-11-05T17:35:08.987Z 
 │                        ├ [18] ╭ VulnerabilityID : CVE-2024-24784 
@@ -4352,7 +4368,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 2 
+│                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -4414,7 +4430,9 @@
 │                        │      │                  ├ [36]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       007/ 
 │                        │      │                  ├ [37]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [38]: https://www.cve.org/CVERecord?id=CVE-2024-24784 
+│                        │      │                  ├ [38]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [39]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [40]: https://www.cve.org/CVERecord?id=CVE-2024-24784 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.733Z 
 │                        │      ╰ LastModifiedDate: 2024-08-05T21:35:04.457Z 
 │                        ├ [19] ╭ VulnerabilityID : CVE-2024-24785 
@@ -4501,8 +4519,9 @@
 │                        │      │                  │       008/ 
 │                        │      │                  ├ [37]: https://ubuntu.com/security/notices/USN-6886-1 
 │                        │      │                  ├ [38]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ├ [39]: https://vuln.go.dev/ID/GO-2024-2610.json 
-│                        │      │                  ╰ [40]: https://www.cve.org/CVERecord?id=CVE-2024-24785 
+│                        │      │                  ├ [39]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [40]: https://vuln.go.dev/ID/GO-2024-2610.json 
+│                        │      │                  ╰ [41]: https://www.cve.org/CVERecord?id=CVE-2024-24785 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.777Z 
 │                        │      ╰ LastModifiedDate: 2024-05-01T17:15:29.61Z 
 │                        ├ [20] ╭ VulnerabilityID : CVE-2024-24789 
@@ -4582,7 +4601,9 @@
 │                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2024-24789 
 │                        │      │                  ├ [22]: https://pkg.go.dev/vuln/GO-2024-2888 
 │                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2024-24789 
+│                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2024-24789 
 │                        │      ├ PublishedDate   : 2024-06-05T16:15:10.47Z 
 │                        │      ╰ LastModifiedDate: 2024-07-03T01:48:25.51Z 
 │                        ├ [21] ╭ VulnerabilityID : CVE-2024-24791 
@@ -4660,7 +4681,9 @@
 │                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2024-24791 
 │                        │      │                  ├ [22]: https://pkg.go.dev/vuln/GO-2024-2963 
 │                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-7081-1 
-│                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
+│                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
 │                        │      ├ PublishedDate   : 2024-07-02T22:15:04.833Z 
 │                        │      ╰ LastModifiedDate: 2024-07-08T14:17:39.083Z 
 │                        ├ [22] ╭ VulnerabilityID : CVE-2024-34155 
@@ -4732,7 +4755,9 @@
 │                        │      │                  ├ [24]: https://nvd.nist.gov/vuln/detail/CVE-2024-34155 
 │                        │      │                  ├ [25]: https://pkg.go.dev/vuln/GO-2024-3105 
 │                        │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-7081-1 
-│                        │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2024-34155 
+│                        │      │                  ├ [27]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [28]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [29]: https://www.cve.org/CVERecord?id=CVE-2024-34155 
 │                        │      ├ PublishedDate   : 2024-09-06T21:15:11.947Z 
 │                        │      ╰ LastModifiedDate: 2024-11-04T17:35:17.887Z 
 │                        ╰ [23] ╭ VulnerabilityID : CVE-2024-34158 
@@ -4806,7 +4831,9 @@
 │                               │                  ├ [24]: https://nvd.nist.gov/vuln/detail/CVE-2024-34158 
 │                               │                  ├ [25]: https://pkg.go.dev/vuln/GO-2024-3107 
 │                               │                  ├ [26]: https://ubuntu.com/security/notices/USN-7081-1 
-│                               │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
+│                               │                  ├ [27]: https://ubuntu.com/security/notices/USN-7109-1 
+│                               │                  ├ [28]: https://ubuntu.com/security/notices/USN-7111-1 
+│                               │                  ╰ [29]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
 │                               ├ PublishedDate   : 2024-09-06T21:15:12.083Z 
 │                               ╰ LastModifiedDate: 2024-09-09T14:35:01.17Z 
 ├ [3]  ╭ Target         : tmp/tmp.LN9ZGCGcJs/krew-linux_amd64 
@@ -5129,9 +5156,10 @@
 │                        │      │                  │        0008/ 
 │                        │      │                  ├ [99] : https://ubuntu.com/security/notices/USN-6574-1 
 │                        │      │                  ├ [100]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ├ [101]: https://www.cisa.gov/news-events/alerts/2023/10/10/
+│                        │      │                  ├ [101]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [102]: https://www.cisa.gov/news-events/alerts/2023/10/10/
 │                        │      │                  │        http2-rapid-reset-vulnerability-cve-2023-44487 
-│                        │      │                  ╰ [102]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
+│                        │      │                  ╰ [103]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
 │                        │      ├ PublishedDate   : 2023-10-11T22:15:09.88Z 
 │                        │      ╰ LastModifiedDate: 2024-04-28T04:15:09.877Z 
 │                        ├ [1]  ╭ VulnerabilityID : CVE-2023-3978 
@@ -5824,8 +5852,10 @@
 │                        │      │                  ├ [31]: https://security.netapp.com/advisory/ntap-20240419-0
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [32]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ├ [33]: https://www.cve.org/CVERecord?id=CVE-2023-45288 
-│                        │      │                  ╰ [34]: https://www.kb.cert.org/vuls/id/421644 
+│                        │      │                  ├ [33]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [34]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ├ [35]: https://www.cve.org/CVERecord?id=CVE-2023-45288 
+│                        │      │                  ╰ [36]: https://www.kb.cert.org/vuls/id/421644 
 │                        │      ├ PublishedDate   : 2024-04-04T21:15:16.113Z 
 │                        │      ╰ LastModifiedDate: 2024-08-26T21:35:02.457Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2024-24790 
@@ -5900,7 +5930,8 @@
 │                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2024-24790 
 │                        │      │                  ├ [21]: https://pkg.go.dev/vuln/GO-2024-2887 
 │                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2024-24790 
+│                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2024-24790 
 │                        │      ├ PublishedDate   : 2024-06-05T16:15:10.56Z 
 │                        │      ╰ LastModifiedDate: 2024-09-03T18:35:07.483Z 
 │                        ├ [5]  ╭ VulnerabilityID : CVE-2023-39325 
@@ -6219,9 +6250,10 @@
 │                        │      │                  │        0008/ 
 │                        │      │                  ├ [99] : https://ubuntu.com/security/notices/USN-6574-1 
 │                        │      │                  ├ [100]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ├ [101]: https://www.cisa.gov/news-events/alerts/2023/10/10/
+│                        │      │                  ├ [101]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [102]: https://www.cisa.gov/news-events/alerts/2023/10/10/
 │                        │      │                  │        http2-rapid-reset-vulnerability-cve-2023-44487 
-│                        │      │                  ╰ [102]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
+│                        │      │                  ╰ [103]: https://www.cve.org/CVERecord?id=CVE-2023-39325 
 │                        │      ├ PublishedDate   : 2023-10-11T22:15:09.88Z 
 │                        │      ╰ LastModifiedDate: 2024-04-28T04:15:09.877Z 
 │                        ├ [6]  ╭ VulnerabilityID : CVE-2023-45283 
@@ -6388,8 +6420,10 @@
 │                        │      │                  ├ [31]: https://security.netapp.com/advisory/ntap-20240419-0
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [32]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ├ [33]: https://www.cve.org/CVERecord?id=CVE-2023-45288 
-│                        │      │                  ╰ [34]: https://www.kb.cert.org/vuls/id/421644 
+│                        │      │                  ├ [33]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [34]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ├ [35]: https://www.cve.org/CVERecord?id=CVE-2023-45288 
+│                        │      │                  ╰ [36]: https://www.kb.cert.org/vuls/id/421644 
 │                        │      ├ PublishedDate   : 2024-04-04T21:15:16.113Z 
 │                        │      ╰ LastModifiedDate: 2024-08-26T21:35:02.457Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2024-34156 
@@ -6453,7 +6487,9 @@
 │                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2024-34156 
 │                        │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2024-3106 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-7081-1 
-│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2024-34156 
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2024-34156 
 │                        │      ├ PublishedDate   : 2024-09-06T21:15:12.02Z 
 │                        │      ╰ LastModifiedDate: 2024-09-09T15:35:07.573Z 
 │                        ├ [9]  ╭ VulnerabilityID : CVE-2023-29406 
@@ -6532,7 +6568,8 @@
 │                        │      │                  ├ [27]: https://security.netapp.com/advisory/ntap-20230814-0
 │                        │      │                  │       002/ 
 │                        │      │                  ├ [28]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ╰ [29]: https://www.cve.org/CVERecord?id=CVE-2023-29406 
+│                        │      │                  ├ [29]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ╰ [30]: https://www.cve.org/CVERecord?id=CVE-2023-29406 
 │                        │      ├ PublishedDate   : 2023-07-11T20:15:10.643Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:14.727Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2023-29409 
@@ -6677,8 +6714,9 @@
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-6574-1 
 │                        │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ├ [20]: https://vuln.go.dev/ID/GO-2023-2041.json 
-│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-39318 
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [21]: https://vuln.go.dev/ID/GO-2023-2041.json 
+│                        │      │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2023-39318 
 │                        │      ├ PublishedDate   : 2023-09-08T17:15:27.823Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:17.43Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2023-39319 
@@ -6752,8 +6790,9 @@
 │                        │      │                  │       009/ 
 │                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-6574-1 
 │                        │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ├ [20]: https://vuln.go.dev/ID/GO-2023-2043.json 
-│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-39319 
+│                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [21]: https://vuln.go.dev/ID/GO-2023-2043.json 
+│                        │      │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2023-39319 
 │                        │      ├ PublishedDate   : 2023-09-08T17:15:27.91Z 
 │                        │      ╰ LastModifiedDate: 2023-11-25T11:15:17.543Z 
 │                        ├ [13] ╭ VulnerabilityID : CVE-2023-39326 
@@ -7029,7 +7068,9 @@
 │                        │      │                  ├ [19]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       004/ 
 │                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2023-45290 
+│                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2023-45290 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.21Z 
 │                        │      ╰ LastModifiedDate: 2024-11-07T11:35:02.48Z 
 │                        ├ [17] ╭ VulnerabilityID : CVE-2024-24783 
@@ -7110,7 +7151,9 @@
 │                        │      │                  ├ [26]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       005/ 
 │                        │      │                  ├ [27]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [28]: https://www.cve.org/CVERecord?id=CVE-2024-24783 
+│                        │      │                  ├ [28]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [29]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [30]: https://www.cve.org/CVERecord?id=CVE-2024-24783 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.683Z 
 │                        │      ╰ LastModifiedDate: 2024-11-05T17:35:08.987Z 
 │                        ├ [18] ╭ VulnerabilityID : CVE-2024-24784 
@@ -7139,7 +7182,7 @@
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
-│                        │      │                  ├ cbl-mariner: 2 
+│                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ photon     : 3 
 │                        │      │                  ├ redhat     : 2 
@@ -7201,7 +7244,9 @@
 │                        │      │                  ├ [36]: https://security.netapp.com/advisory/ntap-20240329-0
 │                        │      │                  │       007/ 
 │                        │      │                  ├ [37]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [38]: https://www.cve.org/CVERecord?id=CVE-2024-24784 
+│                        │      │                  ├ [38]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [39]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [40]: https://www.cve.org/CVERecord?id=CVE-2024-24784 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.733Z 
 │                        │      ╰ LastModifiedDate: 2024-08-05T21:35:04.457Z 
 │                        ├ [19] ╭ VulnerabilityID : CVE-2024-24785 
@@ -7288,8 +7333,9 @@
 │                        │      │                  │       008/ 
 │                        │      │                  ├ [37]: https://ubuntu.com/security/notices/USN-6886-1 
 │                        │      │                  ├ [38]: https://ubuntu.com/security/notices/USN-7061-1 
-│                        │      │                  ├ [39]: https://vuln.go.dev/ID/GO-2024-2610.json 
-│                        │      │                  ╰ [40]: https://www.cve.org/CVERecord?id=CVE-2024-24785 
+│                        │      │                  ├ [39]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [40]: https://vuln.go.dev/ID/GO-2024-2610.json 
+│                        │      │                  ╰ [41]: https://www.cve.org/CVERecord?id=CVE-2024-24785 
 │                        │      ├ PublishedDate   : 2024-03-05T23:15:07.777Z 
 │                        │      ╰ LastModifiedDate: 2024-05-01T17:15:29.61Z 
 │                        ├ [20] ╭ VulnerabilityID : CVE-2024-24789 
@@ -7369,7 +7415,9 @@
 │                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2024-24789 
 │                        │      │                  ├ [22]: https://pkg.go.dev/vuln/GO-2024-2888 
 │                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-6886-1 
-│                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2024-24789 
+│                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2024-24789 
 │                        │      ├ PublishedDate   : 2024-06-05T16:15:10.47Z 
 │                        │      ╰ LastModifiedDate: 2024-07-03T01:48:25.51Z 
 │                        ├ [21] ╭ VulnerabilityID : CVE-2024-24791 
@@ -7447,7 +7495,9 @@
 │                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2024-24791 
 │                        │      │                  ├ [22]: https://pkg.go.dev/vuln/GO-2024-2963 
 │                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-7081-1 
-│                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
+│                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2024-24791 
 │                        │      ├ PublishedDate   : 2024-07-02T22:15:04.833Z 
 │                        │      ╰ LastModifiedDate: 2024-07-08T14:17:39.083Z 
 │                        ├ [22] ╭ VulnerabilityID : CVE-2024-34155 
@@ -7519,7 +7569,9 @@
 │                        │      │                  ├ [24]: https://nvd.nist.gov/vuln/detail/CVE-2024-34155 
 │                        │      │                  ├ [25]: https://pkg.go.dev/vuln/GO-2024-3105 
 │                        │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-7081-1 
-│                        │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2024-34155 
+│                        │      │                  ├ [27]: https://ubuntu.com/security/notices/USN-7109-1 
+│                        │      │                  ├ [28]: https://ubuntu.com/security/notices/USN-7111-1 
+│                        │      │                  ╰ [29]: https://www.cve.org/CVERecord?id=CVE-2024-34155 
 │                        │      ├ PublishedDate   : 2024-09-06T21:15:11.947Z 
 │                        │      ╰ LastModifiedDate: 2024-11-04T17:35:17.887Z 
 │                        ╰ [23] ╭ VulnerabilityID : CVE-2024-34158 
@@ -7593,7 +7645,9 @@
 │                               │                  ├ [24]: https://nvd.nist.gov/vuln/detail/CVE-2024-34158 
 │                               │                  ├ [25]: https://pkg.go.dev/vuln/GO-2024-3107 
 │                               │                  ├ [26]: https://ubuntu.com/security/notices/USN-7081-1 
-│                               │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
+│                               │                  ├ [27]: https://ubuntu.com/security/notices/USN-7109-1 
+│                               │                  ├ [28]: https://ubuntu.com/security/notices/USN-7111-1 
+│                               │                  ╰ [29]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
 │                               ├ PublishedDate   : 2024-09-06T21:15:12.083Z 
 │                               ╰ LastModifiedDate: 2024-09-09T14:35:01.17Z 
 ├ [4]  ╭ Target: usr/bin/docker-compose 
