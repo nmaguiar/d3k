@@ -70,7 +70,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: When curl is asked to use HSTS, the expiry time for a subdomain might  ...
+    Title: 'curl: HSTS subdomain overwrites parent cache entry'
     Description: |-
       When curl is asked to use HSTS, the expiry time for a subdomain might
       overwrite a parent domain's cache entry, making it end sooner or later than
@@ -99,11 +99,18 @@
     Severity: LOW
     VendorSeverity:
       photon: 2
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2024-9681
     - https://curl.se/docs/CVE-2024-9681.html
     - https://curl.se/docs/CVE-2024-9681.json
     - https://hackerone.com/reports/2764830
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-9681
     - https://www.cve.org/CVERecord?id=CVE-2024-9681
     PublishedDate: '2024-11-06T08:15:03.74Z'
     LastModifiedDate: '2024-11-06T18:17:17.287Z'
@@ -917,7 +924,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: When curl is asked to use HSTS, the expiry time for a subdomain might  ...
+    Title: 'curl: HSTS subdomain overwrites parent cache entry'
     Description: |-
       When curl is asked to use HSTS, the expiry time for a subdomain might
       overwrite a parent domain's cache entry, making it end sooner or later than
@@ -946,11 +953,18 @@
     Severity: LOW
     VendorSeverity:
       photon: 2
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2024-9681
     - https://curl.se/docs/CVE-2024-9681.html
     - https://curl.se/docs/CVE-2024-9681.json
     - https://hackerone.com/reports/2764830
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-9681
     - https://www.cve.org/CVERecord?id=CVE-2024-9681
     PublishedDate: '2024-11-06T08:15:03.74Z'
     LastModifiedDate: '2024-11-06T18:17:17.287Z'
@@ -971,7 +985,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: When curl is asked to use HSTS, the expiry time for a subdomain might  ...
+    Title: 'curl: HSTS subdomain overwrites parent cache entry'
     Description: |-
       When curl is asked to use HSTS, the expiry time for a subdomain might
       overwrite a parent domain's cache entry, making it end sooner or later than
@@ -1000,11 +1014,18 @@
     Severity: LOW
     VendorSeverity:
       photon: 2
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2024-9681
     - https://curl.se/docs/CVE-2024-9681.html
     - https://curl.se/docs/CVE-2024-9681.json
     - https://hackerone.com/reports/2764830
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-9681
     - https://www.cve.org/CVERecord?id=CVE-2024-9681
     PublishedDate: '2024-11-06T08:15:03.74Z'
     LastModifiedDate: '2024-11-06T18:17:17.287Z'
@@ -3175,7 +3196,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -3242,7 +3263,7 @@
     Severity: MEDIUM
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -5199,7 +5220,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -5266,7 +5287,7 @@
     Severity: MEDIUM
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -6091,37 +6112,6 @@
     - https://github.com/grpc/grpc-go
     - https://github.com/grpc/grpc-go/commit/ab292411ddc0f3b7a7786754d1fe05264c3021eb
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-xr7q-jx4m-x55m
-- Target: /etc/ssh/ssh_host_ecdsa_key
-  Class: secret
-  Secrets:
-  - RuleID: private-key
-    Category: AsymmetricPrivateKey
-    Severity: HIGH
-    Title: Asymmetric Private Key
-    StartLine: 1
-    EndLine: 1
-    Code:
-      Lines:
-      - Number: 1
-        Content: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        IsCause: true
-        Annotation: ''
-        Truncated: false
-        Highlighted: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        FirstCause: true
-        LastCause: true
-      - Number: 2
-        Content: ''
-        IsCause: false
-        Annotation: ''
-        Truncated: false
-        FirstCause: false
-        LastCause: false
-    Match: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-    Layer:
-      Digest: sha256:7d1ac2e063e33948f6ff9fc7c35367f435abcbb8722b4b025ad0354e494044c8
-      DiffID: sha256:67a8bc483168ec8fb07ab89bcd6e472acf1c36996b1f7940fbcd64d480b733ad
-      CreatedBy: 'COPY / / # buildkit'
 - Target: /etc/ssh/ssh_host_ed25519_key
   Class: secret
   Secrets:
@@ -6180,6 +6170,37 @@
         FirstCause: false
         LastCause: false
     Match: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+    Layer:
+      Digest: sha256:7d1ac2e063e33948f6ff9fc7c35367f435abcbb8722b4b025ad0354e494044c8
+      DiffID: sha256:67a8bc483168ec8fb07ab89bcd6e472acf1c36996b1f7940fbcd64d480b733ad
+      CreatedBy: 'COPY / / # buildkit'
+- Target: /etc/ssh/ssh_host_ecdsa_key
+  Class: secret
+  Secrets:
+  - RuleID: private-key
+    Category: AsymmetricPrivateKey
+    Severity: HIGH
+    Title: Asymmetric Private Key
+    StartLine: 1
+    EndLine: 1
+    Code:
+      Lines:
+      - Number: 1
+        Content: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+        FirstCause: true
+        LastCause: true
+      - Number: 2
+        Content: ''
+        IsCause: false
+        Annotation: ''
+        Truncated: false
+        FirstCause: false
+        LastCause: false
+    Match: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
     Layer:
       Digest: sha256:7d1ac2e063e33948f6ff9fc7c35367f435abcbb8722b4b025ad0354e494044c8
       DiffID: sha256:67a8bc483168ec8fb07ab89bcd6e472acf1c36996b1f7940fbcd64d480b733ad
