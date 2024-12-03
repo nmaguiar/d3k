@@ -2939,7 +2939,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -3793,6 +3793,7 @@
     VendorSeverity:
       alma: 2
       amazon: 3
+      azure: 2
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -3931,7 +3932,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -4000,7 +4001,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -4128,7 +4129,6 @@
     VendorSeverity:
       amazon: 2
       bitnami: 2
-      cbl-mariner: 2
       nvd: 2
       photon: 2
     CVSS:
@@ -4142,7 +4142,6 @@
     - https://go.dev/cl/540277
     - https://go.dev/issue/63713
     - https://groups.google.com/g/golang-announce/c/4tU8LZfBFkY
-    - https://nvd.nist.gov/vuln/detail/CVE-2023-45284
     - https://pkg.go.dev/vuln/GO-2023-2186
     PublishedDate: '2023-11-09T17:15:08.813Z'
     LastModifiedDate: '2024-09-03T19:35:05.593Z'
@@ -4969,7 +4968,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -5823,6 +5822,7 @@
     VendorSeverity:
       alma: 2
       amazon: 3
+      azure: 2
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -5961,7 +5961,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -6030,7 +6030,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -6158,7 +6158,6 @@
     VendorSeverity:
       amazon: 2
       bitnami: 2
-      cbl-mariner: 2
       nvd: 2
       photon: 2
     CVSS:
@@ -6172,7 +6171,6 @@
     - https://go.dev/cl/540277
     - https://go.dev/issue/63713
     - https://groups.google.com/g/golang-announce/c/4tU8LZfBFkY
-    - https://nvd.nist.gov/vuln/detail/CVE-2023-45284
     - https://pkg.go.dev/vuln/GO-2023-2186
     PublishedDate: '2023-11-09T17:15:08.813Z'
     LastModifiedDate: '2024-09-03T19:35:05.593Z'
