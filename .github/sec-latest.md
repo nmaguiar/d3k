@@ -2227,8 +2227,9 @@
 │                        │      │                   "./venv/bin/python") are not affected. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-428 
-│                        │      ├ VendorSeverity   ╭ redhat: 2 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ oracle-oval: 2 
+│                        │      │                  ├ redhat     : 2 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:C/C:L/I:
 │                        │      │                           │           H/A:N 
 │                        │      │                           ╰ V3Score : 6.3 
@@ -2247,12 +2248,14 @@
 │                        │      │                  ├ [7] : https://github.com/python/cpython/pull/124712 
 │                        │      │                  ├ [8] : https://github.com/python/cpython/pull/124712/commit
 │                        │      │                  │       s/b6a3bbd155c558cdcda482629073e492437db3d0 
-│                        │      │                  ├ [9] : https://mail.python.org/archives/list/security-annou
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-9287.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-10779.html 
+│                        │      │                  ├ [11]: https://mail.python.org/archives/list/security-annou
 │                        │      │                  │       nce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRB
 │                        │      │                  │       ZL/ 
-│                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-9287 
-│                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7116-1 
-│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-9287 
+│                        │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-9287 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-7116-1 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-9287 
 │                        │      ├ PublishedDate   : 2024-10-22T17:15:06.697Z 
 │                        │      ╰ LastModifiedDate: 2024-11-04T18:15:05.627Z 
 │                        ├ [44] ╭ VulnerabilityID : CVE-2024-9287 
@@ -2287,8 +2290,9 @@
 │                        │      │                   "./venv/bin/python") are not affected. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-428 
-│                        │      ├ VendorSeverity   ╭ redhat: 2 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ oracle-oval: 2 
+│                        │      │                  ├ redhat     : 2 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:C/C:L/I:
 │                        │      │                           │           H/A:N 
 │                        │      │                           ╰ V3Score : 6.3 
@@ -2307,12 +2311,14 @@
 │                        │      │                  ├ [7] : https://github.com/python/cpython/pull/124712 
 │                        │      │                  ├ [8] : https://github.com/python/cpython/pull/124712/commit
 │                        │      │                  │       s/b6a3bbd155c558cdcda482629073e492437db3d0 
-│                        │      │                  ├ [9] : https://mail.python.org/archives/list/security-annou
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-9287.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-10779.html 
+│                        │      │                  ├ [11]: https://mail.python.org/archives/list/security-annou
 │                        │      │                  │       nce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRB
 │                        │      │                  │       ZL/ 
-│                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-9287 
-│                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7116-1 
-│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-9287 
+│                        │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-9287 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-7116-1 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-9287 
 │                        │      ├ PublishedDate   : 2024-10-22T17:15:06.697Z 
 │                        │      ╰ LastModifiedDate: 2024-11-04T18:15:05.627Z 
 │                        ├ [45] ╭ VulnerabilityID : CVE-2024-9287 
@@ -2347,8 +2353,9 @@
 │                        │      │                   "./venv/bin/python") are not affected. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-428 
-│                        │      ├ VendorSeverity   ╭ redhat: 2 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ oracle-oval: 2 
+│                        │      │                  ├ redhat     : 2 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:C/C:L/I:
 │                        │      │                           │           H/A:N 
 │                        │      │                           ╰ V3Score : 6.3 
@@ -2367,12 +2374,14 @@
 │                        │      │                  ├ [7] : https://github.com/python/cpython/pull/124712 
 │                        │      │                  ├ [8] : https://github.com/python/cpython/pull/124712/commit
 │                        │      │                  │       s/b6a3bbd155c558cdcda482629073e492437db3d0 
-│                        │      │                  ├ [9] : https://mail.python.org/archives/list/security-annou
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-9287.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-10779.html 
+│                        │      │                  ├ [11]: https://mail.python.org/archives/list/security-annou
 │                        │      │                  │       nce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRB
 │                        │      │                  │       ZL/ 
-│                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-9287 
-│                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7116-1 
-│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-9287 
+│                        │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-9287 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-7116-1 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-9287 
 │                        │      ├ PublishedDate   : 2024-10-22T17:15:06.697Z 
 │                        │      ╰ LastModifiedDate: 2024-11-04T18:15:05.627Z 
 │                        ├ [46] ╭ VulnerabilityID : CVE-2024-41996 
@@ -2597,8 +2606,9 @@
 │                        │      │                   "./venv/bin/python") are not affected. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-428 
-│                        │      ├ VendorSeverity   ╭ redhat: 2 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ oracle-oval: 2 
+│                        │      │                  ├ redhat     : 2 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:C/C:L/I:
 │                        │      │                           │           H/A:N 
 │                        │      │                           ╰ V3Score : 6.3 
@@ -2617,12 +2627,14 @@
 │                        │      │                  ├ [7] : https://github.com/python/cpython/pull/124712 
 │                        │      │                  ├ [8] : https://github.com/python/cpython/pull/124712/commit
 │                        │      │                  │       s/b6a3bbd155c558cdcda482629073e492437db3d0 
-│                        │      │                  ├ [9] : https://mail.python.org/archives/list/security-annou
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-9287.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-10779.html 
+│                        │      │                  ├ [11]: https://mail.python.org/archives/list/security-annou
 │                        │      │                  │       nce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRB
 │                        │      │                  │       ZL/ 
-│                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-9287 
-│                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7116-1 
-│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-9287 
+│                        │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-9287 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-7116-1 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-9287 
 │                        │      ├ PublishedDate   : 2024-10-22T17:15:06.697Z 
 │                        │      ╰ LastModifiedDate: 2024-11-04T18:15:05.627Z 
 │                        ├ [51] ╭ VulnerabilityID : CVE-2024-9287 
@@ -2657,8 +2669,9 @@
 │                        │      │                   "./venv/bin/python") are not affected. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-428 
-│                        │      ├ VendorSeverity   ╭ redhat: 2 
-│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ VendorSeverity   ╭ oracle-oval: 2 
+│                        │      │                  ├ redhat     : 2 
+│                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:C/C:L/I:
 │                        │      │                           │           H/A:N 
 │                        │      │                           ╰ V3Score : 6.3 
@@ -2677,12 +2690,14 @@
 │                        │      │                  ├ [7] : https://github.com/python/cpython/pull/124712 
 │                        │      │                  ├ [8] : https://github.com/python/cpython/pull/124712/commit
 │                        │      │                  │       s/b6a3bbd155c558cdcda482629073e492437db3d0 
-│                        │      │                  ├ [9] : https://mail.python.org/archives/list/security-annou
+│                        │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-9287.html 
+│                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-10779.html 
+│                        │      │                  ├ [11]: https://mail.python.org/archives/list/security-annou
 │                        │      │                  │       nce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRB
 │                        │      │                  │       ZL/ 
-│                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-9287 
-│                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7116-1 
-│                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-9287 
+│                        │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-9287 
+│                        │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-7116-1 
+│                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-9287 
 │                        │      ├ PublishedDate   : 2024-10-22T17:15:06.697Z 
 │                        │      ╰ LastModifiedDate: 2024-11-04T18:15:05.627Z 
 │                        ├ [52] ╭ VulnerabilityID : CVE-2024-47814 
@@ -4919,7 +4934,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -5002,7 +5017,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -7763,7 +7778,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7846,7 +7861,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
