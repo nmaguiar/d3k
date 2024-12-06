@@ -2131,6 +2131,7 @@
     CweIDs:
     - CWE-428
     VendorSeverity:
+      oracle-oval: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2147,6 +2148,8 @@
     - https://github.com/python/cpython/issues/124651
     - https://github.com/python/cpython/pull/124712
     - https://github.com/python/cpython/pull/124712/commits/b6a3bbd155c558cdcda482629073e492437db3d0
+    - https://linux.oracle.com/cve/CVE-2024-9287.html
+    - https://linux.oracle.com/errata/ELSA-2024-10779.html
     - https://mail.python.org/archives/list/security-announce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRBZL/
     - https://nvd.nist.gov/vuln/detail/CVE-2024-9287
     - https://ubuntu.com/security/notices/USN-7116-1
@@ -2177,6 +2180,7 @@
     CweIDs:
     - CWE-428
     VendorSeverity:
+      oracle-oval: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2193,6 +2197,8 @@
     - https://github.com/python/cpython/issues/124651
     - https://github.com/python/cpython/pull/124712
     - https://github.com/python/cpython/pull/124712/commits/b6a3bbd155c558cdcda482629073e492437db3d0
+    - https://linux.oracle.com/cve/CVE-2024-9287.html
+    - https://linux.oracle.com/errata/ELSA-2024-10779.html
     - https://mail.python.org/archives/list/security-announce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRBZL/
     - https://nvd.nist.gov/vuln/detail/CVE-2024-9287
     - https://ubuntu.com/security/notices/USN-7116-1
@@ -2223,6 +2229,7 @@
     CweIDs:
     - CWE-428
     VendorSeverity:
+      oracle-oval: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2239,6 +2246,8 @@
     - https://github.com/python/cpython/issues/124651
     - https://github.com/python/cpython/pull/124712
     - https://github.com/python/cpython/pull/124712/commits/b6a3bbd155c558cdcda482629073e492437db3d0
+    - https://linux.oracle.com/cve/CVE-2024-9287.html
+    - https://linux.oracle.com/errata/ELSA-2024-10779.html
     - https://mail.python.org/archives/list/security-announce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRBZL/
     - https://nvd.nist.gov/vuln/detail/CVE-2024-9287
     - https://ubuntu.com/security/notices/USN-7116-1
@@ -2447,6 +2456,7 @@
     CweIDs:
     - CWE-428
     VendorSeverity:
+      oracle-oval: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2463,6 +2473,8 @@
     - https://github.com/python/cpython/issues/124651
     - https://github.com/python/cpython/pull/124712
     - https://github.com/python/cpython/pull/124712/commits/b6a3bbd155c558cdcda482629073e492437db3d0
+    - https://linux.oracle.com/cve/CVE-2024-9287.html
+    - https://linux.oracle.com/errata/ELSA-2024-10779.html
     - https://mail.python.org/archives/list/security-announce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRBZL/
     - https://nvd.nist.gov/vuln/detail/CVE-2024-9287
     - https://ubuntu.com/security/notices/USN-7116-1
@@ -2493,6 +2505,7 @@
     CweIDs:
     - CWE-428
     VendorSeverity:
+      oracle-oval: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2509,6 +2522,8 @@
     - https://github.com/python/cpython/issues/124651
     - https://github.com/python/cpython/pull/124712
     - https://github.com/python/cpython/pull/124712/commits/b6a3bbd155c558cdcda482629073e492437db3d0
+    - https://linux.oracle.com/cve/CVE-2024-9287.html
+    - https://linux.oracle.com/errata/ELSA-2024-10779.html
     - https://mail.python.org/archives/list/security-announce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRBZL/
     - https://nvd.nist.gov/vuln/detail/CVE-2024-9287
     - https://ubuntu.com/security/notices/USN-7116-1
@@ -4046,7 +4061,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -4114,7 +4129,7 @@
     Severity: MEDIUM
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
@@ -6102,7 +6117,7 @@
     - CWE-79
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -6170,7 +6185,7 @@
     Severity: MEDIUM
     VendorSeverity:
       alma: 2
-      amazon: 3
+      amazon: 2
       bitnami: 2
       cbl-mariner: 2
       nvd: 2
