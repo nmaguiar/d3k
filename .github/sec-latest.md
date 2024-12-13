@@ -2757,11 +2757,12 @@
 │                        │      │                   vulnerability. 
 │                        │      ├ Severity        : LOW 
 │                        │      ├ CweIDs           ─ [0]: CWE-416 
-│                        │      ├ VendorSeverity   ╭ amazon: 2 
-│                        │      │                  ├ azure : 1 
-│                        │      │                  ├ photon: 1 
-│                        │      │                  ├ redhat: 1 
-│                        │      │                  ╰ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 1 
+│                        │      │                  ├ cbl-mariner: 1 
+│                        │      │                  ├ photon     : 1 
+│                        │      │                  ├ redhat     : 1 
+│                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:
 │                        │      │                           │           L/A:L 
 │                        │      │                           ╰ V3Score : 3.9 
@@ -2807,11 +2808,12 @@
 │                        │      │                   vulnerability. 
 │                        │      ├ Severity        : LOW 
 │                        │      ├ CweIDs           ─ [0]: CWE-416 
-│                        │      ├ VendorSeverity   ╭ amazon: 2 
-│                        │      │                  ├ azure : 1 
-│                        │      │                  ├ photon: 1 
-│                        │      │                  ├ redhat: 1 
-│                        │      │                  ╰ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 1 
+│                        │      │                  ├ cbl-mariner: 1 
+│                        │      │                  ├ photon     : 1 
+│                        │      │                  ├ redhat     : 1 
+│                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:
 │                        │      │                           │           L/A:L 
 │                        │      │                           ╰ V3Score : 3.9 
@@ -2857,11 +2859,12 @@
 │                        │      │                   vulnerability. 
 │                        │      ├ Severity        : LOW 
 │                        │      ├ CweIDs           ─ [0]: CWE-416 
-│                        │      ├ VendorSeverity   ╭ amazon: 2 
-│                        │      │                  ├ azure : 1 
-│                        │      │                  ├ photon: 1 
-│                        │      │                  ├ redhat: 1 
-│                        │      │                  ╰ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 1 
+│                        │      │                  ├ cbl-mariner: 1 
+│                        │      │                  ├ photon     : 1 
+│                        │      │                  ├ redhat     : 1 
+│                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:
 │                        │      │                           │           L/A:L 
 │                        │      │                           ╰ V3Score : 3.9 
@@ -2954,11 +2957,12 @@
 │                               │                   vulnerability. 
 │                               ├ Severity        : LOW 
 │                               ├ CweIDs           ─ [0]: CWE-416 
-│                               ├ VendorSeverity   ╭ amazon: 2 
-│                               │                  ├ azure : 1 
-│                               │                  ├ photon: 1 
-│                               │                  ├ redhat: 1 
-│                               │                  ╰ ubuntu: 1 
+│                               ├ VendorSeverity   ╭ amazon     : 2 
+│                               │                  ├ azure      : 1 
+│                               │                  ├ cbl-mariner: 1 
+│                               │                  ├ photon     : 1 
+│                               │                  ├ redhat     : 1 
+│                               │                  ╰ ubuntu     : 1 
 │                               ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:
 │                               │                           │           L/A:L 
 │                               │                           ╰ V3Score : 3.9 
@@ -8726,12 +8730,84 @@
 │                               │                  ╰ [32]: https://www.cve.org/CVERecord?id=CVE-2024-34158 
 │                               ├ PublishedDate   : 2024-09-06T21:15:12.083Z 
 │                               ╰ LastModifiedDate: 2024-09-09T14:35:01.17Z 
-├ [4]  ╭ Target: usr/bin/docker-compose 
-│      ├ Class : lang-pkgs 
-│      ╰ Type  : gobinary 
-├ [5]  ╭ Target: usr/bin/helm 
-│      ├ Class : lang-pkgs 
-│      ╰ Type  : gobinary 
+├ [4]  ╭ Target         : usr/bin/docker-compose 
+│      ├ Class          : lang-pkgs 
+│      ├ Type           : gobinary 
+│      ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-45337 
+│                              ├ PkgID           : golang.org/x/crypto@v0.26.0 
+│                              ├ PkgName         : golang.org/x/crypto 
+│                              ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/crypto@v0.26.0 
+│                              │                  ╰ UID : 7e9ed4d923a4efff 
+│                              ├ InstalledVersion: v0.26.0 
+│                              ├ FixedVersion    : 0.31.0 
+│                              ├ Status          : fixed 
+│                              ├ Layer            ╭ Digest: sha256:e58005c3359307ebb200d92631d8a9f28a4ae0200eed
+│                              │                  │         7cf5afcbe282c0f6671d 
+│                              │                  ╰ DiffID: sha256:b432d88d7f6735f4cf2f719946730f190019d6df6166
+│                              │                            3c6a7d93c00a9b3b5417 
+│                              ├ SeveritySource  : ghsa 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45337 
+│                              ├ DataSource       ╭ ID  : ghsa 
+│                              │                  ├ Name: GitHub Security Advisory Go 
+│                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                              │                          cosystem%3Ago 
+│                              ├ Title           : Applications and libraries which misuse the
+│                              │                   ServerConfig.PublicKeyCall ... 
+│                              ├ Description     : Applications and libraries which misuse the
+│                              │                   ServerConfig.PublicKeyCallback callback may be susceptible
+│                              │                   to an authorization bypass. 
+│                              ├ Severity        : HIGH 
+│                              ├ VendorSeverity   ─ ghsa: 3 
+│                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/12/11/2 
+│                              │                  ├ [1]: https://github.com/golang/crypto 
+│                              │                  ├ [2]: https://github.com/golang/crypto/commit/b4f1988a35dee1
+│                              │                  │      1ec3e05d6bf3e90b695fbd8909 
+│                              │                  ├ [3]: https://go.dev/cl/635315 
+│                              │                  ├ [4]: https://go.dev/issue/70779 
+│                              │                  ├ [5]: https://groups.google.com/g/golang-announce/c/-nPEi39g
+│                              │                  │      I4Q/m/cGVPJCqdAQAJ 
+│                              │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2024-3321 
+│                              ├ PublishedDate   : 2024-12-12T02:02:07.97Z 
+│                              ╰ LastModifiedDate: 2024-12-12T02:15:24.673Z 
+├ [5]  ╭ Target         : usr/bin/helm 
+│      ├ Class          : lang-pkgs 
+│      ├ Type           : gobinary 
+│      ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-45337 
+│                              ├ PkgID           : golang.org/x/crypto@v0.27.0 
+│                              ├ PkgName         : golang.org/x/crypto 
+│                              ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/crypto@v0.27.0 
+│                              │                  ╰ UID : 2c48ad94df90e1d1 
+│                              ├ InstalledVersion: v0.27.0 
+│                              ├ FixedVersion    : 0.31.0 
+│                              ├ Status          : fixed 
+│                              ├ Layer            ╭ Digest: sha256:e58005c3359307ebb200d92631d8a9f28a4ae0200eed
+│                              │                  │         7cf5afcbe282c0f6671d 
+│                              │                  ╰ DiffID: sha256:b432d88d7f6735f4cf2f719946730f190019d6df6166
+│                              │                            3c6a7d93c00a9b3b5417 
+│                              ├ SeveritySource  : ghsa 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45337 
+│                              ├ DataSource       ╭ ID  : ghsa 
+│                              │                  ├ Name: GitHub Security Advisory Go 
+│                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                              │                          cosystem%3Ago 
+│                              ├ Title           : Applications and libraries which misuse the
+│                              │                   ServerConfig.PublicKeyCall ... 
+│                              ├ Description     : Applications and libraries which misuse the
+│                              │                   ServerConfig.PublicKeyCallback callback may be susceptible
+│                              │                   to an authorization bypass. 
+│                              ├ Severity        : HIGH 
+│                              ├ VendorSeverity   ─ ghsa: 3 
+│                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/12/11/2 
+│                              │                  ├ [1]: https://github.com/golang/crypto 
+│                              │                  ├ [2]: https://github.com/golang/crypto/commit/b4f1988a35dee1
+│                              │                  │      1ec3e05d6bf3e90b695fbd8909 
+│                              │                  ├ [3]: https://go.dev/cl/635315 
+│                              │                  ├ [4]: https://go.dev/issue/70779 
+│                              │                  ├ [5]: https://groups.google.com/g/golang-announce/c/-nPEi39g
+│                              │                  │      I4Q/m/cGVPJCqdAQAJ 
+│                              │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2024-3321 
+│                              ├ PublishedDate   : 2024-12-12T02:02:07.97Z 
+│                              ╰ LastModifiedDate: 2024-12-12T02:15:24.673Z 
 ├ [6]  ╭ Target: usr/bin/kubectl 
 │      ├ Class : lang-pkgs 
 │      ╰ Type  : gobinary 
@@ -8837,7 +8913,43 @@
 │                        │     │                          docker-engine-authz-plugin/ 
 │                        │     ├ PublishedDate   : 2024-07-24T17:15:11.053Z 
 │                        │     ╰ LastModifiedDate: 2024-07-30T20:15:04.567Z 
-│                        ╰ [1] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
+│                        ├ [1] ╭ VulnerabilityID : CVE-2024-45337 
+│                        │     ├ PkgID           : golang.org/x/crypto@v0.24.0 
+│                        │     ├ PkgName         : golang.org/x/crypto 
+│                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/crypto@v0.24.0 
+│                        │     │                  ╰ UID : 51665884b15027a5 
+│                        │     ├ InstalledVersion: v0.24.0 
+│                        │     ├ FixedVersion    : 0.31.0 
+│                        │     ├ Status          : fixed 
+│                        │     ├ Layer            ╭ Digest: sha256:e58005c3359307ebb200d92631d8a9f28a4ae0200eed
+│                        │     │                  │         7cf5afcbe282c0f6671d 
+│                        │     │                  ╰ DiffID: sha256:b432d88d7f6735f4cf2f719946730f190019d6df6166
+│                        │     │                            3c6a7d93c00a9b3b5417 
+│                        │     ├ SeveritySource  : ghsa 
+│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45337 
+│                        │     ├ DataSource       ╭ ID  : ghsa 
+│                        │     │                  ├ Name: GitHub Security Advisory Go 
+│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                        │     │                          cosystem%3Ago 
+│                        │     ├ Title           : Applications and libraries which misuse the
+│                        │     │                   ServerConfig.PublicKeyCall ... 
+│                        │     ├ Description     : Applications and libraries which misuse the
+│                        │     │                   ServerConfig.PublicKeyCallback callback may be susceptible
+│                        │     │                   to an authorization bypass. 
+│                        │     ├ Severity        : HIGH 
+│                        │     ├ VendorSeverity   ─ ghsa: 3 
+│                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/12/11/2 
+│                        │     │                  ├ [1]: https://github.com/golang/crypto 
+│                        │     │                  ├ [2]: https://github.com/golang/crypto/commit/b4f1988a35dee1
+│                        │     │                  │      1ec3e05d6bf3e90b695fbd8909 
+│                        │     │                  ├ [3]: https://go.dev/cl/635315 
+│                        │     │                  ├ [4]: https://go.dev/issue/70779 
+│                        │     │                  ├ [5]: https://groups.google.com/g/golang-announce/c/-nPEi39g
+│                        │     │                  │      I4Q/m/cGVPJCqdAQAJ 
+│                        │     │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2024-3321 
+│                        │     ├ PublishedDate   : 2024-12-12T02:02:07.97Z 
+│                        │     ╰ LastModifiedDate: 2024-12-12T02:15:24.673Z 
+│                        ╰ [2] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
 │                              ├ PkgID           : google.golang.org/grpc@v1.64.0 
 │                              ├ PkgName         : google.golang.org/grpc 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.64.0 
