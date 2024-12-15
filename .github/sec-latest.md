@@ -3398,7 +3398,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -4892,7 +4892,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4969,7 +4969,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -6242,7 +6242,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -7736,7 +7736,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7813,7 +7813,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -8800,10 +8800,13 @@
 │                              │                   libraries misuse the Permissions type by sharing it across
 │                              │                   authentication attempts; users of third-party libraries
 │                              │                   should refer to the relevant projects for guidance. 
-│                              ├ Severity        : HIGH 
-│                              ├ VendorSeverity   ╭ ghsa  : 3 
+│                              ├ Severity        : CRITICAL 
+│                              ├ VendorSeverity   ╭ ghsa  : 4 
 │                              │                  ╰ redhat: 3 
-│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N
+│                              ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                              │                  │        │           /A:N 
+│                              │                  │        ╰ V3Score : 9.1 
+│                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N
 │                              │                           │           /A:N 
 │                              │                           ╰ V3Score : 7.7 
 │                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/12/11/2 
@@ -8884,10 +8887,13 @@
 │                              │                   libraries misuse the Permissions type by sharing it across
 │                              │                   authentication attempts; users of third-party libraries
 │                              │                   should refer to the relevant projects for guidance. 
-│                              ├ Severity        : HIGH 
-│                              ├ VendorSeverity   ╭ ghsa  : 3 
+│                              ├ Severity        : CRITICAL 
+│                              ├ VendorSeverity   ╭ ghsa  : 4 
 │                              │                  ╰ redhat: 3 
-│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N
+│                              ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                              │                  │        │           /A:N 
+│                              │                  │        ╰ V3Score : 9.1 
+│                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N
 │                              │                           │           /A:N 
 │                              │                           ╰ V3Score : 7.7 
 │                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/12/11/2 
@@ -9070,10 +9076,13 @@
 │                        │     │                   libraries misuse the Permissions type by sharing it across
 │                        │     │                   authentication attempts; users of third-party libraries
 │                        │     │                   should refer to the relevant projects for guidance. 
-│                        │     ├ Severity        : HIGH 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 3 
+│                        │     ├ Severity        : CRITICAL 
+│                        │     ├ VendorSeverity   ╭ ghsa  : 4 
 │                        │     │                  ╰ redhat: 3 
-│                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N
+│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                        │     │                  │        │           /A:N 
+│                        │     │                  │        ╰ V3Score : 9.1 
+│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N
 │                        │     │                           │           /A:N 
 │                        │     │                           ╰ V3Score : 7.7 
 │                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/12/11/2 
