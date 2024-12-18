@@ -1,7 +1,7 @@
      _   ____  _   
   __| | |__ / | |__
  / _` |  |_ \ | / /
- \__,_| |___/ |_\_\  (v0.1.0)
+ \__,_| |___/ |_\_\  (v0.1.1)
 
  To check what is ready to use execute [1m'status.js'[m
 

@@ -15,7 +15,7 @@ var status = {
     K8S: isUnDef(getEnv("NOK8S"))
 }
 
-var text = `# hVSCs status
+var text = `# d3k status
 
 {{bool Docker}} Docker is ready to use
 {{#if K8S}}{{bool K8SStart}} Kubernetes has started
