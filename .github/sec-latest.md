@@ -1755,7 +1755,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-922 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ├ rocky      : 3 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -1777,7 +1777,7 @@
 │                        │      │                  ├ [10]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
 │                        │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2024:10379 
 │                        │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-10041.html 
-│                        │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
+│                        │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
 │                        │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                        │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
@@ -1865,7 +1865,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-922 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ├ rocky      : 3 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -1887,7 +1887,7 @@
 │                        │      │                  ├ [10]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
 │                        │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2024:10379 
 │                        │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-10041.html 
-│                        │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
+│                        │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
 │                        │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                        │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
@@ -1975,7 +1975,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-922 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ├ rocky      : 3 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -1997,7 +1997,7 @@
 │                        │      │                  ├ [10]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
 │                        │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2024:10379 
 │                        │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-10041.html 
-│                        │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
+│                        │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
 │                        │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                        │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
@@ -2085,7 +2085,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-922 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ oracle-oval: 2 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ├ rocky      : 3 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -2107,7 +2107,7 @@
 │                        │      │                  ├ [10]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
 │                        │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2024:10379 
 │                        │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-10041.html 
-│                        │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
+│                        │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
 │                        │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
 │                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                        │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
@@ -4363,7 +4363,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4446,7 +4446,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -7243,7 +7243,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7326,7 +7326,7 @@
 │                        │      │                   bytes grows too small. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ nvd        : 2 
@@ -8270,8 +8270,9 @@
 │                        │     │                   authentication attempts; users of third-party libraries
 │                        │     │                   should refer to the relevant projects for guidance. 
 │                        │     ├ Severity        : CRITICAL 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 4 
-│                        │     │                  ╰ redhat: 3 
+│                        │     ├ VendorSeverity   ╭ cbl-mariner: 4 
+│                        │     │                  ├ ghsa       : 4 
+│                        │     │                  ╰ redhat     : 3 
 │                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
 │                        │     │                  │        │           /A:N 
 │                        │     │                  │        ╰ V3Score : 9.1 
@@ -8532,8 +8533,9 @@
 │                        │     │                   authentication attempts; users of third-party libraries
 │                        │     │                   should refer to the relevant projects for guidance. 
 │                        │     ├ Severity        : CRITICAL 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 4 
-│                        │     │                  ╰ redhat: 3 
+│                        │     ├ VendorSeverity   ╭ cbl-mariner: 4 
+│                        │     │                  ├ ghsa       : 4 
+│                        │     │                  ╰ redhat     : 3 
 │                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
 │                        │     │                  │        │           /A:N 
 │                        │     │                  │        ╰ V3Score : 9.1 
