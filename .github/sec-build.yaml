@@ -2006,6 +2006,7 @@
     CweIDs:
     - CWE-611
     VendorSeverity:
+      azure: 4
       photon: 3
       redhat: 4
       ubuntu: 2
