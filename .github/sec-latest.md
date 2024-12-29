@@ -2237,7 +2237,8 @@
 │                        │      │                   classic XXE attacks possible. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-611 
-│                        │      ├ VendorSeverity   ╭ photon: 3 
+│                        │      ├ VendorSeverity   ╭ azure : 4 
+│                        │      │                  ├ photon: 3 
 │                        │      │                  ├ redhat: 4 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
