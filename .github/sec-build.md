@@ -2654,6 +2654,7 @@
 │                        │      │                    resulting in extremely slow parsing. This could cause a
 │                        │      │                   denial of service. 
 │                        │      ├ Severity        : HIGH 
+│                        │      ├ CweIDs           ─ [0]: CWE-1333 
 │                        │      ├ VendorSeverity   ╭ ghsa  : 3 
 │                        │      │                  ╰ redhat: 3 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -2670,7 +2671,7 @@
 │                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3333 
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
 │                        │      ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                        │      ╰ LastModifiedDate: 2024-12-18T21:15:08.173Z 
+│                        │      ╰ LastModifiedDate: 2024-12-31T20:16:06.603Z 
 │                        ├ [2]  ╭ VulnerabilityID : CVE-2023-3978 
 │                        │      ├ PkgID           : golang.org/x/net@v0.12.0 
 │                        │      ├ PkgName         : golang.org/x/net 
@@ -2696,7 +2697,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -4193,7 +4194,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4270,7 +4271,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -5543,6 +5544,7 @@
 │                        │      │                    resulting in extremely slow parsing. This could cause a
 │                        │      │                   denial of service. 
 │                        │      ├ Severity        : HIGH 
+│                        │      ├ CweIDs           ─ [0]: CWE-1333 
 │                        │      ├ VendorSeverity   ╭ ghsa  : 3 
 │                        │      │                  ╰ redhat: 3 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -5559,7 +5561,7 @@
 │                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3333 
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
 │                        │      ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                        │      ╰ LastModifiedDate: 2024-12-18T21:15:08.173Z 
+│                        │      ╰ LastModifiedDate: 2024-12-31T20:16:06.603Z 
 │                        ├ [2]  ╭ VulnerabilityID : CVE-2023-3978 
 │                        │      ├ PkgID           : golang.org/x/net@v0.12.0 
 │                        │      ├ PkgName         : golang.org/x/net 
@@ -5585,7 +5587,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -7082,7 +7084,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7159,7 +7161,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -8110,6 +8112,7 @@
 │                              │                   resulting in extremely slow parsing. This could cause a
 │                              │                   denial of service. 
 │                              ├ Severity        : HIGH 
+│                              ├ CweIDs           ─ [0]: CWE-1333 
 │                              ├ VendorSeverity   ╭ ghsa  : 3 
 │                              │                  ╰ redhat: 3 
 │                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -8126,7 +8129,7 @@
 │                              │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3333 
 │                              │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
 │                              ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                              ╰ LastModifiedDate: 2024-12-18T21:15:08.173Z 
+│                              ╰ LastModifiedDate: 2024-12-31T20:16:06.603Z 
 ├ [5]  ╭ Target         : usr/bin/helm 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -8155,6 +8158,7 @@
 │                              │                   resulting in extremely slow parsing. This could cause a
 │                              │                   denial of service. 
 │                              ├ Severity        : HIGH 
+│                              ├ CweIDs           ─ [0]: CWE-1333 
 │                              ├ VendorSeverity   ╭ ghsa  : 3 
 │                              │                  ╰ redhat: 3 
 │                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -8171,7 +8175,7 @@
 │                              │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3333 
 │                              │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
 │                              ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                              ╰ LastModifiedDate: 2024-12-18T21:15:08.173Z 
+│                              ╰ LastModifiedDate: 2024-12-31T20:16:06.603Z 
 ├ [6]  ╭ Target         : usr/bin/kubectl 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -8200,6 +8204,7 @@
 │                              │                   resulting in extremely slow parsing. This could cause a
 │                              │                   denial of service. 
 │                              ├ Severity        : HIGH 
+│                              ├ CweIDs           ─ [0]: CWE-1333 
 │                              ├ VendorSeverity   ╭ ghsa  : 3 
 │                              │                  ╰ redhat: 3 
 │                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -8216,7 +8221,7 @@
 │                              │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3333 
 │                              │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
 │                              ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                              ╰ LastModifiedDate: 2024-12-18T21:15:08.173Z 
+│                              ╰ LastModifiedDate: 2024-12-31T20:16:06.603Z 
 ├ [7]  ╭ Target         : usr/local/bin/k3d 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -8431,6 +8436,7 @@
 │                        │     │                   resulting in extremely slow parsing. This could cause a
 │                        │     │                   denial of service. 
 │                        │     ├ Severity        : HIGH 
+│                        │     ├ CweIDs           ─ [0]: CWE-1333 
 │                        │     ├ VendorSeverity   ╭ ghsa  : 3 
 │                        │     │                  ╰ redhat: 3 
 │                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -8447,7 +8453,7 @@
 │                        │     │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3333 
 │                        │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
 │                        │     ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                        │     ╰ LastModifiedDate: 2024-12-18T21:15:08.173Z 
+│                        │     ╰ LastModifiedDate: 2024-12-31T20:16:06.603Z 
 │                        ╰ [3] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
 │                              ├ PkgID           : google.golang.org/grpc@v1.64.0 
 │                              ├ PkgName         : google.golang.org/grpc 
