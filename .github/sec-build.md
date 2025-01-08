@@ -2074,7 +2074,54 @@
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                        │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                        │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                        ├ [41] ╭ VulnerabilityID : CVE-2024-40896 
+│                        ├ [41] ╭ VulnerabilityID : CVE-2024-56433 
+│                        │      ├ PkgID           : libsubid4@1:4.15.3-3ubuntu2 
+│                        │      ├ PkgName         : libsubid4 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsubid4@4.15.3-3ubuntu2?arch=amd64&
+│                        │      │                  │       distro=ubuntu-24.10&epoch=1 
+│                        │      │                  ╰ UID : abc9496e3ea86a 
+│                        │      ├ InstalledVersion: 1:4.15.3-3ubuntu2 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:99a18b575c6995172c423efb0d86236056e3976cdb1
+│                        │      │                  │         80467af498eecfb0a7772 
+│                        │      │                  ╰ DiffID: sha256:327cdce4a536adf845d64e10ee74832eda537a56de4
+│                        │      │                            38d0981eff2e185b04e3f 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-56433 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : shadow-utils: Default subordinate ID configuration in
+│                        │      │                   /etc/login.defs could lead to compromise 
+│                        │      ├ Description     : shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a
+│                        │      │                   default /etc/subuid behavior (e.g., uid 100000 through
+│                        │      │                   165535 for the first user account) that can realistically
+│                        │      │                   conflict with the uids of users defined on locally
+│                        │      │                   administered networks, potentially leading to account
+│                        │      │                   takeover, e.g., by leveraging newuidmap for access to an
+│                        │      │                   NFS home directory (or same-host resources in the case of
+│                        │      │                   remote logins by these local network users). NOTE: it may
+│                        │      │                   also be argued that system administrators should not have
+│                        │      │                   assigned uids, within local networks, that are within the
+│                        │      │                   range that can occur in /etc/subuid. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-1188 
+│                        │      ├ VendorSeverity   ╭ redhat: 1 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:
+│                        │      │                           │           L/A:N 
+│                        │      │                           ╰ V3Score : 3.6 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-56433 
+│                        │      │                  ├ [1]: https://github.com/shadow-maint/shadow/blob/e2512d574
+│                        │      │                  │      1d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L
+│                        │      │                  │      241 
+│                        │      │                  ├ [2]: https://github.com/shadow-maint/shadow/issues/1157 
+│                        │      │                  ├ [3]: https://github.com/shadow-maint/shadow/releases/tag/4.4 
+│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-56433 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
+│                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
+│                        │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
+│                        ├ [42] ╭ VulnerabilityID : CVE-2024-40896 
 │                        │      ├ PkgID           : libxml2@2.12.7+dfsg-3 
 │                        │      ├ PkgName         : libxml2 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3?arch=amd64&di
@@ -2114,7 +2161,54 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-40896 
 │                        │      ├ PublishedDate   : 2024-12-23T17:15:08.4Z 
 │                        │      ╰ LastModifiedDate: 2024-12-24T03:15:06.727Z 
-│                        ├ [42] ╭ VulnerabilityID : CVE-2024-41996 
+│                        ├ [43] ╭ VulnerabilityID : CVE-2024-56433 
+│                        │      ├ PkgID           : login@1:4.15.3-3ubuntu2 
+│                        │      ├ PkgName         : login 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.15.3-3ubuntu2?arch=amd64&dist
+│                        │      │                  │       ro=ubuntu-24.10&epoch=1 
+│                        │      │                  ╰ UID : 381a48ca5f193216 
+│                        │      ├ InstalledVersion: 1:4.15.3-3ubuntu2 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:99a18b575c6995172c423efb0d86236056e3976cdb1
+│                        │      │                  │         80467af498eecfb0a7772 
+│                        │      │                  ╰ DiffID: sha256:327cdce4a536adf845d64e10ee74832eda537a56de4
+│                        │      │                            38d0981eff2e185b04e3f 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-56433 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : shadow-utils: Default subordinate ID configuration in
+│                        │      │                   /etc/login.defs could lead to compromise 
+│                        │      ├ Description     : shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a
+│                        │      │                   default /etc/subuid behavior (e.g., uid 100000 through
+│                        │      │                   165535 for the first user account) that can realistically
+│                        │      │                   conflict with the uids of users defined on locally
+│                        │      │                   administered networks, potentially leading to account
+│                        │      │                   takeover, e.g., by leveraging newuidmap for access to an
+│                        │      │                   NFS home directory (or same-host resources in the case of
+│                        │      │                   remote logins by these local network users). NOTE: it may
+│                        │      │                   also be argued that system administrators should not have
+│                        │      │                   assigned uids, within local networks, that are within the
+│                        │      │                   range that can occur in /etc/subuid. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-1188 
+│                        │      ├ VendorSeverity   ╭ redhat: 1 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:
+│                        │      │                           │           L/A:N 
+│                        │      │                           ╰ V3Score : 3.6 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-56433 
+│                        │      │                  ├ [1]: https://github.com/shadow-maint/shadow/blob/e2512d574
+│                        │      │                  │      1d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L
+│                        │      │                  │      241 
+│                        │      │                  ├ [2]: https://github.com/shadow-maint/shadow/issues/1157 
+│                        │      │                  ├ [3]: https://github.com/shadow-maint/shadow/releases/tag/4.4 
+│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-56433 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
+│                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
+│                        │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
+│                        ├ [44] ╭ VulnerabilityID : CVE-2024-41996 
 │                        │      ├ PkgID           : openssl@3.3.1-2ubuntu2 
 │                        │      ├ PkgName         : openssl 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&dis
@@ -2164,7 +2258,54 @@
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                        │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                        │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                        ├ [43] ╭ VulnerabilityID : CVE-2018-6952 
+│                        ├ [45] ╭ VulnerabilityID : CVE-2024-56433 
+│                        │      ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
+│                        │      ├ PkgName         : passwd 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dis
+│                        │      │                  │       tro=ubuntu-24.10&epoch=1 
+│                        │      │                  ╰ UID : 3578f961eb83863 
+│                        │      ├ InstalledVersion: 1:4.15.3-3ubuntu2 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:99a18b575c6995172c423efb0d86236056e3976cdb1
+│                        │      │                  │         80467af498eecfb0a7772 
+│                        │      │                  ╰ DiffID: sha256:327cdce4a536adf845d64e10ee74832eda537a56de4
+│                        │      │                            38d0981eff2e185b04e3f 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-56433 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : shadow-utils: Default subordinate ID configuration in
+│                        │      │                   /etc/login.defs could lead to compromise 
+│                        │      ├ Description     : shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a
+│                        │      │                   default /etc/subuid behavior (e.g., uid 100000 through
+│                        │      │                   165535 for the first user account) that can realistically
+│                        │      │                   conflict with the uids of users defined on locally
+│                        │      │                   administered networks, potentially leading to account
+│                        │      │                   takeover, e.g., by leveraging newuidmap for access to an
+│                        │      │                   NFS home directory (or same-host resources in the case of
+│                        │      │                   remote logins by these local network users). NOTE: it may
+│                        │      │                   also be argued that system administrators should not have
+│                        │      │                   assigned uids, within local networks, that are within the
+│                        │      │                   range that can occur in /etc/subuid. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-1188 
+│                        │      ├ VendorSeverity   ╭ redhat: 1 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:
+│                        │      │                           │           L/A:N 
+│                        │      │                           ╰ V3Score : 3.6 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-56433 
+│                        │      │                  ├ [1]: https://github.com/shadow-maint/shadow/blob/e2512d574
+│                        │      │                  │      1d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L
+│                        │      │                  │      241 
+│                        │      │                  ├ [2]: https://github.com/shadow-maint/shadow/issues/1157 
+│                        │      │                  ├ [3]: https://github.com/shadow-maint/shadow/releases/tag/4.4 
+│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-56433 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
+│                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
+│                        │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
+│                        ├ [46] ╭ VulnerabilityID : CVE-2018-6952 
 │                        │      ├ PkgID           : patch@2.7.6-7build3 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -2214,7 +2355,7 @@
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                        │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                        │      ╰ LastModifiedDate: 2019-04-17T20:29:01.727Z 
-│                        ├ [44] ╭ VulnerabilityID : CVE-2021-45261 
+│                        ├ [47] ╭ VulnerabilityID : CVE-2021-45261 
 │                        │      ├ PkgID           : patch@2.7.6-7build3 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -2254,7 +2395,54 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                        │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                        │      ╰ LastModifiedDate: 2021-12-28T14:24:34.243Z 
-│                        ╰ [45] ╭ VulnerabilityID : CVE-2021-31879 
+│                        ├ [48] ╭ VulnerabilityID : CVE-2024-56433 
+│                        │      ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
+│                        │      ├ PkgName         : uidmap 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dis
+│                        │      │                  │       tro=ubuntu-24.10&epoch=1 
+│                        │      │                  ╰ UID : e71b9c30dc4ea06 
+│                        │      ├ InstalledVersion: 1:4.15.3-3ubuntu2 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:99a18b575c6995172c423efb0d86236056e3976cdb1
+│                        │      │                  │         80467af498eecfb0a7772 
+│                        │      │                  ╰ DiffID: sha256:327cdce4a536adf845d64e10ee74832eda537a56de4
+│                        │      │                            38d0981eff2e185b04e3f 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-56433 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : shadow-utils: Default subordinate ID configuration in
+│                        │      │                   /etc/login.defs could lead to compromise 
+│                        │      ├ Description     : shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a
+│                        │      │                   default /etc/subuid behavior (e.g., uid 100000 through
+│                        │      │                   165535 for the first user account) that can realistically
+│                        │      │                   conflict with the uids of users defined on locally
+│                        │      │                   administered networks, potentially leading to account
+│                        │      │                   takeover, e.g., by leveraging newuidmap for access to an
+│                        │      │                   NFS home directory (or same-host resources in the case of
+│                        │      │                   remote logins by these local network users). NOTE: it may
+│                        │      │                   also be argued that system administrators should not have
+│                        │      │                   assigned uids, within local networks, that are within the
+│                        │      │                   range that can occur in /etc/subuid. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-1188 
+│                        │      ├ VendorSeverity   ╭ redhat: 1 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:
+│                        │      │                           │           L/A:N 
+│                        │      │                           ╰ V3Score : 3.6 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-56433 
+│                        │      │                  ├ [1]: https://github.com/shadow-maint/shadow/blob/e2512d574
+│                        │      │                  │      1d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L
+│                        │      │                  │      241 
+│                        │      │                  ├ [2]: https://github.com/shadow-maint/shadow/issues/1157 
+│                        │      │                  ├ [3]: https://github.com/shadow-maint/shadow/releases/tag/4.4 
+│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-56433 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
+│                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
+│                        │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
+│                        ╰ [49] ╭ VulnerabilityID : CVE-2021-31879 
 │                               ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                               ├ PkgName         : wget 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distr
@@ -2697,7 +2885,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -4194,7 +4382,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -4271,7 +4459,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -5587,7 +5775,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -7084,7 +7272,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7161,7 +7349,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -8494,45 +8682,7 @@
 │                                                 │      7a7786754d1fe05264c3021eb 
 │                                                 ╰ [2]: https://github.com/grpc/grpc-go/security/advisories/GH
 │                                                        SA-xr7q-jx4m-x55m 
-├ [8]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
-│      ├ Class  : secret 
-│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                      ├ Category : AsymmetricPrivateKey 
-│                      ├ Severity : HIGH 
-│                      ├ Title    : Asymmetric Private Key 
-│                      ├ StartLine: 1 
-│                      ├ EndLine  : 1 
-│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *********************-----END OPENSSH PRI 
-│                      │                   │     ├ IsCause    : true 
-│                      │                   │     ├ Annotation :  
-│                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *********************-----END OPENSSH PRI 
-│                      │                   │     ├ FirstCause : true 
-│                      │                   │     ╰ LastCause  : true 
-│                      │                   ╰ [1] ╭ Number    : 2 
-│                      │                         ├ Content   :  
-│                      │                         ├ IsCause   : false 
-│                      │                         ├ Annotation:  
-│                      │                         ├ Truncated : false 
-│                      │                         ├ FirstCause: false 
-│                      │                         ╰ LastCause : false 
-│                      ├ Match    : BEGIN OPENSSH PRIVATE
-│                      │            KEY-----*******************************************************************
-│                      │            ***************************************************************************
-│                      │            **************************************************-----END OPENSSH PRI 
-│                      ╰ Layer     ╭ Digest   : sha256:99a18b575c6995172c423efb0d86236056e3976cdb180467af498eec
-│                                  │            fb0a7772 
-│                                  ├ DiffID   : sha256:327cdce4a536adf845d64e10ee74832eda537a56de438d0981eff2e1
-│                                  │            85b04e3f 
-│                                  ╰ CreatedBy: COPY / / # buildkit 
-├ [9]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
+├ [8]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                      ├ Category : AsymmetricPrivateKey 
@@ -8571,7 +8721,47 @@
 │                                  ├ DiffID   : sha256:327cdce4a536adf845d64e10ee74832eda537a56de438d0981eff2e1
 │                                  │            85b04e3f 
 │                                  ╰ CreatedBy: COPY / / # buildkit 
-╰ [10] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
+├ [9]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
+│      ├ Class  : secret 
+│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                      ├ Category : AsymmetricPrivateKey 
+│                      ├ Severity : HIGH 
+│                      ├ Title    : Asymmetric Private Key 
+│                      ├ StartLine: 1 
+│                      ├ EndLine  : 1 
+│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              *****************************-----END OPENSSH
+│                      │                   │     │              PRI 
+│                      │                   │     ├ IsCause    : true 
+│                      │                   │     ├ Annotation :  
+│                      │                   │     ├ Truncated  : false 
+│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              *****************************-----END OPENSSH
+│                      │                   │     │              PRI 
+│                      │                   │     ├ FirstCause : true 
+│                      │                   │     ╰ LastCause  : true 
+│                      │                   ╰ [1] ╭ Number    : 2 
+│                      │                         ├ Content   :  
+│                      │                         ├ IsCause   : false 
+│                      │                         ├ Annotation:  
+│                      │                         ├ Truncated : false 
+│                      │                         ├ FirstCause: false 
+│                      │                         ╰ LastCause : false 
+│                      ├ Match    : BEGIN OPENSSH PRIVATE
+│                      │            KEY-----*******************************************************************
+│                      │            ***************************************************************************
+│                      │            **-----END OPENSSH PRI 
+│                      ╰ Layer     ╭ Digest   : sha256:99a18b575c6995172c423efb0d86236056e3976cdb180467af498eec
+│                                  │            fb0a7772 
+│                                  ├ DiffID   : sha256:327cdce4a536adf845d64e10ee74832eda537a56de438d0981eff2e1
+│                                  │            85b04e3f 
+│                                  ╰ CreatedBy: COPY / / # buildkit 
+╰ [10] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
        ├ Class  : secret 
        ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                        ├ Category : AsymmetricPrivateKey 
@@ -8583,16 +8773,14 @@
                        │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              *****************************-----END OPENSSH
-                       │                   │     │              PRI 
+                       │                   │     │              *********************-----END OPENSSH PRI 
                        │                   │     ├ IsCause    : true 
                        │                   │     ├ Annotation :  
                        │                   │     ├ Truncated  : false 
                        │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              *****************************-----END OPENSSH
-                       │                   │     │              PRI 
+                       │                   │     │              *********************-----END OPENSSH PRI 
                        │                   │     ├ FirstCause : true 
                        │                   │     ╰ LastCause  : true 
                        │                   ╰ [1] ╭ Number    : 2 
@@ -8605,7 +8793,7 @@
                        ├ Match    : BEGIN OPENSSH PRIVATE
                        │            KEY-----*******************************************************************
                        │            ***************************************************************************
-                       │            **-----END OPENSSH PRI 
+                       │            **************************************************-----END OPENSSH PRI 
                        ╰ Layer     ╭ Digest   : sha256:99a18b575c6995172c423efb0d86236056e3976cdb180467af498eec
                                    │            fb0a7772 
                                    ├ DiffID   : sha256:327cdce4a536adf845d64e10ee74832eda537a56de438d0981eff2e1
