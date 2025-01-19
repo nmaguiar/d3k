@@ -82,6 +82,8 @@
       omits both login and password.
     Severity: LOW
     VendorSeverity:
+      azure: 3
+      cbl-mariner: 3
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -169,6 +171,7 @@
     - CWE-147
     - CWE-150
     VendorSeverity:
+      azure: 1
       redhat: 1
       ubuntu: 2
     CVSS:
@@ -211,6 +214,7 @@
     - CWE-147
     - CWE-150
     VendorSeverity:
+      azure: 1
       redhat: 1
       ubuntu: 2
     CVSS:
@@ -297,6 +301,7 @@
     - CWE-147
     - CWE-150
     VendorSeverity:
+      azure: 1
       redhat: 1
       ubuntu: 2
     CVSS:
@@ -339,6 +344,7 @@
     - CWE-147
     - CWE-150
     VendorSeverity:
+      azure: 1
       redhat: 1
       ubuntu: 2
     CVSS:
@@ -1102,6 +1108,8 @@
       omits both login and password.
     Severity: LOW
     VendorSeverity:
+      azure: 3
+      cbl-mariner: 3
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -1148,6 +1156,8 @@
       omits both login and password.
     Severity: LOW
     VendorSeverity:
+      azure: 3
+      cbl-mariner: 3
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -2340,7 +2350,8 @@
       PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3?arch=amd64&distro=ubuntu-24.10
       UID: afcc4dc22a5a39a7
     InstalledVersion: 2.12.7+dfsg-3
-    Status: affected
+    FixedVersion: 2.12.7+dfsg-3ubuntu0.1
+    Status: fixed
     Layer:
       Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
       DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
@@ -2369,6 +2380,7 @@
     - https://gitlab.gnome.org/GNOME/libxml2/-/commit/1a8932303969907f6572b1b6aac4081c56adb5c6
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/761
     - https://nvd.nist.gov/vuln/detail/CVE-2024-40896
+    - https://ubuntu.com/security/notices/USN-7215-1
     - https://www.cve.org/CVERecord?id=CVE-2024-40896
     PublishedDate: '2024-12-23T17:15:08.4Z'
     LastModifiedDate: '2024-12-24T03:15:06.727Z'
