@@ -87,8 +87,10 @@
 │                        │      │                   just the password or
 │                        │      │                   omits both login and password. 
 │                        │      ├ Severity        : LOW 
-│                        │      ├ VendorSeverity   ╭ redhat: 1 
-│                        │      │                  ╰ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ azure      : 3 
+│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ redhat     : 1 
+│                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                        │      │                           │           N/A:N 
 │                        │      │                           ╰ V3Score : 5.9 
@@ -189,7 +191,8 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-116 
 │                        │      │                  ├ [1]: CWE-147 
 │                        │      │                  ╰ [2]: CWE-150 
-│                        │      ├ VendorSeverity   ╭ redhat: 1 
+│                        │      ├ VendorSeverity   ╭ azure : 1 
+│                        │      │                  ├ redhat: 1 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:
 │                        │      │                           │           L/A:N 
@@ -245,7 +248,8 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-116 
 │                        │      │                  ├ [1]: CWE-147 
 │                        │      │                  ╰ [2]: CWE-150 
-│                        │      ├ VendorSeverity   ╭ redhat: 1 
+│                        │      ├ VendorSeverity   ╭ azure : 1 
+│                        │      │                  ├ redhat: 1 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
 │                        │      │                           │           L/A:N 
@@ -355,7 +359,8 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-116 
 │                        │      │                  ├ [1]: CWE-147 
 │                        │      │                  ╰ [2]: CWE-150 
-│                        │      ├ VendorSeverity   ╭ redhat: 1 
+│                        │      ├ VendorSeverity   ╭ azure : 1 
+│                        │      │                  ├ redhat: 1 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:
 │                        │      │                           │           L/A:N 
@@ -411,7 +416,8 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-116 
 │                        │      │                  ├ [1]: CWE-147 
 │                        │      │                  ╰ [2]: CWE-150 
-│                        │      ├ VendorSeverity   ╭ redhat: 1 
+│                        │      ├ VendorSeverity   ╭ azure : 1 
+│                        │      │                  ├ redhat: 1 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
 │                        │      │                           │           L/A:N 
@@ -1187,8 +1193,10 @@
 │                        │      │                   just the password or
 │                        │      │                   omits both login and password. 
 │                        │      ├ Severity        : LOW 
-│                        │      ├ VendorSeverity   ╭ redhat: 1 
-│                        │      │                  ╰ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ azure      : 3 
+│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ redhat     : 1 
+│                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                        │      │                           │           N/A:N 
 │                        │      │                           ╰ V3Score : 5.9 
@@ -1233,8 +1241,10 @@
 │                        │      │                   just the password or
 │                        │      │                   omits both login and password. 
 │                        │      ├ Severity        : LOW 
-│                        │      ├ VendorSeverity   ╭ redhat: 1 
-│                        │      │                  ╰ ubuntu: 1 
+│                        │      ├ VendorSeverity   ╭ azure      : 3 
+│                        │      │                  ├ cbl-mariner: 3 
+│                        │      │                  ├ redhat     : 1 
+│                        │      │                  ╰ ubuntu     : 1 
 │                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                        │      │                           │           N/A:N 
 │                        │      │                           ╰ V3Score : 5.9 
@@ -2506,7 +2516,8 @@
 │                        │      │                  │       stro=ubuntu-24.10 
 │                        │      │                  ╰ UID : afcc4dc22a5a39a7 
 │                        │      ├ InstalledVersion: 2.12.7+dfsg-3 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 2.12.7+dfsg-3ubuntu0.1 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6
 │                        │      │                  │         798c3f18fad64f967425e 
 │                        │      │                  ╰ DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a
@@ -2536,7 +2547,8 @@
 │                        │      │                  │      2303969907f6572b1b6aac4081c56adb5c6 
 │                        │      │                  ├ [2]: https://gitlab.gnome.org/GNOME/libxml2/-/issues/761 
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-40896 
-│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-40896 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-7215-1 
+│                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-40896 
 │                        │      ├ PublishedDate   : 2024-12-23T17:15:08.4Z 
 │                        │      ╰ LastModifiedDate: 2024-12-24T03:15:06.727Z 
 │                        ├ [50] ╭ VulnerabilityID : CVE-2024-56433 
