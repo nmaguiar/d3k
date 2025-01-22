@@ -182,7 +182,7 @@
 │                        │      │                    sites when in fact they are then sent to untrusted sites
 │                        │      │                   that are under the attacker's control. This issue has been
 │                        │      │                   patch via commits `7725b81` and `c903985` which are
-│                        │      │                   included in release versions v2.48.1, v2.47.1, v2.46.3,
+│                        │      │                   included in release versions v2.48.1, v2.47.2, v2.46.3,
 │                        │      │                   v2.45.3, v2.44.3, v2.43.6, v2.42.4, v2.41.3, and v2.40.4.
 │                        │      │                   Users are advised to upgrade. Users unable to upgrade
 │                        │      │                   should avoid cloning from untrusted URLs, especially
@@ -208,7 +208,7 @@
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7207-1 
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-50349 
 │                        │      ├ PublishedDate   : 2025-01-14T19:15:32.157Z 
-│                        │      ╰ LastModifiedDate: 2025-01-14T19:15:32.157Z 
+│                        │      ╰ LastModifiedDate: 2025-01-21T17:15:14.287Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2024-52006 
 │                        │      ├ PkgID           : git@1:2.45.2-1ubuntu1 
 │                        │      ├ PkgName         : git 
@@ -239,7 +239,7 @@
 │                        │      │                   renders the protections against CVE-2020-5260 incomplete
 │                        │      │                   for credential helpers that treat Carriage Returns in this
 │                        │      │                   way. This issue has been addressed in commit `b01b9b8`
-│                        │      │                   which is included in release versions v2.48.1, v2.47.1,
+│                        │      │                   which is included in release versions v2.48.1, v2.47.2,
 │                        │      │                   v2.46.3, v2.45.3, v2.44.3, v2.43.6, v2.42.4, v2.41.3, and
 │                        │      │                   v2.40.4. Users are advised to upgrade. Users unable to
 │                        │      │                   upgrade should avoid cloning from untrusted URLs,
@@ -267,7 +267,7 @@
 │                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7207-1 
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-52006 
 │                        │      ├ PublishedDate   : 2025-01-14T19:15:32.33Z 
-│                        │      ╰ LastModifiedDate: 2025-01-14T19:15:32.33Z 
+│                        │      ╰ LastModifiedDate: 2025-01-21T17:15:14.423Z 
 │                        ├ [5]  ╭ VulnerabilityID : CVE-2018-1000021 
 │                        │      ├ PkgID           : git@1:2.45.2-1ubuntu1 
 │                        │      ├ PkgName         : git 
@@ -350,7 +350,7 @@
 │                        │      │                    sites when in fact they are then sent to untrusted sites
 │                        │      │                   that are under the attacker's control. This issue has been
 │                        │      │                   patch via commits `7725b81` and `c903985` which are
-│                        │      │                   included in release versions v2.48.1, v2.47.1, v2.46.3,
+│                        │      │                   included in release versions v2.48.1, v2.47.2, v2.46.3,
 │                        │      │                   v2.45.3, v2.44.3, v2.43.6, v2.42.4, v2.41.3, and v2.40.4.
 │                        │      │                   Users are advised to upgrade. Users unable to upgrade
 │                        │      │                   should avoid cloning from untrusted URLs, especially
@@ -376,7 +376,7 @@
 │                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7207-1 
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-50349 
 │                        │      ├ PublishedDate   : 2025-01-14T19:15:32.157Z 
-│                        │      ╰ LastModifiedDate: 2025-01-14T19:15:32.157Z 
+│                        │      ╰ LastModifiedDate: 2025-01-21T17:15:14.287Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2024-52006 
 │                        │      ├ PkgID           : git-man@1:2.45.2-1ubuntu1 
 │                        │      ├ PkgName         : git-man 
@@ -407,7 +407,7 @@
 │                        │      │                   renders the protections against CVE-2020-5260 incomplete
 │                        │      │                   for credential helpers that treat Carriage Returns in this
 │                        │      │                   way. This issue has been addressed in commit `b01b9b8`
-│                        │      │                   which is included in release versions v2.48.1, v2.47.1,
+│                        │      │                   which is included in release versions v2.48.1, v2.47.2,
 │                        │      │                   v2.46.3, v2.45.3, v2.44.3, v2.43.6, v2.42.4, v2.41.3, and
 │                        │      │                   v2.40.4. Users are advised to upgrade. Users unable to
 │                        │      │                   upgrade should avoid cloning from untrusted URLs,
@@ -435,7 +435,7 @@
 │                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7207-1 
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-52006 
 │                        │      ├ PublishedDate   : 2025-01-14T19:15:32.33Z 
-│                        │      ╰ LastModifiedDate: 2025-01-14T19:15:32.33Z 
+│                        │      ╰ LastModifiedDate: 2025-01-21T17:15:14.423Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2018-1000021 
 │                        │      ├ PkgID           : git-man@1:2.45.2-1ubuntu1 
 │                        │      ├ PkgName         : git-man 
@@ -9617,47 +9617,7 @@
 │                                                 │      7a7786754d1fe05264c3021eb 
 │                                                 ╰ [2]: https://github.com/grpc/grpc-go/security/advisories/GH
 │                                                        SA-xr7q-jx4m-x55m 
-├ [8]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
-│      ├ Class  : secret 
-│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                      ├ Category : AsymmetricPrivateKey 
-│                      ├ Severity : HIGH 
-│                      ├ Title    : Asymmetric Private Key 
-│                      ├ StartLine: 1 
-│                      ├ EndLine  : 1 
-│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *****************************-----END OPENSSH
-│                      │                   │     │              PRI 
-│                      │                   │     ├ IsCause    : true 
-│                      │                   │     ├ Annotation :  
-│                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *****************************-----END OPENSSH
-│                      │                   │     │              PRI 
-│                      │                   │     ├ FirstCause : true 
-│                      │                   │     ╰ LastCause  : true 
-│                      │                   ╰ [1] ╭ Number    : 2 
-│                      │                         ├ Content   :  
-│                      │                         ├ IsCause   : false 
-│                      │                         ├ Annotation:  
-│                      │                         ├ Truncated : false 
-│                      │                         ├ FirstCause: false 
-│                      │                         ╰ LastCause : false 
-│                      ├ Match    : BEGIN OPENSSH PRIVATE
-│                      │            KEY-----*******************************************************************
-│                      │            ***************************************************************************
-│                      │            **-----END OPENSSH PRI 
-│                      ╰ Layer     ╭ Digest   : sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64
-│                                  │            f967425e 
-│                                  ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
-│                                  │            b8c8dd0e 
-│                                  ╰ CreatedBy: COPY / / # buildkit 
-├ [9]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+├ [8]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                      ├ Category : AsymmetricPrivateKey 
@@ -9695,7 +9655,46 @@
 │                                  ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
 │                                  │            b8c8dd0e 
 │                                  ╰ CreatedBy: COPY / / # buildkit 
-╰ [10] ╭ Target : /etc/ssh/ssh_host_rsa_key 
+├ [9]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
+│      ├ Class  : secret 
+│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                      ├ Category : AsymmetricPrivateKey 
+│                      ├ Severity : HIGH 
+│                      ├ Title    : Asymmetric Private Key 
+│                      ├ StartLine: 1 
+│                      ├ EndLine  : 1 
+│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********-----END OPENSSH PRI 
+│                      │                   │     ├ IsCause    : true 
+│                      │                   │     ├ Annotation :  
+│                      │                   │     ├ Truncated  : false 
+│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********-----END OPENSSH PRI 
+│                      │                   │     ├ FirstCause : true 
+│                      │                   │     ╰ LastCause  : true 
+│                      │                   ╰ [1] ╭ Number    : 2 
+│                      │                         ├ Content   :  
+│                      │                         ├ IsCause   : false 
+│                      │                         ├ Annotation:  
+│                      │                         ├ Truncated : false 
+│                      │                         ├ FirstCause: false 
+│                      │                         ╰ LastCause : false 
+│                      ├ Match    : BEGIN OPENSSH PRIVATE
+│                      │            KEY-----*******************************************************************
+│                      │            ***************************************************************************
+│                      │            **************************************************************************-
+│                      │            ----END OPENSSH PRI 
+│                      ╰ Layer     ╭ Digest   : sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64
+│                                  │            f967425e 
+│                                  ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
+│                                  │            b8c8dd0e 
+│                                  ╰ CreatedBy: COPY / / # buildkit 
+╰ [10] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
        ├ Class  : secret 
        ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                        ├ Category : AsymmetricPrivateKey 
@@ -9707,14 +9706,16 @@
                        │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********-----END OPENSSH PRI 
+                       │                   │     │              *****************************-----END OPENSSH
+                       │                   │     │              PRI 
                        │                   │     ├ IsCause    : true 
                        │                   │     ├ Annotation :  
                        │                   │     ├ Truncated  : false 
                        │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********-----END OPENSSH PRI 
+                       │                   │     │              *****************************-----END OPENSSH
+                       │                   │     │              PRI 
                        │                   │     ├ FirstCause : true 
                        │                   │     ╰ LastCause  : true 
                        │                   ╰ [1] ╭ Number    : 2 
@@ -9727,8 +9728,7 @@
                        ├ Match    : BEGIN OPENSSH PRIVATE
                        │            KEY-----*******************************************************************
                        │            ***************************************************************************
-                       │            **************************************************************************-
-                       │            ----END OPENSSH PRI 
+                       │            **-----END OPENSSH PRI 
                        ╰ Layer     ╭ Digest   : sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64
                                    │            f967425e 
                                    ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
