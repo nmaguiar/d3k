@@ -100,12 +100,14 @@
 │                        │      │                  ├ [3]: https://curl.se/docs/CVE-2024-11053.json 
 │                        │      │                  ├ [4]: https://hackerone.com/reports/2829063 
 │                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-11053 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7162-1 
-│                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2024-11053 
-│                        │      │                  ╰ [8]: https://www.oracle.com/security-alerts/cpujan2025.htm
+│                        │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20250124-00
+│                        │      │                  │      12/ 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7162-1 
+│                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2024-11053 
+│                        │      │                  ╰ [9]: https://www.oracle.com/security-alerts/cpujan2025.htm
 │                        │      │                         l#AppendixMSQL 
 │                        │      ├ PublishedDate   : 2024-12-11T08:15:05.307Z 
-│                        │      ╰ LastModifiedDate: 2024-12-15T17:15:05.273Z 
+│                        │      ╰ LastModifiedDate: 2025-01-24T20:15:31.92Z 
 │                        ├ [2]  ╭ VulnerabilityID : CVE-2022-3219 
 │                        │      ├ PkgID           : dirmngr@2.4.4-2ubuntu18 
 │                        │      ├ PkgName         : dirmngr 
@@ -193,7 +195,8 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-116 
 │                        │      │                  ├ [1]: CWE-147 
 │                        │      │                  ╰ [2]: CWE-150 
-│                        │      ├ VendorSeverity   ╭ azure      : 1 
+│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 1 
 │                        │      │                  ├ cbl-mariner: 1 
 │                        │      │                  ├ redhat     : 1 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -251,7 +254,8 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-116 
 │                        │      │                  ├ [1]: CWE-147 
 │                        │      │                  ╰ [2]: CWE-150 
-│                        │      ├ VendorSeverity   ╭ azure      : 1 
+│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 1 
 │                        │      │                  ├ cbl-mariner: 1 
 │                        │      │                  ├ redhat     : 1 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -363,7 +367,8 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-116 
 │                        │      │                  ├ [1]: CWE-147 
 │                        │      │                  ╰ [2]: CWE-150 
-│                        │      ├ VendorSeverity   ╭ azure      : 1 
+│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 1 
 │                        │      │                  ├ cbl-mariner: 1 
 │                        │      │                  ├ redhat     : 1 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -421,7 +426,8 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-116 
 │                        │      │                  ├ [1]: CWE-147 
 │                        │      │                  ╰ [2]: CWE-150 
-│                        │      ├ VendorSeverity   ╭ azure      : 1 
+│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 1 
 │                        │      │                  ├ cbl-mariner: 1 
 │                        │      │                  ├ redhat     : 1 
 │                        │      │                  ╰ ubuntu     : 2 
@@ -1212,12 +1218,14 @@
 │                        │      │                  ├ [3]: https://curl.se/docs/CVE-2024-11053.json 
 │                        │      │                  ├ [4]: https://hackerone.com/reports/2829063 
 │                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-11053 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7162-1 
-│                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2024-11053 
-│                        │      │                  ╰ [8]: https://www.oracle.com/security-alerts/cpujan2025.htm
+│                        │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20250124-00
+│                        │      │                  │      12/ 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7162-1 
+│                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2024-11053 
+│                        │      │                  ╰ [9]: https://www.oracle.com/security-alerts/cpujan2025.htm
 │                        │      │                         l#AppendixMSQL 
 │                        │      ├ PublishedDate   : 2024-12-11T08:15:05.307Z 
-│                        │      ╰ LastModifiedDate: 2024-12-15T17:15:05.273Z 
+│                        │      ╰ LastModifiedDate: 2025-01-24T20:15:31.92Z 
 │                        ├ [25] ╭ VulnerabilityID : CVE-2024-11053 
 │                        │      ├ PkgID           : libcurl4t64@8.9.1-2ubuntu2.1 
 │                        │      ├ PkgName         : libcurl4t64 
@@ -1262,12 +1270,14 @@
 │                        │      │                  ├ [3]: https://curl.se/docs/CVE-2024-11053.json 
 │                        │      │                  ├ [4]: https://hackerone.com/reports/2829063 
 │                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-11053 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7162-1 
-│                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2024-11053 
-│                        │      │                  ╰ [8]: https://www.oracle.com/security-alerts/cpujan2025.htm
+│                        │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20250124-00
+│                        │      │                  │      12/ 
+│                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7162-1 
+│                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2024-11053 
+│                        │      │                  ╰ [9]: https://www.oracle.com/security-alerts/cpujan2025.htm
 │                        │      │                         l#AppendixMSQL 
 │                        │      ├ PublishedDate   : 2024-12-11T08:15:05.307Z 
-│                        │      ╰ LastModifiedDate: 2024-12-15T17:15:05.273Z 
+│                        │      ╰ LastModifiedDate: 2025-01-24T20:15:31.92Z 
 │                        ├ [26] ╭ VulnerabilityID : CVE-2024-2236 
 │                        │      ├ PkgID           : libgcrypt20@1.11.0-6ubuntu1 
 │                        │      ├ PkgName         : libgcrypt20 
@@ -2467,6 +2477,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-400 
 │                        │      │                  ╰ [1]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -2554,6 +2565,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-400 
 │                        │      │                  ╰ [1]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -2641,6 +2653,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-400 
 │                        │      │                  ╰ [1]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -3101,6 +3114,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-400 
 │                        │      │                  ╰ [1]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -3188,6 +3202,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-400 
 │                        │      │                  ╰ [1]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -3890,7 +3905,8 @@
 │                        │      │                   denial of service. 
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-1333 
-│                        │      ├ VendorSeverity   ╭ azure      : 3 
+│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ ghsa       : 3 
 │                        │      │                  ├ redhat     : 3 
@@ -3937,7 +3953,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -5438,7 +5454,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -5515,7 +5531,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -6795,7 +6811,8 @@
 │                        │      │                   denial of service. 
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-1333 
-│                        │      ├ VendorSeverity   ╭ azure      : 3 
+│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ cbl-mariner: 3 
 │                        │      │                  ├ ghsa       : 3 
 │                        │      │                  ├ redhat     : 3 
@@ -6842,7 +6859,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -8343,7 +8360,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -8420,7 +8437,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -9378,7 +9395,8 @@
 │                              │                   denial of service. 
 │                              ├ Severity        : HIGH 
 │                              ├ CweIDs           ─ [0]: CWE-1333 
-│                              ├ VendorSeverity   ╭ azure      : 3 
+│                              ├ VendorSeverity   ╭ amazon     : 2 
+│                              │                  ├ azure      : 3 
 │                              │                  ├ cbl-mariner: 3 
 │                              │                  ├ ghsa       : 3 
 │                              │                  ├ redhat     : 3 
@@ -9515,7 +9533,8 @@
 │                              │                   denial of service. 
 │                              ├ Severity        : HIGH 
 │                              ├ CweIDs           ─ [0]: CWE-1333 
-│                              ├ VendorSeverity   ╭ azure      : 3 
+│                              ├ VendorSeverity   ╭ amazon     : 2 
+│                              │                  ├ azure      : 3 
 │                              │                  ├ cbl-mariner: 3 
 │                              │                  ├ ghsa       : 3 
 │                              │                  ├ redhat     : 3 
@@ -9566,7 +9585,8 @@
 │                              │                   denial of service. 
 │                              ├ Severity        : HIGH 
 │                              ├ CweIDs           ─ [0]: CWE-1333 
-│                              ├ VendorSeverity   ╭ azure      : 3 
+│                              ├ VendorSeverity   ╭ amazon     : 2 
+│                              │                  ├ azure      : 3 
 │                              │                  ├ cbl-mariner: 3 
 │                              │                  ├ ghsa       : 3 
 │                              │                  ├ redhat     : 3 
@@ -9803,7 +9823,8 @@
 │                        │     │                   denial of service. 
 │                        │     ├ Severity        : HIGH 
 │                        │     ├ CweIDs           ─ [0]: CWE-1333 
-│                        │     ├ VendorSeverity   ╭ azure      : 3 
+│                        │     ├ VendorSeverity   ╭ amazon     : 2 
+│                        │     │                  ├ azure      : 3 
 │                        │     │                  ├ cbl-mariner: 3 
 │                        │     │                  ├ ghsa       : 3 
 │                        │     │                  ├ redhat     : 3 
@@ -9865,47 +9886,7 @@
 │                                                 │      7a7786754d1fe05264c3021eb 
 │                                                 ╰ [2]: https://github.com/grpc/grpc-go/security/advisories/GH
 │                                                        SA-xr7q-jx4m-x55m 
-├ [8]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
-│      ├ Class  : secret 
-│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                      ├ Category : AsymmetricPrivateKey 
-│                      ├ Severity : HIGH 
-│                      ├ Title    : Asymmetric Private Key 
-│                      ├ StartLine: 1 
-│                      ├ EndLine  : 1 
-│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *****************************-----END OPENSSH
-│                      │                   │     │              PRI 
-│                      │                   │     ├ IsCause    : true 
-│                      │                   │     ├ Annotation :  
-│                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *****************************-----END OPENSSH
-│                      │                   │     │              PRI 
-│                      │                   │     ├ FirstCause : true 
-│                      │                   │     ╰ LastCause  : true 
-│                      │                   ╰ [1] ╭ Number    : 2 
-│                      │                         ├ Content   :  
-│                      │                         ├ IsCause   : false 
-│                      │                         ├ Annotation:  
-│                      │                         ├ Truncated : false 
-│                      │                         ├ FirstCause: false 
-│                      │                         ╰ LastCause : false 
-│                      ├ Match    : BEGIN OPENSSH PRIVATE
-│                      │            KEY-----*******************************************************************
-│                      │            ***************************************************************************
-│                      │            **-----END OPENSSH PRI 
-│                      ╰ Layer     ╭ Digest   : sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64
-│                                  │            f967425e 
-│                                  ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
-│                                  │            b8c8dd0e 
-│                                  ╰ CreatedBy: COPY / / # buildkit 
-├ [9]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+├ [8]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                      ├ Category : AsymmetricPrivateKey 
@@ -9943,7 +9924,46 @@
 │                                  ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
 │                                  │            b8c8dd0e 
 │                                  ╰ CreatedBy: COPY / / # buildkit 
-╰ [10] ╭ Target : /etc/ssh/ssh_host_rsa_key 
+├ [9]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
+│      ├ Class  : secret 
+│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                      ├ Category : AsymmetricPrivateKey 
+│                      ├ Severity : HIGH 
+│                      ├ Title    : Asymmetric Private Key 
+│                      ├ StartLine: 1 
+│                      ├ EndLine  : 1 
+│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********-----END OPENSSH PRI 
+│                      │                   │     ├ IsCause    : true 
+│                      │                   │     ├ Annotation :  
+│                      │                   │     ├ Truncated  : false 
+│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********-----END OPENSSH PRI 
+│                      │                   │     ├ FirstCause : true 
+│                      │                   │     ╰ LastCause  : true 
+│                      │                   ╰ [1] ╭ Number    : 2 
+│                      │                         ├ Content   :  
+│                      │                         ├ IsCause   : false 
+│                      │                         ├ Annotation:  
+│                      │                         ├ Truncated : false 
+│                      │                         ├ FirstCause: false 
+│                      │                         ╰ LastCause : false 
+│                      ├ Match    : BEGIN OPENSSH PRIVATE
+│                      │            KEY-----*******************************************************************
+│                      │            ***************************************************************************
+│                      │            **************************************************************************-
+│                      │            ----END OPENSSH PRI 
+│                      ╰ Layer     ╭ Digest   : sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64
+│                                  │            f967425e 
+│                                  ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
+│                                  │            b8c8dd0e 
+│                                  ╰ CreatedBy: COPY / / # buildkit 
+╰ [10] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
        ├ Class  : secret 
        ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                        ├ Category : AsymmetricPrivateKey 
@@ -9955,14 +9975,16 @@
                        │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********-----END OPENSSH PRI 
+                       │                   │     │              *****************************-----END OPENSSH
+                       │                   │     │              PRI 
                        │                   │     ├ IsCause    : true 
                        │                   │     ├ Annotation :  
                        │                   │     ├ Truncated  : false 
                        │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********-----END OPENSSH PRI 
+                       │                   │     │              *****************************-----END OPENSSH
+                       │                   │     │              PRI 
                        │                   │     ├ FirstCause : true 
                        │                   │     ╰ LastCause  : true 
                        │                   ╰ [1] ╭ Number    : 2 
@@ -9975,8 +9997,7 @@
                        ├ Match    : BEGIN OPENSSH PRIVATE
                        │            KEY-----*******************************************************************
                        │            ***************************************************************************
-                       │            **************************************************************************-
-                       │            ----END OPENSSH PRI 
+                       │            **-----END OPENSSH PRI 
                        ╰ Layer     ╭ Digest   : sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64
                                    │            f967425e 
                                    ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
