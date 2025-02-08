@@ -23,7 +23,6 @@ RUN apt-get update\
  && adduser --gid 0 --uid 1001 --shell /bin/bash user\
  && echo "user ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/user\
  && chmod g+w /etc/passwd\
- && su - user ojob ojob.io/kube/getKrew\
  && chmod a+x /usr/bin/kubectl\
  && chmod a+x /usr/bin/docker-compose\
  && chmod a+x /usr/bin/helm\
