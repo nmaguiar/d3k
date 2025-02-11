@@ -2520,52 +2520,256 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ╰ [51] ╭ VulnerabilityID : CVE-2021-31879 
-│                              ├ PkgID           : wget@1.24.5-1ubuntu2 
-│                              ├ PkgName         : wget 
-│                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distro
-│                              │                  │       =ubuntu-24.10 
-│                              │                  ╰ UID : 50e135651195f37e 
-│                              ├ InstalledVersion: 1.24.5-1ubuntu2 
-│                              ├ Status          : affected 
+│                       ├ [51] ╭ VulnerabilityID : CVE-2025-24014 
+│                       │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.3 
+│                       │      ├ PkgName         : vim 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.3?arch=amd64&dis
+│                       │      │                  │       tro=ubuntu-24.10&epoch=2 
+│                       │      │                  ╰ UID : 5b08248ab7f22b9b 
+│                       │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.3 
+│                       │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.4 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
+│                       │      │                  │         311c73bf21fae539f12e 
+│                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
+│                       │      │                            a2dae648aecacd8f5a3c 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
+│                       │      ├ Description     : Vim is an open source, command line text editor. A
+│                       │      │                   segmentation fault was found in Vim before 9.1.1043. In
+│                       │      │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
+│                       │      │                   and just operates silently in batch mode. However, it is
+│                       │      │                   still possible to trigger the function that handles the
+│                       │      │                   scrolling of a gui version of Vim by feeding some binary
+│                       │      │                   characters to Vim. The function that handles the scrolling
+│                       │      │                   however may be triggering a redraw, which will access the
+│                       │      │                   ScreenLines pointer, even so this variable hasn't been
+│                       │      │                   allocated (since there is no screen). This vulnerability is
+│                       │      │                   fixed in 9.1.1043. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-787 
+│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      │                  ├ cbl-mariner: 2 
+│                       │      │                  ├ redhat     : 1 
+│                       │      │                  ╰ ubuntu     : 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 4.2 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
+│                       │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
+│                       │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
+│                       │      │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b8
+│                       │      │                  │      a484f5e9163c40e63919 
+│                       │      │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j3
+│                       │      │                  │      g9-wg22-v955 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
+│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
+│                       │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
+│                       │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
+│                       ├ [52] ╭ VulnerabilityID : CVE-2025-24014 
+│                       │      ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.3 
+│                       │      ├ PkgName         : vim-common 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.3?arch=al
+│                       │      │                  │       l&distro=ubuntu-24.10&epoch=2 
+│                       │      │                  ╰ UID : 6c617ec11f295657 
+│                       │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.3 
+│                       │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.4 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
+│                       │      │                  │         311c73bf21fae539f12e 
+│                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
+│                       │      │                            a2dae648aecacd8f5a3c 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
+│                       │      ├ Description     : Vim is an open source, command line text editor. A
+│                       │      │                   segmentation fault was found in Vim before 9.1.1043. In
+│                       │      │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
+│                       │      │                   and just operates silently in batch mode. However, it is
+│                       │      │                   still possible to trigger the function that handles the
+│                       │      │                   scrolling of a gui version of Vim by feeding some binary
+│                       │      │                   characters to Vim. The function that handles the scrolling
+│                       │      │                   however may be triggering a redraw, which will access the
+│                       │      │                   ScreenLines pointer, even so this variable hasn't been
+│                       │      │                   allocated (since there is no screen). This vulnerability is
+│                       │      │                   fixed in 9.1.1043. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-787 
+│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      │                  ├ cbl-mariner: 2 
+│                       │      │                  ├ redhat     : 1 
+│                       │      │                  ╰ ubuntu     : 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 4.2 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
+│                       │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
+│                       │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
+│                       │      │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b8
+│                       │      │                  │      a484f5e9163c40e63919 
+│                       │      │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j3
+│                       │      │                  │      g9-wg22-v955 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
+│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
+│                       │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
+│                       │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
+│                       ├ [53] ╭ VulnerabilityID : CVE-2025-24014 
+│                       │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.3 
+│                       │      ├ PkgName         : vim-runtime 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.3?arch=a
+│                       │      │                  │       ll&distro=ubuntu-24.10&epoch=2 
+│                       │      │                  ╰ UID : c8301d46c5faf380 
+│                       │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.3 
+│                       │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.4 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
+│                       │      │                  │         311c73bf21fae539f12e 
+│                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
+│                       │      │                            a2dae648aecacd8f5a3c 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
+│                       │      ├ Description     : Vim is an open source, command line text editor. A
+│                       │      │                   segmentation fault was found in Vim before 9.1.1043. In
+│                       │      │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
+│                       │      │                   and just operates silently in batch mode. However, it is
+│                       │      │                   still possible to trigger the function that handles the
+│                       │      │                   scrolling of a gui version of Vim by feeding some binary
+│                       │      │                   characters to Vim. The function that handles the scrolling
+│                       │      │                   however may be triggering a redraw, which will access the
+│                       │      │                   ScreenLines pointer, even so this variable hasn't been
+│                       │      │                   allocated (since there is no screen). This vulnerability is
+│                       │      │                   fixed in 9.1.1043. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-787 
+│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      │                  ├ cbl-mariner: 2 
+│                       │      │                  ├ redhat     : 1 
+│                       │      │                  ╰ ubuntu     : 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 4.2 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
+│                       │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
+│                       │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
+│                       │      │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b8
+│                       │      │                  │      a484f5e9163c40e63919 
+│                       │      │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j3
+│                       │      │                  │      g9-wg22-v955 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
+│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
+│                       │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
+│                       │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
+│                       ├ [54] ╭ VulnerabilityID : CVE-2021-31879 
+│                       │      ├ PkgID           : wget@1.24.5-1ubuntu2 
+│                       │      ├ PkgName         : wget 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distro
+│                       │      │                  │       =ubuntu-24.10 
+│                       │      │                  ╰ UID : 50e135651195f37e 
+│                       │      ├ InstalledVersion: 1.24.5-1ubuntu2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
+│                       │      │                  │         311c73bf21fae539f12e 
+│                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
+│                       │      │                            a2dae648aecacd8f5a3c 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2021-31879 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : wget: authorization header disclosure on redirect 
+│                       │      ├ Description     : GNU Wget through 1.21.1 does not omit the Authorization
+│                       │      │                   header upon a redirect to a different origin, a related
+│                       │      │                   issue to CVE-2018-1000007. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-601 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      │                  ├ cbl-mariner: 2 
+│                       │      │                  ├ nvd        : 2 
+│                       │      │                  ├ photon     : 2 
+│                       │      │                  ├ redhat     : 2 
+│                       │      │                  ╰ ubuntu     : 2 
+│                       │      ├ CVSS             ╭ nvd    ╭ V2Vector: AV:N/AC:M/Au:N/C:P/I:P/A:N 
+│                       │      │                  │        ├ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ├ V2Score : 5.8 
+│                       │      │                  │        ╰ V3Score : 6.1 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 6.5 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2021-31879 
+│                       │      │                  ├ [1]: https://mail.gnu.org/archive/html/bug-wget/2021-02/msg
+│                       │      │                  │      00002.html 
+│                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2021-31879 
+│                       │      │                  ├ [3]: https://savannah.gnu.org/bugs/?56909 
+│                       │      │                  ├ [4]: https://security.netapp.com/advisory/ntap-20210618-0002/ 
+│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
+│                       │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
+│                       │      ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
+│                       ╰ [55] ╭ VulnerabilityID : CVE-2025-24014 
+│                              ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.3 
+│                              ├ PkgName         : xxd 
+│                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.3?arch=amd64&dis
+│                              │                  │       tro=ubuntu-24.10&epoch=2 
+│                              │                  ╰ UID : 5f9f91b38f2bcc11 
+│                              ├ InstalledVersion: 2:9.1.0496-1ubuntu6.3 
+│                              ├ FixedVersion    : 2:9.1.0496-1ubuntu6.4 
+│                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
 │                              │                  │         311c73bf21fae539f12e 
 │                              │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
 │                              │                            a2dae648aecacd8f5a3c 
 │                              ├ SeveritySource  : ubuntu 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2021-31879 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
 │                              ├ DataSource       ╭ ID  : ubuntu 
 │                              │                  ├ Name: Ubuntu CVE Tracker 
 │                              │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                              ├ Title           : wget: authorization header disclosure on redirect 
-│                              ├ Description     : GNU Wget through 1.21.1 does not omit the Authorization
-│                              │                   header upon a redirect to a different origin, a related
-│                              │                   issue to CVE-2018-1000007. 
+│                              ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
+│                              ├ Description     : Vim is an open source, command line text editor. A
+│                              │                   segmentation fault was found in Vim before 9.1.1043. In
+│                              │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
+│                              │                   and just operates silently in batch mode. However, it is
+│                              │                   still possible to trigger the function that handles the
+│                              │                   scrolling of a gui version of Vim by feeding some binary
+│                              │                   characters to Vim. The function that handles the scrolling
+│                              │                   however may be triggering a redraw, which will access the
+│                              │                   ScreenLines pointer, even so this variable hasn't been
+│                              │                   allocated (since there is no screen). This vulnerability is
+│                              │                   fixed in 9.1.1043. 
 │                              ├ Severity        : MEDIUM 
-│                              ├ CweIDs           ─ [0]: CWE-601 
-│                              ├ VendorSeverity   ╭ amazon     : 2 
+│                              ├ CweIDs           ─ [0]: CWE-787 
+│                              ├ VendorSeverity   ╭ azure      : 2 
 │                              │                  ├ cbl-mariner: 2 
-│                              │                  ├ nvd        : 2 
-│                              │                  ├ photon     : 2 
-│                              │                  ├ redhat     : 2 
+│                              │                  ├ redhat     : 1 
 │                              │                  ╰ ubuntu     : 2 
-│                              ├ CVSS             ╭ nvd    ╭ V2Vector: AV:N/AC:M/Au:N/C:P/I:P/A:N 
-│                              │                  │        ├ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L
-│                              │                  │        │           /A:N 
-│                              │                  │        ├ V2Score : 5.8 
-│                              │                  │        ╰ V3Score : 6.1 
-│                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N
-│                              │                           │           /A:N 
-│                              │                           ╰ V3Score : 6.5 
-│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2021-31879 
-│                              │                  ├ [1]: https://mail.gnu.org/archive/html/bug-wget/2021-02/msg
-│                              │                  │      00002.html 
-│                              │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2021-31879 
-│                              │                  ├ [3]: https://savannah.gnu.org/bugs/?56909 
-│                              │                  ├ [4]: https://security.netapp.com/advisory/ntap-20210618-0002/ 
-│                              │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
-│                              ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
-│                              ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
+│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L
+│                              │                           │           /A:L 
+│                              │                           ╰ V3Score : 4.2 
+│                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
+│                              │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
+│                              │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
+│                              │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b8
+│                              │                  │      a484f5e9163c40e63919 
+│                              │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j3
+│                              │                  │      g9-wg22-v955 
+│                              │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
+│                              │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
+│                              │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
+│                              ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
+│                              ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
 ├ [1] ╭ Target: Java 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : jar 
@@ -2702,7 +2906,7 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-06T17:15:21.41Z 
+│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
 ├ [3] ╭ Target         : usr/bin/helm 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -2836,7 +3040,7 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-06T17:15:21.41Z 
+│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
 ├ [4] ╭ Target         : usr/bin/kubectl 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -3019,7 +3223,7 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-06T17:15:21.41Z 
+│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
 ├ [5] ╭ Target         : usr/local/bin/k3d 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -3433,8 +3637,46 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-06T17:15:21.41Z 
-├ [6] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
+│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+├ [6] ╭ Target : /etc/ssh/ssh_host_rsa_key 
+│     ├ Class  : secret 
+│     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                     ├ Category : AsymmetricPrivateKey 
+│                     ├ Severity : HIGH 
+│                     ├ Title    : Asymmetric Private Key 
+│                     ├ StartLine: 1 
+│                     ├ EndLine  : 1 
+│                     ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                     │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                     │                   │     │              KEY-----****************************************
+│                     │                   │     │              ************************************************
+│                     │                   │     │              *****-----END OPENSSH PRI 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                     │                   │     │              KEY-----****************************************
+│                     │                   │     │              ************************************************
+│                     │                   │     │              *****-----END OPENSSH PRI 
+│                     │                   │     ├ FirstCause : true 
+│                     │                   │     ╰ LastCause  : true 
+│                     │                   ╰ [1] ╭ Number    : 2 
+│                     │                         ├ Content   :  
+│                     │                         ├ IsCause   : false 
+│                     │                         ├ Annotation:  
+│                     │                         ├ Truncated : false 
+│                     │                         ├ FirstCause: false 
+│                     │                         ╰ LastCause : false 
+│                     ├ Match    : BEGIN OPENSSH PRIVATE
+│                     │            KEY-----********************************************************************
+│                     │            ****************************************************************************
+│                     │            *****************************************-----END OPENSSH PRI 
+│                     ╰ Layer     ╭ Digest   : sha256:8786555b2541738615db34d6cb61015cd806be00bd26311c73bf21fae
+│                                 │            539f12e 
+│                                 ├ DiffID   : sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4fa2dae648aecac
+│                                 │            d8f5a3c 
+│                                 ╰ CreatedBy: COPY / / # buildkit 
+├ [7] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
 │     ├ Class  : secret 
 │     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                     ├ Category : AsymmetricPrivateKey 
@@ -3473,45 +3715,7 @@
 │                                 ├ DiffID   : sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4fa2dae648aecac
 │                                 │            d8f5a3c 
 │                                 ╰ CreatedBy: COPY / / # buildkit 
-├ [7] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
-│     ├ Class  : secret 
-│     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                     ├ Category : AsymmetricPrivateKey 
-│                     ├ Severity : HIGH 
-│                     ├ Title    : Asymmetric Private Key 
-│                     ├ StartLine: 1 
-│                     ├ EndLine  : 1 
-│                     ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                     │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                     │                   │     │              KEY-----****************************************
-│                     │                   │     │              ************************************************
-│                     │                   │     │              **************-----END OPENSSH PRI 
-│                     │                   │     ├ IsCause    : true 
-│                     │                   │     ├ Annotation :  
-│                     │                   │     ├ Truncated  : false 
-│                     │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                     │                   │     │              KEY-----****************************************
-│                     │                   │     │              ************************************************
-│                     │                   │     │              **************-----END OPENSSH PRI 
-│                     │                   │     ├ FirstCause : true 
-│                     │                   │     ╰ LastCause  : true 
-│                     │                   ╰ [1] ╭ Number    : 2 
-│                     │                         ├ Content   :  
-│                     │                         ├ IsCause   : false 
-│                     │                         ├ Annotation:  
-│                     │                         ├ Truncated : false 
-│                     │                         ├ FirstCause: false 
-│                     │                         ╰ LastCause : false 
-│                     ├ Match    : BEGIN OPENSSH PRIVATE
-│                     │            KEY-----********************************************************************
-│                     │            ****************************************************************************
-│                     │            **********************************************-----END OPENSSH PRI 
-│                     ╰ Layer     ╭ Digest   : sha256:8786555b2541738615db34d6cb61015cd806be00bd26311c73bf21fae
-│                                 │            539f12e 
-│                                 ├ DiffID   : sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4fa2dae648aecac
-│                                 │            d8f5a3c 
-│                                 ╰ CreatedBy: COPY / / # buildkit 
-╰ [8] ╭ Target : /etc/ssh/ssh_host_rsa_key 
+╰ [8] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
       ├ Class  : secret 
       ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                       ├ Category : AsymmetricPrivateKey 
@@ -3523,14 +3727,14 @@
                       │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
                       │                   │     │              KEY-----****************************************
                       │                   │     │              ************************************************
-                      │                   │     │              *****-----END OPENSSH PRI 
+                      │                   │     │              **************-----END OPENSSH PRI 
                       │                   │     ├ IsCause    : true 
                       │                   │     ├ Annotation :  
                       │                   │     ├ Truncated  : false 
                       │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
                       │                   │     │              KEY-----****************************************
                       │                   │     │              ************************************************
-                      │                   │     │              *****-----END OPENSSH PRI 
+                      │                   │     │              **************-----END OPENSSH PRI 
                       │                   │     ├ FirstCause : true 
                       │                   │     ╰ LastCause  : true 
                       │                   ╰ [1] ╭ Number    : 2 
@@ -3543,7 +3747,7 @@
                       ├ Match    : BEGIN OPENSSH PRIVATE
                       │            KEY-----********************************************************************
                       │            ****************************************************************************
-                      │            *****************************************-----END OPENSSH PRI 
+                      │            **********************************************-----END OPENSSH PRI 
                       ╰ Layer     ╭ Digest   : sha256:8786555b2541738615db34d6cb61015cd806be00bd26311c73bf21fae
                                   │            539f12e 
                                   ├ DiffID   : sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4fa2dae648aecac
