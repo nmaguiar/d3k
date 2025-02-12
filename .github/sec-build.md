@@ -2142,7 +2142,79 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [43] ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [43] ╭ VulnerabilityID : CVE-2024-12797 
+│                       │      ├ PkgID           : libssl3t64@3.3.1-2ubuntu2 
+│                       │      ├ PkgName         : libssl3t64 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2?arch=amd64&d
+│                       │      │                  │       istro=ubuntu-24.10 
+│                       │      │                  ╰ UID : fc2d3bb6db1ed3a2 
+│                       │      ├ InstalledVersion: 3.3.1-2ubuntu2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
+│                       │      │                  │         311c73bf21fae539f12e 
+│                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
+│                       │      │                            a2dae648aecacd8f5a3c 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                       │      │                   to authent ... 
+│                       │      ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                       │      │                   to authenticate a
+│                       │      │                   server may fail to notice that the server was not
+│                       │      │                   authenticated, because
+│                       │      │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+│                       │      │                   verification mode
+│                       │      │                   is set.
+│                       │      │                   
+│                       │      │                   Impact summary: TLS and DTLS connections using raw public
+│                       │      │                   keys may be
+│                       │      │                   vulnerable to man-in-middle attacks when server
+│                       │      │                   authentication failure is not
+│                       │      │                   detected by clients.
+│                       │      │                   RPKs are disabled by default in both TLS clients and TLS
+│                       │      │                   servers.  The issue
+│                       │      │                   only arises when TLS clients explicitly enable RPK use by
+│                       │      │                   the server, and the
+│                       │      │                   server, likewise, enables sending of an RPK instead of an
+│                       │      │                   X.509 certificate
+│                       │      │                   chain.  The affected clients are those that then rely on the
+│                       │      │                    handshake to
+│                       │      │                   fail when the server's RPK fails to match one of the
+│                       │      │                   expected public keys,
+│                       │      │                   by setting the verification mode to SSL_VERIFY_PEER.
+│                       │      │                   Clients that enable server-side raw public keys can still
+│                       │      │                   find out that raw
+│                       │      │                   public key verification failed by calling
+│                       │      │                   SSL_get_verify_result(), and those
+│                       │      │                   that do, and take appropriate action, are not affected. 
+│                       │      │                   This issue was
+│                       │      │                   introduced in the initial implementation of RPK support in
+│                       │      │                   OpenSSL 3.2.
+│                       │      │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this issue. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-392 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 1 
+│                       │      │                  ╰ ubuntu: 3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/738d4f9fdeaa
+│                       │      │                  │      d57660dcba50a619fafced3fd5e9 
+│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/798779d43494
+│                       │      │                  │      549b611233f92652f0da5328fbe7 
+│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/87ebd203feff
+│                       │      │                  │      cf92ad5889df92f90bb0ee10a699 
+│                       │      │                  ├ [4]: https://github.com/pyca/cryptography 
+│                       │      │                  ├ [5]: https://github.com/pyca/cryptography/security/advisori
+│                       │      │                  │      es/GHSA-79v4-65xg-pq4g 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                       │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250211.txt 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                       │      ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+│                       │      ╰ LastModifiedDate: 2025-02-11T16:15:38.827Z 
+│                       ├ [44] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : libssl3t64@3.3.1-2ubuntu2 
 │                       │      ├ PkgName         : libssl3t64 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2?arch=amd64&d
@@ -2192,7 +2264,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [44] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [45] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : libsubid4@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : libsubid4 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsubid4@4.15.3-3ubuntu2?arch=amd64&d
@@ -2239,7 +2311,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [45] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [46] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : login@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : login 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.15.3-3ubuntu2?arch=amd64&distr
@@ -2286,7 +2358,79 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [46] ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [47] ╭ VulnerabilityID : CVE-2024-12797 
+│                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2 
+│                       │      ├ PkgName         : openssl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&dist
+│                       │      │                  │       ro=ubuntu-24.10 
+│                       │      │                  ╰ UID : 27981e81a64e079d 
+│                       │      ├ InstalledVersion: 3.3.1-2ubuntu2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
+│                       │      │                  │         311c73bf21fae539f12e 
+│                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
+│                       │      │                            a2dae648aecacd8f5a3c 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                       │      │                   to authent ... 
+│                       │      ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                       │      │                   to authenticate a
+│                       │      │                   server may fail to notice that the server was not
+│                       │      │                   authenticated, because
+│                       │      │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+│                       │      │                   verification mode
+│                       │      │                   is set.
+│                       │      │                   
+│                       │      │                   Impact summary: TLS and DTLS connections using raw public
+│                       │      │                   keys may be
+│                       │      │                   vulnerable to man-in-middle attacks when server
+│                       │      │                   authentication failure is not
+│                       │      │                   detected by clients.
+│                       │      │                   RPKs are disabled by default in both TLS clients and TLS
+│                       │      │                   servers.  The issue
+│                       │      │                   only arises when TLS clients explicitly enable RPK use by
+│                       │      │                   the server, and the
+│                       │      │                   server, likewise, enables sending of an RPK instead of an
+│                       │      │                   X.509 certificate
+│                       │      │                   chain.  The affected clients are those that then rely on the
+│                       │      │                    handshake to
+│                       │      │                   fail when the server's RPK fails to match one of the
+│                       │      │                   expected public keys,
+│                       │      │                   by setting the verification mode to SSL_VERIFY_PEER.
+│                       │      │                   Clients that enable server-side raw public keys can still
+│                       │      │                   find out that raw
+│                       │      │                   public key verification failed by calling
+│                       │      │                   SSL_get_verify_result(), and those
+│                       │      │                   that do, and take appropriate action, are not affected. 
+│                       │      │                   This issue was
+│                       │      │                   introduced in the initial implementation of RPK support in
+│                       │      │                   OpenSSL 3.2.
+│                       │      │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this issue. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-392 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 1 
+│                       │      │                  ╰ ubuntu: 3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/738d4f9fdeaa
+│                       │      │                  │      d57660dcba50a619fafced3fd5e9 
+│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/798779d43494
+│                       │      │                  │      549b611233f92652f0da5328fbe7 
+│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/87ebd203feff
+│                       │      │                  │      cf92ad5889df92f90bb0ee10a699 
+│                       │      │                  ├ [4]: https://github.com/pyca/cryptography 
+│                       │      │                  ├ [5]: https://github.com/pyca/cryptography/security/advisori
+│                       │      │                  │      es/GHSA-79v4-65xg-pq4g 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                       │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250211.txt 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                       │      ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+│                       │      ╰ LastModifiedDate: 2025-02-11T16:15:38.827Z 
+│                       ├ [48] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&dist
@@ -2336,7 +2480,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [47] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [49] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : passwd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dist
@@ -2383,7 +2527,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [48] ╭ VulnerabilityID : CVE-2018-6952 
+│                       ├ [50] ╭ VulnerabilityID : CVE-2018-6952 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -2433,7 +2577,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                       │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                       ├ [49] ╭ VulnerabilityID : CVE-2021-45261 
+│                       ├ [51] ╭ VulnerabilityID : CVE-2021-45261 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -2473,7 +2617,7 @@
 │                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [50] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [52] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : uidmap 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dist
@@ -2520,7 +2664,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [51] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ├ [53] ╭ VulnerabilityID : CVE-2025-24014 
 │                       │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.3 
 │                       │      ├ PkgName         : vim 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.3?arch=amd64&dis
@@ -2571,7 +2715,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
 │                       │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
 │                       │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                       ├ [52] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ├ [54] ╭ VulnerabilityID : CVE-2025-24014 
 │                       │      ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.3 
 │                       │      ├ PkgName         : vim-common 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.3?arch=al
@@ -2622,7 +2766,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
 │                       │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
 │                       │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                       ├ [53] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ├ [55] ╭ VulnerabilityID : CVE-2025-24014 
 │                       │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.3 
 │                       │      ├ PkgName         : vim-runtime 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.3?arch=a
@@ -2673,7 +2817,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
 │                       │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
 │                       │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                       ├ [54] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ├ [56] ╭ VulnerabilityID : CVE-2021-31879 
 │                       │      ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                       │      ├ PkgName         : wget 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distro
@@ -2719,7 +2863,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
 │                       │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
-│                       ╰ [55] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ╰ [57] ╭ VulnerabilityID : CVE-2025-24014 
 │                              ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.3 
 │                              ├ PkgName         : xxd 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.3?arch=amd64&dis
@@ -2894,10 +3038,14 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 5.3 
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ redhat : 2 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 8.4 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 5.3 
 │                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                             │                  ├ [1]: https://go.dev/cl/643735 
 │                             │                  ├ [2]: https://go.dev/issue/71383 
@@ -2906,7 +3054,7 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [3] ╭ Target         : usr/bin/helm 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -3028,10 +3176,14 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 5.3 
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ redhat : 2 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 8.4 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 5.3 
 │                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                             │                  ├ [1]: https://go.dev/cl/643735 
 │                             │                  ├ [2]: https://go.dev/issue/71383 
@@ -3040,7 +3192,7 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [4] ╭ Target         : usr/bin/kubectl 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -3211,10 +3363,14 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 5.3 
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ redhat : 2 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 8.4 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 5.3 
 │                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                             │                  ├ [1]: https://go.dev/cl/643735 
 │                             │                  ├ [2]: https://go.dev/issue/71383 
@@ -3223,7 +3379,7 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [5] ╭ Target         : usr/local/bin/k3d 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -3625,10 +3781,14 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 5.3 
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ redhat : 2 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 8.4 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 5.3 
 │                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                             │                  ├ [1]: https://go.dev/cl/643735 
 │                             │                  ├ [2]: https://go.dev/issue/71383 
@@ -3637,7 +3797,7 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [6] ╭ Target : /etc/ssh/ssh_host_rsa_key 
 │     ├ Class  : secret 
 │     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
