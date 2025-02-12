@@ -3308,7 +3308,79 @@
 │                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2024-12254 
 │                        │      ├ PublishedDate   : 2024-12-06T16:15:20.623Z 
 │                        │      ╰ LastModifiedDate: 2025-02-03T18:15:33.11Z 
-│                        ├ [63] ╭ VulnerabilityID : CVE-2024-41996 
+│                        ├ [63] ╭ VulnerabilityID : CVE-2024-12797 
+│                        │      ├ PkgID           : libssl3t64@3.3.1-2ubuntu2 
+│                        │      ├ PkgName         : libssl3t64 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2?arch=amd64&
+│                        │      │                  │       distro=ubuntu-24.10 
+│                        │      │                  ╰ UID : 2956f50006cff192 
+│                        │      ├ InstalledVersion: 3.3.1-2ubuntu2 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6
+│                        │      │                  │         798c3f18fad64f967425e 
+│                        │      │                  ╰ DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a
+│                        │      │                            385d06a5e69fdb8c8dd0e 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                        │      │                    to authent ... 
+│                        │      ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                        │      │                    to authenticate a
+│                        │      │                   server may fail to notice that the server was not
+│                        │      │                   authenticated, because
+│                        │      │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+│                        │      │                    verification mode
+│                        │      │                   is set.
+│                        │      │                   
+│                        │      │                   Impact summary: TLS and DTLS connections using raw public
+│                        │      │                   keys may be
+│                        │      │                   vulnerable to man-in-middle attacks when server
+│                        │      │                   authentication failure is not
+│                        │      │                   detected by clients.
+│                        │      │                   RPKs are disabled by default in both TLS clients and TLS
+│                        │      │                   servers.  The issue
+│                        │      │                   only arises when TLS clients explicitly enable RPK use by
+│                        │      │                   the server, and the
+│                        │      │                   server, likewise, enables sending of an RPK instead of an
+│                        │      │                   X.509 certificate
+│                        │      │                   chain.  The affected clients are those that then rely on
+│                        │      │                   the handshake to
+│                        │      │                   fail when the server's RPK fails to match one of the
+│                        │      │                   expected public keys,
+│                        │      │                   by setting the verification mode to SSL_VERIFY_PEER.
+│                        │      │                   Clients that enable server-side raw public keys can still
+│                        │      │                   find out that raw
+│                        │      │                   public key verification failed by calling
+│                        │      │                   SSL_get_verify_result(), and those
+│                        │      │                   that do, and take appropriate action, are not affected. 
+│                        │      │                   This issue was
+│                        │      │                   introduced in the initial implementation of RPK support in
+│                        │      │                   OpenSSL 3.2.
+│                        │      │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                        │      │                   affected by this issue. 
+│                        │      ├ Severity        : HIGH 
+│                        │      ├ CweIDs           ─ [0]: CWE-392 
+│                        │      ├ VendorSeverity   ╭ ghsa  : 1 
+│                        │      │                  ╰ ubuntu: 3 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/738d4f9fdea
+│                        │      │                  │      ad57660dcba50a619fafced3fd5e9 
+│                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/798779d4349
+│                        │      │                  │      4549b611233f92652f0da5328fbe7 
+│                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/87ebd203fef
+│                        │      │                  │      fcf92ad5889df92f90bb0ee10a699 
+│                        │      │                  ├ [4]: https://github.com/pyca/cryptography 
+│                        │      │                  ├ [5]: https://github.com/pyca/cryptography/security/advisor
+│                        │      │                  │      ies/GHSA-79v4-65xg-pq4g 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250211.txt 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                        │      ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+│                        │      ╰ LastModifiedDate: 2025-02-11T16:15:38.827Z 
+│                        ├ [64] ╭ VulnerabilityID : CVE-2024-41996 
 │                        │      ├ PkgID           : libssl3t64@3.3.1-2ubuntu2 
 │                        │      ├ PkgName         : libssl3t64 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2?arch=amd64&
@@ -3358,7 +3430,7 @@
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                        │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                        │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                        ├ [64] ╭ VulnerabilityID : CVE-2024-56433 
+│                        ├ [65] ╭ VulnerabilityID : CVE-2024-56433 
 │                        │      ├ PkgID           : libsubid4@1:4.15.3-3ubuntu2 
 │                        │      ├ PkgName         : libsubid4 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsubid4@4.15.3-3ubuntu2?arch=amd64&
@@ -3405,7 +3477,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                        │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                        ├ [65] ╭ VulnerabilityID : CVE-2024-40896 
+│                        ├ [66] ╭ VulnerabilityID : CVE-2024-40896 
 │                        │      ├ PkgID           : libxml2@2.12.7+dfsg-3 
 │                        │      ├ PkgName         : libxml2 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3?arch=amd64&di
@@ -3447,7 +3519,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-40896 
 │                        │      ├ PublishedDate   : 2024-12-23T17:15:08.4Z 
 │                        │      ╰ LastModifiedDate: 2024-12-24T03:15:06.727Z 
-│                        ├ [66] ╭ VulnerabilityID : CVE-2024-56433 
+│                        ├ [67] ╭ VulnerabilityID : CVE-2024-56433 
 │                        │      ├ PkgID           : login@1:4.15.3-3ubuntu2 
 │                        │      ├ PkgName         : login 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.15.3-3ubuntu2?arch=amd64&dist
@@ -3494,7 +3566,79 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                        │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                        ├ [67] ╭ VulnerabilityID : CVE-2024-41996 
+│                        ├ [68] ╭ VulnerabilityID : CVE-2024-12797 
+│                        │      ├ PkgID           : openssl@3.3.1-2ubuntu2 
+│                        │      ├ PkgName         : openssl 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&dis
+│                        │      │                  │       tro=ubuntu-24.10 
+│                        │      │                  ╰ UID : 57e386cf9db29f40 
+│                        │      ├ InstalledVersion: 3.3.1-2ubuntu2 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6
+│                        │      │                  │         798c3f18fad64f967425e 
+│                        │      │                  ╰ DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a
+│                        │      │                            385d06a5e69fdb8c8dd0e 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                        │      │                    to authent ... 
+│                        │      ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                        │      │                    to authenticate a
+│                        │      │                   server may fail to notice that the server was not
+│                        │      │                   authenticated, because
+│                        │      │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+│                        │      │                    verification mode
+│                        │      │                   is set.
+│                        │      │                   
+│                        │      │                   Impact summary: TLS and DTLS connections using raw public
+│                        │      │                   keys may be
+│                        │      │                   vulnerable to man-in-middle attacks when server
+│                        │      │                   authentication failure is not
+│                        │      │                   detected by clients.
+│                        │      │                   RPKs are disabled by default in both TLS clients and TLS
+│                        │      │                   servers.  The issue
+│                        │      │                   only arises when TLS clients explicitly enable RPK use by
+│                        │      │                   the server, and the
+│                        │      │                   server, likewise, enables sending of an RPK instead of an
+│                        │      │                   X.509 certificate
+│                        │      │                   chain.  The affected clients are those that then rely on
+│                        │      │                   the handshake to
+│                        │      │                   fail when the server's RPK fails to match one of the
+│                        │      │                   expected public keys,
+│                        │      │                   by setting the verification mode to SSL_VERIFY_PEER.
+│                        │      │                   Clients that enable server-side raw public keys can still
+│                        │      │                   find out that raw
+│                        │      │                   public key verification failed by calling
+│                        │      │                   SSL_get_verify_result(), and those
+│                        │      │                   that do, and take appropriate action, are not affected. 
+│                        │      │                   This issue was
+│                        │      │                   introduced in the initial implementation of RPK support in
+│                        │      │                   OpenSSL 3.2.
+│                        │      │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                        │      │                   affected by this issue. 
+│                        │      ├ Severity        : HIGH 
+│                        │      ├ CweIDs           ─ [0]: CWE-392 
+│                        │      ├ VendorSeverity   ╭ ghsa  : 1 
+│                        │      │                  ╰ ubuntu: 3 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/738d4f9fdea
+│                        │      │                  │      ad57660dcba50a619fafced3fd5e9 
+│                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/798779d4349
+│                        │      │                  │      4549b611233f92652f0da5328fbe7 
+│                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/87ebd203fef
+│                        │      │                  │      fcf92ad5889df92f90bb0ee10a699 
+│                        │      │                  ├ [4]: https://github.com/pyca/cryptography 
+│                        │      │                  ├ [5]: https://github.com/pyca/cryptography/security/advisor
+│                        │      │                  │      ies/GHSA-79v4-65xg-pq4g 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250211.txt 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                        │      ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+│                        │      ╰ LastModifiedDate: 2025-02-11T16:15:38.827Z 
+│                        ├ [69] ╭ VulnerabilityID : CVE-2024-41996 
 │                        │      ├ PkgID           : openssl@3.3.1-2ubuntu2 
 │                        │      ├ PkgName         : openssl 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&dis
@@ -3544,7 +3688,7 @@
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                        │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                        │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                        ├ [68] ╭ VulnerabilityID : CVE-2024-56433 
+│                        ├ [70] ╭ VulnerabilityID : CVE-2024-56433 
 │                        │      ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
 │                        │      ├ PkgName         : passwd 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dis
@@ -3591,7 +3735,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                        │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                        ├ [69] ╭ VulnerabilityID : CVE-2018-6952 
+│                        ├ [71] ╭ VulnerabilityID : CVE-2018-6952 
 │                        │      ├ PkgID           : patch@2.7.6-7build3 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -3641,7 +3785,7 @@
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                        │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                        │      ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                        ├ [70] ╭ VulnerabilityID : CVE-2021-45261 
+│                        ├ [72] ╭ VulnerabilityID : CVE-2021-45261 
 │                        │      ├ PkgID           : patch@2.7.6-7build3 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -3681,7 +3825,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                        │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                        │      ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                        ├ [71] ╭ VulnerabilityID : CVE-2024-12254 
+│                        ├ [73] ╭ VulnerabilityID : CVE-2024-12254 
 │                        │      ├ PkgID           : python3.12@3.12.7-1ubuntu1 
 │                        │      ├ PkgName         : python3.12 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.7-1ubuntu1?arch=amd64
@@ -3771,7 +3915,7 @@
 │                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2024-12254 
 │                        │      ├ PublishedDate   : 2024-12-06T16:15:20.623Z 
 │                        │      ╰ LastModifiedDate: 2025-02-03T18:15:33.11Z 
-│                        ├ [72] ╭ VulnerabilityID : CVE-2024-12254 
+│                        ├ [74] ╭ VulnerabilityID : CVE-2024-12254 
 │                        │      ├ PkgID           : python3.12-minimal@3.12.7-1ubuntu1 
 │                        │      ├ PkgName         : python3.12-minimal 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.7-1ubuntu1?ar
@@ -3861,7 +4005,7 @@
 │                        │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2024-12254 
 │                        │      ├ PublishedDate   : 2024-12-06T16:15:20.623Z 
 │                        │      ╰ LastModifiedDate: 2025-02-03T18:15:33.11Z 
-│                        ├ [73] ╭ VulnerabilityID : CVE-2024-56433 
+│                        ├ [75] ╭ VulnerabilityID : CVE-2024-56433 
 │                        │      ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                        │      ├ PkgName         : uidmap 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dis
@@ -3908,116 +4052,12 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                        │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                        ├ [74] ╭ VulnerabilityID : CVE-2025-22134 
-│                        │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.2 
-│                        │      ├ PkgName         : vim 
-│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.2?arch=amd64&di
-│                        │      │                  │       stro=ubuntu-24.10&epoch=2 
-│                        │      │                  ╰ UID : ebdea45539cd0dc8 
-│                        │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.2 
-│                        │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.3 
-│                        │      ├ Status          : fixed 
-│                        │      ├ Layer            ╭ Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6
-│                        │      │                  │         798c3f18fad64f967425e 
-│                        │      │                  ╰ DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a
-│                        │      │                            385d06a5e69fdb8c8dd0e 
-│                        │      ├ SeveritySource  : ubuntu 
-│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22134 
-│                        │      ├ DataSource       ╭ ID  : ubuntu 
-│                        │      │                  ├ Name: Ubuntu CVE Tracker 
-│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                        │      ├ Title           : vim: heap-buffer-overflow with visual mode in Vim < 9.1.1003 
-│                        │      ├ Description     : When switching to other buffers using the :all command and
-│                        │      │                   visual mode still being active, this may cause a
-│                        │      │                   heap-buffer overflow, because Vim does not properly end
-│                        │      │                   visual mode and therefore may try to access beyond the end
-│                        │      │                   of a line in a buffer. In Patch 9.1.1003 Vim will correctly
-│                        │      │                    reset the visual mode before opening other windows and
-│                        │      │                   buffers and therefore fix this bug. In addition it does
-│                        │      │                   verify that it won't try to access a position if the
-│                        │      │                   position is greater than the corresponding buffer line.
-│                        │      │                   Impact is medium since the user must have switched on
-│                        │      │                   visual mode when executing the :all ex command. The Vim
-│                        │      │                   project would like to thank github user gandalf4a for
-│                        │      │                   reporting this issue. The issue has been fixed as of Vim
-│                        │      │                   patch v9.1.1003 
-│                        │      ├ Severity        : MEDIUM 
-│                        │      ├ CweIDs           ─ [0]: CWE-122 
-│                        │      ├ VendorSeverity   ╭ azure      : 2 
-│                        │      │                  ├ cbl-mariner: 2 
-│                        │      │                  ├ redhat     : 1 
-│                        │      │                  ╰ ubuntu     : 2 
-│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
-│                        │      │                           │           L/A:L 
-│                        │      │                           ╰ V3Score : 4.2 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/11/1 
-│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-22134 
-│                        │      │                  ├ [2]: https://github.com/vim/vim/commit/c9a1e257f1630a08664
-│                        │      │                  │      47e53a564f7ff96a80ead 
-│                        │      │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-5
-│                        │      │                  │      rgf-26wj-48v8 
-│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22134 
-│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7220-1 
-│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22134 
-│                        │      ├ PublishedDate   : 2025-01-13T21:15:14.333Z 
-│                        │      ╰ LastModifiedDate: 2025-01-13T21:15:14.333Z 
-│                        ├ [75] ╭ VulnerabilityID : CVE-2025-24014 
-│                        │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.2 
-│                        │      ├ PkgName         : vim 
-│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.2?arch=amd64&di
-│                        │      │                  │       stro=ubuntu-24.10&epoch=2 
-│                        │      │                  ╰ UID : ebdea45539cd0dc8 
-│                        │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.2 
-│                        │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.4 
-│                        │      ├ Status          : fixed 
-│                        │      ├ Layer            ╭ Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6
-│                        │      │                  │         798c3f18fad64f967425e 
-│                        │      │                  ╰ DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a
-│                        │      │                            385d06a5e69fdb8c8dd0e 
-│                        │      ├ SeveritySource  : ubuntu 
-│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
-│                        │      ├ DataSource       ╭ ID  : ubuntu 
-│                        │      │                  ├ Name: Ubuntu CVE Tracker 
-│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                        │      ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
-│                        │      ├ Description     : Vim is an open source, command line text editor. A
-│                        │      │                   segmentation fault was found in Vim before 9.1.1043. In
-│                        │      │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
-│                        │      │                    and just operates silently in batch mode. However, it is
-│                        │      │                   still possible to trigger the function that handles the
-│                        │      │                   scrolling of a gui version of Vim by feeding some binary
-│                        │      │                   characters to Vim. The function that handles the scrolling
-│                        │      │                   however may be triggering a redraw, which will access the
-│                        │      │                   ScreenLines pointer, even so this variable hasn't been
-│                        │      │                   allocated (since there is no screen). This vulnerability is
-│                        │      │                    fixed in 9.1.1043. 
-│                        │      ├ Severity        : MEDIUM 
-│                        │      ├ CweIDs           ─ [0]: CWE-787 
-│                        │      ├ VendorSeverity   ╭ azure      : 2 
-│                        │      │                  ├ cbl-mariner: 2 
-│                        │      │                  ├ redhat     : 1 
-│                        │      │                  ╰ ubuntu     : 2 
-│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
-│                        │      │                           │           L/A:L 
-│                        │      │                           ╰ V3Score : 4.2 
-│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
-│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
-│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
-│                        │      │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b
-│                        │      │                  │      8a484f5e9163c40e63919 
-│                        │      │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j
-│                        │      │                  │      3g9-wg22-v955 
-│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
-│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
-│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
-│                        │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
-│                        │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
 │                        ├ [76] ╭ VulnerabilityID : CVE-2025-22134 
-│                        │      ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.2 
-│                        │      ├ PkgName         : vim-common 
-│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.2?arch=a
-│                        │      │                  │       ll&distro=ubuntu-24.10&epoch=2 
-│                        │      │                  ╰ UID : 731f8e9281d1fdca 
+│                        │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.2 
+│                        │      ├ PkgName         : vim 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.2?arch=amd64&di
+│                        │      │                  │       stro=ubuntu-24.10&epoch=2 
+│                        │      │                  ╰ UID : ebdea45539cd0dc8 
 │                        │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.2 
 │                        │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.3 
 │                        │      ├ Status          : fixed 
@@ -4066,6 +4106,110 @@
 │                        │      ├ PublishedDate   : 2025-01-13T21:15:14.333Z 
 │                        │      ╰ LastModifiedDate: 2025-01-13T21:15:14.333Z 
 │                        ├ [77] ╭ VulnerabilityID : CVE-2025-24014 
+│                        │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.2 
+│                        │      ├ PkgName         : vim 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.2?arch=amd64&di
+│                        │      │                  │       stro=ubuntu-24.10&epoch=2 
+│                        │      │                  ╰ UID : ebdea45539cd0dc8 
+│                        │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.2 
+│                        │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.4 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6
+│                        │      │                  │         798c3f18fad64f967425e 
+│                        │      │                  ╰ DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a
+│                        │      │                            385d06a5e69fdb8c8dd0e 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
+│                        │      ├ Description     : Vim is an open source, command line text editor. A
+│                        │      │                   segmentation fault was found in Vim before 9.1.1043. In
+│                        │      │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
+│                        │      │                    and just operates silently in batch mode. However, it is
+│                        │      │                   still possible to trigger the function that handles the
+│                        │      │                   scrolling of a gui version of Vim by feeding some binary
+│                        │      │                   characters to Vim. The function that handles the scrolling
+│                        │      │                   however may be triggering a redraw, which will access the
+│                        │      │                   ScreenLines pointer, even so this variable hasn't been
+│                        │      │                   allocated (since there is no screen). This vulnerability is
+│                        │      │                    fixed in 9.1.1043. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-787 
+│                        │      ├ VendorSeverity   ╭ azure      : 2 
+│                        │      │                  ├ cbl-mariner: 2 
+│                        │      │                  ├ redhat     : 1 
+│                        │      │                  ╰ ubuntu     : 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
+│                        │      │                           │           L/A:L 
+│                        │      │                           ╰ V3Score : 4.2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
+│                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
+│                        │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
+│                        │      │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b
+│                        │      │                  │      8a484f5e9163c40e63919 
+│                        │      │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j
+│                        │      │                  │      3g9-wg22-v955 
+│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
+│                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
+│                        │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
+│                        │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
+│                        ├ [78] ╭ VulnerabilityID : CVE-2025-22134 
+│                        │      ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.2 
+│                        │      ├ PkgName         : vim-common 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.2?arch=a
+│                        │      │                  │       ll&distro=ubuntu-24.10&epoch=2 
+│                        │      │                  ╰ UID : 731f8e9281d1fdca 
+│                        │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.2 
+│                        │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.3 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6
+│                        │      │                  │         798c3f18fad64f967425e 
+│                        │      │                  ╰ DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a
+│                        │      │                            385d06a5e69fdb8c8dd0e 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22134 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Title           : vim: heap-buffer-overflow with visual mode in Vim < 9.1.1003 
+│                        │      ├ Description     : When switching to other buffers using the :all command and
+│                        │      │                   visual mode still being active, this may cause a
+│                        │      │                   heap-buffer overflow, because Vim does not properly end
+│                        │      │                   visual mode and therefore may try to access beyond the end
+│                        │      │                   of a line in a buffer. In Patch 9.1.1003 Vim will correctly
+│                        │      │                    reset the visual mode before opening other windows and
+│                        │      │                   buffers and therefore fix this bug. In addition it does
+│                        │      │                   verify that it won't try to access a position if the
+│                        │      │                   position is greater than the corresponding buffer line.
+│                        │      │                   Impact is medium since the user must have switched on
+│                        │      │                   visual mode when executing the :all ex command. The Vim
+│                        │      │                   project would like to thank github user gandalf4a for
+│                        │      │                   reporting this issue. The issue has been fixed as of Vim
+│                        │      │                   patch v9.1.1003 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-122 
+│                        │      ├ VendorSeverity   ╭ azure      : 2 
+│                        │      │                  ├ cbl-mariner: 2 
+│                        │      │                  ├ redhat     : 1 
+│                        │      │                  ╰ ubuntu     : 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
+│                        │      │                           │           L/A:L 
+│                        │      │                           ╰ V3Score : 4.2 
+│                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/11/1 
+│                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-22134 
+│                        │      │                  ├ [2]: https://github.com/vim/vim/commit/c9a1e257f1630a08664
+│                        │      │                  │      47e53a564f7ff96a80ead 
+│                        │      │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-5
+│                        │      │                  │      rgf-26wj-48v8 
+│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22134 
+│                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7220-1 
+│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22134 
+│                        │      ├ PublishedDate   : 2025-01-13T21:15:14.333Z 
+│                        │      ╰ LastModifiedDate: 2025-01-13T21:15:14.333Z 
+│                        ├ [79] ╭ VulnerabilityID : CVE-2025-24014 
 │                        │      ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.2 
 │                        │      ├ PkgName         : vim-common 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.2?arch=a
@@ -4116,7 +4260,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
 │                        │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
 │                        │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                        ├ [78] ╭ VulnerabilityID : CVE-2025-22134 
+│                        ├ [80] ╭ VulnerabilityID : CVE-2025-22134 
 │                        │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.2 
 │                        │      ├ PkgName         : vim-runtime 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.2?arch=
@@ -4169,7 +4313,7 @@
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22134 
 │                        │      ├ PublishedDate   : 2025-01-13T21:15:14.333Z 
 │                        │      ╰ LastModifiedDate: 2025-01-13T21:15:14.333Z 
-│                        ├ [79] ╭ VulnerabilityID : CVE-2025-24014 
+│                        ├ [81] ╭ VulnerabilityID : CVE-2025-24014 
 │                        │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.2 
 │                        │      ├ PkgName         : vim-runtime 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.2?arch=
@@ -4220,7 +4364,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
 │                        │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
 │                        │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                        ├ [80] ╭ VulnerabilityID : CVE-2021-31879 
+│                        ├ [82] ╭ VulnerabilityID : CVE-2021-31879 
 │                        │      ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                        │      ├ PkgName         : wget 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distr
@@ -4267,7 +4411,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
 │                        │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                        │      ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
-│                        ├ [81] ╭ VulnerabilityID : CVE-2025-22134 
+│                        ├ [83] ╭ VulnerabilityID : CVE-2025-22134 
 │                        │      ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.2 
 │                        │      ├ PkgName         : xxd 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.2?arch=amd64&di
@@ -4320,7 +4464,7 @@
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22134 
 │                        │      ├ PublishedDate   : 2025-01-13T21:15:14.333Z 
 │                        │      ╰ LastModifiedDate: 2025-01-13T21:15:14.333Z 
-│                        ╰ [82] ╭ VulnerabilityID : CVE-2025-24014 
+│                        ╰ [84] ╭ VulnerabilityID : CVE-2025-24014 
 │                               ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.2 
 │                               ├ PkgName         : xxd 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.2?arch=amd64&di
@@ -4773,7 +4917,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -6274,7 +6418,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -6351,7 +6495,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -7401,10 +7545,14 @@
 │                               │                    private key when P-256 is used in any well known protocols
 │                               │                   . 
 │                               ├ Severity        : MEDIUM 
-│                               ├ VendorSeverity   ─ redhat: 2 
-│                               ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                               │                           │           N/A:N 
-│                               │                           ╰ V3Score : 5.3 
+│                               ├ VendorSeverity   ╭ bitnami: 3 
+│                               │                  ╰ redhat : 2 
+│                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I
+│                               │                  │         │           :H/A:H 
+│                               │                  │         ╰ V3Score : 8.4 
+│                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I
+│                               │                            │           :N/A:N 
+│                               │                            ╰ V3Score : 5.3 
 │                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                               │                  ├ [1]: https://go.dev/cl/643735 
 │                               │                  ├ [2]: https://go.dev/issue/71383 
@@ -7414,7 +7562,7 @@
 │                               │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                               │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                               ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                               ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                               ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [3]  ╭ Target         : tmp/tmp.rHf1Pt71ZX/krew-linux_amd64 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -7814,7 +7962,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ ghsa       : 2 
@@ -9315,7 +9463,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -9392,7 +9540,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-79 
 │                        │      ├ VendorSeverity   ╭ alma       : 2 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -10442,10 +10590,14 @@
 │                               │                    private key when P-256 is used in any well known protocols
 │                               │                   . 
 │                               ├ Severity        : MEDIUM 
-│                               ├ VendorSeverity   ─ redhat: 2 
-│                               ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                               │                           │           N/A:N 
-│                               │                           ╰ V3Score : 5.3 
+│                               ├ VendorSeverity   ╭ bitnami: 3 
+│                               │                  ╰ redhat : 2 
+│                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I
+│                               │                  │         │           :H/A:H 
+│                               │                  │         ╰ V3Score : 8.4 
+│                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I
+│                               │                            │           :N/A:N 
+│                               │                            ╰ V3Score : 5.3 
 │                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                               │                  ├ [1]: https://go.dev/cl/643735 
 │                               │                  ├ [2]: https://go.dev/issue/71383 
@@ -10455,7 +10607,7 @@
 │                               │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                               │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                               ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                               ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                               ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [4]  ╭ Target         : usr/bin/docker-compose 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -10626,10 +10778,14 @@
 │                              │                   not believe this leakage is enough to allow recovery of the
 │                              │                   private key when P-256 is used in any well known protocols. 
 │                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ─ redhat: 2 
-│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
-│                              │                           │           /A:N 
-│                              │                           ╰ V3Score : 5.3 
+│                              ├ VendorSeverity   ╭ bitnami: 3 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                              │                  │         │           H/A:H 
+│                              │                  │         ╰ V3Score : 8.4 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                            │           N/A:N 
+│                              │                            ╰ V3Score : 5.3 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                              │                  ├ [1]: https://go.dev/cl/643735 
 │                              │                  ├ [2]: https://go.dev/issue/71383 
@@ -10639,7 +10795,7 @@
 │                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                              ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                              ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                              ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [5]  ╭ Target         : usr/bin/helm 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -10900,10 +11056,14 @@
 │                              │                   not believe this leakage is enough to allow recovery of the
 │                              │                   private key when P-256 is used in any well known protocols. 
 │                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ─ redhat: 2 
-│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
-│                              │                           │           /A:N 
-│                              │                           ╰ V3Score : 5.3 
+│                              ├ VendorSeverity   ╭ bitnami: 3 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                              │                  │         │           H/A:H 
+│                              │                  │         ╰ V3Score : 8.4 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                            │           N/A:N 
+│                              │                            ╰ V3Score : 5.3 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                              │                  ├ [1]: https://go.dev/cl/643735 
 │                              │                  ├ [2]: https://go.dev/issue/71383 
@@ -10913,7 +11073,7 @@
 │                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                              ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                              ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                              ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [6]  ╭ Target         : usr/bin/kubectl 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -11084,10 +11244,14 @@
 │                              │                   not believe this leakage is enough to allow recovery of the
 │                              │                   private key when P-256 is used in any well known protocols. 
 │                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ─ redhat: 2 
-│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
-│                              │                           │           /A:N 
-│                              │                           ╰ V3Score : 5.3 
+│                              ├ VendorSeverity   ╭ bitnami: 3 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                              │                  │         │           H/A:H 
+│                              │                  │         ╰ V3Score : 8.4 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                            │           N/A:N 
+│                              │                            ╰ V3Score : 5.3 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                              │                  ├ [1]: https://go.dev/cl/643735 
 │                              │                  ├ [2]: https://go.dev/issue/71383 
@@ -11097,7 +11261,7 @@
 │                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                              ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                              ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                              ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [7]  ╭ Target         : usr/local/bin/k3d 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -11502,10 +11666,14 @@
 │                              │                   not believe this leakage is enough to allow recovery of the
 │                              │                   private key when P-256 is used in any well known protocols. 
 │                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ─ redhat: 2 
-│                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
-│                              │                           │           /A:N 
-│                              │                           ╰ V3Score : 5.3 
+│                              ├ VendorSeverity   ╭ bitnami: 3 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                              │                  │         │           H/A:H 
+│                              │                  │         ╰ V3Score : 8.4 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                            │           N/A:N 
+│                              │                            ╰ V3Score : 5.3 
 │                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                              │                  ├ [1]: https://go.dev/cl/643735 
 │                              │                  ├ [2]: https://go.dev/issue/71383 
@@ -11515,8 +11683,47 @@
 │                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                              ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                              ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
-├ [8]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
+│                              ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
+├ [8]  ╭ Target : /etc/ssh/ssh_host_rsa_key 
+│      ├ Class  : secret 
+│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                      ├ Category : AsymmetricPrivateKey 
+│                      ├ Severity : HIGH 
+│                      ├ Title    : Asymmetric Private Key 
+│                      ├ StartLine: 1 
+│                      ├ EndLine  : 1 
+│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********-----END OPENSSH PRI 
+│                      │                   │     ├ IsCause    : true 
+│                      │                   │     ├ Annotation :  
+│                      │                   │     ├ Truncated  : false 
+│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                      │                   │     │              KEY-----***************************************
+│                      │                   │     │              ***********************************************
+│                      │                   │     │              ***********-----END OPENSSH PRI 
+│                      │                   │     ├ FirstCause : true 
+│                      │                   │     ╰ LastCause  : true 
+│                      │                   ╰ [1] ╭ Number    : 2 
+│                      │                         ├ Content   :  
+│                      │                         ├ IsCause   : false 
+│                      │                         ├ Annotation:  
+│                      │                         ├ Truncated : false 
+│                      │                         ├ FirstCause: false 
+│                      │                         ╰ LastCause : false 
+│                      ├ Match    : BEGIN OPENSSH PRIVATE
+│                      │            KEY-----*******************************************************************
+│                      │            ***************************************************************************
+│                      │            **************************************************************************-
+│                      │            ----END OPENSSH PRI 
+│                      ╰ Layer     ╭ Digest   : sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64
+│                                  │            f967425e 
+│                                  ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
+│                                  │            b8c8dd0e 
+│                                  ╰ CreatedBy: COPY / / # buildkit 
+├ [9]  ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                      ├ Category : AsymmetricPrivateKey 
@@ -11556,45 +11763,7 @@
 │                                  ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
 │                                  │            b8c8dd0e 
 │                                  ╰ CreatedBy: COPY / / # buildkit 
-├ [9]  ╭ Target : /etc/ssh/ssh_host_ed25519_key 
-│      ├ Class  : secret 
-│      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                      ├ Category : AsymmetricPrivateKey 
-│                      ├ Severity : HIGH 
-│                      ├ Title    : Asymmetric Private Key 
-│                      ├ StartLine: 1 
-│                      ├ EndLine  : 1 
-│                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *********************-----END OPENSSH PRI 
-│                      │                   │     ├ IsCause    : true 
-│                      │                   │     ├ Annotation :  
-│                      │                   │     ├ Truncated  : false 
-│                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                      │                   │     │              KEY-----***************************************
-│                      │                   │     │              ***********************************************
-│                      │                   │     │              *********************-----END OPENSSH PRI 
-│                      │                   │     ├ FirstCause : true 
-│                      │                   │     ╰ LastCause  : true 
-│                      │                   ╰ [1] ╭ Number    : 2 
-│                      │                         ├ Content   :  
-│                      │                         ├ IsCause   : false 
-│                      │                         ├ Annotation:  
-│                      │                         ├ Truncated : false 
-│                      │                         ├ FirstCause: false 
-│                      │                         ╰ LastCause : false 
-│                      ├ Match    : BEGIN OPENSSH PRIVATE
-│                      │            KEY-----*******************************************************************
-│                      │            ***************************************************************************
-│                      │            **************************************************-----END OPENSSH PRI 
-│                      ╰ Layer     ╭ Digest   : sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64
-│                                  │            f967425e 
-│                                  ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
-│                                  │            b8c8dd0e 
-│                                  ╰ CreatedBy: COPY / / # buildkit 
-╰ [10] ╭ Target : /etc/ssh/ssh_host_rsa_key 
+╰ [10] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
        ├ Class  : secret 
        ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                        ├ Category : AsymmetricPrivateKey 
@@ -11606,14 +11775,14 @@
                        │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********-----END OPENSSH PRI 
+                       │                   │     │              *********************-----END OPENSSH PRI 
                        │                   │     ├ IsCause    : true 
                        │                   │     ├ Annotation :  
                        │                   │     ├ Truncated  : false 
                        │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
                        │                   │     │              KEY-----***************************************
                        │                   │     │              ***********************************************
-                       │                   │     │              ***********-----END OPENSSH PRI 
+                       │                   │     │              *********************-----END OPENSSH PRI 
                        │                   │     ├ FirstCause : true 
                        │                   │     ╰ LastCause  : true 
                        │                   ╰ [1] ╭ Number    : 2 
@@ -11626,8 +11795,7 @@
                        ├ Match    : BEGIN OPENSSH PRIVATE
                        │            KEY-----*******************************************************************
                        │            ***************************************************************************
-                       │            **************************************************************************-
-                       │            ----END OPENSSH PRI 
+                       │            **************************************************-----END OPENSSH PRI 
                        ╰ Layer     ╭ Digest   : sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64
                                    │            f967425e 
                                    ├ DiffID   : sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fd
