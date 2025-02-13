@@ -2149,7 +2149,8 @@
 │                       │      │                  │       istro=ubuntu-24.10 
 │                       │      │                  ╰ UID : fc2d3bb6db1ed3a2 
 │                       │      ├ InstalledVersion: 3.3.1-2ubuntu2 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 3.3.1-2ubuntu2.1 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
 │                       │      │                  │         311c73bf21fae539f12e 
 │                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
@@ -2159,8 +2160,8 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
-│                       │      │                   to authent ... 
+│                       │      ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
+│                       │      │                   don't abort as expected 
 │                       │      ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
 │                       │      │                   to authenticate a
 │                       │      │                   server may fail to notice that the server was not
@@ -2198,23 +2199,105 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-392 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 1 
+│                       │      │                  ├ redhat: 3 
 │                       │      │                  ╰ ubuntu: 3 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/11/3 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/738d4f9fdeaa
-│                       │      │                  │      d57660dcba50a619fafced3fd5e9 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/798779d43494
-│                       │      │                  │      549b611233f92652f0da5328fbe7 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/87ebd203feff
-│                       │      │                  │      cf92ad5889df92f90bb0ee10a699 
-│                       │      │                  ├ [4]: https://github.com/pyca/cryptography 
-│                       │      │                  ├ [5]: https://github.com/pyca/cryptography/security/advisori
-│                       │      │                  │      es/GHSA-79v4-65xg-pq4g 
-│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                       │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250211.txt 
-│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 7.4 
+│                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                       │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
+│                       │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
+│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdea
+│                       │      │                  │       ad57660dcba50a619fafced3fd5e9 
+│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d4349
+│                       │      │                  │       4549b611233f92652f0da5328fbe7 
+│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203fef
+│                       │      │                  │       fcf92ad5889df92f90bb0ee10a699 
+│                       │      │                  ├ [6] : https://github.com/pyca/cryptography 
+│                       │      │                  ├ [7] : https://github.com/pyca/cryptography/security/advisor
+│                       │      │                  │       ies/GHSA-79v4-65xg-pq4g 
+│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                       │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
+│                       │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
 │                       │      ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
-│                       │      ╰ LastModifiedDate: 2025-02-11T16:15:38.827Z 
-│                       ├ [44] ╭ VulnerabilityID : CVE-2024-41996 
+│                       │      ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+│                       ├ [44] ╭ VulnerabilityID : CVE-2024-13176 
+│                       │      ├ PkgID           : libssl3t64@3.3.1-2ubuntu2 
+│                       │      ├ PkgName         : libssl3t64 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2?arch=amd64&d
+│                       │      │                  │       istro=ubuntu-24.10 
+│                       │      │                  ╰ UID : fc2d3bb6db1ed3a2 
+│                       │      ├ InstalledVersion: 3.3.1-2ubuntu2 
+│                       │      ├ FixedVersion    : 3.3.1-2ubuntu2.1 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
+│                       │      │                  │         311c73bf21fae539f12e 
+│                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
+│                       │      │                            a2dae648aecacd8f5a3c 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-13176 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : openssl: Timing side-channel in ECDSA signature computation 
+│                       │      ├ Description     : Issue summary: A timing side-channel which could potentially
+│                       │      │                    allow recovering
+│                       │      │                   the private key exists in the ECDSA signature computation.
+│                       │      │                   
+│                       │      │                   Impact summary: A timing side-channel in ECDSA signature
+│                       │      │                   computations
+│                       │      │                   could allow recovering the private key by an attacker.
+│                       │      │                   However, measuring
+│                       │      │                   the timing would require either local access to the signing
+│                       │      │                   application or
+│                       │      │                   a very fast network connection with low latency.
+│                       │      │                   There is a timing signal of around 300 nanoseconds when the
+│                       │      │                   top word of
+│                       │      │                   the inverted ECDSA nonce value is zero. This can happen with
+│                       │      │                    significant
+│                       │      │                   probability only for some of the supported elliptic curves.
+│                       │      │                   In particular
+│                       │      │                   the NIST P-521 curve is affected. To be able to measure this
+│                       │      │                    leak, the attacker
+│                       │      │                   process must either be located in the same physical computer
+│                       │      │                    or must
+│                       │      │                   have a very fast network connection with low latency. For
+│                       │      │                   that reason
+│                       │      │                   the severity of this vulnerability is Low. 
+│                       │      ├ Severity        : LOW 
+│                       │      ├ CweIDs           ─ [0]: CWE-385 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ redhat: 1 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 4.7 
+│                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/01/20/2 
+│                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-13176 
+│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/07272b05b04
+│                       │      │                  │       836a762b4baa874958af51d513844 
+│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/2af62e74fb5
+│                       │      │                  │       9bc469506bc37eb2990ea408d9467 
+│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/392dcb33640
+│                       │      │                  │       5a0c94486aa6655057f59fd3a0902 
+│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/4b1cb94a734
+│                       │      │                  │       a7d4ec363ac0a215a25c181e11f65 
+│                       │      │                  ├ [6] : https://github.com/openssl/openssl/commit/77c608f4c88
+│                       │      │                  │       57e63e98e66444e2e761c9627916f 
+│                       │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded 
+│                       │      │                  ├ [8] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/a2639000db19878d5d89586ae7b725080592ae86 
+│                       │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-13176 
+│                       │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250120.txt 
+│                       │      │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250124-00
+│                       │      │                  │       05/ 
+│                       │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
+│                       │      ├ PublishedDate   : 2025-01-20T14:15:26.247Z 
+│                       │      ╰ LastModifiedDate: 2025-01-27T21:15:11.907Z 
+│                       ├ [45] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : libssl3t64@3.3.1-2ubuntu2 
 │                       │      ├ PkgName         : libssl3t64 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2?arch=amd64&d
@@ -2264,7 +2347,99 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [45] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [46] ╭ VulnerabilityID : CVE-2024-9143 
+│                       │      ├ PkgID           : libssl3t64@3.3.1-2ubuntu2 
+│                       │      ├ PkgName         : libssl3t64 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2?arch=amd64&d
+│                       │      │                  │       istro=ubuntu-24.10 
+│                       │      │                  ╰ UID : fc2d3bb6db1ed3a2 
+│                       │      ├ InstalledVersion: 3.3.1-2ubuntu2 
+│                       │      ├ FixedVersion    : 3.3.1-2ubuntu2.1 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
+│                       │      │                  │         311c73bf21fae539f12e 
+│                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
+│                       │      │                            a2dae648aecacd8f5a3c 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-9143 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : openssl: Low-level invalid GF(2^m) parameters lead to OOB
+│                       │      │                   memory access 
+│                       │      ├ Description     : Issue summary: Use of the low-level GF(2^m) elliptic curve
+│                       │      │                   APIs with untrusted
+│                       │      │                   explicit values for the field polynomial can lead to
+│                       │      │                   out-of-bounds memory reads
+│                       │      │                   or writes.
+│                       │      │                   
+│                       │      │                   Impact summary: Out of bound memory writes can lead to an
+│                       │      │                   application crash or
+│                       │      │                   even a possibility of a remote code execution, however, in
+│                       │      │                   all the protocols
+│                       │      │                   involving Elliptic Curve Cryptography that we're aware of,
+│                       │      │                   either only "named
+│                       │      │                   curves" are supported, or, if explicit curve parameters are
+│                       │      │                   supported, they
+│                       │      │                   specify an X9.62 encoding of binary (GF(2^m)) curves that
+│                       │      │                   can't represent
+│                       │      │                   problematic input values. Thus the likelihood of existence
+│                       │      │                   of a vulnerable
+│                       │      │                   application is low.
+│                       │      │                   In particular, the X9.62 encoding is used for ECC keys in
+│                       │      │                   X.509 certificates,
+│                       │      │                   so problematic inputs cannot occur in the context of
+│                       │      │                   processing X.509
+│                       │      │                   certificates.  Any problematic use-cases would have to be
+│                       │      │                   using an "exotic"
+│                       │      │                   curve encoding.
+│                       │      │                   The affected APIs include: EC_GROUP_new_curve_GF2m(),
+│                       │      │                   EC_GROUP_new_from_params(),
+│                       │      │                   and various supporting BN_GF2m_*() functions.
+│                       │      │                   Applications working with "exotic" explicit binary (GF(2^m))
+│                       │      │                    curve parameters,
+│                       │      │                   that make it possible to represent invalid field polynomials
+│                       │      │                    with a zero
+│                       │      │                   constant term, via the above or similar APIs, may terminate
+│                       │      │                   abruptly as a
+│                       │      │                   result of reading or writing outside of array bounds. 
+│                       │      │                   Remote code execution
+│                       │      │                   cannot easily be ruled out.
+│                       │      │                   The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected
+│                       │      │                   by this issue. 
+│                       │      ├ Severity        : LOW 
+│                       │      ├ CweIDs           ─ [0]: CWE-787 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ redhat: 1 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 3.7 
+│                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/10/16/1 
+│                       │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/10/23/1 
+│                       │      │                  ├ [2] : http://www.openwall.com/lists/oss-security/2024/10/24/1 
+│                       │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-9143 
+│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/72ae83ad214
+│                       │      │                  │       d2eef262461365a1975707f862712 
+│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/bc7e04d7c8d
+│                       │      │                  │       509fb78fc0e285aa948fb0da04700 
+│                       │      │                  ├ [6] : https://github.com/openssl/openssl/commit/c0d3e4d32d2
+│                       │      │                  │       805f49bec30547f225bc4d092e1f4 
+│                       │      │                  ├ [7] : https://github.com/openssl/openssl/commit/fdf6723362c
+│                       │      │                  │       a51bd883295efe206cb5b1cfa5154 
+│                       │      │                  ├ [8] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/8efc0cbaa8ebba8e116f7b81a876a4123594d86a 
+│                       │      │                  ├ [9] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/9d576994cec2b7aa37a91740ea7e680810957e41 
+│                       │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-9143 
+│                       │      │                  ├ [11]: https://openssl-library.org/news/secadv/20241016.txt 
+│                       │      │                  ├ [12]: https://security.netapp.com/advisory/ntap-20241101-00
+│                       │      │                  │       01/ 
+│                       │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
+│                       │      ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
+│                       │      ╰ LastModifiedDate: 2024-11-21T09:54:04.817Z 
+│                       ├ [47] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : libsubid4@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : libsubid4 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsubid4@4.15.3-3ubuntu2?arch=amd64&d
@@ -2311,7 +2486,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [46] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [48] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : login@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : login 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.15.3-3ubuntu2?arch=amd64&distr
@@ -2358,14 +2533,15 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [47] ╭ VulnerabilityID : CVE-2024-12797 
+│                       ├ [49] ╭ VulnerabilityID : CVE-2024-12797 
 │                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&dist
 │                       │      │                  │       ro=ubuntu-24.10 
 │                       │      │                  ╰ UID : 27981e81a64e079d 
 │                       │      ├ InstalledVersion: 3.3.1-2ubuntu2 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 3.3.1-2ubuntu2.1 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
 │                       │      │                  │         311c73bf21fae539f12e 
 │                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
@@ -2375,8 +2551,8 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
-│                       │      │                   to authent ... 
+│                       │      ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
+│                       │      │                   don't abort as expected 
 │                       │      ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
 │                       │      │                   to authenticate a
 │                       │      │                   server may fail to notice that the server was not
@@ -2414,23 +2590,105 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-392 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 1 
+│                       │      │                  ├ redhat: 3 
 │                       │      │                  ╰ ubuntu: 3 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/11/3 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/738d4f9fdeaa
-│                       │      │                  │      d57660dcba50a619fafced3fd5e9 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/798779d43494
-│                       │      │                  │      549b611233f92652f0da5328fbe7 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/87ebd203feff
-│                       │      │                  │      cf92ad5889df92f90bb0ee10a699 
-│                       │      │                  ├ [4]: https://github.com/pyca/cryptography 
-│                       │      │                  ├ [5]: https://github.com/pyca/cryptography/security/advisori
-│                       │      │                  │      es/GHSA-79v4-65xg-pq4g 
-│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                       │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250211.txt 
-│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 7.4 
+│                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                       │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
+│                       │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
+│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdea
+│                       │      │                  │       ad57660dcba50a619fafced3fd5e9 
+│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d4349
+│                       │      │                  │       4549b611233f92652f0da5328fbe7 
+│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203fef
+│                       │      │                  │       fcf92ad5889df92f90bb0ee10a699 
+│                       │      │                  ├ [6] : https://github.com/pyca/cryptography 
+│                       │      │                  ├ [7] : https://github.com/pyca/cryptography/security/advisor
+│                       │      │                  │       ies/GHSA-79v4-65xg-pq4g 
+│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                       │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
+│                       │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
 │                       │      ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
-│                       │      ╰ LastModifiedDate: 2025-02-11T16:15:38.827Z 
-│                       ├ [48] ╭ VulnerabilityID : CVE-2024-41996 
+│                       │      ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+│                       ├ [50] ╭ VulnerabilityID : CVE-2024-13176 
+│                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2 
+│                       │      ├ PkgName         : openssl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&dist
+│                       │      │                  │       ro=ubuntu-24.10 
+│                       │      │                  ╰ UID : 27981e81a64e079d 
+│                       │      ├ InstalledVersion: 3.3.1-2ubuntu2 
+│                       │      ├ FixedVersion    : 3.3.1-2ubuntu2.1 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
+│                       │      │                  │         311c73bf21fae539f12e 
+│                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
+│                       │      │                            a2dae648aecacd8f5a3c 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-13176 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : openssl: Timing side-channel in ECDSA signature computation 
+│                       │      ├ Description     : Issue summary: A timing side-channel which could potentially
+│                       │      │                    allow recovering
+│                       │      │                   the private key exists in the ECDSA signature computation.
+│                       │      │                   
+│                       │      │                   Impact summary: A timing side-channel in ECDSA signature
+│                       │      │                   computations
+│                       │      │                   could allow recovering the private key by an attacker.
+│                       │      │                   However, measuring
+│                       │      │                   the timing would require either local access to the signing
+│                       │      │                   application or
+│                       │      │                   a very fast network connection with low latency.
+│                       │      │                   There is a timing signal of around 300 nanoseconds when the
+│                       │      │                   top word of
+│                       │      │                   the inverted ECDSA nonce value is zero. This can happen with
+│                       │      │                    significant
+│                       │      │                   probability only for some of the supported elliptic curves.
+│                       │      │                   In particular
+│                       │      │                   the NIST P-521 curve is affected. To be able to measure this
+│                       │      │                    leak, the attacker
+│                       │      │                   process must either be located in the same physical computer
+│                       │      │                    or must
+│                       │      │                   have a very fast network connection with low latency. For
+│                       │      │                   that reason
+│                       │      │                   the severity of this vulnerability is Low. 
+│                       │      ├ Severity        : LOW 
+│                       │      ├ CweIDs           ─ [0]: CWE-385 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ redhat: 1 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 4.7 
+│                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/01/20/2 
+│                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-13176 
+│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/07272b05b04
+│                       │      │                  │       836a762b4baa874958af51d513844 
+│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/2af62e74fb5
+│                       │      │                  │       9bc469506bc37eb2990ea408d9467 
+│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/392dcb33640
+│                       │      │                  │       5a0c94486aa6655057f59fd3a0902 
+│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/4b1cb94a734
+│                       │      │                  │       a7d4ec363ac0a215a25c181e11f65 
+│                       │      │                  ├ [6] : https://github.com/openssl/openssl/commit/77c608f4c88
+│                       │      │                  │       57e63e98e66444e2e761c9627916f 
+│                       │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded 
+│                       │      │                  ├ [8] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/a2639000db19878d5d89586ae7b725080592ae86 
+│                       │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-13176 
+│                       │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250120.txt 
+│                       │      │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250124-00
+│                       │      │                  │       05/ 
+│                       │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
+│                       │      ├ PublishedDate   : 2025-01-20T14:15:26.247Z 
+│                       │      ╰ LastModifiedDate: 2025-01-27T21:15:11.907Z 
+│                       ├ [51] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&dist
@@ -2480,7 +2738,99 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [49] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [52] ╭ VulnerabilityID : CVE-2024-9143 
+│                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2 
+│                       │      ├ PkgName         : openssl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&dist
+│                       │      │                  │       ro=ubuntu-24.10 
+│                       │      │                  ╰ UID : 27981e81a64e079d 
+│                       │      ├ InstalledVersion: 3.3.1-2ubuntu2 
+│                       │      ├ FixedVersion    : 3.3.1-2ubuntu2.1 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:8786555b2541738615db34d6cb61015cd806be00bd26
+│                       │      │                  │         311c73bf21fae539f12e 
+│                       │      │                  ╰ DiffID: sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4f
+│                       │      │                            a2dae648aecacd8f5a3c 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-9143 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : openssl: Low-level invalid GF(2^m) parameters lead to OOB
+│                       │      │                   memory access 
+│                       │      ├ Description     : Issue summary: Use of the low-level GF(2^m) elliptic curve
+│                       │      │                   APIs with untrusted
+│                       │      │                   explicit values for the field polynomial can lead to
+│                       │      │                   out-of-bounds memory reads
+│                       │      │                   or writes.
+│                       │      │                   
+│                       │      │                   Impact summary: Out of bound memory writes can lead to an
+│                       │      │                   application crash or
+│                       │      │                   even a possibility of a remote code execution, however, in
+│                       │      │                   all the protocols
+│                       │      │                   involving Elliptic Curve Cryptography that we're aware of,
+│                       │      │                   either only "named
+│                       │      │                   curves" are supported, or, if explicit curve parameters are
+│                       │      │                   supported, they
+│                       │      │                   specify an X9.62 encoding of binary (GF(2^m)) curves that
+│                       │      │                   can't represent
+│                       │      │                   problematic input values. Thus the likelihood of existence
+│                       │      │                   of a vulnerable
+│                       │      │                   application is low.
+│                       │      │                   In particular, the X9.62 encoding is used for ECC keys in
+│                       │      │                   X.509 certificates,
+│                       │      │                   so problematic inputs cannot occur in the context of
+│                       │      │                   processing X.509
+│                       │      │                   certificates.  Any problematic use-cases would have to be
+│                       │      │                   using an "exotic"
+│                       │      │                   curve encoding.
+│                       │      │                   The affected APIs include: EC_GROUP_new_curve_GF2m(),
+│                       │      │                   EC_GROUP_new_from_params(),
+│                       │      │                   and various supporting BN_GF2m_*() functions.
+│                       │      │                   Applications working with "exotic" explicit binary (GF(2^m))
+│                       │      │                    curve parameters,
+│                       │      │                   that make it possible to represent invalid field polynomials
+│                       │      │                    with a zero
+│                       │      │                   constant term, via the above or similar APIs, may terminate
+│                       │      │                   abruptly as a
+│                       │      │                   result of reading or writing outside of array bounds. 
+│                       │      │                   Remote code execution
+│                       │      │                   cannot easily be ruled out.
+│                       │      │                   The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected
+│                       │      │                   by this issue. 
+│                       │      ├ Severity        : LOW 
+│                       │      ├ CweIDs           ─ [0]: CWE-787 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ redhat: 1 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 3.7 
+│                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/10/16/1 
+│                       │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/10/23/1 
+│                       │      │                  ├ [2] : http://www.openwall.com/lists/oss-security/2024/10/24/1 
+│                       │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-9143 
+│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/72ae83ad214
+│                       │      │                  │       d2eef262461365a1975707f862712 
+│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/bc7e04d7c8d
+│                       │      │                  │       509fb78fc0e285aa948fb0da04700 
+│                       │      │                  ├ [6] : https://github.com/openssl/openssl/commit/c0d3e4d32d2
+│                       │      │                  │       805f49bec30547f225bc4d092e1f4 
+│                       │      │                  ├ [7] : https://github.com/openssl/openssl/commit/fdf6723362c
+│                       │      │                  │       a51bd883295efe206cb5b1cfa5154 
+│                       │      │                  ├ [8] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/8efc0cbaa8ebba8e116f7b81a876a4123594d86a 
+│                       │      │                  ├ [9] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/9d576994cec2b7aa37a91740ea7e680810957e41 
+│                       │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-9143 
+│                       │      │                  ├ [11]: https://openssl-library.org/news/secadv/20241016.txt 
+│                       │      │                  ├ [12]: https://security.netapp.com/advisory/ntap-20241101-00
+│                       │      │                  │       01/ 
+│                       │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
+│                       │      ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
+│                       │      ╰ LastModifiedDate: 2024-11-21T09:54:04.817Z 
+│                       ├ [53] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : passwd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dist
@@ -2527,7 +2877,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [50] ╭ VulnerabilityID : CVE-2018-6952 
+│                       ├ [54] ╭ VulnerabilityID : CVE-2018-6952 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -2577,7 +2927,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                       │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                       ├ [51] ╭ VulnerabilityID : CVE-2021-45261 
+│                       ├ [55] ╭ VulnerabilityID : CVE-2021-45261 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -2617,7 +2967,7 @@
 │                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [52] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [56] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : uidmap 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dist
@@ -2664,7 +3014,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [53] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ├ [57] ╭ VulnerabilityID : CVE-2025-24014 
 │                       │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.3 
 │                       │      ├ PkgName         : vim 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.3?arch=amd64&dis
@@ -2715,7 +3065,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
 │                       │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
 │                       │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                       ├ [54] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ├ [58] ╭ VulnerabilityID : CVE-2025-24014 
 │                       │      ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.3 
 │                       │      ├ PkgName         : vim-common 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.3?arch=al
@@ -2766,7 +3116,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
 │                       │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
 │                       │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                       ├ [55] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ├ [59] ╭ VulnerabilityID : CVE-2025-24014 
 │                       │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.3 
 │                       │      ├ PkgName         : vim-runtime 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.3?arch=a
@@ -2817,7 +3167,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
 │                       │      ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
 │                       │      ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                       ├ [56] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ├ [60] ╭ VulnerabilityID : CVE-2021-31879 
 │                       │      ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                       │      ├ PkgName         : wget 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distro
@@ -2863,7 +3213,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
 │                       │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
-│                       ╰ [57] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ╰ [61] ╭ VulnerabilityID : CVE-2025-24014 
 │                              ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.3 
 │                              ├ PkgName         : xxd 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.3?arch=amd64&dis
@@ -3038,11 +3388,11 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             ├ VendorSeverity   ╭ bitnami: 2 
 │                             │                  ╰ redhat : 2 
-│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
-│                             │                  │         │           /A:H 
-│                             │                  │         ╰ V3Score : 8.4 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 4 
 │                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 5.3 
@@ -3176,11 +3526,11 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             ├ VendorSeverity   ╭ bitnami: 2 
 │                             │                  ╰ redhat : 2 
-│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
-│                             │                  │         │           /A:H 
-│                             │                  │         ╰ V3Score : 8.4 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 4 
 │                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 5.3 
@@ -3363,11 +3713,11 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             ├ VendorSeverity   ╭ bitnami: 2 
 │                             │                  ╰ redhat : 2 
-│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
-│                             │                  │         │           /A:H 
-│                             │                  │         ╰ V3Score : 8.4 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 4 
 │                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 5.3 
@@ -3781,11 +4131,11 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             ├ VendorSeverity   ╭ bitnami: 2 
 │                             │                  ╰ redhat : 2 
-│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
-│                             │                  │         │           /A:H 
-│                             │                  │         ╰ V3Score : 8.4 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 4 
 │                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 5.3 
@@ -3798,45 +4148,7 @@
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
-├ [6] ╭ Target : /etc/ssh/ssh_host_rsa_key 
-│     ├ Class  : secret 
-│     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                     ├ Category : AsymmetricPrivateKey 
-│                     ├ Severity : HIGH 
-│                     ├ Title    : Asymmetric Private Key 
-│                     ├ StartLine: 1 
-│                     ├ EndLine  : 1 
-│                     ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                     │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                     │                   │     │              KEY-----****************************************
-│                     │                   │     │              ************************************************
-│                     │                   │     │              *****-----END OPENSSH PRI 
-│                     │                   │     ├ IsCause    : true 
-│                     │                   │     ├ Annotation :  
-│                     │                   │     ├ Truncated  : false 
-│                     │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                     │                   │     │              KEY-----****************************************
-│                     │                   │     │              ************************************************
-│                     │                   │     │              *****-----END OPENSSH PRI 
-│                     │                   │     ├ FirstCause : true 
-│                     │                   │     ╰ LastCause  : true 
-│                     │                   ╰ [1] ╭ Number    : 2 
-│                     │                         ├ Content   :  
-│                     │                         ├ IsCause   : false 
-│                     │                         ├ Annotation:  
-│                     │                         ├ Truncated : false 
-│                     │                         ├ FirstCause: false 
-│                     │                         ╰ LastCause : false 
-│                     ├ Match    : BEGIN OPENSSH PRIVATE
-│                     │            KEY-----********************************************************************
-│                     │            ****************************************************************************
-│                     │            *****************************************-----END OPENSSH PRI 
-│                     ╰ Layer     ╭ Digest   : sha256:8786555b2541738615db34d6cb61015cd806be00bd26311c73bf21fae
-│                                 │            539f12e 
-│                                 ├ DiffID   : sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4fa2dae648aecac
-│                                 │            d8f5a3c 
-│                                 ╰ CreatedBy: COPY / / # buildkit 
-├ [7] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
+├ [6] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
 │     ├ Class  : secret 
 │     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                     ├ Category : AsymmetricPrivateKey 
@@ -3875,7 +4187,45 @@
 │                                 ├ DiffID   : sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4fa2dae648aecac
 │                                 │            d8f5a3c 
 │                                 ╰ CreatedBy: COPY / / # buildkit 
-╰ [8] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+├ [7] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+│     ├ Class  : secret 
+│     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                     ├ Category : AsymmetricPrivateKey 
+│                     ├ Severity : HIGH 
+│                     ├ Title    : Asymmetric Private Key 
+│                     ├ StartLine: 1 
+│                     ├ EndLine  : 1 
+│                     ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                     │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                     │                   │     │              KEY-----****************************************
+│                     │                   │     │              ************************************************
+│                     │                   │     │              **************-----END OPENSSH PRI 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                     │                   │     │              KEY-----****************************************
+│                     │                   │     │              ************************************************
+│                     │                   │     │              **************-----END OPENSSH PRI 
+│                     │                   │     ├ FirstCause : true 
+│                     │                   │     ╰ LastCause  : true 
+│                     │                   ╰ [1] ╭ Number    : 2 
+│                     │                         ├ Content   :  
+│                     │                         ├ IsCause   : false 
+│                     │                         ├ Annotation:  
+│                     │                         ├ Truncated : false 
+│                     │                         ├ FirstCause: false 
+│                     │                         ╰ LastCause : false 
+│                     ├ Match    : BEGIN OPENSSH PRIVATE
+│                     │            KEY-----********************************************************************
+│                     │            ****************************************************************************
+│                     │            **********************************************-----END OPENSSH PRI 
+│                     ╰ Layer     ╭ Digest   : sha256:8786555b2541738615db34d6cb61015cd806be00bd26311c73bf21fae
+│                                 │            539f12e 
+│                                 ├ DiffID   : sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4fa2dae648aecac
+│                                 │            d8f5a3c 
+│                                 ╰ CreatedBy: COPY / / # buildkit 
+╰ [8] ╭ Target : /etc/ssh/ssh_host_rsa_key 
       ├ Class  : secret 
       ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                       ├ Category : AsymmetricPrivateKey 
@@ -3887,14 +4237,14 @@
                       │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
                       │                   │     │              KEY-----****************************************
                       │                   │     │              ************************************************
-                      │                   │     │              **************-----END OPENSSH PRI 
+                      │                   │     │              *****-----END OPENSSH PRI 
                       │                   │     ├ IsCause    : true 
                       │                   │     ├ Annotation :  
                       │                   │     ├ Truncated  : false 
                       │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
                       │                   │     │              KEY-----****************************************
                       │                   │     │              ************************************************
-                      │                   │     │              **************-----END OPENSSH PRI 
+                      │                   │     │              *****-----END OPENSSH PRI 
                       │                   │     ├ FirstCause : true 
                       │                   │     ╰ LastCause  : true 
                       │                   ╰ [1] ╭ Number    : 2 
@@ -3907,7 +4257,7 @@
                       ├ Match    : BEGIN OPENSSH PRIVATE
                       │            KEY-----********************************************************************
                       │            ****************************************************************************
-                      │            **********************************************-----END OPENSSH PRI 
+                      │            *****************************************-----END OPENSSH PRI 
                       ╰ Layer     ╭ Digest   : sha256:8786555b2541738615db34d6cb61015cd806be00bd26311c73bf21fae
                                   │            539f12e 
                                   ├ DiffID   : sha256:aa4a5a03d9c35a710b71c67d4a208760c95a51d43a4fa2dae648aecac
