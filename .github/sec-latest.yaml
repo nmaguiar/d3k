@@ -38,12 +38,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2024-11187
     - https://kb.isc.org/docs/cve-2024-11187
+    - https://lists.debian.org/debian-lts-announce/2025/02/msg00011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-11187
     - https://security.netapp.com/advisory/ntap-20250207-0002/
     - https://ubuntu.com/security/notices/USN-7241-1
     - https://www.cve.org/CVERecord?id=CVE-2024-11187
     PublishedDate: '2025-01-29T22:15:28.637Z'
-    LastModifiedDate: '2025-02-07T17:15:30.057Z'
+    LastModifiedDate: '2025-02-11T19:15:12.64Z'
   - VulnerabilityID: CVE-2024-12705
     PkgID: bind9-dnsutils@1:9.20.0-2ubuntu3
     PkgName: bind9-dnsutils
@@ -122,12 +123,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2024-11187
     - https://kb.isc.org/docs/cve-2024-11187
+    - https://lists.debian.org/debian-lts-announce/2025/02/msg00011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-11187
     - https://security.netapp.com/advisory/ntap-20250207-0002/
     - https://ubuntu.com/security/notices/USN-7241-1
     - https://www.cve.org/CVERecord?id=CVE-2024-11187
     PublishedDate: '2025-01-29T22:15:28.637Z'
-    LastModifiedDate: '2025-02-07T17:15:30.057Z'
+    LastModifiedDate: '2025-02-11T19:15:12.64Z'
   - VulnerabilityID: CVE-2024-12705
     PkgID: bind9-host@1:9.20.0-2ubuntu3
     PkgName: bind9-host
@@ -206,12 +208,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2024-11187
     - https://kb.isc.org/docs/cve-2024-11187
+    - https://lists.debian.org/debian-lts-announce/2025/02/msg00011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-11187
     - https://security.netapp.com/advisory/ntap-20250207-0002/
     - https://ubuntu.com/security/notices/USN-7241-1
     - https://www.cve.org/CVERecord?id=CVE-2024-11187
     PublishedDate: '2025-01-29T22:15:28.637Z'
-    LastModifiedDate: '2025-02-07T17:15:30.057Z'
+    LastModifiedDate: '2025-02-11T19:15:12.64Z'
   - VulnerabilityID: CVE-2024-12705
     PkgID: bind9-libs@1:9.20.0-2ubuntu3
     PkgName: bind9-libs
@@ -471,12 +474,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2024-11187
     - https://kb.isc.org/docs/cve-2024-11187
+    - https://lists.debian.org/debian-lts-announce/2025/02/msg00011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-11187
     - https://security.netapp.com/advisory/ntap-20250207-0002/
     - https://ubuntu.com/security/notices/USN-7241-1
     - https://www.cve.org/CVERecord?id=CVE-2024-11187
     PublishedDate: '2025-01-29T22:15:28.637Z'
-    LastModifiedDate: '2025-02-07T17:15:30.057Z'
+    LastModifiedDate: '2025-02-11T19:15:12.64Z'
   - VulnerabilityID: CVE-2024-12705
     PkgID: dnsutils@1:9.20.0-2ubuntu3
     PkgName: dnsutils
@@ -3082,7 +3086,8 @@
       PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2?arch=amd64&distro=ubuntu-24.10
       UID: 2956f50006cff192
     InstalledVersion: 3.3.1-2ubuntu2
-    Status: affected
+    FixedVersion: 3.3.1-2ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
       DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
@@ -3092,7 +3097,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'Issue summary: Clients using RFC7250 Raw Public Keys (RPKs) to authent ...'
+    Title: 'openssl: RFC7250 handshakes with unauthenticated servers don''t abort as expected'
     Description: |-
       Issue summary: Clients using RFC7250 Raw Public Keys (RPKs) to authenticate a
       server may fail to notice that the server was not authenticated, because
@@ -3121,9 +3126,16 @@
     - CWE-392
     VendorSeverity:
       ghsa: 1
+      redhat: 3
       ubuntu: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
     References:
     - http://www.openwall.com/lists/oss-security/2025/02/11/3
+    - http://www.openwall.com/lists/oss-security/2025/02/11/4
+    - https://access.redhat.com/security/cve/CVE-2024-12797
     - https://github.com/openssl/openssl/commit/738d4f9fdeaad57660dcba50a619fafced3fd5e9
     - https://github.com/openssl/openssl/commit/798779d43494549b611233f92652f0da5328fbe7
     - https://github.com/openssl/openssl/commit/87ebd203feffcf92ad5889df92f90bb0ee10a699
@@ -3131,9 +3143,73 @@
     - https://github.com/pyca/cryptography/security/advisories/GHSA-79v4-65xg-pq4g
     - https://nvd.nist.gov/vuln/detail/CVE-2024-12797
     - https://openssl-library.org/news/secadv/20250211.txt
+    - https://ubuntu.com/security/notices/USN-7264-1
     - https://www.cve.org/CVERecord?id=CVE-2024-12797
     PublishedDate: '2025-02-11T16:15:38.827Z'
-    LastModifiedDate: '2025-02-11T16:15:38.827Z'
+    LastModifiedDate: '2025-02-11T23:15:08.807Z'
+  - VulnerabilityID: CVE-2024-13176
+    PkgID: libssl3t64@3.3.1-2ubuntu2
+    PkgName: libssl3t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2?arch=amd64&distro=ubuntu-24.10
+      UID: 2956f50006cff192
+    InstalledVersion: 3.3.1-2ubuntu2
+    FixedVersion: 3.3.1-2ubuntu2.1
+    Status: fixed
+    Layer:
+      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
+      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-13176
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'openssl: Timing side-channel in ECDSA signature computation'
+    Description: |-
+      Issue summary: A timing side-channel which could potentially allow recovering
+      the private key exists in the ECDSA signature computation.
+
+      Impact summary: A timing side-channel in ECDSA signature computations
+      could allow recovering the private key by an attacker. However, measuring
+      the timing would require either local access to the signing application or
+      a very fast network connection with low latency.
+
+      There is a timing signal of around 300 nanoseconds when the top word of
+      the inverted ECDSA nonce value is zero. This can happen with significant
+      probability only for some of the supported elliptic curves. In particular
+      the NIST P-521 curve is affected. To be able to measure this leak, the attacker
+      process must either be located in the same physical computer or must
+      have a very fast network connection with low latency. For that reason
+      the severity of this vulnerability is Low.
+    Severity: LOW
+    CweIDs:
+    - CWE-385
+    VendorSeverity:
+      amazon: 2
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/01/20/2
+    - https://access.redhat.com/security/cve/CVE-2024-13176
+    - https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844
+    - https://github.com/openssl/openssl/commit/2af62e74fb59bc469506bc37eb2990ea408d9467
+    - https://github.com/openssl/openssl/commit/392dcb336405a0c94486aa6655057f59fd3a0902
+    - https://github.com/openssl/openssl/commit/4b1cb94a734a7d4ec363ac0a215a25c181e11f65
+    - https://github.com/openssl/openssl/commit/77c608f4c8857e63e98e66444e2e761c9627916f
+    - https://github.openssl.org/openssl/extended-releases/commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded
+    - https://github.openssl.org/openssl/extended-releases/commit/a2639000db19878d5d89586ae7b725080592ae86
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-13176
+    - https://openssl-library.org/news/secadv/20250120.txt
+    - https://security.netapp.com/advisory/ntap-20250124-0005/
+    - https://ubuntu.com/security/notices/USN-7264-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-13176
+    PublishedDate: '2025-01-20T14:15:26.247Z'
+    LastModifiedDate: '2025-01-27T21:15:11.907Z'
   - VulnerabilityID: CVE-2024-41996
     PkgID: libssl3t64@3.3.1-2ubuntu2
     PkgName: libssl3t64
@@ -3176,6 +3252,82 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-41996
     PublishedDate: '2024-08-26T06:15:04.603Z'
     LastModifiedDate: '2024-08-26T16:35:11.247Z'
+  - VulnerabilityID: CVE-2024-9143
+    PkgID: libssl3t64@3.3.1-2ubuntu2
+    PkgName: libssl3t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2?arch=amd64&distro=ubuntu-24.10
+      UID: 2956f50006cff192
+    InstalledVersion: 3.3.1-2ubuntu2
+    FixedVersion: 3.3.1-2ubuntu2.1
+    Status: fixed
+    Layer:
+      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
+      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-9143
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'openssl: Low-level invalid GF(2^m) parameters lead to OOB memory access'
+    Description: |-
+      Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted
+      explicit values for the field polynomial can lead to out-of-bounds memory reads
+      or writes.
+
+      Impact summary: Out of bound memory writes can lead to an application crash or
+      even a possibility of a remote code execution, however, in all the protocols
+      involving Elliptic Curve Cryptography that we're aware of, either only "named
+      curves" are supported, or, if explicit curve parameters are supported, they
+      specify an X9.62 encoding of binary (GF(2^m)) curves that can't represent
+      problematic input values. Thus the likelihood of existence of a vulnerable
+      application is low.
+
+      In particular, the X9.62 encoding is used for ECC keys in X.509 certificates,
+      so problematic inputs cannot occur in the context of processing X.509
+      certificates.  Any problematic use-cases would have to be using an "exotic"
+      curve encoding.
+
+      The affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),
+      and various supporting BN_GF2m_*() functions.
+
+      Applications working with "exotic" explicit binary (GF(2^m)) curve parameters,
+      that make it possible to represent invalid field polynomials with a zero
+      constant term, via the above or similar APIs, may terminate abruptly as a
+      result of reading or writing outside of array bounds.  Remote code execution
+      cannot easily be ruled out.
+
+      The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      amazon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.7
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/10/16/1
+    - http://www.openwall.com/lists/oss-security/2024/10/23/1
+    - http://www.openwall.com/lists/oss-security/2024/10/24/1
+    - https://access.redhat.com/security/cve/CVE-2024-9143
+    - https://github.com/openssl/openssl/commit/72ae83ad214d2eef262461365a1975707f862712
+    - https://github.com/openssl/openssl/commit/bc7e04d7c8d509fb78fc0e285aa948fb0da04700
+    - https://github.com/openssl/openssl/commit/c0d3e4d32d2805f49bec30547f225bc4d092e1f4
+    - https://github.com/openssl/openssl/commit/fdf6723362ca51bd883295efe206cb5b1cfa5154
+    - https://github.openssl.org/openssl/extended-releases/commit/8efc0cbaa8ebba8e116f7b81a876a4123594d86a
+    - https://github.openssl.org/openssl/extended-releases/commit/9d576994cec2b7aa37a91740ea7e680810957e41
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-9143
+    - https://openssl-library.org/news/secadv/20241016.txt
+    - https://security.netapp.com/advisory/ntap-20241101-0001/
+    - https://ubuntu.com/security/notices/USN-7264-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-9143
+    PublishedDate: '2024-10-16T17:15:18.13Z'
+    LastModifiedDate: '2024-11-21T09:54:04.817Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: libsubid4@1:4.15.3-3ubuntu2
     PkgName: libsubid4
@@ -3300,7 +3452,8 @@
       PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&distro=ubuntu-24.10
       UID: 57e386cf9db29f40
     InstalledVersion: 3.3.1-2ubuntu2
-    Status: affected
+    FixedVersion: 3.3.1-2ubuntu2.1
+    Status: fixed
     Layer:
       Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
       DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
@@ -3310,7 +3463,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'Issue summary: Clients using RFC7250 Raw Public Keys (RPKs) to authent ...'
+    Title: 'openssl: RFC7250 handshakes with unauthenticated servers don''t abort as expected'
     Description: |-
       Issue summary: Clients using RFC7250 Raw Public Keys (RPKs) to authenticate a
       server may fail to notice that the server was not authenticated, because
@@ -3339,9 +3492,16 @@
     - CWE-392
     VendorSeverity:
       ghsa: 1
+      redhat: 3
       ubuntu: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
     References:
     - http://www.openwall.com/lists/oss-security/2025/02/11/3
+    - http://www.openwall.com/lists/oss-security/2025/02/11/4
+    - https://access.redhat.com/security/cve/CVE-2024-12797
     - https://github.com/openssl/openssl/commit/738d4f9fdeaad57660dcba50a619fafced3fd5e9
     - https://github.com/openssl/openssl/commit/798779d43494549b611233f92652f0da5328fbe7
     - https://github.com/openssl/openssl/commit/87ebd203feffcf92ad5889df92f90bb0ee10a699
@@ -3349,9 +3509,73 @@
     - https://github.com/pyca/cryptography/security/advisories/GHSA-79v4-65xg-pq4g
     - https://nvd.nist.gov/vuln/detail/CVE-2024-12797
     - https://openssl-library.org/news/secadv/20250211.txt
+    - https://ubuntu.com/security/notices/USN-7264-1
     - https://www.cve.org/CVERecord?id=CVE-2024-12797
     PublishedDate: '2025-02-11T16:15:38.827Z'
-    LastModifiedDate: '2025-02-11T16:15:38.827Z'
+    LastModifiedDate: '2025-02-11T23:15:08.807Z'
+  - VulnerabilityID: CVE-2024-13176
+    PkgID: openssl@3.3.1-2ubuntu2
+    PkgName: openssl
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&distro=ubuntu-24.10
+      UID: 57e386cf9db29f40
+    InstalledVersion: 3.3.1-2ubuntu2
+    FixedVersion: 3.3.1-2ubuntu2.1
+    Status: fixed
+    Layer:
+      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
+      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-13176
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'openssl: Timing side-channel in ECDSA signature computation'
+    Description: |-
+      Issue summary: A timing side-channel which could potentially allow recovering
+      the private key exists in the ECDSA signature computation.
+
+      Impact summary: A timing side-channel in ECDSA signature computations
+      could allow recovering the private key by an attacker. However, measuring
+      the timing would require either local access to the signing application or
+      a very fast network connection with low latency.
+
+      There is a timing signal of around 300 nanoseconds when the top word of
+      the inverted ECDSA nonce value is zero. This can happen with significant
+      probability only for some of the supported elliptic curves. In particular
+      the NIST P-521 curve is affected. To be able to measure this leak, the attacker
+      process must either be located in the same physical computer or must
+      have a very fast network connection with low latency. For that reason
+      the severity of this vulnerability is Low.
+    Severity: LOW
+    CweIDs:
+    - CWE-385
+    VendorSeverity:
+      amazon: 2
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/01/20/2
+    - https://access.redhat.com/security/cve/CVE-2024-13176
+    - https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844
+    - https://github.com/openssl/openssl/commit/2af62e74fb59bc469506bc37eb2990ea408d9467
+    - https://github.com/openssl/openssl/commit/392dcb336405a0c94486aa6655057f59fd3a0902
+    - https://github.com/openssl/openssl/commit/4b1cb94a734a7d4ec363ac0a215a25c181e11f65
+    - https://github.com/openssl/openssl/commit/77c608f4c8857e63e98e66444e2e761c9627916f
+    - https://github.openssl.org/openssl/extended-releases/commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded
+    - https://github.openssl.org/openssl/extended-releases/commit/a2639000db19878d5d89586ae7b725080592ae86
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-13176
+    - https://openssl-library.org/news/secadv/20250120.txt
+    - https://security.netapp.com/advisory/ntap-20250124-0005/
+    - https://ubuntu.com/security/notices/USN-7264-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-13176
+    PublishedDate: '2025-01-20T14:15:26.247Z'
+    LastModifiedDate: '2025-01-27T21:15:11.907Z'
   - VulnerabilityID: CVE-2024-41996
     PkgID: openssl@3.3.1-2ubuntu2
     PkgName: openssl
@@ -3394,6 +3618,82 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-41996
     PublishedDate: '2024-08-26T06:15:04.603Z'
     LastModifiedDate: '2024-08-26T16:35:11.247Z'
+  - VulnerabilityID: CVE-2024-9143
+    PkgID: openssl@3.3.1-2ubuntu2
+    PkgName: openssl
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2?arch=amd64&distro=ubuntu-24.10
+      UID: 57e386cf9db29f40
+    InstalledVersion: 3.3.1-2ubuntu2
+    FixedVersion: 3.3.1-2ubuntu2.1
+    Status: fixed
+    Layer:
+      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
+      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-9143
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'openssl: Low-level invalid GF(2^m) parameters lead to OOB memory access'
+    Description: |-
+      Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted
+      explicit values for the field polynomial can lead to out-of-bounds memory reads
+      or writes.
+
+      Impact summary: Out of bound memory writes can lead to an application crash or
+      even a possibility of a remote code execution, however, in all the protocols
+      involving Elliptic Curve Cryptography that we're aware of, either only "named
+      curves" are supported, or, if explicit curve parameters are supported, they
+      specify an X9.62 encoding of binary (GF(2^m)) curves that can't represent
+      problematic input values. Thus the likelihood of existence of a vulnerable
+      application is low.
+
+      In particular, the X9.62 encoding is used for ECC keys in X.509 certificates,
+      so problematic inputs cannot occur in the context of processing X.509
+      certificates.  Any problematic use-cases would have to be using an "exotic"
+      curve encoding.
+
+      The affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),
+      and various supporting BN_GF2m_*() functions.
+
+      Applications working with "exotic" explicit binary (GF(2^m)) curve parameters,
+      that make it possible to represent invalid field polynomials with a zero
+      constant term, via the above or similar APIs, may terminate abruptly as a
+      result of reading or writing outside of array bounds.  Remote code execution
+      cannot easily be ruled out.
+
+      The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      amazon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.7
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/10/16/1
+    - http://www.openwall.com/lists/oss-security/2024/10/23/1
+    - http://www.openwall.com/lists/oss-security/2024/10/24/1
+    - https://access.redhat.com/security/cve/CVE-2024-9143
+    - https://github.com/openssl/openssl/commit/72ae83ad214d2eef262461365a1975707f862712
+    - https://github.com/openssl/openssl/commit/bc7e04d7c8d509fb78fc0e285aa948fb0da04700
+    - https://github.com/openssl/openssl/commit/c0d3e4d32d2805f49bec30547f225bc4d092e1f4
+    - https://github.com/openssl/openssl/commit/fdf6723362ca51bd883295efe206cb5b1cfa5154
+    - https://github.openssl.org/openssl/extended-releases/commit/8efc0cbaa8ebba8e116f7b81a876a4123594d86a
+    - https://github.openssl.org/openssl/extended-releases/commit/9d576994cec2b7aa37a91740ea7e680810957e41
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-9143
+    - https://openssl-library.org/news/secadv/20241016.txt
+    - https://security.netapp.com/advisory/ntap-20241101-0001/
+    - https://ubuntu.com/security/notices/USN-7264-1
+    - https://www.cve.org/CVERecord?id=CVE-2024-9143
+    PublishedDate: '2024-10-16T17:15:18.13Z'
+    LastModifiedDate: '2024-11-21T09:54:04.817Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: passwd@1:4.15.3-3ubuntu2
     PkgName: passwd
@@ -4830,7 +5130,7 @@
     - https://groups.google.com/g/golang-announce/c/XbxouI9gY7k
     - https://groups.google.com/g/golang-announce/c/XbxouI9gY7k/m/TuoGEhxIEwAJ
     - https://linux.oracle.com/cve/CVE-2024-24790.html
-    - https://linux.oracle.com/errata/ELSA-2024-9115.html
+    - https://linux.oracle.com/errata/ELSA-2025-31356.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-24790
     - https://pkg.go.dev/vuln/GO-2024-2887
     - https://security.netapp.com/advisory/ntap-20240905-0002/
@@ -6331,12 +6631,12 @@
     Description: Due to the usage of a variable time instruction in the assembly implementation of an internal function, a small number of bits of secret scalars are leaked on the ppc64le architecture. Due to the way this function is used, we do not believe this leakage is enough to allow recovery of the private key when P-256 is used in any well known protocols.
     Severity: MEDIUM
     VendorSeverity:
-      bitnami: 3
+      bitnami: 2
       redhat: 2
     CVSS:
       bitnami:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 8.4
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 4
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
@@ -7064,7 +7364,7 @@
     - https://groups.google.com/g/golang-announce/c/XbxouI9gY7k
     - https://groups.google.com/g/golang-announce/c/XbxouI9gY7k/m/TuoGEhxIEwAJ
     - https://linux.oracle.com/cve/CVE-2024-24790.html
-    - https://linux.oracle.com/errata/ELSA-2024-9115.html
+    - https://linux.oracle.com/errata/ELSA-2025-31356.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-24790
     - https://pkg.go.dev/vuln/GO-2024-2887
     - https://security.netapp.com/advisory/ntap-20240905-0002/
@@ -8565,12 +8865,12 @@
     Description: Due to the usage of a variable time instruction in the assembly implementation of an internal function, a small number of bits of secret scalars are leaked on the ppc64le architecture. Due to the way this function is used, we do not believe this leakage is enough to allow recovery of the private key when P-256 is used in any well known protocols.
     Severity: MEDIUM
     VendorSeverity:
-      bitnami: 3
+      bitnami: 2
       redhat: 2
     CVSS:
       bitnami:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 8.4
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 4
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
@@ -8740,12 +9040,12 @@
     Description: Due to the usage of a variable time instruction in the assembly implementation of an internal function, a small number of bits of secret scalars are leaked on the ppc64le architecture. Due to the way this function is used, we do not believe this leakage is enough to allow recovery of the private key when P-256 is used in any well known protocols.
     Severity: MEDIUM
     VendorSeverity:
-      bitnami: 3
+      bitnami: 2
       redhat: 2
     CVSS:
       bitnami:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 8.4
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 4
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
@@ -8964,12 +9264,12 @@
     Description: Due to the usage of a variable time instruction in the assembly implementation of an internal function, a small number of bits of secret scalars are leaked on the ppc64le architecture. Due to the way this function is used, we do not believe this leakage is enough to allow recovery of the private key when P-256 is used in any well known protocols.
     Severity: MEDIUM
     VendorSeverity:
-      bitnami: 3
+      bitnami: 2
       redhat: 2
     CVSS:
       bitnami:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 8.4
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 4
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
@@ -9139,12 +9439,12 @@
     Description: Due to the usage of a variable time instruction in the assembly implementation of an internal function, a small number of bits of secret scalars are leaked on the ppc64le architecture. Due to the way this function is used, we do not believe this leakage is enough to allow recovery of the private key when P-256 is used in any well known protocols.
     Severity: MEDIUM
     VendorSeverity:
-      bitnami: 3
+      bitnami: 2
       redhat: 2
     CVSS:
       bitnami:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 8.4
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 4
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
@@ -9469,12 +9769,12 @@
     Description: Due to the usage of a variable time instruction in the assembly implementation of an internal function, a small number of bits of secret scalars are leaked on the ppc64le architecture. Due to the way this function is used, we do not believe this leakage is enough to allow recovery of the private key when P-256 is used in any well known protocols.
     Severity: MEDIUM
     VendorSeverity:
-      bitnami: 3
+      bitnami: 2
       redhat: 2
     CVSS:
       bitnami:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 8.4
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 4
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
@@ -9488,37 +9788,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-22866
     PublishedDate: '2025-02-06T17:15:21.41Z'
     LastModifiedDate: '2025-02-11T15:15:20.87Z'
-- Target: /etc/ssh/ssh_host_rsa_key
-  Class: secret
-  Secrets:
-  - RuleID: private-key
-    Category: AsymmetricPrivateKey
-    Severity: HIGH
-    Title: Asymmetric Private Key
-    StartLine: 1
-    EndLine: 1
-    Code:
-      Lines:
-      - Number: 1
-        Content: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        IsCause: true
-        Annotation: ''
-        Truncated: false
-        Highlighted: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        FirstCause: true
-        LastCause: true
-      - Number: 2
-        Content: ''
-        IsCause: false
-        Annotation: ''
-        Truncated: false
-        FirstCause: false
-        LastCause: false
-    Match: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-    Layer:
-      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
-      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
-      CreatedBy: 'COPY / / # buildkit'
 - Target: /etc/ssh/ssh_host_ecdsa_key
   Class: secret
   Secrets:
@@ -9577,6 +9846,37 @@
         FirstCause: false
         LastCause: false
     Match: BEGIN OPENSSH PRIVATE KEY-----******************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+    Layer:
+      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
+      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
+      CreatedBy: 'COPY / / # buildkit'
+- Target: /etc/ssh/ssh_host_rsa_key
+  Class: secret
+  Secrets:
+  - RuleID: private-key
+    Category: AsymmetricPrivateKey
+    Severity: HIGH
+    Title: Asymmetric Private Key
+    StartLine: 1
+    EndLine: 1
+    Code:
+      Lines:
+      - Number: 1
+        Content: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+        FirstCause: true
+        LastCause: true
+      - Number: 2
+        Content: ''
+        IsCause: false
+        Annotation: ''
+        Truncated: false
+        FirstCause: false
+        LastCause: false
+    Match: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
     Layer:
       Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
       DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
