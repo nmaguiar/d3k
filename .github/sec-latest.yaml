@@ -1279,6 +1279,71 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-26462
     PublishedDate: '2024-02-29T01:44:18.857Z'
     LastModifiedDate: '2024-11-21T09:02:27.01Z'
+  - VulnerabilityID: CVE-2024-3596
+    PkgID: krb5-locales@1.21.3-3
+    PkgName: krb5-locales
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/krb5-locales@1.21.3-3?arch=all&distro=ubuntu-24.10
+      UID: 8616423e56520c94
+    InstalledVersion: 1.21.3-3
+    FixedVersion: 1.21.3-3ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
+      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-3596
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'freeradius: forgery attack'
+    Description: RADIUS Protocol under RFC 2865 is susceptible to forgery attacks by a local attacker who can modify any valid Response (Access-Accept, Access-Reject, or Access-Challenge) to any other response using a chosen-prefix collision attack against MD5 Response Authenticator signature.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-354
+    - CWE-924
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      nvd: 4
+      oracle-oval: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 9
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/09/4
+    - https://access.redhat.com/errata/RHSA-2024:9474
+    - https://access.redhat.com/security/cve/CVE-2024-3596
+    - https://bugzilla.redhat.com/2263240
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2263240
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3596
+    - https://datatracker.ietf.org/doc/draft-ietf-radext-deprecating-radius/
+    - https://datatracker.ietf.org/doc/html/rfc2865
+    - https://errata.almalinux.org/9/ALSA-2024-9474.html
+    - https://errata.rockylinux.org/RLSA-2024:8860
+    - https://kb.cert.org/vince/comm/case/1515/
+    - https://linux.oracle.com/cve/CVE-2024-3596.html
+    - https://linux.oracle.com/errata/ELSA-2024-9474.html
+    - https://networkradius.com/assets/pdf/radius_and_md5_collisions.pdf
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-3596
+    - https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0014
+    - https://security.netapp.com/advisory/ntap-20240822-0001/
+    - https://today.ucsd.edu/story/computer-scientists-discover-vulnerabilities-in-a-popular-security-protocol
+    - https://ubuntu.com/security/notices/USN-7055-1
+    - https://w1.fi/security/2024-1/hostapd-and-radius-protocol-forgery-attacks.txt
+    - https://www.blastradius.fail/
+    - https://www.cve.org/CVERecord?id=CVE-2024-3596
+    - https://www.kb.cert.org/vuls/id/456537
+    PublishedDate: '2024-07-09T12:15:20.7Z'
+    LastModifiedDate: '2024-12-30T19:23:20.437Z'
   - VulnerabilityID: CVE-2024-26458
     PkgID: krb5-locales@1.21.3-3
     PkgName: krb5-locales
@@ -1824,6 +1889,71 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-26462
     PublishedDate: '2024-02-29T01:44:18.857Z'
     LastModifiedDate: '2024-11-21T09:02:27.01Z'
+  - VulnerabilityID: CVE-2024-3596
+    PkgID: libgssapi-krb5-2@1.21.3-3
+    PkgName: libgssapi-krb5-2
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.21.3-3?arch=amd64&distro=ubuntu-24.10
+      UID: 70a4e1e9e80b4840
+    InstalledVersion: 1.21.3-3
+    FixedVersion: 1.21.3-3ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
+      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-3596
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'freeradius: forgery attack'
+    Description: RADIUS Protocol under RFC 2865 is susceptible to forgery attacks by a local attacker who can modify any valid Response (Access-Accept, Access-Reject, or Access-Challenge) to any other response using a chosen-prefix collision attack against MD5 Response Authenticator signature.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-354
+    - CWE-924
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      nvd: 4
+      oracle-oval: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 9
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/09/4
+    - https://access.redhat.com/errata/RHSA-2024:9474
+    - https://access.redhat.com/security/cve/CVE-2024-3596
+    - https://bugzilla.redhat.com/2263240
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2263240
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3596
+    - https://datatracker.ietf.org/doc/draft-ietf-radext-deprecating-radius/
+    - https://datatracker.ietf.org/doc/html/rfc2865
+    - https://errata.almalinux.org/9/ALSA-2024-9474.html
+    - https://errata.rockylinux.org/RLSA-2024:8860
+    - https://kb.cert.org/vince/comm/case/1515/
+    - https://linux.oracle.com/cve/CVE-2024-3596.html
+    - https://linux.oracle.com/errata/ELSA-2024-9474.html
+    - https://networkradius.com/assets/pdf/radius_and_md5_collisions.pdf
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-3596
+    - https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0014
+    - https://security.netapp.com/advisory/ntap-20240822-0001/
+    - https://today.ucsd.edu/story/computer-scientists-discover-vulnerabilities-in-a-popular-security-protocol
+    - https://ubuntu.com/security/notices/USN-7055-1
+    - https://w1.fi/security/2024-1/hostapd-and-radius-protocol-forgery-attacks.txt
+    - https://www.blastradius.fail/
+    - https://www.cve.org/CVERecord?id=CVE-2024-3596
+    - https://www.kb.cert.org/vuls/id/456537
+    PublishedDate: '2024-07-09T12:15:20.7Z'
+    LastModifiedDate: '2024-12-30T19:23:20.437Z'
   - VulnerabilityID: CVE-2024-26458
     PkgID: libgssapi-krb5-2@1.21.3-3
     PkgName: libgssapi-krb5-2
@@ -1984,6 +2114,71 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-26462
     PublishedDate: '2024-02-29T01:44:18.857Z'
     LastModifiedDate: '2024-11-21T09:02:27.01Z'
+  - VulnerabilityID: CVE-2024-3596
+    PkgID: libk5crypto3@1.21.3-3
+    PkgName: libk5crypto3
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3?arch=amd64&distro=ubuntu-24.10
+      UID: e37aa7c604d8633f
+    InstalledVersion: 1.21.3-3
+    FixedVersion: 1.21.3-3ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
+      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-3596
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'freeradius: forgery attack'
+    Description: RADIUS Protocol under RFC 2865 is susceptible to forgery attacks by a local attacker who can modify any valid Response (Access-Accept, Access-Reject, or Access-Challenge) to any other response using a chosen-prefix collision attack against MD5 Response Authenticator signature.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-354
+    - CWE-924
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      nvd: 4
+      oracle-oval: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 9
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/09/4
+    - https://access.redhat.com/errata/RHSA-2024:9474
+    - https://access.redhat.com/security/cve/CVE-2024-3596
+    - https://bugzilla.redhat.com/2263240
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2263240
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3596
+    - https://datatracker.ietf.org/doc/draft-ietf-radext-deprecating-radius/
+    - https://datatracker.ietf.org/doc/html/rfc2865
+    - https://errata.almalinux.org/9/ALSA-2024-9474.html
+    - https://errata.rockylinux.org/RLSA-2024:8860
+    - https://kb.cert.org/vince/comm/case/1515/
+    - https://linux.oracle.com/cve/CVE-2024-3596.html
+    - https://linux.oracle.com/errata/ELSA-2024-9474.html
+    - https://networkradius.com/assets/pdf/radius_and_md5_collisions.pdf
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-3596
+    - https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0014
+    - https://security.netapp.com/advisory/ntap-20240822-0001/
+    - https://today.ucsd.edu/story/computer-scientists-discover-vulnerabilities-in-a-popular-security-protocol
+    - https://ubuntu.com/security/notices/USN-7055-1
+    - https://w1.fi/security/2024-1/hostapd-and-radius-protocol-forgery-attacks.txt
+    - https://www.blastradius.fail/
+    - https://www.cve.org/CVERecord?id=CVE-2024-3596
+    - https://www.kb.cert.org/vuls/id/456537
+    PublishedDate: '2024-07-09T12:15:20.7Z'
+    LastModifiedDate: '2024-12-30T19:23:20.437Z'
   - VulnerabilityID: CVE-2024-26458
     PkgID: libk5crypto3@1.21.3-3
     PkgName: libk5crypto3
@@ -2144,6 +2339,71 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-26462
     PublishedDate: '2024-02-29T01:44:18.857Z'
     LastModifiedDate: '2024-11-21T09:02:27.01Z'
+  - VulnerabilityID: CVE-2024-3596
+    PkgID: libkrb5-3@1.21.3-3
+    PkgName: libkrb5-3
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3?arch=amd64&distro=ubuntu-24.10
+      UID: b0d1ddc223ba553f
+    InstalledVersion: 1.21.3-3
+    FixedVersion: 1.21.3-3ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
+      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-3596
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'freeradius: forgery attack'
+    Description: RADIUS Protocol under RFC 2865 is susceptible to forgery attacks by a local attacker who can modify any valid Response (Access-Accept, Access-Reject, or Access-Challenge) to any other response using a chosen-prefix collision attack against MD5 Response Authenticator signature.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-354
+    - CWE-924
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      nvd: 4
+      oracle-oval: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 9
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/09/4
+    - https://access.redhat.com/errata/RHSA-2024:9474
+    - https://access.redhat.com/security/cve/CVE-2024-3596
+    - https://bugzilla.redhat.com/2263240
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2263240
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3596
+    - https://datatracker.ietf.org/doc/draft-ietf-radext-deprecating-radius/
+    - https://datatracker.ietf.org/doc/html/rfc2865
+    - https://errata.almalinux.org/9/ALSA-2024-9474.html
+    - https://errata.rockylinux.org/RLSA-2024:8860
+    - https://kb.cert.org/vince/comm/case/1515/
+    - https://linux.oracle.com/cve/CVE-2024-3596.html
+    - https://linux.oracle.com/errata/ELSA-2024-9474.html
+    - https://networkradius.com/assets/pdf/radius_and_md5_collisions.pdf
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-3596
+    - https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0014
+    - https://security.netapp.com/advisory/ntap-20240822-0001/
+    - https://today.ucsd.edu/story/computer-scientists-discover-vulnerabilities-in-a-popular-security-protocol
+    - https://ubuntu.com/security/notices/USN-7055-1
+    - https://w1.fi/security/2024-1/hostapd-and-radius-protocol-forgery-attacks.txt
+    - https://www.blastradius.fail/
+    - https://www.cve.org/CVERecord?id=CVE-2024-3596
+    - https://www.kb.cert.org/vuls/id/456537
+    PublishedDate: '2024-07-09T12:15:20.7Z'
+    LastModifiedDate: '2024-12-30T19:23:20.437Z'
   - VulnerabilityID: CVE-2024-26458
     PkgID: libkrb5-3@1.21.3-3
     PkgName: libkrb5-3
@@ -2304,6 +2564,71 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-26462
     PublishedDate: '2024-02-29T01:44:18.857Z'
     LastModifiedDate: '2024-11-21T09:02:27.01Z'
+  - VulnerabilityID: CVE-2024-3596
+    PkgID: libkrb5support0@1.21.3-3
+    PkgName: libkrb5support0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3?arch=amd64&distro=ubuntu-24.10
+      UID: 18c49784c9315424
+    InstalledVersion: 1.21.3-3
+    FixedVersion: 1.21.3-3ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:ee95226b63987fab9429e5d687ecbf3221f6c4a08d6798c3f18fad64f967425e
+      DiffID: sha256:2b33bc51196bbd0f339a7ab6d6c26f44bb74ebd992a385d06a5e69fdb8c8dd0e
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-3596
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'freeradius: forgery attack'
+    Description: RADIUS Protocol under RFC 2865 is susceptible to forgery attacks by a local attacker who can modify any valid Response (Access-Accept, Access-Reject, or Access-Challenge) to any other response using a chosen-prefix collision attack against MD5 Response Authenticator signature.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-354
+    - CWE-924
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      nvd: 4
+      oracle-oval: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 9
+    References:
+    - http://www.openwall.com/lists/oss-security/2024/07/09/4
+    - https://access.redhat.com/errata/RHSA-2024:9474
+    - https://access.redhat.com/security/cve/CVE-2024-3596
+    - https://bugzilla.redhat.com/2263240
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2263240
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3596
+    - https://datatracker.ietf.org/doc/draft-ietf-radext-deprecating-radius/
+    - https://datatracker.ietf.org/doc/html/rfc2865
+    - https://errata.almalinux.org/9/ALSA-2024-9474.html
+    - https://errata.rockylinux.org/RLSA-2024:8860
+    - https://kb.cert.org/vince/comm/case/1515/
+    - https://linux.oracle.com/cve/CVE-2024-3596.html
+    - https://linux.oracle.com/errata/ELSA-2024-9474.html
+    - https://networkradius.com/assets/pdf/radius_and_md5_collisions.pdf
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-3596
+    - https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0014
+    - https://security.netapp.com/advisory/ntap-20240822-0001/
+    - https://today.ucsd.edu/story/computer-scientists-discover-vulnerabilities-in-a-popular-security-protocol
+    - https://ubuntu.com/security/notices/USN-7055-1
+    - https://w1.fi/security/2024-1/hostapd-and-radius-protocol-forgery-attacks.txt
+    - https://www.blastradius.fail/
+    - https://www.cve.org/CVERecord?id=CVE-2024-3596
+    - https://www.kb.cert.org/vuls/id/456537
+    PublishedDate: '2024-07-09T12:15:20.7Z'
+    LastModifiedDate: '2024-12-30T19:23:20.437Z'
   - VulnerabilityID: CVE-2024-26458
     PkgID: libkrb5support0@1.21.3-3
     PkgName: libkrb5support0
@@ -3125,7 +3450,9 @@
     CweIDs:
     - CWE-392
     VendorSeverity:
+      alma: 3
       ghsa: 1
+      oracle-oval: 3
       redhat: 3
       ubuntu: 3
     CVSS:
@@ -3135,12 +3462,17 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/02/11/3
     - http://www.openwall.com/lists/oss-security/2025/02/11/4
+    - https://access.redhat.com/errata/RHSA-2025:1330
     - https://access.redhat.com/security/cve/CVE-2024-12797
+    - https://bugzilla.redhat.com/2342757
+    - https://errata.almalinux.org/9/ALSA-2025-1330.html
     - https://github.com/openssl/openssl/commit/738d4f9fdeaad57660dcba50a619fafced3fd5e9
     - https://github.com/openssl/openssl/commit/798779d43494549b611233f92652f0da5328fbe7
     - https://github.com/openssl/openssl/commit/87ebd203feffcf92ad5889df92f90bb0ee10a699
     - https://github.com/pyca/cryptography
     - https://github.com/pyca/cryptography/security/advisories/GHSA-79v4-65xg-pq4g
+    - https://linux.oracle.com/cve/CVE-2024-12797.html
+    - https://linux.oracle.com/errata/ELSA-2025-1330.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-12797
     - https://openssl-library.org/news/secadv/20250211.txt
     - https://ubuntu.com/security/notices/USN-7264-1
@@ -3491,7 +3823,9 @@
     CweIDs:
     - CWE-392
     VendorSeverity:
+      alma: 3
       ghsa: 1
+      oracle-oval: 3
       redhat: 3
       ubuntu: 3
     CVSS:
@@ -3501,12 +3835,17 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/02/11/3
     - http://www.openwall.com/lists/oss-security/2025/02/11/4
+    - https://access.redhat.com/errata/RHSA-2025:1330
     - https://access.redhat.com/security/cve/CVE-2024-12797
+    - https://bugzilla.redhat.com/2342757
+    - https://errata.almalinux.org/9/ALSA-2025-1330.html
     - https://github.com/openssl/openssl/commit/738d4f9fdeaad57660dcba50a619fafced3fd5e9
     - https://github.com/openssl/openssl/commit/798779d43494549b611233f92652f0da5328fbe7
     - https://github.com/openssl/openssl/commit/87ebd203feffcf92ad5889df92f90bb0ee10a699
     - https://github.com/pyca/cryptography
     - https://github.com/pyca/cryptography/security/advisories/GHSA-79v4-65xg-pq4g
+    - https://linux.oracle.com/cve/CVE-2024-12797.html
+    - https://linux.oracle.com/errata/ELSA-2025-1330.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-12797
     - https://openssl-library.org/news/secadv/20250211.txt
     - https://ubuntu.com/security/notices/USN-7264-1
@@ -4480,7 +4819,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
     - https://errata.almalinux.org/9/ALSA-2023-6077.html
-    - https://errata.rockylinux.org/RLSA-2023:6077
+    - https://errata.rockylinux.org/RLSA-2023:5863
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
     - https://github.com/golang/go/issues/63417
@@ -4778,7 +5117,7 @@
     - https://discuss.hashicorp.com/t/hcsec-2023-32-vault-consul-and-boundary-affected-by-http-2-rapid-reset-denial-of-service-vulnerability-cve-2023-44487/59715
     - https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve
     - https://errata.almalinux.org/9/ALSA-2023-6746.html
-    - https://errata.rockylinux.org/RLSA-2023:5838
+    - https://errata.rockylinux.org/RLSA-2023:5928
     - https://forums.swift.org/t/swift-nio-http2-security-update-cve-2023-44487-http-2-dos/67764
     - https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088
     - https://github.com/Azure/AKS/issues/3947
@@ -5043,7 +5382,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:2724
+    - https://errata.rockylinux.org/RLSA-2024:3346
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
     - https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M
@@ -5199,7 +5538,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
     - https://errata.almalinux.org/9/ALSA-2023-6077.html
-    - https://errata.rockylinux.org/RLSA-2023:6077
+    - https://errata.rockylinux.org/RLSA-2023:5863
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
     - https://github.com/golang/go/issues/63417
@@ -5402,7 +5741,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:2724
+    - https://errata.rockylinux.org/RLSA-2024:3346
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
     - https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M
@@ -5465,10 +5804,12 @@
     - https://access.redhat.com/security/cve/CVE-2024-34156
     - https://bugzilla.redhat.com/2310528
     - https://bugzilla.redhat.com/2318052
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2262921
     - https://bugzilla.redhat.com/show_bug.cgi?id=2310528
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1394
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34156
     - https://errata.almalinux.org/9/ALSA-2024-9473.html
-    - https://errata.rockylinux.org/RLSA-2024:8111
+    - https://errata.rockylinux.org/RLSA-2024:7262
     - https://github.com/golang/go/commit/2092294f2b097c5828f4eace6c98a322c1510b01 (go1.22.7)
     - https://github.com/golang/go/commit/fa8ff1a46deb6c816304441ec6740ec112e19012 (go1.23.1)
     - https://go.dev/cl/611239
@@ -5924,7 +6265,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:2724
+    - https://errata.rockylinux.org/RLSA-2024:3346
     - https://github.com/golang/go/commit/20586c0dbe03d144f914155f879fa5ee287591a1 (go1.21.8)
     - https://github.com/golang/go/commit/3a855208e3efed2e9d7c20ad023f1fa78afcc0be (go1.22.1)
     - https://github.com/golang/go/issues/65065
@@ -5969,7 +6310,7 @@
       cbl-mariner: 2
       oracle-oval: 3
       redhat: 2
-      rocky: 2
+      rocky: 3
       ubuntu: 2
     CVSS:
       bitnami:
@@ -5987,9 +6328,15 @@
     - https://bugzilla.redhat.com/2279814
     - https://bugzilla.redhat.com/2295310
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268017
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2268018
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2268019
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2268273
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45288
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-9135.html
-    - https://errata.rockylinux.org/RLSA-2024:3830
+    - https://errata.rockylinux.org/RLSA-2024:3346
     - https://github.com/golang/go/commit/041a47712e765e94f86d841c3110c840e76d8f82 (go1.22.1)
     - https://github.com/golang/go/commit/bf80213b121074f4ad9b449410a4d13bae5e9be0 (go1.21.8)
     - https://github.com/golang/go/issues/65383
@@ -6060,7 +6407,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-6195.html
-    - https://errata.rockylinux.org/RLSA-2024:2724
+    - https://errata.rockylinux.org/RLSA-2024:3346
     - https://github.com/advisories/GHSA-3q2c-pvp5-3cqp
     - https://github.com/golang/go/commit/337b8e9cbfa749d9d5c899e0dc358e2208d5e54f (go1.22.1)
     - https://github.com/golang/go/commit/be5b52bea674190ef7de272664be6c7ae93ec5a0 (go1.21.8)
@@ -6340,7 +6687,7 @@
       oracle-oval: 2
       photon: 3
       redhat: 2
-      rocky: 3
+      rocky: 2
       ubuntu: 2
     CVSS:
       bitnami:
@@ -6357,15 +6704,9 @@
     - https://bugzilla.redhat.com/2279814
     - https://bugzilla.redhat.com/2295310
     - https://bugzilla.redhat.com/show_bug.cgi?id=2295310
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2310527
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2310528
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2310529
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24791
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34155
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34156
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34158
     - https://errata.almalinux.org/9/ALSA-2024-9135.html
-    - https://errata.rockylinux.org/RLSA-2024:6913
+    - https://errata.rockylinux.org/RLSA-2024:7349
     - https://go.dev/cl/591255
     - https://go.dev/issue/67555
     - https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/m/6MMoAZkMAgAJ
@@ -6549,6 +6890,7 @@
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      cbl-mariner: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -6714,7 +7056,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
     - https://errata.almalinux.org/9/ALSA-2023-6077.html
-    - https://errata.rockylinux.org/RLSA-2023:6077
+    - https://errata.rockylinux.org/RLSA-2023:5863
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
     - https://github.com/golang/go/issues/63417
@@ -7012,7 +7354,7 @@
     - https://discuss.hashicorp.com/t/hcsec-2023-32-vault-consul-and-boundary-affected-by-http-2-rapid-reset-denial-of-service-vulnerability-cve-2023-44487/59715
     - https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve
     - https://errata.almalinux.org/9/ALSA-2023-6746.html
-    - https://errata.rockylinux.org/RLSA-2023:5838
+    - https://errata.rockylinux.org/RLSA-2023:5928
     - https://forums.swift.org/t/swift-nio-http2-security-update-cve-2023-44487-http-2-dos/67764
     - https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088
     - https://github.com/Azure/AKS/issues/3947
@@ -7277,7 +7619,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:2724
+    - https://errata.rockylinux.org/RLSA-2024:3346
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
     - https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M
@@ -7433,7 +7775,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487
     - https://errata.almalinux.org/9/ALSA-2023-6077.html
-    - https://errata.rockylinux.org/RLSA-2023:6077
+    - https://errata.rockylinux.org/RLSA-2023:5863
     - https://github.com/golang/go/commit/24ae2d927285c697440fdde3ad7f26028354bcf3 [golang- 1.21]
     - https://github.com/golang/go/commit/e175f27f58aa7b9cd4d79607ae65d2cd5baaee68 [golang-1.20]
     - https://github.com/golang/go/issues/63417
@@ -7636,7 +7978,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:2724
+    - https://errata.rockylinux.org/RLSA-2024:3346
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
     - https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M
@@ -7699,10 +8041,12 @@
     - https://access.redhat.com/security/cve/CVE-2024-34156
     - https://bugzilla.redhat.com/2310528
     - https://bugzilla.redhat.com/2318052
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2262921
     - https://bugzilla.redhat.com/show_bug.cgi?id=2310528
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1394
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34156
     - https://errata.almalinux.org/9/ALSA-2024-9473.html
-    - https://errata.rockylinux.org/RLSA-2024:8111
+    - https://errata.rockylinux.org/RLSA-2024:7262
     - https://github.com/golang/go/commit/2092294f2b097c5828f4eace6c98a322c1510b01 (go1.22.7)
     - https://github.com/golang/go/commit/fa8ff1a46deb6c816304441ec6740ec112e19012 (go1.23.1)
     - https://go.dev/cl/611239
@@ -8158,7 +8502,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-2724.html
-    - https://errata.rockylinux.org/RLSA-2024:2724
+    - https://errata.rockylinux.org/RLSA-2024:3346
     - https://github.com/golang/go/commit/20586c0dbe03d144f914155f879fa5ee287591a1 (go1.21.8)
     - https://github.com/golang/go/commit/3a855208e3efed2e9d7c20ad023f1fa78afcc0be (go1.22.1)
     - https://github.com/golang/go/issues/65065
@@ -8203,7 +8547,7 @@
       cbl-mariner: 2
       oracle-oval: 3
       redhat: 2
-      rocky: 2
+      rocky: 3
       ubuntu: 2
     CVSS:
       bitnami:
@@ -8221,9 +8565,15 @@
     - https://bugzilla.redhat.com/2279814
     - https://bugzilla.redhat.com/2295310
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268017
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2268018
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2268019
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2268273
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45288
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-9135.html
-    - https://errata.rockylinux.org/RLSA-2024:3830
+    - https://errata.rockylinux.org/RLSA-2024:3346
     - https://github.com/golang/go/commit/041a47712e765e94f86d841c3110c840e76d8f82 (go1.22.1)
     - https://github.com/golang/go/commit/bf80213b121074f4ad9b449410a4d13bae5e9be0 (go1.21.8)
     - https://github.com/golang/go/issues/65383
@@ -8294,7 +8644,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
     - https://errata.almalinux.org/9/ALSA-2024-6195.html
-    - https://errata.rockylinux.org/RLSA-2024:2724
+    - https://errata.rockylinux.org/RLSA-2024:3346
     - https://github.com/advisories/GHSA-3q2c-pvp5-3cqp
     - https://github.com/golang/go/commit/337b8e9cbfa749d9d5c899e0dc358e2208d5e54f (go1.22.1)
     - https://github.com/golang/go/commit/be5b52bea674190ef7de272664be6c7ae93ec5a0 (go1.21.8)
@@ -8574,7 +8924,7 @@
       oracle-oval: 2
       photon: 3
       redhat: 2
-      rocky: 3
+      rocky: 2
       ubuntu: 2
     CVSS:
       bitnami:
@@ -8591,15 +8941,9 @@
     - https://bugzilla.redhat.com/2279814
     - https://bugzilla.redhat.com/2295310
     - https://bugzilla.redhat.com/show_bug.cgi?id=2295310
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2310527
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2310528
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2310529
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24791
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34155
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34156
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34158
     - https://errata.almalinux.org/9/ALSA-2024-9135.html
-    - https://errata.rockylinux.org/RLSA-2024:6913
+    - https://errata.rockylinux.org/RLSA-2024:7349
     - https://go.dev/cl/591255
     - https://go.dev/issue/67555
     - https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/m/6MMoAZkMAgAJ
@@ -8783,6 +9127,7 @@
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      cbl-mariner: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -8958,6 +9303,7 @@
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      cbl-mariner: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -9182,6 +9528,7 @@
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      cbl-mariner: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -9357,6 +9704,7 @@
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      cbl-mariner: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -9687,6 +10035,7 @@
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      cbl-mariner: 3
       redhat: 2
     CVSS:
       bitnami:
