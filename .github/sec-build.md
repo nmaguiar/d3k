@@ -2215,7 +2215,172 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [44] ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [44] ╭ VulnerabilityID : CVE-2025-26465 
+│                       │      ├ PkgID           : openssh-client@1:9.7p1-7ubuntu4.1 
+│                       │      ├ PkgName         : openssh-client 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.7p1-7ubuntu4.1?arch=a
+│                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
+│                       │      │                  ╰ UID : 11be642d386db2c2 
+│                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
+│                       │      │                  │         b591dc9a328987a0bc00 
+│                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
+│                       │      │                            75f6e767335f60729989 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26465 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : [MitM] 
+│                       │      ├ Description     : The OpenSSH client is vulnerable to an active
+│                       │      │                   machine-in-the-middle attack if the VerifyHostKeyDNS option
+│                       │      │                   is enabled (it is disabled by default): when a vulnerable
+│                       │      │                   client connects to a server, an active machine-in-the-middle
+│                       │      │                    can impersonate the server by completely bypassing the
+│                       │      │                   client's checks of the server's identity. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26465 
+│                       ├ [45] ╭ VulnerabilityID : CVE-2025-26466 
+│                       │      ├ PkgID           : openssh-client@1:9.7p1-7ubuntu4.1 
+│                       │      ├ PkgName         : openssh-client 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.7p1-7ubuntu4.1?arch=a
+│                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
+│                       │      │                  ╰ UID : 11be642d386db2c2 
+│                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
+│                       │      │                  │         b591dc9a328987a0bc00 
+│                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
+│                       │      │                            75f6e767335f60729989 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26466 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : [Denial of Service: asymmetric resource consumption of
+│                       │      │                   memory and CPU] 
+│                       │      ├ Description     : The OpenSSH client and server are vulnerable to a
+│                       │      │                   pre-authentication denial-of-service attack: an asymmetric
+│                       │      │                   resource consumption of both memory and CPU. This
+│                       │      │                   vulnerability was introduced in August 2023 (shortly before
+│                       │      │                   OpenSSH 9.5p1) by commit dce6d80 ("Introduce a
+│                       │      │                   transport-level ping facility"). 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26466 
+│                       ├ [46] ╭ VulnerabilityID : CVE-2025-26465 
+│                       │      ├ PkgID           : openssh-server@1:9.7p1-7ubuntu4.1 
+│                       │      ├ PkgName         : openssh-server 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.7p1-7ubuntu4.1?arch=a
+│                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
+│                       │      │                  ╰ UID : 452b9f451f4ff5db 
+│                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
+│                       │      │                  │         b591dc9a328987a0bc00 
+│                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
+│                       │      │                            75f6e767335f60729989 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26465 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : [MitM] 
+│                       │      ├ Description     : The OpenSSH client is vulnerable to an active
+│                       │      │                   machine-in-the-middle attack if the VerifyHostKeyDNS option
+│                       │      │                   is enabled (it is disabled by default): when a vulnerable
+│                       │      │                   client connects to a server, an active machine-in-the-middle
+│                       │      │                    can impersonate the server by completely bypassing the
+│                       │      │                   client's checks of the server's identity. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26465 
+│                       ├ [47] ╭ VulnerabilityID : CVE-2025-26466 
+│                       │      ├ PkgID           : openssh-server@1:9.7p1-7ubuntu4.1 
+│                       │      ├ PkgName         : openssh-server 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.7p1-7ubuntu4.1?arch=a
+│                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
+│                       │      │                  ╰ UID : 452b9f451f4ff5db 
+│                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
+│                       │      │                  │         b591dc9a328987a0bc00 
+│                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
+│                       │      │                            75f6e767335f60729989 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26466 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : [Denial of Service: asymmetric resource consumption of
+│                       │      │                   memory and CPU] 
+│                       │      ├ Description     : The OpenSSH client and server are vulnerable to a
+│                       │      │                   pre-authentication denial-of-service attack: an asymmetric
+│                       │      │                   resource consumption of both memory and CPU. This
+│                       │      │                   vulnerability was introduced in August 2023 (shortly before
+│                       │      │                   OpenSSH 9.5p1) by commit dce6d80 ("Introduce a
+│                       │      │                   transport-level ping facility"). 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26466 
+│                       ├ [48] ╭ VulnerabilityID : CVE-2025-26465 
+│                       │      ├ PkgID           : openssh-sftp-server@1:9.7p1-7ubuntu4.1 
+│                       │      ├ PkgName         : openssh-sftp-server 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.7p1-7ubuntu4.1?a
+│                       │      │                  │       rch=amd64&distro=ubuntu-24.10&epoch=1 
+│                       │      │                  ╰ UID : 2b8b9c7ff62fa140 
+│                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
+│                       │      │                  │         b591dc9a328987a0bc00 
+│                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
+│                       │      │                            75f6e767335f60729989 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26465 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : [MitM] 
+│                       │      ├ Description     : The OpenSSH client is vulnerable to an active
+│                       │      │                   machine-in-the-middle attack if the VerifyHostKeyDNS option
+│                       │      │                   is enabled (it is disabled by default): when a vulnerable
+│                       │      │                   client connects to a server, an active machine-in-the-middle
+│                       │      │                    can impersonate the server by completely bypassing the
+│                       │      │                   client's checks of the server's identity. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26465 
+│                       ├ [49] ╭ VulnerabilityID : CVE-2025-26466 
+│                       │      ├ PkgID           : openssh-sftp-server@1:9.7p1-7ubuntu4.1 
+│                       │      ├ PkgName         : openssh-sftp-server 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.7p1-7ubuntu4.1?a
+│                       │      │                  │       rch=amd64&distro=ubuntu-24.10&epoch=1 
+│                       │      │                  ╰ UID : 2b8b9c7ff62fa140 
+│                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
+│                       │      │                  │         b591dc9a328987a0bc00 
+│                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
+│                       │      │                            75f6e767335f60729989 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26466 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : [Denial of Service: asymmetric resource consumption of
+│                       │      │                   memory and CPU] 
+│                       │      ├ Description     : The OpenSSH client and server are vulnerable to a
+│                       │      │                   pre-authentication denial-of-service attack: an asymmetric
+│                       │      │                   resource consumption of both memory and CPU. This
+│                       │      │                   vulnerability was introduced in August 2023 (shortly before
+│                       │      │                   OpenSSH 9.5p1) by commit dce6d80 ("Introduce a
+│                       │      │                   transport-level ping facility"). 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26466 
+│                       ├ [50] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2.1 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2.1?arch=amd64&di
@@ -2265,7 +2430,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [45] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [51] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : passwd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dist
@@ -2312,7 +2477,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [46] ╭ VulnerabilityID : CVE-2018-6952 
+│                       ├ [52] ╭ VulnerabilityID : CVE-2018-6952 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -2362,7 +2527,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                       │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                       ├ [47] ╭ VulnerabilityID : CVE-2021-45261 
+│                       ├ [53] ╭ VulnerabilityID : CVE-2021-45261 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -2402,7 +2567,7 @@
 │                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [48] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [54] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : uidmap 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dist
@@ -2449,7 +2614,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ╰ [49] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ╰ [55] ╭ VulnerabilityID : CVE-2021-31879 
 │                              ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                              ├ PkgName         : wget 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distro
