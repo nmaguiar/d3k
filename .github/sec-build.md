@@ -2168,7 +2168,52 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [43] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [43] ╭ VulnerabilityID : CVE-2024-12133 
+│                       │      ├ PkgID           : libtasn1-6@4.19.0-3build1 
+│                       │      ├ PkgName         : libtasn1-6 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libtasn1-6@4.19.0-3build1?arch=amd64&d
+│                       │      │                  │       istro=ubuntu-24.10 
+│                       │      │                  ╰ UID : d1ee30ecfb865902 
+│                       │      ├ InstalledVersion: 4.19.0-3build1 
+│                       │      ├ FixedVersion    : 4.19.0-3ubuntu0.24.10.1 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
+│                       │      │                  │         b591dc9a328987a0bc00 
+│                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
+│                       │      │                            75f6e767335f60729989 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12133 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : libtasn1: Inefficient DER Decoding in libtasn1 Leading to
+│                       │      │                   Potential Remote DoS 
+│                       │      ├ Description     : A flaw in libtasn1 causes inefficient handling of specific
+│                       │      │                   certificate data. When processing a large number of elements
+│                       │      │                    in a certificate, libtasn1 takes much longer than expected,
+│                       │      │                    which can slow down or even crash the system. This flaw
+│                       │      │                   allows an attacker to send a specially crafted certificate,
+│                       │      │                   causing a denial of service attack. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-407 
+│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/06/6 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-12133 
+│                       │      │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2344611 
+│                       │      │                  ├ [3]: https://gitlab.com/gnutls/libtasn1/-/blob/master/doc/s
+│                       │      │                  │      ecurity/CVE-2024-12133.md?ref_type=heads 
+│                       │      │                  ├ [4]: https://gitlab.com/gnutls/libtasn1/-/issues/52 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-12133 
+│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7275-1 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-12133 
+│                       │      ├ PublishedDate   : 2025-02-10T16:15:37.26Z 
+│                       │      ╰ LastModifiedDate: 2025-02-10T16:15:37.26Z 
+│                       ├ [44] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : login@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : login 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.15.3-3ubuntu2?arch=amd64&distr
@@ -2215,14 +2260,15 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [44] ╭ VulnerabilityID : CVE-2025-26465 
+│                       ├ [45] ╭ VulnerabilityID : CVE-2025-26465 
 │                       │      ├ PkgID           : openssh-client@1:9.7p1-7ubuntu4.1 
 │                       │      ├ PkgName         : openssh-client 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.7p1-7ubuntu4.1?arch=a
 │                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : 11be642d386db2c2 
 │                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.7p1-7ubuntu4.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
 │                       │      │                  │         b591dc9a328987a0bc00 
 │                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
@@ -2232,24 +2278,62 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : [MitM] 
-│                       │      ├ Description     : The OpenSSH client is vulnerable to an active
-│                       │      │                   machine-in-the-middle attack if the VerifyHostKeyDNS option
-│                       │      │                   is enabled (it is disabled by default): when a vulnerable
-│                       │      │                   client connects to a server, an active machine-in-the-middle
-│                       │      │                    can impersonate the server by completely bypassing the
-│                       │      │                   client's checks of the server's identity. 
+│                       │      ├ Title           : openssh: Machine-in-the-middle attack if VerifyHostKeyDNS is
+│                       │      │                    enabled 
+│                       │      ├ Description     : A vulnerability was found in OpenSSH when the
+│                       │      │                   VerifyHostKeyDNS option is enabled. A machine-in-the-middle
+│                       │      │                   attack can be performed by a malicious machine impersonating
+│                       │      │                    a legit server. This issue occurs due to how OpenSSH
+│                       │      │                   mishandles error codes in specific conditions when verifying
+│                       │      │                    the host key. For an attack to be considered successful,
+│                       │      │                   the attacker needs to manage to exhaust the client's memory
+│                       │      │                   resource first, turning the attack complexity high. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26465 
-│                       ├ [45] ╭ VulnerabilityID : CVE-2025-26466 
+│                       │      ├ CweIDs           ─ [0]: CWE-390 
+│                       │      ├ VendorSeverity   ╭ azure : 2 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 6.8 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-26465 
+│                       │      │                  ├ [1] : https://blog.qualys.com/vulnerabilities-threat-resear
+│                       │      │                  │       ch/2025/02/18/qualys-tru-discovers-two-vulnerabilitie
+│                       │      │                  │       s-in-openssh-cve-2025-26465-cve-2025-26466 
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2344780 
+│                       │      │                  ├ [3] : https://bugzilla.suse.com/show_bug.cgi?id=1237040 
+│                       │      │                  ├ [4] : https://ftp.openbsd.org/pub/OpenBSD/patches/7.6/commo
+│                       │      │                  │       n/008_ssh.patch.sig 
+│                       │      │                  ├ [5] : https://lists.debian.org/debian-lts-announce/2025/02/
+│                       │      │                  │       msg00020.html 
+│                       │      │                  ├ [6] : https://lists.mindrot.org/pipermail/openssh-unix-anno
+│                       │      │                  │       unce/2025-February/000161.html 
+│                       │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-26465 
+│                       │      │                  ├ [8] : https://seclists.org/oss-sec/2025/q1/144 
+│                       │      │                  ├ [9] : https://security-tracker.debian.org/tracker/CVE-2025-
+│                       │      │                  │       26465 
+│                       │      │                  ├ [10]: https://ubuntu.com/security/CVE-2025-26465 
+│                       │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7270-1 
+│                       │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-7270-2 
+│                       │      │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-26465 
+│                       │      │                  ├ [14]: https://www.openssh.com/releasenotes.html#9.9p2 
+│                       │      │                  ├ [15]: https://www.openwall.com/lists/oss-security/2025/02/1
+│                       │      │                  │       8/1 
+│                       │      │                  ├ [16]: https://www.openwall.com/lists/oss-security/2025/02/1
+│                       │      │                  │       8/4 
+│                       │      │                  ╰ [17]: https://www.theregister.com/2025/02/18/openssh_vulner
+│                       │      │                          abilities_mitm_dos/ 
+│                       │      ├ PublishedDate   : 2025-02-18T19:15:29.23Z 
+│                       │      ╰ LastModifiedDate: 2025-02-19T15:15:18.09Z 
+│                       ├ [46] ╭ VulnerabilityID : CVE-2025-26466 
 │                       │      ├ PkgID           : openssh-client@1:9.7p1-7ubuntu4.1 
 │                       │      ├ PkgName         : openssh-client 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.7p1-7ubuntu4.1?arch=a
 │                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : 11be642d386db2c2 
 │                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.7p1-7ubuntu4.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
 │                       │      │                  │         b591dc9a328987a0bc00 
 │                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
@@ -2259,25 +2343,36 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : [Denial of Service: asymmetric resource consumption of
-│                       │      │                   memory and CPU] 
-│                       │      ├ Description     : The OpenSSH client and server are vulnerable to a
-│                       │      │                   pre-authentication denial-of-service attack: an asymmetric
-│                       │      │                   resource consumption of both memory and CPU. This
-│                       │      │                   vulnerability was introduced in August 2023 (shortly before
-│                       │      │                   OpenSSH 9.5p1) by commit dce6d80 ("Introduce a
-│                       │      │                   transport-level ping facility"). 
+│                       │      ├ Title           : openssh: Denial-of-service in OpenSSH 
+│                       │      ├ Description     : A flaw was found in the OpenSSH package. For each ping
+│                       │      │                   packet the SSH server receives, a pong packet is allocated
+│                       │      │                   in a memory buffer and stored in a queue of packages. It is
+│                       │      │                   only freed when the server/client key exchange has finished.
+│                       │      │                    A malicious client may keep sending such packages, leading
+│                       │      │                   to an uncontrolled increase in memory consumption on the
+│                       │      │                   server side. Consequently, the server may become
+│                       │      │                   unavailable, resulting in a denial of service attack. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26466 
-│                       ├ [46] ╭ VulnerabilityID : CVE-2025-26465 
+│                       │      ├ VendorSeverity   ╭ azure : 2 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 5.9 
+│                       │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-26466 
+│                       │                         ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2025-26466 
+│                       │                         ├ [2]: https://ubuntu.com/security/notices/USN-7270-1 
+│                       │                         ├ [3]: https://www.cve.org/CVERecord?id=CVE-2025-26466 
+│                       │                         ╰ [4]: https://www.qualys.com/2025/02/18/openssh-mitm-dos.txt 
+│                       ├ [47] ╭ VulnerabilityID : CVE-2025-26465 
 │                       │      ├ PkgID           : openssh-server@1:9.7p1-7ubuntu4.1 
 │                       │      ├ PkgName         : openssh-server 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.7p1-7ubuntu4.1?arch=a
 │                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : 452b9f451f4ff5db 
 │                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.7p1-7ubuntu4.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
 │                       │      │                  │         b591dc9a328987a0bc00 
 │                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
@@ -2287,24 +2382,62 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : [MitM] 
-│                       │      ├ Description     : The OpenSSH client is vulnerable to an active
-│                       │      │                   machine-in-the-middle attack if the VerifyHostKeyDNS option
-│                       │      │                   is enabled (it is disabled by default): when a vulnerable
-│                       │      │                   client connects to a server, an active machine-in-the-middle
-│                       │      │                    can impersonate the server by completely bypassing the
-│                       │      │                   client's checks of the server's identity. 
+│                       │      ├ Title           : openssh: Machine-in-the-middle attack if VerifyHostKeyDNS is
+│                       │      │                    enabled 
+│                       │      ├ Description     : A vulnerability was found in OpenSSH when the
+│                       │      │                   VerifyHostKeyDNS option is enabled. A machine-in-the-middle
+│                       │      │                   attack can be performed by a malicious machine impersonating
+│                       │      │                    a legit server. This issue occurs due to how OpenSSH
+│                       │      │                   mishandles error codes in specific conditions when verifying
+│                       │      │                    the host key. For an attack to be considered successful,
+│                       │      │                   the attacker needs to manage to exhaust the client's memory
+│                       │      │                   resource first, turning the attack complexity high. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26465 
-│                       ├ [47] ╭ VulnerabilityID : CVE-2025-26466 
+│                       │      ├ CweIDs           ─ [0]: CWE-390 
+│                       │      ├ VendorSeverity   ╭ azure : 2 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 6.8 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-26465 
+│                       │      │                  ├ [1] : https://blog.qualys.com/vulnerabilities-threat-resear
+│                       │      │                  │       ch/2025/02/18/qualys-tru-discovers-two-vulnerabilitie
+│                       │      │                  │       s-in-openssh-cve-2025-26465-cve-2025-26466 
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2344780 
+│                       │      │                  ├ [3] : https://bugzilla.suse.com/show_bug.cgi?id=1237040 
+│                       │      │                  ├ [4] : https://ftp.openbsd.org/pub/OpenBSD/patches/7.6/commo
+│                       │      │                  │       n/008_ssh.patch.sig 
+│                       │      │                  ├ [5] : https://lists.debian.org/debian-lts-announce/2025/02/
+│                       │      │                  │       msg00020.html 
+│                       │      │                  ├ [6] : https://lists.mindrot.org/pipermail/openssh-unix-anno
+│                       │      │                  │       unce/2025-February/000161.html 
+│                       │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-26465 
+│                       │      │                  ├ [8] : https://seclists.org/oss-sec/2025/q1/144 
+│                       │      │                  ├ [9] : https://security-tracker.debian.org/tracker/CVE-2025-
+│                       │      │                  │       26465 
+│                       │      │                  ├ [10]: https://ubuntu.com/security/CVE-2025-26465 
+│                       │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7270-1 
+│                       │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-7270-2 
+│                       │      │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-26465 
+│                       │      │                  ├ [14]: https://www.openssh.com/releasenotes.html#9.9p2 
+│                       │      │                  ├ [15]: https://www.openwall.com/lists/oss-security/2025/02/1
+│                       │      │                  │       8/1 
+│                       │      │                  ├ [16]: https://www.openwall.com/lists/oss-security/2025/02/1
+│                       │      │                  │       8/4 
+│                       │      │                  ╰ [17]: https://www.theregister.com/2025/02/18/openssh_vulner
+│                       │      │                          abilities_mitm_dos/ 
+│                       │      ├ PublishedDate   : 2025-02-18T19:15:29.23Z 
+│                       │      ╰ LastModifiedDate: 2025-02-19T15:15:18.09Z 
+│                       ├ [48] ╭ VulnerabilityID : CVE-2025-26466 
 │                       │      ├ PkgID           : openssh-server@1:9.7p1-7ubuntu4.1 
 │                       │      ├ PkgName         : openssh-server 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.7p1-7ubuntu4.1?arch=a
 │                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : 452b9f451f4ff5db 
 │                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.7p1-7ubuntu4.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
 │                       │      │                  │         b591dc9a328987a0bc00 
 │                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
@@ -2314,25 +2447,36 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : [Denial of Service: asymmetric resource consumption of
-│                       │      │                   memory and CPU] 
-│                       │      ├ Description     : The OpenSSH client and server are vulnerable to a
-│                       │      │                   pre-authentication denial-of-service attack: an asymmetric
-│                       │      │                   resource consumption of both memory and CPU. This
-│                       │      │                   vulnerability was introduced in August 2023 (shortly before
-│                       │      │                   OpenSSH 9.5p1) by commit dce6d80 ("Introduce a
-│                       │      │                   transport-level ping facility"). 
+│                       │      ├ Title           : openssh: Denial-of-service in OpenSSH 
+│                       │      ├ Description     : A flaw was found in the OpenSSH package. For each ping
+│                       │      │                   packet the SSH server receives, a pong packet is allocated
+│                       │      │                   in a memory buffer and stored in a queue of packages. It is
+│                       │      │                   only freed when the server/client key exchange has finished.
+│                       │      │                    A malicious client may keep sending such packages, leading
+│                       │      │                   to an uncontrolled increase in memory consumption on the
+│                       │      │                   server side. Consequently, the server may become
+│                       │      │                   unavailable, resulting in a denial of service attack. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26466 
-│                       ├ [48] ╭ VulnerabilityID : CVE-2025-26465 
+│                       │      ├ VendorSeverity   ╭ azure : 2 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 5.9 
+│                       │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-26466 
+│                       │                         ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2025-26466 
+│                       │                         ├ [2]: https://ubuntu.com/security/notices/USN-7270-1 
+│                       │                         ├ [3]: https://www.cve.org/CVERecord?id=CVE-2025-26466 
+│                       │                         ╰ [4]: https://www.qualys.com/2025/02/18/openssh-mitm-dos.txt 
+│                       ├ [49] ╭ VulnerabilityID : CVE-2025-26465 
 │                       │      ├ PkgID           : openssh-sftp-server@1:9.7p1-7ubuntu4.1 
 │                       │      ├ PkgName         : openssh-sftp-server 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.7p1-7ubuntu4.1?a
 │                       │      │                  │       rch=amd64&distro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : 2b8b9c7ff62fa140 
 │                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.7p1-7ubuntu4.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
 │                       │      │                  │         b591dc9a328987a0bc00 
 │                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
@@ -2342,24 +2486,62 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : [MitM] 
-│                       │      ├ Description     : The OpenSSH client is vulnerable to an active
-│                       │      │                   machine-in-the-middle attack if the VerifyHostKeyDNS option
-│                       │      │                   is enabled (it is disabled by default): when a vulnerable
-│                       │      │                   client connects to a server, an active machine-in-the-middle
-│                       │      │                    can impersonate the server by completely bypassing the
-│                       │      │                   client's checks of the server's identity. 
+│                       │      ├ Title           : openssh: Machine-in-the-middle attack if VerifyHostKeyDNS is
+│                       │      │                    enabled 
+│                       │      ├ Description     : A vulnerability was found in OpenSSH when the
+│                       │      │                   VerifyHostKeyDNS option is enabled. A machine-in-the-middle
+│                       │      │                   attack can be performed by a malicious machine impersonating
+│                       │      │                    a legit server. This issue occurs due to how OpenSSH
+│                       │      │                   mishandles error codes in specific conditions when verifying
+│                       │      │                    the host key. For an attack to be considered successful,
+│                       │      │                   the attacker needs to manage to exhaust the client's memory
+│                       │      │                   resource first, turning the attack complexity high. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26465 
-│                       ├ [49] ╭ VulnerabilityID : CVE-2025-26466 
+│                       │      ├ CweIDs           ─ [0]: CWE-390 
+│                       │      ├ VendorSeverity   ╭ azure : 2 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 6.8 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-26465 
+│                       │      │                  ├ [1] : https://blog.qualys.com/vulnerabilities-threat-resear
+│                       │      │                  │       ch/2025/02/18/qualys-tru-discovers-two-vulnerabilitie
+│                       │      │                  │       s-in-openssh-cve-2025-26465-cve-2025-26466 
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2344780 
+│                       │      │                  ├ [3] : https://bugzilla.suse.com/show_bug.cgi?id=1237040 
+│                       │      │                  ├ [4] : https://ftp.openbsd.org/pub/OpenBSD/patches/7.6/commo
+│                       │      │                  │       n/008_ssh.patch.sig 
+│                       │      │                  ├ [5] : https://lists.debian.org/debian-lts-announce/2025/02/
+│                       │      │                  │       msg00020.html 
+│                       │      │                  ├ [6] : https://lists.mindrot.org/pipermail/openssh-unix-anno
+│                       │      │                  │       unce/2025-February/000161.html 
+│                       │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-26465 
+│                       │      │                  ├ [8] : https://seclists.org/oss-sec/2025/q1/144 
+│                       │      │                  ├ [9] : https://security-tracker.debian.org/tracker/CVE-2025-
+│                       │      │                  │       26465 
+│                       │      │                  ├ [10]: https://ubuntu.com/security/CVE-2025-26465 
+│                       │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7270-1 
+│                       │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-7270-2 
+│                       │      │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-26465 
+│                       │      │                  ├ [14]: https://www.openssh.com/releasenotes.html#9.9p2 
+│                       │      │                  ├ [15]: https://www.openwall.com/lists/oss-security/2025/02/1
+│                       │      │                  │       8/1 
+│                       │      │                  ├ [16]: https://www.openwall.com/lists/oss-security/2025/02/1
+│                       │      │                  │       8/4 
+│                       │      │                  ╰ [17]: https://www.theregister.com/2025/02/18/openssh_vulner
+│                       │      │                          abilities_mitm_dos/ 
+│                       │      ├ PublishedDate   : 2025-02-18T19:15:29.23Z 
+│                       │      ╰ LastModifiedDate: 2025-02-19T15:15:18.09Z 
+│                       ├ [50] ╭ VulnerabilityID : CVE-2025-26466 
 │                       │      ├ PkgID           : openssh-sftp-server@1:9.7p1-7ubuntu4.1 
 │                       │      ├ PkgName         : openssh-sftp-server 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.7p1-7ubuntu4.1?a
 │                       │      │                  │       rch=amd64&distro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : 2b8b9c7ff62fa140 
 │                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.7p1-7ubuntu4.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74
 │                       │      │                  │         b591dc9a328987a0bc00 
 │                       │      │                  ╰ DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a
@@ -2369,18 +2551,28 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : [Denial of Service: asymmetric resource consumption of
-│                       │      │                   memory and CPU] 
-│                       │      ├ Description     : The OpenSSH client and server are vulnerable to a
-│                       │      │                   pre-authentication denial-of-service attack: an asymmetric
-│                       │      │                   resource consumption of both memory and CPU. This
-│                       │      │                   vulnerability was introduced in August 2023 (shortly before
-│                       │      │                   OpenSSH 9.5p1) by commit dce6d80 ("Introduce a
-│                       │      │                   transport-level ping facility"). 
+│                       │      ├ Title           : openssh: Denial-of-service in OpenSSH 
+│                       │      ├ Description     : A flaw was found in the OpenSSH package. For each ping
+│                       │      │                   packet the SSH server receives, a pong packet is allocated
+│                       │      │                   in a memory buffer and stored in a queue of packages. It is
+│                       │      │                   only freed when the server/client key exchange has finished.
+│                       │      │                    A malicious client may keep sending such packages, leading
+│                       │      │                   to an uncontrolled increase in memory consumption on the
+│                       │      │                   server side. Consequently, the server may become
+│                       │      │                   unavailable, resulting in a denial of service attack. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2025-26466 
-│                       ├ [50] ╭ VulnerabilityID : CVE-2024-41996 
+│                       │      ├ VendorSeverity   ╭ azure : 2 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 5.9 
+│                       │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-26466 
+│                       │                         ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2025-26466 
+│                       │                         ├ [2]: https://ubuntu.com/security/notices/USN-7270-1 
+│                       │                         ├ [3]: https://www.cve.org/CVERecord?id=CVE-2025-26466 
+│                       │                         ╰ [4]: https://www.qualys.com/2025/02/18/openssh-mitm-dos.txt 
+│                       ├ [51] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2.1 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2.1?arch=amd64&di
@@ -2430,7 +2622,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [51] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [52] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : passwd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dist
@@ -2477,7 +2669,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [52] ╭ VulnerabilityID : CVE-2018-6952 
+│                       ├ [53] ╭ VulnerabilityID : CVE-2018-6952 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -2527,7 +2719,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                       │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                       ├ [53] ╭ VulnerabilityID : CVE-2021-45261 
+│                       ├ [54] ╭ VulnerabilityID : CVE-2021-45261 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -2567,7 +2759,7 @@
 │                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [54] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [55] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : uidmap 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dist
@@ -2614,7 +2806,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ╰ [55] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ╰ [56] ╭ VulnerabilityID : CVE-2021-31879 
 │                              ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                              ├ PkgName         : wget 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distro
@@ -2997,10 +3189,11 @@
 │                       │     │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-41110 
 │                       │     │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240802-0001/ 
 │                       │     │                  ├ [16]: https://ubuntu.com/security/notices/USN-7161-1 
-│                       │     │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2024-41110 
-│                       │     │                  ├ [18]: https://www.docker.com/blog/docker-security-advisory-d
+│                       │     │                  ├ [17]: https://ubuntu.com/security/notices/USN-7161-2 
+│                       │     │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2024-41110 
+│                       │     │                  ├ [19]: https://www.docker.com/blog/docker-security-advisory-d
 │                       │     │                  │       ocker-engine-authz-plugin 
-│                       │     │                  ╰ [19]: https://www.docker.com/blog/docker-security-advisory-d
+│                       │     │                  ╰ [20]: https://www.docker.com/blog/docker-security-advisory-d
 │                       │     │                          ocker-engine-authz-plugin/ 
 │                       │     ├ PublishedDate   : 2024-07-24T17:15:11.053Z 
 │                       │     ╰ LastModifiedDate: 2024-11-21T09:32:15.16Z 
@@ -3025,9 +3218,10 @@
 │                       │     ├ Title           : golang.org/x/crypto/ssh: Misuse of
 │                       │     │                   ServerConfig.PublicKeyCallback may cause authorization bypass
 │                       │     │                    in golang.org/x/crypto 
-│                       │     ├ Description     : Applications and libraries which misuse the
-│                       │     │                   ServerConfig.PublicKeyCallback callback may be susceptible to
-│                       │     │                    an authorization bypass. The documentation for
+│                       │     ├ Description     : Applications and libraries which misuse
+│                       │     │                   connection.serverAuthenticate (via callback field
+│                       │     │                   ServerConfig.PublicKeyCallback) may be susceptible to an
+│                       │     │                   authorization bypass. The documentation for
 │                       │     │                   ServerConfig.PublicKeyCallback says that "A call to this
 │                       │     │                   function does not guarantee that the key offered is in fact
 │                       │     │                   used to authenticate." Specifically, the SSH protocol allows
@@ -3092,7 +3286,7 @@
 │                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250131-0007/ 
 │                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-45337 
 │                       │     ├ PublishedDate   : 2024-12-12T02:02:07.97Z 
-│                       │     ╰ LastModifiedDate: 2025-01-31T15:15:13.19Z 
+│                       │     ╰ LastModifiedDate: 2025-02-18T21:15:22.187Z 
 │                       ├ [2] ╭ VulnerabilityID : CVE-2024-45338 
 │                       │     ├ PkgID           : golang.org/x/net@v0.26.0 
 │                       │     ├ PkgName         : golang.org/x/net 
@@ -3224,46 +3418,7 @@
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
-├ [6] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
-│     ├ Class  : secret 
-│     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
-│                     ├ Category : AsymmetricPrivateKey 
-│                     ├ Severity : HIGH 
-│                     ├ Title    : Asymmetric Private Key 
-│                     ├ StartLine: 1 
-│                     ├ EndLine  : 1 
-│                     ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                     │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                     │                   │     │              KEY-----****************************************
-│                     │                   │     │              ************************************************
-│                     │                   │     │              ********************-----END OPENSSH PRI 
-│                     │                   │     ├ IsCause    : true 
-│                     │                   │     ├ Annotation :  
-│                     │                   │     ├ Truncated  : false 
-│                     │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                     │                   │     │              KEY-----****************************************
-│                     │                   │     │              ************************************************
-│                     │                   │     │              ********************-----END OPENSSH PRI 
-│                     │                   │     ├ FirstCause : true 
-│                     │                   │     ╰ LastCause  : true 
-│                     │                   ╰ [1] ╭ Number    : 2 
-│                     │                         ├ Content   :  
-│                     │                         ├ IsCause   : false 
-│                     │                         ├ Annotation:  
-│                     │                         ├ Truncated : false 
-│                     │                         ├ FirstCause: false 
-│                     │                         ╰ LastCause : false 
-│                     ├ Match    : BEGIN OPENSSH PRIVATE
-│                     │            KEY-----********************************************************************
-│                     │            ****************************************************************************
-│                     │            ************************************************************************----
-│                     │            -END OPENSSH PRI 
-│                     ╰ Layer     ╭ Digest   : sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74b591dc9a32898
-│                                 │            7a0bc00 
-│                                 ├ DiffID   : sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a75f6e767335f6
-│                                 │            0729989 
-│                                 ╰ CreatedBy: COPY / / # buildkit 
-├ [7] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
+├ [6] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
 │     ├ Class  : secret 
 │     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
 │                     ├ Category : AsymmetricPrivateKey 
@@ -3301,7 +3456,45 @@
 │                                 ├ DiffID   : sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a75f6e767335f6
 │                                 │            0729989 
 │                                 ╰ CreatedBy: COPY / / # buildkit 
-╰ [8] ╭ Target : /etc/ssh/ssh_host_rsa_key 
+├ [7] ╭ Target : /etc/ssh/ssh_host_rsa_key 
+│     ├ Class  : secret 
+│     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
+│                     ├ Category : AsymmetricPrivateKey 
+│                     ├ Severity : HIGH 
+│                     ├ Title    : Asymmetric Private Key 
+│                     ├ StartLine: 1 
+│                     ├ EndLine  : 1 
+│                     ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
+│                     │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
+│                     │                   │     │              KEY-----****************************************
+│                     │                   │     │              ************************************************
+│                     │                   │     │              *****-----END OPENSSH PRI 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
+│                     │                   │     │              KEY-----****************************************
+│                     │                   │     │              ************************************************
+│                     │                   │     │              *****-----END OPENSSH PRI 
+│                     │                   │     ├ FirstCause : true 
+│                     │                   │     ╰ LastCause  : true 
+│                     │                   ╰ [1] ╭ Number    : 2 
+│                     │                         ├ Content   :  
+│                     │                         ├ IsCause   : false 
+│                     │                         ├ Annotation:  
+│                     │                         ├ Truncated : false 
+│                     │                         ├ FirstCause: false 
+│                     │                         ╰ LastCause : false 
+│                     ├ Match    : BEGIN OPENSSH PRIVATE
+│                     │            KEY-----********************************************************************
+│                     │            ****************************************************************************
+│                     │            *****************************************-----END OPENSSH PRI 
+│                     ╰ Layer     ╭ Digest   : sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74b591dc9a32898
+│                                 │            7a0bc00 
+│                                 ├ DiffID   : sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a75f6e767335f6
+│                                 │            0729989 
+│                                 ╰ CreatedBy: COPY / / # buildkit 
+╰ [8] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
       ├ Class  : secret 
       ╰ Secrets ─ [0] ╭ RuleID   : private-key 
                       ├ Category : AsymmetricPrivateKey 
@@ -3313,14 +3506,14 @@
                       │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
                       │                   │     │              KEY-----****************************************
                       │                   │     │              ************************************************
-                      │                   │     │              *****-----END OPENSSH PRI 
+                      │                   │     │              ********************-----END OPENSSH PRI 
                       │                   │     ├ IsCause    : true 
                       │                   │     ├ Annotation :  
                       │                   │     ├ Truncated  : false 
                       │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
                       │                   │     │              KEY-----****************************************
                       │                   │     │              ************************************************
-                      │                   │     │              *****-----END OPENSSH PRI 
+                      │                   │     │              ********************-----END OPENSSH PRI 
                       │                   │     ├ FirstCause : true 
                       │                   │     ╰ LastCause  : true 
                       │                   ╰ [1] ╭ Number    : 2 
@@ -3333,7 +3526,8 @@
                       ├ Match    : BEGIN OPENSSH PRIVATE
                       │            KEY-----********************************************************************
                       │            ****************************************************************************
-                      │            *****************************************-----END OPENSSH PRI 
+                      │            ************************************************************************----
+                      │            -END OPENSSH PRI 
                       ╰ Layer     ╭ Digest   : sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74b591dc9a32898
                                   │            7a0bc00 
                                   ├ DiffID   : sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a75f6e767335f6
