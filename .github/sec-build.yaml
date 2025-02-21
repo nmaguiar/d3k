@@ -812,6 +812,78 @@
     - https://www.cve.org/CVERecord?id=CVE-2016-20013
     PublishedDate: '2022-02-19T05:15:09.413Z'
     LastModifiedDate: '2024-11-21T02:47:33.427Z'
+  - VulnerabilityID: CVE-2025-1390
+    PkgID: libcap2@1:2.66-5ubuntu3
+    PkgName: libcap2
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcap2@2.66-5ubuntu3?arch=amd64&distro=ubuntu-24.10&epoch=1
+      UID: 93130244437284bd
+    InstalledVersion: 1:2.66-5ubuntu3
+    Status: affected
+    Layer:
+      Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74b591dc9a328987a0bc00
+      DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a75f6e767335f60729989
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-1390
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'libcap: pam_cap: Fix potential configuration parsing error'
+    Description: The PAM module pam_cap.so of libcap configuration supports group names starting with “@”, during actual parsing, configurations not starting with “@” are incorrectly recognized as group names. This may result in nonintended users being granted an inherited capability set, potentially leading to security risks. Attackers can exploit this vulnerability to achieve local privilege escalation on systems where /etc/security/capability.conf is used to configure user inherited privileges by constructing specific usernames.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-284
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N
+        V3Score: 6.1
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-1390
+    - https://bugzilla.openanolis.cn/show_bug.cgi?id=18804
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-1390
+    - https://www.cve.org/CVERecord?id=CVE-2025-1390
+    PublishedDate: '2025-02-18T03:15:10.447Z'
+    LastModifiedDate: '2025-02-18T03:15:10.447Z'
+  - VulnerabilityID: CVE-2025-1390
+    PkgID: libcap2-bin@1:2.66-5ubuntu3
+    PkgName: libcap2-bin
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcap2-bin@2.66-5ubuntu3?arch=amd64&distro=ubuntu-24.10&epoch=1
+      UID: be08cf2b118d509
+    InstalledVersion: 1:2.66-5ubuntu3
+    Status: affected
+    Layer:
+      Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74b591dc9a328987a0bc00
+      DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a75f6e767335f60729989
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-1390
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'libcap: pam_cap: Fix potential configuration parsing error'
+    Description: The PAM module pam_cap.so of libcap configuration supports group names starting with “@”, during actual parsing, configurations not starting with “@” are incorrectly recognized as group names. This may result in nonintended users being granted an inherited capability set, potentially leading to security risks. Attackers can exploit this vulnerability to achieve local privilege escalation on systems where /etc/security/capability.conf is used to configure user inherited privileges by constructing specific usernames.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-284
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N
+        V3Score: 6.1
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-1390
+    - https://bugzilla.openanolis.cn/show_bug.cgi?id=18804
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-1390
+    - https://www.cve.org/CVERecord?id=CVE-2025-1390
+    PublishedDate: '2025-02-18T03:15:10.447Z'
+    LastModifiedDate: '2025-02-18T03:15:10.447Z'
   - VulnerabilityID: CVE-2025-0167
     PkgID: libcurl3t64-gnutls@8.9.1-2ubuntu2.2
     PkgName: libcurl3t64-gnutls
@@ -1595,6 +1667,42 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
     LastModifiedDate: '2024-11-21T09:02:26.477Z'
+  - VulnerabilityID: CVE-2025-1390
+    PkgID: libpam-cap@1:2.66-5ubuntu3
+    PkgName: libpam-cap
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpam-cap@2.66-5ubuntu3?arch=amd64&distro=ubuntu-24.10&epoch=1
+      UID: b050085ebdc5f348
+    InstalledVersion: 1:2.66-5ubuntu3
+    Status: affected
+    Layer:
+      Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74b591dc9a328987a0bc00
+      DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a75f6e767335f60729989
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-1390
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'libcap: pam_cap: Fix potential configuration parsing error'
+    Description: The PAM module pam_cap.so of libcap configuration supports group names starting with “@”, during actual parsing, configurations not starting with “@” are incorrectly recognized as group names. This may result in nonintended users being granted an inherited capability set, potentially leading to security risks. Attackers can exploit this vulnerability to achieve local privilege escalation on systems where /etc/security/capability.conf is used to configure user inherited privileges by constructing specific usernames.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-284
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N
+        V3Score: 6.1
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-1390
+    - https://bugzilla.openanolis.cn/show_bug.cgi?id=18804
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-1390
+    - https://www.cve.org/CVERecord?id=CVE-2025-1390
+    PublishedDate: '2025-02-18T03:15:10.447Z'
+    LastModifiedDate: '2025-02-18T03:15:10.447Z'
   - VulnerabilityID: CVE-2024-10041
     PkgID: libpam-modules@1.5.3-7ubuntu2
     PkgName: libpam-modules
@@ -2200,6 +2308,7 @@
     - CWE-390
     VendorSeverity:
       azure: 2
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2249,7 +2358,7 @@
     Description: A flaw was found in the OpenSSH package. For each ping packet the SSH server receives, a pong packet is allocated in a memory buffer and stored in a queue of packages. It is only freed when the server/client key exchange has finished. A malicious client may keep sending such packages, leading to an uncontrolled increase in memory consumption on the server side. Consequently, the server may become unavailable, resulting in a denial of service attack.
     Severity: MEDIUM
     VendorSeverity:
-      azure: 2
+      azure: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2287,6 +2396,7 @@
     - CWE-390
     VendorSeverity:
       azure: 2
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2336,7 +2446,7 @@
     Description: A flaw was found in the OpenSSH package. For each ping packet the SSH server receives, a pong packet is allocated in a memory buffer and stored in a queue of packages. It is only freed when the server/client key exchange has finished. A malicious client may keep sending such packages, leading to an uncontrolled increase in memory consumption on the server side. Consequently, the server may become unavailable, resulting in a denial of service attack.
     Severity: MEDIUM
     VendorSeverity:
-      azure: 2
+      azure: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2374,6 +2484,7 @@
     - CWE-390
     VendorSeverity:
       azure: 2
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2423,7 +2534,7 @@
     Description: A flaw was found in the OpenSSH package. For each ping packet the SSH server receives, a pong packet is allocated in a memory buffer and stored in a queue of packages. It is only freed when the server/client key exchange has finished. A malicious client may keep sending such packages, leading to an uncontrolled increase in memory consumption on the server side. Consequently, the server may become unavailable, resulting in a denial of service attack.
     Severity: MEDIUM
     VendorSeverity:
-      azure: 2
+      azure: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -3170,6 +3281,37 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-22866
     PublishedDate: '2025-02-06T17:15:21.41Z'
     LastModifiedDate: '2025-02-11T15:15:20.87Z'
+- Target: /etc/ssh/ssh_host_ecdsa_key
+  Class: secret
+  Secrets:
+  - RuleID: private-key
+    Category: AsymmetricPrivateKey
+    Severity: HIGH
+    Title: Asymmetric Private Key
+    StartLine: 1
+    EndLine: 1
+    Code:
+      Lines:
+      - Number: 1
+        Content: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+        FirstCause: true
+        LastCause: true
+      - Number: 2
+        Content: ''
+        IsCause: false
+        Annotation: ''
+        Truncated: false
+        FirstCause: false
+        LastCause: false
+    Match: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+    Layer:
+      Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74b591dc9a328987a0bc00
+      DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a75f6e767335f60729989
+      CreatedBy: 'COPY / / # buildkit'
 - Target: /etc/ssh/ssh_host_ed25519_key
   Class: secret
   Secrets:
@@ -3228,37 +3370,6 @@
         FirstCause: false
         LastCause: false
     Match: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-    Layer:
-      Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74b591dc9a328987a0bc00
-      DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a75f6e767335f60729989
-      CreatedBy: 'COPY / / # buildkit'
-- Target: /etc/ssh/ssh_host_ecdsa_key
-  Class: secret
-  Secrets:
-  - RuleID: private-key
-    Category: AsymmetricPrivateKey
-    Severity: HIGH
-    Title: Asymmetric Private Key
-    StartLine: 1
-    EndLine: 1
-    Code:
-      Lines:
-      - Number: 1
-        Content: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        IsCause: true
-        Annotation: ''
-        Truncated: false
-        Highlighted: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        FirstCause: true
-        LastCause: true
-      - Number: 2
-        Content: ''
-        IsCause: false
-        Annotation: ''
-        Truncated: false
-        FirstCause: false
-        LastCause: false
-    Match: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
     Layer:
       Digest: sha256:ab8ec44f53efe2e6416dfd6005e273e21f4a6d82fd74b591dc9a328987a0bc00
       DiffID: sha256:54b450cf06eb17135404f3f7d42e76d3f4d1b6646f8a75f6e767335f60729989
