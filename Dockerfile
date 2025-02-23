@@ -30,8 +30,8 @@ RUN apt-get update\
  && echo "user:Password1" | chpasswd\
  && sed -i "s/AllowTcpForwarding no/AllowTcpForwarding yes/g" /etc/ssh/sshd_config\
  && sed -i "s/GatewayPorts no/GatewayPorts yes/g" /etc/ssh/sshd_config\
- && echo 'if [ ! -e ~/.openaf_completion_bash.sh ] || [ $(find ~/.openaf_completion_bash.sh -mtime +1) ]; then /opt/oaf/oaf --bashcompletion all > ~/.openaf_completion_bash.sh; fi' >> /etc/bash.bashrc\
- && echo "source ~/.openaf_completion_bash.sh" >> /etc/bash.bashrc\
+ && echo "source ~/.openaf_completion_bash.sh > /dev/null 2>&1" >> /etc/bash.bashrc\
+ && echo 'if [ ! -e ~/.openaf_completion_bash.sh ] || [ $(find ~/.openaf_completion_bash.sh -mtime +1) ]; then /opt/oaf/oaf --bashcompletion all > ~/.openaf_completion_bash.sh & disown; fi' >> /etc/bash.bashrc\
  && echo "source <(helm completion bash)" >> /etc/bash.bashrc\
  && echo "source <(kubectl completion bash)" >> /etc/bash.bashrc\
  && echo "source <(docker completion bash)" >> /etc/bash.bashrc\
