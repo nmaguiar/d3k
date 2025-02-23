@@ -39,10 +39,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:1676
+    - https://access.redhat.com/errata/RHSA-2025:1681
     - https://access.redhat.com/security/cve/CVE-2024-11187
     - https://bugzilla.redhat.com/2342879
-    - https://errata.almalinux.org/8/ALSA-2025-1676.html
+    - https://errata.almalinux.org/9/ALSA-2025-1681.html
     - https://kb.isc.org/docs/cve-2024-11187
     - https://linux.oracle.com/cve/CVE-2024-11187.html
     - https://linux.oracle.com/errata/ELSA-2025-1681.html
@@ -136,10 +136,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:1676
+    - https://access.redhat.com/errata/RHSA-2025:1681
     - https://access.redhat.com/security/cve/CVE-2024-11187
     - https://bugzilla.redhat.com/2342879
-    - https://errata.almalinux.org/8/ALSA-2025-1676.html
+    - https://errata.almalinux.org/9/ALSA-2025-1681.html
     - https://kb.isc.org/docs/cve-2024-11187
     - https://linux.oracle.com/cve/CVE-2024-11187.html
     - https://linux.oracle.com/errata/ELSA-2025-1681.html
@@ -233,10 +233,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:1676
+    - https://access.redhat.com/errata/RHSA-2025:1681
     - https://access.redhat.com/security/cve/CVE-2024-11187
     - https://bugzilla.redhat.com/2342879
-    - https://errata.almalinux.org/8/ALSA-2025-1676.html
+    - https://errata.almalinux.org/9/ALSA-2025-1681.html
     - https://kb.isc.org/docs/cve-2024-11187
     - https://linux.oracle.com/cve/CVE-2024-11187.html
     - https://linux.oracle.com/errata/ELSA-2025-1681.html
@@ -385,7 +385,7 @@
         V3Score: 5.9
     References:
     - http://www.openwall.com/lists/oss-security/2024/12/11/1
-    - https://access.redhat.com/errata/RHSA-2025:1673
+    - https://access.redhat.com/errata/RHSA-2025:1671
     - https://access.redhat.com/security/cve/CVE-2024-11053
     - https://bugzilla.redhat.com/2294581
     - https://bugzilla.redhat.com/2294676
@@ -438,7 +438,7 @@
     - https://bugzilla.redhat.com/2339305
     - https://curl.se/docs/CVE-2024-11053.html
     - https://curl.se/docs/CVE-2024-11053.json
-    - https://errata.almalinux.org/8/ALSA-2025-1673.html
+    - https://errata.almalinux.org/9/ALSA-2025-1671.html
     - https://hackerone.com/reports/2829063
     - https://linux.oracle.com/cve/CVE-2024-11053.html
     - https://linux.oracle.com/errata/ELSA-2025-1673.html
@@ -566,10 +566,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:1676
+    - https://access.redhat.com/errata/RHSA-2025:1681
     - https://access.redhat.com/security/cve/CVE-2024-11187
     - https://bugzilla.redhat.com/2342879
-    - https://errata.almalinux.org/8/ALSA-2025-1676.html
+    - https://errata.almalinux.org/9/ALSA-2025-1681.html
     - https://kb.isc.org/docs/cve-2024-11187
     - https://linux.oracle.com/cve/CVE-2024-11187.html
     - https://linux.oracle.com/errata/ELSA-2025-1681.html
@@ -1758,7 +1758,7 @@
         V3Score: 5.9
     References:
     - http://www.openwall.com/lists/oss-security/2024/12/11/1
-    - https://access.redhat.com/errata/RHSA-2025:1673
+    - https://access.redhat.com/errata/RHSA-2025:1671
     - https://access.redhat.com/security/cve/CVE-2024-11053
     - https://bugzilla.redhat.com/2294581
     - https://bugzilla.redhat.com/2294676
@@ -1811,7 +1811,7 @@
     - https://bugzilla.redhat.com/2339305
     - https://curl.se/docs/CVE-2024-11053.html
     - https://curl.se/docs/CVE-2024-11053.json
-    - https://errata.almalinux.org/8/ALSA-2025-1673.html
+    - https://errata.almalinux.org/9/ALSA-2025-1671.html
     - https://hackerone.com/reports/2829063
     - https://linux.oracle.com/cve/CVE-2024-11053.html
     - https://linux.oracle.com/errata/ELSA-2025-1673.html
@@ -1899,7 +1899,7 @@
         V3Score: 5.9
     References:
     - http://www.openwall.com/lists/oss-security/2024/12/11/1
-    - https://access.redhat.com/errata/RHSA-2025:1673
+    - https://access.redhat.com/errata/RHSA-2025:1671
     - https://access.redhat.com/security/cve/CVE-2024-11053
     - https://bugzilla.redhat.com/2294581
     - https://bugzilla.redhat.com/2294676
@@ -1952,7 +1952,7 @@
     - https://bugzilla.redhat.com/2339305
     - https://curl.se/docs/CVE-2024-11053.html
     - https://curl.se/docs/CVE-2024-11053.json
-    - https://errata.almalinux.org/8/ALSA-2025-1673.html
+    - https://errata.almalinux.org/9/ALSA-2025-1671.html
     - https://hackerone.com/reports/2829063
     - https://linux.oracle.com/cve/CVE-2024-11053.html
     - https://linux.oracle.com/errata/ELSA-2025-1673.html
@@ -2082,13 +2082,14 @@
     - https://access.redhat.com/security/cve/CVE-2024-12243
     - https://bugzilla.redhat.com/show_bug.cgi?id=2344615
     - https://gitlab.com/gnutls/libtasn1/-/issues/52
+    - https://lists.debian.org/debian-lts-announce/2025/02/msg00027.html
     - https://lists.gnupg.org/pipermail/gnutls-help/2025-February/004875.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-12243
     - https://ubuntu.com/security/notices/USN-7281-1
     - https://www.cve.org/CVERecord?id=CVE-2024-12243
     - https://www.gnutls.org/security-new.html#GNUTLS-SA-2025-02-07
     PublishedDate: '2025-02-10T16:15:37.423Z'
-    LastModifiedDate: '2025-02-10T16:15:37.423Z'
+    LastModifiedDate: '2025-02-21T22:15:11.89Z'
   - VulnerabilityID: CVE-2024-26462
     PkgID: libgssapi-krb5-2@1.21.3-3
     PkgName: libgssapi-krb5-2
@@ -5890,7 +5891,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -5910,10 +5911,11 @@
     - https://groups.google.com/g/golang-announce/c/wSCRmFnNmPA/m/Lvcd0mRMAwAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45338
     - https://pkg.go.dev/vuln/GO-2024-3333
+    - https://security.netapp.com/advisory/ntap-20250221-0001/
     - https://ubuntu.com/security/notices/USN-7197-1
     - https://www.cve.org/CVERecord?id=CVE-2024-45338
     PublishedDate: '2024-12-18T21:15:08.173Z'
-    LastModifiedDate: '2024-12-31T20:16:06.603Z'
+    LastModifiedDate: '2025-02-21T18:15:17.717Z'
   - VulnerabilityID: CVE-2023-3978
     PkgID: golang.org/x/net@v0.12.0
     PkgName: golang.org/x/net
@@ -7858,9 +7860,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45336
     - https://pkg.go.dev/vuln/GO-2025-3420
+    - https://security.netapp.com/advisory/ntap-20250221-0003/
     - https://www.cve.org/CVERecord?id=CVE-2024-45336
     PublishedDate: '2025-01-28T02:15:28.807Z'
-    LastModifiedDate: '2025-01-28T16:15:38.22Z'
+    LastModifiedDate: '2025-02-21T18:15:17.4Z'
   - VulnerabilityID: CVE-2024-45341
     PkgID: stdlib@v1.20.5
     PkgName: stdlib
@@ -7900,9 +7903,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45341
     - https://pkg.go.dev/vuln/GO-2025-3373
+    - https://security.netapp.com/advisory/ntap-20250221-0004/
     - https://www.cve.org/CVERecord?id=CVE-2024-45341
     PublishedDate: '2025-01-28T02:15:29.147Z'
-    LastModifiedDate: '2025-01-28T16:15:38.65Z'
+    LastModifiedDate: '2025-02-21T18:15:17.96Z'
   - VulnerabilityID: CVE-2025-22866
     PkgID: stdlib@v1.20.5
     PkgName: stdlib
@@ -7940,9 +7944,10 @@
     - https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22866
     - https://pkg.go.dev/vuln/GO-2025-3447
+    - https://security.netapp.com/advisory/ntap-20250221-0002/
     - https://www.cve.org/CVERecord?id=CVE-2025-22866
     PublishedDate: '2025-02-06T17:15:21.41Z'
-    LastModifiedDate: '2025-02-11T15:15:20.87Z'
+    LastModifiedDate: '2025-02-21T18:15:32.243Z'
 - Target: tmp/tmp.rHf1Pt71ZX/krew-linux_amd64
   Class: lang-pkgs
   Type: gobinary
@@ -8125,7 +8130,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -8145,10 +8150,11 @@
     - https://groups.google.com/g/golang-announce/c/wSCRmFnNmPA/m/Lvcd0mRMAwAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45338
     - https://pkg.go.dev/vuln/GO-2024-3333
+    - https://security.netapp.com/advisory/ntap-20250221-0001/
     - https://ubuntu.com/security/notices/USN-7197-1
     - https://www.cve.org/CVERecord?id=CVE-2024-45338
     PublishedDate: '2024-12-18T21:15:08.173Z'
-    LastModifiedDate: '2024-12-31T20:16:06.603Z'
+    LastModifiedDate: '2025-02-21T18:15:17.717Z'
   - VulnerabilityID: CVE-2023-3978
     PkgID: golang.org/x/net@v0.12.0
     PkgName: golang.org/x/net
@@ -10093,9 +10099,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45336
     - https://pkg.go.dev/vuln/GO-2025-3420
+    - https://security.netapp.com/advisory/ntap-20250221-0003/
     - https://www.cve.org/CVERecord?id=CVE-2024-45336
     PublishedDate: '2025-01-28T02:15:28.807Z'
-    LastModifiedDate: '2025-01-28T16:15:38.22Z'
+    LastModifiedDate: '2025-02-21T18:15:17.4Z'
   - VulnerabilityID: CVE-2024-45341
     PkgID: stdlib@v1.20.5
     PkgName: stdlib
@@ -10135,9 +10142,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45341
     - https://pkg.go.dev/vuln/GO-2025-3373
+    - https://security.netapp.com/advisory/ntap-20250221-0004/
     - https://www.cve.org/CVERecord?id=CVE-2024-45341
     PublishedDate: '2025-01-28T02:15:29.147Z'
-    LastModifiedDate: '2025-01-28T16:15:38.65Z'
+    LastModifiedDate: '2025-02-21T18:15:17.96Z'
   - VulnerabilityID: CVE-2025-22866
     PkgID: stdlib@v1.20.5
     PkgName: stdlib
@@ -10175,9 +10183,10 @@
     - https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22866
     - https://pkg.go.dev/vuln/GO-2025-3447
+    - https://security.netapp.com/advisory/ntap-20250221-0002/
     - https://www.cve.org/CVERecord?id=CVE-2025-22866
     PublishedDate: '2025-02-06T17:15:21.41Z'
-    LastModifiedDate: '2025-02-11T15:15:20.87Z'
+    LastModifiedDate: '2025-02-21T18:15:32.243Z'
 - Target: usr/bin/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -10206,7 +10215,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -10226,10 +10235,11 @@
     - https://groups.google.com/g/golang-announce/c/wSCRmFnNmPA/m/Lvcd0mRMAwAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45338
     - https://pkg.go.dev/vuln/GO-2024-3333
+    - https://security.netapp.com/advisory/ntap-20250221-0001/
     - https://ubuntu.com/security/notices/USN-7197-1
     - https://www.cve.org/CVERecord?id=CVE-2024-45338
     PublishedDate: '2024-12-18T21:15:08.173Z'
-    LastModifiedDate: '2024-12-31T20:16:06.603Z'
+    LastModifiedDate: '2025-02-21T18:15:17.717Z'
   - VulnerabilityID: CVE-2024-45336
     PkgID: stdlib@v1.22.8
     PkgName: stdlib
@@ -10269,9 +10279,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45336
     - https://pkg.go.dev/vuln/GO-2025-3420
+    - https://security.netapp.com/advisory/ntap-20250221-0003/
     - https://www.cve.org/CVERecord?id=CVE-2024-45336
     PublishedDate: '2025-01-28T02:15:28.807Z'
-    LastModifiedDate: '2025-01-28T16:15:38.22Z'
+    LastModifiedDate: '2025-02-21T18:15:17.4Z'
   - VulnerabilityID: CVE-2024-45341
     PkgID: stdlib@v1.22.8
     PkgName: stdlib
@@ -10311,9 +10322,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45341
     - https://pkg.go.dev/vuln/GO-2025-3373
+    - https://security.netapp.com/advisory/ntap-20250221-0004/
     - https://www.cve.org/CVERecord?id=CVE-2024-45341
     PublishedDate: '2025-01-28T02:15:29.147Z'
-    LastModifiedDate: '2025-01-28T16:15:38.65Z'
+    LastModifiedDate: '2025-02-21T18:15:17.96Z'
   - VulnerabilityID: CVE-2025-22866
     PkgID: stdlib@v1.22.8
     PkgName: stdlib
@@ -10351,9 +10363,10 @@
     - https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22866
     - https://pkg.go.dev/vuln/GO-2025-3447
+    - https://security.netapp.com/advisory/ntap-20250221-0002/
     - https://www.cve.org/CVERecord?id=CVE-2025-22866
     PublishedDate: '2025-02-06T17:15:21.41Z'
-    LastModifiedDate: '2025-02-11T15:15:20.87Z'
+    LastModifiedDate: '2025-02-21T18:15:32.243Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -10431,7 +10444,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -10451,10 +10464,11 @@
     - https://groups.google.com/g/golang-announce/c/wSCRmFnNmPA/m/Lvcd0mRMAwAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45338
     - https://pkg.go.dev/vuln/GO-2024-3333
+    - https://security.netapp.com/advisory/ntap-20250221-0001/
     - https://ubuntu.com/security/notices/USN-7197-1
     - https://www.cve.org/CVERecord?id=CVE-2024-45338
     PublishedDate: '2024-12-18T21:15:08.173Z'
-    LastModifiedDate: '2024-12-31T20:16:06.603Z'
+    LastModifiedDate: '2025-02-21T18:15:17.717Z'
   - VulnerabilityID: CVE-2024-45336
     PkgID: stdlib@v1.22.7
     PkgName: stdlib
@@ -10494,9 +10508,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45336
     - https://pkg.go.dev/vuln/GO-2025-3420
+    - https://security.netapp.com/advisory/ntap-20250221-0003/
     - https://www.cve.org/CVERecord?id=CVE-2024-45336
     PublishedDate: '2025-01-28T02:15:28.807Z'
-    LastModifiedDate: '2025-01-28T16:15:38.22Z'
+    LastModifiedDate: '2025-02-21T18:15:17.4Z'
   - VulnerabilityID: CVE-2024-45341
     PkgID: stdlib@v1.22.7
     PkgName: stdlib
@@ -10536,9 +10551,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45341
     - https://pkg.go.dev/vuln/GO-2025-3373
+    - https://security.netapp.com/advisory/ntap-20250221-0004/
     - https://www.cve.org/CVERecord?id=CVE-2024-45341
     PublishedDate: '2025-01-28T02:15:29.147Z'
-    LastModifiedDate: '2025-01-28T16:15:38.65Z'
+    LastModifiedDate: '2025-02-21T18:15:17.96Z'
   - VulnerabilityID: CVE-2025-22866
     PkgID: stdlib@v1.22.7
     PkgName: stdlib
@@ -10576,9 +10592,10 @@
     - https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22866
     - https://pkg.go.dev/vuln/GO-2025-3447
+    - https://security.netapp.com/advisory/ntap-20250221-0002/
     - https://www.cve.org/CVERecord?id=CVE-2025-22866
     PublishedDate: '2025-02-06T17:15:21.41Z'
-    LastModifiedDate: '2025-02-11T15:15:20.87Z'
+    LastModifiedDate: '2025-02-21T18:15:32.243Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -10607,7 +10624,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -10627,10 +10644,11 @@
     - https://groups.google.com/g/golang-announce/c/wSCRmFnNmPA/m/Lvcd0mRMAwAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45338
     - https://pkg.go.dev/vuln/GO-2024-3333
+    - https://security.netapp.com/advisory/ntap-20250221-0001/
     - https://ubuntu.com/security/notices/USN-7197-1
     - https://www.cve.org/CVERecord?id=CVE-2024-45338
     PublishedDate: '2024-12-18T21:15:08.173Z'
-    LastModifiedDate: '2024-12-31T20:16:06.603Z'
+    LastModifiedDate: '2025-02-21T18:15:17.717Z'
   - VulnerabilityID: CVE-2024-45336
     PkgID: stdlib@v1.23.3
     PkgName: stdlib
@@ -10670,9 +10688,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45336
     - https://pkg.go.dev/vuln/GO-2025-3420
+    - https://security.netapp.com/advisory/ntap-20250221-0003/
     - https://www.cve.org/CVERecord?id=CVE-2024-45336
     PublishedDate: '2025-01-28T02:15:28.807Z'
-    LastModifiedDate: '2025-01-28T16:15:38.22Z'
+    LastModifiedDate: '2025-02-21T18:15:17.4Z'
   - VulnerabilityID: CVE-2024-45341
     PkgID: stdlib@v1.23.3
     PkgName: stdlib
@@ -10712,9 +10731,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45341
     - https://pkg.go.dev/vuln/GO-2025-3373
+    - https://security.netapp.com/advisory/ntap-20250221-0004/
     - https://www.cve.org/CVERecord?id=CVE-2024-45341
     PublishedDate: '2025-01-28T02:15:29.147Z'
-    LastModifiedDate: '2025-01-28T16:15:38.65Z'
+    LastModifiedDate: '2025-02-21T18:15:17.96Z'
   - VulnerabilityID: CVE-2025-22866
     PkgID: stdlib@v1.23.3
     PkgName: stdlib
@@ -10752,9 +10772,10 @@
     - https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22866
     - https://pkg.go.dev/vuln/GO-2025-3447
+    - https://security.netapp.com/advisory/ntap-20250221-0002/
     - https://www.cve.org/CVERecord?id=CVE-2025-22866
     PublishedDate: '2025-02-06T17:15:21.41Z'
-    LastModifiedDate: '2025-02-11T15:15:20.87Z'
+    LastModifiedDate: '2025-02-21T18:15:32.243Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -10904,7 +10925,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -10924,10 +10945,11 @@
     - https://groups.google.com/g/golang-announce/c/wSCRmFnNmPA/m/Lvcd0mRMAwAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45338
     - https://pkg.go.dev/vuln/GO-2024-3333
+    - https://security.netapp.com/advisory/ntap-20250221-0001/
     - https://ubuntu.com/security/notices/USN-7197-1
     - https://www.cve.org/CVERecord?id=CVE-2024-45338
     PublishedDate: '2024-12-18T21:15:08.173Z'
-    LastModifiedDate: '2024-12-31T20:16:06.603Z'
+    LastModifiedDate: '2025-02-21T18:15:17.717Z'
   - VulnerabilityID: GHSA-xr7q-jx4m-x55m
     PkgID: google.golang.org/grpc@v1.64.0
     PkgName: google.golang.org/grpc
@@ -11002,9 +11024,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45336
     - https://pkg.go.dev/vuln/GO-2025-3420
+    - https://security.netapp.com/advisory/ntap-20250221-0003/
     - https://www.cve.org/CVERecord?id=CVE-2024-45336
     PublishedDate: '2025-01-28T02:15:28.807Z'
-    LastModifiedDate: '2025-01-28T16:15:38.22Z'
+    LastModifiedDate: '2025-02-21T18:15:17.4Z'
   - VulnerabilityID: CVE-2024-45341
     PkgID: stdlib@v1.22.9
     PkgName: stdlib
@@ -11044,9 +11067,10 @@
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2024-45341
     - https://pkg.go.dev/vuln/GO-2025-3373
+    - https://security.netapp.com/advisory/ntap-20250221-0004/
     - https://www.cve.org/CVERecord?id=CVE-2024-45341
     PublishedDate: '2025-01-28T02:15:29.147Z'
-    LastModifiedDate: '2025-01-28T16:15:38.65Z'
+    LastModifiedDate: '2025-02-21T18:15:17.96Z'
   - VulnerabilityID: CVE-2025-22866
     PkgID: stdlib@v1.22.9
     PkgName: stdlib
@@ -11084,9 +11108,10 @@
     - https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22866
     - https://pkg.go.dev/vuln/GO-2025-3447
+    - https://security.netapp.com/advisory/ntap-20250221-0002/
     - https://www.cve.org/CVERecord?id=CVE-2025-22866
     PublishedDate: '2025-02-06T17:15:21.41Z'
-    LastModifiedDate: '2025-02-11T15:15:20.87Z'
+    LastModifiedDate: '2025-02-21T18:15:32.243Z'
 - Target: /etc/ssh/ssh_host_ecdsa_key
   Class: secret
   Secrets:
