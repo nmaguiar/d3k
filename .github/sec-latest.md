@@ -815,7 +815,8 @@
 │                       │      │                  │       o=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : 93130244437284bd 
 │                       │      ├ InstalledVersion: 1:2.66-5ubuntu3 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:2.66-5ubuntu3.1 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
 │                       │      │                  │         b905ad543ad918ad504c 
 │                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
@@ -846,7 +847,8 @@
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-1390 
 │                       │      │                  ├ [1]: https://bugzilla.openanolis.cn/show_bug.cgi?id=18804 
 │                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-1390 
-│                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-1390 
+│                       │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-7287-1 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-1390 
 │                       │      ├ PublishedDate   : 2025-02-18T03:15:10.447Z 
 │                       │      ╰ LastModifiedDate: 2025-02-18T03:15:10.447Z 
 │                       ├ [19] ╭ VulnerabilityID : CVE-2025-1390 
@@ -856,7 +858,8 @@
 │                       │      │                  │       istro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : be08cf2b118d509 
 │                       │      ├ InstalledVersion: 1:2.66-5ubuntu3 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:2.66-5ubuntu3.1 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
 │                       │      │                  │         b905ad543ad918ad504c 
 │                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
@@ -887,7 +890,8 @@
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-1390 
 │                       │      │                  ├ [1]: https://bugzilla.openanolis.cn/show_bug.cgi?id=18804 
 │                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-1390 
-│                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-1390 
+│                       │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-7287-1 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-1390 
 │                       │      ├ PublishedDate   : 2025-02-18T03:15:10.447Z 
 │                       │      ╰ LastModifiedDate: 2025-02-18T03:15:10.447Z 
 │                       ├ [20] ╭ VulnerabilityID : CVE-2025-0167 
@@ -1704,7 +1708,8 @@
 │                       │      │                  │       stro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : b050085ebdc5f348 
 │                       │      ├ InstalledVersion: 1:2.66-5ubuntu3 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:2.66-5ubuntu3.1 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
 │                       │      │                  │         b905ad543ad918ad504c 
 │                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
@@ -1735,7 +1740,8 @@
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-1390 
 │                       │      │                  ├ [1]: https://bugzilla.openanolis.cn/show_bug.cgi?id=18804 
 │                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-1390 
-│                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-1390 
+│                       │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-7287-1 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-1390 
 │                       │      ├ PublishedDate   : 2025-02-18T03:15:10.447Z 
 │                       │      ╰ LastModifiedDate: 2025-02-18T03:15:10.447Z 
 │                       ├ [36] ╭ VulnerabilityID : CVE-2024-10041 
