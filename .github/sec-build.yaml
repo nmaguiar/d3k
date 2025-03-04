@@ -651,6 +651,40 @@
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
     LastModifiedDate: '2024-11-21T07:19:04.727Z'
+  - VulnerabilityID: CVE-2025-24528
+    PkgID: krb5-locales@1.21.3-3ubuntu0.1
+    PkgName: krb5-locales
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/krb5-locales@1.21.3-3ubuntu0.1?arch=all&distro=ubuntu-24.10
+      UID: 364bca905abeb2e
+    InstalledVersion: 1.21.3-3ubuntu0.1
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
+    Layer:
+      Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
+      DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-24528
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'krb5: overflow when calculating ulog block size'
+    Description: A flaw was found in krb5. With incremental propagation enabled, an authenticated attacker can cause kadmind to write beyond the end of the mapped region for the iprop log file. This issue can trigger a process crash and lead to a denial of service.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-24528
+    - https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-24528
+    - https://ubuntu.com/security/notices/USN-7314-1
+    - https://www.cve.org/CVERecord?id=CVE-2025-24528
   - VulnerabilityID: CVE-2024-26458
     PkgID: krb5-locales@1.21.3-3ubuntu0.1
     PkgName: krb5-locales
@@ -658,7 +692,8 @@
       PURL: pkg:deb/ubuntu/krb5-locales@1.21.3-3ubuntu0.1?arch=all&distro=ubuntu-24.10
       UID: 364bca905abeb2e
     InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
       DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
@@ -703,6 +738,7 @@
     - https://mailman.mit.edu/pipermail/kerberos/2024-March/023095.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-26458
     - https://security.netapp.com/advisory/ntap-20240415-0010/
+    - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26458
     PublishedDate: '2024-02-29T01:44:18.78Z'
     LastModifiedDate: '2024-12-06T21:15:06.28Z'
@@ -713,7 +749,8 @@
       PURL: pkg:deb/ubuntu/krb5-locales@1.21.3-3ubuntu0.1?arch=all&distro=ubuntu-24.10
       UID: 364bca905abeb2e
     InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
       DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
@@ -760,6 +797,7 @@
     - https://mailman.mit.edu/pipermail/kerberos/2024-March/023095.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-26461
     - https://security.netapp.com/advisory/ntap-20240415-0011/
+    - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
     LastModifiedDate: '2024-11-21T09:02:26.477Z'
@@ -958,6 +996,40 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-2236
     PublishedDate: '2024-03-06T22:15:57.977Z'
     LastModifiedDate: '2024-11-21T09:09:19.41Z'
+  - VulnerabilityID: CVE-2025-24528
+    PkgID: libgssapi-krb5-2@1.21.3-3ubuntu0.1
+    PkgName: libgssapi-krb5-2
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
+      UID: 56954afa6df2892a
+    InstalledVersion: 1.21.3-3ubuntu0.1
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
+    Layer:
+      Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
+      DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-24528
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'krb5: overflow when calculating ulog block size'
+    Description: A flaw was found in krb5. With incremental propagation enabled, an authenticated attacker can cause kadmind to write beyond the end of the mapped region for the iprop log file. This issue can trigger a process crash and lead to a denial of service.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-24528
+    - https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-24528
+    - https://ubuntu.com/security/notices/USN-7314-1
+    - https://www.cve.org/CVERecord?id=CVE-2025-24528
   - VulnerabilityID: CVE-2024-26458
     PkgID: libgssapi-krb5-2@1.21.3-3ubuntu0.1
     PkgName: libgssapi-krb5-2
@@ -965,7 +1037,8 @@
       PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
       UID: 56954afa6df2892a
     InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
       DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
@@ -1010,6 +1083,7 @@
     - https://mailman.mit.edu/pipermail/kerberos/2024-March/023095.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-26458
     - https://security.netapp.com/advisory/ntap-20240415-0010/
+    - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26458
     PublishedDate: '2024-02-29T01:44:18.78Z'
     LastModifiedDate: '2024-12-06T21:15:06.28Z'
@@ -1020,7 +1094,8 @@
       PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
       UID: 56954afa6df2892a
     InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
       DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
@@ -1067,9 +1142,44 @@
     - https://mailman.mit.edu/pipermail/kerberos/2024-March/023095.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-26461
     - https://security.netapp.com/advisory/ntap-20240415-0011/
+    - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
     LastModifiedDate: '2024-11-21T09:02:26.477Z'
+  - VulnerabilityID: CVE-2025-24528
+    PkgID: libk5crypto3@1.21.3-3ubuntu0.1
+    PkgName: libk5crypto3
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
+      UID: 2b19f24f594bda
+    InstalledVersion: 1.21.3-3ubuntu0.1
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
+    Layer:
+      Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
+      DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-24528
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'krb5: overflow when calculating ulog block size'
+    Description: A flaw was found in krb5. With incremental propagation enabled, an authenticated attacker can cause kadmind to write beyond the end of the mapped region for the iprop log file. This issue can trigger a process crash and lead to a denial of service.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-24528
+    - https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-24528
+    - https://ubuntu.com/security/notices/USN-7314-1
+    - https://www.cve.org/CVERecord?id=CVE-2025-24528
   - VulnerabilityID: CVE-2024-26458
     PkgID: libk5crypto3@1.21.3-3ubuntu0.1
     PkgName: libk5crypto3
@@ -1077,7 +1187,8 @@
       PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
       UID: 2b19f24f594bda
     InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
       DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
@@ -1122,6 +1233,7 @@
     - https://mailman.mit.edu/pipermail/kerberos/2024-March/023095.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-26458
     - https://security.netapp.com/advisory/ntap-20240415-0010/
+    - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26458
     PublishedDate: '2024-02-29T01:44:18.78Z'
     LastModifiedDate: '2024-12-06T21:15:06.28Z'
@@ -1132,7 +1244,8 @@
       PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
       UID: 2b19f24f594bda
     InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
       DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
@@ -1179,9 +1292,44 @@
     - https://mailman.mit.edu/pipermail/kerberos/2024-March/023095.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-26461
     - https://security.netapp.com/advisory/ntap-20240415-0011/
+    - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
     LastModifiedDate: '2024-11-21T09:02:26.477Z'
+  - VulnerabilityID: CVE-2025-24528
+    PkgID: libkrb5-3@1.21.3-3ubuntu0.1
+    PkgName: libkrb5-3
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
+      UID: 791434e49e3cd4b9
+    InstalledVersion: 1.21.3-3ubuntu0.1
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
+    Layer:
+      Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
+      DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-24528
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'krb5: overflow when calculating ulog block size'
+    Description: A flaw was found in krb5. With incremental propagation enabled, an authenticated attacker can cause kadmind to write beyond the end of the mapped region for the iprop log file. This issue can trigger a process crash and lead to a denial of service.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-24528
+    - https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-24528
+    - https://ubuntu.com/security/notices/USN-7314-1
+    - https://www.cve.org/CVERecord?id=CVE-2025-24528
   - VulnerabilityID: CVE-2024-26458
     PkgID: libkrb5-3@1.21.3-3ubuntu0.1
     PkgName: libkrb5-3
@@ -1189,7 +1337,8 @@
       PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
       UID: 791434e49e3cd4b9
     InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
       DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
@@ -1234,6 +1383,7 @@
     - https://mailman.mit.edu/pipermail/kerberos/2024-March/023095.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-26458
     - https://security.netapp.com/advisory/ntap-20240415-0010/
+    - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26458
     PublishedDate: '2024-02-29T01:44:18.78Z'
     LastModifiedDate: '2024-12-06T21:15:06.28Z'
@@ -1244,7 +1394,8 @@
       PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
       UID: 791434e49e3cd4b9
     InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
       DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
@@ -1291,9 +1442,44 @@
     - https://mailman.mit.edu/pipermail/kerberos/2024-March/023095.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-26461
     - https://security.netapp.com/advisory/ntap-20240415-0011/
+    - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
     LastModifiedDate: '2024-11-21T09:02:26.477Z'
+  - VulnerabilityID: CVE-2025-24528
+    PkgID: libkrb5support0@1.21.3-3ubuntu0.1
+    PkgName: libkrb5support0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
+      UID: e67724f943ba50
+    InstalledVersion: 1.21.3-3ubuntu0.1
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
+    Layer:
+      Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
+      DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-24528
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'krb5: overflow when calculating ulog block size'
+    Description: A flaw was found in krb5. With incremental propagation enabled, an authenticated attacker can cause kadmind to write beyond the end of the mapped region for the iprop log file. This issue can trigger a process crash and lead to a denial of service.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-24528
+    - https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-24528
+    - https://ubuntu.com/security/notices/USN-7314-1
+    - https://www.cve.org/CVERecord?id=CVE-2025-24528
   - VulnerabilityID: CVE-2024-26458
     PkgID: libkrb5support0@1.21.3-3ubuntu0.1
     PkgName: libkrb5support0
@@ -1301,7 +1487,8 @@
       PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
       UID: e67724f943ba50
     InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
       DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
@@ -1346,6 +1533,7 @@
     - https://mailman.mit.edu/pipermail/kerberos/2024-March/023095.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-26458
     - https://security.netapp.com/advisory/ntap-20240415-0010/
+    - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26458
     PublishedDate: '2024-02-29T01:44:18.78Z'
     LastModifiedDate: '2024-12-06T21:15:06.28Z'
@@ -1356,7 +1544,8 @@
       PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
       UID: e67724f943ba50
     InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
+    FixedVersion: 1.21.3-3ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:278ab0dc0bb83cb9444ec6d0881bb41461b9776a8ec4739fca9a74480eb4cbaf
       DiffID: sha256:63b5bacbdba6215d4f58753b00f9f5a7d7874c42570aed0bd597bcd92d06f26c
@@ -1403,6 +1592,7 @@
     - https://mailman.mit.edu/pipermail/kerberos/2024-March/023095.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-26461
     - https://security.netapp.com/advisory/ntap-20240415-0011/
+    - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
     LastModifiedDate: '2024-11-21T09:02:26.477Z'
@@ -2410,7 +2600,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -2584,7 +2774,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 3
       cbl-mariner: 3
       ghsa: 3
