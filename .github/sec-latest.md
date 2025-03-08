@@ -90,9 +90,10 @@
 │                       │      ├ References       ╭ [0]: https://curl.se/docs/CVE-2025-0167.html 
 │                       │      │                  ├ [1]: https://curl.se/docs/CVE-2025-0167.json 
 │                       │      │                  ├ [2]: https://hackerone.com/reports/2917232 
-│                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-0167 
+│                       │      │                  ├ [3]: https://security.netapp.com/advisory/ntap-20250306-0008/ 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-0167 
 │                       │      ├ PublishedDate   : 2025-02-05T10:15:22.71Z 
-│                       │      ╰ LastModifiedDate: 2025-02-06T15:15:16.967Z 
+│                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.11Z 
 │                       ├ [2]  ╭ VulnerabilityID : CVE-2022-3219 
 │                       │      ├ PkgID           : dirmngr@2.4.4-2ubuntu18 
 │                       │      ├ PkgName         : dirmngr 
@@ -699,17 +700,20 @@
 │                       │      │                   file. This issue can trigger a process crash and lead to a
 │                       │      │                   denial of service. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ VendorSeverity   ╭ oracle-oval: 2 
+│                       │      │                  ├ redhat     : 2 
+│                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-24528 
 │                       │                         ├ [1]: https://github.com/krb5/krb5/commit/78ceba024b64d49612
 │                       │                         │      375be4a12d1c066b0bfbd0 
-│                       │                         ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
-│                       │                         ├ [3]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │                         ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
+│                       │                         ├ [2]: https://linux.oracle.com/cve/CVE-2025-24528.html 
+│                       │                         ├ [3]: https://linux.oracle.com/errata/ELSA-2025-1352.html 
+│                       │                         ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
+│                       │                         ├ [5]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │                         ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
 │                       ├ [16] ╭ VulnerabilityID : CVE-2024-26458 
 │                       │      ├ PkgID           : krb5-locales@1.21.3-3ubuntu0.1 
 │                       │      ├ PkgName         : krb5-locales 
@@ -1025,9 +1029,10 @@
 │                       │      ├ References       ╭ [0]: https://curl.se/docs/CVE-2025-0167.html 
 │                       │      │                  ├ [1]: https://curl.se/docs/CVE-2025-0167.json 
 │                       │      │                  ├ [2]: https://hackerone.com/reports/2917232 
-│                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-0167 
+│                       │      │                  ├ [3]: https://security.netapp.com/advisory/ntap-20250306-0008/ 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-0167 
 │                       │      ├ PublishedDate   : 2025-02-05T10:15:22.71Z 
-│                       │      ╰ LastModifiedDate: 2025-02-06T15:15:16.967Z 
+│                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.11Z 
 │                       ├ [23] ╭ VulnerabilityID : CVE-2025-0167 
 │                       │      ├ PkgID           : libcurl4t64@8.9.1-2ubuntu2.2 
 │                       │      ├ PkgName         : libcurl4t64 
@@ -1062,9 +1067,10 @@
 │                       │      ├ References       ╭ [0]: https://curl.se/docs/CVE-2025-0167.html 
 │                       │      │                  ├ [1]: https://curl.se/docs/CVE-2025-0167.json 
 │                       │      │                  ├ [2]: https://hackerone.com/reports/2917232 
-│                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-0167 
+│                       │      │                  ├ [3]: https://security.netapp.com/advisory/ntap-20250306-0008/ 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-0167 
 │                       │      ├ PublishedDate   : 2025-02-05T10:15:22.71Z 
-│                       │      ╰ LastModifiedDate: 2025-02-06T15:15:16.967Z 
+│                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.11Z 
 │                       ├ [24] ╭ VulnerabilityID : CVE-2024-2236 
 │                       │      ├ PkgID           : libgcrypt20@1.11.0-6ubuntu1 
 │                       │      ├ PkgName         : libgcrypt20 
@@ -1141,17 +1147,20 @@
 │                       │      │                   file. This issue can trigger a process crash and lead to a
 │                       │      │                   denial of service. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ VendorSeverity   ╭ oracle-oval: 2 
+│                       │      │                  ├ redhat     : 2 
+│                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-24528 
 │                       │                         ├ [1]: https://github.com/krb5/krb5/commit/78ceba024b64d49612
 │                       │                         │      375be4a12d1c066b0bfbd0 
-│                       │                         ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
-│                       │                         ├ [3]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │                         ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
+│                       │                         ├ [2]: https://linux.oracle.com/cve/CVE-2025-24528.html 
+│                       │                         ├ [3]: https://linux.oracle.com/errata/ELSA-2025-1352.html 
+│                       │                         ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
+│                       │                         ├ [5]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │                         ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
 │                       ├ [26] ╭ VulnerabilityID : CVE-2024-26458 
 │                       │      ├ PkgID           : libgssapi-krb5-2@1.21.3-3ubuntu0.1 
 │                       │      ├ PkgName         : libgssapi-krb5-2 
@@ -1298,17 +1307,20 @@
 │                       │      │                   file. This issue can trigger a process crash and lead to a
 │                       │      │                   denial of service. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ VendorSeverity   ╭ oracle-oval: 2 
+│                       │      │                  ├ redhat     : 2 
+│                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-24528 
 │                       │                         ├ [1]: https://github.com/krb5/krb5/commit/78ceba024b64d49612
 │                       │                         │      375be4a12d1c066b0bfbd0 
-│                       │                         ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
-│                       │                         ├ [3]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │                         ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
+│                       │                         ├ [2]: https://linux.oracle.com/cve/CVE-2025-24528.html 
+│                       │                         ├ [3]: https://linux.oracle.com/errata/ELSA-2025-1352.html 
+│                       │                         ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
+│                       │                         ├ [5]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │                         ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
 │                       ├ [29] ╭ VulnerabilityID : CVE-2024-26458 
 │                       │      ├ PkgID           : libk5crypto3@1.21.3-3ubuntu0.1 
 │                       │      ├ PkgName         : libk5crypto3 
@@ -1455,17 +1467,20 @@
 │                       │      │                   file. This issue can trigger a process crash and lead to a
 │                       │      │                   denial of service. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ VendorSeverity   ╭ oracle-oval: 2 
+│                       │      │                  ├ redhat     : 2 
+│                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-24528 
 │                       │                         ├ [1]: https://github.com/krb5/krb5/commit/78ceba024b64d49612
 │                       │                         │      375be4a12d1c066b0bfbd0 
-│                       │                         ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
-│                       │                         ├ [3]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │                         ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
+│                       │                         ├ [2]: https://linux.oracle.com/cve/CVE-2025-24528.html 
+│                       │                         ├ [3]: https://linux.oracle.com/errata/ELSA-2025-1352.html 
+│                       │                         ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
+│                       │                         ├ [5]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │                         ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
 │                       ├ [32] ╭ VulnerabilityID : CVE-2024-26458 
 │                       │      ├ PkgID           : libkrb5-3@1.21.3-3ubuntu0.1 
 │                       │      ├ PkgName         : libkrb5-3 
@@ -1612,17 +1627,20 @@
 │                       │      │                   file. This issue can trigger a process crash and lead to a
 │                       │      │                   denial of service. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ VendorSeverity   ╭ oracle-oval: 2 
+│                       │      │                  ├ redhat     : 2 
+│                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-24528 
 │                       │                         ├ [1]: https://github.com/krb5/krb5/commit/78ceba024b64d49612
 │                       │                         │      375be4a12d1c066b0bfbd0 
-│                       │                         ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
-│                       │                         ├ [3]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │                         ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
+│                       │                         ├ [2]: https://linux.oracle.com/cve/CVE-2025-24528.html 
+│                       │                         ├ [3]: https://linux.oracle.com/errata/ELSA-2025-1352.html 
+│                       │                         ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
+│                       │                         ├ [5]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │                         ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
 │                       ├ [35] ╭ VulnerabilityID : CVE-2024-26458 
 │                       │      ├ PkgID           : libkrb5support0@1.21.3-3ubuntu0.1 
 │                       │      ├ PkgName         : libkrb5support0 
@@ -2369,6 +2387,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-416 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 3 
 │                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H
@@ -2410,6 +2429,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-121 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 3 
 │                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H
@@ -2449,6 +2469,7 @@
 │                       │      ├ CweIDs           ─ [0]: CWE-476 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 1 
 │                       │      │                  ├ nvd        : 3 
+│                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -2460,11 +2481,12 @@
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-27113 
 │                       │      │                  ├ [1]: https://gitlab.gnome.org/GNOME/libxml2/-/issues/861 
 │                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-27113 
-│                       │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-7302-1 
-│                       │      │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2025-27113 
-│                       │      │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2025/02/18/2 
+│                       │      │                  ├ [3]: https://security.netapp.com/advisory/ntap-20250306-0004/ 
+│                       │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-7302-1 
+│                       │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-27113 
+│                       │      │                  ╰ [6]: https://www.openwall.com/lists/oss-security/2025/02/18/2 
 │                       │      ├ PublishedDate   : 2025-02-18T23:15:10.96Z 
-│                       │      ╰ LastModifiedDate: 2025-02-27T20:18:12.583Z 
+│                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.823Z 
 │                       ├ [51] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : login@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : login 
