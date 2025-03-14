@@ -136,7 +136,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [3]  ╭ VulnerabilityID : CVE-2024-52005 
 │                       │      ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │      ├ PkgName         : git 
@@ -287,7 +287,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [6]  ╭ VulnerabilityID : CVE-2022-3219 
 │                       │      ├ PkgID           : gnupg-l10n@2.4.4-2ubuntu18 
 │                       │      ├ PkgName         : gnupg-l10n 
@@ -330,7 +330,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [7]  ╭ VulnerabilityID : CVE-2022-3219 
 │                       │      ├ PkgID           : gnupg-utils@2.4.4-2ubuntu18 
 │                       │      ├ PkgName         : gnupg-utils 
@@ -373,7 +373,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [8]  ╭ VulnerabilityID : CVE-2022-3219 
 │                       │      ├ PkgID           : gpg@2.4.4-2ubuntu18 
 │                       │      ├ PkgName         : gpg 
@@ -416,7 +416,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2022-3219 
 │                       │      ├ PkgID           : gpg-agent@2.4.4-2ubuntu18 
 │                       │      ├ PkgName         : gpg-agent 
@@ -459,7 +459,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2022-3219 
 │                       │      ├ PkgID           : gpg-wks-client@2.4.4-2ubuntu18 
 │                       │      ├ PkgName         : gpg-wks-client 
@@ -502,7 +502,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2022-3219 
 │                       │      ├ PkgID           : gpgconf@2.4.4-2ubuntu18 
 │                       │      ├ PkgName         : gpgconf 
@@ -545,7 +545,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [12] ╭ VulnerabilityID : CVE-2022-3219 
 │                       │      ├ PkgID           : gpgsm@2.4.4-2ubuntu18 
 │                       │      ├ PkgName         : gpgsm 
@@ -588,7 +588,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [13] ╭ VulnerabilityID : CVE-2022-3219 
 │                       │      ├ PkgID           : gpgv@2.4.4-2ubuntu18 
 │                       │      ├ PkgName         : gpgv 
@@ -631,7 +631,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [14] ╭ VulnerabilityID : CVE-2022-3219 
 │                       │      ├ PkgID           : keyboxd@2.4.4-2ubuntu18 
 │                       │      ├ PkgName         : keyboxd 
@@ -674,7 +674,7 @@
 │                       │      │                  ├ [6]: https://security.netapp.com/advisory/ntap-20230324-0001/ 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2022-3219 
 │                       │      ├ PublishedDate   : 2023-02-23T20:15:12.393Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T07:19:04.727Z 
+│                       │      ╰ LastModifiedDate: 2025-03-12T21:15:38.207Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2025-24528 
 │                       │      ├ PkgID           : krb5-locales@1.21.3-3ubuntu0.1 
 │                       │      ├ PkgName         : krb5-locales 
@@ -2386,19 +2386,28 @@
 │                       │      │                   XML schema must be used. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-416 
-│                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │      ├ VendorSeverity   ╭ alma       : 3 
+│                       │      │                  ├ cbl-mariner: 3 
+│                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 3 
 │                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 8.1 
-│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-56171 
-│                       │      │                  ├ [1]: https://gitlab.gnome.org/GNOME/libxml2/-/issues/828 
-│                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2024-56171 
-│                       │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-7302-1 
-│                       │      │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2024-56171 
-│                       │      │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2025/02/18/2 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2679 
+│                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-56171 
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2346416 
+│                       │      │                  ├ [3] : https://bugzilla.redhat.com/2346421 
+│                       │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-2679.html 
+│                       │      │                  ├ [5] : https://gitlab.gnome.org/GNOME/libxml2/-/issues/828 
+│                       │      │                  ├ [6] : https://linux.oracle.com/cve/CVE-2024-56171.html 
+│                       │      │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-2686.html 
+│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-56171 
+│                       │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7302-1 
+│                       │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56171 
+│                       │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2025/02/1
+│                       │      │                          8/2 
 │                       │      ├ PublishedDate   : 2025-02-18T22:15:12.797Z 
 │                       │      ╰ LastModifiedDate: 2025-02-18T23:15:09.413Z 
 │                       ├ [49] ╭ VulnerabilityID : CVE-2025-24928 
@@ -2428,20 +2437,29 @@
 │                       │      │                   to CVE-2017-9047. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-121 
-│                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │      ├ VendorSeverity   ╭ alma       : 3 
+│                       │      │                  ├ cbl-mariner: 3 
+│                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 3 
 │                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 7.8 
-│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-24928 
-│                       │      │                  ├ [1]: https://gitlab.gnome.org/GNOME/libxml2/-/issues/847 
-│                       │      │                  ├ [2]: https://issues.oss-fuzz.com/issues/392687022 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-24928 
-│                       │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-7302-1 
-│                       │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-24928 
-│                       │      │                  ╰ [6]: https://www.openwall.com/lists/oss-security/2025/02/18/2 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2679 
+│                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-24928 
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2346416 
+│                       │      │                  ├ [3] : https://bugzilla.redhat.com/2346421 
+│                       │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-2679.html 
+│                       │      │                  ├ [5] : https://gitlab.gnome.org/GNOME/libxml2/-/issues/847 
+│                       │      │                  ├ [6] : https://issues.oss-fuzz.com/issues/392687022 
+│                       │      │                  ├ [7] : https://linux.oracle.com/cve/CVE-2025-24928.html 
+│                       │      │                  ├ [8] : https://linux.oracle.com/errata/ELSA-2025-2686.html 
+│                       │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-24928 
+│                       │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7302-1 
+│                       │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2025-24928 
+│                       │      │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2025/02/1
+│                       │      │                          8/2 
 │                       │      ├ PublishedDate   : 2025-02-18T23:15:10.25Z 
 │                       │      ╰ LastModifiedDate: 2025-02-18T23:15:10.25Z 
 │                       ├ [50] ╭ VulnerabilityID : CVE-2025-27113 
@@ -2820,7 +2838,42 @@
 ├ [2] ╭ Target         : usr/bin/docker-compose 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-45336 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-22870 
+│                       │     ├ PkgID           : golang.org/x/net@v0.33.0 
+│                       │     ├ PkgName         : golang.org/x/net 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.33.0 
+│                       │     │                  ╰ UID : 1e3966db66a3aa1 
+│                       │     ├ InstalledVersion: v0.33.0 
+│                       │     ├ FixedVersion    : 0.36.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
+│                       │     │                  │         905ad543ad918ad504c 
+│                       │     │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
+│                       │     │                            5507fce977ad8d74ed5 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : Matching of hosts against proxy patterns can improperly treat
+│                       │     │                    an IPv6  ... 
+│                       │     ├ Description     : Matching of hosts against proxy patterns can improperly treat
+│                       │     │                    an IPv6 zone ID as a hostname component. For example, when
+│                       │     │                   the NO_PROXY environment variable is set to "*.example.com",
+│                       │     │                   a request to "[::1%25.example.com]:80` will incorrectly match
+│                       │     │                    and not be proxied. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
+│                       │     │                  ├ [1]: https://go-review.googlesource.com/q/project:net 
+│                       │     │                  ├ [2]: https://go.dev/cl/654697 
+│                       │     │                  ├ [3]: https://go.dev/issue/71984 
+│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
+│                       │     │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-3503 
+│                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
+│                       │     ╰ LastModifiedDate: 2025-03-12T19:15:38.31Z 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2024-45336 
 │                       │     ├ PkgID           : stdlib@v1.22.10 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -2871,7 +2924,7 @@
 │                       │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45336 
 │                       │     ├ PublishedDate   : 2025-01-28T02:15:28.807Z 
 │                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.4Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2024-45341 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2024-45341 
 │                       │     ├ PkgID           : stdlib@v1.22.10 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -2918,7 +2971,7 @@
 │                       │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45341 
 │                       │     ├ PublishedDate   : 2025-01-28T02:15:29.147Z 
 │                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.96Z 
-│                       ╰ [2] ╭ VulnerabilityID : CVE-2025-22866 
+│                       ╰ [3] ╭ VulnerabilityID : CVE-2025-22866 
 │                             ├ PkgID           : stdlib@v1.22.10 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -2964,7 +3017,42 @@
 ├ [3] ╭ Target         : usr/bin/helm 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22866 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-22870 
+│                       │     ├ PkgID           : golang.org/x/net@v0.33.0 
+│                       │     ├ PkgName         : golang.org/x/net 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.33.0 
+│                       │     │                  ╰ UID : 5f4e3d9bb22dafc1 
+│                       │     ├ InstalledVersion: v0.33.0 
+│                       │     ├ FixedVersion    : 0.36.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
+│                       │     │                  │         905ad543ad918ad504c 
+│                       │     │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
+│                       │     │                            5507fce977ad8d74ed5 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : Matching of hosts against proxy patterns can improperly treat
+│                       │     │                    an IPv6  ... 
+│                       │     ├ Description     : Matching of hosts against proxy patterns can improperly treat
+│                       │     │                    an IPv6 zone ID as a hostname component. For example, when
+│                       │     │                   the NO_PROXY environment variable is set to "*.example.com",
+│                       │     │                   a request to "[::1%25.example.com]:80` will incorrectly match
+│                       │     │                    and not be proxied. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
+│                       │     │                  ├ [1]: https://go-review.googlesource.com/q/project:net 
+│                       │     │                  ├ [2]: https://go.dev/cl/654697 
+│                       │     │                  ├ [3]: https://go.dev/issue/71984 
+│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
+│                       │     │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-3503 
+│                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
+│                       │     ╰ LastModifiedDate: 2025-03-12T19:15:38.31Z 
+│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-22866 
 │                             ├ PkgID           : stdlib@v1.23.5 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.5 
@@ -3010,56 +3098,91 @@
 ├ [4] ╭ Target         : usr/bin/kubectl 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-45338 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-45338 
+│                       │     ├ PkgID           : golang.org/x/net@v0.30.0 
+│                       │     ├ PkgName         : golang.org/x/net 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.30.0 
+│                       │     │                  ╰ UID : 49cea3404592705a 
+│                       │     ├ InstalledVersion: v0.30.0 
+│                       │     ├ FixedVersion    : 0.33.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
+│                       │     │                  │         905ad543ad918ad504c 
+│                       │     │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
+│                       │     │                            5507fce977ad8d74ed5 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : golang.org/x/net/html: Non-linear parsing of case-insensitive
+│                       │     │                    content in golang.org/x/net/html 
+│                       │     ├ Description     : An attacker can craft an input to the Parse functions that
+│                       │     │                   would be processed non-linearly with respect to its length,
+│                       │     │                   resulting in extremely slow parsing. This could cause a
+│                       │     │                   denial of service. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-1333 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     │                  ├ azure      : 3 
+│                       │     │                  ├ cbl-mariner: 3 
+│                       │     │                  ├ ghsa       : 3 
+│                       │     │                  ├ redhat     : 3 
+│                       │     │                  ╰ ubuntu     : 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 7.5 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-45338 
+│                       │     │                  ├ [1] : https://cs.opensource.google/go/x/net 
+│                       │     │                  ├ [2] : https://github.com/golang/go/issues/70906 
+│                       │     │                  ├ [3] : https://go-review.googlesource.com/c/net/+/637536 
+│                       │     │                  ├ [4] : https://go.dev/cl/637536 
+│                       │     │                  ├ [5] : https://go.dev/issue/70906 
+│                       │     │                  ├ [6] : https://groups.google.com/g/golang-announce/c/wSCRmFnN
+│                       │     │                  │       mPA/m/Lvcd0mRMAwAJ 
+│                       │     │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-45338 
+│                       │     │                  ├ [8] : https://pkg.go.dev/vuln/GO-2024-3333 
+│                       │     │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250221-0001/ 
+│                       │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7197-1 
+│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
+│                       │     ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
+│                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.717Z 
+│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-22870 
 │                             ├ PkgID           : golang.org/x/net@v0.30.0 
 │                             ├ PkgName         : golang.org/x/net 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.30.0 
 │                             │                  ╰ UID : 49cea3404592705a 
 │                             ├ InstalledVersion: v0.30.0 
-│                             ├ FixedVersion    : 0.33.0 
+│                             ├ FixedVersion    : 0.36.0 
 │                             ├ Status          : fixed 
 │                             ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
 │                             │                  │         905ad543ad918ad504c 
 │                             │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
 │                             │                            5507fce977ad8d74ed5 
 │                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
 │                             ├ DataSource       ╭ ID  : ghsa 
 │                             │                  ├ Name: GitHub Security Advisory Go 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Ago 
-│                             ├ Title           : golang.org/x/net/html: Non-linear parsing of case-insensitive
-│                             │                    content in golang.org/x/net/html 
-│                             ├ Description     : An attacker can craft an input to the Parse functions that
-│                             │                   would be processed non-linearly with respect to its length,
-│                             │                   resulting in extremely slow parsing. This could cause a
-│                             │                   denial of service. 
-│                             ├ Severity        : HIGH 
-│                             ├ CweIDs           ─ [0]: CWE-1333 
-│                             ├ VendorSeverity   ╭ amazon     : 3 
-│                             │                  ├ azure      : 3 
-│                             │                  ├ cbl-mariner: 3 
-│                             │                  ├ ghsa       : 3 
-│                             │                  ├ redhat     : 3 
-│                             │                  ╰ ubuntu     : 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                             │                           │           A:H 
-│                             │                           ╰ V3Score : 7.5 
-│                             ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-45338 
-│                             │                  ├ [1] : https://cs.opensource.google/go/x/net 
-│                             │                  ├ [2] : https://github.com/golang/go/issues/70906 
-│                             │                  ├ [3] : https://go-review.googlesource.com/c/net/+/637536 
-│                             │                  ├ [4] : https://go.dev/cl/637536 
-│                             │                  ├ [5] : https://go.dev/issue/70906 
-│                             │                  ├ [6] : https://groups.google.com/g/golang-announce/c/wSCRmFnN
-│                             │                  │       mPA/m/Lvcd0mRMAwAJ 
-│                             │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-45338 
-│                             │                  ├ [8] : https://pkg.go.dev/vuln/GO-2024-3333 
-│                             │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250221-0001/ 
-│                             │                  ├ [10]: https://ubuntu.com/security/notices/USN-7197-1 
-│                             │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
-│                             ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                             ╰ LastModifiedDate: 2025-02-21T18:15:17.717Z 
+│                             ├ Title           : Matching of hosts against proxy patterns can improperly treat
+│                             │                    an IPv6  ... 
+│                             ├ Description     : Matching of hosts against proxy patterns can improperly treat
+│                             │                    an IPv6 zone ID as a hostname component. For example, when
+│                             │                   the NO_PROXY environment variable is set to "*.example.com",
+│                             │                   a request to "[::1%25.example.com]:80` will incorrectly match
+│                             │                    and not be proxied. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ VendorSeverity   ─ ghsa: 2 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
+│                             │                  ├ [1]: https://go-review.googlesource.com/q/project:net 
+│                             │                  ├ [2]: https://go.dev/cl/654697 
+│                             │                  ├ [3]: https://go.dev/issue/71984 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
+│                             │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-3503 
+│                             ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
+│                             ╰ LastModifiedDate: 2025-03-12T19:15:38.31Z 
 ├ [5] ╭ Target         : usr/local/bin/k3d 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -3306,7 +3429,42 @@
 │                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
 │                       │     ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
 │                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.717Z 
-│                       ╰ [3] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-22870 
+│                       │     ├ PkgID           : golang.org/x/net@v0.26.0 
+│                       │     ├ PkgName         : golang.org/x/net 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.26.0 
+│                       │     │                  ╰ UID : d33d648a9a9d02d2 
+│                       │     ├ InstalledVersion: v0.26.0 
+│                       │     ├ FixedVersion    : 0.36.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
+│                       │     │                  │         905ad543ad918ad504c 
+│                       │     │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
+│                       │     │                            5507fce977ad8d74ed5 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : Matching of hosts against proxy patterns can improperly treat
+│                       │     │                    an IPv6  ... 
+│                       │     ├ Description     : Matching of hosts against proxy patterns can improperly treat
+│                       │     │                    an IPv6 zone ID as a hostname component. For example, when
+│                       │     │                   the NO_PROXY environment variable is set to "*.example.com",
+│                       │     │                   a request to "[::1%25.example.com]:80` will incorrectly match
+│                       │     │                    and not be proxied. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
+│                       │     │                  ├ [1]: https://go-review.googlesource.com/q/project:net 
+│                       │     │                  ├ [2]: https://go.dev/cl/654697 
+│                       │     │                  ├ [3]: https://go.dev/issue/71984 
+│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
+│                       │     │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-3503 
+│                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
+│                       │     ╰ LastModifiedDate: 2025-03-12T19:15:38.31Z 
+│                       ╰ [4] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
 │                             ├ PkgID           : google.golang.org/grpc@v1.64.0 
 │                             ├ PkgName         : google.golang.org/grpc 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.64.0 
