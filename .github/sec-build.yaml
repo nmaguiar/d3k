@@ -133,7 +133,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2024-52005
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -255,7 +255,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2022-3219
     PkgID: gnupg-l10n@2.4.4-2ubuntu18
     PkgName: gnupg-l10n
@@ -299,7 +299,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2022-3219
     PkgID: gnupg-utils@2.4.4-2ubuntu18
     PkgName: gnupg-utils
@@ -343,7 +343,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2022-3219
     PkgID: gpg@2.4.4-2ubuntu18
     PkgName: gpg
@@ -387,7 +387,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2022-3219
     PkgID: gpg-agent@2.4.4-2ubuntu18
     PkgName: gpg-agent
@@ -431,7 +431,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2022-3219
     PkgID: gpg-wks-client@2.4.4-2ubuntu18
     PkgName: gpg-wks-client
@@ -475,7 +475,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2022-3219
     PkgID: gpgconf@2.4.4-2ubuntu18
     PkgName: gpgconf
@@ -519,7 +519,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2022-3219
     PkgID: gpgsm@2.4.4-2ubuntu18
     PkgName: gpgsm
@@ -563,7 +563,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2022-3219
     PkgID: gpgv@2.4.4-2ubuntu18
     PkgName: gpgv
@@ -607,7 +607,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2022-3219
     PkgID: keyboxd@2.4.4-2ubuntu18
     PkgName: keyboxd
@@ -651,7 +651,7 @@
     - https://security.netapp.com/advisory/ntap-20230324-0001/
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
-    LastModifiedDate: '2024-11-21T07:19:04.727Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
   - VulnerabilityID: CVE-2016-20013
     PkgID: libc-bin@2.40-1ubuntu3.1
     PkgName: libc-bin
@@ -1653,6 +1653,38 @@
   Class: lang-pkgs
   Type: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2025-22870
+    PkgID: golang.org/x/net@v0.33.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.33.0
+      UID: 1e3966db66a3aa1
+    InstalledVersion: v0.33.0
+    FixedVersion: 0.36.0
+    Status: fixed
+    Layer:
+      Digest: sha256:f525e24440c674dfe01fc393e57d93248718f026d01dcdcb92f6524c02962981
+      DiffID: sha256:2a71f2f5d04eff9fe977e85f8b599a0f9805a979cf2f447ec410f7bdc4d1142b
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22870
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: Matching of hosts against proxy patterns can improperly treat an IPv6  ...
+    Description: Matching of hosts against proxy patterns can improperly treat an IPv6 zone ID as a hostname component. For example, when the NO_PROXY environment variable is set to "*.example.com", a request to "[::1%25.example.com]:80` will incorrectly match and not be proxied.
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/03/07/2
+    - https://go-review.googlesource.com/q/project:net
+    - https://go.dev/cl/654697
+    - https://go.dev/issue/71984
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
+    - https://pkg.go.dev/vuln/GO-2025-3503
+    PublishedDate: '2025-03-12T19:15:38.31Z'
+    LastModifiedDate: '2025-03-12T19:15:38.31Z'
   - VulnerabilityID: CVE-2024-45336
     PkgID: stdlib@v1.22.10
     PkgName: stdlib
@@ -1786,6 +1818,38 @@
   Class: lang-pkgs
   Type: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2025-22870
+    PkgID: golang.org/x/net@v0.33.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.33.0
+      UID: 5f4e3d9bb22dafc1
+    InstalledVersion: v0.33.0
+    FixedVersion: 0.36.0
+    Status: fixed
+    Layer:
+      Digest: sha256:f525e24440c674dfe01fc393e57d93248718f026d01dcdcb92f6524c02962981
+      DiffID: sha256:2a71f2f5d04eff9fe977e85f8b599a0f9805a979cf2f447ec410f7bdc4d1142b
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22870
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: Matching of hosts against proxy patterns can improperly treat an IPv6  ...
+    Description: Matching of hosts against proxy patterns can improperly treat an IPv6 zone ID as a hostname component. For example, when the NO_PROXY environment variable is set to "*.example.com", a request to "[::1%25.example.com]:80` will incorrectly match and not be proxied.
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/03/07/2
+    - https://go-review.googlesource.com/q/project:net
+    - https://go.dev/cl/654697
+    - https://go.dev/issue/71984
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
+    - https://pkg.go.dev/vuln/GO-2025-3503
+    PublishedDate: '2025-03-12T19:15:38.31Z'
+    LastModifiedDate: '2025-03-12T19:15:38.31Z'
   - VulnerabilityID: CVE-2025-22866
     PkgID: stdlib@v1.23.5
     PkgName: stdlib
@@ -1880,6 +1944,38 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-45338
     PublishedDate: '2024-12-18T21:15:08.173Z'
     LastModifiedDate: '2025-02-21T18:15:17.717Z'
+  - VulnerabilityID: CVE-2025-22870
+    PkgID: golang.org/x/net@v0.30.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.30.0
+      UID: 49cea3404592705a
+    InstalledVersion: v0.30.0
+    FixedVersion: 0.36.0
+    Status: fixed
+    Layer:
+      Digest: sha256:f525e24440c674dfe01fc393e57d93248718f026d01dcdcb92f6524c02962981
+      DiffID: sha256:2a71f2f5d04eff9fe977e85f8b599a0f9805a979cf2f447ec410f7bdc4d1142b
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22870
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: Matching of hosts against proxy patterns can improperly treat an IPv6  ...
+    Description: Matching of hosts against proxy patterns can improperly treat an IPv6 zone ID as a hostname component. For example, when the NO_PROXY environment variable is set to "*.example.com", a request to "[::1%25.example.com]:80` will incorrectly match and not be proxied.
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/03/07/2
+    - https://go-review.googlesource.com/q/project:net
+    - https://go.dev/cl/654697
+    - https://go.dev/issue/71984
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
+    - https://pkg.go.dev/vuln/GO-2025-3503
+    PublishedDate: '2025-03-12T19:15:38.31Z'
+    LastModifiedDate: '2025-03-12T19:15:38.31Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -2054,6 +2150,38 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-45338
     PublishedDate: '2024-12-18T21:15:08.173Z'
     LastModifiedDate: '2025-02-21T18:15:17.717Z'
+  - VulnerabilityID: CVE-2025-22870
+    PkgID: golang.org/x/net@v0.26.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.26.0
+      UID: d33d648a9a9d02d2
+    InstalledVersion: v0.26.0
+    FixedVersion: 0.36.0
+    Status: fixed
+    Layer:
+      Digest: sha256:f525e24440c674dfe01fc393e57d93248718f026d01dcdcb92f6524c02962981
+      DiffID: sha256:2a71f2f5d04eff9fe977e85f8b599a0f9805a979cf2f447ec410f7bdc4d1142b
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22870
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: Matching of hosts against proxy patterns can improperly treat an IPv6  ...
+    Description: Matching of hosts against proxy patterns can improperly treat an IPv6 zone ID as a hostname component. For example, when the NO_PROXY environment variable is set to "*.example.com", a request to "[::1%25.example.com]:80` will incorrectly match and not be proxied.
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/03/07/2
+    - https://go-review.googlesource.com/q/project:net
+    - https://go.dev/cl/654697
+    - https://go.dev/issue/71984
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
+    - https://pkg.go.dev/vuln/GO-2025-3503
+    PublishedDate: '2025-03-12T19:15:38.31Z'
+    LastModifiedDate: '2025-03-12T19:15:38.31Z'
   - VulnerabilityID: GHSA-xr7q-jx4m-x55m
     PkgID: google.golang.org/grpc@v1.64.0
     PkgName: google.golang.org/grpc
