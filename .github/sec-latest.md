@@ -3122,57 +3122,7 @@
 ├ [4] ╭ Target         : usr/bin/kubectl 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-45338 
-│                       │     ├ PkgID           : golang.org/x/net@v0.30.0 
-│                       │     ├ PkgName         : golang.org/x/net 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.30.0 
-│                       │     │                  ╰ UID : 49cea3404592705a 
-│                       │     ├ InstalledVersion: v0.30.0 
-│                       │     ├ FixedVersion    : 0.33.0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
-│                       │     │                  │         905ad543ad918ad504c 
-│                       │     │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
-│                       │     │                            5507fce977ad8d74ed5 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Go 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : golang.org/x/net/html: Non-linear parsing of case-insensitive
-│                       │     │                    content in golang.org/x/net/html 
-│                       │     ├ Description     : An attacker can craft an input to the Parse functions that
-│                       │     │                   would be processed non-linearly with respect to its length,
-│                       │     │                   resulting in extremely slow parsing. This could cause a
-│                       │     │                   denial of service. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-1333 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
-│                       │     │                  ├ azure      : 3 
-│                       │     │                  ├ cbl-mariner: 3 
-│                       │     │                  ├ ghsa       : 3 
-│                       │     │                  ├ redhat     : 3 
-│                       │     │                  ╰ ubuntu     : 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-45338 
-│                       │     │                  ├ [1] : https://cs.opensource.google/go/x/net 
-│                       │     │                  ├ [2] : https://github.com/golang/go/issues/70906 
-│                       │     │                  ├ [3] : https://go-review.googlesource.com/c/net/+/637536 
-│                       │     │                  ├ [4] : https://go.dev/cl/637536 
-│                       │     │                  ├ [5] : https://go.dev/issue/70906 
-│                       │     │                  ├ [6] : https://groups.google.com/g/golang-announce/c/wSCRmFnN
-│                       │     │                  │       mPA/m/Lvcd0mRMAwAJ 
-│                       │     │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-45338 
-│                       │     │                  ├ [8] : https://pkg.go.dev/vuln/GO-2024-3333 
-│                       │     │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250221-0001/ 
-│                       │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7197-1 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
-│                       │     ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.717Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-22870 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22870 
 │                             ├ PkgID           : golang.org/x/net@v0.30.0 
 │                             ├ PkgName         : golang.org/x/net 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.30.0 
@@ -3409,57 +3359,7 @@
 │                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-45337 
 │                       │     ├ PublishedDate   : 2024-12-12T02:02:07.97Z 
 │                       │     ╰ LastModifiedDate: 2025-02-18T21:15:22.187Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2024-45338 
-│                       │     ├ PkgID           : golang.org/x/net@v0.26.0 
-│                       │     ├ PkgName         : golang.org/x/net 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.26.0 
-│                       │     │                  ╰ UID : d33d648a9a9d02d2 
-│                       │     ├ InstalledVersion: v0.26.0 
-│                       │     ├ FixedVersion    : 0.33.0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
-│                       │     │                  │         905ad543ad918ad504c 
-│                       │     │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
-│                       │     │                            5507fce977ad8d74ed5 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Go 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : golang.org/x/net/html: Non-linear parsing of case-insensitive
-│                       │     │                    content in golang.org/x/net/html 
-│                       │     ├ Description     : An attacker can craft an input to the Parse functions that
-│                       │     │                   would be processed non-linearly with respect to its length,
-│                       │     │                   resulting in extremely slow parsing. This could cause a
-│                       │     │                   denial of service. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-1333 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
-│                       │     │                  ├ azure      : 3 
-│                       │     │                  ├ cbl-mariner: 3 
-│                       │     │                  ├ ghsa       : 3 
-│                       │     │                  ├ redhat     : 3 
-│                       │     │                  ╰ ubuntu     : 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-45338 
-│                       │     │                  ├ [1] : https://cs.opensource.google/go/x/net 
-│                       │     │                  ├ [2] : https://github.com/golang/go/issues/70906 
-│                       │     │                  ├ [3] : https://go-review.googlesource.com/c/net/+/637536 
-│                       │     │                  ├ [4] : https://go.dev/cl/637536 
-│                       │     │                  ├ [5] : https://go.dev/issue/70906 
-│                       │     │                  ├ [6] : https://groups.google.com/g/golang-announce/c/wSCRmFnN
-│                       │     │                  │       mPA/m/Lvcd0mRMAwAJ 
-│                       │     │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-45338 
-│                       │     │                  ├ [8] : https://pkg.go.dev/vuln/GO-2024-3333 
-│                       │     │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250221-0001/ 
-│                       │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7197-1 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
-│                       │     ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.717Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-22870 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2025-22870 
 │                       │     ├ PkgID           : golang.org/x/net@v0.26.0 
 │                       │     ├ PkgName         : golang.org/x/net 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.26.0 
@@ -3500,7 +3400,7 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │     ╰ LastModifiedDate: 2025-03-12T19:15:38.31Z 
-│                       ╰ [4] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
+│                       ╰ [3] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
 │                             ├ PkgID           : google.golang.org/grpc@v1.64.0 
 │                             ├ PkgName         : google.golang.org/grpc 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.64.0 
