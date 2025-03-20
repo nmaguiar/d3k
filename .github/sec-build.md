@@ -1117,7 +1117,58 @@
 │                       │      │                  ╰ [9]: https://www.gnu.org/ 
 │                       │      ├ PublishedDate   : 2025-02-17T05:15:10.09Z 
 │                       │      ╰ LastModifiedDate: 2025-02-17T05:15:10.09Z 
-│                       ├ [25] ╭ VulnerabilityID : CVE-2024-2236 
+│                       ├ [25] ╭ VulnerabilityID : CVE-2024-8176 
+│                       │      ├ PkgID           : libexpat1@2.6.2-2ubuntu0.1 
+│                       │      ├ PkgName         : libexpat1 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.6.2-2ubuntu0.1?arch=amd64&
+│                       │      │                  │       distro=ubuntu-24.10 
+│                       │      │                  ╰ UID : 1e42f0c43aaaafce 
+│                       │      ├ InstalledVersion: 2.6.2-2ubuntu0.1 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:01ecbfccb85541a5d748d2b3ca5fa0a5b85643e69caf
+│                       │      │                  │         b891c85ec31d019f4b9a 
+│                       │      │                  ╰ DiffID: sha256:d1c6fed9d1b6532d0d7355f6aa23d526464aeccce1d5
+│                       │      │                            2254ef7ffbc6cba9a9f5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-8176 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : libexpat: expat: Improper Restriction of XML Entity
+│                       │      │                   Expansion Depth in libexpat 
+│                       │      ├ Description     : A stack overflow vulnerability exists in the libexpat
+│                       │      │                   library due to the way it handles recursive entity expansion
+│                       │      │                    in XML documents. When parsing an XML document with deeply
+│                       │      │                   nested entity references, libexpat can be forced to recurse
+│                       │      │                   indefinitely, exhausting the stack space and causing a
+│                       │      │                   crash. This issue could lead to denial of service (DoS) or,
+│                       │      │                   in some cases, exploitable memory corruption, depending on
+│                       │      │                   the environment and library usage. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-674 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/03/15/1 
+│                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-8176 
+│                       │      │                  ├ [2] : https://blog.hartwork.org/posts/expat-2-7-0-released/ 
+│                       │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2310137 
+│                       │      │                  ├ [4] : https://bugzilla.suse.com/show_bug.cgi?id=1239618 
+│                       │      │                  ├ [5] : https://github.com/libexpat/libexpat/blob/R_2_7_0/exp
+│                       │      │                  │       at/Changes#L40-L52 
+│                       │      │                  ├ [6] : https://github.com/libexpat/libexpat/issues/893 
+│                       │      │                  ├ [7] : https://gitlab.alpinelinux.org/alpine/aports/-/commit
+│                       │      │                  │       /d068c3ff36fc6f4789988a09c69b434db757db53 
+│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-8176 
+│                       │      │                  ├ [9] : https://security-tracker.debian.org/tracker/CVE-2024-
+│                       │      │                  │       8176 
+│                       │      │                  ├ [10]: https://ubuntu.com/security/CVE-2024-8176 
+│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-8176 
+│                       │      ├ PublishedDate   : 2025-03-14T09:15:14.157Z 
+│                       │      ╰ LastModifiedDate: 2025-03-17T17:15:36.167Z 
+│                       ├ [26] ╭ VulnerabilityID : CVE-2024-2236 
 │                       │      ├ PkgID           : libgcrypt20@1.11.0-6ubuntu1 
 │                       │      ├ PkgName         : libgcrypt20 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgcrypt20@1.11.0-6ubuntu1?arch=amd64
@@ -1168,7 +1219,7 @@
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-2236 
 │                       │      ├ PublishedDate   : 2024-03-06T22:15:57.977Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T09:09:19.41Z 
-│                       ├ [26] ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [27] ╭ VulnerabilityID : CVE-2024-10041 
 │                       │      ├ PkgID           : libpam-modules@1.5.3-7ubuntu2 
 │                       │      ├ PkgName         : libpam-modules 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules@1.5.3-7ubuntu2?arch=amd
@@ -1223,7 +1274,7 @@
 │                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │      ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [27] ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [28] ╭ VulnerabilityID : CVE-2024-10963 
 │                       │      ├ PkgID           : libpam-modules@1.5.3-7ubuntu2 
 │                       │      ├ PkgName         : libpam-modules 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules@1.5.3-7ubuntu2?arch=amd
@@ -1282,7 +1333,7 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [28] ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [29] ╭ VulnerabilityID : CVE-2024-10041 
 │                       │      ├ PkgID           : libpam-modules-bin@1.5.3-7ubuntu2 
 │                       │      ├ PkgName         : libpam-modules-bin 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules-bin@1.5.3-7ubuntu2?arch
@@ -1337,7 +1388,7 @@
 │                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │      ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [29] ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [30] ╭ VulnerabilityID : CVE-2024-10963 
 │                       │      ├ PkgID           : libpam-modules-bin@1.5.3-7ubuntu2 
 │                       │      ├ PkgName         : libpam-modules-bin 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules-bin@1.5.3-7ubuntu2?arch
@@ -1396,7 +1447,7 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [30] ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [31] ╭ VulnerabilityID : CVE-2024-10041 
 │                       │      ├ PkgID           : libpam-runtime@1.5.3-7ubuntu2 
 │                       │      ├ PkgName         : libpam-runtime 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-runtime@1.5.3-7ubuntu2?arch=all
@@ -1451,7 +1502,7 @@
 │                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │      ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [31] ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [32] ╭ VulnerabilityID : CVE-2024-10963 
 │                       │      ├ PkgID           : libpam-runtime@1.5.3-7ubuntu2 
 │                       │      ├ PkgName         : libpam-runtime 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-runtime@1.5.3-7ubuntu2?arch=all
@@ -1510,7 +1561,7 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [32] ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [33] ╭ VulnerabilityID : CVE-2024-10041 
 │                       │      ├ PkgID           : libpam0g@1.5.3-7ubuntu2 
 │                       │      ├ PkgName         : libpam0g 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam0g@1.5.3-7ubuntu2?arch=amd64&dis
@@ -1565,7 +1616,7 @@
 │                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │      ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [33] ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [34] ╭ VulnerabilityID : CVE-2024-10963 
 │                       │      ├ PkgID           : libpam0g@1.5.3-7ubuntu2 
 │                       │      ├ PkgName         : libpam0g 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam0g@1.5.3-7ubuntu2?arch=amd64&dis
@@ -1624,7 +1675,7 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [34] ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [35] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : libssl3t64@3.3.1-2ubuntu2.1 
 │                       │      ├ PkgName         : libssl3t64 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2.1?arch=amd64
@@ -1674,7 +1725,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [35] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [36] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : libsubid4@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : libsubid4 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsubid4@4.15.3-3ubuntu2?arch=amd64&d
@@ -1721,7 +1772,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [36] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [37] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : login@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : login 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.15.3-3ubuntu2?arch=amd64&distr
@@ -1768,7 +1819,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [37] ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [38] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2.1 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2.1?arch=amd64&di
@@ -1818,7 +1869,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [38] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [39] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : passwd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dist
@@ -1865,7 +1916,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [39] ╭ VulnerabilityID : CVE-2018-6952 
+│                       ├ [40] ╭ VulnerabilityID : CVE-2018-6952 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -1915,7 +1966,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                       │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                       ├ [40] ╭ VulnerabilityID : CVE-2021-45261 
+│                       ├ [41] ╭ VulnerabilityID : CVE-2021-45261 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -1955,7 +2006,7 @@
 │                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [41] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [42] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : uidmap 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dist
@@ -2002,7 +2053,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ╰ [42] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ╰ [43] ╭ VulnerabilityID : CVE-2021-31879 
 │                              ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                              ├ PkgName         : wget 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distro
@@ -2072,8 +2123,8 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Go 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : containerd is an open-source container runtime. A bug was
-│                       │     │                   found in con ... 
+│                       │     ├ Title           : containerd: containerd has an integer overflow in User ID
+│                       │     │                   handling 
 │                       │     ├ Description     : containerd is an open-source container runtime. A bug was
 │                       │     │                   found in containerd prior to versions 1.6.38, 1.7.27, and
 │                       │     │                   2.0.4 where containers launched with a User set as a
@@ -2087,18 +2138,26 @@
 │                       │     │                   import images. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-190 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N 
-│                       │     │                         ╰ V3Score : 4.6 
-│                       │     ├ References       ╭ [0]: https://github.com/containerd/containerd 
-│                       │     │                  ├ [1]: https://github.com/containerd/containerd/commit/05044ec
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 4.6 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-40635 
+│                       │     │                  ├ [1]: https://github.com/containerd/containerd 
+│                       │     │                  ├ [2]: https://github.com/containerd/containerd/commit/05044ec
 │                       │     │                  │      0a9a75232cad458027ca83437aae3f4da 
-│                       │     │                  ├ [2]: https://github.com/containerd/containerd/commit/1a43cb6
+│                       │     │                  ├ [3]: https://github.com/containerd/containerd/commit/1a43cb6
 │                       │     │                  │      a1035441f9aca8f5666a9b3ef9e70ab20 
-│                       │     │                  ├ [3]: https://github.com/containerd/containerd/commit/cf158e8
+│                       │     │                  ├ [4]: https://github.com/containerd/containerd/commit/cf158e8
 │                       │     │                  │      84cfe4812a6c371b59e4ea9bc4c46e51a 
-│                       │     │                  ╰ [4]: https://github.com/containerd/containerd/security/advis
-│                       │     │                         ories/GHSA-265r-hfxg-fhmg 
+│                       │     │                  ├ [5]: https://github.com/containerd/containerd/security/advis
+│                       │     │                  │      ories/GHSA-265r-hfxg-fhmg 
+│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-40635 
+│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
 │                       │     ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
 │                       │     ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2025-0495 
@@ -2163,7 +2222,7 @@
 │                             │                  ├ Name: GitHub Security Advisory Go 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Ago 
-│                             ├ Title           : golang.org/x/net/http/httpproxy: golang.org/x/net/proxy: HTTP
+│                             ├ Title           : golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP
 │                             │                    Proxy bypass using IPv6 Zone IDs in golang.org/x/net 
 │                             ├ Description     : Matching of hosts against proxy patterns can improperly treat
 │                             │                    an IPv6 zone ID as a hostname component. For example, when
@@ -2174,7 +2233,10 @@
 │                             ├ CweIDs           ─ [0]: CWE-115 
 │                             ├ VendorSeverity   ╭ ghsa  : 2 
 │                             │                  ╰ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
+│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
+│                             │                  │        │           A:L 
+│                             │                  │        ╰ V3Score : 4.4 
+│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
 │                             │                           │           A:L 
 │                             │                           ╰ V3Score : 4.4 
 │                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
@@ -2208,8 +2270,8 @@
 │                             │                  ├ Name: GitHub Security Advisory Go 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Ago 
-│                             ├ Title           : containerd is an open-source container runtime. A bug was
-│                             │                   found in con ... 
+│                             ├ Title           : containerd: containerd has an integer overflow in User ID
+│                             │                   handling 
 │                             ├ Description     : containerd is an open-source container runtime. A bug was
 │                             │                   found in containerd prior to versions 1.6.38, 1.7.27, and
 │                             │                   2.0.4 where containers launched with a User set as a
@@ -2223,18 +2285,26 @@
 │                             │                   import images. 
 │                             ├ Severity        : MEDIUM 
 │                             ├ CweIDs           ─ [0]: CWE-190 
-│                             ├ VendorSeverity   ─ ghsa: 2 
-│                             ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N 
-│                             │                         ╰ V3Score : 4.6 
-│                             ├ References       ╭ [0]: https://github.com/containerd/containerd 
-│                             │                  ├ [1]: https://github.com/containerd/containerd/commit/05044ec
+│                             ├ VendorSeverity   ╭ ghsa  : 2 
+│                             │                  ╰ redhat: 2 
+│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
+│                             │                  │        │           A:N 
+│                             │                  │        ╰ V3Score : 4.6 
+│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
+│                             │                           │           A:N 
+│                             │                           ╰ V3Score : 4.6 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-40635 
+│                             │                  ├ [1]: https://github.com/containerd/containerd 
+│                             │                  ├ [2]: https://github.com/containerd/containerd/commit/05044ec
 │                             │                  │      0a9a75232cad458027ca83437aae3f4da 
-│                             │                  ├ [2]: https://github.com/containerd/containerd/commit/1a43cb6
+│                             │                  ├ [3]: https://github.com/containerd/containerd/commit/1a43cb6
 │                             │                  │      a1035441f9aca8f5666a9b3ef9e70ab20 
-│                             │                  ├ [3]: https://github.com/containerd/containerd/commit/cf158e8
+│                             │                  ├ [4]: https://github.com/containerd/containerd/commit/cf158e8
 │                             │                  │      84cfe4812a6c371b59e4ea9bc4c46e51a 
-│                             │                  ╰ [4]: https://github.com/containerd/containerd/security/advis
-│                             │                         ories/GHSA-265r-hfxg-fhmg 
+│                             │                  ├ [5]: https://github.com/containerd/containerd/security/advis
+│                             │                  │      ories/GHSA-265r-hfxg-fhmg 
+│                             │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-40635 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
 │                             ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
 │                             ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
 ├ [4] ╭ Target         : usr/bin/kubectl 
@@ -2258,7 +2328,7 @@
 │                             │                  ├ Name: GitHub Security Advisory Go 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Ago 
-│                             ├ Title           : golang.org/x/net/http/httpproxy: golang.org/x/net/proxy: HTTP
+│                             ├ Title           : golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP
 │                             │                    Proxy bypass using IPv6 Zone IDs in golang.org/x/net 
 │                             ├ Description     : Matching of hosts against proxy patterns can improperly treat
 │                             │                    an IPv6 zone ID as a hostname component. For example, when
@@ -2269,7 +2339,10 @@
 │                             ├ CweIDs           ─ [0]: CWE-115 
 │                             ├ VendorSeverity   ╭ ghsa  : 2 
 │                             │                  ╰ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
+│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
+│                             │                  │        │           A:L 
+│                             │                  │        ╰ V3Score : 4.4 
+│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
 │                             │                           │           A:L 
 │                             │                           ╰ V3Score : 4.4 
 │                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
@@ -2303,8 +2376,8 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Go 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : containerd is an open-source container runtime. A bug was
-│                       │     │                   found in con ... 
+│                       │     ├ Title           : containerd: containerd has an integer overflow in User ID
+│                       │     │                   handling 
 │                       │     ├ Description     : containerd is an open-source container runtime. A bug was
 │                       │     │                   found in containerd prior to versions 1.6.38, 1.7.27, and
 │                       │     │                   2.0.4 where containers launched with a User set as a
@@ -2318,18 +2391,26 @@
 │                       │     │                   import images. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-190 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N 
-│                       │     │                         ╰ V3Score : 4.6 
-│                       │     ├ References       ╭ [0]: https://github.com/containerd/containerd 
-│                       │     │                  ├ [1]: https://github.com/containerd/containerd/commit/05044ec
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 4.6 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-40635 
+│                       │     │                  ├ [1]: https://github.com/containerd/containerd 
+│                       │     │                  ├ [2]: https://github.com/containerd/containerd/commit/05044ec
 │                       │     │                  │      0a9a75232cad458027ca83437aae3f4da 
-│                       │     │                  ├ [2]: https://github.com/containerd/containerd/commit/1a43cb6
+│                       │     │                  ├ [3]: https://github.com/containerd/containerd/commit/1a43cb6
 │                       │     │                  │      a1035441f9aca8f5666a9b3ef9e70ab20 
-│                       │     │                  ├ [3]: https://github.com/containerd/containerd/commit/cf158e8
+│                       │     │                  ├ [4]: https://github.com/containerd/containerd/commit/cf158e8
 │                       │     │                  │      84cfe4812a6c371b59e4ea9bc4c46e51a 
-│                       │     │                  ╰ [4]: https://github.com/containerd/containerd/security/advis
-│                       │     │                         ories/GHSA-265r-hfxg-fhmg 
+│                       │     │                  ├ [5]: https://github.com/containerd/containerd/security/advis
+│                       │     │                  │      ories/GHSA-265r-hfxg-fhmg 
+│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-40635 
+│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
 │                       │     ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
 │                       │     ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2024-41110 
@@ -2543,7 +2624,7 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Go 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : golang.org/x/net/http/httpproxy: golang.org/x/net/proxy: HTTP
+│                       │     ├ Title           : golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP
 │                       │     │                    Proxy bypass using IPv6 Zone IDs in golang.org/x/net 
 │                       │     ├ Description     : Matching of hosts against proxy patterns can improperly treat
 │                       │     │                    an IPv6 zone ID as a hostname component. For example, when
@@ -2554,7 +2635,10 @@
 │                       │     ├ CweIDs           ─ [0]: CWE-115 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
+│                       │     │                  │        │           A:L 
+│                       │     │                  │        ╰ V3Score : 4.4 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
 │                       │     │                           │           A:L 
 │                       │     │                           ╰ V3Score : 4.4 
 │                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
