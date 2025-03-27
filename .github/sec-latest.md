@@ -944,7 +944,8 @@
 │                       │      │                    usernames. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-284 
-│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ redhat     : 2 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -989,7 +990,8 @@
 │                       │      │                    usernames. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-284 
-│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ redhat     : 2 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -2175,7 +2177,8 @@
 │                       │      │                    usernames. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-284 
-│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ redhat     : 2 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -2874,7 +2877,8 @@
 │                       │      │                   pointer dereference in xmlPatMatch in pattern.c. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-476 
-│                       │      ├ VendorSeverity   ╭ azure      : 1 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 1 
 │                       │      │                  ├ cbl-mariner: 1 
 │                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ photon     : 3 
@@ -3354,7 +3358,8 @@
 │                       │     │                    and not be proxied. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-115 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     ├ VendorSeverity   ╭ amazon: 2 
+│                       │     │                  ├ ghsa  : 2 
 │                       │     │                  ╰ redhat: 2 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
 │                       │     │                  │        │           A:L 
@@ -3598,7 +3603,8 @@
 │                       │     │                    and not be proxied. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-115 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     ├ VendorSeverity   ╭ amazon: 2 
+│                       │     │                  ├ ghsa  : 2 
 │                       │     │                  ╰ redhat: 2 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
 │                       │     │                  │        │           A:L 
@@ -3689,7 +3695,8 @@
 │                             │                    and not be proxied. 
 │                             ├ Severity        : MEDIUM 
 │                             ├ CweIDs           ─ [0]: CWE-115 
-│                             ├ VendorSeverity   ╭ ghsa  : 2 
+│                             ├ VendorSeverity   ╭ amazon: 2 
+│                             │                  ├ ghsa  : 2 
 │                             │                  ╰ redhat: 2 
 │                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
 │                             │                  │        │           A:L 
@@ -3985,7 +3992,8 @@
 │                       │     │                    and not be proxied. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-115 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     ├ VendorSeverity   ╭ amazon: 2 
+│                       │     │                  ├ ghsa  : 2 
 │                       │     │                  ╰ redhat: 2 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
 │                       │     │                  │        │           A:L 
