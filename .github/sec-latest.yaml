@@ -1354,10 +1354,11 @@
     - https://gitlab.alpinelinux.org/alpine/aports/-/commit/d068c3ff36fc6f4789988a09c69b434db757db53
     - https://nvd.nist.gov/vuln/detail/CVE-2024-8176
     - https://security-tracker.debian.org/tracker/CVE-2024-8176
+    - https://security.netapp.com/advisory/ntap-20250328-0009/
     - https://ubuntu.com/security/CVE-2024-8176
     - https://www.cve.org/CVERecord?id=CVE-2024-8176
     PublishedDate: '2025-03-14T09:15:14.157Z'
-    LastModifiedDate: '2025-03-17T17:15:36.167Z'
+    LastModifiedDate: '2025-03-28T15:15:46.157Z'
   - VulnerabilityID: CVE-2024-2236
     PkgID: libgcrypt20@1.11.0-6ubuntu1
     PkgName: libgcrypt20
@@ -2622,11 +2623,12 @@
     - https://linux.oracle.com/cve/CVE-2024-56171.html
     - https://linux.oracle.com/errata/ELSA-2025-2686.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-56171
+    - https://security.netapp.com/advisory/ntap-20250328-0010/
     - https://ubuntu.com/security/notices/USN-7302-1
     - https://www.cve.org/CVERecord?id=CVE-2024-56171
     - https://www.openwall.com/lists/oss-security/2025/02/18/2
     PublishedDate: '2025-02-18T22:15:12.797Z'
-    LastModifiedDate: '2025-02-18T23:15:09.413Z'
+    LastModifiedDate: '2025-03-28T15:15:46.003Z'
   - VulnerabilityID: CVE-2025-24928
     PkgID: libxml2@2.12.7+dfsg-3ubuntu0.1
     PkgName: libxml2
@@ -3137,6 +3139,7 @@
     - CWE-115
     VendorSeverity:
       amazon: 2
+      azure: 1
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
@@ -3364,6 +3367,7 @@
     - CWE-115
     VendorSeverity:
       amazon: 2
+      azure: 1
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
@@ -3455,6 +3459,7 @@
     - CWE-115
     VendorSeverity:
       amazon: 2
+      azure: 1
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
@@ -3674,6 +3679,7 @@
     - CWE-115
     VendorSeverity:
       amazon: 2
+      azure: 1
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
