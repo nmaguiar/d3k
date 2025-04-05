@@ -15,7 +15,7 @@ on:
 
 jobs:
   build64:
-    runs-on: self-hosted 
+    runs-on: ubuntu-24.04-arm
 
     steps:
     - name: Set up QEMU
