@@ -934,7 +934,8 @@
 │                       │      │                  │       distro=ubuntu-24.10 
 │                       │      │                  ╰ UID : 1e42f0c43aaaafce 
 │                       │      ├ InstalledVersion: 2.6.2-2ubuntu0.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 2.6.2-2ubuntu0.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:6dc74140f3e03a8a252b86113ef3a90d47b8e15c4a29
 │                       │      │                  │         3732362ef647394f75c1 
 │                       │      │                  ╰ DiffID: sha256:7ae9254574aa69f4a216827db0a287fadb4aa4ed3973
@@ -985,7 +986,8 @@
 │                       │      │                  ├ [15]: https://security.netapp.com/advisory/ntap-20250328-00
 │                       │      │                  │       09/ 
 │                       │      │                  ├ [16]: https://ubuntu.com/security/CVE-2024-8176 
-│                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-8176 
+│                       │      │                  ├ [17]: https://ubuntu.com/security/notices/USN-7424-1 
+│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-8176 
 │                       │      ├ PublishedDate   : 2025-03-14T09:15:14.157Z 
 │                       │      ╰ LastModifiedDate: 2025-04-02T15:15:57.987Z 
 │                       ├ [22] ╭ VulnerabilityID : CVE-2024-2236 
@@ -1068,7 +1070,7 @@
 │                       │      │                   in /etc/shadow while performing authentications. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-922 
-│                       │      ├ VendorSeverity   ╭ alma       : 3 
+│                       │      ├ VendorSeverity   ╭ alma       : 2 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ redhat     : 2 
@@ -1082,19 +1084,18 @@
 │                       │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:9941 
 │                       │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-10041 
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/2319212 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/2324291 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
-│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
+│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10041 
-│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10963 
-│                       │      │                  ├ [10]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2024:10379 
-│                       │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-10041.html 
-│                       │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
-│                       │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
-│                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
+│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-11250.html 
+│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:10379 
+│                       │      │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-10041.html 
+│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
+│                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
+│                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │      ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
 │                       ├ [24] ╭ VulnerabilityID : CVE-2024-10963 
@@ -1141,20 +1142,19 @@
 │                       │      │                  ├ [4] : https://access.redhat.com/errata/RHSA-2024:10528 
 │                       │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2024:10852 
 │                       │      │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2024-10963 
-│                       │      │                  ├ [7] : https://bugzilla.redhat.com/2319212 
-│                       │      │                  ├ [8] : https://bugzilla.redhat.com/2324291 
-│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
-│                       │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
-│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/2324291 
+│                       │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
+│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10041 
-│                       │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10963 
-│                       │      │                  ├ [13]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
-│                       │      │                  ├ [14]: https://errata.rockylinux.org/RLSA-2024:10379 
-│                       │      │                  ├ [15]: https://linux.oracle.com/cve/CVE-2024-10963.html 
-│                       │      │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
-│                       │      │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2024-10963 
-│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2024-10244.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2024:10379 
+│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2024-10963.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
+│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2024-10963 
+│                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
 │                       ├ [25] ╭ VulnerabilityID : CVE-2024-10041 
@@ -1184,7 +1184,7 @@
 │                       │      │                   in /etc/shadow while performing authentications. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-922 
-│                       │      ├ VendorSeverity   ╭ alma       : 3 
+│                       │      ├ VendorSeverity   ╭ alma       : 2 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ redhat     : 2 
@@ -1198,19 +1198,18 @@
 │                       │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:9941 
 │                       │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-10041 
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/2319212 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/2324291 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
-│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
+│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10041 
-│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10963 
-│                       │      │                  ├ [10]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2024:10379 
-│                       │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-10041.html 
-│                       │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
-│                       │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
-│                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
+│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-11250.html 
+│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:10379 
+│                       │      │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-10041.html 
+│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
+│                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
+│                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │      ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
 │                       ├ [26] ╭ VulnerabilityID : CVE-2024-10963 
@@ -1257,20 +1256,19 @@
 │                       │      │                  ├ [4] : https://access.redhat.com/errata/RHSA-2024:10528 
 │                       │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2024:10852 
 │                       │      │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2024-10963 
-│                       │      │                  ├ [7] : https://bugzilla.redhat.com/2319212 
-│                       │      │                  ├ [8] : https://bugzilla.redhat.com/2324291 
-│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
-│                       │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
-│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/2324291 
+│                       │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
+│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10041 
-│                       │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10963 
-│                       │      │                  ├ [13]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
-│                       │      │                  ├ [14]: https://errata.rockylinux.org/RLSA-2024:10379 
-│                       │      │                  ├ [15]: https://linux.oracle.com/cve/CVE-2024-10963.html 
-│                       │      │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
-│                       │      │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2024-10963 
-│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2024-10244.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2024:10379 
+│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2024-10963.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
+│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2024-10963 
+│                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
 │                       ├ [27] ╭ VulnerabilityID : CVE-2024-10041 
@@ -1300,7 +1298,7 @@
 │                       │      │                   in /etc/shadow while performing authentications. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-922 
-│                       │      ├ VendorSeverity   ╭ alma       : 3 
+│                       │      ├ VendorSeverity   ╭ alma       : 2 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ redhat     : 2 
@@ -1314,19 +1312,18 @@
 │                       │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:9941 
 │                       │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-10041 
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/2319212 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/2324291 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
-│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
+│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10041 
-│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10963 
-│                       │      │                  ├ [10]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2024:10379 
-│                       │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-10041.html 
-│                       │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
-│                       │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
-│                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
+│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-11250.html 
+│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:10379 
+│                       │      │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-10041.html 
+│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
+│                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
+│                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │      ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
 │                       ├ [28] ╭ VulnerabilityID : CVE-2024-10963 
@@ -1373,20 +1370,19 @@
 │                       │      │                  ├ [4] : https://access.redhat.com/errata/RHSA-2024:10528 
 │                       │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2024:10852 
 │                       │      │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2024-10963 
-│                       │      │                  ├ [7] : https://bugzilla.redhat.com/2319212 
-│                       │      │                  ├ [8] : https://bugzilla.redhat.com/2324291 
-│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
-│                       │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
-│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/2324291 
+│                       │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
+│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10041 
-│                       │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10963 
-│                       │      │                  ├ [13]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
-│                       │      │                  ├ [14]: https://errata.rockylinux.org/RLSA-2024:10379 
-│                       │      │                  ├ [15]: https://linux.oracle.com/cve/CVE-2024-10963.html 
-│                       │      │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
-│                       │      │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2024-10963 
-│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2024-10244.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2024:10379 
+│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2024-10963.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
+│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2024-10963 
+│                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
 │                       ├ [29] ╭ VulnerabilityID : CVE-2024-10041 
@@ -1416,7 +1412,7 @@
 │                       │      │                   in /etc/shadow while performing authentications. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-922 
-│                       │      ├ VendorSeverity   ╭ alma       : 3 
+│                       │      ├ VendorSeverity   ╭ alma       : 2 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ redhat     : 2 
@@ -1430,19 +1426,18 @@
 │                       │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:9941 
 │                       │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-10041 
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/2319212 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/2324291 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
-│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
+│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10041 
-│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10963 
-│                       │      │                  ├ [10]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2024:10379 
-│                       │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-10041.html 
-│                       │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
-│                       │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
-│                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
+│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-11250.html 
+│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:10379 
+│                       │      │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-10041.html 
+│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-11250.html 
+│                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-10041 
+│                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │      ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │      ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
 │                       ├ [30] ╭ VulnerabilityID : CVE-2024-10963 
@@ -1489,20 +1484,19 @@
 │                       │      │                  ├ [4] : https://access.redhat.com/errata/RHSA-2024:10528 
 │                       │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2024:10852 
 │                       │      │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2024-10963 
-│                       │      │                  ├ [7] : https://bugzilla.redhat.com/2319212 
-│                       │      │                  ├ [8] : https://bugzilla.redhat.com/2324291 
-│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
-│                       │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
-│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/2324291 
+│                       │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2319212 
+│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2324291 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10041 
-│                       │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-10963 
-│                       │      │                  ├ [13]: https://errata.almalinux.org/8/ALSA-2024-10379.html 
-│                       │      │                  ├ [14]: https://errata.rockylinux.org/RLSA-2024:10379 
-│                       │      │                  ├ [15]: https://linux.oracle.com/cve/CVE-2024-10963.html 
-│                       │      │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
-│                       │      │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2024-10963 
-│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2024-10244.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2024:10379 
+│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2024-10963.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2024-10379.html 
+│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2024-10963 
+│                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
 │                       ├ [31] ╭ VulnerabilityID : CVE-2024-41996 
@@ -2493,170 +2487,263 @@
 │                       │     │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-0495 
 │                       │     ├ PublishedDate   : 2025-03-17T20:15:13.737Z 
 │                       │     ╰ LastModifiedDate: 2025-03-17T20:15:13.737Z 
-│                       ╰ [2] ╭ VulnerabilityID : CVE-2025-22870 
-│                             ├ PkgID           : golang.org/x/net@v0.34.0 
-│                             ├ PkgName         : golang.org/x/net 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.34.0 
-│                             │                  ╰ UID : 46f27cee60ef8005 
-│                             ├ InstalledVersion: v0.34.0 
-│                             ├ FixedVersion    : 0.36.0 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2025-22870 
+│                       │     ├ PkgID           : golang.org/x/net@v0.34.0 
+│                       │     ├ PkgName         : golang.org/x/net 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.34.0 
+│                       │     │                  ╰ UID : 46f27cee60ef8005 
+│                       │     ├ InstalledVersion: v0.34.0 
+│                       │     ├ FixedVersion    : 0.36.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6dc74140f3e03a8a252b86113ef3a90d47b8e15c4a293
+│                       │     │                  │         732362ef647394f75c1 
+│                       │     │                  ╰ DiffID: sha256:7ae9254574aa69f4a216827db0a287fadb4aa4ed39735
+│                       │     │                            40114adbc30274dc57c 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP
+│                       │     │                    Proxy bypass using IPv6 Zone IDs in golang.org/x/net 
+│                       │     ├ Description     : Matching of hosts against proxy patterns can improperly treat
+│                       │     │                    an IPv6 zone ID as a hostname component. For example, when
+│                       │     │                   the NO_PROXY environment variable is set to "*.example.com",
+│                       │     │                   a request to "[::1%25.example.com]:80` will incorrectly match
+│                       │     │                    and not be proxied. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-115 
+│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     │                  ├ azure      : 1 
+│                       │     │                  ├ cbl-mariner: 2 
+│                       │     │                  ├ ghsa       : 2 
+│                       │     │                  ╰ redhat     : 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
+│                       │     │                  │        │           A:L 
+│                       │     │                  │        ╰ V3Score : 4.4 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 4.4 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
+│                       │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-22870 
+│                       │     │                  ├ [2]: https://go-review.googlesource.com/q/project:net 
+│                       │     │                  ├ [3]: https://go.dev/cl/654697 
+│                       │     │                  ├ [4]: https://go.dev/issue/71984 
+│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
+│                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3503 
+│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
+│                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
+│                       │     ╰ LastModifiedDate: 2025-03-18T17:15:45.467Z 
+│                       ╰ [3] ╭ VulnerabilityID : CVE-2025-22871 
+│                             ├ PkgID           : stdlib@v1.23.6 
+│                             ├ PkgName         : stdlib 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.6 
+│                             │                  ╰ UID : f8f7f9e81f31bb46 
+│                             ├ InstalledVersion: v1.23.6 
+│                             ├ FixedVersion    : 1.23.8, 1.24.2 
 │                             ├ Status          : fixed 
 │                             ├ Layer            ╭ Digest: sha256:6dc74140f3e03a8a252b86113ef3a90d47b8e15c4a293
 │                             │                  │         732362ef647394f75c1 
 │                             │                  ╰ DiffID: sha256:7ae9254574aa69f4a216827db0a287fadb4aa4ed39735
 │                             │                            40114adbc30274dc57c 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP
-│                             │                    Proxy bypass using IPv6 Zone IDs in golang.org/x/net 
-│                             ├ Description     : Matching of hosts against proxy patterns can improperly treat
-│                             │                    an IPv6 zone ID as a hostname component. For example, when
-│                             │                   the NO_PROXY environment variable is set to "*.example.com",
-│                             │                   a request to "[::1%25.example.com]:80` will incorrectly match
-│                             │                    and not be proxied. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-115 
-│                             ├ VendorSeverity   ╭ amazon     : 2 
-│                             │                  ├ azure      : 1 
-│                             │                  ├ cbl-mariner: 2 
-│                             │                  ├ ghsa       : 2 
-│                             │                  ╰ redhat     : 2 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
-│                             │                  │        │           A:L 
-│                             │                  │        ╰ V3Score : 4.4 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:L 
-│                             │                           ╰ V3Score : 4.4 
-│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
-│                             │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-22870 
-│                             │                  ├ [2]: https://go-review.googlesource.com/q/project:net 
-│                             │                  ├ [3]: https://go.dev/cl/654697 
-│                             │                  ├ [4]: https://go.dev/issue/71984 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
-│                             │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3503 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
-│                             ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
-│                             ╰ LastModifiedDate: 2025-03-18T17:15:45.467Z 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
+│                             ├ DataSource       ╭ ID  : govulndb 
+│                             │                  ├ Name: The Go Vulnerability Database 
+│                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                             ├ Title           : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator ... 
+│                             ├ Description     : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator in chunked data chunk-size lines. This can permit
+│                             │                   request smuggling if a net/http server is used in conjunction
+│                             │                    with a server that incorrectly accepts a bare LF as part of
+│                             │                   a chunk-ext. 
+│                             ├ Severity        : UNKNOWN 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/04/4 
+│                             │                  ├ [1]: https://go.dev/cl/652998 
+│                             │                  ├ [2]: https://go.dev/issue/71988 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
+│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
+│                             ╰ LastModifiedDate: 2025-04-08T21:15:48.173Z 
 ├ [3] ╭ Target         : usr/bin/helm 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-40635 
-│                             ├ PkgID           : github.com/containerd/containerd@v1.7.24 
-│                             ├ PkgName         : github.com/containerd/containerd 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/containerd/containerd@v1.7.24 
-│                             │                  ╰ UID : f4932271e34afc46 
-│                             ├ InstalledVersion: v1.7.24 
-│                             ├ FixedVersion    : 1.7.27, 1.6.38 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-40635 
+│                       │     ├ PkgID           : github.com/containerd/containerd@v1.7.24 
+│                       │     ├ PkgName         : github.com/containerd/containerd 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/containerd/containerd@v1.7.24 
+│                       │     │                  ╰ UID : f4932271e34afc46 
+│                       │     ├ InstalledVersion: v1.7.24 
+│                       │     ├ FixedVersion    : 1.7.27, 1.6.38 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6dc74140f3e03a8a252b86113ef3a90d47b8e15c4a293
+│                       │     │                  │         732362ef647394f75c1 
+│                       │     │                  ╰ DiffID: sha256:7ae9254574aa69f4a216827db0a287fadb4aa4ed39735
+│                       │     │                            40114adbc30274dc57c 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-40635 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : containerd: containerd has an integer overflow in User ID
+│                       │     │                   handling 
+│                       │     ├ Description     : containerd is an open-source container runtime. A bug was
+│                       │     │                   found in containerd prior to versions 1.6.38, 1.7.27, and
+│                       │     │                   2.0.4 where containers launched with a User set as a
+│                       │     │                   `UID:GID` larger than the maximum 32-bit signed integer can
+│                       │     │                   cause an overflow condition where the container ultimately
+│                       │     │                   runs as root (UID 0). This could cause unexpected behavior
+│                       │     │                   for environments that require containers to run as a non-root
+│                       │     │                    user. This bug has been fixed in containerd 1.6.38, 1.7.27,
+│                       │     │                   and 2.04. As a workaround, ensure that only trusted images
+│                       │     │                   are used and that only trusted users have permissions to
+│                       │     │                   import images. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-190 
+│                       │     ├ VendorSeverity   ╭ amazon: 2 
+│                       │     │                  ├ ghsa  : 2 
+│                       │     │                  ├ redhat: 2 
+│                       │     │                  ╰ ubuntu: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 4.6 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-40635 
+│                       │     │                  ├ [1] : https://github.com/containerd/containerd 
+│                       │     │                  ├ [2] : https://github.com/containerd/containerd/commit/05044e
+│                       │     │                  │       c0a9a75232cad458027ca83437aae3f4da 
+│                       │     │                  ├ [3] : https://github.com/containerd/containerd/commit/11504c
+│                       │     │                  │       3fc5f45634f2d93d57743a998194430b82 (v1.7.27) 
+│                       │     │                  ├ [4] : https://github.com/containerd/containerd/commit/1a43cb
+│                       │     │                  │       6a1035441f9aca8f5666a9b3ef9e70ab20 
+│                       │     │                  ├ [5] : https://github.com/containerd/containerd/commit/9639b9
+│                       │     │                  │       625554183d0c4d8d072dccb84fedd2320f (v1.6.38) 
+│                       │     │                  ├ [6] : https://github.com/containerd/containerd/commit/cf158e
+│                       │     │                  │       884cfe4812a6c371b59e4ea9bc4c46e51a 
+│                       │     │                  ├ [7] : https://github.com/containerd/containerd/security/advi
+│                       │     │                  │       sories/GHSA-265r-hfxg-fhmg 
+│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-40635 
+│                       │     │                  ├ [9] : https://ubuntu.com/security/notices/USN-7374-1 
+│                       │     │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
+│                       │     ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
+│                       │     ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
+│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-22871 
+│                             ├ PkgID           : stdlib@v1.23.7 
+│                             ├ PkgName         : stdlib 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.7 
+│                             │                  ╰ UID : cae2859c17dd6e50 
+│                             ├ InstalledVersion: v1.23.7 
+│                             ├ FixedVersion    : 1.23.8, 1.24.2 
 │                             ├ Status          : fixed 
 │                             ├ Layer            ╭ Digest: sha256:6dc74140f3e03a8a252b86113ef3a90d47b8e15c4a293
 │                             │                  │         732362ef647394f75c1 
 │                             │                  ╰ DiffID: sha256:7ae9254574aa69f4a216827db0a287fadb4aa4ed39735
 │                             │                            40114adbc30274dc57c 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-40635 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : containerd: containerd has an integer overflow in User ID
-│                             │                   handling 
-│                             ├ Description     : containerd is an open-source container runtime. A bug was
-│                             │                   found in containerd prior to versions 1.6.38, 1.7.27, and
-│                             │                   2.0.4 where containers launched with a User set as a
-│                             │                   `UID:GID` larger than the maximum 32-bit signed integer can
-│                             │                   cause an overflow condition where the container ultimately
-│                             │                   runs as root (UID 0). This could cause unexpected behavior
-│                             │                   for environments that require containers to run as a non-root
-│                             │                    user. This bug has been fixed in containerd 1.6.38, 1.7.27,
-│                             │                   and 2.04. As a workaround, ensure that only trusted images
-│                             │                   are used and that only trusted users have permissions to
-│                             │                   import images. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-190 
-│                             ├ VendorSeverity   ╭ amazon: 2 
-│                             │                  ├ ghsa  : 2 
-│                             │                  ├ redhat: 2 
-│                             │                  ╰ ubuntu: 2 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
-│                             │                  │        │           A:N 
-│                             │                  │        ╰ V3Score : 4.6 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 4.6 
-│                             ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-40635 
-│                             │                  ├ [1] : https://github.com/containerd/containerd 
-│                             │                  ├ [2] : https://github.com/containerd/containerd/commit/05044e
-│                             │                  │       c0a9a75232cad458027ca83437aae3f4da 
-│                             │                  ├ [3] : https://github.com/containerd/containerd/commit/11504c
-│                             │                  │       3fc5f45634f2d93d57743a998194430b82 (v1.7.27) 
-│                             │                  ├ [4] : https://github.com/containerd/containerd/commit/1a43cb
-│                             │                  │       6a1035441f9aca8f5666a9b3ef9e70ab20 
-│                             │                  ├ [5] : https://github.com/containerd/containerd/commit/9639b9
-│                             │                  │       625554183d0c4d8d072dccb84fedd2320f (v1.6.38) 
-│                             │                  ├ [6] : https://github.com/containerd/containerd/commit/cf158e
-│                             │                  │       884cfe4812a6c371b59e4ea9bc4c46e51a 
-│                             │                  ├ [7] : https://github.com/containerd/containerd/security/advi
-│                             │                  │       sories/GHSA-265r-hfxg-fhmg 
-│                             │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-40635 
-│                             │                  ├ [9] : https://ubuntu.com/security/notices/USN-7374-1 
-│                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
-│                             ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
-│                             ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
+│                             ├ DataSource       ╭ ID  : govulndb 
+│                             │                  ├ Name: The Go Vulnerability Database 
+│                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                             ├ Title           : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator ... 
+│                             ├ Description     : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator in chunked data chunk-size lines. This can permit
+│                             │                   request smuggling if a net/http server is used in conjunction
+│                             │                    with a server that incorrectly accepts a bare LF as part of
+│                             │                   a chunk-ext. 
+│                             ├ Severity        : UNKNOWN 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/04/4 
+│                             │                  ├ [1]: https://go.dev/cl/652998 
+│                             │                  ├ [2]: https://go.dev/issue/71988 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
+│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
+│                             ╰ LastModifiedDate: 2025-04-08T21:15:48.173Z 
 ├ [4] ╭ Target         : usr/bin/kubectl 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22870 
-│                             ├ PkgID           : golang.org/x/net@v0.30.0 
-│                             ├ PkgName         : golang.org/x/net 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.30.0 
-│                             │                  ╰ UID : 49cea3404592705a 
-│                             ├ InstalledVersion: v0.30.0 
-│                             ├ FixedVersion    : 0.36.0 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-22870 
+│                       │     ├ PkgID           : golang.org/x/net@v0.30.0 
+│                       │     ├ PkgName         : golang.org/x/net 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.30.0 
+│                       │     │                  ╰ UID : 49cea3404592705a 
+│                       │     ├ InstalledVersion: v0.30.0 
+│                       │     ├ FixedVersion    : 0.36.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6dc74140f3e03a8a252b86113ef3a90d47b8e15c4a293
+│                       │     │                  │         732362ef647394f75c1 
+│                       │     │                  ╰ DiffID: sha256:7ae9254574aa69f4a216827db0a287fadb4aa4ed39735
+│                       │     │                            40114adbc30274dc57c 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP
+│                       │     │                    Proxy bypass using IPv6 Zone IDs in golang.org/x/net 
+│                       │     ├ Description     : Matching of hosts against proxy patterns can improperly treat
+│                       │     │                    an IPv6 zone ID as a hostname component. For example, when
+│                       │     │                   the NO_PROXY environment variable is set to "*.example.com",
+│                       │     │                   a request to "[::1%25.example.com]:80` will incorrectly match
+│                       │     │                    and not be proxied. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-115 
+│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     │                  ├ azure      : 1 
+│                       │     │                  ├ cbl-mariner: 2 
+│                       │     │                  ├ ghsa       : 2 
+│                       │     │                  ╰ redhat     : 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
+│                       │     │                  │        │           A:L 
+│                       │     │                  │        ╰ V3Score : 4.4 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 4.4 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
+│                       │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-22870 
+│                       │     │                  ├ [2]: https://go-review.googlesource.com/q/project:net 
+│                       │     │                  ├ [3]: https://go.dev/cl/654697 
+│                       │     │                  ├ [4]: https://go.dev/issue/71984 
+│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
+│                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3503 
+│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
+│                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
+│                       │     ╰ LastModifiedDate: 2025-03-18T17:15:45.467Z 
+│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-22871 
+│                             ├ PkgID           : stdlib@v1.23.6 
+│                             ├ PkgName         : stdlib 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.6 
+│                             │                  ╰ UID : a200578c56ec45c2 
+│                             ├ InstalledVersion: v1.23.6 
+│                             ├ FixedVersion    : 1.23.8, 1.24.2 
 │                             ├ Status          : fixed 
 │                             ├ Layer            ╭ Digest: sha256:6dc74140f3e03a8a252b86113ef3a90d47b8e15c4a293
 │                             │                  │         732362ef647394f75c1 
 │                             │                  ╰ DiffID: sha256:7ae9254574aa69f4a216827db0a287fadb4aa4ed39735
 │                             │                            40114adbc30274dc57c 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP
-│                             │                    Proxy bypass using IPv6 Zone IDs in golang.org/x/net 
-│                             ├ Description     : Matching of hosts against proxy patterns can improperly treat
-│                             │                    an IPv6 zone ID as a hostname component. For example, when
-│                             │                   the NO_PROXY environment variable is set to "*.example.com",
-│                             │                   a request to "[::1%25.example.com]:80` will incorrectly match
-│                             │                    and not be proxied. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-115 
-│                             ├ VendorSeverity   ╭ amazon     : 2 
-│                             │                  ├ azure      : 1 
-│                             │                  ├ cbl-mariner: 2 
-│                             │                  ├ ghsa       : 2 
-│                             │                  ╰ redhat     : 2 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
-│                             │                  │        │           A:L 
-│                             │                  │        ╰ V3Score : 4.4 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:L 
-│                             │                           ╰ V3Score : 4.4 
-│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
-│                             │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-22870 
-│                             │                  ├ [2]: https://go-review.googlesource.com/q/project:net 
-│                             │                  ├ [3]: https://go.dev/cl/654697 
-│                             │                  ├ [4]: https://go.dev/issue/71984 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
-│                             │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3503 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
-│                             ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
-│                             ╰ LastModifiedDate: 2025-03-18T17:15:45.467Z 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
+│                             ├ DataSource       ╭ ID  : govulndb 
+│                             │                  ├ Name: The Go Vulnerability Database 
+│                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                             ├ Title           : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator ... 
+│                             ├ Description     : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator in chunked data chunk-size lines. This can permit
+│                             │                   request smuggling if a net/http server is used in conjunction
+│                             │                    with a server that incorrectly accepts a bare LF as part of
+│                             │                   a chunk-ext. 
+│                             ├ Severity        : UNKNOWN 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/04/4 
+│                             │                  ├ [1]: https://go.dev/cl/652998 
+│                             │                  ├ [2]: https://go.dev/issue/71988 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
+│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
+│                             ╰ LastModifiedDate: 2025-04-08T21:15:48.173Z 
 ├ [5] ╭ Target         : usr/local/bin/k3d 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -2963,46 +3050,77 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │     ╰ LastModifiedDate: 2025-03-18T17:15:45.467Z 
-│                       ╰ [4] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
-│                             ├ PkgID           : google.golang.org/grpc@v1.64.0 
-│                             ├ PkgName         : google.golang.org/grpc 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.64.0 
-│                             │                  ╰ UID : 5b0d1d1c015eeeb3 
-│                             ├ InstalledVersion: v1.64.0 
-│                             ├ FixedVersion    : 1.64.1 
+│                       ├ [4] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
+│                       │     ├ PkgID           : google.golang.org/grpc@v1.64.0 
+│                       │     ├ PkgName         : google.golang.org/grpc 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.64.0 
+│                       │     │                  ╰ UID : 5b0d1d1c015eeeb3 
+│                       │     ├ InstalledVersion: v1.64.0 
+│                       │     ├ FixedVersion    : 1.64.1 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6dc74140f3e03a8a252b86113ef3a90d47b8e15c4a293
+│                       │     │                  │         732362ef647394f75c1 
+│                       │     │                  ╰ DiffID: sha256:7ae9254574aa69f4a216827db0a287fadb4aa4ed39735
+│                       │     │                            40114adbc30274dc57c 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://github.com/advisories/GHSA-xr7q-jx4m-x55m 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : Private tokens could appear in logs if context containing
+│                       │     │                   gRPC metadata is logged in github.com/grpc/grpc-go 
+│                       │     ├ Description     : ### Impact
+│                       │     │                   This issue represents a potential PII concern.  If
+│                       │     │                   applications were printing or logging a context containing
+│                       │     │                   gRPC metadata, the affected versions will contain all the
+│                       │     │                   metadata, which may include private information.
+│                       │     │                   
+│                       │     │                   ### Patches
+│                       │     │                   The issue first appeared in 1.64.0 and is patched in 1.64.1
+│                       │     │                   and 1.65.0
+│                       │     │                   ### Workarounds
+│                       │     │                   If using an affected version and upgrading is not possible,
+│                       │     │                   ensuring you do not log or print contexts will avoid the
+│                       │     │                   problem. 
+│                       │     ├ Severity        : LOW 
+│                       │     ├ VendorSeverity   ─ ghsa: 1 
+│                       │     ╰ References       ╭ [0]: https://github.com/grpc/grpc-go 
+│                       │                        ├ [1]: https://github.com/grpc/grpc-go/commit/ab292411ddc0f3b7
+│                       │                        │      a7786754d1fe05264c3021eb 
+│                       │                        ╰ [2]: https://github.com/grpc/grpc-go/security/advisories/GHS
+│                       │                               A-xr7q-jx4m-x55m 
+│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-22871 
+│                             ├ PkgID           : stdlib@v1.22.12 
+│                             ├ PkgName         : stdlib 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.12 
+│                             │                  ╰ UID : 156a2e832bd2e3cc 
+│                             ├ InstalledVersion: v1.22.12 
+│                             ├ FixedVersion    : 1.23.8, 1.24.2 
 │                             ├ Status          : fixed 
 │                             ├ Layer            ╭ Digest: sha256:6dc74140f3e03a8a252b86113ef3a90d47b8e15c4a293
 │                             │                  │         732362ef647394f75c1 
 │                             │                  ╰ DiffID: sha256:7ae9254574aa69f4a216827db0a287fadb4aa4ed39735
 │                             │                            40114adbc30274dc57c 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://github.com/advisories/GHSA-xr7q-jx4m-x55m 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : Private tokens could appear in logs if context containing
-│                             │                   gRPC metadata is logged in github.com/grpc/grpc-go 
-│                             ├ Description     : ### Impact
-│                             │                   This issue represents a potential PII concern.  If
-│                             │                   applications were printing or logging a context containing
-│                             │                   gRPC metadata, the affected versions will contain all the
-│                             │                   metadata, which may include private information.
-│                             │                   
-│                             │                   ### Patches
-│                             │                   The issue first appeared in 1.64.0 and is patched in 1.64.1
-│                             │                   and 1.65.0
-│                             │                   ### Workarounds
-│                             │                   If using an affected version and upgrading is not possible,
-│                             │                   ensuring you do not log or print contexts will avoid the
-│                             │                   problem. 
-│                             ├ Severity        : LOW 
-│                             ├ VendorSeverity   ─ ghsa: 1 
-│                             ╰ References       ╭ [0]: https://github.com/grpc/grpc-go 
-│                                                ├ [1]: https://github.com/grpc/grpc-go/commit/ab292411ddc0f3b7
-│                                                │      a7786754d1fe05264c3021eb 
-│                                                ╰ [2]: https://github.com/grpc/grpc-go/security/advisories/GHS
-│                                                       A-xr7q-jx4m-x55m 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
+│                             ├ DataSource       ╭ ID  : govulndb 
+│                             │                  ├ Name: The Go Vulnerability Database 
+│                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                             ├ Title           : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator ... 
+│                             ├ Description     : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator in chunked data chunk-size lines. This can permit
+│                             │                   request smuggling if a net/http server is used in conjunction
+│                             │                    with a server that incorrectly accepts a bare LF as part of
+│                             │                   a chunk-ext. 
+│                             ├ Severity        : UNKNOWN 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/04/4 
+│                             │                  ├ [1]: https://go.dev/cl/652998 
+│                             │                  ├ [2]: https://go.dev/issue/71988 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
+│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
+│                             ╰ LastModifiedDate: 2025-04-08T21:15:48.173Z 
 ├ [6] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
 │     ├ Class  : secret 
 │     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
