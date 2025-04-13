@@ -3493,7 +3493,130 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [71] ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [71] ╭ VulnerabilityID : CVE-2025-32728 
+│                       │      ├ PkgID           : openssh-client@1:9.7p1-7ubuntu4.2 
+│                       │      ├ PkgName         : openssh-client 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.7p1-7ubuntu4.2?arch=a
+│                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
+│                       │      │                  ╰ UID : 6da8270b8675190a 
+│                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32728 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : openssh: OpenSSH SSHD Agent Forwarding and X11 Forwarding 
+│                       │      ├ Description     : In sshd in OpenSSH before 10.0, the DisableForwarding
+│                       │      │                   directive does not adhere to the documentation stating that
+│                       │      │                   it disables X11 and agent forwarding. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-440 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:L
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 4.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-32728 
+│                       │      │                  ├ [1]: https://ftp.openbsd.org/pub/OpenBSD/patches/7.6/common
+│                       │      │                  │      /013_ssh.patch.sig 
+│                       │      │                  ├ [2]: https://github.com/openssh/openssh-portable/commit/fc8
+│                       │      │                  │      6875e6acb36401dfc1dfb6b628a9d1460f367 
+│                       │      │                  ├ [3]: https://lists.mindrot.org/pipermail/openssh-unix-dev/2
+│                       │      │                  │      025-April/041879.html 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-32728 
+│                       │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32728 
+│                       │      │                  ├ [6]: https://www.openssh.com/txt/release-10.0 
+│                       │      │                  ╰ [7]: https://www.openssh.com/txt/release-7.4 
+│                       │      ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
+│                       │      ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
+│                       ├ [72] ╭ VulnerabilityID : CVE-2025-32728 
+│                       │      ├ PkgID           : openssh-server@1:9.7p1-7ubuntu4.2 
+│                       │      ├ PkgName         : openssh-server 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.7p1-7ubuntu4.2?arch=a
+│                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
+│                       │      │                  ╰ UID : 95d55c3cbf776b9a 
+│                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32728 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : openssh: OpenSSH SSHD Agent Forwarding and X11 Forwarding 
+│                       │      ├ Description     : In sshd in OpenSSH before 10.0, the DisableForwarding
+│                       │      │                   directive does not adhere to the documentation stating that
+│                       │      │                   it disables X11 and agent forwarding. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-440 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:L
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 4.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-32728 
+│                       │      │                  ├ [1]: https://ftp.openbsd.org/pub/OpenBSD/patches/7.6/common
+│                       │      │                  │      /013_ssh.patch.sig 
+│                       │      │                  ├ [2]: https://github.com/openssh/openssh-portable/commit/fc8
+│                       │      │                  │      6875e6acb36401dfc1dfb6b628a9d1460f367 
+│                       │      │                  ├ [3]: https://lists.mindrot.org/pipermail/openssh-unix-dev/2
+│                       │      │                  │      025-April/041879.html 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-32728 
+│                       │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32728 
+│                       │      │                  ├ [6]: https://www.openssh.com/txt/release-10.0 
+│                       │      │                  ╰ [7]: https://www.openssh.com/txt/release-7.4 
+│                       │      ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
+│                       │      ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
+│                       ├ [73] ╭ VulnerabilityID : CVE-2025-32728 
+│                       │      ├ PkgID           : openssh-sftp-server@1:9.7p1-7ubuntu4.2 
+│                       │      ├ PkgName         : openssh-sftp-server 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.7p1-7ubuntu4.2?a
+│                       │      │                  │       rch=amd64&distro=ubuntu-24.10&epoch=1 
+│                       │      │                  ╰ UID : 7f637c22065d0245 
+│                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32728 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : openssh: OpenSSH SSHD Agent Forwarding and X11 Forwarding 
+│                       │      ├ Description     : In sshd in OpenSSH before 10.0, the DisableForwarding
+│                       │      │                   directive does not adhere to the documentation stating that
+│                       │      │                   it disables X11 and agent forwarding. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-440 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:L
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 4.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-32728 
+│                       │      │                  ├ [1]: https://ftp.openbsd.org/pub/OpenBSD/patches/7.6/common
+│                       │      │                  │      /013_ssh.patch.sig 
+│                       │      │                  ├ [2]: https://github.com/openssh/openssh-portable/commit/fc8
+│                       │      │                  │      6875e6acb36401dfc1dfb6b628a9d1460f367 
+│                       │      │                  ├ [3]: https://lists.mindrot.org/pipermail/openssh-unix-dev/2
+│                       │      │                  │      025-April/041879.html 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-32728 
+│                       │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32728 
+│                       │      │                  ├ [6]: https://www.openssh.com/txt/release-10.0 
+│                       │      │                  ╰ [7]: https://www.openssh.com/txt/release-7.4 
+│                       │      ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
+│                       │      ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
+│                       ├ [74] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2.1 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2.1?arch=amd64&di
@@ -3543,7 +3666,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [72] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [75] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : passwd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dist
@@ -3590,7 +3713,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [73] ╭ VulnerabilityID : CVE-2018-6952 
+│                       ├ [76] ╭ VulnerabilityID : CVE-2018-6952 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -3640,7 +3763,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                       │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                       ├ [74] ╭ VulnerabilityID : CVE-2021-45261 
+│                       ├ [77] ╭ VulnerabilityID : CVE-2021-45261 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -3680,7 +3803,7 @@
 │                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [75] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [78] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : uidmap 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dist
@@ -3727,7 +3850,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [76] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [79] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : vim 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&dis
@@ -3778,7 +3901,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │      ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │      ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [77] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [80] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : vim 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&dis
@@ -3840,7 +3963,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │      ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [78] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [81] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │      ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : vim-common 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=al
@@ -3891,7 +4014,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │      ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │      ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [79] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [82] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │      ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : vim-common 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=al
@@ -3953,171 +4076,12 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │      ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [80] ╭ VulnerabilityID : CVE-2025-1215 
-│                       │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
-│                       │      ├ PkgName         : vim-runtime 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=a
-│                       │      │                  │       ll&distro=ubuntu-24.10&epoch=2 
-│                       │      │                  ╰ UID : d01d837a64e4e5d4 
-│                       │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
-│                       │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
-│                       │      │                  │         b905ad543ad918ad504c 
-│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
-│                       │      │                            a5507fce977ad8d74ed5 
-│                       │      ├ SeveritySource  : ubuntu 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-1215 
-│                       │      ├ DataSource       ╭ ID  : ubuntu 
-│                       │      │                  ├ Name: Ubuntu CVE Tracker 
-│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : vim: vim main.c memory corruption 
-│                       │      ├ Description     : A vulnerability classified as problematic was found in vim
-│                       │      │                   up to 9.1.1096. This vulnerability affects unknown code of
-│                       │      │                   the file src/main.c. The manipulation of the argument --log
-│                       │      │                   leads to memory corruption. It is possible to launch the
-│                       │      │                   attack on the local host. Upgrading to version 9.1.1097 is
-│                       │      │                   able to address this issue. The patch is identified as
-│                       │      │                   c5654b84480822817bb7b69ebc97c174c91185e9. It is recommended
-│                       │      │                   to upgrade the affected component. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-119 
-│                       │      ├ VendorSeverity   ╭ azure      : 1 
-│                       │      │                  ├ cbl-mariner: 1 
-│                       │      │                  ├ redhat     : 1 
-│                       │      │                  ╰ ubuntu     : 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N
-│                       │      │                           │           /A:L 
-│                       │      │                           ╰ V3Score : 2.8 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-1215 
-│                       │      │                  ├ [1] : https://github.com/vim/vim/commit/c5654b84480822817bb
-│                       │      │                  │       7b69ebc97c174c91185e9 
-│                       │      │                  ├ [2] : https://github.com/vim/vim/issues/16606 
-│                       │      │                  ├ [3] : https://github.com/vim/vim/releases/tag/v9.1.1097 
-│                       │      │                  ├ [4] : https://nvd.nist.gov/vuln/detail/CVE-2025-1215 
-│                       │      │                  ├ [5] : https://security.netapp.com/advisory/ntap-20250321-00
-│                       │      │                  │       05/ 
-│                       │      │                  ├ [6] : https://ubuntu.com/security/notices/USN-7419-1 
-│                       │      │                  ├ [7] : https://vuldb.com/?ctiid.295174 
-│                       │      │                  ├ [8] : https://vuldb.com/?id.295174 
-│                       │      │                  ├ [9] : https://vuldb.com/?submit.497546 
-│                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
-│                       │      ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
-│                       │      ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [81] ╭ VulnerabilityID : CVE-2025-26603 
-│                       │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
-│                       │      ├ PkgName         : vim-runtime 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=a
-│                       │      │                  │       ll&distro=ubuntu-24.10&epoch=2 
-│                       │      │                  ╰ UID : d01d837a64e4e5d4 
-│                       │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
-│                       │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
-│                       │      │                  │         b905ad543ad918ad504c 
-│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
-│                       │      │                            a5507fce977ad8d74ed5 
-│                       │      ├ SeveritySource  : ubuntu 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26603 
-│                       │      ├ DataSource       ╭ ID  : ubuntu 
-│                       │      │                  ├ Name: Ubuntu CVE Tracker 
-│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : vim: heap-use-after-free in function str_to_reg in vim/vim 
-│                       │      ├ Description     : Vim is a greatly improved version of the good old UNIX
-│                       │      │                   editor Vi. Vim allows to redirect screen messages using the
-│                       │      │                   `:redir` ex command to register, variables and files. It
-│                       │      │                   also allows to show the contents of registers using the
-│                       │      │                   `:registers` or `:display` ex command. When redirecting the
-│                       │      │                   output of `:display` to a register, Vim will free the
-│                       │      │                   register content before storing the new content in the
-│                       │      │                   register. Now when redirecting the `:display` command to a
-│                       │      │                   register that is being displayed, Vim will free the content
-│                       │      │                   while shortly afterwards trying to access it, which leads to
-│                       │      │                    a use-after-free. Vim pre 9.1.1115 checks in the
-│                       │      │                   ex_display() function, that it does not try to redirect to a
-│                       │      │                    register while displaying this register at the same time.
-│                       │      │                   However this check is not complete, and so Vim does not
-│                       │      │                   check the `+` and `*` registers (which typically donate the
-│                       │      │                   X11/clipboard registers, and when a clipboard connection is
-│                       │      │                   not possible will fall back to use register 0 instead. In
-│                       │      │                   Patch 9.1.1115 Vim will therefore skip outputting to
-│                       │      │                   register zero when trying to redirect to the clipboard
-│                       │      │                   registers `*` or `+`. Users are advised to upgrade. There
-│                       │      │                   are no known workarounds for this vulnerability. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-416 
-│                       │      ├ VendorSeverity   ╭ azure      : 2 
-│                       │      │                  ├ cbl-mariner: 2 
-│                       │      │                  ├ redhat     : 1 
-│                       │      │                  ╰ ubuntu     : 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L
-│                       │      │                           │           /A:L 
-│                       │      │                           ╰ V3Score : 4.2 
-│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-26603 
-│                       │      │                  ├ [1]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52a
-│                       │      │                  │      131bf6b8 
-│                       │      │                  ├ [2]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52a
-│                       │      │                  │      131bf6b8 (v9.1.1115) 
-│                       │      │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-63
-│                       │      │                  │      p5-mwg2-787v 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-26603 
-│                       │      │                  ├ [5]: https://security.netapp.com/advisory/ntap-20250306-0003/ 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7419-1 
-│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
-│                       │      ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
-│                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [82] ╭ VulnerabilityID : CVE-2021-31879 
-│                       │      ├ PkgID           : wget@1.24.5-1ubuntu2 
-│                       │      ├ PkgName         : wget 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distro
-│                       │      │                  │       =ubuntu-24.10 
-│                       │      │                  ╰ UID : 5c403cf6b6cce8c7 
-│                       │      ├ InstalledVersion: 1.24.5-1ubuntu2 
-│                       │      ├ Status          : affected 
-│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
-│                       │      │                  │         b905ad543ad918ad504c 
-│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
-│                       │      │                            a5507fce977ad8d74ed5 
-│                       │      ├ SeveritySource  : ubuntu 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2021-31879 
-│                       │      ├ DataSource       ╭ ID  : ubuntu 
-│                       │      │                  ├ Name: Ubuntu CVE Tracker 
-│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : wget: authorization header disclosure on redirect 
-│                       │      ├ Description     : GNU Wget through 1.21.1 does not omit the Authorization
-│                       │      │                   header upon a redirect to a different origin, a related
-│                       │      │                   issue to CVE-2018-1000007. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-601 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
-│                       │      │                  ├ cbl-mariner: 2 
-│                       │      │                  ├ nvd        : 2 
-│                       │      │                  ├ photon     : 2 
-│                       │      │                  ├ redhat     : 2 
-│                       │      │                  ╰ ubuntu     : 2 
-│                       │      ├ CVSS             ╭ nvd    ╭ V2Vector: AV:N/AC:M/Au:N/C:P/I:P/A:N 
-│                       │      │                  │        ├ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L
-│                       │      │                  │        │           /A:N 
-│                       │      │                  │        ├ V2Score : 5.8 
-│                       │      │                  │        ╰ V3Score : 6.1 
-│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N
-│                       │      │                           │           /A:N 
-│                       │      │                           ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2021-31879 
-│                       │      │                  ├ [1]: https://mail.gnu.org/archive/html/bug-wget/2021-02/msg
-│                       │      │                  │      00002.html 
-│                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2021-31879 
-│                       │      │                  ├ [3]: https://savannah.gnu.org/bugs/?56909 
-│                       │      │                  ├ [4]: https://security.netapp.com/advisory/ntap-20210618-0002/ 
-│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
-│                       │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
-│                       │      ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
 │                       ├ [83] ╭ VulnerabilityID : CVE-2025-1215 
-│                       │      ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
-│                       │      ├ PkgName         : xxd 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&dis
-│                       │      │                  │       tro=ubuntu-24.10&epoch=2 
-│                       │      │                  ╰ UID : 82694743fd1b3a38 
+│                       │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
+│                       │      ├ PkgName         : vim-runtime 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=a
+│                       │      │                  │       ll&distro=ubuntu-24.10&epoch=2 
+│                       │      │                  ╰ UID : d01d837a64e4e5d4 
 │                       │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
 │                       │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
 │                       │      ├ Status          : fixed 
@@ -4164,6 +4128,165 @@
 │                       │      ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │      ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
 │                       ├ [84] ╭ VulnerabilityID : CVE-2025-26603 
+│                       │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
+│                       │      ├ PkgName         : vim-runtime 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=a
+│                       │      │                  │       ll&distro=ubuntu-24.10&epoch=2 
+│                       │      │                  ╰ UID : d01d837a64e4e5d4 
+│                       │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
+│                       │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26603 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : vim: heap-use-after-free in function str_to_reg in vim/vim 
+│                       │      ├ Description     : Vim is a greatly improved version of the good old UNIX
+│                       │      │                   editor Vi. Vim allows to redirect screen messages using the
+│                       │      │                   `:redir` ex command to register, variables and files. It
+│                       │      │                   also allows to show the contents of registers using the
+│                       │      │                   `:registers` or `:display` ex command. When redirecting the
+│                       │      │                   output of `:display` to a register, Vim will free the
+│                       │      │                   register content before storing the new content in the
+│                       │      │                   register. Now when redirecting the `:display` command to a
+│                       │      │                   register that is being displayed, Vim will free the content
+│                       │      │                   while shortly afterwards trying to access it, which leads to
+│                       │      │                    a use-after-free. Vim pre 9.1.1115 checks in the
+│                       │      │                   ex_display() function, that it does not try to redirect to a
+│                       │      │                    register while displaying this register at the same time.
+│                       │      │                   However this check is not complete, and so Vim does not
+│                       │      │                   check the `+` and `*` registers (which typically donate the
+│                       │      │                   X11/clipboard registers, and when a clipboard connection is
+│                       │      │                   not possible will fall back to use register 0 instead. In
+│                       │      │                   Patch 9.1.1115 Vim will therefore skip outputting to
+│                       │      │                   register zero when trying to redirect to the clipboard
+│                       │      │                   registers `*` or `+`. Users are advised to upgrade. There
+│                       │      │                   are no known workarounds for this vulnerability. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-416 
+│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      │                  ├ cbl-mariner: 2 
+│                       │      │                  ├ redhat     : 1 
+│                       │      │                  ╰ ubuntu     : 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 4.2 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-26603 
+│                       │      │                  ├ [1]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52a
+│                       │      │                  │      131bf6b8 
+│                       │      │                  ├ [2]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52a
+│                       │      │                  │      131bf6b8 (v9.1.1115) 
+│                       │      │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-63
+│                       │      │                  │      p5-mwg2-787v 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-26603 
+│                       │      │                  ├ [5]: https://security.netapp.com/advisory/ntap-20250306-0003/ 
+│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7419-1 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
+│                       │      ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
+│                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
+│                       ├ [85] ╭ VulnerabilityID : CVE-2021-31879 
+│                       │      ├ PkgID           : wget@1.24.5-1ubuntu2 
+│                       │      ├ PkgName         : wget 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distro
+│                       │      │                  │       =ubuntu-24.10 
+│                       │      │                  ╰ UID : 5c403cf6b6cce8c7 
+│                       │      ├ InstalledVersion: 1.24.5-1ubuntu2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2021-31879 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : wget: authorization header disclosure on redirect 
+│                       │      ├ Description     : GNU Wget through 1.21.1 does not omit the Authorization
+│                       │      │                   header upon a redirect to a different origin, a related
+│                       │      │                   issue to CVE-2018-1000007. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-601 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      │                  ├ cbl-mariner: 2 
+│                       │      │                  ├ nvd        : 2 
+│                       │      │                  ├ photon     : 2 
+│                       │      │                  ├ redhat     : 2 
+│                       │      │                  ╰ ubuntu     : 2 
+│                       │      ├ CVSS             ╭ nvd    ╭ V2Vector: AV:N/AC:M/Au:N/C:P/I:P/A:N 
+│                       │      │                  │        ├ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ├ V2Score : 5.8 
+│                       │      │                  │        ╰ V3Score : 6.1 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 6.5 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2021-31879 
+│                       │      │                  ├ [1]: https://mail.gnu.org/archive/html/bug-wget/2021-02/msg
+│                       │      │                  │      00002.html 
+│                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2021-31879 
+│                       │      │                  ├ [3]: https://savannah.gnu.org/bugs/?56909 
+│                       │      │                  ├ [4]: https://security.netapp.com/advisory/ntap-20210618-0002/ 
+│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
+│                       │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
+│                       │      ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
+│                       ├ [86] ╭ VulnerabilityID : CVE-2025-1215 
+│                       │      ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
+│                       │      ├ PkgName         : xxd 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&dis
+│                       │      │                  │       tro=ubuntu-24.10&epoch=2 
+│                       │      │                  ╰ UID : 82694743fd1b3a38 
+│                       │      ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
+│                       │      ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-1215 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : vim: vim main.c memory corruption 
+│                       │      ├ Description     : A vulnerability classified as problematic was found in vim
+│                       │      │                   up to 9.1.1096. This vulnerability affects unknown code of
+│                       │      │                   the file src/main.c. The manipulation of the argument --log
+│                       │      │                   leads to memory corruption. It is possible to launch the
+│                       │      │                   attack on the local host. Upgrading to version 9.1.1097 is
+│                       │      │                   able to address this issue. The patch is identified as
+│                       │      │                   c5654b84480822817bb7b69ebc97c174c91185e9. It is recommended
+│                       │      │                   to upgrade the affected component. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-119 
+│                       │      ├ VendorSeverity   ╭ azure      : 1 
+│                       │      │                  ├ cbl-mariner: 1 
+│                       │      │                  ├ redhat     : 1 
+│                       │      │                  ╰ ubuntu     : 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 2.8 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-1215 
+│                       │      │                  ├ [1] : https://github.com/vim/vim/commit/c5654b84480822817bb
+│                       │      │                  │       7b69ebc97c174c91185e9 
+│                       │      │                  ├ [2] : https://github.com/vim/vim/issues/16606 
+│                       │      │                  ├ [3] : https://github.com/vim/vim/releases/tag/v9.1.1097 
+│                       │      │                  ├ [4] : https://nvd.nist.gov/vuln/detail/CVE-2025-1215 
+│                       │      │                  ├ [5] : https://security.netapp.com/advisory/ntap-20250321-00
+│                       │      │                  │       05/ 
+│                       │      │                  ├ [6] : https://ubuntu.com/security/notices/USN-7419-1 
+│                       │      │                  ├ [7] : https://vuldb.com/?ctiid.295174 
+│                       │      │                  ├ [8] : https://vuldb.com/?id.295174 
+│                       │      │                  ├ [9] : https://vuldb.com/?submit.497546 
+│                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
+│                       │      ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
+│                       │      ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
+│                       ├ [87] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │      ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : xxd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&dis
@@ -4225,7 +4348,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │      ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ╰ [85] ╭ VulnerabilityID : CVE-2025-31115 
+│                       ╰ [88] ╭ VulnerabilityID : CVE-2025-31115 
 │                              ├ PkgID           : xz-utils@5.6.2-2 
 │                              ├ PkgName         : xz-utils 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xz-utils@5.6.2-2?arch=amd64&distro=ubu
