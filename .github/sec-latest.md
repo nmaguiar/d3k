@@ -220,8 +220,9 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-116 
 │                       │      │                  ╰ [1]: CWE-150 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ VendorSeverity   ╭ bitnami: 3 
+│                       │      │                  ├ redhat : 2 
+│                       │      │                  ╰ ubuntu : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 7.5 
@@ -274,8 +275,9 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-116 
 │                       │      │                  ╰ [1]: CWE-150 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ VendorSeverity   ╭ bitnami: 3 
+│                       │      │                  ├ redhat : 2 
+│                       │      │                  ╰ ubuntu : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 7.5 
@@ -1895,6 +1897,7 @@
 │                       │      ├ VendorSeverity   ╭ alma       : 2 
 │                       │      │                  ├ cbl-mariner: 3 
 │                       │      │                  ├ oracle-oval: 2 
+│                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 2 
 │                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -3193,7 +3196,100 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [65] ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [65] ╭ VulnerabilityID : CVE-2024-56406 
+│                       │      ├ PkgID           : libperl5.38t64@5.38.2-5 
+│                       │      ├ PkgName         : libperl5.38t64 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libperl5.38t64@5.38.2-5?arch=amd64&dis
+│                       │      │                  │       tro=ubuntu-24.10 
+│                       │      │                  ╰ UID : 42abbd6659f452b2 
+│                       │      ├ InstalledVersion: 5.38.2-5 
+│                       │      ├ FixedVersion    : 5.38.2-5ubuntu0.1 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-56406 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : A heap buffer overflow vulnerability was discovered in Perl.
+│                       │      │                      Release ... 
+│                       │      ├ Description     : A heap buffer overflow vulnerability was discovered in Perl.
+│                       │      │                    
+│                       │      │                   
+│                       │      │                   Release branches 5.34, 5.36, 5.38 and 5.40 are affected,
+│                       │      │                   including development versions from 5.33.1 through 5.41.10.
+│                       │      │                   When there are non-ASCII bytes in the left-hand-side of the
+│                       │      │                   `tr` operator, `S_do_trans_invmap` can overflow the
+│                       │      │                   destination pointer `d`.
+│                       │      │                      $ perl -e '$_ = "\x{FF}" x 1000000; tr/\xFF/\x{100}/;' 
+│                       │      │                      Segmentation fault (core dumped)
+│                       │      │                   It is believed that this vulnerability can enable Denial of
+│                       │      │                   Service and possibly Code Execution attacks on platforms
+│                       │      │                   that lack sufficient defenses. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ╭ [0]: CWE-122 
+│                       │      │                  ╰ [1]: CWE-787 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/13/3 
+│                       │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/13/4 
+│                       │      │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/04/13/5 
+│                       │      │                  ├ [3]: https://github.com/Perl/perl5/commit/87f42aa0e0096e9a3
+│                       │      │                  │      46c9672aa3a0bd3bef8c1dd.patch 
+│                       │      │                  ├ [4]: https://metacpan.org/release/SHAY/perl-5.38.4/changes 
+│                       │      │                  ├ [5]: https://metacpan.org/release/SHAY/perl-5.40.2/changes 
+│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7434-1 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
+│                       │      ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
+│                       │      ╰ LastModifiedDate: 2025-04-13T22:15:12.767Z 
+│                       ├ [66] ╭ VulnerabilityID : CVE-2025-29087 
+│                       │      ├ PkgID           : libsqlite3-0@3.46.1-1 
+│                       │      ├ PkgName         : libsqlite3-0 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&distr
+│                       │      │                  │       o=ubuntu-24.10 
+│                       │      │                  ╰ UID : d47783a0d6415972 
+│                       │      ├ InstalledVersion: 3.46.1-1 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-29087 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : sqlite: Integer Overflow in SQLite concat Function 
+│                       │      ├ Description     : In SQLite 3.44.0 through 3.49.0 before 3.49.1, the
+│                       │      │                   concat_ws() SQL function can cause memory to be written
+│                       │      │                   beyond the end of a malloc-allocated buffer. If the
+│                       │      │                   separator argument is attacker-controlled and has a large
+│                       │      │                   string (e.g., 2MB or more), an integer overflow occurs in
+│                       │      │                   calculating the size of the result buffer, and thus malloc
+│                       │      │                   may not allocate enough memory. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-190 
+│                       │      ├ VendorSeverity   ╭ bitnami: 4 
+│                       │      │                  ├ redhat : 2 
+│                       │      │                  ╰ ubuntu : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                       │      │                  │         │           H/A:H 
+│                       │      │                  │         ╰ V3Score : 9.8 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:H 
+│                       │      │                            ╰ V3Score : 5.5 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-29087 
+│                       │      │                  ├ [1]: https://gist.github.com/ylwango613/a44a29f1ef074fa783e
+│                       │      │                  │      29f04a0afd62a 
+│                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-29087 
+│                       │      │                  ├ [3]: https://sqlite.org/releaselog/3_49_1.html 
+│                       │      │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2025-29087 
+│                       │      │                  ╰ [5]: https://www.sqlite.org/cves.html 
+│                       │      ├ PublishedDate   : 2025-04-07T20:15:20.253Z 
+│                       │      ╰ LastModifiedDate: 2025-04-14T14:15:23.813Z 
+│                       ├ [67] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : libssl3t64@3.3.1-2ubuntu2.1 
 │                       │      ├ PkgName         : libssl3t64 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2.1?arch=amd64
@@ -3243,7 +3339,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [66] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [68] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : libsubid4@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : libsubid4 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsubid4@4.15.3-3ubuntu2?arch=amd64&d
@@ -3290,7 +3386,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [67] ╭ VulnerabilityID : CVE-2024-56171 
+│                       ├ [69] ╭ VulnerabilityID : CVE-2024-56171 
 │                       │      ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │      ├ PkgName         : libxml2 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch=
@@ -3345,7 +3441,7 @@
 │                       │      │                          8/2 
 │                       │      ├ PublishedDate   : 2025-02-18T22:15:12.797Z 
 │                       │      ╰ LastModifiedDate: 2025-03-28T15:15:46.003Z 
-│                       ├ [68] ╭ VulnerabilityID : CVE-2025-24928 
+│                       ├ [70] ╭ VulnerabilityID : CVE-2025-24928 
 │                       │      ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │      ├ PkgName         : libxml2 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch=
@@ -3401,7 +3497,7 @@
 │                       │      │                          8/2 
 │                       │      ├ PublishedDate   : 2025-02-18T23:15:10.25Z 
 │                       │      ╰ LastModifiedDate: 2025-03-21T18:15:34.86Z 
-│                       ├ [69] ╭ VulnerabilityID : CVE-2025-27113 
+│                       ├ [71] ╭ VulnerabilityID : CVE-2025-27113 
 │                       │      ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │      ├ PkgName         : libxml2 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch=
@@ -3446,7 +3542,7 @@
 │                       │      │                  ╰ [6]: https://www.openwall.com/lists/oss-security/2025/02/18/2 
 │                       │      ├ PublishedDate   : 2025-02-18T23:15:10.96Z 
 │                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.823Z 
-│                       ├ [70] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [72] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : login@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : login 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.15.3-3ubuntu2?arch=amd64&distr
@@ -3493,7 +3589,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [71] ╭ VulnerabilityID : CVE-2025-32728 
+│                       ├ [73] ╭ VulnerabilityID : CVE-2025-32728 
 │                       │      ├ PkgID           : openssh-client@1:9.7p1-7ubuntu4.2 
 │                       │      ├ PkgName         : openssh-client 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.7p1-7ubuntu4.2?arch=a
@@ -3534,7 +3630,7 @@
 │                       │      │                  ╰ [7]: https://www.openssh.com/txt/release-7.4 
 │                       │      ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │      ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
-│                       ├ [72] ╭ VulnerabilityID : CVE-2025-32728 
+│                       ├ [74] ╭ VulnerabilityID : CVE-2025-32728 
 │                       │      ├ PkgID           : openssh-server@1:9.7p1-7ubuntu4.2 
 │                       │      ├ PkgName         : openssh-server 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.7p1-7ubuntu4.2?arch=a
@@ -3575,7 +3671,7 @@
 │                       │      │                  ╰ [7]: https://www.openssh.com/txt/release-7.4 
 │                       │      ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │      ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
-│                       ├ [73] ╭ VulnerabilityID : CVE-2025-32728 
+│                       ├ [75] ╭ VulnerabilityID : CVE-2025-32728 
 │                       │      ├ PkgID           : openssh-sftp-server@1:9.7p1-7ubuntu4.2 
 │                       │      ├ PkgName         : openssh-sftp-server 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.7p1-7ubuntu4.2?a
@@ -3616,7 +3712,7 @@
 │                       │      │                  ╰ [7]: https://www.openssh.com/txt/release-7.4 
 │                       │      ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │      ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
-│                       ├ [74] ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [76] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : openssl@3.3.1-2ubuntu2.1 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2.1?arch=amd64&di
@@ -3666,7 +3762,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │      ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │      ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [75] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [77] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : passwd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dist
@@ -3713,7 +3809,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [76] ╭ VulnerabilityID : CVE-2018-6952 
+│                       ├ [78] ╭ VulnerabilityID : CVE-2018-6952 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -3763,7 +3859,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                       │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                       ├ [77] ╭ VulnerabilityID : CVE-2021-45261 
+│                       ├ [79] ╭ VulnerabilityID : CVE-2021-45261 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -3803,7 +3899,151 @@
 │                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [78] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [80] ╭ VulnerabilityID : CVE-2024-56406 
+│                       │      ├ PkgID           : perl@5.38.2-5 
+│                       │      ├ PkgName         : perl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl@5.38.2-5?arch=amd64&distro=ubuntu
+│                       │      │                  │       -24.10 
+│                       │      │                  ╰ UID : c78025b15dca4aad 
+│                       │      ├ InstalledVersion: 5.38.2-5 
+│                       │      ├ FixedVersion    : 5.38.2-5ubuntu0.1 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-56406 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : A heap buffer overflow vulnerability was discovered in Perl.
+│                       │      │                      Release ... 
+│                       │      ├ Description     : A heap buffer overflow vulnerability was discovered in Perl.
+│                       │      │                    
+│                       │      │                   
+│                       │      │                   Release branches 5.34, 5.36, 5.38 and 5.40 are affected,
+│                       │      │                   including development versions from 5.33.1 through 5.41.10.
+│                       │      │                   When there are non-ASCII bytes in the left-hand-side of the
+│                       │      │                   `tr` operator, `S_do_trans_invmap` can overflow the
+│                       │      │                   destination pointer `d`.
+│                       │      │                      $ perl -e '$_ = "\x{FF}" x 1000000; tr/\xFF/\x{100}/;' 
+│                       │      │                      Segmentation fault (core dumped)
+│                       │      │                   It is believed that this vulnerability can enable Denial of
+│                       │      │                   Service and possibly Code Execution attacks on platforms
+│                       │      │                   that lack sufficient defenses. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ╭ [0]: CWE-122 
+│                       │      │                  ╰ [1]: CWE-787 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/13/3 
+│                       │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/13/4 
+│                       │      │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/04/13/5 
+│                       │      │                  ├ [3]: https://github.com/Perl/perl5/commit/87f42aa0e0096e9a3
+│                       │      │                  │      46c9672aa3a0bd3bef8c1dd.patch 
+│                       │      │                  ├ [4]: https://metacpan.org/release/SHAY/perl-5.38.4/changes 
+│                       │      │                  ├ [5]: https://metacpan.org/release/SHAY/perl-5.40.2/changes 
+│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7434-1 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
+│                       │      ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
+│                       │      ╰ LastModifiedDate: 2025-04-13T22:15:12.767Z 
+│                       ├ [81] ╭ VulnerabilityID : CVE-2024-56406 
+│                       │      ├ PkgID           : perl-base@5.38.2-5 
+│                       │      ├ PkgName         : perl-base 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.38.2-5?arch=amd64&distro=u
+│                       │      │                  │       buntu-24.10 
+│                       │      │                  ╰ UID : 77ab4151461517eb 
+│                       │      ├ InstalledVersion: 5.38.2-5 
+│                       │      ├ FixedVersion    : 5.38.2-5ubuntu0.1 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-56406 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : A heap buffer overflow vulnerability was discovered in Perl.
+│                       │      │                      Release ... 
+│                       │      ├ Description     : A heap buffer overflow vulnerability was discovered in Perl.
+│                       │      │                    
+│                       │      │                   
+│                       │      │                   Release branches 5.34, 5.36, 5.38 and 5.40 are affected,
+│                       │      │                   including development versions from 5.33.1 through 5.41.10.
+│                       │      │                   When there are non-ASCII bytes in the left-hand-side of the
+│                       │      │                   `tr` operator, `S_do_trans_invmap` can overflow the
+│                       │      │                   destination pointer `d`.
+│                       │      │                      $ perl -e '$_ = "\x{FF}" x 1000000; tr/\xFF/\x{100}/;' 
+│                       │      │                      Segmentation fault (core dumped)
+│                       │      │                   It is believed that this vulnerability can enable Denial of
+│                       │      │                   Service and possibly Code Execution attacks on platforms
+│                       │      │                   that lack sufficient defenses. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ╭ [0]: CWE-122 
+│                       │      │                  ╰ [1]: CWE-787 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/13/3 
+│                       │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/13/4 
+│                       │      │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/04/13/5 
+│                       │      │                  ├ [3]: https://github.com/Perl/perl5/commit/87f42aa0e0096e9a3
+│                       │      │                  │      46c9672aa3a0bd3bef8c1dd.patch 
+│                       │      │                  ├ [4]: https://metacpan.org/release/SHAY/perl-5.38.4/changes 
+│                       │      │                  ├ [5]: https://metacpan.org/release/SHAY/perl-5.40.2/changes 
+│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7434-1 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
+│                       │      ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
+│                       │      ╰ LastModifiedDate: 2025-04-13T22:15:12.767Z 
+│                       ├ [82] ╭ VulnerabilityID : CVE-2024-56406 
+│                       │      ├ PkgID           : perl-modules-5.38@5.38.2-5 
+│                       │      ├ PkgName         : perl-modules-5.38 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-modules-5.38@5.38.2-5?arch=all&di
+│                       │      │                  │       stro=ubuntu-24.10 
+│                       │      │                  ╰ UID : ff527c42bac4db7e 
+│                       │      ├ InstalledVersion: 5.38.2-5 
+│                       │      ├ FixedVersion    : 5.38.2-5ubuntu0.1 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-56406 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : A heap buffer overflow vulnerability was discovered in Perl.
+│                       │      │                      Release ... 
+│                       │      ├ Description     : A heap buffer overflow vulnerability was discovered in Perl.
+│                       │      │                    
+│                       │      │                   
+│                       │      │                   Release branches 5.34, 5.36, 5.38 and 5.40 are affected,
+│                       │      │                   including development versions from 5.33.1 through 5.41.10.
+│                       │      │                   When there are non-ASCII bytes in the left-hand-side of the
+│                       │      │                   `tr` operator, `S_do_trans_invmap` can overflow the
+│                       │      │                   destination pointer `d`.
+│                       │      │                      $ perl -e '$_ = "\x{FF}" x 1000000; tr/\xFF/\x{100}/;' 
+│                       │      │                      Segmentation fault (core dumped)
+│                       │      │                   It is believed that this vulnerability can enable Denial of
+│                       │      │                   Service and possibly Code Execution attacks on platforms
+│                       │      │                   that lack sufficient defenses. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ╭ [0]: CWE-122 
+│                       │      │                  ╰ [1]: CWE-787 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/13/3 
+│                       │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/13/4 
+│                       │      │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/04/13/5 
+│                       │      │                  ├ [3]: https://github.com/Perl/perl5/commit/87f42aa0e0096e9a3
+│                       │      │                  │      46c9672aa3a0bd3bef8c1dd.patch 
+│                       │      │                  ├ [4]: https://metacpan.org/release/SHAY/perl-5.38.4/changes 
+│                       │      │                  ├ [5]: https://metacpan.org/release/SHAY/perl-5.40.2/changes 
+│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7434-1 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
+│                       │      ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
+│                       │      ╰ LastModifiedDate: 2025-04-13T22:15:12.767Z 
+│                       ├ [83] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : uidmap 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dist
@@ -3850,7 +4090,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [79] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [84] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : vim 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&dis
@@ -3879,7 +4119,8 @@
 │                       │      │                   to upgrade the affected component. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-119 
-│                       │      ├ VendorSeverity   ╭ azure      : 1 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      │                  ├ azure      : 1 
 │                       │      │                  ├ cbl-mariner: 1 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -3901,7 +4142,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │      ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │      ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [80] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [85] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │      ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : vim 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&dis
@@ -3943,7 +4184,8 @@
 │                       │      │                   are no known workarounds for this vulnerability. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-416 
-│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -3963,7 +4205,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │      ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [81] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [86] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │      ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : vim-common 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=al
@@ -3992,7 +4234,8 @@
 │                       │      │                   to upgrade the affected component. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-119 
-│                       │      ├ VendorSeverity   ╭ azure      : 1 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      │                  ├ azure      : 1 
 │                       │      │                  ├ cbl-mariner: 1 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -4014,7 +4257,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │      ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │      ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [82] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [87] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │      ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : vim-common 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=al
@@ -4056,7 +4299,8 @@
 │                       │      │                   are no known workarounds for this vulnerability. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-416 
-│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -4076,7 +4320,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │      ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [83] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [88] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : vim-runtime 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=a
@@ -4105,7 +4349,8 @@
 │                       │      │                   to upgrade the affected component. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-119 
-│                       │      ├ VendorSeverity   ╭ azure      : 1 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      │                  ├ azure      : 1 
 │                       │      │                  ├ cbl-mariner: 1 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -4127,7 +4372,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │      ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │      ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [84] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [89] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │      ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : vim-runtime 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=a
@@ -4169,7 +4414,8 @@
 │                       │      │                   are no known workarounds for this vulnerability. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-416 
-│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -4189,7 +4435,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │      ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [85] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ├ [90] ╭ VulnerabilityID : CVE-2021-31879 
 │                       │      ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                       │      ├ PkgName         : wget 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distro
@@ -4235,7 +4481,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
 │                       │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
-│                       ├ [86] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [91] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │      ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : xxd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&dis
@@ -4264,7 +4510,8 @@
 │                       │      │                   to upgrade the affected component. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-119 
-│                       │      ├ VendorSeverity   ╭ azure      : 1 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      │                  ├ azure      : 1 
 │                       │      │                  ├ cbl-mariner: 1 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -4286,7 +4533,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │      ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │      ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [87] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [92] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │      ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
 │                       │      ├ PkgName         : xxd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&dis
@@ -4328,7 +4575,8 @@
 │                       │      │                   are no known workarounds for this vulnerability. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-416 
-│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 2 
@@ -4348,7 +4596,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │      ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │      ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ╰ [88] ╭ VulnerabilityID : CVE-2025-31115 
+│                       ╰ [93] ╭ VulnerabilityID : CVE-2025-31115 
 │                              ├ PkgID           : xz-utils@5.6.2-2 
 │                              ├ PkgName         : xz-utils 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xz-utils@5.6.2-2?arch=amd64&distro=ubu
@@ -4516,7 +4764,62 @@
 │                       │     │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-0495 
 │                       │     ├ PublishedDate   : 2025-03-17T20:15:13.737Z 
 │                       │     ╰ LastModifiedDate: 2025-03-17T20:15:13.737Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-22870 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2025-22869 
+│                       │     ├ PkgID           : golang.org/x/crypto@v0.31.0 
+│                       │     ├ PkgName         : golang.org/x/crypto 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/crypto@v0.31.0 
+│                       │     │                  ╰ UID : 8aec4fbd6e3ccf1f 
+│                       │     ├ InstalledVersion: v0.31.0 
+│                       │     ├ FixedVersion    : 0.35.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
+│                       │     │                  │         905ad543ad918ad504c 
+│                       │     │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
+│                       │     │                            5507fce977ad8d74ed5 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22869 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : golang.org/x/crypto/ssh: Denial of Service in the Key
+│                       │     │                   Exchange of golang.org/x/crypto/ssh 
+│                       │     ├ Description     : SSH servers which implement file transfer protocols are
+│                       │     │                   vulnerable to a denial of service attack from clients which
+│                       │     │                   complete the key exchange slowly, or not at all, causing
+│                       │     │                   pending content to be read into memory, but never transmitted
+│                       │     │                   . 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-770 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     │                  ├ azure      : 3 
+│                       │     │                  ├ cbl-mariner: 3 
+│                       │     │                  ├ ghsa       : 3 
+│                       │     │                  ├ oracle-oval: 3 
+│                       │     │                  ╰ redhat     : 3 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 7.5 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 7.5 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-22869 
+│                       │     │                  ├ [1] : https://github.com/golang/crypto 
+│                       │     │                  ├ [2] : https://github.com/golang/crypto/commit/7292932d45d55c
+│                       │     │                  │       7199324ab0027cc86e8198aa22 
+│                       │     │                  ├ [3] : https://go-review.googlesource.com/c/crypto/+/652135 
+│                       │     │                  ├ [4] : https://go.dev/cl/652135 
+│                       │     │                  ├ [5] : https://go.dev/issue/71931 
+│                       │     │                  ├ [6] : https://linux.oracle.com/cve/CVE-2025-22869.html 
+│                       │     │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-3833.html 
+│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-22869 
+│                       │     │                  ├ [9] : https://pkg.go.dev/vuln/GO-2025-3487 
+│                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250411-0010 
+│                       │     │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250411-0010/ 
+│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22869 
+│                       │     ├ PublishedDate   : 2025-02-26T08:14:24.997Z 
+│                       │     ╰ LastModifiedDate: 2025-04-11T22:15:29.837Z 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-22870 
 │                       │     ├ PkgID           : golang.org/x/net@v0.33.0 
 │                       │     ├ PkgName         : golang.org/x/net 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.33.0 
@@ -4564,7 +4867,7 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │     ╰ LastModifiedDate: 2025-03-18T17:15:45.467Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2024-45336 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2024-45336 
 │                       │     ├ PkgID           : stdlib@v1.22.10 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -4623,7 +4926,7 @@
 │                       │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-45336 
 │                       │     ├ PublishedDate   : 2025-01-28T02:15:28.807Z 
 │                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.4Z 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2024-45341 
+│                       ├ [5] ╭ VulnerabilityID : CVE-2024-45341 
 │                       │     ├ PkgID           : stdlib@v1.22.10 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -4678,7 +4981,7 @@
 │                       │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-45341 
 │                       │     ├ PublishedDate   : 2025-01-28T02:15:29.147Z 
 │                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.96Z 
-│                       ├ [5] ╭ VulnerabilityID : CVE-2025-22866 
+│                       ├ [6] ╭ VulnerabilityID : CVE-2025-22866 
 │                       │     ├ PkgID           : stdlib@v1.22.10 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -4721,7 +5024,7 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                       │     ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                       │     ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
-│                       ╰ [6] ╭ VulnerabilityID : CVE-2025-22871 
+│                       ╰ [7] ╭ VulnerabilityID : CVE-2025-22871 
 │                             ├ PkgID           : stdlib@v1.22.10 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -4745,7 +5048,8 @@
 │                             │                    with a server that incorrectly accepts a bare LF as part of
 │                             │                   a chunk-ext. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
+│                             ├ VendorSeverity   ╭ amazon: 3 
+│                             │                  ╰ redhat: 2 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/
 │                             │                           │           A:N 
 │                             │                           ╰ V3Score : 5.4 
@@ -4824,7 +5128,62 @@
 │                       │     │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
 │                       │     ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
 │                       │     ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-22870 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2025-22869 
+│                       │     ├ PkgID           : golang.org/x/crypto@v0.31.0 
+│                       │     ├ PkgName         : golang.org/x/crypto 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/crypto@v0.31.0 
+│                       │     │                  ╰ UID : dcba3f8843d534c7 
+│                       │     ├ InstalledVersion: v0.31.0 
+│                       │     ├ FixedVersion    : 0.35.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
+│                       │     │                  │         905ad543ad918ad504c 
+│                       │     │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
+│                       │     │                            5507fce977ad8d74ed5 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22869 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : golang.org/x/crypto/ssh: Denial of Service in the Key
+│                       │     │                   Exchange of golang.org/x/crypto/ssh 
+│                       │     ├ Description     : SSH servers which implement file transfer protocols are
+│                       │     │                   vulnerable to a denial of service attack from clients which
+│                       │     │                   complete the key exchange slowly, or not at all, causing
+│                       │     │                   pending content to be read into memory, but never transmitted
+│                       │     │                   . 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-770 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     │                  ├ azure      : 3 
+│                       │     │                  ├ cbl-mariner: 3 
+│                       │     │                  ├ ghsa       : 3 
+│                       │     │                  ├ oracle-oval: 3 
+│                       │     │                  ╰ redhat     : 3 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 7.5 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 7.5 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-22869 
+│                       │     │                  ├ [1] : https://github.com/golang/crypto 
+│                       │     │                  ├ [2] : https://github.com/golang/crypto/commit/7292932d45d55c
+│                       │     │                  │       7199324ab0027cc86e8198aa22 
+│                       │     │                  ├ [3] : https://go-review.googlesource.com/c/crypto/+/652135 
+│                       │     │                  ├ [4] : https://go.dev/cl/652135 
+│                       │     │                  ├ [5] : https://go.dev/issue/71931 
+│                       │     │                  ├ [6] : https://linux.oracle.com/cve/CVE-2025-22869.html 
+│                       │     │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-3833.html 
+│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-22869 
+│                       │     │                  ├ [9] : https://pkg.go.dev/vuln/GO-2025-3487 
+│                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250411-0010 
+│                       │     │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250411-0010/ 
+│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22869 
+│                       │     ├ PublishedDate   : 2025-02-26T08:14:24.997Z 
+│                       │     ╰ LastModifiedDate: 2025-04-11T22:15:29.837Z 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2025-22870 
 │                       │     ├ PkgID           : golang.org/x/net@v0.33.0 
 │                       │     ├ PkgName         : golang.org/x/net 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.33.0 
@@ -4872,7 +5231,7 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │     ╰ LastModifiedDate: 2025-03-18T17:15:45.467Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-22866 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-22866 
 │                       │     ├ PkgID           : stdlib@v1.23.5 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.5 
@@ -4915,7 +5274,7 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                       │     ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                       │     ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
-│                       ╰ [3] ╭ VulnerabilityID : CVE-2025-22871 
+│                       ╰ [4] ╭ VulnerabilityID : CVE-2025-22871 
 │                             ├ PkgID           : stdlib@v1.23.5 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.5 
@@ -4939,7 +5298,8 @@
 │                             │                    with a server that incorrectly accepts a bare LF as part of
 │                             │                   a chunk-ext. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
+│                             ├ VendorSeverity   ╭ amazon: 3 
+│                             │                  ╰ redhat: 2 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/
 │                             │                           │           A:N 
 │                             │                           ╰ V3Score : 5.4 
@@ -5028,7 +5388,8 @@
 │                             │                    with a server that incorrectly accepts a bare LF as part of
 │                             │                   a chunk-ext. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
+│                             ├ VendorSeverity   ╭ amazon: 3 
+│                             │                  ╰ redhat: 2 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/
 │                             │                           │           A:N 
 │                             │                           ╰ V3Score : 5.4 
@@ -5300,7 +5661,62 @@
 │                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-45337 
 │                       │     ├ PublishedDate   : 2024-12-12T02:02:07.97Z 
 │                       │     ╰ LastModifiedDate: 2025-02-18T21:15:22.187Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-22870 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-22869 
+│                       │     ├ PkgID           : golang.org/x/crypto@v0.24.0 
+│                       │     ├ PkgName         : golang.org/x/crypto 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/crypto@v0.24.0 
+│                       │     │                  ╰ UID : 51665884b15027a5 
+│                       │     ├ InstalledVersion: v0.24.0 
+│                       │     ├ FixedVersion    : 0.35.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
+│                       │     │                  │         905ad543ad918ad504c 
+│                       │     │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
+│                       │     │                            5507fce977ad8d74ed5 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22869 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : golang.org/x/crypto/ssh: Denial of Service in the Key
+│                       │     │                   Exchange of golang.org/x/crypto/ssh 
+│                       │     ├ Description     : SSH servers which implement file transfer protocols are
+│                       │     │                   vulnerable to a denial of service attack from clients which
+│                       │     │                   complete the key exchange slowly, or not at all, causing
+│                       │     │                   pending content to be read into memory, but never transmitted
+│                       │     │                   . 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-770 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     │                  ├ azure      : 3 
+│                       │     │                  ├ cbl-mariner: 3 
+│                       │     │                  ├ ghsa       : 3 
+│                       │     │                  ├ oracle-oval: 3 
+│                       │     │                  ╰ redhat     : 3 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 7.5 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 7.5 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-22869 
+│                       │     │                  ├ [1] : https://github.com/golang/crypto 
+│                       │     │                  ├ [2] : https://github.com/golang/crypto/commit/7292932d45d55c
+│                       │     │                  │       7199324ab0027cc86e8198aa22 
+│                       │     │                  ├ [3] : https://go-review.googlesource.com/c/crypto/+/652135 
+│                       │     │                  ├ [4] : https://go.dev/cl/652135 
+│                       │     │                  ├ [5] : https://go.dev/issue/71931 
+│                       │     │                  ├ [6] : https://linux.oracle.com/cve/CVE-2025-22869.html 
+│                       │     │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-3833.html 
+│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-22869 
+│                       │     │                  ├ [9] : https://pkg.go.dev/vuln/GO-2025-3487 
+│                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250411-0010 
+│                       │     │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250411-0010/ 
+│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22869 
+│                       │     ├ PublishedDate   : 2025-02-26T08:14:24.997Z 
+│                       │     ╰ LastModifiedDate: 2025-04-11T22:15:29.837Z 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2025-22870 
 │                       │     ├ PkgID           : golang.org/x/net@v0.26.0 
 │                       │     ├ PkgName         : golang.org/x/net 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.26.0 
@@ -5348,7 +5764,7 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │     ╰ LastModifiedDate: 2025-03-18T17:15:45.467Z 
-│                       ├ [4] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
+│                       ├ [5] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
 │                       │     ├ PkgID           : google.golang.org/grpc@v1.64.0 
 │                       │     ├ PkgName         : google.golang.org/grpc 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.64.0 
@@ -5388,7 +5804,7 @@
 │                       │                        │      a7786754d1fe05264c3021eb 
 │                       │                        ╰ [2]: https://github.com/grpc/grpc-go/security/advisories/GHS
 │                       │                               A-xr7q-jx4m-x55m 
-│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-22871 
+│                       ╰ [6] ╭ VulnerabilityID : CVE-2025-22871 
 │                             ├ PkgID           : stdlib@v1.22.12 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.12 
@@ -5412,7 +5828,8 @@
 │                             │                    with a server that incorrectly accepts a bare LF as part of
 │                             │                   a chunk-ext. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
+│                             ├ VendorSeverity   ╭ amazon: 3 
+│                             │                  ╰ redhat: 2 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/
 │                             │                           │           A:N 
 │                             │                           ╰ V3Score : 5.4 
