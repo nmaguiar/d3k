@@ -1485,7 +1485,7 @@
 │                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7434-1 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │      ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
-│                       │      ╰ LastModifiedDate: 2025-04-13T22:15:12.767Z 
+│                       │      ╰ LastModifiedDate: 2025-04-15T18:39:27.967Z 
 │                       ├ [31] ╭ VulnerabilityID : CVE-2025-29087 
 │                       │      ├ PkgID           : libsqlite3-0@3.46.1-1 
 │                       │      ├ PkgName         : libsqlite3-0 
@@ -1513,12 +1513,12 @@
 │                       │      │                   may not allocate enough memory. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-190 
-│                       │      ├ VendorSeverity   ╭ bitnami: 4 
+│                       │      ├ VendorSeverity   ╭ bitnami: 1 
 │                       │      │                  ├ redhat : 2 
 │                       │      │                  ╰ ubuntu : 2 
-│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
-│                       │      │                  │         │           H/A:H 
-│                       │      │                  │         ╰ V3Score : 9.8 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:
+│                       │      │                  │         │           N/A:L 
+│                       │      │                  │         ╰ V3Score : 3.2 
 │                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │      │                            │           N/A:H 
 │                       │      │                            ╰ V3Score : 5.5 
@@ -1530,7 +1530,7 @@
 │                       │      │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2025-29087 
 │                       │      │                  ╰ [5]: https://www.sqlite.org/cves.html 
 │                       │      ├ PublishedDate   : 2025-04-07T20:15:20.253Z 
-│                       │      ╰ LastModifiedDate: 2025-04-14T14:15:23.813Z 
+│                       │      ╰ LastModifiedDate: 2025-04-15T16:16:06.233Z 
 │                       ├ [32] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │      ├ PkgID           : libssl3t64@3.3.1-2ubuntu2.1 
 │                       │      ├ PkgName         : libssl3t64 
@@ -2032,7 +2032,7 @@
 │                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7434-1 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │      ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
-│                       │      ╰ LastModifiedDate: 2025-04-13T22:15:12.767Z 
+│                       │      ╰ LastModifiedDate: 2025-04-15T18:39:27.967Z 
 │                       ├ [43] ╭ VulnerabilityID : CVE-2024-56406 
 │                       │      ├ PkgID           : perl-base@5.38.2-5 
 │                       │      ├ PkgName         : perl-base 
@@ -2080,7 +2080,7 @@
 │                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7434-1 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │      ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
-│                       │      ╰ LastModifiedDate: 2025-04-13T22:15:12.767Z 
+│                       │      ╰ LastModifiedDate: 2025-04-15T18:39:27.967Z 
 │                       ├ [44] ╭ VulnerabilityID : CVE-2024-56406 
 │                       │      ├ PkgID           : perl-modules-5.38@5.38.2-5 
 │                       │      ├ PkgName         : perl-modules-5.38 
@@ -2128,7 +2128,7 @@
 │                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7434-1 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │      ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
-│                       │      ╰ LastModifiedDate: 2025-04-13T22:15:12.767Z 
+│                       │      ╰ LastModifiedDate: 2025-04-15T18:39:27.967Z 
 │                       ├ [45] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │      ├ PkgName         : uidmap 
@@ -2255,7 +2255,8 @@
 │                       │     │                   . 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     ├ VendorSeverity   ╭ alma       : 3 
+│                       │     │                  ├ amazon     : 3 
 │                       │     │                  ├ azure      : 3 
 │                       │     │                  ├ cbl-mariner: 3 
 │                       │     │                  ├ ghsa       : 3 
@@ -2267,20 +2268,23 @@
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-22869 
-│                       │     │                  ├ [1] : https://github.com/golang/crypto 
-│                       │     │                  ├ [2] : https://github.com/golang/crypto/commit/7292932d45d55c
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:3833 
+│                       │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-22869 
+│                       │     │                  ├ [2] : https://bugzilla.redhat.com/2348367 
+│                       │     │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-3833.html 
+│                       │     │                  ├ [4] : https://github.com/golang/crypto 
+│                       │     │                  ├ [5] : https://github.com/golang/crypto/commit/7292932d45d55c
 │                       │     │                  │       7199324ab0027cc86e8198aa22 
-│                       │     │                  ├ [3] : https://go-review.googlesource.com/c/crypto/+/652135 
-│                       │     │                  ├ [4] : https://go.dev/cl/652135 
-│                       │     │                  ├ [5] : https://go.dev/issue/71931 
-│                       │     │                  ├ [6] : https://linux.oracle.com/cve/CVE-2025-22869.html 
-│                       │     │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-3833.html 
-│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-22869 
-│                       │     │                  ├ [9] : https://pkg.go.dev/vuln/GO-2025-3487 
-│                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250411-0010 
-│                       │     │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250411-0010/ 
-│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22869 
+│                       │     │                  ├ [6] : https://go-review.googlesource.com/c/crypto/+/652135 
+│                       │     │                  ├ [7] : https://go.dev/cl/652135 
+│                       │     │                  ├ [8] : https://go.dev/issue/71931 
+│                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-22869.html 
+│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-3833.html 
+│                       │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-22869 
+│                       │     │                  ├ [12]: https://pkg.go.dev/vuln/GO-2025-3487 
+│                       │     │                  ├ [13]: https://security.netapp.com/advisory/ntap-20250411-0010 
+│                       │     │                  ├ [14]: https://security.netapp.com/advisory/ntap-20250411-0010/ 
+│                       │     │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-22869 
 │                       │     ├ PublishedDate   : 2025-02-26T08:14:24.997Z 
 │                       │     ╰ LastModifiedDate: 2025-04-11T22:15:29.837Z 
 │                       ╰ [1] ╭ VulnerabilityID : CVE-2025-22870 
@@ -2686,10 +2690,11 @@
 │                       │     │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240802-0001/ 
 │                       │     │                  ├ [16]: https://ubuntu.com/security/notices/USN-7161-1 
 │                       │     │                  ├ [17]: https://ubuntu.com/security/notices/USN-7161-2 
-│                       │     │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2024-41110 
-│                       │     │                  ├ [19]: https://www.docker.com/blog/docker-security-advisory-d
+│                       │     │                  ├ [18]: https://ubuntu.com/security/notices/USN-7161-3 
+│                       │     │                  ├ [19]: https://www.cve.org/CVERecord?id=CVE-2024-41110 
+│                       │     │                  ├ [20]: https://www.docker.com/blog/docker-security-advisory-d
 │                       │     │                  │       ocker-engine-authz-plugin 
-│                       │     │                  ╰ [20]: https://www.docker.com/blog/docker-security-advisory-d
+│                       │     │                  ╰ [21]: https://www.docker.com/blog/docker-security-advisory-d
 │                       │     │                          ocker-engine-authz-plugin/ 
 │                       │     ├ PublishedDate   : 2024-07-24T17:15:11.053Z 
 │                       │     ╰ LastModifiedDate: 2024-11-21T09:32:15.16Z 
@@ -2810,7 +2815,8 @@
 │                       │     │                   . 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     ├ VendorSeverity   ╭ alma       : 3 
+│                       │     │                  ├ amazon     : 3 
 │                       │     │                  ├ azure      : 3 
 │                       │     │                  ├ cbl-mariner: 3 
 │                       │     │                  ├ ghsa       : 3 
@@ -2822,20 +2828,23 @@
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-22869 
-│                       │     │                  ├ [1] : https://github.com/golang/crypto 
-│                       │     │                  ├ [2] : https://github.com/golang/crypto/commit/7292932d45d55c
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:3833 
+│                       │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-22869 
+│                       │     │                  ├ [2] : https://bugzilla.redhat.com/2348367 
+│                       │     │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-3833.html 
+│                       │     │                  ├ [4] : https://github.com/golang/crypto 
+│                       │     │                  ├ [5] : https://github.com/golang/crypto/commit/7292932d45d55c
 │                       │     │                  │       7199324ab0027cc86e8198aa22 
-│                       │     │                  ├ [3] : https://go-review.googlesource.com/c/crypto/+/652135 
-│                       │     │                  ├ [4] : https://go.dev/cl/652135 
-│                       │     │                  ├ [5] : https://go.dev/issue/71931 
-│                       │     │                  ├ [6] : https://linux.oracle.com/cve/CVE-2025-22869.html 
-│                       │     │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-3833.html 
-│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-22869 
-│                       │     │                  ├ [9] : https://pkg.go.dev/vuln/GO-2025-3487 
-│                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250411-0010 
-│                       │     │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250411-0010/ 
-│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22869 
+│                       │     │                  ├ [6] : https://go-review.googlesource.com/c/crypto/+/652135 
+│                       │     │                  ├ [7] : https://go.dev/cl/652135 
+│                       │     │                  ├ [8] : https://go.dev/issue/71931 
+│                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-22869.html 
+│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-3833.html 
+│                       │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-22869 
+│                       │     │                  ├ [12]: https://pkg.go.dev/vuln/GO-2025-3487 
+│                       │     │                  ├ [13]: https://security.netapp.com/advisory/ntap-20250411-0010 
+│                       │     │                  ├ [14]: https://security.netapp.com/advisory/ntap-20250411-0010/ 
+│                       │     │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-22869 
 │                       │     ├ PublishedDate   : 2025-02-26T08:14:24.997Z 
 │                       │     ╰ LastModifiedDate: 2025-04-11T22:15:29.837Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-22870 
