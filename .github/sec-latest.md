@@ -3835,7 +3835,8 @@
 │                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : 6da8270b8675190a 
 │                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.2 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.7p1-7ubuntu4.3 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
 │                       │      │                  │         b905ad543ad918ad504c 
 │                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
@@ -3864,9 +3865,10 @@
 │                       │      │                  ├ [3]: https://lists.mindrot.org/pipermail/openssh-unix-dev/2
 │                       │      │                  │      025-April/041879.html 
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-32728 
-│                       │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32728 
-│                       │      │                  ├ [6]: https://www.openssh.com/txt/release-10.0 
-│                       │      │                  ╰ [7]: https://www.openssh.com/txt/release-7.4 
+│                       │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7457-1 
+│                       │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2025-32728 
+│                       │      │                  ├ [7]: https://www.openssh.com/txt/release-10.0 
+│                       │      │                  ╰ [8]: https://www.openssh.com/txt/release-7.4 
 │                       │      ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │      ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
 │                       ├ [80] ╭ VulnerabilityID : CVE-2025-32728 
@@ -3876,7 +3878,8 @@
 │                       │      │                  │       md64&distro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : 95d55c3cbf776b9a 
 │                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.2 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.7p1-7ubuntu4.3 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
 │                       │      │                  │         b905ad543ad918ad504c 
 │                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
@@ -3905,9 +3908,10 @@
 │                       │      │                  ├ [3]: https://lists.mindrot.org/pipermail/openssh-unix-dev/2
 │                       │      │                  │      025-April/041879.html 
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-32728 
-│                       │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32728 
-│                       │      │                  ├ [6]: https://www.openssh.com/txt/release-10.0 
-│                       │      │                  ╰ [7]: https://www.openssh.com/txt/release-7.4 
+│                       │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7457-1 
+│                       │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2025-32728 
+│                       │      │                  ├ [7]: https://www.openssh.com/txt/release-10.0 
+│                       │      │                  ╰ [8]: https://www.openssh.com/txt/release-7.4 
 │                       │      ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │      ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
 │                       ├ [81] ╭ VulnerabilityID : CVE-2025-32728 
@@ -3917,7 +3921,8 @@
 │                       │      │                  │       rch=amd64&distro=ubuntu-24.10&epoch=1 
 │                       │      │                  ╰ UID : 7f637c22065d0245 
 │                       │      ├ InstalledVersion: 1:9.7p1-7ubuntu4.2 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.7p1-7ubuntu4.3 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
 │                       │      │                  │         b905ad543ad918ad504c 
 │                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
@@ -3946,9 +3951,10 @@
 │                       │      │                  ├ [3]: https://lists.mindrot.org/pipermail/openssh-unix-dev/2
 │                       │      │                  │      025-April/041879.html 
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-32728 
-│                       │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32728 
-│                       │      │                  ├ [6]: https://www.openssh.com/txt/release-10.0 
-│                       │      │                  ╰ [7]: https://www.openssh.com/txt/release-7.4 
+│                       │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7457-1 
+│                       │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2025-32728 
+│                       │      │                  ├ [7]: https://www.openssh.com/txt/release-10.0 
+│                       │      │                  ╰ [8]: https://www.openssh.com/txt/release-7.4 
 │                       │      ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │      ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
 │                       ├ [82] ╭ VulnerabilityID : CVE-2024-41996 
