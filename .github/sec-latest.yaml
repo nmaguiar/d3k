@@ -1290,6 +1290,46 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
     LastModifiedDate: '2024-11-21T09:02:26.477Z'
+  - VulnerabilityID: CVE-2025-29481
+    PkgID: libbpf1@1:1.4.5-1
+    PkgName: libbpf1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libbpf1@1.4.5-1?arch=amd64&distro=ubuntu-24.10&epoch=1
+      UID: 90b884802dd3c61e
+    InstalledVersion: 1:1.4.5-1
+    Status: affected
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-29481
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'libbpf: Heap Buffer Overflow in libbpf'
+    Description: Buffer Overflow vulnerability in libbpf 1.5.0 allows a local attacker to execute arbitrary code via the bpf_object__init_prog` function of libbpf.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-120
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L
+        V3Score: 7.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-29481
+    - https://github.com/lmarch2/poc/blob/main/libbpf/libbpf.md
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-29481
+    - https://www.cve.org/CVERecord?id=CVE-2025-29481
+    PublishedDate: '2025-04-07T20:15:20.72Z'
+    LastModifiedDate: '2025-04-15T15:42:59.65Z'
   - VulnerabilityID: CVE-2016-20013
     PkgID: libc-bin@2.40-1ubuntu3.1
     PkgName: libc-bin
@@ -4829,7 +4869,7 @@
     - https://security.netapp.com/advisory/ntap-20250411-0010/
     - https://www.cve.org/CVERecord?id=CVE-2025-22869
     PublishedDate: '2025-02-26T08:14:24.997Z'
-    LastModifiedDate: '2025-04-11T22:15:29.837Z'
+    LastModifiedDate: '2025-05-01T19:28:20.74Z'
   - VulnerabilityID: CVE-2025-22870
     PkgID: golang.org/x/net@v0.33.0
     PkgName: golang.org/x/net
@@ -5215,7 +5255,7 @@
     - https://security.netapp.com/advisory/ntap-20250411-0010/
     - https://www.cve.org/CVERecord?id=CVE-2025-22869
     PublishedDate: '2025-02-26T08:14:24.997Z'
-    LastModifiedDate: '2025-04-11T22:15:29.837Z'
+    LastModifiedDate: '2025-05-01T19:28:20.74Z'
   - VulnerabilityID: CVE-2025-22870
     PkgID: golang.org/x/net@v0.33.0
     PkgName: golang.org/x/net
@@ -5752,7 +5792,7 @@
     - https://security.netapp.com/advisory/ntap-20250411-0010/
     - https://www.cve.org/CVERecord?id=CVE-2025-22869
     PublishedDate: '2025-02-26T08:14:24.997Z'
-    LastModifiedDate: '2025-04-11T22:15:29.837Z'
+    LastModifiedDate: '2025-05-01T19:28:20.74Z'
   - VulnerabilityID: CVE-2025-22870
     PkgID: golang.org/x/net@v0.26.0
     PkgName: golang.org/x/net
