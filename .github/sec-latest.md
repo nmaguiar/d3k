@@ -1656,57 +1656,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-0167 
 │                       │       ├ PublishedDate   : 2025-02-05T10:15:22.71Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.11Z 
-│                       ├ [37]  ╭ VulnerabilityID : CVE-2025-1352 
-│                       │       ├ PkgID           : libelf1t64@0.191-2 
-│                       │       ├ PkgName         : libelf1t64 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
-│                       │       │                  │       ubuntu-24.10 
-│                       │       │                  ╰ UID : f655d9e566e48529 
-│                       │       ├ InstalledVersion: 0.191-2 
-│                       │       ├ Status          : affected 
-│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
-│                       │       │                  │         6b905ad543ad918ad504c 
-│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
-│                       │       │                            6a5507fce977ad8d74ed5 
-│                       │       ├ SeveritySource  : ubuntu 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-1352 
-│                       │       ├ DataSource       ╭ ID  : ubuntu 
-│                       │       │                  ├ Name: Ubuntu CVE Tracker 
-│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : elfutils: GNU elfutils eu-readelf libdw_alloc.c
-│                       │       │                   __libdw_thread_tail memory corruption 
-│                       │       ├ Description     : A vulnerability has been found in GNU elfutils 0.192 and
-│                       │       │                   classified as critical. This vulnerability affects the
-│                       │       │                   function __libdw_thread_tail in the library libdw_alloc.c
-│                       │       │                   of the component eu-readelf. The manipulation of the
-│                       │       │                   argument w leads to memory corruption. The attack can be
-│                       │       │                   initiated remotely. The complexity of an attack is rather
-│                       │       │                   high. The exploitation appears to be difficult. The exploit
-│                       │       │                    has been disclosed to the public and may be used. The name
-│                       │       │                    of the patch is 2636426a091bd6c6f7f02e49ab20d4cdc6bfc753.
-│                       │       │                   It is recommended to apply a patch to fix this issue. 
-│                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ─ [0]: CWE-119 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
-│                       │       │                  ├ redhat: 2 
-│                       │       │                  ╰ ubuntu: 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:
-│                       │       │                           │           L/A:L 
-│                       │       │                           ╰ V3Score : 5 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-1352 
-│                       │       │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2025-1352 
-│                       │       │                  ├ [2]: https://sourceware.org/bugzilla/attachment.cgi?id=15923 
-│                       │       │                  ├ [3]: https://sourceware.org/bugzilla/show_bug.cgi?id=32650 
-│                       │       │                  ├ [4]: https://sourceware.org/bugzilla/show_bug.cgi?id=32650
-│                       │       │                  │      #c2 
-│                       │       │                  ├ [5]: https://vuldb.com/?ctiid.295960 
-│                       │       │                  ├ [6]: https://vuldb.com/?id.295960 
-│                       │       │                  ├ [7]: https://vuldb.com/?submit.495965 
-│                       │       │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-1352 
-│                       │       │                  ╰ [9]: https://www.gnu.org/ 
-│                       │       ├ PublishedDate   : 2025-02-16T15:15:09.133Z 
-│                       │       ╰ LastModifiedDate: 2025-02-16T15:15:09.133Z 
-│                       ├ [38]  ╭ VulnerabilityID : CVE-2025-1365 
+│                       ├ [37]  ╭ VulnerabilityID : CVE-2025-1365 
 │                       │       ├ PkgID           : libelf1t64@0.191-2 
 │                       │       ├ PkgName         : libelf1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
@@ -1760,7 +1710,7 @@
 │                       │       │                  ╰ [10]: https://www.gnu.org/ 
 │                       │       ├ PublishedDate   : 2025-02-17T00:15:09.14Z 
 │                       │       ╰ LastModifiedDate: 2025-02-17T00:15:09.14Z 
-│                       ├ [39]  ╭ VulnerabilityID : CVE-2025-1371 
+│                       ├ [38]  ╭ VulnerabilityID : CVE-2025-1371 
 │                       │       ├ PkgID           : libelf1t64@0.191-2 
 │                       │       ├ PkgName         : libelf1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
@@ -1812,7 +1762,7 @@
 │                       │       │                  ╰ [10]: https://www.gnu.org/ 
 │                       │       ├ PublishedDate   : 2025-02-17T03:15:09.4Z 
 │                       │       ╰ LastModifiedDate: 2025-02-18T20:15:24.36Z 
-│                       ├ [40]  ╭ VulnerabilityID : CVE-2025-1372 
+│                       ├ [39]  ╭ VulnerabilityID : CVE-2025-1372 
 │                       │       ├ PkgID           : libelf1t64@0.191-2 
 │                       │       ├ PkgName         : libelf1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
@@ -1868,58 +1818,7 @@
 │                       │       │                  ╰ [11]: https://www.gnu.org/ 
 │                       │       ├ PublishedDate   : 2025-02-17T03:15:09.573Z 
 │                       │       ╰ LastModifiedDate: 2025-02-17T03:15:09.573Z 
-│                       ├ [41]  ╭ VulnerabilityID : CVE-2025-1376 
-│                       │       ├ PkgID           : libelf1t64@0.191-2 
-│                       │       ├ PkgName         : libelf1t64 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
-│                       │       │                  │       ubuntu-24.10 
-│                       │       │                  ╰ UID : f655d9e566e48529 
-│                       │       ├ InstalledVersion: 0.191-2 
-│                       │       ├ Status          : affected 
-│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
-│                       │       │                  │         6b905ad543ad918ad504c 
-│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
-│                       │       │                            6a5507fce977ad8d74ed5 
-│                       │       ├ SeveritySource  : ubuntu 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-1376 
-│                       │       ├ DataSource       ╭ ID  : ubuntu 
-│                       │       │                  ├ Name: Ubuntu CVE Tracker 
-│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : elfutils: GNU elfutils eu-strip elf_strptr.c elf_strptr
-│                       │       │                   denial of service 
-│                       │       ├ Description     : A vulnerability classified as problematic was found in GNU
-│                       │       │                   elfutils 0.192. This vulnerability affects the function
-│                       │       │                   elf_strptr in the library /libelf/elf_strptr.c of the
-│                       │       │                   component eu-strip. The manipulation leads to denial of
-│                       │       │                   service. It is possible to launch the attack on the local
-│                       │       │                   host. The complexity of an attack is rather high. The
-│                       │       │                   exploitation appears to be difficult. The exploit has been
-│                       │       │                   disclosed to the public and may be used. The name of the
-│                       │       │                   patch is b16f441cca0a4841050e3215a9f120a6d8aea918. It is
-│                       │       │                   recommended to apply a patch to fix this issue. 
-│                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ─ [0]: CWE-404 
-│                       │       ├ VendorSeverity   ╭ azure : 1 
-│                       │       │                  ├ photon: 2 
-│                       │       │                  ├ redhat: 1 
-│                       │       │                  ╰ ubuntu: 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:
-│                       │       │                           │           N/A:L 
-│                       │       │                           ╰ V3Score : 2.5 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-1376 
-│                       │       │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2025-1376 
-│                       │       │                  ├ [2]: https://sourceware.org/bugzilla/attachment.cgi?id=15940 
-│                       │       │                  ├ [3]: https://sourceware.org/bugzilla/show_bug.cgi?id=32672 
-│                       │       │                  ├ [4]: https://sourceware.org/bugzilla/show_bug.cgi?id=32672
-│                       │       │                  │      #c3 
-│                       │       │                  ├ [5]: https://vuldb.com/?ctiid.295984 
-│                       │       │                  ├ [6]: https://vuldb.com/?id.295984 
-│                       │       │                  ├ [7]: https://vuldb.com/?submit.497538 
-│                       │       │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-1376 
-│                       │       │                  ╰ [9]: https://www.gnu.org/ 
-│                       │       ├ PublishedDate   : 2025-02-17T05:15:09.807Z 
-│                       │       ╰ LastModifiedDate: 2025-02-17T05:15:09.807Z 
-│                       ├ [42]  ╭ VulnerabilityID : CVE-2025-1377 
+│                       ├ [40]  ╭ VulnerabilityID : CVE-2025-1377 
 │                       │       ├ PkgID           : libelf1t64@0.191-2 
 │                       │       ├ PkgName         : libelf1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
@@ -1972,6 +1871,107 @@
 │                       │       │                  ╰ [10]: https://www.gnu.org/ 
 │                       │       ├ PublishedDate   : 2025-02-17T05:15:10.09Z 
 │                       │       ╰ LastModifiedDate: 2025-02-17T05:15:10.09Z 
+│                       ├ [41]  ╭ VulnerabilityID : CVE-2025-1352 
+│                       │       ├ PkgID           : libelf1t64@0.191-2 
+│                       │       ├ PkgName         : libelf1t64 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
+│                       │       │                  │       ubuntu-24.10 
+│                       │       │                  ╰ UID : f655d9e566e48529 
+│                       │       ├ InstalledVersion: 0.191-2 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-1352 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : elfutils: GNU elfutils eu-readelf libdw_alloc.c
+│                       │       │                   __libdw_thread_tail memory corruption 
+│                       │       ├ Description     : A vulnerability has been found in GNU elfutils 0.192 and
+│                       │       │                   classified as critical. This vulnerability affects the
+│                       │       │                   function __libdw_thread_tail in the library libdw_alloc.c
+│                       │       │                   of the component eu-readelf. The manipulation of the
+│                       │       │                   argument w leads to memory corruption. The attack can be
+│                       │       │                   initiated remotely. The complexity of an attack is rather
+│                       │       │                   high. The exploitation appears to be difficult. The exploit
+│                       │       │                    has been disclosed to the public and may be used. The name
+│                       │       │                    of the patch is 2636426a091bd6c6f7f02e49ab20d4cdc6bfc753.
+│                       │       │                   It is recommended to apply a patch to fix this issue. 
+│                       │       ├ Severity        : LOW 
+│                       │       ├ CweIDs           ─ [0]: CWE-119 
+│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       │                  ├ redhat: 2 
+│                       │       │                  ╰ ubuntu: 1 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:
+│                       │       │                           │           L/A:L 
+│                       │       │                           ╰ V3Score : 5 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-1352 
+│                       │       │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2025-1352 
+│                       │       │                  ├ [2]: https://sourceware.org/bugzilla/attachment.cgi?id=15923 
+│                       │       │                  ├ [3]: https://sourceware.org/bugzilla/show_bug.cgi?id=32650 
+│                       │       │                  ├ [4]: https://sourceware.org/bugzilla/show_bug.cgi?id=32650
+│                       │       │                  │      #c2 
+│                       │       │                  ├ [5]: https://vuldb.com/?ctiid.295960 
+│                       │       │                  ├ [6]: https://vuldb.com/?id.295960 
+│                       │       │                  ├ [7]: https://vuldb.com/?submit.495965 
+│                       │       │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-1352 
+│                       │       │                  ╰ [9]: https://www.gnu.org/ 
+│                       │       ├ PublishedDate   : 2025-02-16T15:15:09.133Z 
+│                       │       ╰ LastModifiedDate: 2025-02-16T15:15:09.133Z 
+│                       ├ [42]  ╭ VulnerabilityID : CVE-2025-1376 
+│                       │       ├ PkgID           : libelf1t64@0.191-2 
+│                       │       ├ PkgName         : libelf1t64 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
+│                       │       │                  │       ubuntu-24.10 
+│                       │       │                  ╰ UID : f655d9e566e48529 
+│                       │       ├ InstalledVersion: 0.191-2 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-1376 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : elfutils: GNU elfutils eu-strip elf_strptr.c elf_strptr
+│                       │       │                   denial of service 
+│                       │       ├ Description     : A vulnerability classified as problematic was found in GNU
+│                       │       │                   elfutils 0.192. This vulnerability affects the function
+│                       │       │                   elf_strptr in the library /libelf/elf_strptr.c of the
+│                       │       │                   component eu-strip. The manipulation leads to denial of
+│                       │       │                   service. It is possible to launch the attack on the local
+│                       │       │                   host. The complexity of an attack is rather high. The
+│                       │       │                   exploitation appears to be difficult. The exploit has been
+│                       │       │                   disclosed to the public and may be used. The name of the
+│                       │       │                   patch is b16f441cca0a4841050e3215a9f120a6d8aea918. It is
+│                       │       │                   recommended to apply a patch to fix this issue. 
+│                       │       ├ Severity        : LOW 
+│                       │       ├ CweIDs           ─ [0]: CWE-404 
+│                       │       ├ VendorSeverity   ╭ azure : 1 
+│                       │       │                  ├ photon: 2 
+│                       │       │                  ├ redhat: 1 
+│                       │       │                  ╰ ubuntu: 1 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:
+│                       │       │                           │           N/A:L 
+│                       │       │                           ╰ V3Score : 2.5 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-1376 
+│                       │       │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2025-1376 
+│                       │       │                  ├ [2]: https://sourceware.org/bugzilla/attachment.cgi?id=15940 
+│                       │       │                  ├ [3]: https://sourceware.org/bugzilla/show_bug.cgi?id=32672 
+│                       │       │                  ├ [4]: https://sourceware.org/bugzilla/show_bug.cgi?id=32672
+│                       │       │                  │      #c3 
+│                       │       │                  ├ [5]: https://vuldb.com/?ctiid.295984 
+│                       │       │                  ├ [6]: https://vuldb.com/?id.295984 
+│                       │       │                  ├ [7]: https://vuldb.com/?submit.497538 
+│                       │       │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-1376 
+│                       │       │                  ╰ [9]: https://www.gnu.org/ 
+│                       │       ├ PublishedDate   : 2025-02-17T05:15:09.807Z 
+│                       │       ╰ LastModifiedDate: 2025-02-17T05:15:09.807Z 
 │                       ├ [43]  ╭ VulnerabilityID : CVE-2024-8176 
 │                       │       ├ PkgID           : libexpat1@2.6.2-2ubuntu0.1 
 │                       │       ├ PkgName         : libexpat1 
