@@ -1138,42 +1138,6 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-24528
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2025-24528
-  - VulnerabilityID: CVE-2025-3576
-    PkgID: krb5-locales@1.21.3-3ubuntu0.1
-    PkgName: krb5-locales
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/krb5-locales@1.21.3-3ubuntu0.1?arch=all&distro=ubuntu-24.10
-      UID: 364bca905abeb2e
-    InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-3576
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions'
-    Description: A vulnerability in the MIT Kerberos implementation allows GSSAPI-protected messages using RC4-HMAC-MD5 to be spoofed due to weaknesses in the MD5 checksum design. If RC4 is preferred over stronger encryption types, an attacker could exploit MD5 collisions to forge message integrity codes. This may lead to unauthorized message tampering.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-328
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-3576
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2359465
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-3576
-    - https://www.cve.org/CVERecord?id=CVE-2025-3576
-    PublishedDate: '2025-04-15T06:15:44.047Z'
-    LastModifiedDate: '2025-04-15T18:39:27.967Z'
   - VulnerabilityID: CVE-2024-26458
     PkgID: krb5-locales@1.21.3-3ubuntu0.1
     PkgName: krb5-locales
@@ -1903,8 +1867,9 @@
     - https://ubuntu.com/security/CVE-2024-8176
     - https://ubuntu.com/security/notices/USN-7424-1
     - https://www.cve.org/CVERecord?id=CVE-2024-8176
+    - https://www.kb.cert.org/vuls/id/760160
     PublishedDate: '2025-03-14T09:15:14.157Z'
-    LastModifiedDate: '2025-05-05T08:15:15.277Z'
+    LastModifiedDate: '2025-05-09T14:15:37.043Z'
   - VulnerabilityID: CVE-2024-2236
     PkgID: libgcrypt20@1.11.0-6ubuntu1
     PkgName: libgcrypt20
@@ -1997,42 +1962,6 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-24528
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2025-24528
-  - VulnerabilityID: CVE-2025-3576
-    PkgID: libgssapi-krb5-2@1.21.3-3ubuntu0.1
-    PkgName: libgssapi-krb5-2
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
-      UID: 56954afa6df2892a
-    InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-3576
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions'
-    Description: A vulnerability in the MIT Kerberos implementation allows GSSAPI-protected messages using RC4-HMAC-MD5 to be spoofed due to weaknesses in the MD5 checksum design. If RC4 is preferred over stronger encryption types, an attacker could exploit MD5 collisions to forge message integrity codes. This may lead to unauthorized message tampering.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-328
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-3576
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2359465
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-3576
-    - https://www.cve.org/CVERecord?id=CVE-2025-3576
-    PublishedDate: '2025-04-15T06:15:44.047Z'
-    LastModifiedDate: '2025-04-15T18:39:27.967Z'
   - VulnerabilityID: CVE-2024-26458
     PkgID: libgssapi-krb5-2@1.21.3-3ubuntu0.1
     PkgName: libgssapi-krb5-2
@@ -2190,42 +2119,6 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-24528
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2025-24528
-  - VulnerabilityID: CVE-2025-3576
-    PkgID: libk5crypto3@1.21.3-3ubuntu0.1
-    PkgName: libk5crypto3
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
-      UID: 2b19f24f594bda
-    InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-3576
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions'
-    Description: A vulnerability in the MIT Kerberos implementation allows GSSAPI-protected messages using RC4-HMAC-MD5 to be spoofed due to weaknesses in the MD5 checksum design. If RC4 is preferred over stronger encryption types, an attacker could exploit MD5 collisions to forge message integrity codes. This may lead to unauthorized message tampering.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-328
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-3576
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2359465
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-3576
-    - https://www.cve.org/CVERecord?id=CVE-2025-3576
-    PublishedDate: '2025-04-15T06:15:44.047Z'
-    LastModifiedDate: '2025-04-15T18:39:27.967Z'
   - VulnerabilityID: CVE-2024-26458
     PkgID: libk5crypto3@1.21.3-3ubuntu0.1
     PkgName: libk5crypto3
@@ -2383,42 +2276,6 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-24528
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2025-24528
-  - VulnerabilityID: CVE-2025-3576
-    PkgID: libkrb5-3@1.21.3-3ubuntu0.1
-    PkgName: libkrb5-3
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
-      UID: 791434e49e3cd4b9
-    InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-3576
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions'
-    Description: A vulnerability in the MIT Kerberos implementation allows GSSAPI-protected messages using RC4-HMAC-MD5 to be spoofed due to weaknesses in the MD5 checksum design. If RC4 is preferred over stronger encryption types, an attacker could exploit MD5 collisions to forge message integrity codes. This may lead to unauthorized message tampering.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-328
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-3576
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2359465
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-3576
-    - https://www.cve.org/CVERecord?id=CVE-2025-3576
-    PublishedDate: '2025-04-15T06:15:44.047Z'
-    LastModifiedDate: '2025-04-15T18:39:27.967Z'
   - VulnerabilityID: CVE-2024-26458
     PkgID: libkrb5-3@1.21.3-3ubuntu0.1
     PkgName: libkrb5-3
@@ -2576,42 +2433,6 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-24528
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2025-24528
-  - VulnerabilityID: CVE-2025-3576
-    PkgID: libkrb5support0@1.21.3-3ubuntu0.1
-    PkgName: libkrb5support0
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3ubuntu0.1?arch=amd64&distro=ubuntu-24.10
-      UID: e67724f943ba50
-    InstalledVersion: 1.21.3-3ubuntu0.1
-    Status: affected
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-3576
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions'
-    Description: A vulnerability in the MIT Kerberos implementation allows GSSAPI-protected messages using RC4-HMAC-MD5 to be spoofed due to weaknesses in the MD5 checksum design. If RC4 is preferred over stronger encryption types, an attacker could exploit MD5 collisions to forge message integrity codes. This may lead to unauthorized message tampering.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-328
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-3576
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2359465
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-3576
-    - https://www.cve.org/CVERecord?id=CVE-2025-3576
-    PublishedDate: '2025-04-15T06:15:44.047Z'
-    LastModifiedDate: '2025-04-15T18:39:27.967Z'
   - VulnerabilityID: CVE-2024-26458
     PkgID: libkrb5support0@1.21.3-3ubuntu0.1
     PkgName: libkrb5support0
@@ -4938,6 +4759,7 @@
     - https://go.dev/issue/71984
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
+    - https://security.netapp.com/advisory/ntap-20250509-0007
     - https://www.cve.org/CVERecord?id=CVE-2025-22870
     PublishedDate: '2025-03-12T19:15:38.31Z'
     LastModifiedDate: '2025-03-18T17:15:45.467Z'
@@ -5328,6 +5150,7 @@
     - https://go.dev/issue/71984
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
+    - https://security.netapp.com/advisory/ntap-20250509-0007
     - https://www.cve.org/CVERecord?id=CVE-2025-22870
     PublishedDate: '2025-03-12T19:15:38.31Z'
     LastModifiedDate: '2025-03-18T17:15:45.467Z'
@@ -5504,6 +5327,7 @@
     - https://go.dev/issue/71984
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
+    - https://security.netapp.com/advisory/ntap-20250509-0007
     - https://www.cve.org/CVERecord?id=CVE-2025-22870
     PublishedDate: '2025-03-12T19:15:38.31Z'
     LastModifiedDate: '2025-03-18T17:15:45.467Z'
@@ -5870,6 +5694,7 @@
     - https://go.dev/issue/71984
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
+    - https://security.netapp.com/advisory/ntap-20250509-0007
     - https://www.cve.org/CVERecord?id=CVE-2025-22870
     PublishedDate: '2025-03-12T19:15:38.31Z'
     LastModifiedDate: '2025-03-18T17:15:45.467Z'
