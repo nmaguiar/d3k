@@ -1122,6 +1122,7 @@
       alma: 2
       oracle-oval: 2
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -1131,7 +1132,10 @@
     - https://access.redhat.com/errata/RHSA-2025:2722
     - https://access.redhat.com/security/cve/CVE-2025-24528
     - https://bugzilla.redhat.com/2342796
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2342796
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24528
     - https://errata.almalinux.org/8/ALSA-2025-2722.html
+    - https://errata.rockylinux.org/RLSA-2025:2722
     - https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0
     - https://linux.oracle.com/cve/CVE-2025-24528.html
     - https://linux.oracle.com/errata/ELSA-2025-2722.html
@@ -1946,6 +1950,7 @@
       alma: 2
       oracle-oval: 2
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -1955,7 +1960,10 @@
     - https://access.redhat.com/errata/RHSA-2025:2722
     - https://access.redhat.com/security/cve/CVE-2025-24528
     - https://bugzilla.redhat.com/2342796
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2342796
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24528
     - https://errata.almalinux.org/8/ALSA-2025-2722.html
+    - https://errata.rockylinux.org/RLSA-2025:2722
     - https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0
     - https://linux.oracle.com/cve/CVE-2025-24528.html
     - https://linux.oracle.com/errata/ELSA-2025-2722.html
@@ -2103,6 +2111,7 @@
       alma: 2
       oracle-oval: 2
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -2112,7 +2121,10 @@
     - https://access.redhat.com/errata/RHSA-2025:2722
     - https://access.redhat.com/security/cve/CVE-2025-24528
     - https://bugzilla.redhat.com/2342796
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2342796
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24528
     - https://errata.almalinux.org/8/ALSA-2025-2722.html
+    - https://errata.rockylinux.org/RLSA-2025:2722
     - https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0
     - https://linux.oracle.com/cve/CVE-2025-24528.html
     - https://linux.oracle.com/errata/ELSA-2025-2722.html
@@ -2260,6 +2272,7 @@
       alma: 2
       oracle-oval: 2
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -2269,7 +2282,10 @@
     - https://access.redhat.com/errata/RHSA-2025:2722
     - https://access.redhat.com/security/cve/CVE-2025-24528
     - https://bugzilla.redhat.com/2342796
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2342796
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24528
     - https://errata.almalinux.org/8/ALSA-2025-2722.html
+    - https://errata.rockylinux.org/RLSA-2025:2722
     - https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0
     - https://linux.oracle.com/cve/CVE-2025-24528.html
     - https://linux.oracle.com/errata/ELSA-2025-2722.html
@@ -2417,6 +2433,7 @@
       alma: 2
       oracle-oval: 2
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -2426,7 +2443,10 @@
     - https://access.redhat.com/errata/RHSA-2025:2722
     - https://access.redhat.com/security/cve/CVE-2025-24528
     - https://bugzilla.redhat.com/2342796
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2342796
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24528
     - https://errata.almalinux.org/8/ALSA-2025-2722.html
+    - https://errata.rockylinux.org/RLSA-2025:2722
     - https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0
     - https://linux.oracle.com/cve/CVE-2025-24528.html
     - https://linux.oracle.com/errata/ELSA-2025-2722.html
@@ -3358,6 +3378,7 @@
       oracle-oval: 3
       photon: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -3368,7 +3389,12 @@
     - https://access.redhat.com/security/cve/CVE-2024-56171
     - https://bugzilla.redhat.com/2346416
     - https://bugzilla.redhat.com/2346421
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2346416
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2346421
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56171
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24928
     - https://errata.almalinux.org/9/ALSA-2025-2679.html
+    - https://errata.rockylinux.org/RLSA-2025:2686
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/828
     - https://linux.oracle.com/cve/CVE-2024-56171.html
     - https://linux.oracle.com/errata/ELSA-2025-2686.html
@@ -3410,6 +3436,7 @@
       oracle-oval: 3
       photon: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -3420,7 +3447,12 @@
     - https://access.redhat.com/security/cve/CVE-2025-24928
     - https://bugzilla.redhat.com/2346416
     - https://bugzilla.redhat.com/2346421
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2346416
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2346421
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56171
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24928
     - https://errata.almalinux.org/9/ALSA-2025-2679.html
+    - https://errata.rockylinux.org/RLSA-2025:2686
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/847
     - https://issues.oss-fuzz.com/issues/392687022
     - https://linux.oracle.com/cve/CVE-2025-24928.html
@@ -4760,9 +4792,10 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
     - https://security.netapp.com/advisory/ntap-20250509-0007
+    - https://security.netapp.com/advisory/ntap-20250509-0007/
     - https://www.cve.org/CVERecord?id=CVE-2025-22870
     PublishedDate: '2025-03-12T19:15:38.31Z'
-    LastModifiedDate: '2025-03-18T17:15:45.467Z'
+    LastModifiedDate: '2025-05-09T20:15:38.727Z'
   - VulnerabilityID: CVE-2025-22872
     PkgID: golang.org/x/net@v0.33.0
     PkgName: golang.org/x/net
@@ -5151,9 +5184,10 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
     - https://security.netapp.com/advisory/ntap-20250509-0007
+    - https://security.netapp.com/advisory/ntap-20250509-0007/
     - https://www.cve.org/CVERecord?id=CVE-2025-22870
     PublishedDate: '2025-03-12T19:15:38.31Z'
-    LastModifiedDate: '2025-03-18T17:15:45.467Z'
+    LastModifiedDate: '2025-05-09T20:15:38.727Z'
   - VulnerabilityID: CVE-2025-22872
     PkgID: golang.org/x/net@v0.33.0
     PkgName: golang.org/x/net
@@ -5328,9 +5362,10 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
     - https://security.netapp.com/advisory/ntap-20250509-0007
+    - https://security.netapp.com/advisory/ntap-20250509-0007/
     - https://www.cve.org/CVERecord?id=CVE-2025-22870
     PublishedDate: '2025-03-12T19:15:38.31Z'
-    LastModifiedDate: '2025-03-18T17:15:45.467Z'
+    LastModifiedDate: '2025-05-09T20:15:38.727Z'
   - VulnerabilityID: CVE-2025-22872
     PkgID: golang.org/x/net@v0.30.0
     PkgName: golang.org/x/net
@@ -5695,9 +5730,10 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
     - https://security.netapp.com/advisory/ntap-20250509-0007
+    - https://security.netapp.com/advisory/ntap-20250509-0007/
     - https://www.cve.org/CVERecord?id=CVE-2025-22870
     PublishedDate: '2025-03-12T19:15:38.31Z'
-    LastModifiedDate: '2025-03-18T17:15:45.467Z'
+    LastModifiedDate: '2025-05-09T20:15:38.727Z'
   - VulnerabilityID: CVE-2025-22872
     PkgID: golang.org/x/net@v0.26.0
     PkgName: golang.org/x/net
