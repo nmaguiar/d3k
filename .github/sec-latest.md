@@ -6394,11 +6394,13 @@
 │                       │     │                   problem. 
 │                       │     ├ Severity        : LOW 
 │                       │     ├ VendorSeverity   ─ ghsa: 1 
-│                       │     ╰ References       ╭ [0]: https://github.com/grpc/grpc-go 
-│                       │                        ├ [1]: https://github.com/grpc/grpc-go/commit/ab292411ddc0f3b7
-│                       │                        │      a7786754d1fe05264c3021eb 
-│                       │                        ╰ [2]: https://github.com/grpc/grpc-go/security/advisories/GHS
-│                       │                               A-xr7q-jx4m-x55m 
+│                       │     ├ References       ╭ [0]: https://github.com/grpc/grpc-go 
+│                       │     │                  ├ [1]: https://github.com/grpc/grpc-go/commit/ab292411ddc0f3b7
+│                       │     │                  │      a7786754d1fe05264c3021eb 
+│                       │     │                  ╰ [2]: https://github.com/grpc/grpc-go/security/advisories/GHS
+│                       │     │                         A-xr7q-jx4m-x55m 
+│                       │     ├ PublishedDate   : 2024-07-05T20:07:01Z 
+│                       │     ╰ LastModifiedDate: 2024-07-09T21:38:29Z 
 │                       ╰ [7] ╭ VulnerabilityID : CVE-2025-22871 
 │                             ├ PkgID           : stdlib@v1.22.12 
 │                             ├ PkgName         : stdlib 
