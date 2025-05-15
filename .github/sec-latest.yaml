@@ -1653,6 +1653,7 @@
     - CWE-119
     - CWE-120
     VendorSeverity:
+      amazon: 2
       azure: 2
       photon: 3
       redhat: 2
@@ -1745,6 +1746,7 @@
     CweIDs:
     - CWE-119
     VendorSeverity:
+      amazon: 2
       photon: 3
       redhat: 2
       ubuntu: 1
@@ -1854,6 +1856,8 @@
     - https://access.redhat.com/errata/RHSA-2025:4447
     - https://access.redhat.com/errata/RHSA-2025:4448
     - https://access.redhat.com/errata/RHSA-2025:4449
+    - https://access.redhat.com/errata/RHSA-2025:7444
+    - https://access.redhat.com/errata/RHSA-2025:7512
     - https://access.redhat.com/security/cve/CVE-2024-8176
     - https://blog.hartwork.org/posts/expat-2-7-0-released/
     - https://bugzilla.redhat.com/2310137
@@ -1873,7 +1877,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-8176
     - https://www.kb.cert.org/vuls/id/760160
     PublishedDate: '2025-03-14T09:15:14.157Z'
-    LastModifiedDate: '2025-05-09T14:15:37.043Z'
+    LastModifiedDate: '2025-05-13T23:15:21.95Z'
   - VulnerabilityID: CVE-2024-2236
     PkgID: libgcrypt20@1.11.0-6ubuntu1
     PkgName: libgcrypt20
@@ -3200,6 +3204,7 @@
     - CWE-190
     - CWE-400
     VendorSeverity:
+      amazon: 2
       bitnami: 3
       photon: 3
       redhat: 2
@@ -3537,6 +3542,7 @@
     - CWE-393
     - CWE-252
     VendorSeverity:
+      amazon: 2
       nvd: 3
       photon: 3
       redhat: 2
@@ -3582,6 +3588,7 @@
     - CWE-1284
     - CWE-125
     VendorSeverity:
+      amazon: 2
       nvd: 3
       photon: 1
       redhat: 1
