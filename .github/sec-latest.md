@@ -1744,7 +1744,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-119 
 │                       │      │                  ╰ [1]: CWE-120 
-│                       │      ├ VendorSeverity   ╭ azure : 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ azure : 2 
 │                       │      │                  ├ photon: 3 
 │                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
@@ -1849,7 +1850,8 @@
 │                       │      │                   recommended to apply a patch to fix this issue. 
 │                       │      ├ Severity        : LOW 
 │                       │      ├ CweIDs           ─ [0]: CWE-119 
-│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ photon: 3 
 │                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L
@@ -1966,30 +1968,32 @@
 │                       │      │                  ├ [6] : https://access.redhat.com/errata/RHSA-2025:4447 
 │                       │      │                  ├ [7] : https://access.redhat.com/errata/RHSA-2025:4448 
 │                       │      │                  ├ [8] : https://access.redhat.com/errata/RHSA-2025:4449 
-│                       │      │                  ├ [9] : https://access.redhat.com/security/cve/CVE-2024-8176 
-│                       │      │                  ├ [10]: https://blog.hartwork.org/posts/expat-2-7-0-released/ 
-│                       │      │                  ├ [11]: https://bugzilla.redhat.com/2310137 
-│                       │      │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2310137 
-│                       │      │                  ├ [13]: https://bugzilla.suse.com/show_bug.cgi?id=1239618 
-│                       │      │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2025-3531.html 
-│                       │      │                  ├ [15]: https://github.com/libexpat/libexpat/blob/R_2_7_0/exp
+│                       │      │                  ├ [9] : https://access.redhat.com/errata/RHSA-2025:7444 
+│                       │      │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:7512 
+│                       │      │                  ├ [11]: https://access.redhat.com/security/cve/CVE-2024-8176 
+│                       │      │                  ├ [12]: https://blog.hartwork.org/posts/expat-2-7-0-released/ 
+│                       │      │                  ├ [13]: https://bugzilla.redhat.com/2310137 
+│                       │      │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2310137 
+│                       │      │                  ├ [15]: https://bugzilla.suse.com/show_bug.cgi?id=1239618 
+│                       │      │                  ├ [16]: https://errata.almalinux.org/9/ALSA-2025-3531.html 
+│                       │      │                  ├ [17]: https://github.com/libexpat/libexpat/blob/R_2_7_0/exp
 │                       │      │                  │       at/Changes#L40-L52 
-│                       │      │                  ├ [16]: https://github.com/libexpat/libexpat/issues/893 
-│                       │      │                  ├ [17]: https://gitlab.alpinelinux.org/alpine/aports/-/commit
+│                       │      │                  ├ [18]: https://github.com/libexpat/libexpat/issues/893 
+│                       │      │                  ├ [19]: https://gitlab.alpinelinux.org/alpine/aports/-/commit
 │                       │      │                  │       /d068c3ff36fc6f4789988a09c69b434db757db53 
-│                       │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2024-8176.html 
-│                       │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2025-4048.html 
-│                       │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2024-8176 
-│                       │      │                  ├ [21]: https://security-tracker.debian.org/tracker/CVE-2024-
+│                       │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2024-8176.html 
+│                       │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2025-4048.html 
+│                       │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2024-8176 
+│                       │      │                  ├ [23]: https://security-tracker.debian.org/tracker/CVE-2024-
 │                       │      │                  │       8176 
-│                       │      │                  ├ [22]: https://security.netapp.com/advisory/ntap-20250328-00
+│                       │      │                  ├ [24]: https://security.netapp.com/advisory/ntap-20250328-00
 │                       │      │                  │       09/ 
-│                       │      │                  ├ [23]: https://ubuntu.com/security/CVE-2024-8176 
-│                       │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7424-1 
-│                       │      │                  ├ [25]: https://www.cve.org/CVERecord?id=CVE-2024-8176 
-│                       │      │                  ╰ [26]: https://www.kb.cert.org/vuls/id/760160 
+│                       │      │                  ├ [25]: https://ubuntu.com/security/CVE-2024-8176 
+│                       │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-7424-1 
+│                       │      │                  ├ [27]: https://www.cve.org/CVERecord?id=CVE-2024-8176 
+│                       │      │                  ╰ [28]: https://www.kb.cert.org/vuls/id/760160 
 │                       │      ├ PublishedDate   : 2025-03-14T09:15:14.157Z 
-│                       │      ╰ LastModifiedDate: 2025-05-09T14:15:37.043Z 
+│                       │      ╰ LastModifiedDate: 2025-05-13T23:15:21.95Z 
 │                       ├ [43] ╭ VulnerabilityID : CVE-2024-2236 
 │                       │      ├ PkgID           : libgcrypt20@1.11.0-6ubuntu1 
 │                       │      ├ PkgName         : libgcrypt20 
@@ -3415,7 +3419,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-190 
 │                       │      │                  ╰ [1]: CWE-400 
-│                       │      ├ VendorSeverity   ╭ bitnami: 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 2 
+│                       │      │                  ├ bitnami: 3 
 │                       │      │                  ├ photon : 3 
 │                       │      │                  ├ redhat : 2 
 │                       │      │                  ╰ ubuntu : 2 
@@ -3780,7 +3785,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-393 
 │                       │      │                  ╰ [1]: CWE-252 
-│                       │      ├ VendorSeverity   ╭ nvd   : 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ nvd   : 3 
 │                       │      │                  ├ photon: 3 
 │                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
@@ -3825,7 +3831,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-1284 
 │                       │      │                  ╰ [1]: CWE-125 
-│                       │      ├ VendorSeverity   ╭ nvd   : 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ nvd   : 3 
 │                       │      │                  ├ photon: 1 
 │                       │      │                  ├ redhat: 1 
 │                       │      │                  ╰ ubuntu: 2 
