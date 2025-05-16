@@ -1164,7 +1164,7 @@
     Description: Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.
     Severity: LOW
     VendorSeverity:
-      alma: 2
+      alma: 1
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -1178,16 +1178,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
-    - https://access.redhat.com/errata/RHSA-2024:9331
+    - https://access.redhat.com/errata/RHSA-2024:3268
     - https://access.redhat.com/security/cve/CVE-2024-26458
     - https://bugzilla.redhat.com/2266731
     - https://bugzilla.redhat.com/2266740
-    - https://bugzilla.redhat.com/2266742
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266731
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266740
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461
-    - https://errata.almalinux.org/9/ALSA-2024-9331.html
+    - https://errata.almalinux.org/8/ALSA-2024-3268.html
     - https://errata.rockylinux.org/RLSA-2024:3268
     - https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md
     - https://linux.oracle.com/cve/CVE-2024-26458.html
@@ -1223,7 +1222,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      alma: 2
+      alma: 1
       amazon: 2
       azure: 3
       cbl-mariner: 3
@@ -1237,16 +1236,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
-    - https://access.redhat.com/errata/RHSA-2024:9331
+    - https://access.redhat.com/errata/RHSA-2024:3268
     - https://access.redhat.com/security/cve/CVE-2024-26461
     - https://bugzilla.redhat.com/2266731
     - https://bugzilla.redhat.com/2266740
-    - https://bugzilla.redhat.com/2266742
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266731
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266740
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461
-    - https://errata.almalinux.org/9/ALSA-2024-9331.html
+    - https://errata.almalinux.org/8/ALSA-2024-3268.html
     - https://errata.rockylinux.org/RLSA-2024:3268
     - https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md
     - https://linux.oracle.com/cve/CVE-2024-26461.html
@@ -1863,7 +1861,7 @@
     - https://bugzilla.redhat.com/2310137
     - https://bugzilla.redhat.com/show_bug.cgi?id=2310137
     - https://bugzilla.suse.com/show_bug.cgi?id=1239618
-    - https://errata.almalinux.org/9/ALSA-2025-3531.html
+    - https://errata.almalinux.org/8/ALSA-2025-3913.html
     - https://github.com/libexpat/libexpat/blob/R_2_7_0/expat/Changes#L40-L52
     - https://github.com/libexpat/libexpat/issues/893
     - https://gitlab.alpinelinux.org/alpine/aports/-/commit/d068c3ff36fc6f4789988a09c69b434db757db53
@@ -1996,7 +1994,7 @@
     Description: Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.
     Severity: LOW
     VendorSeverity:
-      alma: 2
+      alma: 1
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -2010,16 +2008,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
-    - https://access.redhat.com/errata/RHSA-2024:9331
+    - https://access.redhat.com/errata/RHSA-2024:3268
     - https://access.redhat.com/security/cve/CVE-2024-26458
     - https://bugzilla.redhat.com/2266731
     - https://bugzilla.redhat.com/2266740
-    - https://bugzilla.redhat.com/2266742
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266731
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266740
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461
-    - https://errata.almalinux.org/9/ALSA-2024-9331.html
+    - https://errata.almalinux.org/8/ALSA-2024-3268.html
     - https://errata.rockylinux.org/RLSA-2024:3268
     - https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md
     - https://linux.oracle.com/cve/CVE-2024-26458.html
@@ -2055,7 +2052,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      alma: 2
+      alma: 1
       amazon: 2
       azure: 3
       cbl-mariner: 3
@@ -2069,16 +2066,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
-    - https://access.redhat.com/errata/RHSA-2024:9331
+    - https://access.redhat.com/errata/RHSA-2024:3268
     - https://access.redhat.com/security/cve/CVE-2024-26461
     - https://bugzilla.redhat.com/2266731
     - https://bugzilla.redhat.com/2266740
-    - https://bugzilla.redhat.com/2266742
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266731
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266740
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461
-    - https://errata.almalinux.org/9/ALSA-2024-9331.html
+    - https://errata.almalinux.org/8/ALSA-2024-3268.html
     - https://errata.rockylinux.org/RLSA-2024:3268
     - https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md
     - https://linux.oracle.com/cve/CVE-2024-26461.html
@@ -2157,7 +2153,7 @@
     Description: Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.
     Severity: LOW
     VendorSeverity:
-      alma: 2
+      alma: 1
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -2171,16 +2167,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
-    - https://access.redhat.com/errata/RHSA-2024:9331
+    - https://access.redhat.com/errata/RHSA-2024:3268
     - https://access.redhat.com/security/cve/CVE-2024-26458
     - https://bugzilla.redhat.com/2266731
     - https://bugzilla.redhat.com/2266740
-    - https://bugzilla.redhat.com/2266742
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266731
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266740
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461
-    - https://errata.almalinux.org/9/ALSA-2024-9331.html
+    - https://errata.almalinux.org/8/ALSA-2024-3268.html
     - https://errata.rockylinux.org/RLSA-2024:3268
     - https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md
     - https://linux.oracle.com/cve/CVE-2024-26458.html
@@ -2216,7 +2211,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      alma: 2
+      alma: 1
       amazon: 2
       azure: 3
       cbl-mariner: 3
@@ -2230,16 +2225,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
-    - https://access.redhat.com/errata/RHSA-2024:9331
+    - https://access.redhat.com/errata/RHSA-2024:3268
     - https://access.redhat.com/security/cve/CVE-2024-26461
     - https://bugzilla.redhat.com/2266731
     - https://bugzilla.redhat.com/2266740
-    - https://bugzilla.redhat.com/2266742
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266731
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266740
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461
-    - https://errata.almalinux.org/9/ALSA-2024-9331.html
+    - https://errata.almalinux.org/8/ALSA-2024-3268.html
     - https://errata.rockylinux.org/RLSA-2024:3268
     - https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md
     - https://linux.oracle.com/cve/CVE-2024-26461.html
@@ -2318,7 +2312,7 @@
     Description: Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.
     Severity: LOW
     VendorSeverity:
-      alma: 2
+      alma: 1
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -2332,16 +2326,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
-    - https://access.redhat.com/errata/RHSA-2024:9331
+    - https://access.redhat.com/errata/RHSA-2024:3268
     - https://access.redhat.com/security/cve/CVE-2024-26458
     - https://bugzilla.redhat.com/2266731
     - https://bugzilla.redhat.com/2266740
-    - https://bugzilla.redhat.com/2266742
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266731
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266740
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461
-    - https://errata.almalinux.org/9/ALSA-2024-9331.html
+    - https://errata.almalinux.org/8/ALSA-2024-3268.html
     - https://errata.rockylinux.org/RLSA-2024:3268
     - https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md
     - https://linux.oracle.com/cve/CVE-2024-26458.html
@@ -2377,7 +2370,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      alma: 2
+      alma: 1
       amazon: 2
       azure: 3
       cbl-mariner: 3
@@ -2391,16 +2384,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
-    - https://access.redhat.com/errata/RHSA-2024:9331
+    - https://access.redhat.com/errata/RHSA-2024:3268
     - https://access.redhat.com/security/cve/CVE-2024-26461
     - https://bugzilla.redhat.com/2266731
     - https://bugzilla.redhat.com/2266740
-    - https://bugzilla.redhat.com/2266742
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266731
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266740
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461
-    - https://errata.almalinux.org/9/ALSA-2024-9331.html
+    - https://errata.almalinux.org/8/ALSA-2024-3268.html
     - https://errata.rockylinux.org/RLSA-2024:3268
     - https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md
     - https://linux.oracle.com/cve/CVE-2024-26461.html
@@ -2479,7 +2471,7 @@
     Description: Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.
     Severity: LOW
     VendorSeverity:
-      alma: 2
+      alma: 1
       amazon: 2
       azure: 2
       cbl-mariner: 2
@@ -2493,16 +2485,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
-    - https://access.redhat.com/errata/RHSA-2024:9331
+    - https://access.redhat.com/errata/RHSA-2024:3268
     - https://access.redhat.com/security/cve/CVE-2024-26458
     - https://bugzilla.redhat.com/2266731
     - https://bugzilla.redhat.com/2266740
-    - https://bugzilla.redhat.com/2266742
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266731
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266740
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461
-    - https://errata.almalinux.org/9/ALSA-2024-9331.html
+    - https://errata.almalinux.org/8/ALSA-2024-3268.html
     - https://errata.rockylinux.org/RLSA-2024:3268
     - https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md
     - https://linux.oracle.com/cve/CVE-2024-26458.html
@@ -2538,7 +2529,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      alma: 2
+      alma: 1
       amazon: 2
       azure: 3
       cbl-mariner: 3
@@ -2552,16 +2543,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
-    - https://access.redhat.com/errata/RHSA-2024:9331
+    - https://access.redhat.com/errata/RHSA-2024:3268
     - https://access.redhat.com/security/cve/CVE-2024-26461
     - https://bugzilla.redhat.com/2266731
     - https://bugzilla.redhat.com/2266740
-    - https://bugzilla.redhat.com/2266742
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266731
     - https://bugzilla.redhat.com/show_bug.cgi?id=2266740
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461
-    - https://errata.almalinux.org/9/ALSA-2024-9331.html
+    - https://errata.almalinux.org/8/ALSA-2024-3268.html
     - https://errata.rockylinux.org/RLSA-2024:3268
     - https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md
     - https://linux.oracle.com/cve/CVE-2024-26461.html
@@ -2685,7 +2675,7 @@
     CweIDs:
     - CWE-922
     VendorSeverity:
-      alma: 2
+      alma: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -2702,11 +2692,12 @@
     - https://access.redhat.com/errata/RHSA-2024:9941
     - https://access.redhat.com/security/cve/CVE-2024-10041
     - https://bugzilla.redhat.com/2319212
+    - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-11250.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10041.html
     - https://linux.oracle.com/errata/ELSA-2024-11250.html
@@ -2755,12 +2746,13 @@
     - https://access.redhat.com/errata/RHSA-2024:10528
     - https://access.redhat.com/errata/RHSA-2024:10852
     - https://access.redhat.com/security/cve/CVE-2024-10963
+    - https://bugzilla.redhat.com/2319212
     - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-10244.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10963.html
     - https://linux.oracle.com/errata/ELSA-2024-10379.html
@@ -2791,7 +2783,7 @@
     CweIDs:
     - CWE-922
     VendorSeverity:
-      alma: 2
+      alma: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -2808,11 +2800,12 @@
     - https://access.redhat.com/errata/RHSA-2024:9941
     - https://access.redhat.com/security/cve/CVE-2024-10041
     - https://bugzilla.redhat.com/2319212
+    - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-11250.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10041.html
     - https://linux.oracle.com/errata/ELSA-2024-11250.html
@@ -2861,12 +2854,13 @@
     - https://access.redhat.com/errata/RHSA-2024:10528
     - https://access.redhat.com/errata/RHSA-2024:10852
     - https://access.redhat.com/security/cve/CVE-2024-10963
+    - https://bugzilla.redhat.com/2319212
     - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-10244.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10963.html
     - https://linux.oracle.com/errata/ELSA-2024-10379.html
@@ -2897,7 +2891,7 @@
     CweIDs:
     - CWE-922
     VendorSeverity:
-      alma: 2
+      alma: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -2914,11 +2908,12 @@
     - https://access.redhat.com/errata/RHSA-2024:9941
     - https://access.redhat.com/security/cve/CVE-2024-10041
     - https://bugzilla.redhat.com/2319212
+    - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-11250.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10041.html
     - https://linux.oracle.com/errata/ELSA-2024-11250.html
@@ -2967,12 +2962,13 @@
     - https://access.redhat.com/errata/RHSA-2024:10528
     - https://access.redhat.com/errata/RHSA-2024:10852
     - https://access.redhat.com/security/cve/CVE-2024-10963
+    - https://bugzilla.redhat.com/2319212
     - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-10244.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10963.html
     - https://linux.oracle.com/errata/ELSA-2024-10379.html
@@ -3003,7 +2999,7 @@
     CweIDs:
     - CWE-922
     VendorSeverity:
-      alma: 2
+      alma: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -3020,11 +3016,12 @@
     - https://access.redhat.com/errata/RHSA-2024:9941
     - https://access.redhat.com/security/cve/CVE-2024-10041
     - https://bugzilla.redhat.com/2319212
+    - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-11250.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10041.html
     - https://linux.oracle.com/errata/ELSA-2024-11250.html
@@ -3073,12 +3070,13 @@
     - https://access.redhat.com/errata/RHSA-2024:10528
     - https://access.redhat.com/errata/RHSA-2024:10852
     - https://access.redhat.com/security/cve/CVE-2024-10963
+    - https://bugzilla.redhat.com/2319212
     - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-10244.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10963.html
     - https://linux.oracle.com/errata/ELSA-2024-10379.html
@@ -3390,7 +3388,7 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
         V3Score: 8.1
     References:
-    - https://access.redhat.com/errata/RHSA-2025:2679
+    - https://access.redhat.com/errata/RHSA-2025:2686
     - https://access.redhat.com/security/cve/CVE-2024-56171
     - https://bugzilla.redhat.com/2346416
     - https://bugzilla.redhat.com/2346421
@@ -3398,7 +3396,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2346421
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56171
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24928
-    - https://errata.almalinux.org/9/ALSA-2025-2679.html
+    - https://errata.almalinux.org/8/ALSA-2025-2686.html
     - https://errata.rockylinux.org/RLSA-2025:2686
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/828
     - https://linux.oracle.com/cve/CVE-2024-56171.html
@@ -3448,7 +3446,7 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N
         V3Score: 7.8
     References:
-    - https://access.redhat.com/errata/RHSA-2025:2679
+    - https://access.redhat.com/errata/RHSA-2025:2686
     - https://access.redhat.com/security/cve/CVE-2025-24928
     - https://bugzilla.redhat.com/2346416
     - https://bugzilla.redhat.com/2346421
@@ -3456,7 +3454,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2346421
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56171
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24928
-    - https://errata.almalinux.org/9/ALSA-2025-2679.html
+    - https://errata.almalinux.org/8/ALSA-2025-2686.html
     - https://errata.rockylinux.org/RLSA-2025:2686
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/847
     - https://issues.oss-fuzz.com/issues/392687022
