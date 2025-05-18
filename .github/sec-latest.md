@@ -5336,9 +5336,11 @@
 │                       │     │                  ├ [4]: https://groups.google.com/g/golang-announce/c/ezSKR9vqbqA 
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22872 
 │                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3595 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22872 
+│                       │     │                  ├ [7]: https://security.netapp.com/advisory/ntap-20250516-0007 
+│                       │     │                  ├ [8]: https://security.netapp.com/advisory/ntap-20250516-0007/ 
+│                       │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-22872 
 │                       │     ├ PublishedDate   : 2025-04-16T18:16:04.183Z 
-│                       │     ╰ LastModifiedDate: 2025-04-17T20:22:16.24Z 
+│                       │     ╰ LastModifiedDate: 2025-05-16T23:15:19.707Z 
 │                       ├ [5] ╭ VulnerabilityID : CVE-2024-45336 
 │                       │     ├ PkgID           : stdlib@v1.22.10 
 │                       │     ├ PkgName         : stdlib 
@@ -5762,9 +5764,11 @@
 │                       │     │                  ├ [4]: https://groups.google.com/g/golang-announce/c/ezSKR9vqbqA 
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22872 
 │                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3595 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22872 
+│                       │     │                  ├ [7]: https://security.netapp.com/advisory/ntap-20250516-0007 
+│                       │     │                  ├ [8]: https://security.netapp.com/advisory/ntap-20250516-0007/ 
+│                       │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-22872 
 │                       │     ├ PublishedDate   : 2025-04-16T18:16:04.183Z 
-│                       │     ╰ LastModifiedDate: 2025-04-17T20:22:16.24Z 
+│                       │     ╰ LastModifiedDate: 2025-05-16T23:15:19.707Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-22866 
 │                       │     ├ PkgID           : stdlib@v1.23.5 
 │                       │     ├ PkgName         : stdlib 
@@ -5948,9 +5952,11 @@
 │                       │     │                  ├ [4]: https://groups.google.com/g/golang-announce/c/ezSKR9vqbqA 
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22872 
 │                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3595 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22872 
+│                       │     │                  ├ [7]: https://security.netapp.com/advisory/ntap-20250516-0007 
+│                       │     │                  ├ [8]: https://security.netapp.com/advisory/ntap-20250516-0007/ 
+│                       │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-22872 
 │                       │     ├ PublishedDate   : 2025-04-16T18:16:04.183Z 
-│                       │     ╰ LastModifiedDate: 2025-04-17T20:22:16.24Z 
+│                       │     ╰ LastModifiedDate: 2025-05-16T23:15:19.707Z 
 │                       ╰ [2] ╭ VulnerabilityID : CVE-2025-22871 
 │                             ├ PkgID           : stdlib@v1.23.6 
 │                             ├ PkgName         : stdlib 
@@ -6410,9 +6416,11 @@
 │                       │     │                  ├ [4]: https://groups.google.com/g/golang-announce/c/ezSKR9vqbqA 
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22872 
 │                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3595 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22872 
+│                       │     │                  ├ [7]: https://security.netapp.com/advisory/ntap-20250516-0007 
+│                       │     │                  ├ [8]: https://security.netapp.com/advisory/ntap-20250516-0007/ 
+│                       │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-22872 
 │                       │     ├ PublishedDate   : 2025-04-16T18:16:04.183Z 
-│                       │     ╰ LastModifiedDate: 2025-04-17T20:22:16.24Z 
+│                       │     ╰ LastModifiedDate: 2025-05-16T23:15:19.707Z 
 │                       ├ [6] ╭ VulnerabilityID : GHSA-xr7q-jx4m-x55m 
 │                       │     ├ PkgID           : google.golang.org/grpc@v1.64.0 
 │                       │     ├ PkgName         : google.golang.org/grpc 
