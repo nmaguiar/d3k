@@ -486,7 +486,7 @@
 │                       │     │                  ├ [7] : https://go.dev/cl/652135 
 │                       │     │                  ├ [8] : https://go.dev/issue/71931 
 │                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-22869.html 
-│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-3833.html 
+│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-7391.html 
 │                       │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-22869 
 │                       │     │                  ├ [12]: https://pkg.go.dev/vuln/GO-2025-3487 
 │                       │     │                  ├ [13]: https://security.netapp.com/advisory/ntap-20250411-0010 
