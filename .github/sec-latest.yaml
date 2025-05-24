@@ -20,7 +20,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: When an incoming DNS protocol message includes a Transaction Signature ...
+    Title: 'bind: DNS message with invalid TSIG causes an assertion failure'
     Description: |-
       When an incoming DNS protocol message includes a Transaction Signature (TSIG), BIND always checks it.  If the TSIG contains an invalid value in the algorithm field, BIND immediately aborts with an assertion failure.
       This issue affects BIND 9 versions 9.20.0 through 9.20.8 and 9.21.0 through 9.21.7.
@@ -28,14 +28,22 @@
     CweIDs:
     - CWE-232
     VendorSeverity:
+      redhat: 3
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/21/1
+    - https://access.redhat.com/security/cve/CVE-2025-40775
     - https://kb.isc.org/docs/cve-2025-40775
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-40775
+    - https://security.netapp.com/advisory/ntap-20250523-0001/
     - https://ubuntu.com/security/notices/USN-7526-1
     - https://www.cve.org/CVERecord?id=CVE-2025-40775
     PublishedDate: '2025-05-21T13:16:02.623Z'
-    LastModifiedDate: '2025-05-21T20:24:58.133Z'
+    LastModifiedDate: '2025-05-23T14:15:28.88Z'
   - VulnerabilityID: CVE-2025-40775
     PkgID: bind9-host@1:9.20.0-2ubuntu3.1
     PkgName: bind9-host
@@ -54,7 +62,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: When an incoming DNS protocol message includes a Transaction Signature ...
+    Title: 'bind: DNS message with invalid TSIG causes an assertion failure'
     Description: |-
       When an incoming DNS protocol message includes a Transaction Signature (TSIG), BIND always checks it.  If the TSIG contains an invalid value in the algorithm field, BIND immediately aborts with an assertion failure.
       This issue affects BIND 9 versions 9.20.0 through 9.20.8 and 9.21.0 through 9.21.7.
@@ -62,14 +70,22 @@
     CweIDs:
     - CWE-232
     VendorSeverity:
+      redhat: 3
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/21/1
+    - https://access.redhat.com/security/cve/CVE-2025-40775
     - https://kb.isc.org/docs/cve-2025-40775
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-40775
+    - https://security.netapp.com/advisory/ntap-20250523-0001/
     - https://ubuntu.com/security/notices/USN-7526-1
     - https://www.cve.org/CVERecord?id=CVE-2025-40775
     PublishedDate: '2025-05-21T13:16:02.623Z'
-    LastModifiedDate: '2025-05-21T20:24:58.133Z'
+    LastModifiedDate: '2025-05-23T14:15:28.88Z'
   - VulnerabilityID: CVE-2025-40775
     PkgID: bind9-libs@1:9.20.0-2ubuntu3.1
     PkgName: bind9-libs
@@ -88,7 +104,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: When an incoming DNS protocol message includes a Transaction Signature ...
+    Title: 'bind: DNS message with invalid TSIG causes an assertion failure'
     Description: |-
       When an incoming DNS protocol message includes a Transaction Signature (TSIG), BIND always checks it.  If the TSIG contains an invalid value in the algorithm field, BIND immediately aborts with an assertion failure.
       This issue affects BIND 9 versions 9.20.0 through 9.20.8 and 9.21.0 through 9.21.7.
@@ -96,14 +112,22 @@
     CweIDs:
     - CWE-232
     VendorSeverity:
+      redhat: 3
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/21/1
+    - https://access.redhat.com/security/cve/CVE-2025-40775
     - https://kb.isc.org/docs/cve-2025-40775
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-40775
+    - https://security.netapp.com/advisory/ntap-20250523-0001/
     - https://ubuntu.com/security/notices/USN-7526-1
     - https://www.cve.org/CVERecord?id=CVE-2025-40775
     PublishedDate: '2025-05-21T13:16:02.623Z'
-    LastModifiedDate: '2025-05-21T20:24:58.133Z'
+    LastModifiedDate: '2025-05-23T14:15:28.88Z'
   - VulnerabilityID: CVE-2016-2781
     PkgID: coreutils@9.4-3.1ubuntu1
     PkgName: coreutils
@@ -297,7 +321,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: When an incoming DNS protocol message includes a Transaction Signature ...
+    Title: 'bind: DNS message with invalid TSIG causes an assertion failure'
     Description: |-
       When an incoming DNS protocol message includes a Transaction Signature (TSIG), BIND always checks it.  If the TSIG contains an invalid value in the algorithm field, BIND immediately aborts with an assertion failure.
       This issue affects BIND 9 versions 9.20.0 through 9.20.8 and 9.21.0 through 9.21.7.
@@ -305,14 +329,22 @@
     CweIDs:
     - CWE-232
     VendorSeverity:
+      redhat: 3
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/21/1
+    - https://access.redhat.com/security/cve/CVE-2025-40775
     - https://kb.isc.org/docs/cve-2025-40775
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-40775
+    - https://security.netapp.com/advisory/ntap-20250523-0001/
     - https://ubuntu.com/security/notices/USN-7526-1
     - https://www.cve.org/CVERecord?id=CVE-2025-40775
     PublishedDate: '2025-05-21T13:16:02.623Z'
-    LastModifiedDate: '2025-05-21T20:24:58.133Z'
+    LastModifiedDate: '2025-05-23T14:15:28.88Z'
   - VulnerabilityID: CVE-2024-52005
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -1313,6 +1345,8 @@
     Title: 'krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c'
     Description: Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.
     Severity: LOW
+    CweIDs:
+    - CWE-401
     VendorSeverity:
       alma: 2
       amazon: 2
@@ -1348,7 +1382,7 @@
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26458
     PublishedDate: '2024-02-29T01:44:18.78Z'
-    LastModifiedDate: '2024-12-06T21:15:06.28Z'
+    LastModifiedDate: '2025-05-23T15:39:31.357Z'
   - VulnerabilityID: CVE-2024-26461
     PkgID: krb5-locales@1.21.3-3ubuntu0.1
     PkgName: krb5-locales
@@ -1407,7 +1441,7 @@
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
-    LastModifiedDate: '2024-11-21T09:02:26.477Z'
+    LastModifiedDate: '2025-05-23T15:30:30.847Z'
   - VulnerabilityID: CVE-2025-29481
     PkgID: libbpf1@1:1.4.5-1
     PkgName: libbpf1
@@ -1712,7 +1746,7 @@
     - CWE-120
     VendorSeverity:
       azure: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2145,6 +2179,8 @@
     Title: 'krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c'
     Description: Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.
     Severity: LOW
+    CweIDs:
+    - CWE-401
     VendorSeverity:
       alma: 2
       amazon: 2
@@ -2180,7 +2216,7 @@
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26458
     PublishedDate: '2024-02-29T01:44:18.78Z'
-    LastModifiedDate: '2024-12-06T21:15:06.28Z'
+    LastModifiedDate: '2025-05-23T15:39:31.357Z'
   - VulnerabilityID: CVE-2024-26461
     PkgID: libgssapi-krb5-2@1.21.3-3ubuntu0.1
     PkgName: libgssapi-krb5-2
@@ -2239,7 +2275,7 @@
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
-    LastModifiedDate: '2024-11-21T09:02:26.477Z'
+    LastModifiedDate: '2025-05-23T15:30:30.847Z'
   - VulnerabilityID: CVE-2025-24528
     PkgID: libk5crypto3@1.21.3-3ubuntu0.1
     PkgName: libk5crypto3
@@ -2306,6 +2342,8 @@
     Title: 'krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c'
     Description: Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.
     Severity: LOW
+    CweIDs:
+    - CWE-401
     VendorSeverity:
       alma: 2
       amazon: 2
@@ -2341,7 +2379,7 @@
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26458
     PublishedDate: '2024-02-29T01:44:18.78Z'
-    LastModifiedDate: '2024-12-06T21:15:06.28Z'
+    LastModifiedDate: '2025-05-23T15:39:31.357Z'
   - VulnerabilityID: CVE-2024-26461
     PkgID: libk5crypto3@1.21.3-3ubuntu0.1
     PkgName: libk5crypto3
@@ -2400,7 +2438,7 @@
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
-    LastModifiedDate: '2024-11-21T09:02:26.477Z'
+    LastModifiedDate: '2025-05-23T15:30:30.847Z'
   - VulnerabilityID: CVE-2025-24528
     PkgID: libkrb5-3@1.21.3-3ubuntu0.1
     PkgName: libkrb5-3
@@ -2467,6 +2505,8 @@
     Title: 'krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c'
     Description: Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.
     Severity: LOW
+    CweIDs:
+    - CWE-401
     VendorSeverity:
       alma: 2
       amazon: 2
@@ -2502,7 +2542,7 @@
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26458
     PublishedDate: '2024-02-29T01:44:18.78Z'
-    LastModifiedDate: '2024-12-06T21:15:06.28Z'
+    LastModifiedDate: '2025-05-23T15:39:31.357Z'
   - VulnerabilityID: CVE-2024-26461
     PkgID: libkrb5-3@1.21.3-3ubuntu0.1
     PkgName: libkrb5-3
@@ -2561,7 +2601,7 @@
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
-    LastModifiedDate: '2024-11-21T09:02:26.477Z'
+    LastModifiedDate: '2025-05-23T15:30:30.847Z'
   - VulnerabilityID: CVE-2025-24528
     PkgID: libkrb5support0@1.21.3-3ubuntu0.1
     PkgName: libkrb5support0
@@ -2628,6 +2668,8 @@
     Title: 'krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c'
     Description: Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c.
     Severity: LOW
+    CweIDs:
+    - CWE-401
     VendorSeverity:
       alma: 2
       amazon: 2
@@ -2663,7 +2705,7 @@
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26458
     PublishedDate: '2024-02-29T01:44:18.78Z'
-    LastModifiedDate: '2024-12-06T21:15:06.28Z'
+    LastModifiedDate: '2025-05-23T15:39:31.357Z'
   - VulnerabilityID: CVE-2024-26461
     PkgID: libkrb5support0@1.21.3-3ubuntu0.1
     PkgName: libkrb5support0
@@ -2722,7 +2764,7 @@
     - https://ubuntu.com/security/notices/USN-7314-1
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
-    LastModifiedDate: '2024-11-21T09:02:26.477Z'
+    LastModifiedDate: '2025-05-23T15:30:30.847Z'
   - VulnerabilityID: CVE-2025-31115
     PkgID: liblzma5@5.6.2-2
     PkgName: liblzma5
@@ -3291,7 +3333,8 @@
       PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&distro=ubuntu-24.10
       UID: d47783a0d6415972
     InstalledVersion: 3.46.1-1
-    Status: affected
+    FixedVersion: 3.46.1-1ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
       DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
@@ -3326,6 +3369,7 @@
     - https://gist.github.com/ylwango613/a44a29f1ef074fa783e29f04a0afd62a
     - https://nvd.nist.gov/vuln/detail/CVE-2025-29087
     - https://sqlite.org/releaselog/3_49_1.html
+    - https://ubuntu.com/security/notices/USN-7528-1
     - https://www.cve.org/CVERecord?id=CVE-2025-29087
     - https://www.sqlite.org/cves.html
     PublishedDate: '2025-04-07T20:15:20.253Z'
@@ -3337,7 +3381,8 @@
       PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&distro=ubuntu-24.10
       UID: d47783a0d6415972
     InstalledVersion: 3.46.1-1
-    Status: affected
+    FixedVersion: 3.46.1-1ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
       DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
@@ -3373,6 +3418,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-29088
     - https://sqlite.org/forum/forumpost/48f365daec
     - https://sqlite.org/releaselog/3_49_1.html
+    - https://ubuntu.com/security/notices/USN-7528-1
     - https://www.cve.org/CVERecord?id=CVE-2025-29088
     - https://www.sqlite.org/cves.html
     PublishedDate: '2025-04-10T14:15:27.163Z'
@@ -3384,7 +3430,8 @@
       PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&distro=ubuntu-24.10
       UID: d47783a0d6415972
     InstalledVersion: 3.46.1-1
-    Status: affected
+    FixedVersion: 3.46.1-1ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
       DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
@@ -3415,9 +3462,10 @@
     - https://bugzilla.redhat.com/2359553
     - https://errata.almalinux.org/9/ALSA-2025-7433.html
     - https://linux.oracle.com/cve/CVE-2025-3277.html
-    - https://linux.oracle.com/errata/ELSA-2025-4459.html
+    - https://linux.oracle.com/errata/ELSA-2025-7433.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-3277
     - https://sqlite.org/src/info/498e3f1cf57f164f
+    - https://ubuntu.com/security/notices/USN-7528-1
     - https://www.cve.org/CVERecord?id=CVE-2025-3277
     PublishedDate: '2025-04-14T17:15:27.297Z'
     LastModifiedDate: '2025-04-15T18:39:27.967Z'
@@ -4984,7 +5032,7 @@
     - https://go.dev/cl/652135
     - https://go.dev/issue/71931
     - https://linux.oracle.com/cve/CVE-2025-22869.html
-    - https://linux.oracle.com/errata/ELSA-2025-7391.html
+    - https://linux.oracle.com/errata/ELSA-2025-7416.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22869
     - https://pkg.go.dev/vuln/GO-2025-3487
     - https://security.netapp.com/advisory/ntap-20250411-0010
@@ -5378,7 +5426,7 @@
     - https://go.dev/cl/652135
     - https://go.dev/issue/71931
     - https://linux.oracle.com/cve/CVE-2025-22869.html
-    - https://linux.oracle.com/errata/ELSA-2025-7391.html
+    - https://linux.oracle.com/errata/ELSA-2025-7416.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22869
     - https://pkg.go.dev/vuln/GO-2025-3487
     - https://security.netapp.com/advisory/ntap-20250411-0010
@@ -5928,7 +5976,7 @@
     - https://go.dev/cl/652135
     - https://go.dev/issue/71931
     - https://linux.oracle.com/cve/CVE-2025-22869.html
-    - https://linux.oracle.com/errata/ELSA-2025-7391.html
+    - https://linux.oracle.com/errata/ELSA-2025-7416.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22869
     - https://pkg.go.dev/vuln/GO-2025-3487
     - https://security.netapp.com/advisory/ntap-20250411-0010
