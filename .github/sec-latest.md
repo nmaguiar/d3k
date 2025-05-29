@@ -216,7 +216,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ azure      : 1 
 │                       │       │                  ├ cbl-mariner: 1 
-│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ photon     : 1 
 │                       │       │                  ╰ ubuntu     : 1 
 │                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2025-0167.html 
 │                       │       │                  ├ [1]: https://curl.se/docs/CVE-2025-0167.json 
@@ -1531,7 +1531,7 @@
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
 │                       │       │                  ├ oracle-oval: 2 
-│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ├ rocky      : 1 
 │                       │       │                  ╰ ubuntu     : 1 
@@ -1800,7 +1800,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ azure      : 1 
 │                       │       │                  ├ cbl-mariner: 1 
-│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ photon     : 1 
 │                       │       │                  ╰ ubuntu     : 1 
 │                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2025-0167.html 
 │                       │       │                  ├ [1]: https://curl.se/docs/CVE-2025-0167.json 
@@ -1842,7 +1842,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ azure      : 1 
 │                       │       │                  ├ cbl-mariner: 1 
-│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ photon     : 1 
 │                       │       │                  ╰ ubuntu     : 1 
 │                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2025-0167.html 
 │                       │       │                  ├ [1]: https://curl.se/docs/CVE-2025-0167.json 
@@ -2523,7 +2523,7 @@
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
 │                       │       │                  ├ oracle-oval: 2 
-│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ├ rocky      : 1 
 │                       │       │                  ╰ ubuntu     : 1 
@@ -2556,7 +2556,43 @@
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:30:30.847Z 
-│                       ├ [54]  ╭ VulnerabilityID : CVE-2025-24528 
+│                       ├ [54]  ╭ VulnerabilityID : CVE-2025-5222 
+│                       │       ├ PkgID           : libicu74@74.2-1ubuntu4 
+│                       │       ├ PkgName         : libicu74 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libicu74@74.2-1ubuntu4?arch=amd64&dis
+│                       │       │                  │       tro=ubuntu-24.10 
+│                       │       │                  ╰ UID : 38cff1ce12a3eb78 
+│                       │       ├ InstalledVersion: 74.2-1ubuntu4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-5222 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : icu: Stack buffer overflow in the SRBRoot::addTag function 
+│                       │       ├ Description     : A stack buffer overflow was found in Internationl
+│                       │       │                   components for unicode (ICU ). While running the genrb
+│                       │       │                   binary, the 'subtag' struct overflowed at the
+│                       │       │                   SRBRoot::addTag function. This issue may lead to memory
+│                       │       │                   corruption and local arbitrary code execution. 
+│                       │       ├ Severity        : LOW 
+│                       │       ├ CweIDs           ─ [0]: CWE-120 
+│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       │                  ╰ ubuntu: 1 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:
+│                       │       │                           │           H/A:H 
+│                       │       │                           ╰ V3Score : 7 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-5222 
+│                       │       │                  ├ [1]: https://bugzilla.redhat.com/show_bug.cgi?id=2368600 
+│                       │       │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-5222 
+│                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-5222 
+│                       │       ├ PublishedDate   : 2025-05-27T21:15:23.03Z 
+│                       │       ╰ LastModifiedDate: 2025-05-28T15:01:30.72Z 
+│                       ├ [55]  ╭ VulnerabilityID : CVE-2025-24528 
 │                       │       ├ PkgID           : libk5crypto3@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libk5crypto3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3ubuntu0.1?arch=a
@@ -2604,7 +2640,7 @@
 │                       │                          ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
 │                       │                          ├ [11]: https://ubuntu.com/security/notices/USN-7314-1 
 │                       │                          ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
-│                       ├ [55]  ╭ VulnerabilityID : CVE-2024-26458 
+│                       ├ [56]  ╭ VulnerabilityID : CVE-2024-26458 
 │                       │       ├ PkgID           : libk5crypto3@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libk5crypto3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3ubuntu0.1?arch=a
@@ -2665,7 +2701,7 @@
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:39:31.357Z 
-│                       ├ [56]  ╭ VulnerabilityID : CVE-2024-26461 
+│                       ├ [57]  ╭ VulnerabilityID : CVE-2024-26461 
 │                       │       ├ PkgID           : libk5crypto3@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libk5crypto3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3ubuntu0.1?arch=a
@@ -2693,7 +2729,7 @@
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
 │                       │       │                  ├ oracle-oval: 2 
-│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ├ rocky      : 1 
 │                       │       │                  ╰ ubuntu     : 1 
@@ -2726,7 +2762,7 @@
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:30:30.847Z 
-│                       ├ [57]  ╭ VulnerabilityID : CVE-2025-24528 
+│                       ├ [58]  ╭ VulnerabilityID : CVE-2025-24528 
 │                       │       ├ PkgID           : libkrb5-3@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libkrb5-3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3ubuntu0.1?arch=amd6
@@ -2774,7 +2810,7 @@
 │                       │                          ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
 │                       │                          ├ [11]: https://ubuntu.com/security/notices/USN-7314-1 
 │                       │                          ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
-│                       ├ [58]  ╭ VulnerabilityID : CVE-2024-26458 
+│                       ├ [59]  ╭ VulnerabilityID : CVE-2024-26458 
 │                       │       ├ PkgID           : libkrb5-3@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libkrb5-3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3ubuntu0.1?arch=amd6
@@ -2835,7 +2871,7 @@
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:39:31.357Z 
-│                       ├ [59]  ╭ VulnerabilityID : CVE-2024-26461 
+│                       ├ [60]  ╭ VulnerabilityID : CVE-2024-26461 
 │                       │       ├ PkgID           : libkrb5-3@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libkrb5-3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3ubuntu0.1?arch=amd6
@@ -2863,7 +2899,7 @@
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
 │                       │       │                  ├ oracle-oval: 2 
-│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ├ rocky      : 1 
 │                       │       │                  ╰ ubuntu     : 1 
@@ -2896,7 +2932,7 @@
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:30:30.847Z 
-│                       ├ [60]  ╭ VulnerabilityID : CVE-2025-24528 
+│                       ├ [61]  ╭ VulnerabilityID : CVE-2025-24528 
 │                       │       ├ PkgID           : libkrb5support0@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libkrb5support0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3ubuntu0.1?arc
@@ -2944,7 +2980,7 @@
 │                       │                          ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-24528 
 │                       │                          ├ [11]: https://ubuntu.com/security/notices/USN-7314-1 
 │                       │                          ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-24528 
-│                       ├ [61]  ╭ VulnerabilityID : CVE-2024-26458 
+│                       ├ [62]  ╭ VulnerabilityID : CVE-2024-26458 
 │                       │       ├ PkgID           : libkrb5support0@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libkrb5support0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3ubuntu0.1?arc
@@ -3005,7 +3041,7 @@
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:39:31.357Z 
-│                       ├ [62]  ╭ VulnerabilityID : CVE-2024-26461 
+│                       ├ [63]  ╭ VulnerabilityID : CVE-2024-26461 
 │                       │       ├ PkgID           : libkrb5support0@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libkrb5support0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3ubuntu0.1?arc
@@ -3033,7 +3069,7 @@
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
 │                       │       │                  ├ oracle-oval: 2 
-│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ├ rocky      : 1 
 │                       │       │                  ╰ ubuntu     : 1 
@@ -3066,7 +3102,7 @@
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:30:30.847Z 
-│                       ├ [63]  ╭ VulnerabilityID : CVE-2025-31115 
+│                       ├ [64]  ╭ VulnerabilityID : CVE-2025-31115 
 │                       │       ├ PkgID           : liblzma5@5.6.2-2 
 │                       │       ├ PkgName         : liblzma5 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/liblzma5@5.6.2-2?arch=amd64&distro=ub
@@ -3124,7 +3160,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-31115 
 │                       │       ├ PublishedDate   : 2025-04-03T17:15:30.54Z 
 │                       │       ╰ LastModifiedDate: 2025-04-07T14:18:34.453Z 
-│                       ├ [64]  ╭ VulnerabilityID : CVE-2025-1390 
+│                       ├ [65]  ╭ VulnerabilityID : CVE-2025-1390 
 │                       │       ├ PkgID           : libpam-cap@1:2.66-5ubuntu3 
 │                       │       ├ PkgName         : libpam-cap 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-cap@2.66-5ubuntu3?arch=amd64&d
@@ -3170,7 +3206,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-1390 
 │                       │       ├ PublishedDate   : 2025-02-18T03:15:10.447Z 
 │                       │       ╰ LastModifiedDate: 2025-02-18T03:15:10.447Z 
-│                       ├ [65]  ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [66]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam-modules@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-modules 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules@1.5.3-7ubuntu2?arch=am
@@ -3227,7 +3263,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │       ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │       ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [66]  ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [67]  ╭ VulnerabilityID : CVE-2024-10963 
 │                       │       ├ PkgID           : libpam-modules@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-modules 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules@1.5.3-7ubuntu2?arch=am
@@ -3286,7 +3322,7 @@
 │                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │       ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │       ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [67]  ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [68]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam-modules-bin@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-modules-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules-bin@1.5.3-7ubuntu2?arc
@@ -3343,7 +3379,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │       ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │       ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [68]  ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [69]  ╭ VulnerabilityID : CVE-2024-10963 
 │                       │       ├ PkgID           : libpam-modules-bin@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-modules-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules-bin@1.5.3-7ubuntu2?arc
@@ -3402,7 +3438,7 @@
 │                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │       ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │       ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [69]  ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [70]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam-runtime@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-runtime@1.5.3-7ubuntu2?arch=al
@@ -3459,7 +3495,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │       ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │       ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [70]  ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [71]  ╭ VulnerabilityID : CVE-2024-10963 
 │                       │       ├ PkgID           : libpam-runtime@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-runtime@1.5.3-7ubuntu2?arch=al
@@ -3518,7 +3554,7 @@
 │                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │       ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │       ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [71]  ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [72]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam0g@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam0g 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam0g@1.5.3-7ubuntu2?arch=amd64&di
@@ -3575,7 +3611,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │       ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │       ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [72]  ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [73]  ╭ VulnerabilityID : CVE-2024-10963 
 │                       │       ├ PkgID           : libpam0g@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam0g 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam0g@1.5.3-7ubuntu2?arch=amd64&di
@@ -3634,7 +3670,7 @@
 │                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │       ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │       ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [73]  ╭ VulnerabilityID : CVE-2024-56406 
+│                       ├ [74]  ╭ VulnerabilityID : CVE-2024-56406 
 │                       │       ├ PkgID           : libperl5.38t64@5.38.2-5 
 │                       │       ├ PkgName         : libperl5.38t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libperl5.38t64@5.38.2-5?arch=amd64&di
@@ -3696,7 +3732,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
-│                       ├ [74]  ╭ VulnerabilityID : CVE-2025-29087 
+│                       ├ [75]  ╭ VulnerabilityID : CVE-2025-29087 
 │                       │       ├ PkgID           : libsqlite3-0@3.46.1-1 
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&dist
@@ -3747,7 +3783,7 @@
 │                       │       │                  ╰ [6]: https://www.sqlite.org/cves.html 
 │                       │       ├ PublishedDate   : 2025-04-07T20:15:20.253Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T12:43:22.31Z 
-│                       ├ [75]  ╭ VulnerabilityID : CVE-2025-29088 
+│                       ├ [76]  ╭ VulnerabilityID : CVE-2025-29088 
 │                       │       ├ PkgID           : libsqlite3-0@3.46.1-1 
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&dist
@@ -3798,7 +3834,7 @@
 │                       │       │                  ╰ [8]: https://www.sqlite.org/cves.html 
 │                       │       ├ PublishedDate   : 2025-04-10T14:15:27.163Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T16:40:41.543Z 
-│                       ├ [76]  ╭ VulnerabilityID : CVE-2025-3277 
+│                       ├ [77]  ╭ VulnerabilityID : CVE-2025-3277 
 │                       │       ├ PkgID           : libsqlite3-0@3.46.1-1 
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&dist
@@ -3846,7 +3882,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-3277 
 │                       │       ├ PublishedDate   : 2025-04-14T17:15:27.297Z 
 │                       │       ╰ LastModifiedDate: 2025-04-15T18:39:27.967Z 
-│                       ├ [77]  ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [78]  ╭ VulnerabilityID : CVE-2024-41996 
 │                       │       ├ PkgID           : libssl3t64@3.3.1-2ubuntu2.1 
 │                       │       ├ PkgName         : libssl3t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2.1?arch=amd6
@@ -3896,7 +3932,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │       ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │       ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [78]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [79]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : libsubid4@1:4.15.3-3ubuntu2 
 │                       │       ├ PkgName         : libsubid4 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsubid4@4.15.3-3ubuntu2?arch=amd64&
@@ -3944,7 +3980,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [79]  ╭ VulnerabilityID : CVE-2024-56171 
+│                       ├ [80]  ╭ VulnerabilityID : CVE-2024-56171 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
@@ -4007,7 +4043,7 @@
 │                       │       │                          18/2 
 │                       │       ├ PublishedDate   : 2025-02-18T22:15:12.797Z 
 │                       │       ╰ LastModifiedDate: 2025-03-28T15:15:46.003Z 
-│                       ├ [80]  ╭ VulnerabilityID : CVE-2025-24928 
+│                       ├ [81]  ╭ VulnerabilityID : CVE-2025-24928 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
@@ -4071,7 +4107,7 @@
 │                       │       │                          18/2 
 │                       │       ├ PublishedDate   : 2025-02-18T23:15:10.25Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.86Z 
-│                       ├ [81]  ╭ VulnerabilityID : CVE-2025-27113 
+│                       ├ [82]  ╭ VulnerabilityID : CVE-2025-27113 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
@@ -4118,7 +4154,7 @@
 │                       │       │                         8/2 
 │                       │       ├ PublishedDate   : 2025-02-18T23:15:10.96Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.823Z 
-│                       ├ [82]  ╭ VulnerabilityID : CVE-2025-32414 
+│                       ├ [83]  ╭ VulnerabilityID : CVE-2025-32414 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
@@ -4146,6 +4182,7 @@
 │                       │       ├ CweIDs           ╭ [0]: CWE-393 
 │                       │       │                  ╰ [1]: CWE-252 
 │                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ azure : 2 
 │                       │       │                  ├ nvd   : 3 
 │                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
@@ -4164,7 +4201,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32414 
 │                       │       ├ PublishedDate   : 2025-04-08T03:15:15.94Z 
 │                       │       ╰ LastModifiedDate: 2025-04-23T19:09:35.517Z 
-│                       ├ [83]  ╭ VulnerabilityID : CVE-2025-32415 
+│                       ├ [84]  ╭ VulnerabilityID : CVE-2025-32415 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
@@ -4192,6 +4229,7 @@
 │                       │       ├ CweIDs           ╭ [0]: CWE-1284 
 │                       │       │                  ╰ [1]: CWE-125 
 │                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ azure : 1 
 │                       │       │                  ├ nvd   : 3 
 │                       │       │                  ├ photon: 1 
 │                       │       │                  ├ redhat: 1 
@@ -4210,7 +4248,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32415 
 │                       │       ├ PublishedDate   : 2025-04-17T17:15:33.733Z 
 │                       │       ╰ LastModifiedDate: 2025-04-23T18:17:52.053Z 
-│                       ├ [84]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [85]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : login@1:4.15.3-3ubuntu2 
 │                       │       ├ PkgName         : login 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.15.3-3ubuntu2?arch=amd64&dist
@@ -4258,14 +4296,15 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [85]  ╭ VulnerabilityID : CVE-2025-46836 
+│                       ├ [86]  ╭ VulnerabilityID : CVE-2025-46836 
 │                       │       ├ PkgID           : net-tools@2.10-1.1ubuntu1 
 │                       │       ├ PkgName         : net-tools 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/net-tools@2.10-1.1ubuntu1?arch=amd64&
 │                       │       │                  │       distro=ubuntu-24.10 
 │                       │       │                  ╰ UID : f64ded68fb2c0511 
 │                       │       ├ InstalledVersion: 2.10-1.1ubuntu1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 2.10-1.1ubuntu1.24.10.1 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
 │                       │       │                  │         6b905ad543ad918ad504c 
 │                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
@@ -4302,10 +4341,11 @@
 │                       │       │                  ├ [2]: https://github.com/ecki/net-tools/security/advisories
 │                       │       │                  │      /GHSA-pfwf-h6m3-63wf 
 │                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-46836 
-│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-46836 
+│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7537-1 
+│                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-46836 
 │                       │       ├ PublishedDate   : 2025-05-14T23:15:48.073Z 
 │                       │       ╰ LastModifiedDate: 2025-05-16T14:43:26.16Z 
-│                       ├ [86]  ╭ VulnerabilityID : CVE-2025-32728 
+│                       ├ [87]  ╭ VulnerabilityID : CVE-2025-32728 
 │                       │       ├ PkgID           : openssh-client@1:9.7p1-7ubuntu4.2 
 │                       │       ├ PkgName         : openssh-client 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.7p1-7ubuntu4.2?arch=
@@ -4359,7 +4399,7 @@
 │                       │       │                  ╰ [10]: https://www.openssh.com/txt/release-7.4 
 │                       │       ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │       ╰ LastModifiedDate: 2025-05-22T16:51:54.89Z 
-│                       ├ [87]  ╭ VulnerabilityID : CVE-2025-32728 
+│                       ├ [88]  ╭ VulnerabilityID : CVE-2025-32728 
 │                       │       ├ PkgID           : openssh-server@1:9.7p1-7ubuntu4.2 
 │                       │       ├ PkgName         : openssh-server 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.7p1-7ubuntu4.2?arch=
@@ -4413,7 +4453,7 @@
 │                       │       │                  ╰ [10]: https://www.openssh.com/txt/release-7.4 
 │                       │       ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │       ╰ LastModifiedDate: 2025-05-22T16:51:54.89Z 
-│                       ├ [88]  ╭ VulnerabilityID : CVE-2025-32728 
+│                       ├ [89]  ╭ VulnerabilityID : CVE-2025-32728 
 │                       │       ├ PkgID           : openssh-sftp-server@1:9.7p1-7ubuntu4.2 
 │                       │       ├ PkgName         : openssh-sftp-server 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.7p1-7ubuntu4.2?
@@ -4467,7 +4507,7 @@
 │                       │       │                  ╰ [10]: https://www.openssh.com/txt/release-7.4 
 │                       │       ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │       ╰ LastModifiedDate: 2025-05-22T16:51:54.89Z 
-│                       ├ [89]  ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [90]  ╭ VulnerabilityID : CVE-2024-41996 
 │                       │       ├ PkgID           : openssl@3.3.1-2ubuntu2.1 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2.1?arch=amd64&d
@@ -4517,7 +4557,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │       ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │       ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [90]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [91]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
 │                       │       ├ PkgName         : passwd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dis
@@ -4565,7 +4605,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [91]  ╭ VulnerabilityID : CVE-2018-6952 
+│                       ├ [92]  ╭ VulnerabilityID : CVE-2018-6952 
 │                       │       ├ PkgID           : patch@2.7.6-7build3 
 │                       │       ├ PkgName         : patch 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -4615,7 +4655,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                       │       ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                       │       ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                       ├ [92]  ╭ VulnerabilityID : CVE-2021-45261 
+│                       ├ [93]  ╭ VulnerabilityID : CVE-2021-45261 
 │                       │       ├ PkgID           : patch@2.7.6-7build3 
 │                       │       ├ PkgName         : patch 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -4655,7 +4695,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │       ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │       ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [93]  ╭ VulnerabilityID : CVE-2024-56406 
+│                       ├ [94]  ╭ VulnerabilityID : CVE-2024-56406 
 │                       │       ├ PkgID           : perl@5.38.2-5 
 │                       │       ├ PkgName         : perl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl@5.38.2-5?arch=amd64&distro=ubunt
@@ -4717,7 +4757,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
-│                       ├ [94]  ╭ VulnerabilityID : CVE-2024-56406 
+│                       ├ [95]  ╭ VulnerabilityID : CVE-2024-56406 
 │                       │       ├ PkgID           : perl-base@5.38.2-5 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.38.2-5?arch=amd64&distro=
@@ -4779,7 +4819,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
-│                       ├ [95]  ╭ VulnerabilityID : CVE-2024-56406 
+│                       ├ [96]  ╭ VulnerabilityID : CVE-2024-56406 
 │                       │       ├ PkgID           : perl-modules-5.38@5.38.2-5 
 │                       │       ├ PkgName         : perl-modules-5.38 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-modules-5.38@5.38.2-5?arch=all&d
@@ -4841,7 +4881,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
-│                       ├ [96]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [97]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │       ├ PkgName         : uidmap 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dis
@@ -4889,7 +4929,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [97]  ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [98]  ╭ VulnerabilityID : CVE-2025-1215 
 │                       │       ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&di
@@ -4941,7 +4981,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [98]  ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [99]  ╭ VulnerabilityID : CVE-2025-26603 
 │                       │       ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&di
@@ -5005,7 +5045,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [99]  ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [100] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │       ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=a
@@ -5057,7 +5097,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [100] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [101] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │       ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=a
@@ -5121,7 +5161,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [101] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [102] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │       ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=
@@ -5173,7 +5213,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [102] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [103] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │       ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=
@@ -5237,7 +5277,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [103] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ├ [104] ╭ VulnerabilityID : CVE-2021-31879 
 │                       │       ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                       │       ├ PkgName         : wget 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distr
@@ -5284,7 +5324,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
 │                       │       ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                       │       ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
-│                       ├ [104] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [105] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │       ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&di
@@ -5336,7 +5376,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [105] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [106] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │       ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&di
@@ -5400,7 +5440,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ╰ [106] ╭ VulnerabilityID : CVE-2025-31115 
+│                       ╰ [107] ╭ VulnerabilityID : CVE-2025-31115 
 │                               ├ PkgID           : xz-utils@5.6.2-2 
 │                               ├ PkgName         : xz-utils 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xz-utils@5.6.2-2?arch=amd64&distro=ub
@@ -5573,7 +5613,8 @@
 │                       │     │                  ├ [2]: https://github.com/containerd/containerd/security/advis
 │                       │     │                  │      ories/GHSA-cxfp-7pvr-95ff 
 │                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-47291 
-│                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-47291 
+│                       │     │                  ├ [4]: https://pkg.go.dev/vuln/GO-2025-3701 
+│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-47291 
 │                       │     ├ PublishedDate   : 2025-05-21T18:15:52.853Z 
 │                       │     ╰ LastModifiedDate: 2025-05-21T20:24:58.133Z 
 │                       ├ [2] ╭ VulnerabilityID : CVE-2025-0495 
@@ -5611,7 +5652,8 @@
 │                       │     │                   authentication. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-532 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ├ VendorSeverity   ╭ azure: 2 
+│                       │     │                  ╰ ghsa : 2 
 │                       │     ├ References       ╭ [0]: https://github.com/docker/buildx 
 │                       │     │                  ├ [1]: https://github.com/docker/buildx/commit/18ccba072076ddb
 │                       │     │                  │      fb0aeedd6746d7719b0729b58 
