@@ -208,7 +208,7 @@
     VendorSeverity:
       azure: 1
       cbl-mariner: 1
-      photon: 2
+      photon: 1
       ubuntu: 1
     References:
     - https://curl.se/docs/CVE-2025-0167.html
@@ -1453,7 +1453,7 @@
       azure: 3
       cbl-mariner: 3
       oracle-oval: 2
-      photon: 2
+      photon: 3
       redhat: 1
       rocky: 1
       ubuntu: 1
@@ -1710,7 +1710,7 @@
     VendorSeverity:
       azure: 1
       cbl-mariner: 1
-      photon: 2
+      photon: 1
       ubuntu: 1
     References:
     - https://curl.se/docs/CVE-2025-0167.html
@@ -1750,7 +1750,7 @@
     VendorSeverity:
       azure: 1
       cbl-mariner: 1
-      photon: 2
+      photon: 1
       ubuntu: 1
     References:
     - https://curl.se/docs/CVE-2025-0167.html
@@ -2369,7 +2369,7 @@
       azure: 3
       cbl-mariner: 3
       oracle-oval: 2
-      photon: 2
+      photon: 3
       redhat: 1
       rocky: 1
       ubuntu: 1
@@ -2399,6 +2399,42 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-26461
     PublishedDate: '2024-02-29T01:44:18.82Z'
     LastModifiedDate: '2025-05-23T15:30:30.847Z'
+  - VulnerabilityID: CVE-2025-5222
+    PkgID: libicu74@74.2-1ubuntu4
+    PkgName: libicu74
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libicu74@74.2-1ubuntu4?arch=amd64&distro=ubuntu-24.10
+      UID: 38cff1ce12a3eb78
+    InstalledVersion: 74.2-1ubuntu4
+    Status: affected
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-5222
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: 'icu: Stack buffer overflow in the SRBRoot::addTag function'
+    Description: A stack buffer overflow was found in Internationl components for unicode (ICU ). While running the genrb binary, the 'subtag' struct overflowed at the SRBRoot::addTag function. This issue may lead to memory corruption and local arbitrary code execution.
+    Severity: LOW
+    CweIDs:
+    - CWE-120
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-5222
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2368600
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-5222
+    - https://www.cve.org/CVERecord?id=CVE-2025-5222
+    PublishedDate: '2025-05-27T21:15:23.03Z'
+    LastModifiedDate: '2025-05-28T15:01:30.72Z'
   - VulnerabilityID: CVE-2025-24528
     PkgID: libk5crypto3@1.21.3-3ubuntu0.1
     PkgName: libk5crypto3
@@ -2532,7 +2568,7 @@
       azure: 3
       cbl-mariner: 3
       oracle-oval: 2
-      photon: 2
+      photon: 3
       redhat: 1
       rocky: 1
       ubuntu: 1
@@ -2695,7 +2731,7 @@
       azure: 3
       cbl-mariner: 3
       oracle-oval: 2
-      photon: 2
+      photon: 3
       redhat: 1
       rocky: 1
       ubuntu: 1
@@ -2858,7 +2894,7 @@
       azure: 3
       cbl-mariner: 3
       oracle-oval: 2
-      photon: 2
+      photon: 3
       redhat: 1
       rocky: 1
       ubuntu: 1
@@ -3864,6 +3900,7 @@
     - CWE-252
     VendorSeverity:
       amazon: 2
+      azure: 2
       nvd: 3
       photon: 3
       redhat: 2
@@ -3910,6 +3947,7 @@
     - CWE-125
     VendorSeverity:
       amazon: 2
+      azure: 1
       nvd: 3
       photon: 1
       redhat: 1
@@ -3976,7 +4014,8 @@
       PURL: pkg:deb/ubuntu/net-tools@2.10-1.1ubuntu1?arch=amd64&distro=ubuntu-24.10
       UID: f64ded68fb2c0511
     InstalledVersion: 2.10-1.1ubuntu1
-    Status: affected
+    FixedVersion: 2.10-1.1ubuntu1.24.10.1
+    Status: fixed
     Layer:
       Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
       DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
@@ -4004,6 +4043,7 @@
     - https://github.com/ecki/net-tools/commit/7a8f42fb20013a1493d8cae1c43436f85e656f2d
     - https://github.com/ecki/net-tools/security/advisories/GHSA-pfwf-h6m3-63wf
     - https://nvd.nist.gov/vuln/detail/CVE-2025-46836
+    - https://ubuntu.com/security/notices/USN-7537-1
     - https://www.cve.org/CVERecord?id=CVE-2025-46836
     PublishedDate: '2025-05-14T23:15:48.073Z'
     LastModifiedDate: '2025-05-16T14:43:26.16Z'
@@ -5071,6 +5111,7 @@
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-cxfp-7pvr-95ff
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47291
+    - https://pkg.go.dev/vuln/GO-2025-3701
     - https://www.cve.org/CVERecord?id=CVE-2025-47291
     PublishedDate: '2025-05-21T18:15:52.853Z'
     LastModifiedDate: '2025-05-21T20:24:58.133Z'
@@ -5098,6 +5139,7 @@
     CweIDs:
     - CWE-532
     VendorSeverity:
+      azure: 2
       ghsa: 2
     References:
     - https://github.com/docker/buildx
