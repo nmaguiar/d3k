@@ -30,7 +30,8 @@
 │                       │       │                   and 9.21.0 through 9.21.7. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-232 
-│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
@@ -73,7 +74,8 @@
 │                       │       │                   and 9.21.0 through 9.21.7. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-232 
-│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
@@ -116,7 +118,8 @@
 │                       │       │                   and 9.21.0 through 9.21.7. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-232 
-│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
@@ -342,7 +345,8 @@
 │                       │       │                   and 9.21.0 through 9.21.7. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-232 
-│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
@@ -3965,7 +3969,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-1188 
 │                       │       ├ VendorSeverity   ╭ azure : 1 
-│                       │       │                  ├ redhat: 1 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:
 │                       │       │                           │           L/A:N 
@@ -4281,7 +4285,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-1188 
 │                       │       ├ VendorSeverity   ╭ azure : 1 
-│                       │       │                  ├ redhat: 1 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:
 │                       │       │                           │           L/A:N 
@@ -4303,7 +4307,7 @@
 │                       │       │                  │       distro=ubuntu-24.10 
 │                       │       │                  ╰ UID : f64ded68fb2c0511 
 │                       │       ├ InstalledVersion: 2.10-1.1ubuntu1 
-│                       │       ├ FixedVersion    : 2.10-1.1ubuntu1.24.10.1 
+│                       │       ├ FixedVersion    : 2.10-1.1ubuntu1.24.10.4 
 │                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
 │                       │       │                  │         6b905ad543ad918ad504c 
@@ -4342,7 +4346,8 @@
 │                       │       │                  │      /GHSA-pfwf-h6m3-63wf 
 │                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-46836 
 │                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7537-1 
-│                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-46836 
+│                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-7537-2 
+│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-46836 
 │                       │       ├ PublishedDate   : 2025-05-14T23:15:48.073Z 
 │                       │       ╰ LastModifiedDate: 2025-05-16T14:43:26.16Z 
 │                       ├ [87]  ╭ VulnerabilityID : CVE-2025-32728 
@@ -4590,7 +4595,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-1188 
 │                       │       ├ VendorSeverity   ╭ azure : 1 
-│                       │       │                  ├ redhat: 1 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:
 │                       │       │                           │           L/A:N 
@@ -4881,7 +4886,60 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
-│                       ├ [97]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [97]  ╭ VulnerabilityID : CVE-2025-47273 
+│                       │       ├ PkgID           : python3-pkg-resources@74.1.2-1 
+│                       │       ├ PkgName         : python3-pkg-resources 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3-pkg-resources@74.1.2-1?arch=a
+│                       │       │                  │       ll&distro=ubuntu-24.10 
+│                       │       │                  ╰ UID : 1f33c50c8835e18c 
+│                       │       ├ InstalledVersion: 74.1.2-1 
+│                       │       ├ FixedVersion    : 74.1.2-1ubuntu0.1 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-47273 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : setuptools: Path Traversal Vulnerability in setuptools
+│                       │       │                   PackageIndex 
+│                       │       ├ Description     : setuptools is a package that allows users to download,
+│                       │       │                   build, install, upgrade, and uninstall Python packages. A
+│                       │       │                   path traversal vulnerability in `PackageIndex` is present
+│                       │       │                   in setuptools prior to version 78.1.1. An attacker would be
+│                       │       │                    allowed to write files to arbitrary locations on the
+│                       │       │                   filesystem with the permissions of the process running the
+│                       │       │                   Python code, which could escalate to remote code execution
+│                       │       │                   depending on the context. Version 78.1.1 fixes the issue. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-22 
+│                       │       ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │       │                  ├ redhat: 2 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │       │                           │           H/A:N 
+│                       │       │                           ╰ V3Score : 6.5 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-47273 
+│                       │       │                  ├ [1]: https://github.com/pypa/setuptools 
+│                       │       │                  ├ [2]: https://github.com/pypa/setuptools/blob/6ead555c5fb29
+│                       │       │                  │      bc57fe6105b1bffc163f56fd558/setuptools/package_index.
+│                       │       │                  │      py#L810C1-L825C88 
+│                       │       │                  ├ [3]: https://github.com/pypa/setuptools/commit/250a6d17978
+│                       │       │                  │      f9f6ac3ac887091f2d32886fbbb0b 
+│                       │       │                  ├ [4]: https://github.com/pypa/setuptools/issues/4946 
+│                       │       │                  ├ [5]: https://github.com/pypa/setuptools/security/advisorie
+│                       │       │                  │      s/GHSA-5rjg-fvgr-3xxf 
+│                       │       │                  ├ [6]: https://lists.debian.org/debian-lts-announce/2025/05/
+│                       │       │                  │      msg00035.html 
+│                       │       │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-47273 
+│                       │       │                  ├ [8]: https://ubuntu.com/security/notices/USN-7544-1 
+│                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-47273 
+│                       │       ├ PublishedDate   : 2025-05-17T16:15:19.11Z 
+│                       │       ╰ LastModifiedDate: 2025-05-28T15:15:25.08Z 
+│                       ├ [98]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │       ├ PkgName         : uidmap 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dis
@@ -4914,7 +4972,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-1188 
 │                       │       ├ VendorSeverity   ╭ azure : 1 
-│                       │       │                  ├ redhat: 1 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:
 │                       │       │                           │           L/A:N 
@@ -4929,7 +4987,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [98]  ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [99]  ╭ VulnerabilityID : CVE-2025-1215 
 │                       │       ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&di
@@ -4981,7 +5039,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [99]  ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [100] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │       ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&di
@@ -5045,7 +5103,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [100] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [101] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │       ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=a
@@ -5097,7 +5155,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [101] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [102] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │       ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=a
@@ -5161,7 +5219,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [102] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [103] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │       ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=
@@ -5213,7 +5271,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [103] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [104] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │       ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=
@@ -5277,7 +5335,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [104] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ├ [105] ╭ VulnerabilityID : CVE-2021-31879 
 │                       │       ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                       │       ├ PkgName         : wget 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distr
@@ -5324,7 +5382,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
 │                       │       ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                       │       ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
-│                       ├ [105] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [106] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │       ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&di
@@ -5376,7 +5434,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [106] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [107] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │       ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&di
@@ -5440,7 +5498,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ╰ [107] ╭ VulnerabilityID : CVE-2025-31115 
+│                       ╰ [108] ╭ VulnerabilityID : CVE-2025-31115 
 │                               ├ PkgID           : xz-utils@5.6.2-2 
 │                               ├ PkgName         : xz-utils 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xz-utils@5.6.2-2?arch=amd64&distro=ub
@@ -5800,7 +5858,8 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ azure      : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
 │                       │     │                  ╰ redhat     : 2 
@@ -6228,7 +6287,8 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ azure      : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
 │                       │     │                  ╰ redhat     : 2 
@@ -6416,7 +6476,8 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ azure      : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
 │                       │     │                  ╰ redhat     : 2 
@@ -6880,7 +6941,8 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ azure      : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
 │                       │     │                  ╰ redhat     : 2 
