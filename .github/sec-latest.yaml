@@ -3562,7 +3562,7 @@
     - CWE-190
     - CWE-400
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 3
       photon: 3
       redhat: 2
