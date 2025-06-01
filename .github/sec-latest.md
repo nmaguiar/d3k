@@ -3814,7 +3814,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-190 
 │                       │       │                  ╰ [1]: CWE-400 
-│                       │       ├ VendorSeverity   ╭ amazon : 3 
+│                       │       ├ VendorSeverity   ╭ amazon : 2 
 │                       │       │                  ├ bitnami: 3 
 │                       │       │                  ├ photon : 3 
 │                       │       │                  ├ redhat : 2 
@@ -4916,7 +4916,8 @@
 │                       │       │                   depending on the context. Version 78.1.1 fixes the issue. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-22 
-│                       │       ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │       ├ VendorSeverity   ╭ azure : 3 
+│                       │       │                  ├ ghsa  : 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
