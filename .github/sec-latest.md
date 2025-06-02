@@ -4138,7 +4138,7 @@
 │                       │       │                  ├ azure      : 1 
 │                       │       │                  ├ cbl-mariner: 1 
 │                       │       │                  ├ nvd        : 3 
-│                       │       │                  ├ photon     : 3 
+│                       │       │                  ├ photon     : 1 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -4344,12 +4344,14 @@
 │                       │       │                  │      3a1493d8cae1c43436f85e656f2d 
 │                       │       │                  ├ [2]: https://github.com/ecki/net-tools/security/advisories
 │                       │       │                  │      /GHSA-pfwf-h6m3-63wf 
-│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-46836 
-│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7537-1 
-│                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-7537-2 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-46836 
+│                       │       │                  ├ [3]: https://lists.debian.org/debian-lts-announce/2025/05/
+│                       │       │                  │      msg00053.html 
+│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-46836 
+│                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-7537-1 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7537-2 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46836 
 │                       │       ├ PublishedDate   : 2025-05-14T23:15:48.073Z 
-│                       │       ╰ LastModifiedDate: 2025-05-16T14:43:26.16Z 
+│                       │       ╰ LastModifiedDate: 2025-05-31T23:15:20.4Z 
 │                       ├ [87]  ╭ VulnerabilityID : CVE-2025-32728 
 │                       │       ├ PkgID           : openssh-client@1:9.7p1-7ubuntu4.2 
 │                       │       ├ PkgName         : openssh-client 
