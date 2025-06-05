@@ -457,7 +457,7 @@
 │                       │       │                  ├ [4] : https://github.com/git/git/security/advisories/GHSA-
 │                       │       │                  │       7jjc-gg6m-3329 
 │                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-52005.html 
-│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-7409.html 
+│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-8414.html 
 │                       │       │                  ├ [7] : https://lore.kernel.org/git/1M9FnZ-1taoNo1wwh-00ESSd
 │                       │       │                  │       @mail.gmx.net 
 │                       │       │                  ├ [8] : https://lore.kernel.org/git/8570a129-d66a-465a-905e-
@@ -519,7 +519,7 @@
 │                       │       │                  ├ [4] : https://github.com/git/git/security/advisories/GHSA-
 │                       │       │                  │       7jjc-gg6m-3329 
 │                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-52005.html 
-│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-7409.html 
+│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-8414.html 
 │                       │       │                  ├ [7] : https://lore.kernel.org/git/1M9FnZ-1taoNo1wwh-00ESSd
 │                       │       │                  │       @mail.gmx.net 
 │                       │       │                  ├ [8] : https://lore.kernel.org/git/8570a129-d66a-465a-905e-
@@ -6837,6 +6837,7 @@
 │                             ├ VendorSeverity   ╭ amazon     : 3 
 │                             │                  ├ bitnami    : 4 
 │                             │                  ├ cbl-mariner: 3 
+│                             │                  ├ oracle-oval: 2 
 │                             │                  ╰ redhat     : 2 
 │                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
 │                             │                  │         │           /A:N 
@@ -6849,9 +6850,11 @@
 │                             │                  ├ [2]: https://go.dev/cl/652998 
 │                             │                  ├ [3]: https://go.dev/issue/71988 
 │                             │                  ├ [4]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
-│                             │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3563 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
+│                             │                  ├ [5]: https://linux.oracle.com/cve/CVE-2025-22871.html 
+│                             │                  ├ [6]: https://linux.oracle.com/errata/ELSA-2025-8478.html 
+│                             │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
+│                             │                  ├ [8]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
 │                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
 │                             ╰ LastModifiedDate: 2025-04-18T15:15:57.923Z 
 ├ [3] ╭ Target         : usr/bin/helm 
@@ -7151,6 +7154,7 @@
 │                             ├ VendorSeverity   ╭ amazon     : 3 
 │                             │                  ├ bitnami    : 4 
 │                             │                  ├ cbl-mariner: 3 
+│                             │                  ├ oracle-oval: 2 
 │                             │                  ╰ redhat     : 2 
 │                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
 │                             │                  │         │           /A:N 
@@ -7163,9 +7167,11 @@
 │                             │                  ├ [2]: https://go.dev/cl/652998 
 │                             │                  ├ [3]: https://go.dev/issue/71988 
 │                             │                  ├ [4]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
-│                             │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3563 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
+│                             │                  ├ [5]: https://linux.oracle.com/cve/CVE-2025-22871.html 
+│                             │                  ├ [6]: https://linux.oracle.com/errata/ELSA-2025-8478.html 
+│                             │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
+│                             │                  ├ [8]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
 │                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
 │                             ╰ LastModifiedDate: 2025-04-18T15:15:57.923Z 
 ├ [4] ╭ Target         : usr/bin/kubectl 
@@ -7297,6 +7303,7 @@
 │                             ├ VendorSeverity   ╭ amazon     : 3 
 │                             │                  ├ bitnami    : 4 
 │                             │                  ├ cbl-mariner: 3 
+│                             │                  ├ oracle-oval: 2 
 │                             │                  ╰ redhat     : 2 
 │                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
 │                             │                  │         │           /A:N 
@@ -7309,9 +7316,11 @@
 │                             │                  ├ [2]: https://go.dev/cl/652998 
 │                             │                  ├ [3]: https://go.dev/issue/71988 
 │                             │                  ├ [4]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
-│                             │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3563 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
+│                             │                  ├ [5]: https://linux.oracle.com/cve/CVE-2025-22871.html 
+│                             │                  ├ [6]: https://linux.oracle.com/errata/ELSA-2025-8478.html 
+│                             │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
+│                             │                  ├ [8]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
 │                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
 │                             ╰ LastModifiedDate: 2025-04-18T15:15:57.923Z 
 ├ [5] ╭ Target         : usr/local/bin/k3d 
@@ -7804,6 +7813,7 @@
 │                             ├ VendorSeverity   ╭ amazon     : 3 
 │                             │                  ├ bitnami    : 4 
 │                             │                  ├ cbl-mariner: 3 
+│                             │                  ├ oracle-oval: 2 
 │                             │                  ╰ redhat     : 2 
 │                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
 │                             │                  │         │           /A:N 
@@ -7816,9 +7826,11 @@
 │                             │                  ├ [2]: https://go.dev/cl/652998 
 │                             │                  ├ [3]: https://go.dev/issue/71988 
 │                             │                  ├ [4]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
-│                             │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3563 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
+│                             │                  ├ [5]: https://linux.oracle.com/cve/CVE-2025-22871.html 
+│                             │                  ├ [6]: https://linux.oracle.com/errata/ELSA-2025-8478.html 
+│                             │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
+│                             │                  ├ [8]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
 │                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
 │                             ╰ LastModifiedDate: 2025-04-18T15:15:57.923Z 
 ├ [6] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
