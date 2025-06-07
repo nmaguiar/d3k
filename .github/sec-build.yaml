@@ -27,8 +27,8 @@
     FixedVersion: 1.7.27, 1.6.38
     Status: fixed
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-40635
     DataSource:
@@ -79,8 +79,8 @@
     FixedVersion: 23.0.15, 26.1.5, 27.1.1, 25.0.6
     Status: fixed
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-41110
     DataSource:
@@ -152,8 +152,8 @@
     FixedVersion: 0.31.0
     Status: fixed
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-45337
     DataSource:
@@ -201,8 +201,8 @@
     FixedVersion: 0.35.0
     Status: fixed
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22869
     DataSource:
@@ -258,8 +258,8 @@
     FixedVersion: 0.36.0
     Status: fixed
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22870
     DataSource:
@@ -307,8 +307,8 @@
     FixedVersion: 0.38.0
     Status: fixed
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22872
     DataSource:
@@ -351,8 +351,8 @@
     FixedVersion: 1.64.1
     Status: fixed
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
     SeveritySource: ghsa
     PrimaryURL: https://github.com/advisories/GHSA-xr7q-jx4m-x55m
     DataSource:
@@ -388,8 +388,8 @@
     FixedVersion: 1.23.8, 1.24.2
     Status: fixed
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22871
     DataSource:
       ID: govulndb
@@ -456,8 +456,8 @@
         LastCause: false
     Match: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
       CreatedBy: 'COPY / / # buildkit'
 - Target: /etc/ssh/ssh_host_ed25519_key
   Class: secret
@@ -487,8 +487,8 @@
         LastCause: false
     Match: BEGIN OPENSSH PRIVATE KEY-----******************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
       CreatedBy: 'COPY / / # buildkit'
 - Target: /etc/ssh/ssh_host_rsa_key
   Class: secret
@@ -518,6 +518,6 @@
         LastCause: false
     Match: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
     Layer:
-      Digest: sha256:430760335da0b6a83726d43760053556b165a6d8936406677b2b4a294d6a4bd1
-      DiffID: sha256:c7b21cdc1c7b8fa99f4fa90aedb444b9324c2b8d6e10548cc0cedcf5372e869c
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
       CreatedBy: 'COPY / / # buildkit'
