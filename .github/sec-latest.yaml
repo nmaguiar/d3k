@@ -5856,6 +5856,7 @@
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L
@@ -5866,9 +5867,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/03/07/2
     - https://access.redhat.com/security/cve/CVE-2025-22870
+    - https://github.com/golang/go/issues/71984
     - https://go-review.googlesource.com/q/project:net
     - https://go.dev/cl/654697
     - https://go.dev/issue/71984
+    - https://groups.google.com/g/golang-announce/c/4t3lzH3I0eI/m/b42ImqrBAQAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
     - https://security.netapp.com/advisory/ntap-20250509-0007
@@ -5948,6 +5951,7 @@
       cbl-mariner: 3
       oracle-oval: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
@@ -5963,6 +5967,7 @@
     - https://errata.almalinux.org/8/ALSA-2025-3772.html
     - https://go.dev/cl/643100
     - https://go.dev/issue/70530
+    - https://groups.google.com/g/golang-announce/c/sSaUhLA-2SI
     - https://groups.google.com/g/golang-dev/c/CAWXhan3Jww/m/bk9LAa-lCgAJ
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://linux.oracle.com/cve/CVE-2024-45336.html
@@ -6000,6 +6005,7 @@
       cbl-mariner: 2
       oracle-oval: 2
       redhat: 1
+      ubuntu: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
@@ -6015,6 +6021,7 @@
     - https://errata.almalinux.org/8/ALSA-2025-3772.html
     - https://go.dev/cl/643099
     - https://go.dev/issue/71156
+    - https://groups.google.com/g/golang-announce/c/sSaUhLA-2SI
     - https://groups.google.com/g/golang-dev/c/CAWXhan3Jww/m/bk9LAa-lCgAJ
     - https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ
     - https://linux.oracle.com/cve/CVE-2024-45341.html
@@ -6048,6 +6055,7 @@
     VendorSeverity:
       bitnami: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
@@ -6057,6 +6065,10 @@
         V3Score: 5.3
     References:
     - https://access.redhat.com/security/cve/CVE-2025-22866
+    - https://github.com/golang/go/commit/0cc45e7ca668b103c1055ae84402ad3f3425dd56 (go1.22.12)
+    - https://github.com/golang/go/commit/6644ed63b1e6ccc129647ef6b0d4647fdbe14056 (go1.23.6)
+    - https://github.com/golang/go/commit/6fc23a3cff5e38ff72923fee50f51254dcdc6e93 (go1.24rc3)
+    - https://github.com/golang/go/issues/71383
     - https://go.dev/cl/643735
     - https://go.dev/issue/71383
     - https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k
@@ -6110,7 +6122,7 @@
     - https://go.dev/issue/71988
     - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
     - https://linux.oracle.com/cve/CVE-2025-22871.html
-    - https://linux.oracle.com/errata/ELSA-2025-8478.html
+    - https://linux.oracle.com/errata/ELSA-2025-8682.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
     - https://pkg.go.dev/vuln/GO-2025-3563
     - https://www.cve.org/CVERecord?id=CVE-2025-22871
@@ -6258,6 +6270,7 @@
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L
@@ -6268,9 +6281,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/03/07/2
     - https://access.redhat.com/security/cve/CVE-2025-22870
+    - https://github.com/golang/go/issues/71984
     - https://go-review.googlesource.com/q/project:net
     - https://go.dev/cl/654697
     - https://go.dev/issue/71984
+    - https://groups.google.com/g/golang-announce/c/4t3lzH3I0eI/m/b42ImqrBAQAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
     - https://security.netapp.com/advisory/ntap-20250509-0007
@@ -6345,6 +6360,7 @@
     VendorSeverity:
       bitnami: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
@@ -6354,6 +6370,10 @@
         V3Score: 5.3
     References:
     - https://access.redhat.com/security/cve/CVE-2025-22866
+    - https://github.com/golang/go/commit/0cc45e7ca668b103c1055ae84402ad3f3425dd56 (go1.22.12)
+    - https://github.com/golang/go/commit/6644ed63b1e6ccc129647ef6b0d4647fdbe14056 (go1.23.6)
+    - https://github.com/golang/go/commit/6fc23a3cff5e38ff72923fee50f51254dcdc6e93 (go1.24rc3)
+    - https://github.com/golang/go/issues/71383
     - https://go.dev/cl/643735
     - https://go.dev/issue/71383
     - https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k
@@ -6407,7 +6427,7 @@
     - https://go.dev/issue/71988
     - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
     - https://linux.oracle.com/cve/CVE-2025-22871.html
-    - https://linux.oracle.com/errata/ELSA-2025-8478.html
+    - https://linux.oracle.com/errata/ELSA-2025-8682.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
     - https://pkg.go.dev/vuln/GO-2025-3563
     - https://www.cve.org/CVERecord?id=CVE-2025-22871
@@ -6446,6 +6466,7 @@
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L
@@ -6456,9 +6477,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/03/07/2
     - https://access.redhat.com/security/cve/CVE-2025-22870
+    - https://github.com/golang/go/issues/71984
     - https://go-review.googlesource.com/q/project:net
     - https://go.dev/cl/654697
     - https://go.dev/issue/71984
+    - https://groups.google.com/g/golang-announce/c/4t3lzH3I0eI/m/b42ImqrBAQAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
     - https://security.netapp.com/advisory/ntap-20250509-0007
@@ -6554,7 +6577,7 @@
     - https://go.dev/issue/71988
     - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
     - https://linux.oracle.com/cve/CVE-2025-22871.html
-    - https://linux.oracle.com/errata/ELSA-2025-8478.html
+    - https://linux.oracle.com/errata/ELSA-2025-8682.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
     - https://pkg.go.dev/vuln/GO-2025-3563
     - https://www.cve.org/CVERecord?id=CVE-2025-22871
@@ -6824,6 +6847,7 @@
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L
@@ -6834,9 +6858,11 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/03/07/2
     - https://access.redhat.com/security/cve/CVE-2025-22870
+    - https://github.com/golang/go/issues/71984
     - https://go-review.googlesource.com/q/project:net
     - https://go.dev/cl/654697
     - https://go.dev/issue/71984
+    - https://groups.google.com/g/golang-announce/c/4t3lzH3I0eI/m/b42ImqrBAQAJ
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22870
     - https://pkg.go.dev/vuln/GO-2025-3503
     - https://security.netapp.com/advisory/ntap-20250509-0007
@@ -6969,7 +6995,7 @@
     - https://go.dev/issue/71988
     - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
     - https://linux.oracle.com/cve/CVE-2025-22871.html
-    - https://linux.oracle.com/errata/ELSA-2025-8478.html
+    - https://linux.oracle.com/errata/ELSA-2025-8682.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
     - https://pkg.go.dev/vuln/GO-2025-3563
     - https://www.cve.org/CVERecord?id=CVE-2025-22871
