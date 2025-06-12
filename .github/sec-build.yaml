@@ -7,12 +7,261 @@
 - Target: usr/bin/docker-compose
   Class: lang-pkgs
   Type: gobinary
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2025-4673
+    PkgID: stdlib@v1.23.8
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.8
+      UID: fc1a388135bdfe1b
+    InstalledVersion: v1.23.8
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-4673
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Proxy-Authorization and Proxy-Authenticate headers persisted on cross- ...
+    Description: Proxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://go.dev/cl/679257
+    - https://go.dev/issue/73816
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3751
+    - https://www.cve.org/CVERecord?id=CVE-2025-4673
+    PublishedDate: '2025-06-11T17:15:42.993Z'
+    LastModifiedDate: '2025-06-11T17:15:42.993Z'
+  - VulnerabilityID: CVE-2025-0913
+    PkgID: stdlib@v1.23.8
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.8
+      UID: fc1a388135bdfe1b
+    InstalledVersion: v1.23.8
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-0913
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall
+    Description: os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on Unix and Windows systems when the target path was a dangling symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL flags never follows symlinks. On Windows, when the target path was a symlink to a nonexistent location, OpenFile would create a file in that location. OpenFile now always returns an error when the O_CREATE and O_EXCL flags are both set and the target path is a symlink.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/672396
+    - https://go.dev/issue/73702
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3750
+  - VulnerabilityID: CVE-2025-22874
+    PkgID: stdlib@v1.23.8
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.8
+      UID: fc1a388135bdfe1b
+    InstalledVersion: v1.23.8
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22874
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsag ...
+    Description: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsageAny unintentionally disabledpolicy validation. This only affected certificate chains which contain policy graphs, which are rather uncommon.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/670375
+    - https://go.dev/issue/73612
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3749
+    PublishedDate: '2025-06-11T17:15:42.167Z'
+    LastModifiedDate: '2025-06-11T17:15:42.167Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2025-4673
+    PkgID: stdlib@v1.24.3
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.3
+      UID: 40ab490ef72d674d
+    InstalledVersion: v1.24.3
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-4673
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Proxy-Authorization and Proxy-Authenticate headers persisted on cross- ...
+    Description: Proxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://go.dev/cl/679257
+    - https://go.dev/issue/73816
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3751
+    - https://www.cve.org/CVERecord?id=CVE-2025-4673
+    PublishedDate: '2025-06-11T17:15:42.993Z'
+    LastModifiedDate: '2025-06-11T17:15:42.993Z'
+  - VulnerabilityID: CVE-2025-0913
+    PkgID: stdlib@v1.24.3
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.3
+      UID: 40ab490ef72d674d
+    InstalledVersion: v1.24.3
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-0913
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall
+    Description: os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on Unix and Windows systems when the target path was a dangling symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL flags never follows symlinks. On Windows, when the target path was a symlink to a nonexistent location, OpenFile would create a file in that location. OpenFile now always returns an error when the O_CREATE and O_EXCL flags are both set and the target path is a symlink.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/672396
+    - https://go.dev/issue/73702
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3750
+  - VulnerabilityID: CVE-2025-22874
+    PkgID: stdlib@v1.24.3
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.3
+      UID: 40ab490ef72d674d
+    InstalledVersion: v1.24.3
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22874
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsag ...
+    Description: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsageAny unintentionally disabledpolicy validation. This only affected certificate chains which contain policy graphs, which are rather uncommon.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/670375
+    - https://go.dev/issue/73612
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3749
+    PublishedDate: '2025-06-11T17:15:42.167Z'
+    LastModifiedDate: '2025-06-11T17:15:42.167Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2025-4673
+    PkgID: stdlib@v1.24.2
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.2
+      UID: 5962d0efc7472c99
+    InstalledVersion: v1.24.2
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-4673
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Proxy-Authorization and Proxy-Authenticate headers persisted on cross- ...
+    Description: Proxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://go.dev/cl/679257
+    - https://go.dev/issue/73816
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3751
+    - https://www.cve.org/CVERecord?id=CVE-2025-4673
+    PublishedDate: '2025-06-11T17:15:42.993Z'
+    LastModifiedDate: '2025-06-11T17:15:42.993Z'
+  - VulnerabilityID: CVE-2025-0913
+    PkgID: stdlib@v1.24.2
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.2
+      UID: 5962d0efc7472c99
+    InstalledVersion: v1.24.2
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-0913
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall
+    Description: os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on Unix and Windows systems when the target path was a dangling symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL flags never follows symlinks. On Windows, when the target path was a symlink to a nonexistent location, OpenFile would create a file in that location. OpenFile now always returns an error when the O_CREATE and O_EXCL flags are both set and the target path is a symlink.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/672396
+    - https://go.dev/issue/73702
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3750
+  - VulnerabilityID: CVE-2025-22874
+    PkgID: stdlib@v1.24.2
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.2
+      UID: 5962d0efc7472c99
+    InstalledVersion: v1.24.2
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22874
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsag ...
+    Description: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsageAny unintentionally disabledpolicy validation. This only affected certificate chains which contain policy graphs, which are rather uncommon.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/670375
+    - https://go.dev/issue/73612
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3749
+    PublishedDate: '2025-06-11T17:15:42.167Z'
+    LastModifiedDate: '2025-06-11T17:15:42.167Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -431,6 +680,88 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-22871
     PublishedDate: '2025-04-08T20:15:20.183Z'
     LastModifiedDate: '2025-04-18T15:15:57.923Z'
+  - VulnerabilityID: CVE-2025-4673
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: 156a2e832bd2e3cc
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-4673
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Proxy-Authorization and Proxy-Authenticate headers persisted on cross- ...
+    Description: Proxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://go.dev/cl/679257
+    - https://go.dev/issue/73816
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3751
+    - https://www.cve.org/CVERecord?id=CVE-2025-4673
+    PublishedDate: '2025-06-11T17:15:42.993Z'
+    LastModifiedDate: '2025-06-11T17:15:42.993Z'
+  - VulnerabilityID: CVE-2025-0913
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: 156a2e832bd2e3cc
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-0913
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall
+    Description: os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on Unix and Windows systems when the target path was a dangling symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL flags never follows symlinks. On Windows, when the target path was a symlink to a nonexistent location, OpenFile would create a file in that location. OpenFile now always returns an error when the O_CREATE and O_EXCL flags are both set and the target path is a symlink.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/672396
+    - https://go.dev/issue/73702
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3750
+  - VulnerabilityID: CVE-2025-22874
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: 156a2e832bd2e3cc
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.23.10, 1.24.4
+    Status: fixed
+    Layer:
+      Digest: sha256:e2863534603b794ed54d3d12df77a69afdc4111cfce0df6e63fd40855d09dcfb
+      DiffID: sha256:8f4db517cf0a69beb5d7f9b7e2dfaef728cadc19ee75a5c230e39cb4687962e2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22874
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsag ...
+    Description: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsageAny unintentionally disabledpolicy validation. This only affected certificate chains which contain policy graphs, which are rather uncommon.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/670375
+    - https://go.dev/issue/73612
+    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
+    - https://pkg.go.dev/vuln/GO-2025-3749
+    PublishedDate: '2025-06-11T17:15:42.167Z'
+    LastModifiedDate: '2025-06-11T17:15:42.167Z'
 - Target: /etc/ssh/ssh_host_ecdsa_key
   Class: secret
   Secrets:
