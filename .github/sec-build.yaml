@@ -8,46 +8,6 @@
   Class: lang-pkgs
   Type: gobinary
   Vulnerabilities:
-  - VulnerabilityID: CVE-2025-22874
-    PkgID: stdlib@v1.23.8
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.8
-      UID: fc1a388135bdfe1b
-    InstalledVersion: v1.23.8
-    FixedVersion: 1.23.10, 1.24.4
-    Status: fixed
-    Layer:
-      Digest: sha256:ab342763d66bf7e989d290379d0539b2d687202385df1d9f31a5f1468143613f
-      DiffID: sha256:8403e2d74ad566c694f1b56d60c7708a31d21507459f8248855ffbedb7f9631e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22874
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'crypto/x509: Usage of ExtKeyUsageAny disables policy validation in crypto/x509'
-    Description: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsageAny unintentionally disabledpolicy validation. This only affected certificate chains which contain policy graphs, which are rather uncommon.
-    Severity: HIGH
-    VendorSeverity:
-      bitnami: 3
-      redhat: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
-        V3Score: 7.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
-        V3Score: 7.5
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-22874
-    - https://go.dev/cl/670375
-    - https://go.dev/issue/73612
-    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-22874
-    - https://pkg.go.dev/vuln/GO-2025-3749
-    - https://www.cve.org/CVERecord?id=CVE-2025-22874
-    PublishedDate: '2025-06-11T17:15:42.167Z'
-    LastModifiedDate: '2025-06-12T16:06:20.18Z'
   - VulnerabilityID: CVE-2025-0913
     PkgID: stdlib@v1.23.8
     PkgName: stdlib
@@ -129,7 +89,7 @@
       PURL: pkg:golang/stdlib@v1.24.3
       UID: 40ab490ef72d674d
     InstalledVersion: v1.24.3
-    FixedVersion: 1.23.10, 1.24.4
+    FixedVersion: 1.24.4
     Status: fixed
     Layer:
       Digest: sha256:ab342763d66bf7e989d290379d0539b2d687202385df1d9f31a5f1468143613f
@@ -243,7 +203,7 @@
       PURL: pkg:golang/stdlib@v1.24.2
       UID: 5962d0efc7472c99
     InstalledVersion: v1.24.2
-    FixedVersion: 1.23.10, 1.24.4
+    FixedVersion: 1.24.4
     Status: fixed
     Layer:
       Digest: sha256:ab342763d66bf7e989d290379d0539b2d687202385df1d9f31a5f1468143613f
@@ -714,46 +674,6 @@
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-xr7q-jx4m-x55m
     PublishedDate: '2024-07-05T20:07:01Z'
     LastModifiedDate: '2024-07-09T21:38:29Z'
-  - VulnerabilityID: CVE-2025-22874
-    PkgID: stdlib@v1.22.12
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.22.12
-      UID: 156a2e832bd2e3cc
-    InstalledVersion: v1.22.12
-    FixedVersion: 1.23.10, 1.24.4
-    Status: fixed
-    Layer:
-      Digest: sha256:ab342763d66bf7e989d290379d0539b2d687202385df1d9f31a5f1468143613f
-      DiffID: sha256:8403e2d74ad566c694f1b56d60c7708a31d21507459f8248855ffbedb7f9631e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22874
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'crypto/x509: Usage of ExtKeyUsageAny disables policy validation in crypto/x509'
-    Description: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsageAny unintentionally disabledpolicy validation. This only affected certificate chains which contain policy graphs, which are rather uncommon.
-    Severity: HIGH
-    VendorSeverity:
-      bitnami: 3
-      redhat: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
-        V3Score: 7.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
-        V3Score: 7.5
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-22874
-    - https://go.dev/cl/670375
-    - https://go.dev/issue/73612
-    - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-22874
-    - https://pkg.go.dev/vuln/GO-2025-3749
-    - https://www.cve.org/CVERecord?id=CVE-2025-22874
-    PublishedDate: '2025-06-11T17:15:42.167Z'
-    LastModifiedDate: '2025-06-12T16:06:20.18Z'
   - VulnerabilityID: CVE-2025-0913
     PkgID: stdlib@v1.22.12
     PkgName: stdlib
@@ -832,7 +752,7 @@
     - https://go.dev/issue/71988
     - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
     - https://linux.oracle.com/cve/CVE-2025-22871.html
-    - https://linux.oracle.com/errata/ELSA-2025-8918.html
+    - https://linux.oracle.com/errata/ELSA-2025-9060.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
     - https://pkg.go.dev/vuln/GO-2025-3563
     - https://www.cve.org/CVERecord?id=CVE-2025-22871
