@@ -3008,6 +3008,7 @@
     - CWE-364
     VendorSeverity:
       oracle-oval: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -3424,6 +3425,7 @@
     - CWE-364
     VendorSeverity:
       oracle-oval: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -3994,6 +3996,7 @@
     - CWE-364
     VendorSeverity:
       oracle-oval: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -4051,6 +4054,7 @@
     - CWE-364
     VendorSeverity:
       oracle-oval: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -4108,6 +4112,7 @@
     - CWE-364
     VendorSeverity:
       oracle-oval: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -4992,8 +4997,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
         V3Score: 8.8
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N
-        V3Score: 6.5
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L
+        V3Score: 7.1
     References:
     - https://access.redhat.com/security/cve/CVE-2025-47273
     - https://github.com/pypa/advisory-database/tree/main/vulns/setuptools/PYSEC-2025-49.yaml
@@ -5126,6 +5131,7 @@
     - CWE-364
     VendorSeverity:
       oracle-oval: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -5183,6 +5189,7 @@
     - CWE-364
     VendorSeverity:
       oracle-oval: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -5240,6 +5247,7 @@
     - CWE-364
     VendorSeverity:
       oracle-oval: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -5297,6 +5305,7 @@
     - CWE-364
     VendorSeverity:
       oracle-oval: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -5354,6 +5363,7 @@
     - CWE-364
     VendorSeverity:
       oracle-oval: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -6398,15 +6408,15 @@
         V3Score: 5.4
     References:
     - http://www.openwall.com/lists/oss-security/2025/04/04/4
-    - https://access.redhat.com/errata/RHSA-2025:8476
+    - https://access.redhat.com/errata/RHSA-2025:9147
     - https://access.redhat.com/security/cve/CVE-2025-22871
     - https://bugzilla.redhat.com/2358493
-    - https://errata.almalinux.org/9/ALSA-2025-8476.html
+    - https://errata.almalinux.org/9/ALSA-2025-9147.html
     - https://go.dev/cl/652998
     - https://go.dev/issue/71988
     - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
     - https://linux.oracle.com/cve/CVE-2025-22871.html
-    - https://linux.oracle.com/errata/ELSA-2025-9060.html
+    - https://linux.oracle.com/errata/ELSA-2025-9150.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
     - https://pkg.go.dev/vuln/GO-2025-3563
     - https://www.cve.org/CVERecord?id=CVE-2025-22871
@@ -6773,15 +6783,15 @@
         V3Score: 5.4
     References:
     - http://www.openwall.com/lists/oss-security/2025/04/04/4
-    - https://access.redhat.com/errata/RHSA-2025:8476
+    - https://access.redhat.com/errata/RHSA-2025:9147
     - https://access.redhat.com/security/cve/CVE-2025-22871
     - https://bugzilla.redhat.com/2358493
-    - https://errata.almalinux.org/9/ALSA-2025-8476.html
+    - https://errata.almalinux.org/9/ALSA-2025-9147.html
     - https://go.dev/cl/652998
     - https://go.dev/issue/71988
     - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
     - https://linux.oracle.com/cve/CVE-2025-22871.html
-    - https://linux.oracle.com/errata/ELSA-2025-9060.html
+    - https://linux.oracle.com/errata/ELSA-2025-9150.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
     - https://pkg.go.dev/vuln/GO-2025-3563
     - https://www.cve.org/CVERecord?id=CVE-2025-22871
@@ -6993,15 +7003,15 @@
         V3Score: 5.4
     References:
     - http://www.openwall.com/lists/oss-security/2025/04/04/4
-    - https://access.redhat.com/errata/RHSA-2025:8476
+    - https://access.redhat.com/errata/RHSA-2025:9147
     - https://access.redhat.com/security/cve/CVE-2025-22871
     - https://bugzilla.redhat.com/2358493
-    - https://errata.almalinux.org/9/ALSA-2025-8476.html
+    - https://errata.almalinux.org/9/ALSA-2025-9147.html
     - https://go.dev/cl/652998
     - https://go.dev/issue/71988
     - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
     - https://linux.oracle.com/cve/CVE-2025-22871.html
-    - https://linux.oracle.com/errata/ELSA-2025-9060.html
+    - https://linux.oracle.com/errata/ELSA-2025-9150.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
     - https://pkg.go.dev/vuln/GO-2025-3563
     - https://www.cve.org/CVERecord?id=CVE-2025-22871
@@ -7481,15 +7491,15 @@
         V3Score: 5.4
     References:
     - http://www.openwall.com/lists/oss-security/2025/04/04/4
-    - https://access.redhat.com/errata/RHSA-2025:8476
+    - https://access.redhat.com/errata/RHSA-2025:9147
     - https://access.redhat.com/security/cve/CVE-2025-22871
     - https://bugzilla.redhat.com/2358493
-    - https://errata.almalinux.org/9/ALSA-2025-8476.html
+    - https://errata.almalinux.org/9/ALSA-2025-9147.html
     - https://go.dev/cl/652998
     - https://go.dev/issue/71988
     - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
     - https://linux.oracle.com/cve/CVE-2025-22871.html
-    - https://linux.oracle.com/errata/ELSA-2025-9060.html
+    - https://linux.oracle.com/errata/ELSA-2025-9150.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
     - https://pkg.go.dev/vuln/GO-2025-3563
     - https://www.cve.org/CVERecord?id=CVE-2025-22871
