@@ -3415,7 +3415,48 @@
 │                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │       ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │       ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [69]  ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [69]  ╭ VulnerabilityID : CVE-2025-6020 
+│                       │       ├ PkgID           : libpam-modules@1.5.3-7ubuntu2 
+│                       │       ├ PkgName         : libpam-modules 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules@1.5.3-7ubuntu2?arch=am
+│                       │       │                  │       d64&distro=ubuntu-24.10 
+│                       │       │                  ╰ UID : b6583972609b9d73 
+│                       │       ├ InstalledVersion: 1.5.3-7ubuntu2 
+│                       │       ├ FixedVersion    : 1.5.3-7ubuntu2.3 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-6020 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : linux-pam: Linux-pam directory Traversal 
+│                       │       ├ Description     : A flaw was found in linux-pam. The module pam_namespace may
+│                       │       │                    use access user-controlled paths without proper
+│                       │       │                   protection, allowing local users to elevate their
+│                       │       │                   privileges to root via multiple symlink attacks and race
+│                       │       │                   conditions. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-22 
+│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
+│                       │       │                           │           H/A:H 
+│                       │       │                           ╰ V3Score : 7.8 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/06/17/1 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [6]: https://www.openwall.com/lists/oss-security/2025/06/1
+│                       │       │                         7/1 
+│                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
+│                       │       ╰ LastModifiedDate: 2025-06-17T20:50:23.507Z 
+│                       ├ [70]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam-modules-bin@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-modules-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules-bin@1.5.3-7ubuntu2?arc
@@ -3472,7 +3513,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │       ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │       ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [70]  ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [71]  ╭ VulnerabilityID : CVE-2024-10963 
 │                       │       ├ PkgID           : libpam-modules-bin@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-modules-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules-bin@1.5.3-7ubuntu2?arc
@@ -3531,7 +3572,48 @@
 │                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │       ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │       ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [71]  ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [72]  ╭ VulnerabilityID : CVE-2025-6020 
+│                       │       ├ PkgID           : libpam-modules-bin@1.5.3-7ubuntu2 
+│                       │       ├ PkgName         : libpam-modules-bin 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules-bin@1.5.3-7ubuntu2?arc
+│                       │       │                  │       h=amd64&distro=ubuntu-24.10 
+│                       │       │                  ╰ UID : 52023e3d863fbfc8 
+│                       │       ├ InstalledVersion: 1.5.3-7ubuntu2 
+│                       │       ├ FixedVersion    : 1.5.3-7ubuntu2.3 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-6020 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : linux-pam: Linux-pam directory Traversal 
+│                       │       ├ Description     : A flaw was found in linux-pam. The module pam_namespace may
+│                       │       │                    use access user-controlled paths without proper
+│                       │       │                   protection, allowing local users to elevate their
+│                       │       │                   privileges to root via multiple symlink attacks and race
+│                       │       │                   conditions. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-22 
+│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
+│                       │       │                           │           H/A:H 
+│                       │       │                           ╰ V3Score : 7.8 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/06/17/1 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [6]: https://www.openwall.com/lists/oss-security/2025/06/1
+│                       │       │                         7/1 
+│                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
+│                       │       ╰ LastModifiedDate: 2025-06-17T20:50:23.507Z 
+│                       ├ [73]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam-runtime@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-runtime@1.5.3-7ubuntu2?arch=al
@@ -3588,7 +3670,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │       ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │       ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [72]  ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [74]  ╭ VulnerabilityID : CVE-2024-10963 
 │                       │       ├ PkgID           : libpam-runtime@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-runtime@1.5.3-7ubuntu2?arch=al
@@ -3647,7 +3729,48 @@
 │                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │       ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │       ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [73]  ╭ VulnerabilityID : CVE-2025-4598 
+│                       ├ [75]  ╭ VulnerabilityID : CVE-2025-6020 
+│                       │       ├ PkgID           : libpam-runtime@1.5.3-7ubuntu2 
+│                       │       ├ PkgName         : libpam-runtime 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-runtime@1.5.3-7ubuntu2?arch=al
+│                       │       │                  │       l&distro=ubuntu-24.10 
+│                       │       │                  ╰ UID : 52dd5a3dac5cc9ec 
+│                       │       ├ InstalledVersion: 1.5.3-7ubuntu2 
+│                       │       ├ FixedVersion    : 1.5.3-7ubuntu2.3 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-6020 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : linux-pam: Linux-pam directory Traversal 
+│                       │       ├ Description     : A flaw was found in linux-pam. The module pam_namespace may
+│                       │       │                    use access user-controlled paths without proper
+│                       │       │                   protection, allowing local users to elevate their
+│                       │       │                   privileges to root via multiple symlink attacks and race
+│                       │       │                   conditions. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-22 
+│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
+│                       │       │                           │           H/A:H 
+│                       │       │                           ╰ V3Score : 7.8 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/06/17/1 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [6]: https://www.openwall.com/lists/oss-security/2025/06/1
+│                       │       │                         7/1 
+│                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
+│                       │       ╰ LastModifiedDate: 2025-06-17T20:50:23.507Z 
+│                       ├ [76]  ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : libpam-systemd@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : libpam-systemd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-systemd@256.5-2ubuntu3.1?arch=
@@ -3731,7 +3854,7 @@
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
 │                       │       ╰ LastModifiedDate: 2025-06-05T07:15:23.047Z 
-│                       ├ [74]  ╭ VulnerabilityID : CVE-2024-10041 
+│                       ├ [77]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam0g@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam0g 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam0g@1.5.3-7ubuntu2?arch=amd64&di
@@ -3788,7 +3911,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-10041 
 │                       │       ├ PublishedDate   : 2024-10-23T14:15:03.97Z 
 │                       │       ╰ LastModifiedDate: 2024-12-18T10:15:05.85Z 
-│                       ├ [75]  ╭ VulnerabilityID : CVE-2024-10963 
+│                       ├ [78]  ╭ VulnerabilityID : CVE-2024-10963 
 │                       │       ├ PkgID           : libpam0g@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam0g 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam0g@1.5.3-7ubuntu2?arch=amd64&di
@@ -3847,7 +3970,48 @@
 │                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │       ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │       ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [76]  ╭ VulnerabilityID : CVE-2024-56406 
+│                       ├ [79]  ╭ VulnerabilityID : CVE-2025-6020 
+│                       │       ├ PkgID           : libpam0g@1.5.3-7ubuntu2 
+│                       │       ├ PkgName         : libpam0g 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam0g@1.5.3-7ubuntu2?arch=amd64&di
+│                       │       │                  │       stro=ubuntu-24.10 
+│                       │       │                  ╰ UID : ef18bc8de4c4b9a5 
+│                       │       ├ InstalledVersion: 1.5.3-7ubuntu2 
+│                       │       ├ FixedVersion    : 1.5.3-7ubuntu2.3 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-6020 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : linux-pam: Linux-pam directory Traversal 
+│                       │       ├ Description     : A flaw was found in linux-pam. The module pam_namespace may
+│                       │       │                    use access user-controlled paths without proper
+│                       │       │                   protection, allowing local users to elevate their
+│                       │       │                   privileges to root via multiple symlink attacks and race
+│                       │       │                   conditions. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-22 
+│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
+│                       │       │                           │           H/A:H 
+│                       │       │                           ╰ V3Score : 7.8 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/06/17/1 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [6]: https://www.openwall.com/lists/oss-security/2025/06/1
+│                       │       │                         7/1 
+│                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
+│                       │       ╰ LastModifiedDate: 2025-06-17T20:50:23.507Z 
+│                       ├ [80]  ╭ VulnerabilityID : CVE-2024-56406 
 │                       │       ├ PkgID           : libperl5.38t64@5.38.2-5 
 │                       │       ├ PkgName         : libperl5.38t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libperl5.38t64@5.38.2-5?arch=amd64&di
@@ -3909,7 +4073,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
-│                       ├ [77]  ╭ VulnerabilityID : CVE-2025-4516 
+│                       ├ [81]  ╭ VulnerabilityID : CVE-2025-4516 
 │                       │       ├ PkgID           : libpython3.12-minimal@3.12.7-1ubuntu2 
 │                       │       ├ PkgName         : libpython3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-minimal@3.12.7-1ubuntu2
@@ -3971,7 +4135,7 @@
 │                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
 │                       │       ├ PublishedDate   : 2025-05-15T14:15:31.753Z 
 │                       │       ╰ LastModifiedDate: 2025-06-03T14:15:49.697Z 
-│                       ├ [78]  ╭ VulnerabilityID : CVE-2025-4516 
+│                       ├ [82]  ╭ VulnerabilityID : CVE-2025-4516 
 │                       │       ├ PkgID           : libpython3.12-stdlib@3.12.7-1ubuntu2 
 │                       │       ├ PkgName         : libpython3.12-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-stdlib@3.12.7-1ubuntu2?
@@ -4033,7 +4197,7 @@
 │                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
 │                       │       ├ PublishedDate   : 2025-05-15T14:15:31.753Z 
 │                       │       ╰ LastModifiedDate: 2025-06-03T14:15:49.697Z 
-│                       ├ [79]  ╭ VulnerabilityID : CVE-2025-4516 
+│                       ├ [83]  ╭ VulnerabilityID : CVE-2025-4516 
 │                       │       ├ PkgID           : libpython3.12t64@3.12.7-1ubuntu2 
 │                       │       ├ PkgName         : libpython3.12t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12t64@3.12.7-1ubuntu2?arch
@@ -4095,7 +4259,7 @@
 │                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
 │                       │       ├ PublishedDate   : 2025-05-15T14:15:31.753Z 
 │                       │       ╰ LastModifiedDate: 2025-06-03T14:15:49.697Z 
-│                       ├ [80]  ╭ VulnerabilityID : CVE-2025-29087 
+│                       ├ [84]  ╭ VulnerabilityID : CVE-2025-29087 
 │                       │       ├ PkgID           : libsqlite3-0@3.46.1-1 
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&dist
@@ -4146,7 +4310,7 @@
 │                       │       │                  ╰ [6]: https://www.sqlite.org/cves.html 
 │                       │       ├ PublishedDate   : 2025-04-07T20:15:20.253Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T12:43:22.31Z 
-│                       ├ [81]  ╭ VulnerabilityID : CVE-2025-29088 
+│                       ├ [85]  ╭ VulnerabilityID : CVE-2025-29088 
 │                       │       ├ PkgID           : libsqlite3-0@3.46.1-1 
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&dist
@@ -4197,7 +4361,7 @@
 │                       │       │                  ╰ [8]: https://www.sqlite.org/cves.html 
 │                       │       ├ PublishedDate   : 2025-04-10T14:15:27.163Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T16:40:41.543Z 
-│                       ├ [82]  ╭ VulnerabilityID : CVE-2025-3277 
+│                       ├ [86]  ╭ VulnerabilityID : CVE-2025-3277 
 │                       │       ├ PkgID           : libsqlite3-0@3.46.1-1 
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&dist
@@ -4245,7 +4409,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-3277 
 │                       │       ├ PublishedDate   : 2025-04-14T17:15:27.297Z 
 │                       │       ╰ LastModifiedDate: 2025-04-15T18:39:27.967Z 
-│                       ├ [83]  ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [87]  ╭ VulnerabilityID : CVE-2024-41996 
 │                       │       ├ PkgID           : libssl3t64@3.3.1-2ubuntu2.1 
 │                       │       ├ PkgName         : libssl3t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssl3t64@3.3.1-2ubuntu2.1?arch=amd6
@@ -4295,7 +4459,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │       ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │       ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [84]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [88]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : libsubid4@1:4.15.3-3ubuntu2 
 │                       │       ├ PkgName         : libsubid4 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsubid4@4.15.3-3ubuntu2?arch=amd64&
@@ -4343,7 +4507,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [85]  ╭ VulnerabilityID : CVE-2025-4598 
+│                       ├ [89]  ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : libsystemd-shared@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : libsystemd-shared 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsystemd-shared@256.5-2ubuntu3.1?ar
@@ -4427,7 +4591,7 @@
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
 │                       │       ╰ LastModifiedDate: 2025-06-05T07:15:23.047Z 
-│                       ├ [86]  ╭ VulnerabilityID : CVE-2025-4598 
+│                       ├ [90]  ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : libsystemd0@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : libsystemd0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsystemd0@256.5-2ubuntu3.1?arch=amd
@@ -4511,7 +4675,7 @@
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
 │                       │       ╰ LastModifiedDate: 2025-06-05T07:15:23.047Z 
-│                       ├ [87]  ╭ VulnerabilityID : CVE-2025-4598 
+│                       ├ [91]  ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : libudev1@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : libudev1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libudev1@256.5-2ubuntu3.1?arch=amd64&
@@ -4595,7 +4759,7 @@
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
 │                       │       ╰ LastModifiedDate: 2025-06-05T07:15:23.047Z 
-│                       ├ [88]  ╭ VulnerabilityID : CVE-2024-56171 
+│                       ├ [92]  ╭ VulnerabilityID : CVE-2024-56171 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
@@ -4658,7 +4822,7 @@
 │                       │       │                          18/2 
 │                       │       ├ PublishedDate   : 2025-02-18T22:15:12.797Z 
 │                       │       ╰ LastModifiedDate: 2025-03-28T15:15:46.003Z 
-│                       ├ [89]  ╭ VulnerabilityID : CVE-2025-24928 
+│                       ├ [93]  ╭ VulnerabilityID : CVE-2025-24928 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
@@ -4722,7 +4886,7 @@
 │                       │       │                          18/2 
 │                       │       ├ PublishedDate   : 2025-02-18T23:15:10.25Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.86Z 
-│                       ├ [90]  ╭ VulnerabilityID : CVE-2025-27113 
+│                       ├ [94]  ╭ VulnerabilityID : CVE-2025-27113 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
@@ -4769,7 +4933,7 @@
 │                       │       │                         8/2 
 │                       │       ├ PublishedDate   : 2025-02-18T23:15:10.96Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.823Z 
-│                       ├ [91]  ╭ VulnerabilityID : CVE-2025-32414 
+│                       ├ [95]  ╭ VulnerabilityID : CVE-2025-32414 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
@@ -4819,7 +4983,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-32414 
 │                       │       ├ PublishedDate   : 2025-04-08T03:15:15.94Z 
 │                       │       ╰ LastModifiedDate: 2025-04-23T19:09:35.517Z 
-│                       ├ [92]  ╭ VulnerabilityID : CVE-2025-32415 
+│                       ├ [96]  ╭ VulnerabilityID : CVE-2025-32415 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
@@ -4866,7 +5030,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32415 
 │                       │       ├ PublishedDate   : 2025-04-17T17:15:33.733Z 
 │                       │       ╰ LastModifiedDate: 2025-04-23T18:17:52.053Z 
-│                       ├ [93]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [97]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : login@1:4.15.3-3ubuntu2 
 │                       │       ├ PkgName         : login 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.15.3-3ubuntu2?arch=amd64&dist
@@ -4914,7 +5078,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [94]  ╭ VulnerabilityID : CVE-2025-46836 
+│                       ├ [98]  ╭ VulnerabilityID : CVE-2025-46836 
 │                       │       ├ PkgID           : net-tools@2.10-1.1ubuntu1 
 │                       │       ├ PkgName         : net-tools 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/net-tools@2.10-1.1ubuntu1?arch=amd64&
@@ -4966,7 +5130,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46836 
 │                       │       ├ PublishedDate   : 2025-05-14T23:15:48.073Z 
 │                       │       ╰ LastModifiedDate: 2025-05-31T23:15:20.4Z 
-│                       ├ [95]  ╭ VulnerabilityID : CVE-2025-32728 
+│                       ├ [99]  ╭ VulnerabilityID : CVE-2025-32728 
 │                       │       ├ PkgID           : openssh-client@1:9.7p1-7ubuntu4.2 
 │                       │       ├ PkgName         : openssh-client 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.7p1-7ubuntu4.2?arch=
@@ -5021,7 +5185,7 @@
 │                       │       │                  ╰ [10]: https://www.openssh.com/txt/release-7.4 
 │                       │       ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │       ╰ LastModifiedDate: 2025-05-22T16:51:54.89Z 
-│                       ├ [96]  ╭ VulnerabilityID : CVE-2025-32728 
+│                       ├ [100] ╭ VulnerabilityID : CVE-2025-32728 
 │                       │       ├ PkgID           : openssh-server@1:9.7p1-7ubuntu4.2 
 │                       │       ├ PkgName         : openssh-server 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.7p1-7ubuntu4.2?arch=
@@ -5076,7 +5240,7 @@
 │                       │       │                  ╰ [10]: https://www.openssh.com/txt/release-7.4 
 │                       │       ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │       ╰ LastModifiedDate: 2025-05-22T16:51:54.89Z 
-│                       ├ [97]  ╭ VulnerabilityID : CVE-2025-32728 
+│                       ├ [101] ╭ VulnerabilityID : CVE-2025-32728 
 │                       │       ├ PkgID           : openssh-sftp-server@1:9.7p1-7ubuntu4.2 
 │                       │       ├ PkgName         : openssh-sftp-server 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.7p1-7ubuntu4.2?
@@ -5131,7 +5295,7 @@
 │                       │       │                  ╰ [10]: https://www.openssh.com/txt/release-7.4 
 │                       │       ├ PublishedDate   : 2025-04-10T02:15:30.873Z 
 │                       │       ╰ LastModifiedDate: 2025-05-22T16:51:54.89Z 
-│                       ├ [98]  ╭ VulnerabilityID : CVE-2024-41996 
+│                       ├ [102] ╭ VulnerabilityID : CVE-2024-41996 
 │                       │       ├ PkgID           : openssl@3.3.1-2ubuntu2.1 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssl@3.3.1-2ubuntu2.1?arch=amd64&d
@@ -5181,7 +5345,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-41996 
 │                       │       ├ PublishedDate   : 2024-08-26T06:15:04.603Z 
 │                       │       ╰ LastModifiedDate: 2024-08-26T16:35:11.247Z 
-│                       ├ [99]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [103] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : passwd@1:4.15.3-3ubuntu2 
 │                       │       ├ PkgName         : passwd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.15.3-3ubuntu2?arch=amd64&dis
@@ -5229,7 +5393,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [100] ╭ VulnerabilityID : CVE-2018-6952 
+│                       ├ [104] ╭ VulnerabilityID : CVE-2018-6952 
 │                       │       ├ PkgID           : patch@2.7.6-7build3 
 │                       │       ├ PkgName         : patch 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -5279,7 +5443,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                       │       ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                       │       ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                       ├ [101] ╭ VulnerabilityID : CVE-2021-45261 
+│                       ├ [105] ╭ VulnerabilityID : CVE-2021-45261 
 │                       │       ├ PkgID           : patch@2.7.6-7build3 
 │                       │       ├ PkgName         : patch 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro
@@ -5319,7 +5483,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │       ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │       ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [102] ╭ VulnerabilityID : CVE-2024-56406 
+│                       ├ [106] ╭ VulnerabilityID : CVE-2024-56406 
 │                       │       ├ PkgID           : perl@5.38.2-5 
 │                       │       ├ PkgName         : perl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl@5.38.2-5?arch=amd64&distro=ubunt
@@ -5381,7 +5545,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
-│                       ├ [103] ╭ VulnerabilityID : CVE-2024-56406 
+│                       ├ [107] ╭ VulnerabilityID : CVE-2024-56406 
 │                       │       ├ PkgID           : perl-base@5.38.2-5 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.38.2-5?arch=amd64&distro=
@@ -5443,7 +5607,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
-│                       ├ [104] ╭ VulnerabilityID : CVE-2024-56406 
+│                       ├ [108] ╭ VulnerabilityID : CVE-2024-56406 
 │                       │       ├ PkgID           : perl-modules-5.38@5.38.2-5 
 │                       │       ├ PkgName         : perl-modules-5.38 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-modules-5.38@5.38.2-5?arch=all&d
@@ -5505,7 +5669,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
-│                       ├ [105] ╭ VulnerabilityID : CVE-2025-47273 
+│                       ├ [109] ╭ VulnerabilityID : CVE-2025-47273 
 │                       │       ├ PkgID           : python3-pkg-resources@74.1.2-1 
 │                       │       ├ PkgName         : python3-pkg-resources 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3-pkg-resources@74.1.2-1?arch=a
@@ -5568,7 +5732,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-47273 
 │                       │       ├ PublishedDate   : 2025-05-17T16:15:19.11Z 
 │                       │       ╰ LastModifiedDate: 2025-06-12T16:29:01.66Z 
-│                       ├ [106] ╭ VulnerabilityID : CVE-2025-4516 
+│                       ├ [110] ╭ VulnerabilityID : CVE-2025-4516 
 │                       │       ├ PkgID           : python3.12@3.12.7-1ubuntu2 
 │                       │       ├ PkgName         : python3.12 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.7-1ubuntu2?arch=amd64
@@ -5630,7 +5794,7 @@
 │                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
 │                       │       ├ PublishedDate   : 2025-05-15T14:15:31.753Z 
 │                       │       ╰ LastModifiedDate: 2025-06-03T14:15:49.697Z 
-│                       ├ [107] ╭ VulnerabilityID : CVE-2025-4516 
+│                       ├ [111] ╭ VulnerabilityID : CVE-2025-4516 
 │                       │       ├ PkgID           : python3.12-minimal@3.12.7-1ubuntu2 
 │                       │       ├ PkgName         : python3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.7-1ubuntu2?ar
@@ -5692,7 +5856,7 @@
 │                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
 │                       │       ├ PublishedDate   : 2025-05-15T14:15:31.753Z 
 │                       │       ╰ LastModifiedDate: 2025-06-03T14:15:49.697Z 
-│                       ├ [108] ╭ VulnerabilityID : CVE-2025-4598 
+│                       ├ [112] ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : systemd@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : systemd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd@256.5-2ubuntu3.1?arch=amd64&d
@@ -5776,7 +5940,7 @@
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
 │                       │       ╰ LastModifiedDate: 2025-06-05T07:15:23.047Z 
-│                       ├ [109] ╭ VulnerabilityID : CVE-2025-4598 
+│                       ├ [113] ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : systemd-cryptsetup@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : systemd-cryptsetup 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-cryptsetup@256.5-2ubuntu3.1?a
@@ -5860,7 +6024,7 @@
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
 │                       │       ╰ LastModifiedDate: 2025-06-05T07:15:23.047Z 
-│                       ├ [110] ╭ VulnerabilityID : CVE-2025-4598 
+│                       ├ [114] ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : systemd-resolved@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : systemd-resolved 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-resolved@256.5-2ubuntu3.1?arc
@@ -5944,7 +6108,7 @@
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
 │                       │       ╰ LastModifiedDate: 2025-06-05T07:15:23.047Z 
-│                       ├ [111] ╭ VulnerabilityID : CVE-2025-4598 
+│                       ├ [115] ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : systemd-sysv@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : systemd-sysv 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-sysv@256.5-2ubuntu3.1?arch=am
@@ -6028,7 +6192,7 @@
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
 │                       │       ╰ LastModifiedDate: 2025-06-05T07:15:23.047Z 
-│                       ├ [112] ╭ VulnerabilityID : CVE-2025-4598 
+│                       ├ [116] ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : systemd-timesyncd@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : systemd-timesyncd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-timesyncd@256.5-2ubuntu3.1?ar
@@ -6112,7 +6276,7 @@
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
 │                       │       ╰ LastModifiedDate: 2025-06-05T07:15:23.047Z 
-│                       ├ [113] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [117] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : uidmap@1:4.15.3-3ubuntu2 
 │                       │       ├ PkgName         : uidmap 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.15.3-3ubuntu2?arch=amd64&dis
@@ -6160,248 +6324,12 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [114] ╭ VulnerabilityID : CVE-2025-1215 
-│                       │       ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
-│                       │       ├ PkgName         : vim 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&di
-│                       │       │                  │       stro=ubuntu-24.10&epoch=2 
-│                       │       │                  ╰ UID : 1d06811aa36f1eab 
-│                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
-│                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
-│                       │       │                  │         6b905ad543ad918ad504c 
-│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
-│                       │       │                            6a5507fce977ad8d74ed5 
-│                       │       ├ SeveritySource  : ubuntu 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-1215 
-│                       │       ├ DataSource       ╭ ID  : ubuntu 
-│                       │       │                  ├ Name: Ubuntu CVE Tracker 
-│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : vim: vim main.c memory corruption 
-│                       │       ├ Description     : A vulnerability classified as problematic was found in vim
-│                       │       │                   up to 9.1.1096. This vulnerability affects unknown code of
-│                       │       │                   the file src/main.c. The manipulation of the argument --log
-│                       │       │                    leads to memory corruption. It is possible to launch the
-│                       │       │                   attack on the local host. Upgrading to version 9.1.1097 is
-│                       │       │                   able to address this issue. The patch is identified as
-│                       │       │                   c5654b84480822817bb7b69ebc97c174c91185e9. It is recommended
-│                       │       │                    to upgrade the affected component. 
-│                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ─ [0]: CWE-119 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
-│                       │       │                  ├ azure      : 1 
-│                       │       │                  ├ cbl-mariner: 1 
-│                       │       │                  ├ photon     : 3 
-│                       │       │                  ├ redhat     : 1 
-│                       │       │                  ╰ ubuntu     : 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:
-│                       │       │                           │           N/A:L 
-│                       │       │                           ╰ V3Score : 2.8 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-1215 
-│                       │       │                  ├ [1] : https://github.com/vim/vim/commit/c5654b84480822817b
-│                       │       │                  │       b7b69ebc97c174c91185e9 
-│                       │       │                  ├ [2] : https://github.com/vim/vim/issues/16606 
-│                       │       │                  ├ [3] : https://github.com/vim/vim/releases/tag/v9.1.1097 
-│                       │       │                  ├ [4] : https://nvd.nist.gov/vuln/detail/CVE-2025-1215 
-│                       │       │                  ├ [5] : https://security.netapp.com/advisory/ntap-20250321-0
-│                       │       │                  │       005/ 
-│                       │       │                  ├ [6] : https://ubuntu.com/security/notices/USN-7419-1 
-│                       │       │                  ├ [7] : https://vuldb.com/?ctiid.295174 
-│                       │       │                  ├ [8] : https://vuldb.com/?id.295174 
-│                       │       │                  ├ [9] : https://vuldb.com/?submit.497546 
-│                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
-│                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
-│                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [115] ╭ VulnerabilityID : CVE-2025-26603 
-│                       │       ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
-│                       │       ├ PkgName         : vim 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&di
-│                       │       │                  │       stro=ubuntu-24.10&epoch=2 
-│                       │       │                  ╰ UID : 1d06811aa36f1eab 
-│                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
-│                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
-│                       │       │                  │         6b905ad543ad918ad504c 
-│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
-│                       │       │                            6a5507fce977ad8d74ed5 
-│                       │       ├ SeveritySource  : ubuntu 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26603 
-│                       │       ├ DataSource       ╭ ID  : ubuntu 
-│                       │       │                  ├ Name: Ubuntu CVE Tracker 
-│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : vim: heap-use-after-free in function str_to_reg in vim/vim 
-│                       │       ├ Description     : Vim is a greatly improved version of the good old UNIX
-│                       │       │                   editor Vi. Vim allows to redirect screen messages using the
-│                       │       │                    `:redir` ex command to register, variables and files. It
-│                       │       │                   also allows to show the contents of registers using the
-│                       │       │                   `:registers` or `:display` ex command. When redirecting the
-│                       │       │                    output of `:display` to a register, Vim will free the
-│                       │       │                   register content before storing the new content in the
-│                       │       │                   register. Now when redirecting the `:display` command to a
-│                       │       │                   register that is being displayed, Vim will free the content
-│                       │       │                    while shortly afterwards trying to access it, which leads
-│                       │       │                   to a use-after-free. Vim pre 9.1.1115 checks in the
-│                       │       │                   ex_display() function, that it does not try to redirect to
-│                       │       │                   a register while displaying this register at the same time.
-│                       │       │                    However this check is not complete, and so Vim does not
-│                       │       │                   check the `+` and `*` registers (which typically donate the
-│                       │       │                    X11/clipboard registers, and when a clipboard connection
-│                       │       │                   is not possible will fall back to use register 0 instead.
-│                       │       │                   In Patch 9.1.1115 Vim will therefore skip outputting to
-│                       │       │                   register zero when trying to redirect to the clipboard
-│                       │       │                   registers `*` or `+`. Users are advised to upgrade. There
-│                       │       │                   are no known workarounds for this vulnerability. 
-│                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
-│                       │       │                  ├ azure      : 2 
-│                       │       │                  ├ cbl-mariner: 2 
-│                       │       │                  ├ photon     : 2 
-│                       │       │                  ├ redhat     : 1 
-│                       │       │                  ╰ ubuntu     : 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
-│                       │       │                           │           L/A:L 
-│                       │       │                           ╰ V3Score : 4.2 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-26603 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52
-│                       │       │                  │      a131bf6b8 
-│                       │       │                  ├ [2]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52
-│                       │       │                  │      a131bf6b8 (v9.1.1115) 
-│                       │       │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-6
-│                       │       │                  │      3p5-mwg2-787v 
-│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-26603 
-│                       │       │                  ├ [5]: https://security.netapp.com/advisory/ntap-20250306-00
-│                       │       │                  │      03/ 
-│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7419-1 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
-│                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
-│                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [116] ╭ VulnerabilityID : CVE-2025-1215 
-│                       │       ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
-│                       │       ├ PkgName         : vim-common 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=a
-│                       │       │                  │       ll&distro=ubuntu-24.10&epoch=2 
-│                       │       │                  ╰ UID : 9538ad650d7d4fc 
-│                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
-│                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
-│                       │       │                  │         6b905ad543ad918ad504c 
-│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
-│                       │       │                            6a5507fce977ad8d74ed5 
-│                       │       ├ SeveritySource  : ubuntu 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-1215 
-│                       │       ├ DataSource       ╭ ID  : ubuntu 
-│                       │       │                  ├ Name: Ubuntu CVE Tracker 
-│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : vim: vim main.c memory corruption 
-│                       │       ├ Description     : A vulnerability classified as problematic was found in vim
-│                       │       │                   up to 9.1.1096. This vulnerability affects unknown code of
-│                       │       │                   the file src/main.c. The manipulation of the argument --log
-│                       │       │                    leads to memory corruption. It is possible to launch the
-│                       │       │                   attack on the local host. Upgrading to version 9.1.1097 is
-│                       │       │                   able to address this issue. The patch is identified as
-│                       │       │                   c5654b84480822817bb7b69ebc97c174c91185e9. It is recommended
-│                       │       │                    to upgrade the affected component. 
-│                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ─ [0]: CWE-119 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
-│                       │       │                  ├ azure      : 1 
-│                       │       │                  ├ cbl-mariner: 1 
-│                       │       │                  ├ photon     : 3 
-│                       │       │                  ├ redhat     : 1 
-│                       │       │                  ╰ ubuntu     : 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:
-│                       │       │                           │           N/A:L 
-│                       │       │                           ╰ V3Score : 2.8 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-1215 
-│                       │       │                  ├ [1] : https://github.com/vim/vim/commit/c5654b84480822817b
-│                       │       │                  │       b7b69ebc97c174c91185e9 
-│                       │       │                  ├ [2] : https://github.com/vim/vim/issues/16606 
-│                       │       │                  ├ [3] : https://github.com/vim/vim/releases/tag/v9.1.1097 
-│                       │       │                  ├ [4] : https://nvd.nist.gov/vuln/detail/CVE-2025-1215 
-│                       │       │                  ├ [5] : https://security.netapp.com/advisory/ntap-20250321-0
-│                       │       │                  │       005/ 
-│                       │       │                  ├ [6] : https://ubuntu.com/security/notices/USN-7419-1 
-│                       │       │                  ├ [7] : https://vuldb.com/?ctiid.295174 
-│                       │       │                  ├ [8] : https://vuldb.com/?id.295174 
-│                       │       │                  ├ [9] : https://vuldb.com/?submit.497546 
-│                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
-│                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
-│                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [117] ╭ VulnerabilityID : CVE-2025-26603 
-│                       │       ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
-│                       │       ├ PkgName         : vim-common 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=a
-│                       │       │                  │       ll&distro=ubuntu-24.10&epoch=2 
-│                       │       │                  ╰ UID : 9538ad650d7d4fc 
-│                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
-│                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
-│                       │       │                  │         6b905ad543ad918ad504c 
-│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
-│                       │       │                            6a5507fce977ad8d74ed5 
-│                       │       ├ SeveritySource  : ubuntu 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26603 
-│                       │       ├ DataSource       ╭ ID  : ubuntu 
-│                       │       │                  ├ Name: Ubuntu CVE Tracker 
-│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : vim: heap-use-after-free in function str_to_reg in vim/vim 
-│                       │       ├ Description     : Vim is a greatly improved version of the good old UNIX
-│                       │       │                   editor Vi. Vim allows to redirect screen messages using the
-│                       │       │                    `:redir` ex command to register, variables and files. It
-│                       │       │                   also allows to show the contents of registers using the
-│                       │       │                   `:registers` or `:display` ex command. When redirecting the
-│                       │       │                    output of `:display` to a register, Vim will free the
-│                       │       │                   register content before storing the new content in the
-│                       │       │                   register. Now when redirecting the `:display` command to a
-│                       │       │                   register that is being displayed, Vim will free the content
-│                       │       │                    while shortly afterwards trying to access it, which leads
-│                       │       │                   to a use-after-free. Vim pre 9.1.1115 checks in the
-│                       │       │                   ex_display() function, that it does not try to redirect to
-│                       │       │                   a register while displaying this register at the same time.
-│                       │       │                    However this check is not complete, and so Vim does not
-│                       │       │                   check the `+` and `*` registers (which typically donate the
-│                       │       │                    X11/clipboard registers, and when a clipboard connection
-│                       │       │                   is not possible will fall back to use register 0 instead.
-│                       │       │                   In Patch 9.1.1115 Vim will therefore skip outputting to
-│                       │       │                   register zero when trying to redirect to the clipboard
-│                       │       │                   registers `*` or `+`. Users are advised to upgrade. There
-│                       │       │                   are no known workarounds for this vulnerability. 
-│                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
-│                       │       │                  ├ azure      : 2 
-│                       │       │                  ├ cbl-mariner: 2 
-│                       │       │                  ├ photon     : 2 
-│                       │       │                  ├ redhat     : 1 
-│                       │       │                  ╰ ubuntu     : 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
-│                       │       │                           │           L/A:L 
-│                       │       │                           ╰ V3Score : 4.2 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-26603 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52
-│                       │       │                  │      a131bf6b8 
-│                       │       │                  ├ [2]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52
-│                       │       │                  │      a131bf6b8 (v9.1.1115) 
-│                       │       │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-6
-│                       │       │                  │      3p5-mwg2-787v 
-│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-26603 
-│                       │       │                  ├ [5]: https://security.netapp.com/advisory/ntap-20250306-00
-│                       │       │                  │      03/ 
-│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7419-1 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
-│                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
-│                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
 │                       ├ [118] ╭ VulnerabilityID : CVE-2025-1215 
-│                       │       ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
-│                       │       ├ PkgName         : vim-runtime 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=
-│                       │       │                  │       all&distro=ubuntu-24.10&epoch=2 
-│                       │       │                  ╰ UID : d01d837a64e4e5d4 
+│                       │       ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
+│                       │       ├ PkgName         : vim 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&di
+│                       │       │                  │       stro=ubuntu-24.10&epoch=2 
+│                       │       │                  ╰ UID : 1d06811aa36f1eab 
 │                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
 │                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
 │                       │       ├ Status          : fixed 
@@ -6450,6 +6378,242 @@
 │                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
 │                       ├ [119] ╭ VulnerabilityID : CVE-2025-26603 
+│                       │       ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
+│                       │       ├ PkgName         : vim 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.0496-1ubuntu6.4?arch=amd64&di
+│                       │       │                  │       stro=ubuntu-24.10&epoch=2 
+│                       │       │                  ╰ UID : 1d06811aa36f1eab 
+│                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
+│                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26603 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : vim: heap-use-after-free in function str_to_reg in vim/vim 
+│                       │       ├ Description     : Vim is a greatly improved version of the good old UNIX
+│                       │       │                   editor Vi. Vim allows to redirect screen messages using the
+│                       │       │                    `:redir` ex command to register, variables and files. It
+│                       │       │                   also allows to show the contents of registers using the
+│                       │       │                   `:registers` or `:display` ex command. When redirecting the
+│                       │       │                    output of `:display` to a register, Vim will free the
+│                       │       │                   register content before storing the new content in the
+│                       │       │                   register. Now when redirecting the `:display` command to a
+│                       │       │                   register that is being displayed, Vim will free the content
+│                       │       │                    while shortly afterwards trying to access it, which leads
+│                       │       │                   to a use-after-free. Vim pre 9.1.1115 checks in the
+│                       │       │                   ex_display() function, that it does not try to redirect to
+│                       │       │                   a register while displaying this register at the same time.
+│                       │       │                    However this check is not complete, and so Vim does not
+│                       │       │                   check the `+` and `*` registers (which typically donate the
+│                       │       │                    X11/clipboard registers, and when a clipboard connection
+│                       │       │                   is not possible will fall back to use register 0 instead.
+│                       │       │                   In Patch 9.1.1115 Vim will therefore skip outputting to
+│                       │       │                   register zero when trying to redirect to the clipboard
+│                       │       │                   registers `*` or `+`. Users are advised to upgrade. There
+│                       │       │                   are no known workarounds for this vulnerability. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-416 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       │                  ├ azure      : 2 
+│                       │       │                  ├ cbl-mariner: 2 
+│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ redhat     : 1 
+│                       │       │                  ╰ ubuntu     : 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
+│                       │       │                           │           L/A:L 
+│                       │       │                           ╰ V3Score : 4.2 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-26603 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52
+│                       │       │                  │      a131bf6b8 
+│                       │       │                  ├ [2]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52
+│                       │       │                  │      a131bf6b8 (v9.1.1115) 
+│                       │       │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-6
+│                       │       │                  │      3p5-mwg2-787v 
+│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-26603 
+│                       │       │                  ├ [5]: https://security.netapp.com/advisory/ntap-20250306-00
+│                       │       │                  │      03/ 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7419-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
+│                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
+│                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
+│                       ├ [120] ╭ VulnerabilityID : CVE-2025-1215 
+│                       │       ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
+│                       │       ├ PkgName         : vim-common 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=a
+│                       │       │                  │       ll&distro=ubuntu-24.10&epoch=2 
+│                       │       │                  ╰ UID : 9538ad650d7d4fc 
+│                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
+│                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-1215 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : vim: vim main.c memory corruption 
+│                       │       ├ Description     : A vulnerability classified as problematic was found in vim
+│                       │       │                   up to 9.1.1096. This vulnerability affects unknown code of
+│                       │       │                   the file src/main.c. The manipulation of the argument --log
+│                       │       │                    leads to memory corruption. It is possible to launch the
+│                       │       │                   attack on the local host. Upgrading to version 9.1.1097 is
+│                       │       │                   able to address this issue. The patch is identified as
+│                       │       │                   c5654b84480822817bb7b69ebc97c174c91185e9. It is recommended
+│                       │       │                    to upgrade the affected component. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-119 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       │                  ├ azure      : 1 
+│                       │       │                  ├ cbl-mariner: 1 
+│                       │       │                  ├ photon     : 3 
+│                       │       │                  ├ redhat     : 1 
+│                       │       │                  ╰ ubuntu     : 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:
+│                       │       │                           │           N/A:L 
+│                       │       │                           ╰ V3Score : 2.8 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-1215 
+│                       │       │                  ├ [1] : https://github.com/vim/vim/commit/c5654b84480822817b
+│                       │       │                  │       b7b69ebc97c174c91185e9 
+│                       │       │                  ├ [2] : https://github.com/vim/vim/issues/16606 
+│                       │       │                  ├ [3] : https://github.com/vim/vim/releases/tag/v9.1.1097 
+│                       │       │                  ├ [4] : https://nvd.nist.gov/vuln/detail/CVE-2025-1215 
+│                       │       │                  ├ [5] : https://security.netapp.com/advisory/ntap-20250321-0
+│                       │       │                  │       005/ 
+│                       │       │                  ├ [6] : https://ubuntu.com/security/notices/USN-7419-1 
+│                       │       │                  ├ [7] : https://vuldb.com/?ctiid.295174 
+│                       │       │                  ├ [8] : https://vuldb.com/?id.295174 
+│                       │       │                  ├ [9] : https://vuldb.com/?submit.497546 
+│                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
+│                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
+│                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
+│                       ├ [121] ╭ VulnerabilityID : CVE-2025-26603 
+│                       │       ├ PkgID           : vim-common@2:9.1.0496-1ubuntu6.4 
+│                       │       ├ PkgName         : vim-common 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=a
+│                       │       │                  │       ll&distro=ubuntu-24.10&epoch=2 
+│                       │       │                  ╰ UID : 9538ad650d7d4fc 
+│                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
+│                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26603 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : vim: heap-use-after-free in function str_to_reg in vim/vim 
+│                       │       ├ Description     : Vim is a greatly improved version of the good old UNIX
+│                       │       │                   editor Vi. Vim allows to redirect screen messages using the
+│                       │       │                    `:redir` ex command to register, variables and files. It
+│                       │       │                   also allows to show the contents of registers using the
+│                       │       │                   `:registers` or `:display` ex command. When redirecting the
+│                       │       │                    output of `:display` to a register, Vim will free the
+│                       │       │                   register content before storing the new content in the
+│                       │       │                   register. Now when redirecting the `:display` command to a
+│                       │       │                   register that is being displayed, Vim will free the content
+│                       │       │                    while shortly afterwards trying to access it, which leads
+│                       │       │                   to a use-after-free. Vim pre 9.1.1115 checks in the
+│                       │       │                   ex_display() function, that it does not try to redirect to
+│                       │       │                   a register while displaying this register at the same time.
+│                       │       │                    However this check is not complete, and so Vim does not
+│                       │       │                   check the `+` and `*` registers (which typically donate the
+│                       │       │                    X11/clipboard registers, and when a clipboard connection
+│                       │       │                   is not possible will fall back to use register 0 instead.
+│                       │       │                   In Patch 9.1.1115 Vim will therefore skip outputting to
+│                       │       │                   register zero when trying to redirect to the clipboard
+│                       │       │                   registers `*` or `+`. Users are advised to upgrade. There
+│                       │       │                   are no known workarounds for this vulnerability. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-416 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       │                  ├ azure      : 2 
+│                       │       │                  ├ cbl-mariner: 2 
+│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ redhat     : 1 
+│                       │       │                  ╰ ubuntu     : 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
+│                       │       │                           │           L/A:L 
+│                       │       │                           ╰ V3Score : 4.2 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-26603 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52
+│                       │       │                  │      a131bf6b8 
+│                       │       │                  ├ [2]: https://github.com/vim/vim/commit/c0f0e2380e5954f4a52
+│                       │       │                  │      a131bf6b8 (v9.1.1115) 
+│                       │       │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-6
+│                       │       │                  │      3p5-mwg2-787v 
+│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-26603 
+│                       │       │                  ├ [5]: https://security.netapp.com/advisory/ntap-20250306-00
+│                       │       │                  │      03/ 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7419-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
+│                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
+│                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
+│                       ├ [122] ╭ VulnerabilityID : CVE-2025-1215 
+│                       │       ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
+│                       │       ├ PkgName         : vim-runtime 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=
+│                       │       │                  │       all&distro=ubuntu-24.10&epoch=2 
+│                       │       │                  ╰ UID : d01d837a64e4e5d4 
+│                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
+│                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-1215 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : vim: vim main.c memory corruption 
+│                       │       ├ Description     : A vulnerability classified as problematic was found in vim
+│                       │       │                   up to 9.1.1096. This vulnerability affects unknown code of
+│                       │       │                   the file src/main.c. The manipulation of the argument --log
+│                       │       │                    leads to memory corruption. It is possible to launch the
+│                       │       │                   attack on the local host. Upgrading to version 9.1.1097 is
+│                       │       │                   able to address this issue. The patch is identified as
+│                       │       │                   c5654b84480822817bb7b69ebc97c174c91185e9. It is recommended
+│                       │       │                    to upgrade the affected component. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-119 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       │                  ├ azure      : 1 
+│                       │       │                  ├ cbl-mariner: 1 
+│                       │       │                  ├ photon     : 3 
+│                       │       │                  ├ redhat     : 1 
+│                       │       │                  ╰ ubuntu     : 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:
+│                       │       │                           │           N/A:L 
+│                       │       │                           ╰ V3Score : 2.8 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-1215 
+│                       │       │                  ├ [1] : https://github.com/vim/vim/commit/c5654b84480822817b
+│                       │       │                  │       b7b69ebc97c174c91185e9 
+│                       │       │                  ├ [2] : https://github.com/vim/vim/issues/16606 
+│                       │       │                  ├ [3] : https://github.com/vim/vim/releases/tag/v9.1.1097 
+│                       │       │                  ├ [4] : https://nvd.nist.gov/vuln/detail/CVE-2025-1215 
+│                       │       │                  ├ [5] : https://security.netapp.com/advisory/ntap-20250321-0
+│                       │       │                  │       005/ 
+│                       │       │                  ├ [6] : https://ubuntu.com/security/notices/USN-7419-1 
+│                       │       │                  ├ [7] : https://vuldb.com/?ctiid.295174 
+│                       │       │                  ├ [8] : https://vuldb.com/?id.295174 
+│                       │       │                  ├ [9] : https://vuldb.com/?submit.497546 
+│                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
+│                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
+│                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
+│                       ├ [123] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │       ├ PkgID           : vim-runtime@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=
@@ -6514,7 +6678,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ├ [120] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ├ [124] ╭ VulnerabilityID : CVE-2021-31879 
 │                       │       ├ PkgID           : wget@1.24.5-1ubuntu2 
 │                       │       ├ PkgName         : wget 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-1ubuntu2?arch=amd64&distr
@@ -6561,7 +6725,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
 │                       │       ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                       │       ╰ LastModifiedDate: 2024-11-21T06:06:25.02Z 
-│                       ├ [121] ╭ VulnerabilityID : CVE-2025-1215 
+│                       ├ [125] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │       ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&di
@@ -6614,7 +6778,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-1215 
 │                       │       ├ PublishedDate   : 2025-02-12T19:15:10.23Z 
 │                       │       ╰ LastModifiedDate: 2025-03-21T18:15:34.29Z 
-│                       ├ [122] ╭ VulnerabilityID : CVE-2025-26603 
+│                       ├ [126] ╭ VulnerabilityID : CVE-2025-26603 
 │                       │       ├ PkgID           : xxd@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.0496-1ubuntu6.4?arch=amd64&di
@@ -6679,7 +6843,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-26603 
 │                       │       ├ PublishedDate   : 2025-02-18T19:15:29.387Z 
 │                       │       ╰ LastModifiedDate: 2025-03-07T01:15:12.7Z 
-│                       ╰ [123] ╭ VulnerabilityID : CVE-2025-31115 
+│                       ╰ [127] ╭ VulnerabilityID : CVE-2025-31115 
 │                               ├ PkgID           : xz-utils@5.6.2-2 
 │                               ├ PkgName         : xz-utils 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xz-utils@5.6.2-2?arch=amd64&distro=ub
@@ -7013,7 +7177,8 @@
 │                       │      │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250509-0007 
 │                       │      │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250509-00
 │                       │      │                  │       07/ 
-│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
+│                       │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7574-1 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │      ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │      ╰ LastModifiedDate: 2025-05-09T20:15:38.727Z 
 │                       ├ [5]  ╭ VulnerabilityID : CVE-2025-22872 
@@ -7127,7 +7292,8 @@
 │                       │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-3420 
 │                       │      │                  ├ [14]: https://security.netapp.com/advisory/ntap-20250221-00
 │                       │      │                  │       03/ 
-│                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-45336 
+│                       │      │                  ├ [15]: https://ubuntu.com/security/notices/USN-7574-1 
+│                       │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-45336 
 │                       │      ├ PublishedDate   : 2025-01-28T02:15:28.807Z 
 │                       │      ╰ LastModifiedDate: 2025-02-21T18:15:17.4Z 
 │                       ├ [7]  ╭ VulnerabilityID : CVE-2024-45341 
@@ -7186,7 +7352,8 @@
 │                       │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-3373 
 │                       │      │                  ├ [14]: https://security.netapp.com/advisory/ntap-20250221-00
 │                       │      │                  │       04/ 
-│                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2024-45341 
+│                       │      │                  ├ [15]: https://ubuntu.com/security/notices/USN-7574-1 
+│                       │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-45341 
 │                       │      ├ PublishedDate   : 2025-01-28T02:15:29.147Z 
 │                       │      ╰ LastModifiedDate: 2025-02-21T18:15:17.96Z 
 │                       ├ [8]  ╭ VulnerabilityID : CVE-2025-0913 
@@ -7278,7 +7445,8 @@
 │                       │      │                  ├ [9] : https://pkg.go.dev/vuln/GO-2025-3447 
 │                       │      │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250221-00
 │                       │      │                  │       02/ 
-│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
+│                       │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7574-1 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                       │      ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                       │      ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2025-22871 
@@ -7318,10 +7486,10 @@
 │                       │      │                            │           L/A:N 
 │                       │      │                            ╰ V3Score : 5.4 
 │                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/04/4 
-│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9147 
+│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9150 
 │                       │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-22871 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2358493 
-│                       │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9147.html 
+│                       │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9150.html 
 │                       │      │                  ├ [5] : https://go.dev/cl/652998 
 │                       │      │                  ├ [6] : https://go.dev/issue/71988 
 │                       │      │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVK
@@ -7349,24 +7517,30 @@
 │                              ├ DataSource       ╭ ID  : govulndb 
 │                              │                  ├ Name: The Go Vulnerability Database 
 │                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                              ├ Title           : Proxy-Authorization and Proxy-Authenticate headers persisted
-│                              │                    on cross- ... 
+│                              ├ Title           : net/http: Sensitive headers not cleared on cross-origin
+│                              │                   redirect in net/http 
 │                              ├ Description     : Proxy-Authorization and Proxy-Authenticate headers persisted
 │                              │                    on cross-origin redirects potentially leaking sensitive
 │                              │                   information. 
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ╭ bitnami: 2 
+│                              │                  ├ redhat : 2 
 │                              │                  ╰ ubuntu : 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:
+│                              │                  │         │           N/A:N 
+│                              │                  │         ╰ V3Score : 6.8 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:
 │                              │                            │           N/A:N 
 │                              │                            ╰ V3Score : 6.8 
-│                              ├ References       ╭ [0]: https://go.dev/cl/679257 
-│                              │                  ├ [1]: https://go.dev/issue/73816 
-│                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEs
+│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-4673 
+│                              │                  ├ [1]: https://go.dev/cl/679257 
+│                              │                  ├ [2]: https://go.dev/issue/73816 
+│                              │                  ├ [3]: https://groups.google.com/g/golang-announce/c/ufZ8WpEs
 │                              │                  │      A3A 
-│                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
-│                              │                  ├ [4]: https://pkg.go.dev/vuln/GO-2025-3751 
-│                              │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
+│                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
+│                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3751 
+│                              │                  ├ [6]: https://ubuntu.com/security/notices/USN-7574-1 
+│                              │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
 │                              ├ PublishedDate   : 2025-06-11T17:15:42.993Z 
 │                              ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
 ├ [3] ╭ Target         : usr/bin/helm 
@@ -7548,7 +7722,8 @@
 │                       │     │                  ├ [8] : https://pkg.go.dev/vuln/GO-2025-3503 
 │                       │     │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250509-0007 
 │                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250509-0007/ 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
+│                       │     │                  ├ [11]: https://ubuntu.com/security/notices/USN-7574-1 
+│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │     ╰ LastModifiedDate: 2025-05-09T20:15:38.727Z 
 │                       ├ [3] ╭ VulnerabilityID : CVE-2025-22872 
@@ -7687,7 +7862,8 @@
 │                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-22866 
 │                       │     │                  ├ [9] : https://pkg.go.dev/vuln/GO-2025-3447 
 │                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250221-0002/ 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
+│                       │     │                  ├ [11]: https://ubuntu.com/security/notices/USN-7574-1 
+│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                       │     ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                       │     ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
 │                       ├ [6] ╭ VulnerabilityID : CVE-2025-22871 
@@ -7727,10 +7903,10 @@
 │                       │     │                            │           /A:N 
 │                       │     │                            ╰ V3Score : 5.4 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/04/4 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9147 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9150 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-22871 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2358493 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9147.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9150.html 
 │                       │     │                  ├ [5] : https://go.dev/cl/652998 
 │                       │     │                  ├ [6] : https://go.dev/issue/71988 
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
@@ -7758,23 +7934,29 @@
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Proxy-Authorization and Proxy-Authenticate headers persisted
-│                             │                   on cross- ... 
+│                             ├ Title           : net/http: Sensitive headers not cleared on cross-origin
+│                             │                   redirect in net/http 
 │                             ├ Description     : Proxy-Authorization and Proxy-Authenticate headers persisted
 │                             │                   on cross-origin redirects potentially leaking sensitive
 │                             │                   information. 
 │                             ├ Severity        : MEDIUM 
 │                             ├ VendorSeverity   ╭ bitnami: 2 
+│                             │                  ├ redhat : 2 
 │                             │                  ╰ ubuntu : 2 
-│                             ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 6.8 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 6.8 
-│                             ├ References       ╭ [0]: https://go.dev/cl/679257 
-│                             │                  ├ [1]: https://go.dev/issue/73816 
-│                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
-│                             │                  ├ [4]: https://pkg.go.dev/vuln/GO-2025-3751 
-│                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-4673 
+│                             │                  ├ [1]: https://go.dev/cl/679257 
+│                             │                  ├ [2]: https://go.dev/issue/73816 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
+│                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3751 
+│                             │                  ├ [6]: https://ubuntu.com/security/notices/USN-7574-1 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
 │                             ├ PublishedDate   : 2025-06-11T17:15:42.993Z 
 │                             ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
 ├ [4] ╭ Target         : usr/bin/kubectl 
@@ -7831,7 +8013,8 @@
 │                       │     │                  ├ [8] : https://pkg.go.dev/vuln/GO-2025-3503 
 │                       │     │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250509-0007 
 │                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250509-0007/ 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
+│                       │     │                  ├ [11]: https://ubuntu.com/security/notices/USN-7574-1 
+│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │     ╰ LastModifiedDate: 2025-05-09T20:15:38.727Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2025-22872 
@@ -7958,10 +8141,10 @@
 │                       │     │                            │           /A:N 
 │                       │     │                            ╰ V3Score : 5.4 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/04/4 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9147 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9150 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-22871 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2358493 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9147.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9150.html 
 │                       │     │                  ├ [5] : https://go.dev/cl/652998 
 │                       │     │                  ├ [6] : https://go.dev/issue/71988 
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
@@ -7989,23 +8172,29 @@
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Proxy-Authorization and Proxy-Authenticate headers persisted
-│                             │                   on cross- ... 
+│                             ├ Title           : net/http: Sensitive headers not cleared on cross-origin
+│                             │                   redirect in net/http 
 │                             ├ Description     : Proxy-Authorization and Proxy-Authenticate headers persisted
 │                             │                   on cross-origin redirects potentially leaking sensitive
 │                             │                   information. 
 │                             ├ Severity        : MEDIUM 
 │                             ├ VendorSeverity   ╭ bitnami: 2 
+│                             │                  ├ redhat : 2 
 │                             │                  ╰ ubuntu : 2 
-│                             ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 6.8 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 6.8 
-│                             ├ References       ╭ [0]: https://go.dev/cl/679257 
-│                             │                  ├ [1]: https://go.dev/issue/73816 
-│                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
-│                             │                  ├ [4]: https://pkg.go.dev/vuln/GO-2025-3751 
-│                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-4673 
+│                             │                  ├ [1]: https://go.dev/cl/679257 
+│                             │                  ├ [2]: https://go.dev/issue/73816 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
+│                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3751 
+│                             │                  ├ [6]: https://ubuntu.com/security/notices/USN-7574-1 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
 │                             ├ PublishedDate   : 2025-06-11T17:15:42.993Z 
 │                             ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
 ├ [5] ╭ Target         : usr/local/bin/k3d 
@@ -8381,7 +8570,8 @@
 │                       │     │                  ├ [8] : https://pkg.go.dev/vuln/GO-2025-3503 
 │                       │     │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250509-0007 
 │                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250509-0007/ 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
+│                       │     │                  ├ [11]: https://ubuntu.com/security/notices/USN-7574-1 
+│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │     ╰ LastModifiedDate: 2025-05-09T20:15:38.727Z 
 │                       ├ [5] ╭ VulnerabilityID : CVE-2025-22872 
@@ -8550,10 +8740,10 @@
 │                       │     │                            │           /A:N 
 │                       │     │                            ╰ V3Score : 5.4 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/04/4 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9147 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9150 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-22871 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2358493 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9147.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9150.html 
 │                       │     │                  ├ [5] : https://go.dev/cl/652998 
 │                       │     │                  ├ [6] : https://go.dev/issue/71988 
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
@@ -8581,23 +8771,29 @@
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Proxy-Authorization and Proxy-Authenticate headers persisted
-│                             │                   on cross- ... 
+│                             ├ Title           : net/http: Sensitive headers not cleared on cross-origin
+│                             │                   redirect in net/http 
 │                             ├ Description     : Proxy-Authorization and Proxy-Authenticate headers persisted
 │                             │                   on cross-origin redirects potentially leaking sensitive
 │                             │                   information. 
 │                             ├ Severity        : MEDIUM 
 │                             ├ VendorSeverity   ╭ bitnami: 2 
+│                             │                  ├ redhat : 2 
 │                             │                  ╰ ubuntu : 2 
-│                             ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 6.8 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 6.8 
-│                             ├ References       ╭ [0]: https://go.dev/cl/679257 
-│                             │                  ├ [1]: https://go.dev/issue/73816 
-│                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
-│                             │                  ├ [4]: https://pkg.go.dev/vuln/GO-2025-3751 
-│                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-4673 
+│                             │                  ├ [1]: https://go.dev/cl/679257 
+│                             │                  ├ [2]: https://go.dev/issue/73816 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
+│                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3751 
+│                             │                  ├ [6]: https://ubuntu.com/security/notices/USN-7574-1 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
 │                             ├ PublishedDate   : 2025-06-11T17:15:42.993Z 
 │                             ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
 ├ [6] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
