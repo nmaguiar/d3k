@@ -3209,6 +3209,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
+      oracle-oval: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -3219,6 +3220,8 @@
     - http://www.openwall.com/lists/oss-security/2025/06/17/1
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/show_bug.cgi?id=2372512
+    - https://linux.oracle.com/cve/CVE-2025-6020.html
+    - https://linux.oracle.com/errata/ELSA-2025-9526.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-6020
     - https://ubuntu.com/security/notices/USN-7580-1
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
@@ -3355,6 +3358,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
+      oracle-oval: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -3365,6 +3369,8 @@
     - http://www.openwall.com/lists/oss-security/2025/06/17/1
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/show_bug.cgi?id=2372512
+    - https://linux.oracle.com/cve/CVE-2025-6020.html
+    - https://linux.oracle.com/errata/ELSA-2025-9526.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-6020
     - https://ubuntu.com/security/notices/USN-7580-1
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
@@ -3501,6 +3507,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
+      oracle-oval: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -3511,6 +3518,8 @@
     - http://www.openwall.com/lists/oss-security/2025/06/17/1
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/show_bug.cgi?id=2372512
+    - https://linux.oracle.com/cve/CVE-2025-6020.html
+    - https://linux.oracle.com/errata/ELSA-2025-9526.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-6020
     - https://ubuntu.com/security/notices/USN-7580-1
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
@@ -3705,6 +3714,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
+      oracle-oval: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -3715,6 +3725,8 @@
     - http://www.openwall.com/lists/oss-security/2025/06/17/1
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/show_bug.cgi?id=2372512
+    - https://linux.oracle.com/cve/CVE-2025-6020.html
+    - https://linux.oracle.com/errata/ELSA-2025-9526.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-6020
     - https://ubuntu.com/security/notices/USN-7580-1
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
@@ -7702,7 +7714,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -8197,7 +8209,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -8472,7 +8484,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -8931,7 +8943,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
