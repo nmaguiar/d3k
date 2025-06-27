@@ -6258,9 +6258,9 @@
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                  │        │           N/A:H 
 │                       │       │                  │        ╰ V3Score : 7.5 
-│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:
-│                       │       │                           │           N/A:L 
-│                       │       │                           ╰ V3Score : 2.9 
+│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │       │                           │           N/A:H 
+│                       │       │                           ╰ V3Score : 7.5 
 │                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-32415 
 │                       │       │                  ├ [1]: https://gitlab.gnome.org/GNOME/libxml2/-/issues/890 
 │                       │       │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-32415 
@@ -9267,7 +9267,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
@@ -9552,7 +9552,7 @@
 │                       │      │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVK
 │                       │      │                  │       jBQk 
 │                       │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-22871.html 
-│                       │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9150.html 
+│                       │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9635.html 
 │                       │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
 │                       │      │                  ├ [11]: https://pkg.go.dev/vuln/GO-2025-3563 
 │                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
@@ -9813,7 +9813,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -9970,7 +9970,7 @@
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
 │                       │     │                  │       BQk 
 │                       │     │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-22871.html 
-│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9150.html 
+│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9635.html 
 │                       │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
 │                       │     │                  ├ [11]: https://pkg.go.dev/vuln/GO-2025-3563 
 │                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
@@ -10105,7 +10105,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -10209,7 +10209,7 @@
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
 │                       │     │                  │       BQk 
 │                       │     │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-22871.html 
-│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9150.html 
+│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9635.html 
 │                       │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
 │                       │     │                  ├ [11]: https://pkg.go.dev/vuln/GO-2025-3563 
 │                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
@@ -10663,7 +10663,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -10809,7 +10809,7 @@
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
 │                       │     │                  │       BQk 
 │                       │     │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-22871.html 
-│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9150.html 
+│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9635.html 
 │                       │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
 │                       │     │                  ├ [11]: https://pkg.go.dev/vuln/GO-2025-3563 
 │                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
