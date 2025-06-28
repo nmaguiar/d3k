@@ -4062,6 +4062,7 @@
 │                       │       │                  ╰ [1]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
+│                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
@@ -4077,12 +4078,14 @@
 │                       │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-56406 
 │                       │       │                  ├ [4] : https://github.com/Perl/perl5/commit/87f42aa0e0096e9
 │                       │       │                  │       a346c9672aa3a0bd3bef8c1dd.patch 
-│                       │       │                  ├ [5] : https://metacpan.org/release/SHAY/perl-5.38.4/changes 
-│                       │       │                  ├ [6] : https://metacpan.org/release/SHAY/perl-5.40.2/changes 
-│                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-56406 
-│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-7434-1 
-│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7434-2 
-│                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
+│                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-56406.html 
+│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-7500.html 
+│                       │       │                  ├ [7] : https://metacpan.org/release/SHAY/perl-5.38.4/changes 
+│                       │       │                  ├ [8] : https://metacpan.org/release/SHAY/perl-5.40.2/changes 
+│                       │       │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-56406 
+│                       │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-7434-1 
+│                       │       │                  ├ [11]: https://ubuntu.com/security/notices/USN-7434-2 
+│                       │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
 │                       ├ [81]  ╭ VulnerabilityID : CVE-2024-12718 
@@ -6761,6 +6764,7 @@
 │                       │       │                  ╰ [1]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
+│                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
@@ -6776,12 +6780,14 @@
 │                       │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-56406 
 │                       │       │                  ├ [4] : https://github.com/Perl/perl5/commit/87f42aa0e0096e9
 │                       │       │                  │       a346c9672aa3a0bd3bef8c1dd.patch 
-│                       │       │                  ├ [5] : https://metacpan.org/release/SHAY/perl-5.38.4/changes 
-│                       │       │                  ├ [6] : https://metacpan.org/release/SHAY/perl-5.40.2/changes 
-│                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-56406 
-│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-7434-1 
-│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7434-2 
-│                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
+│                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-56406.html 
+│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-7500.html 
+│                       │       │                  ├ [7] : https://metacpan.org/release/SHAY/perl-5.38.4/changes 
+│                       │       │                  ├ [8] : https://metacpan.org/release/SHAY/perl-5.40.2/changes 
+│                       │       │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-56406 
+│                       │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-7434-1 
+│                       │       │                  ├ [11]: https://ubuntu.com/security/notices/USN-7434-2 
+│                       │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
 │                       ├ [122] ╭ VulnerabilityID : CVE-2024-56406 
@@ -6823,6 +6829,7 @@
 │                       │       │                  ╰ [1]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
+│                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
@@ -6838,12 +6845,14 @@
 │                       │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-56406 
 │                       │       │                  ├ [4] : https://github.com/Perl/perl5/commit/87f42aa0e0096e9
 │                       │       │                  │       a346c9672aa3a0bd3bef8c1dd.patch 
-│                       │       │                  ├ [5] : https://metacpan.org/release/SHAY/perl-5.38.4/changes 
-│                       │       │                  ├ [6] : https://metacpan.org/release/SHAY/perl-5.40.2/changes 
-│                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-56406 
-│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-7434-1 
-│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7434-2 
-│                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
+│                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-56406.html 
+│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-7500.html 
+│                       │       │                  ├ [7] : https://metacpan.org/release/SHAY/perl-5.38.4/changes 
+│                       │       │                  ├ [8] : https://metacpan.org/release/SHAY/perl-5.40.2/changes 
+│                       │       │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-56406 
+│                       │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-7434-1 
+│                       │       │                  ├ [11]: https://ubuntu.com/security/notices/USN-7434-2 
+│                       │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
 │                       ├ [123] ╭ VulnerabilityID : CVE-2024-56406 
@@ -6885,6 +6894,7 @@
 │                       │       │                  ╰ [1]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
+│                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
@@ -6900,12 +6910,14 @@
 │                       │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-56406 
 │                       │       │                  ├ [4] : https://github.com/Perl/perl5/commit/87f42aa0e0096e9
 │                       │       │                  │       a346c9672aa3a0bd3bef8c1dd.patch 
-│                       │       │                  ├ [5] : https://metacpan.org/release/SHAY/perl-5.38.4/changes 
-│                       │       │                  ├ [6] : https://metacpan.org/release/SHAY/perl-5.40.2/changes 
-│                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2024-56406 
-│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-7434-1 
-│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7434-2 
-│                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
+│                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2024-56406.html 
+│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-7500.html 
+│                       │       │                  ├ [7] : https://metacpan.org/release/SHAY/perl-5.38.4/changes 
+│                       │       │                  ├ [8] : https://metacpan.org/release/SHAY/perl-5.40.2/changes 
+│                       │       │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-56406 
+│                       │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-7434-1 
+│                       │       │                  ├ [11]: https://ubuntu.com/security/notices/USN-7434-2 
+│                       │       │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-56406 
 │                       │       ├ PublishedDate   : 2025-04-13T14:15:14.527Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T15:21:11.547Z 
 │                       ├ [124] ╭ VulnerabilityID : CVE-2025-47273 
@@ -9122,7 +9134,105 @@
 │                       │      │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-0495 
 │                       │      ├ PublishedDate   : 2025-03-17T20:15:13.737Z 
 │                       │      ╰ LastModifiedDate: 2025-03-17T20:15:13.737Z 
-│                       ├ [3]  ╭ VulnerabilityID : CVE-2025-22869 
+│                       ├ [3]  ╭ VulnerabilityID : GHSA-fv92-fjc5-jj9h 
+│                       │      ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.0.0 
+│                       │      ├ PkgName         : github.com/go-viper/mapstructure/v2 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/go-viper/mapstructure/v2@v2.0.0 
+│                       │      │                  ╰ UID : c3a5497114ab930c 
+│                       │      ├ InstalledVersion: v2.0.0 
+│                       │      ├ FixedVersion    : 2.3.0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76
+│                       │      │                  │         b905ad543ad918ad504c 
+│                       │      │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6
+│                       │      │                            a5507fce977ad8d74ed5 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://github.com/advisories/GHSA-fv92-fjc5-jj9h 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Go 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Ago 
+│                       │      ├ Title           : mapstructure May Leak Sensitive Information in Logs When
+│                       │      │                   Processing Malformed Data 
+│                       │      ├ Description     : ### Summary
+│                       │      │                   
+│                       │      │                   Use of this library in a security-critical context may
+│                       │      │                   result in leaking sensitive information, if used to process
+│                       │      │                   sensitive fields.
+│                       │      │                   ### Details
+│                       │      │                   OpenBao (and presumably HashiCorp Vault) have surfaced error
+│                       │      │                    messages from `mapstructure` as follows:
+│                       │      │                   https://github.com/openbao/openbao/blob/98c3a59c040efca72435
+│                       │      │                   3ca46ca79bd5cdbab920/sdk/framework/field_data.go#L43-L50
+│                       │      │                   ```go
+│                       │      │                   			_, _, err := d.getPrimitive(field, schema)
+│                       │      │                   			if err != nil {
+│                       │      │                   				return fmt.Errorf("error converting input for field %q:
+│                       │      │                   %w", field, err)
+│                       │      │                   			}
+│                       │      │                   ```
+│                       │      │                   where this calls `mapstructure.WeakDecode(...)`:
+│                       │      │                   3ca46ca79bd5cdbab920/sdk/framework/field_data.go#L181-L193
+│                       │      │                   func (d *FieldData) getPrimitive(k string, schema
+│                       │      │                   *FieldSchema) (interface{}, bool, error) {
+│                       │      │                   	raw, ok := d.Raw[k]
+│                       │      │                   	if !ok {
+│                       │      │                   		return nil, false, nil
+│                       │      │                   	}
+│                       │      │                   	switch t := schema.Type; t {
+│                       │      │                   	case TypeBool:
+│                       │      │                   		var result bool
+│                       │      │                   		if err := mapstructure.WeakDecode(raw, &result); err !=
+│                       │      │                   nil {
+│                       │      │                   			return nil, false, err
+│                       │      │                   		}
+│                       │      │                   		return result, true, nil
+│                       │      │                   Notably, `WeakDecode(...)` eventually calls one of the
+│                       │      │                   decode helpers, which surfaces the original value:
+│                       │      │                   https://github.com/go-viper/mapstructure/blob/1a66224d5e54d8
+│                       │      │                   757f63bd66339cf764c3292c21/mapstructure.go#L679-L686
+│                       │      │                   757f63bd66339cf764c3292c21/mapstructure.go#L726-L730
+│                       │      │                   757f63bd66339cf764c3292c21/mapstructure.go#L783-L787
+│                       │      │                   & more.
+│                       │      │                   ### PoC
+│                       │      │                   To reproduce with OpenBao:
+│                       │      │                   $ podman run -p 8300:8300 openbao/openbao:latest server -dev
+│                       │      │                    -dev-root-token-id=root -dev-listen-address=0.0.0.0:8300
+│                       │      │                   and in a new tab:
+│                       │      │                   $ BAO_TOKEN=root BAO_ADDR=http://localhost:8300 bao auth
+│                       │      │                   enable userpass
+│                       │      │                   Success! Enabled userpass auth method at: userpass/
+│                       │      │                   $ curl -X PUT -H "X-Vault-Request: true" -H "X-Vault-Token:
+│                       │      │                   root" -d '{"password":{"asdf":"my-sensitive-value"}}'
+│                       │      │                   "http://localhost:8300/v1/auth/userpass/users/adsf"
+│                       │      │                   {"errors":["error converting input for field \"password\":
+│                       │      │                   '' expected type 'string', got unconvertible type
+│                       │      │                   'map[string]interface {}', value:
+│                       │      │                   'map[asdf:my-sensitive-value]'"]}
+│                       │      │                   ### Impact
+│                       │      │                   This is an information disclosure bug with little
+│                       │      │                   mitigation. See
+│                       │      │                   https://discuss.hashicorp.com/t/hcsec-2025-09-vault-may-expo
+│                       │      │                   se-sensitive-information-in-error-logs-when-processing-malfo
+│                       │      │                   rmed-data-with-the-kv-v2-plugin/74717 for a previous
+│                       │      │                   version. That version was fixed, but this is in the second
+│                       │      │                   part of that error message (starting at `'' expected a map,
+│                       │      │                   got 'string'` -- when the field type is `string` and a `map`
+│                       │      │                    is provided, we see the above information leak -- the
+│                       │      │                   previous example had a `map` type field with a `string`
+│                       │      │                   value provided).
+│                       │      │                   This was rated 4.5 Medium by HashiCorp in the past iteration
+│                       │      │                   . 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ─ ghsa: 2 
+│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N 
+│                       │      │                         ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://github.com/go-viper/mapstructure 
+│                       │      │                  ╰ [1]: https://github.com/go-viper/mapstructure/security/advi
+│                       │      │                         sories/GHSA-fv92-fjc5-jj9h 
+│                       │      ├ PublishedDate   : 2025-06-27T16:24:59Z 
+│                       │      ╰ LastModifiedDate: 2025-06-27T16:24:59Z 
+│                       ├ [4]  ╭ VulnerabilityID : CVE-2025-22869 
 │                       │      ├ PkgID           : golang.org/x/crypto@v0.31.0 
 │                       │      ├ PkgName         : golang.org/x/crypto 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/crypto@v0.31.0 
@@ -9182,7 +9292,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-22869 
 │                       │      ├ PublishedDate   : 2025-02-26T08:14:24.997Z 
 │                       │      ╰ LastModifiedDate: 2025-05-01T19:28:20.74Z 
-│                       ├ [4]  ╭ VulnerabilityID : CVE-2025-22870 
+│                       ├ [5]  ╭ VulnerabilityID : CVE-2025-22870 
 │                       │      ├ PkgID           : golang.org/x/net@v0.33.0 
 │                       │      ├ PkgName         : golang.org/x/net 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.33.0 
@@ -9238,7 +9348,7 @@
 │                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │      ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │      ╰ LastModifiedDate: 2025-05-09T20:15:38.727Z 
-│                       ├ [5]  ╭ VulnerabilityID : CVE-2025-22872 
+│                       ├ [6]  ╭ VulnerabilityID : CVE-2025-22872 
 │                       │      ├ PkgID           : golang.org/x/net@v0.33.0 
 │                       │      ├ PkgName         : golang.org/x/net 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.33.0 
@@ -9288,7 +9398,7 @@
 │                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-22872 
 │                       │      ├ PublishedDate   : 2025-04-16T18:16:04.183Z 
 │                       │      ╰ LastModifiedDate: 2025-05-16T23:15:19.707Z 
-│                       ├ [6]  ╭ VulnerabilityID : CVE-2024-45336 
+│                       ├ [7]  ╭ VulnerabilityID : CVE-2024-45336 
 │                       │      ├ PkgID           : stdlib@v1.22.10 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -9353,7 +9463,7 @@
 │                       │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-45336 
 │                       │      ├ PublishedDate   : 2025-01-28T02:15:28.807Z 
 │                       │      ╰ LastModifiedDate: 2025-02-21T18:15:17.4Z 
-│                       ├ [7]  ╭ VulnerabilityID : CVE-2024-45341 
+│                       ├ [8]  ╭ VulnerabilityID : CVE-2024-45341 
 │                       │      ├ PkgID           : stdlib@v1.22.10 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -9413,7 +9523,7 @@
 │                       │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-45341 
 │                       │      ├ PublishedDate   : 2025-01-28T02:15:29.147Z 
 │                       │      ╰ LastModifiedDate: 2025-02-21T18:15:17.96Z 
-│                       ├ [8]  ╭ VulnerabilityID : CVE-2025-0913 
+│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-0913 
 │                       │      ├ PkgID           : stdlib@v1.22.10 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -9452,7 +9562,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3750 
 │                       │      ├ PublishedDate   : 2025-06-11T18:15:24.627Z 
 │                       │      ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
-│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-22866 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2025-22866 
 │                       │      ├ PkgID           : stdlib@v1.22.10 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -9506,7 +9616,7 @@
 │                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                       │      ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                       │      ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
-│                       ├ [10] ╭ VulnerabilityID : CVE-2025-22871 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2025-22871 
 │                       │      ├ PkgID           : stdlib@v1.22.10 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -9552,13 +9662,13 @@
 │                       │      │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVK
 │                       │      │                  │       jBQk 
 │                       │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-22871.html 
-│                       │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9635.html 
+│                       │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9845.html 
 │                       │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
 │                       │      │                  ├ [11]: https://pkg.go.dev/vuln/GO-2025-3563 
 │                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
 │                       │      ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
 │                       │      ╰ LastModifiedDate: 2025-04-18T15:15:57.923Z 
-│                       ╰ [11] ╭ VulnerabilityID : CVE-2025-4673 
+│                       ╰ [12] ╭ VulnerabilityID : CVE-2025-4673 
 │                              ├ PkgID           : stdlib@v1.22.10 
 │                              ├ PkgName         : stdlib 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.22.10 
@@ -9970,7 +10080,7 @@
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
 │                       │     │                  │       BQk 
 │                       │     │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-22871.html 
-│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9635.html 
+│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9845.html 
 │                       │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
 │                       │     │                  ├ [11]: https://pkg.go.dev/vuln/GO-2025-3563 
 │                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
@@ -10209,7 +10319,7 @@
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
 │                       │     │                  │       BQk 
 │                       │     │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-22871.html 
-│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9635.html 
+│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9845.html 
 │                       │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
 │                       │     │                  ├ [11]: https://pkg.go.dev/vuln/GO-2025-3563 
 │                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
@@ -10809,7 +10919,7 @@
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
 │                       │     │                  │       BQk 
 │                       │     │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-22871.html 
-│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9635.html 
+│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-9845.html 
 │                       │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
 │                       │     │                  ├ [11]: https://pkg.go.dev/vuln/GO-2025-3563 
 │                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
