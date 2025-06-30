@@ -2242,7 +2242,7 @@
 │                       │       │                  ├ [20]: https://gitlab.alpinelinux.org/alpine/aports/-/commi
 │                       │       │                  │       t/d068c3ff36fc6f4789988a09c69b434db757db53 
 │                       │       │                  ├ [21]: https://linux.oracle.com/cve/CVE-2024-8176.html 
-│                       │       │                  ├ [22]: https://linux.oracle.com/errata/ELSA-2025-7444.html 
+│                       │       │                  ├ [22]: https://linux.oracle.com/errata/ELSA-2025-7512.html 
 │                       │       │                  ├ [23]: https://nvd.nist.gov/vuln/detail/CVE-2024-8176 
 │                       │       │                  ├ [24]: https://security-tracker.debian.org/tracker/CVE-2024
 │                       │       │                  │       -8176 
@@ -3148,25 +3148,31 @@
 │                       │       │                  ├ [1]: CWE-416 
 │                       │       │                  ├ [2]: CWE-476 
 │                       │       │                  ╰ [3]: CWE-826 
-│                       │       ├ VendorSeverity   ╭ azure : 3 
-│                       │       │                  ├ photon: 3 
-│                       │       │                  ├ redhat: 3 
-│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ VendorSeverity   ╭ azure      : 3 
+│                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
+│                       │       │                  ├ redhat     : 3 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/03/1 
-│                       │       │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/03/2 
-│                       │       │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/04/03/3 
-│                       │       │                  ├ [3]: https://access.redhat.com/security/cve/CVE-2025-31115 
-│                       │       │                  ├ [4]: https://github.com/tukaani-project/xz/commit/d5a2ffe4
-│                       │       │                  │      1bb77b918a8c96084885d4dbe4bf6480 
-│                       │       │                  ├ [5]: https://github.com/tukaani-project/xz/security/adviso
-│                       │       │                  │      ries/GHSA-6cc8-p5mm-29w2 
-│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-31115 
-│                       │       │                  ├ [7]: https://tukaani.org/xz/xz-cve-2025-31115.patch 
-│                       │       │                  ├ [8]: https://ubuntu.com/security/notices/USN-7414-1 
-│                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-31115 
+│                       │       ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/0
+│                       │       │                  │       3/1 
+│                       │       │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/04/0
+│                       │       │                  │       3/2 
+│                       │       │                  ├ [2] : http://www.openwall.com/lists/oss-security/2025/04/0
+│                       │       │                  │       3/3 
+│                       │       │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2025-31115 
+│                       │       │                  ├ [4] : https://github.com/tukaani-project/xz/commit/d5a2ffe
+│                       │       │                  │       41bb77b918a8c96084885d4dbe4bf6480 
+│                       │       │                  ├ [5] : https://github.com/tukaani-project/xz/security/advis
+│                       │       │                  │       ories/GHSA-6cc8-p5mm-29w2 
+│                       │       │                  ├ [6] : https://linux.oracle.com/cve/CVE-2025-31115.html 
+│                       │       │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-7524.html 
+│                       │       │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-31115 
+│                       │       │                  ├ [9] : https://tukaani.org/xz/xz-cve-2025-31115.patch 
+│                       │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-7414-1 
+│                       │       │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-31115 
 │                       │       ├ PublishedDate   : 2025-04-03T17:15:30.54Z 
 │                       │       ╰ LastModifiedDate: 2025-04-07T14:18:34.453Z 
 │                       ├ [65]  ╭ VulnerabilityID : CVE-2025-4598 
@@ -5644,7 +5650,7 @@
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2359553 
 │                       │       │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-7433.html 
 │                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2025-3277.html 
-│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-7433.html 
+│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-7517.html 
 │                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-3277 
 │                       │       │                  ├ [8] : https://sqlite.org/src/info/498e3f1cf57f164f 
 │                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7528-1 
@@ -8949,25 +8955,31 @@
 │                               │                  ├ [1]: CWE-416 
 │                               │                  ├ [2]: CWE-476 
 │                               │                  ╰ [3]: CWE-826 
-│                               ├ VendorSeverity   ╭ azure : 3 
-│                               │                  ├ photon: 3 
-│                               │                  ├ redhat: 3 
-│                               │                  ╰ ubuntu: 2 
+│                               ├ VendorSeverity   ╭ azure      : 3 
+│                               │                  ├ oracle-oval: 3 
+│                               │                  ├ photon     : 3 
+│                               │                  ├ redhat     : 3 
+│                               │                  ╰ ubuntu     : 2 
 │                               ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                               │                           │           N/A:H 
 │                               │                           ╰ V3Score : 7.5 
-│                               ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/03/1 
-│                               │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/03/2 
-│                               │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/04/03/3 
-│                               │                  ├ [3]: https://access.redhat.com/security/cve/CVE-2025-31115 
-│                               │                  ├ [4]: https://github.com/tukaani-project/xz/commit/d5a2ffe4
-│                               │                  │      1bb77b918a8c96084885d4dbe4bf6480 
-│                               │                  ├ [5]: https://github.com/tukaani-project/xz/security/adviso
-│                               │                  │      ries/GHSA-6cc8-p5mm-29w2 
-│                               │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-31115 
-│                               │                  ├ [7]: https://tukaani.org/xz/xz-cve-2025-31115.patch 
-│                               │                  ├ [8]: https://ubuntu.com/security/notices/USN-7414-1 
-│                               │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-31115 
+│                               ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/0
+│                               │                  │       3/1 
+│                               │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/04/0
+│                               │                  │       3/2 
+│                               │                  ├ [2] : http://www.openwall.com/lists/oss-security/2025/04/0
+│                               │                  │       3/3 
+│                               │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2025-31115 
+│                               │                  ├ [4] : https://github.com/tukaani-project/xz/commit/d5a2ffe
+│                               │                  │       41bb77b918a8c96084885d4dbe4bf6480 
+│                               │                  ├ [5] : https://github.com/tukaani-project/xz/security/advis
+│                               │                  │       ories/GHSA-6cc8-p5mm-29w2 
+│                               │                  ├ [6] : https://linux.oracle.com/cve/CVE-2025-31115.html 
+│                               │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-7524.html 
+│                               │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-31115 
+│                               │                  ├ [9] : https://tukaani.org/xz/xz-cve-2025-31115.patch 
+│                               │                  ├ [10]: https://ubuntu.com/security/notices/USN-7414-1 
+│                               │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-31115 
 │                               ├ PublishedDate   : 2025-04-03T17:15:30.54Z 
 │                               ╰ LastModifiedDate: 2025-04-07T14:18:34.453Z 
 ├ [1] ╭ Target: Java 
@@ -9431,7 +9443,7 @@
 │                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ cbl-mariner: 3 
-│                       │      │                  ├ oracle-oval: 2 
+│                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ redhat     : 2 
 │                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
@@ -9454,7 +9466,7 @@
 │                       │      │                  ├ [9] : https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/
 │                       │      │                  │       m/G461hA6lCgAJ 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-45336.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-3772.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-7592.html 
 │                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-45336 
 │                       │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-3420 
 │                       │      │                  ├ [14]: https://security.netapp.com/advisory/ntap-20250221-00
@@ -9514,7 +9526,7 @@
 │                       │      │                  ├ [9] : https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/
 │                       │      │                  │       m/G461hA6lCgAJ 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-45341.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-3772.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-7466.html 
 │                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-45341 
 │                       │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-3373 
 │                       │      │                  ├ [14]: https://security.netapp.com/advisory/ntap-20250221-00
@@ -9587,9 +9599,10 @@
 │                       │      │                   not believe this leakage is enough to allow recovery of the
 │                       │      │                   private key when P-256 is used in any well known protocols. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ bitnami: 2 
-│                       │      │                  ├ redhat : 2 
-│                       │      │                  ╰ ubuntu : 2 
+│                       │      ├ VendorSeverity   ╭ bitnami    : 2 
+│                       │      │                  ├ oracle-oval: 2 
+│                       │      │                  ├ redhat     : 2 
+│                       │      │                  ╰ ubuntu     : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                       │      │                  │         │           N/A:N 
 │                       │      │                  │         ╰ V3Score : 4 
@@ -9608,12 +9621,14 @@
 │                       │      │                  ├ [6] : https://go.dev/issue/71383 
 │                       │      │                  ├ [7] : https://groups.google.com/g/golang-announce/c/xU1ZCHU
 │                       │      │                  │       Zw3k 
-│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-22866 
-│                       │      │                  ├ [9] : https://pkg.go.dev/vuln/GO-2025-3447 
-│                       │      │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250221-00
+│                       │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-22866.html 
+│                       │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-7466.html 
+│                       │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-22866 
+│                       │      │                  ├ [11]: https://pkg.go.dev/vuln/GO-2025-3447 
+│                       │      │                  ├ [12]: https://security.netapp.com/advisory/ntap-20250221-00
 │                       │      │                  │       02/ 
-│                       │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7574-1 
-│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
+│                       │      │                  ├ [13]: https://ubuntu.com/security/notices/USN-7574-1 
+│                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                       │      ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                       │      ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2025-22871 
@@ -10006,9 +10021,10 @@
 │                       │     │                    believe this leakage is enough to allow recovery of the
 │                       │     │                   private key when P-256 is used in any well known protocols. 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ bitnami: 2 
-│                       │     │                  ├ redhat : 2 
-│                       │     │                  ╰ ubuntu : 2 
+│                       │     ├ VendorSeverity   ╭ bitnami    : 2 
+│                       │     │                  ├ oracle-oval: 2 
+│                       │     │                  ├ redhat     : 2 
+│                       │     │                  ╰ ubuntu     : 2 
 │                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N
 │                       │     │                  │         │           /A:N 
 │                       │     │                  │         ╰ V3Score : 4 
@@ -10027,11 +10043,13 @@
 │                       │     │                  ├ [6] : https://go.dev/issue/71383 
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/xU1ZCHUZ
 │                       │     │                  │       w3k 
-│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-22866 
-│                       │     │                  ├ [9] : https://pkg.go.dev/vuln/GO-2025-3447 
-│                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20250221-0002/ 
-│                       │     │                  ├ [11]: https://ubuntu.com/security/notices/USN-7574-1 
-│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
+│                       │     │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-22866.html 
+│                       │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-7466.html 
+│                       │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-22866 
+│                       │     │                  ├ [11]: https://pkg.go.dev/vuln/GO-2025-3447 
+│                       │     │                  ├ [12]: https://security.netapp.com/advisory/ntap-20250221-0002/ 
+│                       │     │                  ├ [13]: https://ubuntu.com/security/notices/USN-7574-1 
+│                       │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                       │     ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                       │     ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
 │                       ├ [6] ╭ VulnerabilityID : CVE-2025-22871 
