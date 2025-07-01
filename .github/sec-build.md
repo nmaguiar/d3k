@@ -1381,7 +1381,154 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-10963 
 │                       │      ├ PublishedDate   : 2024-11-07T16:15:17.15Z 
 │                       │      ╰ LastModifiedDate: 2025-02-06T06:15:29.24Z 
-│                       ├ [28] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [28] ╭ VulnerabilityID : CVE-2025-6069 
+│                       │      ├ PkgID           : libpython3.13@3.13.3-1ubuntu0.2 
+│                       │      ├ PkgName         : libpython3.13 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.13@3.13.3-1ubuntu0.2?arch=a
+│                       │      │                  │       md64&distro=ubuntu-25.04 
+│                       │      │                  ╰ UID : eb028e934f820583 
+│                       │      ├ InstalledVersion: 3.13.3-1ubuntu0.2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:e35bca7295e3b487db4d09aa9260fe6d5ab25e851804
+│                       │      │                  │         43e43f205f2b4a1d3ae6 
+│                       │      │                  ╰ DiffID: sha256:7d100d2319d300f38b4d69f34b858d28bb64007c263b
+│                       │      │                            5f06d4a611a00efe7da9 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-6069 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : cpython: Python HTMLParser quadratic complexity 
+│                       │      ├ Description     : The html.parser.HTMLParser class had worse-case quadratic
+│                       │      │                   complexity when processing certain crafted malformed inputs
+│                       │      │                   potentially leading to amplified denial-of-service. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-1333 
+│                       │      ├ VendorSeverity   ╭ bitnami: 2 
+│                       │      │                  ├ redhat : 2 
+│                       │      │                  ╰ ubuntu : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:L 
+│                       │      │                  │         ╰ V3Score : 4.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 4.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-6069 
+│                       │      │                  ├ [1]: https://github.com/python/cpython/commit/4455cbabf991e
+│                       │      │                  │      202185a25a631af206f60bbc949 
+│                       │      │                  ├ [2]: https://github.com/python/cpython/commit/6eb6c5dbfb528
+│                       │      │                  │      bd07d77b60fd71fd05d81d45c41 
+│                       │      │                  ├ [3]: https://github.com/python/cpython/commit/6eb6c5dbfb528
+│                       │      │                  │      bd07d77b60fd71fd05d81d45c41 (main) 
+│                       │      │                  ├ [4]: https://github.com/python/cpython/commit/d851f8e258c73
+│                       │      │                  │      28814943e923a7df81bca15df4b 
+│                       │      │                  ├ [5]: https://github.com/python/cpython/issues/135462 
+│                       │      │                  ├ [6]: https://github.com/python/cpython/pull/135464 
+│                       │      │                  ├ [7]: https://mail.python.org/archives/list/security-announc
+│                       │      │                  │      e@python.org/thread/K5PIYLR6EP3WR7ZOKKYQUWEDNQVUXOYM/ 
+│                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2025-6069 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-6069 
+│                       │      ├ PublishedDate   : 2025-06-17T14:15:33.677Z 
+│                       │      ╰ LastModifiedDate: 2025-06-17T20:50:23.507Z 
+│                       ├ [29] ╭ VulnerabilityID : CVE-2025-6069 
+│                       │      ├ PkgID           : libpython3.13-minimal@3.13.3-1ubuntu0.2 
+│                       │      ├ PkgName         : libpython3.13-minimal 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.13-minimal@3.13.3-1ubuntu0.
+│                       │      │                  │       2?arch=amd64&distro=ubuntu-25.04 
+│                       │      │                  ╰ UID : b9b4686566aa26d0 
+│                       │      ├ InstalledVersion: 3.13.3-1ubuntu0.2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:e35bca7295e3b487db4d09aa9260fe6d5ab25e851804
+│                       │      │                  │         43e43f205f2b4a1d3ae6 
+│                       │      │                  ╰ DiffID: sha256:7d100d2319d300f38b4d69f34b858d28bb64007c263b
+│                       │      │                            5f06d4a611a00efe7da9 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-6069 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : cpython: Python HTMLParser quadratic complexity 
+│                       │      ├ Description     : The html.parser.HTMLParser class had worse-case quadratic
+│                       │      │                   complexity when processing certain crafted malformed inputs
+│                       │      │                   potentially leading to amplified denial-of-service. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-1333 
+│                       │      ├ VendorSeverity   ╭ bitnami: 2 
+│                       │      │                  ├ redhat : 2 
+│                       │      │                  ╰ ubuntu : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:L 
+│                       │      │                  │         ╰ V3Score : 4.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 4.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-6069 
+│                       │      │                  ├ [1]: https://github.com/python/cpython/commit/4455cbabf991e
+│                       │      │                  │      202185a25a631af206f60bbc949 
+│                       │      │                  ├ [2]: https://github.com/python/cpython/commit/6eb6c5dbfb528
+│                       │      │                  │      bd07d77b60fd71fd05d81d45c41 
+│                       │      │                  ├ [3]: https://github.com/python/cpython/commit/6eb6c5dbfb528
+│                       │      │                  │      bd07d77b60fd71fd05d81d45c41 (main) 
+│                       │      │                  ├ [4]: https://github.com/python/cpython/commit/d851f8e258c73
+│                       │      │                  │      28814943e923a7df81bca15df4b 
+│                       │      │                  ├ [5]: https://github.com/python/cpython/issues/135462 
+│                       │      │                  ├ [6]: https://github.com/python/cpython/pull/135464 
+│                       │      │                  ├ [7]: https://mail.python.org/archives/list/security-announc
+│                       │      │                  │      e@python.org/thread/K5PIYLR6EP3WR7ZOKKYQUWEDNQVUXOYM/ 
+│                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2025-6069 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-6069 
+│                       │      ├ PublishedDate   : 2025-06-17T14:15:33.677Z 
+│                       │      ╰ LastModifiedDate: 2025-06-17T20:50:23.507Z 
+│                       ├ [30] ╭ VulnerabilityID : CVE-2025-6069 
+│                       │      ├ PkgID           : libpython3.13-stdlib@3.13.3-1ubuntu0.2 
+│                       │      ├ PkgName         : libpython3.13-stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.13-stdlib@3.13.3-1ubuntu0.2
+│                       │      │                  │       ?arch=amd64&distro=ubuntu-25.04 
+│                       │      │                  ╰ UID : 229a7871a77e880a 
+│                       │      ├ InstalledVersion: 3.13.3-1ubuntu0.2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:e35bca7295e3b487db4d09aa9260fe6d5ab25e851804
+│                       │      │                  │         43e43f205f2b4a1d3ae6 
+│                       │      │                  ╰ DiffID: sha256:7d100d2319d300f38b4d69f34b858d28bb64007c263b
+│                       │      │                            5f06d4a611a00efe7da9 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-6069 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : cpython: Python HTMLParser quadratic complexity 
+│                       │      ├ Description     : The html.parser.HTMLParser class had worse-case quadratic
+│                       │      │                   complexity when processing certain crafted malformed inputs
+│                       │      │                   potentially leading to amplified denial-of-service. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-1333 
+│                       │      ├ VendorSeverity   ╭ bitnami: 2 
+│                       │      │                  ├ redhat : 2 
+│                       │      │                  ╰ ubuntu : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:L 
+│                       │      │                  │         ╰ V3Score : 4.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 4.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-6069 
+│                       │      │                  ├ [1]: https://github.com/python/cpython/commit/4455cbabf991e
+│                       │      │                  │      202185a25a631af206f60bbc949 
+│                       │      │                  ├ [2]: https://github.com/python/cpython/commit/6eb6c5dbfb528
+│                       │      │                  │      bd07d77b60fd71fd05d81d45c41 
+│                       │      │                  ├ [3]: https://github.com/python/cpython/commit/6eb6c5dbfb528
+│                       │      │                  │      bd07d77b60fd71fd05d81d45c41 (main) 
+│                       │      │                  ├ [4]: https://github.com/python/cpython/commit/d851f8e258c73
+│                       │      │                  │      28814943e923a7df81bca15df4b 
+│                       │      │                  ├ [5]: https://github.com/python/cpython/issues/135462 
+│                       │      │                  ├ [6]: https://github.com/python/cpython/pull/135464 
+│                       │      │                  ├ [7]: https://mail.python.org/archives/list/security-announc
+│                       │      │                  │      e@python.org/thread/K5PIYLR6EP3WR7ZOKKYQUWEDNQVUXOYM/ 
+│                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2025-6069 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-6069 
+│                       │      ├ PublishedDate   : 2025-06-17T14:15:33.677Z 
+│                       │      ╰ LastModifiedDate: 2025-06-17T20:50:23.507Z 
+│                       ├ [31] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : libsubid5@1:4.16.0-7ubuntu1 
 │                       │      ├ PkgName         : libsubid5 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsubid5@4.16.0-7ubuntu1?arch=amd64&d
@@ -1429,7 +1576,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [29] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [32] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : login.defs@1:4.16.0-7ubuntu1 
 │                       │      ├ PkgName         : login.defs 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login.defs@4.16.0-7ubuntu1?arch=all&di
@@ -1477,7 +1624,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [30] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [33] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : passwd@1:4.16.0-7ubuntu1 
 │                       │      ├ PkgName         : passwd 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.16.0-7ubuntu1?arch=amd64&dist
@@ -1525,7 +1672,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ├ [31] ╭ VulnerabilityID : CVE-2018-6952 
+│                       ├ [34] ╭ VulnerabilityID : CVE-2018-6952 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -1575,7 +1722,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                       │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T04:11:28.42Z 
-│                       ├ [32] ╭ VulnerabilityID : CVE-2021-45261 
+│                       ├ [35] ╭ VulnerabilityID : CVE-2021-45261 
 │                       │      ├ PkgID           : patch@2.7.6-7build3 
 │                       │      ├ PkgName         : patch 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.7.6-7build3?arch=amd64&distro=
@@ -1615,7 +1762,162 @@
 │                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [33] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [36] ╭ VulnerabilityID : CVE-2025-6069 
+│                       │      ├ PkgID           : python3.13@3.13.3-1ubuntu0.2 
+│                       │      ├ PkgName         : python3.13 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.13@3.13.3-1ubuntu0.2?arch=amd6
+│                       │      │                  │       4&distro=ubuntu-25.04 
+│                       │      │                  ╰ UID : c72adabcb417dc39 
+│                       │      ├ InstalledVersion: 3.13.3-1ubuntu0.2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:e35bca7295e3b487db4d09aa9260fe6d5ab25e851804
+│                       │      │                  │         43e43f205f2b4a1d3ae6 
+│                       │      │                  ╰ DiffID: sha256:7d100d2319d300f38b4d69f34b858d28bb64007c263b
+│                       │      │                            5f06d4a611a00efe7da9 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-6069 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : cpython: Python HTMLParser quadratic complexity 
+│                       │      ├ Description     : The html.parser.HTMLParser class had worse-case quadratic
+│                       │      │                   complexity when processing certain crafted malformed inputs
+│                       │      │                   potentially leading to amplified denial-of-service. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-1333 
+│                       │      ├ VendorSeverity   ╭ bitnami: 2 
+│                       │      │                  ├ redhat : 2 
+│                       │      │                  ╰ ubuntu : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:L 
+│                       │      │                  │         ╰ V3Score : 4.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 4.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-6069 
+│                       │      │                  ├ [1]: https://github.com/python/cpython/commit/4455cbabf991e
+│                       │      │                  │      202185a25a631af206f60bbc949 
+│                       │      │                  ├ [2]: https://github.com/python/cpython/commit/6eb6c5dbfb528
+│                       │      │                  │      bd07d77b60fd71fd05d81d45c41 
+│                       │      │                  ├ [3]: https://github.com/python/cpython/commit/6eb6c5dbfb528
+│                       │      │                  │      bd07d77b60fd71fd05d81d45c41 (main) 
+│                       │      │                  ├ [4]: https://github.com/python/cpython/commit/d851f8e258c73
+│                       │      │                  │      28814943e923a7df81bca15df4b 
+│                       │      │                  ├ [5]: https://github.com/python/cpython/issues/135462 
+│                       │      │                  ├ [6]: https://github.com/python/cpython/pull/135464 
+│                       │      │                  ├ [7]: https://mail.python.org/archives/list/security-announc
+│                       │      │                  │      e@python.org/thread/K5PIYLR6EP3WR7ZOKKYQUWEDNQVUXOYM/ 
+│                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2025-6069 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-6069 
+│                       │      ├ PublishedDate   : 2025-06-17T14:15:33.677Z 
+│                       │      ╰ LastModifiedDate: 2025-06-17T20:50:23.507Z 
+│                       ├ [37] ╭ VulnerabilityID : CVE-2025-6069 
+│                       │      ├ PkgID           : python3.13-minimal@3.13.3-1ubuntu0.2 
+│                       │      ├ PkgName         : python3.13-minimal 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.13-minimal@3.13.3-1ubuntu0.2?a
+│                       │      │                  │       rch=amd64&distro=ubuntu-25.04 
+│                       │      │                  ╰ UID : b172a637323a051f 
+│                       │      ├ InstalledVersion: 3.13.3-1ubuntu0.2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:e35bca7295e3b487db4d09aa9260fe6d5ab25e851804
+│                       │      │                  │         43e43f205f2b4a1d3ae6 
+│                       │      │                  ╰ DiffID: sha256:7d100d2319d300f38b4d69f34b858d28bb64007c263b
+│                       │      │                            5f06d4a611a00efe7da9 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-6069 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : cpython: Python HTMLParser quadratic complexity 
+│                       │      ├ Description     : The html.parser.HTMLParser class had worse-case quadratic
+│                       │      │                   complexity when processing certain crafted malformed inputs
+│                       │      │                   potentially leading to amplified denial-of-service. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-1333 
+│                       │      ├ VendorSeverity   ╭ bitnami: 2 
+│                       │      │                  ├ redhat : 2 
+│                       │      │                  ╰ ubuntu : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:L 
+│                       │      │                  │         ╰ V3Score : 4.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 4.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-6069 
+│                       │      │                  ├ [1]: https://github.com/python/cpython/commit/4455cbabf991e
+│                       │      │                  │      202185a25a631af206f60bbc949 
+│                       │      │                  ├ [2]: https://github.com/python/cpython/commit/6eb6c5dbfb528
+│                       │      │                  │      bd07d77b60fd71fd05d81d45c41 
+│                       │      │                  ├ [3]: https://github.com/python/cpython/commit/6eb6c5dbfb528
+│                       │      │                  │      bd07d77b60fd71fd05d81d45c41 (main) 
+│                       │      │                  ├ [4]: https://github.com/python/cpython/commit/d851f8e258c73
+│                       │      │                  │      28814943e923a7df81bca15df4b 
+│                       │      │                  ├ [5]: https://github.com/python/cpython/issues/135462 
+│                       │      │                  ├ [6]: https://github.com/python/cpython/pull/135464 
+│                       │      │                  ├ [7]: https://mail.python.org/archives/list/security-announc
+│                       │      │                  │      e@python.org/thread/K5PIYLR6EP3WR7ZOKKYQUWEDNQVUXOYM/ 
+│                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2025-6069 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-6069 
+│                       │      ├ PublishedDate   : 2025-06-17T14:15:33.677Z 
+│                       │      ╰ LastModifiedDate: 2025-06-17T20:50:23.507Z 
+│                       ├ [38] ╭ VulnerabilityID : CVE-2025-32462 
+│                       │      ├ PkgID           : sudo@1.9.16p2-1ubuntu1 
+│                       │      ├ PkgName         : sudo 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/sudo@1.9.16p2-1ubuntu1?arch=amd64&dist
+│                       │      │                  │       ro=ubuntu-25.04 
+│                       │      │                  ╰ UID : b6df527fe7c50df4 
+│                       │      ├ InstalledVersion: 1.9.16p2-1ubuntu1 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:e35bca7295e3b487db4d09aa9260fe6d5ab25e851804
+│                       │      │                  │         43e43f205f2b4a1d3ae6 
+│                       │      │                  ╰ DiffID: sha256:7d100d2319d300f38b4d69f34b858d28bb64007c263b
+│                       │      │                            5f06d4a611a00efe7da9 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32462 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : [Local Privilege Escalation via host option] 
+│                       │      ├ Description     : Sudo's host (`-h` or `--host`) option is intended to be used
+│                       │      │                    in conjunction with the list option (`-l` or `--list`) to
+│                       │      │                   list a user's sudo privileges on a host other than the
+│                       │      │                   current one.  However, due to a bug it was not restricted to
+│                       │      │                    listing privileges and could be used when running a command
+│                       │      │                    via `sudo` or editing a file with `sudoedit`.  Depending on
+│                       │      │                    the rules present in the sudoers file this could allow a
+│                       │      │                   local privilege escalation attack. Sudo versions 1.8.8 to
+│                       │      │                   1.9.17 inclusive are affected. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ VendorSeverity   ─ ubuntu: 3 
+│                       │      ╰ References       ╭ [0]: https://www.cve.org/CVERecord?id=CVE-2025-32462 
+│                       │                         ╰ [1]: https://www.sudo.ws/security/advisories/host_any/ 
+│                       ├ [39] ╭ VulnerabilityID : CVE-2025-32463 
+│                       │      ├ PkgID           : sudo@1.9.16p2-1ubuntu1 
+│                       │      ├ PkgName         : sudo 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/sudo@1.9.16p2-1ubuntu1?arch=amd64&dist
+│                       │      │                  │       ro=ubuntu-25.04 
+│                       │      │                  ╰ UID : b6df527fe7c50df4 
+│                       │      ├ InstalledVersion: 1.9.16p2-1ubuntu1 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:e35bca7295e3b487db4d09aa9260fe6d5ab25e851804
+│                       │      │                  │         43e43f205f2b4a1d3ae6 
+│                       │      │                  ╰ DiffID: sha256:7d100d2319d300f38b4d69f34b858d28bb64007c263b
+│                       │      │                            5f06d4a611a00efe7da9 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32463 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : [Local Privilege Escalation via chroot option] 
+│                       │      ├ Description     : An attacker can leverage sudo's `-R` (`--chroot`) option to
+│                       │      │                   run arbitrary commands as root, even if they are not listed
+│                       │      │                   in the sudoers file. Sudo versions 1.9.14 to 1.9.17
+│                       │      │                   inclusive are affected. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ VendorSeverity   ─ ubuntu: 3 
+│                       │      ╰ References       ╭ [0]: https://www.cve.org/CVERecord?id=CVE-2025-32463 
+│                       │                         ╰ [1]: https://www.sudo.ws/security/advisories/chroot_bug/ 
+│                       ├ [40] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.16.0-7ubuntu1 
 │                       │      ├ PkgName         : uidmap 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.16.0-7ubuntu1?arch=amd64&dist
@@ -1663,7 +1965,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ╰ [34] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ╰ [41] ╭ VulnerabilityID : CVE-2021-31879 
 │                              ├ PkgID           : wget@1.24.5-2ubuntu1 
 │                              ├ PkgName         : wget 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-2ubuntu1?arch=amd64&distro
@@ -2441,10 +2743,10 @@
 │                       │     │                            │           /A:N 
 │                       │     │                            ╰ V3Score : 5.4 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/04/4 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9150 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9635 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-22871 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2358493 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9150.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9635.html 
 │                       │     │                  ├ [5] : https://go.dev/cl/652998 
 │                       │     │                  ├ [6] : https://go.dev/issue/71988 
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
