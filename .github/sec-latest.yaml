@@ -3222,6 +3222,7 @@
         V3Score: 7.8
     References:
     - http://www.openwall.com/lists/oss-security/2025/06/17/1
+    - https://access.redhat.com/errata/RHSA-2025:10024
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -3234,7 +3235,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-06-17T20:50:23.507Z'
+    LastModifiedDate: '2025-07-01T14:15:41.26Z'
   - VulnerabilityID: CVE-2024-10041
     PkgID: libpam-modules-bin@1.5.3-7ubuntu2
     PkgName: libpam-modules-bin
@@ -3375,6 +3376,7 @@
         V3Score: 7.8
     References:
     - http://www.openwall.com/lists/oss-security/2025/06/17/1
+    - https://access.redhat.com/errata/RHSA-2025:10024
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -3387,7 +3389,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-06-17T20:50:23.507Z'
+    LastModifiedDate: '2025-07-01T14:15:41.26Z'
   - VulnerabilityID: CVE-2024-10041
     PkgID: libpam-runtime@1.5.3-7ubuntu2
     PkgName: libpam-runtime
@@ -3528,6 +3530,7 @@
         V3Score: 7.8
     References:
     - http://www.openwall.com/lists/oss-security/2025/06/17/1
+    - https://access.redhat.com/errata/RHSA-2025:10024
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -3540,7 +3543,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-06-17T20:50:23.507Z'
+    LastModifiedDate: '2025-07-01T14:15:41.26Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: libpam-systemd@256.5-2ubuntu3.1
     PkgName: libpam-systemd
@@ -3739,6 +3742,7 @@
         V3Score: 7.8
     References:
     - http://www.openwall.com/lists/oss-security/2025/06/17/1
+    - https://access.redhat.com/errata/RHSA-2025:10024
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -3751,7 +3755,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-06-17T20:50:23.507Z'
+    LastModifiedDate: '2025-07-01T14:15:41.26Z'
   - VulnerabilityID: CVE-2024-56406
     PkgID: libperl5.38t64@5.38.2-5
     PkgName: libperl5.38t64
@@ -3821,7 +3825,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'cpython: Bypass extraction filter to modify file metadata outside extraction directory'
+    Title: 'cpython: python: Bypass extraction filter to modify file metadata outside extraction directory'
     Description: "Allows modifying some file metadata (e.g. last modified) with filter=\"data\"\_or file permissions (chmod) with filter=\"tar\"\_of files outside the extraction directory.\nYou are affected by this vulnerability if using the tarfile\_module to extract untrusted tar archives using TarFile.extractall()\_or TarFile.extract()\_using the filter=\_parameter with a value of \"data\"\_or \"tar\". See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter \_for more information. Only Python versions 3.12 or later are affected by these vulnerabilities, earlier versions don't include the extraction filter feature.\n\nNote that for Python 3.14 or later the default value of filter=\_changed from \"no filtering\" to `\"data\", so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links."
     Severity: MEDIUM
     CweIDs:
@@ -3932,7 +3936,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'cpython: Extraction filter bypass for linking outside extraction directory'
+    Title: 'cpython: python: Extraction filter bypass for linking outside extraction directory'
     Description: "Allows the extraction filter to be ignored, allowing symlink targets to point outside the destination directory, and the modification of some file metadata.\n\n\nYou are affected by this vulnerability if using the tarfile\_module to extract untrusted tar archives using TarFile.extractall()\_or TarFile.extract()\_using the filter=\_parameter with a value of \"data\"\_or \"tar\". See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter \_for more information.\n\nNote that for Python 3.14 or later the default value of filter=\_changed from \"no filtering\" to `\"data\", so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links."
     Severity: MEDIUM
     CweIDs:
@@ -3947,8 +3951,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N
-        V3Score: 5.7
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 7.3
     References:
     - https://access.redhat.com/security/cve/CVE-2025-4330
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
@@ -4002,8 +4006,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N
-        V3Score: 5.7
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 7.5
     References:
     - https://access.redhat.com/security/cve/CVE-2025-4435
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
@@ -4188,7 +4192,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'cpython: Bypass extraction filter to modify file metadata outside extraction directory'
+    Title: 'cpython: python: Bypass extraction filter to modify file metadata outside extraction directory'
     Description: "Allows modifying some file metadata (e.g. last modified) with filter=\"data\"\_or file permissions (chmod) with filter=\"tar\"\_of files outside the extraction directory.\nYou are affected by this vulnerability if using the tarfile\_module to extract untrusted tar archives using TarFile.extractall()\_or TarFile.extract()\_using the filter=\_parameter with a value of \"data\"\_or \"tar\". See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter \_for more information. Only Python versions 3.12 or later are affected by these vulnerabilities, earlier versions don't include the extraction filter feature.\n\nNote that for Python 3.14 or later the default value of filter=\_changed from \"no filtering\" to `\"data\", so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links."
     Severity: MEDIUM
     CweIDs:
@@ -4299,7 +4303,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'cpython: Extraction filter bypass for linking outside extraction directory'
+    Title: 'cpython: python: Extraction filter bypass for linking outside extraction directory'
     Description: "Allows the extraction filter to be ignored, allowing symlink targets to point outside the destination directory, and the modification of some file metadata.\n\n\nYou are affected by this vulnerability if using the tarfile\_module to extract untrusted tar archives using TarFile.extractall()\_or TarFile.extract()\_using the filter=\_parameter with a value of \"data\"\_or \"tar\". See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter \_for more information.\n\nNote that for Python 3.14 or later the default value of filter=\_changed from \"no filtering\" to `\"data\", so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links."
     Severity: MEDIUM
     CweIDs:
@@ -4314,8 +4318,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N
-        V3Score: 5.7
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 7.3
     References:
     - https://access.redhat.com/security/cve/CVE-2025-4330
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
@@ -4369,8 +4373,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N
-        V3Score: 5.7
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 7.5
     References:
     - https://access.redhat.com/security/cve/CVE-2025-4435
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
@@ -4555,7 +4559,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'cpython: Bypass extraction filter to modify file metadata outside extraction directory'
+    Title: 'cpython: python: Bypass extraction filter to modify file metadata outside extraction directory'
     Description: "Allows modifying some file metadata (e.g. last modified) with filter=\"data\"\_or file permissions (chmod) with filter=\"tar\"\_of files outside the extraction directory.\nYou are affected by this vulnerability if using the tarfile\_module to extract untrusted tar archives using TarFile.extractall()\_or TarFile.extract()\_using the filter=\_parameter with a value of \"data\"\_or \"tar\". See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter \_for more information. Only Python versions 3.12 or later are affected by these vulnerabilities, earlier versions don't include the extraction filter feature.\n\nNote that for Python 3.14 or later the default value of filter=\_changed from \"no filtering\" to `\"data\", so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links."
     Severity: MEDIUM
     CweIDs:
@@ -4666,7 +4670,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'cpython: Extraction filter bypass for linking outside extraction directory'
+    Title: 'cpython: python: Extraction filter bypass for linking outside extraction directory'
     Description: "Allows the extraction filter to be ignored, allowing symlink targets to point outside the destination directory, and the modification of some file metadata.\n\n\nYou are affected by this vulnerability if using the tarfile\_module to extract untrusted tar archives using TarFile.extractall()\_or TarFile.extract()\_using the filter=\_parameter with a value of \"data\"\_or \"tar\". See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter \_for more information.\n\nNote that for Python 3.14 or later the default value of filter=\_changed from \"no filtering\" to `\"data\", so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links."
     Severity: MEDIUM
     CweIDs:
@@ -4681,8 +4685,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N
-        V3Score: 5.7
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 7.3
     References:
     - https://access.redhat.com/security/cve/CVE-2025-4330
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
@@ -4736,8 +4740,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N
-        V3Score: 5.7
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 7.5
     References:
     - https://access.redhat.com/security/cve/CVE-2025-4435
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
@@ -6162,6 +6166,7 @@
       bitnami: 3
       ghsa: 3
       nvd: 3
+      oracle-oval: 2
       photon: 3
       redhat: 2
       ubuntu: 2
@@ -6180,6 +6185,8 @@
     - https://github.com/pypa/setuptools/commit/250a6d17978f9f6ac3ac887091f2d32886fbbb0b
     - https://github.com/pypa/setuptools/issues/4946
     - https://github.com/pypa/setuptools/security/advisories/GHSA-5rjg-fvgr-3xxf
+    - https://linux.oracle.com/cve/CVE-2025-47273.html
+    - https://linux.oracle.com/errata/ELSA-2025-9940.html
     - https://lists.debian.org/debian-lts-announce/2025/05/msg00035.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47273
     - https://ubuntu.com/security/notices/USN-7544-1
@@ -6204,7 +6211,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'cpython: Bypass extraction filter to modify file metadata outside extraction directory'
+    Title: 'cpython: python: Bypass extraction filter to modify file metadata outside extraction directory'
     Description: "Allows modifying some file metadata (e.g. last modified) with filter=\"data\"\_or file permissions (chmod) with filter=\"tar\"\_of files outside the extraction directory.\nYou are affected by this vulnerability if using the tarfile\_module to extract untrusted tar archives using TarFile.extractall()\_or TarFile.extract()\_using the filter=\_parameter with a value of \"data\"\_or \"tar\". See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter \_for more information. Only Python versions 3.12 or later are affected by these vulnerabilities, earlier versions don't include the extraction filter feature.\n\nNote that for Python 3.14 or later the default value of filter=\_changed from \"no filtering\" to `\"data\", so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links."
     Severity: MEDIUM
     CweIDs:
@@ -6315,7 +6322,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'cpython: Extraction filter bypass for linking outside extraction directory'
+    Title: 'cpython: python: Extraction filter bypass for linking outside extraction directory'
     Description: "Allows the extraction filter to be ignored, allowing symlink targets to point outside the destination directory, and the modification of some file metadata.\n\n\nYou are affected by this vulnerability if using the tarfile\_module to extract untrusted tar archives using TarFile.extractall()\_or TarFile.extract()\_using the filter=\_parameter with a value of \"data\"\_or \"tar\". See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter \_for more information.\n\nNote that for Python 3.14 or later the default value of filter=\_changed from \"no filtering\" to `\"data\", so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links."
     Severity: MEDIUM
     CweIDs:
@@ -6330,8 +6337,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N
-        V3Score: 5.7
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 7.3
     References:
     - https://access.redhat.com/security/cve/CVE-2025-4330
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
@@ -6385,8 +6392,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N
-        V3Score: 5.7
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 7.5
     References:
     - https://access.redhat.com/security/cve/CVE-2025-4435
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
@@ -6571,7 +6578,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'cpython: Bypass extraction filter to modify file metadata outside extraction directory'
+    Title: 'cpython: python: Bypass extraction filter to modify file metadata outside extraction directory'
     Description: "Allows modifying some file metadata (e.g. last modified) with filter=\"data\"\_or file permissions (chmod) with filter=\"tar\"\_of files outside the extraction directory.\nYou are affected by this vulnerability if using the tarfile\_module to extract untrusted tar archives using TarFile.extractall()\_or TarFile.extract()\_using the filter=\_parameter with a value of \"data\"\_or \"tar\". See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter \_for more information. Only Python versions 3.12 or later are affected by these vulnerabilities, earlier versions don't include the extraction filter feature.\n\nNote that for Python 3.14 or later the default value of filter=\_changed from \"no filtering\" to `\"data\", so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links."
     Severity: MEDIUM
     CweIDs:
@@ -6682,7 +6689,7 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: 'cpython: Extraction filter bypass for linking outside extraction directory'
+    Title: 'cpython: python: Extraction filter bypass for linking outside extraction directory'
     Description: "Allows the extraction filter to be ignored, allowing symlink targets to point outside the destination directory, and the modification of some file metadata.\n\n\nYou are affected by this vulnerability if using the tarfile\_module to extract untrusted tar archives using TarFile.extractall()\_or TarFile.extract()\_using the filter=\_parameter with a value of \"data\"\_or \"tar\". See the tarfile  extraction filters documentation https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter \_for more information.\n\nNote that for Python 3.14 or later the default value of filter=\_changed from \"no filtering\" to `\"data\", so if you are relying on this new default behavior then your usage is also affected.\n\nNote that none of these vulnerabilities significantly affect the installation of source distributions which are tar archives as source distributions already allow arbitrary code execution during the build process. However when evaluating source distributions it's important to avoid installing source distributions with suspicious links."
     Severity: MEDIUM
     CweIDs:
@@ -6697,8 +6704,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N
-        V3Score: 5.7
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 7.3
     References:
     - https://access.redhat.com/security/cve/CVE-2025-4330
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
@@ -6752,8 +6759,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N
-        V3Score: 5.7
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 7.5
     References:
     - https://access.redhat.com/security/cve/CVE-2025-4435
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
@@ -6927,7 +6934,8 @@
       PURL: pkg:deb/ubuntu/sudo@1.9.15p5-3ubuntu5?arch=amd64&distro=ubuntu-24.10
       UID: 90f578df02553520
     InstalledVersion: 1.9.15p5-3ubuntu5
-    Status: affected
+    FixedVersion: 1.9.15p5-3ubuntu5.24.10.1
+    Status: fixed
     Layer:
       Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
       DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
@@ -6937,14 +6945,34 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: '[Local Privilege Escalation via host option]'
-    Description: Sudo's host (`-h` or `--host`) option is intended to be used in conjunction with the list option (`-l` or `--list`) to list a user's sudo privileges on a host other than the current one.  However, due to a bug it was not restricted to listing privileges and could be used when running a command via `sudo` or editing a file with `sudoedit`.  Depending on the rules present in the sudoers file this could allow a local privilege escalation attack. Sudo versions 1.8.8 to 1.9.17 inclusive are affected.
+    Title: 'sudo: LPE via host option'
+    Description: Sudo before 1.9.17p1, when used with a sudoers file that specifies a host that is neither the current host nor ALL, allows listed users to execute commands on unintended machines.
     Severity: HIGH
+    CweIDs:
+    - CWE-863
     VendorSeverity:
+      oracle-oval: 3
+      redhat: 3
       ubuntu: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-32462
+    - https://linux.oracle.com/cve/CVE-2025-32462.html
+    - https://linux.oracle.com/errata/ELSA-2025-9978.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-32462
+    - https://ubuntu.com/security/notices/USN-7604-1
+    - https://ubuntu.com/security/notices/USN-7604-2
     - https://www.cve.org/CVERecord?id=CVE-2025-32462
+    - https://www.openwall.com/lists/oss-security/2025/06/30/2
+    - https://www.stratascale.com/vulnerability-alert-CVE-2025-32462-sudo-host
+    - https://www.sudo.ws/releases/changelog/
+    - https://www.sudo.ws/security/advisories/
     - https://www.sudo.ws/security/advisories/host_any/
+    PublishedDate: '2025-06-30T21:15:30.08Z'
+    LastModifiedDate: '2025-06-30T21:15:30.08Z'
   - VulnerabilityID: CVE-2025-32463
     PkgID: sudo@1.9.15p5-3ubuntu5
     PkgName: sudo
@@ -6952,7 +6980,8 @@
       PURL: pkg:deb/ubuntu/sudo@1.9.15p5-3ubuntu5?arch=amd64&distro=ubuntu-24.10
       UID: 90f578df02553520
     InstalledVersion: 1.9.15p5-3ubuntu5
-    Status: affected
+    FixedVersion: 1.9.15p5-3ubuntu5.24.10.1
+    Status: fixed
     Layer:
       Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
       DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
@@ -6962,14 +6991,30 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Title: '[Local Privilege Escalation via chroot option]'
-    Description: An attacker can leverage sudo's `-R` (`--chroot`) option to run arbitrary commands as root, even if they are not listed in the sudoers file. Sudo versions 1.9.14 to 1.9.17 inclusive are affected.
+    Title: 'sudo: LPE via chroot option'
+    Description: Sudo before 1.9.17p1 allows local users to obtain root access because /etc/nsswitch.conf from a user-controlled directory is used with the --chroot option.
     Severity: HIGH
+    CweIDs:
+    - CWE-829
     VendorSeverity:
+      redhat: 3
       ubuntu: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.8
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-32463
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-32463
+    - https://ubuntu.com/security/notices/USN-7604-1
     - https://www.cve.org/CVERecord?id=CVE-2025-32463
+    - https://www.openwall.com/lists/oss-security/2025/06/30/3
+    - https://www.stratascale.com/vulnerability-alert-CVE-2025-32463-sudo-chroot
+    - https://www.sudo.ws/releases/changelog/
+    - https://www.sudo.ws/security/advisories/
     - https://www.sudo.ws/security/advisories/chroot_bug/
+    PublishedDate: '2025-06-30T21:15:30.257Z'
+    LastModifiedDate: '2025-06-30T21:15:30.257Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: systemd@256.5-2ubuntu3.1
     PkgName: systemd
@@ -7981,7 +8026,7 @@
     - https://go.dev/cl/652135
     - https://go.dev/issue/71931
     - https://linux.oracle.com/cve/CVE-2025-22869.html
-    - https://linux.oracle.com/errata/ELSA-2025-7416.html
+    - https://linux.oracle.com/errata/ELSA-2025-7484.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22869
     - https://pkg.go.dev/vuln/GO-2025-3487
     - https://security.netapp.com/advisory/ntap-20250411-0010
@@ -8479,7 +8524,7 @@
     - https://go.dev/cl/652135
     - https://go.dev/issue/71931
     - https://linux.oracle.com/cve/CVE-2025-22869.html
-    - https://linux.oracle.com/errata/ELSA-2025-7416.html
+    - https://linux.oracle.com/errata/ELSA-2025-7484.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22869
     - https://pkg.go.dev/vuln/GO-2025-3487
     - https://security.netapp.com/advisory/ntap-20250411-0010
@@ -9216,7 +9261,7 @@
     - https://go.dev/cl/652135
     - https://go.dev/issue/71931
     - https://linux.oracle.com/cve/CVE-2025-22869.html
-    - https://linux.oracle.com/errata/ELSA-2025-7416.html
+    - https://linux.oracle.com/errata/ELSA-2025-7484.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22869
     - https://pkg.go.dev/vuln/GO-2025-3487
     - https://security.netapp.com/advisory/ntap-20250411-0010
