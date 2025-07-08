@@ -3582,20 +3582,26 @@
 │                       │       │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:10024 
 │                       │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:10027 
 │                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2025:10180 
-│                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:9526 
-│                       │       │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2025-6020 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372512 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-9526.html 
-│                       │       │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-6020.html 
-│                       │       │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
-│                       │       │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
-│                       │       │                  ├ [12]: https://ubuntu.com/security/notices/USN-7580-1 
-│                       │       │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
-│                       │       │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/06/
+│                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:10354 
+│                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2025:10357 
+│                       │       │                  ├ [6] : https://access.redhat.com/errata/RHSA-2025:10358 
+│                       │       │                  ├ [7] : https://access.redhat.com/errata/RHSA-2025:10359 
+│                       │       │                  ├ [8] : https://access.redhat.com/errata/RHSA-2025:10361 
+│                       │       │                  ├ [9] : https://access.redhat.com/errata/RHSA-2025:10362 
+│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:9526 
+│                       │       │                  ├ [11]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [12]: https://bugzilla.redhat.com/2372512 
+│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [15]: https://linux.oracle.com/cve/CVE-2025-6020.html 
+│                       │       │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
+│                       │       │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [19]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [20]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                          17/1 
 │                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
-│                       │       ╰ LastModifiedDate: 2025-07-02T08:15:22.41Z 
+│                       │       ╰ LastModifiedDate: 2025-07-07T08:15:25.46Z 
 │                       ├ [73]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam-modules-bin@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-modules-bin 
@@ -3750,20 +3756,26 @@
 │                       │       │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:10024 
 │                       │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:10027 
 │                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2025:10180 
-│                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:9526 
-│                       │       │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2025-6020 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372512 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-9526.html 
-│                       │       │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-6020.html 
-│                       │       │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
-│                       │       │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
-│                       │       │                  ├ [12]: https://ubuntu.com/security/notices/USN-7580-1 
-│                       │       │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
-│                       │       │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/06/
+│                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:10354 
+│                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2025:10357 
+│                       │       │                  ├ [6] : https://access.redhat.com/errata/RHSA-2025:10358 
+│                       │       │                  ├ [7] : https://access.redhat.com/errata/RHSA-2025:10359 
+│                       │       │                  ├ [8] : https://access.redhat.com/errata/RHSA-2025:10361 
+│                       │       │                  ├ [9] : https://access.redhat.com/errata/RHSA-2025:10362 
+│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:9526 
+│                       │       │                  ├ [11]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [12]: https://bugzilla.redhat.com/2372512 
+│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [15]: https://linux.oracle.com/cve/CVE-2025-6020.html 
+│                       │       │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
+│                       │       │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [19]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [20]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                          17/1 
 │                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
-│                       │       ╰ LastModifiedDate: 2025-07-02T08:15:22.41Z 
+│                       │       ╰ LastModifiedDate: 2025-07-07T08:15:25.46Z 
 │                       ├ [76]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam-runtime@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-runtime 
@@ -3918,20 +3930,26 @@
 │                       │       │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:10024 
 │                       │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:10027 
 │                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2025:10180 
-│                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:9526 
-│                       │       │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2025-6020 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372512 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-9526.html 
-│                       │       │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-6020.html 
-│                       │       │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
-│                       │       │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
-│                       │       │                  ├ [12]: https://ubuntu.com/security/notices/USN-7580-1 
-│                       │       │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
-│                       │       │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/06/
+│                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:10354 
+│                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2025:10357 
+│                       │       │                  ├ [6] : https://access.redhat.com/errata/RHSA-2025:10358 
+│                       │       │                  ├ [7] : https://access.redhat.com/errata/RHSA-2025:10359 
+│                       │       │                  ├ [8] : https://access.redhat.com/errata/RHSA-2025:10361 
+│                       │       │                  ├ [9] : https://access.redhat.com/errata/RHSA-2025:10362 
+│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:9526 
+│                       │       │                  ├ [11]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [12]: https://bugzilla.redhat.com/2372512 
+│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [15]: https://linux.oracle.com/cve/CVE-2025-6020.html 
+│                       │       │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
+│                       │       │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [19]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [20]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                          17/1 
 │                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
-│                       │       ╰ LastModifiedDate: 2025-07-02T08:15:22.41Z 
+│                       │       ╰ LastModifiedDate: 2025-07-07T08:15:25.46Z 
 │                       ├ [79]  ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : libpam-systemd@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : libpam-systemd 
@@ -4170,20 +4188,26 @@
 │                       │       │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:10024 
 │                       │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:10027 
 │                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2025:10180 
-│                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:9526 
-│                       │       │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2025-6020 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372512 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-9526.html 
-│                       │       │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-6020.html 
-│                       │       │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
-│                       │       │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
-│                       │       │                  ├ [12]: https://ubuntu.com/security/notices/USN-7580-1 
-│                       │       │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
-│                       │       │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/06/
+│                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:10354 
+│                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2025:10357 
+│                       │       │                  ├ [6] : https://access.redhat.com/errata/RHSA-2025:10358 
+│                       │       │                  ├ [7] : https://access.redhat.com/errata/RHSA-2025:10359 
+│                       │       │                  ├ [8] : https://access.redhat.com/errata/RHSA-2025:10361 
+│                       │       │                  ├ [9] : https://access.redhat.com/errata/RHSA-2025:10362 
+│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:9526 
+│                       │       │                  ├ [11]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [12]: https://bugzilla.redhat.com/2372512 
+│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [15]: https://linux.oracle.com/cve/CVE-2025-6020.html 
+│                       │       │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
+│                       │       │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [19]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [20]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                          17/1 
 │                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
-│                       │       ╰ LastModifiedDate: 2025-07-02T08:15:22.41Z 
+│                       │       ╰ LastModifiedDate: 2025-07-07T08:15:25.46Z 
 │                       ├ [83]  ╭ VulnerabilityID : CVE-2024-56406 
 │                       │       ├ PkgID           : libperl5.38t64@5.38.2-5 
 │                       │       ├ PkgName         : libperl5.38t64 
@@ -4635,8 +4659,7 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : There is an issue in CPython when using
-│                       │       │                   `bytes.decode("unicode_escape" ... 
+│                       │       ├ Title           : cpython: python: CPython DecodeError Handling Vulnerability 
 │                       │       ├ Description     : There is an issue in CPython when using
 │                       │       │                   `bytes.decode("unicode_escape", error="ignore|replace")`.
 │                       │       │                   If you are not using the "unicode_escape" encoding or an
@@ -4647,37 +4670,42 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
 │                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                       │       │                           │           N/A:H 
+│                       │       │                           ╰ V3Score : 5.1 
 │                       │       ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/1
 │                       │       │                  │       6/4 
 │                       │       │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/05/1
 │                       │       │                  │       9/1 
-│                       │       │                  ├ [2] : https://github.com/python/cpython/commit/4398b788ffc
+│                       │       │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-4516 
+│                       │       │                  ├ [3] : https://github.com/python/cpython/commit/4398b788ffc
 │                       │       │                  │       1f954a2c552da285477d42a571292 
-│                       │       │                  ├ [3] : https://github.com/python/cpython/commit/56466486782
+│                       │       │                  ├ [4] : https://github.com/python/cpython/commit/56466486782
 │                       │       │                  │       95a44aa82636c6e92826651baf33a 
-│                       │       │                  ├ [4] : https://github.com/python/cpython/commit/6279eb8c076
+│                       │       │                  ├ [5] : https://github.com/python/cpython/commit/6279eb8c076
 │                       │       │                  │       d89d3739a6edb393e43c7929b429d 
-│                       │       │                  ├ [5] : https://github.com/python/cpython/commit/69b4387f78f
+│                       │       │                  ├ [6] : https://github.com/python/cpython/commit/69b4387f78f
 │                       │       │                  │       413e8c47572a85b3478c47eba8142 
-│                       │       │                  ├ [6] : https://github.com/python/cpython/commit/73b3040f592
+│                       │       │                  ├ [7] : https://github.com/python/cpython/commit/73b3040f592
 │                       │       │                  │       436385007918887b7e2132aa8431f 
-│                       │       │                  ├ [7] : https://github.com/python/cpython/commit/8d35fd1b349
+│                       │       │                  ├ [8] : https://github.com/python/cpython/commit/8d35fd1b349
 │                       │       │                  │       35221aff23a1ab69a429dd156be77 
-│                       │       │                  ├ [8] : https://github.com/python/cpython/commit/9f69a58623b
-│                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/9f69a58623b
+│                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e 
+│                       │       │                  ├ [10]: https://github.com/python/cpython/commit/9f69a58623b
 │                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e (main) 
-│                       │       │                  ├ [10]: https://github.com/python/cpython/commit/ab9893c4060
+│                       │       │                  ├ [11]: https://github.com/python/cpython/commit/ab9893c4060
 │                       │       │                  │       9935e0d40a6d2a7307ea51aec598b 
-│                       │       │                  ├ [11]: https://github.com/python/cpython/issues/133767 
-│                       │       │                  ├ [12]: https://github.com/python/cpython/pull/129648 
-│                       │       │                  ├ [13]: https://mail.python.org/archives/list/security-annou
+│                       │       │                  ├ [12]: https://github.com/python/cpython/issues/133767 
+│                       │       │                  ├ [13]: https://github.com/python/cpython/pull/129648 
+│                       │       │                  ├ [14]: https://mail.python.org/archives/list/security-annou
 │                       │       │                  │       nce@python.org/thread/L75IPBBTSCYEF56I2M4KIW353BB3AY
 │                       │       │                  │       74/ 
-│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2025-4516 
-│                       │       │                  ├ [15]: https://ubuntu.com/security/notices/USN-7570-1 
-│                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
+│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-4516 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7570-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
 │                       │       ├ PublishedDate   : 2025-05-15T14:15:31.753Z 
 │                       │       ╰ LastModifiedDate: 2025-06-03T14:15:49.697Z 
 │                       ├ [89]  ╭ VulnerabilityID : CVE-2025-4517 
@@ -5211,8 +5239,7 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : There is an issue in CPython when using
-│                       │       │                   `bytes.decode("unicode_escape" ... 
+│                       │       ├ Title           : cpython: python: CPython DecodeError Handling Vulnerability 
 │                       │       ├ Description     : There is an issue in CPython when using
 │                       │       │                   `bytes.decode("unicode_escape", error="ignore|replace")`.
 │                       │       │                   If you are not using the "unicode_escape" encoding or an
@@ -5223,37 +5250,42 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
 │                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                       │       │                           │           N/A:H 
+│                       │       │                           ╰ V3Score : 5.1 
 │                       │       ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/1
 │                       │       │                  │       6/4 
 │                       │       │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/05/1
 │                       │       │                  │       9/1 
-│                       │       │                  ├ [2] : https://github.com/python/cpython/commit/4398b788ffc
+│                       │       │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-4516 
+│                       │       │                  ├ [3] : https://github.com/python/cpython/commit/4398b788ffc
 │                       │       │                  │       1f954a2c552da285477d42a571292 
-│                       │       │                  ├ [3] : https://github.com/python/cpython/commit/56466486782
+│                       │       │                  ├ [4] : https://github.com/python/cpython/commit/56466486782
 │                       │       │                  │       95a44aa82636c6e92826651baf33a 
-│                       │       │                  ├ [4] : https://github.com/python/cpython/commit/6279eb8c076
+│                       │       │                  ├ [5] : https://github.com/python/cpython/commit/6279eb8c076
 │                       │       │                  │       d89d3739a6edb393e43c7929b429d 
-│                       │       │                  ├ [5] : https://github.com/python/cpython/commit/69b4387f78f
+│                       │       │                  ├ [6] : https://github.com/python/cpython/commit/69b4387f78f
 │                       │       │                  │       413e8c47572a85b3478c47eba8142 
-│                       │       │                  ├ [6] : https://github.com/python/cpython/commit/73b3040f592
+│                       │       │                  ├ [7] : https://github.com/python/cpython/commit/73b3040f592
 │                       │       │                  │       436385007918887b7e2132aa8431f 
-│                       │       │                  ├ [7] : https://github.com/python/cpython/commit/8d35fd1b349
+│                       │       │                  ├ [8] : https://github.com/python/cpython/commit/8d35fd1b349
 │                       │       │                  │       35221aff23a1ab69a429dd156be77 
-│                       │       │                  ├ [8] : https://github.com/python/cpython/commit/9f69a58623b
-│                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/9f69a58623b
+│                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e 
+│                       │       │                  ├ [10]: https://github.com/python/cpython/commit/9f69a58623b
 │                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e (main) 
-│                       │       │                  ├ [10]: https://github.com/python/cpython/commit/ab9893c4060
+│                       │       │                  ├ [11]: https://github.com/python/cpython/commit/ab9893c4060
 │                       │       │                  │       9935e0d40a6d2a7307ea51aec598b 
-│                       │       │                  ├ [11]: https://github.com/python/cpython/issues/133767 
-│                       │       │                  ├ [12]: https://github.com/python/cpython/pull/129648 
-│                       │       │                  ├ [13]: https://mail.python.org/archives/list/security-annou
+│                       │       │                  ├ [12]: https://github.com/python/cpython/issues/133767 
+│                       │       │                  ├ [13]: https://github.com/python/cpython/pull/129648 
+│                       │       │                  ├ [14]: https://mail.python.org/archives/list/security-annou
 │                       │       │                  │       nce@python.org/thread/L75IPBBTSCYEF56I2M4KIW353BB3AY
 │                       │       │                  │       74/ 
-│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2025-4516 
-│                       │       │                  ├ [15]: https://ubuntu.com/security/notices/USN-7570-1 
-│                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
+│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-4516 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7570-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
 │                       │       ├ PublishedDate   : 2025-05-15T14:15:31.753Z 
 │                       │       ╰ LastModifiedDate: 2025-06-03T14:15:49.697Z 
 │                       ├ [96]  ╭ VulnerabilityID : CVE-2025-4517 
@@ -5787,8 +5819,7 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : There is an issue in CPython when using
-│                       │       │                   `bytes.decode("unicode_escape" ... 
+│                       │       ├ Title           : cpython: python: CPython DecodeError Handling Vulnerability 
 │                       │       ├ Description     : There is an issue in CPython when using
 │                       │       │                   `bytes.decode("unicode_escape", error="ignore|replace")`.
 │                       │       │                   If you are not using the "unicode_escape" encoding or an
@@ -5799,37 +5830,42 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
 │                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                       │       │                           │           N/A:H 
+│                       │       │                           ╰ V3Score : 5.1 
 │                       │       ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/1
 │                       │       │                  │       6/4 
 │                       │       │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/05/1
 │                       │       │                  │       9/1 
-│                       │       │                  ├ [2] : https://github.com/python/cpython/commit/4398b788ffc
+│                       │       │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-4516 
+│                       │       │                  ├ [3] : https://github.com/python/cpython/commit/4398b788ffc
 │                       │       │                  │       1f954a2c552da285477d42a571292 
-│                       │       │                  ├ [3] : https://github.com/python/cpython/commit/56466486782
+│                       │       │                  ├ [4] : https://github.com/python/cpython/commit/56466486782
 │                       │       │                  │       95a44aa82636c6e92826651baf33a 
-│                       │       │                  ├ [4] : https://github.com/python/cpython/commit/6279eb8c076
+│                       │       │                  ├ [5] : https://github.com/python/cpython/commit/6279eb8c076
 │                       │       │                  │       d89d3739a6edb393e43c7929b429d 
-│                       │       │                  ├ [5] : https://github.com/python/cpython/commit/69b4387f78f
+│                       │       │                  ├ [6] : https://github.com/python/cpython/commit/69b4387f78f
 │                       │       │                  │       413e8c47572a85b3478c47eba8142 
-│                       │       │                  ├ [6] : https://github.com/python/cpython/commit/73b3040f592
+│                       │       │                  ├ [7] : https://github.com/python/cpython/commit/73b3040f592
 │                       │       │                  │       436385007918887b7e2132aa8431f 
-│                       │       │                  ├ [7] : https://github.com/python/cpython/commit/8d35fd1b349
+│                       │       │                  ├ [8] : https://github.com/python/cpython/commit/8d35fd1b349
 │                       │       │                  │       35221aff23a1ab69a429dd156be77 
-│                       │       │                  ├ [8] : https://github.com/python/cpython/commit/9f69a58623b
-│                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/9f69a58623b
+│                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e 
+│                       │       │                  ├ [10]: https://github.com/python/cpython/commit/9f69a58623b
 │                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e (main) 
-│                       │       │                  ├ [10]: https://github.com/python/cpython/commit/ab9893c4060
+│                       │       │                  ├ [11]: https://github.com/python/cpython/commit/ab9893c4060
 │                       │       │                  │       9935e0d40a6d2a7307ea51aec598b 
-│                       │       │                  ├ [11]: https://github.com/python/cpython/issues/133767 
-│                       │       │                  ├ [12]: https://github.com/python/cpython/pull/129648 
-│                       │       │                  ├ [13]: https://mail.python.org/archives/list/security-annou
+│                       │       │                  ├ [12]: https://github.com/python/cpython/issues/133767 
+│                       │       │                  ├ [13]: https://github.com/python/cpython/pull/129648 
+│                       │       │                  ├ [14]: https://mail.python.org/archives/list/security-annou
 │                       │       │                  │       nce@python.org/thread/L75IPBBTSCYEF56I2M4KIW353BB3AY
 │                       │       │                  │       74/ 
-│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2025-4516 
-│                       │       │                  ├ [15]: https://ubuntu.com/security/notices/USN-7570-1 
-│                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
+│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-4516 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7570-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
 │                       │       ├ PublishedDate   : 2025-05-15T14:15:31.753Z 
 │                       │       ╰ LastModifiedDate: 2025-06-03T14:15:49.697Z 
 │                       ├ [103] ╭ VulnerabilityID : CVE-2025-4517 
@@ -7852,8 +7888,7 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : There is an issue in CPython when using
-│                       │       │                   `bytes.decode("unicode_escape" ... 
+│                       │       ├ Title           : cpython: python: CPython DecodeError Handling Vulnerability 
 │                       │       ├ Description     : There is an issue in CPython when using
 │                       │       │                   `bytes.decode("unicode_escape", error="ignore|replace")`.
 │                       │       │                   If you are not using the "unicode_escape" encoding or an
@@ -7864,37 +7899,42 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
 │                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                       │       │                           │           N/A:H 
+│                       │       │                           ╰ V3Score : 5.1 
 │                       │       ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/1
 │                       │       │                  │       6/4 
 │                       │       │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/05/1
 │                       │       │                  │       9/1 
-│                       │       │                  ├ [2] : https://github.com/python/cpython/commit/4398b788ffc
+│                       │       │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-4516 
+│                       │       │                  ├ [3] : https://github.com/python/cpython/commit/4398b788ffc
 │                       │       │                  │       1f954a2c552da285477d42a571292 
-│                       │       │                  ├ [3] : https://github.com/python/cpython/commit/56466486782
+│                       │       │                  ├ [4] : https://github.com/python/cpython/commit/56466486782
 │                       │       │                  │       95a44aa82636c6e92826651baf33a 
-│                       │       │                  ├ [4] : https://github.com/python/cpython/commit/6279eb8c076
+│                       │       │                  ├ [5] : https://github.com/python/cpython/commit/6279eb8c076
 │                       │       │                  │       d89d3739a6edb393e43c7929b429d 
-│                       │       │                  ├ [5] : https://github.com/python/cpython/commit/69b4387f78f
+│                       │       │                  ├ [6] : https://github.com/python/cpython/commit/69b4387f78f
 │                       │       │                  │       413e8c47572a85b3478c47eba8142 
-│                       │       │                  ├ [6] : https://github.com/python/cpython/commit/73b3040f592
+│                       │       │                  ├ [7] : https://github.com/python/cpython/commit/73b3040f592
 │                       │       │                  │       436385007918887b7e2132aa8431f 
-│                       │       │                  ├ [7] : https://github.com/python/cpython/commit/8d35fd1b349
+│                       │       │                  ├ [8] : https://github.com/python/cpython/commit/8d35fd1b349
 │                       │       │                  │       35221aff23a1ab69a429dd156be77 
-│                       │       │                  ├ [8] : https://github.com/python/cpython/commit/9f69a58623b
-│                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/9f69a58623b
+│                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e 
+│                       │       │                  ├ [10]: https://github.com/python/cpython/commit/9f69a58623b
 │                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e (main) 
-│                       │       │                  ├ [10]: https://github.com/python/cpython/commit/ab9893c4060
+│                       │       │                  ├ [11]: https://github.com/python/cpython/commit/ab9893c4060
 │                       │       │                  │       9935e0d40a6d2a7307ea51aec598b 
-│                       │       │                  ├ [11]: https://github.com/python/cpython/issues/133767 
-│                       │       │                  ├ [12]: https://github.com/python/cpython/pull/129648 
-│                       │       │                  ├ [13]: https://mail.python.org/archives/list/security-annou
+│                       │       │                  ├ [12]: https://github.com/python/cpython/issues/133767 
+│                       │       │                  ├ [13]: https://github.com/python/cpython/pull/129648 
+│                       │       │                  ├ [14]: https://mail.python.org/archives/list/security-annou
 │                       │       │                  │       nce@python.org/thread/L75IPBBTSCYEF56I2M4KIW353BB3AY
 │                       │       │                  │       74/ 
-│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2025-4516 
-│                       │       │                  ├ [15]: https://ubuntu.com/security/notices/USN-7570-1 
-│                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
+│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-4516 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7570-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
 │                       │       ├ PublishedDate   : 2025-05-15T14:15:31.753Z 
 │                       │       ╰ LastModifiedDate: 2025-06-03T14:15:49.697Z 
 │                       ├ [136] ╭ VulnerabilityID : CVE-2025-4517 
@@ -8428,8 +8468,7 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : There is an issue in CPython when using
-│                       │       │                   `bytes.decode("unicode_escape" ... 
+│                       │       ├ Title           : cpython: python: CPython DecodeError Handling Vulnerability 
 │                       │       ├ Description     : There is an issue in CPython when using
 │                       │       │                   `bytes.decode("unicode_escape", error="ignore|replace")`.
 │                       │       │                   If you are not using the "unicode_escape" encoding or an
@@ -8440,37 +8479,42 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
 │                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                       │       │                           │           N/A:H 
+│                       │       │                           ╰ V3Score : 5.1 
 │                       │       ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/1
 │                       │       │                  │       6/4 
 │                       │       │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/05/1
 │                       │       │                  │       9/1 
-│                       │       │                  ├ [2] : https://github.com/python/cpython/commit/4398b788ffc
+│                       │       │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-4516 
+│                       │       │                  ├ [3] : https://github.com/python/cpython/commit/4398b788ffc
 │                       │       │                  │       1f954a2c552da285477d42a571292 
-│                       │       │                  ├ [3] : https://github.com/python/cpython/commit/56466486782
+│                       │       │                  ├ [4] : https://github.com/python/cpython/commit/56466486782
 │                       │       │                  │       95a44aa82636c6e92826651baf33a 
-│                       │       │                  ├ [4] : https://github.com/python/cpython/commit/6279eb8c076
+│                       │       │                  ├ [5] : https://github.com/python/cpython/commit/6279eb8c076
 │                       │       │                  │       d89d3739a6edb393e43c7929b429d 
-│                       │       │                  ├ [5] : https://github.com/python/cpython/commit/69b4387f78f
+│                       │       │                  ├ [6] : https://github.com/python/cpython/commit/69b4387f78f
 │                       │       │                  │       413e8c47572a85b3478c47eba8142 
-│                       │       │                  ├ [6] : https://github.com/python/cpython/commit/73b3040f592
+│                       │       │                  ├ [7] : https://github.com/python/cpython/commit/73b3040f592
 │                       │       │                  │       436385007918887b7e2132aa8431f 
-│                       │       │                  ├ [7] : https://github.com/python/cpython/commit/8d35fd1b349
+│                       │       │                  ├ [8] : https://github.com/python/cpython/commit/8d35fd1b349
 │                       │       │                  │       35221aff23a1ab69a429dd156be77 
-│                       │       │                  ├ [8] : https://github.com/python/cpython/commit/9f69a58623b
-│                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/9f69a58623b
+│                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e 
+│                       │       │                  ├ [10]: https://github.com/python/cpython/commit/9f69a58623b
 │                       │       │                  │       d01349a18ba0c7a9cb1dad6a51e8e (main) 
-│                       │       │                  ├ [10]: https://github.com/python/cpython/commit/ab9893c4060
+│                       │       │                  ├ [11]: https://github.com/python/cpython/commit/ab9893c4060
 │                       │       │                  │       9935e0d40a6d2a7307ea51aec598b 
-│                       │       │                  ├ [11]: https://github.com/python/cpython/issues/133767 
-│                       │       │                  ├ [12]: https://github.com/python/cpython/pull/129648 
-│                       │       │                  ├ [13]: https://mail.python.org/archives/list/security-annou
+│                       │       │                  ├ [12]: https://github.com/python/cpython/issues/133767 
+│                       │       │                  ├ [13]: https://github.com/python/cpython/pull/129648 
+│                       │       │                  ├ [14]: https://mail.python.org/archives/list/security-annou
 │                       │       │                  │       nce@python.org/thread/L75IPBBTSCYEF56I2M4KIW353BB3AY
 │                       │       │                  │       74/ 
-│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2025-4516 
-│                       │       │                  ├ [15]: https://ubuntu.com/security/notices/USN-7570-1 
-│                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
+│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-4516 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7570-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-4516 
 │                       │       ├ PublishedDate   : 2025-05-15T14:15:31.753Z 
 │                       │       ╰ LastModifiedDate: 2025-06-03T14:15:49.697Z 
 │                       ├ [143] ╭ VulnerabilityID : CVE-2025-4517 
@@ -10180,7 +10224,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
@@ -10729,7 +10773,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     ├ VendorSeverity   ╭ amazon     : 2 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -11024,7 +11068,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     ├ VendorSeverity   ╭ amazon     : 2 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -11582,7 +11626,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     ├ VendorSeverity   ╭ amazon     : 2 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
