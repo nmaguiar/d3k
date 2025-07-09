@@ -1461,14 +1461,18 @@
     - https://github.com/python/cpython/commit/4455cbabf991e202185a25a631af206f60bbc949
     - https://github.com/python/cpython/commit/6eb6c5dbfb528bd07d77b60fd71fd05d81d45c41
     - https://github.com/python/cpython/commit/6eb6c5dbfb528bd07d77b60fd71fd05d81d45c41 (main)
+    - https://github.com/python/cpython/commit/8d1b3dfa09135affbbf27fb8babcf3c11415df49
+    - https://github.com/python/cpython/commit/ab0893fd5c579d9cea30841680e6d35fc478afb5
     - https://github.com/python/cpython/commit/d851f8e258c7328814943e923a7df81bca15df4b
+    - https://github.com/python/cpython/commit/f3c6f882cddc8dc30320d2e73edf019e201394fc
+    - https://github.com/python/cpython/commit/fdc9d214c01cb4588f540cfa03726bbf2a33fc15
     - https://github.com/python/cpython/issues/135462
     - https://github.com/python/cpython/pull/135464
     - https://mail.python.org/archives/list/security-announce@python.org/thread/K5PIYLR6EP3WR7ZOKKYQUWEDNQVUXOYM/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-6069
     - https://www.cve.org/CVERecord?id=CVE-2025-6069
     PublishedDate: '2025-06-17T14:15:33.677Z'
-    LastModifiedDate: '2025-06-17T20:50:23.507Z'
+    LastModifiedDate: '2025-07-07T18:15:29.15Z'
   - VulnerabilityID: CVE-2025-6069
     PkgID: libpython3.13-minimal@3.13.3-1ubuntu0.2
     PkgName: libpython3.13-minimal
@@ -1507,14 +1511,18 @@
     - https://github.com/python/cpython/commit/4455cbabf991e202185a25a631af206f60bbc949
     - https://github.com/python/cpython/commit/6eb6c5dbfb528bd07d77b60fd71fd05d81d45c41
     - https://github.com/python/cpython/commit/6eb6c5dbfb528bd07d77b60fd71fd05d81d45c41 (main)
+    - https://github.com/python/cpython/commit/8d1b3dfa09135affbbf27fb8babcf3c11415df49
+    - https://github.com/python/cpython/commit/ab0893fd5c579d9cea30841680e6d35fc478afb5
     - https://github.com/python/cpython/commit/d851f8e258c7328814943e923a7df81bca15df4b
+    - https://github.com/python/cpython/commit/f3c6f882cddc8dc30320d2e73edf019e201394fc
+    - https://github.com/python/cpython/commit/fdc9d214c01cb4588f540cfa03726bbf2a33fc15
     - https://github.com/python/cpython/issues/135462
     - https://github.com/python/cpython/pull/135464
     - https://mail.python.org/archives/list/security-announce@python.org/thread/K5PIYLR6EP3WR7ZOKKYQUWEDNQVUXOYM/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-6069
     - https://www.cve.org/CVERecord?id=CVE-2025-6069
     PublishedDate: '2025-06-17T14:15:33.677Z'
-    LastModifiedDate: '2025-06-17T20:50:23.507Z'
+    LastModifiedDate: '2025-07-07T18:15:29.15Z'
   - VulnerabilityID: CVE-2025-6069
     PkgID: libpython3.13-stdlib@3.13.3-1ubuntu0.2
     PkgName: libpython3.13-stdlib
@@ -1553,14 +1561,18 @@
     - https://github.com/python/cpython/commit/4455cbabf991e202185a25a631af206f60bbc949
     - https://github.com/python/cpython/commit/6eb6c5dbfb528bd07d77b60fd71fd05d81d45c41
     - https://github.com/python/cpython/commit/6eb6c5dbfb528bd07d77b60fd71fd05d81d45c41 (main)
+    - https://github.com/python/cpython/commit/8d1b3dfa09135affbbf27fb8babcf3c11415df49
+    - https://github.com/python/cpython/commit/ab0893fd5c579d9cea30841680e6d35fc478afb5
     - https://github.com/python/cpython/commit/d851f8e258c7328814943e923a7df81bca15df4b
+    - https://github.com/python/cpython/commit/f3c6f882cddc8dc30320d2e73edf019e201394fc
+    - https://github.com/python/cpython/commit/fdc9d214c01cb4588f540cfa03726bbf2a33fc15
     - https://github.com/python/cpython/issues/135462
     - https://github.com/python/cpython/pull/135464
     - https://mail.python.org/archives/list/security-announce@python.org/thread/K5PIYLR6EP3WR7ZOKKYQUWEDNQVUXOYM/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-6069
     - https://www.cve.org/CVERecord?id=CVE-2025-6069
     PublishedDate: '2025-06-17T14:15:33.677Z'
-    LastModifiedDate: '2025-06-17T20:50:23.507Z'
+    LastModifiedDate: '2025-07-07T18:15:29.15Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: libsubid5@1:4.16.0-7ubuntu1
     PkgName: libsubid5
@@ -1810,14 +1822,18 @@
     - https://github.com/python/cpython/commit/4455cbabf991e202185a25a631af206f60bbc949
     - https://github.com/python/cpython/commit/6eb6c5dbfb528bd07d77b60fd71fd05d81d45c41
     - https://github.com/python/cpython/commit/6eb6c5dbfb528bd07d77b60fd71fd05d81d45c41 (main)
+    - https://github.com/python/cpython/commit/8d1b3dfa09135affbbf27fb8babcf3c11415df49
+    - https://github.com/python/cpython/commit/ab0893fd5c579d9cea30841680e6d35fc478afb5
     - https://github.com/python/cpython/commit/d851f8e258c7328814943e923a7df81bca15df4b
+    - https://github.com/python/cpython/commit/f3c6f882cddc8dc30320d2e73edf019e201394fc
+    - https://github.com/python/cpython/commit/fdc9d214c01cb4588f540cfa03726bbf2a33fc15
     - https://github.com/python/cpython/issues/135462
     - https://github.com/python/cpython/pull/135464
     - https://mail.python.org/archives/list/security-announce@python.org/thread/K5PIYLR6EP3WR7ZOKKYQUWEDNQVUXOYM/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-6069
     - https://www.cve.org/CVERecord?id=CVE-2025-6069
     PublishedDate: '2025-06-17T14:15:33.677Z'
-    LastModifiedDate: '2025-06-17T20:50:23.507Z'
+    LastModifiedDate: '2025-07-07T18:15:29.15Z'
   - VulnerabilityID: CVE-2025-6069
     PkgID: python3.13-minimal@3.13.3-1ubuntu0.2
     PkgName: python3.13-minimal
@@ -1856,14 +1872,18 @@
     - https://github.com/python/cpython/commit/4455cbabf991e202185a25a631af206f60bbc949
     - https://github.com/python/cpython/commit/6eb6c5dbfb528bd07d77b60fd71fd05d81d45c41
     - https://github.com/python/cpython/commit/6eb6c5dbfb528bd07d77b60fd71fd05d81d45c41 (main)
+    - https://github.com/python/cpython/commit/8d1b3dfa09135affbbf27fb8babcf3c11415df49
+    - https://github.com/python/cpython/commit/ab0893fd5c579d9cea30841680e6d35fc478afb5
     - https://github.com/python/cpython/commit/d851f8e258c7328814943e923a7df81bca15df4b
+    - https://github.com/python/cpython/commit/f3c6f882cddc8dc30320d2e73edf019e201394fc
+    - https://github.com/python/cpython/commit/fdc9d214c01cb4588f540cfa03726bbf2a33fc15
     - https://github.com/python/cpython/issues/135462
     - https://github.com/python/cpython/pull/135464
     - https://mail.python.org/archives/list/security-announce@python.org/thread/K5PIYLR6EP3WR7ZOKKYQUWEDNQVUXOYM/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-6069
     - https://www.cve.org/CVERecord?id=CVE-2025-6069
     PublishedDate: '2025-06-17T14:15:33.677Z'
-    LastModifiedDate: '2025-06-17T20:50:23.507Z'
+    LastModifiedDate: '2025-07-07T18:15:29.15Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: uidmap@1:4.16.0-7ubuntu1
     PkgName: uidmap
@@ -2382,7 +2402,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
