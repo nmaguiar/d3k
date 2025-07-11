@@ -432,7 +432,8 @@
 │                       │       │                   crashes or memory corruption. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-190 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -526,18 +527,42 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Description     : When a user clones an untrusted repository and runs Gitk
-│                       │       │                   without additional command arguments, any writable file can
-│                       │       │                    be created and truncated. The option "Support per-file
-│                       │       │                   encoding" must have been enabled. The operation "Show
-│                       │       │                   origin of this line" is affected as well, regardless of the
-│                       │       │                    option being enabled or not. 
+│                       │       ├ Title           : gitk: Git file creation flaw 
+│                       │       ├ Description     : Gitk is a Tcl/Tk based Git history browser. Starting with
+│                       │       │                   1.7.0, when a user clones an untrusted repository and runs
+│                       │       │                   gitk without additional command arguments, files for which
+│                       │       │                   the user has write permission can be created and truncated.
+│                       │       │                    The option Support per-file encoding must have been
+│                       │       │                   enabled before in Gitk's Preferences. This option is
+│                       │       │                   disabled by default. The same happens when Show origin of
+│                       │       │                   this line is used in the main window (regardless of whether
+│                       │       │                    Support per-file encoding is enabled or not). This
+│                       │       │                   vulnerability is fixed in 2.43.7, 2.44.4, 2.45.4, 2.46.4,
+│                       │       │                   2.47.3, 2.48.2, 2.49.1, and 2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ─ ubuntu: 2 
-│                       │       ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │                          ├ [1]: https://www.cve.org/CVERecord?id=CVE-2025-27613 
-│                       │                          ╰ [2]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │                                 8/4 
+│                       │       ├ CweIDs           ─ [0]: CWE-78 
+│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
+│                       │       │                           │           L/A:L 
+│                       │       │                           ╰ V3Score : 6.3 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-27613 
+│                       │       │                  ├ [1]: https://github.com/j6t/gitk/compare/465f03869ae11acd0
+│                       │       │                  │      4abfa1b83c67879c867410c..026c397d911cde55924d7eb1311d
+│                       │       │                  │      0fd6e2e105d5 
+│                       │       │                  ├ [2]: https://github.com/j6t/gitk/compare/7dd272eca153058da
+│                       │       │                  │      2e8d5b9960bbbf0b4f0cbaa..67a128b91e25978a15f9f7e194d8
+│                       │       │                  │      1b441d603652 
+│                       │       │                  ├ [3]: https://github.com/j6t/gitk/security/advisories/GHSA-
+│                       │       │                  │      f3cw-xrj3-wr2v 
+│                       │       │                  ├ [4]: https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/ 
+│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-27613 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-27613 
+│                       │       │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/07/0
+│                       │       │                         8/4 
+│                       │       ├ PublishedDate   : 2025-07-10T15:15:26.243Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:26.243Z 
 │                       ├ [12]  ╭ VulnerabilityID : CVE-2025-27614 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -556,16 +581,36 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Description     : A Git repository can be crafted in such a way that a user
-│                       │       │                   who has cloned the repository can be tricked into running
-│                       │       │                   any script supplied by the attacker by invoking `gitk
-│                       │       │                   filename`, where `filename` has a particular structure. 
+│                       │       ├ Title           : gitk: git script execution flaw 
+│                       │       ├ Description     : Gitk is a Tcl/Tk based Git history browser. Starting with
+│                       │       │                   2.41.0, a Git repository can be crafted in such a way that
+│                       │       │                   with some social engineering a user who has cloned the
+│                       │       │                   repository can be tricked into running any script (e.g.,
+│                       │       │                   Bourne shell, Perl, Python, ...) supplied by the attacker
+│                       │       │                   by invoking gitk filename, where filename has a particular
+│                       │       │                   structure. The script is run with the privileges of the
+│                       │       │                   user. This vulnerability is fixed in 2.43.7, 2.44.4,
+│                       │       │                   2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ─ ubuntu: 2 
-│                       │       ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │                          ├ [1]: https://www.cve.org/CVERecord?id=CVE-2025-27614 
-│                       │                          ╰ [2]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │                                 8/4 
+│                       │       ├ CweIDs           ─ [0]: CWE-78 
+│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
+│                       │       │                           │           L/A:L 
+│                       │       │                           ╰ V3Score : 6.3 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-27614 
+│                       │       │                  ├ [1]: https://github.com/j6t/gitk/commit/8e3070aa5e331be45d
+│                       │       │                  │      4d03e3be41f84494fce129 
+│                       │       │                  ├ [2]: https://github.com/j6t/gitk/security/advisories/GHSA-
+│                       │       │                  │      g4v5-fjv9-mhhc 
+│                       │       │                  ├ [3]: https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/ 
+│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-27614 
+│                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2025-27614 
+│                       │       │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2025/07/0
+│                       │       │                         8/4 
+│                       │       ├ PublishedDate   : 2025-07-10T15:15:26.403Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:26.403Z 
 │                       ├ [13]  ╭ VulnerabilityID : CVE-2025-46835 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -584,16 +629,29 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Description     : When a user clones an untrusted repository and is tricked
-│                       │       │                   into editing a file located in a maliciously named
-│                       │       │                   directory in the repository, then Git GUI can create and
-│                       │       │                   overwrite any writable file. 
+│                       │       ├ Title           : Git GUI allows you to use the Git source control management
+│                       │       │                    tools via  ... 
+│                       │       ├ Description     : Git GUI allows you to use the Git source control management
+│                       │       │                    tools via a GUI. When a user clones an untrusted
+│                       │       │                   repository and is tricked into editing a file located in a
+│                       │       │                   maliciously named directory in the repository, then Git GUI
+│                       │       │                    can create and overwrite files for which the user has
+│                       │       │                   write permission. This vulnerability is fixed in 2.43.7,
+│                       │       │                   2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-88 
 │                       │       ├ VendorSeverity   ─ ubuntu: 2 
-│                       │       ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │                          ├ [1]: https://www.cve.org/CVERecord?id=CVE-2025-46835 
-│                       │                          ╰ [2]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │                                 8/4 
+│                       │       ├ References       ╭ [0]: https://github.com/j6t/git-gui/compare/dcda716dbc9c90
+│                       │       │                  │      bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230e5
+│                       │       │                  │      2f3bd036ca1b1da 
+│                       │       │                  ├ [1]: https://github.com/j6t/git-gui/security/advisories/GH
+│                       │       │                  │      SA-xfx7-68v4-v8fg 
+│                       │       │                  ├ [2]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [3]: https://www.cve.org/CVERecord?id=CVE-2025-46835 
+│                       │       │                  ╰ [4]: https://www.openwall.com/lists/oss-security/2025/07/0
+│                       │       │                         8/4 
+│                       │       ├ PublishedDate   : 2025-07-10T15:15:29.503Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:29.503Z 
 │                       ├ [14]  ╭ VulnerabilityID : CVE-2025-48384 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -632,11 +690,16 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-59 
 │                       │       │                  ╰ [1]: CWE-436 
-│                       │       ├ VendorSeverity   ╭ redhat: 3 
-│                       │       │                  ╰ ubuntu: 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:
-│                       │       │                           │           H/A:H 
-│                       │       │                           ╰ V3Score : 8 
+│                       │       ├ VendorSeverity   ╭ bitnami: 3 
+│                       │       │                  ├ photon : 3 
+│                       │       │                  ├ redhat : 3 
+│                       │       │                  ╰ ubuntu : 2 
+│                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
+│                       │       │                  │         │           :H/A:H 
+│                       │       │                  │         ╰ V3Score : 8.1 
+│                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
+│                       │       │                            │           :H/A:H 
+│                       │       │                            ╰ V3Score : 8 
 │                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-48384 
 │                       │       │                  ├ [1]: https://dgl.cx/2025/07/git-clone-submodule-cve-2025-4
 │                       │       │                  │      8384 
@@ -650,7 +713,7 @@
 │                       │       │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2025/07/0
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:42.8Z 
-│                       │       ╰ LastModifiedDate: 2025-07-08T19:15:42.8Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 │                       ├ [15]  ╭ VulnerabilityID : CVE-2025-48385 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -694,8 +757,10 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-73 
 │                       │       │                  ╰ [1]: CWE-88 
-│                       │       ├ VendorSeverity   ╭ redhat: 3 
-│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ VendorSeverity   ╭ bitnami: 3 
+│                       │       │                  ├ photon : 3 
+│                       │       │                  ├ redhat : 3 
+│                       │       │                  ╰ ubuntu : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:
 │                       │       │                           │           H/A:L 
 │                       │       │                           ╰ V3Score : 8.3 
@@ -708,7 +773,7 @@
 │                       │       │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2025/07/0
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:43.097Z 
-│                       │       ╰ LastModifiedDate: 2025-07-08T19:15:43.097Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 │                       ├ [16]  ╭ VulnerabilityID : CVE-2025-48386 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -741,11 +806,15 @@
 │                       │       │                   v2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-120 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
-│                       │       │                  ╰ ubuntu: 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:
-│                       │       │                           │           N/A:N 
-│                       │       │                           ╰ V3Score : 6.3 
+│                       │       ├ VendorSeverity   ╭ bitnami: 2 
+│                       │       │                  ├ redhat : 2 
+│                       │       │                  ╰ ubuntu : 2 
+│                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I
+│                       │       │                  │         │           :N/A:N 
+│                       │       │                  │         ╰ V3Score : 6.3 
+│                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I
+│                       │       │                            │           :N/A:N 
+│                       │       │                            ╰ V3Score : 6.3 
 │                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-48386 
 │                       │       │                  ├ [1]: https://github.com/git/git/security/advisories/GHSA-4
 │                       │       │                  │      v56-3xvj-xvfr 
@@ -755,7 +824,7 @@
 │                       │       │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2025/07/0
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:43.41Z 
-│                       │       ╰ LastModifiedDate: 2025-07-08T19:15:43.41Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 │                       ├ [17]  ╭ VulnerabilityID : CVE-2024-52005 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
@@ -837,18 +906,42 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Description     : When a user clones an untrusted repository and runs Gitk
-│                       │       │                   without additional command arguments, any writable file can
-│                       │       │                    be created and truncated. The option "Support per-file
-│                       │       │                   encoding" must have been enabled. The operation "Show
-│                       │       │                   origin of this line" is affected as well, regardless of the
-│                       │       │                    option being enabled or not. 
+│                       │       ├ Title           : gitk: Git file creation flaw 
+│                       │       ├ Description     : Gitk is a Tcl/Tk based Git history browser. Starting with
+│                       │       │                   1.7.0, when a user clones an untrusted repository and runs
+│                       │       │                   gitk without additional command arguments, files for which
+│                       │       │                   the user has write permission can be created and truncated.
+│                       │       │                    The option Support per-file encoding must have been
+│                       │       │                   enabled before in Gitk's Preferences. This option is
+│                       │       │                   disabled by default. The same happens when Show origin of
+│                       │       │                   this line is used in the main window (regardless of whether
+│                       │       │                    Support per-file encoding is enabled or not). This
+│                       │       │                   vulnerability is fixed in 2.43.7, 2.44.4, 2.45.4, 2.46.4,
+│                       │       │                   2.47.3, 2.48.2, 2.49.1, and 2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ─ ubuntu: 2 
-│                       │       ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │                          ├ [1]: https://www.cve.org/CVERecord?id=CVE-2025-27613 
-│                       │                          ╰ [2]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │                                 8/4 
+│                       │       ├ CweIDs           ─ [0]: CWE-78 
+│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
+│                       │       │                           │           L/A:L 
+│                       │       │                           ╰ V3Score : 6.3 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-27613 
+│                       │       │                  ├ [1]: https://github.com/j6t/gitk/compare/465f03869ae11acd0
+│                       │       │                  │      4abfa1b83c67879c867410c..026c397d911cde55924d7eb1311d
+│                       │       │                  │      0fd6e2e105d5 
+│                       │       │                  ├ [2]: https://github.com/j6t/gitk/compare/7dd272eca153058da
+│                       │       │                  │      2e8d5b9960bbbf0b4f0cbaa..67a128b91e25978a15f9f7e194d8
+│                       │       │                  │      1b441d603652 
+│                       │       │                  ├ [3]: https://github.com/j6t/gitk/security/advisories/GHSA-
+│                       │       │                  │      f3cw-xrj3-wr2v 
+│                       │       │                  ├ [4]: https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/ 
+│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-27613 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-27613 
+│                       │       │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/07/0
+│                       │       │                         8/4 
+│                       │       ├ PublishedDate   : 2025-07-10T15:15:26.243Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:26.243Z 
 │                       ├ [19]  ╭ VulnerabilityID : CVE-2025-27614 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
@@ -867,16 +960,36 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Description     : A Git repository can be crafted in such a way that a user
-│                       │       │                   who has cloned the repository can be tricked into running
-│                       │       │                   any script supplied by the attacker by invoking `gitk
-│                       │       │                   filename`, where `filename` has a particular structure. 
+│                       │       ├ Title           : gitk: git script execution flaw 
+│                       │       ├ Description     : Gitk is a Tcl/Tk based Git history browser. Starting with
+│                       │       │                   2.41.0, a Git repository can be crafted in such a way that
+│                       │       │                   with some social engineering a user who has cloned the
+│                       │       │                   repository can be tricked into running any script (e.g.,
+│                       │       │                   Bourne shell, Perl, Python, ...) supplied by the attacker
+│                       │       │                   by invoking gitk filename, where filename has a particular
+│                       │       │                   structure. The script is run with the privileges of the
+│                       │       │                   user. This vulnerability is fixed in 2.43.7, 2.44.4,
+│                       │       │                   2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ─ ubuntu: 2 
-│                       │       ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │                          ├ [1]: https://www.cve.org/CVERecord?id=CVE-2025-27614 
-│                       │                          ╰ [2]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │                                 8/4 
+│                       │       ├ CweIDs           ─ [0]: CWE-78 
+│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
+│                       │       │                           │           L/A:L 
+│                       │       │                           ╰ V3Score : 6.3 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-27614 
+│                       │       │                  ├ [1]: https://github.com/j6t/gitk/commit/8e3070aa5e331be45d
+│                       │       │                  │      4d03e3be41f84494fce129 
+│                       │       │                  ├ [2]: https://github.com/j6t/gitk/security/advisories/GHSA-
+│                       │       │                  │      g4v5-fjv9-mhhc 
+│                       │       │                  ├ [3]: https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/ 
+│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-27614 
+│                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2025-27614 
+│                       │       │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2025/07/0
+│                       │       │                         8/4 
+│                       │       ├ PublishedDate   : 2025-07-10T15:15:26.403Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:26.403Z 
 │                       ├ [20]  ╭ VulnerabilityID : CVE-2025-46835 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
@@ -895,16 +1008,29 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Description     : When a user clones an untrusted repository and is tricked
-│                       │       │                   into editing a file located in a maliciously named
-│                       │       │                   directory in the repository, then Git GUI can create and
-│                       │       │                   overwrite any writable file. 
+│                       │       ├ Title           : Git GUI allows you to use the Git source control management
+│                       │       │                    tools via  ... 
+│                       │       ├ Description     : Git GUI allows you to use the Git source control management
+│                       │       │                    tools via a GUI. When a user clones an untrusted
+│                       │       │                   repository and is tricked into editing a file located in a
+│                       │       │                   maliciously named directory in the repository, then Git GUI
+│                       │       │                    can create and overwrite files for which the user has
+│                       │       │                   write permission. This vulnerability is fixed in 2.43.7,
+│                       │       │                   2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-88 
 │                       │       ├ VendorSeverity   ─ ubuntu: 2 
-│                       │       ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │                          ├ [1]: https://www.cve.org/CVERecord?id=CVE-2025-46835 
-│                       │                          ╰ [2]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │                                 8/4 
+│                       │       ├ References       ╭ [0]: https://github.com/j6t/git-gui/compare/dcda716dbc9c90
+│                       │       │                  │      bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230e5
+│                       │       │                  │      2f3bd036ca1b1da 
+│                       │       │                  ├ [1]: https://github.com/j6t/git-gui/security/advisories/GH
+│                       │       │                  │      SA-xfx7-68v4-v8fg 
+│                       │       │                  ├ [2]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [3]: https://www.cve.org/CVERecord?id=CVE-2025-46835 
+│                       │       │                  ╰ [4]: https://www.openwall.com/lists/oss-security/2025/07/0
+│                       │       │                         8/4 
+│                       │       ├ PublishedDate   : 2025-07-10T15:15:29.503Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:29.503Z 
 │                       ├ [21]  ╭ VulnerabilityID : CVE-2025-48384 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
@@ -943,11 +1069,16 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-59 
 │                       │       │                  ╰ [1]: CWE-436 
-│                       │       ├ VendorSeverity   ╭ redhat: 3 
-│                       │       │                  ╰ ubuntu: 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:
-│                       │       │                           │           H/A:H 
-│                       │       │                           ╰ V3Score : 8 
+│                       │       ├ VendorSeverity   ╭ bitnami: 3 
+│                       │       │                  ├ photon : 3 
+│                       │       │                  ├ redhat : 3 
+│                       │       │                  ╰ ubuntu : 2 
+│                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
+│                       │       │                  │         │           :H/A:H 
+│                       │       │                  │         ╰ V3Score : 8.1 
+│                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
+│                       │       │                            │           :H/A:H 
+│                       │       │                            ╰ V3Score : 8 
 │                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-48384 
 │                       │       │                  ├ [1]: https://dgl.cx/2025/07/git-clone-submodule-cve-2025-4
 │                       │       │                  │      8384 
@@ -961,7 +1092,7 @@
 │                       │       │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2025/07/0
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:42.8Z 
-│                       │       ╰ LastModifiedDate: 2025-07-08T19:15:42.8Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 │                       ├ [22]  ╭ VulnerabilityID : CVE-2025-48385 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
@@ -1005,8 +1136,10 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-73 
 │                       │       │                  ╰ [1]: CWE-88 
-│                       │       ├ VendorSeverity   ╭ redhat: 3 
-│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ VendorSeverity   ╭ bitnami: 3 
+│                       │       │                  ├ photon : 3 
+│                       │       │                  ├ redhat : 3 
+│                       │       │                  ╰ ubuntu : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:
 │                       │       │                           │           H/A:L 
 │                       │       │                           ╰ V3Score : 8.3 
@@ -1019,7 +1152,7 @@
 │                       │       │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2025/07/0
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:43.097Z 
-│                       │       ╰ LastModifiedDate: 2025-07-08T19:15:43.097Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 │                       ├ [23]  ╭ VulnerabilityID : CVE-2025-48386 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
@@ -1052,11 +1185,15 @@
 │                       │       │                   v2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-120 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
-│                       │       │                  ╰ ubuntu: 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:
-│                       │       │                           │           N/A:N 
-│                       │       │                           ╰ V3Score : 6.3 
+│                       │       ├ VendorSeverity   ╭ bitnami: 2 
+│                       │       │                  ├ redhat : 2 
+│                       │       │                  ╰ ubuntu : 2 
+│                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I
+│                       │       │                  │         │           :N/A:N 
+│                       │       │                  │         ╰ V3Score : 6.3 
+│                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I
+│                       │       │                            │           :N/A:N 
+│                       │       │                            ╰ V3Score : 6.3 
 │                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-48386 
 │                       │       │                  ├ [1]: https://github.com/git/git/security/advisories/GHSA-4
 │                       │       │                  │      v56-3xvj-xvfr 
@@ -1066,7 +1203,7 @@
 │                       │       │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2025/07/0
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:43.41Z 
-│                       │       ╰ LastModifiedDate: 2025-07-08T19:15:43.41Z 
+│                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 │                       ├ [24]  ╭ VulnerabilityID : CVE-2025-30258 
 │                       │       ├ PkgID           : gnupg@2.4.4-2ubuntu18 
 │                       │       ├ PkgName         : gnupg 
@@ -3093,7 +3230,8 @@
 │                       │       │                   crashes or memory corruption. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-190 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -3177,7 +3315,8 @@
 │                       │       │                   crashes or memory corruption. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-190 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -3385,7 +3524,8 @@
 │                       │       │                   corruption and local arbitrary code execution. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-120 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:
 │                       │       │                           │           H/A:H 
@@ -4262,20 +4402,21 @@
 │                       │       │                  ├ [7] : https://access.redhat.com/errata/RHSA-2025:10359 
 │                       │       │                  ├ [8] : https://access.redhat.com/errata/RHSA-2025:10361 
 │                       │       │                  ├ [9] : https://access.redhat.com/errata/RHSA-2025:10362 
-│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:9526 
-│                       │       │                  ├ [11]: https://access.redhat.com/security/cve/CVE-2025-6020 
-│                       │       │                  ├ [12]: https://bugzilla.redhat.com/2372512 
-│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
-│                       │       │                  ├ [15]: https://linux.oracle.com/cve/CVE-2025-6020.html 
-│                       │       │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
-│                       │       │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
-│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7580-1 
-│                       │       │                  ├ [19]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
-│                       │       │                  ╰ [20]: https://www.openwall.com/lists/oss-security/2025/06/
+│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:10735 
+│                       │       │                  ├ [11]: https://access.redhat.com/errata/RHSA-2025:9526 
+│                       │       │                  ├ [12]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [13]: https://bugzilla.redhat.com/2372512 
+│                       │       │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [16]: https://linux.oracle.com/cve/CVE-2025-6020.html 
+│                       │       │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
+│                       │       │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [21]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                          17/1 
 │                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
-│                       │       ╰ LastModifiedDate: 2025-07-07T08:15:25.46Z 
+│                       │       ╰ LastModifiedDate: 2025-07-09T20:15:32.16Z 
 │                       ├ [89]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam-modules-bin@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-modules-bin 
@@ -4436,20 +4577,21 @@
 │                       │       │                  ├ [7] : https://access.redhat.com/errata/RHSA-2025:10359 
 │                       │       │                  ├ [8] : https://access.redhat.com/errata/RHSA-2025:10361 
 │                       │       │                  ├ [9] : https://access.redhat.com/errata/RHSA-2025:10362 
-│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:9526 
-│                       │       │                  ├ [11]: https://access.redhat.com/security/cve/CVE-2025-6020 
-│                       │       │                  ├ [12]: https://bugzilla.redhat.com/2372512 
-│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
-│                       │       │                  ├ [15]: https://linux.oracle.com/cve/CVE-2025-6020.html 
-│                       │       │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
-│                       │       │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
-│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7580-1 
-│                       │       │                  ├ [19]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
-│                       │       │                  ╰ [20]: https://www.openwall.com/lists/oss-security/2025/06/
+│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:10735 
+│                       │       │                  ├ [11]: https://access.redhat.com/errata/RHSA-2025:9526 
+│                       │       │                  ├ [12]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [13]: https://bugzilla.redhat.com/2372512 
+│                       │       │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [16]: https://linux.oracle.com/cve/CVE-2025-6020.html 
+│                       │       │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
+│                       │       │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [21]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                          17/1 
 │                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
-│                       │       ╰ LastModifiedDate: 2025-07-07T08:15:25.46Z 
+│                       │       ╰ LastModifiedDate: 2025-07-09T20:15:32.16Z 
 │                       ├ [92]  ╭ VulnerabilityID : CVE-2024-10041 
 │                       │       ├ PkgID           : libpam-runtime@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam-runtime 
@@ -4610,20 +4752,21 @@
 │                       │       │                  ├ [7] : https://access.redhat.com/errata/RHSA-2025:10359 
 │                       │       │                  ├ [8] : https://access.redhat.com/errata/RHSA-2025:10361 
 │                       │       │                  ├ [9] : https://access.redhat.com/errata/RHSA-2025:10362 
-│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:9526 
-│                       │       │                  ├ [11]: https://access.redhat.com/security/cve/CVE-2025-6020 
-│                       │       │                  ├ [12]: https://bugzilla.redhat.com/2372512 
-│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
-│                       │       │                  ├ [15]: https://linux.oracle.com/cve/CVE-2025-6020.html 
-│                       │       │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
-│                       │       │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
-│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7580-1 
-│                       │       │                  ├ [19]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
-│                       │       │                  ╰ [20]: https://www.openwall.com/lists/oss-security/2025/06/
+│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:10735 
+│                       │       │                  ├ [11]: https://access.redhat.com/errata/RHSA-2025:9526 
+│                       │       │                  ├ [12]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [13]: https://bugzilla.redhat.com/2372512 
+│                       │       │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [16]: https://linux.oracle.com/cve/CVE-2025-6020.html 
+│                       │       │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
+│                       │       │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [21]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                          17/1 
 │                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
-│                       │       ╰ LastModifiedDate: 2025-07-07T08:15:25.46Z 
+│                       │       ╰ LastModifiedDate: 2025-07-09T20:15:32.16Z 
 │                       ├ [95]  ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : libpam-systemd@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : libpam-systemd 
@@ -4868,20 +5011,21 @@
 │                       │       │                  ├ [7] : https://access.redhat.com/errata/RHSA-2025:10359 
 │                       │       │                  ├ [8] : https://access.redhat.com/errata/RHSA-2025:10361 
 │                       │       │                  ├ [9] : https://access.redhat.com/errata/RHSA-2025:10362 
-│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:9526 
-│                       │       │                  ├ [11]: https://access.redhat.com/security/cve/CVE-2025-6020 
-│                       │       │                  ├ [12]: https://bugzilla.redhat.com/2372512 
-│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [14]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
-│                       │       │                  ├ [15]: https://linux.oracle.com/cve/CVE-2025-6020.html 
-│                       │       │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
-│                       │       │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
-│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7580-1 
-│                       │       │                  ├ [19]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
-│                       │       │                  ╰ [20]: https://www.openwall.com/lists/oss-security/2025/06/
+│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2025:10735 
+│                       │       │                  ├ [11]: https://access.redhat.com/errata/RHSA-2025:9526 
+│                       │       │                  ├ [12]: https://access.redhat.com/security/cve/CVE-2025-6020 
+│                       │       │                  ├ [13]: https://bugzilla.redhat.com/2372512 
+│                       │       │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
+│                       │       │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [16]: https://linux.oracle.com/cve/CVE-2025-6020.html 
+│                       │       │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
+│                       │       │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7580-1 
+│                       │       │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2025-6020 
+│                       │       │                  ╰ [21]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                          17/1 
 │                       │       ├ PublishedDate   : 2025-06-17T13:15:21.66Z 
-│                       │       ╰ LastModifiedDate: 2025-07-07T08:15:25.46Z 
+│                       │       ╰ LastModifiedDate: 2025-07-09T20:15:32.16Z 
 │                       ├ [99]  ╭ VulnerabilityID : CVE-2024-56406 
 │                       │       ├ PkgID           : libperl5.38t64@5.38.2-5 
 │                       │       ├ PkgName         : libperl5.38t64 
@@ -4998,6 +5142,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 2 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -5095,6 +5240,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
@@ -5191,6 +5337,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -5501,7 +5648,8 @@
 │                       │       │                    potentially leading to amplified denial-of-service. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-1333 
-│                       │       ├ VendorSeverity   ╭ bitnami: 2 
+│                       │       ├ VendorSeverity   ╭ amazon : 2 
+│                       │       │                  ├ bitnami: 2 
 │                       │       │                  ├ redhat : 2 
 │                       │       │                  ╰ ubuntu : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I
@@ -5587,6 +5735,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 2 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -5684,6 +5833,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
@@ -5780,6 +5930,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -6090,7 +6241,8 @@
 │                       │       │                    potentially leading to amplified denial-of-service. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-1333 
-│                       │       ├ VendorSeverity   ╭ bitnami: 2 
+│                       │       ├ VendorSeverity   ╭ amazon : 2 
+│                       │       │                  ├ bitnami: 2 
 │                       │       │                  ├ redhat : 2 
 │                       │       │                  ╰ ubuntu : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I
@@ -6176,6 +6328,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 2 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -6273,6 +6426,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
@@ -6369,6 +6523,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -6679,7 +6834,8 @@
 │                       │       │                    potentially leading to amplified denial-of-service. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-1333 
-│                       │       ├ VendorSeverity   ╭ bitnami: 2 
+│                       │       ├ VendorSeverity   ╭ amazon : 2 
+│                       │       │                  ├ bitnami: 2 
 │                       │       │                  ├ redhat : 2 
 │                       │       │                  ╰ ubuntu : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I
@@ -8258,6 +8414,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 2 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -8355,6 +8512,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
@@ -8451,6 +8609,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -8761,7 +8920,8 @@
 │                       │       │                    potentially leading to amplified denial-of-service. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-1333 
-│                       │       ├ VendorSeverity   ╭ bitnami: 2 
+│                       │       ├ VendorSeverity   ╭ amazon : 2 
+│                       │       │                  ├ bitnami: 2 
 │                       │       │                  ├ redhat : 2 
 │                       │       │                  ╰ ubuntu : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I
@@ -8847,6 +9007,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 2 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -8944,6 +9105,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
@@ -9040,6 +9202,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
@@ -9350,7 +9513,8 @@
 │                       │       │                    potentially leading to amplified denial-of-service. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-1333 
-│                       │       ├ VendorSeverity   ╭ bitnami: 2 
+│                       │       ├ VendorSeverity   ╭ amazon : 2 
+│                       │       │                  ├ bitnami: 2 
 │                       │       │                  ├ redhat : 2 
 │                       │       │                  ╰ ubuntu : 2 
 │                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I
@@ -9411,6 +9575,7 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-863 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 1 
 │                       │       │                  ├ redhat     : 3 
@@ -9430,13 +9595,16 @@
 │                       │       │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2025-32462 
 │                       │       │                  ├ [10]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                  │       30/2 
-│                       │       │                  ├ [11]: https://www.stratascale.com/vulnerability-alert-CVE-
+│                       │       │                  ├ [11]: https://www.secpod.com/blog/sudo-lpe-vulnerabilities
+│                       │       │                  │       -resolved-what-you-need-to-know-about-cve-2025-32462
+│                       │       │                  │       -and-cve-2025-32463/ 
+│                       │       │                  ├ [12]: https://www.stratascale.com/vulnerability-alert-CVE-
 │                       │       │                  │       2025-32462-sudo-host 
-│                       │       │                  ├ [12]: https://www.sudo.ws/releases/changelog/ 
-│                       │       │                  ├ [13]: https://www.sudo.ws/security/advisories/ 
-│                       │       │                  ╰ [14]: https://www.sudo.ws/security/advisories/host_any/ 
+│                       │       │                  ├ [13]: https://www.sudo.ws/releases/changelog/ 
+│                       │       │                  ├ [14]: https://www.sudo.ws/security/advisories/ 
+│                       │       │                  ╰ [15]: https://www.sudo.ws/security/advisories/host_any/ 
 │                       │       ├ PublishedDate   : 2025-06-30T21:15:30.08Z 
-│                       │       ╰ LastModifiedDate: 2025-07-03T15:14:12.767Z 
+│                       │       ╰ LastModifiedDate: 2025-07-09T18:15:22.93Z 
 │                       ├ [162] ╭ VulnerabilityID : CVE-2025-32463 
 │                       │       ├ PkgID           : sudo@1.9.15p5-3ubuntu5 
 │                       │       ├ PkgName         : sudo 
@@ -9461,7 +9629,8 @@
 │                       │       │                   directory is used with the --chroot option. 
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-829 
-│                       │       ├ VendorSeverity   ╭ photon: 4 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ photon: 4 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 3 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
@@ -9479,16 +9648,19 @@
 │                       │       │                  ├ [7] : https://www.cve.org/CVERecord?id=CVE-2025-32463 
 │                       │       │                  ├ [8] : https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                  │       30/3 
-│                       │       │                  ├ [9] : https://www.stratascale.com/vulnerability-alert-CVE-
+│                       │       │                  ├ [9] : https://www.secpod.com/blog/sudo-lpe-vulnerabilities
+│                       │       │                  │       -resolved-what-you-need-to-know-about-cve-2025-32462
+│                       │       │                  │       -and-cve-2025-32463/ 
+│                       │       │                  ├ [10]: https://www.stratascale.com/vulnerability-alert-CVE-
 │                       │       │                  │       2025-32463-sudo-chroot 
-│                       │       │                  ├ [10]: https://www.sudo.ws/releases/changelog/ 
-│                       │       │                  ├ [11]: https://www.sudo.ws/security/advisories/ 
-│                       │       │                  ├ [12]: https://www.sudo.ws/security/advisories/chroot_bug/ 
-│                       │       │                  ├ [13]: https://www.suse.com/security/cve/CVE-2025-32463.html 
-│                       │       │                  ╰ [14]: https://www.suse.com/support/update/announcement/202
+│                       │       │                  ├ [11]: https://www.sudo.ws/releases/changelog/ 
+│                       │       │                  ├ [12]: https://www.sudo.ws/security/advisories/ 
+│                       │       │                  ├ [13]: https://www.sudo.ws/security/advisories/chroot_bug/ 
+│                       │       │                  ├ [14]: https://www.suse.com/security/cve/CVE-2025-32463.html 
+│                       │       │                  ╰ [15]: https://www.suse.com/support/update/announcement/202
 │                       │       │                          5/suse-su-202502177-1/ 
 │                       │       ├ PublishedDate   : 2025-06-30T21:15:30.257Z 
-│                       │       ╰ LastModifiedDate: 2025-07-03T15:14:12.767Z 
+│                       │       ╰ LastModifiedDate: 2025-07-09T18:15:23.847Z 
 │                       ├ [163] ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : systemd@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : systemd 
