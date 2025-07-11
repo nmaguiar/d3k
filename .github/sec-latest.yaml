@@ -413,6 +413,7 @@
     CweIDs:
     - CWE-190
     VendorSeverity:
+      amazon: 3
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -493,14 +494,30 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Description: When a user clones an untrusted repository and runs Gitk without additional command arguments, any writable file can be created and truncated. The option "Support per-file encoding" must have been enabled. The operation "Show origin of this line" is affected as well, regardless of the option being enabled or not.
+    Title: 'gitk: Git file creation flaw'
+    Description: Gitk is a Tcl/Tk based Git history browser. Starting with 1.7.0, when a user clones an untrusted repository and runs gitk without additional command arguments, files for which the user has write permission can be created and truncated. The option Support per-file encoding must have been enabled before in Gitk's Preferences. This option is disabled by default. The same happens when Show origin of this line is used in the main window (regardless of whether Support per-file encoding is enabled or not). This vulnerability is fixed in 2.43.7, 2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.1.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-78
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 6.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-27613
+    - https://github.com/j6t/gitk/compare/465f03869ae11acd04abfa1b83c67879c867410c..026c397d911cde55924d7eb1311d0fd6e2e105d5
+    - https://github.com/j6t/gitk/compare/7dd272eca153058da2e8d5b9960bbbf0b4f0cbaa..67a128b91e25978a15f9f7e194d81b441d603652
+    - https://github.com/j6t/gitk/security/advisories/GHSA-f3cw-xrj3-wr2v
+    - https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-27613
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://www.cve.org/CVERecord?id=CVE-2025-27613
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
+    PublishedDate: '2025-07-10T15:15:26.243Z'
+    LastModifiedDate: '2025-07-10T15:15:26.243Z'
   - VulnerabilityID: CVE-2025-27614
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -519,14 +536,29 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Description: A Git repository can be crafted in such a way that a user who has cloned the repository can be tricked into running any script supplied by the attacker by invoking `gitk filename`, where `filename` has a particular structure.
+    Title: 'gitk: git script execution flaw'
+    Description: Gitk is a Tcl/Tk based Git history browser. Starting with 2.41.0, a Git repository can be crafted in such a way that with some social engineering a user who has cloned the repository can be tricked into running any script (e.g., Bourne shell, Perl, Python, ...) supplied by the attacker by invoking gitk filename, where filename has a particular structure. The script is run with the privileges of the user. This vulnerability is fixed in 2.43.7, 2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-78
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 6.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-27614
+    - https://github.com/j6t/gitk/commit/8e3070aa5e331be45d4d03e3be41f84494fce129
+    - https://github.com/j6t/gitk/security/advisories/GHSA-g4v5-fjv9-mhhc
+    - https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-27614
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://www.cve.org/CVERecord?id=CVE-2025-27614
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
+    PublishedDate: '2025-07-10T15:15:26.403Z'
+    LastModifiedDate: '2025-07-10T15:15:26.403Z'
   - VulnerabilityID: CVE-2025-46835
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -545,14 +577,21 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Description: When a user clones an untrusted repository and is tricked into editing a file located in a maliciously named directory in the repository, then Git GUI can create and overwrite any writable file.
+    Title: Git GUI allows you to use the Git source control management tools via  ...
+    Description: Git GUI allows you to use the Git source control management tools via a GUI. When a user clones an untrusted repository and is tricked into editing a file located in a maliciously named directory in the repository, then Git GUI can create and overwrite files for which the user has write permission. This vulnerability is fixed in 2.43.7, 2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.1.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-88
     VendorSeverity:
       ubuntu: 2
     References:
+    - https://github.com/j6t/git-gui/compare/dcda716dbc9c90bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230e52f3bd036ca1b1da
+    - https://github.com/j6t/git-gui/security/advisories/GHSA-xfx7-68v4-v8fg
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://www.cve.org/CVERecord?id=CVE-2025-46835
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
+    PublishedDate: '2025-07-10T15:15:29.503Z'
+    LastModifiedDate: '2025-07-10T15:15:29.503Z'
   - VulnerabilityID: CVE-2025-48384
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -578,9 +617,14 @@
     - CWE-59
     - CWE-436
     VendorSeverity:
+      bitnami: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H
+        V3Score: 8.1
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8
@@ -594,7 +638,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-48384
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
     PublishedDate: '2025-07-08T19:15:42.8Z'
-    LastModifiedDate: '2025-07-08T19:15:42.8Z'
+    LastModifiedDate: '2025-07-10T13:18:53.83Z'
   - VulnerabilityID: CVE-2025-48385
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -620,6 +664,8 @@
     - CWE-73
     - CWE-88
     VendorSeverity:
+      bitnami: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -634,7 +680,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-48385
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
     PublishedDate: '2025-07-08T19:15:43.097Z'
-    LastModifiedDate: '2025-07-08T19:15:43.097Z'
+    LastModifiedDate: '2025-07-10T13:18:53.83Z'
   - VulnerabilityID: CVE-2025-48386
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -659,9 +705,13 @@
     CweIDs:
     - CWE-120
     VendorSeverity:
+      bitnami: 2
       redhat: 2
       ubuntu: 2
     CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N
+        V3Score: 6.3
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N
         V3Score: 6.3
@@ -673,7 +723,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-48386
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
     PublishedDate: '2025-07-08T19:15:43.41Z'
-    LastModifiedDate: '2025-07-08T19:15:43.41Z'
+    LastModifiedDate: '2025-07-10T13:18:53.83Z'
   - VulnerabilityID: CVE-2024-52005
     PkgID: git-man@1:2.45.2-1ubuntu1.1
     PkgName: git-man
@@ -740,14 +790,30 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Description: When a user clones an untrusted repository and runs Gitk without additional command arguments, any writable file can be created and truncated. The option "Support per-file encoding" must have been enabled. The operation "Show origin of this line" is affected as well, regardless of the option being enabled or not.
+    Title: 'gitk: Git file creation flaw'
+    Description: Gitk is a Tcl/Tk based Git history browser. Starting with 1.7.0, when a user clones an untrusted repository and runs gitk without additional command arguments, files for which the user has write permission can be created and truncated. The option Support per-file encoding must have been enabled before in Gitk's Preferences. This option is disabled by default. The same happens when Show origin of this line is used in the main window (regardless of whether Support per-file encoding is enabled or not). This vulnerability is fixed in 2.43.7, 2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.1.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-78
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 6.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-27613
+    - https://github.com/j6t/gitk/compare/465f03869ae11acd04abfa1b83c67879c867410c..026c397d911cde55924d7eb1311d0fd6e2e105d5
+    - https://github.com/j6t/gitk/compare/7dd272eca153058da2e8d5b9960bbbf0b4f0cbaa..67a128b91e25978a15f9f7e194d81b441d603652
+    - https://github.com/j6t/gitk/security/advisories/GHSA-f3cw-xrj3-wr2v
+    - https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-27613
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://www.cve.org/CVERecord?id=CVE-2025-27613
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
+    PublishedDate: '2025-07-10T15:15:26.243Z'
+    LastModifiedDate: '2025-07-10T15:15:26.243Z'
   - VulnerabilityID: CVE-2025-27614
     PkgID: git-man@1:2.45.2-1ubuntu1.1
     PkgName: git-man
@@ -766,14 +832,29 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Description: A Git repository can be crafted in such a way that a user who has cloned the repository can be tricked into running any script supplied by the attacker by invoking `gitk filename`, where `filename` has a particular structure.
+    Title: 'gitk: git script execution flaw'
+    Description: Gitk is a Tcl/Tk based Git history browser. Starting with 2.41.0, a Git repository can be crafted in such a way that with some social engineering a user who has cloned the repository can be tricked into running any script (e.g., Bourne shell, Perl, Python, ...) supplied by the attacker by invoking gitk filename, where filename has a particular structure. The script is run with the privileges of the user. This vulnerability is fixed in 2.43.7, 2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-78
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 6.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-27614
+    - https://github.com/j6t/gitk/commit/8e3070aa5e331be45d4d03e3be41f84494fce129
+    - https://github.com/j6t/gitk/security/advisories/GHSA-g4v5-fjv9-mhhc
+    - https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-27614
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://www.cve.org/CVERecord?id=CVE-2025-27614
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
+    PublishedDate: '2025-07-10T15:15:26.403Z'
+    LastModifiedDate: '2025-07-10T15:15:26.403Z'
   - VulnerabilityID: CVE-2025-46835
     PkgID: git-man@1:2.45.2-1ubuntu1.1
     PkgName: git-man
@@ -792,14 +873,21 @@
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Description: When a user clones an untrusted repository and is tricked into editing a file located in a maliciously named directory in the repository, then Git GUI can create and overwrite any writable file.
+    Title: Git GUI allows you to use the Git source control management tools via  ...
+    Description: Git GUI allows you to use the Git source control management tools via a GUI. When a user clones an untrusted repository and is tricked into editing a file located in a maliciously named directory in the repository, then Git GUI can create and overwrite files for which the user has write permission. This vulnerability is fixed in 2.43.7, 2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.1.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-88
     VendorSeverity:
       ubuntu: 2
     References:
+    - https://github.com/j6t/git-gui/compare/dcda716dbc9c90bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230e52f3bd036ca1b1da
+    - https://github.com/j6t/git-gui/security/advisories/GHSA-xfx7-68v4-v8fg
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://www.cve.org/CVERecord?id=CVE-2025-46835
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
+    PublishedDate: '2025-07-10T15:15:29.503Z'
+    LastModifiedDate: '2025-07-10T15:15:29.503Z'
   - VulnerabilityID: CVE-2025-48384
     PkgID: git-man@1:2.45.2-1ubuntu1.1
     PkgName: git-man
@@ -825,9 +913,14 @@
     - CWE-59
     - CWE-436
     VendorSeverity:
+      bitnami: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H
+        V3Score: 8.1
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8
@@ -841,7 +934,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-48384
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
     PublishedDate: '2025-07-08T19:15:42.8Z'
-    LastModifiedDate: '2025-07-08T19:15:42.8Z'
+    LastModifiedDate: '2025-07-10T13:18:53.83Z'
   - VulnerabilityID: CVE-2025-48385
     PkgID: git-man@1:2.45.2-1ubuntu1.1
     PkgName: git-man
@@ -867,6 +960,8 @@
     - CWE-73
     - CWE-88
     VendorSeverity:
+      bitnami: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -881,7 +976,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-48385
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
     PublishedDate: '2025-07-08T19:15:43.097Z'
-    LastModifiedDate: '2025-07-08T19:15:43.097Z'
+    LastModifiedDate: '2025-07-10T13:18:53.83Z'
   - VulnerabilityID: CVE-2025-48386
     PkgID: git-man@1:2.45.2-1ubuntu1.1
     PkgName: git-man
@@ -906,9 +1001,13 @@
     CweIDs:
     - CWE-120
     VendorSeverity:
+      bitnami: 2
       redhat: 2
       ubuntu: 2
     CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N
+        V3Score: 6.3
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N
         V3Score: 6.3
@@ -920,7 +1019,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-48386
     - https://www.openwall.com/lists/oss-security/2025/07/08/4
     PublishedDate: '2025-07-08T19:15:43.41Z'
-    LastModifiedDate: '2025-07-08T19:15:43.41Z'
+    LastModifiedDate: '2025-07-10T13:18:53.83Z'
   - VulnerabilityID: CVE-2025-30258
     PkgID: gnupg@2.4.4-2ubuntu18
     PkgName: gnupg
@@ -2822,6 +2921,7 @@
     CweIDs:
     - CWE-190
     VendorSeverity:
+      amazon: 3
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -2900,6 +3000,7 @@
     CweIDs:
     - CWE-190
     VendorSeverity:
+      amazon: 3
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -3100,6 +3201,7 @@
     CweIDs:
     - CWE-120
     VendorSeverity:
+      amazon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -3902,6 +4004,7 @@
     - https://access.redhat.com/errata/RHSA-2025:10359
     - https://access.redhat.com/errata/RHSA-2025:10361
     - https://access.redhat.com/errata/RHSA-2025:10362
+    - https://access.redhat.com/errata/RHSA-2025:10735
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -3914,7 +4017,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-07-07T08:15:25.46Z'
+    LastModifiedDate: '2025-07-09T20:15:32.16Z'
   - VulnerabilityID: CVE-2024-10041
     PkgID: libpam-modules-bin@1.5.3-7ubuntu2
     PkgName: libpam-modules-bin
@@ -4064,6 +4167,7 @@
     - https://access.redhat.com/errata/RHSA-2025:10359
     - https://access.redhat.com/errata/RHSA-2025:10361
     - https://access.redhat.com/errata/RHSA-2025:10362
+    - https://access.redhat.com/errata/RHSA-2025:10735
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -4076,7 +4180,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-07-07T08:15:25.46Z'
+    LastModifiedDate: '2025-07-09T20:15:32.16Z'
   - VulnerabilityID: CVE-2024-10041
     PkgID: libpam-runtime@1.5.3-7ubuntu2
     PkgName: libpam-runtime
@@ -4226,6 +4330,7 @@
     - https://access.redhat.com/errata/RHSA-2025:10359
     - https://access.redhat.com/errata/RHSA-2025:10361
     - https://access.redhat.com/errata/RHSA-2025:10362
+    - https://access.redhat.com/errata/RHSA-2025:10735
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -4238,7 +4343,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-07-07T08:15:25.46Z'
+    LastModifiedDate: '2025-07-09T20:15:32.16Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: libpam-systemd@256.5-2ubuntu3.1
     PkgName: libpam-systemd
@@ -4446,6 +4551,7 @@
     - https://access.redhat.com/errata/RHSA-2025:10359
     - https://access.redhat.com/errata/RHSA-2025:10361
     - https://access.redhat.com/errata/RHSA-2025:10362
+    - https://access.redhat.com/errata/RHSA-2025:10735
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -4458,7 +4564,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-07-07T08:15:25.46Z'
+    LastModifiedDate: '2025-07-09T20:15:32.16Z'
   - VulnerabilityID: CVE-2024-56406
     PkgID: libperl5.38t64@5.38.2-5
     PkgName: libperl5.38t64
@@ -4538,6 +4644,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
+      photon: 2
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -4605,6 +4712,7 @@
       amazon: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -4671,6 +4779,7 @@
       amazon: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -4916,6 +5025,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
+      amazon: 2
       bitnami: 2
       redhat: 2
       ubuntu: 2
@@ -4971,6 +5081,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
+      photon: 2
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -5038,6 +5149,7 @@
       amazon: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -5104,6 +5216,7 @@
       amazon: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -5349,6 +5462,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
+      amazon: 2
       bitnami: 2
       redhat: 2
       ubuntu: 2
@@ -5404,6 +5518,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
+      photon: 2
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -5471,6 +5586,7 @@
       amazon: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -5537,6 +5653,7 @@
       amazon: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -5782,6 +5899,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
+      amazon: 2
       bitnami: 2
       redhat: 2
       ubuntu: 2
@@ -7126,6 +7244,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
+      photon: 2
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -7193,6 +7312,7 @@
       amazon: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -7259,6 +7379,7 @@
       amazon: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -7504,6 +7625,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
+      amazon: 2
       bitnami: 2
       redhat: 2
       ubuntu: 2
@@ -7559,6 +7681,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
+      photon: 2
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -7626,6 +7749,7 @@
       amazon: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -7692,6 +7816,7 @@
       amazon: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -7937,6 +8062,7 @@
     CweIDs:
     - CWE-1333
     VendorSeverity:
+      amazon: 2
       bitnami: 2
       redhat: 2
       ubuntu: 2
@@ -7989,6 +8115,7 @@
     - CWE-863
     VendorSeverity:
       alma: 3
+      amazon: 3
       oracle-oval: 3
       photon: 1
       redhat: 3
@@ -8009,12 +8136,13 @@
     - https://ubuntu.com/security/notices/USN-7604-2
     - https://www.cve.org/CVERecord?id=CVE-2025-32462
     - https://www.openwall.com/lists/oss-security/2025/06/30/2
+    - https://www.secpod.com/blog/sudo-lpe-vulnerabilities-resolved-what-you-need-to-know-about-cve-2025-32462-and-cve-2025-32463/
     - https://www.stratascale.com/vulnerability-alert-CVE-2025-32462-sudo-host
     - https://www.sudo.ws/releases/changelog/
     - https://www.sudo.ws/security/advisories/
     - https://www.sudo.ws/security/advisories/host_any/
     PublishedDate: '2025-06-30T21:15:30.08Z'
-    LastModifiedDate: '2025-07-03T15:14:12.767Z'
+    LastModifiedDate: '2025-07-09T18:15:22.93Z'
   - VulnerabilityID: CVE-2025-32463
     PkgID: sudo@1.9.15p5-3ubuntu5
     PkgName: sudo
@@ -8039,6 +8167,7 @@
     CweIDs:
     - CWE-829
     VendorSeverity:
+      amazon: 3
       photon: 4
       redhat: 3
       ubuntu: 3
@@ -8056,6 +8185,7 @@
     - https://ubuntu.com/security/notices/USN-7604-1
     - https://www.cve.org/CVERecord?id=CVE-2025-32463
     - https://www.openwall.com/lists/oss-security/2025/06/30/3
+    - https://www.secpod.com/blog/sudo-lpe-vulnerabilities-resolved-what-you-need-to-know-about-cve-2025-32462-and-cve-2025-32463/
     - https://www.stratascale.com/vulnerability-alert-CVE-2025-32463-sudo-chroot
     - https://www.sudo.ws/releases/changelog/
     - https://www.sudo.ws/security/advisories/
@@ -8063,7 +8193,7 @@
     - https://www.suse.com/security/cve/CVE-2025-32463.html
     - https://www.suse.com/support/update/announcement/2025/suse-su-202502177-1/
     PublishedDate: '2025-06-30T21:15:30.257Z'
-    LastModifiedDate: '2025-07-03T15:14:12.767Z'
+    LastModifiedDate: '2025-07-09T18:15:23.847Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: systemd@256.5-2ubuntu3.1
     PkgName: systemd
