@@ -256,18 +256,19 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 4.8 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [1]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [2]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [3]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
-│                       │       │                  │      4588 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:10855 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [3]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
 │                       │       │                  ├ [4]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
+│                       │       │                  │      4588 
+│                       │       │                  ├ [5]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
 │                       │       │                  │      4592 
-│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-05-07T14:13:20.483Z 
+│                       │       ╰ LastModifiedDate: 2025-07-14T15:15:23.94Z 
 │                       ├ [6]   ╭ VulnerabilityID : CVE-2025-27613 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -1926,18 +1927,19 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 4.8 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [1]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [2]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [3]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
-│                       │       │                  │      4588 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:10855 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [3]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
 │                       │       │                  ├ [4]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
+│                       │       │                  │      4588 
+│                       │       │                  ├ [5]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
 │                       │       │                  │      4592 
-│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-05-07T14:13:20.483Z 
+│                       │       ╰ LastModifiedDate: 2025-07-14T15:15:23.94Z 
 │                       ├ [39]  ╭ VulnerabilityID : CVE-2025-4373 
 │                       │       ├ PkgID           : libglib2.0-data@2.82.1-0ubuntu1 
 │                       │       ├ PkgName         : libglib2.0-data 
@@ -1969,18 +1971,19 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 4.8 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [1]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [2]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [3]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
-│                       │       │                  │      4588 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:10855 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [3]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
 │                       │       │                  ├ [4]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
+│                       │       │                  │      4588 
+│                       │       │                  ├ [5]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
 │                       │       │                  │      4592 
-│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-05-07T14:13:20.483Z 
+│                       │       ╰ LastModifiedDate: 2025-07-14T15:15:23.94Z 
 │                       ├ [40]  ╭ VulnerabilityID : CVE-2025-24528 
 │                       │       ├ PkgID           : libgssapi-krb5-2@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libgssapi-krb5-2 
@@ -8216,7 +8219,7 @@
 │                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-48924 
 │                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-48924 
 │                             ├ PublishedDate   : 2025-07-11T15:15:24.347Z 
-│                             ╰ LastModifiedDate: 2025-07-11T20:15:24.32Z 
+│                             ╰ LastModifiedDate: 2025-07-14T17:15:33.027Z 
 ├ [2] ╭ Target         : usr/bin/docker-compose 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
