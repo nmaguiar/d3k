@@ -257,18 +257,19 @@
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 4.8 
 │                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:10855 
-│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [3]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [4]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
-│                       │       │                  │      4588 
+│                       │       │                  ├ [1]: https://access.redhat.com/errata/RHSA-2025:11140 
+│                       │       │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [3]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [4]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
 │                       │       │                  ├ [5]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
+│                       │       │                  │      4588 
+│                       │       │                  ├ [6]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
 │                       │       │                  │      4592 
-│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [8]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-14T15:15:23.94Z 
+│                       │       ╰ LastModifiedDate: 2025-07-15T14:15:30.423Z 
 │                       ├ [6]   ╭ VulnerabilityID : CVE-2025-27613 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -303,9 +304,9 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
 │                       │       ├ VendorSeverity   ╭ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
-│                       │       │                           │           L/A:L 
-│                       │       │                           ╰ V3Score : 6.3 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
+│                       │       │                           │           L/A:N 
+│                       │       │                           ╰ V3Score : 4.3 
 │                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-27613 
 │                       │       │                  ├ [1] : https://github.com/j6t/gitk/compare/465f03869ae11acd
 │                       │       │                  │       04abfa1b83c67879c867410c..026c397d911cde55924d7eb131
@@ -325,7 +326,7 @@
 │                       │       │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2025/07/
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.243Z 
-│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:26.243Z 
+│                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
 │                       ├ [7]   ╭ VulnerabilityID : CVE-2025-27614 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -373,7 +374,7 @@
 │                       │       │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2025/07/0
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.403Z 
-│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:26.403Z 
+│                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
 │                       ├ [8]   ╭ VulnerabilityID : CVE-2025-46835 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -392,8 +393,8 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : Git GUI allows you to use the Git source control management
-│                       │       │                    tools via  ... 
+│                       │       ├ Title           : git: Git GUI can create and overwrite files for which the
+│                       │       │                   user has write permission 
 │                       │       ├ Description     : Git GUI allows you to use the Git source control management
 │                       │       │                    tools via a GUI. When a user clones an untrusted
 │                       │       │                   repository and is tricked into editing a file located in a
@@ -403,20 +404,26 @@
 │                       │       │                   2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-88 
-│                       │       ├ VendorSeverity   ─ ubuntu: 2 
-│                       │       ├ References       ╭ [0]: https://github.com/j6t/git-gui/compare/dcda716dbc9c90
+│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:
+│                       │       │                           │           L/A:N 
+│                       │       │                           ╰ V3Score : 3.1 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-46835 
+│                       │       │                  ├ [1]: https://github.com/j6t/git-gui/compare/dcda716dbc9c90
 │                       │       │                  │      bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230e5
 │                       │       │                  │      2f3bd036ca1b1da 
-│                       │       │                  ├ [1]: https://github.com/j6t/git-gui/security/advisories/GH
+│                       │       │                  ├ [2]: https://github.com/j6t/git-gui/security/advisories/GH
 │                       │       │                  │      SA-xfx7-68v4-v8fg 
-│                       │       │                  ├ [2]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [3]: https://ubuntu.com/security/notices/USN-7626-2 
-│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7626-3 
-│                       │       │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-46835 
-│                       │       │                  ╰ [6]: https://www.openwall.com/lists/oss-security/2025/07/0
+│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-46835 
+│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-7626-2 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7626-3 
+│                       │       │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46835 
+│                       │       │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/07/0
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:29.503Z 
-│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:29.503Z 
+│                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
 │                       ├ [9]   ╭ VulnerabilityID : CVE-2025-48384 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -624,9 +631,9 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
 │                       │       ├ VendorSeverity   ╭ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
-│                       │       │                           │           L/A:L 
-│                       │       │                           ╰ V3Score : 6.3 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
+│                       │       │                           │           L/A:N 
+│                       │       │                           ╰ V3Score : 4.3 
 │                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-27613 
 │                       │       │                  ├ [1] : https://github.com/j6t/gitk/compare/465f03869ae11acd
 │                       │       │                  │       04abfa1b83c67879c867410c..026c397d911cde55924d7eb131
@@ -646,7 +653,7 @@
 │                       │       │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2025/07/
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.243Z 
-│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:26.243Z 
+│                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
 │                       ├ [13]  ╭ VulnerabilityID : CVE-2025-27614 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
@@ -694,7 +701,7 @@
 │                       │       │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2025/07/0
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.403Z 
-│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:26.403Z 
+│                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
 │                       ├ [14]  ╭ VulnerabilityID : CVE-2025-46835 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
@@ -713,8 +720,8 @@
 │                       │       ├ DataSource       ╭ ID  : ubuntu 
 │                       │       │                  ├ Name: Ubuntu CVE Tracker 
 │                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : Git GUI allows you to use the Git source control management
-│                       │       │                    tools via  ... 
+│                       │       ├ Title           : git: Git GUI can create and overwrite files for which the
+│                       │       │                   user has write permission 
 │                       │       ├ Description     : Git GUI allows you to use the Git source control management
 │                       │       │                    tools via a GUI. When a user clones an untrusted
 │                       │       │                   repository and is tricked into editing a file located in a
@@ -724,20 +731,26 @@
 │                       │       │                   2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-88 
-│                       │       ├ VendorSeverity   ─ ubuntu: 2 
-│                       │       ├ References       ╭ [0]: https://github.com/j6t/git-gui/compare/dcda716dbc9c90
+│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:
+│                       │       │                           │           L/A:N 
+│                       │       │                           ╰ V3Score : 3.1 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-46835 
+│                       │       │                  ├ [1]: https://github.com/j6t/git-gui/compare/dcda716dbc9c90
 │                       │       │                  │      bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230e5
 │                       │       │                  │      2f3bd036ca1b1da 
-│                       │       │                  ├ [1]: https://github.com/j6t/git-gui/security/advisories/GH
+│                       │       │                  ├ [2]: https://github.com/j6t/git-gui/security/advisories/GH
 │                       │       │                  │      SA-xfx7-68v4-v8fg 
-│                       │       │                  ├ [2]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [3]: https://ubuntu.com/security/notices/USN-7626-2 
-│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7626-3 
-│                       │       │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-46835 
-│                       │       │                  ╰ [6]: https://www.openwall.com/lists/oss-security/2025/07/0
+│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-46835 
+│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-7626-2 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7626-3 
+│                       │       │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46835 
+│                       │       │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/07/0
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:29.503Z 
-│                       │       ╰ LastModifiedDate: 2025-07-10T15:15:29.503Z 
+│                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
 │                       ├ [15]  ╭ VulnerabilityID : CVE-2025-48384 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
@@ -1928,18 +1941,19 @@
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 4.8 
 │                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:10855 
-│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [3]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [4]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
-│                       │       │                  │      4588 
+│                       │       │                  ├ [1]: https://access.redhat.com/errata/RHSA-2025:11140 
+│                       │       │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [3]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [4]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
 │                       │       │                  ├ [5]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
+│                       │       │                  │      4588 
+│                       │       │                  ├ [6]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
 │                       │       │                  │      4592 
-│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [8]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-14T15:15:23.94Z 
+│                       │       ╰ LastModifiedDate: 2025-07-15T14:15:30.423Z 
 │                       ├ [39]  ╭ VulnerabilityID : CVE-2025-4373 
 │                       │       ├ PkgID           : libglib2.0-data@2.82.1-0ubuntu1 
 │                       │       ├ PkgName         : libglib2.0-data 
@@ -1972,18 +1986,19 @@
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 4.8 
 │                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:10855 
-│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [3]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [4]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
-│                       │       │                  │      4588 
+│                       │       │                  ├ [1]: https://access.redhat.com/errata/RHSA-2025:11140 
+│                       │       │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [3]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [4]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
 │                       │       │                  ├ [5]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
+│                       │       │                  │      4588 
+│                       │       │                  ├ [6]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests/
 │                       │       │                  │      4592 
-│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [8]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-14T15:15:23.94Z 
+│                       │       ╰ LastModifiedDate: 2025-07-15T14:15:30.423Z 
 │                       ├ [40]  ╭ VulnerabilityID : CVE-2025-24528 
 │                       │       ├ PkgID           : libgssapi-krb5-2@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libgssapi-krb5-2 
@@ -8219,7 +8234,7 @@
 │                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-48924 
 │                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-48924 
 │                             ├ PublishedDate   : 2025-07-11T15:15:24.347Z 
-│                             ╰ LastModifiedDate: 2025-07-14T17:15:33.027Z 
+│                             ╰ LastModifiedDate: 2025-07-15T13:14:49.98Z 
 ├ [2] ╭ Target         : usr/bin/docker-compose 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
