@@ -242,6 +242,7 @@
     CweIDs:
     - CWE-124
     VendorSeverity:
+      oracle-oval: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -256,6 +257,8 @@
     - https://gitlab.gnome.org/GNOME/glib/-/issues/3677
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4588
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4592
+    - https://linux.oracle.com/cve/CVE-2025-4373.html
+    - https://linux.oracle.com/errata/ELSA-2025-11140.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4373
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
@@ -1703,6 +1706,7 @@
     CweIDs:
     - CWE-124
     VendorSeverity:
+      oracle-oval: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1717,6 +1721,8 @@
     - https://gitlab.gnome.org/GNOME/glib/-/issues/3677
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4588
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4592
+    - https://linux.oracle.com/cve/CVE-2025-4373.html
+    - https://linux.oracle.com/errata/ELSA-2025-11140.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4373
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
@@ -1746,6 +1752,7 @@
     CweIDs:
     - CWE-124
     VendorSeverity:
+      oracle-oval: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1760,6 +1767,8 @@
     - https://gitlab.gnome.org/GNOME/glib/-/issues/3677
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4588
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4592
+    - https://linux.oracle.com/cve/CVE-2025-4373.html
+    - https://linux.oracle.com/errata/ELSA-2025-11140.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4373
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
@@ -2444,6 +2453,7 @@
     - CWE-476
     - CWE-826
     VendorSeverity:
+      alma: 3
       azure: 3
       oracle-oval: 3
       photon: 3
@@ -2457,7 +2467,10 @@
     - http://www.openwall.com/lists/oss-security/2025/04/03/1
     - http://www.openwall.com/lists/oss-security/2025/04/03/2
     - http://www.openwall.com/lists/oss-security/2025/04/03/3
+    - https://access.redhat.com/errata/RHSA-2025:7524
     - https://access.redhat.com/security/cve/CVE-2025-31115
+    - https://bugzilla.redhat.com/2357249
+    - https://errata.almalinux.org/10/ALSA-2025-7524.html
     - https://github.com/tukaani-project/xz/commit/d5a2ffe41bb77b918a8c96084885d4dbe4bf6480
     - https://github.com/tukaani-project/xz/security/advisories/GHSA-6cc8-p5mm-29w2
     - https://linux.oracle.com/cve/CVE-2025-31115.html
@@ -2886,6 +2899,7 @@
     - CWE-122
     - CWE-787
     VendorSeverity:
+      alma: 3
       azure: 3
       cbl-mariner: 3
       oracle-oval: 3
@@ -2900,7 +2914,10 @@
     - http://www.openwall.com/lists/oss-security/2025/04/13/3
     - http://www.openwall.com/lists/oss-security/2025/04/13/4
     - http://www.openwall.com/lists/oss-security/2025/04/13/5
+    - https://access.redhat.com/errata/RHSA-2025:7500
     - https://access.redhat.com/security/cve/CVE-2024-56406
+    - https://bugzilla.redhat.com/2359290
+    - https://errata.almalinux.org/10/ALSA-2025-7500.html
     - https://github.com/Perl/perl5/commit/87f42aa0e0096e9a346c9672aa3a0bd3bef8c1dd.patch
     - https://linux.oracle.com/cve/CVE-2024-56406.html
     - https://linux.oracle.com/errata/ELSA-2025-7500.html
@@ -4886,6 +4903,7 @@
     - CWE-122
     - CWE-787
     VendorSeverity:
+      alma: 3
       azure: 3
       cbl-mariner: 3
       oracle-oval: 3
@@ -4900,7 +4918,10 @@
     - http://www.openwall.com/lists/oss-security/2025/04/13/3
     - http://www.openwall.com/lists/oss-security/2025/04/13/4
     - http://www.openwall.com/lists/oss-security/2025/04/13/5
+    - https://access.redhat.com/errata/RHSA-2025:7500
     - https://access.redhat.com/security/cve/CVE-2024-56406
+    - https://bugzilla.redhat.com/2359290
+    - https://errata.almalinux.org/10/ALSA-2025-7500.html
     - https://github.com/Perl/perl5/commit/87f42aa0e0096e9a346c9672aa3a0bd3bef8c1dd.patch
     - https://linux.oracle.com/cve/CVE-2024-56406.html
     - https://linux.oracle.com/errata/ELSA-2025-7500.html
@@ -4937,6 +4958,7 @@
     - CWE-122
     - CWE-787
     VendorSeverity:
+      alma: 3
       azure: 3
       cbl-mariner: 3
       oracle-oval: 3
@@ -4951,7 +4973,10 @@
     - http://www.openwall.com/lists/oss-security/2025/04/13/3
     - http://www.openwall.com/lists/oss-security/2025/04/13/4
     - http://www.openwall.com/lists/oss-security/2025/04/13/5
+    - https://access.redhat.com/errata/RHSA-2025:7500
     - https://access.redhat.com/security/cve/CVE-2024-56406
+    - https://bugzilla.redhat.com/2359290
+    - https://errata.almalinux.org/10/ALSA-2025-7500.html
     - https://github.com/Perl/perl5/commit/87f42aa0e0096e9a346c9672aa3a0bd3bef8c1dd.patch
     - https://linux.oracle.com/cve/CVE-2024-56406.html
     - https://linux.oracle.com/errata/ELSA-2025-7500.html
@@ -4988,6 +5013,7 @@
     - CWE-122
     - CWE-787
     VendorSeverity:
+      alma: 3
       azure: 3
       cbl-mariner: 3
       oracle-oval: 3
@@ -5002,7 +5028,10 @@
     - http://www.openwall.com/lists/oss-security/2025/04/13/3
     - http://www.openwall.com/lists/oss-security/2025/04/13/4
     - http://www.openwall.com/lists/oss-security/2025/04/13/5
+    - https://access.redhat.com/errata/RHSA-2025:7500
     - https://access.redhat.com/security/cve/CVE-2024-56406
+    - https://bugzilla.redhat.com/2359290
+    - https://errata.almalinux.org/10/ALSA-2025-7500.html
     - https://github.com/Perl/perl5/commit/87f42aa0e0096e9a346c9672aa3a0bd3bef8c1dd.patch
     - https://linux.oracle.com/cve/CVE-2024-56406.html
     - https://linux.oracle.com/errata/ELSA-2025-7500.html
@@ -6647,6 +6676,7 @@
     - CWE-476
     - CWE-826
     VendorSeverity:
+      alma: 3
       azure: 3
       oracle-oval: 3
       photon: 3
@@ -6660,7 +6690,10 @@
     - http://www.openwall.com/lists/oss-security/2025/04/03/1
     - http://www.openwall.com/lists/oss-security/2025/04/03/2
     - http://www.openwall.com/lists/oss-security/2025/04/03/3
+    - https://access.redhat.com/errata/RHSA-2025:7524
     - https://access.redhat.com/security/cve/CVE-2025-31115
+    - https://bugzilla.redhat.com/2357249
+    - https://errata.almalinux.org/10/ALSA-2025-7524.html
     - https://github.com/tukaani-project/xz/commit/d5a2ffe41bb77b918a8c96084885d4dbe4bf6480
     - https://github.com/tukaani-project/xz/security/advisories/GHSA-6cc8-p5mm-29w2
     - https://linux.oracle.com/cve/CVE-2025-31115.html
@@ -7199,6 +7232,7 @@
     Description: Due to the usage of a variable time instruction in the assembly implementation of an internal function, a small number of bits of secret scalars are leaked on the ppc64le architecture. Due to the way this function is used, we do not believe this leakage is enough to allow recovery of the private key when P-256 is used in any well known protocols.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       bitnami: 2
       oracle-oval: 2
       redhat: 2
@@ -7211,7 +7245,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
     References:
+    - https://access.redhat.com/errata/RHSA-2025:7466
     - https://access.redhat.com/security/cve/CVE-2025-22866
+    - https://bugzilla.redhat.com/2341750
+    - https://bugzilla.redhat.com/2341751
+    - https://bugzilla.redhat.com/2344219
+    - https://errata.almalinux.org/10/ALSA-2025-7466.html
     - https://github.com/golang/go/commit/0cc45e7ca668b103c1055ae84402ad3f3425dd56 (go1.22.12)
     - https://github.com/golang/go/commit/6644ed63b1e6ccc129647ef6b0d4647fdbe14056 (go1.23.6)
     - https://github.com/golang/go/commit/6fc23a3cff5e38ff72923fee50f51254dcdc6e93 (go1.24rc3)
@@ -7594,6 +7633,7 @@
     Description: Due to the usage of a variable time instruction in the assembly implementation of an internal function, a small number of bits of secret scalars are leaked on the ppc64le architecture. Due to the way this function is used, we do not believe this leakage is enough to allow recovery of the private key when P-256 is used in any well known protocols.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       bitnami: 2
       oracle-oval: 2
       redhat: 2
@@ -7606,7 +7646,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
     References:
+    - https://access.redhat.com/errata/RHSA-2025:7466
     - https://access.redhat.com/security/cve/CVE-2025-22866
+    - https://bugzilla.redhat.com/2341750
+    - https://bugzilla.redhat.com/2341751
+    - https://bugzilla.redhat.com/2344219
+    - https://errata.almalinux.org/10/ALSA-2025-7466.html
     - https://github.com/golang/go/commit/0cc45e7ca668b103c1055ae84402ad3f3425dd56 (go1.22.12)
     - https://github.com/golang/go/commit/6644ed63b1e6ccc129647ef6b0d4647fdbe14056 (go1.23.6)
     - https://github.com/golang/go/commit/6fc23a3cff5e38ff72923fee50f51254dcdc6e93 (go1.24rc3)
