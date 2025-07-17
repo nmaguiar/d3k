@@ -2,6 +2,81 @@
   Class: os-pkgs
   Type: ubuntu
   Vulnerabilities:
+  - VulnerabilityID: CVE-2025-40777
+    PkgID: bind9-dnsutils@1:9.20.4-3ubuntu1.1
+    PkgName: bind9-dnsutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-dnsutils@9.20.4-3ubuntu1.1?arch=amd64&distro=ubuntu-25.04&epoch=1
+      UID: f152448e2946b829
+    InstalledVersion: 1:9.20.4-3ubuntu1.1
+    Status: affected
+    Layer:
+      Digest: sha256:4e41690848830af2c65e8b5fe3ffa606f1fa4b0ff9e475991f1d88e0b151647d
+      DiffID: sha256:611e0f9580d7fd2f5cb2059d12d4a46ce5faef1882f02fc794c3ded70000ab07
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-40777
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: If a `named` caching resolver is configured with `serve-stale-enable`  ...
+    Description: possible assertion failure when using the ‘stale-answer-client-timeout 0’ option
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://kb.isc.org/docs/cve-2025-40777
+    - https://www.cve.org/CVERecord?id=CVE-2025-40777
+  - VulnerabilityID: CVE-2025-40777
+    PkgID: bind9-host@1:9.20.4-3ubuntu1.1
+    PkgName: bind9-host
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-host@9.20.4-3ubuntu1.1?arch=amd64&distro=ubuntu-25.04&epoch=1
+      UID: 844a385c5ad61236
+    InstalledVersion: 1:9.20.4-3ubuntu1.1
+    Status: affected
+    Layer:
+      Digest: sha256:4e41690848830af2c65e8b5fe3ffa606f1fa4b0ff9e475991f1d88e0b151647d
+      DiffID: sha256:611e0f9580d7fd2f5cb2059d12d4a46ce5faef1882f02fc794c3ded70000ab07
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-40777
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: If a `named` caching resolver is configured with `serve-stale-enable`  ...
+    Description: possible assertion failure when using the ‘stale-answer-client-timeout 0’ option
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://kb.isc.org/docs/cve-2025-40777
+    - https://www.cve.org/CVERecord?id=CVE-2025-40777
+  - VulnerabilityID: CVE-2025-40777
+    PkgID: bind9-libs@1:9.20.4-3ubuntu1.1
+    PkgName: bind9-libs
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bind9-libs@9.20.4-3ubuntu1.1?arch=amd64&distro=ubuntu-25.04&epoch=1
+      UID: caab551ce2ae4389
+    InstalledVersion: 1:9.20.4-3ubuntu1.1
+    Status: affected
+    Layer:
+      Digest: sha256:4e41690848830af2c65e8b5fe3ffa606f1fa4b0ff9e475991f1d88e0b151647d
+      DiffID: sha256:611e0f9580d7fd2f5cb2059d12d4a46ce5faef1882f02fc794c3ded70000ab07
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-40777
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: If a `named` caching resolver is configured with `serve-stale-enable`  ...
+    Description: possible assertion failure when using the ‘stale-answer-client-timeout 0’ option
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://kb.isc.org/docs/cve-2025-40777
+    - https://www.cve.org/CVERecord?id=CVE-2025-40777
   - VulnerabilityID: CVE-2016-2781
     PkgID: coreutils@9.5-1ubuntu1.25.04.1
     PkgName: coreutils
@@ -97,6 +172,31 @@
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
     LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-40777
+    PkgID: dnsutils@1:9.20.4-3ubuntu1.1
+    PkgName: dnsutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/dnsutils@9.20.4-3ubuntu1.1?arch=all&distro=ubuntu-25.04&epoch=1
+      UID: a391b3a01958638d
+    InstalledVersion: 1:9.20.4-3ubuntu1.1
+    Status: affected
+    Layer:
+      Digest: sha256:4e41690848830af2c65e8b5fe3ffa606f1fa4b0ff9e475991f1d88e0b151647d
+      DiffID: sha256:611e0f9580d7fd2f5cb2059d12d4a46ce5faef1882f02fc794c3ded70000ab07
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-40777
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: If a `named` caching resolver is configured with `serve-stale-enable`  ...
+    Description: possible assertion failure when using the ‘stale-answer-client-timeout 0’ option
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://kb.isc.org/docs/cve-2025-40777
+    - https://www.cve.org/CVERecord?id=CVE-2025-40777
   - VulnerabilityID: CVE-2025-6052
     PkgID: gir1.2-glib-2.0@2.84.1-1ubuntu0.1
     PkgName: gir1.2-glib-2.0
@@ -1200,6 +1300,7 @@
     CweIDs:
     - CWE-415
     VendorSeverity:
+      azure: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1239,6 +1340,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
+      azure: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1278,6 +1380,7 @@
     CweIDs:
     - CWE-122
     VendorSeverity:
+      azure: 2
       redhat: 2
       ubuntu: 2
     CVSS:
