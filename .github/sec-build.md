@@ -9,7 +9,8 @@
 │                       │      │                  │       amd64&distro=ubuntu-25.04&epoch=1 
 │                       │      │                  ╰ UID : f152448e2946b829 
 │                       │      ├ InstalledVersion: 1:9.20.4-3ubuntu1.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.20.4-3ubuntu1.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:4e41690848830af2c65e8b5fe3ffa606f1fa4b0ff9e4
 │                       │      │                  │         75991f1d88e0b151647d 
 │                       │      │                  ╰ DiffID: sha256:611e0f9580d7fd2f5cb2059d12d4a46ce5faef1882f0
@@ -19,14 +20,30 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : If a `named` caching resolver is configured with
-│                       │      │                   `serve-stale-enable`  ... 
-│                       │      ├ Description     : possible assertion failure when using the
-│                       │      │                   ‘stale-answer-client-timeout 0’ option 
+│                       │      ├ Title           : bind: bind assertion failure 
+│                       │      ├ Description     : If a `named` caching resolver is configured with
+│                       │      │                   `serve-stale-enable` `yes`, and with
+│                       │      │                   `stale-answer-client-timeout` set to `0` (the only allowable
+│                       │      │                    value other than `disabled`), and if the resolver, in the
+│                       │      │                   process of resolving a query, encounters a CNAME chain
+│                       │      │                   involving a specific combination of cached or authoritative
+│                       │      │                   records, the daemon will abort with an assertion failure.
+│                       │      │                   This issue affects BIND 9 versions 9.20.0 through 9.20.10,
+│                       │      │                   9.21.0 through 9.21.9, and 9.20.9-S1 through 9.20.10-S1. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ╭ [0]: https://kb.isc.org/docs/cve-2025-40777 
-│                       │                         ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2025-40777 
+│                       │      ├ CweIDs           ─ [0]: CWE-617 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-40777 
+│                       │      │                  ├ [1]: https://kb.isc.org/docs/cve-2025-40777 
+│                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-40777 
+│                       │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-7641-1 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-40777 
+│                       │      ├ PublishedDate   : 2025-07-16T18:15:24.77Z 
+│                       │      ╰ LastModifiedDate: 2025-07-16T18:15:24.77Z 
 │                       ├ [1]  ╭ VulnerabilityID : CVE-2025-40777 
 │                       │      ├ PkgID           : bind9-host@1:9.20.4-3ubuntu1.1 
 │                       │      ├ PkgName         : bind9-host 
@@ -34,7 +51,8 @@
 │                       │      │                  │       4&distro=ubuntu-25.04&epoch=1 
 │                       │      │                  ╰ UID : 844a385c5ad61236 
 │                       │      ├ InstalledVersion: 1:9.20.4-3ubuntu1.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.20.4-3ubuntu1.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:4e41690848830af2c65e8b5fe3ffa606f1fa4b0ff9e4
 │                       │      │                  │         75991f1d88e0b151647d 
 │                       │      │                  ╰ DiffID: sha256:611e0f9580d7fd2f5cb2059d12d4a46ce5faef1882f0
@@ -44,14 +62,30 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : If a `named` caching resolver is configured with
-│                       │      │                   `serve-stale-enable`  ... 
-│                       │      ├ Description     : possible assertion failure when using the
-│                       │      │                   ‘stale-answer-client-timeout 0’ option 
+│                       │      ├ Title           : bind: bind assertion failure 
+│                       │      ├ Description     : If a `named` caching resolver is configured with
+│                       │      │                   `serve-stale-enable` `yes`, and with
+│                       │      │                   `stale-answer-client-timeout` set to `0` (the only allowable
+│                       │      │                    value other than `disabled`), and if the resolver, in the
+│                       │      │                   process of resolving a query, encounters a CNAME chain
+│                       │      │                   involving a specific combination of cached or authoritative
+│                       │      │                   records, the daemon will abort with an assertion failure.
+│                       │      │                   This issue affects BIND 9 versions 9.20.0 through 9.20.10,
+│                       │      │                   9.21.0 through 9.21.9, and 9.20.9-S1 through 9.20.10-S1. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ╭ [0]: https://kb.isc.org/docs/cve-2025-40777 
-│                       │                         ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2025-40777 
+│                       │      ├ CweIDs           ─ [0]: CWE-617 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-40777 
+│                       │      │                  ├ [1]: https://kb.isc.org/docs/cve-2025-40777 
+│                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-40777 
+│                       │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-7641-1 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-40777 
+│                       │      ├ PublishedDate   : 2025-07-16T18:15:24.77Z 
+│                       │      ╰ LastModifiedDate: 2025-07-16T18:15:24.77Z 
 │                       ├ [2]  ╭ VulnerabilityID : CVE-2025-40777 
 │                       │      ├ PkgID           : bind9-libs@1:9.20.4-3ubuntu1.1 
 │                       │      ├ PkgName         : bind9-libs 
@@ -59,7 +93,8 @@
 │                       │      │                  │       4&distro=ubuntu-25.04&epoch=1 
 │                       │      │                  ╰ UID : caab551ce2ae4389 
 │                       │      ├ InstalledVersion: 1:9.20.4-3ubuntu1.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.20.4-3ubuntu1.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:4e41690848830af2c65e8b5fe3ffa606f1fa4b0ff9e4
 │                       │      │                  │         75991f1d88e0b151647d 
 │                       │      │                  ╰ DiffID: sha256:611e0f9580d7fd2f5cb2059d12d4a46ce5faef1882f0
@@ -69,14 +104,30 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : If a `named` caching resolver is configured with
-│                       │      │                   `serve-stale-enable`  ... 
-│                       │      ├ Description     : possible assertion failure when using the
-│                       │      │                   ‘stale-answer-client-timeout 0’ option 
+│                       │      ├ Title           : bind: bind assertion failure 
+│                       │      ├ Description     : If a `named` caching resolver is configured with
+│                       │      │                   `serve-stale-enable` `yes`, and with
+│                       │      │                   `stale-answer-client-timeout` set to `0` (the only allowable
+│                       │      │                    value other than `disabled`), and if the resolver, in the
+│                       │      │                   process of resolving a query, encounters a CNAME chain
+│                       │      │                   involving a specific combination of cached or authoritative
+│                       │      │                   records, the daemon will abort with an assertion failure.
+│                       │      │                   This issue affects BIND 9 versions 9.20.0 through 9.20.10,
+│                       │      │                   9.21.0 through 9.21.9, and 9.20.9-S1 through 9.20.10-S1. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ╭ [0]: https://kb.isc.org/docs/cve-2025-40777 
-│                       │                         ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2025-40777 
+│                       │      ├ CweIDs           ─ [0]: CWE-617 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-40777 
+│                       │      │                  ├ [1]: https://kb.isc.org/docs/cve-2025-40777 
+│                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-40777 
+│                       │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-7641-1 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-40777 
+│                       │      ├ PublishedDate   : 2025-07-16T18:15:24.77Z 
+│                       │      ╰ LastModifiedDate: 2025-07-16T18:15:24.77Z 
 │                       ├ [3]  ╭ VulnerabilityID : CVE-2016-2781 
 │                       │      ├ PkgID           : coreutils@9.5-1ubuntu1.25.04.1 
 │                       │      ├ PkgName         : coreutils 
@@ -181,7 +232,8 @@
 │                       │      │                  │       stro=ubuntu-25.04&epoch=1 
 │                       │      │                  ╰ UID : a391b3a01958638d 
 │                       │      ├ InstalledVersion: 1:9.20.4-3ubuntu1.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1:9.20.4-3ubuntu1.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:4e41690848830af2c65e8b5fe3ffa606f1fa4b0ff9e4
 │                       │      │                  │         75991f1d88e0b151647d 
 │                       │      │                  ╰ DiffID: sha256:611e0f9580d7fd2f5cb2059d12d4a46ce5faef1882f0
@@ -191,14 +243,30 @@
 │                       │      ├ DataSource       ╭ ID  : ubuntu 
 │                       │      │                  ├ Name: Ubuntu CVE Tracker 
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │      ├ Title           : If a `named` caching resolver is configured with
-│                       │      │                   `serve-stale-enable`  ... 
-│                       │      ├ Description     : possible assertion failure when using the
-│                       │      │                   ‘stale-answer-client-timeout 0’ option 
+│                       │      ├ Title           : bind: bind assertion failure 
+│                       │      ├ Description     : If a `named` caching resolver is configured with
+│                       │      │                   `serve-stale-enable` `yes`, and with
+│                       │      │                   `stale-answer-client-timeout` set to `0` (the only allowable
+│                       │      │                    value other than `disabled`), and if the resolver, in the
+│                       │      │                   process of resolving a query, encounters a CNAME chain
+│                       │      │                   involving a specific combination of cached or authoritative
+│                       │      │                   records, the daemon will abort with an assertion failure.
+│                       │      │                   This issue affects BIND 9 versions 9.20.0 through 9.20.10,
+│                       │      │                   9.21.0 through 9.21.9, and 9.20.9-S1 through 9.20.10-S1. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ╭ [0]: https://kb.isc.org/docs/cve-2025-40777 
-│                       │                         ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2025-40777 
+│                       │      ├ CweIDs           ─ [0]: CWE-617 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-40777 
+│                       │      │                  ├ [1]: https://kb.isc.org/docs/cve-2025-40777 
+│                       │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-40777 
+│                       │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-7641-1 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-40777 
+│                       │      ├ PublishedDate   : 2025-07-16T18:15:24.77Z 
+│                       │      ╰ LastModifiedDate: 2025-07-16T18:15:24.77Z 
 │                       ├ [6]  ╭ VulnerabilityID : CVE-2025-6052 
 │                       │      ├ PkgID           : gir1.2-glib-2.0@2.84.1-1ubuntu0.1 
 │                       │      ├ PkgName         : gir1.2-glib-2.0 
@@ -2552,7 +2620,7 @@
 │                       │      │                  ╰ [5]: https://www.gnu.org/software/tar/manual/html_node/Inte
 │                       │      │                         grity.html#Integrity 
 │                       │      ├ PublishedDate   : 2025-07-11T17:15:37.183Z 
-│                       │      ╰ LastModifiedDate: 2025-07-15T13:14:49.98Z 
+│                       │      ╰ LastModifiedDate: 2025-07-17T13:09:39.997Z 
 │                       ├ [54] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.16.0-7ubuntu1 
 │                       │      ├ PkgName         : uidmap 
@@ -3116,7 +3184,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     ├ VendorSeverity   ╭ amazon     : 2 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
