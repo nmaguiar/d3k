@@ -295,6 +295,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      alma: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 3
@@ -305,12 +306,21 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N
         V3Score: 4.3
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11462
     - https://access.redhat.com/security/cve/CVE-2025-27613
+    - https://bugzilla.redhat.com/2337824
+    - https://bugzilla.redhat.com/2337956
+    - https://bugzilla.redhat.com/2378806
+    - https://bugzilla.redhat.com/2378808
+    - https://bugzilla.redhat.com/2379124
+    - https://bugzilla.redhat.com/2379125
+    - https://bugzilla.redhat.com/2379326
+    - https://errata.almalinux.org/9/ALSA-2025-11462.html
     - https://github.com/j6t/gitk/compare/465f03869ae11acd04abfa1b83c67879c867410c..026c397d911cde55924d7eb1311d0fd6e2e105d5
     - https://github.com/j6t/gitk/compare/7dd272eca153058da2e8d5b9960bbbf0b4f0cbaa..67a128b91e25978a15f9f7e194d81b441d603652
     - https://github.com/j6t/gitk/security/advisories/GHSA-f3cw-xrj3-wr2v
     - https://linux.oracle.com/cve/CVE-2025-27613.html
-    - https://linux.oracle.com/errata/ELSA-2025-11462.html
+    - https://linux.oracle.com/errata/ELSA-2025-11534.html
     - https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-27613
     - https://ubuntu.com/security/notices/USN-7626-1
@@ -344,6 +354,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      alma: 3
       azure: 3
       oracle-oval: 3
       redhat: 2
@@ -353,11 +364,20 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
         V3Score: 6.3
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11462
     - https://access.redhat.com/security/cve/CVE-2025-27614
+    - https://bugzilla.redhat.com/2337824
+    - https://bugzilla.redhat.com/2337956
+    - https://bugzilla.redhat.com/2378806
+    - https://bugzilla.redhat.com/2378808
+    - https://bugzilla.redhat.com/2379124
+    - https://bugzilla.redhat.com/2379125
+    - https://bugzilla.redhat.com/2379326
+    - https://errata.almalinux.org/9/ALSA-2025-11462.html
     - https://github.com/j6t/gitk/commit/8e3070aa5e331be45d4d03e3be41f84494fce129
     - https://github.com/j6t/gitk/security/advisories/GHSA-g4v5-fjv9-mhhc
     - https://linux.oracle.com/cve/CVE-2025-27614.html
-    - https://linux.oracle.com/errata/ELSA-2025-11462.html
+    - https://linux.oracle.com/errata/ELSA-2025-11534.html
     - https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-27614
     - https://ubuntu.com/security/notices/USN-7626-1
@@ -389,6 +409,7 @@
     CweIDs:
     - CWE-88
     VendorSeverity:
+      alma: 3
       oracle-oval: 3
       redhat: 1
       ubuntu: 2
@@ -397,11 +418,20 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N
         V3Score: 3.1
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11462
     - https://access.redhat.com/security/cve/CVE-2025-46835
+    - https://bugzilla.redhat.com/2337824
+    - https://bugzilla.redhat.com/2337956
+    - https://bugzilla.redhat.com/2378806
+    - https://bugzilla.redhat.com/2378808
+    - https://bugzilla.redhat.com/2379124
+    - https://bugzilla.redhat.com/2379125
+    - https://bugzilla.redhat.com/2379326
+    - https://errata.almalinux.org/9/ALSA-2025-11462.html
     - https://github.com/j6t/git-gui/compare/dcda716dbc9c90bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230e52f3bd036ca1b1da
     - https://github.com/j6t/git-gui/security/advisories/GHSA-xfx7-68v4-v8fg
     - https://linux.oracle.com/cve/CVE-2025-46835.html
-    - https://linux.oracle.com/errata/ELSA-2025-11462.html
+    - https://linux.oracle.com/errata/ELSA-2025-11534.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-46835
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://ubuntu.com/security/notices/USN-7626-2
@@ -435,6 +465,7 @@
     - CWE-59
     - CWE-436
     VendorSeverity:
+      alma: 3
       azure: 3
       bitnami: 3
       cbl-mariner: 3
@@ -450,12 +481,21 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11462
     - https://access.redhat.com/security/cve/CVE-2025-48384
+    - https://bugzilla.redhat.com/2337824
+    - https://bugzilla.redhat.com/2337956
+    - https://bugzilla.redhat.com/2378806
+    - https://bugzilla.redhat.com/2378808
+    - https://bugzilla.redhat.com/2379124
+    - https://bugzilla.redhat.com/2379125
+    - https://bugzilla.redhat.com/2379326
     - https://dgl.cx/2025/07/git-clone-submodule-cve-2025-48384
+    - https://errata.almalinux.org/9/ALSA-2025-11462.html
     - https://github.com/git/git/commit/05e9cd64ee23bbadcea6bcffd6660ed02b8eab89
     - https://github.com/git/git/security/advisories/GHSA-vwqx-4fm8-6qc9
     - https://linux.oracle.com/cve/CVE-2025-48384.html
-    - https://linux.oracle.com/errata/ELSA-2025-11462.html
+    - https://linux.oracle.com/errata/ELSA-2025-11534.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-48384
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://www.cve.org/CVERecord?id=CVE-2025-48384
@@ -487,6 +527,7 @@
     - CWE-73
     - CWE-88
     VendorSeverity:
+      alma: 3
       azure: 3
       bitnami: 3
       cbl-mariner: 3
@@ -499,10 +540,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L
         V3Score: 8.3
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11462
     - https://access.redhat.com/security/cve/CVE-2025-48385
+    - https://bugzilla.redhat.com/2337824
+    - https://bugzilla.redhat.com/2337956
+    - https://bugzilla.redhat.com/2378806
+    - https://bugzilla.redhat.com/2378808
+    - https://bugzilla.redhat.com/2379124
+    - https://bugzilla.redhat.com/2379125
+    - https://bugzilla.redhat.com/2379326
+    - https://errata.almalinux.org/9/ALSA-2025-11462.html
     - https://github.com/git/git/security/advisories/GHSA-m98c-vgpc-9655
     - https://linux.oracle.com/cve/CVE-2025-48385.html
-    - https://linux.oracle.com/errata/ELSA-2025-11462.html
+    - https://linux.oracle.com/errata/ELSA-2025-11534.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-48385
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://www.cve.org/CVERecord?id=CVE-2025-48385
@@ -576,6 +626,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      alma: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 3
@@ -586,12 +637,21 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N
         V3Score: 4.3
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11462
     - https://access.redhat.com/security/cve/CVE-2025-27613
+    - https://bugzilla.redhat.com/2337824
+    - https://bugzilla.redhat.com/2337956
+    - https://bugzilla.redhat.com/2378806
+    - https://bugzilla.redhat.com/2378808
+    - https://bugzilla.redhat.com/2379124
+    - https://bugzilla.redhat.com/2379125
+    - https://bugzilla.redhat.com/2379326
+    - https://errata.almalinux.org/9/ALSA-2025-11462.html
     - https://github.com/j6t/gitk/compare/465f03869ae11acd04abfa1b83c67879c867410c..026c397d911cde55924d7eb1311d0fd6e2e105d5
     - https://github.com/j6t/gitk/compare/7dd272eca153058da2e8d5b9960bbbf0b4f0cbaa..67a128b91e25978a15f9f7e194d81b441d603652
     - https://github.com/j6t/gitk/security/advisories/GHSA-f3cw-xrj3-wr2v
     - https://linux.oracle.com/cve/CVE-2025-27613.html
-    - https://linux.oracle.com/errata/ELSA-2025-11462.html
+    - https://linux.oracle.com/errata/ELSA-2025-11534.html
     - https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-27613
     - https://ubuntu.com/security/notices/USN-7626-1
@@ -625,6 +685,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      alma: 3
       azure: 3
       oracle-oval: 3
       redhat: 2
@@ -634,11 +695,20 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
         V3Score: 6.3
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11462
     - https://access.redhat.com/security/cve/CVE-2025-27614
+    - https://bugzilla.redhat.com/2337824
+    - https://bugzilla.redhat.com/2337956
+    - https://bugzilla.redhat.com/2378806
+    - https://bugzilla.redhat.com/2378808
+    - https://bugzilla.redhat.com/2379124
+    - https://bugzilla.redhat.com/2379125
+    - https://bugzilla.redhat.com/2379326
+    - https://errata.almalinux.org/9/ALSA-2025-11462.html
     - https://github.com/j6t/gitk/commit/8e3070aa5e331be45d4d03e3be41f84494fce129
     - https://github.com/j6t/gitk/security/advisories/GHSA-g4v5-fjv9-mhhc
     - https://linux.oracle.com/cve/CVE-2025-27614.html
-    - https://linux.oracle.com/errata/ELSA-2025-11462.html
+    - https://linux.oracle.com/errata/ELSA-2025-11534.html
     - https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-27614
     - https://ubuntu.com/security/notices/USN-7626-1
@@ -670,6 +740,7 @@
     CweIDs:
     - CWE-88
     VendorSeverity:
+      alma: 3
       oracle-oval: 3
       redhat: 1
       ubuntu: 2
@@ -678,11 +749,20 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N
         V3Score: 3.1
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11462
     - https://access.redhat.com/security/cve/CVE-2025-46835
+    - https://bugzilla.redhat.com/2337824
+    - https://bugzilla.redhat.com/2337956
+    - https://bugzilla.redhat.com/2378806
+    - https://bugzilla.redhat.com/2378808
+    - https://bugzilla.redhat.com/2379124
+    - https://bugzilla.redhat.com/2379125
+    - https://bugzilla.redhat.com/2379326
+    - https://errata.almalinux.org/9/ALSA-2025-11462.html
     - https://github.com/j6t/git-gui/compare/dcda716dbc9c90bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230e52f3bd036ca1b1da
     - https://github.com/j6t/git-gui/security/advisories/GHSA-xfx7-68v4-v8fg
     - https://linux.oracle.com/cve/CVE-2025-46835.html
-    - https://linux.oracle.com/errata/ELSA-2025-11462.html
+    - https://linux.oracle.com/errata/ELSA-2025-11534.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-46835
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://ubuntu.com/security/notices/USN-7626-2
@@ -716,6 +796,7 @@
     - CWE-59
     - CWE-436
     VendorSeverity:
+      alma: 3
       azure: 3
       bitnami: 3
       cbl-mariner: 3
@@ -731,12 +812,21 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11462
     - https://access.redhat.com/security/cve/CVE-2025-48384
+    - https://bugzilla.redhat.com/2337824
+    - https://bugzilla.redhat.com/2337956
+    - https://bugzilla.redhat.com/2378806
+    - https://bugzilla.redhat.com/2378808
+    - https://bugzilla.redhat.com/2379124
+    - https://bugzilla.redhat.com/2379125
+    - https://bugzilla.redhat.com/2379326
     - https://dgl.cx/2025/07/git-clone-submodule-cve-2025-48384
+    - https://errata.almalinux.org/9/ALSA-2025-11462.html
     - https://github.com/git/git/commit/05e9cd64ee23bbadcea6bcffd6660ed02b8eab89
     - https://github.com/git/git/security/advisories/GHSA-vwqx-4fm8-6qc9
     - https://linux.oracle.com/cve/CVE-2025-48384.html
-    - https://linux.oracle.com/errata/ELSA-2025-11462.html
+    - https://linux.oracle.com/errata/ELSA-2025-11534.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-48384
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://www.cve.org/CVERecord?id=CVE-2025-48384
@@ -768,6 +858,7 @@
     - CWE-73
     - CWE-88
     VendorSeverity:
+      alma: 3
       azure: 3
       bitnami: 3
       cbl-mariner: 3
@@ -780,10 +871,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L
         V3Score: 8.3
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11462
     - https://access.redhat.com/security/cve/CVE-2025-48385
+    - https://bugzilla.redhat.com/2337824
+    - https://bugzilla.redhat.com/2337956
+    - https://bugzilla.redhat.com/2378806
+    - https://bugzilla.redhat.com/2378808
+    - https://bugzilla.redhat.com/2379124
+    - https://bugzilla.redhat.com/2379125
+    - https://bugzilla.redhat.com/2379326
+    - https://errata.almalinux.org/9/ALSA-2025-11462.html
     - https://github.com/git/git/security/advisories/GHSA-m98c-vgpc-9655
     - https://linux.oracle.com/cve/CVE-2025-48385.html
-    - https://linux.oracle.com/errata/ELSA-2025-11462.html
+    - https://linux.oracle.com/errata/ELSA-2025-11534.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-48385
     - https://ubuntu.com/security/notices/USN-7626-1
     - https://www.cve.org/CVERecord?id=CVE-2025-48385
@@ -3300,7 +3400,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -3693,7 +3793,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -4086,7 +4186,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -5177,10 +5277,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L
         V3Score: 7.1
     References:
-    - https://access.redhat.com/errata/RHSA-2025:10407
+    - https://access.redhat.com/errata/RHSA-2025:11463
     - https://access.redhat.com/security/cve/CVE-2025-47273
     - https://bugzilla.redhat.com/2366982
-    - https://errata.almalinux.org/9/ALSA-2025-10407.html
+    - https://errata.almalinux.org/9/ALSA-2025-11463.html
     - https://github.com/pypa/advisory-database/tree/main/vulns/setuptools/PYSEC-2025-49.yaml
     - https://github.com/pypa/setuptools
     - https://github.com/pypa/setuptools/blob/6ead555c5fb29bc57fe6105b1bffc163f56fd558/setuptools/package_index.py#L810C1-L825C88
@@ -5489,7 +5589,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -5882,7 +5982,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -6068,6 +6168,7 @@
       azure: 4
       cbl-mariner: 4
       nvd: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
       ubuntu: 3
@@ -6084,6 +6185,8 @@
     - https://bugs.gentoo.org/show_bug.cgi?id=CVE-2025-32463
     - https://explore.alas.aws.amazon.com/CVE-2025-32463.html
     - https://iototsecnews.jp/2025/07/01/linux-sudo-chroot-vulnerability-enables-hackers-to-elevate-privileges-to-root/
+    - https://linux.oracle.com/cve/CVE-2025-32463.html
+    - https://linux.oracle.com/errata/ELSA-2025-11537.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-32463
     - https://security-tracker.debian.org/tracker/CVE-2025-32463
     - https://ubuntu.com/security/notices/USN-7604-1
@@ -7157,7 +7260,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -7714,7 +7817,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -8051,7 +8154,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -8563,7 +8666,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       ghsa: 2
