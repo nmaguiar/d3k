@@ -312,7 +312,8 @@
 │                       │       │                   2.47.3, 2.48.2, 2.49.1, and 2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ VendorSeverity   ╭ azure      : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
@@ -320,25 +321,34 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 4.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-27613 
-│                       │       │                  ├ [1] : https://github.com/j6t/gitk/compare/465f03869ae11acd
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-27613 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [10]: https://github.com/j6t/gitk/compare/465f03869ae11acd
 │                       │       │                  │       04abfa1b83c67879c867410c..026c397d911cde55924d7eb131
 │                       │       │                  │       1d0fd6e2e105d5 
-│                       │       │                  ├ [2] : https://github.com/j6t/gitk/compare/7dd272eca153058d
+│                       │       │                  ├ [11]: https://github.com/j6t/gitk/compare/7dd272eca153058d
 │                       │       │                  │       a2e8d5b9960bbbf0b4f0cbaa..67a128b91e25978a15f9f7e194
 │                       │       │                  │       d81b441d603652 
-│                       │       │                  ├ [3] : https://github.com/j6t/gitk/security/advisories/GHSA
+│                       │       │                  ├ [12]: https://github.com/j6t/gitk/security/advisories/GHSA
 │                       │       │                  │       -f3cw-xrj3-wr2v 
-│                       │       │                  ├ [4] : https://linux.oracle.com/cve/CVE-2025-27613.html 
-│                       │       │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2025-11462.html 
-│                       │       │                  ├ [6] : https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster
+│                       │       │                  ├ [13]: https://linux.oracle.com/cve/CVE-2025-27613.html 
+│                       │       │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2025-11534.html 
+│                       │       │                  ├ [15]: https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster
 │                       │       │                  │       .g/ 
-│                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-27613 
-│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7626-2 
-│                       │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-7626-3 
-│                       │       │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2025-27613 
-│                       │       │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-27613 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7626-2 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7626-3 
+│                       │       │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2025-27613 
+│                       │       │                  ╰ [21]: https://www.openwall.com/lists/oss-security/2025/07/
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.243Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
@@ -372,26 +382,37 @@
 │                       │       │                   2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ VendorSeverity   ╭ azure      : 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 6.3 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-27614 
-│                       │       │                  ├ [1]: https://github.com/j6t/gitk/commit/8e3070aa5e331be45d
-│                       │       │                  │      4d03e3be41f84494fce129 
-│                       │       │                  ├ [2]: https://github.com/j6t/gitk/security/advisories/GHSA-
-│                       │       │                  │      g4v5-fjv9-mhhc 
-│                       │       │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-27614.html 
-│                       │       │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-11462.html 
-│                       │       │                  ├ [5]: https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/ 
-│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-27614 
-│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-27614 
-│                       │       │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │       │                         8/4 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-27614 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [10]: https://github.com/j6t/gitk/commit/8e3070aa5e331be45
+│                       │       │                  │       d4d03e3be41f84494fce129 
+│                       │       │                  ├ [11]: https://github.com/j6t/gitk/security/advisories/GHSA
+│                       │       │                  │       -g4v5-fjv9-mhhc 
+│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2025-27614.html 
+│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2025-11534.html 
+│                       │       │                  ├ [14]: https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster
+│                       │       │                  │       .g/ 
+│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-27614 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2025-27614 
+│                       │       │                  ╰ [18]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.403Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
 │                       ├ [8]   ╭ VulnerabilityID : CVE-2025-46835 
@@ -423,26 +444,36 @@
 │                       │       │                   2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-88 
-│                       │       ├ VendorSeverity   ╭ oracle-oval: 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 3.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-46835 
-│                       │       │                  ├ [1] : https://github.com/j6t/git-gui/compare/dcda716dbc9c9
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-46835 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [10]: https://github.com/j6t/git-gui/compare/dcda716dbc9c9
 │                       │       │                  │       0bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230
 │                       │       │                  │       e52f3bd036ca1b1da 
-│                       │       │                  ├ [2] : https://github.com/j6t/git-gui/security/advisories/G
+│                       │       │                  ├ [11]: https://github.com/j6t/git-gui/security/advisories/G
 │                       │       │                  │       HSA-xfx7-68v4-v8fg 
-│                       │       │                  ├ [3] : https://linux.oracle.com/cve/CVE-2025-46835.html 
-│                       │       │                  ├ [4] : https://linux.oracle.com/errata/ELSA-2025-11462.html 
-│                       │       │                  ├ [5] : https://nvd.nist.gov/vuln/detail/CVE-2025-46835 
-│                       │       │                  ├ [6] : https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [7] : https://ubuntu.com/security/notices/USN-7626-2 
-│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-7626-3 
-│                       │       │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2025-46835 
-│                       │       │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2025-46835.html 
+│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2025-11534.html 
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2025-46835 
+│                       │       │                  ├ [15]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7626-2 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7626-3 
+│                       │       │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2025-46835 
+│                       │       │                  ╰ [19]: https://www.openwall.com/lists/oss-security/2025/07/
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:29.503Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
@@ -484,7 +515,8 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-59 
 │                       │       │                  ╰ [1]: CWE-436 
-│                       │       ├ VendorSeverity   ╭ azure      : 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ cbl-mariner: 3 
 │                       │       │                  ├ oracle-oval: 3 
@@ -497,20 +529,29 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
 │                       │       │                            │           :H/A:H 
 │                       │       │                            ╰ V3Score : 8 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-48384 
-│                       │       │                  ├ [1]: https://dgl.cx/2025/07/git-clone-submodule-cve-2025-4
-│                       │       │                  │      8384 
-│                       │       │                  ├ [2]: https://github.com/git/git/commit/05e9cd64ee23bbadcea
-│                       │       │                  │      6bcffd6660ed02b8eab89 
-│                       │       │                  ├ [3]: https://github.com/git/git/security/advisories/GHSA-v
-│                       │       │                  │      wqx-4fm8-6qc9 
-│                       │       │                  ├ [4]: https://linux.oracle.com/cve/CVE-2025-48384.html 
-│                       │       │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2025-11462.html 
-│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-48384 
-│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-48384 
-│                       │       │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │       │                         8/4 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48384 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://dgl.cx/2025/07/git-clone-submodule-cve-2025-
+│                       │       │                  │       48384 
+│                       │       │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [11]: https://github.com/git/git/commit/05e9cd64ee23bbadce
+│                       │       │                  │       a6bcffd6660ed02b8eab89 
+│                       │       │                  ├ [12]: https://github.com/git/git/security/advisories/GHSA-
+│                       │       │                  │       vwqx-4fm8-6qc9 
+│                       │       │                  ├ [13]: https://linux.oracle.com/cve/CVE-2025-48384.html 
+│                       │       │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2025-11534.html 
+│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-48384 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2025-48384 
+│                       │       │                  ╰ [18]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:42.8Z 
 │                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 │                       ├ [10]  ╭ VulnerabilityID : CVE-2025-48385 
@@ -556,7 +597,8 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-73 
 │                       │       │                  ╰ [1]: CWE-88 
-│                       │       ├ VendorSeverity   ╭ azure      : 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ cbl-mariner: 3 
 │                       │       │                  ├ oracle-oval: 3 
@@ -566,16 +608,25 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:
 │                       │       │                           │           H/A:L 
 │                       │       │                           ╰ V3Score : 8.3 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-48385 
-│                       │       │                  ├ [1]: https://github.com/git/git/security/advisories/GHSA-m
-│                       │       │                  │      98c-vgpc-9655 
-│                       │       │                  ├ [2]: https://linux.oracle.com/cve/CVE-2025-48385.html 
-│                       │       │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2025-11462.html 
-│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-48385 
-│                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2025-48385 
-│                       │       │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │       │                         8/4 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48385 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [10]: https://github.com/git/git/security/advisories/GHSA-
+│                       │       │                  │       m98c-vgpc-9655 
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2025-48385.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-11534.html 
+│                       │       │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-48385 
+│                       │       │                  ├ [14]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [15]: https://www.cve.org/CVERecord?id=CVE-2025-48385 
+│                       │       │                  ╰ [16]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:43.097Z 
 │                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 │                       ├ [11]  ╭ VulnerabilityID : CVE-2025-48386 
@@ -661,7 +712,8 @@
 │                       │       │                   2.47.3, 2.48.2, 2.49.1, and 2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ VendorSeverity   ╭ azure      : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
@@ -669,25 +721,34 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 4.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-27613 
-│                       │       │                  ├ [1] : https://github.com/j6t/gitk/compare/465f03869ae11acd
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-27613 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [10]: https://github.com/j6t/gitk/compare/465f03869ae11acd
 │                       │       │                  │       04abfa1b83c67879c867410c..026c397d911cde55924d7eb131
 │                       │       │                  │       1d0fd6e2e105d5 
-│                       │       │                  ├ [2] : https://github.com/j6t/gitk/compare/7dd272eca153058d
+│                       │       │                  ├ [11]: https://github.com/j6t/gitk/compare/7dd272eca153058d
 │                       │       │                  │       a2e8d5b9960bbbf0b4f0cbaa..67a128b91e25978a15f9f7e194
 │                       │       │                  │       d81b441d603652 
-│                       │       │                  ├ [3] : https://github.com/j6t/gitk/security/advisories/GHSA
+│                       │       │                  ├ [12]: https://github.com/j6t/gitk/security/advisories/GHSA
 │                       │       │                  │       -f3cw-xrj3-wr2v 
-│                       │       │                  ├ [4] : https://linux.oracle.com/cve/CVE-2025-27613.html 
-│                       │       │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2025-11462.html 
-│                       │       │                  ├ [6] : https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster
+│                       │       │                  ├ [13]: https://linux.oracle.com/cve/CVE-2025-27613.html 
+│                       │       │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2025-11534.html 
+│                       │       │                  ├ [15]: https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster
 │                       │       │                  │       .g/ 
-│                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-27613 
-│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7626-2 
-│                       │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-7626-3 
-│                       │       │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2025-27613 
-│                       │       │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-27613 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7626-2 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7626-3 
+│                       │       │                  ├ [20]: https://www.cve.org/CVERecord?id=CVE-2025-27613 
+│                       │       │                  ╰ [21]: https://www.openwall.com/lists/oss-security/2025/07/
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.243Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
@@ -721,26 +782,37 @@
 │                       │       │                   2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ VendorSeverity   ╭ azure      : 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 6.3 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-27614 
-│                       │       │                  ├ [1]: https://github.com/j6t/gitk/commit/8e3070aa5e331be45d
-│                       │       │                  │      4d03e3be41f84494fce129 
-│                       │       │                  ├ [2]: https://github.com/j6t/gitk/security/advisories/GHSA-
-│                       │       │                  │      g4v5-fjv9-mhhc 
-│                       │       │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-27614.html 
-│                       │       │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-11462.html 
-│                       │       │                  ├ [5]: https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster.g/ 
-│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-27614 
-│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-27614 
-│                       │       │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │       │                         8/4 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-27614 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [10]: https://github.com/j6t/gitk/commit/8e3070aa5e331be45
+│                       │       │                  │       d4d03e3be41f84494fce129 
+│                       │       │                  ├ [11]: https://github.com/j6t/gitk/security/advisories/GHSA
+│                       │       │                  │       -g4v5-fjv9-mhhc 
+│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2025-27614.html 
+│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2025-11534.html 
+│                       │       │                  ├ [14]: https://lore.kernel.org/git/xmqq5xg2wrd1.fsf@gitster
+│                       │       │                  │       .g/ 
+│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-27614 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2025-27614 
+│                       │       │                  ╰ [18]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.403Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
 │                       ├ [14]  ╭ VulnerabilityID : CVE-2025-46835 
@@ -772,26 +844,36 @@
 │                       │       │                   2.44.4, 2.45.4, 2.46.4, 2.47.3, 2.48.2, 2.49.1, and 2.50.1. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-88 
-│                       │       ├ VendorSeverity   ╭ oracle-oval: 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 3.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-46835 
-│                       │       │                  ├ [1] : https://github.com/j6t/git-gui/compare/dcda716dbc9c9
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-46835 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [10]: https://github.com/j6t/git-gui/compare/dcda716dbc9c9
 │                       │       │                  │       0bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230
 │                       │       │                  │       e52f3bd036ca1b1da 
-│                       │       │                  ├ [2] : https://github.com/j6t/git-gui/security/advisories/G
+│                       │       │                  ├ [11]: https://github.com/j6t/git-gui/security/advisories/G
 │                       │       │                  │       HSA-xfx7-68v4-v8fg 
-│                       │       │                  ├ [3] : https://linux.oracle.com/cve/CVE-2025-46835.html 
-│                       │       │                  ├ [4] : https://linux.oracle.com/errata/ELSA-2025-11462.html 
-│                       │       │                  ├ [5] : https://nvd.nist.gov/vuln/detail/CVE-2025-46835 
-│                       │       │                  ├ [6] : https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [7] : https://ubuntu.com/security/notices/USN-7626-2 
-│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-7626-3 
-│                       │       │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2025-46835 
-│                       │       │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2025-46835.html 
+│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2025-11534.html 
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2025-46835 
+│                       │       │                  ├ [15]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7626-2 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7626-3 
+│                       │       │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2025-46835 
+│                       │       │                  ╰ [19]: https://www.openwall.com/lists/oss-security/2025/07/
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:29.503Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
@@ -833,7 +915,8 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-59 
 │                       │       │                  ╰ [1]: CWE-436 
-│                       │       ├ VendorSeverity   ╭ azure      : 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ cbl-mariner: 3 
 │                       │       │                  ├ oracle-oval: 3 
@@ -846,20 +929,29 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
 │                       │       │                            │           :H/A:H 
 │                       │       │                            ╰ V3Score : 8 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-48384 
-│                       │       │                  ├ [1]: https://dgl.cx/2025/07/git-clone-submodule-cve-2025-4
-│                       │       │                  │      8384 
-│                       │       │                  ├ [2]: https://github.com/git/git/commit/05e9cd64ee23bbadcea
-│                       │       │                  │      6bcffd6660ed02b8eab89 
-│                       │       │                  ├ [3]: https://github.com/git/git/security/advisories/GHSA-v
-│                       │       │                  │      wqx-4fm8-6qc9 
-│                       │       │                  ├ [4]: https://linux.oracle.com/cve/CVE-2025-48384.html 
-│                       │       │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2025-11462.html 
-│                       │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-48384 
-│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-48384 
-│                       │       │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │       │                         8/4 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48384 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://dgl.cx/2025/07/git-clone-submodule-cve-2025-
+│                       │       │                  │       48384 
+│                       │       │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [11]: https://github.com/git/git/commit/05e9cd64ee23bbadce
+│                       │       │                  │       a6bcffd6660ed02b8eab89 
+│                       │       │                  ├ [12]: https://github.com/git/git/security/advisories/GHSA-
+│                       │       │                  │       vwqx-4fm8-6qc9 
+│                       │       │                  ├ [13]: https://linux.oracle.com/cve/CVE-2025-48384.html 
+│                       │       │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2025-11534.html 
+│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-48384 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2025-48384 
+│                       │       │                  ╰ [18]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:42.8Z 
 │                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 │                       ├ [16]  ╭ VulnerabilityID : CVE-2025-48385 
@@ -905,7 +997,8 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-73 
 │                       │       │                  ╰ [1]: CWE-88 
-│                       │       ├ VendorSeverity   ╭ azure      : 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ cbl-mariner: 3 
 │                       │       │                  ├ oracle-oval: 3 
@@ -915,16 +1008,25 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:
 │                       │       │                           │           H/A:L 
 │                       │       │                           ╰ V3Score : 8.3 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-48385 
-│                       │       │                  ├ [1]: https://github.com/git/git/security/advisories/GHSA-m
-│                       │       │                  │      98c-vgpc-9655 
-│                       │       │                  ├ [2]: https://linux.oracle.com/cve/CVE-2025-48385.html 
-│                       │       │                  ├ [3]: https://linux.oracle.com/errata/ELSA-2025-11462.html 
-│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-48385 
-│                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2025-48385 
-│                       │       │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2025/07/0
-│                       │       │                         8/4 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48385 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [10]: https://github.com/git/git/security/advisories/GHSA-
+│                       │       │                  │       m98c-vgpc-9655 
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2025-48385.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-11534.html 
+│                       │       │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-48385 
+│                       │       │                  ├ [14]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [15]: https://www.cve.org/CVERecord?id=CVE-2025-48385 
+│                       │       │                  ╰ [16]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:43.097Z 
 │                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 │                       ├ [17]  ╭ VulnerabilityID : CVE-2025-48386 
@@ -3762,7 +3864,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 3 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -4303,7 +4405,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 3 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -4844,7 +4946,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 3 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -6134,10 +6236,10 @@
 │                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           H/A:L 
 │                       │       │                           ╰ V3Score : 7.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10407 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11463 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-47273 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2366982 
-│                       │       │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-10407.html 
+│                       │       │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-11463.html 
 │                       │       │                  ├ [4] : https://github.com/pypa/advisory-database/tree/main/
 │                       │       │                  │       vulns/setuptools/PYSEC-2025-49.yaml 
 │                       │       │                  ├ [5] : https://github.com/pypa/setuptools 
@@ -6560,7 +6662,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 3 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -7101,7 +7203,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 3 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -7330,6 +7432,7 @@
 │                       │       │                  ├ azure      : 4 
 │                       │       │                  ├ cbl-mariner: 4 
 │                       │       │                  ├ nvd        : 3 
+│                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ╰ ubuntu     : 3 
@@ -7347,27 +7450,29 @@
 │                       │       │                  ├ [4] : https://iototsecnews.jp/2025/07/01/linux-sudo-chroot
 │                       │       │                  │       -vulnerability-enables-hackers-to-elevate-privileges
 │                       │       │                  │       -to-root/ 
-│                       │       │                  ├ [5] : https://nvd.nist.gov/vuln/detail/CVE-2025-32463 
-│                       │       │                  ├ [6] : https://security-tracker.debian.org/tracker/CVE-2025
+│                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2025-32463.html 
+│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-11537.html 
+│                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-32463 
+│                       │       │                  ├ [8] : https://security-tracker.debian.org/tracker/CVE-2025
 │                       │       │                  │       -32463 
-│                       │       │                  ├ [7] : https://ubuntu.com/security/notices/USN-7604-1 
-│                       │       │                  ├ [8] : https://www.cve.org/CVERecord?id=CVE-2025-32463 
-│                       │       │                  ├ [9] : https://www.openwall.com/lists/oss-security/2025/06/
+│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7604-1 
+│                       │       │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2025-32463 
+│                       │       │                  ├ [11]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                  │       30/3 
-│                       │       │                  ├ [10]: https://www.secpod.com/blog/sudo-lpe-vulnerabilities
+│                       │       │                  ├ [12]: https://www.secpod.com/blog/sudo-lpe-vulnerabilities
 │                       │       │                  │       -resolved-what-you-need-to-know-about-cve-2025-32462
 │                       │       │                  │       -and-cve-2025-32463/ 
-│                       │       │                  ├ [11]: https://www.stratascale.com/vulnerability-alert-CVE-
+│                       │       │                  ├ [13]: https://www.stratascale.com/vulnerability-alert-CVE-
 │                       │       │                  │       2025-32463-sudo-chroot 
-│                       │       │                  ├ [12]: https://www.sudo.ws/releases/changelog/ 
-│                       │       │                  ├ [13]: https://www.sudo.ws/security/advisories/ 
-│                       │       │                  ├ [14]: https://www.sudo.ws/security/advisories/chroot_bug/ 
-│                       │       │                  ├ [15]: https://www.suse.com/security/cve/CVE-2025-32463.html 
-│                       │       │                  ├ [16]: https://www.suse.com/support/update/announcement/202
+│                       │       │                  ├ [14]: https://www.sudo.ws/releases/changelog/ 
+│                       │       │                  ├ [15]: https://www.sudo.ws/security/advisories/ 
+│                       │       │                  ├ [16]: https://www.sudo.ws/security/advisories/chroot_bug/ 
+│                       │       │                  ├ [17]: https://www.suse.com/security/cve/CVE-2025-32463.html 
+│                       │       │                  ├ [18]: https://www.suse.com/support/update/announcement/202
 │                       │       │                  │       5/suse-su-202502177-1/ 
-│                       │       │                  ├ [17]: https://www.vicarius.io/vsociety/posts/cve-2025-3246
+│                       │       │                  ├ [19]: https://www.vicarius.io/vsociety/posts/cve-2025-3246
 │                       │       │                  │       3-detect-sudo-vulnerability 
-│                       │       │                  ╰ [18]: https://www.vicarius.io/vsociety/posts/cve-2025-3246
+│                       │       │                  ╰ [20]: https://www.vicarius.io/vsociety/posts/cve-2025-3246
 │                       │       │                          3-mitigate-sudo-vulnerability 
 │                       │       ├ PublishedDate   : 2025-06-30T21:15:30.257Z 
 │                       │       ╰ LastModifiedDate: 2025-07-22T15:15:26.15Z 
@@ -8791,7 +8896,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
@@ -9397,7 +9502,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     ├ VendorSeverity   ╭ amazon     : 2 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -9750,7 +9855,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     ├ VendorSeverity   ╭ amazon     : 2 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -10365,7 +10470,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
