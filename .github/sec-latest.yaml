@@ -256,6 +256,7 @@
     - https://access.redhat.com/errata/RHSA-2025:11327
     - https://access.redhat.com/errata/RHSA-2025:11373
     - https://access.redhat.com/errata/RHSA-2025:11374
+    - https://access.redhat.com/errata/RHSA-2025:11662
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
@@ -270,7 +271,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-07-17T14:15:31.95Z'
+    LastModifiedDate: '2025-07-23T20:15:27.36Z'
   - VulnerabilityID: CVE-2025-27613
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -1871,6 +1872,7 @@
     - https://access.redhat.com/errata/RHSA-2025:11327
     - https://access.redhat.com/errata/RHSA-2025:11373
     - https://access.redhat.com/errata/RHSA-2025:11374
+    - https://access.redhat.com/errata/RHSA-2025:11662
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
@@ -1885,7 +1887,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-07-17T14:15:31.95Z'
+    LastModifiedDate: '2025-07-23T20:15:27.36Z'
   - VulnerabilityID: CVE-2025-4373
     PkgID: libglib2.0-data@2.82.1-0ubuntu1
     PkgName: libglib2.0-data
@@ -1924,6 +1926,7 @@
     - https://access.redhat.com/errata/RHSA-2025:11327
     - https://access.redhat.com/errata/RHSA-2025:11373
     - https://access.redhat.com/errata/RHSA-2025:11374
+    - https://access.redhat.com/errata/RHSA-2025:11662
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
@@ -1938,7 +1941,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-07-17T14:15:31.95Z'
+    LastModifiedDate: '2025-07-23T20:15:27.36Z'
   - VulnerabilityID: CVE-2025-24528
     PkgID: libgssapi-krb5-2@1.21.3-3ubuntu0.1
     PkgName: libgssapi-krb5-2
@@ -3400,7 +3403,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -3793,7 +3796,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -4186,7 +4189,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -5589,7 +5592,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -5982,7 +5985,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -6164,6 +6167,7 @@
     CweIDs:
     - CWE-829
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 4
       cbl-mariner: 4
@@ -6180,9 +6184,13 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
         V3Score: 7.8
     References:
+    - https://access.redhat.com/errata/RHSA-2025:11537
     - https://access.redhat.com/security/cve/CVE-2025-32463
     - https://access.redhat.com/security/cve/cve-2025-32463
     - https://bugs.gentoo.org/show_bug.cgi?id=CVE-2025-32463
+    - https://bugzilla.redhat.com/2374692
+    - https://bugzilla.redhat.com/2374693
+    - https://errata.almalinux.org/10/ALSA-2025-11537.html
     - https://explore.alas.aws.amazon.com/CVE-2025-32463.html
     - https://iototsecnews.jp/2025/07/01/linux-sudo-chroot-vulnerability-enables-hackers-to-elevate-privileges-to-root/
     - https://linux.oracle.com/cve/CVE-2025-32463.html
@@ -7260,7 +7268,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -7817,7 +7825,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -8154,7 +8162,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -8666,7 +8674,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
