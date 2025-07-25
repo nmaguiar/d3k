@@ -263,23 +263,24 @@
 │                       │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:11327 
 │                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2025:11373 
 │                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:11374 
-│                       │       │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2325340 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2364265 
-│                       │       │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11140.html 
-│                       │       │                  ├ [10]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [11]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
-│                       │       │                  │       /4588 
+│                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2025:11662 
+│                       │       │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2325340 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2364265 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-11140.html 
+│                       │       │                  ├ [11]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
 │                       │       │                  ├ [12]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
+│                       │       │                  │       /4588 
+│                       │       │                  ├ [13]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
 │                       │       │                  │       /4592 
-│                       │       │                  ├ [13]: https://linux.oracle.com/cve/CVE-2025-4373.html 
-│                       │       │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2025-4373.html 
+│                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
+│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-17T14:15:31.95Z 
+│                       │       ╰ LastModifiedDate: 2025-07-23T20:15:27.36Z 
 │                       ├ [6]   ╭ VulnerabilityID : CVE-2025-27613 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -2103,23 +2104,24 @@
 │                       │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:11327 
 │                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2025:11373 
 │                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:11374 
-│                       │       │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2325340 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2364265 
-│                       │       │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11140.html 
-│                       │       │                  ├ [10]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [11]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
-│                       │       │                  │       /4588 
+│                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2025:11662 
+│                       │       │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2325340 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2364265 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-11140.html 
+│                       │       │                  ├ [11]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
 │                       │       │                  ├ [12]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
+│                       │       │                  │       /4588 
+│                       │       │                  ├ [13]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
 │                       │       │                  │       /4592 
-│                       │       │                  ├ [13]: https://linux.oracle.com/cve/CVE-2025-4373.html 
-│                       │       │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2025-4373.html 
+│                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
+│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-17T14:15:31.95Z 
+│                       │       ╰ LastModifiedDate: 2025-07-23T20:15:27.36Z 
 │                       ├ [39]  ╭ VulnerabilityID : CVE-2025-4373 
 │                       │       ├ PkgID           : libglib2.0-data@2.82.1-0ubuntu1 
 │                       │       ├ PkgName         : libglib2.0-data 
@@ -2158,23 +2160,24 @@
 │                       │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:11327 
 │                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2025:11373 
 │                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:11374 
-│                       │       │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2325340 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2364265 
-│                       │       │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11140.html 
-│                       │       │                  ├ [10]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [11]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
-│                       │       │                  │       /4588 
+│                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2025:11662 
+│                       │       │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2325340 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2364265 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-11140.html 
+│                       │       │                  ├ [11]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
 │                       │       │                  ├ [12]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
+│                       │       │                  │       /4588 
+│                       │       │                  ├ [13]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
 │                       │       │                  │       /4592 
-│                       │       │                  ├ [13]: https://linux.oracle.com/cve/CVE-2025-4373.html 
-│                       │       │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2025-4373.html 
+│                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
+│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-17T14:15:31.95Z 
+│                       │       ╰ LastModifiedDate: 2025-07-23T20:15:27.36Z 
 │                       ├ [40]  ╭ VulnerabilityID : CVE-2025-24528 
 │                       │       ├ PkgID           : libgssapi-krb5-2@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libgssapi-krb5-2 
@@ -3864,7 +3867,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -4405,7 +4408,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -4946,7 +4949,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -6662,7 +6665,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -7203,7 +7206,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -7428,7 +7431,8 @@
 │                       │       │                   directory is used with the --chroot option. 
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-829 
-│                       │       ├ VendorSeverity   ╭ amazon     : 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 4 
 │                       │       │                  ├ cbl-mariner: 4 
 │                       │       │                  ├ nvd        : 3 
@@ -7442,37 +7446,41 @@
 │                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:H 
 │                       │       │                           ╰ V3Score : 7.8 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-32463 
-│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/cve-2025-32463 
-│                       │       │                  ├ [2] : https://bugs.gentoo.org/show_bug.cgi?id=CVE-2025-32463 
-│                       │       │                  ├ [3] : https://explore.alas.aws.amazon.com/CVE-2025-32463.h
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11537 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-32463 
+│                       │       │                  ├ [2] : https://access.redhat.com/security/cve/cve-2025-32463 
+│                       │       │                  ├ [3] : https://bugs.gentoo.org/show_bug.cgi?id=CVE-2025-32463 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2374692 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2374693 
+│                       │       │                  ├ [6] : https://errata.almalinux.org/10/ALSA-2025-11537.html 
+│                       │       │                  ├ [7] : https://explore.alas.aws.amazon.com/CVE-2025-32463.h
 │                       │       │                  │       tml 
-│                       │       │                  ├ [4] : https://iototsecnews.jp/2025/07/01/linux-sudo-chroot
+│                       │       │                  ├ [8] : https://iototsecnews.jp/2025/07/01/linux-sudo-chroot
 │                       │       │                  │       -vulnerability-enables-hackers-to-elevate-privileges
 │                       │       │                  │       -to-root/ 
-│                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2025-32463.html 
-│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-11537.html 
-│                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-32463 
-│                       │       │                  ├ [8] : https://security-tracker.debian.org/tracker/CVE-2025
+│                       │       │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-32463.html 
+│                       │       │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-11537.html 
+│                       │       │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-32463 
+│                       │       │                  ├ [12]: https://security-tracker.debian.org/tracker/CVE-2025
 │                       │       │                  │       -32463 
-│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7604-1 
-│                       │       │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2025-32463 
-│                       │       │                  ├ [11]: https://www.openwall.com/lists/oss-security/2025/06/
+│                       │       │                  ├ [13]: https://ubuntu.com/security/notices/USN-7604-1 
+│                       │       │                  ├ [14]: https://www.cve.org/CVERecord?id=CVE-2025-32463 
+│                       │       │                  ├ [15]: https://www.openwall.com/lists/oss-security/2025/06/
 │                       │       │                  │       30/3 
-│                       │       │                  ├ [12]: https://www.secpod.com/blog/sudo-lpe-vulnerabilities
+│                       │       │                  ├ [16]: https://www.secpod.com/blog/sudo-lpe-vulnerabilities
 │                       │       │                  │       -resolved-what-you-need-to-know-about-cve-2025-32462
 │                       │       │                  │       -and-cve-2025-32463/ 
-│                       │       │                  ├ [13]: https://www.stratascale.com/vulnerability-alert-CVE-
+│                       │       │                  ├ [17]: https://www.stratascale.com/vulnerability-alert-CVE-
 │                       │       │                  │       2025-32463-sudo-chroot 
-│                       │       │                  ├ [14]: https://www.sudo.ws/releases/changelog/ 
-│                       │       │                  ├ [15]: https://www.sudo.ws/security/advisories/ 
-│                       │       │                  ├ [16]: https://www.sudo.ws/security/advisories/chroot_bug/ 
-│                       │       │                  ├ [17]: https://www.suse.com/security/cve/CVE-2025-32463.html 
-│                       │       │                  ├ [18]: https://www.suse.com/support/update/announcement/202
+│                       │       │                  ├ [18]: https://www.sudo.ws/releases/changelog/ 
+│                       │       │                  ├ [19]: https://www.sudo.ws/security/advisories/ 
+│                       │       │                  ├ [20]: https://www.sudo.ws/security/advisories/chroot_bug/ 
+│                       │       │                  ├ [21]: https://www.suse.com/security/cve/CVE-2025-32463.html 
+│                       │       │                  ├ [22]: https://www.suse.com/support/update/announcement/202
 │                       │       │                  │       5/suse-su-202502177-1/ 
-│                       │       │                  ├ [19]: https://www.vicarius.io/vsociety/posts/cve-2025-3246
+│                       │       │                  ├ [23]: https://www.vicarius.io/vsociety/posts/cve-2025-3246
 │                       │       │                  │       3-detect-sudo-vulnerability 
-│                       │       │                  ╰ [20]: https://www.vicarius.io/vsociety/posts/cve-2025-3246
+│                       │       │                  ╰ [24]: https://www.vicarius.io/vsociety/posts/cve-2025-3246
 │                       │       │                          3-mitigate-sudo-vulnerability 
 │                       │       ├ PublishedDate   : 2025-06-30T21:15:30.257Z 
 │                       │       ╰ LastModifiedDate: 2025-07-22T15:15:26.15Z 
@@ -8896,7 +8904,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
@@ -9502,7 +9510,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -9855,7 +9863,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -10470,7 +10478,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
