@@ -10,8 +10,8 @@ on:
     branches: [ "main" ]
     paths-ignore:
     - '.github/**'
-  schedule:
-    - cron: '28 1 * * 6'
+  #schedule:
+  #  - cron: '28 1 * * 6'
 
 jobs:
   build64:
