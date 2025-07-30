@@ -280,7 +280,7 @@
 │                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7532-1 
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-23T20:15:27.36Z 
+│                       │       ╰ LastModifiedDate: 2025-07-29T13:15:27.647Z 
 │                       ├ [6]   ╭ VulnerabilityID : CVE-2025-27613 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -2121,7 +2121,7 @@
 │                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7532-1 
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-23T20:15:27.36Z 
+│                       │       ╰ LastModifiedDate: 2025-07-29T13:15:27.647Z 
 │                       ├ [39]  ╭ VulnerabilityID : CVE-2025-4373 
 │                       │       ├ PkgID           : libglib2.0-data@2.82.1-0ubuntu1 
 │                       │       ├ PkgName         : libglib2.0-data 
@@ -2177,7 +2177,7 @@
 │                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7532-1 
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-23T20:15:27.36Z 
+│                       │       ╰ LastModifiedDate: 2025-07-29T13:15:27.647Z 
 │                       ├ [40]  ╭ VulnerabilityID : CVE-2025-24528 
 │                       │       ├ PkgID           : libgssapi-krb5-2@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libgssapi-krb5-2 
@@ -8506,7 +8506,7 @@
 │                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-48924 
 │                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-48924 
 │                             ├ PublishedDate   : 2025-07-11T15:15:24.347Z 
-│                             ╰ LastModifiedDate: 2025-07-15T13:14:49.98Z 
+│                             ╰ LastModifiedDate: 2025-07-28T13:45:38.647Z 
 ├ [2] ╭ Target         : usr/bin/docker-compose 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -9376,7 +9376,76 @@
 │                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
 │                       │     ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
 │                       │     ╰ LastModifiedDate: 2025-05-04T22:15:31.84Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-22869 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2025-54410 
+│                       │     ├ PkgID           : github.com/docker/docker@v25.0.6+incompatible 
+│                       │     ├ PkgName         : github.com/docker/docker 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/docker/docker@v25.0.6%2Bincompat
+│                       │     │                  │       ible 
+│                       │     │                  ╰ UID : b9acec2fc884ba8 
+│                       │     ├ InstalledVersion: v25.0.6+incompatible 
+│                       │     ├ Status          : affected 
+│                       │     ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b
+│                       │     │                  │         905ad543ad918ad504c 
+│                       │     │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a
+│                       │     │                            5507fce977ad8d74ed5 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54410 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : Moby firewalld reload removes bridge network isolation 
+│                       │     ├ Description     : Moby is an open source container framework developed by
+│                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                       │     │                   Container Runtime, and various other downstream
+│                       │     │                   projects/products. The Moby daemon component (dockerd), which
+│                       │     │                    is developed as [moby/moby](https://github.com/moby/moby) is
+│                       │     │                    commonly referred to as Docker, or Docker Engine.
+│                       │     │                   
+│                       │     │                   Firewalld is a daemon used by some Linux distributions to
+│                       │     │                   provide a dynamically managed firewall. When Firewalld is
+│                       │     │                   running, Docker uses its iptables backend to create rules,
+│                       │     │                   including rules to isolate containers in one bridge network
+│                       │     │                   from containers in other bridge networks.
+│                       │     │                   ### Impact
+│                       │     │                   The iptables rules created by Docker are removed when
+│                       │     │                   firewalld is reloaded using, for example "firewall-cmd
+│                       │     │                   --reload", "killall -HUP firewalld", or "systemctl reload
+│                       │     │                   firewalld".
+│                       │     │                   When that happens, Docker must re-create the rules. However,
+│                       │     │                   in affected versions of Docker, the iptables rules that
+│                       │     │                   isolate containers in different bridge networks from each
+│                       │     │                   other are not re-created.
+│                       │     │                   Once these rules have been removed, containers have access to
+│                       │     │                    any port, on any container, in any non-internal bridge
+│                       │     │                   network, running on the Docker host.
+│                       │     │                   Containers running in networks created with `--internal` or
+│                       │     │                   equivalent have no access to other networks. Containers that
+│                       │     │                   are only connected to these networks remain isolated after a
+│                       │     │                   firewalld reload.
+│                       │     │                   Where Docker Engine is not running in the host's network
+│                       │     │                   namespace, it is unaffected. Including, for example, Rootless
+│                       │     │                    Mode, and Docker Desktop.
+│                       │     │                   ### Patches
+│                       │     │                   Moby releases 28.0.0 and newer are not affected. A fix is
+│                       │     │                   available in moby release 25.0.13.
+│                       │     │                   ### Workarounds
+│                       │     │                   After reloading firewalld, either:
+│                       │     │                   - Restart the docker daemon,
+│                       │     │                   - Re-create bridge networks, or
+│                       │     │                   - Use rootless mode.
+│                       │     │                   ### References
+│                       │     │                   https://firewalld.org/
+│                       │     │                   https://firewalld.org/documentation/howto/reload-firewalld.ht
+│                       │     │                   ml 
+│                       │     ├ Severity        : LOW 
+│                       │     ├ VendorSeverity   ─ ghsa: 1 
+│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N 
+│                       │     │                         ╰ V3Score : 3.3 
+│                       │     ╰ References       ╭ [0]: https://github.com/moby/moby 
+│                       │                        ╰ [1]: https://github.com/moby/moby/security/advisories/GHSA-4
+│                       │                               vq8-7jfc-9cvp 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2025-22869 
 │                       │     ├ PkgID           : golang.org/x/crypto@v0.31.0 
 │                       │     ├ PkgName         : golang.org/x/crypto 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/crypto@v0.31.0 
@@ -9435,7 +9504,7 @@
 │                       │     │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-22869 
 │                       │     ├ PublishedDate   : 2025-02-26T08:14:24.997Z 
 │                       │     ╰ LastModifiedDate: 2025-05-01T19:28:20.74Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-22870 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-22870 
 │                       │     ├ PkgID           : golang.org/x/net@v0.33.0 
 │                       │     ├ PkgName         : golang.org/x/net 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.33.0 
@@ -9490,7 +9559,7 @@
 │                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
 │                       │     ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
 │                       │     ╰ LastModifiedDate: 2025-05-09T20:15:38.727Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-22872 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2025-22872 
 │                       │     ├ PkgID           : golang.org/x/net@v0.33.0 
 │                       │     ├ PkgName         : golang.org/x/net 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.33.0 
@@ -9539,7 +9608,7 @@
 │                       │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-22872 
 │                       │     ├ PublishedDate   : 2025-04-16T18:16:04.183Z 
 │                       │     ╰ LastModifiedDate: 2025-05-16T23:15:19.707Z 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2025-22868 
+│                       ├ [5] ╭ VulnerabilityID : CVE-2025-22868 
 │                       │     ├ PkgID           : golang.org/x/oauth2@v0.23.0 
 │                       │     ├ PkgName         : golang.org/x/oauth2 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/oauth2@v0.23.0 
@@ -9582,7 +9651,7 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-22868 
 │                       │     ├ PublishedDate   : 2025-02-26T08:14:24.897Z 
 │                       │     ╰ LastModifiedDate: 2025-05-01T19:27:10.43Z 
-│                       ├ [5] ╭ VulnerabilityID : CVE-2025-0913 
+│                       ├ [6] ╭ VulnerabilityID : CVE-2025-0913 
 │                       │     ├ PkgID           : stdlib@v1.23.5 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.5 
@@ -9620,7 +9689,7 @@
 │                       │     │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3750 
 │                       │     ├ PublishedDate   : 2025-06-11T18:15:24.627Z 
 │                       │     ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
-│                       ├ [6] ╭ VulnerabilityID : CVE-2025-22866 
+│                       ├ [7] ╭ VulnerabilityID : CVE-2025-22866 
 │                       │     ├ PkgID           : stdlib@v1.23.5 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.5 
@@ -9682,7 +9751,7 @@
 │                       │     │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                       │     ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                       │     ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
-│                       ├ [7] ╭ VulnerabilityID : CVE-2025-22871 
+│                       ├ [8] ╭ VulnerabilityID : CVE-2025-22871 
 │                       │     ├ PkgID           : stdlib@v1.23.5 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.5 
@@ -9734,7 +9803,7 @@
 │                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
 │                       │     ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
 │                       │     ╰ LastModifiedDate: 2025-04-18T15:15:57.923Z 
-│                       ╰ [8] ╭ VulnerabilityID : CVE-2025-4673 
+│                       ╰ [9] ╭ VulnerabilityID : CVE-2025-4673 
 │                             ├ PkgID           : stdlib@v1.23.5 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.5 
