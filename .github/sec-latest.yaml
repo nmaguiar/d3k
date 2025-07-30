@@ -271,7 +271,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-07-23T20:15:27.36Z'
+    LastModifiedDate: '2025-07-29T13:15:27.647Z'
   - VulnerabilityID: CVE-2025-27613
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -1887,7 +1887,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-07-23T20:15:27.36Z'
+    LastModifiedDate: '2025-07-29T13:15:27.647Z'
   - VulnerabilityID: CVE-2025-4373
     PkgID: libglib2.0-data@2.82.1-0ubuntu1
     PkgName: libglib2.0-data
@@ -1941,7 +1941,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-07-23T20:15:27.36Z'
+    LastModifiedDate: '2025-07-29T13:15:27.647Z'
   - VulnerabilityID: CVE-2025-24528
     PkgID: libgssapi-krb5-2@1.21.3-3ubuntu0.1
     PkgName: libgssapi-krb5-2
@@ -6979,7 +6979,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-48924
     - https://www.cve.org/CVERecord?id=CVE-2025-48924
     PublishedDate: '2025-07-11T15:15:24.347Z'
-    LastModifiedDate: '2025-07-15T13:14:49.98Z'
+    LastModifiedDate: '2025-07-28T13:45:38.647Z'
 - Target: usr/bin/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -7699,6 +7699,64 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-40635
     PublishedDate: '2025-03-17T22:15:13.15Z'
     LastModifiedDate: '2025-05-04T22:15:31.84Z'
+  - VulnerabilityID: CVE-2025-54410
+    PkgID: github.com/docker/docker@v25.0.6+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v25.0.6%2Bincompatible
+      UID: b9acec2fc884ba8
+    InstalledVersion: v25.0.6+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-54410
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: Moby firewalld reload removes bridge network isolation
+    Description: |-
+      Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (dockerd), which is developed as [moby/moby](https://github.com/moby/moby) is commonly referred to as Docker, or Docker Engine.
+
+      Firewalld is a daemon used by some Linux distributions to provide a dynamically managed firewall. When Firewalld is running, Docker uses its iptables backend to create rules, including rules to isolate containers in one bridge network from containers in other bridge networks.
+
+      ### Impact
+
+      The iptables rules created by Docker are removed when firewalld is reloaded using, for example "firewall-cmd --reload", "killall -HUP firewalld", or "systemctl reload firewalld".
+
+      When that happens, Docker must re-create the rules. However, in affected versions of Docker, the iptables rules that isolate containers in different bridge networks from each other are not re-created.
+
+      Once these rules have been removed, containers have access to any port, on any container, in any non-internal bridge network, running on the Docker host.
+
+      Containers running in networks created with `--internal` or equivalent have no access to other networks. Containers that are only connected to these networks remain isolated after a firewalld reload.
+
+      Where Docker Engine is not running in the host's network namespace, it is unaffected. Including, for example, Rootless Mode, and Docker Desktop.
+
+      ### Patches
+
+      Moby releases 28.0.0 and newer are not affected. A fix is available in moby release 25.0.13.
+
+      ### Workarounds
+      After reloading firewalld, either:
+      - Restart the docker daemon,
+      - Re-create bridge networks, or
+      - Use rootless mode.
+
+      ### References
+      https://firewalld.org/
+      https://firewalld.org/documentation/howto/reload-firewalld.html
+    Severity: LOW
+    VendorSeverity:
+      ghsa: 1
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 3.3
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-4vq8-7jfc-9cvp
   - VulnerabilityID: CVE-2025-22869
     PkgID: golang.org/x/crypto@v0.31.0
     PkgName: golang.org/x/crypto
