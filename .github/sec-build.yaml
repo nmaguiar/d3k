@@ -7,7 +7,7 @@
     PkgName: coreutils
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/coreutils@9.5-1ubuntu1.25.04.1?arch=amd64&distro=ubuntu-25.04
-      UID: 2dee316f186d187a
+      UID: 4420166f792adb9f
     InstalledVersion: 9.5-1ubuntu1.25.04.1
     Status: affected
     Layer:
@@ -58,7 +58,7 @@
     PkgName: dirmngr
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/dirmngr@2.4.4-2ubuntu23.1?arch=amd64&distro=ubuntu-25.04
-      UID: 18aea1b64fa341bf
+      UID: ca1e0a2e0b8d490a
     InstalledVersion: 2.4.4-2ubuntu23.1
     Status: affected
     Layer:
@@ -102,7 +102,7 @@
     PkgName: gir1.2-glib-2.0
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/gir1.2-glib-2.0@2.84.1-1ubuntu0.1?arch=amd64&distro=ubuntu-25.04
-      UID: 58f205cb81e82f0a
+      UID: 78afd50fa4873a7a
     InstalledVersion: 2.84.1-1ubuntu0.1
     Status: affected
     Layer:
@@ -140,7 +140,7 @@
     PkgName: git
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/git@2.48.1-0ubuntu1.1?arch=amd64&distro=ubuntu-25.04&epoch=1
-      UID: 4d589e38503d1cce
+      UID: b65b1df349ce2f85
     InstalledVersion: 1:2.48.1-0ubuntu1.1
     Status: affected
     Layer:
@@ -170,10 +170,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:7409
+    - https://access.redhat.com/errata/RHSA-2025:8414
     - https://access.redhat.com/security/cve/CVE-2024-52005
     - https://bugzilla.redhat.com/2338289
-    - https://errata.almalinux.org/9/ALSA-2025-7409.html
+    - https://errata.almalinux.org/8/ALSA-2025-8414.html
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
     - https://linux.oracle.com/errata/ELSA-2025-8414.html
@@ -218,10 +218,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:7409
+    - https://access.redhat.com/errata/RHSA-2025:8414
     - https://access.redhat.com/security/cve/CVE-2024-52005
     - https://bugzilla.redhat.com/2338289
-    - https://errata.almalinux.org/9/ALSA-2025-7409.html
+    - https://errata.almalinux.org/8/ALSA-2025-8414.html
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
     - https://linux.oracle.com/errata/ELSA-2025-8414.html
@@ -236,7 +236,7 @@
     PkgName: gnupg
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/gnupg@2.4.4-2ubuntu23.1?arch=all&distro=ubuntu-25.04
-      UID: d865310da1688549
+      UID: f84dfd5358f4797f
     InstalledVersion: 2.4.4-2ubuntu23.1
     Status: affected
     Layer:
@@ -368,7 +368,7 @@
     PkgName: gpg
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/gpg@2.4.4-2ubuntu23.1?arch=amd64&distro=ubuntu-25.04
-      UID: 68216d58b7ff217c
+      UID: 255c1aad98a78843
     InstalledVersion: 2.4.4-2ubuntu23.1
     Status: affected
     Layer:
@@ -412,7 +412,7 @@
     PkgName: gpg-agent
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/gpg-agent@2.4.4-2ubuntu23.1?arch=amd64&distro=ubuntu-25.04
-      UID: 7a3f704065dab83c
+      UID: c51647a5d590a273
     InstalledVersion: 2.4.4-2ubuntu23.1
     Status: affected
     Layer:
@@ -456,7 +456,7 @@
     PkgName: gpg-wks-client
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/gpg-wks-client@2.4.4-2ubuntu23.1?arch=amd64&distro=ubuntu-25.04
-      UID: 63b85b8c86684ca4
+      UID: 544f207e4cda5613
     InstalledVersion: 2.4.4-2ubuntu23.1
     Status: affected
     Layer:
@@ -544,7 +544,7 @@
     PkgName: gpgsm
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/gpgsm@2.4.4-2ubuntu23.1?arch=amd64&distro=ubuntu-25.04
-      UID: 25a0007a75ad4d98
+      UID: 2eff4f3043ec3fa3
     InstalledVersion: 2.4.4-2ubuntu23.1
     Status: affected
     Layer:
@@ -632,7 +632,7 @@
     PkgName: keyboxd
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/keyboxd@2.4.4-2ubuntu23.1?arch=amd64&distro=ubuntu-25.04
-      UID: 9e9b80c902778377
+      UID: 35639a9653ae7754
     InstalledVersion: 2.4.4-2ubuntu23.1
     Status: affected
     Layer:
@@ -676,7 +676,7 @@
     PkgName: libbpf1
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libbpf1@1.5.0-2?arch=amd64&distro=ubuntu-25.04&epoch=1
-      UID: b4ee8832a4cba103
+      UID: da5894fb9812bc2c
     InstalledVersion: 1:1.5.0-2
     Status: affected
     Layer:
@@ -718,7 +718,7 @@
     PkgName: libc-bin
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libc-bin@2.41-6ubuntu1.1?arch=amd64&distro=ubuntu-25.04
-      UID: 2e3397a2ed854c46
+      UID: 798a8ba2010c8ddb
     InstalledVersion: 2.41-6ubuntu1.1
     Status: affected
     Layer:
@@ -755,7 +755,7 @@
     PkgName: libc6
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libc6@2.41-6ubuntu1.1?arch=amd64&distro=ubuntu-25.04
-      UID: b21898bd1df05fa3
+      UID: de34a93826490997
     InstalledVersion: 2.41-6ubuntu1.1
     Status: affected
     Layer:
@@ -792,7 +792,7 @@
     PkgName: libelf1t64
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libelf1t64@0.192-4ubuntu1?arch=amd64&distro=ubuntu-25.04
-      UID: a28e127d02866123
+      UID: 67ce49643556608
     InstalledVersion: 0.192-4ubuntu1
     Status: affected
     Layer:
@@ -837,7 +837,7 @@
     PkgName: libelf1t64
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libelf1t64@0.192-4ubuntu1?arch=amd64&distro=ubuntu-25.04
-      UID: a28e127d02866123
+      UID: 67ce49643556608
     InstalledVersion: 0.192-4ubuntu1
     Status: affected
     Layer:
@@ -881,7 +881,7 @@
     PkgName: libgcrypt20
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libgcrypt20@1.11.0-6ubuntu1?arch=amd64&distro=ubuntu-25.04
-      UID: 5904b0b508923af9
+      UID: 97b71536671f4622
     InstalledVersion: 1.11.0-6ubuntu1
     Status: affected
     Layer:
@@ -932,7 +932,7 @@
     PkgName: libglib2.0-0t64
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libglib2.0-0t64@2.84.1-1ubuntu0.1?arch=amd64&distro=ubuntu-25.04
-      UID: 327539f61c12edc4
+      UID: e5947c59276a911d
     InstalledVersion: 2.84.1-1ubuntu0.1
     Status: affected
     Layer:
@@ -1008,7 +1008,7 @@
     PkgName: libpam-modules
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpam-modules@1.5.3-7ubuntu4.3?arch=amd64&distro=ubuntu-25.04
-      UID: 8a0887ccb0ee46e2
+      UID: 1f70a9af7a8bc1e3
     InstalledVersion: 1.5.3-7ubuntu4.3
     Status: affected
     Layer:
@@ -1026,7 +1026,7 @@
     CweIDs:
     - CWE-922
     VendorSeverity:
-      alma: 2
+      alma: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -1043,11 +1043,12 @@
     - https://access.redhat.com/errata/RHSA-2024:9941
     - https://access.redhat.com/security/cve/CVE-2024-10041
     - https://bugzilla.redhat.com/2319212
+    - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-11250.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10041.html
     - https://linux.oracle.com/errata/ELSA-2024-11250.html
@@ -1060,7 +1061,7 @@
     PkgName: libpam-modules
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpam-modules@1.5.3-7ubuntu4.3?arch=amd64&distro=ubuntu-25.04
-      UID: 8a0887ccb0ee46e2
+      UID: 1f70a9af7a8bc1e3
     InstalledVersion: 1.5.3-7ubuntu4.3
     Status: affected
     Layer:
@@ -1096,12 +1097,13 @@
     - https://access.redhat.com/errata/RHSA-2024:10528
     - https://access.redhat.com/errata/RHSA-2024:10852
     - https://access.redhat.com/security/cve/CVE-2024-10963
+    - https://bugzilla.redhat.com/2319212
     - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-10244.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10963.html
     - https://linux.oracle.com/errata/ELSA-2024-10379.html
@@ -1114,7 +1116,7 @@
     PkgName: libpam-modules-bin
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpam-modules-bin@1.5.3-7ubuntu4.3?arch=amd64&distro=ubuntu-25.04
-      UID: d8ba224caf087ede
+      UID: 914231a75f77278f
     InstalledVersion: 1.5.3-7ubuntu4.3
     Status: affected
     Layer:
@@ -1132,7 +1134,7 @@
     CweIDs:
     - CWE-922
     VendorSeverity:
-      alma: 2
+      alma: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -1149,11 +1151,12 @@
     - https://access.redhat.com/errata/RHSA-2024:9941
     - https://access.redhat.com/security/cve/CVE-2024-10041
     - https://bugzilla.redhat.com/2319212
+    - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-11250.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10041.html
     - https://linux.oracle.com/errata/ELSA-2024-11250.html
@@ -1166,7 +1169,7 @@
     PkgName: libpam-modules-bin
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpam-modules-bin@1.5.3-7ubuntu4.3?arch=amd64&distro=ubuntu-25.04
-      UID: d8ba224caf087ede
+      UID: 914231a75f77278f
     InstalledVersion: 1.5.3-7ubuntu4.3
     Status: affected
     Layer:
@@ -1202,12 +1205,13 @@
     - https://access.redhat.com/errata/RHSA-2024:10528
     - https://access.redhat.com/errata/RHSA-2024:10852
     - https://access.redhat.com/security/cve/CVE-2024-10963
+    - https://bugzilla.redhat.com/2319212
     - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-10244.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10963.html
     - https://linux.oracle.com/errata/ELSA-2024-10379.html
@@ -1220,7 +1224,7 @@
     PkgName: libpam-runtime
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpam-runtime@1.5.3-7ubuntu4.3?arch=all&distro=ubuntu-25.04
-      UID: 11da3ddf37287ea
+      UID: 1420d5870a0f1057
     InstalledVersion: 1.5.3-7ubuntu4.3
     Status: affected
     Layer:
@@ -1238,7 +1242,7 @@
     CweIDs:
     - CWE-922
     VendorSeverity:
-      alma: 2
+      alma: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -1255,11 +1259,12 @@
     - https://access.redhat.com/errata/RHSA-2024:9941
     - https://access.redhat.com/security/cve/CVE-2024-10041
     - https://bugzilla.redhat.com/2319212
+    - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-11250.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10041.html
     - https://linux.oracle.com/errata/ELSA-2024-11250.html
@@ -1272,7 +1277,7 @@
     PkgName: libpam-runtime
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpam-runtime@1.5.3-7ubuntu4.3?arch=all&distro=ubuntu-25.04
-      UID: 11da3ddf37287ea
+      UID: 1420d5870a0f1057
     InstalledVersion: 1.5.3-7ubuntu4.3
     Status: affected
     Layer:
@@ -1308,12 +1313,13 @@
     - https://access.redhat.com/errata/RHSA-2024:10528
     - https://access.redhat.com/errata/RHSA-2024:10852
     - https://access.redhat.com/security/cve/CVE-2024-10963
+    - https://bugzilla.redhat.com/2319212
     - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-10244.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10963.html
     - https://linux.oracle.com/errata/ELSA-2024-10379.html
@@ -1326,7 +1332,7 @@
     PkgName: libpam0g
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpam0g@1.5.3-7ubuntu4.3?arch=amd64&distro=ubuntu-25.04
-      UID: 81d18cf0b55a9957
+      UID: 78dc01c1ea68c9c2
     InstalledVersion: 1.5.3-7ubuntu4.3
     Status: affected
     Layer:
@@ -1344,7 +1350,7 @@
     CweIDs:
     - CWE-922
     VendorSeverity:
-      alma: 2
+      alma: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -1361,11 +1367,12 @@
     - https://access.redhat.com/errata/RHSA-2024:9941
     - https://access.redhat.com/security/cve/CVE-2024-10041
     - https://bugzilla.redhat.com/2319212
+    - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-11250.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10041.html
     - https://linux.oracle.com/errata/ELSA-2024-11250.html
@@ -1378,7 +1385,7 @@
     PkgName: libpam0g
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpam0g@1.5.3-7ubuntu4.3?arch=amd64&distro=ubuntu-25.04
-      UID: 81d18cf0b55a9957
+      UID: 78dc01c1ea68c9c2
     InstalledVersion: 1.5.3-7ubuntu4.3
     Status: affected
     Layer:
@@ -1414,12 +1421,13 @@
     - https://access.redhat.com/errata/RHSA-2024:10528
     - https://access.redhat.com/errata/RHSA-2024:10852
     - https://access.redhat.com/security/cve/CVE-2024-10963
+    - https://bugzilla.redhat.com/2319212
     - https://bugzilla.redhat.com/2324291
     - https://bugzilla.redhat.com/show_bug.cgi?id=2319212
     - https://bugzilla.redhat.com/show_bug.cgi?id=2324291
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10041
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963
-    - https://errata.almalinux.org/9/ALSA-2024-10244.html
+    - https://errata.almalinux.org/8/ALSA-2024-10379.html
     - https://errata.rockylinux.org/RLSA-2024:10379
     - https://linux.oracle.com/cve/CVE-2024-10963.html
     - https://linux.oracle.com/errata/ELSA-2024-10379.html
@@ -1432,7 +1440,7 @@
     PkgName: libperl5.40
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libperl5.40@5.40.1-2ubuntu0.1?arch=amd64&distro=ubuntu-25.04
-      UID: 5a3dfa88091f0f84
+      UID: 3b25b26fcc48aa94
     InstalledVersion: 5.40.1-2ubuntu0.1
     FixedVersion: 5.40.1-2ubuntu0.2
     Status: fixed
@@ -1454,6 +1462,7 @@
     VendorSeverity:
       alma: 2
       amazon: 3
+      cbl-mariner: 2
       oracle-oval: 2
       redhat: 2
       ubuntu: 2
@@ -1479,7 +1488,7 @@
     - https://github.com/Perl/perl5/issues/10387
     - https://github.com/Perl/perl5/issues/23010
     - https://linux.oracle.com/cve/CVE-2025-40909.html
-    - https://linux.oracle.com/errata/ELSA-2025-11805.html
+    - https://linux.oracle.com/errata/ELSA-2025-12056.html
     - https://lists.security.metacpan.org/cve-announce/msg/30017499/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-40909
     - https://perldoc.perl.org/5.14.0/perl5136delta#Directory-handles-not-copied-to-threads
@@ -1493,7 +1502,7 @@
     PkgName: libpython3.13
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpython3.13@3.13.3-1ubuntu0.2?arch=amd64&distro=ubuntu-25.04
-      UID: b6465d99e9c96247
+      UID: 24409b48286c98a8
     InstalledVersion: 3.13.3-1ubuntu0.2
     Status: affected
     Layer:
@@ -1545,7 +1554,7 @@
     PkgName: libpython3.13-minimal
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpython3.13-minimal@3.13.3-1ubuntu0.2?arch=amd64&distro=ubuntu-25.04
-      UID: 56647c96deaac313
+      UID: 9c7a65168b2ca24c
     InstalledVersion: 3.13.3-1ubuntu0.2
     Status: affected
     Layer:
@@ -1597,7 +1606,7 @@
     PkgName: libpython3.13-stdlib
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libpython3.13-stdlib@3.13.3-1ubuntu0.2?arch=amd64&distro=ubuntu-25.04
-      UID: d2d28e75d5f6d84b
+      UID: a2b2fc42284aeaaf
     InstalledVersion: 3.13.3-1ubuntu0.2
     Status: affected
     Layer:
@@ -1649,7 +1658,7 @@
     PkgName: libsqlite3-0
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-3ubuntu0.1?arch=amd64&distro=ubuntu-25.04
-      UID: 4dcc16f608b621dc
+      UID: 8df742065dc11207
     InstalledVersion: 3.46.1-3ubuntu0.1
     FixedVersion: 3.46.1-3ubuntu0.2
     Status: fixed
@@ -1682,14 +1691,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:H/A:L
         V3Score: 7.7
     References:
-    - https://access.redhat.com/errata/RHSA-2025:11803
+    - https://access.redhat.com/errata/RHSA-2025:12010
     - https://access.redhat.com/security/cve/CVE-2025-6965
     - https://bugzilla.redhat.com/2380149
-    - https://errata.almalinux.org/8/ALSA-2025-11803.html
+    - https://errata.almalinux.org/8/ALSA-2025-12010.html
     - https://linux.oracle.com/cve/CVE-2025-6965.html
     - https://linux.oracle.com/errata/ELSA-2025-12010.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-6965
     - https://ubuntu.com/security/notices/USN-7676-1
+    - https://ubuntu.com/security/notices/USN-7679-1
     - https://www.cve.org/CVERecord?id=CVE-2025-6965
     - https://www.sqlite.org/src/info/5508b56fd24016c13981ec280ecdd833007c9d8dd595edb295b984c2b487b5c8
     PublishedDate: '2025-07-15T14:15:31.08Z'
@@ -1699,7 +1709,7 @@
     PkgName: libsubid5
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/libsubid5@4.16.0-7ubuntu1?arch=amd64&distro=ubuntu-25.04&epoch=1
-      UID: bf85456bea4b9d21
+      UID: 91fcfde4863e3975
     InstalledVersion: 1:4.16.0-7ubuntu1
     Status: affected
     Layer:
@@ -1738,7 +1748,7 @@
     PkgName: login.defs
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/login.defs@4.16.0-7ubuntu1?arch=all&distro=ubuntu-25.04&epoch=1
-      UID: 3c8b88c42ea22e9c
+      UID: 4016d70dedce9ad0
     InstalledVersion: 1:4.16.0-7ubuntu1
     Status: affected
     Layer:
@@ -1777,7 +1787,7 @@
     PkgName: passwd
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/passwd@4.16.0-7ubuntu1?arch=amd64&distro=ubuntu-25.04&epoch=1
-      UID: 9c1b1d7dcc1c866
+      UID: f3a0273134c1de96
     InstalledVersion: 1:4.16.0-7ubuntu1
     Status: affected
     Layer:
@@ -1910,7 +1920,7 @@
     PkgName: perl
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/perl@5.40.1-2ubuntu0.1?arch=amd64&distro=ubuntu-25.04
-      UID: e627389242c8e5f0
+      UID: 3028748aa830fc8f
     InstalledVersion: 5.40.1-2ubuntu0.1
     FixedVersion: 5.40.1-2ubuntu0.2
     Status: fixed
@@ -1932,6 +1942,7 @@
     VendorSeverity:
       alma: 2
       amazon: 3
+      cbl-mariner: 2
       oracle-oval: 2
       redhat: 2
       ubuntu: 2
@@ -1957,7 +1968,7 @@
     - https://github.com/Perl/perl5/issues/10387
     - https://github.com/Perl/perl5/issues/23010
     - https://linux.oracle.com/cve/CVE-2025-40909.html
-    - https://linux.oracle.com/errata/ELSA-2025-11805.html
+    - https://linux.oracle.com/errata/ELSA-2025-12056.html
     - https://lists.security.metacpan.org/cve-announce/msg/30017499/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-40909
     - https://perldoc.perl.org/5.14.0/perl5136delta#Directory-handles-not-copied-to-threads
@@ -1971,7 +1982,7 @@
     PkgName: perl-base
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/perl-base@5.40.1-2ubuntu0.1?arch=amd64&distro=ubuntu-25.04
-      UID: 47c2b4fb696ffc5b
+      UID: d890fbc6969495a8
     InstalledVersion: 5.40.1-2ubuntu0.1
     FixedVersion: 5.40.1-2ubuntu0.2
     Status: fixed
@@ -1993,6 +2004,7 @@
     VendorSeverity:
       alma: 2
       amazon: 3
+      cbl-mariner: 2
       oracle-oval: 2
       redhat: 2
       ubuntu: 2
@@ -2018,7 +2030,7 @@
     - https://github.com/Perl/perl5/issues/10387
     - https://github.com/Perl/perl5/issues/23010
     - https://linux.oracle.com/cve/CVE-2025-40909.html
-    - https://linux.oracle.com/errata/ELSA-2025-11805.html
+    - https://linux.oracle.com/errata/ELSA-2025-12056.html
     - https://lists.security.metacpan.org/cve-announce/msg/30017499/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-40909
     - https://perldoc.perl.org/5.14.0/perl5136delta#Directory-handles-not-copied-to-threads
@@ -2032,7 +2044,7 @@
     PkgName: perl-modules-5.40
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/perl-modules-5.40@5.40.1-2ubuntu0.1?arch=all&distro=ubuntu-25.04
-      UID: 7e89dc61f8d08c9f
+      UID: 9f28f1f57be0dc18
     InstalledVersion: 5.40.1-2ubuntu0.1
     FixedVersion: 5.40.1-2ubuntu0.2
     Status: fixed
@@ -2054,6 +2066,7 @@
     VendorSeverity:
       alma: 2
       amazon: 3
+      cbl-mariner: 2
       oracle-oval: 2
       redhat: 2
       ubuntu: 2
@@ -2079,7 +2092,7 @@
     - https://github.com/Perl/perl5/issues/10387
     - https://github.com/Perl/perl5/issues/23010
     - https://linux.oracle.com/cve/CVE-2025-40909.html
-    - https://linux.oracle.com/errata/ELSA-2025-11805.html
+    - https://linux.oracle.com/errata/ELSA-2025-12056.html
     - https://lists.security.metacpan.org/cve-announce/msg/30017499/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-40909
     - https://perldoc.perl.org/5.14.0/perl5136delta#Directory-handles-not-copied-to-threads
@@ -2093,7 +2106,7 @@
     PkgName: python3.13
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/python3.13@3.13.3-1ubuntu0.2?arch=amd64&distro=ubuntu-25.04
-      UID: c72adabcb417dc39
+      UID: b231b26c3d510faa
     InstalledVersion: 3.13.3-1ubuntu0.2
     Status: affected
     Layer:
@@ -2145,7 +2158,7 @@
     PkgName: python3.13-minimal
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/python3.13-minimal@3.13.3-1ubuntu0.2?arch=amd64&distro=ubuntu-25.04
-      UID: b172a637323a051f
+      UID: 68b8d6fcb84c7775
     InstalledVersion: 3.13.3-1ubuntu0.2
     Status: affected
     Layer:
@@ -2197,7 +2210,7 @@
     PkgName: tar
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-3.1?arch=amd64&distro=ubuntu-25.04
-      UID: a4187a8c3d48826a
+      UID: a03ee9a61d584e89
     InstalledVersion: 1.35+dfsg-3.1
     Status: affected
     Layer:
@@ -2274,7 +2287,7 @@
     PkgName: wget
     PkgIdentifier:
       PURL: pkg:deb/ubuntu/wget@1.24.5-2ubuntu1?arch=amd64&distro=ubuntu-25.04
-      UID: 5d689b1797feb84d
+      UID: eaa03d90709264fd
     InstalledVersion: 1.24.5-2ubuntu1
     Status: affected
     Layer:
@@ -2341,47 +2354,28 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
-    Title: 'Moby firewalld reload makes published container ports accessible from remote hosts '
-    Description: |-
-      Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. The Moby daemon component (dockerd), which is developed as [moby/moby](https://github.com/moby/moby) is commonly referred to as Docker, or Docker Engine.
-
-      Firewalld is a daemon used by some Linux distributions to provide a dynamically managed firewall. When Firewalld is running, Docker uses its iptables backend to create rules, including rules to isolate containers in one bridge network from containers in other bridge networks.
-
-      ### Impact
-
-      The iptables rules created by Docker are removed when firewalld is reloaded using, for example "firewall-cmd --reload", "killall -HUP firewalld", or "systemctl reload firewalld".
-
-      When that happens, Docker must re-create the rules. However, in affected versions of Docker, the iptables rules that prevent packets arriving on a host interface from reaching container addresses are not re-created.
-
-      Once these rules have been removed, a remote host configured with a route to a Docker bridge network can access published ports, even when those ports were only published to a loopback address. Unpublished ports remain inaccessible.
-
-      For example, following a firewalld reload on a Docker host with address `192.168.0.10` and a bridge network with subnet `172.17.0.0/16`, running the following command on another host in the local network will give it access to published ports on container addresses in that network: `ip route add 172.17.0.0/16 via 192.168.0.10`.
-
-      Containers running in networks created with `--internal` or equivalent have no access to other networks. Containers that are only connected to these networks remain isolated after a firewalld reload.
-
-      Where Docker Engine is not running in the host's network namespace, it is unaffected. Including, for example, Rootless Mode, and Docker Desktop.
-
-      ### Patches
-
-      Moby releases older than 28.2.0 are not affected. A fix is available in moby release 28.3.3.
-
-      ### Workarounds
-      After reloading firewalld, either:
-      - Restart the docker daemon,
-      - Re-create bridge networks, or
-      - Use rootless mode.
-
-      ### References
-      https://firewalld.org/
-      https://firewalld.org/documentation/howto/reload-firewalld.html
+    Title: 'github.com/moby/moby: Moby''s Firewalld reload makes container ports accessible'
+    Description: Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. In versions 28.2.0 through 28.3.2, when the firewalld service is reloaded it removes all iptables rules including those created by Docker. While Docker should automatically recreate these rules, versions before 28.3.3 fail to recreate the specific rules that block external access to containers. This means that after a firewalld reload, containers with ports published to localhost (like 127.0.0.1:8080) become accessible from remote machines that have network routing to the Docker bridge, even though they should only be accessible from the host itself. The vulnerability only affects explicitly published ports - unpublished ports remain protected. This issue is fixed in version 28.3.3.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-909
     VendorSeverity:
       ghsa: 2
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 5.2
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-54388
     - https://github.com/moby/moby
     - https://github.com/moby/moby/commit/bea959c7b793b32a893820b97c4eadc7c87fabb0
     - https://github.com/moby/moby/pull/50506
     - https://github.com/moby/moby/security/advisories/GHSA-x4rx-4gw3-53p4
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-54388
+    - https://www.cve.org/CVERecord?id=CVE-2025-54388
+    PublishedDate: '2025-07-30T14:15:28.693Z'
+    LastModifiedDate: '2025-07-30T14:15:28.693Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -2605,10 +2599,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:3833
+    - https://access.redhat.com/errata/RHSA-2025:7484
     - https://access.redhat.com/security/cve/CVE-2025-22869
     - https://bugzilla.redhat.com/2348367
-    - https://errata.almalinux.org/9/ALSA-2025-3833.html
+    - https://errata.almalinux.org/10/ALSA-2025-7484.html
     - https://github.com/golang/crypto
     - https://github.com/golang/crypto/commit/7292932d45d55c7199324ab0027cc86e8198aa22
     - https://go-review.googlesource.com/c/crypto/+/652135
@@ -2872,10 +2866,10 @@
         V3Score: 5.4
     References:
     - http://www.openwall.com/lists/oss-security/2025/04/04/4
-    - https://access.redhat.com/errata/RHSA-2025:9635
+    - https://access.redhat.com/errata/RHSA-2025:9845
     - https://access.redhat.com/security/cve/CVE-2025-22871
     - https://bugzilla.redhat.com/2358493
-    - https://errata.almalinux.org/9/ALSA-2025-9635.html
+    - https://errata.almalinux.org/8/ALSA-2025-9845.html
     - https://go.dev/cl/652998
     - https://go.dev/issue/71988
     - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
@@ -2922,10 +2916,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N
         V3Score: 6.8
     References:
-    - https://access.redhat.com/errata/RHSA-2025:10676
+    - https://access.redhat.com/errata/RHSA-2025:10672
     - https://access.redhat.com/security/cve/CVE-2025-4673
     - https://bugzilla.redhat.com/2373305
-    - https://errata.almalinux.org/9/ALSA-2025-10676.html
+    - https://errata.almalinux.org/8/ALSA-2025-10672.html
     - https://go.dev/cl/679257
     - https://go.dev/issue/73816
     - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
@@ -2944,26 +2938,83 @@
     Category: AsymmetricPrivateKey
     Severity: HIGH
     Title: Asymmetric Private Key
-    StartLine: 1
-    EndLine: 1
+    StartLine: 2
+    EndLine: 8
     Code:
       Lines:
       - Number: 1
-        Content: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        IsCause: true
-        Annotation: ''
-        Truncated: false
-        Highlighted: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        FirstCause: true
-        LastCause: true
-      - Number: 2
-        Content: ''
+        Content: '-----BEGIN OPENSSH PRIVATE KEY-----'
         IsCause: false
         Annotation: ''
         Truncated: false
+        Highlighted: '-----BEGIN OPENSSH PRIVATE KEY-----'
         FirstCause: false
         LastCause: false
-    Match: BEGIN OPENSSH PRIVATE KEY-----************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+      - Number: 2
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: true
+        LastCause: false
+      - Number: 3
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 4
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 5
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 6
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 7
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 8
+        Content: '****************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '****************'
+        FirstCause: false
+        LastCause: true
+      - Number: 9
+        Content: '-----END OPENSSH PRIVATE KEY-----'
+        IsCause: false
+        Annotation: ''
+        Truncated: false
+        Highlighted: '-----END OPENSSH PRIVATE KEY-----'
+        FirstCause: false
+        LastCause: false
+    Match: '**********************************************************************'
     Layer:
       Digest: sha256:f656526379fbd69bc5f7c5f384559c1a0e1cfd7c587b28aa1ccab01ad8fa4a00
       DiffID: sha256:8879e64722350feb1319131dbc0b99ff25de4edfc8306de7e3ece91264a7c0eb
@@ -2975,26 +3026,67 @@
     Category: AsymmetricPrivateKey
     Severity: HIGH
     Title: Asymmetric Private Key
-    StartLine: 1
-    EndLine: 1
+    StartLine: 2
+    EndLine: 6
     Code:
       Lines:
       - Number: 1
-        Content: BEGIN OPENSSH PRIVATE KEY-----******************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        IsCause: true
-        Annotation: ''
-        Truncated: false
-        Highlighted: BEGIN OPENSSH PRIVATE KEY-----******************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        FirstCause: true
-        LastCause: true
-      - Number: 2
-        Content: ''
+        Content: '-----BEGIN OPENSSH PRIVATE KEY-----'
         IsCause: false
         Annotation: ''
         Truncated: false
+        Highlighted: '-----BEGIN OPENSSH PRIVATE KEY-----'
         FirstCause: false
         LastCause: false
-    Match: BEGIN OPENSSH PRIVATE KEY-----******************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+      - Number: 2
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: true
+        LastCause: false
+      - Number: 3
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 4
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 5
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 6
+        Content: '********************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '********************************************************'
+        FirstCause: false
+        LastCause: true
+      - Number: 7
+        Content: '-----END OPENSSH PRIVATE KEY-----'
+        IsCause: false
+        Annotation: ''
+        Truncated: false
+        Highlighted: '-----END OPENSSH PRIVATE KEY-----'
+        FirstCause: false
+        LastCause: false
+    Match: '**********************************************************************'
     Layer:
       Digest: sha256:f656526379fbd69bc5f7c5f384559c1a0e1cfd7c587b28aa1ccab01ad8fa4a00
       DiffID: sha256:8879e64722350feb1319131dbc0b99ff25de4edfc8306de7e3ece91264a7c0eb
@@ -3006,26 +3098,315 @@
     Category: AsymmetricPrivateKey
     Severity: HIGH
     Title: Asymmetric Private Key
-    StartLine: 1
-    EndLine: 1
+    StartLine: 2
+    EndLine: 37
     Code:
       Lines:
       - Number: 1
-        Content: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        IsCause: true
-        Annotation: ''
-        Truncated: false
-        Highlighted: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
-        FirstCause: true
-        LastCause: true
-      - Number: 2
-        Content: ''
+        Content: '-----BEGIN OPENSSH PRIVATE KEY-----'
         IsCause: false
         Annotation: ''
         Truncated: false
+        Highlighted: '-----BEGIN OPENSSH PRIVATE KEY-----'
         FirstCause: false
         LastCause: false
-    Match: BEGIN OPENSSH PRIVATE KEY-----*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRI
+      - Number: 2
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: true
+        LastCause: false
+      - Number: 3
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 4
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 5
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 6
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 7
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 8
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 9
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 10
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 11
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 12
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 13
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 14
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 15
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 16
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 17
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 18
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 19
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 20
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 21
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 22
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 23
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 24
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 25
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 26
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 27
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 28
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 29
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 30
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 31
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 32
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 33
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 34
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 35
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 36
+        Content: '**********************************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '**********************************************************************'
+        FirstCause: false
+        LastCause: false
+      - Number: 37
+        Content: '******************************************************'
+        IsCause: true
+        Annotation: ''
+        Truncated: false
+        Highlighted: '******************************************************'
+        FirstCause: false
+        LastCause: true
+      - Number: 38
+        Content: '-----END OPENSSH PRIVATE KEY-----'
+        IsCause: false
+        Annotation: ''
+        Truncated: false
+        Highlighted: '-----END OPENSSH PRIVATE KEY-----'
+        FirstCause: false
+        LastCause: false
+    Match: '**********************************************************************'
     Layer:
       Digest: sha256:f656526379fbd69bc5f7c5f384559c1a0e1cfd7c587b28aa1ccab01ad8fa4a00
       DiffID: sha256:8879e64722350feb1319131dbc0b99ff25de4edfc8306de7e3ece91264a7c0eb
