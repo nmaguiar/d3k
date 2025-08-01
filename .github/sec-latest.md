@@ -7,7 +7,7 @@
 │                       │       ├ PkgName         : bind9-dnsutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-dnsutils@9.20.0-2ubuntu3.1?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : 1af14cbd72910daa 
+│                       │       │                  ╰ UID : 4a1666517df60d4d 
 │                       │       ├ InstalledVersion: 1:9.20.0-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 1:9.20.0-2ubuntu3.2 
 │                       │       ├ Status          : fixed 
@@ -52,7 +52,7 @@
 │                       │       ├ PkgName         : bind9-host 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/bind9-host@9.20.0-2ubuntu3.1?arch=amd
 │                       │       │                  │       64&distro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : 4fb473e878e009e3 
+│                       │       │                  ╰ UID : b34d8c2fd3e3d65c 
 │                       │       ├ InstalledVersion: 1:9.20.0-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 1:9.20.0-2ubuntu3.2 
 │                       │       ├ Status          : fixed 
@@ -142,7 +142,7 @@
 │                       │       ├ PkgName         : dirmngr 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dirmngr@2.4.4-2ubuntu18?arch=amd64&di
 │                       │       │                  │       stro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 7dd16f298b0e5657 
+│                       │       │                  ╰ UID : 404d6da8f3432093 
 │                       │       ├ InstalledVersion: 2.4.4-2ubuntu18 
 │                       │       ├ FixedVersion    : 2.4.4-2ubuntu18.2 
 │                       │       ├ Status          : fixed 
@@ -164,7 +164,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -185,7 +186,7 @@
 │                       │       ├ PkgName         : dnsutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/dnsutils@9.20.0-2ubuntu3.1?arch=all&d
 │                       │       │                  │       istro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : f3088857c7d4471a 
+│                       │       │                  ╰ UID : cd3244974db3c357 
 │                       │       ├ InstalledVersion: 1:9.20.0-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 1:9.20.0-2ubuntu3.2 
 │                       │       ├ Status          : fixed 
@@ -230,7 +231,7 @@
 │                       │       ├ PkgName         : gir1.2-glib-2.0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gir1.2-glib-2.0@2.82.1-0ubuntu1?arch=
 │                       │       │                  │       amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 29b0179f5b6b896e 
+│                       │       │                  ╰ UID : eca17a8211def6ef 
 │                       │       ├ InstalledVersion: 2.82.1-0ubuntu1 
 │                       │       ├ FixedVersion    : 2.82.1-0ubuntu1.1 
 │                       │       ├ Status          : fixed 
@@ -264,29 +265,31 @@
 │                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2025:11373 
 │                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:11374 
 │                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2025:11662 
-│                       │       │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2325340 
-│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2364265 
-│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-11140.html 
-│                       │       │                  ├ [11]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [12]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
+│                       │       │                  ├ [6] : https://access.redhat.com/errata/RHSA-2025:12275 
+│                       │       │                  ├ [7] : https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2279632 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/2325340 
+│                       │       │                  ├ [10]: https://bugzilla.redhat.com/2364265 
+│                       │       │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [12]: https://errata.almalinux.org/8/ALSA-2025-11327.html 
+│                       │       │                  ├ [13]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
+│                       │       │                  ├ [14]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
 │                       │       │                  │       /4588 
-│                       │       │                  ├ [13]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
+│                       │       │                  ├ [15]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
 │                       │       │                  │       /4592 
-│                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2025-4373.html 
-│                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
-│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [16]: https://linux.oracle.com/cve/CVE-2025-4373.html 
+│                       │       │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
+│                       │       │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-29T13:15:27.647Z 
+│                       │       ╰ LastModifiedDate: 2025-07-30T10:15:31.763Z 
 │                       ├ [6]   ╭ VulnerabilityID : CVE-2025-27613 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : f3fbb7d4e6b57a64 
+│                       │       │                  ╰ UID : b551c14e6540172b 
 │                       │       ├ InstalledVersion: 1:2.45.2-1ubuntu1.1 
 │                       │       ├ FixedVersion    : 1:2.45.2-1ubuntu1.2 
 │                       │       ├ Status          : fixed 
@@ -314,6 +317,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ oracle-oval: 3 
@@ -322,7 +326,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 4.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11534 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-27613 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
@@ -331,7 +335,7 @@
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
 │                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
 │                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/8/ALSA-2025-11534.html 
 │                       │       │                  ├ [10]: https://github.com/j6t/gitk/compare/465f03869ae11acd
 │                       │       │                  │       04abfa1b83c67879c867410c..026c397d911cde55924d7eb131
 │                       │       │                  │       1d0fd6e2e105d5 
@@ -358,7 +362,7 @@
 │                       │       ├ PkgName         : git 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : f3fbb7d4e6b57a64 
+│                       │       │                  ╰ UID : b551c14e6540172b 
 │                       │       ├ InstalledVersion: 1:2.45.2-1ubuntu1.1 
 │                       │       ├ FixedVersion    : 1:2.45.2-1ubuntu1.2 
 │                       │       ├ Status          : fixed 
@@ -384,6 +388,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
@@ -391,7 +396,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 6.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11534 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-27614 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
@@ -400,7 +405,7 @@
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
 │                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
 │                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/8/ALSA-2025-11534.html 
 │                       │       │                  ├ [10]: https://github.com/j6t/gitk/commit/8e3070aa5e331be45
 │                       │       │                  │       d4d03e3be41f84494fce129 
 │                       │       │                  ├ [11]: https://github.com/j6t/gitk/security/advisories/GHSA
@@ -421,7 +426,7 @@
 │                       │       ├ PkgName         : git 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : f3fbb7d4e6b57a64 
+│                       │       │                  ╰ UID : b551c14e6540172b 
 │                       │       ├ InstalledVersion: 1:2.45.2-1ubuntu1.1 
 │                       │       ├ FixedVersion    : 1:2.45.2-1ubuntu1.2 
 │                       │       ├ Status          : fixed 
@@ -446,13 +451,14 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-88 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 3.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11534 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-46835 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
@@ -461,7 +467,7 @@
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
 │                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
 │                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/8/ALSA-2025-11534.html 
 │                       │       │                  ├ [10]: https://github.com/j6t/git-gui/compare/dcda716dbc9c9
 │                       │       │                  │       0bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230
 │                       │       │                  │       e52f3bd036ca1b1da 
@@ -483,7 +489,7 @@
 │                       │       ├ PkgName         : git 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : f3fbb7d4e6b57a64 
+│                       │       │                  ╰ UID : b551c14e6540172b 
 │                       │       ├ InstalledVersion: 1:2.45.2-1ubuntu1.1 
 │                       │       ├ FixedVersion    : 1:2.45.2-1ubuntu1.2 
 │                       │       ├ Status          : fixed 
@@ -517,6 +523,7 @@
 │                       │       ├ CweIDs           ╭ [0]: CWE-59 
 │                       │       │                  ╰ [1]: CWE-436 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ cbl-mariner: 3 
@@ -530,7 +537,7 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
 │                       │       │                            │           :H/A:H 
 │                       │       │                            ╰ V3Score : 8 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11534 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48384 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
@@ -541,7 +548,7 @@
 │                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
 │                       │       │                  ├ [9] : https://dgl.cx/2025/07/git-clone-submodule-cve-2025-
 │                       │       │                  │       48384 
-│                       │       │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [10]: https://errata.almalinux.org/8/ALSA-2025-11534.html 
 │                       │       │                  ├ [11]: https://github.com/git/git/commit/05e9cd64ee23bbadce
 │                       │       │                  │       a6bcffd6660ed02b8eab89 
 │                       │       │                  ├ [12]: https://github.com/git/git/security/advisories/GHSA-
@@ -560,7 +567,7 @@
 │                       │       ├ PkgName         : git 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : f3fbb7d4e6b57a64 
+│                       │       │                  ╰ UID : b551c14e6540172b 
 │                       │       ├ InstalledVersion: 1:2.45.2-1ubuntu1.1 
 │                       │       ├ FixedVersion    : 1:2.45.2-1ubuntu1.2 
 │                       │       ├ Status          : fixed 
@@ -599,6 +606,7 @@
 │                       │       ├ CweIDs           ╭ [0]: CWE-73 
 │                       │       │                  ╰ [1]: CWE-88 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ cbl-mariner: 3 
@@ -609,7 +617,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:
 │                       │       │                           │           H/A:L 
 │                       │       │                           ╰ V3Score : 8.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11534 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48385 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
@@ -618,7 +626,7 @@
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
 │                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
 │                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/8/ALSA-2025-11534.html 
 │                       │       │                  ├ [10]: https://github.com/git/git/security/advisories/GHSA-
 │                       │       │                  │       m98c-vgpc-9655 
 │                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2025-48385.html 
@@ -635,7 +643,7 @@
 │                       │       ├ PkgName         : git 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : f3fbb7d4e6b57a64 
+│                       │       │                  ╰ UID : b551c14e6540172b 
 │                       │       ├ InstalledVersion: 1:2.45.2-1ubuntu1.1 
 │                       │       ├ FixedVersion    : 1:2.45.2-1ubuntu1.2 
 │                       │       ├ Status          : fixed 
@@ -714,6 +722,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ oracle-oval: 3 
@@ -722,7 +731,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 4.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11534 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-27613 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
@@ -731,7 +740,7 @@
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
 │                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
 │                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/8/ALSA-2025-11534.html 
 │                       │       │                  ├ [10]: https://github.com/j6t/gitk/compare/465f03869ae11acd
 │                       │       │                  │       04abfa1b83c67879c867410c..026c397d911cde55924d7eb131
 │                       │       │                  │       1d0fd6e2e105d5 
@@ -784,6 +793,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
@@ -791,7 +801,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 6.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11534 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-27614 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
@@ -800,7 +810,7 @@
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
 │                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
 │                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/8/ALSA-2025-11534.html 
 │                       │       │                  ├ [10]: https://github.com/j6t/gitk/commit/8e3070aa5e331be45
 │                       │       │                  │       d4d03e3be41f84494fce129 
 │                       │       │                  ├ [11]: https://github.com/j6t/gitk/security/advisories/GHSA
@@ -846,13 +856,14 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-88 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 3.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11534 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-46835 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
@@ -861,7 +872,7 @@
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
 │                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
 │                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/8/ALSA-2025-11534.html 
 │                       │       │                  ├ [10]: https://github.com/j6t/git-gui/compare/dcda716dbc9c9
 │                       │       │                  │       0bcac4611bd1076747671ee0906..a437f5bc93330a70b42a230
 │                       │       │                  │       e52f3bd036ca1b1da 
@@ -917,6 +928,7 @@
 │                       │       ├ CweIDs           ╭ [0]: CWE-59 
 │                       │       │                  ╰ [1]: CWE-436 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ cbl-mariner: 3 
@@ -930,7 +942,7 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
 │                       │       │                            │           :H/A:H 
 │                       │       │                            ╰ V3Score : 8 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11534 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48384 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
@@ -941,7 +953,7 @@
 │                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
 │                       │       │                  ├ [9] : https://dgl.cx/2025/07/git-clone-submodule-cve-2025-
 │                       │       │                  │       48384 
-│                       │       │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [10]: https://errata.almalinux.org/8/ALSA-2025-11534.html 
 │                       │       │                  ├ [11]: https://github.com/git/git/commit/05e9cd64ee23bbadce
 │                       │       │                  │       a6bcffd6660ed02b8eab89 
 │                       │       │                  ├ [12]: https://github.com/git/git/security/advisories/GHSA-
@@ -999,6 +1011,7 @@
 │                       │       ├ CweIDs           ╭ [0]: CWE-73 
 │                       │       │                  ╰ [1]: CWE-88 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ bitnami    : 3 
 │                       │       │                  ├ cbl-mariner: 3 
@@ -1009,7 +1022,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:
 │                       │       │                           │           H/A:L 
 │                       │       │                           ╰ V3Score : 8.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11534 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48385 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
@@ -1018,7 +1031,7 @@
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
 │                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
 │                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [9] : https://errata.almalinux.org/8/ALSA-2025-11534.html 
 │                       │       │                  ├ [10]: https://github.com/git/git/security/advisories/GHSA-
 │                       │       │                  │       m98c-vgpc-9655 
 │                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2025-48385.html 
@@ -1086,7 +1099,7 @@
 │                       │       ├ PkgName         : gnupg 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gnupg@2.4.4-2ubuntu18?arch=all&distro
 │                       │       │                  │       =ubuntu-24.10 
-│                       │       │                  ╰ UID : 5e104316734f96cb 
+│                       │       │                  ╰ UID : 342a3fd93de72e16 
 │                       │       ├ InstalledVersion: 2.4.4-2ubuntu18 
 │                       │       ├ FixedVersion    : 2.4.4-2ubuntu18.2 
 │                       │       ├ Status          : fixed 
@@ -1108,7 +1121,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -1151,7 +1165,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -1194,7 +1209,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -1215,7 +1231,7 @@
 │                       │       ├ PkgName         : gpg 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpg@2.4.4-2ubuntu18?arch=amd64&distro
 │                       │       │                  │       =ubuntu-24.10 
-│                       │       │                  ╰ UID : cb252d595dc721c9 
+│                       │       │                  ╰ UID : a8e94aced62e8a70 
 │                       │       ├ InstalledVersion: 2.4.4-2ubuntu18 
 │                       │       ├ FixedVersion    : 2.4.4-2ubuntu18.2 
 │                       │       ├ Status          : fixed 
@@ -1237,7 +1253,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -1258,7 +1275,7 @@
 │                       │       ├ PkgName         : gpg-agent 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpg-agent@2.4.4-2ubuntu18?arch=amd64&
 │                       │       │                  │       distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : f6e28d30e6cb9fd2 
+│                       │       │                  ╰ UID : db60d577f3654683 
 │                       │       ├ InstalledVersion: 2.4.4-2ubuntu18 
 │                       │       ├ FixedVersion    : 2.4.4-2ubuntu18.2 
 │                       │       ├ Status          : fixed 
@@ -1280,7 +1297,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -1301,7 +1319,7 @@
 │                       │       ├ PkgName         : gpg-wks-client 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpg-wks-client@2.4.4-2ubuntu18?arch=a
 │                       │       │                  │       md64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 48a06fe143f760b8 
+│                       │       │                  ╰ UID : 295c67621fd0f5d1 
 │                       │       ├ InstalledVersion: 2.4.4-2ubuntu18 
 │                       │       ├ FixedVersion    : 2.4.4-2ubuntu18.2 
 │                       │       ├ Status          : fixed 
@@ -1323,7 +1341,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -1366,7 +1385,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -1387,7 +1407,7 @@
 │                       │       ├ PkgName         : gpgsm 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpgsm@2.4.4-2ubuntu18?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10 
-│                       │       │                  ╰ UID : eb2a69f753ba049b 
+│                       │       │                  ╰ UID : f92d257f9c328255 
 │                       │       ├ InstalledVersion: 2.4.4-2ubuntu18 
 │                       │       ├ FixedVersion    : 2.4.4-2ubuntu18.2 
 │                       │       ├ Status          : fixed 
@@ -1409,7 +1429,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -1452,7 +1473,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -1473,7 +1495,7 @@
 │                       │       ├ PkgName         : keyboxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/keyboxd@2.4.4-2ubuntu18?arch=amd64&di
 │                       │       │                  │       stro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 49ce01586c31b1ae 
+│                       │       │                  ╰ UID : b5f243c73c87f59f 
 │                       │       ├ InstalledVersion: 2.4.4-2ubuntu18 
 │                       │       ├ FixedVersion    : 2.4.4-2ubuntu18.2 
 │                       │       ├ Status          : fixed 
@@ -1495,7 +1517,8 @@
 │                       │       │                   other signing keys, aka a "verification DoS." 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -1544,13 +1567,13 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 6.5 
-│                       │       ╰ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:7067 
+│                       │       ╰ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2722 
 │                       │                          ├ [1] : https://access.redhat.com/security/cve/CVE-2025-24528 
 │                       │                          ├ [2] : https://bugzilla.redhat.com/2342796 
 │                       │                          ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2342796 
 │                       │                          ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │                          │       025-24528 
-│                       │                          ├ [5] : https://errata.almalinux.org/9/ALSA-2025-7067.html 
+│                       │                          ├ [5] : https://errata.almalinux.org/8/ALSA-2025-2722.html 
 │                       │                          ├ [6] : https://errata.rockylinux.org/RLSA-2025:2722 
 │                       │                          ├ [7] : https://github.com/krb5/krb5/commit/78ceba024b64d496
 │                       │                          │       12375be4a12d1c066b0bfbd0 
@@ -1582,7 +1605,7 @@
 │                       │       │                   /krb5/src/lib/rpc/pmap_rmt.c. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-401 
-│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 1 
 │                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
@@ -1594,30 +1617,29 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9331 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:3268 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-26458 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2266731 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2266740 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2266742 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
+│                       │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26458 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26461 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-9331.html 
-│                       │       │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:3268 
-│                       │       │                  ├ [11]: https://github.com/LuMingYinDetect/krb5_defects/blob
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2024-3268.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:3268 
+│                       │       │                  ├ [10]: https://github.com/LuMingYinDetect/krb5_defects/blob
 │                       │       │                  │       /main/krb5_detect_1.md 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-26458.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
-│                       │       │                  ├ [14]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-26458.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
+│                       │       │                  ├ [13]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
 │                       │       │                  │       h/023095.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-26458 
-│                       │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240415-0
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-26458 
+│                       │       │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240415-0
 │                       │       │                  │       010/ 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:39:31.357Z 
 │                       ├ [30]  ╭ VulnerabilityID : CVE-2024-26461 
@@ -1643,7 +1665,7 @@
 │                       │       │                   vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 1 
 │                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
@@ -1655,30 +1677,29 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9331 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:3268 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-26461 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2266731 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2266740 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2266742 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
+│                       │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26458 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26461 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-9331.html 
-│                       │       │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:3268 
-│                       │       │                  ├ [11]: https://github.com/LuMingYinDetect/krb5_defects/blob
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2024-3268.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:3268 
+│                       │       │                  ├ [10]: https://github.com/LuMingYinDetect/krb5_defects/blob
 │                       │       │                  │       /main/krb5_detect_2.md 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-26461.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
-│                       │       │                  ├ [14]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-26461.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
+│                       │       │                  ├ [13]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
 │                       │       │                  │       h/023095.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-26461 
-│                       │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240415-0
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-26461 
+│                       │       │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240415-0
 │                       │       │                  │       011/ 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:30:30.847Z 
 │                       ├ [31]  ╭ VulnerabilityID : CVE-2025-1390 
@@ -1686,7 +1707,7 @@
 │                       │       ├ PkgName         : libcap2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcap2@2.66-5ubuntu3?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : 93130244437284bd 
+│                       │       │                  ╰ UID : 92d3c5fc0844c43e 
 │                       │       ├ InstalledVersion: 1:2.66-5ubuntu3 
 │                       │       ├ FixedVersion    : 1:2.66-5ubuntu3.1 
 │                       │       ├ Status          : fixed 
@@ -1732,7 +1753,7 @@
 │                       │       ├ PkgName         : libcap2-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcap2-bin@2.66-5ubuntu3?arch=amd64&
 │                       │       │                  │       distro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : be08cf2b118d509 
+│                       │       │                  ╰ UID : 4941a7533a04beae 
 │                       │       ├ InstalledVersion: 1:2.66-5ubuntu3 
 │                       │       ├ FixedVersion    : 1:2.66-5ubuntu3.1 
 │                       │       ├ Status          : fixed 
@@ -1778,7 +1799,7 @@
 │                       │       ├ PkgName         : libelf1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
 │                       │       │                  │       ubuntu-24.10 
-│                       │       │                  ╰ UID : f655d9e566e48529 
+│                       │       │                  ╰ UID : 2222d23200b6b198 
 │                       │       ├ InstalledVersion: 0.191-2 
 │                       │       ├ FixedVersion    : 0.191-2ubuntu0.1 
 │                       │       ├ Status          : fixed 
@@ -1832,7 +1853,7 @@
 │                       │       ├ PkgName         : libelf1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
 │                       │       │                  │       ubuntu-24.10 
-│                       │       │                  ╰ UID : f655d9e566e48529 
+│                       │       │                  ╰ UID : 2222d23200b6b198 
 │                       │       ├ InstalledVersion: 0.191-2 
 │                       │       ├ FixedVersion    : 0.191-2ubuntu0.1 
 │                       │       ├ Status          : fixed 
@@ -1884,7 +1905,7 @@
 │                       │       ├ PkgName         : libelf1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
 │                       │       │                  │       ubuntu-24.10 
-│                       │       │                  ╰ UID : f655d9e566e48529 
+│                       │       │                  ╰ UID : 2222d23200b6b198 
 │                       │       ├ InstalledVersion: 0.191-2 
 │                       │       ├ FixedVersion    : 0.191-2ubuntu0.1 
 │                       │       ├ Status          : fixed 
@@ -1941,7 +1962,7 @@
 │                       │       ├ PkgName         : libelf1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libelf1t64@0.191-2?arch=amd64&distro=
 │                       │       │                  │       ubuntu-24.10 
-│                       │       │                  ╰ UID : f655d9e566e48529 
+│                       │       │                  ╰ UID : 2222d23200b6b198 
 │                       │       ├ InstalledVersion: 0.191-2 
 │                       │       ├ FixedVersion    : 0.191-2ubuntu0.1 
 │                       │       ├ Status          : fixed 
@@ -1994,7 +2015,7 @@
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.6.2-2ubuntu0.1?arch=amd64
 │                       │       │                  │       &distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 1e42f0c43aaaafce 
+│                       │       │                  ╰ UID : 6566f83a6c4f80ec 
 │                       │       ├ InstalledVersion: 2.6.2-2ubuntu0.1 
 │                       │       ├ FixedVersion    : 2.6.2-2ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2047,7 +2068,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2310137 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2310137 
 │                       │       │                  ├ [16]: https://bugzilla.suse.com/show_bug.cgi?id=1239618 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2025-7444.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/8/ALSA-2025-3913.html 
 │                       │       │                  ├ [18]: https://github.com/libexpat/libexpat/blob/R_2_7_0/ex
 │                       │       │                  │       pat/Changes#L40-L52 
 │                       │       │                  ├ [19]: https://github.com/libexpat/libexpat/issues/893 
@@ -2071,7 +2092,7 @@
 │                       │       ├ PkgName         : libglib2.0-0t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libglib2.0-0t64@2.82.1-0ubuntu1?arch=
 │                       │       │                  │       amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 256d5acf9416833e 
+│                       │       │                  ╰ UID : 6790b07494881cb9 
 │                       │       ├ InstalledVersion: 2.82.1-0ubuntu1 
 │                       │       ├ FixedVersion    : 2.82.1-0ubuntu1.1 
 │                       │       ├ Status          : fixed 
@@ -2105,23 +2126,25 @@
 │                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2025:11373 
 │                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:11374 
 │                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2025:11662 
-│                       │       │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2325340 
-│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2364265 
-│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-11140.html 
-│                       │       │                  ├ [11]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [12]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
+│                       │       │                  ├ [6] : https://access.redhat.com/errata/RHSA-2025:12275 
+│                       │       │                  ├ [7] : https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2279632 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/2325340 
+│                       │       │                  ├ [10]: https://bugzilla.redhat.com/2364265 
+│                       │       │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [12]: https://errata.almalinux.org/8/ALSA-2025-11327.html 
+│                       │       │                  ├ [13]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
+│                       │       │                  ├ [14]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
 │                       │       │                  │       /4588 
-│                       │       │                  ├ [13]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
+│                       │       │                  ├ [15]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
 │                       │       │                  │       /4592 
-│                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2025-4373.html 
-│                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
-│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [16]: https://linux.oracle.com/cve/CVE-2025-4373.html 
+│                       │       │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
+│                       │       │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-29T13:15:27.647Z 
+│                       │       ╰ LastModifiedDate: 2025-07-30T10:15:31.763Z 
 │                       ├ [39]  ╭ VulnerabilityID : CVE-2025-4373 
 │                       │       ├ PkgID           : libglib2.0-data@2.82.1-0ubuntu1 
 │                       │       ├ PkgName         : libglib2.0-data 
@@ -2161,29 +2184,31 @@
 │                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2025:11373 
 │                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2025:11374 
 │                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2025:11662 
-│                       │       │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2025-4373 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2325340 
-│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2364265 
-│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
-│                       │       │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-11140.html 
-│                       │       │                  ├ [11]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
-│                       │       │                  ├ [12]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
+│                       │       │                  ├ [6] : https://access.redhat.com/errata/RHSA-2025:12275 
+│                       │       │                  ├ [7] : https://access.redhat.com/security/cve/CVE-2025-4373 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2279632 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/2325340 
+│                       │       │                  ├ [10]: https://bugzilla.redhat.com/2364265 
+│                       │       │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2364265 
+│                       │       │                  ├ [12]: https://errata.almalinux.org/8/ALSA-2025-11327.html 
+│                       │       │                  ├ [13]: https://gitlab.gnome.org/GNOME/glib/-/issues/3677 
+│                       │       │                  ├ [14]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
 │                       │       │                  │       /4588 
-│                       │       │                  ├ [13]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
+│                       │       │                  ├ [15]: https://gitlab.gnome.org/GNOME/glib/-/merge_requests
 │                       │       │                  │       /4592 
-│                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2025-4373.html 
-│                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
-│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7532-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
+│                       │       │                  ├ [16]: https://linux.oracle.com/cve/CVE-2025-4373.html 
+│                       │       │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2025-11327.html 
+│                       │       │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2025-4373 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7532-1 
+│                       │       │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                       │       ╰ LastModifiedDate: 2025-07-29T13:15:27.647Z 
+│                       │       ╰ LastModifiedDate: 2025-07-30T10:15:31.763Z 
 │                       ├ [40]  ╭ VulnerabilityID : CVE-2025-24528 
 │                       │       ├ PkgID           : libgssapi-krb5-2@1.21.3-3ubuntu0.1 
 │                       │       ├ PkgName         : libgssapi-krb5-2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.21.3-3ubuntu0.1?ar
 │                       │       │                  │       ch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 56954afa6df2892a 
+│                       │       │                  ╰ UID : 5323155875242a4f 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2211,13 +2236,13 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 6.5 
-│                       │       ╰ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:7067 
+│                       │       ╰ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2722 
 │                       │                          ├ [1] : https://access.redhat.com/security/cve/CVE-2025-24528 
 │                       │                          ├ [2] : https://bugzilla.redhat.com/2342796 
 │                       │                          ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2342796 
 │                       │                          ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │                          │       025-24528 
-│                       │                          ├ [5] : https://errata.almalinux.org/9/ALSA-2025-7067.html 
+│                       │                          ├ [5] : https://errata.almalinux.org/8/ALSA-2025-2722.html 
 │                       │                          ├ [6] : https://errata.rockylinux.org/RLSA-2025:2722 
 │                       │                          ├ [7] : https://github.com/krb5/krb5/commit/78ceba024b64d496
 │                       │                          │       12375be4a12d1c066b0bfbd0 
@@ -2231,7 +2256,7 @@
 │                       │       ├ PkgName         : libgssapi-krb5-2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.21.3-3ubuntu0.1?ar
 │                       │       │                  │       ch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 56954afa6df2892a 
+│                       │       │                  ╰ UID : 5323155875242a4f 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2249,7 +2274,7 @@
 │                       │       │                   /krb5/src/lib/rpc/pmap_rmt.c. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-401 
-│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 1 
 │                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
@@ -2261,30 +2286,29 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9331 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:3268 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-26458 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2266731 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2266740 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2266742 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
+│                       │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26458 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26461 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-9331.html 
-│                       │       │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:3268 
-│                       │       │                  ├ [11]: https://github.com/LuMingYinDetect/krb5_defects/blob
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2024-3268.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:3268 
+│                       │       │                  ├ [10]: https://github.com/LuMingYinDetect/krb5_defects/blob
 │                       │       │                  │       /main/krb5_detect_1.md 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-26458.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
-│                       │       │                  ├ [14]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-26458.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
+│                       │       │                  ├ [13]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
 │                       │       │                  │       h/023095.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-26458 
-│                       │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240415-0
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-26458 
+│                       │       │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240415-0
 │                       │       │                  │       010/ 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:39:31.357Z 
 │                       ├ [42]  ╭ VulnerabilityID : CVE-2024-26461 
@@ -2292,7 +2316,7 @@
 │                       │       ├ PkgName         : libgssapi-krb5-2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libgssapi-krb5-2@1.21.3-3ubuntu0.1?ar
 │                       │       │                  │       ch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 56954afa6df2892a 
+│                       │       │                  ╰ UID : 5323155875242a4f 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2310,7 +2334,7 @@
 │                       │       │                   vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 1 
 │                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
@@ -2322,30 +2346,29 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9331 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:3268 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-26461 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2266731 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2266740 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2266742 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
+│                       │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26458 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26461 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-9331.html 
-│                       │       │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:3268 
-│                       │       │                  ├ [11]: https://github.com/LuMingYinDetect/krb5_defects/blob
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2024-3268.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:3268 
+│                       │       │                  ├ [10]: https://github.com/LuMingYinDetect/krb5_defects/blob
 │                       │       │                  │       /main/krb5_detect_2.md 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-26461.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
-│                       │       │                  ├ [14]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-26461.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
+│                       │       │                  ├ [13]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
 │                       │       │                  │       h/023095.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-26461 
-│                       │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240415-0
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-26461 
+│                       │       │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240415-0
 │                       │       │                  │       011/ 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:30:30.847Z 
 │                       ├ [43]  ╭ VulnerabilityID : CVE-2025-24528 
@@ -2353,7 +2376,7 @@
 │                       │       ├ PkgName         : libk5crypto3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3ubuntu0.1?arch=a
 │                       │       │                  │       md64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 2b19f24f594bda 
+│                       │       │                  ╰ UID : 6793e88497374da9 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2381,13 +2404,13 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 6.5 
-│                       │       ╰ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:7067 
+│                       │       ╰ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2722 
 │                       │                          ├ [1] : https://access.redhat.com/security/cve/CVE-2025-24528 
 │                       │                          ├ [2] : https://bugzilla.redhat.com/2342796 
 │                       │                          ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2342796 
 │                       │                          ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │                          │       025-24528 
-│                       │                          ├ [5] : https://errata.almalinux.org/9/ALSA-2025-7067.html 
+│                       │                          ├ [5] : https://errata.almalinux.org/8/ALSA-2025-2722.html 
 │                       │                          ├ [6] : https://errata.rockylinux.org/RLSA-2025:2722 
 │                       │                          ├ [7] : https://github.com/krb5/krb5/commit/78ceba024b64d496
 │                       │                          │       12375be4a12d1c066b0bfbd0 
@@ -2401,7 +2424,7 @@
 │                       │       ├ PkgName         : libk5crypto3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3ubuntu0.1?arch=a
 │                       │       │                  │       md64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 2b19f24f594bda 
+│                       │       │                  ╰ UID : 6793e88497374da9 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2419,7 +2442,7 @@
 │                       │       │                   /krb5/src/lib/rpc/pmap_rmt.c. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-401 
-│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 1 
 │                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
@@ -2431,30 +2454,29 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9331 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:3268 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-26458 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2266731 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2266740 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2266742 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
+│                       │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26458 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26461 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-9331.html 
-│                       │       │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:3268 
-│                       │       │                  ├ [11]: https://github.com/LuMingYinDetect/krb5_defects/blob
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2024-3268.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:3268 
+│                       │       │                  ├ [10]: https://github.com/LuMingYinDetect/krb5_defects/blob
 │                       │       │                  │       /main/krb5_detect_1.md 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-26458.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
-│                       │       │                  ├ [14]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-26458.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
+│                       │       │                  ├ [13]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
 │                       │       │                  │       h/023095.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-26458 
-│                       │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240415-0
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-26458 
+│                       │       │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240415-0
 │                       │       │                  │       010/ 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:39:31.357Z 
 │                       ├ [45]  ╭ VulnerabilityID : CVE-2024-26461 
@@ -2462,7 +2484,7 @@
 │                       │       ├ PkgName         : libk5crypto3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libk5crypto3@1.21.3-3ubuntu0.1?arch=a
 │                       │       │                  │       md64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 2b19f24f594bda 
+│                       │       │                  ╰ UID : 6793e88497374da9 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2480,7 +2502,7 @@
 │                       │       │                   vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 1 
 │                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
@@ -2492,30 +2514,29 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9331 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:3268 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-26461 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2266731 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2266740 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2266742 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
+│                       │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26458 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26461 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-9331.html 
-│                       │       │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:3268 
-│                       │       │                  ├ [11]: https://github.com/LuMingYinDetect/krb5_defects/blob
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2024-3268.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:3268 
+│                       │       │                  ├ [10]: https://github.com/LuMingYinDetect/krb5_defects/blob
 │                       │       │                  │       /main/krb5_detect_2.md 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-26461.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
-│                       │       │                  ├ [14]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-26461.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
+│                       │       │                  ├ [13]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
 │                       │       │                  │       h/023095.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-26461 
-│                       │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240415-0
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-26461 
+│                       │       │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240415-0
 │                       │       │                  │       011/ 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:30:30.847Z 
 │                       ├ [46]  ╭ VulnerabilityID : CVE-2025-24528 
@@ -2523,7 +2544,7 @@
 │                       │       ├ PkgName         : libkrb5-3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3ubuntu0.1?arch=amd6
 │                       │       │                  │       4&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 791434e49e3cd4b9 
+│                       │       │                  ╰ UID : 1220e0b847623f29 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2551,13 +2572,13 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 6.5 
-│                       │       ╰ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:7067 
+│                       │       ╰ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2722 
 │                       │                          ├ [1] : https://access.redhat.com/security/cve/CVE-2025-24528 
 │                       │                          ├ [2] : https://bugzilla.redhat.com/2342796 
 │                       │                          ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2342796 
 │                       │                          ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │                          │       025-24528 
-│                       │                          ├ [5] : https://errata.almalinux.org/9/ALSA-2025-7067.html 
+│                       │                          ├ [5] : https://errata.almalinux.org/8/ALSA-2025-2722.html 
 │                       │                          ├ [6] : https://errata.rockylinux.org/RLSA-2025:2722 
 │                       │                          ├ [7] : https://github.com/krb5/krb5/commit/78ceba024b64d496
 │                       │                          │       12375be4a12d1c066b0bfbd0 
@@ -2571,7 +2592,7 @@
 │                       │       ├ PkgName         : libkrb5-3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3ubuntu0.1?arch=amd6
 │                       │       │                  │       4&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 791434e49e3cd4b9 
+│                       │       │                  ╰ UID : 1220e0b847623f29 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2589,7 +2610,7 @@
 │                       │       │                   /krb5/src/lib/rpc/pmap_rmt.c. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-401 
-│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 1 
 │                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
@@ -2601,30 +2622,29 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9331 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:3268 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-26458 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2266731 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2266740 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2266742 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
+│                       │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26458 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26461 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-9331.html 
-│                       │       │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:3268 
-│                       │       │                  ├ [11]: https://github.com/LuMingYinDetect/krb5_defects/blob
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2024-3268.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:3268 
+│                       │       │                  ├ [10]: https://github.com/LuMingYinDetect/krb5_defects/blob
 │                       │       │                  │       /main/krb5_detect_1.md 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-26458.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
-│                       │       │                  ├ [14]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-26458.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
+│                       │       │                  ├ [13]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
 │                       │       │                  │       h/023095.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-26458 
-│                       │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240415-0
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-26458 
+│                       │       │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240415-0
 │                       │       │                  │       010/ 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:39:31.357Z 
 │                       ├ [48]  ╭ VulnerabilityID : CVE-2024-26461 
@@ -2632,7 +2652,7 @@
 │                       │       ├ PkgName         : libkrb5-3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5-3@1.21.3-3ubuntu0.1?arch=amd6
 │                       │       │                  │       4&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 791434e49e3cd4b9 
+│                       │       │                  ╰ UID : 1220e0b847623f29 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2650,7 +2670,7 @@
 │                       │       │                   vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 1 
 │                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
@@ -2662,30 +2682,29 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9331 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:3268 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-26461 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2266731 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2266740 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2266742 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
+│                       │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26458 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26461 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-9331.html 
-│                       │       │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:3268 
-│                       │       │                  ├ [11]: https://github.com/LuMingYinDetect/krb5_defects/blob
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2024-3268.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:3268 
+│                       │       │                  ├ [10]: https://github.com/LuMingYinDetect/krb5_defects/blob
 │                       │       │                  │       /main/krb5_detect_2.md 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-26461.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
-│                       │       │                  ├ [14]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-26461.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
+│                       │       │                  ├ [13]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
 │                       │       │                  │       h/023095.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-26461 
-│                       │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240415-0
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-26461 
+│                       │       │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240415-0
 │                       │       │                  │       011/ 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:30:30.847Z 
 │                       ├ [49]  ╭ VulnerabilityID : CVE-2025-24528 
@@ -2693,7 +2712,7 @@
 │                       │       ├ PkgName         : libkrb5support0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3ubuntu0.1?arc
 │                       │       │                  │       h=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : e67724f943ba50 
+│                       │       │                  ╰ UID : 5d9dd5957c8c0dcf 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2721,13 +2740,13 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 6.5 
-│                       │       ╰ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:7067 
+│                       │       ╰ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2722 
 │                       │                          ├ [1] : https://access.redhat.com/security/cve/CVE-2025-24528 
 │                       │                          ├ [2] : https://bugzilla.redhat.com/2342796 
 │                       │                          ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2342796 
 │                       │                          ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │                          │       025-24528 
-│                       │                          ├ [5] : https://errata.almalinux.org/9/ALSA-2025-7067.html 
+│                       │                          ├ [5] : https://errata.almalinux.org/8/ALSA-2025-2722.html 
 │                       │                          ├ [6] : https://errata.rockylinux.org/RLSA-2025:2722 
 │                       │                          ├ [7] : https://github.com/krb5/krb5/commit/78ceba024b64d496
 │                       │                          │       12375be4a12d1c066b0bfbd0 
@@ -2741,7 +2760,7 @@
 │                       │       ├ PkgName         : libkrb5support0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3ubuntu0.1?arc
 │                       │       │                  │       h=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : e67724f943ba50 
+│                       │       │                  ╰ UID : 5d9dd5957c8c0dcf 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2759,7 +2778,7 @@
 │                       │       │                   /krb5/src/lib/rpc/pmap_rmt.c. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-401 
-│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 1 
 │                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
@@ -2771,30 +2790,29 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9331 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:3268 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-26458 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2266731 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2266740 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2266742 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
+│                       │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26458 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26461 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-9331.html 
-│                       │       │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:3268 
-│                       │       │                  ├ [11]: https://github.com/LuMingYinDetect/krb5_defects/blob
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2024-3268.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:3268 
+│                       │       │                  ├ [10]: https://github.com/LuMingYinDetect/krb5_defects/blob
 │                       │       │                  │       /main/krb5_detect_1.md 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-26458.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
-│                       │       │                  ├ [14]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-26458.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
+│                       │       │                  ├ [13]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
 │                       │       │                  │       h/023095.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-26458 
-│                       │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240415-0
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-26458 
+│                       │       │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240415-0
 │                       │       │                  │       010/ 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-26458 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.78Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:39:31.357Z 
 │                       ├ [51]  ╭ VulnerabilityID : CVE-2024-26461 
@@ -2802,7 +2820,7 @@
 │                       │       ├ PkgName         : libkrb5support0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libkrb5support0@1.21.3-3ubuntu0.1?arc
 │                       │       │                  │       h=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : e67724f943ba50 
+│                       │       │                  ╰ UID : 5d9dd5957c8c0dcf 
 │                       │       ├ InstalledVersion: 1.21.3-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 1.21.3-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2820,7 +2838,7 @@
 │                       │       │                   vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 1 
 │                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
@@ -2832,30 +2850,29 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9331 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:3268 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-26461 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2266731 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2266740 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2266742 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2266731 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2266740 
+│                       │       │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26458 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       024-26461 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2024-9331.html 
-│                       │       │                  ├ [10]: https://errata.rockylinux.org/RLSA-2024:3268 
-│                       │       │                  ├ [11]: https://github.com/LuMingYinDetect/krb5_defects/blob
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2024-3268.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2024:3268 
+│                       │       │                  ├ [10]: https://github.com/LuMingYinDetect/krb5_defects/blob
 │                       │       │                  │       /main/krb5_detect_2.md 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2024-26461.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
-│                       │       │                  ├ [14]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
+│                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-26461.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2024-9331.html 
+│                       │       │                  ├ [13]: https://mailman.mit.edu/pipermail/kerberos/2024-Marc
 │                       │       │                  │       h/023095.html 
-│                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2024-26461 
-│                       │       │                  ├ [16]: https://security.netapp.com/advisory/ntap-20240415-0
+│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2024-26461 
+│                       │       │                  ├ [15]: https://security.netapp.com/advisory/ntap-20240415-0
 │                       │       │                  │       011/ 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7314-1 
-│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-7314-1 
+│                       │       │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-26461 
 │                       │       ├ PublishedDate   : 2024-02-29T01:44:18.82Z 
 │                       │       ╰ LastModifiedDate: 2025-05-23T15:30:30.847Z 
 │                       ├ [52]  ╭ VulnerabilityID : CVE-2025-31115 
@@ -2863,7 +2880,7 @@
 │                       │       ├ PkgName         : liblzma5 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/liblzma5@5.6.2-2?arch=amd64&distro=ub
 │                       │       │                  │       untu-24.10 
-│                       │       │                  ╰ UID : f7633f43b840a84f 
+│                       │       │                  ╰ UID : ff53d05d1d6a7639 
 │                       │       ├ InstalledVersion: 5.6.2-2 
 │                       │       ├ FixedVersion    : 5.6.2-2ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -2931,7 +2948,7 @@
 │                       │       ├ PkgName         : libnss-systemd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libnss-systemd@256.5-2ubuntu3.1?arch=
 │                       │       │                  │       amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 60c45bd4bc5e0c32 
+│                       │       │                  ╰ UID : dc2646cdd748b265 
 │                       │       ├ InstalledVersion: 256.5-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 256.5-2ubuntu3.3 
 │                       │       ├ Status          : fixed 
@@ -3015,7 +3032,7 @@
 │                       │       ├ PkgName         : libpam-cap 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-cap@2.66-5ubuntu3?arch=amd64&d
 │                       │       │                  │       istro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : b050085ebdc5f348 
+│                       │       │                  ╰ UID : b8f1ee0fdfda53c9 
 │                       │       ├ InstalledVersion: 1:2.66-5ubuntu3 
 │                       │       ├ FixedVersion    : 1:2.66-5ubuntu3.1 
 │                       │       ├ Status          : fixed 
@@ -3061,7 +3078,7 @@
 │                       │       ├ PkgName         : libpam-modules 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules@1.5.3-7ubuntu2?arch=am
 │                       │       │                  │       d64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : b6583972609b9d73 
+│                       │       │                  ╰ UID : 1ec1f7ff3925fec3 
 │                       │       ├ InstalledVersion: 1.5.3-7ubuntu2 
 │                       │       ├ FixedVersion    : 1.5.3-7ubuntu2.3 
 │                       │       ├ Status          : fixed 
@@ -3110,7 +3127,7 @@
 │                       │       │                  ├ [15]: https://access.redhat.com/security/cve/CVE-2025-6020 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2372512 
 │                       │       │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [18]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [18]: https://errata.almalinux.org/8/ALSA-2025-10027.html 
 │                       │       │                  ├ [19]: https://linux.oracle.com/cve/CVE-2025-6020.html 
 │                       │       │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
 │                       │       │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
@@ -3125,7 +3142,7 @@
 │                       │       ├ PkgName         : libpam-modules-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-modules-bin@1.5.3-7ubuntu2?arc
 │                       │       │                  │       h=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 52023e3d863fbfc8 
+│                       │       │                  ╰ UID : cd71adefd818ca9d 
 │                       │       ├ InstalledVersion: 1.5.3-7ubuntu2 
 │                       │       ├ FixedVersion    : 1.5.3-7ubuntu2.3 
 │                       │       ├ Status          : fixed 
@@ -3174,7 +3191,7 @@
 │                       │       │                  ├ [15]: https://access.redhat.com/security/cve/CVE-2025-6020 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2372512 
 │                       │       │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [18]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [18]: https://errata.almalinux.org/8/ALSA-2025-10027.html 
 │                       │       │                  ├ [19]: https://linux.oracle.com/cve/CVE-2025-6020.html 
 │                       │       │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
 │                       │       │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
@@ -3189,7 +3206,7 @@
 │                       │       ├ PkgName         : libpam-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-runtime@1.5.3-7ubuntu2?arch=al
 │                       │       │                  │       l&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 52dd5a3dac5cc9ec 
+│                       │       │                  ╰ UID : 393e25e863faa63d 
 │                       │       ├ InstalledVersion: 1.5.3-7ubuntu2 
 │                       │       ├ FixedVersion    : 1.5.3-7ubuntu2.3 
 │                       │       ├ Status          : fixed 
@@ -3238,7 +3255,7 @@
 │                       │       │                  ├ [15]: https://access.redhat.com/security/cve/CVE-2025-6020 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2372512 
 │                       │       │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [18]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [18]: https://errata.almalinux.org/8/ALSA-2025-10027.html 
 │                       │       │                  ├ [19]: https://linux.oracle.com/cve/CVE-2025-6020.html 
 │                       │       │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
 │                       │       │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
@@ -3253,7 +3270,7 @@
 │                       │       ├ PkgName         : libpam-systemd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam-systemd@256.5-2ubuntu3.1?arch=
 │                       │       │                  │       amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 46eda5d8d0b48406 
+│                       │       │                  ╰ UID : f31fea7f316272ca 
 │                       │       ├ InstalledVersion: 256.5-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 256.5-2ubuntu3.3 
 │                       │       ├ Status          : fixed 
@@ -3337,7 +3354,7 @@
 │                       │       ├ PkgName         : libpam0g 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpam0g@1.5.3-7ubuntu2?arch=amd64&di
 │                       │       │                  │       stro=ubuntu-24.10 
-│                       │       │                  ╰ UID : ef18bc8de4c4b9a5 
+│                       │       │                  ╰ UID : 5f09e1407f3362a2 
 │                       │       ├ InstalledVersion: 1.5.3-7ubuntu2 
 │                       │       ├ FixedVersion    : 1.5.3-7ubuntu2.3 
 │                       │       ├ Status          : fixed 
@@ -3386,7 +3403,7 @@
 │                       │       │                  ├ [15]: https://access.redhat.com/security/cve/CVE-2025-6020 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2372512 
 │                       │       │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2372512 
-│                       │       │                  ├ [18]: https://errata.almalinux.org/9/ALSA-2025-9526.html 
+│                       │       │                  ├ [18]: https://errata.almalinux.org/8/ALSA-2025-10027.html 
 │                       │       │                  ├ [19]: https://linux.oracle.com/cve/CVE-2025-6020.html 
 │                       │       │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2025-9526.html 
 │                       │       │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2025-6020 
@@ -3401,7 +3418,7 @@
 │                       │       ├ PkgName         : libperl5.38t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libperl5.38t64@5.38.2-5?arch=amd64&di
 │                       │       │                  │       stro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 42abbd6659f452b2 
+│                       │       │                  ╰ UID : d5b872415c14ba20 
 │                       │       ├ InstalledVersion: 5.38.2-5 
 │                       │       ├ FixedVersion    : 5.38.2-5ubuntu0.1 
 │                       │       ├ Status          : fixed 
@@ -3470,7 +3487,7 @@
 │                       │       ├ PkgName         : libpython3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-minimal@3.12.7-1ubuntu2
 │                       │       │                  │       ?arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d77c6237b78757e2 
+│                       │       │                  ╰ UID : 68d827642a471cd7 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -3526,14 +3543,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:L 
 │                       │       │                            ╰ V3Score : 7.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-12718 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -3572,7 +3589,7 @@
 │                       │       ├ PkgName         : libpython3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-minimal@3.12.7-1ubuntu2
 │                       │       │                  │       ?arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d77c6237b78757e2 
+│                       │       │                  ╰ UID : 68d827642a471cd7 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -3625,14 +3642,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                       │       │                            │           :N/A:N 
 │                       │       │                            ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4138 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -3670,7 +3687,7 @@
 │                       │       ├ PkgName         : libpython3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-minimal@3.12.7-1ubuntu2
 │                       │       │                  │       ?arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d77c6237b78757e2 
+│                       │       │                  ╰ UID : 68d827642a471cd7 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -3723,14 +3740,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:N 
 │                       │       │                            ╰ V3Score : 7.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4330 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -3768,7 +3785,7 @@
 │                       │       ├ PkgName         : libpython3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-minimal@3.12.7-1ubuntu2
 │                       │       │                  │       ?arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d77c6237b78757e2 
+│                       │       │                  ╰ UID : 68d827642a471cd7 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -3801,14 +3818,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                       │       │                            │           :H/A:N 
 │                       │       │                            ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4435 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://github.com/python/cpython/commit/19de092debb
 │                       │       │                  │       3d7e832e5672cc2f7b788d35951da 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/28463dba112
@@ -3844,7 +3861,7 @@
 │                       │       ├ PkgName         : libpython3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-minimal@3.12.7-1ubuntu2
 │                       │       │                  │       ?arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d77c6237b78757e2 
+│                       │       │                  ╰ UID : 68d827642a471cd7 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.1 
 │                       │       ├ Status          : fixed 
@@ -3913,7 +3930,7 @@
 │                       │       ├ PkgName         : libpython3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-minimal@3.12.7-1ubuntu2
 │                       │       │                  │       ?arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d77c6237b78757e2 
+│                       │       │                  ╰ UID : 68d827642a471cd7 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -3966,14 +3983,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:L 
 │                       │       │                            ╰ V3Score : 7.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4517 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -4011,7 +4028,7 @@
 │                       │       ├ PkgName         : libpython3.12-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-stdlib@3.12.7-1ubuntu2?
 │                       │       │                  │       arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d3a955461b0918fe 
+│                       │       │                  ╰ UID : 1a2ee38ef2a759ae 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -4067,14 +4084,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:L 
 │                       │       │                            ╰ V3Score : 7.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-12718 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -4113,7 +4130,7 @@
 │                       │       ├ PkgName         : libpython3.12-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-stdlib@3.12.7-1ubuntu2?
 │                       │       │                  │       arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d3a955461b0918fe 
+│                       │       │                  ╰ UID : 1a2ee38ef2a759ae 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -4166,14 +4183,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                       │       │                            │           :N/A:N 
 │                       │       │                            ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4138 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -4211,7 +4228,7 @@
 │                       │       ├ PkgName         : libpython3.12-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-stdlib@3.12.7-1ubuntu2?
 │                       │       │                  │       arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d3a955461b0918fe 
+│                       │       │                  ╰ UID : 1a2ee38ef2a759ae 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -4264,14 +4281,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:N 
 │                       │       │                            ╰ V3Score : 7.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4330 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -4309,7 +4326,7 @@
 │                       │       ├ PkgName         : libpython3.12-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-stdlib@3.12.7-1ubuntu2?
 │                       │       │                  │       arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d3a955461b0918fe 
+│                       │       │                  ╰ UID : 1a2ee38ef2a759ae 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -4342,14 +4359,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                       │       │                            │           :H/A:N 
 │                       │       │                            ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4435 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://github.com/python/cpython/commit/19de092debb
 │                       │       │                  │       3d7e832e5672cc2f7b788d35951da 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/28463dba112
@@ -4385,7 +4402,7 @@
 │                       │       ├ PkgName         : libpython3.12-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-stdlib@3.12.7-1ubuntu2?
 │                       │       │                  │       arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d3a955461b0918fe 
+│                       │       │                  ╰ UID : 1a2ee38ef2a759ae 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.1 
 │                       │       ├ Status          : fixed 
@@ -4454,7 +4471,7 @@
 │                       │       ├ PkgName         : libpython3.12-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12-stdlib@3.12.7-1ubuntu2?
 │                       │       │                  │       arch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d3a955461b0918fe 
+│                       │       │                  ╰ UID : 1a2ee38ef2a759ae 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -4507,14 +4524,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:L 
 │                       │       │                            ╰ V3Score : 7.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4517 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -4552,7 +4569,7 @@
 │                       │       ├ PkgName         : libpython3.12t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12t64@3.12.7-1ubuntu2?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 2d6fd5bdf6438b4c 
+│                       │       │                  ╰ UID : 9bf2a71bf53197d9 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -4608,14 +4625,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:L 
 │                       │       │                            ╰ V3Score : 7.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-12718 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -4654,7 +4671,7 @@
 │                       │       ├ PkgName         : libpython3.12t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12t64@3.12.7-1ubuntu2?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 2d6fd5bdf6438b4c 
+│                       │       │                  ╰ UID : 9bf2a71bf53197d9 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -4707,14 +4724,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                       │       │                            │           :N/A:N 
 │                       │       │                            ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4138 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -4752,7 +4769,7 @@
 │                       │       ├ PkgName         : libpython3.12t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12t64@3.12.7-1ubuntu2?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 2d6fd5bdf6438b4c 
+│                       │       │                  ╰ UID : 9bf2a71bf53197d9 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -4805,14 +4822,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:N 
 │                       │       │                            ╰ V3Score : 7.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4330 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -4850,7 +4867,7 @@
 │                       │       ├ PkgName         : libpython3.12t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12t64@3.12.7-1ubuntu2?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 2d6fd5bdf6438b4c 
+│                       │       │                  ╰ UID : 9bf2a71bf53197d9 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -4883,14 +4900,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                       │       │                            │           :H/A:N 
 │                       │       │                            ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4435 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://github.com/python/cpython/commit/19de092debb
 │                       │       │                  │       3d7e832e5672cc2f7b788d35951da 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/28463dba112
@@ -4926,7 +4943,7 @@
 │                       │       ├ PkgName         : libpython3.12t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12t64@3.12.7-1ubuntu2?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 2d6fd5bdf6438b4c 
+│                       │       │                  ╰ UID : 9bf2a71bf53197d9 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.1 
 │                       │       ├ Status          : fixed 
@@ -4995,7 +5012,7 @@
 │                       │       ├ PkgName         : libpython3.12t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.12t64@3.12.7-1ubuntu2?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 2d6fd5bdf6438b4c 
+│                       │       │                  ╰ UID : 9bf2a71bf53197d9 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -5048,14 +5065,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:L 
 │                       │       │                            ╰ V3Score : 7.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4517 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -5093,7 +5110,7 @@
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d47783a0d6415972 
+│                       │       │                  ╰ UID : 39922e1faf533314 
 │                       │       ├ InstalledVersion: 3.46.1-1 
 │                       │       ├ FixedVersion    : 3.46.1-1ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -5144,7 +5161,7 @@
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d47783a0d6415972 
+│                       │       │                  ╰ UID : 39922e1faf533314 
 │                       │       ├ InstalledVersion: 3.46.1-1 
 │                       │       ├ FixedVersion    : 3.46.1-1ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -5186,8 +5203,9 @@
 │                       │       │                  ├ [4]: https://sqlite.org/forum/forumpost/48f365daec 
 │                       │       │                  ├ [5]: https://sqlite.org/releaselog/3_49_1.html 
 │                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7528-1 
-│                       │       │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-29088 
-│                       │       │                  ╰ [8]: https://www.sqlite.org/cves.html 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7679-1 
+│                       │       │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-29088 
+│                       │       │                  ╰ [9]: https://www.sqlite.org/cves.html 
 │                       │       ├ PublishedDate   : 2025-04-10T14:15:27.163Z 
 │                       │       ╰ LastModifiedDate: 2025-04-30T16:40:41.543Z 
 │                       ├ [81]  ╭ VulnerabilityID : CVE-2025-3277 
@@ -5195,7 +5213,7 @@
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-1?arch=amd64&dist
 │                       │       │                  │       ro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d47783a0d6415972 
+│                       │       │                  ╰ UID : 39922e1faf533314 
 │                       │       ├ InstalledVersion: 3.46.1-1 
 │                       │       ├ FixedVersion    : 3.46.1-1ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -5225,11 +5243,11 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 7.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:7433 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:4459 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-3277 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2358271 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2359553 
-│                       │       │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-7433.html 
+│                       │       │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2025-4459.html 
 │                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2025-3277.html 
 │                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-7517.html 
 │                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-3277 
@@ -5327,7 +5345,7 @@
 │                       │       ├ PkgName         : libsystemd0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsystemd0@256.5-2ubuntu3.1?arch=amd
 │                       │       │                  │       64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : d8ebb85a32e8f9e4 
+│                       │       │                  ╰ UID : 9d94fcc6e184a346 
 │                       │       ├ InstalledVersion: 256.5-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 256.5-2ubuntu3.3 
 │                       │       ├ Status          : fixed 
@@ -5411,7 +5429,7 @@
 │                       │       ├ PkgName         : libudev1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libudev1@256.5-2ubuntu3.1?arch=amd64&
 │                       │       │                  │       distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 3f5fe66363b6fb38 
+│                       │       │                  ╰ UID : b2fc2bf3f0d24f11 
 │                       │       ├ InstalledVersion: 256.5-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 256.5-2ubuntu3.3 
 │                       │       ├ Status          : fixed 
@@ -5495,7 +5513,7 @@
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 735cf5629395b71 
+│                       │       │                  ╰ UID : cf95cc80388dc281 
 │                       │       ├ InstalledVersion: 2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 2.12.7+dfsg-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -5529,7 +5547,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:
 │                       │       │                           │           H/A:H 
 │                       │       │                           ╰ V3Score : 8.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2679 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2686 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-56171 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2346416 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2346421 
@@ -5539,7 +5557,7 @@
 │                       │       │                  │       024-56171 
 │                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       025-24928 
-│                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-2679.html 
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2025-2686.html 
 │                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2025:2686 
 │                       │       │                  ├ [10]: https://gitlab.gnome.org/GNOME/libxml2/-/issues/828 
 │                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-56171.html 
@@ -5558,7 +5576,7 @@
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 735cf5629395b71 
+│                       │       │                  ╰ UID : cf95cc80388dc281 
 │                       │       ├ InstalledVersion: 2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 2.12.7+dfsg-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -5592,7 +5610,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 7.8 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2679 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:2686 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-24928 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2346416 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2346421 
@@ -5602,7 +5620,7 @@
 │                       │       │                  │       024-56171 
 │                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       025-24928 
-│                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-2679.html 
+│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2025-2686.html 
 │                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2025:2686 
 │                       │       │                  ├ [10]: https://gitlab.gnome.org/GNOME/libxml2/-/issues/847 
 │                       │       │                  ├ [11]: https://issues.oss-fuzz.com/issues/392687022 
@@ -5622,7 +5640,7 @@
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 735cf5629395b71 
+│                       │       │                  ╰ UID : cf95cc80388dc281 
 │                       │       ├ InstalledVersion: 2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 2.12.7+dfsg-3ubuntu0.2 
 │                       │       ├ Status          : fixed 
@@ -5669,7 +5687,7 @@
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 735cf5629395b71 
+│                       │       │                  ╰ UID : cf95cc80388dc281 
 │                       │       ├ InstalledVersion: 2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 2.12.7+dfsg-3ubuntu0.3 
 │                       │       ├ Status          : fixed 
@@ -5724,7 +5742,7 @@
 │                       │       ├ PkgName         : libxml2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libxml2@2.12.7%2Bdfsg-3ubuntu0.1?arch
 │                       │       │                  │       =amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 735cf5629395b71 
+│                       │       │                  ╰ UID : cf95cc80388dc281 
 │                       │       ├ InstalledVersion: 2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ FixedVersion    : 2.12.7+dfsg-3ubuntu0.3 
 │                       │       ├ Status          : fixed 
@@ -5826,7 +5844,7 @@
 │                       │       ├ PkgName         : openssh-client 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@9.7p1-7ubuntu4.2?arch=
 │                       │       │                  │       amd64&distro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : 6da8270b8675190a 
+│                       │       │                  ╰ UID : 4522d4aff3567a1c 
 │                       │       ├ InstalledVersion: 1:9.7p1-7ubuntu4.2 
 │                       │       ├ FixedVersion    : 1:9.7p1-7ubuntu4.3 
 │                       │       ├ Status          : fixed 
@@ -5881,7 +5899,7 @@
 │                       │       ├ PkgName         : openssh-server 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@9.7p1-7ubuntu4.2?arch=
 │                       │       │                  │       amd64&distro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : 95d55c3cbf776b9a 
+│                       │       │                  ╰ UID : adcee67ee7b769ed 
 │                       │       ├ InstalledVersion: 1:9.7p1-7ubuntu4.2 
 │                       │       ├ FixedVersion    : 1:9.7p1-7ubuntu4.3 
 │                       │       ├ Status          : fixed 
@@ -5936,7 +5954,7 @@
 │                       │       ├ PkgName         : openssh-sftp-server 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@9.7p1-7ubuntu4.2?
 │                       │       │                  │       arch=amd64&distro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : 7f637c22065d0245 
+│                       │       │                  ╰ UID : 1f71c4f149f8a0b4 
 │                       │       ├ InstalledVersion: 1:9.7p1-7ubuntu4.2 
 │                       │       ├ FixedVersion    : 1:9.7p1-7ubuntu4.3 
 │                       │       ├ Status          : fixed 
@@ -5991,7 +6009,7 @@
 │                       │       ├ PkgName         : perl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl@5.38.2-5?arch=amd64&distro=ubunt
 │                       │       │                  │       u-24.10 
-│                       │       │                  ╰ UID : c78025b15dca4aad 
+│                       │       │                  ╰ UID : 64062a5fa4e6b44e 
 │                       │       ├ InstalledVersion: 5.38.2-5 
 │                       │       ├ FixedVersion    : 5.38.2-5ubuntu0.1 
 │                       │       ├ Status          : fixed 
@@ -6060,7 +6078,7 @@
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.38.2-5?arch=amd64&distro=
 │                       │       │                  │       ubuntu-24.10 
-│                       │       │                  ╰ UID : 77ab4151461517eb 
+│                       │       │                  ╰ UID : 6a700c2747d01026 
 │                       │       ├ InstalledVersion: 5.38.2-5 
 │                       │       ├ FixedVersion    : 5.38.2-5ubuntu0.1 
 │                       │       ├ Status          : fixed 
@@ -6129,7 +6147,7 @@
 │                       │       ├ PkgName         : perl-modules-5.38 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-modules-5.38@5.38.2-5?arch=all&d
 │                       │       │                  │       istro=ubuntu-24.10 
-│                       │       │                  ╰ UID : ff527c42bac4db7e 
+│                       │       │                  ╰ UID : e3b7c4b62796f3fe 
 │                       │       ├ InstalledVersion: 5.38.2-5 
 │                       │       ├ FixedVersion    : 5.38.2-5ubuntu0.1 
 │                       │       ├ Status          : fixed 
@@ -6198,7 +6216,7 @@
 │                       │       ├ PkgName         : python3-pkg-resources 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3-pkg-resources@74.1.2-1?arch=a
 │                       │       │                  │       ll&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 1f33c50c8835e18c 
+│                       │       │                  ╰ UID : 4f7885f18d03d7a7 
 │                       │       ├ InstalledVersion: 74.1.2-1 
 │                       │       ├ FixedVersion    : 74.1.2-1ubuntu0.1 
 │                       │       ├ Status          : fixed 
@@ -6239,10 +6257,10 @@
 │                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           H/A:L 
 │                       │       │                           ╰ V3Score : 7.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11463 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11044 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-47273 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2366982 
-│                       │       │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-11463.html 
+│                       │       │                  ├ [3] : https://errata.almalinux.org/8/ALSA-2025-11044.html 
 │                       │       │                  ├ [4] : https://github.com/pypa/advisory-database/tree/main/
 │                       │       │                  │       vulns/setuptools/PYSEC-2025-49.yaml 
 │                       │       │                  ├ [5] : https://github.com/pypa/setuptools 
@@ -6268,7 +6286,7 @@
 │                       │       ├ PkgName         : python3.12 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.7-1ubuntu2?arch=amd64
 │                       │       │                  │       &distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : fd5360dc57c6251c 
+│                       │       │                  ╰ UID : 14d3aad313a036ad 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -6324,14 +6342,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:L 
 │                       │       │                            ╰ V3Score : 7.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-12718 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -6370,7 +6388,7 @@
 │                       │       ├ PkgName         : python3.12 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.7-1ubuntu2?arch=amd64
 │                       │       │                  │       &distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : fd5360dc57c6251c 
+│                       │       │                  ╰ UID : 14d3aad313a036ad 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -6423,14 +6441,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                       │       │                            │           :N/A:N 
 │                       │       │                            ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4138 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -6468,7 +6486,7 @@
 │                       │       ├ PkgName         : python3.12 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.7-1ubuntu2?arch=amd64
 │                       │       │                  │       &distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : fd5360dc57c6251c 
+│                       │       │                  ╰ UID : 14d3aad313a036ad 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -6521,14 +6539,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:N 
 │                       │       │                            ╰ V3Score : 7.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4330 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -6566,7 +6584,7 @@
 │                       │       ├ PkgName         : python3.12 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.7-1ubuntu2?arch=amd64
 │                       │       │                  │       &distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : fd5360dc57c6251c 
+│                       │       │                  ╰ UID : 14d3aad313a036ad 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -6599,14 +6617,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                       │       │                            │           :H/A:N 
 │                       │       │                            ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4435 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://github.com/python/cpython/commit/19de092debb
 │                       │       │                  │       3d7e832e5672cc2f7b788d35951da 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/28463dba112
@@ -6642,7 +6660,7 @@
 │                       │       ├ PkgName         : python3.12 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.7-1ubuntu2?arch=amd64
 │                       │       │                  │       &distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : fd5360dc57c6251c 
+│                       │       │                  ╰ UID : 14d3aad313a036ad 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.1 
 │                       │       ├ Status          : fixed 
@@ -6711,7 +6729,7 @@
 │                       │       ├ PkgName         : python3.12 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12@3.12.7-1ubuntu2?arch=amd64
 │                       │       │                  │       &distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : fd5360dc57c6251c 
+│                       │       │                  ╰ UID : 14d3aad313a036ad 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -6764,14 +6782,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:L 
 │                       │       │                            ╰ V3Score : 7.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4517 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -6809,7 +6827,7 @@
 │                       │       ├ PkgName         : python3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.7-1ubuntu2?ar
 │                       │       │                  │       ch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 715f22a79a631dd9 
+│                       │       │                  ╰ UID : 1b6cc4babd102abd 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -6865,14 +6883,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:L 
 │                       │       │                            ╰ V3Score : 7.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-12718 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -6911,7 +6929,7 @@
 │                       │       ├ PkgName         : python3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.7-1ubuntu2?ar
 │                       │       │                  │       ch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 715f22a79a631dd9 
+│                       │       │                  ╰ UID : 1b6cc4babd102abd 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -6964,14 +6982,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I
 │                       │       │                            │           :N/A:N 
 │                       │       │                            ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4138 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -7009,7 +7027,7 @@
 │                       │       ├ PkgName         : python3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.7-1ubuntu2?ar
 │                       │       │                  │       ch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 715f22a79a631dd9 
+│                       │       │                  ╰ UID : 1b6cc4babd102abd 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -7062,14 +7080,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:N 
 │                       │       │                            ╰ V3Score : 7.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4330 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -7107,7 +7125,7 @@
 │                       │       ├ PkgName         : python3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.7-1ubuntu2?ar
 │                       │       │                  │       ch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 715f22a79a631dd9 
+│                       │       │                  ╰ UID : 1b6cc4babd102abd 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -7140,14 +7158,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                       │       │                            │           :H/A:N 
 │                       │       │                            ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4435 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://github.com/python/cpython/commit/19de092debb
 │                       │       │                  │       3d7e832e5672cc2f7b788d35951da 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/28463dba112
@@ -7183,7 +7201,7 @@
 │                       │       ├ PkgName         : python3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.7-1ubuntu2?ar
 │                       │       │                  │       ch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 715f22a79a631dd9 
+│                       │       │                  ╰ UID : 1b6cc4babd102abd 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.1 
 │                       │       ├ Status          : fixed 
@@ -7252,7 +7270,7 @@
 │                       │       ├ PkgName         : python3.12-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.12-minimal@3.12.7-1ubuntu2?ar
 │                       │       │                  │       ch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 715f22a79a631dd9 
+│                       │       │                  ╰ UID : 1b6cc4babd102abd 
 │                       │       ├ InstalledVersion: 3.12.7-1ubuntu2 
 │                       │       ├ FixedVersion    : 3.12.7-1ubuntu2.2 
 │                       │       ├ Status          : fixed 
@@ -7305,14 +7323,14 @@
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I
 │                       │       │                            │           :H/A:L 
 │                       │       │                            ╰ V3Score : 7.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10189 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10128 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4517 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2370010 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2370013 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2370014 
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2370016 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2372426 
-│                       │       │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2025-10189.html 
+│                       │       │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-10128.html 
 │                       │       │                  ├ [8] : https://gist.github.com/sethmlarson/52398e33eff26132
 │                       │       │                  │       9a0180ac1d54f42f 
 │                       │       │                  ├ [9] : https://github.com/python/cpython/commit/19de092debb
@@ -7350,7 +7368,7 @@
 │                       │       ├ PkgName         : sudo 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/sudo@1.9.15p5-3ubuntu5?arch=amd64&dis
 │                       │       │                  │       tro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 90f578df02553520 
+│                       │       │                  ╰ UID : 4c03ba318ad8398f 
 │                       │       ├ InstalledVersion: 1.9.15p5-3ubuntu5 
 │                       │       ├ FixedVersion    : 1.9.15p5-3ubuntu5.24.10.1 
 │                       │       ├ Status          : fixed 
@@ -7385,12 +7403,12 @@
 │                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:H 
 │                       │       │                           ╰ V3Score : 7 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:9978 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10110 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-32462 
 │                       │       │                  ├ [2] : https://access.redhat.com/security/cve/cve-2025-32462 
 │                       │       │                  ├ [3] : https://bugs.gentoo.org/show_bug.cgi?id=CVE-2025-32462 
 │                       │       │                  ├ [4] : https://bugzilla.redhat.com/2374692 
-│                       │       │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-9978.html 
+│                       │       │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2025-10110.html 
 │                       │       │                  ├ [6] : https://explore.alas.aws.amazon.com/CVE-2025-32462.h
 │                       │       │                  │       tml 
 │                       │       │                  ├ [7] : https://linux.oracle.com/cve/CVE-2025-32462.html 
@@ -7421,7 +7439,7 @@
 │                       │       ├ PkgName         : sudo 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/sudo@1.9.15p5-3ubuntu5?arch=amd64&dis
 │                       │       │                  │       tro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 90f578df02553520 
+│                       │       │                  ╰ UID : 4c03ba318ad8398f 
 │                       │       ├ InstalledVersion: 1.9.15p5-3ubuntu5 
 │                       │       ├ FixedVersion    : 1.9.15p5-3ubuntu5.24.10.1 
 │                       │       ├ Status          : fixed 
@@ -7498,7 +7516,7 @@
 │                       │       ├ PkgName         : systemd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd@256.5-2ubuntu3.1?arch=amd64&d
 │                       │       │                  │       istro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 8a685176f2c8571a 
+│                       │       │                  ╰ UID : fda990d47971c53c 
 │                       │       ├ InstalledVersion: 256.5-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 256.5-2ubuntu3.3 
 │                       │       ├ Status          : fixed 
@@ -7582,7 +7600,7 @@
 │                       │       ├ PkgName         : systemd-cryptsetup 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-cryptsetup@256.5-2ubuntu3.1?a
 │                       │       │                  │       rch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 79fd64da3ab13d51 
+│                       │       │                  ╰ UID : 1d73891869197702 
 │                       │       ├ InstalledVersion: 256.5-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 256.5-2ubuntu3.3 
 │                       │       ├ Status          : fixed 
@@ -7666,7 +7684,7 @@
 │                       │       ├ PkgName         : systemd-resolved 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-resolved@256.5-2ubuntu3.1?arc
 │                       │       │                  │       h=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : e6dccf9809225552 
+│                       │       │                  ╰ UID : e1f148a6eda6520d 
 │                       │       ├ InstalledVersion: 256.5-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 256.5-2ubuntu3.3 
 │                       │       ├ Status          : fixed 
@@ -7750,7 +7768,7 @@
 │                       │       ├ PkgName         : systemd-sysv 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-sysv@256.5-2ubuntu3.1?arch=am
 │                       │       │                  │       d64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : c2d667cf94287419 
+│                       │       │                  ╰ UID : a5b1f249e25c621d 
 │                       │       ├ InstalledVersion: 256.5-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 256.5-2ubuntu3.3 
 │                       │       ├ Status          : fixed 
@@ -7834,7 +7852,7 @@
 │                       │       ├ PkgName         : systemd-timesyncd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-timesyncd@256.5-2ubuntu3.1?ar
 │                       │       │                  │       ch=amd64&distro=ubuntu-24.10 
-│                       │       │                  ╰ UID : 63fea29d8bc0938 
+│                       │       │                  ╰ UID : daa3b41510a6a37d 
 │                       │       ├ InstalledVersion: 256.5-2ubuntu3.1 
 │                       │       ├ FixedVersion    : 256.5-2ubuntu3.3 
 │                       │       ├ Status          : fixed 
@@ -8036,7 +8054,7 @@
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=a
 │                       │       │                  │       ll&distro=ubuntu-24.10&epoch=2 
-│                       │       │                  ╰ UID : 9538ad650d7d4fc 
+│                       │       │                  ╰ UID : 7c41e2641cf7d058 
 │                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
 │                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
 │                       │       ├ Status          : fixed 
@@ -8089,7 +8107,7 @@
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.0496-1ubuntu6.4?arch=a
 │                       │       │                  │       ll&distro=ubuntu-24.10&epoch=2 
-│                       │       │                  ╰ UID : 9538ad650d7d4fc 
+│                       │       │                  ╰ UID : 7c41e2641cf7d058 
 │                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
 │                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
 │                       │       ├ Status          : fixed 
@@ -8154,7 +8172,7 @@
 │                       │       ├ PkgName         : vim-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=
 │                       │       │                  │       all&distro=ubuntu-24.10&epoch=2 
-│                       │       │                  ╰ UID : d01d837a64e4e5d4 
+│                       │       │                  ╰ UID : 600be259c0946048 
 │                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
 │                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
 │                       │       ├ Status          : fixed 
@@ -8207,7 +8225,7 @@
 │                       │       ├ PkgName         : vim-runtime 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.0496-1ubuntu6.4?arch=
 │                       │       │                  │       all&distro=ubuntu-24.10&epoch=2 
-│                       │       │                  ╰ UID : d01d837a64e4e5d4 
+│                       │       │                  ╰ UID : 600be259c0946048 
 │                       │       ├ InstalledVersion: 2:9.1.0496-1ubuntu6.4 
 │                       │       ├ FixedVersion    : 2:9.1.0496-1ubuntu6.5 
 │                       │       ├ Status          : fixed 
@@ -8390,7 +8408,7 @@
 │                               ├ PkgName         : xz-utils 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xz-utils@5.6.2-2?arch=amd64&distro=ub
 │                               │                  │       untu-24.10 
-│                               │                  ╰ UID : 8516467374b51888 
+│                               │                  ╰ UID : 35ea907f9bbd118b 
 │                               ├ InstalledVersion: 5.6.2-2 
 │                               ├ FixedVersion    : 5.6.2-2ubuntu0.2 
 │                               ├ Status          : fixed 
@@ -8808,10 +8826,10 @@
 │                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:3833 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:7484 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-22869 
 │                       │      │                  ├ [2] : https://bugzilla.redhat.com/2348367 
-│                       │      │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-3833.html 
+│                       │      │                  ├ [3] : https://errata.almalinux.org/10/ALSA-2025-7484.html 
 │                       │      │                  ├ [4] : https://github.com/golang/crypto 
 │                       │      │                  ├ [5] : https://github.com/golang/crypto/commit/7292932d45d55
 │                       │      │                  │       c7199324ab0027cc86e8198aa22 
@@ -9241,10 +9259,10 @@
 │                       │      │                            │           L/A:N 
 │                       │      │                            ╰ V3Score : 5.4 
 │                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/04/4 
-│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9635 
+│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9845 
 │                       │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-22871 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2358493 
-│                       │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9635.html 
+│                       │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2025-9845.html 
 │                       │      │                  ├ [5] : https://go.dev/cl/652998 
 │                       │      │                  ├ [6] : https://go.dev/issue/71988 
 │                       │      │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVK
@@ -9291,10 +9309,10 @@
 │                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:
 │                              │                            │           N/A:N 
 │                              │                            ╰ V3Score : 6.8 
-│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10676 
+│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10672 
 │                              │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4673 
 │                              │                  ├ [2] : https://bugzilla.redhat.com/2373305 
-│                              │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-10676.html 
+│                              │                  ├ [3] : https://errata.almalinux.org/8/ALSA-2025-10672.html 
 │                              │                  ├ [4] : https://go.dev/cl/679257 
 │                              │                  ├ [5] : https://go.dev/issue/73816 
 │                              │                  ├ [6] : https://groups.google.com/g/golang-announce/c/ufZ8WpE
@@ -9394,57 +9412,44 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Go 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : Moby firewalld reload removes bridge network isolation 
+│                       │     ├ Title           : github.com/moby/moby: Moby's Firewalld reload removes bridge
+│                       │     │                   network isolation 
 │                       │     ├ Description     : Moby is an open source container framework developed by
 │                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
 │                       │     │                   Container Runtime, and various other downstream
-│                       │     │                   projects/products. The Moby daemon component (dockerd), which
-│                       │     │                    is developed as [moby/moby](https://github.com/moby/moby) is
-│                       │     │                    commonly referred to as Docker, or Docker Engine.
-│                       │     │                   
-│                       │     │                   Firewalld is a daemon used by some Linux distributions to
-│                       │     │                   provide a dynamically managed firewall. When Firewalld is
-│                       │     │                   running, Docker uses its iptables backend to create rules,
-│                       │     │                   including rules to isolate containers in one bridge network
-│                       │     │                   from containers in other bridge networks.
-│                       │     │                   ### Impact
-│                       │     │                   The iptables rules created by Docker are removed when
-│                       │     │                   firewalld is reloaded using, for example "firewall-cmd
-│                       │     │                   --reload", "killall -HUP firewalld", or "systemctl reload
-│                       │     │                   firewalld".
-│                       │     │                   When that happens, Docker must re-create the rules. However,
-│                       │     │                   in affected versions of Docker, the iptables rules that
-│                       │     │                   isolate containers in different bridge networks from each
-│                       │     │                   other are not re-created.
-│                       │     │                   Once these rules have been removed, containers have access to
-│                       │     │                    any port, on any container, in any non-internal bridge
-│                       │     │                   network, running on the Docker host.
-│                       │     │                   Containers running in networks created with `--internal` or
-│                       │     │                   equivalent have no access to other networks. Containers that
-│                       │     │                   are only connected to these networks remain isolated after a
-│                       │     │                   firewalld reload.
-│                       │     │                   Where Docker Engine is not running in the host's network
-│                       │     │                   namespace, it is unaffected. Including, for example, Rootless
-│                       │     │                    Mode, and Docker Desktop.
-│                       │     │                   ### Patches
-│                       │     │                   Moby releases 28.0.0 and newer are not affected. A fix is
-│                       │     │                   available in moby release 25.0.13.
-│                       │     │                   ### Workarounds
-│                       │     │                   After reloading firewalld, either:
-│                       │     │                   - Restart the docker daemon,
-│                       │     │                   - Re-create bridge networks, or
-│                       │     │                   - Use rootless mode.
-│                       │     │                   ### References
-│                       │     │                   https://firewalld.org/
-│                       │     │                   https://firewalld.org/documentation/howto/reload-firewalld.ht
-│                       │     │                   ml 
+│                       │     │                   projects/products. A firewalld vulnerability affects Moby
+│                       │     │                   releases before 28.0.0. When firewalld reloads, Docker fails
+│                       │     │                   to re-create iptables rules that isolate bridge networks,
+│                       │     │                   allowing any container to access all ports on any other
+│                       │     │                   container across different bridge networks on the same host.
+│                       │     │                   This breaks network segmentation between containers that
+│                       │     │                   should be isolated, creating significant risk in multi-tenant
+│                       │     │                    environments. Only containers in --internal networks remain
+│                       │     │                   protected.
+│                       │     │                   Workarounds include reloading firewalld and either restarting
+│                       │     │                    the docker daemon, re-creating bridge networks, or using
+│                       │     │                   rootless mode. Maintainers anticipate a fix for this issue in
+│                       │     │                    version 25.0.13. 
 │                       │     ├ Severity        : LOW 
-│                       │     ├ VendorSeverity   ─ ghsa: 1 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N 
-│                       │     │                         ╰ V3Score : 3.3 
-│                       │     ╰ References       ╭ [0]: https://github.com/moby/moby 
-│                       │                        ╰ [1]: https://github.com/moby/moby/security/advisories/GHSA-4
-│                       │                               vq8-7jfc-9cvp 
+│                       │     ├ CweIDs           ─ [0]: CWE-909 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 1 
+│                       │     │                  ╰ redhat: 1 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 3.3 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 3.3 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54410 
+│                       │     │                  ├ [1]: https://firewalld.org/documentation/howto/reload-firewa
+│                       │     │                  │      lld.html 
+│                       │     │                  ├ [2]: https://github.com/moby/moby 
+│                       │     │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-4
+│                       │     │                  │      vq8-7jfc-9cvp 
+│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54410 
+│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-54410 
+│                       │     ├ PublishedDate   : 2025-07-30T14:15:28.9Z 
+│                       │     ╰ LastModifiedDate: 2025-07-30T14:15:28.9Z 
 │                       ├ [2] ╭ VulnerabilityID : CVE-2025-22869 
 │                       │     ├ PkgID           : golang.org/x/crypto@v0.31.0 
 │                       │     ├ PkgName         : golang.org/x/crypto 
@@ -9485,10 +9490,10 @@
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:3833 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:7484 
 │                       │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-22869 
 │                       │     │                  ├ [2] : https://bugzilla.redhat.com/2348367 
-│                       │     │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-3833.html 
+│                       │     │                  ├ [3] : https://errata.almalinux.org/10/ALSA-2025-7484.html 
 │                       │     │                  ├ [4] : https://github.com/golang/crypto 
 │                       │     │                  ├ [5] : https://github.com/golang/crypto/commit/7292932d45d55c
 │                       │     │                  │       7199324ab0027cc86e8198aa22 
@@ -9788,10 +9793,10 @@
 │                       │     │                            │           /A:N 
 │                       │     │                            ╰ V3Score : 5.4 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/04/4 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9635 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9845 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-22871 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2358493 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9635.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2025-9845.html 
 │                       │     │                  ├ [5] : https://go.dev/cl/652998 
 │                       │     │                  ├ [6] : https://go.dev/issue/71988 
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
@@ -9838,10 +9843,10 @@
 │                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 6.8 
-│                             ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10676 
+│                             ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10672 
 │                             │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4673 
 │                             │                  ├ [2] : https://bugzilla.redhat.com/2373305 
-│                             │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-10676.html 
+│                             │                  ├ [3] : https://errata.almalinux.org/8/ALSA-2025-10672.html 
 │                             │                  ├ [4] : https://go.dev/cl/679257 
 │                             │                  ├ [5] : https://go.dev/issue/73816 
 │                             │                  ├ [6] : https://groups.google.com/g/golang-announce/c/ufZ8WpEs
@@ -10079,10 +10084,10 @@
 │                       │     │                            │           /A:N 
 │                       │     │                            ╰ V3Score : 5.4 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/04/4 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9635 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9845 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-22871 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2358493 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9635.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2025-9845.html 
 │                       │     │                  ├ [5] : https://go.dev/cl/652998 
 │                       │     │                  ├ [6] : https://go.dev/issue/71988 
 │                       │     │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVKj
@@ -10129,10 +10134,10 @@
 │                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 6.8 
-│                             ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10676 
+│                             ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10672 
 │                             │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4673 
 │                             │                  ├ [2] : https://bugzilla.redhat.com/2373305 
-│                             │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-10676.html 
+│                             │                  ├ [3] : https://errata.almalinux.org/8/ALSA-2025-10672.html 
 │                             │                  ├ [4] : https://go.dev/cl/679257 
 │                             │                  ├ [5] : https://go.dev/issue/73816 
 │                             │                  ├ [6] : https://groups.google.com/g/golang-announce/c/ufZ8WpEs
@@ -10451,10 +10456,10 @@
 │                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:3833 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:7484 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-22869 
 │                       │      │                  ├ [2] : https://bugzilla.redhat.com/2348367 
-│                       │      │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-3833.html 
+│                       │      │                  ├ [3] : https://errata.almalinux.org/10/ALSA-2025-7484.html 
 │                       │      │                  ├ [4] : https://github.com/golang/crypto 
 │                       │      │                  ├ [5] : https://github.com/golang/crypto/commit/7292932d45d55
 │                       │      │                  │       c7199324ab0027cc86e8198aa22 
@@ -10738,10 +10743,10 @@
 │                       │      │                            │           L/A:N 
 │                       │      │                            ╰ V3Score : 5.4 
 │                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/04/4 
-│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9635 
+│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9845 
 │                       │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-22871 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2358493 
-│                       │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9635.html 
+│                       │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2025-9845.html 
 │                       │      │                  ├ [5] : https://go.dev/cl/652998 
 │                       │      │                  ├ [6] : https://go.dev/issue/71988 
 │                       │      │                  ├ [7] : https://groups.google.com/g/golang-announce/c/Y2uBTVK
@@ -10788,10 +10793,10 @@
 │                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:
 │                              │                            │           N/A:N 
 │                              │                            ╰ V3Score : 6.8 
-│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10676 
+│                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10672 
 │                              │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4673 
 │                              │                  ├ [2] : https://bugzilla.redhat.com/2373305 
-│                              │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-10676.html 
+│                              │                  ├ [3] : https://errata.almalinux.org/8/ALSA-2025-10672.html 
 │                              │                  ├ [4] : https://go.dev/cl/679257 
 │                              │                  ├ [5] : https://go.dev/issue/73816 
 │                              │                  ├ [6] : https://groups.google.com/g/golang-announce/c/ufZ8WpE
@@ -10810,34 +10815,93 @@
 │                     ├ Category : AsymmetricPrivateKey 
 │                     ├ Severity : HIGH 
 │                     ├ Title    : Asymmetric Private Key 
-│                     ├ StartLine: 1 
-│                     ├ EndLine  : 1 
+│                     ├ StartLine: 2 
+│                     ├ EndLine  : 8 
 │                     ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                     │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                     │                   │     │              KEY-----****************************************
-│                     │                   │     │              ************************************************
-│                     │                   │     │              ********************-----END OPENSSH PRI 
+│                     │                   │     ├ Content    : -----BEGIN OPENSSH PRIVATE KEY----- 
+│                     │                   │     ├ IsCause    : false 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: -----BEGIN OPENSSH PRIVATE KEY----- 
+│                     │                   │     ├ FirstCause : false 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [1] ╭ Number     : 2 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ********************** 
 │                     │                   │     ├ IsCause    : true 
 │                     │                   │     ├ Annotation :  
 │                     │                   │     ├ Truncated  : false 
-│                     │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                     │                   │     │              KEY-----****************************************
-│                     │                   │     │              ************************************************
-│                     │                   │     │              ********************-----END OPENSSH PRI 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ********************** 
 │                     │                   │     ├ FirstCause : true 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [2] ╭ Number     : 3 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ FirstCause : false 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [3] ╭ Number     : 4 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ FirstCause : false 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [4] ╭ Number     : 5 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ FirstCause : false 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [5] ╭ Number     : 6 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ FirstCause : false 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [6] ╭ Number     : 7 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ FirstCause : false 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [7] ╭ Number     : 8 
+│                     │                   │     ├ Content    : **************** 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: **************** 
+│                     │                   │     ├ FirstCause : false 
 │                     │                   │     ╰ LastCause  : true 
-│                     │                   ╰ [1] ╭ Number    : 2 
-│                     │                         ├ Content   :  
-│                     │                         ├ IsCause   : false 
-│                     │                         ├ Annotation:  
-│                     │                         ├ Truncated : false 
-│                     │                         ├ FirstCause: false 
-│                     │                         ╰ LastCause : false 
-│                     ├ Match    : BEGIN OPENSSH PRIVATE
-│                     │            KEY-----********************************************************************
-│                     │            ****************************************************************************
-│                     │            ************************************************************************----
-│                     │            -END OPENSSH PRI 
+│                     │                   ╰ [8] ╭ Number     : 9 
+│                     │                         ├ Content    : -----END OPENSSH PRIVATE KEY----- 
+│                     │                         ├ IsCause    : false 
+│                     │                         ├ Annotation :  
+│                     │                         ├ Truncated  : false 
+│                     │                         ├ Highlighted: -----END OPENSSH PRIVATE KEY----- 
+│                     │                         ├ FirstCause : false 
+│                     │                         ╰ LastCause  : false 
+│                     ├ Match    : ********************************************************************** 
 │                     ╰ Layer     ╭ Digest   : sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad91
 │                                 │            8ad504c 
 │                                 ├ DiffID   : sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad
@@ -10849,33 +10913,75 @@
 │                     ├ Category : AsymmetricPrivateKey 
 │                     ├ Severity : HIGH 
 │                     ├ Title    : Asymmetric Private Key 
-│                     ├ StartLine: 1 
-│                     ├ EndLine  : 1 
+│                     ├ StartLine: 2 
+│                     ├ EndLine  : 6 
 │                     ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-│                     │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-│                     │                   │     │              KEY-----****************************************
-│                     │                   │     │              ************************************************
-│                     │                   │     │              **************-----END OPENSSH PRI 
+│                     │                   │     ├ Content    : -----BEGIN OPENSSH PRIVATE KEY----- 
+│                     │                   │     ├ IsCause    : false 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: -----BEGIN OPENSSH PRIVATE KEY----- 
+│                     │                   │     ├ FirstCause : false 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [1] ╭ Number     : 2 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ********************** 
 │                     │                   │     ├ IsCause    : true 
 │                     │                   │     ├ Annotation :  
 │                     │                   │     ├ Truncated  : false 
-│                     │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-│                     │                   │     │              KEY-----****************************************
-│                     │                   │     │              ************************************************
-│                     │                   │     │              **************-----END OPENSSH PRI 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ********************** 
 │                     │                   │     ├ FirstCause : true 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [2] ╭ Number     : 3 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ FirstCause : false 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [3] ╭ Number     : 4 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ FirstCause : false 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [4] ╭ Number     : 5 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ********************** 
+│                     │                   │     ├ FirstCause : false 
+│                     │                   │     ╰ LastCause  : false 
+│                     │                   ├ [5] ╭ Number     : 6 
+│                     │                   │     ├ Content    : ************************************************
+│                     │                   │     │              ******** 
+│                     │                   │     ├ IsCause    : true 
+│                     │                   │     ├ Annotation :  
+│                     │                   │     ├ Truncated  : false 
+│                     │                   │     ├ Highlighted: ************************************************
+│                     │                   │     │              ******** 
+│                     │                   │     ├ FirstCause : false 
 │                     │                   │     ╰ LastCause  : true 
-│                     │                   ╰ [1] ╭ Number    : 2 
-│                     │                         ├ Content   :  
-│                     │                         ├ IsCause   : false 
-│                     │                         ├ Annotation:  
-│                     │                         ├ Truncated : false 
-│                     │                         ├ FirstCause: false 
-│                     │                         ╰ LastCause : false 
-│                     ├ Match    : BEGIN OPENSSH PRIVATE
-│                     │            KEY-----********************************************************************
-│                     │            ****************************************************************************
-│                     │            **********************************************-----END OPENSSH PRI 
+│                     │                   ╰ [6] ╭ Number     : 7 
+│                     │                         ├ Content    : -----END OPENSSH PRIVATE KEY----- 
+│                     │                         ├ IsCause    : false 
+│                     │                         ├ Annotation :  
+│                     │                         ├ Truncated  : false 
+│                     │                         ├ Highlighted: -----END OPENSSH PRIVATE KEY----- 
+│                     │                         ├ FirstCause : false 
+│                     │                         ╰ LastCause  : false 
+│                     ├ Match    : ********************************************************************** 
 │                     ╰ Layer     ╭ Digest   : sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad91
 │                                 │            8ad504c 
 │                                 ├ DiffID   : sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad
@@ -10887,33 +10993,385 @@
                       ├ Category : AsymmetricPrivateKey 
                       ├ Severity : HIGH 
                       ├ Title    : Asymmetric Private Key 
-                      ├ StartLine: 1 
-                      ├ EndLine  : 1 
-                      ├ Code      ─ Lines ╭ [0] ╭ Number     : 1 
-                      │                   │     ├ Content    : BEGIN OPENSSH PRIVATE
-                      │                   │     │              KEY-----****************************************
-                      │                   │     │              ************************************************
-                      │                   │     │              *****-----END OPENSSH PRI 
-                      │                   │     ├ IsCause    : true 
-                      │                   │     ├ Annotation :  
-                      │                   │     ├ Truncated  : false 
-                      │                   │     ├ Highlighted: BEGIN OPENSSH PRIVATE
-                      │                   │     │              KEY-----****************************************
-                      │                   │     │              ************************************************
-                      │                   │     │              *****-----END OPENSSH PRI 
-                      │                   │     ├ FirstCause : true 
-                      │                   │     ╰ LastCause  : true 
-                      │                   ╰ [1] ╭ Number    : 2 
-                      │                         ├ Content   :  
-                      │                         ├ IsCause   : false 
-                      │                         ├ Annotation:  
-                      │                         ├ Truncated : false 
-                      │                         ├ FirstCause: false 
-                      │                         ╰ LastCause : false 
-                      ├ Match    : BEGIN OPENSSH PRIVATE
-                      │            KEY-----********************************************************************
-                      │            ****************************************************************************
-                      │            *****************************************-----END OPENSSH PRI 
+                      ├ StartLine: 2 
+                      ├ EndLine  : 37 
+                      ├ Code      ─ Lines ╭ [0]  ╭ Number     : 1 
+                      │                   │      ├ Content    : -----BEGIN OPENSSH PRIVATE KEY----- 
+                      │                   │      ├ IsCause    : false 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: -----BEGIN OPENSSH PRIVATE KEY----- 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [1]  ╭ Number     : 2 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : true 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [2]  ╭ Number     : 3 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [3]  ╭ Number     : 4 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [4]  ╭ Number     : 5 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [5]  ╭ Number     : 6 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [6]  ╭ Number     : 7 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [7]  ╭ Number     : 8 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [8]  ╭ Number     : 9 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [9]  ╭ Number     : 10 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [10] ╭ Number     : 11 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [11] ╭ Number     : 12 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [12] ╭ Number     : 13 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [13] ╭ Number     : 14 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [14] ╭ Number     : 15 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [15] ╭ Number     : 16 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [16] ╭ Number     : 17 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [17] ╭ Number     : 18 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [18] ╭ Number     : 19 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [19] ╭ Number     : 20 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [20] ╭ Number     : 21 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [21] ╭ Number     : 22 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [22] ╭ Number     : 23 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [23] ╭ Number     : 24 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [24] ╭ Number     : 25 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [25] ╭ Number     : 26 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [26] ╭ Number     : 27 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [27] ╭ Number     : 28 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [28] ╭ Number     : 29 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [29] ╭ Number     : 30 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [30] ╭ Number     : 31 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [31] ╭ Number     : 32 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [32] ╭ Number     : 33 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [33] ╭ Number     : 34 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [34] ╭ Number     : 35 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [35] ╭ Number     : 36 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              *********************** 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : false 
+                      │                   ├ [36] ╭ Number     : 37 
+                      │                   │      ├ Content    : ***********************************************
+                      │                   │      │              ******* 
+                      │                   │      ├ IsCause    : true 
+                      │                   │      ├ Annotation :  
+                      │                   │      ├ Truncated  : false 
+                      │                   │      ├ Highlighted: ***********************************************
+                      │                   │      │              ******* 
+                      │                   │      ├ FirstCause : false 
+                      │                   │      ╰ LastCause  : true 
+                      │                   ╰ [37] ╭ Number     : 38 
+                      │                          ├ Content    : -----END OPENSSH PRIVATE KEY----- 
+                      │                          ├ IsCause    : false 
+                      │                          ├ Annotation :  
+                      │                          ├ Truncated  : false 
+                      │                          ├ Highlighted: -----END OPENSSH PRIVATE KEY----- 
+                      │                          ├ FirstCause : false 
+                      │                          ╰ LastCause  : false 
+                      ├ Match    : ********************************************************************** 
                       ╰ Layer     ╭ Digest   : sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad91
                                   │            8ad504c 
                                   ├ DiffID   : sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad
