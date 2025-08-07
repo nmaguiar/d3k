@@ -6320,7 +6320,8 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-1284 
 │                       │       │                  ╰ [1]: CWE-125 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 1 
 │                       │       │                  ├ cbl-mariner: 1 
 │                       │       │                  ├ nvd        : 3 
@@ -6333,12 +6334,15 @@
 │                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-32415 
-│                       │       │                  ├ [1]: https://gitlab.gnome.org/GNOME/libxml2/-/issues/890 
-│                       │       │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-32415 
-│                       │       │                  ├ [3]: https://ubuntu.com/security/notices/USN-7467-1 
-│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-7467-2 
-│                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32415 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:13203 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-32415 
+│                       │       │                  ├ [2]: https://bugzilla.redhat.com/2360768 
+│                       │       │                  ├ [3]: https://errata.almalinux.org/8/ALSA-2025-13203.html 
+│                       │       │                  ├ [4]: https://gitlab.gnome.org/GNOME/libxml2/-/issues/890 
+│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-32415 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-7467-1 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-7467-2 
+│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-32415 
 │                       │       ├ PublishedDate   : 2025-04-17T17:15:33.733Z 
 │                       │       ╰ LastModifiedDate: 2025-04-23T18:17:52.053Z 
 │                       ├ [90]  ╭ VulnerabilityID : CVE-2025-46836 
@@ -6814,13 +6818,13 @@
 │                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           H/A:L 
 │                       │       │                           ╰ V3Score : 7.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11463 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:12834 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-47273 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2366982 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2366982 
 │                       │       │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       025-47273 
-│                       │       │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-11463.html 
+│                       │       │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-12834.html 
 │                       │       │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:11036 
 │                       │       │                  ├ [7] : https://github.com/pypa/advisory-database/tree/main/
 │                       │       │                  │       vulns/setuptools/PYSEC-2025-49.yaml 
