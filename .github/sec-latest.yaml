@@ -260,6 +260,7 @@
     - https://access.redhat.com/errata/RHSA-2025:11374
     - https://access.redhat.com/errata/RHSA-2025:11662
     - https://access.redhat.com/errata/RHSA-2025:12275
+    - https://access.redhat.com/errata/RHSA-2025:13335
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
@@ -280,7 +281,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-07-30T10:15:31.763Z'
+    LastModifiedDate: '2025-08-07T09:15:28.173Z'
   - VulnerabilityID: CVE-2025-27613
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -2067,6 +2068,7 @@
     - https://access.redhat.com/errata/RHSA-2025:11374
     - https://access.redhat.com/errata/RHSA-2025:11662
     - https://access.redhat.com/errata/RHSA-2025:12275
+    - https://access.redhat.com/errata/RHSA-2025:13335
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
@@ -2087,7 +2089,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-07-30T10:15:31.763Z'
+    LastModifiedDate: '2025-08-07T09:15:28.173Z'
   - VulnerabilityID: CVE-2025-4373
     PkgID: libglib2.0-data@2.82.1-0ubuntu1
     PkgName: libglib2.0-data
@@ -2129,6 +2131,7 @@
     - https://access.redhat.com/errata/RHSA-2025:11374
     - https://access.redhat.com/errata/RHSA-2025:11662
     - https://access.redhat.com/errata/RHSA-2025:12275
+    - https://access.redhat.com/errata/RHSA-2025:13335
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
@@ -2149,7 +2152,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-07-30T10:15:31.763Z'
+    LastModifiedDate: '2025-08-07T09:15:28.173Z'
   - VulnerabilityID: CVE-2025-24528
     PkgID: libgssapi-krb5-2@1.21.3-3ubuntu0.1
     PkgName: libgssapi-krb5-2
@@ -5269,6 +5272,7 @@
       azure: 1
       cbl-mariner: 1
       nvd: 3
+      oracle-oval: 2
       photon: 3
       redhat: 2
       ubuntu: 2
@@ -5285,6 +5289,8 @@
     - https://bugzilla.redhat.com/2360768
     - https://errata.almalinux.org/8/ALSA-2025-13203.html
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/890
+    - https://linux.oracle.com/cve/CVE-2025-32415.html
+    - https://linux.oracle.com/errata/ELSA-2025-13203.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-32415
     - https://ubuntu.com/security/notices/USN-7467-1
     - https://ubuntu.com/security/notices/USN-7467-2
@@ -8194,6 +8200,33 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-4673
     PublishedDate: '2025-06-11T17:15:42.993Z'
     LastModifiedDate: '2025-06-12T16:06:20.18Z'
+  - VulnerabilityID: CVE-2025-47907
+    PkgID: stdlib@v1.22.10
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.10
+      UID: afd799025a5d40f9
+    InstalledVersion: v1.22.10
+    FixedVersion: 1.23.12, 1.24.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47907
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Cancelling a query (e.g. by cancelling the context passed to one of th ...
+    Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/693735
+    - https://go.dev/issue/74831
+    - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://pkg.go.dev/vuln/GO-2025-3849
+    PublishedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T16:15:30.357Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -8687,6 +8720,33 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-4673
     PublishedDate: '2025-06-11T17:15:42.993Z'
     LastModifiedDate: '2025-06-12T16:06:20.18Z'
+  - VulnerabilityID: CVE-2025-47907
+    PkgID: stdlib@v1.23.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.5
+      UID: 44e9bcda2169408b
+    InstalledVersion: v1.23.5
+    FixedVersion: 1.23.12, 1.24.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47907
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Cancelling a query (e.g. by cancelling the context passed to one of th ...
+    Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/693735
+    - https://go.dev/issue/74831
+    - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://pkg.go.dev/vuln/GO-2025-3849
+    PublishedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T16:15:30.357Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -8972,6 +9032,33 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-4673
     PublishedDate: '2025-06-11T17:15:42.993Z'
     LastModifiedDate: '2025-06-12T16:06:20.18Z'
+  - VulnerabilityID: CVE-2025-47907
+    PkgID: stdlib@v1.23.6
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.6
+      UID: a200578c56ec45c2
+    InstalledVersion: v1.23.6
+    FixedVersion: 1.23.12, 1.24.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47907
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Cancelling a query (e.g. by cancelling the context passed to one of th ...
+    Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/693735
+    - https://go.dev/issue/74831
+    - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://pkg.go.dev/vuln/GO-2025-3849
+    PublishedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T16:15:30.357Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -9525,6 +9612,33 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-4673
     PublishedDate: '2025-06-11T17:15:42.993Z'
     LastModifiedDate: '2025-06-12T16:06:20.18Z'
+  - VulnerabilityID: CVE-2025-47907
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: 156a2e832bd2e3cc
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.23.12, 1.24.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47907
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Cancelling a query (e.g. by cancelling the context passed to one of th ...
+    Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/693735
+    - https://go.dev/issue/74831
+    - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://pkg.go.dev/vuln/GO-2025-3849
+    PublishedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T16:15:30.357Z'
 - Target: /etc/ssh/ssh_host_ecdsa_key
   Class: secret
   Secrets:
