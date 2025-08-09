@@ -5226,12 +5226,13 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:L
         V3Score: 5.6
     References:
-    - https://access.redhat.com/errata/RHSA-2025:8958
+    - https://access.redhat.com/errata/RHSA-2025:13428
     - https://access.redhat.com/security/cve/CVE-2025-32414
     - https://bugzilla.redhat.com/2358121
+    - https://bugzilla.redhat.com/2360768
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358121
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32414
-    - https://errata.almalinux.org/8/ALSA-2025-8958.html
+    - https://errata.almalinux.org/9/ALSA-2025-13428.html
     - https://errata.rockylinux.org/RLSA-2025:8958
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/889
     - https://linux.oracle.com/cve/CVE-2025-32414.html
@@ -5284,13 +5285,14 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:13203
+    - https://access.redhat.com/errata/RHSA-2025:13428
     - https://access.redhat.com/security/cve/CVE-2025-32415
+    - https://bugzilla.redhat.com/2358121
     - https://bugzilla.redhat.com/2360768
-    - https://errata.almalinux.org/8/ALSA-2025-13203.html
+    - https://errata.almalinux.org/9/ALSA-2025-13428.html
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/890
     - https://linux.oracle.com/cve/CVE-2025-32415.html
-    - https://linux.oracle.com/errata/ELSA-2025-13203.html
+    - https://linux.oracle.com/errata/ELSA-2025-13428.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-32415
     - https://ubuntu.com/security/notices/USN-7467-1
     - https://ubuntu.com/security/notices/USN-7467-2
@@ -8025,6 +8027,8 @@
     Title: Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall
     Description: os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on Unix and Windows systems when the target path was a dangling symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL flags never follows symlinks. On Windows, when the target path was a symlink to a nonexistent location, OpenFile would create a file in that location. OpenFile now always returns an error when the O_CREATE and O_EXCL flags are both set and the target path is a symlink.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-59
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -8038,7 +8042,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-0913
     - https://pkg.go.dev/vuln/GO-2025-3750
     PublishedDate: '2025-06-11T18:15:24.627Z'
-    LastModifiedDate: '2025-06-12T16:06:20.18Z'
+    LastModifiedDate: '2025-08-08T14:53:03.55Z'
   - VulnerabilityID: CVE-2025-22866
     PkgID: stdlib@v1.22.10
     PkgName: stdlib
@@ -8226,7 +8230,7 @@
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
     - https://pkg.go.dev/vuln/GO-2025-3849
     PublishedDate: '2025-08-07T16:15:30.357Z'
-    LastModifiedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T21:26:37.453Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -8545,6 +8549,8 @@
     Title: Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall
     Description: os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on Unix and Windows systems when the target path was a dangling symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL flags never follows symlinks. On Windows, when the target path was a symlink to a nonexistent location, OpenFile would create a file in that location. OpenFile now always returns an error when the O_CREATE and O_EXCL flags are both set and the target path is a symlink.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-59
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -8558,7 +8564,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-0913
     - https://pkg.go.dev/vuln/GO-2025-3750
     PublishedDate: '2025-06-11T18:15:24.627Z'
-    LastModifiedDate: '2025-06-12T16:06:20.18Z'
+    LastModifiedDate: '2025-08-08T14:53:03.55Z'
   - VulnerabilityID: CVE-2025-22866
     PkgID: stdlib@v1.23.5
     PkgName: stdlib
@@ -8746,7 +8752,7 @@
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
     - https://pkg.go.dev/vuln/GO-2025-3849
     PublishedDate: '2025-08-07T16:15:30.357Z'
-    LastModifiedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T21:26:37.453Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -8913,6 +8919,8 @@
     Title: Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall
     Description: os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on Unix and Windows systems when the target path was a dangling symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL flags never follows symlinks. On Windows, when the target path was a symlink to a nonexistent location, OpenFile would create a file in that location. OpenFile now always returns an error when the O_CREATE and O_EXCL flags are both set and the target path is a symlink.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-59
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -8926,7 +8934,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-0913
     - https://pkg.go.dev/vuln/GO-2025-3750
     PublishedDate: '2025-06-11T18:15:24.627Z'
-    LastModifiedDate: '2025-06-12T16:06:20.18Z'
+    LastModifiedDate: '2025-08-08T14:53:03.55Z'
   - VulnerabilityID: CVE-2025-22871
     PkgID: stdlib@v1.23.6
     PkgName: stdlib
@@ -9058,7 +9066,7 @@
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
     - https://pkg.go.dev/vuln/GO-2025-3849
     PublishedDate: '2025-08-07T16:15:30.357Z'
-    LastModifiedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T21:26:37.453Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -9493,6 +9501,8 @@
     Title: Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall
     Description: os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on Unix and Windows systems when the target path was a dangling symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL flags never follows symlinks. On Windows, when the target path was a symlink to a nonexistent location, OpenFile would create a file in that location. OpenFile now always returns an error when the O_CREATE and O_EXCL flags are both set and the target path is a symlink.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-59
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -9506,7 +9516,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-0913
     - https://pkg.go.dev/vuln/GO-2025-3750
     PublishedDate: '2025-06-11T18:15:24.627Z'
-    LastModifiedDate: '2025-06-12T16:06:20.18Z'
+    LastModifiedDate: '2025-08-08T14:53:03.55Z'
   - VulnerabilityID: CVE-2025-22871
     PkgID: stdlib@v1.22.12
     PkgName: stdlib
@@ -9638,7 +9648,7 @@
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
     - https://pkg.go.dev/vuln/GO-2025-3849
     PublishedDate: '2025-08-07T16:15:30.357Z'
-    LastModifiedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T21:26:37.453Z'
 - Target: /etc/ssh/ssh_host_ecdsa_key
   Class: secret
   Secrets:
