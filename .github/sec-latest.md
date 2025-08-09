@@ -6279,21 +6279,22 @@
 │                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:
 │                       │       │                           │           L/A:L 
 │                       │       │                           ╰ V3Score : 5.6 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:8958 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:13428 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-32414 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2358121 
-│                       │       │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2358121 
-│                       │       │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2360768 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2358121 
+│                       │       │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       025-32414 
-│                       │       │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2025-8958.html 
-│                       │       │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:8958 
-│                       │       │                  ├ [7] : https://gitlab.gnome.org/GNOME/libxml2/-/issues/889 
-│                       │       │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-32414.html 
-│                       │       │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2025-8958.html 
-│                       │       │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-32414 
-│                       │       │                  ├ [11]: https://ubuntu.com/security/notices/USN-7467-1 
-│                       │       │                  ├ [12]: https://ubuntu.com/security/notices/USN-7467-2 
-│                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-32414 
+│                       │       │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-13428.html 
+│                       │       │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:8958 
+│                       │       │                  ├ [8] : https://gitlab.gnome.org/GNOME/libxml2/-/issues/889 
+│                       │       │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-32414.html 
+│                       │       │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-8958.html 
+│                       │       │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-32414 
+│                       │       │                  ├ [12]: https://ubuntu.com/security/notices/USN-7467-1 
+│                       │       │                  ├ [13]: https://ubuntu.com/security/notices/USN-7467-2 
+│                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-32414 
 │                       │       ├ PublishedDate   : 2025-04-08T03:15:15.94Z 
 │                       │       ╰ LastModifiedDate: 2025-04-23T19:09:35.517Z 
 │                       ├ [89]  ╭ VulnerabilityID : CVE-2025-32415 
@@ -6338,17 +6339,18 @@
 │                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:13203 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:13428 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-32415 
-│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2360768 
-│                       │       │                  ├ [3] : https://errata.almalinux.org/8/ALSA-2025-13203.html 
-│                       │       │                  ├ [4] : https://gitlab.gnome.org/GNOME/libxml2/-/issues/890 
-│                       │       │                  ├ [5] : https://linux.oracle.com/cve/CVE-2025-32415.html 
-│                       │       │                  ├ [6] : https://linux.oracle.com/errata/ELSA-2025-13203.html 
-│                       │       │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-32415 
-│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-7467-1 
-│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7467-2 
-│                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-32415 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2358121 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2360768 
+│                       │       │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-13428.html 
+│                       │       │                  ├ [5] : https://gitlab.gnome.org/GNOME/libxml2/-/issues/890 
+│                       │       │                  ├ [6] : https://linux.oracle.com/cve/CVE-2025-32415.html 
+│                       │       │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-13428.html 
+│                       │       │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-32415 
+│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-7467-1 
+│                       │       │                  ├ [10]: https://ubuntu.com/security/notices/USN-7467-2 
+│                       │       │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-32415 
 │                       │       ├ PublishedDate   : 2025-04-17T17:15:33.733Z 
 │                       │       ╰ LastModifiedDate: 2025-04-23T18:17:52.053Z 
 │                       ├ [90]  ╭ VulnerabilityID : CVE-2025-46836 
@@ -9894,6 +9896,7 @@
 │                       │      │                   always returns an error when the O_CREATE and O_EXCL flags
 │                       │      │                   are both set and the target path is a symlink. 
 │                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-59 
 │                       │      ├ VendorSeverity   ─ bitnami: 2 
 │                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │      │                            │           H/A:N 
@@ -9905,7 +9908,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-0913 
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3750 
 │                       │      ├ PublishedDate   : 2025-06-11T18:15:24.627Z 
-│                       │      ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
+│                       │      ╰ LastModifiedDate: 2025-08-08T14:53:03.55Z 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2025-22866 
 │                       │      ├ PkgID           : stdlib@v1.22.10 
 │                       │      ├ PkgName         : stdlib 
@@ -10110,7 +10113,7 @@
 │                              │                  │      2yM 
 │                              │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3849 
 │                              ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
-│                              ╰ LastModifiedDate: 2025-08-07T16:15:30.357Z 
+│                              ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ├ [3] ╭ Target         : usr/bin/helm 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -10472,6 +10475,7 @@
 │                       │      │                   always returns an error when the O_CREATE and O_EXCL flags
 │                       │      │                   are both set and the target path is a symlink. 
 │                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-59 
 │                       │      ├ VendorSeverity   ─ bitnami: 2 
 │                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │      │                            │           H/A:N 
@@ -10483,7 +10487,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-0913 
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3750 
 │                       │      ├ PublishedDate   : 2025-06-11T18:15:24.627Z 
-│                       │      ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
+│                       │      ╰ LastModifiedDate: 2025-08-08T14:53:03.55Z 
 │                       ├ [7]  ╭ VulnerabilityID : CVE-2025-22866 
 │                       │      ├ PkgID           : stdlib@v1.23.5 
 │                       │      ├ PkgName         : stdlib 
@@ -10688,7 +10692,7 @@
 │                              │                  │      2yM 
 │                              │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3849 
 │                              ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
-│                              ╰ LastModifiedDate: 2025-08-07T16:15:30.357Z 
+│                              ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ├ [4] ╭ Target         : usr/bin/kubectl 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -10866,6 +10870,7 @@
 │                       │     │                   an error when the O_CREATE and O_EXCL flags are both set and
 │                       │     │                   the target path is a symlink. 
 │                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-59 
 │                       │     ├ VendorSeverity   ─ bitnami: 2 
 │                       │     ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H
 │                       │     │                            │           /A:N 
@@ -10876,7 +10881,7 @@
 │                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-0913 
 │                       │     │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3750 
 │                       │     ├ PublishedDate   : 2025-06-11T18:15:24.627Z 
-│                       │     ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
+│                       │     ╰ LastModifiedDate: 2025-08-08T14:53:03.55Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-22871 
 │                       │     ├ PkgID           : stdlib@v1.23.6 
 │                       │     ├ PkgName         : stdlib 
@@ -11016,7 +11021,7 @@
 │                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
 │                             │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3849 
 │                             ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
-│                             ╰ LastModifiedDate: 2025-08-07T16:15:30.357Z 
+│                             ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ├ [5] ╭ Target         : usr/local/bin/k3d 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -11561,6 +11566,7 @@
 │                       │      │                   always returns an error when the O_CREATE and O_EXCL flags
 │                       │      │                   are both set and the target path is a symlink. 
 │                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-59 
 │                       │      ├ VendorSeverity   ─ bitnami: 2 
 │                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │      │                            │           H/A:N 
@@ -11572,7 +11578,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-0913 
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3750 
 │                       │      ├ PublishedDate   : 2025-06-11T18:15:24.627Z 
-│                       │      ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
+│                       │      ╰ LastModifiedDate: 2025-08-08T14:53:03.55Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2025-22871 
 │                       │      ├ PkgID           : stdlib@v1.22.12 
 │                       │      ├ PkgName         : stdlib 
@@ -11714,7 +11720,7 @@
 │                              │                  │      2yM 
 │                              │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3849 
 │                              ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
-│                              ╰ LastModifiedDate: 2025-08-07T16:15:30.357Z 
+│                              ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ├ [6] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
 │     ├ Class  : secret 
 │     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
