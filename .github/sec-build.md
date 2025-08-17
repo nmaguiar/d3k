@@ -2705,7 +2705,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      ├ VendorSeverity   ╭ amazon     : 2 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
