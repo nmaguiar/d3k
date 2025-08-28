@@ -1696,7 +1696,47 @@
 │                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                       │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                       │      ╰ LastModifiedDate: 2024-11-21T06:32:02.633Z 
-│                       ├ [34] ╭ VulnerabilityID : CVE-2025-45582 
+│                       ├ [34] ╭ VulnerabilityID : CVE-2025-45768 
+│                       │      ├ PkgID           : python3-jwt@2.10.1-2 
+│                       │      ├ PkgName         : python3-jwt 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-2?arch=all&distro=u
+│                       │      │                  │       buntu-25.04 
+│                       │      │                  ╰ UID : f3fd65e16539af07 
+│                       │      ├ InstalledVersion: 2.10.1-2 
+│                       │      ├ Status          : affected 
+│                       │      ├ Layer            ╭ Digest: sha256:c64a2df7b27d3eb6ba902acce719ea5ae63531dc7bff
+│                       │      │                  │         f8456c43d897cd32caab 
+│                       │      │                  ╰ DiffID: sha256:5a2234dcba87930100566ba6b985ef24f2d0e2228d54
+│                       │      │                            490c1fbfe2ee7b1f2c33 
+│                       │      ├ SeveritySource  : ubuntu 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-45768 
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │      ├ Title           : pyjwt: pyjwt Weak Encryption Vulnerability 
+│                       │      ├ Description     : pyjwt v2.10.1 was discovered to contain weak encryption.
+│                       │      │                   NOTE: this is disputed by the Supplier because the key
+│                       │      │                   length is chosen by the application that uses the library
+│                       │      │                   (admittedly, library users may benefit from a minimum value
+│                       │      │                   and a mechanism for opting in to strict enforcement). 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-311 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.6 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-45768 
+│                       │      │                  ├ [1]: https://gist.github.com/ZupeiNie/6f65e564f2067b876321d
+│                       │      │                  │      3dfdbb76569 
+│                       │      │                  ├ [2]: https://github.com/advisories/GHSA-xpf8-484v-j9w6 
+│                       │      │                  ├ [3]: https://github.com/jpadilla 
+│                       │      │                  ├ [4]: https://github.com/jpadilla/pyjwt 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-45768 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-45768 
+│                       │      ├ PublishedDate   : 2025-07-31T21:15:27.32Z 
+│                       │      ╰ LastModifiedDate: 2025-08-14T16:15:33.183Z 
+│                       ├ [35] ╭ VulnerabilityID : CVE-2025-45582 
 │                       │      ├ PkgID           : tar@1.35+dfsg-3.1 
 │                       │      ├ PkgName         : tar 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-3.1?arch=amd64&distro=
@@ -1762,7 +1802,7 @@
 │                       │      │                         rity-rules-of-thumb.html 
 │                       │      ├ PublishedDate   : 2025-07-11T17:15:37.183Z 
 │                       │      ╰ LastModifiedDate: 2025-08-18T04:15:36.743Z 
-│                       ├ [35] ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [36] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : uidmap@1:4.16.0-7ubuntu1 
 │                       │      ├ PkgName         : uidmap 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.16.0-7ubuntu1?arch=amd64&dist
@@ -1810,7 +1850,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
-│                       ╰ [36] ╭ VulnerabilityID : CVE-2021-31879 
+│                       ╰ [37] ╭ VulnerabilityID : CVE-2021-31879 
 │                              ├ PkgID           : wget@1.24.5-2ubuntu1 
 │                              ├ PkgName         : wget 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.24.5-2ubuntu1?arch=amd64&distro
