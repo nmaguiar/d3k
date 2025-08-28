@@ -294,7 +294,110 @@
 │                       │       │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                       │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
 │                       │       ╰ LastModifiedDate: 2025-08-07T09:15:28.173Z 
-│                       ├ [6]   ╭ VulnerabilityID : CVE-2025-27613 
+│                       ├ [6]   ╭ VulnerabilityID : CVE-2025-48384 
+│                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
+│                       │       ├ PkgName         : git 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
+│                       │       │                  │       ro=ubuntu-24.10&epoch=1 
+│                       │       │                  ╰ UID : b551c14e6540172b 
+│                       │       ├ InstalledVersion: 1:2.45.2-1ubuntu1.1 
+│                       │       ├ FixedVersion    : 1:2.45.2-1ubuntu1.2 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-48384 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : git: Git arbitrary code execution 
+│                       │       ├ Description     : Git is a fast, scalable, distributed revision control
+│                       │       │                   system with an unusually rich command set that provides
+│                       │       │                   both high-level operations and full access to internals.
+│                       │       │                   When reading a config value, Git strips any trailing
+│                       │       │                   carriage return and line feed (CRLF). When writing a config
+│                       │       │                    entry, values with a trailing CR are not quoted, causing
+│                       │       │                   the CR to be lost when the config is later read. When
+│                       │       │                   initializing a submodule, if the submodule path contains a
+│                       │       │                   trailing CR, the altered path is read resulting in the
+│                       │       │                   submodule being checked out to an incorrect location. If a
+│                       │       │                   symlink exists that points the altered path to the
+│                       │       │                   submodule hooks directory, and the submodule contains an
+│                       │       │                   executable post-checkout hook, the script may be
+│                       │       │                   unintentionally executed after checkout. This vulnerability
+│                       │       │                    is fixed in v2.43.7, v2.44.4, v2.45.4, v2.46.4, v2.47.3,
+│                       │       │                   v2.48.2, v2.49.1, and v2.50.1. 
+│                       │       ├ Severity        : HIGH 
+│                       │       ├ CweIDs           ╭ [0]: CWE-59 
+│                       │       │                  ╰ [1]: CWE-436 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
+│                       │       │                  ├ azure      : 3 
+│                       │       │                  ├ bitnami    : 3 
+│                       │       │                  ├ cbl-mariner: 3 
+│                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
+│                       │       │                  ├ redhat     : 3 
+│                       │       │                  ├ rocky      : 3 
+│                       │       │                  ╰ ubuntu     : 3 
+│                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
+│                       │       │                  │         │           :H/A:H 
+│                       │       │                  │         ╰ V3Score : 8.1 
+│                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
+│                       │       │                            │           :H/A:H 
+│                       │       │                            ╰ V3Score : 8 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48384 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2337824 
+│                       │       │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2337956 
+│                       │       │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2378806 
+│                       │       │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2378808 
+│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2379124 
+│                       │       │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2379125 
+│                       │       │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2379326 
+│                       │       │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       024-50349 
+│                       │       │                  ├ [17]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       024-52006 
+│                       │       │                  ├ [18]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       025-27613 
+│                       │       │                  ├ [19]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       025-27614 
+│                       │       │                  ├ [20]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       025-46835 
+│                       │       │                  ├ [21]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       025-48384 
+│                       │       │                  ├ [22]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       025-48385 
+│                       │       │                  ├ [23]: https://dgl.cx/2025/07/git-clone-submodule-cve-2025-
+│                       │       │                  │       48384 
+│                       │       │                  ├ [24]: https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [25]: https://errata.rockylinux.org/RLSA-2025:11534 
+│                       │       │                  ├ [26]: https://github.com/git/git/commit/05e9cd64ee23bbadce
+│                       │       │                  │       a6bcffd6660ed02b8eab89 
+│                       │       │                  ├ [27]: https://github.com/git/git/security/advisories/GHSA-
+│                       │       │                  │       vwqx-4fm8-6qc9 
+│                       │       │                  ├ [28]: https://linux.oracle.com/cve/CVE-2025-48384.html 
+│                       │       │                  ├ [29]: https://linux.oracle.com/errata/ELSA-2025-11688.html 
+│                       │       │                  ├ [30]: https://nvd.nist.gov/vuln/detail/CVE-2025-48384 
+│                       │       │                  ├ [31]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [32]: https://www.cisa.gov/known-exploited-vulnerabilities
+│                       │       │                  │       -catalog 
+│                       │       │                  ├ [33]: https://www.cve.org/CVERecord?id=CVE-2025-48384 
+│                       │       │                  ╰ [34]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                          08/4 
+│                       │       ├ PublishedDate   : 2025-07-08T19:15:42.8Z 
+│                       │       ╰ LastModifiedDate: 2025-08-26T14:45:27.957Z 
+│                       ├ [7]   ╭ VulnerabilityID : CVE-2025-27613 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
@@ -391,7 +494,7 @@
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.243Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
-│                       ├ [7]   ╭ VulnerabilityID : CVE-2025-27614 
+│                       ├ [8]   ╭ VulnerabilityID : CVE-2025-27614 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
@@ -479,7 +582,7 @@
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.403Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
-│                       ├ [8]   ╭ VulnerabilityID : CVE-2025-46835 
+│                       ├ [9]   ╭ VulnerabilityID : CVE-2025-46835 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
@@ -566,109 +669,6 @@
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:29.503Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
-│                       ├ [9]   ╭ VulnerabilityID : CVE-2025-48384 
-│                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
-│                       │       ├ PkgName         : git 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git@2.45.2-1ubuntu1.1?arch=amd64&dist
-│                       │       │                  │       ro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : b551c14e6540172b 
-│                       │       ├ InstalledVersion: 1:2.45.2-1ubuntu1.1 
-│                       │       ├ FixedVersion    : 1:2.45.2-1ubuntu1.2 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
-│                       │       │                  │         6b905ad543ad918ad504c 
-│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
-│                       │       │                            6a5507fce977ad8d74ed5 
-│                       │       ├ SeveritySource  : ubuntu 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-48384 
-│                       │       ├ DataSource       ╭ ID  : ubuntu 
-│                       │       │                  ├ Name: Ubuntu CVE Tracker 
-│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : git: Git arbitrary code execution 
-│                       │       ├ Description     : Git is a fast, scalable, distributed revision control
-│                       │       │                   system with an unusually rich command set that provides
-│                       │       │                   both high-level operations and full access to internals.
-│                       │       │                   When reading a config value, Git strips any trailing
-│                       │       │                   carriage return and line feed (CRLF). When writing a config
-│                       │       │                    entry, values with a trailing CR are not quoted, causing
-│                       │       │                   the CR to be lost when the config is later read. When
-│                       │       │                   initializing a submodule, if the submodule path contains a
-│                       │       │                   trailing CR, the altered path is read resulting in the
-│                       │       │                   submodule being checked out to an incorrect location. If a
-│                       │       │                   symlink exists that points the altered path to the
-│                       │       │                   submodule hooks directory, and the submodule contains an
-│                       │       │                   executable post-checkout hook, the script may be
-│                       │       │                   unintentionally executed after checkout. This vulnerability
-│                       │       │                    is fixed in v2.43.7, v2.44.4, v2.45.4, v2.46.4, v2.47.3,
-│                       │       │                   v2.48.2, v2.49.1, and v2.50.1. 
-│                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ╭ [0]: CWE-59 
-│                       │       │                  ╰ [1]: CWE-436 
-│                       │       ├ VendorSeverity   ╭ alma       : 3 
-│                       │       │                  ├ amazon     : 3 
-│                       │       │                  ├ azure      : 3 
-│                       │       │                  ├ bitnami    : 3 
-│                       │       │                  ├ cbl-mariner: 3 
-│                       │       │                  ├ oracle-oval: 3 
-│                       │       │                  ├ photon     : 3 
-│                       │       │                  ├ redhat     : 3 
-│                       │       │                  ├ rocky      : 3 
-│                       │       │                  ╰ ubuntu     : 2 
-│                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
-│                       │       │                  │         │           :H/A:H 
-│                       │       │                  │         ╰ V3Score : 8.1 
-│                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
-│                       │       │                            │           :H/A:H 
-│                       │       │                            ╰ V3Score : 8 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
-│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48384 
-│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
-│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
-│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
-│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2337824 
-│                       │       │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2337956 
-│                       │       │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2378806 
-│                       │       │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2378808 
-│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2379124 
-│                       │       │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2379125 
-│                       │       │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2379326 
-│                       │       │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       024-50349 
-│                       │       │                  ├ [17]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       024-52006 
-│                       │       │                  ├ [18]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       025-27613 
-│                       │       │                  ├ [19]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       025-27614 
-│                       │       │                  ├ [20]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       025-46835 
-│                       │       │                  ├ [21]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       025-48384 
-│                       │       │                  ├ [22]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       025-48385 
-│                       │       │                  ├ [23]: https://dgl.cx/2025/07/git-clone-submodule-cve-2025-
-│                       │       │                  │       48384 
-│                       │       │                  ├ [24]: https://errata.almalinux.org/9/ALSA-2025-11462.html 
-│                       │       │                  ├ [25]: https://errata.rockylinux.org/RLSA-2025:11534 
-│                       │       │                  ├ [26]: https://github.com/git/git/commit/05e9cd64ee23bbadce
-│                       │       │                  │       a6bcffd6660ed02b8eab89 
-│                       │       │                  ├ [27]: https://github.com/git/git/security/advisories/GHSA-
-│                       │       │                  │       vwqx-4fm8-6qc9 
-│                       │       │                  ├ [28]: https://linux.oracle.com/cve/CVE-2025-48384.html 
-│                       │       │                  ├ [29]: https://linux.oracle.com/errata/ELSA-2025-11688.html 
-│                       │       │                  ├ [30]: https://nvd.nist.gov/vuln/detail/CVE-2025-48384 
-│                       │       │                  ├ [31]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [32]: https://www.cisa.gov/known-exploited-vulnerabilities
-│                       │       │                  │       -catalog 
-│                       │       │                  ├ [33]: https://www.cve.org/CVERecord?id=CVE-2025-48384 
-│                       │       │                  ╰ [34]: https://www.openwall.com/lists/oss-security/2025/07/
-│                       │       │                          08/4 
-│                       │       ├ PublishedDate   : 2025-07-08T19:15:42.8Z 
-│                       │       ╰ LastModifiedDate: 2025-08-26T14:45:27.957Z 
 │                       ├ [10]  ╭ VulnerabilityID : CVE-2025-48385 
 │                       │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git 
@@ -820,7 +820,110 @@
 │                       │       │                         8/4 
 │                       │       ├ PublishedDate   : 2025-07-08T19:15:43.41Z 
 │                       │       ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
-│                       ├ [12]  ╭ VulnerabilityID : CVE-2025-27613 
+│                       ├ [12]  ╭ VulnerabilityID : CVE-2025-48384 
+│                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
+│                       │       ├ PkgName         : git-man 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git-man@2.45.2-1ubuntu1.1?arch=all&di
+│                       │       │                  │       stro=ubuntu-24.10&epoch=1 
+│                       │       │                  ╰ UID : 1ecc8b58303457e2 
+│                       │       ├ InstalledVersion: 1:2.45.2-1ubuntu1.1 
+│                       │       ├ FixedVersion    : 1:2.45.2-1ubuntu1.2 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
+│                       │       │                  │         6b905ad543ad918ad504c 
+│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
+│                       │       │                            6a5507fce977ad8d74ed5 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-48384 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Title           : git: Git arbitrary code execution 
+│                       │       ├ Description     : Git is a fast, scalable, distributed revision control
+│                       │       │                   system with an unusually rich command set that provides
+│                       │       │                   both high-level operations and full access to internals.
+│                       │       │                   When reading a config value, Git strips any trailing
+│                       │       │                   carriage return and line feed (CRLF). When writing a config
+│                       │       │                    entry, values with a trailing CR are not quoted, causing
+│                       │       │                   the CR to be lost when the config is later read. When
+│                       │       │                   initializing a submodule, if the submodule path contains a
+│                       │       │                   trailing CR, the altered path is read resulting in the
+│                       │       │                   submodule being checked out to an incorrect location. If a
+│                       │       │                   symlink exists that points the altered path to the
+│                       │       │                   submodule hooks directory, and the submodule contains an
+│                       │       │                   executable post-checkout hook, the script may be
+│                       │       │                   unintentionally executed after checkout. This vulnerability
+│                       │       │                    is fixed in v2.43.7, v2.44.4, v2.45.4, v2.46.4, v2.47.3,
+│                       │       │                   v2.48.2, v2.49.1, and v2.50.1. 
+│                       │       ├ Severity        : HIGH 
+│                       │       ├ CweIDs           ╭ [0]: CWE-59 
+│                       │       │                  ╰ [1]: CWE-436 
+│                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
+│                       │       │                  ├ azure      : 3 
+│                       │       │                  ├ bitnami    : 3 
+│                       │       │                  ├ cbl-mariner: 3 
+│                       │       │                  ├ oracle-oval: 3 
+│                       │       │                  ├ photon     : 3 
+│                       │       │                  ├ redhat     : 3 
+│                       │       │                  ├ rocky      : 3 
+│                       │       │                  ╰ ubuntu     : 3 
+│                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
+│                       │       │                  │         │           :H/A:H 
+│                       │       │                  │         ╰ V3Score : 8.1 
+│                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
+│                       │       │                            │           :H/A:H 
+│                       │       │                            ╰ V3Score : 8 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48384 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2337824 
+│                       │       │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2337956 
+│                       │       │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2378806 
+│                       │       │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2378808 
+│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2379124 
+│                       │       │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2379125 
+│                       │       │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2379326 
+│                       │       │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       024-50349 
+│                       │       │                  ├ [17]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       024-52006 
+│                       │       │                  ├ [18]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       025-27613 
+│                       │       │                  ├ [19]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       025-27614 
+│                       │       │                  ├ [20]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       025-46835 
+│                       │       │                  ├ [21]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       025-48384 
+│                       │       │                  ├ [22]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       025-48385 
+│                       │       │                  ├ [23]: https://dgl.cx/2025/07/git-clone-submodule-cve-2025-
+│                       │       │                  │       48384 
+│                       │       │                  ├ [24]: https://errata.almalinux.org/9/ALSA-2025-11462.html 
+│                       │       │                  ├ [25]: https://errata.rockylinux.org/RLSA-2025:11534 
+│                       │       │                  ├ [26]: https://github.com/git/git/commit/05e9cd64ee23bbadce
+│                       │       │                  │       a6bcffd6660ed02b8eab89 
+│                       │       │                  ├ [27]: https://github.com/git/git/security/advisories/GHSA-
+│                       │       │                  │       vwqx-4fm8-6qc9 
+│                       │       │                  ├ [28]: https://linux.oracle.com/cve/CVE-2025-48384.html 
+│                       │       │                  ├ [29]: https://linux.oracle.com/errata/ELSA-2025-11688.html 
+│                       │       │                  ├ [30]: https://nvd.nist.gov/vuln/detail/CVE-2025-48384 
+│                       │       │                  ├ [31]: https://ubuntu.com/security/notices/USN-7626-1 
+│                       │       │                  ├ [32]: https://www.cisa.gov/known-exploited-vulnerabilities
+│                       │       │                  │       -catalog 
+│                       │       │                  ├ [33]: https://www.cve.org/CVERecord?id=CVE-2025-48384 
+│                       │       │                  ╰ [34]: https://www.openwall.com/lists/oss-security/2025/07/
+│                       │       │                          08/4 
+│                       │       ├ PublishedDate   : 2025-07-08T19:15:42.8Z 
+│                       │       ╰ LastModifiedDate: 2025-08-26T14:45:27.957Z 
+│                       ├ [13]  ╭ VulnerabilityID : CVE-2025-27613 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git-man@2.45.2-1ubuntu1.1?arch=all&di
@@ -917,7 +1020,7 @@
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.243Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
-│                       ├ [13]  ╭ VulnerabilityID : CVE-2025-27614 
+│                       ├ [14]  ╭ VulnerabilityID : CVE-2025-27614 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git-man@2.45.2-1ubuntu1.1?arch=all&di
@@ -1005,7 +1108,7 @@
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:26.403Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
-│                       ├ [14]  ╭ VulnerabilityID : CVE-2025-46835 
+│                       ├ [15]  ╭ VulnerabilityID : CVE-2025-46835 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git-man@2.45.2-1ubuntu1.1?arch=all&di
@@ -1092,109 +1195,6 @@
 │                       │       │                          08/4 
 │                       │       ├ PublishedDate   : 2025-07-10T15:15:29.503Z 
 │                       │       ╰ LastModifiedDate: 2025-07-15T13:24:41.097Z 
-│                       ├ [15]  ╭ VulnerabilityID : CVE-2025-48384 
-│                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
-│                       │       ├ PkgName         : git-man 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/git-man@2.45.2-1ubuntu1.1?arch=all&di
-│                       │       │                  │       stro=ubuntu-24.10&epoch=1 
-│                       │       │                  ╰ UID : 1ecc8b58303457e2 
-│                       │       ├ InstalledVersion: 1:2.45.2-1ubuntu1.1 
-│                       │       ├ FixedVersion    : 1:2.45.2-1ubuntu1.2 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd7
-│                       │       │                  │         6b905ad543ad918ad504c 
-│                       │       │                  ╰ DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c
-│                       │       │                            6a5507fce977ad8d74ed5 
-│                       │       ├ SeveritySource  : ubuntu 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-48384 
-│                       │       ├ DataSource       ╭ ID  : ubuntu 
-│                       │       │                  ├ Name: Ubuntu CVE Tracker 
-│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                       │       ├ Title           : git: Git arbitrary code execution 
-│                       │       ├ Description     : Git is a fast, scalable, distributed revision control
-│                       │       │                   system with an unusually rich command set that provides
-│                       │       │                   both high-level operations and full access to internals.
-│                       │       │                   When reading a config value, Git strips any trailing
-│                       │       │                   carriage return and line feed (CRLF). When writing a config
-│                       │       │                    entry, values with a trailing CR are not quoted, causing
-│                       │       │                   the CR to be lost when the config is later read. When
-│                       │       │                   initializing a submodule, if the submodule path contains a
-│                       │       │                   trailing CR, the altered path is read resulting in the
-│                       │       │                   submodule being checked out to an incorrect location. If a
-│                       │       │                   symlink exists that points the altered path to the
-│                       │       │                   submodule hooks directory, and the submodule contains an
-│                       │       │                   executable post-checkout hook, the script may be
-│                       │       │                   unintentionally executed after checkout. This vulnerability
-│                       │       │                    is fixed in v2.43.7, v2.44.4, v2.45.4, v2.46.4, v2.47.3,
-│                       │       │                   v2.48.2, v2.49.1, and v2.50.1. 
-│                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ╭ [0]: CWE-59 
-│                       │       │                  ╰ [1]: CWE-436 
-│                       │       ├ VendorSeverity   ╭ alma       : 3 
-│                       │       │                  ├ amazon     : 3 
-│                       │       │                  ├ azure      : 3 
-│                       │       │                  ├ bitnami    : 3 
-│                       │       │                  ├ cbl-mariner: 3 
-│                       │       │                  ├ oracle-oval: 3 
-│                       │       │                  ├ photon     : 3 
-│                       │       │                  ├ redhat     : 3 
-│                       │       │                  ├ rocky      : 3 
-│                       │       │                  ╰ ubuntu     : 2 
-│                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
-│                       │       │                  │         │           :H/A:H 
-│                       │       │                  │         ╰ V3Score : 8.1 
-│                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I
-│                       │       │                            │           :H/A:H 
-│                       │       │                            ╰ V3Score : 8 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:11462 
-│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48384 
-│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2337824 
-│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2337956 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2378806 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/2378808 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2379124 
-│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2379125 
-│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2379326 
-│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2337824 
-│                       │       │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2337956 
-│                       │       │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2378806 
-│                       │       │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2378808 
-│                       │       │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2379124 
-│                       │       │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2379125 
-│                       │       │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2379326 
-│                       │       │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       024-50349 
-│                       │       │                  ├ [17]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       024-52006 
-│                       │       │                  ├ [18]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       025-27613 
-│                       │       │                  ├ [19]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       025-27614 
-│                       │       │                  ├ [20]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       025-46835 
-│                       │       │                  ├ [21]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       025-48384 
-│                       │       │                  ├ [22]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       025-48385 
-│                       │       │                  ├ [23]: https://dgl.cx/2025/07/git-clone-submodule-cve-2025-
-│                       │       │                  │       48384 
-│                       │       │                  ├ [24]: https://errata.almalinux.org/9/ALSA-2025-11462.html 
-│                       │       │                  ├ [25]: https://errata.rockylinux.org/RLSA-2025:11534 
-│                       │       │                  ├ [26]: https://github.com/git/git/commit/05e9cd64ee23bbadce
-│                       │       │                  │       a6bcffd6660ed02b8eab89 
-│                       │       │                  ├ [27]: https://github.com/git/git/security/advisories/GHSA-
-│                       │       │                  │       vwqx-4fm8-6qc9 
-│                       │       │                  ├ [28]: https://linux.oracle.com/cve/CVE-2025-48384.html 
-│                       │       │                  ├ [29]: https://linux.oracle.com/errata/ELSA-2025-11688.html 
-│                       │       │                  ├ [30]: https://nvd.nist.gov/vuln/detail/CVE-2025-48384 
-│                       │       │                  ├ [31]: https://ubuntu.com/security/notices/USN-7626-1 
-│                       │       │                  ├ [32]: https://www.cisa.gov/known-exploited-vulnerabilities
-│                       │       │                  │       -catalog 
-│                       │       │                  ├ [33]: https://www.cve.org/CVERecord?id=CVE-2025-48384 
-│                       │       │                  ╰ [34]: https://www.openwall.com/lists/oss-security/2025/07/
-│                       │       │                          08/4 
-│                       │       ├ PublishedDate   : 2025-07-08T19:15:42.8Z 
-│                       │       ╰ LastModifiedDate: 2025-08-26T14:45:27.957Z 
 │                       ├ [16]  ╭ VulnerabilityID : CVE-2025-48385 
 │                       │       ├ PkgID           : git-man@1:2.45.2-1ubuntu1.1 
 │                       │       ├ PkgName         : git-man 
@@ -3319,7 +3319,7 @@
 │                       │       │                  ╰ [22]: https://www.qualys.com/2025/05/29/apport-coredump/ap
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
-│                       │       ╰ LastModifiedDate: 2025-08-18T16:15:28.447Z 
+│                       │       ╰ LastModifiedDate: 2025-08-27T17:16:21.22Z 
 │                       ├ [54]  ╭ VulnerabilityID : CVE-2025-1390 
 │                       │       ├ PkgID           : libpam-cap@1:2.66-5ubuntu3 
 │                       │       ├ PkgName         : libpam-cap 
@@ -3665,7 +3665,7 @@
 │                       │       │                  ╰ [22]: https://www.qualys.com/2025/05/29/apport-coredump/ap
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
-│                       │       ╰ LastModifiedDate: 2025-08-18T16:15:28.447Z 
+│                       │       ╰ LastModifiedDate: 2025-08-27T17:16:21.22Z 
 │                       ├ [59]  ╭ VulnerabilityID : CVE-2025-6020 
 │                       │       ├ PkgID           : libpam0g@1.5.3-7ubuntu2 
 │                       │       ├ PkgName         : libpam0g 
@@ -5759,16 +5759,15 @@
 │                       │       │                   multiplication is not cast to a 64-bit integer, and
 │                       │       │                   consequently some memory allocations may be incorrect. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ╭ [0]: CWE-190 
-│                       │       │                  ╰ [1]: CWE-400 
+│                       │       ├ CweIDs           ─ [0]: CWE-190 
 │                       │       ├ VendorSeverity   ╭ amazon : 3 
-│                       │       │                  ├ bitnami: 3 
+│                       │       │                  ├ bitnami: 2 
 │                       │       │                  ├ photon : 2 
 │                       │       │                  ├ redhat : 2 
 │                       │       │                  ╰ ubuntu : 2 
-│                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                       │       │                  │         │           :N/A:H 
-│                       │       │                  │         ╰ V3Score : 7.5 
+│                       │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I
+│                       │       │                  │         │           :L/A:L 
+│                       │       │                  │         ╰ V3Score : 5.6 
 │                       │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I
 │                       │       │                            │           :N/A:H 
 │                       │       │                            ╰ V3Score : 5.5 
@@ -5785,7 +5784,7 @@
 │                       │       │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-29088 
 │                       │       │                  ╰ [9]: https://www.sqlite.org/cves.html 
 │                       │       ├ PublishedDate   : 2025-04-10T14:15:27.163Z 
-│                       │       ╰ LastModifiedDate: 2025-04-30T16:40:41.543Z 
+│                       │       ╰ LastModifiedDate: 2025-08-26T20:15:39.47Z 
 │                       ├ [81]  ╭ VulnerabilityID : CVE-2025-3277 
 │                       │       ├ PkgID           : libsqlite3-0@3.46.1-1 
 │                       │       ├ PkgName         : libsqlite3-0 
@@ -5928,7 +5927,7 @@
 │                       │       │                  ╰ [22]: https://www.qualys.com/2025/05/29/apport-coredump/ap
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
-│                       │       ╰ LastModifiedDate: 2025-08-18T16:15:28.447Z 
+│                       │       ╰ LastModifiedDate: 2025-08-27T17:16:21.22Z 
 │                       ├ [83]  ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : libsystemd0@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : libsystemd0 
@@ -6018,7 +6017,7 @@
 │                       │       │                  ╰ [22]: https://www.qualys.com/2025/05/29/apport-coredump/ap
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
-│                       │       ╰ LastModifiedDate: 2025-08-18T16:15:28.447Z 
+│                       │       ╰ LastModifiedDate: 2025-08-27T17:16:21.22Z 
 │                       ├ [84]  ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : libudev1@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : libudev1 
@@ -6108,7 +6107,7 @@
 │                       │       │                  ╰ [22]: https://www.qualys.com/2025/05/29/apport-coredump/ap
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
-│                       │       ╰ LastModifiedDate: 2025-08-18T16:15:28.447Z 
+│                       │       ╰ LastModifiedDate: 2025-08-27T17:16:21.22Z 
 │                       ├ [85]  ╭ VulnerabilityID : CVE-2024-56171 
 │                       │       ├ PkgID           : libxml2@2.12.7+dfsg-3ubuntu0.1 
 │                       │       ├ PkgName         : libxml2 
@@ -8395,7 +8394,7 @@
 │                       │       │                  ╰ [22]: https://www.qualys.com/2025/05/29/apport-coredump/ap
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
-│                       │       ╰ LastModifiedDate: 2025-08-18T16:15:28.447Z 
+│                       │       ╰ LastModifiedDate: 2025-08-27T17:16:21.22Z 
 │                       ├ [113] ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : systemd-cryptsetup@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : systemd-cryptsetup 
@@ -8485,7 +8484,7 @@
 │                       │       │                  ╰ [22]: https://www.qualys.com/2025/05/29/apport-coredump/ap
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
-│                       │       ╰ LastModifiedDate: 2025-08-18T16:15:28.447Z 
+│                       │       ╰ LastModifiedDate: 2025-08-27T17:16:21.22Z 
 │                       ├ [114] ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : systemd-resolved@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : systemd-resolved 
@@ -8575,7 +8574,7 @@
 │                       │       │                  ╰ [22]: https://www.qualys.com/2025/05/29/apport-coredump/ap
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
-│                       │       ╰ LastModifiedDate: 2025-08-18T16:15:28.447Z 
+│                       │       ╰ LastModifiedDate: 2025-08-27T17:16:21.22Z 
 │                       ├ [115] ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : systemd-sysv@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : systemd-sysv 
@@ -8665,7 +8664,7 @@
 │                       │       │                  ╰ [22]: https://www.qualys.com/2025/05/29/apport-coredump/ap
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
-│                       │       ╰ LastModifiedDate: 2025-08-18T16:15:28.447Z 
+│                       │       ╰ LastModifiedDate: 2025-08-27T17:16:21.22Z 
 │                       ├ [116] ╭ VulnerabilityID : CVE-2025-4598 
 │                       │       ├ PkgID           : systemd-timesyncd@256.5-2ubuntu3.1 
 │                       │       ├ PkgName         : systemd-timesyncd 
@@ -8755,7 +8754,7 @@
 │                       │       │                  ╰ [22]: https://www.qualys.com/2025/05/29/apport-coredump/ap
 │                       │       │                          port-coredump.txt 
 │                       │       ├ PublishedDate   : 2025-05-30T14:15:23.557Z 
-│                       │       ╰ LastModifiedDate: 2025-08-18T16:15:28.447Z 
+│                       │       ╰ LastModifiedDate: 2025-08-27T17:16:21.22Z 
 │                       ├ [117] ╭ VulnerabilityID : CVE-2025-1215 
 │                       │       ├ PkgID           : vim@2:9.1.0496-1ubuntu6.4 
 │                       │       ├ PkgName         : vim 
