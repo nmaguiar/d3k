@@ -4268,7 +4268,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -4894,7 +4894,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -5520,7 +5520,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -7361,7 +7361,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -7987,7 +7987,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -9622,10 +9622,11 @@
 │                       │      ├ References       ╭ [0]: https://github.com/go-viper/mapstructure 
 │                       │      │                  ├ [1]: https://github.com/go-viper/mapstructure/commit/742921
 │                       │      │                  │      c9ba2854d27baa64272487fc5075d2c39c 
-│                       │      │                  ╰ [2]: https://github.com/go-viper/mapstructure/security/advi
-│                       │      │                         sories/GHSA-2464-8j7c-4cjm 
+│                       │      │                  ├ [2]: https://github.com/go-viper/mapstructure/security/advi
+│                       │      │                  │      sories/GHSA-2464-8j7c-4cjm 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3900 
 │                       │      ├ PublishedDate   : 2025-08-21T14:37:19Z 
-│                       │      ╰ LastModifiedDate: 2025-08-21T14:37:19Z 
+│                       │      ╰ LastModifiedDate: 2025-08-29T20:44:25Z 
 │                       ├ [4]  ╭ VulnerabilityID : GHSA-fv92-fjc5-jj9h 
 │                       │      ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.0.0 
 │                       │      ├ PkgName         : github.com/go-viper/mapstructure/v2 
@@ -9869,7 +9870,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
@@ -10592,7 +10593,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
@@ -11000,7 +11001,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -11729,7 +11730,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
