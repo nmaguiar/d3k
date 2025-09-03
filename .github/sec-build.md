@@ -2488,7 +2488,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
@@ -2881,11 +2881,12 @@
 │                     │                         ├ FirstCause : false 
 │                     │                         ╰ LastCause  : false 
 │                     ├ Match    : ********************************************************************** 
-│                     ╰ Layer     ╭ Digest   : sha256:5a72cfa53fc050b1ee60c8f7bd2f0a7c1b1d9ba63f831f3438bbb86af
-│                                 │            818fee9 
-│                                 ├ DiffID   : sha256:ff60b45dbcc38df9edd84d94f7d8f7a992370518e385355e7da71bb13
-│                                 │            94cf1c9 
-│                                 ╰ CreatedBy: COPY / / # buildkit 
+│                     ├ Layer     ╭ Digest   : sha256:5a72cfa53fc050b1ee60c8f7bd2f0a7c1b1d9ba63f831f3438bbb86af
+│                     │           │            818fee9 
+│                     │           ├ DiffID   : sha256:ff60b45dbcc38df9edd84d94f7d8f7a992370518e385355e7da71bb13
+│                     │           │            94cf1c9 
+│                     │           ╰ CreatedBy: COPY / / # buildkit 
+│                     ╰ Offset   : 36 
 ├ [7] ╭ Target : /etc/ssh/ssh_host_ed25519_key 
 │     ├ Class  : secret 
 │     ╰ Secrets ─ [0] ╭ RuleID   : private-key 
@@ -2961,11 +2962,12 @@
 │                     │                         ├ FirstCause : false 
 │                     │                         ╰ LastCause  : false 
 │                     ├ Match    : ********************************************************************** 
-│                     ╰ Layer     ╭ Digest   : sha256:5a72cfa53fc050b1ee60c8f7bd2f0a7c1b1d9ba63f831f3438bbb86af
-│                                 │            818fee9 
-│                                 ├ DiffID   : sha256:ff60b45dbcc38df9edd84d94f7d8f7a992370518e385355e7da71bb13
-│                                 │            94cf1c9 
-│                                 ╰ CreatedBy: COPY / / # buildkit 
+│                     ├ Layer     ╭ Digest   : sha256:5a72cfa53fc050b1ee60c8f7bd2f0a7c1b1d9ba63f831f3438bbb86af
+│                     │           │            818fee9 
+│                     │           ├ DiffID   : sha256:ff60b45dbcc38df9edd84d94f7d8f7a992370518e385355e7da71bb13
+│                     │           │            94cf1c9 
+│                     │           ╰ CreatedBy: COPY / / # buildkit 
+│                     ╰ Offset   : 36 
 ╰ [8] ╭ Target : /etc/ssh/ssh_host_rsa_key 
       ├ Class  : secret 
       ╰ Secrets ─ [0] ╭ RuleID   : private-key 
@@ -3351,9 +3353,10 @@
                       │                          ├ FirstCause : false 
                       │                          ╰ LastCause  : false 
                       ├ Match    : ********************************************************************** 
-                      ╰ Layer     ╭ Digest   : sha256:5a72cfa53fc050b1ee60c8f7bd2f0a7c1b1d9ba63f831f3438bbb86af
-                                  │            818fee9 
-                                  ├ DiffID   : sha256:ff60b45dbcc38df9edd84d94f7d8f7a992370518e385355e7da71bb13
-                                  │            94cf1c9 
-                                  ╰ CreatedBy: COPY / / # buildkit 
+                      ├ Layer     ╭ Digest   : sha256:5a72cfa53fc050b1ee60c8f7bd2f0a7c1b1d9ba63f831f3438bbb86af
+                      │           │            818fee9 
+                      │           ├ DiffID   : sha256:ff60b45dbcc38df9edd84d94f7d8f7a992370518e385355e7da71bb13
+                      │           │            94cf1c9 
+                      │           ╰ CreatedBy: COPY / / # buildkit 
+                      ╰ Offset   : 36 
 ````
