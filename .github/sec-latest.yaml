@@ -261,6 +261,10 @@
     - https://access.redhat.com/errata/RHSA-2025:11662
     - https://access.redhat.com/errata/RHSA-2025:12275
     - https://access.redhat.com/errata/RHSA-2025:13335
+    - https://access.redhat.com/errata/RHSA-2025:14988
+    - https://access.redhat.com/errata/RHSA-2025:14989
+    - https://access.redhat.com/errata/RHSA-2025:14990
+    - https://access.redhat.com/errata/RHSA-2025:14991
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
@@ -281,7 +285,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-08-07T09:15:28.173Z'
+    LastModifiedDate: '2025-09-02T03:15:41.65Z'
   - VulnerabilityID: CVE-2025-48384
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -2080,6 +2084,10 @@
     - https://access.redhat.com/errata/RHSA-2025:11662
     - https://access.redhat.com/errata/RHSA-2025:12275
     - https://access.redhat.com/errata/RHSA-2025:13335
+    - https://access.redhat.com/errata/RHSA-2025:14988
+    - https://access.redhat.com/errata/RHSA-2025:14989
+    - https://access.redhat.com/errata/RHSA-2025:14990
+    - https://access.redhat.com/errata/RHSA-2025:14991
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
@@ -2100,7 +2108,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-08-07T09:15:28.173Z'
+    LastModifiedDate: '2025-09-02T03:15:41.65Z'
   - VulnerabilityID: CVE-2025-4373
     PkgID: libglib2.0-data@2.82.1-0ubuntu1
     PkgName: libglib2.0-data
@@ -2143,6 +2151,10 @@
     - https://access.redhat.com/errata/RHSA-2025:11662
     - https://access.redhat.com/errata/RHSA-2025:12275
     - https://access.redhat.com/errata/RHSA-2025:13335
+    - https://access.redhat.com/errata/RHSA-2025:14988
+    - https://access.redhat.com/errata/RHSA-2025:14989
+    - https://access.redhat.com/errata/RHSA-2025:14990
+    - https://access.redhat.com/errata/RHSA-2025:14991
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
@@ -2163,7 +2175,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2025-08-07T09:15:28.173Z'
+    LastModifiedDate: '2025-09-02T03:15:41.65Z'
   - VulnerabilityID: CVE-2025-24528
     PkgID: libgssapi-krb5-2@1.21.3-3ubuntu0.1
     PkgName: libgssapi-krb5-2
@@ -3701,7 +3713,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -4154,7 +4166,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -4607,7 +4619,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -6104,7 +6116,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -6557,7 +6569,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -7934,7 +7946,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -8589,7 +8601,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -8974,7 +8986,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -9585,7 +9597,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -9960,6 +9972,7 @@
       Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
       DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
       CreatedBy: 'COPY / / # buildkit'
+    Offset: 36
 - Target: /etc/ssh/ssh_host_ed25519_key
   Class: secret
   Secrets:
@@ -10032,6 +10045,7 @@
       Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
       DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
       CreatedBy: 'COPY / / # buildkit'
+    Offset: 36
 - Target: /etc/ssh/ssh_host_rsa_key
   Class: secret
   Secrets:
@@ -10352,3 +10366,4 @@
       Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
       DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
       CreatedBy: 'COPY / / # buildkit'
+    Offset: 36
