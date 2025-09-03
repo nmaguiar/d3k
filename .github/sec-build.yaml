@@ -2162,7 +2162,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
@@ -2537,6 +2537,7 @@
       Digest: sha256:5a72cfa53fc050b1ee60c8f7bd2f0a7c1b1d9ba63f831f3438bbb86af818fee9
       DiffID: sha256:ff60b45dbcc38df9edd84d94f7d8f7a992370518e385355e7da71bb1394cf1c9
       CreatedBy: 'COPY / / # buildkit'
+    Offset: 36
 - Target: /etc/ssh/ssh_host_ed25519_key
   Class: secret
   Secrets:
@@ -2609,6 +2610,7 @@
       Digest: sha256:5a72cfa53fc050b1ee60c8f7bd2f0a7c1b1d9ba63f831f3438bbb86af818fee9
       DiffID: sha256:ff60b45dbcc38df9edd84d94f7d8f7a992370518e385355e7da71bb1394cf1c9
       CreatedBy: 'COPY / / # buildkit'
+    Offset: 36
 - Target: /etc/ssh/ssh_host_rsa_key
   Class: secret
   Secrets:
@@ -2929,3 +2931,4 @@
       Digest: sha256:5a72cfa53fc050b1ee60c8f7bd2f0a7c1b1d9ba63f831f3438bbb86af818fee9
       DiffID: sha256:ff60b45dbcc38df9edd84d94f7d8f7a992370518e385355e7da71bb1394cf1c9
       CreatedBy: 'COPY / / # buildkit'
+    Offset: 36
