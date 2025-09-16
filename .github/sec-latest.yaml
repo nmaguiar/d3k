@@ -3048,6 +3048,7 @@
     - https://access.redhat.com/errata/RHSA-2025:14557
     - https://access.redhat.com/errata/RHSA-2025:15099
     - https://access.redhat.com/errata/RHSA-2025:15709
+    - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -3064,7 +3065,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-09-11T16:15:34.16Z'
+    LastModifiedDate: '2025-09-15T16:15:40.707Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam-modules-bin@1.5.3-7ubuntu2
     PkgName: libpam-modules-bin
@@ -3119,6 +3120,7 @@
     - https://access.redhat.com/errata/RHSA-2025:14557
     - https://access.redhat.com/errata/RHSA-2025:15099
     - https://access.redhat.com/errata/RHSA-2025:15709
+    - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -3135,7 +3137,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-09-11T16:15:34.16Z'
+    LastModifiedDate: '2025-09-15T16:15:40.707Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam-runtime@1.5.3-7ubuntu2
     PkgName: libpam-runtime
@@ -3190,6 +3192,7 @@
     - https://access.redhat.com/errata/RHSA-2025:14557
     - https://access.redhat.com/errata/RHSA-2025:15099
     - https://access.redhat.com/errata/RHSA-2025:15709
+    - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -3206,7 +3209,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-09-11T16:15:34.16Z'
+    LastModifiedDate: '2025-09-15T16:15:40.707Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: libpam-systemd@256.5-2ubuntu3.1
     PkgName: libpam-systemd
@@ -3323,6 +3326,7 @@
     - https://access.redhat.com/errata/RHSA-2025:14557
     - https://access.redhat.com/errata/RHSA-2025:15099
     - https://access.redhat.com/errata/RHSA-2025:15709
+    - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -3339,7 +3343,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-09-11T16:15:34.16Z'
+    LastModifiedDate: '2025-09-15T16:15:40.707Z'
   - VulnerabilityID: CVE-2024-56406
     PkgID: libperl5.38t64@5.38.2-5
     PkgName: libperl5.38t64
