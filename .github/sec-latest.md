@@ -4327,7 +4327,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -4953,7 +4953,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -5579,7 +5579,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -7433,7 +7433,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -8059,7 +8059,7 @@
 │                       │       │                   catching the DecodeError. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ redhat     : 2 
@@ -9958,7 +9958,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
@@ -10045,12 +10045,17 @@
 │                       │      │                   strings to LookPath ("", ".", and ".."), can result in the
 │                       │      │                   binaries listed in the PATH being unexpectedly returned. 
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ amazon: 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ╰ bitnami: 2 
+│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 6.5 
 │                       │      ├ References       ╭ [0]: https://go.dev/cl/691775 
 │                       │      │                  ├ [1]: https://go.dev/issue/74466 
 │                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML
 │                       │      │                  │      2yM 
-│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3956 
+│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-47906 
+│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3956 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-09-19T16:00:27.847Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2025-47907 
@@ -10715,7 +10720,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
@@ -10802,12 +10807,17 @@
 │                       │      │                   strings to LookPath ("", ".", and ".."), can result in the
 │                       │      │                   binaries listed in the PATH being unexpectedly returned. 
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ amazon: 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ╰ bitnami: 2 
+│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 6.5 
 │                       │      ├ References       ╭ [0]: https://go.dev/cl/691775 
 │                       │      │                  ├ [1]: https://go.dev/issue/74466 
 │                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML
 │                       │      │                  │      2yM 
-│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3956 
+│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-47906 
+│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3956 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-09-19T16:00:27.847Z 
 │                       ├ [7]  ╭ VulnerabilityID : CVE-2025-47907 
@@ -11156,7 +11166,7 @@
 │                       │     │                    DOM construction, but only when tags are in foreign content
 │                       │     │                   (e.g. <math>, <svg>, etc contexts). 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
 │                       │     │                  ├ azure      : 2 
 │                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
@@ -11242,11 +11252,16 @@
 │                       │     │                   strings to LookPath ("", ".", and ".."), can result in the
 │                       │     │                   binaries listed in the PATH being unexpectedly returned. 
 │                       │     ├ Severity        : HIGH 
-│                       │     ├ VendorSeverity   ─ amazon: 3 
+│                       │     ├ VendorSeverity   ╭ amazon : 3 
+│                       │     │                  ╰ bitnami: 2 
+│                       │     ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                       │     │                            │           /A:L 
+│                       │     │                            ╰ V3Score : 6.5 
 │                       │     ├ References       ╭ [0]: https://go.dev/cl/691775 
 │                       │     │                  ├ [1]: https://go.dev/issue/74466 
 │                       │     │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
-│                       │     │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3956 
+│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-47906 
+│                       │     │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3956 
 │                       │     ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │     ╰ LastModifiedDate: 2025-09-19T16:00:27.847Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-47907 
@@ -11918,7 +11933,7 @@
 │                       │      │                   during DOM construction, but only when tags are in foreign
 │                       │      │                   content (e.g. <math>, <svg>, etc contexts). 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
@@ -12047,12 +12062,17 @@
 │                       │      │                   strings to LookPath ("", ".", and ".."), can result in the
 │                       │      │                   binaries listed in the PATH being unexpectedly returned. 
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ amazon: 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ╰ bitnami: 2 
+│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 6.5 
 │                       │      ├ References       ╭ [0]: https://go.dev/cl/691775 
 │                       │      │                  ├ [1]: https://go.dev/issue/74466 
 │                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML
 │                       │      │                  │      2yM 
-│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3956 
+│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-47906 
+│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3956 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-09-19T16:00:27.847Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2025-47907 
