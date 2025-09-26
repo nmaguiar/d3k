@@ -195,6 +195,44 @@
     - https://www.cve.org/CVERecord?id=CVE-2022-3219
     PublishedDate: '2023-02-23T20:15:12.393Z'
     LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-6297
+    PkgID: dpkg@1.22.18ubuntu2
+    PkgName: dpkg
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/dpkg@1.22.18ubuntu2?arch=amd64&distro=ubuntu-25.04
+      UID: b13f6f67225cf2ba
+    InstalledVersion: 1.22.18ubuntu2
+    FixedVersion: 1.22.18ubuntu2.2
+    Status: fixed
+    Layer:
+      Digest: sha256:faab5febe1b32bdd81ea12fd8e4d195ca1dbda396b5d1b9a8b09c86d05d30929
+      DiffID: sha256:ebf5991a2b9e34de54b0c1e0b8871061be986772476fbbc3a8ce827c121ea87d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-6297
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Title: It was discovered that dpkg-deb does not properly sanitize directory p ...
+    Description: |-
+      It was discovered that dpkg-deb does not properly sanitize directory permissions when extracting a control member into a temporary directory, which is
+      documented as being a safe operation even on untrusted data. This may result in leaving temporary files behind on cleanup. Given automated and repeated execution of dpkg-deb commands on
+      adversarial .deb packages or with well compressible files, placed
+      inside a directory with permissions not allowing removal by a non-root
+      user, this can end up in a DoS scenario due to causing disk quota
+      exhaustion or disk full conditions.
+    Severity: LOW
+    CweIDs:
+    - CWE-400
+    - CWE-732
+    VendorSeverity:
+      ubuntu: 1
+    References:
+    - https://git.dpkg.org/cgit/dpkg/dpkg.git/commit/?id=ed6bbd445dd8800308c67236ba35d08004c98e82
+    - https://ubuntu.com/security/notices/USN-7768-1
+    - https://www.cve.org/CVERecord?id=CVE-2025-6297
+    PublishedDate: '2025-07-01T17:15:30.177Z'
+    LastModifiedDate: '2025-08-19T17:50:38.047Z'
   - VulnerabilityID: CVE-2025-6052
     PkgID: gir1.2-glib-2.0@2.84.1-1ubuntu0.1
     PkgName: gir1.2-glib-2.0
@@ -1841,7 +1879,8 @@
       PURL: pkg:deb/ubuntu/libpcre2-8-0@10.45-1?arch=amd64&distro=ubuntu-25.04
       UID: acc3f2b7a0c0ada6
     InstalledVersion: 10.45-1
-    Status: affected
+    FixedVersion: 10.45-1ubuntu0.1
+    Status: fixed
     Layer:
       Digest: sha256:faab5febe1b32bdd81ea12fd8e4d195ca1dbda396b5d1b9a8b09c86d05d30929
       DiffID: sha256:ebf5991a2b9e34de54b0c1e0b8871061be986772476fbbc3a8ce827c121ea87d
@@ -1875,6 +1914,7 @@
     - https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.46
     - https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-c2gv-xgf5-5cc2
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58050
+    - https://ubuntu.com/security/notices/USN-7777-1
     - https://www.cve.org/CVERecord?id=CVE-2025-58050
     PublishedDate: '2025-08-27T19:15:37.56Z'
     LastModifiedDate: '2025-09-09T15:27:39.573Z'
@@ -2300,7 +2340,7 @@
       cbl-mariner: 2
       ghsa: 2
       nvd: 3
-      photon: 2
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2633,7 +2673,7 @@
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       ghsa: 2
