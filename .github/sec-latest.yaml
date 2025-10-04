@@ -26905,7 +26905,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -27358,7 +27358,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -27811,7 +27811,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -29319,7 +29319,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -29772,7 +29772,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -33293,7 +33293,7 @@
     - https://ubuntu.com/security/notices/USN-7374-1
     - https://www.cve.org/CVERecord?id=CVE-2024-40635
     PublishedDate: '2025-03-17T22:15:13.15Z'
-    LastModifiedDate: '2025-09-23T15:09:09.43Z'
+    LastModifiedDate: '2025-10-02T01:51:43.21Z'
   - VulnerabilityID: CVE-2025-47291
     PkgID: github.com/containerd/containerd/v2@v2.0.2
     PkgName: github.com/containerd/containerd/v2
@@ -35463,7 +35463,7 @@
     - https://ubuntu.com/security/notices/USN-7374-1
     - https://www.cve.org/CVERecord?id=CVE-2024-40635
     PublishedDate: '2025-03-17T22:15:13.15Z'
-    LastModifiedDate: '2025-09-23T15:09:09.43Z'
+    LastModifiedDate: '2025-10-02T01:51:43.21Z'
   - VulnerabilityID: CVE-2025-54410
     PkgID: github.com/docker/docker@v25.0.6+incompatible
     PkgName: github.com/docker/docker
@@ -38364,7 +38364,7 @@
     - https://ubuntu.com/security/notices/USN-7374-1
     - https://www.cve.org/CVERecord?id=CVE-2024-40635
     PublishedDate: '2025-03-17T22:15:13.15Z'
-    LastModifiedDate: '2025-09-23T15:09:09.43Z'
+    LastModifiedDate: '2025-10-02T01:51:43.21Z'
   - VulnerabilityID: CVE-2024-41110
     PkgID: github.com/docker/docker@v27.0.3+incompatible
     PkgName: github.com/docker/docker
