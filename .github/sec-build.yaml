@@ -30070,6 +30070,7 @@
     CweIDs:
     - CWE-909
     VendorSeverity:
+      amazon: 1
       ghsa: 1
       nvd: 2
       redhat: 1
