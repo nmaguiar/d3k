@@ -30478,7 +30478,8 @@
 │                       │      │                   this issue in version 25.0.13. 
 │                       │      ├ Severity        : LOW 
 │                       │      ├ CweIDs           ─ [0]: CWE-909 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 1 
+│                       │      ├ VendorSeverity   ╭ amazon: 1 
+│                       │      │                  ├ ghsa  : 1 
 │                       │      │                  ├ nvd   : 2 
 │                       │      │                  ╰ redhat: 1 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L
