@@ -23332,7 +23332,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-40775
     PkgID: dnsutils@1:9.20.0-2ubuntu3.1
     PkgName: dnsutils
@@ -24331,7 +24331,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-30258
     PkgID: gnupg-l10n@2.4.4-2ubuntu18
     PkgName: gnupg-l10n
@@ -24376,7 +24376,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-30258
     PkgID: gnupg-utils@2.4.4-2ubuntu18
     PkgName: gnupg-utils
@@ -24421,7 +24421,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-30258
     PkgID: gpg@2.4.4-2ubuntu18
     PkgName: gpg
@@ -24466,7 +24466,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-30258
     PkgID: gpg-agent@2.4.4-2ubuntu18
     PkgName: gpg-agent
@@ -24511,7 +24511,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-30258
     PkgID: gpg-wks-client@2.4.4-2ubuntu18
     PkgName: gpg-wks-client
@@ -24556,7 +24556,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-30258
     PkgID: gpgconf@2.4.4-2ubuntu18
     PkgName: gpgconf
@@ -24601,7 +24601,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-30258
     PkgID: gpgsm@2.4.4-2ubuntu18
     PkgName: gpgsm
@@ -24646,7 +24646,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-30258
     PkgID: gpgv@2.4.4-2ubuntu18
     PkgName: gpgv
@@ -24691,7 +24691,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-30258
     PkgID: keyboxd@2.4.4-2ubuntu18
     PkgName: keyboxd
@@ -24736,7 +24736,7 @@
     - https://ubuntu.com/security/notices/USN-7412-1
     - https://www.cve.org/CVERecord?id=CVE-2025-30258
     PublishedDate: '2025-03-19T20:15:20.14Z'
-    LastModifiedDate: '2025-10-10T14:29:32.06Z'
+    LastModifiedDate: '2025-10-16T16:53:07.557Z'
   - VulnerabilityID: CVE-2025-24528
     PkgID: krb5-locales@1.21.3-3ubuntu0.1
     PkgName: krb5-locales
@@ -26254,6 +26254,7 @@
     - https://access.redhat.com/errata/RHSA-2025:15827
     - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -26270,7 +26271,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-09-23T20:15:33.53Z'
+    LastModifiedDate: '2025-10-16T09:15:35.85Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam-modules-bin@1.5.3-7ubuntu2
     PkgName: libpam-modules-bin
@@ -26328,6 +26329,7 @@
     - https://access.redhat.com/errata/RHSA-2025:15827
     - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -26344,7 +26346,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-09-23T20:15:33.53Z'
+    LastModifiedDate: '2025-10-16T09:15:35.85Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam-runtime@1.5.3-7ubuntu2
     PkgName: libpam-runtime
@@ -26402,6 +26404,7 @@
     - https://access.redhat.com/errata/RHSA-2025:15827
     - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -26418,7 +26421,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-09-23T20:15:33.53Z'
+    LastModifiedDate: '2025-10-16T09:15:35.85Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: libpam-systemd@256.5-2ubuntu3.1
     PkgName: libpam-systemd
@@ -26539,6 +26542,7 @@
     - https://access.redhat.com/errata/RHSA-2025:15827
     - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -26555,7 +26559,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-09-23T20:15:33.53Z'
+    LastModifiedDate: '2025-10-16T09:15:35.85Z'
   - VulnerabilityID: CVE-2024-56406
     PkgID: libperl5.38t64@5.38.2-5
     PkgName: libperl5.38t64
@@ -26614,7 +26618,7 @@
     - https://ubuntu.com/security/notices/USN-7434-2
     - https://www.cve.org/CVERecord?id=CVE-2024-56406
     PublishedDate: '2025-04-13T14:15:14.527Z'
-    LastModifiedDate: '2025-04-30T15:21:11.547Z'
+    LastModifiedDate: '2025-10-16T14:15:34.083Z'
   - VulnerabilityID: CVE-2024-12718
     PkgID: libpython3.12-minimal@3.12.7-1ubuntu2
     PkgName: libpython3.12-minimal
@@ -28862,7 +28866,7 @@
     - https://ubuntu.com/security/notices/USN-7434-2
     - https://www.cve.org/CVERecord?id=CVE-2024-56406
     PublishedDate: '2025-04-13T14:15:14.527Z'
-    LastModifiedDate: '2025-04-30T15:21:11.547Z'
+    LastModifiedDate: '2025-10-16T14:15:34.083Z'
   - VulnerabilityID: CVE-2024-56406
     PkgID: perl-base@5.38.2-5
     PkgName: perl-base
@@ -28921,7 +28925,7 @@
     - https://ubuntu.com/security/notices/USN-7434-2
     - https://www.cve.org/CVERecord?id=CVE-2024-56406
     PublishedDate: '2025-04-13T14:15:14.527Z'
-    LastModifiedDate: '2025-04-30T15:21:11.547Z'
+    LastModifiedDate: '2025-10-16T14:15:34.083Z'
   - VulnerabilityID: CVE-2024-56406
     PkgID: perl-modules-5.38@5.38.2-5
     PkgName: perl-modules-5.38
@@ -28980,7 +28984,7 @@
     - https://ubuntu.com/security/notices/USN-7434-2
     - https://www.cve.org/CVERecord?id=CVE-2024-56406
     PublishedDate: '2025-04-13T14:15:14.527Z'
-    LastModifiedDate: '2025-04-30T15:21:11.547Z'
+    LastModifiedDate: '2025-10-16T14:15:34.083Z'
   - VulnerabilityID: CVE-2025-47273
     PkgID: python3-pkg-resources@74.1.2-1
     PkgName: python3-pkg-resources
