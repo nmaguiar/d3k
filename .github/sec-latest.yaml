@@ -23555,7 +23555,7 @@
       azure: 2
       cbl-mariner: 2
       oracle-oval: 3
-      photon: 3
+      photon: 1
       redhat: 2
       rocky: 3
       ubuntu: 2
@@ -23703,7 +23703,7 @@
       alma: 3
       amazon: 3
       oracle-oval: 3
-      photon: 2
+      photon: 3
       redhat: 1
       rocky: 3
       ubuntu: 2
@@ -23848,7 +23848,7 @@
     - CWE-120
     VendorSeverity:
       bitnami: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -23977,7 +23977,7 @@
       azure: 2
       cbl-mariner: 2
       oracle-oval: 3
-      photon: 3
+      photon: 1
       redhat: 2
       rocky: 3
       ubuntu: 2
@@ -24125,7 +24125,7 @@
       alma: 3
       amazon: 3
       oracle-oval: 3
-      photon: 2
+      photon: 3
       redhat: 1
       rocky: 3
       ubuntu: 2
@@ -24270,7 +24270,7 @@
     - CWE-120
     VendorSeverity:
       bitnami: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -26963,7 +26963,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -27416,7 +27416,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -27869,7 +27869,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -29401,7 +29401,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -29854,7 +29854,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       redhat: 2
