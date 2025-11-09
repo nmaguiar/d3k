@@ -23427,14 +23427,12 @@
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2279632
     - https://bugzilla.redhat.com/show_bug.cgi?id=2325340
     - https://bugzilla.redhat.com/show_bug.cgi?id=2364265
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34397
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52533
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4373
     - https://errata.almalinux.org/9/ALSA-2025-11140.html
-    - https://errata.rockylinux.org/RLSA-2025:11327
+    - https://errata.rockylinux.org/RLSA-2025:10855
     - https://gitlab.gnome.org/GNOME/glib/-/issues/3677
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4588
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4592
@@ -25273,7 +25271,7 @@
     - https://bugzilla.suse.com/show_bug.cgi?id=1239618
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-8176
     - https://errata.almalinux.org/9/ALSA-2025-7444.html
-    - https://errata.rockylinux.org/RLSA-2025:3531
+    - https://errata.rockylinux.org/RLSA-2025:7512
     - https://github.com/libexpat/libexpat/blob/R_2_7_0/expat/Changes#L40-L52
     - https://github.com/libexpat/libexpat/issues/893
     - https://gitlab.alpinelinux.org/alpine/aports/-/commit/d068c3ff36fc6f4789988a09c69b434db757db53
@@ -25338,14 +25336,12 @@
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2279632
     - https://bugzilla.redhat.com/show_bug.cgi?id=2325340
     - https://bugzilla.redhat.com/show_bug.cgi?id=2364265
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34397
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52533
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4373
     - https://errata.almalinux.org/9/ALSA-2025-11140.html
-    - https://errata.rockylinux.org/RLSA-2025:11327
+    - https://errata.rockylinux.org/RLSA-2025:10855
     - https://gitlab.gnome.org/GNOME/glib/-/issues/3677
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4588
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4592
@@ -25406,14 +25402,12 @@
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2279632
     - https://bugzilla.redhat.com/show_bug.cgi?id=2325340
     - https://bugzilla.redhat.com/show_bug.cgi?id=2364265
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34397
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52533
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4373
     - https://errata.almalinux.org/9/ALSA-2025-11140.html
-    - https://errata.rockylinux.org/RLSA-2025:11327
+    - https://errata.rockylinux.org/RLSA-2025:10855
     - https://gitlab.gnome.org/GNOME/glib/-/issues/3677
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4588
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4592
@@ -26303,6 +26297,7 @@
     - https://access.redhat.com/errata/RHSA-2025:15827
     - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:17181
     - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
@@ -26321,7 +26316,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-11-03T19:16:15.117Z'
+    LastModifiedDate: '2025-11-06T22:15:44.783Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam-modules-bin@1.5.3-7ubuntu2
     PkgName: libpam-modules-bin
@@ -26379,6 +26374,7 @@
     - https://access.redhat.com/errata/RHSA-2025:15827
     - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:17181
     - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
@@ -26397,7 +26393,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-11-03T19:16:15.117Z'
+    LastModifiedDate: '2025-11-06T22:15:44.783Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam-runtime@1.5.3-7ubuntu2
     PkgName: libpam-runtime
@@ -26455,6 +26451,7 @@
     - https://access.redhat.com/errata/RHSA-2025:15827
     - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:17181
     - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
@@ -26473,7 +26470,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-11-03T19:16:15.117Z'
+    LastModifiedDate: '2025-11-06T22:15:44.783Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: libpam-systemd@256.5-2ubuntu3.1
     PkgName: libpam-systemd
@@ -26597,6 +26594,7 @@
     - https://access.redhat.com/errata/RHSA-2025:15827
     - https://access.redhat.com/errata/RHSA-2025:15828
     - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:17181
     - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
@@ -26615,7 +26613,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-11-03T19:16:15.117Z'
+    LastModifiedDate: '2025-11-06T22:15:44.783Z'
   - VulnerabilityID: CVE-2024-56406
     PkgID: libperl5.38t64@5.38.2-5
     PkgName: libperl5.38t64
@@ -26734,7 +26732,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -26815,7 +26813,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -26895,7 +26893,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -26973,7 +26971,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
     - https://github.com/python/cpython/commit/3612d8f51741b11f36f8fb0494d79086bac9390a
@@ -27107,7 +27105,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27187,7 +27185,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27268,7 +27266,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27348,7 +27346,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27426,7 +27424,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
     - https://github.com/python/cpython/commit/3612d8f51741b11f36f8fb0494d79086bac9390a
@@ -27560,7 +27558,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27640,7 +27638,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27721,7 +27719,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27801,7 +27799,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27879,7 +27877,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
     - https://github.com/python/cpython/commit/3612d8f51741b11f36f8fb0494d79086bac9390a
@@ -28013,7 +28011,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -28672,9 +28670,11 @@
     - https://bugzilla.redhat.com/2358121
     - https://bugzilla.redhat.com/2360768
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358121
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2360768
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32414
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32415
     - https://errata.almalinux.org/9/ALSA-2025-13428.html
-    - https://errata.rockylinux.org/RLSA-2025:8958
+    - https://errata.rockylinux.org/RLSA-2025:13429
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/889
     - https://linux.oracle.com/cve/CVE-2025-32414.html
     - https://linux.oracle.com/errata/ELSA-2025-8958.html
@@ -28732,10 +28732,12 @@
     - https://access.redhat.com/security/cve/CVE-2025-32415
     - https://bugzilla.redhat.com/2358121
     - https://bugzilla.redhat.com/2360768
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2358121
     - https://bugzilla.redhat.com/show_bug.cgi?id=2360768
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32414
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32415
     - https://errata.almalinux.org/9/ALSA-2025-13428.html
-    - https://errata.rockylinux.org/RLSA-2025:13203
+    - https://errata.rockylinux.org/RLSA-2025:13429
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/890
     - https://linux.oracle.com/cve/CVE-2025-32415.html
     - https://linux.oracle.com/errata/ELSA-2025-13789.html
@@ -29172,7 +29174,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2366982
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47273
     - https://errata.almalinux.org/9/ALSA-2025-13578.html
-    - https://errata.rockylinux.org/RLSA-2025:11036
+    - https://errata.rockylinux.org/RLSA-2025:9940
     - https://github.com/pypa/advisory-database/tree/main/vulns/setuptools/PYSEC-2025-49.yaml
     - https://github.com/pypa/setuptools
     - https://github.com/pypa/setuptools/blob/6ead555c5fb29bc57fe6105b1bffc163f56fd558/setuptools/package_index.py#L810C1-L825C88
@@ -29246,7 +29248,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29327,7 +29329,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29407,7 +29409,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29485,7 +29487,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
     - https://github.com/python/cpython/commit/3612d8f51741b11f36f8fb0494d79086bac9390a
@@ -29619,7 +29621,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29699,7 +29701,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29780,7 +29782,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29860,7 +29862,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29938,7 +29940,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
     - https://github.com/python/cpython/commit/3612d8f51741b11f36f8fb0494d79086bac9390a
@@ -30072,7 +30074,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10031
+    - https://errata.rockylinux.org/RLSA-2025:10140
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -30141,9 +30143,11 @@
     - https://bugs.gentoo.org/show_bug.cgi?id=CVE-2025-32462
     - https://bugzilla.redhat.com/2374692
     - https://bugzilla.redhat.com/show_bug.cgi?id=2374692
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2374693
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32462
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32463
     - https://errata.almalinux.org/9/ALSA-2025-9978.html
-    - https://errata.rockylinux.org/RLSA-2025:10110
+    - https://errata.rockylinux.org/RLSA-2025:11537
     - https://explore.alas.aws.amazon.com/CVE-2025-32462.html
     - https://linux.oracle.com/cve/CVE-2025-32462.html
     - https://linux.oracle.com/errata/ELSA-2025-9978.html
@@ -33498,66 +33502,11 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
-    Title: containerd affected by a local privilege escalation via wide permissions on CRI directory
-    Description: |-
-      ### Impact
-
-      An overly broad default permission vulnerability was found in containerd.
-
-      - `/var/lib/containerd` was created with the permission bits 0o711, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the metadata store and the content store
-      - `/run/containerd/io.containerd.grpc.v1.cri` was created with 0o755, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the contents of Kubernetes local volumes. The contents of volumes might include setuid binaries, which could allow a local user on the host to elevate privileges on the host.
-      - `/run/containerd/io.containerd.sandbox.controller.v1.shim` was created with 0o711, while it should be created with 0o700
-
-      The directory paths may differ depending on the daemon configuration.
-      When the `temp` directory path is specified in the daemon configuration, that directory was also created with 0o711, while it should be created with 0o700.
-
-      ### Patches
-
-      This bug has been fixed in the following containerd versions:
-
-      * 2.2.0
-      * 2.1.5
-      * 2.0.7
-      * 1.7.29
-
-      Users should update to these versions to resolve the issue.
-      These updates automatically change the permissions of the existing directories.
-
-      > [!NOTE]
-      >
-      > `/run/containerd` and `/run/containerd/io.containerd.runtime.v2.task` are still created with 0o711.
-      > This is an expected behavior for supporting userns-remapped containers.
-
-      ### Workarounds
-
-      The system administrator on the host can manually chmod the directories to not 
-      have group or world accessible permisisons:
-
-      ```
-      chmod 700 /var/lib/containerd
-      chmod 700 /run/containerd/io.containerd.grpc.v1.cri
-      chmod 700 /run/containerd/io.containerd.sandbox.controller.v1.shim
-      ```
-
-      An alternative mitigation would be to run containerd in [rootless mode](https://github.com/containerd/containerd/blob/main/docs/rootless.md).
-
-      ### Credits
-
-      The containerd project would like to thank David Leadbeater for responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+    Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
+    Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
+    CweIDs:
+    - CWE-279
     VendorSeverity:
       ghsa: 3
     CVSS:
@@ -33566,8 +33515,12 @@
         V3Score: 7.3
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/blob/main/docs/rootless.md
     - https://github.com/containerd/containerd/commit/7c59e8e9e970d38061a77b586b23655c352bfec5
     - https://github.com/containerd/containerd/security/advisories/GHSA-pwhc-rpq9-4c8w
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-25621
+    PublishedDate: '2025-11-06T19:15:40.09Z'
+    LastModifiedDate: '2025-11-06T19:45:09.883Z'
   - VulnerabilityID: CVE-2024-40635
     PkgID: github.com/containerd/containerd/v2@v2.0.2
     PkgName: github.com/containerd/containerd/v2
@@ -33670,6 +33623,38 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-47291
     PublishedDate: '2025-05-21T18:15:52.853Z'
     LastModifiedDate: '2025-09-19T17:25:42.653Z'
+  - VulnerabilityID: CVE-2025-64329
+    PkgID: github.com/containerd/containerd/v2@v2.0.2
+    PkgName: github.com/containerd/containerd/v2
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd/v2@v2.0.2
+      UID: 4430170f375207e
+    InstalledVersion: v2.0.2
+    FixedVersion: 2.0.7, 2.1.5, 2.2.0
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-64329
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
+    Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-401
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/083b53cd6f19b5de7717b0ce92c11bdf95e612df
+    - https://github.com/containerd/containerd/security/advisories/GHSA-m6hq-p25p-ffr2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-64329
+    PublishedDate: '2025-11-07T05:16:08.017Z'
+    LastModifiedDate: '2025-11-07T05:16:08.017Z'
   - VulnerabilityID: CVE-2025-0495
     PkgID: github.com/docker/buildx@v0.21.1
     PkgName: github.com/docker/buildx
@@ -34080,23 +34065,29 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Title: tar.Reader does not set a maximum size on the number of sparse region  ...
+    Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
         V3Score: 4.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58183
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
+    - https://www.cve.org/CVERecord?id=CVE-2025-58183
     PublishedDate: '2025-10-29T23:16:19.357Z'
     LastModifiedDate: '2025-11-04T22:16:33.2Z'
   - VulnerabilityID: CVE-2025-58186
@@ -34515,7 +34506,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
     - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9845
+    - https://errata.rockylinux.org/RLSA-2025:9317
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
@@ -36193,66 +36184,11 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
-    Title: containerd affected by a local privilege escalation via wide permissions on CRI directory
-    Description: |-
-      ### Impact
-
-      An overly broad default permission vulnerability was found in containerd.
-
-      - `/var/lib/containerd` was created with the permission bits 0o711, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the metadata store and the content store
-      - `/run/containerd/io.containerd.grpc.v1.cri` was created with 0o755, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the contents of Kubernetes local volumes. The contents of volumes might include setuid binaries, which could allow a local user on the host to elevate privileges on the host.
-      - `/run/containerd/io.containerd.sandbox.controller.v1.shim` was created with 0o711, while it should be created with 0o700
-
-      The directory paths may differ depending on the daemon configuration.
-      When the `temp` directory path is specified in the daemon configuration, that directory was also created with 0o711, while it should be created with 0o700.
-
-      ### Patches
-
-      This bug has been fixed in the following containerd versions:
-
-      * 2.2.0
-      * 2.1.5
-      * 2.0.7
-      * 1.7.29
-
-      Users should update to these versions to resolve the issue.
-      These updates automatically change the permissions of the existing directories.
-
-      > [!NOTE]
-      >
-      > `/run/containerd` and `/run/containerd/io.containerd.runtime.v2.task` are still created with 0o711.
-      > This is an expected behavior for supporting userns-remapped containers.
-
-      ### Workarounds
-
-      The system administrator on the host can manually chmod the directories to not 
-      have group or world accessible permisisons:
-
-      ```
-      chmod 700 /var/lib/containerd
-      chmod 700 /run/containerd/io.containerd.grpc.v1.cri
-      chmod 700 /run/containerd/io.containerd.sandbox.controller.v1.shim
-      ```
-
-      An alternative mitigation would be to run containerd in [rootless mode](https://github.com/containerd/containerd/blob/main/docs/rootless.md).
-
-      ### Credits
-
-      The containerd project would like to thank David Leadbeater for responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+    Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
+    Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
+    CweIDs:
+    - CWE-279
     VendorSeverity:
       ghsa: 3
     CVSS:
@@ -36261,8 +36197,12 @@
         V3Score: 7.3
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/blob/main/docs/rootless.md
     - https://github.com/containerd/containerd/commit/7c59e8e9e970d38061a77b586b23655c352bfec5
     - https://github.com/containerd/containerd/security/advisories/GHSA-pwhc-rpq9-4c8w
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-25621
+    PublishedDate: '2025-11-06T19:15:40.09Z'
+    LastModifiedDate: '2025-11-06T19:45:09.883Z'
   - VulnerabilityID: CVE-2024-40635
     PkgID: github.com/containerd/containerd@v1.7.24
     PkgName: github.com/containerd/containerd
@@ -36320,6 +36260,38 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-40635
     PublishedDate: '2025-03-17T22:15:13.15Z'
     LastModifiedDate: '2025-10-02T01:51:43.21Z'
+  - VulnerabilityID: CVE-2025-64329
+    PkgID: github.com/containerd/containerd@v1.7.24
+    PkgName: github.com/containerd/containerd
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd@v1.7.24
+      UID: f4932271e34afc46
+    InstalledVersion: v1.7.24
+    FixedVersion: 1.7.29
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-64329
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
+    Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-401
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/083b53cd6f19b5de7717b0ce92c11bdf95e612df
+    - https://github.com/containerd/containerd/security/advisories/GHSA-m6hq-p25p-ffr2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-64329
+    PublishedDate: '2025-11-07T05:16:08.017Z'
+    LastModifiedDate: '2025-11-07T05:16:08.017Z'
   - VulnerabilityID: CVE-2025-54410
     PkgID: github.com/docker/docker@v25.0.6+incompatible
     PkgName: github.com/docker/docker
@@ -36681,23 +36653,29 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Title: tar.Reader does not set a maximum size on the number of sparse region  ...
+    Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
         V3Score: 4.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58183
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
+    - https://www.cve.org/CVERecord?id=CVE-2025-58183
     PublishedDate: '2025-10-29T23:16:19.357Z'
     LastModifiedDate: '2025-11-04T22:16:33.2Z'
   - VulnerabilityID: CVE-2025-58186
@@ -36991,7 +36969,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
     - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9845
+    - https://errata.rockylinux.org/RLSA-2025:9317
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
@@ -38362,23 +38340,29 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Title: tar.Reader does not set a maximum size on the number of sparse region  ...
+    Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
         V3Score: 4.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58183
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
+    - https://www.cve.org/CVERecord?id=CVE-2025-58183
     PublishedDate: '2025-10-29T23:16:19.357Z'
     LastModifiedDate: '2025-11-04T22:16:33.2Z'
   - VulnerabilityID: CVE-2025-58186
@@ -38608,7 +38592,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
     - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9845
+    - https://errata.rockylinux.org/RLSA-2025:9317
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
@@ -40017,66 +40001,11 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
-    Title: containerd affected by a local privilege escalation via wide permissions on CRI directory
-    Description: |-
-      ### Impact
-
-      An overly broad default permission vulnerability was found in containerd.
-
-      - `/var/lib/containerd` was created with the permission bits 0o711, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the metadata store and the content store
-      - `/run/containerd/io.containerd.grpc.v1.cri` was created with 0o755, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the contents of Kubernetes local volumes. The contents of volumes might include setuid binaries, which could allow a local user on the host to elevate privileges on the host.
-      - `/run/containerd/io.containerd.sandbox.controller.v1.shim` was created with 0o711, while it should be created with 0o700
-
-      The directory paths may differ depending on the daemon configuration.
-      When the `temp` directory path is specified in the daemon configuration, that directory was also created with 0o711, while it should be created with 0o700.
-
-      ### Patches
-
-      This bug has been fixed in the following containerd versions:
-
-      * 2.2.0
-      * 2.1.5
-      * 2.0.7
-      * 1.7.29
-
-      Users should update to these versions to resolve the issue.
-      These updates automatically change the permissions of the existing directories.
-
-      > [!NOTE]
-      >
-      > `/run/containerd` and `/run/containerd/io.containerd.runtime.v2.task` are still created with 0o711.
-      > This is an expected behavior for supporting userns-remapped containers.
-
-      ### Workarounds
-
-      The system administrator on the host can manually chmod the directories to not 
-      have group or world accessible permisisons:
-
-      ```
-      chmod 700 /var/lib/containerd
-      chmod 700 /run/containerd/io.containerd.grpc.v1.cri
-      chmod 700 /run/containerd/io.containerd.sandbox.controller.v1.shim
-      ```
-
-      An alternative mitigation would be to run containerd in [rootless mode](https://github.com/containerd/containerd/blob/main/docs/rootless.md).
-
-      ### Credits
-
-      The containerd project would like to thank David Leadbeater for responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+    Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
+    Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
+    CweIDs:
+    - CWE-279
     VendorSeverity:
       ghsa: 3
     CVSS:
@@ -40085,8 +40014,12 @@
         V3Score: 7.3
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/blob/main/docs/rootless.md
     - https://github.com/containerd/containerd/commit/7c59e8e9e970d38061a77b586b23655c352bfec5
     - https://github.com/containerd/containerd/security/advisories/GHSA-pwhc-rpq9-4c8w
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-25621
+    PublishedDate: '2025-11-06T19:15:40.09Z'
+    LastModifiedDate: '2025-11-06T19:45:09.883Z'
   - VulnerabilityID: CVE-2024-40635
     PkgID: github.com/containerd/containerd@v1.7.19
     PkgName: github.com/containerd/containerd
@@ -40144,6 +40077,38 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-40635
     PublishedDate: '2025-03-17T22:15:13.15Z'
     LastModifiedDate: '2025-10-02T01:51:43.21Z'
+  - VulnerabilityID: CVE-2025-64329
+    PkgID: github.com/containerd/containerd@v1.7.19
+    PkgName: github.com/containerd/containerd
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd@v1.7.19
+      UID: 1b5ac4bc1bc375ec
+    InstalledVersion: v1.7.19
+    FixedVersion: 1.7.29
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-64329
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
+    Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-401
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/083b53cd6f19b5de7717b0ce92c11bdf95e612df
+    - https://github.com/containerd/containerd/security/advisories/GHSA-m6hq-p25p-ffr2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-64329
+    PublishedDate: '2025-11-07T05:16:08.017Z'
+    LastModifiedDate: '2025-11-07T05:16:08.017Z'
   - VulnerabilityID: CVE-2024-41110
     PkgID: github.com/docker/docker@v27.0.3+incompatible
     PkgName: github.com/docker/docker
@@ -40669,23 +40634,29 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Title: tar.Reader does not set a maximum size on the number of sparse region  ...
+    Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
         V3Score: 4.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58183
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
+    - https://www.cve.org/CVERecord?id=CVE-2025-58183
     PublishedDate: '2025-10-29T23:16:19.357Z'
     LastModifiedDate: '2025-11-04T22:16:33.2Z'
   - VulnerabilityID: CVE-2025-58186
@@ -40915,7 +40886,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
     - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9845
+    - https://errata.rockylinux.org/RLSA-2025:9317
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
