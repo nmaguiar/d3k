@@ -23427,12 +23427,14 @@
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2279632
     - https://bugzilla.redhat.com/show_bug.cgi?id=2325340
     - https://bugzilla.redhat.com/show_bug.cgi?id=2364265
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34397
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52533
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4373
     - https://errata.almalinux.org/9/ALSA-2025-11140.html
-    - https://errata.rockylinux.org/RLSA-2025:10855
+    - https://errata.rockylinux.org/RLSA-2025:11327
     - https://gitlab.gnome.org/GNOME/glib/-/issues/3677
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4588
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4592
@@ -25131,7 +25133,7 @@
       amazon: 2
       azure: 2
       nvd: 3
-      photon: 2
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -25271,7 +25273,7 @@
     - https://bugzilla.suse.com/show_bug.cgi?id=1239618
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-8176
     - https://errata.almalinux.org/9/ALSA-2025-7444.html
-    - https://errata.rockylinux.org/RLSA-2025:7512
+    - https://errata.rockylinux.org/RLSA-2025:3531
     - https://github.com/libexpat/libexpat/blob/R_2_7_0/expat/Changes#L40-L52
     - https://github.com/libexpat/libexpat/issues/893
     - https://gitlab.alpinelinux.org/alpine/aports/-/commit/d068c3ff36fc6f4789988a09c69b434db757db53
@@ -25336,12 +25338,14 @@
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2279632
     - https://bugzilla.redhat.com/show_bug.cgi?id=2325340
     - https://bugzilla.redhat.com/show_bug.cgi?id=2364265
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34397
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52533
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4373
     - https://errata.almalinux.org/9/ALSA-2025-11140.html
-    - https://errata.rockylinux.org/RLSA-2025:10855
+    - https://errata.rockylinux.org/RLSA-2025:11327
     - https://gitlab.gnome.org/GNOME/glib/-/issues/3677
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4588
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4592
@@ -25402,12 +25406,14 @@
     - https://access.redhat.com/security/cve/CVE-2025-4373
     - https://bugzilla.redhat.com/2325340
     - https://bugzilla.redhat.com/2364265
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2279632
     - https://bugzilla.redhat.com/show_bug.cgi?id=2325340
     - https://bugzilla.redhat.com/show_bug.cgi?id=2364265
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34397
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52533
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4373
     - https://errata.almalinux.org/9/ALSA-2025-11140.html
-    - https://errata.rockylinux.org/RLSA-2025:10855
+    - https://errata.rockylinux.org/RLSA-2025:11327
     - https://gitlab.gnome.org/GNOME/glib/-/issues/3677
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4588
     - https://gitlab.gnome.org/GNOME/glib/-/merge_requests/4592
@@ -26732,7 +26738,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -26813,7 +26819,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -26893,7 +26899,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -26971,7 +26977,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
     - https://github.com/python/cpython/commit/3612d8f51741b11f36f8fb0494d79086bac9390a
@@ -27105,7 +27111,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27185,7 +27191,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27266,7 +27272,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27346,7 +27352,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27424,7 +27430,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
     - https://github.com/python/cpython/commit/3612d8f51741b11f36f8fb0494d79086bac9390a
@@ -27558,7 +27564,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27638,7 +27644,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27719,7 +27725,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27799,7 +27805,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -27877,7 +27883,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
     - https://github.com/python/cpython/commit/3612d8f51741b11f36f8fb0494d79086bac9390a
@@ -28011,7 +28017,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -28670,11 +28676,9 @@
     - https://bugzilla.redhat.com/2358121
     - https://bugzilla.redhat.com/2360768
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358121
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2360768
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32414
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32415
     - https://errata.almalinux.org/9/ALSA-2025-13428.html
-    - https://errata.rockylinux.org/RLSA-2025:13429
+    - https://errata.rockylinux.org/RLSA-2025:8958
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/889
     - https://linux.oracle.com/cve/CVE-2025-32414.html
     - https://linux.oracle.com/errata/ELSA-2025-8958.html
@@ -28732,12 +28736,10 @@
     - https://access.redhat.com/security/cve/CVE-2025-32415
     - https://bugzilla.redhat.com/2358121
     - https://bugzilla.redhat.com/2360768
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2358121
     - https://bugzilla.redhat.com/show_bug.cgi?id=2360768
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32414
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32415
     - https://errata.almalinux.org/9/ALSA-2025-13428.html
-    - https://errata.rockylinux.org/RLSA-2025:13429
+    - https://errata.rockylinux.org/RLSA-2025:13203
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/890
     - https://linux.oracle.com/cve/CVE-2025-32415.html
     - https://linux.oracle.com/errata/ELSA-2025-13789.html
@@ -29174,7 +29176,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2366982
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47273
     - https://errata.almalinux.org/9/ALSA-2025-13578.html
-    - https://errata.rockylinux.org/RLSA-2025:9940
+    - https://errata.rockylinux.org/RLSA-2025:11036
     - https://github.com/pypa/advisory-database/tree/main/vulns/setuptools/PYSEC-2025-49.yaml
     - https://github.com/pypa/setuptools
     - https://github.com/pypa/setuptools/blob/6ead555c5fb29bc57fe6105b1bffc163f56fd558/setuptools/package_index.py#L810C1-L825C88
@@ -29248,7 +29250,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29329,7 +29331,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29409,7 +29411,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29487,7 +29489,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
     - https://github.com/python/cpython/commit/3612d8f51741b11f36f8fb0494d79086bac9390a
@@ -29621,7 +29623,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29701,7 +29703,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29782,7 +29784,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29862,7 +29864,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -29940,7 +29942,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
     - https://github.com/python/cpython/commit/3612d8f51741b11f36f8fb0494d79086bac9390a
@@ -30074,7 +30076,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4435
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4517
     - https://errata.almalinux.org/9/ALSA-2025-10189.html
-    - https://errata.rockylinux.org/RLSA-2025:10140
+    - https://errata.rockylinux.org/RLSA-2025:10031
     - https://gist.github.com/sethmlarson/52398e33eff261329a0180ac1d54f42f
     - https://github.com/python/cpython/commit/19de092debb3d7e832e5672cc2f7b788d35951da
     - https://github.com/python/cpython/commit/28463dba112af719df1e8b0391c46787ad756dd9
@@ -30143,11 +30145,9 @@
     - https://bugs.gentoo.org/show_bug.cgi?id=CVE-2025-32462
     - https://bugzilla.redhat.com/2374692
     - https://bugzilla.redhat.com/show_bug.cgi?id=2374692
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2374693
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32462
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-32463
     - https://errata.almalinux.org/9/ALSA-2025-9978.html
-    - https://errata.rockylinux.org/RLSA-2025:11537
+    - https://errata.rockylinux.org/RLSA-2025:10110
     - https://explore.alas.aws.amazon.com/CVE-2025-32462.html
     - https://linux.oracle.com/cve/CVE-2025-32462.html
     - https://linux.oracle.com/errata/ELSA-2025-9978.html
@@ -34506,7 +34506,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
     - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9317
+    - https://errata.rockylinux.org/RLSA-2025:9845
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
@@ -36969,7 +36969,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
     - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9317
+    - https://errata.rockylinux.org/RLSA-2025:9845
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
@@ -38592,7 +38592,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
     - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9317
+    - https://errata.rockylinux.org/RLSA-2025:9845
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
@@ -40886,7 +40886,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
     - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9317
+    - https://errata.rockylinux.org/RLSA-2025:9845
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
