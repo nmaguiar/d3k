@@ -26883,6 +26883,80 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-64329
     PublishedDate: '2025-11-07T05:16:08.017Z'
     LastModifiedDate: '2025-11-12T16:20:22.257Z'
+  - VulnerabilityID: CVE-2025-47914
+    PkgID: golang.org/x/crypto@v0.38.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.38.0
+      UID: 194e564864762cce
+    InstalledVersion: v0.38.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:46826ee5fc15a5b0859673d568d698a9c8ce1264da86f23d26adaa86289681b8
+      DiffID: sha256:0b24149d5979618b4d6b410bdb43ac992246f3c93552fca87dcc09cb3879503e
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47914
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH Agent servers do not validate the size of messages when processing ...
+    Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721960
+    - https://go.dev/issue/76364
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
+    - https://pkg.go.dev/vuln/GO-2025-4135
+    PublishedDate: '2025-11-19T21:15:50.517Z'
+    LastModifiedDate: '2025-11-19T21:15:50.517Z'
+  - VulnerabilityID: CVE-2025-58181
+    PkgID: golang.org/x/crypto@v0.38.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.38.0
+      UID: 194e564864762cce
+    InstalledVersion: v0.38.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:46826ee5fc15a5b0859673d568d698a9c8ce1264da86f23d26adaa86289681b8
+      DiffID: sha256:0b24149d5979618b4d6b410bdb43ac992246f3c93552fca87dcc09cb3879503e
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58181
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
+    Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-770
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721961
+    - https://go.dev/issue/76363
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
+    - https://pkg.go.dev/vuln/GO-2025-4134
+    PublishedDate: '2025-11-19T21:15:50.85Z'
+    LastModifiedDate: '2025-11-19T21:15:50.85Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -28029,6 +28103,81 @@
     Layer:
       Digest: sha256:46826ee5fc15a5b0859673d568d698a9c8ce1264da86f23d26adaa86289681b8
       DiffID: sha256:0b24149d5979618b4d6b410bdb43ac992246f3c93552fca87dcc09cb3879503e
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2025-47914
+    PkgID: golang.org/x/crypto@v0.43.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.43.0
+      UID: 9081dfec71a8b5c6
+    InstalledVersion: v0.43.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:46826ee5fc15a5b0859673d568d698a9c8ce1264da86f23d26adaa86289681b8
+      DiffID: sha256:0b24149d5979618b4d6b410bdb43ac992246f3c93552fca87dcc09cb3879503e
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47914
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH Agent servers do not validate the size of messages when processing ...
+    Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721960
+    - https://go.dev/issue/76364
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
+    - https://pkg.go.dev/vuln/GO-2025-4135
+    PublishedDate: '2025-11-19T21:15:50.517Z'
+    LastModifiedDate: '2025-11-19T21:15:50.517Z'
+  - VulnerabilityID: CVE-2025-58181
+    PkgID: golang.org/x/crypto@v0.43.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.43.0
+      UID: 9081dfec71a8b5c6
+    InstalledVersion: v0.43.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:46826ee5fc15a5b0859673d568d698a9c8ce1264da86f23d26adaa86289681b8
+      DiffID: sha256:0b24149d5979618b4d6b410bdb43ac992246f3c93552fca87dcc09cb3879503e
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58181
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
+    Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-770
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721961
+    - https://go.dev/issue/76363
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
+    - https://pkg.go.dev/vuln/GO-2025-4134
+    PublishedDate: '2025-11-19T21:15:50.85Z'
+    LastModifiedDate: '2025-11-19T21:15:50.85Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -30341,6 +30490,80 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-22869
     PublishedDate: '2025-02-26T08:14:24.997Z'
     LastModifiedDate: '2025-05-01T19:28:20.74Z'
+  - VulnerabilityID: CVE-2025-47914
+    PkgID: golang.org/x/crypto@v0.24.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.24.0
+      UID: 51665884b15027a5
+    InstalledVersion: v0.24.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:46826ee5fc15a5b0859673d568d698a9c8ce1264da86f23d26adaa86289681b8
+      DiffID: sha256:0b24149d5979618b4d6b410bdb43ac992246f3c93552fca87dcc09cb3879503e
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47914
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH Agent servers do not validate the size of messages when processing ...
+    Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721960
+    - https://go.dev/issue/76364
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
+    - https://pkg.go.dev/vuln/GO-2025-4135
+    PublishedDate: '2025-11-19T21:15:50.517Z'
+    LastModifiedDate: '2025-11-19T21:15:50.517Z'
+  - VulnerabilityID: CVE-2025-58181
+    PkgID: golang.org/x/crypto@v0.24.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.24.0
+      UID: 51665884b15027a5
+    InstalledVersion: v0.24.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:46826ee5fc15a5b0859673d568d698a9c8ce1264da86f23d26adaa86289681b8
+      DiffID: sha256:0b24149d5979618b4d6b410bdb43ac992246f3c93552fca87dcc09cb3879503e
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58181
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
+    Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-770
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721961
+    - https://go.dev/issue/76363
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
+    - https://pkg.go.dev/vuln/GO-2025-4134
+    PublishedDate: '2025-11-19T21:15:50.85Z'
+    LastModifiedDate: '2025-11-19T21:15:50.85Z'
   - VulnerabilityID: CVE-2025-22870
     PkgID: golang.org/x/net@v0.26.0
     PkgName: golang.org/x/net
@@ -30801,12 +31024,12 @@
         V3Score: 5.4
     References:
     - http://www.openwall.com/lists/oss-security/2025/04/04/4
-    - https://access.redhat.com/errata/RHSA-2025:9845
+    - https://access.redhat.com/errata/RHSA-2025:9623
     - https://access.redhat.com/security/cve/CVE-2025-22871
     - https://bugzilla.redhat.com/2358493
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
-    - https://errata.almalinux.org/8/ALSA-2025-9845.html
+    - https://errata.almalinux.org/10/ALSA-2025-9623.html
     - https://errata.rockylinux.org/RLSA-2025:9845
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
@@ -30860,12 +31083,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N
         V3Score: 6.8
     References:
-    - https://access.redhat.com/errata/RHSA-2025:10672
+    - https://access.redhat.com/errata/RHSA-2025:16432
     - https://access.redhat.com/security/cve/CVE-2025-4673
     - https://bugzilla.redhat.com/2373305
     - https://bugzilla.redhat.com/show_bug.cgi?id=2373305
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673
-    - https://errata.almalinux.org/8/ALSA-2025-10672.html
+    - https://errata.almalinux.org/10/ALSA-2025-16432.html
     - https://errata.rockylinux.org/RLSA-2025:16432
     - https://go.dev/cl/679257
     - https://go.dev/issue/73816
