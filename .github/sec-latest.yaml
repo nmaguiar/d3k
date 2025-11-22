@@ -25275,7 +25275,7 @@
     - https://bugzilla.suse.com/show_bug.cgi?id=1239618
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-8176
     - https://errata.almalinux.org/10/ALSA-2025-7512.html
-    - https://errata.rockylinux.org/RLSA-2025:3531
+    - https://errata.rockylinux.org/RLSA-2025:4048
     - https://github.com/libexpat/libexpat/blob/R_2_7_0/expat/Changes#L40-L52
     - https://github.com/libexpat/libexpat/issues/893
     - https://gitlab.alpinelinux.org/alpine/aports/-/commit/d068c3ff36fc6f4789988a09c69b434db757db53
@@ -26312,6 +26312,7 @@
     - https://access.redhat.com/errata/RHSA-2025:17181
     - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:20181
+    - https://access.redhat.com/errata/RHSA-2025:21885
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -26329,7 +26330,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-11-11T16:15:40.43Z'
+    LastModifiedDate: '2025-11-20T21:16:06.943Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam-modules-bin@1.5.3-7ubuntu2
     PkgName: libpam-modules-bin
@@ -26390,6 +26391,7 @@
     - https://access.redhat.com/errata/RHSA-2025:17181
     - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:20181
+    - https://access.redhat.com/errata/RHSA-2025:21885
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -26407,7 +26409,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-11-11T16:15:40.43Z'
+    LastModifiedDate: '2025-11-20T21:16:06.943Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam-runtime@1.5.3-7ubuntu2
     PkgName: libpam-runtime
@@ -26468,6 +26470,7 @@
     - https://access.redhat.com/errata/RHSA-2025:17181
     - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:20181
+    - https://access.redhat.com/errata/RHSA-2025:21885
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -26485,7 +26488,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-11-11T16:15:40.43Z'
+    LastModifiedDate: '2025-11-20T21:16:06.943Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: libpam-systemd@256.5-2ubuntu3.1
     PkgName: libpam-systemd
@@ -26612,6 +26615,7 @@
     - https://access.redhat.com/errata/RHSA-2025:17181
     - https://access.redhat.com/errata/RHSA-2025:18219
     - https://access.redhat.com/errata/RHSA-2025:20181
+    - https://access.redhat.com/errata/RHSA-2025:21885
     - https://access.redhat.com/errata/RHSA-2025:9526
     - https://access.redhat.com/security/cve/CVE-2025-6020
     - https://bugzilla.redhat.com/2372512
@@ -26629,7 +26633,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2025-11-11T16:15:40.43Z'
+    LastModifiedDate: '2025-11-20T21:16:06.943Z'
   - VulnerabilityID: CVE-2024-56406
     PkgID: libperl5.38t64@5.38.2-5
     PkgName: libperl5.38t64
@@ -28504,7 +28508,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56171
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24928
     - https://errata.almalinux.org/9/ALSA-2025-2679.html
-    - https://errata.rockylinux.org/RLSA-2025:2679
+    - https://errata.rockylinux.org/RLSA-2025:2686
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/828
     - https://linux.oracle.com/cve/CVE-2024-56171.html
     - https://linux.oracle.com/errata/ELSA-2025-2686.html
@@ -28567,7 +28571,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56171
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24928
     - https://errata.almalinux.org/9/ALSA-2025-2679.html
-    - https://errata.rockylinux.org/RLSA-2025:2679
+    - https://errata.rockylinux.org/RLSA-2025:2686
     - https://gitlab.gnome.org/GNOME/libxml2/-/issues/847
     - https://issues.oss-fuzz.com/issues/392687022
     - https://linux.oracle.com/cve/CVE-2025-24928.html
@@ -33860,6 +33864,7 @@
     References:
     - https://go.dev/cl/721960
     - https://go.dev/issue/76364
+    - https://go.googlesource.com/crypto
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
     - https://pkg.go.dev/vuln/GO-2025-4135
@@ -34119,6 +34124,7 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
+      alma: 2
       amazon: 3
       bitnami: 2
       redhat: 2
@@ -34131,7 +34137,10 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/errata/RHSA-2025:21815
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2407258
+    - https://errata.almalinux.org/9/ALSA-2025-21815.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -34194,7 +34203,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Title: Due to the design of the name constraint checking algorithm, the proce ...
-    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scals non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
+    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
@@ -34211,7 +34220,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58187
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-11-04T22:16:33.593Z'
+    LastModifiedDate: '2025-11-20T23:15:52.007Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.22.10
     PkgName: stdlib
@@ -36537,6 +36546,7 @@
     References:
     - https://go.dev/cl/721960
     - https://go.dev/issue/76364
+    - https://go.googlesource.com/crypto
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
     - https://pkg.go.dev/vuln/GO-2025-4135
@@ -36796,6 +36806,7 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
+      alma: 2
       amazon: 3
       bitnami: 2
       redhat: 2
@@ -36808,7 +36819,10 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/errata/RHSA-2025:21815
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2407258
+    - https://errata.almalinux.org/9/ALSA-2025-21815.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -36871,7 +36885,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Title: Due to the design of the name constraint checking algorithm, the proce ...
-    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scals non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
+    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
@@ -36888,7 +36902,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58187
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-11-04T22:16:33.593Z'
+    LastModifiedDate: '2025-11-20T23:15:52.007Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.23.5
     PkgName: stdlib
@@ -38496,6 +38510,7 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
+      alma: 2
       amazon: 3
       bitnami: 2
       redhat: 2
@@ -38508,7 +38523,10 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/errata/RHSA-2025:21815
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2407258
+    - https://errata.almalinux.org/9/ALSA-2025-21815.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -38571,7 +38589,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Title: Due to the design of the name constraint checking algorithm, the proce ...
-    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scals non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
+    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
@@ -38588,7 +38606,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58187
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-11-04T22:16:33.593Z'
+    LastModifiedDate: '2025-11-20T23:15:52.007Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.23.6
     PkgName: stdlib
@@ -40583,6 +40601,7 @@
     References:
     - https://go.dev/cl/721960
     - https://go.dev/issue/76364
+    - https://go.googlesource.com/crypto
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
     - https://pkg.go.dev/vuln/GO-2025-4135
@@ -40879,6 +40898,7 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
+      alma: 2
       amazon: 3
       bitnami: 2
       redhat: 2
@@ -40891,7 +40911,10 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/errata/RHSA-2025:21815
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2407258
+    - https://errata.almalinux.org/9/ALSA-2025-21815.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -40954,7 +40977,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Title: Due to the design of the name constraint checking algorithm, the proce ...
-    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scals non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
+    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
@@ -40971,7 +40994,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58187
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-11-04T22:16:33.593Z'
+    LastModifiedDate: '2025-11-20T23:15:52.007Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.22.12
     PkgName: stdlib
