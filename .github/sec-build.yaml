@@ -26839,6 +26839,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:17e3c2cae368afe0574acb64afbf736ffde8e65dcb95de63b37e986cfbc3a588
     Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
     Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
@@ -26879,6 +26880,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:c087a886ed1a7a7513288e65ab0cb800fd0eee6c839add31f2b30bd043af9e07
     Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
     Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
     Severity: MEDIUM
@@ -26914,6 +26916,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:0be7840c054f551262e43decb2d9389b6bef81694f673e00b97a366bc065c5c6
     Title: SSH Agent servers do not validate the size of messages when processing ...
     Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
     Severity: MEDIUM
@@ -26952,6 +26955,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:f2ee0547b4fb13afa5117c1edcdfd725108d053af33c2e8b74caf6cbfdf6889a
     Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
     Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
     Severity: MEDIUM
@@ -26971,6 +26975,60 @@
     - https://pkg.go.dev/vuln/GO-2025-4134
     PublishedDate: '2025-11-19T21:15:50.85Z'
     LastModifiedDate: '2025-11-21T15:13:59.083Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: stdlib@v1.24.9
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.9
+      UID: 62b35968775d1e83
+    InstalledVersion: v1.24.9
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e3b39661339ffa9ad4ce2c2e7246ccee9316a8d6a60d14aa361d4481391a96e0
+      DiffID: sha256:2726f497e6a054e29b6d74644a839ce3adace668417b4a4a2418f51e29d344c2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:a6bd671610ccc2bf0a5046d98887c6ca37830bd3873e1c0dd93f6a17eb6fff4f
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.24.9
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.9
+      UID: 62b35968775d1e83
+    InstalledVersion: v1.24.9
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e3b39661339ffa9ad4ce2c2e7246ccee9316a8d6a60d14aa361d4481391a96e0
+      DiffID: sha256:2726f497e6a054e29b6d74644a839ce3adace668417b4a4a2418f51e29d344c2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:d044053f9953665e7d42b2f1856da60282a2b124e2ec505ce6d565141d1c07a0
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -28136,6 +28194,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:7e0c26eecce4f937df69a7b322cc256acf66bde6366a6912eab4943eb7cef6a3
     Title: SSH Agent servers do not validate the size of messages when processing ...
     Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
     Severity: MEDIUM
@@ -28174,6 +28233,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:6d2732a782cb2b91f6100302475c065d2c677ad3e9f0098595dfbe87293eecfe
     Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
     Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
     Severity: MEDIUM
@@ -28193,6 +28253,60 @@
     - https://pkg.go.dev/vuln/GO-2025-4134
     PublishedDate: '2025-11-19T21:15:50.85Z'
     LastModifiedDate: '2025-11-21T15:13:59.083Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: stdlib@v1.25.3
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.3
+      UID: 10d867de206ea037
+    InstalledVersion: v1.25.3
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e3b39661339ffa9ad4ce2c2e7246ccee9316a8d6a60d14aa361d4481391a96e0
+      DiffID: sha256:2726f497e6a054e29b6d74644a839ce3adace668417b4a4a2418f51e29d344c2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:0a93e536631bace3fc67ab128da6c57d68e281676a8bbcd79986d52d41aaffa7
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.25.3
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.3
+      UID: 10d867de206ea037
+    InstalledVersion: v1.25.3
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e3b39661339ffa9ad4ce2c2e7246ccee9316a8d6a60d14aa361d4481391a96e0
+      DiffID: sha256:2726f497e6a054e29b6d74644a839ce3adace668417b4a4a2418f51e29d344c2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:a248cfca6ba10cc9e898fce32153a2f9b5a8906820e059d01493459219b41f64
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -29031,6 +29145,61 @@
     Layer:
       Digest: sha256:e3b39661339ffa9ad4ce2c2e7246ccee9316a8d6a60d14aa361d4481391a96e0
       DiffID: sha256:2726f497e6a054e29b6d74644a839ce3adace668417b4a4a2418f51e29d344c2
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: stdlib@v1.24.9
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.9
+      UID: e796ca6841271e1f
+    InstalledVersion: v1.24.9
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e3b39661339ffa9ad4ce2c2e7246ccee9316a8d6a60d14aa361d4481391a96e0
+      DiffID: sha256:2726f497e6a054e29b6d74644a839ce3adace668417b4a4a2418f51e29d344c2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:3acce94b83ffa57b92c3eaafc3787d7bc6554e2cf0a8dd636951dc6c6c6b98c1
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.24.9
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.9
+      UID: e796ca6841271e1f
+    InstalledVersion: v1.24.9
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e3b39661339ffa9ad4ce2c2e7246ccee9316a8d6a60d14aa361d4481391a96e0
+      DiffID: sha256:2726f497e6a054e29b6d74644a839ce3adace668417b4a4a2418f51e29d344c2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:59a55fa3ebba7a9192d03ecdd4764576625b7361c5711b18535e0005e1723887
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -30156,6 +30325,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:cae69d967cebb0f0213b6d2da580431da32b71df9dd0c6d0af48a1784a5fa3f9
     Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
     Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
@@ -30196,6 +30366,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:2391cdc1e2892b306c6e44ab97cf581bd873ec798c04bf0a4145f1886014dc25
     Title: 'containerd: containerd has an integer overflow in User ID handling'
     Description: containerd is an open-source container runtime. A bug was found in containerd prior to versions 1.6.38, 1.7.27, and 2.0.4 where containers launched with a User set as a `UID:GID` larger than the maximum 32-bit signed integer can cause an overflow condition where the container ultimately runs as root (UID 0). This could cause unexpected behavior for environments that require containers to run as a non-root user. This bug has been fixed in containerd 1.6.38, 1.7.27, and 2.04. As a workaround, ensure that only trusted images are used and that only trusted users have permissions to import images.
     Severity: MEDIUM
@@ -30253,6 +30424,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:c389eaf2a8b5616efa4d628071d5c5f6c4e093916e6deb3a786accab57ded752
     Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
     Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
     Severity: MEDIUM
@@ -30288,6 +30460,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:2786deebd7bc343f27fdb344e1847f3a9863ba3b42d73111ab06db06a9bb43fe
     Title: 'moby: Authz zero length regression'
     Description: |-
       Moby is an open-source project created by Docker for software containerization. A security vulnerability has been detected in certain versions of Docker Engine, which could allow an attacker to bypass authorization plugins (AuthZ) under specific circumstances. The base likelihood of this being exploited is low.
@@ -30362,6 +30535,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:01ea2c9eef2087a6a99d3d2ff68b77e6f062d8304891c70052fcf3d274f159b7
     Title: 'github.com/moby/moby: Moby''s Firewalld reload removes bridge network isolation'
     Description: |-
       Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. A firewalld vulnerability affects Moby releases before 28.0.0. When firewalld reloads, Docker fails to re-create iptables rules that isolate bridge networks, allowing any container to access all ports on any other container across different bridge networks on the same host. This breaks network segmentation between containers that should be isolated, creating significant risk in multi-tenant environments. Only containers in --internal networks remain protected.
@@ -30413,6 +30587,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:2374a4d09ba71bfd39802c09d81fefc96a49e2ac4b5d24b061cea167b173ef88
     Title: 'golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto'
     Description: Applications and libraries which misuse connection.serverAuthenticate (via callback field ServerConfig.PublicKeyCallback) may be susceptible to an authorization bypass. The documentation for ServerConfig.PublicKeyCallback says that "A call to this function does not guarantee that the key offered is in fact used to authenticate." Specifically, the SSH protocol allows clients to inquire about whether a public key is acceptable before proving control of the corresponding private key. PublicKeyCallback may be called with multiple keys, and the order in which the keys were provided cannot be used to infer which key the client successfully authenticated with, if any. Some applications, which store the key(s) passed to PublicKeyCallback (or derived information) and make security relevant determinations based on it once the connection is established, may make incorrect assumptions. For example, an attacker may send public keys A and B, and then authenticate with A. PublicKeyCallback would be called only twice, first with A and then with B. A vulnerable application may then make authorization decisions based on key B for which the attacker does not actually control the private key. Since this API is widely misused, as a partial mitigation golang.org/x/cry...@v0.31.0 enforces the property that, when successfully authenticating via public key, the last key passed to ServerConfig.PublicKeyCallback will be the key used to authenticate the connection. PublicKeyCallback will now be called multiple times with the same key, if necessary. Note that the client may still not control the last key passed to PublicKeyCallback if the connection is then authenticated with a different method, such as PasswordCallback, KeyboardInteractiveCallback, or NoClientAuth. Users should be using the Extensions field of the Permissions return value from the various authentication callbacks to record data associated with the authentication attempt instead of referencing external state. Once the connection is established the state corresponding to the successful authentication attempt can be retrieved via the ServerConn.Permissions field. Note that some third-party libraries misuse the Permissions type by sharing it across authentication attempts; users of third-party libraries should refer to the relevant projects for guidance.
     Severity: CRITICAL
@@ -30466,6 +30641,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:96403d4f53d3bf68a659c9ab4b4bc332d417bc2573e602bc83761b6e4ff8f963
     Title: 'golang.org/x/crypto/ssh: Denial of Service in the Key Exchange of golang.org/x/crypto/ssh'
     Description: SSH servers which implement file transfer protocols are vulnerable to a denial of service attack from clients which complete the key exchange slowly, or not at all, causing pending content to be read into memory, but never transmitted.
     Severity: HIGH
@@ -30527,6 +30703,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:4f5a57cfb71ed7554da59ca59b276b253c2c5ad65b8f12b2ef4afbc365d9b685
     Title: SSH Agent servers do not validate the size of messages when processing ...
     Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
     Severity: MEDIUM
@@ -30565,6 +30742,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:90d6e747b31e1110bd80fa9c6ee74f04abf93754124106c3072a08bd5f30293d
     Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
     Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
     Severity: MEDIUM
@@ -30602,6 +30780,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:2c88e11a5d468dd3ffb73a3e5a420eb7f82bcf78b30007a1d28caef37d30100f
     Title: 'golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP Proxy bypass using IPv6 Zone IDs in golang.org/x/net'
     Description: Matching of hosts against proxy patterns can improperly treat an IPv6 zone ID as a hostname component. For example, when the NO_PROXY environment variable is set to "*.example.com", a request to "[::1%25.example.com]:80` will incorrectly match and not be proxied.
     Severity: MEDIUM
@@ -30655,6 +30834,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:f4c7955c3edf9f3a0efc1192820f6cdcc33ad9745df4654d5c5581e32a12cf37
     Title: 'golang.org/x/net/html: Incorrect Neutralization of Input During Web Page Generation in x/net in golang.org/x/net'
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
@@ -30699,6 +30879,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:ba1977f646906bf258a53a96d034b436bf5c853ca6cf9a2543059631a1d3b5cc
     Title: 'golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws'
     Description: An attacker can pass a malicious malformed token which causes unexpected memory to be consumed during parsing.
     Severity: HIGH
@@ -30754,6 +30935,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:e479cdfb9ddc11a8cde40ae2905598288ed8c4f78c6338cb1582990a8e7f747c
     Title: Private tokens could appear in logs if context containing gRPC metadata is logged in github.com/grpc/grpc-go
     Description: |
       ### Impact
@@ -30790,6 +30972,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:ebaaef6297459425183c862bdbb4ee6563ec6a738f74594ee3254ec3e7c28b02
     Title: 'database/sql: Postgres Scan Race Condition'
     Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
     Severity: HIGH
@@ -30842,6 +31025,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:d5d4dce3136ef3865fdaab4a943341c87b299a9a49ced40e7edb361a32dba1ec
     Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
@@ -30851,7 +31035,7 @@
       bitnami: 2
       oracle-oval: 3
       redhat: 2
-      rocky: 2
+      rocky: 3
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
@@ -30865,10 +31049,12 @@
     - https://access.redhat.com/security/cve/CVE-2025-58183
     - https://bugzilla.redhat.com/2404715
     - https://bugzilla.redhat.com/2407258
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2404715
     - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-52881
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
     - https://errata.almalinux.org/9/ALSA-2025-22011.html
-    - https://errata.rockylinux.org/RLSA-2025:21816
+    - https://errata.rockylinux.org/RLSA-2025:22011
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -30896,6 +31082,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:dc53102943da3113ac2b28f1412ba4b079dbddb49f0074816a6f79710514f8a1
     Title: Despite HTTP headers having a default limit of 1MB, the number of cook ...
     Description: Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as "a=;", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.
     Severity: HIGH
@@ -30932,6 +31119,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:7d466f22088d6264e0cb7eb2afec140072a60e6be675e7cb371475bbf8167628
     Title: Due to the design of the name constraint checking algorithm, the proce ...
     Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
@@ -30968,6 +31156,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:530053fed3a221fd8a6b39a00e36e68229f69970ea7ad672ea787133c21e44b6
     Title: Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall
     Description: os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on Unix and Windows systems when the target path was a dangling symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL flags never follows symlinks. On Windows, when the target path was a symlink to a nonexistent location, OpenFile would create a file in that location. OpenFile now always returns an error when the O_CREATE and O_EXCL flags are both set and the target path is a symlink.
     Severity: MEDIUM
@@ -31004,6 +31193,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:43d2c630c1092955fa540d1dd31e05819c7d5dd2fa3e85cda78d2206caa042ab
     Title: 'net/http: Request smuggling due to acceptance of invalid chunked data in net/http'
     Description: The net/http package improperly accepts a bare LF as a line terminator in chunked data chunk-size lines. This can permit request smuggling if a net/http server is used in conjunction with a server that incorrectly accepts a bare LF as part of a chunk-ext.
     Severity: MEDIUM
@@ -31066,6 +31256,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:cc05f3bbc8116583bcd5613779881859cd4b48c1b1da938f341b37940519001c
     Title: 'net/http: Sensitive headers not cleared on cross-origin redirect in net/http'
     Description: Proxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.
     Severity: MEDIUM
@@ -31122,6 +31313,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:98aacb4fcdba30b4c3408ab0b9ab98d8dd74f716b73c2b0150c66de2d7442f01
     Title: 'os/exec: Unexpected paths returned from LookPath in os/exec'
     Description: If the PATH environment variable contains paths which are executables (rather than just directories), passing certain strings to LookPath ("", ".", and ".."), can result in the binaries listed in the PATH being unexpectedly returned.
     Severity: MEDIUM
@@ -31133,6 +31325,7 @@
       cbl-mariner: 2
       oracle-oval: 2
       redhat: 2
+      rocky: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L
@@ -31145,7 +31338,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22005
     - https://access.redhat.com/security/cve/CVE-2025-47906
     - https://bugzilla.redhat.com/2396546
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2396546
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906
     - https://errata.almalinux.org/9/ALSA-2025-22005.html
+    - https://errata.rockylinux.org/RLSA-2025:22005
     - https://go.dev/cl/691775
     - https://go.dev/issue/74466
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
@@ -31173,6 +31369,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:58b511e530109539539d5df06ecf16ae4df190756e37bf241774f14e7336f8cb
     Title: 'net/url: Insufficient validation of bracketed IPv6 hostnames in net/url'
     Description: 'The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: "http://[::1]/". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.'
     Severity: MEDIUM
@@ -31215,6 +31412,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:d82c683ad81dbeaa6c1644c16a1a8f6642a4b7521918bc522847b4a95ef2d0bb
     Title: 'encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1'
     Description: Parsing a maliciously crafted DER payload could allocate large amounts of memory, causing memory exhaustion.
     Severity: MEDIUM
@@ -31258,6 +31456,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:2571342dda8383906aef32c05aae8241b2ceb06963bbf6027cb70f32663f18a4
     Title: 'crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509'
     Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
     Severity: MEDIUM
@@ -31301,6 +31500,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:d7dae47327b529f3342b1ae061ba695630742802f3b26c52affb961a399d8a44
     Title: 'crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information'
     Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
     Severity: MEDIUM
@@ -31343,6 +31543,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:a540703bd437409f35c9c98392d7d81d16ec73b884c10096b3058af8071d5a62
     Title: 'encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem'
     Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
     Severity: MEDIUM
@@ -31386,6 +31587,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:aaa8d7325a62398e9a27a5616c67a70d9a10a1c14c29ca07790adba64f3c118a
     Title: 'net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto'
     Description: The Reader.ReadResponse function constructs a response string through repeated string concatenation of lines. When the number of lines in a response is large, this can cause excessive CPU consumption.
     Severity: MEDIUM
@@ -31428,6 +31630,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:e2c8f2714a85baa03015fb93550e84527dbe79d8a264a41b806df260df64ef05
     Title: 'net/mail: Excessive CPU consumption in ParseAddress in net/mail'
     Description: The ParseAddress function constructeds domain-literal address components through repeated string concatenation. When parsing large domain-literal components, this can cause excessive CPU consumption.
     Severity: MEDIUM
@@ -31453,6 +31656,60 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61725
     PublishedDate: '2025-10-29T23:16:20.113Z'
     LastModifiedDate: '2025-11-04T22:16:36.693Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: 156a2e832bd2e3cc
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e3b39661339ffa9ad4ce2c2e7246ccee9316a8d6a60d14aa361d4481391a96e0
+      DiffID: sha256:2726f497e6a054e29b6d74644a839ce3adace668417b4a4a2418f51e29d344c2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:1255edb5e5748921a9b8a4ac0b42879a1779031413b16b2d1132c1c8c5f75d71
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: 156a2e832bd2e3cc
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e3b39661339ffa9ad4ce2c2e7246ccee9316a8d6a60d14aa361d4481391a96e0
+      DiffID: sha256:2726f497e6a054e29b6d74644a839ce3adace668417b4a4a2418f51e29d344c2
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:354a0dd2b8133b3834c709e3c17d57c0073efd30322844e440236b0092de1077
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
 - Target: /etc/ssh/ssh_host_ecdsa_key
   Class: secret
   Secrets:
