@@ -25299,6 +25299,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22034
     - https://access.redhat.com/errata/RHSA-2025:22035
     - https://access.redhat.com/errata/RHSA-2025:22607
+    - https://access.redhat.com/errata/RHSA-2025:22785
     - https://access.redhat.com/errata/RHSA-2025:3531
     - https://access.redhat.com/errata/RHSA-2025:3734
     - https://access.redhat.com/errata/RHSA-2025:3913
@@ -25331,7 +25332,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-8176
     - https://www.kb.cert.org/vuls/id/760160
     PublishedDate: '2025-03-14T09:15:14.157Z'
-    LastModifiedDate: '2025-12-02T15:15:48.64Z'
+    LastModifiedDate: '2025-12-05T00:15:47.73Z'
   - VulnerabilityID: CVE-2025-4373
     PkgID: libglib2.0-0t64@2.82.1-0ubuntu1
     PkgName: libglib2.0-0t64
@@ -26226,9 +26227,10 @@
     CweIDs:
     - CWE-364
     VendorSeverity:
+      alma: 2
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 3
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -26244,8 +26246,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22660
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
+    - https://bugzilla.redhat.com/2369242
     - https://bugzilla.redhat.com/show_bug.cgi?id=2369242
     - https://ciq.com/blog/the-real-danger-of-systemd-coredump-cve-2025-4598/
+    - https://errata.almalinux.org/9/ALSA-2025-22660.html
     - https://git.kernel.org/linus/b5325b2a270fcaf7b2a9a0f23d422ca8a5a8bdea
     - https://github.com/systemd/systemd/commit/0c49e0049b7665bb7769a13ef346fef92e1ad4d6 (main)
     - https://github.com/systemd/systemd/commit/13902e025321242b1d95c6d8b4e482b37f58cdef (main)
@@ -26256,7 +26260,7 @@
     - https://github.com/systemd/systemd/commit/9ce8e3e449def92c75ada41b7d10c5bc3946be77 (main)
     - https://github.com/systemd/systemd/commit/e6a8687b939ab21854f12f59a3cce703e32768cf (main)
     - https://linux.oracle.com/cve/CVE-2025-4598.html
-    - https://linux.oracle.com/errata/ELSA-2025-20344.html
+    - https://linux.oracle.com/errata/ELSA-2025-22660.html
     - https://lists.debian.org/debian-lts-announce/2025/07/msg00022.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4598
     - https://ubuntu.com/security/notices/USN-7559-1
@@ -26579,9 +26583,10 @@
     CweIDs:
     - CWE-364
     VendorSeverity:
+      alma: 2
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 3
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -26597,8 +26602,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22660
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
+    - https://bugzilla.redhat.com/2369242
     - https://bugzilla.redhat.com/show_bug.cgi?id=2369242
     - https://ciq.com/blog/the-real-danger-of-systemd-coredump-cve-2025-4598/
+    - https://errata.almalinux.org/9/ALSA-2025-22660.html
     - https://git.kernel.org/linus/b5325b2a270fcaf7b2a9a0f23d422ca8a5a8bdea
     - https://github.com/systemd/systemd/commit/0c49e0049b7665bb7769a13ef346fef92e1ad4d6 (main)
     - https://github.com/systemd/systemd/commit/13902e025321242b1d95c6d8b4e482b37f58cdef (main)
@@ -26609,7 +26616,7 @@
     - https://github.com/systemd/systemd/commit/9ce8e3e449def92c75ada41b7d10c5bc3946be77 (main)
     - https://github.com/systemd/systemd/commit/e6a8687b939ab21854f12f59a3cce703e32768cf (main)
     - https://linux.oracle.com/cve/CVE-2025-4598.html
-    - https://linux.oracle.com/errata/ELSA-2025-20344.html
+    - https://linux.oracle.com/errata/ELSA-2025-22660.html
     - https://lists.debian.org/debian-lts-announce/2025/07/msg00022.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4598
     - https://ubuntu.com/security/notices/USN-7559-1
@@ -27103,7 +27110,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -27562,7 +27569,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -28021,7 +28028,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -28320,9 +28327,10 @@
     CweIDs:
     - CWE-364
     VendorSeverity:
+      alma: 2
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 3
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -28338,8 +28346,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22660
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
+    - https://bugzilla.redhat.com/2369242
     - https://bugzilla.redhat.com/show_bug.cgi?id=2369242
     - https://ciq.com/blog/the-real-danger-of-systemd-coredump-cve-2025-4598/
+    - https://errata.almalinux.org/9/ALSA-2025-22660.html
     - https://git.kernel.org/linus/b5325b2a270fcaf7b2a9a0f23d422ca8a5a8bdea
     - https://github.com/systemd/systemd/commit/0c49e0049b7665bb7769a13ef346fef92e1ad4d6 (main)
     - https://github.com/systemd/systemd/commit/13902e025321242b1d95c6d8b4e482b37f58cdef (main)
@@ -28350,7 +28360,7 @@
     - https://github.com/systemd/systemd/commit/9ce8e3e449def92c75ada41b7d10c5bc3946be77 (main)
     - https://github.com/systemd/systemd/commit/e6a8687b939ab21854f12f59a3cce703e32768cf (main)
     - https://linux.oracle.com/cve/CVE-2025-4598.html
-    - https://linux.oracle.com/errata/ELSA-2025-20344.html
+    - https://linux.oracle.com/errata/ELSA-2025-22660.html
     - https://lists.debian.org/debian-lts-announce/2025/07/msg00022.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4598
     - https://ubuntu.com/security/notices/USN-7559-1
@@ -28388,9 +28398,10 @@
     CweIDs:
     - CWE-364
     VendorSeverity:
+      alma: 2
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 3
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -28406,8 +28417,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22660
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
+    - https://bugzilla.redhat.com/2369242
     - https://bugzilla.redhat.com/show_bug.cgi?id=2369242
     - https://ciq.com/blog/the-real-danger-of-systemd-coredump-cve-2025-4598/
+    - https://errata.almalinux.org/9/ALSA-2025-22660.html
     - https://git.kernel.org/linus/b5325b2a270fcaf7b2a9a0f23d422ca8a5a8bdea
     - https://github.com/systemd/systemd/commit/0c49e0049b7665bb7769a13ef346fef92e1ad4d6 (main)
     - https://github.com/systemd/systemd/commit/13902e025321242b1d95c6d8b4e482b37f58cdef (main)
@@ -28418,7 +28431,7 @@
     - https://github.com/systemd/systemd/commit/9ce8e3e449def92c75ada41b7d10c5bc3946be77 (main)
     - https://github.com/systemd/systemd/commit/e6a8687b939ab21854f12f59a3cce703e32768cf (main)
     - https://linux.oracle.com/cve/CVE-2025-4598.html
-    - https://linux.oracle.com/errata/ELSA-2025-20344.html
+    - https://linux.oracle.com/errata/ELSA-2025-22660.html
     - https://lists.debian.org/debian-lts-announce/2025/07/msg00022.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4598
     - https://ubuntu.com/security/notices/USN-7559-1
@@ -28456,9 +28469,10 @@
     CweIDs:
     - CWE-364
     VendorSeverity:
+      alma: 2
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 3
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -28474,8 +28488,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22660
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
+    - https://bugzilla.redhat.com/2369242
     - https://bugzilla.redhat.com/show_bug.cgi?id=2369242
     - https://ciq.com/blog/the-real-danger-of-systemd-coredump-cve-2025-4598/
+    - https://errata.almalinux.org/9/ALSA-2025-22660.html
     - https://git.kernel.org/linus/b5325b2a270fcaf7b2a9a0f23d422ca8a5a8bdea
     - https://github.com/systemd/systemd/commit/0c49e0049b7665bb7769a13ef346fef92e1ad4d6 (main)
     - https://github.com/systemd/systemd/commit/13902e025321242b1d95c6d8b4e482b37f58cdef (main)
@@ -28486,7 +28502,7 @@
     - https://github.com/systemd/systemd/commit/9ce8e3e449def92c75ada41b7d10c5bc3946be77 (main)
     - https://github.com/systemd/systemd/commit/e6a8687b939ab21854f12f59a3cce703e32768cf (main)
     - https://linux.oracle.com/cve/CVE-2025-4598.html
-    - https://linux.oracle.com/errata/ELSA-2025-20344.html
+    - https://linux.oracle.com/errata/ELSA-2025-22660.html
     - https://lists.debian.org/debian-lts-announce/2025/07/msg00022.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4598
     - https://ubuntu.com/security/notices/USN-7559-1
@@ -29622,7 +29638,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -30081,7 +30097,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       redhat: 2
@@ -30364,9 +30380,10 @@
     CweIDs:
     - CWE-364
     VendorSeverity:
+      alma: 2
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 3
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -30382,8 +30399,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22660
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
+    - https://bugzilla.redhat.com/2369242
     - https://bugzilla.redhat.com/show_bug.cgi?id=2369242
     - https://ciq.com/blog/the-real-danger-of-systemd-coredump-cve-2025-4598/
+    - https://errata.almalinux.org/9/ALSA-2025-22660.html
     - https://git.kernel.org/linus/b5325b2a270fcaf7b2a9a0f23d422ca8a5a8bdea
     - https://github.com/systemd/systemd/commit/0c49e0049b7665bb7769a13ef346fef92e1ad4d6 (main)
     - https://github.com/systemd/systemd/commit/13902e025321242b1d95c6d8b4e482b37f58cdef (main)
@@ -30394,7 +30413,7 @@
     - https://github.com/systemd/systemd/commit/9ce8e3e449def92c75ada41b7d10c5bc3946be77 (main)
     - https://github.com/systemd/systemd/commit/e6a8687b939ab21854f12f59a3cce703e32768cf (main)
     - https://linux.oracle.com/cve/CVE-2025-4598.html
-    - https://linux.oracle.com/errata/ELSA-2025-20344.html
+    - https://linux.oracle.com/errata/ELSA-2025-22660.html
     - https://lists.debian.org/debian-lts-announce/2025/07/msg00022.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4598
     - https://ubuntu.com/security/notices/USN-7559-1
@@ -30432,9 +30451,10 @@
     CweIDs:
     - CWE-364
     VendorSeverity:
+      alma: 2
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 3
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -30450,8 +30470,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22660
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
+    - https://bugzilla.redhat.com/2369242
     - https://bugzilla.redhat.com/show_bug.cgi?id=2369242
     - https://ciq.com/blog/the-real-danger-of-systemd-coredump-cve-2025-4598/
+    - https://errata.almalinux.org/9/ALSA-2025-22660.html
     - https://git.kernel.org/linus/b5325b2a270fcaf7b2a9a0f23d422ca8a5a8bdea
     - https://github.com/systemd/systemd/commit/0c49e0049b7665bb7769a13ef346fef92e1ad4d6 (main)
     - https://github.com/systemd/systemd/commit/13902e025321242b1d95c6d8b4e482b37f58cdef (main)
@@ -30462,7 +30484,7 @@
     - https://github.com/systemd/systemd/commit/9ce8e3e449def92c75ada41b7d10c5bc3946be77 (main)
     - https://github.com/systemd/systemd/commit/e6a8687b939ab21854f12f59a3cce703e32768cf (main)
     - https://linux.oracle.com/cve/CVE-2025-4598.html
-    - https://linux.oracle.com/errata/ELSA-2025-20344.html
+    - https://linux.oracle.com/errata/ELSA-2025-22660.html
     - https://lists.debian.org/debian-lts-announce/2025/07/msg00022.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4598
     - https://ubuntu.com/security/notices/USN-7559-1
@@ -30500,9 +30522,10 @@
     CweIDs:
     - CWE-364
     VendorSeverity:
+      alma: 2
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 3
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -30518,8 +30541,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22660
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
+    - https://bugzilla.redhat.com/2369242
     - https://bugzilla.redhat.com/show_bug.cgi?id=2369242
     - https://ciq.com/blog/the-real-danger-of-systemd-coredump-cve-2025-4598/
+    - https://errata.almalinux.org/9/ALSA-2025-22660.html
     - https://git.kernel.org/linus/b5325b2a270fcaf7b2a9a0f23d422ca8a5a8bdea
     - https://github.com/systemd/systemd/commit/0c49e0049b7665bb7769a13ef346fef92e1ad4d6 (main)
     - https://github.com/systemd/systemd/commit/13902e025321242b1d95c6d8b4e482b37f58cdef (main)
@@ -30530,7 +30555,7 @@
     - https://github.com/systemd/systemd/commit/9ce8e3e449def92c75ada41b7d10c5bc3946be77 (main)
     - https://github.com/systemd/systemd/commit/e6a8687b939ab21854f12f59a3cce703e32768cf (main)
     - https://linux.oracle.com/cve/CVE-2025-4598.html
-    - https://linux.oracle.com/errata/ELSA-2025-20344.html
+    - https://linux.oracle.com/errata/ELSA-2025-22660.html
     - https://lists.debian.org/debian-lts-announce/2025/07/msg00022.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4598
     - https://ubuntu.com/security/notices/USN-7559-1
@@ -30568,9 +30593,10 @@
     CweIDs:
     - CWE-364
     VendorSeverity:
+      alma: 2
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 3
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -30586,8 +30612,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22660
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
+    - https://bugzilla.redhat.com/2369242
     - https://bugzilla.redhat.com/show_bug.cgi?id=2369242
     - https://ciq.com/blog/the-real-danger-of-systemd-coredump-cve-2025-4598/
+    - https://errata.almalinux.org/9/ALSA-2025-22660.html
     - https://git.kernel.org/linus/b5325b2a270fcaf7b2a9a0f23d422ca8a5a8bdea
     - https://github.com/systemd/systemd/commit/0c49e0049b7665bb7769a13ef346fef92e1ad4d6 (main)
     - https://github.com/systemd/systemd/commit/13902e025321242b1d95c6d8b4e482b37f58cdef (main)
@@ -30598,7 +30626,7 @@
     - https://github.com/systemd/systemd/commit/9ce8e3e449def92c75ada41b7d10c5bc3946be77 (main)
     - https://github.com/systemd/systemd/commit/e6a8687b939ab21854f12f59a3cce703e32768cf (main)
     - https://linux.oracle.com/cve/CVE-2025-4598.html
-    - https://linux.oracle.com/errata/ELSA-2025-20344.html
+    - https://linux.oracle.com/errata/ELSA-2025-22660.html
     - https://lists.debian.org/debian-lts-announce/2025/07/msg00022.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4598
     - https://ubuntu.com/security/notices/USN-7559-1
@@ -30636,9 +30664,10 @@
     CweIDs:
     - CWE-364
     VendorSeverity:
+      alma: 2
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 3
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -30654,8 +30683,10 @@
     - https://access.redhat.com/errata/RHSA-2025:22660
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
+    - https://bugzilla.redhat.com/2369242
     - https://bugzilla.redhat.com/show_bug.cgi?id=2369242
     - https://ciq.com/blog/the-real-danger-of-systemd-coredump-cve-2025-4598/
+    - https://errata.almalinux.org/9/ALSA-2025-22660.html
     - https://git.kernel.org/linus/b5325b2a270fcaf7b2a9a0f23d422ca8a5a8bdea
     - https://github.com/systemd/systemd/commit/0c49e0049b7665bb7769a13ef346fef92e1ad4d6 (main)
     - https://github.com/systemd/systemd/commit/13902e025321242b1d95c6d8b4e482b37f58cdef (main)
@@ -30666,7 +30697,7 @@
     - https://github.com/systemd/systemd/commit/9ce8e3e449def92c75ada41b7d10c5bc3946be77 (main)
     - https://github.com/systemd/systemd/commit/e6a8687b939ab21854f12f59a3cce703e32768cf (main)
     - https://linux.oracle.com/cve/CVE-2025-4598.html
-    - https://linux.oracle.com/errata/ELSA-2025-20344.html
+    - https://linux.oracle.com/errata/ELSA-2025-22660.html
     - https://lists.debian.org/debian-lts-announce/2025/07/msg00022.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-4598
     - https://ubuntu.com/security/notices/USN-7559-1
@@ -34355,6 +34386,41 @@
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
     LastModifiedDate: '2025-11-20T23:15:52.007Z'
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.22.10
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.10
+      UID: afd799025a5d40f9
+    InstalledVersion: v1.22.10
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:82d3e5bcbb5183ad9fbfccd3b627cfb1b1cf29d6f43d1c32131d65b0013c144f
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-04T17:15:25.86Z'
   - VulnerabilityID: CVE-2024-45336
     PkgID: stdlib@v1.22.10
     PkgName: stdlib
@@ -35085,35 +35151,7 @@
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://pkg.go.dev/vuln/GO-2025-4175
     PublishedDate: '2025-12-03T20:16:25.607Z'
-    LastModifiedDate: '2025-12-03T22:15:51.51Z'
-  - VulnerabilityID: CVE-2025-61729
-    PkgID: stdlib@v1.22.10
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.22.10
-      UID: afd799025a5d40f9
-    InstalledVersion: v1.22.10
-    FixedVersion: 1.24.11, 1.25.5
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:82d3e5bcbb5183ad9fbfccd3b627cfb1b1cf29d6f43d1c32131d65b0013c144f
-    Title: Within HostnameError.Error(), when constructing an error string, there ...
-    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/725920
-    - https://go.dev/issue/76445
-    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
-    - https://pkg.go.dev/vuln/GO-2025-4155
-    PublishedDate: '2025-12-02T19:15:51.447Z'
-    LastModifiedDate: '2025-12-02T22:16:08.527Z'
+    LastModifiedDate: '2025-12-04T17:15:08.283Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -37155,6 +37193,41 @@
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
     LastModifiedDate: '2025-11-20T23:15:52.007Z'
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.23.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.5
+      UID: 44e9bcda2169408b
+    InstalledVersion: v1.23.5
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:0b40ec4142cf8abe3e412e4bc0fc244f08971c4325fb52467f7d87da347be032
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-04T17:15:25.86Z'
   - VulnerabilityID: CVE-2025-0913
     PkgID: stdlib@v1.23.5
     PkgName: stdlib
@@ -37758,35 +37831,7 @@
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://pkg.go.dev/vuln/GO-2025-4175
     PublishedDate: '2025-12-03T20:16:25.607Z'
-    LastModifiedDate: '2025-12-03T22:15:51.51Z'
-  - VulnerabilityID: CVE-2025-61729
-    PkgID: stdlib@v1.23.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.5
-      UID: 44e9bcda2169408b
-    InstalledVersion: v1.23.5
-    FixedVersion: 1.24.11, 1.25.5
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:0b40ec4142cf8abe3e412e4bc0fc244f08971c4325fb52467f7d87da347be032
-    Title: Within HostnameError.Error(), when constructing an error string, there ...
-    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/725920
-    - https://go.dev/issue/76445
-    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
-    - https://pkg.go.dev/vuln/GO-2025-4155
-    PublishedDate: '2025-12-02T19:15:51.447Z'
-    LastModifiedDate: '2025-12-02T22:16:08.527Z'
+    LastModifiedDate: '2025-12-04T17:15:08.283Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -38964,6 +39009,41 @@
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
     LastModifiedDate: '2025-11-20T23:15:52.007Z'
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.23.6
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.6
+      UID: a200578c56ec45c2
+    InstalledVersion: v1.23.6
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:2f0d91dabe11e4602c69ba18b62e6c32307f0a51c5c5da26007ec4f6d19a3cde
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-04T17:15:25.86Z'
   - VulnerabilityID: CVE-2025-0913
     PkgID: stdlib@v1.23.6
     PkgName: stdlib
@@ -39508,35 +39588,7 @@
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://pkg.go.dev/vuln/GO-2025-4175
     PublishedDate: '2025-12-03T20:16:25.607Z'
-    LastModifiedDate: '2025-12-03T22:15:51.51Z'
-  - VulnerabilityID: CVE-2025-61729
-    PkgID: stdlib@v1.23.6
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.6
-      UID: a200578c56ec45c2
-    InstalledVersion: v1.23.6
-    FixedVersion: 1.24.11, 1.25.5
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:2f0d91dabe11e4602c69ba18b62e6c32307f0a51c5c5da26007ec4f6d19a3cde
-    Title: Within HostnameError.Error(), when constructing an error string, there ...
-    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/725920
-    - https://go.dev/issue/76445
-    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
-    - https://pkg.go.dev/vuln/GO-2025-4155
-    PublishedDate: '2025-12-02T19:15:51.447Z'
-    LastModifiedDate: '2025-12-02T22:16:08.527Z'
+    LastModifiedDate: '2025-12-04T17:15:08.283Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -41476,6 +41528,41 @@
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
     LastModifiedDate: '2025-11-20T23:15:52.007Z'
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: 156a2e832bd2e3cc
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:0640c642a073f3a5fbc783e8cc4513c6f04fe75d30b51340d37f95ca66ac224d
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-04T17:15:25.86Z'
   - VulnerabilityID: CVE-2025-0913
     PkgID: stdlib@v1.22.12
     PkgName: stdlib
@@ -42020,35 +42107,7 @@
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://pkg.go.dev/vuln/GO-2025-4175
     PublishedDate: '2025-12-03T20:16:25.607Z'
-    LastModifiedDate: '2025-12-03T22:15:51.51Z'
-  - VulnerabilityID: CVE-2025-61729
-    PkgID: stdlib@v1.22.12
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.22.12
-      UID: 156a2e832bd2e3cc
-    InstalledVersion: v1.22.12
-    FixedVersion: 1.24.11, 1.25.5
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:0640c642a073f3a5fbc783e8cc4513c6f04fe75d30b51340d37f95ca66ac224d
-    Title: Within HostnameError.Error(), when constructing an error string, there ...
-    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/725920
-    - https://go.dev/issue/76445
-    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
-    - https://pkg.go.dev/vuln/GO-2025-4155
-    PublishedDate: '2025-12-02T19:15:51.447Z'
-    LastModifiedDate: '2025-12-02T22:16:08.527Z'
+    LastModifiedDate: '2025-12-04T17:15:08.283Z'
 - Target: /etc/ssh/ssh_host_ecdsa_key
   Class: secret
   Secrets:
