@@ -26416,11 +26416,18 @@
     Fingerprint: sha256:cc78c697cc3906d0847d4235f1218f56ca4373130e4403600e3cf56544148234
     Title: An excluded subdomain constraint in a certificate chain does not restr ...
     Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
-    Severity: UNKNOWN
+    Severity: MEDIUM
+    VendorSeverity:
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 6.5
     References:
     - https://go.dev/cl/723900
     - https://go.dev/issue/76442
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61727
     - https://pkg.go.dev/vuln/GO-2025-4175
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-04T17:15:08.283Z'
@@ -27703,11 +27710,18 @@
     Fingerprint: sha256:7fff5d0e4bb97f4a55f68527db19d26b6f088d3e5034d23fd3e1bfcdc27df919
     Title: An excluded subdomain constraint in a certificate chain does not restr ...
     Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
-    Severity: UNKNOWN
+    Severity: MEDIUM
+    VendorSeverity:
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 6.5
     References:
     - https://go.dev/cl/723900
     - https://go.dev/issue/76442
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61727
     - https://pkg.go.dev/vuln/GO-2025-4175
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-04T17:15:08.283Z'
@@ -28605,11 +28619,18 @@
     Fingerprint: sha256:f31632005c771cfbec44bdb433072ffd09a14351a76cf17b625ad2e12192c0fa
     Title: An excluded subdomain constraint in a certificate chain does not restr ...
     Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
-    Severity: UNKNOWN
+    Severity: MEDIUM
+    VendorSeverity:
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 6.5
     References:
     - https://go.dev/cl/723900
     - https://go.dev/issue/76442
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61727
     - https://pkg.go.dev/vuln/GO-2025-4175
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-04T17:15:08.283Z'
@@ -30473,7 +30494,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-52881
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
     - https://errata.almalinux.org/10/ALSA-2025-22012.html
-    - https://errata.rockylinux.org/RLSA-2025:22011
+    - https://errata.rockylinux.org/RLSA-2025:22012
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -31130,11 +31151,18 @@
     Fingerprint: sha256:814de8cae7f4d9d62f51c85807a9860788d4fa634a7ba5b761fb8cb041a3afb3
     Title: An excluded subdomain constraint in a certificate chain does not restr ...
     Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
-    Severity: UNKNOWN
+    Severity: MEDIUM
+    VendorSeverity:
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 6.5
     References:
     - https://go.dev/cl/723900
     - https://go.dev/issue/76442
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61727
     - https://pkg.go.dev/vuln/GO-2025-4175
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-04T17:15:08.283Z'
