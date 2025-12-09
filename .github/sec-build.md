@@ -26723,11 +26723,16 @@
 │                             │                   certificate. For example a constraint that excludes the
 │                             │                   subdomain test.example.com does not prevent a leaf
 │                             │                   certificate from claiming the SAN *.example.com. 
-│                             ├ Severity        : UNKNOWN 
+│                             ├ Severity        : MEDIUM 
+│                             ├ VendorSeverity   ─ bitnami: 2 
+│                             ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 6.5 
 │                             ├ References       ╭ [0]: https://go.dev/cl/723900 
 │                             │                  ├ [1]: https://go.dev/issue/76442 
 │                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPddm4 
-│                             │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
 │                             ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                             ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 ├ [3] ╭ Target         : usr/bin/helm 
@@ -28053,11 +28058,16 @@
 │                             │                   certificate. For example a constraint that excludes the
 │                             │                   subdomain test.example.com does not prevent a leaf
 │                             │                   certificate from claiming the SAN *.example.com. 
-│                             ├ Severity        : UNKNOWN 
+│                             ├ Severity        : MEDIUM 
+│                             ├ VendorSeverity   ─ bitnami: 2 
+│                             ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 6.5 
 │                             ├ References       ╭ [0]: https://go.dev/cl/723900 
 │                             │                  ├ [1]: https://go.dev/issue/76442 
 │                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPddm4 
-│                             │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
 │                             ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                             ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 ├ [4] ╭ Target         : usr/bin/kubectl 
@@ -28981,11 +28991,16 @@
 │                             │                   certificate. For example a constraint that excludes the
 │                             │                   subdomain test.example.com does not prevent a leaf
 │                             │                   certificate from claiming the SAN *.example.com. 
-│                             ├ Severity        : UNKNOWN 
+│                             ├ Severity        : MEDIUM 
+│                             ├ VendorSeverity   ─ bitnami: 2 
+│                             ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 6.5 
 │                             ├ References       ╭ [0]: https://go.dev/cl/723900 
 │                             │                  ├ [1]: https://go.dev/issue/76442 
 │                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPddm4 
-│                             │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
 │                             ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                             ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 ├ [5] ╭ Target         : usr/local/bin/k3d 
@@ -31047,7 +31062,7 @@
 │                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [9] : https://errata.almalinux.org/10/ALSA-2025-22012.html 
-│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2025:22011 
+│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2025:22012 
 │                       │      │                  ├ [11]: https://go.dev/cl/709861 
 │                       │      │                  ├ [12]: https://go.dev/issue/75677 
 │                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/4Emdl2i
@@ -31751,12 +31766,17 @@
 │                              │                   certificate. For example a constraint that excludes the
 │                              │                   subdomain test.example.com does not prevent a leaf
 │                              │                   certificate from claiming the SAN *.example.com. 
-│                              ├ Severity        : UNKNOWN 
+│                              ├ Severity        : MEDIUM 
+│                              ├ VendorSeverity   ─ bitnami: 2 
+│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                            │           L/A:N 
+│                              │                            ╰ V3Score : 6.5 
 │                              ├ References       ╭ [0]: https://go.dev/cl/723900 
 │                              │                  ├ [1]: https://go.dev/issue/76442 
 │                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
 │                              │                  │      dm4 
-│                              │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
 │                              ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                              ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 ├ [6] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
