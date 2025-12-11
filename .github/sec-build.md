@@ -30646,7 +30646,7 @@
 │                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-22869 
 │                       │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-3833.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:7484 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:7416 
 │                       │      │                  ├ [7] : https://github.com/golang/crypto 
 │                       │      │                  ├ [8] : https://github.com/golang/crypto/commit/7292932d45d55
 │                       │      │                  │       c7199324ab0027cc86e8198aa22 
@@ -31064,7 +31064,7 @@
 │                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2025-22011.html 
-│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2025:22012 
+│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2025:22011 
 │                       │      │                  ├ [11]: https://go.dev/cl/709861 
 │                       │      │                  ├ [12]: https://go.dev/issue/75677 
 │                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/4Emdl2i
@@ -31287,7 +31287,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-22871 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-9635.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:9845 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:9635 
 │                       │      │                  ├ [8] : https://github.com/roadrunner-server/roadrunner 
 │                       │      │                  ├ [9] : https://github.com/roadrunner-server/roadrunner/commi
 │                       │      │                  │       t/f269279ee87d0b88127741cad1042389af7605fa 
@@ -31352,7 +31352,7 @@
 │                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-4673 
 │                       │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-15887.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:16432 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:15887 
 │                       │      │                  ├ [7] : https://go.dev/cl/679257 
 │                       │      │                  ├ [8] : https://go.dev/issue/73816 
 │                       │      │                  ├ [9] : https://groups.google.com/g/golang-announce/c/ufZ8WpE
@@ -31718,10 +31718,10 @@
 │                       │      │                   960701d81cc 
 │                       │      ├ Title           : net/mail: Excessive CPU consumption in ParseAddress in
 │                       │      │                   net/mail 
-│                       │      ├ Description     : The ParseAddress function constructeds domain-literal
-│                       │      │                   address components through repeated string concatenation.
-│                       │      │                   When parsing large domain-literal components, this can cause
-│                       │      │                    excessive CPU consumption. 
+│                       │      ├ Description     : The ParseAddress function constructs domain-literal address
+│                       │      │                   components through repeated string concatenation. When
+│                       │      │                   parsing large domain-literal components, this can cause
+│                       │      │                   excessive CPU consumption. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ VendorSeverity   ╭ amazon : 3 
 │                       │      │                  ├ bitnami: 3 
@@ -31742,7 +31742,7 @@
 │                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4006 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
-│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.693Z 
+│                       │      ╰ LastModifiedDate: 2025-12-09T18:15:56.347Z 
 │                       ╰ [29] ╭ VulnerabilityID : CVE-2025-61727 
 │                              ├ PkgID           : stdlib@v1.22.12 
 │                              ├ PkgName         : stdlib 
