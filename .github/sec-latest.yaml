@@ -27119,6 +27119,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 2
       cbl-mariner: 2
@@ -27131,7 +27132,21 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/16/4
     - http://www.openwall.com/lists/oss-security/2025/05/19/1
+    - https://access.redhat.com/errata/RHSA-2025:23530
     - https://access.redhat.com/security/cve/CVE-2025-4516
+    - https://bugzilla.redhat.com/2294682
+    - https://bugzilla.redhat.com/2321440
+    - https://bugzilla.redhat.com/2325776
+    - https://bugzilla.redhat.com/2343237
+    - https://bugzilla.redhat.com/2366509
+    - https://bugzilla.redhat.com/2370010
+    - https://bugzilla.redhat.com/2370014
+    - https://bugzilla.redhat.com/2370016
+    - https://bugzilla.redhat.com/2372426
+    - https://bugzilla.redhat.com/2373234
+    - https://bugzilla.redhat.com/2402342
+    - https://bugzilla.redhat.com/2408891
+    - https://errata.almalinux.org/8/ALSA-2025-23530.html
     - https://github.com/python/cpython/commit/4398b788ffc1f954a2c552da285477d42a571292
     - https://github.com/python/cpython/commit/5646648678295a44aa82636c6e92826651baf33a
     - https://github.com/python/cpython/commit/6279eb8c076d89d3739a6edb393e43c7929b429d
@@ -27578,6 +27593,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 2
       cbl-mariner: 2
@@ -27590,7 +27606,21 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/16/4
     - http://www.openwall.com/lists/oss-security/2025/05/19/1
+    - https://access.redhat.com/errata/RHSA-2025:23530
     - https://access.redhat.com/security/cve/CVE-2025-4516
+    - https://bugzilla.redhat.com/2294682
+    - https://bugzilla.redhat.com/2321440
+    - https://bugzilla.redhat.com/2325776
+    - https://bugzilla.redhat.com/2343237
+    - https://bugzilla.redhat.com/2366509
+    - https://bugzilla.redhat.com/2370010
+    - https://bugzilla.redhat.com/2370014
+    - https://bugzilla.redhat.com/2370016
+    - https://bugzilla.redhat.com/2372426
+    - https://bugzilla.redhat.com/2373234
+    - https://bugzilla.redhat.com/2402342
+    - https://bugzilla.redhat.com/2408891
+    - https://errata.almalinux.org/8/ALSA-2025-23530.html
     - https://github.com/python/cpython/commit/4398b788ffc1f954a2c552da285477d42a571292
     - https://github.com/python/cpython/commit/5646648678295a44aa82636c6e92826651baf33a
     - https://github.com/python/cpython/commit/6279eb8c076d89d3739a6edb393e43c7929b429d
@@ -28037,6 +28067,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 2
       cbl-mariner: 2
@@ -28049,7 +28080,21 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/16/4
     - http://www.openwall.com/lists/oss-security/2025/05/19/1
+    - https://access.redhat.com/errata/RHSA-2025:23530
     - https://access.redhat.com/security/cve/CVE-2025-4516
+    - https://bugzilla.redhat.com/2294682
+    - https://bugzilla.redhat.com/2321440
+    - https://bugzilla.redhat.com/2325776
+    - https://bugzilla.redhat.com/2343237
+    - https://bugzilla.redhat.com/2366509
+    - https://bugzilla.redhat.com/2370010
+    - https://bugzilla.redhat.com/2370014
+    - https://bugzilla.redhat.com/2370016
+    - https://bugzilla.redhat.com/2372426
+    - https://bugzilla.redhat.com/2373234
+    - https://bugzilla.redhat.com/2402342
+    - https://bugzilla.redhat.com/2408891
+    - https://errata.almalinux.org/8/ALSA-2025-23530.html
     - https://github.com/python/cpython/commit/4398b788ffc1f954a2c552da285477d42a571292
     - https://github.com/python/cpython/commit/5646648678295a44aa82636c6e92826651baf33a
     - https://github.com/python/cpython/commit/6279eb8c076d89d3739a6edb393e43c7929b429d
@@ -29660,6 +29705,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 2
       cbl-mariner: 2
@@ -29672,7 +29718,21 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/16/4
     - http://www.openwall.com/lists/oss-security/2025/05/19/1
+    - https://access.redhat.com/errata/RHSA-2025:23530
     - https://access.redhat.com/security/cve/CVE-2025-4516
+    - https://bugzilla.redhat.com/2294682
+    - https://bugzilla.redhat.com/2321440
+    - https://bugzilla.redhat.com/2325776
+    - https://bugzilla.redhat.com/2343237
+    - https://bugzilla.redhat.com/2366509
+    - https://bugzilla.redhat.com/2370010
+    - https://bugzilla.redhat.com/2370014
+    - https://bugzilla.redhat.com/2370016
+    - https://bugzilla.redhat.com/2372426
+    - https://bugzilla.redhat.com/2373234
+    - https://bugzilla.redhat.com/2402342
+    - https://bugzilla.redhat.com/2408891
+    - https://errata.almalinux.org/8/ALSA-2025-23530.html
     - https://github.com/python/cpython/commit/4398b788ffc1f954a2c552da285477d42a571292
     - https://github.com/python/cpython/commit/5646648678295a44aa82636c6e92826651baf33a
     - https://github.com/python/cpython/commit/6279eb8c076d89d3739a6edb393e43c7929b429d
@@ -30119,6 +30179,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 2
       cbl-mariner: 2
@@ -30131,7 +30192,21 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/16/4
     - http://www.openwall.com/lists/oss-security/2025/05/19/1
+    - https://access.redhat.com/errata/RHSA-2025:23530
     - https://access.redhat.com/security/cve/CVE-2025-4516
+    - https://bugzilla.redhat.com/2294682
+    - https://bugzilla.redhat.com/2321440
+    - https://bugzilla.redhat.com/2325776
+    - https://bugzilla.redhat.com/2343237
+    - https://bugzilla.redhat.com/2366509
+    - https://bugzilla.redhat.com/2370010
+    - https://bugzilla.redhat.com/2370014
+    - https://bugzilla.redhat.com/2370016
+    - https://bugzilla.redhat.com/2372426
+    - https://bugzilla.redhat.com/2373234
+    - https://bugzilla.redhat.com/2402342
+    - https://bugzilla.redhat.com/2408891
+    - https://errata.almalinux.org/8/ALSA-2025-23530.html
     - https://github.com/python/cpython/commit/4398b788ffc1f954a2c552da285477d42a571292
     - https://github.com/python/cpython/commit/5646648678295a44aa82636c6e92826651baf33a
     - https://github.com/python/cpython/commit/6279eb8c076d89d3739a6edb393e43c7929b429d
@@ -34371,7 +34446,7 @@
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://linux.oracle.com/cve/CVE-2025-58183.html
-    - https://linux.oracle.com/errata/ELSA-2025-23326.html
+    - https://linux.oracle.com/errata/ELSA-2025-23374.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
@@ -37248,7 +37323,7 @@
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://linux.oracle.com/cve/CVE-2025-58183.html
-    - https://linux.oracle.com/errata/ELSA-2025-23326.html
+    - https://linux.oracle.com/errata/ELSA-2025-23374.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
@@ -39101,7 +39176,7 @@
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://linux.oracle.com/cve/CVE-2025-58183.html
-    - https://linux.oracle.com/errata/ELSA-2025-23326.html
+    - https://linux.oracle.com/errata/ELSA-2025-23374.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
@@ -41682,7 +41757,7 @@
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://linux.oracle.com/cve/CVE-2025-58183.html
-    - https://linux.oracle.com/errata/ELSA-2025-23326.html
+    - https://linux.oracle.com/errata/ELSA-2025-23374.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
