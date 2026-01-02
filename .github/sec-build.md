@@ -30138,11 +30138,15 @@
 │                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ cbl-mariner: 3 
 │                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ╰ redhat     : 3 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H
 │                       │      │                  │        │           /A:H 
 │                       │      │                  │        ╰ V3Score : 7.3 
+│                       │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.8 
 │                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 7.7 
@@ -30157,7 +30161,7 @@
 │                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-25621 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-25621 
 │                       │      ├ PublishedDate   : 2025-11-06T19:15:40.09Z 
-│                       │      ╰ LastModifiedDate: 2025-11-06T19:45:09.883Z 
+│                       │      ╰ LastModifiedDate: 2025-12-31T02:29:30.48Z 
 │                       ├ [1]  ╭ VulnerabilityID : CVE-2024-40635 
 │                       │      ├ PkgID           : github.com/containerd/containerd@v1.7.19 
 │                       │      ├ PkgName         : github.com/containerd/containerd 
@@ -30268,9 +30272,13 @@
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
+│                       │      │                  ├ nvd        : 2 
 │                       │      │                  ├ photon     : 2 
 │                       │      │                  ╰ redhat     : 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 5.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-64329 
@@ -30282,7 +30290,7 @@
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-64329 
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-64329 
 │                       │      ├ PublishedDate   : 2025-11-07T05:16:08.017Z 
-│                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
+│                       │      ╰ LastModifiedDate: 2025-12-31T18:34:48.06Z 
 │                       ├ [3]  ╭ VulnerabilityID : CVE-2024-41110 
 │                       │      ├ PkgID           : github.com/docker/docker@v27.0.3+incompatible 
 │                       │      ├ PkgName         : github.com/docker/docker 
