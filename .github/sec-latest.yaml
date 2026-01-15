@@ -26254,6 +26254,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22868
     - https://access.redhat.com/errata/RHSA-2025:23227
     - https://access.redhat.com/errata/RHSA-2025:23234
+    - https://access.redhat.com/errata/RHSA-2026:0414
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
     - https://bugzilla.redhat.com/2369242
@@ -26279,7 +26280,7 @@
     - https://www.openwall.com/lists/oss-security/2025/08/18/3
     - https://www.qualys.com/2025/05/29/apport-coredump/apport-coredump.txt
     PublishedDate: '2025-05-30T14:15:23.557Z'
-    LastModifiedDate: '2025-12-16T10:15:42.77Z'
+    LastModifiedDate: '2026-01-13T23:16:03.237Z'
   - VulnerabilityID: CVE-2025-1390
     PkgID: libpam-cap@1:2.66-5ubuntu3
     PkgName: libpam-cap
@@ -26610,6 +26611,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22868
     - https://access.redhat.com/errata/RHSA-2025:23227
     - https://access.redhat.com/errata/RHSA-2025:23234
+    - https://access.redhat.com/errata/RHSA-2026:0414
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
     - https://bugzilla.redhat.com/2369242
@@ -26635,7 +26637,7 @@
     - https://www.openwall.com/lists/oss-security/2025/08/18/3
     - https://www.qualys.com/2025/05/29/apport-coredump/apport-coredump.txt
     PublishedDate: '2025-05-30T14:15:23.557Z'
-    LastModifiedDate: '2025-12-16T10:15:42.77Z'
+    LastModifiedDate: '2026-01-13T23:16:03.237Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam0g@1.5.3-7ubuntu2
     PkgName: libpam0g
@@ -28410,6 +28412,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22868
     - https://access.redhat.com/errata/RHSA-2025:23227
     - https://access.redhat.com/errata/RHSA-2025:23234
+    - https://access.redhat.com/errata/RHSA-2026:0414
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
     - https://bugzilla.redhat.com/2369242
@@ -28435,7 +28438,7 @@
     - https://www.openwall.com/lists/oss-security/2025/08/18/3
     - https://www.qualys.com/2025/05/29/apport-coredump/apport-coredump.txt
     PublishedDate: '2025-05-30T14:15:23.557Z'
-    LastModifiedDate: '2025-12-16T10:15:42.77Z'
+    LastModifiedDate: '2026-01-13T23:16:03.237Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: libsystemd0@256.5-2ubuntu3.1
     PkgName: libsystemd0
@@ -28484,6 +28487,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22868
     - https://access.redhat.com/errata/RHSA-2025:23227
     - https://access.redhat.com/errata/RHSA-2025:23234
+    - https://access.redhat.com/errata/RHSA-2026:0414
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
     - https://bugzilla.redhat.com/2369242
@@ -28509,7 +28513,7 @@
     - https://www.openwall.com/lists/oss-security/2025/08/18/3
     - https://www.qualys.com/2025/05/29/apport-coredump/apport-coredump.txt
     PublishedDate: '2025-05-30T14:15:23.557Z'
-    LastModifiedDate: '2025-12-16T10:15:42.77Z'
+    LastModifiedDate: '2026-01-13T23:16:03.237Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: libudev1@256.5-2ubuntu3.1
     PkgName: libudev1
@@ -28558,6 +28562,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22868
     - https://access.redhat.com/errata/RHSA-2025:23227
     - https://access.redhat.com/errata/RHSA-2025:23234
+    - https://access.redhat.com/errata/RHSA-2026:0414
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
     - https://bugzilla.redhat.com/2369242
@@ -28583,7 +28588,7 @@
     - https://www.openwall.com/lists/oss-security/2025/08/18/3
     - https://www.qualys.com/2025/05/29/apport-coredump/apport-coredump.txt
     PublishedDate: '2025-05-30T14:15:23.557Z'
-    LastModifiedDate: '2025-12-16T10:15:42.77Z'
+    LastModifiedDate: '2026-01-13T23:16:03.237Z'
   - VulnerabilityID: CVE-2024-56171
     PkgID: libxml2@2.12.7+dfsg-3ubuntu0.1
     PkgName: libxml2
@@ -30514,6 +30519,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22868
     - https://access.redhat.com/errata/RHSA-2025:23227
     - https://access.redhat.com/errata/RHSA-2025:23234
+    - https://access.redhat.com/errata/RHSA-2026:0414
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
     - https://bugzilla.redhat.com/2369242
@@ -30539,7 +30545,7 @@
     - https://www.openwall.com/lists/oss-security/2025/08/18/3
     - https://www.qualys.com/2025/05/29/apport-coredump/apport-coredump.txt
     PublishedDate: '2025-05-30T14:15:23.557Z'
-    LastModifiedDate: '2025-12-16T10:15:42.77Z'
+    LastModifiedDate: '2026-01-13T23:16:03.237Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: systemd-cryptsetup@256.5-2ubuntu3.1
     PkgName: systemd-cryptsetup
@@ -30588,6 +30594,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22868
     - https://access.redhat.com/errata/RHSA-2025:23227
     - https://access.redhat.com/errata/RHSA-2025:23234
+    - https://access.redhat.com/errata/RHSA-2026:0414
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
     - https://bugzilla.redhat.com/2369242
@@ -30613,7 +30620,7 @@
     - https://www.openwall.com/lists/oss-security/2025/08/18/3
     - https://www.qualys.com/2025/05/29/apport-coredump/apport-coredump.txt
     PublishedDate: '2025-05-30T14:15:23.557Z'
-    LastModifiedDate: '2025-12-16T10:15:42.77Z'
+    LastModifiedDate: '2026-01-13T23:16:03.237Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: systemd-resolved@256.5-2ubuntu3.1
     PkgName: systemd-resolved
@@ -30662,6 +30669,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22868
     - https://access.redhat.com/errata/RHSA-2025:23227
     - https://access.redhat.com/errata/RHSA-2025:23234
+    - https://access.redhat.com/errata/RHSA-2026:0414
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
     - https://bugzilla.redhat.com/2369242
@@ -30687,7 +30695,7 @@
     - https://www.openwall.com/lists/oss-security/2025/08/18/3
     - https://www.qualys.com/2025/05/29/apport-coredump/apport-coredump.txt
     PublishedDate: '2025-05-30T14:15:23.557Z'
-    LastModifiedDate: '2025-12-16T10:15:42.77Z'
+    LastModifiedDate: '2026-01-13T23:16:03.237Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: systemd-sysv@256.5-2ubuntu3.1
     PkgName: systemd-sysv
@@ -30736,6 +30744,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22868
     - https://access.redhat.com/errata/RHSA-2025:23227
     - https://access.redhat.com/errata/RHSA-2025:23234
+    - https://access.redhat.com/errata/RHSA-2026:0414
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
     - https://bugzilla.redhat.com/2369242
@@ -30761,7 +30770,7 @@
     - https://www.openwall.com/lists/oss-security/2025/08/18/3
     - https://www.qualys.com/2025/05/29/apport-coredump/apport-coredump.txt
     PublishedDate: '2025-05-30T14:15:23.557Z'
-    LastModifiedDate: '2025-12-16T10:15:42.77Z'
+    LastModifiedDate: '2026-01-13T23:16:03.237Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: systemd-timesyncd@256.5-2ubuntu3.1
     PkgName: systemd-timesyncd
@@ -30810,6 +30819,7 @@
     - https://access.redhat.com/errata/RHSA-2025:22868
     - https://access.redhat.com/errata/RHSA-2025:23227
     - https://access.redhat.com/errata/RHSA-2025:23234
+    - https://access.redhat.com/errata/RHSA-2026:0414
     - https://access.redhat.com/security/cve/CVE-2025-4598
     - https://blogs.oracle.com/linux/post/analysis-of-cve-2025-4598
     - https://bugzilla.redhat.com/2369242
@@ -30835,7 +30845,7 @@
     - https://www.openwall.com/lists/oss-security/2025/08/18/3
     - https://www.qualys.com/2025/05/29/apport-coredump/apport-coredump.txt
     PublishedDate: '2025-05-30T14:15:23.557Z'
-    LastModifiedDate: '2025-12-16T10:15:42.77Z'
+    LastModifiedDate: '2026-01-13T23:16:03.237Z'
   - VulnerabilityID: CVE-2025-1215
     PkgID: vim@2:9.1.0496-1ubuntu6.4
     PkgName: vim
@@ -34214,6 +34224,7 @@
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA?pli=1
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
     - https://pkg.go.dev/vuln/GO-2025-4134
+    - https://ubuntu.com/security/notices/USN-7956-1
     - https://www.cve.org/CVERecord?id=CVE-2025-58181
     PublishedDate: '2025-11-19T21:15:50.85Z'
     LastModifiedDate: '2025-12-11T19:29:24.9Z'
@@ -34499,7 +34510,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:82d3e5bcbb5183ad9fbfccd3b627cfb1b1cf29d6f43d1c32131d65b0013c144f
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
@@ -37107,6 +37118,7 @@
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA?pli=1
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
     - https://pkg.go.dev/vuln/GO-2025-4134
+    - https://ubuntu.com/security/notices/USN-7956-1
     - https://www.cve.org/CVERecord?id=CVE-2025-58181
     PublishedDate: '2025-11-19T21:15:50.85Z'
     LastModifiedDate: '2025-12-11T19:29:24.9Z'
@@ -37392,7 +37404,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:0b40ec4142cf8abe3e412e4bc0fc244f08971c4325fb52467f7d87da347be032
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
@@ -39247,7 +39259,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:2f0d91dabe11e4602c69ba18b62e6c32307f0a51c5c5da26007ec4f6d19a3cde
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
@@ -41521,6 +41533,7 @@
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA?pli=1
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
     - https://pkg.go.dev/vuln/GO-2025-4134
+    - https://ubuntu.com/security/notices/USN-7956-1
     - https://www.cve.org/CVERecord?id=CVE-2025-58181
     PublishedDate: '2025-11-19T21:15:50.85Z'
     LastModifiedDate: '2025-12-11T19:29:24.9Z'
@@ -41844,7 +41857,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:0640c642a073f3a5fbc783e8cc4513c6f04fe75d30b51340d37f95ca66ac224d
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
