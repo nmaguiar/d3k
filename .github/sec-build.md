@@ -30371,19 +30371,20 @@
 │                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58181 
-│                       │      │                  ├ [1]: https://github.com/golang/crypto/commit/e79546e28b85ea
-│                       │      │                  │      53dd37afe1c4102746ef553b9c 
-│                       │      │                  ├ [2]: https://github.com/golang/go/issues/76363 
-│                       │      │                  ├ [3]: https://go.dev/cl/721961 
-│                       │      │                  ├ [4]: https://go.dev/issue/76363 
-│                       │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/w-oX3UxN
-│                       │      │                  │      cZA 
-│                       │      │                  ├ [6]: https://groups.google.com/g/golang-announce/c/w-oX3UxN
-│                       │      │                  │      cZA?pli=1 
-│                       │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
-│                       │      │                  ├ [8]: https://pkg.go.dev/vuln/GO-2025-4134 
-│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-58181 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-58181 
+│                       │      │                  ├ [1] : https://github.com/golang/crypto/commit/e79546e28b85e
+│                       │      │                  │       a53dd37afe1c4102746ef553b9c 
+│                       │      │                  ├ [2] : https://github.com/golang/go/issues/76363 
+│                       │      │                  ├ [3] : https://go.dev/cl/721961 
+│                       │      │                  ├ [4] : https://go.dev/issue/76363 
+│                       │      │                  ├ [5] : https://groups.google.com/g/golang-announce/c/w-oX3Ux
+│                       │      │                  │       NcZA 
+│                       │      │                  ├ [6] : https://groups.google.com/g/golang-announce/c/w-oX3Ux
+│                       │      │                  │       NcZA?pli=1 
+│                       │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
+│                       │      │                  ├ [8] : https://pkg.go.dev/vuln/GO-2025-4134 
+│                       │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7956-1 
+│                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-58181 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.85Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:29:24.9Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2025-22870 
@@ -30737,8 +30738,8 @@
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                       │      ├ Fingerprint     : sha256:63d89f494e1d0fe7204c9de8c24a74a63cc55a7c67df067b5cb9f
 │                       │      │                   0192d87c35f 
-│                       │      ├ Title           : crypto/x509: Excessive resource consumption when printing
-│                       │      │                   error string for host certificate validation in crypto/x509 
+│                       │      ├ Title           : crypto/x509: golang: Denial of Service due to excessive
+│                       │      │                   resource consumption via crafted certificate 
 │                       │      ├ Description     : Within HostnameError.Error(), when constructing an error
 │                       │      │                   string, there is no limit to the number of hosts that will
 │                       │      │                   be printed out. Furthermore, the error string is constructed
