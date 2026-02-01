@@ -27281,11 +27281,18 @@
     Fingerprint: sha256:acd987f71887a8507e8fbc507e3bbfc9973afd1d8232e53e6f6842e9bc17a560
     Title: The net/url package does not set a limit on the number of query parame ...
     Description: The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.
-    Severity: UNKNOWN
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     PublishedDate: '2026-01-28T20:16:09.713Z'
     LastModifiedDate: '2026-01-29T19:16:16.243Z'
@@ -27309,15 +27316,28 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:1a80bf84f56039cfc43a33287b9b569dea7ea4467c373aab6637118e310e7495
-    Title: archive/zip uses a super-linear file name indexing algorithm that is i ...
+    Title: 'golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip'
     Description: archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.
-    Severity: UNKNOWN
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2026/01/15/4
+    - https://access.redhat.com/security/cve/CVE-2025-61728
     - https://go.dev/cl/736713
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
+    - https://www.cve.org/CVERecord?id=CVE-2025-61728
     PublishedDate: '2026-01-28T20:16:09.83Z'
     LastModifiedDate: '2026-01-29T19:16:16.39Z'
   - VulnerabilityID: CVE-2025-61730
@@ -27342,11 +27362,18 @@
     Fingerprint: sha256:221f5d1239f933e022e088cba0bbf3ea4b5ea1c8358343637d71c96faf3c2de5
     Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: UNKNOWN
+    Severity: MEDIUM
+    VendorSeverity:
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 6.2
     References:
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-01-29T19:16:16.533Z'
@@ -32731,11 +32758,18 @@
     Fingerprint: sha256:cc3c8a96d7928f80a321c52ebc2231f9fae22773585238c809e005d2c7d1844d
     Title: The net/url package does not set a limit on the number of query parame ...
     Description: The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.
-    Severity: UNKNOWN
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     PublishedDate: '2026-01-28T20:16:09.713Z'
     LastModifiedDate: '2026-01-29T19:16:16.243Z'
@@ -32759,15 +32793,28 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:f45f674da2f871089a91fe88c176ae5d83cc4aa2a7e9416033389670d0a7b9b3
-    Title: archive/zip uses a super-linear file name indexing algorithm that is i ...
+    Title: 'golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip'
     Description: archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.
-    Severity: UNKNOWN
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2026/01/15/4
+    - https://access.redhat.com/security/cve/CVE-2025-61728
     - https://go.dev/cl/736713
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
+    - https://www.cve.org/CVERecord?id=CVE-2025-61728
     PublishedDate: '2026-01-28T20:16:09.83Z'
     LastModifiedDate: '2026-01-29T19:16:16.39Z'
   - VulnerabilityID: CVE-2025-61730
@@ -32792,11 +32839,18 @@
     Fingerprint: sha256:8ab5c4d9415637c031aac8f0fd7c7afaa1ca2c81f8c0d677c02a9ef92f7d2566
     Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: UNKNOWN
+    Severity: MEDIUM
+    VendorSeverity:
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 6.2
     References:
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-01-29T19:16:16.533Z'
@@ -37264,11 +37318,18 @@
     Fingerprint: sha256:2c9d84d14be9665ac53b77a25acb6256b43748fae239aa8fa839f3a2024a82cf
     Title: The net/url package does not set a limit on the number of query parame ...
     Description: The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.
-    Severity: UNKNOWN
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     PublishedDate: '2026-01-28T20:16:09.713Z'
     LastModifiedDate: '2026-01-29T19:16:16.243Z'
@@ -37292,15 +37353,28 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:e656ea0dc39c72be729bf4b29769f40807c784f43ee028098a9c96883c0c5bb4
-    Title: archive/zip uses a super-linear file name indexing algorithm that is i ...
+    Title: 'golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip'
     Description: archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.
-    Severity: UNKNOWN
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2026/01/15/4
+    - https://access.redhat.com/security/cve/CVE-2025-61728
     - https://go.dev/cl/736713
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
+    - https://www.cve.org/CVERecord?id=CVE-2025-61728
     PublishedDate: '2026-01-28T20:16:09.83Z'
     LastModifiedDate: '2026-01-29T19:16:16.39Z'
   - VulnerabilityID: CVE-2025-61730
@@ -37325,11 +37399,18 @@
     Fingerprint: sha256:b577d1e1f65f39aec790b951244d1fb39ba4e7706d1a7b653ce9a921dcf8d18b
     Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: UNKNOWN
+    Severity: MEDIUM
+    VendorSeverity:
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 6.2
     References:
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-01-29T19:16:16.533Z'
@@ -40136,7 +40217,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2348367
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22869
     - https://errata.almalinux.org/9/ALSA-2025-3833.html
-    - https://errata.rockylinux.org/RLSA-2025:3210
+    - https://errata.rockylinux.org/RLSA-2025:7484
     - https://github.com/golang/crypto
     - https://github.com/golang/crypto/commit/7292932d45d55c7199324ab0027cc86e8198aa22
     - https://go-review.googlesource.com/c/crypto/+/652135
@@ -40554,7 +40635,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
     - https://errata.almalinux.org/9/ALSA-2025-23326.html
-    - https://errata.rockylinux.org/RLSA-2025:23948
+    - https://errata.rockylinux.org/RLSA-2025:23295
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -40565,6 +40646,87 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
     PublishedDate: '2025-10-29T23:16:19.357Z'
     LastModifiedDate: '2025-11-04T22:16:33.2Z'
+  - VulnerabilityID: CVE-2025-61726
+    VendorIDs:
+    - GO-2026-4341
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: a3059653e617f681
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:f3e402a0043501e44adc0664a24509bc31161a6a0febce1c1dfdbb225c6b8c26
+      DiffID: sha256:be7c5c24a898b9ab8d27cd0a35b8de1d37cf2c4bfa5f010b9118b3c3394c923f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61726
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:c4b6da4f045eb2256be24cc45cf267d53810b4af2433a6ded603df33070ed308
+    Title: The net/url package does not set a limit on the number of query parame ...
+    Description: The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://go.dev/cl/736712
+    - https://go.dev/issue/77101
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
+    - https://pkg.go.dev/vuln/GO-2026-4341
+    PublishedDate: '2026-01-28T20:16:09.713Z'
+    LastModifiedDate: '2026-01-29T19:16:16.243Z'
+  - VulnerabilityID: CVE-2025-61728
+    VendorIDs:
+    - GO-2026-4342
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: a3059653e617f681
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:f3e402a0043501e44adc0664a24509bc31161a6a0febce1c1dfdbb225c6b8c26
+      DiffID: sha256:be7c5c24a898b9ab8d27cd0a35b8de1d37cf2c4bfa5f010b9118b3c3394c923f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61728
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:a5fe8370c1ad98b35635cf946f20e3b0999fe831207eb8af22cbe62a5875b131
+    Title: 'golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip'
+    Description: archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.
+    Severity: HIGH
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/15/4
+    - https://access.redhat.com/security/cve/CVE-2025-61728
+    - https://go.dev/cl/736713
+    - https://go.dev/issue/77102
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
+    - https://pkg.go.dev/vuln/GO-2026-4342
+    - https://www.cve.org/CVERecord?id=CVE-2025-61728
+    PublishedDate: '2026-01-28T20:16:09.83Z'
+    LastModifiedDate: '2026-01-29T19:16:16.39Z'
   - VulnerabilityID: CVE-2025-61729
     VendorIDs:
     - GO-2025-4155
@@ -40611,7 +40773,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://errata.almalinux.org/9/ALSA-2026-0923.html
-    - https://errata.rockylinux.org/RLSA-2026:1344
+    - https://errata.rockylinux.org/RLSA-2026:0922
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -40711,7 +40873,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
     - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9845
+    - https://errata.rockylinux.org/RLSA-2025:9317
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
@@ -40773,7 +40935,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2373305
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673
     - https://errata.almalinux.org/9/ALSA-2025-15887.html
-    - https://errata.rockylinux.org/RLSA-2025:10672
+    - https://errata.rockylinux.org/RLSA-2025:16432
     - https://go.dev/cl/679257
     - https://go.dev/issue/73816
     - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
@@ -40830,11 +40992,9 @@
     - https://access.redhat.com/security/cve/CVE-2025-47906
     - https://bugzilla.redhat.com/2396546
     - https://bugzilla.redhat.com/show_bug.cgi?id=2396546
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
     - https://errata.almalinux.org/9/ALSA-2025-22005.html
-    - https://errata.rockylinux.org/RLSA-2025:22668
+    - https://errata.rockylinux.org/RLSA-2025:22005
     - https://go.dev/cl/691775
     - https://go.dev/issue/74466
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
@@ -41312,67 +41472,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
-  - VulnerabilityID: CVE-2025-61726
-    VendorIDs:
-    - GO-2026-4341
-    PkgID: stdlib@v1.22.12
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.22.12
-      UID: a3059653e617f681
-    InstalledVersion: v1.22.12
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:f3e402a0043501e44adc0664a24509bc31161a6a0febce1c1dfdbb225c6b8c26
-      DiffID: sha256:be7c5c24a898b9ab8d27cd0a35b8de1d37cf2c4bfa5f010b9118b3c3394c923f
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61726
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:c4b6da4f045eb2256be24cc45cf267d53810b4af2433a6ded603df33070ed308
-    Title: The net/url package does not set a limit on the number of query parame ...
-    Description: The net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/736712
-    - https://go.dev/issue/77101
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://pkg.go.dev/vuln/GO-2026-4341
-    PublishedDate: '2026-01-28T20:16:09.713Z'
-    LastModifiedDate: '2026-01-29T19:16:16.243Z'
-  - VulnerabilityID: CVE-2025-61728
-    VendorIDs:
-    - GO-2026-4342
-    PkgID: stdlib@v1.22.12
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.22.12
-      UID: a3059653e617f681
-    InstalledVersion: v1.22.12
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:f3e402a0043501e44adc0664a24509bc31161a6a0febce1c1dfdbb225c6b8c26
-      DiffID: sha256:be7c5c24a898b9ab8d27cd0a35b8de1d37cf2c4bfa5f010b9118b3c3394c923f
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61728
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:a5fe8370c1ad98b35635cf946f20e3b0999fe831207eb8af22cbe62a5875b131
-    Title: archive/zip uses a super-linear file name indexing algorithm that is i ...
-    Description: archive/zip uses a super-linear file name indexing algorithm that is invoked the first time a file in an archive is opened. This can lead to a denial of service when consuming a maliciously constructed ZIP archive.
-    Severity: UNKNOWN
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/01/15/4
-    - https://go.dev/cl/736713
-    - https://go.dev/issue/77102
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://pkg.go.dev/vuln/GO-2026-4342
-    PublishedDate: '2026-01-28T20:16:09.83Z'
-    LastModifiedDate: '2026-01-29T19:16:16.39Z'
   - VulnerabilityID: CVE-2025-61730
     VendorIDs:
     - GO-2026-4340
@@ -41395,11 +41494,18 @@
     Fingerprint: sha256:316c2f801f4eae548e468d40575f86308bd31c0387ba64074ad33c5be9ff7e1f
     Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: UNKNOWN
+    Severity: MEDIUM
+    VendorSeverity:
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 6.2
     References:
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-01-29T19:16:16.533Z'
