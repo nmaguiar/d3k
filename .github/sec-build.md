@@ -27341,8 +27341,8 @@
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                        │     ├ Fingerprint     : sha256:acd987f71887a8507e8fbc507e3bbfc9973afd1d8232e53e6f684
 │                        │     │                   2e9bc17a560 
-│                        │     ├ Title           : The net/url package does not set a limit on the number of
-│                        │     │                   query parame ... 
+│                        │     ├ Title           : golang: net/url: Memory exhaustion in query parameter
+│                        │     │                   parsing in net/url 
 │                        │     ├ Description     : The net/url package does not set a limit on the number of
 │                        │     │                   query parameters in a query. While the maximum size of query
 │                        │     │                    parameters in URLs is generally limited by the maximum
@@ -27351,16 +27351,22 @@
 │                        │     │                   containing many unique query parameters can cause excessive
 │                        │     │                   memory consumption. 
 │                        │     ├ Severity        : HIGH 
-│                        │     ├ VendorSeverity   ─ bitnami: 3 
-│                        │     ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     ├ VendorSeverity   ╭ bitnami: 3 
+│                        │     │                  ╰ redhat : 3 
+│                        │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                  │         │           N/A:H 
+│                        │     │                  │         ╰ V3Score : 7.5 
+│                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │     │                            │           N/A:H 
 │                        │     │                            ╰ V3Score : 7.5 
-│                        │     ├ References       ╭ [0]: https://go.dev/cl/736712 
-│                        │     │                  ├ [1]: https://go.dev/issue/77101 
-│                        │     │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61726 
+│                        │     │                  ├ [1]: https://go.dev/cl/736712 
+│                        │     │                  ├ [2]: https://go.dev/issue/77101 
+│                        │     │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
 │                        │     │                  │      eUc 
-│                        │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61726 
-│                        │     │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4341 
+│                        │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61726 
+│                        │     │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4341 
+│                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
 │                        │     ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
 │                        │     ╰ LastModifiedDate: 2026-01-29T19:16:16.243Z 
 │                        ├ [1] ╭ VulnerabilityID : CVE-2025-61728 
@@ -27438,9 +27444,9 @@
 │                              │                   inject messages during the handshake. 
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ─ bitnami: 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                              │                            │           N/A:N 
-│                              │                            ╰ V3Score : 6.2 
+│                              │                            ╰ V3Score : 5.3 
 │                              ├ References       ╭ [0]: https://go.dev/cl/724120 
 │                              │                  ├ [1]: https://go.dev/issue/76443 
 │                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
@@ -27448,7 +27454,7 @@
 │                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                              ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                              ╰ LastModifiedDate: 2026-01-29T19:16:16.533Z 
+│                              ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
 ├ [4]  ╭ Target  : usr/bin/docker-proxy 
 │      ├ Class   : lang-pkgs 
 │      ├ Type    : gobinary 
@@ -33032,8 +33038,8 @@
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                        │     ├ Fingerprint     : sha256:cc3c8a96d7928f80a321c52ebc2231f9fae22773585238c809e00
 │                        │     │                   5d2c7d1844d 
-│                        │     ├ Title           : The net/url package does not set a limit on the number of
-│                        │     │                   query parame ... 
+│                        │     ├ Title           : golang: net/url: Memory exhaustion in query parameter
+│                        │     │                   parsing in net/url 
 │                        │     ├ Description     : The net/url package does not set a limit on the number of
 │                        │     │                   query parameters in a query. While the maximum size of query
 │                        │     │                    parameters in URLs is generally limited by the maximum
@@ -33042,16 +33048,22 @@
 │                        │     │                   containing many unique query parameters can cause excessive
 │                        │     │                   memory consumption. 
 │                        │     ├ Severity        : HIGH 
-│                        │     ├ VendorSeverity   ─ bitnami: 3 
-│                        │     ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     ├ VendorSeverity   ╭ bitnami: 3 
+│                        │     │                  ╰ redhat : 3 
+│                        │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                  │         │           N/A:H 
+│                        │     │                  │         ╰ V3Score : 7.5 
+│                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │     │                            │           N/A:H 
 │                        │     │                            ╰ V3Score : 7.5 
-│                        │     ├ References       ╭ [0]: https://go.dev/cl/736712 
-│                        │     │                  ├ [1]: https://go.dev/issue/77101 
-│                        │     │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61726 
+│                        │     │                  ├ [1]: https://go.dev/cl/736712 
+│                        │     │                  ├ [2]: https://go.dev/issue/77101 
+│                        │     │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
 │                        │     │                  │      eUc 
-│                        │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61726 
-│                        │     │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4341 
+│                        │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61726 
+│                        │     │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4341 
+│                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
 │                        │     ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
 │                        │     ╰ LastModifiedDate: 2026-01-29T19:16:16.243Z 
 │                        ├ [1] ╭ VulnerabilityID : CVE-2025-61728 
@@ -33129,9 +33141,9 @@
 │                              │                   inject messages during the handshake. 
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ─ bitnami: 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                              │                            │           N/A:N 
-│                              │                            ╰ V3Score : 6.2 
+│                              │                            ╰ V3Score : 5.3 
 │                              ├ References       ╭ [0]: https://go.dev/cl/724120 
 │                              │                  ├ [1]: https://go.dev/issue/76443 
 │                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
@@ -33139,7 +33151,7 @@
 │                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                              ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                              ╰ LastModifiedDate: 2026-01-29T19:16:16.533Z 
+│                              ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
 ├ [8]  ╭ Target  : usr/bin/rootlesskit 
 │      ├ Class   : lang-pkgs 
 │      ├ Type    : gobinary 
@@ -35985,7 +35997,7 @@
 │                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-23831 
 │                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-23831 
 │                        │     ├ PublishedDate   : 2026-01-22T22:16:19.523Z 
-│                        │     ╰ LastModifiedDate: 2026-01-26T15:04:14.85Z 
+│                        │     ╰ LastModifiedDate: 2026-02-02T15:06:43.427Z 
 │                        ├ [1] ╭ VulnerabilityID : CVE-2026-24117 
 │                        │     ├ VendorIDs        ─ [0]: GHSA-4c4x-jm2x-pf9j 
 │                        │     ├ PkgID           : github.com/sigstore/rekor@v1.4.3 
@@ -36040,7 +36052,7 @@
 │                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-24117 
 │                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-24117 
 │                        │     ├ PublishedDate   : 2026-01-22T22:16:21.577Z 
-│                        │     ╰ LastModifiedDate: 2026-01-26T15:04:14.85Z 
+│                        │     ╰ LastModifiedDate: 2026-02-02T15:07:44.88Z 
 │                        ├ [2] ╭ VulnerabilityID : CVE-2026-24137 
 │                        │     ├ VendorIDs        ─ [0]: GHSA-fcv2-xgw5-pqxf 
 │                        │     ├ PkgID           : github.com/sigstore/sigstore@v1.10.0 
@@ -37858,8 +37870,8 @@
 │                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                        │     ├ Fingerprint     : sha256:2c9d84d14be9665ac53b77a25acb6256b43748fae239aa8fa839f
 │                        │     │                   3a2024a82cf 
-│                        │     ├ Title           : The net/url package does not set a limit on the number of
-│                        │     │                   query parame ... 
+│                        │     ├ Title           : golang: net/url: Memory exhaustion in query parameter
+│                        │     │                   parsing in net/url 
 │                        │     ├ Description     : The net/url package does not set a limit on the number of
 │                        │     │                   query parameters in a query. While the maximum size of query
 │                        │     │                    parameters in URLs is generally limited by the maximum
@@ -37868,16 +37880,22 @@
 │                        │     │                   containing many unique query parameters can cause excessive
 │                        │     │                   memory consumption. 
 │                        │     ├ Severity        : HIGH 
-│                        │     ├ VendorSeverity   ─ bitnami: 3 
-│                        │     ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     ├ VendorSeverity   ╭ bitnami: 3 
+│                        │     │                  ╰ redhat : 3 
+│                        │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │     │                  │         │           N/A:H 
+│                        │     │                  │         ╰ V3Score : 7.5 
+│                        │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                        │     │                            │           N/A:H 
 │                        │     │                            ╰ V3Score : 7.5 
-│                        │     ├ References       ╭ [0]: https://go.dev/cl/736712 
-│                        │     │                  ├ [1]: https://go.dev/issue/77101 
-│                        │     │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61726 
+│                        │     │                  ├ [1]: https://go.dev/cl/736712 
+│                        │     │                  ├ [2]: https://go.dev/issue/77101 
+│                        │     │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
 │                        │     │                  │      eUc 
-│                        │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61726 
-│                        │     │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4341 
+│                        │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61726 
+│                        │     │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4341 
+│                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
 │                        │     ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
 │                        │     ╰ LastModifiedDate: 2026-01-29T19:16:16.243Z 
 │                        ├ [1] ╭ VulnerabilityID : CVE-2025-61728 
@@ -37955,9 +37973,9 @@
 │                              │                   inject messages during the handshake. 
 │                              ├ Severity        : MEDIUM 
 │                              ├ VendorSeverity   ─ bitnami: 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                              │                            │           N/A:N 
-│                              │                            ╰ V3Score : 6.2 
+│                              │                            ╰ V3Score : 5.3 
 │                              ├ References       ╭ [0]: https://go.dev/cl/724120 
 │                              │                  ├ [1]: https://go.dev/issue/76443 
 │                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
@@ -37965,7 +37983,7 @@
 │                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                              ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                              ╰ LastModifiedDate: 2026-01-29T19:16:16.533Z 
+│                              ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
 ├ [11] ╭ Target  : usr/libexec/docker/cli-plugins/docker-model 
 │      ├ Class   : lang-pkgs 
 │      ├ Type    : gobinary 
@@ -41349,11 +41367,11 @@
 │                        │      │                            ╰ V3Score : 7 
 │                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/08/0
 │                        │      │                  │       6/1 
-│                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:20909 
+│                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:20983 
 │                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-47907 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2387083 
 │                        │      │                  ├ [4] : https://bugzilla.redhat.com/2393152 
-│                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-20909.html 
+│                        │      │                  ├ [5] : https://errata.almalinux.org/10/ALSA-2025-20983.html 
 │                        │      │                  ├ [6] : https://go.dev/cl/693735 
 │                        │      │                  ├ [7] : https://go.dev/issue/74831 
 │                        │      │                  ├ [8] : https://groups.google.com/g/golang-announce/c/x5MKro
@@ -41410,13 +41428,13 @@
 │                        │      │                            ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/10/0
 │                        │      │                  │       8/1 
-│                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:23326 
+│                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:1380 
 │                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-58183 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2407258 
 │                        │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2407258 
 │                        │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       025-58183 
-│                        │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-23326.html 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2026-1380.html 
 │                        │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23326 
 │                        │      │                  ├ [8] : https://go.dev/cl/709861 
 │                        │      │                  ├ [9] : https://go.dev/issue/75677 
@@ -41448,8 +41466,8 @@
 │                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                        │      ├ Fingerprint     : sha256:c4b6da4f045eb2256be24cc45cf267d53810b4af2433a6ded603
 │                        │      │                   df33070ed308 
-│                        │      ├ Title           : The net/url package does not set a limit on the number of
-│                        │      │                   query parame ... 
+│                        │      ├ Title           : golang: net/url: Memory exhaustion in query parameter
+│                        │      │                   parsing in net/url 
 │                        │      ├ Description     : The net/url package does not set a limit on the number of
 │                        │      │                   query parameters in a query. While the maximum size of
 │                        │      │                   query parameters in URLs is generally limited by the
@@ -41458,16 +41476,22 @@
 │                        │      │                   form containing many unique query parameters can cause
 │                        │      │                   excessive memory consumption. 
 │                        │      ├ Severity        : HIGH 
-│                        │      ├ VendorSeverity   ─ bitnami: 3 
-│                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      ├ VendorSeverity   ╭ bitnami: 3 
+│                        │      │                  ╰ redhat : 3 
+│                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                  │         │           :N/A:H 
+│                        │      │                  │         ╰ V3Score : 7.5 
+│                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │      │                            │           :N/A:H 
 │                        │      │                            ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0]: https://go.dev/cl/736712 
-│                        │      │                  ├ [1]: https://go.dev/issue/77101 
-│                        │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61726 
+│                        │      │                  ├ [1]: https://go.dev/cl/736712 
+│                        │      │                  ├ [2]: https://go.dev/issue/77101 
+│                        │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Vd2tYVM
 │                        │      │                  │      8eUc 
-│                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61726 
-│                        │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4341 
+│                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61726 
+│                        │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4341 
+│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
 │                        │      ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
 │                        │      ╰ LastModifiedDate: 2026-01-29T19:16:16.243Z 
 │                        ├ [16] ╭ VulnerabilityID : CVE-2025-61728 
@@ -41557,20 +41581,20 @@
 │                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │      │                            │           :N/A:H 
 │                        │      │                            ╰ V3Score : 7.5 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:0923 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1518 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-61729 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2418462 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2418462 
 │                        │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       025-61729 
-│                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-0923.html 
+│                        │      │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2026-1518.html 
 │                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:0923 
 │                        │      │                  ├ [7] : https://go.dev/cl/725920 
 │                        │      │                  ├ [8] : https://go.dev/issue/76445 
 │                        │      │                  ├ [9] : https://groups.google.com/g/golang-announce/c/8FJoBk
 │                        │      │                  │       Pddm4 
 │                        │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61729.html 
-│                        │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-1518.html 
+│                        │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-1715.html 
 │                        │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61729 
 │                        │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
@@ -41665,13 +41689,13 @@
 │                        │      │                            ╰ V3Score : 5.4 
 │                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/04/0
 │                        │      │                  │       4/4 
-│                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9635 
+│                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9845 
 │                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-22871 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2358493 
 │                        │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2358493 
 │                        │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       025-22871 
-│                        │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-9635.html 
+│                        │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2025-9845.html 
 │                        │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:9635 
 │                        │      │                  ├ [8] : https://github.com/roadrunner-server/roadrunner 
 │                        │      │                  ├ [9] : https://github.com/roadrunner-server/roadrunner/comm
@@ -41731,13 +41755,13 @@
 │                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I
 │                        │      │                            │           :N/A:N 
 │                        │      │                            ╰ V3Score : 6.8 
-│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:15887 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10672 
 │                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-4673 
 │                        │      │                  ├ [2] : https://bugzilla.redhat.com/2373305 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2373305 
 │                        │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       025-4673 
-│                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-15887.html 
+│                        │      │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2025-10672.html 
 │                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:15887 
 │                        │      │                  ├ [7] : https://go.dev/cl/679257 
 │                        │      │                  ├ [8] : https://go.dev/issue/73816 
@@ -41792,23 +41816,24 @@
 │                        │      │                            ╰ V3Score : 6.5 
 │                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/08/0
 │                        │      │                  │       6/1 
-│                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:22005 
+│                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:22668 
 │                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-47906 
 │                        │      │                  ├ [3] : https://bugzilla.redhat.com/2396546 
-│                        │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2396546 
-│                        │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2407258 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2396546 
+│                        │      │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       025-47906 
-│                        │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-22005.html 
-│                        │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:22005 
-│                        │      │                  ├ [8] : https://go.dev/cl/691775 
-│                        │      │                  ├ [9] : https://go.dev/issue/74466 
-│                        │      │                  ├ [10]: https://groups.google.com/g/golang-announce/c/x5MKro
+│                        │      │                  ├ [7] : https://errata.almalinux.org/8/ALSA-2025-22668.html 
+│                        │      │                  ├ [8] : https://errata.rockylinux.org/RLSA-2025:22005 
+│                        │      │                  ├ [9] : https://go.dev/cl/691775 
+│                        │      │                  ├ [10]: https://go.dev/issue/74466 
+│                        │      │                  ├ [11]: https://groups.google.com/g/golang-announce/c/x5MKro
 │                        │      │                  │       ML2yM 
-│                        │      │                  ├ [11]: https://linux.oracle.com/cve/CVE-2025-47906.html 
-│                        │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-22668.html 
-│                        │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-47906 
-│                        │      │                  ├ [14]: https://pkg.go.dev/vuln/GO-2025-3956 
-│                        │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
+│                        │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2025-47906.html 
+│                        │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2025-22668.html 
+│                        │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2025-47906 
+│                        │      │                  ├ [15]: https://pkg.go.dev/vuln/GO-2025-3956 
+│                        │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                        │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                        │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
 │                        ├ [22] ╭ VulnerabilityID : CVE-2025-47912 
@@ -42317,9 +42342,9 @@
 │                               │                   inject messages during the handshake. 
 │                               ├ Severity        : MEDIUM 
 │                               ├ VendorSeverity   ─ bitnami: 2 
-│                               ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I
+│                               ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I
 │                               │                            │           :N/A:N 
-│                               │                            ╰ V3Score : 6.2 
+│                               │                            ╰ V3Score : 5.3 
 │                               ├ References       ╭ [0]: https://go.dev/cl/724120 
 │                               │                  ├ [1]: https://go.dev/issue/76443 
 │                               │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM
@@ -42327,7 +42352,7 @@
 │                               │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                               │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                               ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                               ╰ LastModifiedDate: 2026-01-29T19:16:16.533Z 
+│                               ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
 ├ [13] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
