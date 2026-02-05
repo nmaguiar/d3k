@@ -34013,7 +34013,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-02T18:16:12.647Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -36299,7 +36299,7 @@
     - https://pkg.go.dev/vuln/GO-2025-3900
     - https://www.cve.org/CVERecord?id=CVE-2025-11065
     PublishedDate: '2026-01-26T20:16:06.84Z'
-    LastModifiedDate: '2026-01-27T14:59:34.073Z'
+    LastModifiedDate: '2026-02-03T20:15:56.087Z'
   - VulnerabilityID: GHSA-fv92-fjc5-jj9h
     PkgID: github.com/go-viper/mapstructure/v2@v2.0.0
     PkgName: github.com/go-viper/mapstructure/v2
@@ -37842,7 +37842,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-02T18:16:12.647Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/docker-proxy
   Class: lang-pkgs
   Type: gobinary
@@ -39014,7 +39014,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-02T18:16:12.647Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/dockerd
   Class: lang-pkgs
   Type: gobinary
@@ -43319,7 +43319,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-02T18:16:12.647Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -46427,7 +46427,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-02T18:16:12.647Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -48495,7 +48495,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-02T18:16:12.647Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/rootlesskit
   Class: lang-pkgs
   Type: gobinary
@@ -49810,7 +49810,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-02T18:16:12.647Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/libexec/docker/cli-plugins/docker-buildx
   Class: lang-pkgs
   Type: gobinary
@@ -51959,7 +51959,7 @@
     - https://pkg.go.dev/vuln/GO-2025-3900
     - https://www.cve.org/CVERecord?id=CVE-2025-11065
     PublishedDate: '2026-01-26T20:16:06.84Z'
-    LastModifiedDate: '2026-01-27T14:59:34.073Z'
+    LastModifiedDate: '2026-02-03T20:15:56.087Z'
   - VulnerabilityID: GHSA-fv92-fjc5-jj9h
     PkgID: github.com/go-viper/mapstructure/v2@v2.0.0
     PkgName: github.com/go-viper/mapstructure/v2
@@ -53302,7 +53302,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-02T18:16:12.647Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/libexec/docker/cli-plugins/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -55642,7 +55642,7 @@
     - https://pkg.go.dev/vuln/GO-2025-3900
     - https://www.cve.org/CVERecord?id=CVE-2025-11065
     PublishedDate: '2026-01-26T20:16:06.84Z'
-    LastModifiedDate: '2026-01-27T14:59:34.073Z'
+    LastModifiedDate: '2026-02-03T20:15:56.087Z'
   - VulnerabilityID: GHSA-fv92-fjc5-jj9h
     PkgID: github.com/go-viper/mapstructure/v2@v2.0.0
     PkgName: github.com/go-viper/mapstructure/v2
@@ -56985,7 +56985,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-02T18:16:12.647Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -59905,7 +59905,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-02T18:16:12.647Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: /etc/ssh/ssh_host_ecdsa_key
   Class: secret
   Secrets:
