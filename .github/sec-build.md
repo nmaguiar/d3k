@@ -27454,7 +27454,7 @@
 │                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                              ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                              ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
+│                              ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
 ├ [4]  ╭ Target  : usr/bin/docker-proxy 
 │      ├ Class   : lang-pkgs 
 │      ├ Type    : gobinary 
@@ -33151,7 +33151,7 @@
 │                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                              ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                              ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
+│                              ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
 ├ [8]  ╭ Target  : usr/bin/rootlesskit 
 │      ├ Class   : lang-pkgs 
 │      ├ Type    : gobinary 
@@ -37983,7 +37983,7 @@
 │                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                              ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                              ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
+│                              ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
 ├ [11] ╭ Target  : usr/libexec/docker/cli-plugins/docker-model 
 │      ├ Class   : lang-pkgs 
 │      ├ Type    : gobinary 
@@ -42352,7 +42352,7 @@
 │                               │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                               │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                               ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                               ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
+│                               ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
 ├ [13] ╭ Target : /etc/ssh/ssh_host_ecdsa_key 
 │      ├ Class  : secret 
 │      ╰ Secrets ─ [0] ╭ RuleID   : private-key 
