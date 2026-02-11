@@ -25065,6 +25065,3120 @@
     - /usr/share/doc/zlib1g/changelog.Debian.gz
     - /usr/share/doc/zlib1g/copyright
     AnalyzedBy: dpkg
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2025-11563
+    PkgID: curl@8.14.1-2ubuntu1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: 173a610781089e1b
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-11563
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:cae17f0eec6ebcd940a23ba9e972c5fbcec9d9244733511c0ac99fa865b6fa47
+    Description: wcurl path traversal with percent-encoded slashes
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      ubuntu: 2
+    References:
+    - https://curl.se/docs/CVE-2025-11563.html
+    - https://www.cve.org/CVERecord?id=CVE-2025-11563
+  - VulnerabilityID: CVE-2025-13034
+    PkgID: curl@8.14.1-2ubuntu1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: 173a610781089e1b
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-13034
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:6f5c1874833be888d9a355f663e3c2681d87b2d17900f0665892703f6d4c0ea9
+    Title: When using `CURLOPT_PINNEDPUBLICKEY` option with libcurl or `--pinnedp ...
+    Description: |-
+      When using `CURLOPT_PINNEDPUBLICKEY` option with libcurl or `--pinnedpubkey`
+      with the curl tool,curl should check the public key of the server certificate
+      to verify the peer.
+
+      This check was skipped in a certain condition that would then make curl allow
+      the connection without performing the proper check, thus not noticing a
+      possible impostor. To skip this check, the connection had to be done with QUIC
+      with ngtcp2 built to use GnuTLS and the user had to explicitly disable the
+      standard certificate verification.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      photon: 2
+      ubuntu: 2
+    References:
+    - https://curl.se/docs/CVE-2025-13034.html
+    - https://curl.se/docs/CVE-2025-13034.json
+    - https://www.cve.org/CVERecord?id=CVE-2025-13034
+    PublishedDate: '2026-01-08T10:15:45.407Z'
+    LastModifiedDate: '2026-01-20T14:54:02.73Z'
+  - VulnerabilityID: CVE-2025-10148
+    PkgID: curl@8.14.1-2ubuntu1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: 173a610781089e1b
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-10148
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:2c0b1faaded25e3e432ee6129c056c3e9438fb9c1ffb2599ba94bd8c46e0abe1
+    Title: 'curl: predictable WebSocket mask'
+    Description: |-
+      curl's websocket code did not update the 32 bit mask pattern for each new
+       outgoing frame as the specification says. Instead it used a fixed mask that
+      persisted and was used throughout the entire connection.
+
+      A predictable mask pattern allows for a malicious server to induce traffic
+      between the two communicating parties that could be interpreted by an involved
+      proxy (configured or transparent) as genuine, real, HTTP traffic with content
+      and thereby poison its cache. That cached poisoned content could then be
+      served to all users of that proxy.
+    Severity: LOW
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      cbl-mariner: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/09/10/2
+    - http://www.openwall.com/lists/oss-security/2025/09/10/3
+    - http://www.openwall.com/lists/oss-security/2025/09/10/4
+    - https://access.redhat.com/security/cve/CVE-2025-10148
+    - https://curl.se/docs/CVE-2025-10148.html
+    - https://curl.se/docs/CVE-2025-10148.json
+    - https://hackerone.com/reports/3330839
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-10148
+    - https://www.cve.org/CVERecord?id=CVE-2025-10148
+    PublishedDate: '2025-09-12T06:15:40.02Z'
+    LastModifiedDate: '2026-01-20T14:55:47.997Z'
+  - VulnerabilityID: CVE-2025-14524
+    PkgID: curl@8.14.1-2ubuntu1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: 173a610781089e1b
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14524
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:2a4320d12fbdef3c53c954d074eee5be694c91ac9b9cd842cef026dcfe759a6b
+    Title: When an OAuth2 bearer token is used for an HTTP(S) transfer, and that  ...
+    Description: |-
+      When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer
+      performs a cross-protocol redirect to a second URL that uses an IMAP, LDAP,
+      POP3 or SMTP scheme, curl might wrongly pass on the bearer token to the new
+      target host.
+    Severity: LOW
+    CweIDs:
+    - CWE-601
+    VendorSeverity:
+      photon: 2
+      ubuntu: 1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/4
+    - https://curl.se/docs/CVE-2025-14524.html
+    - https://curl.se/docs/CVE-2025-14524.json
+    - https://hackerone.com/reports/3459417
+    - https://www.cve.org/CVERecord?id=CVE-2025-14524
+    PublishedDate: '2026-01-08T10:15:46.607Z'
+    LastModifiedDate: '2026-01-20T14:53:11.017Z'
+  - VulnerabilityID: CVE-2025-14819
+    PkgID: curl@8.14.1-2ubuntu1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: 173a610781089e1b
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14819
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:76a4be81c38420bcc69aa0aca20c3f6d98e78b99d77c3b6ffcb84126a60ba388
+    Title: When doing TLS related transfers with reused easy or multi handles and ...
+    Description: |-
+      When doing TLS related transfers with reused easy or multi handles and
+      altering the  `CURLSSLOPT_NO_PARTIALCHAIN` option, libcurl could accidentally
+      reuse a CA store cached in memory for which the partial chain option was
+      reversed. Contrary to the user's wishes and expectations. This could make
+      libcurl find and accept a trust chain that it otherwise would not.
+    Severity: LOW
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      photon: 2
+      ubuntu: 1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/5
+    - https://curl.se/docs/CVE-2025-14819.html
+    - https://curl.se/docs/CVE-2025-14819.json
+    - https://www.cve.org/CVERecord?id=CVE-2025-14819
+    PublishedDate: '2026-01-08T10:15:46.73Z'
+    LastModifiedDate: '2026-01-20T14:51:26.263Z'
+  - VulnerabilityID: CVE-2025-9086
+    PkgID: curl@8.14.1-2ubuntu1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: 173a610781089e1b
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9086
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:49cfd9fa58787483e81fdcdec741c234b51925241dc0d7b8cf35ae9f03e7ba5a
+    Title: 'curl: libcurl: Curl out of bounds read for cookie path'
+    Description: |-
+      1. A cookie is set using the `secure` keyword for `https://target` 
+       2. curl is redirected to or otherwise made to speak with `http://target` (same 
+         hostname, but using clear text HTTP) using the same cookie set 
+       3. The same cookie name is set - but with just a slash as path (`path=\"/\",`).
+         Since this site is not secure, the cookie *should* just be ignored.
+      4. A bug in the path comparison logic makes curl read outside a heap buffer
+         boundary
+
+      The bug either causes a crash or it potentially makes the comparison come to
+      the wrong conclusion and lets the clear-text site override the contents of the
+      secure cookie, contrary to expectations and depending on the memory contents
+      immediately following the single-byte allocation that holds the path.
+
+      The presumed and correct behavior would be to plainly ignore the second set of
+      the cookie since it was already set as secure on a secure host so overriding
+      it on an insecure host should not be okay.
+    Severity: LOW
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      alma: 2
+      amazon: 2
+      oracle-oval: 2
+      photon: 3
+      redhat: 2
+      rocky: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/09/10/1
+    - https://access.redhat.com/errata/RHSA-2026:1350
+    - https://access.redhat.com/security/cve/CVE-2025-9086
+    - https://bugzilla.redhat.com/2394750
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2394750
+    - https://curl.se/docs/CVE-2025-9086.html
+    - https://curl.se/docs/CVE-2025-9086.json
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9086
+    - https://errata.almalinux.org/9/ALSA-2026-1350.html
+    - https://errata.rockylinux.org/RLSA-2026:1350
+    - https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0040afb6
+    - https://hackerone.com/reports/3294999
+    - https://linux.oracle.com/cve/CVE-2025-9086.html
+    - https://linux.oracle.com/errata/ELSA-2026-1825.html
+    - https://lists.debian.org/debian-lts-announce/2026/01/msg00002.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-9086
+    - https://www.cve.org/CVERecord?id=CVE-2025-9086
+    PublishedDate: '2025-09-12T06:15:44.1Z'
+    LastModifiedDate: '2026-01-20T14:58:01.347Z'
+  - VulnerabilityID: CVE-2025-68972
+    PkgID: dirmngr@2.4.8-2ubuntu2.1
+    PkgName: dirmngr
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/dirmngr@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 6704b959643ae6b3
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68972
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:40f1134059d4ceb96d4fe81090c9b1cfea7b30fdfbf6b0b30b4e8f9ab7b7ce02
+    Title: 'gnupg: GnuPG: Signature bypass via form feed character in signed messages'
+    Description: In GnuPG through 2.4.8, if a signed message has \f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an "invalid armor" message is printed during verification). This is related to use of \f as a marker to denote truncation of a long plaintext line.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-68972
+    - https://gpg.fail/formfeed
+    - https://media.ccc.de/v/39c3-to-sign-or-not-to-sign-practical-vulnerabilities-i
+    - https://news.ycombinator.com/item?id=46404339
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68972
+    - https://www.cve.org/CVERecord?id=CVE-2025-68972
+    PublishedDate: '2025-12-27T23:15:40.9Z'
+    LastModifiedDate: '2026-01-09T20:08:47.323Z'
+  - VulnerabilityID: CVE-2022-3219
+    PkgID: dirmngr@2.4.8-2ubuntu2.1
+    PkgName: dirmngr
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/dirmngr@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 6704b959643ae6b3
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2022-3219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:66647d8e0c9f5baec7cfc8c5f4c1491abb16c925cf58728806fd99531a49c37e
+    Title: 'gnupg: denial of service issue (resource consumption) using compressed packets'
+    Description: GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2022-3219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2127010
+    - https://dev.gnupg.org/D556
+    - https://dev.gnupg.org/T5993
+    - https://marc.info/?l=oss-security&m=165696590211434&w=4
+    - https://nvd.nist.gov/vuln/detail/CVE-2022-3219
+    - https://security.netapp.com/advisory/ntap-20230324-0001/
+    - https://www.cve.org/CVERecord?id=CVE-2022-3219
+    PublishedDate: '2023-02-23T20:15:12.393Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2024-52005
+    PkgID: git@1:2.51.0-1ubuntu1
+    PkgName: git
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/git@2.51.0-1ubuntu1?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: 8395b91905ad95e8
+    InstalledVersion: 1:2.51.0-1ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-52005
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:bac2262979bf1523805f209b626b46976d56e53906a131cd46c2ee6bebe8472c
+    Title: 'git: The sideband payload is passed unfiltered to the terminal in git'
+    Description: Git is a source code management tool. When cloning from a server (or fetching, or pushing), informational or error messages are transported from the remote Git process to the client via the so-called "sideband channel". These messages will be prefixed with "remote:" and printed directly to the standard error output. Typically, this standard error output is connected to a terminal that understands ANSI escape sequences, which Git did not protect against. Most modern terminals support control sequences that can be used by a malicious actor to hide and misrepresent information, or to mislead the user into executing untrusted scripts. As requested on the git-security mailing list, the patches are under discussion on the public mailing list. Users are advised to update as soon as possible. Users unable to upgrade should avoid recursive clones unless they are from trusted sources.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-116
+    - CWE-150
+    VendorSeverity:
+      alma: 2
+      amazon: 2
+      bitnami: 3
+      nvd: 3
+      oracle-oval: 2
+      redhat: 2
+      rocky: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 8.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.5
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:7409
+    - https://access.redhat.com/security/cve/CVE-2024-52005
+    - https://bugzilla.redhat.com/2338289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
+    - https://errata.almalinux.org/9/ALSA-2025-7409.html
+    - https://errata.rockylinux.org/RLSA-2025:7409
+    - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
+    - https://linux.oracle.com/cve/CVE-2024-52005.html
+    - https://linux.oracle.com/errata/ELSA-2025-8414.html
+    - https://lore.kernel.org/git/1M9FnZ-1taoNo1wwh-00ESSd@mail.gmx.net
+    - https://lore.kernel.org/git/8570a129-d66a-465a-905e-0a077c69c409@gmail.com/T/#t
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-52005
+    - https://www.cve.org/CVERecord?id=CVE-2024-52005
+    PublishedDate: '2025-01-15T18:15:24.13Z'
+    LastModifiedDate: '2025-12-18T16:00:17.533Z'
+  - VulnerabilityID: CVE-2024-52005
+    PkgID: git-man@1:2.51.0-1ubuntu1
+    PkgName: git-man
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/git-man@2.51.0-1ubuntu1?arch=all&distro=ubuntu-25.10&epoch=1
+      UID: 731204fd7f4d1247
+    InstalledVersion: 1:2.51.0-1ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-52005
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:dff5172a95d7c8d5f9add62020d45a57eec46f9fbb3fd4c7e00e5950c1c4a9c9
+    Title: 'git: The sideband payload is passed unfiltered to the terminal in git'
+    Description: Git is a source code management tool. When cloning from a server (or fetching, or pushing), informational or error messages are transported from the remote Git process to the client via the so-called "sideband channel". These messages will be prefixed with "remote:" and printed directly to the standard error output. Typically, this standard error output is connected to a terminal that understands ANSI escape sequences, which Git did not protect against. Most modern terminals support control sequences that can be used by a malicious actor to hide and misrepresent information, or to mislead the user into executing untrusted scripts. As requested on the git-security mailing list, the patches are under discussion on the public mailing list. Users are advised to update as soon as possible. Users unable to upgrade should avoid recursive clones unless they are from trusted sources.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-116
+    - CWE-150
+    VendorSeverity:
+      alma: 2
+      amazon: 2
+      bitnami: 3
+      nvd: 3
+      oracle-oval: 2
+      redhat: 2
+      rocky: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 8.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.5
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:7409
+    - https://access.redhat.com/security/cve/CVE-2024-52005
+    - https://bugzilla.redhat.com/2338289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
+    - https://errata.almalinux.org/9/ALSA-2025-7409.html
+    - https://errata.rockylinux.org/RLSA-2025:7409
+    - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
+    - https://linux.oracle.com/cve/CVE-2024-52005.html
+    - https://linux.oracle.com/errata/ELSA-2025-8414.html
+    - https://lore.kernel.org/git/1M9FnZ-1taoNo1wwh-00ESSd@mail.gmx.net
+    - https://lore.kernel.org/git/8570a129-d66a-465a-905e-0a077c69c409@gmail.com/T/#t
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-52005
+    - https://www.cve.org/CVERecord?id=CVE-2024-52005
+    PublishedDate: '2025-01-15T18:15:24.13Z'
+    LastModifiedDate: '2025-12-18T16:00:17.533Z'
+  - VulnerabilityID: CVE-2016-2781
+    PkgID: gnu-coreutils@9.5-1ubuntu4
+    PkgName: gnu-coreutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gnu-coreutils@9.5-1ubuntu4?arch=amd64&distro=ubuntu-25.10
+      UID: 972becbf46b2fccc
+    InstalledVersion: 9.5-1ubuntu4
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2016-2781
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:0b8d94f11551a9a2bb4691f6ec21000686e6e93e34d21a40e2c1ef6e3792c2d2
+    Title: 'coreutils: Non-privileged session can escape to the parent session in chroot'
+    Description: chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.
+    Severity: LOW
+    CweIDs:
+    - CWE-20
+    VendorSeverity:
+      azure: 2
+      cbl-mariner: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V2Vector: AV:L/AC:L/Au:N/C:N/I:P/A:N
+        V3Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N
+        V2Score: 2.1
+        V3Score: 6.5
+      redhat:
+        V2Vector: AV:L/AC:H/Au:N/C:C/I:C/A:C
+        V3Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+        V2Score: 6.2
+        V3Score: 8.6
+    References:
+    - http://seclists.org/oss-sec/2016/q1/452
+    - http://www.openwall.com/lists/oss-security/2016/02/28/2
+    - http://www.openwall.com/lists/oss-security/2016/02/28/3
+    - https://access.redhat.com/security/cve/CVE-2016-2781
+    - https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E
+    - https://lore.kernel.org/patchwork/patch/793178/
+    - https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.28/v2.28-ReleaseNotes
+    - https://nvd.nist.gov/vuln/detail/CVE-2016-2781
+    - https://www.cve.org/CVERecord?id=CVE-2016-2781
+    PublishedDate: '2017-02-07T15:59:00.333Z'
+    LastModifiedDate: '2025-06-09T16:15:25.013Z'
+  - VulnerabilityID: CVE-2025-68972
+    PkgID: gnupg@2.4.8-2ubuntu2.1
+    PkgName: gnupg
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gnupg@2.4.8-2ubuntu2.1?arch=all&distro=ubuntu-25.10
+      UID: 817a2b61970e0471
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68972
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:289404b5df3b04614ccdea7338bae0cf46d19d3ea2cb99de0dbf51de62c20274
+    Title: 'gnupg: GnuPG: Signature bypass via form feed character in signed messages'
+    Description: In GnuPG through 2.4.8, if a signed message has \f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an "invalid armor" message is printed during verification). This is related to use of \f as a marker to denote truncation of a long plaintext line.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-68972
+    - https://gpg.fail/formfeed
+    - https://media.ccc.de/v/39c3-to-sign-or-not-to-sign-practical-vulnerabilities-i
+    - https://news.ycombinator.com/item?id=46404339
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68972
+    - https://www.cve.org/CVERecord?id=CVE-2025-68972
+    PublishedDate: '2025-12-27T23:15:40.9Z'
+    LastModifiedDate: '2026-01-09T20:08:47.323Z'
+  - VulnerabilityID: CVE-2022-3219
+    PkgID: gnupg@2.4.8-2ubuntu2.1
+    PkgName: gnupg
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gnupg@2.4.8-2ubuntu2.1?arch=all&distro=ubuntu-25.10
+      UID: 817a2b61970e0471
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2022-3219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:cf6a3566c27b154c83c8e433046b62aaaf27563848e78f0bc265a652fd042f98
+    Title: 'gnupg: denial of service issue (resource consumption) using compressed packets'
+    Description: GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2022-3219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2127010
+    - https://dev.gnupg.org/D556
+    - https://dev.gnupg.org/T5993
+    - https://marc.info/?l=oss-security&m=165696590211434&w=4
+    - https://nvd.nist.gov/vuln/detail/CVE-2022-3219
+    - https://security.netapp.com/advisory/ntap-20230324-0001/
+    - https://www.cve.org/CVERecord?id=CVE-2022-3219
+    PublishedDate: '2023-02-23T20:15:12.393Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-68972
+    PkgID: gnupg-l10n@2.4.8-2ubuntu2.1
+    PkgName: gnupg-l10n
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gnupg-l10n@2.4.8-2ubuntu2.1?arch=all&distro=ubuntu-25.10
+      UID: 20230098484b9049
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68972
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:1dd33da6bddd939fd2d60989ea1483c1dfb356032e2f12986d8f50bb257c8928
+    Title: 'gnupg: GnuPG: Signature bypass via form feed character in signed messages'
+    Description: In GnuPG through 2.4.8, if a signed message has \f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an "invalid armor" message is printed during verification). This is related to use of \f as a marker to denote truncation of a long plaintext line.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-68972
+    - https://gpg.fail/formfeed
+    - https://media.ccc.de/v/39c3-to-sign-or-not-to-sign-practical-vulnerabilities-i
+    - https://news.ycombinator.com/item?id=46404339
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68972
+    - https://www.cve.org/CVERecord?id=CVE-2025-68972
+    PublishedDate: '2025-12-27T23:15:40.9Z'
+    LastModifiedDate: '2026-01-09T20:08:47.323Z'
+  - VulnerabilityID: CVE-2022-3219
+    PkgID: gnupg-l10n@2.4.8-2ubuntu2.1
+    PkgName: gnupg-l10n
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gnupg-l10n@2.4.8-2ubuntu2.1?arch=all&distro=ubuntu-25.10
+      UID: 20230098484b9049
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2022-3219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:db7cc9d1c3bbd5ace31c4598b15ec6562f8a39904f844e7af9b3f7a014ddc6c2
+    Title: 'gnupg: denial of service issue (resource consumption) using compressed packets'
+    Description: GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2022-3219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2127010
+    - https://dev.gnupg.org/D556
+    - https://dev.gnupg.org/T5993
+    - https://marc.info/?l=oss-security&m=165696590211434&w=4
+    - https://nvd.nist.gov/vuln/detail/CVE-2022-3219
+    - https://security.netapp.com/advisory/ntap-20230324-0001/
+    - https://www.cve.org/CVERecord?id=CVE-2022-3219
+    PublishedDate: '2023-02-23T20:15:12.393Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-68972
+    PkgID: gnupg-utils@2.4.8-2ubuntu2.1
+    PkgName: gnupg-utils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gnupg-utils@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 209204b5e31cb190
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68972
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:23b42b8da442b31ab1fb2610759abf114129b5e73ae4e6d650d1a7f8375d9f52
+    Title: 'gnupg: GnuPG: Signature bypass via form feed character in signed messages'
+    Description: In GnuPG through 2.4.8, if a signed message has \f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an "invalid armor" message is printed during verification). This is related to use of \f as a marker to denote truncation of a long plaintext line.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-68972
+    - https://gpg.fail/formfeed
+    - https://media.ccc.de/v/39c3-to-sign-or-not-to-sign-practical-vulnerabilities-i
+    - https://news.ycombinator.com/item?id=46404339
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68972
+    - https://www.cve.org/CVERecord?id=CVE-2025-68972
+    PublishedDate: '2025-12-27T23:15:40.9Z'
+    LastModifiedDate: '2026-01-09T20:08:47.323Z'
+  - VulnerabilityID: CVE-2022-3219
+    PkgID: gnupg-utils@2.4.8-2ubuntu2.1
+    PkgName: gnupg-utils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gnupg-utils@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 209204b5e31cb190
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2022-3219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:2c2f0e98fac36224f17020ee6955ab0136a15e1faa4b85131b3d27342dcb2c90
+    Title: 'gnupg: denial of service issue (resource consumption) using compressed packets'
+    Description: GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2022-3219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2127010
+    - https://dev.gnupg.org/D556
+    - https://dev.gnupg.org/T5993
+    - https://marc.info/?l=oss-security&m=165696590211434&w=4
+    - https://nvd.nist.gov/vuln/detail/CVE-2022-3219
+    - https://security.netapp.com/advisory/ntap-20230324-0001/
+    - https://www.cve.org/CVERecord?id=CVE-2022-3219
+    PublishedDate: '2023-02-23T20:15:12.393Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-68972
+    PkgID: gpg@2.4.8-2ubuntu2.1
+    PkgName: gpg
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpg@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 9bc735dccc04c749
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68972
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:c6cf09ad599f4f672110196e37c55d04ade567f870689779b0e81bbb16b8f186
+    Title: 'gnupg: GnuPG: Signature bypass via form feed character in signed messages'
+    Description: In GnuPG through 2.4.8, if a signed message has \f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an "invalid armor" message is printed during verification). This is related to use of \f as a marker to denote truncation of a long plaintext line.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-68972
+    - https://gpg.fail/formfeed
+    - https://media.ccc.de/v/39c3-to-sign-or-not-to-sign-practical-vulnerabilities-i
+    - https://news.ycombinator.com/item?id=46404339
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68972
+    - https://www.cve.org/CVERecord?id=CVE-2025-68972
+    PublishedDate: '2025-12-27T23:15:40.9Z'
+    LastModifiedDate: '2026-01-09T20:08:47.323Z'
+  - VulnerabilityID: CVE-2022-3219
+    PkgID: gpg@2.4.8-2ubuntu2.1
+    PkgName: gpg
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpg@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 9bc735dccc04c749
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2022-3219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:0423b95e5c3dced8e11c02dc3c1b8bd6850daefe129dff1bb89ebe5253742ae6
+    Title: 'gnupg: denial of service issue (resource consumption) using compressed packets'
+    Description: GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2022-3219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2127010
+    - https://dev.gnupg.org/D556
+    - https://dev.gnupg.org/T5993
+    - https://marc.info/?l=oss-security&m=165696590211434&w=4
+    - https://nvd.nist.gov/vuln/detail/CVE-2022-3219
+    - https://security.netapp.com/advisory/ntap-20230324-0001/
+    - https://www.cve.org/CVERecord?id=CVE-2022-3219
+    PublishedDate: '2023-02-23T20:15:12.393Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-68972
+    PkgID: gpg-agent@2.4.8-2ubuntu2.1
+    PkgName: gpg-agent
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpg-agent@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 361857fd81da4b16
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68972
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:4758a1549196a3f03775b084060e91c979587401350be30531c3d030f061aef1
+    Title: 'gnupg: GnuPG: Signature bypass via form feed character in signed messages'
+    Description: In GnuPG through 2.4.8, if a signed message has \f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an "invalid armor" message is printed during verification). This is related to use of \f as a marker to denote truncation of a long plaintext line.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-68972
+    - https://gpg.fail/formfeed
+    - https://media.ccc.de/v/39c3-to-sign-or-not-to-sign-practical-vulnerabilities-i
+    - https://news.ycombinator.com/item?id=46404339
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68972
+    - https://www.cve.org/CVERecord?id=CVE-2025-68972
+    PublishedDate: '2025-12-27T23:15:40.9Z'
+    LastModifiedDate: '2026-01-09T20:08:47.323Z'
+  - VulnerabilityID: CVE-2022-3219
+    PkgID: gpg-agent@2.4.8-2ubuntu2.1
+    PkgName: gpg-agent
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpg-agent@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 361857fd81da4b16
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2022-3219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:86afa4359ecb3c18abfd45bd673b13b9d710c8d4abd0dda30486bc5b1d8d326e
+    Title: 'gnupg: denial of service issue (resource consumption) using compressed packets'
+    Description: GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2022-3219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2127010
+    - https://dev.gnupg.org/D556
+    - https://dev.gnupg.org/T5993
+    - https://marc.info/?l=oss-security&m=165696590211434&w=4
+    - https://nvd.nist.gov/vuln/detail/CVE-2022-3219
+    - https://security.netapp.com/advisory/ntap-20230324-0001/
+    - https://www.cve.org/CVERecord?id=CVE-2022-3219
+    PublishedDate: '2023-02-23T20:15:12.393Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-68972
+    PkgID: gpg-wks-client@2.4.8-2ubuntu2.1
+    PkgName: gpg-wks-client
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpg-wks-client@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: d469e1f7ff7262bc
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68972
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:986f5ef9bc03768bf3d15db98c5e7be96f3d3910375b74323bd448a40d187f63
+    Title: 'gnupg: GnuPG: Signature bypass via form feed character in signed messages'
+    Description: In GnuPG through 2.4.8, if a signed message has \f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an "invalid armor" message is printed during verification). This is related to use of \f as a marker to denote truncation of a long plaintext line.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-68972
+    - https://gpg.fail/formfeed
+    - https://media.ccc.de/v/39c3-to-sign-or-not-to-sign-practical-vulnerabilities-i
+    - https://news.ycombinator.com/item?id=46404339
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68972
+    - https://www.cve.org/CVERecord?id=CVE-2025-68972
+    PublishedDate: '2025-12-27T23:15:40.9Z'
+    LastModifiedDate: '2026-01-09T20:08:47.323Z'
+  - VulnerabilityID: CVE-2022-3219
+    PkgID: gpg-wks-client@2.4.8-2ubuntu2.1
+    PkgName: gpg-wks-client
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpg-wks-client@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: d469e1f7ff7262bc
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2022-3219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:a4c3ec0632d07ef556c6e409652bb2147912df3ccab3dc748495090c9c37545b
+    Title: 'gnupg: denial of service issue (resource consumption) using compressed packets'
+    Description: GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2022-3219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2127010
+    - https://dev.gnupg.org/D556
+    - https://dev.gnupg.org/T5993
+    - https://marc.info/?l=oss-security&m=165696590211434&w=4
+    - https://nvd.nist.gov/vuln/detail/CVE-2022-3219
+    - https://security.netapp.com/advisory/ntap-20230324-0001/
+    - https://www.cve.org/CVERecord?id=CVE-2022-3219
+    PublishedDate: '2023-02-23T20:15:12.393Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-68972
+    PkgID: gpgconf@2.4.8-2ubuntu2.1
+    PkgName: gpgconf
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpgconf@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 23395c9d698b768c
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68972
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:a3d2d42a194453c78aefcc64af0cc6407ed2b144571f1e30d8f478b77c525b08
+    Title: 'gnupg: GnuPG: Signature bypass via form feed character in signed messages'
+    Description: In GnuPG through 2.4.8, if a signed message has \f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an "invalid armor" message is printed during verification). This is related to use of \f as a marker to denote truncation of a long plaintext line.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-68972
+    - https://gpg.fail/formfeed
+    - https://media.ccc.de/v/39c3-to-sign-or-not-to-sign-practical-vulnerabilities-i
+    - https://news.ycombinator.com/item?id=46404339
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68972
+    - https://www.cve.org/CVERecord?id=CVE-2025-68972
+    PublishedDate: '2025-12-27T23:15:40.9Z'
+    LastModifiedDate: '2026-01-09T20:08:47.323Z'
+  - VulnerabilityID: CVE-2022-3219
+    PkgID: gpgconf@2.4.8-2ubuntu2.1
+    PkgName: gpgconf
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpgconf@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 23395c9d698b768c
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2022-3219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:22b70fba5d528c75b87ed77baa5c1f40e1bbb8457637194a490e42867d0a56f5
+    Title: 'gnupg: denial of service issue (resource consumption) using compressed packets'
+    Description: GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2022-3219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2127010
+    - https://dev.gnupg.org/D556
+    - https://dev.gnupg.org/T5993
+    - https://marc.info/?l=oss-security&m=165696590211434&w=4
+    - https://nvd.nist.gov/vuln/detail/CVE-2022-3219
+    - https://security.netapp.com/advisory/ntap-20230324-0001/
+    - https://www.cve.org/CVERecord?id=CVE-2022-3219
+    PublishedDate: '2023-02-23T20:15:12.393Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-68972
+    PkgID: gpgsm@2.4.8-2ubuntu2.1
+    PkgName: gpgsm
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpgsm@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: bd19d88746b9a126
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68972
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:8d345bfce5351b3806ba1148f32c699c807836bb134773e0f09e36ac6e6140fb
+    Title: 'gnupg: GnuPG: Signature bypass via form feed character in signed messages'
+    Description: In GnuPG through 2.4.8, if a signed message has \f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an "invalid armor" message is printed during verification). This is related to use of \f as a marker to denote truncation of a long plaintext line.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-68972
+    - https://gpg.fail/formfeed
+    - https://media.ccc.de/v/39c3-to-sign-or-not-to-sign-practical-vulnerabilities-i
+    - https://news.ycombinator.com/item?id=46404339
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68972
+    - https://www.cve.org/CVERecord?id=CVE-2025-68972
+    PublishedDate: '2025-12-27T23:15:40.9Z'
+    LastModifiedDate: '2026-01-09T20:08:47.323Z'
+  - VulnerabilityID: CVE-2022-3219
+    PkgID: gpgsm@2.4.8-2ubuntu2.1
+    PkgName: gpgsm
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpgsm@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: bd19d88746b9a126
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2022-3219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:1e840e5aeba745b01c447c32510af6ed70c166a8ad8e5ebb5dc596463c20331a
+    Title: 'gnupg: denial of service issue (resource consumption) using compressed packets'
+    Description: GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2022-3219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2127010
+    - https://dev.gnupg.org/D556
+    - https://dev.gnupg.org/T5993
+    - https://marc.info/?l=oss-security&m=165696590211434&w=4
+    - https://nvd.nist.gov/vuln/detail/CVE-2022-3219
+    - https://security.netapp.com/advisory/ntap-20230324-0001/
+    - https://www.cve.org/CVERecord?id=CVE-2022-3219
+    PublishedDate: '2023-02-23T20:15:12.393Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-68972
+    PkgID: gpgv@2.4.8-2ubuntu2.1
+    PkgName: gpgv
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpgv@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 7ceb4bdb93da459c
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68972
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:32ad67b02c8fcfe1484d324e8509209c8811228abd8a2cdc38f9924897c58aea
+    Title: 'gnupg: GnuPG: Signature bypass via form feed character in signed messages'
+    Description: In GnuPG through 2.4.8, if a signed message has \f at the end of a plaintext line, an adversary can construct a modified message that places additional text after the signed material, such that signature verification of the modified message succeeds (although an "invalid armor" message is printed during verification). This is related to use of \f as a marker to denote truncation of a long plaintext line.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-68972
+    - https://gpg.fail/formfeed
+    - https://media.ccc.de/v/39c3-to-sign-or-not-to-sign-practical-vulnerabilities-i
+    - https://news.ycombinator.com/item?id=46404339
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68972
+    - https://www.cve.org/CVERecord?id=CVE-2025-68972
+    PublishedDate: '2025-12-27T23:15:40.9Z'
+    LastModifiedDate: '2026-01-09T20:08:47.323Z'
+  - VulnerabilityID: CVE-2022-3219
+    PkgID: gpgv@2.4.8-2ubuntu2.1
+    PkgName: gpgv
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpgv@2.4.8-2ubuntu2.1?arch=amd64&distro=ubuntu-25.10
+      UID: 7ceb4bdb93da459c
+    InstalledVersion: 2.4.8-2ubuntu2.1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2022-3219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:3322b67365f7922d1ae28d6c9511922f63af70621a055b69191aa0ca1854c056
+    Title: 'gnupg: denial of service issue (resource consumption) using compressed packets'
+    Description: GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.
+    Severity: LOW
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2022-3219
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2127010
+    - https://dev.gnupg.org/D556
+    - https://dev.gnupg.org/T5993
+    - https://marc.info/?l=oss-security&m=165696590211434&w=4
+    - https://nvd.nist.gov/vuln/detail/CVE-2022-3219
+    - https://security.netapp.com/advisory/ntap-20230324-0001/
+    - https://www.cve.org/CVERecord?id=CVE-2022-3219
+    PublishedDate: '2023-02-23T20:15:12.393Z'
+    LastModifiedDate: '2025-03-12T21:15:38.207Z'
+  - VulnerabilityID: CVE-2025-11563
+    PkgID: libcurl3t64-gnutls@8.14.1-2ubuntu1
+    PkgName: libcurl3t64-gnutls
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl3t64-gnutls@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: ffd56fd50bb0bd21
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-11563
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:f91f6f00a082c7c24542fbaf6b54cc9cf8d04c62494ff3bac6b464f670bfe332
+    Description: wcurl path traversal with percent-encoded slashes
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      ubuntu: 2
+    References:
+    - https://curl.se/docs/CVE-2025-11563.html
+    - https://www.cve.org/CVERecord?id=CVE-2025-11563
+  - VulnerabilityID: CVE-2025-13034
+    PkgID: libcurl3t64-gnutls@8.14.1-2ubuntu1
+    PkgName: libcurl3t64-gnutls
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl3t64-gnutls@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: ffd56fd50bb0bd21
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-13034
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:6dfd90bb7104ccb1cd42f9c67d9094f3683a49ce9c5cdb545291a1890287eb8a
+    Title: When using `CURLOPT_PINNEDPUBLICKEY` option with libcurl or `--pinnedp ...
+    Description: |-
+      When using `CURLOPT_PINNEDPUBLICKEY` option with libcurl or `--pinnedpubkey`
+      with the curl tool,curl should check the public key of the server certificate
+      to verify the peer.
+
+      This check was skipped in a certain condition that would then make curl allow
+      the connection without performing the proper check, thus not noticing a
+      possible impostor. To skip this check, the connection had to be done with QUIC
+      with ngtcp2 built to use GnuTLS and the user had to explicitly disable the
+      standard certificate verification.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      photon: 2
+      ubuntu: 2
+    References:
+    - https://curl.se/docs/CVE-2025-13034.html
+    - https://curl.se/docs/CVE-2025-13034.json
+    - https://www.cve.org/CVERecord?id=CVE-2025-13034
+    PublishedDate: '2026-01-08T10:15:45.407Z'
+    LastModifiedDate: '2026-01-20T14:54:02.73Z'
+  - VulnerabilityID: CVE-2025-10148
+    PkgID: libcurl3t64-gnutls@8.14.1-2ubuntu1
+    PkgName: libcurl3t64-gnutls
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl3t64-gnutls@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: ffd56fd50bb0bd21
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-10148
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:af30d4f8ef2de46904f1df323d8825f66b2a2e15fb53a7fa03be36f7d1f02749
+    Title: 'curl: predictable WebSocket mask'
+    Description: |-
+      curl's websocket code did not update the 32 bit mask pattern for each new
+       outgoing frame as the specification says. Instead it used a fixed mask that
+      persisted and was used throughout the entire connection.
+
+      A predictable mask pattern allows for a malicious server to induce traffic
+      between the two communicating parties that could be interpreted by an involved
+      proxy (configured or transparent) as genuine, real, HTTP traffic with content
+      and thereby poison its cache. That cached poisoned content could then be
+      served to all users of that proxy.
+    Severity: LOW
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      cbl-mariner: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/09/10/2
+    - http://www.openwall.com/lists/oss-security/2025/09/10/3
+    - http://www.openwall.com/lists/oss-security/2025/09/10/4
+    - https://access.redhat.com/security/cve/CVE-2025-10148
+    - https://curl.se/docs/CVE-2025-10148.html
+    - https://curl.se/docs/CVE-2025-10148.json
+    - https://hackerone.com/reports/3330839
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-10148
+    - https://www.cve.org/CVERecord?id=CVE-2025-10148
+    PublishedDate: '2025-09-12T06:15:40.02Z'
+    LastModifiedDate: '2026-01-20T14:55:47.997Z'
+  - VulnerabilityID: CVE-2025-14524
+    PkgID: libcurl3t64-gnutls@8.14.1-2ubuntu1
+    PkgName: libcurl3t64-gnutls
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl3t64-gnutls@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: ffd56fd50bb0bd21
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14524
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:a0b2971fd4a0e50a534c7c0a755dfe1aca7ad990b6e1e3d9ec3033815d363759
+    Title: When an OAuth2 bearer token is used for an HTTP(S) transfer, and that  ...
+    Description: |-
+      When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer
+      performs a cross-protocol redirect to a second URL that uses an IMAP, LDAP,
+      POP3 or SMTP scheme, curl might wrongly pass on the bearer token to the new
+      target host.
+    Severity: LOW
+    CweIDs:
+    - CWE-601
+    VendorSeverity:
+      photon: 2
+      ubuntu: 1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/4
+    - https://curl.se/docs/CVE-2025-14524.html
+    - https://curl.se/docs/CVE-2025-14524.json
+    - https://hackerone.com/reports/3459417
+    - https://www.cve.org/CVERecord?id=CVE-2025-14524
+    PublishedDate: '2026-01-08T10:15:46.607Z'
+    LastModifiedDate: '2026-01-20T14:53:11.017Z'
+  - VulnerabilityID: CVE-2025-14819
+    PkgID: libcurl3t64-gnutls@8.14.1-2ubuntu1
+    PkgName: libcurl3t64-gnutls
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl3t64-gnutls@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: ffd56fd50bb0bd21
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14819
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:9e185a5b1ddc862d0217dae975ae34b5c18f4df0c00263a445b88098c08822ac
+    Title: When doing TLS related transfers with reused easy or multi handles and ...
+    Description: |-
+      When doing TLS related transfers with reused easy or multi handles and
+      altering the  `CURLSSLOPT_NO_PARTIALCHAIN` option, libcurl could accidentally
+      reuse a CA store cached in memory for which the partial chain option was
+      reversed. Contrary to the user's wishes and expectations. This could make
+      libcurl find and accept a trust chain that it otherwise would not.
+    Severity: LOW
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      photon: 2
+      ubuntu: 1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/5
+    - https://curl.se/docs/CVE-2025-14819.html
+    - https://curl.se/docs/CVE-2025-14819.json
+    - https://www.cve.org/CVERecord?id=CVE-2025-14819
+    PublishedDate: '2026-01-08T10:15:46.73Z'
+    LastModifiedDate: '2026-01-20T14:51:26.263Z'
+  - VulnerabilityID: CVE-2025-9086
+    PkgID: libcurl3t64-gnutls@8.14.1-2ubuntu1
+    PkgName: libcurl3t64-gnutls
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl3t64-gnutls@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: ffd56fd50bb0bd21
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9086
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:7a10e2c45f5466b455b58dd539918dcaaff17f89030f2fa44fad269553359bc2
+    Title: 'curl: libcurl: Curl out of bounds read for cookie path'
+    Description: |-
+      1. A cookie is set using the `secure` keyword for `https://target` 
+       2. curl is redirected to or otherwise made to speak with `http://target` (same 
+         hostname, but using clear text HTTP) using the same cookie set 
+       3. The same cookie name is set - but with just a slash as path (`path=\"/\",`).
+         Since this site is not secure, the cookie *should* just be ignored.
+      4. A bug in the path comparison logic makes curl read outside a heap buffer
+         boundary
+
+      The bug either causes a crash or it potentially makes the comparison come to
+      the wrong conclusion and lets the clear-text site override the contents of the
+      secure cookie, contrary to expectations and depending on the memory contents
+      immediately following the single-byte allocation that holds the path.
+
+      The presumed and correct behavior would be to plainly ignore the second set of
+      the cookie since it was already set as secure on a secure host so overriding
+      it on an insecure host should not be okay.
+    Severity: LOW
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      alma: 2
+      amazon: 2
+      oracle-oval: 2
+      photon: 3
+      redhat: 2
+      rocky: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/09/10/1
+    - https://access.redhat.com/errata/RHSA-2026:1350
+    - https://access.redhat.com/security/cve/CVE-2025-9086
+    - https://bugzilla.redhat.com/2394750
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2394750
+    - https://curl.se/docs/CVE-2025-9086.html
+    - https://curl.se/docs/CVE-2025-9086.json
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9086
+    - https://errata.almalinux.org/9/ALSA-2026-1350.html
+    - https://errata.rockylinux.org/RLSA-2026:1350
+    - https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0040afb6
+    - https://hackerone.com/reports/3294999
+    - https://linux.oracle.com/cve/CVE-2025-9086.html
+    - https://linux.oracle.com/errata/ELSA-2026-1825.html
+    - https://lists.debian.org/debian-lts-announce/2026/01/msg00002.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-9086
+    - https://www.cve.org/CVERecord?id=CVE-2025-9086
+    PublishedDate: '2025-09-12T06:15:44.1Z'
+    LastModifiedDate: '2026-01-20T14:58:01.347Z'
+  - VulnerabilityID: CVE-2025-11563
+    PkgID: libcurl4t64@8.14.1-2ubuntu1
+    PkgName: libcurl4t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: d157425689f9e9e7
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-11563
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:4178de8334ad56c63f6eca73135e6e2bc4f01e3696714808688e3d29018e5c9e
+    Description: wcurl path traversal with percent-encoded slashes
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      ubuntu: 2
+    References:
+    - https://curl.se/docs/CVE-2025-11563.html
+    - https://www.cve.org/CVERecord?id=CVE-2025-11563
+  - VulnerabilityID: CVE-2025-13034
+    PkgID: libcurl4t64@8.14.1-2ubuntu1
+    PkgName: libcurl4t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: d157425689f9e9e7
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-13034
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:613e28c9fe21448903c2171f0130f703ed4fd3a9f3a16ef2af93108e6f1f2022
+    Title: When using `CURLOPT_PINNEDPUBLICKEY` option with libcurl or `--pinnedp ...
+    Description: |-
+      When using `CURLOPT_PINNEDPUBLICKEY` option with libcurl or `--pinnedpubkey`
+      with the curl tool,curl should check the public key of the server certificate
+      to verify the peer.
+
+      This check was skipped in a certain condition that would then make curl allow
+      the connection without performing the proper check, thus not noticing a
+      possible impostor. To skip this check, the connection had to be done with QUIC
+      with ngtcp2 built to use GnuTLS and the user had to explicitly disable the
+      standard certificate verification.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      photon: 2
+      ubuntu: 2
+    References:
+    - https://curl.se/docs/CVE-2025-13034.html
+    - https://curl.se/docs/CVE-2025-13034.json
+    - https://www.cve.org/CVERecord?id=CVE-2025-13034
+    PublishedDate: '2026-01-08T10:15:45.407Z'
+    LastModifiedDate: '2026-01-20T14:54:02.73Z'
+  - VulnerabilityID: CVE-2025-10148
+    PkgID: libcurl4t64@8.14.1-2ubuntu1
+    PkgName: libcurl4t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: d157425689f9e9e7
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-10148
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:a0156b77336f358cc6011d8102944a87804603a4cbf4c9402e17526cfe28d4e4
+    Title: 'curl: predictable WebSocket mask'
+    Description: |-
+      curl's websocket code did not update the 32 bit mask pattern for each new
+       outgoing frame as the specification says. Instead it used a fixed mask that
+      persisted and was used throughout the entire connection.
+
+      A predictable mask pattern allows for a malicious server to induce traffic
+      between the two communicating parties that could be interpreted by an involved
+      proxy (configured or transparent) as genuine, real, HTTP traffic with content
+      and thereby poison its cache. That cached poisoned content could then be
+      served to all users of that proxy.
+    Severity: LOW
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      cbl-mariner: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/09/10/2
+    - http://www.openwall.com/lists/oss-security/2025/09/10/3
+    - http://www.openwall.com/lists/oss-security/2025/09/10/4
+    - https://access.redhat.com/security/cve/CVE-2025-10148
+    - https://curl.se/docs/CVE-2025-10148.html
+    - https://curl.se/docs/CVE-2025-10148.json
+    - https://hackerone.com/reports/3330839
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-10148
+    - https://www.cve.org/CVERecord?id=CVE-2025-10148
+    PublishedDate: '2025-09-12T06:15:40.02Z'
+    LastModifiedDate: '2026-01-20T14:55:47.997Z'
+  - VulnerabilityID: CVE-2025-14524
+    PkgID: libcurl4t64@8.14.1-2ubuntu1
+    PkgName: libcurl4t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: d157425689f9e9e7
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14524
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:b9bb3c6c3d240ba52346f037bdb9bdf99fefc5cce265174c036b71b9bf5af0aa
+    Title: When an OAuth2 bearer token is used for an HTTP(S) transfer, and that  ...
+    Description: |-
+      When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer
+      performs a cross-protocol redirect to a second URL that uses an IMAP, LDAP,
+      POP3 or SMTP scheme, curl might wrongly pass on the bearer token to the new
+      target host.
+    Severity: LOW
+    CweIDs:
+    - CWE-601
+    VendorSeverity:
+      photon: 2
+      ubuntu: 1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/4
+    - https://curl.se/docs/CVE-2025-14524.html
+    - https://curl.se/docs/CVE-2025-14524.json
+    - https://hackerone.com/reports/3459417
+    - https://www.cve.org/CVERecord?id=CVE-2025-14524
+    PublishedDate: '2026-01-08T10:15:46.607Z'
+    LastModifiedDate: '2026-01-20T14:53:11.017Z'
+  - VulnerabilityID: CVE-2025-14819
+    PkgID: libcurl4t64@8.14.1-2ubuntu1
+    PkgName: libcurl4t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: d157425689f9e9e7
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14819
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:c658fc1bb558e2e62ca0ef15481fe5eda4efa0df498fb79f9776a72603a805ea
+    Title: When doing TLS related transfers with reused easy or multi handles and ...
+    Description: |-
+      When doing TLS related transfers with reused easy or multi handles and
+      altering the  `CURLSSLOPT_NO_PARTIALCHAIN` option, libcurl could accidentally
+      reuse a CA store cached in memory for which the partial chain option was
+      reversed. Contrary to the user's wishes and expectations. This could make
+      libcurl find and accept a trust chain that it otherwise would not.
+    Severity: LOW
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      photon: 2
+      ubuntu: 1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/5
+    - https://curl.se/docs/CVE-2025-14819.html
+    - https://curl.se/docs/CVE-2025-14819.json
+    - https://www.cve.org/CVERecord?id=CVE-2025-14819
+    PublishedDate: '2026-01-08T10:15:46.73Z'
+    LastModifiedDate: '2026-01-20T14:51:26.263Z'
+  - VulnerabilityID: CVE-2025-9086
+    PkgID: libcurl4t64@8.14.1-2ubuntu1
+    PkgName: libcurl4t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1?arch=amd64&distro=ubuntu-25.10
+      UID: d157425689f9e9e7
+    InstalledVersion: 8.14.1-2ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9086
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:7616f0073fbb6e8e7576380d38ee7641b24f7e6c2f85faa1ef9990fba8aded2d
+    Title: 'curl: libcurl: Curl out of bounds read for cookie path'
+    Description: |-
+      1. A cookie is set using the `secure` keyword for `https://target` 
+       2. curl is redirected to or otherwise made to speak with `http://target` (same 
+         hostname, but using clear text HTTP) using the same cookie set 
+       3. The same cookie name is set - but with just a slash as path (`path=\"/\",`).
+         Since this site is not secure, the cookie *should* just be ignored.
+      4. A bug in the path comparison logic makes curl read outside a heap buffer
+         boundary
+
+      The bug either causes a crash or it potentially makes the comparison come to
+      the wrong conclusion and lets the clear-text site override the contents of the
+      secure cookie, contrary to expectations and depending on the memory contents
+      immediately following the single-byte allocation that holds the path.
+
+      The presumed and correct behavior would be to plainly ignore the second set of
+      the cookie since it was already set as secure on a secure host so overriding
+      it on an insecure host should not be okay.
+    Severity: LOW
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      alma: 2
+      amazon: 2
+      oracle-oval: 2
+      photon: 3
+      redhat: 2
+      rocky: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/09/10/1
+    - https://access.redhat.com/errata/RHSA-2026:1350
+    - https://access.redhat.com/security/cve/CVE-2025-9086
+    - https://bugzilla.redhat.com/2394750
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2394750
+    - https://curl.se/docs/CVE-2025-9086.html
+    - https://curl.se/docs/CVE-2025-9086.json
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9086
+    - https://errata.almalinux.org/9/ALSA-2026-1350.html
+    - https://errata.rockylinux.org/RLSA-2026:1350
+    - https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0040afb6
+    - https://hackerone.com/reports/3294999
+    - https://linux.oracle.com/cve/CVE-2025-9086.html
+    - https://linux.oracle.com/errata/ELSA-2026-1825.html
+    - https://lists.debian.org/debian-lts-announce/2026/01/msg00002.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-9086
+    - https://www.cve.org/CVERecord?id=CVE-2025-9086
+    PublishedDate: '2025-09-12T06:15:44.1Z'
+    LastModifiedDate: '2026-01-20T14:58:01.347Z'
+  - VulnerabilityID: CVE-2025-1352
+    PkgID: libelf1t64@0.193-1
+    PkgName: libelf1t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libelf1t64@0.193-1?arch=amd64&distro=ubuntu-25.10
+      UID: 53f7cfdf39bf31b6
+    InstalledVersion: 0.193-1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-1352
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:93ab185848818d101ade7ed94050a34a18d89a336f238a67ee9101d9e2140fcb
+    Title: 'elfutils: GNU elfutils eu-readelf libdw_alloc.c __libdw_thread_tail memory corruption'
+    Description: A vulnerability has been found in GNU elfutils 0.192 and classified as critical. This vulnerability affects the function __libdw_thread_tail in the library libdw_alloc.c of the component eu-readelf. The manipulation of the argument w leads to memory corruption. The attack can be initiated remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The name of the patch is 2636426a091bd6c6f7f02e49ab20d4cdc6bfc753. It is recommended to apply a patch to fix this issue.
+    Severity: LOW
+    CweIDs:
+    - CWE-119
+    VendorSeverity:
+      amazon: 2
+      azure: 1
+      nvd: 3
+      photon: 3
+      redhat: 2
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-1352
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-1352
+    - https://sourceware.org/bugzilla/attachment.cgi?id=15923
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=32650
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=32650#c2
+    - https://vuldb.com/?ctiid.295960
+    - https://vuldb.com/?id.295960
+    - https://vuldb.com/?submit.495965
+    - https://www.cve.org/CVERecord?id=CVE-2025-1352
+    - https://www.gnu.org/
+    PublishedDate: '2025-02-16T15:15:09.133Z'
+    LastModifiedDate: '2025-11-03T20:34:23.89Z'
+  - VulnerabilityID: CVE-2025-1376
+    PkgID: libelf1t64@0.193-1
+    PkgName: libelf1t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libelf1t64@0.193-1?arch=amd64&distro=ubuntu-25.10
+      UID: 53f7cfdf39bf31b6
+    InstalledVersion: 0.193-1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-1376
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:855690c9a065948ec805a8c57f08331adfc6020c306b0e2a8fe00e72b9f2b3dd
+    Title: 'elfutils: GNU elfutils eu-strip elf_strptr.c elf_strptr denial of service'
+    Description: A vulnerability classified as problematic was found in GNU elfutils 0.192. This vulnerability affects the function elf_strptr in the library /libelf/elf_strptr.c of the component eu-strip. The manipulation leads to denial of service. It is possible to launch the attack on the local host. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The name of the patch is b16f441cca0a4841050e3215a9f120a6d8aea918. It is recommended to apply a patch to fix this issue.
+    Severity: LOW
+    CweIDs:
+    - CWE-404
+    VendorSeverity:
+      azure: 1
+      nvd: 2
+      photon: 2
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 2.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-1376
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-1376
+    - https://sourceware.org/bugzilla/attachment.cgi?id=15940
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=32672
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=32672#c3
+    - https://vuldb.com/?ctiid.295984
+    - https://vuldb.com/?id.295984
+    - https://vuldb.com/?submit.497538
+    - https://www.cve.org/CVERecord?id=CVE-2025-1376
+    - https://www.gnu.org/
+    PublishedDate: '2025-02-17T05:15:09.807Z'
+    LastModifiedDate: '2025-11-04T20:21:18.26Z'
+  - VulnerabilityID: CVE-2025-66382
+    PkgID: libexpat1@2.7.1-2
+    PkgName: libexpat1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libexpat1@2.7.1-2?arch=amd64&distro=ubuntu-25.10
+      UID: 25688396fef8ecac
+    InstalledVersion: 2.7.1-2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-66382
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:f1a55911caca7d4dc37638ec2da536a1a5b1930ead3e33c77453c76c08e5b3de
+    Title: 'libexpat: libexpat: Denial of service via crafted file processing'
+    Description: In libexpat through 2.7.3, a crafted file with an approximate size of 2 MiB can lead to dozens of seconds of processing time.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-407
+    VendorSeverity:
+      nvd: 2
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 2.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/12/02/1
+    - https://access.redhat.com/security/cve/CVE-2025-66382
+    - https://github.com/libexpat/libexpat/issues/1076
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-66382
+    - https://www.cve.org/CVERecord?id=CVE-2025-66382
+    PublishedDate: '2025-11-28T07:15:57.9Z'
+    LastModifiedDate: '2025-12-19T16:05:03.557Z'
+  - VulnerabilityID: CVE-2024-2236
+    PkgID: libgcrypt20@1.11.0-7build1
+    PkgName: libgcrypt20
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libgcrypt20@1.11.0-7build1?arch=amd64&distro=ubuntu-25.10
+      UID: dacd70a6a90042e1
+    InstalledVersion: 1.11.0-7build1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-2236
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:fd1f61321ba5fc932e36b88bd406baf5426477c3701dfb9c7a0ea09c4d692156
+    Title: 'libgcrypt: vulnerable to Marvin Attack'
+    Description: A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.
+    Severity: LOW
+    CweIDs:
+    - CWE-208
+    VendorSeverity:
+      alma: 2
+      amazon: 2
+      oracle-oval: 2
+      redhat: 2
+      rocky: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/errata/RHSA-2024:9404
+    - https://access.redhat.com/errata/RHSA-2025:3530
+    - https://access.redhat.com/errata/RHSA-2025:3534
+    - https://access.redhat.com/security/cve/CVE-2024-2236
+    - https://bugzilla.redhat.com/2245218
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2245218
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2268268
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2236
+    - https://dev.gnupg.org/T7136
+    - https://errata.almalinux.org/9/ALSA-2024-9404.html
+    - https://errata.rockylinux.org/RLSA-2024:9404
+    - https://github.com/tomato42/marvin-toolkit/tree/master/example/libgcrypt
+    - https://gitlab.com/redhat-crypto/libgcrypt/libgcrypt-mirror/-/merge_requests/17
+    - https://linux.oracle.com/cve/CVE-2024-2236.html
+    - https://linux.oracle.com/errata/ELSA-2024-9404.html
+    - https://lists.gnupg.org/pipermail/gcrypt-devel/2024-March/005607.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-2236
+    - https://www.cve.org/CVERecord?id=CVE-2024-2236
+    PublishedDate: '2024-03-06T22:15:57.977Z'
+    LastModifiedDate: '2025-04-02T17:15:37.79Z'
+  - VulnerabilityID: CVE-2026-22185
+    PkgID: liblmdb0@0.9.31-1build1
+    PkgName: liblmdb0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/liblmdb0@0.9.31-1build1?arch=amd64&distro=ubuntu-25.10
+      UID: 37ba9beff8ff35f3
+    InstalledVersion: 0.9.31-1build1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22185
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:30c7852cfa1736f6a8941e2b9f33f6490b2941ff2d507db01255032d6e3f0ecd
+    Title: 'OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow'
+    Description: OpenLDAP Lightning Memory-Mapped Database (LMDB) versions up to and including 0.9.14, prior to commit 8e1fda8, contain a heap buffer underflow in the readline() function of mdb_load. When processing malformed input containing an embedded NUL byte, an unsigned offset calculation can underflow and cause an out-of-bounds read of one byte before the allocated heap buffer. This can cause mdb_load to crash, leading to a limited denial-of-service condition.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    - CWE-191
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H
+        V3Score: 6.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-22185
+    - https://bugs.openldap.org/show_bug.cgi?id=10421
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-22185
+    - https://seclists.org/fulldisclosure/2026/Jan/5
+    - https://seclists.org/fulldisclosure/2026/Jan/8
+    - https://www.cve.org/CVERecord?id=CVE-2026-22185
+    - https://www.openldap.org/
+    - https://www.vulncheck.com/advisories/openldap-lmdb-mdb-load-heap-buffer-underflow-in-readline
+    PublishedDate: '2026-01-07T21:16:01.733Z'
+    LastModifiedDate: '2026-01-14T18:16:42.147Z'
+  - VulnerabilityID: CVE-2025-8941
+    PkgID: libpam-modules@1.7.0-5ubuntu2
+    PkgName: libpam-modules
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpam-modules@1.7.0-5ubuntu2?arch=amd64&distro=ubuntu-25.10
+      UID: c56304432b2639ff
+    InstalledVersion: 1.7.0-5ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-8941
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:48b1f65ad95b031056d871acdedd6ba337d636d24527091d5dbb58b58a059e4c
+    Title: 'linux-pam: Incomplete fix for CVE-2025-6020'
+    Description: A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a "complete" fix for CVE-2025-6020.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-22
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      oracle-oval: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:14557
+    - https://access.redhat.com/errata/RHSA-2025:15099
+    - https://access.redhat.com/errata/RHSA-2025:15100
+    - https://access.redhat.com/errata/RHSA-2025:15101
+    - https://access.redhat.com/errata/RHSA-2025:15102
+    - https://access.redhat.com/errata/RHSA-2025:15103
+    - https://access.redhat.com/errata/RHSA-2025:15104
+    - https://access.redhat.com/errata/RHSA-2025:15105
+    - https://access.redhat.com/errata/RHSA-2025:15106
+    - https://access.redhat.com/errata/RHSA-2025:15107
+    - https://access.redhat.com/errata/RHSA-2025:15709
+    - https://access.redhat.com/errata/RHSA-2025:15827
+    - https://access.redhat.com/errata/RHSA-2025:15828
+    - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:17181
+    - https://access.redhat.com/errata/RHSA-2025:18219
+    - https://access.redhat.com/errata/RHSA-2025:21885
+    - https://access.redhat.com/security/cve/CVE-2025-8941
+    - https://bugzilla.redhat.com/2372512
+    - https://bugzilla.redhat.com/2388220
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2372512
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2388220
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941
+    - https://errata.almalinux.org/9/ALSA-2025-15099.html
+    - https://errata.rockylinux.org/RLSA-2025:15099
+    - https://linux.oracle.com/cve/CVE-2025-8941.html
+    - https://linux.oracle.com/errata/ELSA-2025-15099.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-8941
+    - https://www.cve.org/CVERecord?id=CVE-2025-8941
+    PublishedDate: '2025-08-13T15:15:41.873Z'
+    LastModifiedDate: '2025-11-20T21:16:08.11Z'
+  - VulnerabilityID: CVE-2025-8941
+    PkgID: libpam-modules-bin@1.7.0-5ubuntu2
+    PkgName: libpam-modules-bin
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpam-modules-bin@1.7.0-5ubuntu2?arch=amd64&distro=ubuntu-25.10
+      UID: 2a15df456a8e7951
+    InstalledVersion: 1.7.0-5ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-8941
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:afa41beaae11e5bcc98bcc38112d3e86de1dd93daa3d2212f7144eb51950695b
+    Title: 'linux-pam: Incomplete fix for CVE-2025-6020'
+    Description: A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a "complete" fix for CVE-2025-6020.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-22
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      oracle-oval: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:14557
+    - https://access.redhat.com/errata/RHSA-2025:15099
+    - https://access.redhat.com/errata/RHSA-2025:15100
+    - https://access.redhat.com/errata/RHSA-2025:15101
+    - https://access.redhat.com/errata/RHSA-2025:15102
+    - https://access.redhat.com/errata/RHSA-2025:15103
+    - https://access.redhat.com/errata/RHSA-2025:15104
+    - https://access.redhat.com/errata/RHSA-2025:15105
+    - https://access.redhat.com/errata/RHSA-2025:15106
+    - https://access.redhat.com/errata/RHSA-2025:15107
+    - https://access.redhat.com/errata/RHSA-2025:15709
+    - https://access.redhat.com/errata/RHSA-2025:15827
+    - https://access.redhat.com/errata/RHSA-2025:15828
+    - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:17181
+    - https://access.redhat.com/errata/RHSA-2025:18219
+    - https://access.redhat.com/errata/RHSA-2025:21885
+    - https://access.redhat.com/security/cve/CVE-2025-8941
+    - https://bugzilla.redhat.com/2372512
+    - https://bugzilla.redhat.com/2388220
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2372512
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2388220
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941
+    - https://errata.almalinux.org/9/ALSA-2025-15099.html
+    - https://errata.rockylinux.org/RLSA-2025:15099
+    - https://linux.oracle.com/cve/CVE-2025-8941.html
+    - https://linux.oracle.com/errata/ELSA-2025-15099.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-8941
+    - https://www.cve.org/CVERecord?id=CVE-2025-8941
+    PublishedDate: '2025-08-13T15:15:41.873Z'
+    LastModifiedDate: '2025-11-20T21:16:08.11Z'
+  - VulnerabilityID: CVE-2025-8941
+    PkgID: libpam-runtime@1.7.0-5ubuntu2
+    PkgName: libpam-runtime
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpam-runtime@1.7.0-5ubuntu2?arch=all&distro=ubuntu-25.10
+      UID: 7e1a4e8f3bea5117
+    InstalledVersion: 1.7.0-5ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-8941
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:e4d09b2c6af98288e8fe93f05414b6ff791f66e22cdd60bf84d9e174cdebc291
+    Title: 'linux-pam: Incomplete fix for CVE-2025-6020'
+    Description: A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a "complete" fix for CVE-2025-6020.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-22
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      oracle-oval: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:14557
+    - https://access.redhat.com/errata/RHSA-2025:15099
+    - https://access.redhat.com/errata/RHSA-2025:15100
+    - https://access.redhat.com/errata/RHSA-2025:15101
+    - https://access.redhat.com/errata/RHSA-2025:15102
+    - https://access.redhat.com/errata/RHSA-2025:15103
+    - https://access.redhat.com/errata/RHSA-2025:15104
+    - https://access.redhat.com/errata/RHSA-2025:15105
+    - https://access.redhat.com/errata/RHSA-2025:15106
+    - https://access.redhat.com/errata/RHSA-2025:15107
+    - https://access.redhat.com/errata/RHSA-2025:15709
+    - https://access.redhat.com/errata/RHSA-2025:15827
+    - https://access.redhat.com/errata/RHSA-2025:15828
+    - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:17181
+    - https://access.redhat.com/errata/RHSA-2025:18219
+    - https://access.redhat.com/errata/RHSA-2025:21885
+    - https://access.redhat.com/security/cve/CVE-2025-8941
+    - https://bugzilla.redhat.com/2372512
+    - https://bugzilla.redhat.com/2388220
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2372512
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2388220
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941
+    - https://errata.almalinux.org/9/ALSA-2025-15099.html
+    - https://errata.rockylinux.org/RLSA-2025:15099
+    - https://linux.oracle.com/cve/CVE-2025-8941.html
+    - https://linux.oracle.com/errata/ELSA-2025-15099.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-8941
+    - https://www.cve.org/CVERecord?id=CVE-2025-8941
+    PublishedDate: '2025-08-13T15:15:41.873Z'
+    LastModifiedDate: '2025-11-20T21:16:08.11Z'
+  - VulnerabilityID: CVE-2025-8941
+    PkgID: libpam0g@1.7.0-5ubuntu2
+    PkgName: libpam0g
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpam0g@1.7.0-5ubuntu2?arch=amd64&distro=ubuntu-25.10
+      UID: da547a8d11d3a01d
+    InstalledVersion: 1.7.0-5ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-8941
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:960db105655881cd231138bf1d8197b365d80b7ef9effebc7afe7b1635fd1e0f
+    Title: 'linux-pam: Incomplete fix for CVE-2025-6020'
+    Description: A flaw was found in linux-pam. The pam_namespace module may improperly handle user-controlled paths, allowing local users to exploit symlink attacks and race conditions to elevate their privileges to root. This CVE provides a "complete" fix for CVE-2025-6020.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-22
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      oracle-oval: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:14557
+    - https://access.redhat.com/errata/RHSA-2025:15099
+    - https://access.redhat.com/errata/RHSA-2025:15100
+    - https://access.redhat.com/errata/RHSA-2025:15101
+    - https://access.redhat.com/errata/RHSA-2025:15102
+    - https://access.redhat.com/errata/RHSA-2025:15103
+    - https://access.redhat.com/errata/RHSA-2025:15104
+    - https://access.redhat.com/errata/RHSA-2025:15105
+    - https://access.redhat.com/errata/RHSA-2025:15106
+    - https://access.redhat.com/errata/RHSA-2025:15107
+    - https://access.redhat.com/errata/RHSA-2025:15709
+    - https://access.redhat.com/errata/RHSA-2025:15827
+    - https://access.redhat.com/errata/RHSA-2025:15828
+    - https://access.redhat.com/errata/RHSA-2025:16524
+    - https://access.redhat.com/errata/RHSA-2025:17181
+    - https://access.redhat.com/errata/RHSA-2025:18219
+    - https://access.redhat.com/errata/RHSA-2025:21885
+    - https://access.redhat.com/security/cve/CVE-2025-8941
+    - https://bugzilla.redhat.com/2372512
+    - https://bugzilla.redhat.com/2388220
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2372512
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2388220
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941
+    - https://errata.almalinux.org/9/ALSA-2025-15099.html
+    - https://errata.rockylinux.org/RLSA-2025:15099
+    - https://linux.oracle.com/cve/CVE-2025-8941.html
+    - https://linux.oracle.com/errata/ELSA-2025-15099.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-8941
+    - https://www.cve.org/CVERecord?id=CVE-2025-8941
+    PublishedDate: '2025-08-13T15:15:41.873Z'
+    LastModifiedDate: '2025-11-20T21:16:08.11Z'
+  - VulnerabilityID: CVE-2024-56433
+    PkgID: libsubid5@1:4.17.4-2ubuntu2
+    PkgName: libsubid5
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libsubid5@4.17.4-2ubuntu2?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: a4274af2b565b482
+    InstalledVersion: 1:4.17.4-2ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-56433
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:10d928548c56aece2e03ed5afee3c9ffbf05ad10110ea451cbbd9270683b3345
+    Title: 'shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise'
+    Description: 'shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.'
+    Severity: LOW
+    CweIDs:
+    - CWE-1188
+    VendorSeverity:
+      alma: 1
+      azure: 1
+      oracle-oval: 1
+      redhat: 1
+      rocky: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 3.6
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:20559
+    - https://access.redhat.com/security/cve/CVE-2024-56433
+    - https://bugzilla.redhat.com/2334165
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
+    - https://errata.almalinux.org/9/ALSA-2025-20559.html
+    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
+    - https://github.com/shadow-maint/shadow/issues/1157
+    - https://github.com/shadow-maint/shadow/releases/tag/4.4
+    - https://linux.oracle.com/cve/CVE-2024-56433.html
+    - https://linux.oracle.com/errata/ELSA-2025-20559-0.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-56433
+    - https://www.cve.org/CVERecord?id=CVE-2024-56433
+    PublishedDate: '2024-12-26T09:15:07.267Z'
+    LastModifiedDate: '2024-12-26T09:15:07.267Z'
+  - VulnerabilityID: CVE-2024-56433
+    PkgID: login.defs@1:4.17.4-2ubuntu2
+    PkgName: login.defs
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/login.defs@4.17.4-2ubuntu2?arch=all&distro=ubuntu-25.10&epoch=1
+      UID: 685157e74dbd875c
+    InstalledVersion: 1:4.17.4-2ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-56433
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:84f39d3ba80185585f7c80828c98b53b15c2a59e894042e5656a916d0ce4ff3d
+    Title: 'shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise'
+    Description: 'shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.'
+    Severity: LOW
+    CweIDs:
+    - CWE-1188
+    VendorSeverity:
+      alma: 1
+      azure: 1
+      oracle-oval: 1
+      redhat: 1
+      rocky: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 3.6
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:20559
+    - https://access.redhat.com/security/cve/CVE-2024-56433
+    - https://bugzilla.redhat.com/2334165
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
+    - https://errata.almalinux.org/9/ALSA-2025-20559.html
+    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
+    - https://github.com/shadow-maint/shadow/issues/1157
+    - https://github.com/shadow-maint/shadow/releases/tag/4.4
+    - https://linux.oracle.com/cve/CVE-2024-56433.html
+    - https://linux.oracle.com/errata/ELSA-2025-20559-0.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-56433
+    - https://www.cve.org/CVERecord?id=CVE-2024-56433
+    PublishedDate: '2024-12-26T09:15:07.267Z'
+    LastModifiedDate: '2024-12-26T09:15:07.267Z'
+  - VulnerabilityID: CVE-2025-61984
+    PkgID: openssh-client@1:10.0p1-5ubuntu5
+    PkgName: openssh-client
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/openssh-client@10.0p1-5ubuntu5?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: 77e9d24c3e2397dc
+    InstalledVersion: 1:10.0p1-5ubuntu5
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61984
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:4d6c5bfb69cffac4f1c2cebc934cf3a399a466f3f9984c6f664ffeea86ed8a1c
+    Title: 'openssh: OpenSSH: Control characters in usernames can lead to code execution via ProxyCommand'
+    Description: ssh in OpenSSH before 10.1 allows control characters in usernames that originate from certain possibly untrusted sources, potentially leading to code execution when a ProxyCommand is used. The untrusted sources are the command line and %-sequence expansion of a configuration file. (A configuration file that provides a complete literal username is not categorized as an untrusted source.)
+    Severity: LOW
+    CweIDs:
+    - CWE-159
+    VendorSeverity:
+      alma: 2
+      azure: 1
+      oracle-oval: 2
+      photon: 1
+      redhat: 2
+      rocky: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/07/1
+    - http://www.openwall.com/lists/oss-security/2025/10/12/1
+    - https://access.redhat.com/errata/RHSA-2025:23480
+    - https://access.redhat.com/security/cve/CVE-2025-61984
+    - https://bugzilla.redhat.com/2401960
+    - https://bugzilla.redhat.com/2401962
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401960
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401962
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61984
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61985
+    - https://dgl.cx/2025/10/bash-a-newline-ssh-proxycommand-cve-2025-61984
+    - https://errata.almalinux.org/9/ALSA-2025-23480.html
+    - https://errata.rockylinux.org/RLSA-2025:23481
+    - https://linux.oracle.com/cve/CVE-2025-61984.html
+    - https://linux.oracle.com/errata/ELSA-2025-23481.html
+    - https://marc.info/?l=openssh-unix-dev&m=175974522032149&w=2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61984
+    - https://www.cve.org/CVERecord?id=CVE-2025-61984
+    - https://www.openssh.com/releasenotes.html#10.1p1
+    - https://www.openwall.com/lists/oss-security/2025/10/06/1
+    - https://www.vicarius.io/vsociety/posts/cve-2025-61984-detection-script-remote-code-execution-vulnerability-affecting-openssh
+    - https://www.vicarius.io/vsociety/posts/cve-2025-61984-mitigation-script-remote-code-execution-vulnerability-affecting-openssh
+    PublishedDate: '2025-10-06T19:15:36.157Z'
+    LastModifiedDate: '2025-11-11T15:15:36.703Z'
+  - VulnerabilityID: CVE-2025-61985
+    PkgID: openssh-client@1:10.0p1-5ubuntu5
+    PkgName: openssh-client
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/openssh-client@10.0p1-5ubuntu5?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: 77e9d24c3e2397dc
+    InstalledVersion: 1:10.0p1-5ubuntu5
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61985
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:ae53fc07793585e5385b554e1cab28145eb27d7cf3f1d7fbeae4d9420daed690
+    Title: 'openssh: OpenSSH: Null character in ssh:// URI can lead to code execution via ProxyCommand'
+    Description: ssh in OpenSSH before 10.1 allows the '\0' character in an ssh:// URI, potentially leading to code execution when a ProxyCommand is used.
+    Severity: LOW
+    CweIDs:
+    - CWE-158
+    VendorSeverity:
+      alma: 2
+      azure: 1
+      cbl-mariner: 2
+      oracle-oval: 2
+      photon: 1
+      redhat: 2
+      rocky: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:23480
+    - https://access.redhat.com/security/cve/CVE-2025-61985
+    - https://bugzilla.redhat.com/2401960
+    - https://bugzilla.redhat.com/2401962
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401960
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401962
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61984
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61985
+    - https://errata.almalinux.org/9/ALSA-2025-23480.html
+    - https://errata.rockylinux.org/RLSA-2025:23481
+    - https://linux.oracle.com/cve/CVE-2025-61985.html
+    - https://linux.oracle.com/errata/ELSA-2025-23481.html
+    - https://marc.info/?l=openssh-unix-dev&m=175974522032149&w=2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61985
+    - https://www.cve.org/CVERecord?id=CVE-2025-61985
+    - https://www.openssh.com/releasenotes.html#10.1p1
+    - https://www.openwall.com/lists/oss-security/2025/10/06/1
+    PublishedDate: '2025-10-06T19:15:36.357Z'
+    LastModifiedDate: '2025-10-08T19:38:32.61Z'
+  - VulnerabilityID: CVE-2025-61984
+    PkgID: openssh-server@1:10.0p1-5ubuntu5
+    PkgName: openssh-server
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/openssh-server@10.0p1-5ubuntu5?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: dc84705f829a3ede
+    InstalledVersion: 1:10.0p1-5ubuntu5
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61984
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:963c879310be7c04cb6fd17feb6c28c86bf3a4672e0146a96c4009b46bad7614
+    Title: 'openssh: OpenSSH: Control characters in usernames can lead to code execution via ProxyCommand'
+    Description: ssh in OpenSSH before 10.1 allows control characters in usernames that originate from certain possibly untrusted sources, potentially leading to code execution when a ProxyCommand is used. The untrusted sources are the command line and %-sequence expansion of a configuration file. (A configuration file that provides a complete literal username is not categorized as an untrusted source.)
+    Severity: LOW
+    CweIDs:
+    - CWE-159
+    VendorSeverity:
+      alma: 2
+      azure: 1
+      oracle-oval: 2
+      photon: 1
+      redhat: 2
+      rocky: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/07/1
+    - http://www.openwall.com/lists/oss-security/2025/10/12/1
+    - https://access.redhat.com/errata/RHSA-2025:23480
+    - https://access.redhat.com/security/cve/CVE-2025-61984
+    - https://bugzilla.redhat.com/2401960
+    - https://bugzilla.redhat.com/2401962
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401960
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401962
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61984
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61985
+    - https://dgl.cx/2025/10/bash-a-newline-ssh-proxycommand-cve-2025-61984
+    - https://errata.almalinux.org/9/ALSA-2025-23480.html
+    - https://errata.rockylinux.org/RLSA-2025:23481
+    - https://linux.oracle.com/cve/CVE-2025-61984.html
+    - https://linux.oracle.com/errata/ELSA-2025-23481.html
+    - https://marc.info/?l=openssh-unix-dev&m=175974522032149&w=2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61984
+    - https://www.cve.org/CVERecord?id=CVE-2025-61984
+    - https://www.openssh.com/releasenotes.html#10.1p1
+    - https://www.openwall.com/lists/oss-security/2025/10/06/1
+    - https://www.vicarius.io/vsociety/posts/cve-2025-61984-detection-script-remote-code-execution-vulnerability-affecting-openssh
+    - https://www.vicarius.io/vsociety/posts/cve-2025-61984-mitigation-script-remote-code-execution-vulnerability-affecting-openssh
+    PublishedDate: '2025-10-06T19:15:36.157Z'
+    LastModifiedDate: '2025-11-11T15:15:36.703Z'
+  - VulnerabilityID: CVE-2025-61985
+    PkgID: openssh-server@1:10.0p1-5ubuntu5
+    PkgName: openssh-server
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/openssh-server@10.0p1-5ubuntu5?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: dc84705f829a3ede
+    InstalledVersion: 1:10.0p1-5ubuntu5
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61985
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:170e236d9e05b9ed4b7340ae460835c847bc191e1a02986062c782bd33bcf6e4
+    Title: 'openssh: OpenSSH: Null character in ssh:// URI can lead to code execution via ProxyCommand'
+    Description: ssh in OpenSSH before 10.1 allows the '\0' character in an ssh:// URI, potentially leading to code execution when a ProxyCommand is used.
+    Severity: LOW
+    CweIDs:
+    - CWE-158
+    VendorSeverity:
+      alma: 2
+      azure: 1
+      cbl-mariner: 2
+      oracle-oval: 2
+      photon: 1
+      redhat: 2
+      rocky: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:23480
+    - https://access.redhat.com/security/cve/CVE-2025-61985
+    - https://bugzilla.redhat.com/2401960
+    - https://bugzilla.redhat.com/2401962
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401960
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401962
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61984
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61985
+    - https://errata.almalinux.org/9/ALSA-2025-23480.html
+    - https://errata.rockylinux.org/RLSA-2025:23481
+    - https://linux.oracle.com/cve/CVE-2025-61985.html
+    - https://linux.oracle.com/errata/ELSA-2025-23481.html
+    - https://marc.info/?l=openssh-unix-dev&m=175974522032149&w=2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61985
+    - https://www.cve.org/CVERecord?id=CVE-2025-61985
+    - https://www.openssh.com/releasenotes.html#10.1p1
+    - https://www.openwall.com/lists/oss-security/2025/10/06/1
+    PublishedDate: '2025-10-06T19:15:36.357Z'
+    LastModifiedDate: '2025-10-08T19:38:32.61Z'
+  - VulnerabilityID: CVE-2025-61984
+    PkgID: openssh-sftp-server@1:10.0p1-5ubuntu5
+    PkgName: openssh-sftp-server
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/openssh-sftp-server@10.0p1-5ubuntu5?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: e233d19a1628eb16
+    InstalledVersion: 1:10.0p1-5ubuntu5
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61984
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:40b7a6feca7970837b60644a712db391079a724f65ef57f460b78c214f4a9747
+    Title: 'openssh: OpenSSH: Control characters in usernames can lead to code execution via ProxyCommand'
+    Description: ssh in OpenSSH before 10.1 allows control characters in usernames that originate from certain possibly untrusted sources, potentially leading to code execution when a ProxyCommand is used. The untrusted sources are the command line and %-sequence expansion of a configuration file. (A configuration file that provides a complete literal username is not categorized as an untrusted source.)
+    Severity: LOW
+    CweIDs:
+    - CWE-159
+    VendorSeverity:
+      alma: 2
+      azure: 1
+      oracle-oval: 2
+      photon: 1
+      redhat: 2
+      rocky: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/07/1
+    - http://www.openwall.com/lists/oss-security/2025/10/12/1
+    - https://access.redhat.com/errata/RHSA-2025:23480
+    - https://access.redhat.com/security/cve/CVE-2025-61984
+    - https://bugzilla.redhat.com/2401960
+    - https://bugzilla.redhat.com/2401962
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401960
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401962
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61984
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61985
+    - https://dgl.cx/2025/10/bash-a-newline-ssh-proxycommand-cve-2025-61984
+    - https://errata.almalinux.org/9/ALSA-2025-23480.html
+    - https://errata.rockylinux.org/RLSA-2025:23481
+    - https://linux.oracle.com/cve/CVE-2025-61984.html
+    - https://linux.oracle.com/errata/ELSA-2025-23481.html
+    - https://marc.info/?l=openssh-unix-dev&m=175974522032149&w=2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61984
+    - https://www.cve.org/CVERecord?id=CVE-2025-61984
+    - https://www.openssh.com/releasenotes.html#10.1p1
+    - https://www.openwall.com/lists/oss-security/2025/10/06/1
+    - https://www.vicarius.io/vsociety/posts/cve-2025-61984-detection-script-remote-code-execution-vulnerability-affecting-openssh
+    - https://www.vicarius.io/vsociety/posts/cve-2025-61984-mitigation-script-remote-code-execution-vulnerability-affecting-openssh
+    PublishedDate: '2025-10-06T19:15:36.157Z'
+    LastModifiedDate: '2025-11-11T15:15:36.703Z'
+  - VulnerabilityID: CVE-2025-61985
+    PkgID: openssh-sftp-server@1:10.0p1-5ubuntu5
+    PkgName: openssh-sftp-server
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/openssh-sftp-server@10.0p1-5ubuntu5?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: e233d19a1628eb16
+    InstalledVersion: 1:10.0p1-5ubuntu5
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61985
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:3e44f6e4db02caeb2d18d1f336ff6a882e3c727e2458adcc6b8299391228e3d5
+    Title: 'openssh: OpenSSH: Null character in ssh:// URI can lead to code execution via ProxyCommand'
+    Description: ssh in OpenSSH before 10.1 allows the '\0' character in an ssh:// URI, potentially leading to code execution when a ProxyCommand is used.
+    Severity: LOW
+    CweIDs:
+    - CWE-158
+    VendorSeverity:
+      alma: 2
+      azure: 1
+      cbl-mariner: 2
+      oracle-oval: 2
+      photon: 1
+      redhat: 2
+      rocky: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:23480
+    - https://access.redhat.com/security/cve/CVE-2025-61985
+    - https://bugzilla.redhat.com/2401960
+    - https://bugzilla.redhat.com/2401962
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401960
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2401962
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61984
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61985
+    - https://errata.almalinux.org/9/ALSA-2025-23480.html
+    - https://errata.rockylinux.org/RLSA-2025:23481
+    - https://linux.oracle.com/cve/CVE-2025-61985.html
+    - https://linux.oracle.com/errata/ELSA-2025-23481.html
+    - https://marc.info/?l=openssh-unix-dev&m=175974522032149&w=2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61985
+    - https://www.cve.org/CVERecord?id=CVE-2025-61985
+    - https://www.openssh.com/releasenotes.html#10.1p1
+    - https://www.openwall.com/lists/oss-security/2025/10/06/1
+    PublishedDate: '2025-10-06T19:15:36.357Z'
+    LastModifiedDate: '2025-10-08T19:38:32.61Z'
+  - VulnerabilityID: CVE-2024-56433
+    PkgID: passwd@1:4.17.4-2ubuntu2
+    PkgName: passwd
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/passwd@4.17.4-2ubuntu2?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: 2d87ef360f209a3f
+    InstalledVersion: 1:4.17.4-2ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-56433
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:861522886f1a21498bcf7bb77d0b81920e5f2bfc019e8b075b30fbdb6427a322
+    Title: 'shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise'
+    Description: 'shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.'
+    Severity: LOW
+    CweIDs:
+    - CWE-1188
+    VendorSeverity:
+      alma: 1
+      azure: 1
+      oracle-oval: 1
+      redhat: 1
+      rocky: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 3.6
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:20559
+    - https://access.redhat.com/security/cve/CVE-2024-56433
+    - https://bugzilla.redhat.com/2334165
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
+    - https://errata.almalinux.org/9/ALSA-2025-20559.html
+    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
+    - https://github.com/shadow-maint/shadow/issues/1157
+    - https://github.com/shadow-maint/shadow/releases/tag/4.4
+    - https://linux.oracle.com/cve/CVE-2024-56433.html
+    - https://linux.oracle.com/errata/ELSA-2025-20559-0.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-56433
+    - https://www.cve.org/CVERecord?id=CVE-2024-56433
+    PublishedDate: '2024-12-26T09:15:07.267Z'
+    LastModifiedDate: '2024-12-26T09:15:07.267Z'
+  - VulnerabilityID: CVE-2018-6952
+    PkgID: patch@2.8-2
+    PkgName: patch
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/patch@2.8-2?arch=amd64&distro=ubuntu-25.10
+      UID: da3d916617374947
+    InstalledVersion: 2.8-2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2018-6952
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:0ae920c3db9a73bb36c5d33677f15001ce4fc798739b3faaa854e998da613380
+    Title: 'patch: Double free of memory in pch.c:another_hunk() causes a crash'
+    Description: A double free exists in the another_hunk function in pch.c in GNU patch through 2.7.6.
+    Severity: LOW
+    CweIDs:
+    - CWE-415
+    VendorSeverity:
+      amazon: 3
+      azure: 3
+      cbl-mariner: 3
+      nvd: 3
+      oracle-oval: 1
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V2Vector: AV:N/AC:L/Au:N/C:N/I:N/A:P
+        V3Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V2Score: 5
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.3
+    References:
+    - http://www.securityfocus.com/bid/103047
+    - https://access.redhat.com/errata/RHSA-2019:2033
+    - https://access.redhat.com/security/cve/CVE-2018-6952
+    - https://linux.oracle.com/cve/CVE-2018-6952.html
+    - https://linux.oracle.com/errata/ELSA-2019-2033.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2018-6952
+    - https://savannah.gnu.org/bugs/index.php?53133
+    - https://security.gentoo.org/glsa/201904-17
+    - https://www.cve.org/CVERecord?id=CVE-2018-6952
+    PublishedDate: '2018-02-13T19:29:00.573Z'
+    LastModifiedDate: '2024-11-21T04:11:28.42Z'
+  - VulnerabilityID: CVE-2021-45261
+    PkgID: patch@2.8-2
+    PkgName: patch
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/patch@2.8-2?arch=amd64&distro=ubuntu-25.10
+      UID: da3d916617374947
+    InstalledVersion: 2.8-2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2021-45261
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:ef9b8bc33816d88c9b5a99914b656cb7ab7a2cc813d1ec2fa08948d266e1f9c6
+    Title: 'patch: Invalid Pointer via another_hunk function'
+    Description: An Invalid Pointer vulnerability exists in GNU patch 2.7 via the another_hunk function, which causes a Denial of Service.
+    Severity: LOW
+    CweIDs:
+    - CWE-763
+    VendorSeverity:
+      nvd: 2
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V2Vector: AV:N/AC:M/Au:N/C:N/I:N/A:P
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V2Score: 4.3
+        V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2021-45261
+    - https://nvd.nist.gov/vuln/detail/CVE-2021-45261
+    - https://savannah.gnu.org/bugs/?61685
+    - https://www.cve.org/CVERecord?id=CVE-2021-45261
+    PublishedDate: '2021-12-22T18:15:08.1Z'
+    LastModifiedDate: '2024-11-21T06:32:02.633Z'
+  - VulnerabilityID: CVE-2025-45582
+    PkgID: tar@1.35+dfsg-3.1build1
+    PkgName: tar
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-3.1build1?arch=amd64&distro=ubuntu-25.10
+      UID: 41081f85f98b9d6a
+    InstalledVersion: 1.35+dfsg-3.1build1
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-45582
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:02f8f6f854ee087b3031dc4939c5f39f50bf9a66d3fa69e764f2570fc44a0260
+    Title: 'tar: Tar path traversal'
+    Description: 'GNU Tar through 1.35 allows file overwrite via directory traversal in crafted TAR archives, with a certain two-step process. First, the victim must extract an archive that contains a ../ symlink to a critical directory. Second, the victim must extract an archive that contains a critical file, specified via a relative pathname that begins with the symlink name and ends with that critical file''s name. Here, the extraction follows the symlink and overwrites the critical file. This bypasses the protection mechanism of "Member name contains ''..''" that would occur for a single TAR archive that attempted to specify the critical file via a ../ approach. For example, the first archive can contain "x -> ../../../../../home/victim/.ssh" and the second archive can contain x/authorized_keys. This can affect server applications that automatically extract any number of user-supplied TAR archives, and were relying on the blocking of traversal. This can also affect software installation processes in which "tar xf" is run more than once (e.g., when installing a package can automatically install two dependencies that are set up as untrusted tarballs instead of official packages). NOTE: the official GNU Tar manual has an otherwise-empty directory for each "tar xf" in its Security Rules of Thumb; however, third-party advice leads users to run "tar xf" more than once into the same directory.'
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-24
+    VendorSeverity:
+      alma: 2
+      oracle-oval: 2
+      redhat: 2
+      rocky: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 5.6
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/11/01/6
+    - https://access.redhat.com/errata/RHSA-2026:0067
+    - https://access.redhat.com/security/cve/CVE-2025-45582
+    - https://bugzilla.redhat.com/2379592
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2379592
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582
+    - https://errata.almalinux.org/9/ALSA-2026-0067.html
+    - https://errata.rockylinux.org/RLSA-2026:0067
+    - https://github.com/i900008/vulndb/blob/main/Gnu_tar_vuln.md
+    - https://linux.oracle.com/cve/CVE-2025-45582.html
+    - https://linux.oracle.com/errata/ELSA-2026-0067.html
+    - https://lists.gnu.org/archive/html/bug-tar/2025-08/msg00012.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-45582
+    - https://www.cve.org/CVERecord?id=CVE-2025-45582
+    - https://www.gnu.org/software/tar/
+    - https://www.gnu.org/software/tar/manual/html_node/Integrity.html
+    - https://www.gnu.org/software/tar/manual/html_node/Integrity.html#Integrity
+    - https://www.gnu.org/software/tar/manual/html_node/Security-rules-of-thumb.html
+    PublishedDate: '2025-07-11T17:15:37.183Z'
+    LastModifiedDate: '2025-11-02T01:15:32.307Z'
+  - VulnerabilityID: CVE-2024-56433
+    PkgID: uidmap@1:4.17.4-2ubuntu2
+    PkgName: uidmap
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/uidmap@4.17.4-2ubuntu2?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: 6721614913d11ce0
+    InstalledVersion: 1:4.17.4-2ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-56433
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:4f268b8adf3b18a9630133d451b29e4e9ce2ba303b4d8619c3c8d02e8f9d36d9
+    Title: 'shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise'
+    Description: 'shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.'
+    Severity: LOW
+    CweIDs:
+    - CWE-1188
+    VendorSeverity:
+      alma: 1
+      azure: 1
+      oracle-oval: 1
+      redhat: 1
+      rocky: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 3.6
+    References:
+    - https://access.redhat.com/errata/RHSA-2025:20559
+    - https://access.redhat.com/security/cve/CVE-2024-56433
+    - https://bugzilla.redhat.com/2334165
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
+    - https://errata.almalinux.org/9/ALSA-2025-20559.html
+    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
+    - https://github.com/shadow-maint/shadow/issues/1157
+    - https://github.com/shadow-maint/shadow/releases/tag/4.4
+    - https://linux.oracle.com/cve/CVE-2024-56433.html
+    - https://linux.oracle.com/errata/ELSA-2025-20559-0.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-56433
+    - https://www.cve.org/CVERecord?id=CVE-2024-56433
+    PublishedDate: '2024-12-26T09:15:07.267Z'
+    LastModifiedDate: '2024-12-26T09:15:07.267Z'
+  - VulnerabilityID: CVE-2021-31879
+    PkgID: wget@1.25.0-2ubuntu3
+    PkgName: wget
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/wget@1.25.0-2ubuntu3?arch=amd64&distro=ubuntu-25.10
+      UID: 7bd2289c802b35cc
+    InstalledVersion: 1.25.0-2ubuntu3
+    Status: affected
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2021-31879
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:585d91e03c4a22247f84186e9f0bd11711dd89488846a3bb6def5f0522817804
+    Title: 'wget: authorization header disclosure on redirect'
+    Description: GNU Wget through 1.21.1 does not omit the Authorization header upon a redirect to a different origin, a related issue to CVE-2018-1000007.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-601
+    VendorSeverity:
+      amazon: 2
+      cbl-mariner: 2
+      nvd: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V2Vector: AV:N/AC:M/Au:N/C:P/I:P/A:N
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V2Score: 5.8
+        V3Score: 6.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2021-31879
+    - https://mail.gnu.org/archive/html/bug-wget/2021-02/msg00002.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2021-31879
+    - https://savannah.gnu.org/bugs/?56909
+    - https://security.netapp.com/advisory/ntap-20210618-0002/
+    - https://www.cve.org/CVERecord?id=CVE-2021-31879
+    PublishedDate: '2021-04-29T05:15:08.707Z'
+    LastModifiedDate: '2024-11-21T06:06:25.02Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
@@ -25779,6 +28893,7 @@
     Layer:
       Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
       DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
     DataSource:
       ID: govulndb
@@ -25787,18 +28902,28 @@
     Fingerprint: sha256:a74855634177f11a2e23d999f8fbe72cdcdadb7552cce7fa3f8c34cfe2ff8963
     Title: During session resumption in crypto/tls, if the underlying Config has  ...
     Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
+    Severity: CRITICAL
     CweIDs:
     - CWE-295
     VendorSeverity:
       amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
     References:
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
 - Target: usr/bin/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -27290,6 +30415,51 @@
       DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
     AnalyzedBy: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2025-68121
+    VendorIDs:
+    - GO-2026-4337
+    PkgID: stdlib@v1.24.11
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.11
+      UID: c7e7d09a5d1fe84f
+    InstalledVersion: v1.24.11
+    FixedVersion: 1.24.13, 1.25.7, 1.26.0-rc.3
+    Status: fixed
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:0180248e31f7e50e10589e353f48fc3875f4ac1de23a8383cda80481685ef40c
+    Title: During session resumption in crypto/tls, if the underlying Config has  ...
+    Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
+    Severity: CRITICAL
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
+    References:
+    - https://go.dev/cl/737700
+    - https://go.dev/issue/77217
+    - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
+    - https://pkg.go.dev/vuln/GO-2026-4337
+    PublishedDate: '2026-02-05T18:16:10.857Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
   - VulnerabilityID: CVE-2025-61726
     VendorIDs:
     - GO-2026-4341
@@ -27424,40 +30594,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
-  - VulnerabilityID: CVE-2025-68121
-    VendorIDs:
-    - GO-2026-4337
-    PkgID: stdlib@v1.24.11
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.11
-      UID: c7e7d09a5d1fe84f
-    InstalledVersion: v1.24.11
-    FixedVersion: 1.24.13, 1.25.7, 1.26.0-rc.3
-    Status: fixed
-    Layer:
-      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
-      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:0180248e31f7e50e10589e353f48fc3875f4ac1de23a8383cda80481685ef40c
-    Title: During session resumption in crypto/tls, if the underlying Config has  ...
-    Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
-    CweIDs:
-    - CWE-295
-    VendorSeverity:
-      amazon: 3
-    References:
-    - https://go.dev/cl/737700
-    - https://go.dev/issue/77217
-    - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
-    - https://pkg.go.dev/vuln/GO-2026-4337
-    PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
 - Target: usr/bin/docker-proxy
   Class: lang-pkgs
   Type: gobinary
@@ -27556,6 +30692,7 @@
     Layer:
       Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
       DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
     DataSource:
       ID: govulndb
@@ -27564,18 +30701,28 @@
     Fingerprint: sha256:f55882a2ba4b6d40d50bff3cbf4040669634152081e7e0e600cac973216970e0
     Title: During session resumption in crypto/tls, if the underlying Config has  ...
     Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
+    Severity: CRITICAL
     CweIDs:
     - CWE-295
     VendorSeverity:
       amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
     References:
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
 - Target: usr/bin/dockerd
   Class: lang-pkgs
   Type: gobinary
@@ -30622,6 +33769,7 @@
     Layer:
       Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
       DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
     DataSource:
       ID: govulndb
@@ -30630,18 +33778,28 @@
     Fingerprint: sha256:5c4cef1ec27b9767b9cdd44dcd38d2a1697ee8d97f1b44b2da59eba669c082b7
     Title: During session resumption in crypto/tls, if the underlying Config has  ...
     Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
+    Severity: CRITICAL
     CweIDs:
     - CWE-295
     VendorSeverity:
       amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
     References:
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -31862,6 +35020,7 @@
     Layer:
       Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
       DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
     DataSource:
       ID: govulndb
@@ -31870,18 +35029,28 @@
     Fingerprint: sha256:f08113dec7ae11a10a1fbc645fb8a9d17fc3d7c8fcbc8996e80cd07548b5d385
     Title: During session resumption in crypto/tls, if the underlying Config has  ...
     Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
+    Severity: CRITICAL
     CweIDs:
     - CWE-295
     VendorSeverity:
       amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
     References:
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -32783,6 +35952,51 @@
       DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
     AnalyzedBy: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2025-68121
+    VendorIDs:
+    - GO-2026-4337
+    PkgID: stdlib@v1.25.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.5
+      UID: c007a71e460aabb3
+    InstalledVersion: v1.25.5
+    FixedVersion: 1.24.13, 1.25.7, 1.26.0-rc.3
+    Status: fixed
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:2e59da55ddc7b1f0eca6ebef5c7042a3afc961f77956543e06c82ec5293bb2fd
+    Title: During session resumption in crypto/tls, if the underlying Config has  ...
+    Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
+    Severity: CRITICAL
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
+    References:
+    - https://go.dev/cl/737700
+    - https://go.dev/issue/77217
+    - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
+    - https://pkg.go.dev/vuln/GO-2026-4337
+    PublishedDate: '2026-02-05T18:16:10.857Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
   - VulnerabilityID: CVE-2025-61726
     VendorIDs:
     - GO-2026-4341
@@ -32917,40 +36131,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
-  - VulnerabilityID: CVE-2025-68121
-    VendorIDs:
-    - GO-2026-4337
-    PkgID: stdlib@v1.25.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.5
-      UID: c007a71e460aabb3
-    InstalledVersion: v1.25.5
-    FixedVersion: 1.24.13, 1.25.7, 1.26.0-rc.3
-    Status: fixed
-    Layer:
-      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
-      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:2e59da55ddc7b1f0eca6ebef5c7042a3afc961f77956543e06c82ec5293bb2fd
-    Title: During session resumption in crypto/tls, if the underlying Config has  ...
-    Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
-    CweIDs:
-    - CWE-295
-    VendorSeverity:
-      amazon: 3
-    References:
-    - https://go.dev/cl/737700
-    - https://go.dev/issue/77217
-    - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
-    - https://pkg.go.dev/vuln/GO-2026-4337
-    PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
 - Target: usr/bin/rootlesskit
   Class: lang-pkgs
   Type: gobinary
@@ -33192,6 +36372,7 @@
     Layer:
       Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
       DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
     DataSource:
       ID: govulndb
@@ -33200,18 +36381,28 @@
     Fingerprint: sha256:b497451a882a7c32b4bbc3f262f1e39c9cc7a33705aa7a3c2cbd1da70c1b5323
     Title: During session resumption in crypto/tls, if the underlying Config has  ...
     Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
+    Severity: CRITICAL
     CweIDs:
     - CWE-295
     VendorSeverity:
       amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
     References:
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
 - Target: usr/libexec/docker/cli-plugins/docker-buildx
   Class: lang-pkgs
   Type: gobinary
@@ -35951,6 +39142,7 @@
     Layer:
       Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
       DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
     DataSource:
       ID: govulndb
@@ -35959,18 +39151,28 @@
     Fingerprint: sha256:16461e7826740ee418a9f1f65cb6076a51df6381a7dbd0df8a11400c1a6106e5
     Title: During session resumption in crypto/tls, if the underlying Config has  ...
     Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
+    Severity: CRITICAL
     CweIDs:
     - CWE-295
     VendorSeverity:
       amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
     References:
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
 - Target: usr/libexec/docker/cli-plugins/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -37462,6 +40664,51 @@
       DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
     AnalyzedBy: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2025-68121
+    VendorIDs:
+    - GO-2026-4337
+    PkgID: stdlib@v1.24.11
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.11
+      UID: 7369f92cc13c78a
+    InstalledVersion: v1.24.11
+    FixedVersion: 1.24.13, 1.25.7, 1.26.0-rc.3
+    Status: fixed
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:775e0474e5e4a5964ab309171d41d65f5544243c6ff4421fc0242658dbc0a0c3
+    Title: During session resumption in crypto/tls, if the underlying Config has  ...
+    Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
+    Severity: CRITICAL
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
+    References:
+    - https://go.dev/cl/737700
+    - https://go.dev/issue/77217
+    - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
+    - https://pkg.go.dev/vuln/GO-2026-4337
+    PublishedDate: '2026-02-05T18:16:10.857Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
   - VulnerabilityID: CVE-2025-61726
     VendorIDs:
     - GO-2026-4341
@@ -37596,40 +40843,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
-  - VulnerabilityID: CVE-2025-68121
-    VendorIDs:
-    - GO-2026-4337
-    PkgID: stdlib@v1.24.11
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.11
-      UID: 7369f92cc13c78a
-    InstalledVersion: v1.24.11
-    FixedVersion: 1.24.13, 1.25.7, 1.26.0-rc.3
-    Status: fixed
-    Layer:
-      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
-      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:775e0474e5e4a5964ab309171d41d65f5544243c6ff4421fc0242658dbc0a0c3
-    Title: During session resumption in crypto/tls, if the underlying Config has  ...
-    Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
-    CweIDs:
-    - CWE-295
-    VendorSeverity:
-      amazon: 3
-    References:
-    - https://go.dev/cl/737700
-    - https://go.dev/issue/77217
-    - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
-    - https://pkg.go.dev/vuln/GO-2026-4337
-    PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
 - Target: usr/libexec/docker/cli-plugins/docker-model
   Class: lang-pkgs
   Type: gobinary
@@ -38827,6 +42040,7 @@
     Layer:
       Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
       DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
     DataSource:
       ID: govulndb
@@ -38835,18 +42049,28 @@
     Fingerprint: sha256:3f90489fdef719bb7d8250443041a5319c5d0833487d29ed671015d4c28a5bb8
     Title: During session resumption in crypto/tls, if the underlying Config has  ...
     Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
+    Severity: CRITICAL
     CweIDs:
     - CWE-295
     VendorSeverity:
       amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
     References:
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -40782,6 +44006,51 @@
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-xr7q-jx4m-x55m
     PublishedDate: '2024-07-05T20:07:01Z'
     LastModifiedDate: '2024-07-09T21:38:29Z'
+  - VulnerabilityID: CVE-2025-68121
+    VendorIDs:
+    - GO-2026-4337
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: a3059653e617f681
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.24.13, 1.25.7, 1.26.0-rc.3
+    Status: fixed
+    Layer:
+      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
+      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:f8209942e0205b5fa527e3ad09d621174813738f7fac48c507e260018878b433
+    Title: During session resumption in crypto/tls, if the underlying Config has  ...
+    Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
+    Severity: CRITICAL
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+      nvd: 4
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 10
+    References:
+    - https://go.dev/cl/737700
+    - https://go.dev/issue/77217
+    - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
+    - https://pkg.go.dev/vuln/GO-2026-4337
+    PublishedDate: '2026-02-05T18:16:10.857Z'
+    LastModifiedDate: '2026-02-10T16:08:03.303Z'
   - VulnerabilityID: CVE-2025-47907
     VendorIDs:
     - GO-2025-3849
@@ -41033,18 +44302,18 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:0923
+    - https://access.redhat.com/errata/RHSA-2026:1908
     - https://access.redhat.com/security/cve/CVE-2025-61729
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
-    - https://errata.almalinux.org/9/ALSA-2026-0923.html
+    - https://errata.almalinux.org/9/ALSA-2026-1908.html
     - https://errata.rockylinux.org/RLSA-2026:1908
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-2124.html
+    - https://linux.oracle.com/errata/ELSA-2026-2323.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
@@ -41088,40 +44357,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
-  - VulnerabilityID: CVE-2025-68121
-    VendorIDs:
-    - GO-2026-4337
-    PkgID: stdlib@v1.22.12
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.22.12
-      UID: a3059653e617f681
-    InstalledVersion: v1.22.12
-    FixedVersion: 1.24.13, 1.25.7, 1.26.0-rc.3
-    Status: fixed
-    Layer:
-      Digest: sha256:7389f6670be1c145bb69d76d2f0b39b6b30c695e5b291c504853f961e0f0aefe
-      DiffID: sha256:5acf0c7177d9068bc85223fd10987e362e726bfce5c995afc54a51df3d2603c0
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-68121
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:f8209942e0205b5fa527e3ad09d621174813738f7fac48c507e260018878b433
-    Title: During session resumption in crypto/tls, if the underlying Config has  ...
-    Description: During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succeed when it should have failed. This may happen when a user calls Config.Clone and mutates the returned Config, or uses Config.GetConfigForClient. This can cause a client to resume a session with a server that it would not have resumed with during the initial handshake, or cause a server to resume a session with a client that it would not have resumed with during the initial handshake.
-    Severity: HIGH
-    CweIDs:
-    - CWE-295
-    VendorSeverity:
-      amazon: 3
-    References:
-    - https://go.dev/cl/737700
-    - https://go.dev/issue/77217
-    - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
-    - https://pkg.go.dev/vuln/GO-2026-4337
-    PublishedDate: '2026-02-05T18:16:10.857Z'
-    LastModifiedDate: '2026-02-06T16:16:14.373Z'
   - VulnerabilityID: CVE-2025-0913
     VendorIDs:
     - GO-2025-3750
@@ -41266,7 +44501,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22873
     - https://pkg.go.dev/vuln/GO-2026-4403
     PublishedDate: '2026-02-04T23:15:54.22Z'
-    LastModifiedDate: '2026-02-05T15:16:06.713Z'
+    LastModifiedDate: '2026-02-10T15:16:40.057Z'
   - VulnerabilityID: CVE-2025-4673
     VendorIDs:
     - GO-2025-3751
