@@ -29814,7 +29814,7 @@
     - CWE-440
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 1
       azure: 2
       cbl-mariner: 2
       nvd: 1
@@ -29874,7 +29874,7 @@
     - CWE-440
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 1
       azure: 2
       cbl-mariner: 2
       nvd: 1
@@ -29934,7 +29934,7 @@
     - CWE-440
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 1
       azure: 2
       cbl-mariner: 2
       nvd: 1
@@ -32964,6 +32964,54 @@
     - https://www.openwall.com/lists/oss-security/2025/07/11/1
     PublishedDate: '2025-07-11T15:15:24.347Z'
     LastModifiedDate: '2025-11-04T22:16:17.823Z'
+  - VulnerabilityID: CVE-2025-11143
+    VendorIDs:
+    - GHSA-wjpw-4j6x-6rwh
+    PkgName: org.eclipse.jetty:jetty-http
+    PkgPath: opt/oaf/openaf.jar
+    PkgIdentifier:
+      PURL: pkg:maven/org.eclipse.jetty/jetty-http@12.0.15
+      UID: f928887f8553f424
+    InstalledVersion: 12.0.15
+    FixedVersion: 12.0.31, 12.1.5
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-11143
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:0ef0519caff64eef19bc416858c2dc036ba2e88195273d638525899459e418ba
+    Title: 'org.eclipse.jetty/jetty-http: org.eclipse.jetty: Security bypass due to differential URI parsing'
+    Description: "The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.\_Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.\_At the very least, differential parsing may divulge implementation details."
+    Severity: LOW
+    CweIDs:
+    - CWE-20
+    VendorSeverity:
+      ghsa: 1
+      redhat: 1
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 3.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 3.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-11143
+    - https://github.com/jetty/jetty.project
+    - https://github.com/jetty/jetty.project/security/advisories/GHSA-wjpw-4j6x-6rwh
+    - https://github.com/user-attachments/files/22222625/Java.Eclipse.Jetty.Report_.Incorrect.Parsing.Priority.of.the.IPv6.Hostname.Delimeter.pdf
+    - https://github.com/user-attachments/files/22222626/Java.Eclipse.Jetty.Report_.The.Parsing.Priority.of.the.Delimiter.pdf
+    - https://github.com/user-attachments/files/22222627/Java.Eclipse.Jetty.Report_.Parsing.Difference.Due.to.Deformed.Scheme.pdf
+    - https://github.com/user-attachments/files/22222630/Java.Eclipse.Jetty.Report_.Improper.IPv4-mapped.IPv6.Parsing.pdf
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-11143
+    - https://www.cve.org/CVERecord?id=CVE-2025-11143
+    PublishedDate: '2026-03-05T10:15:54.68Z'
+    LastModifiedDate: '2026-03-05T19:38:33.877Z'
 - Target: usr/bin/docker
   Class: lang-pkgs
   Type: gobinary
@@ -33008,7 +33056,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -33045,7 +33093,7 @@
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -33195,8 +33243,8 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
-      azure: 2
+      amazon: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -33226,7 +33274,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -33259,7 +33307,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -33295,7 +33343,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -33329,6 +33377,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -33359,53 +33408,12 @@
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.23.6
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.6
-      UID: 1efe5e0e4abf5f2d
-    InstalledVersion: v1.23.6
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:129207e67bc7b373ae2852da1f400a62f03518559a5c629ad93d618dd02aed9f
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 1
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-0913
     VendorIDs:
     - GO-2025-3750
@@ -34153,6 +34161,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.23.6
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.6
+      UID: 1efe5e0e4abf5f2d
+    InstalledVersion: v1.23.6
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:129207e67bc7b373ae2852da1f400a62f03518559a5c629ad93d618dd02aed9f
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -36402,6 +36451,57 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-0495
     PublishedDate: '2025-03-17T20:15:13.737Z'
     LastModifiedDate: '2025-03-17T20:15:13.737Z'
+  - VulnerabilityID: CVE-2025-15558
+    VendorIDs:
+    - GHSA-p436-gjf2-799p
+    PkgID: github.com/docker/cli@v28.0.0+incompatible
+    PkgName: github.com/docker/cli
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/cli@v28.0.0%2Bincompatible
+      UID: 28a02cebe3bb3399
+    InstalledVersion: v28.0.0+incompatible
+    FixedVersion: 29.2.0
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-15558
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:afebb2029c31b463d6762dbde278b21268bd5de9be61ba21b5dea0334902b8db
+    Title: 'docker/cli: Docker CLI for Windows: Privilege escalation via malicious plugin binaries'
+    Description: "Docker CLI for Windows searches for plugin binaries in C:\\ProgramData\\Docker\\cli-plugins, a directory that does not exist by default. A low-privileged attacker can create this directory and place malicious CLI plugin binaries (docker-compose.exe, docker-buildx.exe, etc.) that are executed when a victim user opens Docker Desktop or invokes Docker CLI plugin features, and allow privilege-escalation if the docker\_CLI is executed as a privileged user.\n\nThis issue affects Docker CLI: through 29.1.5 and Windows binaries acting as a CLI-plugin manager using the  github.com/docker/cli/cli-plugins/manager https://pkg.go.dev/github.com/docker/cli@v29.1.5+incompatible/cli-plugins/manager \_package, such as Docker Compose.\n\nThis issue does not impact non-Windows binaries, and projects not using the plugin-manager code."
+    Severity: HIGH
+    CweIDs:
+    - CWE-427
+    VendorSeverity:
+      ghsa: 3
+      redhat: 3
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-15558
+    - https://docs.docker.com/desktop/release-notes
+    - https://docs.docker.com/desktop/release-notes/
+    - https://github.com/docker/cli
+    - https://github.com/docker/cli/commit/13759330b1f7e7cb0d67047ea42c5482548ba7fa
+    - https://github.com/docker/cli/pull/6713
+    - https://github.com/docker/cli/security/advisories/GHSA-p436-gjf2-799p
+    - https://github.com/docker/compose/pull/12300
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-15558
+    - https://www.cve.org/CVERecord?id=CVE-2025-15558
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304/
+    PublishedDate: '2026-03-04T17:16:14.763Z'
+    LastModifiedDate: '2026-03-04T18:08:05.73Z'
   - VulnerabilityID: CVE-2025-11065
     VendorIDs:
     - GHSA-2464-8j7c-4cjm
@@ -36881,7 +36981,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -36918,7 +37018,7 @@
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -37068,8 +37168,8 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
-      azure: 2
+      amazon: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -37099,7 +37199,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -37132,7 +37232,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -37168,7 +37268,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -37202,6 +37302,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -37232,53 +37333,12 @@
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.22.10
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.22.10
-      UID: b73a3c15f0f16480
-    InstalledVersion: v1.22.10
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:2b01dda6ad53491d2fad73a8dd09d68b823eebffe803377bd0b5d0286a3ed3b8
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 1
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2024-45336
     VendorIDs:
     - GO-2025-3420
@@ -38226,6 +38286,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.22.10
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.10
+      UID: b73a3c15f0f16480
+    InstalledVersion: v1.22.10
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:2b01dda6ad53491d2fad73a8dd09d68b823eebffe803377bd0b5d0286a3ed3b8
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/docker-proxy
   Class: lang-pkgs
   Type: gobinary
@@ -38444,7 +38545,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -38481,7 +38582,7 @@
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -38631,8 +38732,8 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
-      azure: 2
+      amazon: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -38662,7 +38763,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -38695,7 +38796,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -38731,7 +38832,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -38765,6 +38866,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -38795,53 +38897,12 @@
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.23.6
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.6
-      UID: 599547a60bf96ec2
-    InstalledVersion: v1.23.6
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:5d00053a9abce6a1863c31bbdd7226c50e627e9985a46d2f5a8b381ac469f701
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 1
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-0913
     VendorIDs:
     - GO-2025-3750
@@ -39589,6 +39650,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.23.6
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.6
+      UID: 599547a60bf96ec2
+    InstalledVersion: v1.23.6
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:5d00053a9abce6a1863c31bbdd7226c50e627e9985a46d2f5a8b381ac469f701
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/dockerd
   Class: lang-pkgs
   Type: gobinary
@@ -43003,7 +43105,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -43040,7 +43142,7 @@
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -43190,8 +43292,8 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
-      azure: 2
+      amazon: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -43221,7 +43323,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -43254,7 +43356,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -43290,7 +43392,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -43324,6 +43426,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -43354,53 +43457,12 @@
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.23.6
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.6
-      UID: a4056994e0b6646c
-    InstalledVersion: v1.23.6
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:3d88339ae5108b3deda39388ad5331f685759d10ea8f9cee86a8ffcb187bd99f
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 1
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-0913
     VendorIDs:
     - GO-2025-3750
@@ -44148,6 +44210,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.23.6
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.6
+      UID: a4056994e0b6646c
+    InstalledVersion: v1.23.6
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:3d88339ae5108b3deda39388ad5331f685759d10ea8f9cee86a8ffcb187bd99f
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -45832,6 +45935,57 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-64329
     PublishedDate: '2025-11-07T05:16:08.017Z'
     LastModifiedDate: '2025-12-31T18:34:48.06Z'
+  - VulnerabilityID: CVE-2025-15558
+    VendorIDs:
+    - GHSA-p436-gjf2-799p
+    PkgID: github.com/docker/cli@v25.0.1+incompatible
+    PkgName: github.com/docker/cli
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/cli@v25.0.1%2Bincompatible
+      UID: 91ac23c3c5a81b6c
+    InstalledVersion: v25.0.1+incompatible
+    FixedVersion: 29.2.0
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-15558
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:002809f575117bdf5cd3d66bee07407d9432543f12d4ce30fc1363841fc75c46
+    Title: 'docker/cli: Docker CLI for Windows: Privilege escalation via malicious plugin binaries'
+    Description: "Docker CLI for Windows searches for plugin binaries in C:\\ProgramData\\Docker\\cli-plugins, a directory that does not exist by default. A low-privileged attacker can create this directory and place malicious CLI plugin binaries (docker-compose.exe, docker-buildx.exe, etc.) that are executed when a victim user opens Docker Desktop or invokes Docker CLI plugin features, and allow privilege-escalation if the docker\_CLI is executed as a privileged user.\n\nThis issue affects Docker CLI: through 29.1.5 and Windows binaries acting as a CLI-plugin manager using the  github.com/docker/cli/cli-plugins/manager https://pkg.go.dev/github.com/docker/cli@v29.1.5+incompatible/cli-plugins/manager \_package, such as Docker Compose.\n\nThis issue does not impact non-Windows binaries, and projects not using the plugin-manager code."
+    Severity: HIGH
+    CweIDs:
+    - CWE-427
+    VendorSeverity:
+      ghsa: 3
+      redhat: 3
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-15558
+    - https://docs.docker.com/desktop/release-notes
+    - https://docs.docker.com/desktop/release-notes/
+    - https://github.com/docker/cli
+    - https://github.com/docker/cli/commit/13759330b1f7e7cb0d67047ea42c5482548ba7fa
+    - https://github.com/docker/cli/pull/6713
+    - https://github.com/docker/cli/security/advisories/GHSA-p436-gjf2-799p
+    - https://github.com/docker/compose/pull/12300
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-15558
+    - https://www.cve.org/CVERecord?id=CVE-2025-15558
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304/
+    PublishedDate: '2026-03-04T17:16:14.763Z'
+    LastModifiedDate: '2026-03-04T18:08:05.73Z'
   - VulnerabilityID: CVE-2025-54410
     VendorIDs:
     - GHSA-4vq8-7jfc-9cvp
@@ -46242,7 +46396,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -46279,7 +46433,7 @@
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -46429,8 +46583,8 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
-      azure: 2
+      amazon: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -46460,7 +46614,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -46493,7 +46647,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -46529,7 +46683,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -46563,6 +46717,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -46593,53 +46748,12 @@
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.23.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.5
-      UID: ae17cda1efaec898
-    InstalledVersion: v1.23.5
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:26d38d2a91e1c43bb9655d1f9e419df0f891a934d799cdc914958d17495a7e2b
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 1
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-0913
     VendorIDs:
     - GO-2025-3750
@@ -47450,6 +47564,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.23.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.5
+      UID: ae17cda1efaec898
+    InstalledVersion: v1.23.5
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:26d38d2a91e1c43bb9655d1f9e419df0f891a934d799cdc914958d17495a7e2b
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -48564,7 +48719,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -48601,7 +48756,7 @@
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -48751,8 +48906,8 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
-      azure: 2
+      amazon: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -48782,7 +48937,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -48815,7 +48970,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -48851,7 +49006,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -48885,6 +49040,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -48915,53 +49071,12 @@
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.23.6
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.6
-      UID: 2e0579f709c2f55e
-    InstalledVersion: v1.23.6
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:f34cdd942b2c7026d1627f70c8978170392c300d557f8748c411a4ac6ee6b4ae
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 1
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-0913
     VendorIDs:
     - GO-2025-3750
@@ -49709,6 +49824,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.23.6
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.6
+      UID: 2e0579f709c2f55e
+    InstalledVersion: v1.23.6
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:f34cdd942b2c7026d1627f70c8978170392c300d557f8748c411a4ac6ee6b4ae
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/bin/rootlesskit
   Class: lang-pkgs
   Type: gobinary
@@ -50070,7 +50226,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -50107,7 +50263,7 @@
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -50257,8 +50413,8 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
-      azure: 2
+      amazon: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -50288,7 +50444,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -50321,7 +50477,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -50357,7 +50513,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -50391,6 +50547,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -50421,53 +50578,12 @@
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.23.6
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.6
-      UID: c1d7ff13e2611e22
-    InstalledVersion: v1.23.6
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:b81d3f3c0591dac7c2d3ba9124ca9b9948bd4fdb23b74c8985ca2e38420a4549
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 1
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-0913
     VendorIDs:
     - GO-2025-3750
@@ -51215,6 +51331,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.23.6
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.6
+      UID: c1d7ff13e2611e22
+    InstalledVersion: v1.23.6
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:b81d3f3c0591dac7c2d3ba9124ca9b9948bd4fdb23b74c8985ca2e38420a4549
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/libexec/docker/cli-plugins/docker-buildx
   Class: lang-pkgs
   Type: gobinary
@@ -53269,6 +53426,57 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-64329
     PublishedDate: '2025-11-07T05:16:08.017Z'
     LastModifiedDate: '2025-12-31T18:34:48.06Z'
+  - VulnerabilityID: CVE-2025-15558
+    VendorIDs:
+    - GHSA-p436-gjf2-799p
+    PkgID: github.com/docker/cli@v28.0.0-rc.2+incompatible
+    PkgName: github.com/docker/cli
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/cli@v28.0.0-rc.2%2Bincompatible
+      UID: 6979c9d49424ec00
+    InstalledVersion: v28.0.0-rc.2+incompatible
+    FixedVersion: 29.2.0
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-15558
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:7d1e037eac97cc6d43b9af2e16cff1b98d39e569f724c2bc8a775175fc68fb75
+    Title: 'docker/cli: Docker CLI for Windows: Privilege escalation via malicious plugin binaries'
+    Description: "Docker CLI for Windows searches for plugin binaries in C:\\ProgramData\\Docker\\cli-plugins, a directory that does not exist by default. A low-privileged attacker can create this directory and place malicious CLI plugin binaries (docker-compose.exe, docker-buildx.exe, etc.) that are executed when a victim user opens Docker Desktop or invokes Docker CLI plugin features, and allow privilege-escalation if the docker\_CLI is executed as a privileged user.\n\nThis issue affects Docker CLI: through 29.1.5 and Windows binaries acting as a CLI-plugin manager using the  github.com/docker/cli/cli-plugins/manager https://pkg.go.dev/github.com/docker/cli@v29.1.5+incompatible/cli-plugins/manager \_package, such as Docker Compose.\n\nThis issue does not impact non-Windows binaries, and projects not using the plugin-manager code."
+    Severity: HIGH
+    CweIDs:
+    - CWE-427
+    VendorSeverity:
+      ghsa: 3
+      redhat: 3
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-15558
+    - https://docs.docker.com/desktop/release-notes
+    - https://docs.docker.com/desktop/release-notes/
+    - https://github.com/docker/cli
+    - https://github.com/docker/cli/commit/13759330b1f7e7cb0d67047ea42c5482548ba7fa
+    - https://github.com/docker/cli/pull/6713
+    - https://github.com/docker/cli/security/advisories/GHSA-p436-gjf2-799p
+    - https://github.com/docker/compose/pull/12300
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-15558
+    - https://www.cve.org/CVERecord?id=CVE-2025-15558
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304/
+    PublishedDate: '2026-03-04T17:16:14.763Z'
+    LastModifiedDate: '2026-03-04T18:08:05.73Z'
   - VulnerabilityID: CVE-2025-54410
     VendorIDs:
     - GHSA-4vq8-7jfc-9cvp
@@ -53802,7 +54010,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -53839,7 +54047,7 @@
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -53989,8 +54197,8 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
-      azure: 2
+      amazon: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -54020,7 +54228,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -54053,7 +54261,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -54089,7 +54297,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -54123,6 +54331,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -54153,53 +54362,12 @@
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.23.6
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.6
-      UID: 2946d594014b3392
-    InstalledVersion: v1.23.6
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:83090ac7dcaa3a0fcc7ff3200eb799f1bf6fe5d362bc10081d87c5947ca896cd
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 1
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-0913
     VendorIDs:
     - GO-2025-3750
@@ -54947,6 +55115,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.23.6
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.6
+      UID: 2946d594014b3392
+    InstalledVersion: v1.23.6
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:83090ac7dcaa3a0fcc7ff3200eb799f1bf6fe5d362bc10081d87c5947ca896cd
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/libexec/docker/cli-plugins/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -57196,6 +57405,57 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-0495
     PublishedDate: '2025-03-17T20:15:13.737Z'
     LastModifiedDate: '2025-03-17T20:15:13.737Z'
+  - VulnerabilityID: CVE-2025-15558
+    VendorIDs:
+    - GHSA-p436-gjf2-799p
+    PkgID: github.com/docker/cli@v27.5.1+incompatible
+    PkgName: github.com/docker/cli
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/cli@v27.5.1%2Bincompatible
+      UID: 3e0d5de48bcdb161
+    InstalledVersion: v27.5.1+incompatible
+    FixedVersion: 29.2.0
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-15558
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:c95a8772a1b3d4a51c77ce6f4e72cbdc619bce3c371052c2188d1c63af6c6ace
+    Title: 'docker/cli: Docker CLI for Windows: Privilege escalation via malicious plugin binaries'
+    Description: "Docker CLI for Windows searches for plugin binaries in C:\\ProgramData\\Docker\\cli-plugins, a directory that does not exist by default. A low-privileged attacker can create this directory and place malicious CLI plugin binaries (docker-compose.exe, docker-buildx.exe, etc.) that are executed when a victim user opens Docker Desktop or invokes Docker CLI plugin features, and allow privilege-escalation if the docker\_CLI is executed as a privileged user.\n\nThis issue affects Docker CLI: through 29.1.5 and Windows binaries acting as a CLI-plugin manager using the  github.com/docker/cli/cli-plugins/manager https://pkg.go.dev/github.com/docker/cli@v29.1.5+incompatible/cli-plugins/manager \_package, such as Docker Compose.\n\nThis issue does not impact non-Windows binaries, and projects not using the plugin-manager code."
+    Severity: HIGH
+    CweIDs:
+    - CWE-427
+    VendorSeverity:
+      ghsa: 3
+      redhat: 3
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-15558
+    - https://docs.docker.com/desktop/release-notes
+    - https://docs.docker.com/desktop/release-notes/
+    - https://github.com/docker/cli
+    - https://github.com/docker/cli/commit/13759330b1f7e7cb0d67047ea42c5482548ba7fa
+    - https://github.com/docker/cli/pull/6713
+    - https://github.com/docker/cli/security/advisories/GHSA-p436-gjf2-799p
+    - https://github.com/docker/compose/pull/12300
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-15558
+    - https://www.cve.org/CVERecord?id=CVE-2025-15558
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304/
+    PublishedDate: '2026-03-04T17:16:14.763Z'
+    LastModifiedDate: '2026-03-04T18:08:05.73Z'
   - VulnerabilityID: CVE-2025-54410
     VendorIDs:
     - GHSA-4vq8-7jfc-9cvp
@@ -57729,7 +57989,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -57766,7 +58026,7 @@
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -57916,8 +58176,8 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
-      azure: 2
+      amazon: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -57947,7 +58207,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -57980,7 +58240,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -58016,7 +58276,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -58050,6 +58310,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -58080,53 +58341,12 @@
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.23.6
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.23.6
-      UID: a194a6f4f62516c3
-    InstalledVersion: v1.23.6
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:1d59d21db110e32bd413c8da685de244fccda48f4eb4a261d1a1dac7db8d7c2b
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 1
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-0913
     VendorIDs:
     - GO-2025-3750
@@ -58874,6 +59094,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.23.6
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.23.6
+      UID: a194a6f4f62516c3
+    InstalledVersion: v1.23.6
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:1d59d21db110e32bd413c8da685de244fccda48f4eb4a261d1a1dac7db8d7c2b
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -60262,6 +60523,57 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-64329
     PublishedDate: '2025-11-07T05:16:08.017Z'
     LastModifiedDate: '2025-12-31T18:34:48.06Z'
+  - VulnerabilityID: CVE-2025-15558
+    VendorIDs:
+    - GHSA-p436-gjf2-799p
+    PkgID: github.com/docker/cli@v27.0.3+incompatible
+    PkgName: github.com/docker/cli
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/cli@v27.0.3%2Bincompatible
+      UID: d6622f997413662c
+    InstalledVersion: v27.0.3+incompatible
+    FixedVersion: 29.2.0
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-15558
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:01063bf50fff65d453309f41c27aa27ec3701a2f44100ec80aa07f8a63ce9dea
+    Title: 'docker/cli: Docker CLI for Windows: Privilege escalation via malicious plugin binaries'
+    Description: "Docker CLI for Windows searches for plugin binaries in C:\\ProgramData\\Docker\\cli-plugins, a directory that does not exist by default. A low-privileged attacker can create this directory and place malicious CLI plugin binaries (docker-compose.exe, docker-buildx.exe, etc.) that are executed when a victim user opens Docker Desktop or invokes Docker CLI plugin features, and allow privilege-escalation if the docker\_CLI is executed as a privileged user.\n\nThis issue affects Docker CLI: through 29.1.5 and Windows binaries acting as a CLI-plugin manager using the  github.com/docker/cli/cli-plugins/manager https://pkg.go.dev/github.com/docker/cli@v29.1.5+incompatible/cli-plugins/manager \_package, such as Docker Compose.\n\nThis issue does not impact non-Windows binaries, and projects not using the plugin-manager code."
+    Severity: HIGH
+    CweIDs:
+    - CWE-427
+    VendorSeverity:
+      ghsa: 3
+      redhat: 3
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-15558
+    - https://docs.docker.com/desktop/release-notes
+    - https://docs.docker.com/desktop/release-notes/
+    - https://github.com/docker/cli
+    - https://github.com/docker/cli/commit/13759330b1f7e7cb0d67047ea42c5482548ba7fa
+    - https://github.com/docker/cli/pull/6713
+    - https://github.com/docker/cli/security/advisories/GHSA-p436-gjf2-799p
+    - https://github.com/docker/compose/pull/12300
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-15558
+    - https://www.cve.org/CVERecord?id=CVE-2025-15558
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304/
+    PublishedDate: '2026-03-04T17:16:14.763Z'
+    LastModifiedDate: '2026-03-04T18:08:05.73Z'
   - VulnerabilityID: CVE-2024-41110
     VendorIDs:
     - GHSA-v23v-6jw2-98fq
@@ -60885,7 +61197,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -60922,7 +61234,7 @@
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -61072,8 +61384,8 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
-      azure: 2
+      amazon: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -61103,7 +61415,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -61136,7 +61448,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -61172,7 +61484,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -61206,6 +61518,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -61236,53 +61549,12 @@
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.22.12
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.22.12
-      UID: a3059653e617f681
-    InstalledVersion: v1.22.12
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
-      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:f55c4edde97321bd4ddf3eff4cd2f9d26339ce0660ea871b94d35a9b91da801e
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 1
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-0913
     VendorIDs:
     - GO-2025-3750
@@ -62030,6 +62302,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: a3059653e617f681
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:1e46d2734c533db123d693189d46049643b92917cd76b905ad543ad918ad504c
+      DiffID: sha256:09ba9222196b3218ef2d94841fd44fd4753f6e8bb4c6a5507fce977ad8d74ed5
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:f55c4edde97321bd4ddf3eff4cd2f9d26339ce0660ea871b94d35a9b91da801e
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
 - Target: /etc/ssh/ssh_host_ecdsa_key
   Class: secret
   Secrets:
