@@ -25237,7 +25237,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
     - https://errata.almalinux.org/9/ALSA-2025-7409.html
-    - https://errata.rockylinux.org/RLSA-2025:7409
+    - https://errata.rockylinux.org/RLSA-2025:8414
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
     - https://linux.oracle.com/errata/ELSA-2025-8414.html
@@ -25297,7 +25297,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
     - https://errata.almalinux.org/9/ALSA-2025-7409.html
-    - https://errata.rockylinux.org/RLSA-2025:7409
+    - https://errata.rockylinux.org/RLSA-2025:8414
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
     - https://linux.oracle.com/errata/ELSA-2025-8414.html
@@ -26554,7 +26554,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941
     - https://errata.almalinux.org/9/ALSA-2025-15099.html
-    - https://errata.rockylinux.org/RLSA-2025:15099
+    - https://errata.rockylinux.org/RLSA-2025:14557
     - https://linux.oracle.com/cve/CVE-2025-8941.html
     - https://linux.oracle.com/errata/ELSA-2025-15099.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-8941
@@ -26621,7 +26621,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941
     - https://errata.almalinux.org/9/ALSA-2025-15099.html
-    - https://errata.rockylinux.org/RLSA-2025:15099
+    - https://errata.rockylinux.org/RLSA-2025:14557
     - https://linux.oracle.com/cve/CVE-2025-8941.html
     - https://linux.oracle.com/errata/ELSA-2025-15099.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-8941
@@ -26688,7 +26688,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941
     - https://errata.almalinux.org/9/ALSA-2025-15099.html
-    - https://errata.rockylinux.org/RLSA-2025:15099
+    - https://errata.rockylinux.org/RLSA-2025:14557
     - https://linux.oracle.com/cve/CVE-2025-8941.html
     - https://linux.oracle.com/errata/ELSA-2025-15099.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-8941
@@ -26755,7 +26755,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6020
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8941
     - https://errata.almalinux.org/9/ALSA-2025-15099.html
-    - https://errata.rockylinux.org/RLSA-2025:15099
+    - https://errata.rockylinux.org/RLSA-2025:14557
     - https://linux.oracle.com/cve/CVE-2025-8941.html
     - https://linux.oracle.com/errata/ELSA-2025-15099.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-8941
@@ -26835,7 +26835,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -26988,7 +26988,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -27425,7 +27425,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -27572,7 +27572,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2379592
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582
     - https://errata.almalinux.org/9/ALSA-2026-0067.html
-    - https://errata.rockylinux.org/RLSA-2026:0067
+    - https://errata.rockylinux.org/RLSA-2026:0002
     - https://github.com/i900008/vulndb/blob/main/Gnu_tar_vuln.md
     - https://linux.oracle.com/cve/CVE-2025-45582.html
     - https://linux.oracle.com/errata/ELSA-2026-0067.html
@@ -27626,7 +27626,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -27692,6 +27692,7 @@
     CweIDs:
     - CWE-122
     VendorSeverity:
+      cbl-mariner: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -27731,6 +27732,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      cbl-mariner: 2
       nvd: 3
       photon: 3
       redhat: 1
@@ -27776,6 +27778,7 @@
     CweIDs:
     - CWE-122
     VendorSeverity:
+      cbl-mariner: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -27815,6 +27818,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      cbl-mariner: 2
       nvd: 3
       photon: 3
       redhat: 1
@@ -27860,6 +27864,7 @@
     CweIDs:
     - CWE-122
     VendorSeverity:
+      cbl-mariner: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -27899,6 +27904,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      cbl-mariner: 2
       nvd: 3
       photon: 3
       redhat: 1
@@ -27992,6 +27998,7 @@
     CweIDs:
     - CWE-122
     VendorSeverity:
+      cbl-mariner: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -28031,6 +28038,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      cbl-mariner: 2
       nvd: 3
       photon: 3
       redhat: 1
@@ -28840,6 +28848,43 @@
       DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
     AnalyzedBy: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.25.7
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.7
+      UID: 86779051384dce20
+    InstalledVersion: v1.25.7
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:8a2093cf7b877d6e2987081cd659dd1b4cb41035bb1e44c7deead7fd88eabdb9
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -28867,39 +28912,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.25.7
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.7
-      UID: 86779051384dce20
-    InstalledVersion: v1.25.7
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:8a2093cf7b877d6e2987081cd659dd1b4cb41035bb1e44c7deead7fd88eabdb9
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -28927,9 +28943,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: usr/bin/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -30399,6 +30416,43 @@
     - https://pkg.go.dev/vuln/GO-2026-4394
     PublishedDate: '2026-02-02T23:16:07.963Z'
     LastModifiedDate: '2026-02-27T20:32:10.693Z'
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.25.7
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.7
+      UID: f90db83f873e695b
+    InstalledVersion: v1.25.7
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:fcfe0c67c54eca6bf9290c9733465942dc98b8434354ba5bc64e142ec2f1c1b9
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -30426,39 +30480,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.25.7
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.7
-      UID: f90db83f873e695b
-    InstalledVersion: v1.25.7
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:fcfe0c67c54eca6bf9290c9733465942dc98b8434354ba5bc64e142ec2f1c1b9
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -30486,9 +30511,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: usr/bin/docker-proxy
   Class: lang-pkgs
   Type: gobinary
@@ -30573,6 +30599,43 @@
       DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
     AnalyzedBy: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.25.7
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.7
+      UID: 7558f1de4709478f
+    InstalledVersion: v1.25.7
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:cb2802957bbb8ba84e6712ac20e634f86edb5f4ff38d1810c199a7d2f1ba0830
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -30600,39 +30663,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.25.7
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.7
-      UID: 7558f1de4709478f
-    InstalledVersion: v1.25.7
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:cb2802957bbb8ba84e6712ac20e634f86edb5f4ff38d1810c199a7d2f1ba0830
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -30660,9 +30694,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: usr/bin/dockerd
   Class: lang-pkgs
   Type: gobinary
@@ -33695,6 +33730,43 @@
       DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
     AnalyzedBy: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.25.7
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.7
+      UID: ed745d2eced1d3e9
+    InstalledVersion: v1.25.7
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:b4562cfb0a672098d52ab23ef9deed83a16478e4213a77b222ee1cc3183a8087
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -33722,39 +33794,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.25.7
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.7
-      UID: ed745d2eced1d3e9
-    InstalledVersion: v1.25.7
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:b4562cfb0a672098d52ab23ef9deed83a16478e4213a77b222ee1cc3183a8087
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -33782,9 +33825,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: usr/bin/helm
   Class: lang-pkgs
   Type: gobinary
@@ -35039,6 +35083,43 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-1229
     PublishedDate: '2026-02-24T08:16:28.407Z'
     LastModifiedDate: '2026-03-03T00:29:54.16Z'
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.25.7
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.7
+      UID: c3ce267c13c103af
+    InstalledVersion: v1.25.7
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:de791d23f597496965b44e9606878bc62965c19b681d462bc2ebb01490174804
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -35066,39 +35147,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.25.7
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.7
-      UID: c3ce267c13c103af
-    InstalledVersion: v1.25.7
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:de791d23f597496965b44e9606878bc62965c19b681d462bc2ebb01490174804
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -35126,9 +35178,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: usr/bin/kubectl
   Class: lang-pkgs
   Type: gobinary
@@ -36030,6 +36083,43 @@
       DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
     AnalyzedBy: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.25.7
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.7
+      UID: 5f1e2929befbfb6f
+    InstalledVersion: v1.25.7
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:f3de835983bd7bcbebe88fd80c4e4e8d1870a530df4aa67baaa3bec3740c8e6c
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -36057,39 +36147,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.25.7
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.7
-      UID: 5f1e2929befbfb6f
-    InstalledVersion: v1.25.7
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:f3de835983bd7bcbebe88fd80c4e4e8d1870a530df4aa67baaa3bec3740c8e6c
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -36117,9 +36178,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: usr/bin/rootlesskit
   Class: lang-pkgs
   Type: gobinary
@@ -36347,6 +36409,43 @@
       DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
     AnalyzedBy: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.25.7
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.7
+      UID: 69efdb2f39e91e8f
+    InstalledVersion: v1.25.7
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:0f53efd808c03461b30c753731652607a9a8c2120a93bbab1036ed58649ac67a
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -36374,39 +36473,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.25.7
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.7
-      UID: 69efdb2f39e91e8f
-    InstalledVersion: v1.25.7
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:0f53efd808c03461b30c753731652607a9a8c2120a93bbab1036ed58649ac67a
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -36434,9 +36504,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: usr/libexec/docker/cli-plugins/docker-buildx
   Class: lang-pkgs
   Type: gobinary
@@ -38961,10 +39032,14 @@
     CweIDs:
     - CWE-427
     VendorSeverity:
+      bitnami: 3
       ghsa: 3
       nvd: 3
       redhat: 3
     CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/AU:N/R:U
+        V40Score: 7
       ghsa:
         V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
         V40Score: 7
@@ -39371,24 +39446,61 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2434431
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61728
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3188
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3928.html
+    - https://linux.oracle.com/errata/ELSA-2026-3985.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
     PublishedDate: '2026-02-05T18:16:10.857Z'
     LastModifiedDate: '2026-02-20T17:25:50.303Z'
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.25.6
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.6
+      UID: 39ca33f9486c0950
+    InstalledVersion: v1.25.6
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:4195ddc66953b46215e947fa0cd2f97552b4061e79c1f3dcf5c291465df174f7
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -39416,39 +39528,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.25.6
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.6
-      UID: 39ca33f9486c0950
-    InstalledVersion: v1.25.6
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:4195ddc66953b46215e947fa0cd2f97552b4061e79c1f3dcf5c291465df174f7
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -39476,9 +39559,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: usr/libexec/docker/cli-plugins/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -40948,6 +41032,43 @@
     - https://pkg.go.dev/vuln/GO-2026-4394
     PublishedDate: '2026-02-02T23:16:07.963Z'
     LastModifiedDate: '2026-02-27T20:32:10.693Z'
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.25.7
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.7
+      UID: eccfca31b41bcfe
+    InstalledVersion: v1.25.7
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:e7d0d474726aebf1f9ffd7deb0de016ff7507788d9c281a162578b4bf7d715af
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -40975,39 +41096,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.25.7
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.7
-      UID: eccfca31b41bcfe
-    InstalledVersion: v1.25.7
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:e7d0d474726aebf1f9ffd7deb0de016ff7507788d9c281a162578b4bf7d715af
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -41035,9 +41127,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: usr/libexec/docker/cli-plugins/docker-model
   Class: lang-pkgs
   Type: gobinary
@@ -42211,6 +42304,43 @@
       DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
     AnalyzedBy: gobinary
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.25.7
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.25.7
+      UID: ab8c0a43097bdc7a
+    InstalledVersion: v1.25.7
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:60c035a22241890ca7ec09e6926f57495774a1d58150e22b4e8657f776ff029a
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -42238,39 +42368,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.25.7
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.25.7
-      UID: ab8c0a43097bdc7a
-    InstalledVersion: v1.25.7
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:60c035a22241890ca7ec09e6926f57495774a1d58150e22b4e8657f776ff029a
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -42298,9 +42399,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: usr/local/bin/k3d
   Class: lang-pkgs
   Type: gobinary
@@ -43716,10 +43818,14 @@
     CweIDs:
     - CWE-427
     VendorSeverity:
+      bitnami: 3
       ghsa: 3
       nvd: 3
       redhat: 3
     CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/AU:N/R:U
+        V40Score: 7
       ghsa:
         V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
         V40Score: 7
@@ -44022,7 +44128,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2348367
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22869
     - https://errata.almalinux.org/9/ALSA-2025-3833.html
-    - https://errata.rockylinux.org/RLSA-2025:7416
+    - https://errata.rockylinux.org/RLSA-2025:3210
     - https://github.com/golang/crypto
     - https://github.com/golang/crypto/commit/7292932d45d55c7199324ab0027cc86e8198aa22
     - https://go-review.googlesource.com/c/crypto/+/652135
@@ -44392,19 +44498,19 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2434431
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61728
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3188
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3928.html
+    - https://linux.oracle.com/errata/ELSA-2026-3985.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -44516,7 +44622,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
     - https://errata.almalinux.org/9/ALSA-2026-1381.html
-    - https://errata.rockylinux.org/RLSA-2025:23326
+    - https://errata.rockylinux.org/RLSA-2025:23948
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -44575,19 +44681,19 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2434431
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61728
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3188
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3928.html
+    - https://linux.oracle.com/errata/ELSA-2026-3985.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -44642,16 +44748,14 @@
     - https://bugzilla.redhat.com/2434431
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434431
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61728
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3337.html
-    - https://errata.rockylinux.org/RLSA-2026:3337
+    - https://errata.rockylinux.org/RLSA-2026:3188
     - https://go.dev/cl/736713
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
@@ -44709,14 +44813,14 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2268022
     - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2418900
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24785
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-65637
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3428
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -44817,7 +44921,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
     - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9635
+    - https://errata.rockylinux.org/RLSA-2025:9845
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
@@ -44926,7 +45030,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2373305
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673
     - https://errata.almalinux.org/9/ALSA-2025-15887.html
-    - https://errata.rockylinux.org/RLSA-2025:15887
+    - https://errata.rockylinux.org/RLSA-2025:10672
     - https://go.dev/cl/679257
     - https://go.dev/issue/73816
     - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
@@ -44984,9 +45088,11 @@
     - https://access.redhat.com/security/cve/CVE-2025-47906
     - https://bugzilla.redhat.com/2396546
     - https://bugzilla.redhat.com/show_bug.cgi?id=2396546
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
     - https://errata.almalinux.org/9/ALSA-2025-22005.html
-    - https://errata.rockylinux.org/RLSA-2025:22005
+    - https://errata.rockylinux.org/RLSA-2025:22668
     - https://go.dev/cl/691775
     - https://go.dev/issue/74466
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
@@ -45515,6 +45621,43 @@
     - https://pkg.go.dev/vuln/GO-2026-4340
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.22.12
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.22.12
+      UID: a3059653e617f681
+    InstalledVersion: v1.22.12
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
+      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:190bccbbe2fcff0eaae6337a1abe374f17c6efd96d759011c519fd02981c0fa1
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: LOW
+    VendorSeverity:
+      bitnami: 1
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.5
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27139
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-09T15:15:57.15Z'
   - VulnerabilityID: CVE-2026-25679
     VendorIDs:
     - GO-2026-4601
@@ -45542,39 +45685,10 @@
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     PublishedDate: '2026-03-06T22:16:00.72Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
-  - VulnerabilityID: CVE-2026-27139
-    VendorIDs:
-    - GO-2026-4602
-    PkgID: stdlib@v1.22.12
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.22.12
-      UID: a3059653e617f681
-    InstalledVersion: v1.22.12
-    FixedVersion: 1.25.8, 1.26.1
-    Status: fixed
-    Layer:
-      Digest: sha256:89d98f162e9c676f5c0e0fc709f22c27395832776e9948bf2fa0d61f9e1fdbaa
-      DiffID: sha256:d15c97e1abcf988fffcaa65f320744247535257f75d3169e9e6ae4ad41c6297e
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:190bccbbe2fcff0eaae6337a1abe374f17c6efd96d759011c519fd02981c0fa1
-    Title: On Unix platforms, when listing the contents of a directory using File ...
-    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/749480
-    - https://go.dev/issue/77827
-    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
-    - https://pkg.go.dev/vuln/GO-2026-4602
-    PublishedDate: '2026-03-06T22:16:01.07Z'
-    LastModifiedDate: '2026-03-09T15:15:57.15Z'
+    LastModifiedDate: '2026-03-10T18:18:37.74Z'
   - VulnerabilityID: CVE-2026-27142
     VendorIDs:
     - GO-2026-4603
@@ -45602,9 +45716,10 @@
     - https://go.dev/cl/752081
     - https://go.dev/issue/77954
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27142
     - https://pkg.go.dev/vuln/GO-2026-4603
     PublishedDate: '2026-03-06T22:16:01.177Z'
-    LastModifiedDate: '2026-03-09T13:35:34.633Z'
+    LastModifiedDate: '2026-03-10T18:18:44.607Z'
 - Target: /etc/ssh/ssh_host_ecdsa_key
   Class: secret
   Secrets:
