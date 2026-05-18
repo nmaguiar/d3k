@@ -9276,7 +9276,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -9297,17 +9297,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -9345,7 +9339,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -9397,7 +9391,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -9421,10 +9415,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -10473,25 +10469,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:129207e67bc7b373ae2852da1f400a62f03518559a5c629ad93d618dd02aed9f
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -10520,7 +10522,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -10568,7 +10570,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -10592,10 +10594,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -10633,11 +10637,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -10686,10 +10690,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -10852,7 +10856,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -11516,6 +11520,7 @@
     - CWE-22
     - CWE-59
     VendorSeverity:
+      amazon: 2
       ghsa: 3
       nvd: 3
       redhat: 2
@@ -11616,6 +11621,7 @@
     CweIDs:
     - CWE-789
     VendorSeverity:
+      amazon: 2
       azure: 2
       ghsa: 2
     CVSS:
@@ -11657,6 +11663,7 @@
     CweIDs:
     - CWE-789
     VendorSeverity:
+      amazon: 2
       azure: 2
       ghsa: 2
     CVSS:
@@ -12604,7 +12611,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -12625,17 +12632,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -12673,7 +12674,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -12725,7 +12726,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -12749,10 +12750,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -14004,25 +14007,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:2b01dda6ad53491d2fad73a8dd09d68b823eebffe803377bd0b5d0286a3ed3b8
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -14051,7 +14060,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -14099,7 +14108,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -14123,10 +14132,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -14164,11 +14175,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -14217,10 +14228,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -14383,7 +14394,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -15098,7 +15109,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -15119,17 +15130,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -15167,7 +15172,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -15219,7 +15224,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -15243,10 +15248,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -16295,25 +16302,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:5d00053a9abce6a1863c31bbdd7226c50e627e9985a46d2f5a8b381ac469f701
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -16342,7 +16355,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -16390,7 +16403,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -16414,10 +16427,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -16455,11 +16470,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -16508,10 +16523,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -16674,7 +16689,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -17321,6 +17336,7 @@
     - CWE-22
     - CWE-59
     VendorSeverity:
+      amazon: 2
       ghsa: 3
       nvd: 3
       redhat: 2
@@ -17723,6 +17739,7 @@
     CweIDs:
     - CWE-789
     VendorSeverity:
+      amazon: 2
       azure: 2
       ghsa: 2
     CVSS:
@@ -17764,6 +17781,7 @@
     CweIDs:
     - CWE-789
     VendorSeverity:
+      amazon: 2
       azure: 2
       ghsa: 2
     CVSS:
@@ -18711,7 +18729,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -18732,17 +18750,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -18780,7 +18792,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -18832,7 +18844,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -18856,10 +18868,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -19908,25 +19922,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:3d88339ae5108b3deda39388ad5331f685759d10ea8f9cee86a8ffcb187bd99f
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -19955,7 +19975,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -20003,7 +20023,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -20027,10 +20047,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -20068,11 +20090,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -20121,10 +20143,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -20287,7 +20309,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -21600,7 +21622,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -21621,17 +21643,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -21669,7 +21685,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -21721,7 +21737,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -21745,10 +21761,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -22860,25 +22878,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:26d38d2a91e1c43bb9655d1f9e419df0f891a934d799cdc914958d17495a7e2b
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -22907,7 +22931,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -22955,7 +22979,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -22979,10 +23003,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -23020,11 +23046,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -23073,10 +23099,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -23239,7 +23265,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -23951,7 +23977,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -23972,17 +23998,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -24020,7 +24040,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -24072,7 +24092,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -24096,10 +24116,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -25148,25 +25170,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:f34cdd942b2c7026d1627f70c8978170392c300d557f8748c411a4ac6ee6b4ae
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -25195,7 +25223,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -25243,7 +25271,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -25267,10 +25295,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -25308,11 +25338,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -25361,10 +25391,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -25527,7 +25557,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -26135,7 +26165,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -26156,17 +26186,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -26204,7 +26228,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -26256,7 +26280,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -26280,10 +26304,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -27332,25 +27358,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:b81d3f3c0591dac7c2d3ba9124ca9b9948bd4fdb23b74c8985ca2e38420a4549
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -27379,7 +27411,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -27427,7 +27459,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -27451,10 +27483,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -27492,11 +27526,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -27545,10 +27579,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -27711,7 +27745,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -28429,6 +28463,7 @@
     - CWE-22
     - CWE-59
     VendorSeverity:
+      amazon: 2
       ghsa: 3
       nvd: 3
       redhat: 2
@@ -28529,6 +28564,7 @@
     CweIDs:
     - CWE-789
     VendorSeverity:
+      amazon: 2
       azure: 2
       ghsa: 2
     CVSS:
@@ -28570,6 +28606,7 @@
     CweIDs:
     - CWE-789
     VendorSeverity:
+      amazon: 2
       azure: 2
       ghsa: 2
     CVSS:
@@ -29517,7 +29554,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -29538,17 +29575,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -29586,7 +29617,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -29638,7 +29669,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -29662,10 +29693,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -30714,25 +30747,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:83090ac7dcaa3a0fcc7ff3200eb799f1bf6fe5d362bc10081d87c5947ca896cd
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -30761,7 +30800,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -30809,7 +30848,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -30833,10 +30872,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -30874,11 +30915,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -30927,10 +30968,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -31093,7 +31134,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -31811,6 +31852,7 @@
     - CWE-22
     - CWE-59
     VendorSeverity:
+      amazon: 2
       ghsa: 3
       nvd: 3
       redhat: 2
@@ -31911,6 +31953,7 @@
     CweIDs:
     - CWE-789
     VendorSeverity:
+      amazon: 2
       azure: 2
       ghsa: 2
     CVSS:
@@ -31952,6 +31995,7 @@
     CweIDs:
     - CWE-789
     VendorSeverity:
+      amazon: 2
       azure: 2
       ghsa: 2
     CVSS:
@@ -32899,7 +32943,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -32920,17 +32964,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -32968,7 +33006,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -33020,7 +33058,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -33044,10 +33082,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -34096,25 +34136,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:1d59d21db110e32bd413c8da685de244fccda48f4eb4a261d1a1dac7db8d7c2b
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -34143,7 +34189,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -34191,7 +34237,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -34215,10 +34261,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -34256,11 +34304,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -34309,10 +34357,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -34475,7 +34523,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -35998,7 +36046,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -36019,17 +36067,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -36067,7 +36109,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -36119,7 +36161,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -36143,10 +36185,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -37195,25 +37239,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:f55c4edde97321bd4ddf3eff4cd2f9d26339ce0660ea871b94d35a9b91da801e
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -37242,7 +37292,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -37290,7 +37340,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -37314,10 +37364,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -37355,11 +37407,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -37408,10 +37460,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -37574,7 +37626,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
