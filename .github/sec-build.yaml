@@ -136,13 +136,13 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:7409
+    - https://access.redhat.com/errata/RHSA-2025:8414
     - https://access.redhat.com/security/cve/CVE-2024-52005
     - https://bugzilla.redhat.com/2338289
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
-    - https://errata.almalinux.org/9/ALSA-2025-7409.html
-    - https://errata.rockylinux.org/RLSA-2025:7409
+    - https://errata.almalinux.org/8/ALSA-2025-8414.html
+    - https://errata.rockylinux.org/RLSA-2025:8414
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
     - https://linux.oracle.com/errata/ELSA-2025-8414.html
@@ -196,13 +196,13 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:7409
+    - https://access.redhat.com/errata/RHSA-2025:8414
     - https://access.redhat.com/security/cve/CVE-2024-52005
     - https://bugzilla.redhat.com/2338289
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
-    - https://errata.almalinux.org/9/ALSA-2025-7409.html
-    - https://errata.rockylinux.org/RLSA-2025:7409
+    - https://errata.almalinux.org/8/ALSA-2025-8414.html
+    - https://errata.rockylinux.org/RLSA-2025:8414
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
     - https://linux.oracle.com/errata/ELSA-2025-8414.html
@@ -1442,13 +1442,13 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
         V3Score: 3.6
     References:
-    - https://access.redhat.com/errata/RHSA-2025:20559
+    - https://access.redhat.com/errata/RHSA-2025:20145
     - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
-    - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.almalinux.org/10/ALSA-2025-20145.html
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -1711,13 +1711,13 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
         V3Score: 3.6
     References:
-    - https://access.redhat.com/errata/RHSA-2025:20559
+    - https://access.redhat.com/errata/RHSA-2025:20145
     - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
-    - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.almalinux.org/10/ALSA-2025-20145.html
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -1851,13 +1851,13 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
         V3Score: 3.6
     References:
-    - https://access.redhat.com/errata/RHSA-2025:20559
+    - https://access.redhat.com/errata/RHSA-2025:20145
     - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
-    - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.almalinux.org/10/ALSA-2025-20145.html
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -2920,13 +2920,13 @@
         V3Score: 5.6
     References:
     - http://www.openwall.com/lists/oss-security/2025/11/01/6
-    - https://access.redhat.com/errata/RHSA-2026:0067
+    - https://access.redhat.com/errata/RHSA-2026:0002
     - https://access.redhat.com/security/cve/CVE-2025-45582
     - https://bugzilla.redhat.com/2379592
     - https://bugzilla.redhat.com/show_bug.cgi?id=2379592
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582
-    - https://errata.almalinux.org/9/ALSA-2026-0067.html
-    - https://errata.rockylinux.org/RLSA-2026:0067
+    - https://errata.almalinux.org/10/ALSA-2026-0002.html
+    - https://errata.rockylinux.org/RLSA-2026:0002
     - https://github.com/i900008/vulndb/blob/main/Gnu_tar_vuln.md
     - https://linux.oracle.com/cve/CVE-2025-45582.html
     - https://linux.oracle.com/errata/ELSA-2026-0067.html
@@ -3018,13 +3018,13 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
         V3Score: 3.6
     References:
-    - https://access.redhat.com/errata/RHSA-2025:20559
+    - https://access.redhat.com/errata/RHSA-2025:20145
     - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
-    - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.almalinux.org/10/ALSA-2025-20145.html
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -3238,6 +3238,143 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-34040
     PublishedDate: '2026-03-31T03:15:57.883Z'
     LastModifiedDate: '2026-04-03T16:51:28.67Z'
+  - VulnerabilityID: CVE-2026-41567
+    VendorIDs:
+    - GHSA-x86f-5xw2-fm2r
+    PkgID: github.com/docker/docker@v28.5.2+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v28.5.2%2Bincompatible
+      UID: 9598ebd3d82b9cc4
+    InstalledVersion: v28.5.2+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41567
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:b93414463434a1724b16819bb9d25d42f75ee6e7342ff63958500059b9e50172
+    Title: 'Docker: `PUT /containers/{id}/archive` executes container binary on the host'
+    Description: |-
+      ## Summary
+
+      When a user uploads a compressed archive into a container, a malicious image can execute arbitrary code with daemon (host root) privileges.
+
+      ## Details
+
+      When handling `PUT /containers/{id}/archive` requests with compressed archives, the daemon decompresses them using external system binaries. Due to incorrect ordering of operations, these binaries are resolved from the container's filesystem rather than the host's. A container image that includes a trojanized decompression binary can achieve code execution as the daemon process whenever a compressed archive is uploaded to that container.
+
+      The executed binary runs with the daemon's full privileges, including host root UID and unrestricted capabilities.
+
+      ## Impact
+
+      Arbitrary code execution as host root, crossing the container-to-host trust boundary.
+
+      ### Conditions for exploitation
+
+      - A user must run a container from a malicious image that contains a trojanized decompression binary.
+      - The user must then upload a compressed archive (xz or gzip) into that container, either by piping a compressed archive via `docker cp -` or by calling the `PUT /containers/{id}/archive` API directly with compressed content.
+
+      ### Not affected
+
+      Standard `docker cp` usage is **not** affected, because the CLI sends uncompressed tar by default:
+
+      ```
+      docker cp ./file.txt mycontainer:/file.txt
+      ```
+
+      This can only be exploited when explicitly passing a xz or gzip-compressed archive to `docker cp` or the `PUT /containers/{id}/archive` API, for example:
+
+      ```
+      cat archive.tar.xz | docker cp - mycontainer:/dir
+      ```
+
+      Decompression formats using pure Go implementations (bzip2, zstd, and gzip when the container image does not contain an `unpigz` binary) are also not affected.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Use authorization plugins to limit access to the `PUT /containers/{id}/archive` endpoint.
+      - Avoid piping compressed archives into containers created from untrusted images.
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N
+        V3Score: 7.2
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-x86f-5xw2-fm2r
+  - VulnerabilityID: CVE-2026-42306
+    VendorIDs:
+    - GHSA-rg2x-37c3-w2rh
+    PkgID: github.com/docker/docker@v28.5.2+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v28.5.2%2Bincompatible
+      UID: 9598ebd3d82b9cc4
+    InstalledVersion: v28.5.2+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42306
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:34c77e7c65f903613cf5f5df23749e696df69543d0ba4eb1d819101036564f7d
+    Title: 'Docker: Race condition in docker cp allows bind mount redirection to host path'
+    Description: |-
+      ## Summary
+
+      A race condition during `docker cp` mount setup allows a malicious container to redirect a bind mount target to an arbitrary host path, potentially overwriting host files or causing denial of service.
+
+      ## Details
+
+      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination is created inside the container root and then a bind mount is attached using the container-relative path resolved to an absolute host path.
+
+      Between mountpoint creation and the `mount()` syscall, a process running inside the container can replace the destination (or a parent path component) with a symlink pointing to an arbitrary location on the host. The `mount()` syscall follows the symlink, causing the volume to be bind-mounted onto an arbitrary host path instead of the intended container path.
+
+      ## Impact
+
+      A malicious container can redirect a volume bind mount to an arbitrary host path. The impact depends on the volume content and mount options:
+
+      - If the volume is writable, arbitrary host files at the redirected path could be overwritten with the volume's contents.
+      - If the volume is read-only, the host path is masked by the mount for the duration of the operation, causing denial of service.
+      - In all cases the mount is temporary (torn down after the `docker cp` completes), but the effects of any writes persist.
+
+      ### Conditions for exploitation
+
+      - A container must have at least one volume mount.
+      - A process inside the container must be able to rapidly create and swap symlinks at the volume mount destination path.
+      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
+
+      ### Not affected
+
+      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Avoid using `docker cp` with untrusted running containers.
+      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
+        V3Score: 7.2
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-rg2x-37c3-w2rh
   - VulnerabilityID: CVE-2026-33997
     VendorIDs:
     - GHSA-pxq6-2prw-chj9
@@ -3291,6 +3428,78 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
     LastModifiedDate: '2026-04-03T17:23:21.307Z'
+  - VulnerabilityID: CVE-2026-41568
+    VendorIDs:
+    - GHSA-vp62-88p7-qqf5
+    PkgID: github.com/docker/docker@v28.5.2+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v28.5.2%2Bincompatible
+      UID: 9598ebd3d82b9cc4
+    InstalledVersion: v28.5.2+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41568
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:db5b3adacb06abd120f1fa127cf46fc9e3b1ef850182ed70ab3e669f2c70c51f
+    Title: 'Docker: Race condition in docker cp allows creation of arbitrary empty files on the host via symlink swap'
+    Description: |-
+      ## Summary
+
+      A race condition during `docker cp` mount setup allows a malicious container to create empty files or directories at arbitrary absolute paths on the host filesystem.
+
+      This advisory covers the race during mountpoint creation. The related race during the subsequent mount syscall is tracked in GHSA-rg2x-37c3-w2rh
+
+      ## Details
+
+      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination path is first resolved within the container's root filesystem using `GetResourcePath`, and then used to create the mountpoint (file or directory) if it does not already exist via `createIfNotExists`.
+
+      Between path resolution and mountpoint creation, a process running inside the container can swap a path component for a symlink pointing to an arbitrary location on the host. Because `createIfNotExists` operates on the already-resolved absolute path using standard `os.MkdirAll` and `os.OpenFile` — which follow symlinks in intermediate path components — the symlink is followed and the file or directory is created outside the container root filesystem, as root.
+
+      ## Impact
+
+      A malicious container can create empty files or directories at arbitrary absolute paths on the host filesystem, running as root. This enables persistent denial of service — for example:
+
+      - Converting `/etc/docker/daemon.json` into a directory prevents the daemon from restarting
+      - Creating `/etc/nologin` prevents user logins
+      - Overwriting critical system paths with empty files can break host services
+
+      The container does not gain read or write access to existing host files — only the ability to create new empty files or directories at chosen paths.
+
+      ### Conditions for exploitation
+
+      - A container must be running with a process that can rapidly create and swap symlinks at a volume mount destination path.
+      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
+
+      ### Not affected
+
+      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
+
+      ## Patches
+
+      Mountpoint creation is now scoped to the container root using `os.Root` (Go 1.24+), which refuses to follow symlinks that escape the opened root directory. All filesystem operations in `createIfNotExists` (`MkdirAll`, `OpenFile`) are performed through the `os.Root` handle, so even if a symlink swap occurs after path resolution, the creation stays confined to the container root.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Avoid using `docker cp` with untrusted running containers.
+      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:L/A:H
+        V3Score: 6
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-vp62-88p7-qqf5
   - VulnerabilityID: GHSA-pmwq-pjrm-6p5r
     PkgID: github.com/in-toto/in-toto-golang@v0.10.0
     PkgName: github.com/in-toto/in-toto-golang
@@ -3504,19 +3713,22 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:14200
+    - https://access.redhat.com/errata/RHSA-2026:16875
     - https://access.redhat.com/security/cve/CVE-2026-32280
+    - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2456336
     - https://bugzilla.redhat.com/2456338
     - https://bugzilla.redhat.com/2456339
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
-    - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:14200
+    - https://errata.almalinux.org/8/ALSA-2026-16875.html
+    - https://errata.rockylinux.org/RLSA-2026:16875
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -3623,19 +3835,22 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:14200
+    - https://access.redhat.com/errata/RHSA-2026:16875
     - https://access.redhat.com/security/cve/CVE-2026-32283
+    - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2456336
     - https://bugzilla.redhat.com/2456338
     - https://bugzilla.redhat.com/2456339
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
-    - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:14200
+    - https://errata.almalinux.org/8/ALSA-2026-16875.html
+    - https://errata.rockylinux.org/RLSA-2026:16875
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -3905,19 +4120,22 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H
         V3Score: 7.8
     References:
-    - https://access.redhat.com/errata/RHSA-2026:14200
+    - https://access.redhat.com/errata/RHSA-2026:16875
     - https://access.redhat.com/security/cve/CVE-2026-32282
+    - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2456336
     - https://bugzilla.redhat.com/2456338
     - https://bugzilla.redhat.com/2456339
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
-    - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:14200
+    - https://errata.almalinux.org/8/ALSA-2026-16875.html
+    - https://errata.rockylinux.org/RLSA-2026:16875
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -4891,6 +5109,143 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-34040
     PublishedDate: '2026-03-31T03:15:57.883Z'
     LastModifiedDate: '2026-04-03T16:51:28.67Z'
+  - VulnerabilityID: CVE-2026-41567
+    VendorIDs:
+    - GHSA-x86f-5xw2-fm2r
+    PkgID: github.com/docker/docker@v28.5.2+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v28.5.2%2Bincompatible
+      UID: ff7f1d4ae645a198
+    InstalledVersion: v28.5.2+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41567
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:b12df2fc8f6be13b64bc767745bcacaa736a1ecb972bc73fe4856482236a6dd8
+    Title: 'Docker: `PUT /containers/{id}/archive` executes container binary on the host'
+    Description: |-
+      ## Summary
+
+      When a user uploads a compressed archive into a container, a malicious image can execute arbitrary code with daemon (host root) privileges.
+
+      ## Details
+
+      When handling `PUT /containers/{id}/archive` requests with compressed archives, the daemon decompresses them using external system binaries. Due to incorrect ordering of operations, these binaries are resolved from the container's filesystem rather than the host's. A container image that includes a trojanized decompression binary can achieve code execution as the daemon process whenever a compressed archive is uploaded to that container.
+
+      The executed binary runs with the daemon's full privileges, including host root UID and unrestricted capabilities.
+
+      ## Impact
+
+      Arbitrary code execution as host root, crossing the container-to-host trust boundary.
+
+      ### Conditions for exploitation
+
+      - A user must run a container from a malicious image that contains a trojanized decompression binary.
+      - The user must then upload a compressed archive (xz or gzip) into that container, either by piping a compressed archive via `docker cp -` or by calling the `PUT /containers/{id}/archive` API directly with compressed content.
+
+      ### Not affected
+
+      Standard `docker cp` usage is **not** affected, because the CLI sends uncompressed tar by default:
+
+      ```
+      docker cp ./file.txt mycontainer:/file.txt
+      ```
+
+      This can only be exploited when explicitly passing a xz or gzip-compressed archive to `docker cp` or the `PUT /containers/{id}/archive` API, for example:
+
+      ```
+      cat archive.tar.xz | docker cp - mycontainer:/dir
+      ```
+
+      Decompression formats using pure Go implementations (bzip2, zstd, and gzip when the container image does not contain an `unpigz` binary) are also not affected.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Use authorization plugins to limit access to the `PUT /containers/{id}/archive` endpoint.
+      - Avoid piping compressed archives into containers created from untrusted images.
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N
+        V3Score: 7.2
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-x86f-5xw2-fm2r
+  - VulnerabilityID: CVE-2026-42306
+    VendorIDs:
+    - GHSA-rg2x-37c3-w2rh
+    PkgID: github.com/docker/docker@v28.5.2+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v28.5.2%2Bincompatible
+      UID: ff7f1d4ae645a198
+    InstalledVersion: v28.5.2+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42306
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:65262f3ba2510b1daaa6c9e4112e59a13f96bfc87af3ada039026c8ae3cc88b7
+    Title: 'Docker: Race condition in docker cp allows bind mount redirection to host path'
+    Description: |-
+      ## Summary
+
+      A race condition during `docker cp` mount setup allows a malicious container to redirect a bind mount target to an arbitrary host path, potentially overwriting host files or causing denial of service.
+
+      ## Details
+
+      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination is created inside the container root and then a bind mount is attached using the container-relative path resolved to an absolute host path.
+
+      Between mountpoint creation and the `mount()` syscall, a process running inside the container can replace the destination (or a parent path component) with a symlink pointing to an arbitrary location on the host. The `mount()` syscall follows the symlink, causing the volume to be bind-mounted onto an arbitrary host path instead of the intended container path.
+
+      ## Impact
+
+      A malicious container can redirect a volume bind mount to an arbitrary host path. The impact depends on the volume content and mount options:
+
+      - If the volume is writable, arbitrary host files at the redirected path could be overwritten with the volume's contents.
+      - If the volume is read-only, the host path is masked by the mount for the duration of the operation, causing denial of service.
+      - In all cases the mount is temporary (torn down after the `docker cp` completes), but the effects of any writes persist.
+
+      ### Conditions for exploitation
+
+      - A container must have at least one volume mount.
+      - A process inside the container must be able to rapidly create and swap symlinks at the volume mount destination path.
+      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
+
+      ### Not affected
+
+      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Avoid using `docker cp` with untrusted running containers.
+      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
+        V3Score: 7.2
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-rg2x-37c3-w2rh
   - VulnerabilityID: CVE-2026-33997
     VendorIDs:
     - GHSA-pxq6-2prw-chj9
@@ -4944,6 +5299,78 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
     LastModifiedDate: '2026-04-03T17:23:21.307Z'
+  - VulnerabilityID: CVE-2026-41568
+    VendorIDs:
+    - GHSA-vp62-88p7-qqf5
+    PkgID: github.com/docker/docker@v28.5.2+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v28.5.2%2Bincompatible
+      UID: ff7f1d4ae645a198
+    InstalledVersion: v28.5.2+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41568
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:a43ce3ead44ae9597612911d81b4e35fce90f88c0d774101a507dc1916835a9b
+    Title: 'Docker: Race condition in docker cp allows creation of arbitrary empty files on the host via symlink swap'
+    Description: |-
+      ## Summary
+
+      A race condition during `docker cp` mount setup allows a malicious container to create empty files or directories at arbitrary absolute paths on the host filesystem.
+
+      This advisory covers the race during mountpoint creation. The related race during the subsequent mount syscall is tracked in GHSA-rg2x-37c3-w2rh
+
+      ## Details
+
+      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination path is first resolved within the container's root filesystem using `GetResourcePath`, and then used to create the mountpoint (file or directory) if it does not already exist via `createIfNotExists`.
+
+      Between path resolution and mountpoint creation, a process running inside the container can swap a path component for a symlink pointing to an arbitrary location on the host. Because `createIfNotExists` operates on the already-resolved absolute path using standard `os.MkdirAll` and `os.OpenFile` — which follow symlinks in intermediate path components — the symlink is followed and the file or directory is created outside the container root filesystem, as root.
+
+      ## Impact
+
+      A malicious container can create empty files or directories at arbitrary absolute paths on the host filesystem, running as root. This enables persistent denial of service — for example:
+
+      - Converting `/etc/docker/daemon.json` into a directory prevents the daemon from restarting
+      - Creating `/etc/nologin` prevents user logins
+      - Overwriting critical system paths with empty files can break host services
+
+      The container does not gain read or write access to existing host files — only the ability to create new empty files or directories at chosen paths.
+
+      ### Conditions for exploitation
+
+      - A container must be running with a process that can rapidly create and swap symlinks at a volume mount destination path.
+      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
+
+      ### Not affected
+
+      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
+
+      ## Patches
+
+      Mountpoint creation is now scoped to the container root using `os.Root` (Go 1.24+), which refuses to follow symlinks that escape the opened root directory. All filesystem operations in `createIfNotExists` (`MkdirAll`, `OpenFile`) are performed through the `os.Root` handle, so even if a symlink swap occurs after path resolution, the creation stays confined to the container root.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Avoid using `docker cp` with untrusted running containers.
+      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:L/A:H
+        V3Score: 6
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-vp62-88p7-qqf5
 - Target: usr/libexec/docker/cli-plugins/docker-compose
   Class: lang-pkgs
   Type: gobinary
@@ -5003,6 +5430,143 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-34040
     PublishedDate: '2026-03-31T03:15:57.883Z'
     LastModifiedDate: '2026-04-03T16:51:28.67Z'
+  - VulnerabilityID: CVE-2026-41567
+    VendorIDs:
+    - GHSA-x86f-5xw2-fm2r
+    PkgID: github.com/docker/docker@v28.5.2+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v28.5.2%2Bincompatible
+      UID: 400928cba457dac1
+    InstalledVersion: v28.5.2+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41567
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:dd36a3def537ed342e9b7034fca6b5e9aec56d6a9e9db9e837e3007f35ff8cab
+    Title: 'Docker: `PUT /containers/{id}/archive` executes container binary on the host'
+    Description: |-
+      ## Summary
+
+      When a user uploads a compressed archive into a container, a malicious image can execute arbitrary code with daemon (host root) privileges.
+
+      ## Details
+
+      When handling `PUT /containers/{id}/archive` requests with compressed archives, the daemon decompresses them using external system binaries. Due to incorrect ordering of operations, these binaries are resolved from the container's filesystem rather than the host's. A container image that includes a trojanized decompression binary can achieve code execution as the daemon process whenever a compressed archive is uploaded to that container.
+
+      The executed binary runs with the daemon's full privileges, including host root UID and unrestricted capabilities.
+
+      ## Impact
+
+      Arbitrary code execution as host root, crossing the container-to-host trust boundary.
+
+      ### Conditions for exploitation
+
+      - A user must run a container from a malicious image that contains a trojanized decompression binary.
+      - The user must then upload a compressed archive (xz or gzip) into that container, either by piping a compressed archive via `docker cp -` or by calling the `PUT /containers/{id}/archive` API directly with compressed content.
+
+      ### Not affected
+
+      Standard `docker cp` usage is **not** affected, because the CLI sends uncompressed tar by default:
+
+      ```
+      docker cp ./file.txt mycontainer:/file.txt
+      ```
+
+      This can only be exploited when explicitly passing a xz or gzip-compressed archive to `docker cp` or the `PUT /containers/{id}/archive` API, for example:
+
+      ```
+      cat archive.tar.xz | docker cp - mycontainer:/dir
+      ```
+
+      Decompression formats using pure Go implementations (bzip2, zstd, and gzip when the container image does not contain an `unpigz` binary) are also not affected.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Use authorization plugins to limit access to the `PUT /containers/{id}/archive` endpoint.
+      - Avoid piping compressed archives into containers created from untrusted images.
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N
+        V3Score: 7.2
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-x86f-5xw2-fm2r
+  - VulnerabilityID: CVE-2026-42306
+    VendorIDs:
+    - GHSA-rg2x-37c3-w2rh
+    PkgID: github.com/docker/docker@v28.5.2+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v28.5.2%2Bincompatible
+      UID: 400928cba457dac1
+    InstalledVersion: v28.5.2+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42306
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:d6e69368a98bff67803d690c84062d1d9106e7d0ec7a77552176b37adb25bc56
+    Title: 'Docker: Race condition in docker cp allows bind mount redirection to host path'
+    Description: |-
+      ## Summary
+
+      A race condition during `docker cp` mount setup allows a malicious container to redirect a bind mount target to an arbitrary host path, potentially overwriting host files or causing denial of service.
+
+      ## Details
+
+      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination is created inside the container root and then a bind mount is attached using the container-relative path resolved to an absolute host path.
+
+      Between mountpoint creation and the `mount()` syscall, a process running inside the container can replace the destination (or a parent path component) with a symlink pointing to an arbitrary location on the host. The `mount()` syscall follows the symlink, causing the volume to be bind-mounted onto an arbitrary host path instead of the intended container path.
+
+      ## Impact
+
+      A malicious container can redirect a volume bind mount to an arbitrary host path. The impact depends on the volume content and mount options:
+
+      - If the volume is writable, arbitrary host files at the redirected path could be overwritten with the volume's contents.
+      - If the volume is read-only, the host path is masked by the mount for the duration of the operation, causing denial of service.
+      - In all cases the mount is temporary (torn down after the `docker cp` completes), but the effects of any writes persist.
+
+      ### Conditions for exploitation
+
+      - A container must have at least one volume mount.
+      - A process inside the container must be able to rapidly create and swap symlinks at the volume mount destination path.
+      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
+
+      ### Not affected
+
+      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Avoid using `docker cp` with untrusted running containers.
+      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
+        V3Score: 7.2
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-rg2x-37c3-w2rh
   - VulnerabilityID: CVE-2026-33997
     VendorIDs:
     - GHSA-pxq6-2prw-chj9
@@ -5056,6 +5620,78 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
     LastModifiedDate: '2026-04-03T17:23:21.307Z'
+  - VulnerabilityID: CVE-2026-41568
+    VendorIDs:
+    - GHSA-vp62-88p7-qqf5
+    PkgID: github.com/docker/docker@v28.5.2+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v28.5.2%2Bincompatible
+      UID: 400928cba457dac1
+    InstalledVersion: v28.5.2+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41568
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:b80baf08058e2595ff8d68cb01214e3ef7382cc1a1c09c889aacfa2d0ddf8ac8
+    Title: 'Docker: Race condition in docker cp allows creation of arbitrary empty files on the host via symlink swap'
+    Description: |-
+      ## Summary
+
+      A race condition during `docker cp` mount setup allows a malicious container to create empty files or directories at arbitrary absolute paths on the host filesystem.
+
+      This advisory covers the race during mountpoint creation. The related race during the subsequent mount syscall is tracked in GHSA-rg2x-37c3-w2rh
+
+      ## Details
+
+      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination path is first resolved within the container's root filesystem using `GetResourcePath`, and then used to create the mountpoint (file or directory) if it does not already exist via `createIfNotExists`.
+
+      Between path resolution and mountpoint creation, a process running inside the container can swap a path component for a symlink pointing to an arbitrary location on the host. Because `createIfNotExists` operates on the already-resolved absolute path using standard `os.MkdirAll` and `os.OpenFile` — which follow symlinks in intermediate path components — the symlink is followed and the file or directory is created outside the container root filesystem, as root.
+
+      ## Impact
+
+      A malicious container can create empty files or directories at arbitrary absolute paths on the host filesystem, running as root. This enables persistent denial of service — for example:
+
+      - Converting `/etc/docker/daemon.json` into a directory prevents the daemon from restarting
+      - Creating `/etc/nologin` prevents user logins
+      - Overwriting critical system paths with empty files can break host services
+
+      The container does not gain read or write access to existing host files — only the ability to create new empty files or directories at chosen paths.
+
+      ### Conditions for exploitation
+
+      - A container must be running with a process that can rapidly create and swap symlinks at a volume mount destination path.
+      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
+
+      ### Not affected
+
+      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
+
+      ## Patches
+
+      Mountpoint creation is now scoped to the container root using `os.Root` (Go 1.24+), which refuses to follow symlinks that escape the opened root directory. All filesystem operations in `createIfNotExists` (`MkdirAll`, `OpenFile`) are performed through the `os.Root` handle, so even if a symlink swap occurs after path resolution, the creation stays confined to the container root.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Avoid using `docker cp` with untrusted running containers.
+      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:L/A:H
+        V3Score: 6
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-vp62-88p7-qqf5
   - VulnerabilityID: GHSA-pmwq-pjrm-6p5r
     PkgID: github.com/in-toto/in-toto-golang@v0.10.0
     PkgName: github.com/in-toto/in-toto-golang
@@ -5269,19 +5905,22 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:14200
+    - https://access.redhat.com/errata/RHSA-2026:16875
     - https://access.redhat.com/security/cve/CVE-2026-32280
+    - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2456336
     - https://bugzilla.redhat.com/2456338
     - https://bugzilla.redhat.com/2456339
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
-    - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:14200
+    - https://errata.almalinux.org/8/ALSA-2026-16875.html
+    - https://errata.rockylinux.org/RLSA-2026:16875
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -5388,19 +6027,22 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:14200
+    - https://access.redhat.com/errata/RHSA-2026:16875
     - https://access.redhat.com/security/cve/CVE-2026-32283
+    - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2456336
     - https://bugzilla.redhat.com/2456338
     - https://bugzilla.redhat.com/2456339
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
-    - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:14200
+    - https://errata.almalinux.org/8/ALSA-2026-16875.html
+    - https://errata.rockylinux.org/RLSA-2026:16875
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -5670,19 +6312,22 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H
         V3Score: 7.8
     References:
-    - https://access.redhat.com/errata/RHSA-2026:14200
+    - https://access.redhat.com/errata/RHSA-2026:16875
     - https://access.redhat.com/security/cve/CVE-2026-32282
+    - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2456336
     - https://bugzilla.redhat.com/2456338
     - https://bugzilla.redhat.com/2456339
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
-    - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:14200
+    - https://errata.almalinux.org/8/ALSA-2026-16875.html
+    - https://errata.rockylinux.org/RLSA-2026:16875
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -6658,6 +7303,143 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-34040
     PublishedDate: '2026-03-31T03:15:57.883Z'
     LastModifiedDate: '2026-04-03T16:51:28.67Z'
+  - VulnerabilityID: CVE-2026-41567
+    VendorIDs:
+    - GHSA-x86f-5xw2-fm2r
+    PkgID: github.com/docker/docker@v27.0.3+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v27.0.3%2Bincompatible
+      UID: e1c373a4ab6a8eac
+    InstalledVersion: v27.0.3+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41567
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:26df8ff3dad2b28af1433c7aa48f7289d7e7891b52f8946ebc0e89a1d36d86a1
+    Title: 'Docker: `PUT /containers/{id}/archive` executes container binary on the host'
+    Description: |-
+      ## Summary
+
+      When a user uploads a compressed archive into a container, a malicious image can execute arbitrary code with daemon (host root) privileges.
+
+      ## Details
+
+      When handling `PUT /containers/{id}/archive` requests with compressed archives, the daemon decompresses them using external system binaries. Due to incorrect ordering of operations, these binaries are resolved from the container's filesystem rather than the host's. A container image that includes a trojanized decompression binary can achieve code execution as the daemon process whenever a compressed archive is uploaded to that container.
+
+      The executed binary runs with the daemon's full privileges, including host root UID and unrestricted capabilities.
+
+      ## Impact
+
+      Arbitrary code execution as host root, crossing the container-to-host trust boundary.
+
+      ### Conditions for exploitation
+
+      - A user must run a container from a malicious image that contains a trojanized decompression binary.
+      - The user must then upload a compressed archive (xz or gzip) into that container, either by piping a compressed archive via `docker cp -` or by calling the `PUT /containers/{id}/archive` API directly with compressed content.
+
+      ### Not affected
+
+      Standard `docker cp` usage is **not** affected, because the CLI sends uncompressed tar by default:
+
+      ```
+      docker cp ./file.txt mycontainer:/file.txt
+      ```
+
+      This can only be exploited when explicitly passing a xz or gzip-compressed archive to `docker cp` or the `PUT /containers/{id}/archive` API, for example:
+
+      ```
+      cat archive.tar.xz | docker cp - mycontainer:/dir
+      ```
+
+      Decompression formats using pure Go implementations (bzip2, zstd, and gzip when the container image does not contain an `unpigz` binary) are also not affected.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Use authorization plugins to limit access to the `PUT /containers/{id}/archive` endpoint.
+      - Avoid piping compressed archives into containers created from untrusted images.
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N
+        V3Score: 7.2
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-x86f-5xw2-fm2r
+  - VulnerabilityID: CVE-2026-42306
+    VendorIDs:
+    - GHSA-rg2x-37c3-w2rh
+    PkgID: github.com/docker/docker@v27.0.3+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v27.0.3%2Bincompatible
+      UID: e1c373a4ab6a8eac
+    InstalledVersion: v27.0.3+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42306
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:4fd60b052e465c8c54cea7e3d886d45aed7d505ead79ceec9c1fed4740a019ba
+    Title: 'Docker: Race condition in docker cp allows bind mount redirection to host path'
+    Description: |-
+      ## Summary
+
+      A race condition during `docker cp` mount setup allows a malicious container to redirect a bind mount target to an arbitrary host path, potentially overwriting host files or causing denial of service.
+
+      ## Details
+
+      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination is created inside the container root and then a bind mount is attached using the container-relative path resolved to an absolute host path.
+
+      Between mountpoint creation and the `mount()` syscall, a process running inside the container can replace the destination (or a parent path component) with a symlink pointing to an arbitrary location on the host. The `mount()` syscall follows the symlink, causing the volume to be bind-mounted onto an arbitrary host path instead of the intended container path.
+
+      ## Impact
+
+      A malicious container can redirect a volume bind mount to an arbitrary host path. The impact depends on the volume content and mount options:
+
+      - If the volume is writable, arbitrary host files at the redirected path could be overwritten with the volume's contents.
+      - If the volume is read-only, the host path is masked by the mount for the duration of the operation, causing denial of service.
+      - In all cases the mount is temporary (torn down after the `docker cp` completes), but the effects of any writes persist.
+
+      ### Conditions for exploitation
+
+      - A container must have at least one volume mount.
+      - A process inside the container must be able to rapidly create and swap symlinks at the volume mount destination path.
+      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
+
+      ### Not affected
+
+      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Avoid using `docker cp` with untrusted running containers.
+      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
+        V3Score: 7.2
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-rg2x-37c3-w2rh
   - VulnerabilityID: CVE-2026-33997
     VendorIDs:
     - GHSA-pxq6-2prw-chj9
@@ -6711,6 +7493,78 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
     LastModifiedDate: '2026-04-03T17:23:21.307Z'
+  - VulnerabilityID: CVE-2026-41568
+    VendorIDs:
+    - GHSA-vp62-88p7-qqf5
+    PkgID: github.com/docker/docker@v27.0.3+incompatible
+    PkgName: github.com/docker/docker
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/docker@v27.0.3%2Bincompatible
+      UID: e1c373a4ab6a8eac
+    InstalledVersion: v27.0.3+incompatible
+    Status: affected
+    Layer:
+      Digest: sha256:5b466c3d592947d4eb0b5bbc7cd2e06e5fffef9b4789e4953f60beae9418caed
+      DiffID: sha256:14b0083e6235f9ae37ebe4f6e8fac3ebff291d4c794b63439569ecc85468af1a
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41568
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:d0908083ce1a07bed6bdc39787089d72b397215959914c2dc3d512163e19c290
+    Title: 'Docker: Race condition in docker cp allows creation of arbitrary empty files on the host via symlink swap'
+    Description: |-
+      ## Summary
+
+      A race condition during `docker cp` mount setup allows a malicious container to create empty files or directories at arbitrary absolute paths on the host filesystem.
+
+      This advisory covers the race during mountpoint creation. The related race during the subsequent mount syscall is tracked in GHSA-rg2x-37c3-w2rh
+
+      ## Details
+
+      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination path is first resolved within the container's root filesystem using `GetResourcePath`, and then used to create the mountpoint (file or directory) if it does not already exist via `createIfNotExists`.
+
+      Between path resolution and mountpoint creation, a process running inside the container can swap a path component for a symlink pointing to an arbitrary location on the host. Because `createIfNotExists` operates on the already-resolved absolute path using standard `os.MkdirAll` and `os.OpenFile` — which follow symlinks in intermediate path components — the symlink is followed and the file or directory is created outside the container root filesystem, as root.
+
+      ## Impact
+
+      A malicious container can create empty files or directories at arbitrary absolute paths on the host filesystem, running as root. This enables persistent denial of service — for example:
+
+      - Converting `/etc/docker/daemon.json` into a directory prevents the daemon from restarting
+      - Creating `/etc/nologin` prevents user logins
+      - Overwriting critical system paths with empty files can break host services
+
+      The container does not gain read or write access to existing host files — only the ability to create new empty files or directories at chosen paths.
+
+      ### Conditions for exploitation
+
+      - A container must be running with a process that can rapidly create and swap symlinks at a volume mount destination path.
+      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
+
+      ### Not affected
+
+      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
+
+      ## Patches
+
+      Mountpoint creation is now scoped to the container root using `os.Root` (Go 1.24+), which refuses to follow symlinks that escape the opened root directory. All filesystem operations in `createIfNotExists` (`MkdirAll`, `OpenFile`) are performed through the `os.Root` handle, so even if a symlink swap occurs after path resolution, the creation stays confined to the container root.
+
+      ## Workarounds
+
+      - Only run containers from trusted images.
+      - Avoid using `docker cp` with untrusted running containers.
+      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:L/A:H
+        V3Score: 6
+    References:
+    - https://github.com/moby/moby
+    - https://github.com/moby/moby/security/advisories/GHSA-vp62-88p7-qqf5
   - VulnerabilityID: CVE-2025-54410
     VendorIDs:
     - GHSA-4vq8-7jfc-9cvp
@@ -6947,13 +7801,13 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:3833
+    - https://access.redhat.com/errata/RHSA-2025:3210
     - https://access.redhat.com/security/cve/CVE-2025-22869
     - https://bugzilla.redhat.com/2348367
     - https://bugzilla.redhat.com/show_bug.cgi?id=2348367
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22869
-    - https://errata.almalinux.org/9/ALSA-2025-3833.html
-    - https://errata.rockylinux.org/RLSA-2025:7416
+    - https://errata.almalinux.org/8/ALSA-2025-3210.html
+    - https://errata.rockylinux.org/RLSA-2025:3210
     - https://github.com/golang/crypto
     - https://github.com/golang/crypto/commit/7292932d45d55c7199324ab0027cc86e8198aa22
     - https://go-review.googlesource.com/c/crypto/+/652135
@@ -7370,16 +8224,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
         V3Score: 7.4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:4177
+    - https://access.redhat.com/errata/RHSA-2026:4672
     - https://access.redhat.com/security/cve/CVE-2025-68121
+    - https://bugzilla.redhat.com/2434431
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2434431
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61728
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-4177.html
-    - https://errata.rockylinux.org/RLSA-2026:4177
+    - https://errata.almalinux.org/8/ALSA-2026-4672.html
+    - https://errata.rockylinux.org/RLSA-2026:4672
     - https://github.com/golang/go/issues/77113
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
@@ -7435,11 +8292,11 @@
         V3Score: 7
     References:
     - http://www.openwall.com/lists/oss-security/2025/08/06/1
-    - https://access.redhat.com/errata/RHSA-2025:20909
+    - https://access.redhat.com/errata/RHSA-2025:20983
     - https://access.redhat.com/security/cve/CVE-2025-47907
     - https://bugzilla.redhat.com/2387083
     - https://bugzilla.redhat.com/2393152
-    - https://errata.almalinux.org/9/ALSA-2025-20909.html
+    - https://errata.almalinux.org/10/ALSA-2025-20983.html
     - https://go.dev/cl/693735
     - https://go.dev/issue/74831
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
@@ -7492,13 +8349,13 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/errata/RHSA-2026:1381
+    - https://access.redhat.com/errata/RHSA-2026:1380
     - https://access.redhat.com/security/cve/CVE-2025-58183
     - https://bugzilla.redhat.com/2407258
     - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
-    - https://errata.almalinux.org/9/ALSA-2026-1381.html
-    - https://errata.rockylinux.org/RLSA-2025:23326
+    - https://errata.almalinux.org/8/ALSA-2026-1380.html
+    - https://errata.rockylinux.org/RLSA-2025:23948
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -7552,16 +8409,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:4177
+    - https://access.redhat.com/errata/RHSA-2026:4672
     - https://access.redhat.com/security/cve/CVE-2025-61726
+    - https://bugzilla.redhat.com/2434431
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2434431
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61728
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-4177.html
-    - https://errata.rockylinux.org/RLSA-2026:4177
+    - https://errata.almalinux.org/8/ALSA-2026-4672.html
+    - https://errata.rockylinux.org/RLSA-2026:4672
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
@@ -7615,22 +8475,19 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2026/01/15/4
-    - https://access.redhat.com/errata/RHSA-2026:3753
+    - https://access.redhat.com/errata/RHSA-2026:4672
     - https://access.redhat.com/security/cve/CVE-2025-61728
-    - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434431
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434431
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61728
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3753.html
-    - https://errata.rockylinux.org/RLSA-2026:3337
+    - https://errata.almalinux.org/8/ALSA-2026-4672.html
+    - https://errata.rockylinux.org/RLSA-2026:4672
     - https://go.dev/cl/736713
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
@@ -7684,19 +8541,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3928
+    - https://access.redhat.com/errata/RHSA-2026:3428
     - https://access.redhat.com/security/cve/CVE-2025-61729
+    - https://bugzilla.redhat.com/2268022
     - https://bugzilla.redhat.com/2418462
-    - https://bugzilla.redhat.com/2434432
-    - https://bugzilla.redhat.com/2437111
+    - https://bugzilla.redhat.com/2418900
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2268022
     - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2418900
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24785
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3928
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-65637
+    - https://errata.almalinux.org/8/ALSA-2026-3428.html
+    - https://errata.rockylinux.org/RLSA-2026:3428
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -7748,13 +8605,13 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:9044
+    - https://access.redhat.com/errata/RHSA-2026:8456
     - https://access.redhat.com/security/cve/CVE-2026-25679
     - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
-    - https://errata.almalinux.org/9/ALSA-2026-9044.html
-    - https://errata.rockylinux.org/RLSA-2026:8841
+    - https://errata.almalinux.org/8/ALSA-2026-8456.html
+    - https://errata.rockylinux.org/RLSA-2026:7011
     - https://go.dev/cl/752180
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
@@ -7805,19 +8662,22 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:14200
+    - https://access.redhat.com/errata/RHSA-2026:16875
     - https://access.redhat.com/security/cve/CVE-2026-32280
+    - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2456336
     - https://bugzilla.redhat.com/2456338
     - https://bugzilla.redhat.com/2456339
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
-    - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:14200
+    - https://errata.almalinux.org/8/ALSA-2026-16875.html
+    - https://errata.rockylinux.org/RLSA-2026:16875
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -7924,19 +8784,22 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:14200
+    - https://access.redhat.com/errata/RHSA-2026:16875
     - https://access.redhat.com/security/cve/CVE-2026-32283
+    - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2456336
     - https://bugzilla.redhat.com/2456338
     - https://bugzilla.redhat.com/2456339
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
-    - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:14200
+    - https://errata.almalinux.org/8/ALSA-2026-16875.html
+    - https://errata.rockylinux.org/RLSA-2026:16875
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -8301,14 +9164,14 @@
         V3Score: 5.4
     References:
     - http://www.openwall.com/lists/oss-security/2025/04/04/4
-    - https://access.redhat.com/errata/RHSA-2025:9635
+    - https://access.redhat.com/errata/RHSA-2025:9845
     - https://access.redhat.com/security/cve/CVE-2025-22871
     - https://bugzilla.redhat.com/2358493
     - https://bugzilla.redhat.com/show_bug.cgi?id=2358493
     - https://cert-portal.siemens.com/productcert/html/ssa-783943.html
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-22871
-    - https://errata.almalinux.org/9/ALSA-2025-9635.html
-    - https://errata.rockylinux.org/RLSA-2025:9635
+    - https://errata.almalinux.org/8/ALSA-2025-9845.html
+    - https://errata.rockylinux.org/RLSA-2025:9845
     - https://github.com/roadrunner-server/roadrunner
     - https://github.com/roadrunner-server/roadrunner/commit/f269279ee87d0b88127741cad1042389af7605fa
     - https://github.com/roadrunner-server/roadrunner/issues/2166
@@ -8411,13 +9274,13 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N
         V3Score: 6.8
     References:
-    - https://access.redhat.com/errata/RHSA-2025:15887
+    - https://access.redhat.com/errata/RHSA-2025:10672
     - https://access.redhat.com/security/cve/CVE-2025-4673
     - https://bugzilla.redhat.com/2373305
     - https://bugzilla.redhat.com/show_bug.cgi?id=2373305
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-4673
-    - https://errata.almalinux.org/9/ALSA-2025-15887.html
-    - https://errata.rockylinux.org/RLSA-2025:15887
+    - https://errata.almalinux.org/8/ALSA-2025-10672.html
+    - https://errata.rockylinux.org/RLSA-2025:10672
     - https://go.dev/cl/679257
     - https://go.dev/issue/73816
     - https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A
@@ -8471,13 +9334,16 @@
         V3Score: 6.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/08/06/1
-    - https://access.redhat.com/errata/RHSA-2025:22005
+    - https://access.redhat.com/errata/RHSA-2025:22668
     - https://access.redhat.com/security/cve/CVE-2025-47906
     - https://bugzilla.redhat.com/2396546
+    - https://bugzilla.redhat.com/2407258
     - https://bugzilla.redhat.com/show_bug.cgi?id=2396546
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47906
-    - https://errata.almalinux.org/9/ALSA-2025-22005.html
-    - https://errata.rockylinux.org/RLSA-2025:22005
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
+    - https://errata.almalinux.org/8/ALSA-2025-22668.html
+    - https://errata.rockylinux.org/RLSA-2025:22668
     - https://go.dev/cl/691775
     - https://go.dev/issue/74466
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
@@ -9103,19 +9969,22 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H
         V3Score: 7.8
     References:
-    - https://access.redhat.com/errata/RHSA-2026:14200
+    - https://access.redhat.com/errata/RHSA-2026:16875
     - https://access.redhat.com/security/cve/CVE-2026-32282
+    - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2456336
     - https://bugzilla.redhat.com/2456338
     - https://bugzilla.redhat.com/2456339
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
-    - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:14200
+    - https://errata.almalinux.org/8/ALSA-2026-16875.html
+    - https://errata.rockylinux.org/RLSA-2026:16875
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
