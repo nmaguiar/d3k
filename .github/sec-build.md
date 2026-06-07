@@ -4693,7 +4693,8 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ╭ [0]: CWE-78 
 │                        │      │                  ╰ [1]: CWE-88 
-│                        │      ├ VendorSeverity   ╭ nvd   : 3 
+│                        │      ├ VendorSeverity   ╭ azure : 1 
+│                        │      │                  ├ nvd   : 3 
 │                        │      │                  ├ redhat: 2 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:
@@ -4774,7 +4775,8 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ╭ [0]: CWE-78 
 │                        │      │                  ╰ [1]: CWE-88 
-│                        │      ├ VendorSeverity   ╭ nvd   : 3 
+│                        │      ├ VendorSeverity   ╭ azure : 1 
+│                        │      │                  ├ nvd   : 3 
 │                        │      │                  ├ redhat: 2 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:
@@ -4855,7 +4857,8 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ╭ [0]: CWE-78 
 │                        │      │                  ╰ [1]: CWE-88 
-│                        │      ├ VendorSeverity   ╭ nvd   : 3 
+│                        │      ├ VendorSeverity   ╭ azure : 1 
+│                        │      │                  ├ nvd   : 3 
 │                        │      │                  ├ redhat: 2 
 │                        │      │                  ╰ ubuntu: 2 
 │                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:
@@ -4985,7 +4988,8 @@
 │                               ├ Severity        : MEDIUM 
 │                               ├ CweIDs           ╭ [0]: CWE-78 
 │                               │                  ╰ [1]: CWE-88 
-│                               ├ VendorSeverity   ╭ nvd   : 3 
+│                               ├ VendorSeverity   ╭ azure : 1 
+│                               │                  ├ nvd   : 3 
 │                               │                  ├ redhat: 2 
 │                               │                  ╰ ubuntu: 2 
 │                               ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:
