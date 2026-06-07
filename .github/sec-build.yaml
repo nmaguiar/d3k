@@ -3945,6 +3945,7 @@
     - CWE-78
     - CWE-88
     VendorSeverity:
+      azure: 1
       nvd: 3
       redhat: 2
       ubuntu: 2
@@ -4018,6 +4019,7 @@
     - CWE-78
     - CWE-88
     VendorSeverity:
+      azure: 1
       nvd: 3
       redhat: 2
       ubuntu: 2
@@ -4091,6 +4093,7 @@
     - CWE-78
     - CWE-88
     VendorSeverity:
+      azure: 1
       nvd: 3
       redhat: 2
       ubuntu: 2
@@ -4212,6 +4215,7 @@
     - CWE-78
     - CWE-88
     VendorSeverity:
+      azure: 1
       nvd: 3
       redhat: 2
       ubuntu: 2
