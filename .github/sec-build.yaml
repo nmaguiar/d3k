@@ -214,12 +214,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:7409
+    - https://access.redhat.com/errata/RHSA-2025:8414
     - https://access.redhat.com/security/cve/CVE-2024-52005
     - https://bugzilla.redhat.com/2338289
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
-    - https://errata.almalinux.org/9/ALSA-2025-7409.html
+    - https://errata.almalinux.org/8/ALSA-2025-8414.html
     - https://errata.rockylinux.org/RLSA-2025:7409
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
@@ -274,12 +274,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:7409
+    - https://access.redhat.com/errata/RHSA-2025:8414
     - https://access.redhat.com/security/cve/CVE-2024-52005
     - https://bugzilla.redhat.com/2338289
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
-    - https://errata.almalinux.org/9/ALSA-2025-7409.html
+    - https://errata.almalinux.org/8/ALSA-2025-8414.html
     - https://errata.rockylinux.org/RLSA-2025:7409
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
@@ -1670,7 +1670,7 @@
         V3Score: 3.3
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/05/6
-    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:10950
     - https://access.redhat.com/security/cve/CVE-2026-2297
     - https://bugzilla.redhat.com/2395108
     - https://bugzilla.redhat.com/2408891
@@ -1680,7 +1680,6 @@
     - https://bugzilla.redhat.com/2444691
     - https://bugzilla.redhat.com/2448168
     - https://bugzilla.redhat.com/2448181
-    - https://bugzilla.redhat.com/2449649
     - https://bugzilla.redhat.com/2457409
     - https://bugzilla.redhat.com/2457932
     - https://bugzilla.redhat.com/2458049
@@ -1708,7 +1707,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
-    - https://errata.almalinux.org/9/ALSA-2026-19177.html
+    - https://errata.almalinux.org/8/ALSA-2026-10950.html
     - https://errata.rockylinux.org/RLSA-2026:19177
     - https://github.com/python/cpython/commit/482d6f8bdba9da3725d272e8bb4a2d25fb6a603e
     - https://github.com/python/cpython/commit/69ddd9bb2cc4bd69b1565647c18659c6a789ccd9
@@ -1759,7 +1758,7 @@
         V3Score: 3.3
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/05/6
-    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:10950
     - https://access.redhat.com/security/cve/CVE-2026-2297
     - https://bugzilla.redhat.com/2395108
     - https://bugzilla.redhat.com/2408891
@@ -1769,7 +1768,6 @@
     - https://bugzilla.redhat.com/2444691
     - https://bugzilla.redhat.com/2448168
     - https://bugzilla.redhat.com/2448181
-    - https://bugzilla.redhat.com/2449649
     - https://bugzilla.redhat.com/2457409
     - https://bugzilla.redhat.com/2457932
     - https://bugzilla.redhat.com/2458049
@@ -1797,7 +1795,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
-    - https://errata.almalinux.org/9/ALSA-2026-19177.html
+    - https://errata.almalinux.org/8/ALSA-2026-10950.html
     - https://errata.rockylinux.org/RLSA-2026:19177
     - https://github.com/python/cpython/commit/482d6f8bdba9da3725d272e8bb4a2d25fb6a603e
     - https://github.com/python/cpython/commit/69ddd9bb2cc4bd69b1565647c18659c6a789ccd9
@@ -1848,7 +1846,7 @@
         V3Score: 3.3
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/05/6
-    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:10950
     - https://access.redhat.com/security/cve/CVE-2026-2297
     - https://bugzilla.redhat.com/2395108
     - https://bugzilla.redhat.com/2408891
@@ -1858,7 +1856,6 @@
     - https://bugzilla.redhat.com/2444691
     - https://bugzilla.redhat.com/2448168
     - https://bugzilla.redhat.com/2448181
-    - https://bugzilla.redhat.com/2449649
     - https://bugzilla.redhat.com/2457409
     - https://bugzilla.redhat.com/2457932
     - https://bugzilla.redhat.com/2458049
@@ -1886,7 +1883,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
-    - https://errata.almalinux.org/9/ALSA-2026-19177.html
+    - https://errata.almalinux.org/8/ALSA-2026-10950.html
     - https://errata.rockylinux.org/RLSA-2026:19177
     - https://github.com/python/cpython/commit/482d6f8bdba9da3725d272e8bb4a2d25fb6a603e
     - https://github.com/python/cpython/commit/69ddd9bb2cc4bd69b1565647c18659c6a789ccd9
@@ -2009,7 +2006,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:f04a7397d21e93ed55b5a3d31876c3767308a524b0956cdf9c3b50534d03ef99
-    Title: 'Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ...'
+    Title: 'openssl: Heap Use-After-Free in OpenSSL PKCS7_verify()'
     Description: |-
       Issue summary: A specially crafted PKCS#7 or S/MIME signed message could
       trigger a use-after-free during PKCS#7 signature verification.
@@ -2039,19 +2036,26 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      redhat: 3
       ubuntu: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 8.1
     References:
-    - https://github.com/openssl/security/commit/3aad5eb7af4de4ee0633c30a8541a54d9bbde63c
-    - https://github.com/openssl/security/commit/7d4a980c62258c5910cc883936e0c8dbab4d75a8
-    - https://github.com/openssl/security/commit/9dfd688ad2290fc5075cacbc9bf0c9a93eefed54
-    - https://github.com/openssl/security/commit/a541ae8bfe849a30cc885e8780715c0f488e496c
-    - https://github.com/openssl/security/commit/c505d7559da5d5f9f2c3913c6883a5562ce7273e
+    - https://access.redhat.com/security/cve/CVE-2026-45447
+    - https://github.com/openssl/openssl/commit/3aad5eb7af4de4ee0633c30a8541a54d9bbde63c
+    - https://github.com/openssl/openssl/commit/7d4a980c62258c5910cc883936e0c8dbab4d75a8
+    - https://github.com/openssl/openssl/commit/9dfd688ad2290fc5075cacbc9bf0c9a93eefed54
+    - https://github.com/openssl/openssl/commit/a541ae8bfe849a30cc885e8780715c0f488e496c
+    - https://github.com/openssl/openssl/commit/c505d7559da5d5f9f2c3913c6883a5562ce7273e
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45447
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-45447
     PublishedDate: '2026-06-09T17:17:19.277Z'
-    LastModifiedDate: '2026-06-09T20:16:58.537Z'
+    LastModifiedDate: '2026-06-10T15:16:35.16Z'
   - VulnerabilityID: CVE-2026-34182
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2071,7 +2075,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:71d1c61111a91df0c8e5eddb83f2cc0901a6ae3d3c263ae3ebda87fdf40a51bf
-    Title: 'Issue Summary: Cryptographic Message Services (CMS) processing fails t ...'
+    Title: 'openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages'
     Description: |-
       Issue Summary: Cryptographic Message Services (CMS) processing fails to perform
       sufficient input validation on the cipher and tag length fields of
@@ -2109,19 +2113,26 @@
     CweIDs:
     - CWE-354
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
     References:
-    - https://github.com/openssl/security/commit/03c1f4d45fb963aee7d5833390c507cd290182bc
-    - https://github.com/openssl/security/commit/439ed7d2c0962ce964482727264668bf277c333f
-    - https://github.com/openssl/security/commit/7947e6a81eb8776802f159fb6762cb7fcf7e34c7
-    - https://github.com/openssl/security/commit/9fd97f8cfdc2c0be214998de3b2b55c8edf6c7ac
-    - https://github.com/openssl/security/commit/d2ca86bcd43e4f17d899f347101766b6107676e0
+    - https://access.redhat.com/security/cve/CVE-2026-34182
+    - https://github.com/openssl/openssl/commit/03c1f4d45fb963aee7d5833390c507cd290182bc
+    - https://github.com/openssl/openssl/commit/439ed7d2c0962ce964482727264668bf277c333f
+    - https://github.com/openssl/openssl/commit/7947e6a81eb8776802f159fb6762cb7fcf7e34c7
+    - https://github.com/openssl/openssl/commit/9fd97f8cfdc2c0be214998de3b2b55c8edf6c7ac
+    - https://github.com/openssl/openssl/commit/d2ca86bcd43e4f17d899f347101766b6107676e0
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34182
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-34182
     PublishedDate: '2026-06-09T17:17:04.857Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T17:16:32.48Z'
   - VulnerabilityID: CVE-2026-34183
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2141,7 +2152,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:d7085b6e5371d6dacfb70e1725ad6f22420b15957194cfda851d0dfb06765748
-    Title: 'Issue summary: Remote peer may exhaust heap memory of the QUIC server  ...'
+    Title: 'openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler'
     Description: |-
       Issue summary: Remote peer may exhaust heap memory of the QUIC
       server or client by flooding it with packets containing PATH_CHALLENGE
@@ -2165,17 +2176,24 @@
     CweIDs:
     - CWE-1325
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
-    - https://github.com/openssl/security/commit/5b306efb0b3779dfdd0803b4afc9d08c91f11517
-    - https://github.com/openssl/security/commit/7d06955ebe0ecf8adfd4c1e92018586da47ef9ac
-    - https://github.com/openssl/security/commit/d2e9efbe4900a373227deb136e8665401404ffac
-    - https://github.com/openssl/security/commit/fbaa83859c01ad64f497b757aaf51be7d05ed9eb
+    - https://access.redhat.com/security/cve/CVE-2026-34183
+    - https://github.com/openssl/openssl/commit/5b306efb0b3779dfdd0803b4afc9d08c91f11517
+    - https://github.com/openssl/openssl/commit/7d06955ebe0ecf8adfd4c1e92018586da47ef9ac
+    - https://github.com/openssl/openssl/commit/d2e9efbe4900a373227deb136e8665401404ffac
+    - https://github.com/openssl/openssl/commit/fbaa83859c01ad64f497b757aaf51be7d05ed9eb
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34183
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-34183
     PublishedDate: '2026-06-09T17:17:05Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T16:17:01.217Z'
   - VulnerabilityID: CVE-2026-42764
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2195,7 +2213,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:ad87f3053eb254bc41d8e9423781072275fcc82ec15fff9c9dba0f180a856d3d
-    Title: 'Issue summary: Receiving a QUIC initial packet with an invalid token m ...'
+    Title: 'openssl: NULL pointer dereference in QUIC server initial packet handling'
     Description: |-
       Issue summary: Receiving a QUIC initial packet with an invalid token may
       trigger a NULL pointer dereference in the OpenSSL QUIC server with
@@ -2220,16 +2238,23 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/5e3ed291b8af0b03d5d3b9e56a1da69a187e9729
-    - https://github.com/openssl/security/commit/a45a0aba8095682c88ff4fc4a784892b8c6f0677
-    - https://github.com/openssl/security/commit/bf29a458c1a231eca87e384c62b9c2553fa57a91
+    - https://access.redhat.com/security/cve/CVE-2026-42764
+    - https://github.com/openssl/openssl/commit/5e3ed291b8af0b03d5d3b9e56a1da69a187e9729
+    - https://github.com/openssl/openssl/commit/a45a0aba8095682c88ff4fc4a784892b8c6f0677
+    - https://github.com/openssl/openssl/commit/bf29a458c1a231eca87e384c62b9c2553fa57a91
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42764
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42764
     PublishedDate: '2026-06-09T17:17:07.693Z'
-    LastModifiedDate: '2026-06-09T21:17:16.947Z'
+    LastModifiedDate: '2026-06-10T08:16:23.23Z'
   - VulnerabilityID: CVE-2026-45445
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2249,7 +2274,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:31719bb473a2a5b10cd6fc9766c54e1f17043b54191130a5b667e6f37ac63310
-    Title: 'Issue summary: When an application drives an AES-OCB context through t ...'
+    Title: 'openssl: AES-OCB IV Ignored on EVP_Cipher() Path'
     Description: |-
       Issue summary: When an application drives an AES-OCB context through the
       public EVP_Cipher() one-shot interface, the application-supplied
@@ -2293,18 +2318,25 @@
     CweIDs:
     - CWE-325
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 9.1
     References:
-    - https://github.com/openssl/security/commit/323f0b6e7d530a4cb4336d50c88cb70f3ac2a451
-    - https://github.com/openssl/security/commit/787a6dfba81b7b09c1e05ab31396c0cd7c36b3f7
-    - https://github.com/openssl/security/commit/7ac4715234ee72d9f3c93426a2c08554b5b771af
-    - https://github.com/openssl/security/commit/843c9b94ca9c2ed248bb30127bb4f3d7af0d607c
-    - https://github.com/openssl/security/commit/983d54b5cce8d16147548ed1a37892d1720bbab6
+    - https://access.redhat.com/security/cve/CVE-2026-45445
+    - https://github.com/openssl/openssl/commit/323f0b6e7d530a4cb4336d50c88cb70f3ac2a451
+    - https://github.com/openssl/openssl/commit/787a6dfba81b7b09c1e05ab31396c0cd7c36b3f7
+    - https://github.com/openssl/openssl/commit/7ac4715234ee72d9f3c93426a2c08554b5b771af
+    - https://github.com/openssl/openssl/commit/843c9b94ca9c2ed248bb30127bb4f3d7af0d607c
+    - https://github.com/openssl/openssl/commit/983d54b5cce8d16147548ed1a37892d1720bbab6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45445
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-45445
     PublishedDate: '2026-06-09T17:17:18.993Z'
-    LastModifiedDate: '2026-06-09T20:16:57.653Z'
+    LastModifiedDate: '2026-06-10T08:16:24.507Z'
   - VulnerabilityID: CVE-2026-34180
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2324,7 +2356,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:198cbce28b42a131b874b94a2f706eb210ce509998b7790a92dd859f74683c90
-    Title: 'Issue summary: Parsing a crafted DER-encoded ASN.1 structure with a pr ...'
+    Title: 'openssl: OpenSSL: Heap buffer over-read in ASN.1 decoding can lead to denial of service or information disclosure.'
     Description: |-
       Issue summary: Parsing a crafted DER-encoded ASN.1 structure with a primitive
       element whose content exceeds 2 gigabytes in length may cause a heap buffer
@@ -2353,19 +2385,26 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:H
+        V3Score: 5
     References:
-    - https://github.com/openssl/security/commit/1c6908e4fa5fa568752221d8eaf561a809751e5d
-    - https://github.com/openssl/security/commit/cbe418ae978539cf14a398a207dba834c0e93e83
-    - https://github.com/openssl/security/commit/d93853c42110d6319e3df07842b488cb9f7ac5ff
-    - https://github.com/openssl/security/commit/da5d62af75f69d6fbf7803743d7c56ac75461e43
-    - https://github.com/openssl/security/commit/f696c73c3e61b8c502d040af62e690c060908a16
+    - https://access.redhat.com/security/cve/CVE-2026-34180
+    - https://github.com/openssl/openssl/commit/1c6908e4fa5fa568752221d8eaf561a809751e5d
+    - https://github.com/openssl/openssl/commit/cbe418ae978539cf14a398a207dba834c0e93e83
+    - https://github.com/openssl/openssl/commit/d93853c42110d6319e3df07842b488cb9f7ac5ff
+    - https://github.com/openssl/openssl/commit/da5d62af75f69d6fbf7803743d7c56ac75461e43
+    - https://github.com/openssl/openssl/commit/f696c73c3e61b8c502d040af62e690c060908a16
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34180
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-34180
     PublishedDate: '2026-06-09T17:17:04.6Z'
-    LastModifiedDate: '2026-06-09T20:16:36.033Z'
+    LastModifiedDate: '2026-06-10T08:16:22.627Z'
   - VulnerabilityID: CVE-2026-34181
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2385,7 +2424,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:e4b99279aaed4216d5cec0bb80b9362ee8e7a0726e9578ce5bed5fc009486954
-    Title: 'Issue Summary: The PKCS#12 file processing fails to perform sufficient ...'
+    Title: 'openssl: PKCS#12 Files with PBMAC1 Are Accepted with Short HMAC Keys'
     Description: |-
       Issue Summary: The PKCS#12 file processing fails to perform sufficient input
       validation for files that use Password-Based Message Authentication Code 1
@@ -2408,17 +2447,24 @@
     CweIDs:
     - CWE-354
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 6.3
     References:
-    - https://github.com/openssl/security/commit/0300eb9ddce7a0895bf301a4b0c03a9da2313a0f
-    - https://github.com/openssl/security/commit/79eb76a937e474bb7610a0a3dc57131dc8dc6610
-    - https://github.com/openssl/security/commit/85dcbb3abaa4878af5c8fbbe11bce708fcf984a7
-    - https://github.com/openssl/security/commit/ec36f2417c4ddd8cabce4b4a60a3d7a7365f2d81
+    - https://access.redhat.com/security/cve/CVE-2026-34181
+    - https://github.com/openssl/openssl/commit/0300eb9ddce7a0895bf301a4b0c03a9da2313a0f
+    - https://github.com/openssl/openssl/commit/79eb76a937e474bb7610a0a3dc57131dc8dc6610
+    - https://github.com/openssl/openssl/commit/85dcbb3abaa4878af5c8fbbe11bce708fcf984a7
+    - https://github.com/openssl/openssl/commit/ec36f2417c4ddd8cabce4b4a60a3d7a7365f2d81
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34181
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-34181
     PublishedDate: '2026-06-09T17:17:04.74Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T17:16:32.29Z'
   - VulnerabilityID: CVE-2026-42766
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2438,7 +2484,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:95985d3fa2057fe961c4ce8893dca3f775b1fbce14f2d672e3976c691dc7269f
-    Title: 'Issue summary: A specially crafted password-encrypted CMS message can  ...'
+    Title: 'openssl: Possible NULL Dereference in Password-Based CMS Decryption'
     Description: |-
       Issue summary: A specially crafted password-encrypted CMS message
       can trigger a NULL pointer dereference during CMS decryption.
@@ -2464,19 +2510,26 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.3
     References:
-    - https://github.com/openssl/security/commit/056d06c1918fafbb98c1c85a02e4c47cc4e199ce
-    - https://github.com/openssl/security/commit/12bc26ffb3a2be728c9b86e1cae277de5b33dfa4
-    - https://github.com/openssl/security/commit/3ff64913615d648cfbb6a6f1cf5529ae7ea829d7
-    - https://github.com/openssl/security/commit/ab52d88cb5374876d59aee3c91f9e4ccce2b7ce4
-    - https://github.com/openssl/security/commit/da26f368732b83e40e9d356fe61c3d3aaab6d2e8
+    - https://access.redhat.com/security/cve/CVE-2026-42766
+    - https://github.com/openssl/openssl/commit/056d06c1918fafbb98c1c85a02e4c47cc4e199ce
+    - https://github.com/openssl/openssl/commit/12bc26ffb3a2be728c9b86e1cae277de5b33dfa4
+    - https://github.com/openssl/openssl/commit/3ff64913615d648cfbb6a6f1cf5529ae7ea829d7
+    - https://github.com/openssl/openssl/commit/ab52d88cb5374876d59aee3c91f9e4ccce2b7ce4
+    - https://github.com/openssl/openssl/commit/da26f368732b83e40e9d356fe61c3d3aaab6d2e8
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42766
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-42766
     PublishedDate: '2026-06-09T17:17:07.97Z'
-    LastModifiedDate: '2026-06-09T21:17:17.287Z'
+    LastModifiedDate: '2026-06-10T08:16:23.52Z'
   - VulnerabilityID: CVE-2026-42767
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2496,7 +2549,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:58ef0ac67d21b1625c0f06c7b71289eb6ee1d57e30329749830ceeb572404e14
-    Title: 'Issue summary: An attacker-controlled CMP (Certificate Management Prot ...'
+    Title: 'openssl: NULL Pointer Dereference in CRMF EncryptedValue Decryption'
     Description: |-
       Issue summary: An attacker-controlled CMP (Certificate Management Protocol)
       server could trigger a NULL pointer dereference in a CMP client application.
@@ -2519,18 +2572,25 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.3
     References:
-    - https://github.com/openssl/security/commit/61a86a8cd73546c9fea916f3d304c1293e05c046
-    - https://github.com/openssl/security/commit/665d5254083affde9982efca7c41dd01cacc8774
-    - https://github.com/openssl/security/commit/810b722f772652ad48042bcc7ab07e3414b11d0f
-    - https://github.com/openssl/security/commit/b90ff3b1bd33b1c18e6a09936d097c2eddef8873
-    - https://github.com/openssl/security/commit/e6f912907fc2ec82a0fd07aae55172c5e5e3d90d
+    - https://access.redhat.com/security/cve/CVE-2026-42767
+    - https://github.com/openssl/openssl/commit/61a86a8cd73546c9fea916f3d304c1293e05c046
+    - https://github.com/openssl/openssl/commit/665d5254083affde9982efca7c41dd01cacc8774
+    - https://github.com/openssl/openssl/commit/810b722f772652ad48042bcc7ab07e3414b11d0f
+    - https://github.com/openssl/openssl/commit/b90ff3b1bd33b1c18e6a09936d097c2eddef8873
+    - https://github.com/openssl/openssl/commit/e6f912907fc2ec82a0fd07aae55172c5e5e3d90d
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42767
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42767
     PublishedDate: '2026-06-09T17:17:08.093Z'
-    LastModifiedDate: '2026-06-09T21:17:17.433Z'
+    LastModifiedDate: '2026-06-10T08:16:23.683Z'
   - VulnerabilityID: CVE-2026-42768
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2550,7 +2610,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:70013c20935432f96b7a3747773ec16145e669fa7eace7267ad776d4042e43bb
-    Title: 'Issue summary: The CMS_decrypt and PKCS7_decrypt functions are vulnera ...'
+    Title: 'openssl: Multi-RecipientInfo Bleichenbacher Oracle in CMS_decrypt() and PKCS7_decrypt()'
     Description: |-
       Issue summary: The CMS_decrypt and PKCS7_decrypt functions are vulnerable to
       Bleichenbacher-style attack when an attacker is able to provide the CMS or
@@ -2610,17 +2670,24 @@
     CweIDs:
     - CWE-514
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 6.3
     References:
-    - https://github.com/openssl/security/commit/a2ca7b2d73e0ffc1eae183fe6e1741dac767cb4f
-    - https://github.com/openssl/security/commit/bbb151a83041705d9d001ed2f9c12f5523e1b54d
-    - https://github.com/openssl/security/commit/dd68364107a58841c0a2546812518b65d3a23abd
-    - https://github.com/openssl/security/commit/f04b377be3d821741c86d1f4bf84dee09f3d5c3e
+    - https://access.redhat.com/security/cve/CVE-2026-42768
+    - https://github.com/openssl/openssl/commit/a2ca7b2d73e0ffc1eae183fe6e1741dac767cb4f
+    - https://github.com/openssl/openssl/commit/bbb151a83041705d9d001ed2f9c12f5523e1b54d
+    - https://github.com/openssl/openssl/commit/dd68364107a58841c0a2546812518b65d3a23abd
+    - https://github.com/openssl/openssl/commit/f04b377be3d821741c86d1f4bf84dee09f3d5c3e
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42768
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42768
     PublishedDate: '2026-06-09T17:17:08.223Z'
-    LastModifiedDate: '2026-06-09T21:17:17.587Z'
+    LastModifiedDate: '2026-06-10T08:16:23.84Z'
   - VulnerabilityID: CVE-2026-42769
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2640,7 +2707,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:7857b2d9bfe16f73d1fc3551ed4d124a9e9ea950b4a253fed9a42740a112c855
-    Title: 'Issue Summary: An error in the callback used to verify the certificate ...'
+    Title: 'openssl: Trust-Anchor Substitution via cert/issuer Typo in CMP rootCaKeyUpdate'
     Description: |-
       Issue Summary: An error in the callback used to verify the certificate
       provided in a Root CA key update Certificate Management Protocol (CMP)
@@ -2681,17 +2748,24 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/54d0989997e5fc26057009a9782c3441ce3842fb
-    - https://github.com/openssl/security/commit/777b363b16fcf2153bb3ded39dc3838713667c44
-    - https://github.com/openssl/security/commit/d35cd473a271bf3ce7bf3d32af53217fb83ae92c
-    - https://github.com/openssl/security/commit/d531f21c0fe99067a66fc0ff1161ef127f9cd70b
+    - https://access.redhat.com/security/cve/CVE-2026-42769
+    - https://github.com/openssl/openssl/commit/54d0989997e5fc26057009a9782c3441ce3842fb
+    - https://github.com/openssl/openssl/commit/777b363b16fcf2153bb3ded39dc3838713667c44
+    - https://github.com/openssl/openssl/commit/d35cd473a271bf3ce7bf3d32af53217fb83ae92c
+    - https://github.com/openssl/openssl/commit/d531f21c0fe99067a66fc0ff1161ef127f9cd70b
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42769
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42769
     PublishedDate: '2026-06-09T17:17:08.377Z'
-    LastModifiedDate: '2026-06-09T21:17:17.79Z'
+    LastModifiedDate: '2026-06-10T08:16:24.027Z'
   - VulnerabilityID: CVE-2026-42770
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2711,7 +2785,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:f4d95c9c6a71a068f3f0a7e7f587b01d9b1652c70a7f8f9e0578be4f669fe8bc
-    Title: 'Issue summary: When EVP_PKEY_derive_set_peer() is called with a DHX (X ...'
+    Title: 'openssl: FFC-DH Peer Validation Uses Attacker-Supplied q'
     Description: |-
       Issue summary: When EVP_PKEY_derive_set_peer() is called with a DHX (X9.42)
       peer key, the peer key is not properly checked for the subgroup membership.
@@ -2745,18 +2819,25 @@
     CweIDs:
     - CWE-325
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/3da5a516cd2635a320ff748503db2cef7c4b0f02
-    - https://github.com/openssl/security/commit/3ddbb7ab50bd93dfc59cbe08e269a67605aeebdb
-    - https://github.com/openssl/security/commit/5f452bba2c681423d8fcffd120a19b757ee42e3c
-    - https://github.com/openssl/security/commit/7fbfde7677ed8808828bf00ff01c937ca04bdda2
-    - https://github.com/openssl/security/commit/ca2237ab5615641b662183b077f62c08d75e8070
+    - https://access.redhat.com/security/cve/CVE-2026-42770
+    - https://github.com/openssl/openssl/commit/3da5a516cd2635a320ff748503db2cef7c4b0f02
+    - https://github.com/openssl/openssl/commit/3ddbb7ab50bd93dfc59cbe08e269a67605aeebdb
+    - https://github.com/openssl/openssl/commit/5f452bba2c681423d8fcffd120a19b757ee42e3c
+    - https://github.com/openssl/openssl/commit/7fbfde7677ed8808828bf00ff01c937ca04bdda2
+    - https://github.com/openssl/openssl/commit/ca2237ab5615641b662183b077f62c08d75e8070
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42770
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42770
     PublishedDate: '2026-06-09T17:17:08.523Z'
-    LastModifiedDate: '2026-06-09T21:17:17.96Z'
+    LastModifiedDate: '2026-06-10T08:16:24.197Z'
   - VulnerabilityID: CVE-2026-45446
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2776,7 +2857,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:ca2a3606e347841da815c9e3d7fe9c27a0ad0d0fedbafdb95e3c8acace84ecb1
-    Title: 'Issue summary: The implementations of AES-SIV (RFC 5297) and AES-GCM-S ...'
+    Title: 'openssl: Incorrect Tag Processing for Empty Messages in AES-GCM-SIV and AES-SIV modes'
     Description: |-
       Issue summary: The implementations of AES-SIV (RFC 5297) and AES-GCM-SIV
       (RFC 8452) mishandle the authentication of AAD (Additional Authenticated
@@ -2819,18 +2900,25 @@
     CweIDs:
     - CWE-325
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 3.7
     References:
-    - https://github.com/openssl/security/commit/25b32cd9d41d2bc01b6abc425bb4baf2c2236fdc
-    - https://github.com/openssl/security/commit/71e2a5d263518cf5866043bd60ee4994d59e53a3
-    - https://github.com/openssl/security/commit/7fe3f33a3b3a4c487aa4dcdbc87057f66ffd2b85
-    - https://github.com/openssl/security/commit/daca0f48e4a69a2892a62262bad59e62a8a76598
-    - https://github.com/openssl/security/commit/eec5e9bf0d867333b8495e456f5235d225798a68
+    - https://access.redhat.com/security/cve/CVE-2026-45446
+    - https://github.com/openssl/openssl/commit/25b32cd9d41d2bc01b6abc425bb4baf2c2236fdc
+    - https://github.com/openssl/openssl/commit/71e2a5d263518cf5866043bd60ee4994d59e53a3
+    - https://github.com/openssl/openssl/commit/7fe3f33a3b3a4c487aa4dcdbc87057f66ffd2b85
+    - https://github.com/openssl/openssl/commit/daca0f48e4a69a2892a62262bad59e62a8a76598
+    - https://github.com/openssl/openssl/commit/eec5e9bf0d867333b8495e456f5235d225798a68
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45446
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-45446
     PublishedDate: '2026-06-09T17:17:19.137Z'
-    LastModifiedDate: '2026-06-09T20:16:58.34Z'
+    LastModifiedDate: '2026-06-10T08:16:24.733Z'
   - VulnerabilityID: CVE-2026-7383
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2850,7 +2938,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:979edcfcec643c9fe61c92c80c8e9bf5395b81bffc7604c6c99db77cf9764246
-    Title: 'Issue summary: A signed integer overflow when sizing the destination b ...'
+    Title: 'openssl: OpenSSL: Heap buffer overflow due to signed integer overflow in Unicode output sizing'
     Description: |-
       Issue summary: A signed integer overflow when sizing the destination
       buffer for Unicode output in ASN1_mbstring_ncopy() can lead to a heap
@@ -2886,19 +2974,26 @@
     CweIDs:
     - CWE-787
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:H
+        V3Score: 5.5
     References:
-    - https://github.com/openssl/security/commit/4f8d2bddaa2c8e06f9c33390ee1717059a6e4be6
-    - https://github.com/openssl/security/commit/80c15faaf78042bbb8654a0e234c50c381732f74
-    - https://github.com/openssl/security/commit/bd17511070fb39a67bfa19682affb765e706a974
-    - https://github.com/openssl/security/commit/c332adaced43bcbb85f97410597e951c11ec3083
-    - https://github.com/openssl/security/commit/d32350ae8ef7426718f5aa9e383d4b51398ee255
+    - https://access.redhat.com/security/cve/CVE-2026-7383
+    - https://github.com/openssl/openssl/commit/4f8d2bddaa2c8e06f9c33390ee1717059a6e4be6
+    - https://github.com/openssl/openssl/commit/80c15faaf78042bbb8654a0e234c50c381732f74
+    - https://github.com/openssl/openssl/commit/bd17511070fb39a67bfa19682affb765e706a974
+    - https://github.com/openssl/openssl/commit/c332adaced43bcbb85f97410597e951c11ec3083
+    - https://github.com/openssl/openssl/commit/d32350ae8ef7426718f5aa9e383d4b51398ee255
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-7383
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-7383
     PublishedDate: '2026-06-09T17:17:50.337Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T08:16:25.463Z'
   - VulnerabilityID: CVE-2026-9076
     PkgID: libssl3t64@3.5.5-1ubuntu3
     PkgName: libssl3t64
@@ -2918,7 +3013,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:5120f39ca7e5794a6681417c92c75e60403c69b6dbff70a9ecd1f41cbb450d21
-    Title: 'Issue summary: When CMS password-based decryption (RFC 3211 / PWRI key ...'
+    Title: 'openssl: OpenSSL: Denial of Service due to heap out-of-bounds read in CMS password-based decryption'
     Description: |-
       Issue summary: When CMS password-based decryption (RFC 3211 / PWRI key unwrap)
       processes attacker-supplied CMS data, an attacker-chosen stream-mode KEK
@@ -2955,19 +3050,26 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/05b066366842f930fadd9a6e94df98030af431bb
-    - https://github.com/openssl/security/commit/3d8d5bc1056b2f62da9fede23fedbf47e85187b0
-    - https://github.com/openssl/security/commit/715349a1d7c6db970e6815dafb90915f07307f98
-    - https://github.com/openssl/security/commit/77bf00ab13f6ff5e516535432f0328ed70ec0c26
-    - https://github.com/openssl/security/commit/eecbe330977e8d023aae1ca2d9bdbe983ef3fdc6
+    - https://access.redhat.com/security/cve/CVE-2026-9076
+    - https://github.com/openssl/openssl/commit/05b066366842f930fadd9a6e94df98030af431bb
+    - https://github.com/openssl/openssl/commit/3d8d5bc1056b2f62da9fede23fedbf47e85187b0
+    - https://github.com/openssl/openssl/commit/715349a1d7c6db970e6815dafb90915f07307f98
+    - https://github.com/openssl/openssl/commit/77bf00ab13f6ff5e516535432f0328ed70ec0c26
+    - https://github.com/openssl/openssl/commit/eecbe330977e8d023aae1ca2d9bdbe983ef3fdc6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-9076
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-9076
     PublishedDate: '2026-06-09T17:17:50.997Z'
-    LastModifiedDate: '2026-06-09T20:17:03.29Z'
+    LastModifiedDate: '2026-06-10T08:16:26.063Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: libsubid5@1:4.17.4-2ubuntu3
     PkgName: libsubid5
@@ -3522,7 +3624,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:730f7f77ab8598e351e1643e0e986d37334aa199e23c09d783fad1f2b898cea5
-    Title: 'Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ...'
+    Title: 'openssl: Heap Use-After-Free in OpenSSL PKCS7_verify()'
     Description: |-
       Issue summary: A specially crafted PKCS#7 or S/MIME signed message could
       trigger a use-after-free during PKCS#7 signature verification.
@@ -3552,19 +3654,26 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      redhat: 3
       ubuntu: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 8.1
     References:
-    - https://github.com/openssl/security/commit/3aad5eb7af4de4ee0633c30a8541a54d9bbde63c
-    - https://github.com/openssl/security/commit/7d4a980c62258c5910cc883936e0c8dbab4d75a8
-    - https://github.com/openssl/security/commit/9dfd688ad2290fc5075cacbc9bf0c9a93eefed54
-    - https://github.com/openssl/security/commit/a541ae8bfe849a30cc885e8780715c0f488e496c
-    - https://github.com/openssl/security/commit/c505d7559da5d5f9f2c3913c6883a5562ce7273e
+    - https://access.redhat.com/security/cve/CVE-2026-45447
+    - https://github.com/openssl/openssl/commit/3aad5eb7af4de4ee0633c30a8541a54d9bbde63c
+    - https://github.com/openssl/openssl/commit/7d4a980c62258c5910cc883936e0c8dbab4d75a8
+    - https://github.com/openssl/openssl/commit/9dfd688ad2290fc5075cacbc9bf0c9a93eefed54
+    - https://github.com/openssl/openssl/commit/a541ae8bfe849a30cc885e8780715c0f488e496c
+    - https://github.com/openssl/openssl/commit/c505d7559da5d5f9f2c3913c6883a5562ce7273e
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45447
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-45447
     PublishedDate: '2026-06-09T17:17:19.277Z'
-    LastModifiedDate: '2026-06-09T20:16:58.537Z'
+    LastModifiedDate: '2026-06-10T15:16:35.16Z'
   - VulnerabilityID: CVE-2026-34182
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -3584,7 +3693,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:636abc1361d38cd1cffa79eea6c979343ae94751914754b75b3973f500b71a81
-    Title: 'Issue Summary: Cryptographic Message Services (CMS) processing fails t ...'
+    Title: 'openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages'
     Description: |-
       Issue Summary: Cryptographic Message Services (CMS) processing fails to perform
       sufficient input validation on the cipher and tag length fields of
@@ -3622,19 +3731,26 @@
     CweIDs:
     - CWE-354
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
     References:
-    - https://github.com/openssl/security/commit/03c1f4d45fb963aee7d5833390c507cd290182bc
-    - https://github.com/openssl/security/commit/439ed7d2c0962ce964482727264668bf277c333f
-    - https://github.com/openssl/security/commit/7947e6a81eb8776802f159fb6762cb7fcf7e34c7
-    - https://github.com/openssl/security/commit/9fd97f8cfdc2c0be214998de3b2b55c8edf6c7ac
-    - https://github.com/openssl/security/commit/d2ca86bcd43e4f17d899f347101766b6107676e0
+    - https://access.redhat.com/security/cve/CVE-2026-34182
+    - https://github.com/openssl/openssl/commit/03c1f4d45fb963aee7d5833390c507cd290182bc
+    - https://github.com/openssl/openssl/commit/439ed7d2c0962ce964482727264668bf277c333f
+    - https://github.com/openssl/openssl/commit/7947e6a81eb8776802f159fb6762cb7fcf7e34c7
+    - https://github.com/openssl/openssl/commit/9fd97f8cfdc2c0be214998de3b2b55c8edf6c7ac
+    - https://github.com/openssl/openssl/commit/d2ca86bcd43e4f17d899f347101766b6107676e0
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34182
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-34182
     PublishedDate: '2026-06-09T17:17:04.857Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T17:16:32.48Z'
   - VulnerabilityID: CVE-2026-34183
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -3654,7 +3770,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:22206c82d5ed2a30227a58ad51cc052fadd02138f31010db48a05d885c69cedd
-    Title: 'Issue summary: Remote peer may exhaust heap memory of the QUIC server  ...'
+    Title: 'openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler'
     Description: |-
       Issue summary: Remote peer may exhaust heap memory of the QUIC
       server or client by flooding it with packets containing PATH_CHALLENGE
@@ -3678,17 +3794,24 @@
     CweIDs:
     - CWE-1325
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
-    - https://github.com/openssl/security/commit/5b306efb0b3779dfdd0803b4afc9d08c91f11517
-    - https://github.com/openssl/security/commit/7d06955ebe0ecf8adfd4c1e92018586da47ef9ac
-    - https://github.com/openssl/security/commit/d2e9efbe4900a373227deb136e8665401404ffac
-    - https://github.com/openssl/security/commit/fbaa83859c01ad64f497b757aaf51be7d05ed9eb
+    - https://access.redhat.com/security/cve/CVE-2026-34183
+    - https://github.com/openssl/openssl/commit/5b306efb0b3779dfdd0803b4afc9d08c91f11517
+    - https://github.com/openssl/openssl/commit/7d06955ebe0ecf8adfd4c1e92018586da47ef9ac
+    - https://github.com/openssl/openssl/commit/d2e9efbe4900a373227deb136e8665401404ffac
+    - https://github.com/openssl/openssl/commit/fbaa83859c01ad64f497b757aaf51be7d05ed9eb
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34183
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-34183
     PublishedDate: '2026-06-09T17:17:05Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T16:17:01.217Z'
   - VulnerabilityID: CVE-2026-42764
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -3708,7 +3831,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:7280cff28025d5b8dd76e6636ef9854aec76ebd335dd9351ad676b87e713a5ee
-    Title: 'Issue summary: Receiving a QUIC initial packet with an invalid token m ...'
+    Title: 'openssl: NULL pointer dereference in QUIC server initial packet handling'
     Description: |-
       Issue summary: Receiving a QUIC initial packet with an invalid token may
       trigger a NULL pointer dereference in the OpenSSL QUIC server with
@@ -3733,16 +3856,23 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/5e3ed291b8af0b03d5d3b9e56a1da69a187e9729
-    - https://github.com/openssl/security/commit/a45a0aba8095682c88ff4fc4a784892b8c6f0677
-    - https://github.com/openssl/security/commit/bf29a458c1a231eca87e384c62b9c2553fa57a91
+    - https://access.redhat.com/security/cve/CVE-2026-42764
+    - https://github.com/openssl/openssl/commit/5e3ed291b8af0b03d5d3b9e56a1da69a187e9729
+    - https://github.com/openssl/openssl/commit/a45a0aba8095682c88ff4fc4a784892b8c6f0677
+    - https://github.com/openssl/openssl/commit/bf29a458c1a231eca87e384c62b9c2553fa57a91
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42764
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42764
     PublishedDate: '2026-06-09T17:17:07.693Z'
-    LastModifiedDate: '2026-06-09T21:17:16.947Z'
+    LastModifiedDate: '2026-06-10T08:16:23.23Z'
   - VulnerabilityID: CVE-2026-45445
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -3762,7 +3892,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:b762d63f9fe8012ff5bb3efaf6e0a54474b2e5f6f758a49d0b3d6de137d030b1
-    Title: 'Issue summary: When an application drives an AES-OCB context through t ...'
+    Title: 'openssl: AES-OCB IV Ignored on EVP_Cipher() Path'
     Description: |-
       Issue summary: When an application drives an AES-OCB context through the
       public EVP_Cipher() one-shot interface, the application-supplied
@@ -3806,18 +3936,25 @@
     CweIDs:
     - CWE-325
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 9.1
     References:
-    - https://github.com/openssl/security/commit/323f0b6e7d530a4cb4336d50c88cb70f3ac2a451
-    - https://github.com/openssl/security/commit/787a6dfba81b7b09c1e05ab31396c0cd7c36b3f7
-    - https://github.com/openssl/security/commit/7ac4715234ee72d9f3c93426a2c08554b5b771af
-    - https://github.com/openssl/security/commit/843c9b94ca9c2ed248bb30127bb4f3d7af0d607c
-    - https://github.com/openssl/security/commit/983d54b5cce8d16147548ed1a37892d1720bbab6
+    - https://access.redhat.com/security/cve/CVE-2026-45445
+    - https://github.com/openssl/openssl/commit/323f0b6e7d530a4cb4336d50c88cb70f3ac2a451
+    - https://github.com/openssl/openssl/commit/787a6dfba81b7b09c1e05ab31396c0cd7c36b3f7
+    - https://github.com/openssl/openssl/commit/7ac4715234ee72d9f3c93426a2c08554b5b771af
+    - https://github.com/openssl/openssl/commit/843c9b94ca9c2ed248bb30127bb4f3d7af0d607c
+    - https://github.com/openssl/openssl/commit/983d54b5cce8d16147548ed1a37892d1720bbab6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45445
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-45445
     PublishedDate: '2026-06-09T17:17:18.993Z'
-    LastModifiedDate: '2026-06-09T20:16:57.653Z'
+    LastModifiedDate: '2026-06-10T08:16:24.507Z'
   - VulnerabilityID: CVE-2026-34180
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -3837,7 +3974,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:dbbb6cdbae157ba86414976ee87d5d2c4e8edec57b89f055885ae008383a42c9
-    Title: 'Issue summary: Parsing a crafted DER-encoded ASN.1 structure with a pr ...'
+    Title: 'openssl: OpenSSL: Heap buffer over-read in ASN.1 decoding can lead to denial of service or information disclosure.'
     Description: |-
       Issue summary: Parsing a crafted DER-encoded ASN.1 structure with a primitive
       element whose content exceeds 2 gigabytes in length may cause a heap buffer
@@ -3866,19 +4003,26 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:H
+        V3Score: 5
     References:
-    - https://github.com/openssl/security/commit/1c6908e4fa5fa568752221d8eaf561a809751e5d
-    - https://github.com/openssl/security/commit/cbe418ae978539cf14a398a207dba834c0e93e83
-    - https://github.com/openssl/security/commit/d93853c42110d6319e3df07842b488cb9f7ac5ff
-    - https://github.com/openssl/security/commit/da5d62af75f69d6fbf7803743d7c56ac75461e43
-    - https://github.com/openssl/security/commit/f696c73c3e61b8c502d040af62e690c060908a16
+    - https://access.redhat.com/security/cve/CVE-2026-34180
+    - https://github.com/openssl/openssl/commit/1c6908e4fa5fa568752221d8eaf561a809751e5d
+    - https://github.com/openssl/openssl/commit/cbe418ae978539cf14a398a207dba834c0e93e83
+    - https://github.com/openssl/openssl/commit/d93853c42110d6319e3df07842b488cb9f7ac5ff
+    - https://github.com/openssl/openssl/commit/da5d62af75f69d6fbf7803743d7c56ac75461e43
+    - https://github.com/openssl/openssl/commit/f696c73c3e61b8c502d040af62e690c060908a16
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34180
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-34180
     PublishedDate: '2026-06-09T17:17:04.6Z'
-    LastModifiedDate: '2026-06-09T20:16:36.033Z'
+    LastModifiedDate: '2026-06-10T08:16:22.627Z'
   - VulnerabilityID: CVE-2026-34181
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -3898,7 +4042,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:5b213dd9320ed298ddd4deae5e675de60d8396a43dc8bb87b2b854be07478f82
-    Title: 'Issue Summary: The PKCS#12 file processing fails to perform sufficient ...'
+    Title: 'openssl: PKCS#12 Files with PBMAC1 Are Accepted with Short HMAC Keys'
     Description: |-
       Issue Summary: The PKCS#12 file processing fails to perform sufficient input
       validation for files that use Password-Based Message Authentication Code 1
@@ -3921,17 +4065,24 @@
     CweIDs:
     - CWE-354
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 6.3
     References:
-    - https://github.com/openssl/security/commit/0300eb9ddce7a0895bf301a4b0c03a9da2313a0f
-    - https://github.com/openssl/security/commit/79eb76a937e474bb7610a0a3dc57131dc8dc6610
-    - https://github.com/openssl/security/commit/85dcbb3abaa4878af5c8fbbe11bce708fcf984a7
-    - https://github.com/openssl/security/commit/ec36f2417c4ddd8cabce4b4a60a3d7a7365f2d81
+    - https://access.redhat.com/security/cve/CVE-2026-34181
+    - https://github.com/openssl/openssl/commit/0300eb9ddce7a0895bf301a4b0c03a9da2313a0f
+    - https://github.com/openssl/openssl/commit/79eb76a937e474bb7610a0a3dc57131dc8dc6610
+    - https://github.com/openssl/openssl/commit/85dcbb3abaa4878af5c8fbbe11bce708fcf984a7
+    - https://github.com/openssl/openssl/commit/ec36f2417c4ddd8cabce4b4a60a3d7a7365f2d81
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34181
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-34181
     PublishedDate: '2026-06-09T17:17:04.74Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T17:16:32.29Z'
   - VulnerabilityID: CVE-2026-42766
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -3951,7 +4102,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:b0cb0f571367dedcf95105bb65d07963ec5292108e7a280be088866a5c155c32
-    Title: 'Issue summary: A specially crafted password-encrypted CMS message can  ...'
+    Title: 'openssl: Possible NULL Dereference in Password-Based CMS Decryption'
     Description: |-
       Issue summary: A specially crafted password-encrypted CMS message
       can trigger a NULL pointer dereference during CMS decryption.
@@ -3977,19 +4128,26 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.3
     References:
-    - https://github.com/openssl/security/commit/056d06c1918fafbb98c1c85a02e4c47cc4e199ce
-    - https://github.com/openssl/security/commit/12bc26ffb3a2be728c9b86e1cae277de5b33dfa4
-    - https://github.com/openssl/security/commit/3ff64913615d648cfbb6a6f1cf5529ae7ea829d7
-    - https://github.com/openssl/security/commit/ab52d88cb5374876d59aee3c91f9e4ccce2b7ce4
-    - https://github.com/openssl/security/commit/da26f368732b83e40e9d356fe61c3d3aaab6d2e8
+    - https://access.redhat.com/security/cve/CVE-2026-42766
+    - https://github.com/openssl/openssl/commit/056d06c1918fafbb98c1c85a02e4c47cc4e199ce
+    - https://github.com/openssl/openssl/commit/12bc26ffb3a2be728c9b86e1cae277de5b33dfa4
+    - https://github.com/openssl/openssl/commit/3ff64913615d648cfbb6a6f1cf5529ae7ea829d7
+    - https://github.com/openssl/openssl/commit/ab52d88cb5374876d59aee3c91f9e4ccce2b7ce4
+    - https://github.com/openssl/openssl/commit/da26f368732b83e40e9d356fe61c3d3aaab6d2e8
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42766
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-42766
     PublishedDate: '2026-06-09T17:17:07.97Z'
-    LastModifiedDate: '2026-06-09T21:17:17.287Z'
+    LastModifiedDate: '2026-06-10T08:16:23.52Z'
   - VulnerabilityID: CVE-2026-42767
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -4009,7 +4167,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:e946d62e83595263cd3008afa8fffc0ccf0f0b30b0bd8a79d0876948650222fa
-    Title: 'Issue summary: An attacker-controlled CMP (Certificate Management Prot ...'
+    Title: 'openssl: NULL Pointer Dereference in CRMF EncryptedValue Decryption'
     Description: |-
       Issue summary: An attacker-controlled CMP (Certificate Management Protocol)
       server could trigger a NULL pointer dereference in a CMP client application.
@@ -4032,18 +4190,25 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.3
     References:
-    - https://github.com/openssl/security/commit/61a86a8cd73546c9fea916f3d304c1293e05c046
-    - https://github.com/openssl/security/commit/665d5254083affde9982efca7c41dd01cacc8774
-    - https://github.com/openssl/security/commit/810b722f772652ad48042bcc7ab07e3414b11d0f
-    - https://github.com/openssl/security/commit/b90ff3b1bd33b1c18e6a09936d097c2eddef8873
-    - https://github.com/openssl/security/commit/e6f912907fc2ec82a0fd07aae55172c5e5e3d90d
+    - https://access.redhat.com/security/cve/CVE-2026-42767
+    - https://github.com/openssl/openssl/commit/61a86a8cd73546c9fea916f3d304c1293e05c046
+    - https://github.com/openssl/openssl/commit/665d5254083affde9982efca7c41dd01cacc8774
+    - https://github.com/openssl/openssl/commit/810b722f772652ad48042bcc7ab07e3414b11d0f
+    - https://github.com/openssl/openssl/commit/b90ff3b1bd33b1c18e6a09936d097c2eddef8873
+    - https://github.com/openssl/openssl/commit/e6f912907fc2ec82a0fd07aae55172c5e5e3d90d
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42767
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42767
     PublishedDate: '2026-06-09T17:17:08.093Z'
-    LastModifiedDate: '2026-06-09T21:17:17.433Z'
+    LastModifiedDate: '2026-06-10T08:16:23.683Z'
   - VulnerabilityID: CVE-2026-42768
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -4063,7 +4228,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:a11b9c63f4b49321ab9de33c93d883613d64b468e955c144276e818ced27067e
-    Title: 'Issue summary: The CMS_decrypt and PKCS7_decrypt functions are vulnera ...'
+    Title: 'openssl: Multi-RecipientInfo Bleichenbacher Oracle in CMS_decrypt() and PKCS7_decrypt()'
     Description: |-
       Issue summary: The CMS_decrypt and PKCS7_decrypt functions are vulnerable to
       Bleichenbacher-style attack when an attacker is able to provide the CMS or
@@ -4123,17 +4288,24 @@
     CweIDs:
     - CWE-514
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 6.3
     References:
-    - https://github.com/openssl/security/commit/a2ca7b2d73e0ffc1eae183fe6e1741dac767cb4f
-    - https://github.com/openssl/security/commit/bbb151a83041705d9d001ed2f9c12f5523e1b54d
-    - https://github.com/openssl/security/commit/dd68364107a58841c0a2546812518b65d3a23abd
-    - https://github.com/openssl/security/commit/f04b377be3d821741c86d1f4bf84dee09f3d5c3e
+    - https://access.redhat.com/security/cve/CVE-2026-42768
+    - https://github.com/openssl/openssl/commit/a2ca7b2d73e0ffc1eae183fe6e1741dac767cb4f
+    - https://github.com/openssl/openssl/commit/bbb151a83041705d9d001ed2f9c12f5523e1b54d
+    - https://github.com/openssl/openssl/commit/dd68364107a58841c0a2546812518b65d3a23abd
+    - https://github.com/openssl/openssl/commit/f04b377be3d821741c86d1f4bf84dee09f3d5c3e
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42768
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42768
     PublishedDate: '2026-06-09T17:17:08.223Z'
-    LastModifiedDate: '2026-06-09T21:17:17.587Z'
+    LastModifiedDate: '2026-06-10T08:16:23.84Z'
   - VulnerabilityID: CVE-2026-42769
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -4153,7 +4325,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:4ad60ed249e9fce52bdb820e13c7dced17f1aca9ad51fbada48b64f7f19b0476
-    Title: 'Issue Summary: An error in the callback used to verify the certificate ...'
+    Title: 'openssl: Trust-Anchor Substitution via cert/issuer Typo in CMP rootCaKeyUpdate'
     Description: |-
       Issue Summary: An error in the callback used to verify the certificate
       provided in a Root CA key update Certificate Management Protocol (CMP)
@@ -4194,17 +4366,24 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/54d0989997e5fc26057009a9782c3441ce3842fb
-    - https://github.com/openssl/security/commit/777b363b16fcf2153bb3ded39dc3838713667c44
-    - https://github.com/openssl/security/commit/d35cd473a271bf3ce7bf3d32af53217fb83ae92c
-    - https://github.com/openssl/security/commit/d531f21c0fe99067a66fc0ff1161ef127f9cd70b
+    - https://access.redhat.com/security/cve/CVE-2026-42769
+    - https://github.com/openssl/openssl/commit/54d0989997e5fc26057009a9782c3441ce3842fb
+    - https://github.com/openssl/openssl/commit/777b363b16fcf2153bb3ded39dc3838713667c44
+    - https://github.com/openssl/openssl/commit/d35cd473a271bf3ce7bf3d32af53217fb83ae92c
+    - https://github.com/openssl/openssl/commit/d531f21c0fe99067a66fc0ff1161ef127f9cd70b
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42769
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42769
     PublishedDate: '2026-06-09T17:17:08.377Z'
-    LastModifiedDate: '2026-06-09T21:17:17.79Z'
+    LastModifiedDate: '2026-06-10T08:16:24.027Z'
   - VulnerabilityID: CVE-2026-42770
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -4224,7 +4403,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:7959254a3500260ab13e5a9317b3c06de8f63081866e1d52278618d1e1bc78ce
-    Title: 'Issue summary: When EVP_PKEY_derive_set_peer() is called with a DHX (X ...'
+    Title: 'openssl: FFC-DH Peer Validation Uses Attacker-Supplied q'
     Description: |-
       Issue summary: When EVP_PKEY_derive_set_peer() is called with a DHX (X9.42)
       peer key, the peer key is not properly checked for the subgroup membership.
@@ -4258,18 +4437,25 @@
     CweIDs:
     - CWE-325
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/3da5a516cd2635a320ff748503db2cef7c4b0f02
-    - https://github.com/openssl/security/commit/3ddbb7ab50bd93dfc59cbe08e269a67605aeebdb
-    - https://github.com/openssl/security/commit/5f452bba2c681423d8fcffd120a19b757ee42e3c
-    - https://github.com/openssl/security/commit/7fbfde7677ed8808828bf00ff01c937ca04bdda2
-    - https://github.com/openssl/security/commit/ca2237ab5615641b662183b077f62c08d75e8070
+    - https://access.redhat.com/security/cve/CVE-2026-42770
+    - https://github.com/openssl/openssl/commit/3da5a516cd2635a320ff748503db2cef7c4b0f02
+    - https://github.com/openssl/openssl/commit/3ddbb7ab50bd93dfc59cbe08e269a67605aeebdb
+    - https://github.com/openssl/openssl/commit/5f452bba2c681423d8fcffd120a19b757ee42e3c
+    - https://github.com/openssl/openssl/commit/7fbfde7677ed8808828bf00ff01c937ca04bdda2
+    - https://github.com/openssl/openssl/commit/ca2237ab5615641b662183b077f62c08d75e8070
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42770
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42770
     PublishedDate: '2026-06-09T17:17:08.523Z'
-    LastModifiedDate: '2026-06-09T21:17:17.96Z'
+    LastModifiedDate: '2026-06-10T08:16:24.197Z'
   - VulnerabilityID: CVE-2026-45446
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -4289,7 +4475,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:37da6f3c12d99483df6310e23f229ec9242b7d836bcefb1c5126719e12c56fd5
-    Title: 'Issue summary: The implementations of AES-SIV (RFC 5297) and AES-GCM-S ...'
+    Title: 'openssl: Incorrect Tag Processing for Empty Messages in AES-GCM-SIV and AES-SIV modes'
     Description: |-
       Issue summary: The implementations of AES-SIV (RFC 5297) and AES-GCM-SIV
       (RFC 8452) mishandle the authentication of AAD (Additional Authenticated
@@ -4332,18 +4518,25 @@
     CweIDs:
     - CWE-325
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 3.7
     References:
-    - https://github.com/openssl/security/commit/25b32cd9d41d2bc01b6abc425bb4baf2c2236fdc
-    - https://github.com/openssl/security/commit/71e2a5d263518cf5866043bd60ee4994d59e53a3
-    - https://github.com/openssl/security/commit/7fe3f33a3b3a4c487aa4dcdbc87057f66ffd2b85
-    - https://github.com/openssl/security/commit/daca0f48e4a69a2892a62262bad59e62a8a76598
-    - https://github.com/openssl/security/commit/eec5e9bf0d867333b8495e456f5235d225798a68
+    - https://access.redhat.com/security/cve/CVE-2026-45446
+    - https://github.com/openssl/openssl/commit/25b32cd9d41d2bc01b6abc425bb4baf2c2236fdc
+    - https://github.com/openssl/openssl/commit/71e2a5d263518cf5866043bd60ee4994d59e53a3
+    - https://github.com/openssl/openssl/commit/7fe3f33a3b3a4c487aa4dcdbc87057f66ffd2b85
+    - https://github.com/openssl/openssl/commit/daca0f48e4a69a2892a62262bad59e62a8a76598
+    - https://github.com/openssl/openssl/commit/eec5e9bf0d867333b8495e456f5235d225798a68
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45446
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-45446
     PublishedDate: '2026-06-09T17:17:19.137Z'
-    LastModifiedDate: '2026-06-09T20:16:58.34Z'
+    LastModifiedDate: '2026-06-10T08:16:24.733Z'
   - VulnerabilityID: CVE-2026-7383
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -4363,7 +4556,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:b14f3555231985402b3cf31bc62e89297ee44f988a6bfd83e4333500a1eb7c58
-    Title: 'Issue summary: A signed integer overflow when sizing the destination b ...'
+    Title: 'openssl: OpenSSL: Heap buffer overflow due to signed integer overflow in Unicode output sizing'
     Description: |-
       Issue summary: A signed integer overflow when sizing the destination
       buffer for Unicode output in ASN1_mbstring_ncopy() can lead to a heap
@@ -4399,19 +4592,26 @@
     CweIDs:
     - CWE-787
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:H
+        V3Score: 5.5
     References:
-    - https://github.com/openssl/security/commit/4f8d2bddaa2c8e06f9c33390ee1717059a6e4be6
-    - https://github.com/openssl/security/commit/80c15faaf78042bbb8654a0e234c50c381732f74
-    - https://github.com/openssl/security/commit/bd17511070fb39a67bfa19682affb765e706a974
-    - https://github.com/openssl/security/commit/c332adaced43bcbb85f97410597e951c11ec3083
-    - https://github.com/openssl/security/commit/d32350ae8ef7426718f5aa9e383d4b51398ee255
+    - https://access.redhat.com/security/cve/CVE-2026-7383
+    - https://github.com/openssl/openssl/commit/4f8d2bddaa2c8e06f9c33390ee1717059a6e4be6
+    - https://github.com/openssl/openssl/commit/80c15faaf78042bbb8654a0e234c50c381732f74
+    - https://github.com/openssl/openssl/commit/bd17511070fb39a67bfa19682affb765e706a974
+    - https://github.com/openssl/openssl/commit/c332adaced43bcbb85f97410597e951c11ec3083
+    - https://github.com/openssl/openssl/commit/d32350ae8ef7426718f5aa9e383d4b51398ee255
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-7383
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-7383
     PublishedDate: '2026-06-09T17:17:50.337Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T08:16:25.463Z'
   - VulnerabilityID: CVE-2026-9076
     PkgID: openssl@3.5.5-1ubuntu3
     PkgName: openssl
@@ -4431,7 +4631,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:a1c9592e5b6b1bfeca959895c37487640f4b84efbcd41125ea5f9c41bf6dd84f
-    Title: 'Issue summary: When CMS password-based decryption (RFC 3211 / PWRI key ...'
+    Title: 'openssl: OpenSSL: Denial of Service due to heap out-of-bounds read in CMS password-based decryption'
     Description: |-
       Issue summary: When CMS password-based decryption (RFC 3211 / PWRI key unwrap)
       processes attacker-supplied CMS data, an attacker-chosen stream-mode KEK
@@ -4468,19 +4668,26 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/05b066366842f930fadd9a6e94df98030af431bb
-    - https://github.com/openssl/security/commit/3d8d5bc1056b2f62da9fede23fedbf47e85187b0
-    - https://github.com/openssl/security/commit/715349a1d7c6db970e6815dafb90915f07307f98
-    - https://github.com/openssl/security/commit/77bf00ab13f6ff5e516535432f0328ed70ec0c26
-    - https://github.com/openssl/security/commit/eecbe330977e8d023aae1ca2d9bdbe983ef3fdc6
+    - https://access.redhat.com/security/cve/CVE-2026-9076
+    - https://github.com/openssl/openssl/commit/05b066366842f930fadd9a6e94df98030af431bb
+    - https://github.com/openssl/openssl/commit/3d8d5bc1056b2f62da9fede23fedbf47e85187b0
+    - https://github.com/openssl/openssl/commit/715349a1d7c6db970e6815dafb90915f07307f98
+    - https://github.com/openssl/openssl/commit/77bf00ab13f6ff5e516535432f0328ed70ec0c26
+    - https://github.com/openssl/openssl/commit/eecbe330977e8d023aae1ca2d9bdbe983ef3fdc6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-9076
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-9076
     PublishedDate: '2026-06-09T17:17:50.997Z'
-    LastModifiedDate: '2026-06-09T20:17:03.29Z'
+    LastModifiedDate: '2026-06-10T08:16:26.063Z'
   - VulnerabilityID: CVE-2026-45447
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -4500,7 +4707,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:325bdfb08127e030799a1a37c4b0275999b3f713f2a1d7ae503aaf3b8fead795
-    Title: 'Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ...'
+    Title: 'openssl: Heap Use-After-Free in OpenSSL PKCS7_verify()'
     Description: |-
       Issue summary: A specially crafted PKCS#7 or S/MIME signed message could
       trigger a use-after-free during PKCS#7 signature verification.
@@ -4530,19 +4737,26 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      redhat: 3
       ubuntu: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 8.1
     References:
-    - https://github.com/openssl/security/commit/3aad5eb7af4de4ee0633c30a8541a54d9bbde63c
-    - https://github.com/openssl/security/commit/7d4a980c62258c5910cc883936e0c8dbab4d75a8
-    - https://github.com/openssl/security/commit/9dfd688ad2290fc5075cacbc9bf0c9a93eefed54
-    - https://github.com/openssl/security/commit/a541ae8bfe849a30cc885e8780715c0f488e496c
-    - https://github.com/openssl/security/commit/c505d7559da5d5f9f2c3913c6883a5562ce7273e
+    - https://access.redhat.com/security/cve/CVE-2026-45447
+    - https://github.com/openssl/openssl/commit/3aad5eb7af4de4ee0633c30a8541a54d9bbde63c
+    - https://github.com/openssl/openssl/commit/7d4a980c62258c5910cc883936e0c8dbab4d75a8
+    - https://github.com/openssl/openssl/commit/9dfd688ad2290fc5075cacbc9bf0c9a93eefed54
+    - https://github.com/openssl/openssl/commit/a541ae8bfe849a30cc885e8780715c0f488e496c
+    - https://github.com/openssl/openssl/commit/c505d7559da5d5f9f2c3913c6883a5562ce7273e
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45447
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-45447
     PublishedDate: '2026-06-09T17:17:19.277Z'
-    LastModifiedDate: '2026-06-09T20:16:58.537Z'
+    LastModifiedDate: '2026-06-10T15:16:35.16Z'
   - VulnerabilityID: CVE-2026-34182
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -4562,7 +4776,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:6cd6d3c008864e61940ad41860d0a30d549b74a3136c608128037194acd21198
-    Title: 'Issue Summary: Cryptographic Message Services (CMS) processing fails t ...'
+    Title: 'openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages'
     Description: |-
       Issue Summary: Cryptographic Message Services (CMS) processing fails to perform
       sufficient input validation on the cipher and tag length fields of
@@ -4600,19 +4814,26 @@
     CweIDs:
     - CWE-354
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
     References:
-    - https://github.com/openssl/security/commit/03c1f4d45fb963aee7d5833390c507cd290182bc
-    - https://github.com/openssl/security/commit/439ed7d2c0962ce964482727264668bf277c333f
-    - https://github.com/openssl/security/commit/7947e6a81eb8776802f159fb6762cb7fcf7e34c7
-    - https://github.com/openssl/security/commit/9fd97f8cfdc2c0be214998de3b2b55c8edf6c7ac
-    - https://github.com/openssl/security/commit/d2ca86bcd43e4f17d899f347101766b6107676e0
+    - https://access.redhat.com/security/cve/CVE-2026-34182
+    - https://github.com/openssl/openssl/commit/03c1f4d45fb963aee7d5833390c507cd290182bc
+    - https://github.com/openssl/openssl/commit/439ed7d2c0962ce964482727264668bf277c333f
+    - https://github.com/openssl/openssl/commit/7947e6a81eb8776802f159fb6762cb7fcf7e34c7
+    - https://github.com/openssl/openssl/commit/9fd97f8cfdc2c0be214998de3b2b55c8edf6c7ac
+    - https://github.com/openssl/openssl/commit/d2ca86bcd43e4f17d899f347101766b6107676e0
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34182
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-34182
     PublishedDate: '2026-06-09T17:17:04.857Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T17:16:32.48Z'
   - VulnerabilityID: CVE-2026-34183
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -4632,7 +4853,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:eb76981839f150f60ad479e2b4848f463ae503f07c9955ea8697090cd4eabd73
-    Title: 'Issue summary: Remote peer may exhaust heap memory of the QUIC server  ...'
+    Title: 'openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler'
     Description: |-
       Issue summary: Remote peer may exhaust heap memory of the QUIC
       server or client by flooding it with packets containing PATH_CHALLENGE
@@ -4656,17 +4877,24 @@
     CweIDs:
     - CWE-1325
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
-    - https://github.com/openssl/security/commit/5b306efb0b3779dfdd0803b4afc9d08c91f11517
-    - https://github.com/openssl/security/commit/7d06955ebe0ecf8adfd4c1e92018586da47ef9ac
-    - https://github.com/openssl/security/commit/d2e9efbe4900a373227deb136e8665401404ffac
-    - https://github.com/openssl/security/commit/fbaa83859c01ad64f497b757aaf51be7d05ed9eb
+    - https://access.redhat.com/security/cve/CVE-2026-34183
+    - https://github.com/openssl/openssl/commit/5b306efb0b3779dfdd0803b4afc9d08c91f11517
+    - https://github.com/openssl/openssl/commit/7d06955ebe0ecf8adfd4c1e92018586da47ef9ac
+    - https://github.com/openssl/openssl/commit/d2e9efbe4900a373227deb136e8665401404ffac
+    - https://github.com/openssl/openssl/commit/fbaa83859c01ad64f497b757aaf51be7d05ed9eb
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34183
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-34183
     PublishedDate: '2026-06-09T17:17:05Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T16:17:01.217Z'
   - VulnerabilityID: CVE-2026-42764
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -4686,7 +4914,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:93f26f6e5c3175a664aa8b75f3189c29c0c52deed033af7246f10fa8897c6957
-    Title: 'Issue summary: Receiving a QUIC initial packet with an invalid token m ...'
+    Title: 'openssl: NULL pointer dereference in QUIC server initial packet handling'
     Description: |-
       Issue summary: Receiving a QUIC initial packet with an invalid token may
       trigger a NULL pointer dereference in the OpenSSL QUIC server with
@@ -4711,16 +4939,23 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/5e3ed291b8af0b03d5d3b9e56a1da69a187e9729
-    - https://github.com/openssl/security/commit/a45a0aba8095682c88ff4fc4a784892b8c6f0677
-    - https://github.com/openssl/security/commit/bf29a458c1a231eca87e384c62b9c2553fa57a91
+    - https://access.redhat.com/security/cve/CVE-2026-42764
+    - https://github.com/openssl/openssl/commit/5e3ed291b8af0b03d5d3b9e56a1da69a187e9729
+    - https://github.com/openssl/openssl/commit/a45a0aba8095682c88ff4fc4a784892b8c6f0677
+    - https://github.com/openssl/openssl/commit/bf29a458c1a231eca87e384c62b9c2553fa57a91
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42764
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42764
     PublishedDate: '2026-06-09T17:17:07.693Z'
-    LastModifiedDate: '2026-06-09T21:17:16.947Z'
+    LastModifiedDate: '2026-06-10T08:16:23.23Z'
   - VulnerabilityID: CVE-2026-45445
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -4740,7 +4975,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:1db2e7b6fdfc8b09eac2f5b67edd4ac246f753babfff0ab3c05d42e640233dec
-    Title: 'Issue summary: When an application drives an AES-OCB context through t ...'
+    Title: 'openssl: AES-OCB IV Ignored on EVP_Cipher() Path'
     Description: |-
       Issue summary: When an application drives an AES-OCB context through the
       public EVP_Cipher() one-shot interface, the application-supplied
@@ -4784,18 +5019,25 @@
     CweIDs:
     - CWE-325
     VendorSeverity:
+      redhat: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 9.1
     References:
-    - https://github.com/openssl/security/commit/323f0b6e7d530a4cb4336d50c88cb70f3ac2a451
-    - https://github.com/openssl/security/commit/787a6dfba81b7b09c1e05ab31396c0cd7c36b3f7
-    - https://github.com/openssl/security/commit/7ac4715234ee72d9f3c93426a2c08554b5b771af
-    - https://github.com/openssl/security/commit/843c9b94ca9c2ed248bb30127bb4f3d7af0d607c
-    - https://github.com/openssl/security/commit/983d54b5cce8d16147548ed1a37892d1720bbab6
+    - https://access.redhat.com/security/cve/CVE-2026-45445
+    - https://github.com/openssl/openssl/commit/323f0b6e7d530a4cb4336d50c88cb70f3ac2a451
+    - https://github.com/openssl/openssl/commit/787a6dfba81b7b09c1e05ab31396c0cd7c36b3f7
+    - https://github.com/openssl/openssl/commit/7ac4715234ee72d9f3c93426a2c08554b5b771af
+    - https://github.com/openssl/openssl/commit/843c9b94ca9c2ed248bb30127bb4f3d7af0d607c
+    - https://github.com/openssl/openssl/commit/983d54b5cce8d16147548ed1a37892d1720bbab6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45445
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-45445
     PublishedDate: '2026-06-09T17:17:18.993Z'
-    LastModifiedDate: '2026-06-09T20:16:57.653Z'
+    LastModifiedDate: '2026-06-10T08:16:24.507Z'
   - VulnerabilityID: CVE-2026-34180
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -4815,7 +5057,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:c055ff084dff229d9ba8779c5a2aa9aa2ac1a9199941b3862eb23649c639554a
-    Title: 'Issue summary: Parsing a crafted DER-encoded ASN.1 structure with a pr ...'
+    Title: 'openssl: OpenSSL: Heap buffer over-read in ASN.1 decoding can lead to denial of service or information disclosure.'
     Description: |-
       Issue summary: Parsing a crafted DER-encoded ASN.1 structure with a primitive
       element whose content exceeds 2 gigabytes in length may cause a heap buffer
@@ -4844,19 +5086,26 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:H
+        V3Score: 5
     References:
-    - https://github.com/openssl/security/commit/1c6908e4fa5fa568752221d8eaf561a809751e5d
-    - https://github.com/openssl/security/commit/cbe418ae978539cf14a398a207dba834c0e93e83
-    - https://github.com/openssl/security/commit/d93853c42110d6319e3df07842b488cb9f7ac5ff
-    - https://github.com/openssl/security/commit/da5d62af75f69d6fbf7803743d7c56ac75461e43
-    - https://github.com/openssl/security/commit/f696c73c3e61b8c502d040af62e690c060908a16
+    - https://access.redhat.com/security/cve/CVE-2026-34180
+    - https://github.com/openssl/openssl/commit/1c6908e4fa5fa568752221d8eaf561a809751e5d
+    - https://github.com/openssl/openssl/commit/cbe418ae978539cf14a398a207dba834c0e93e83
+    - https://github.com/openssl/openssl/commit/d93853c42110d6319e3df07842b488cb9f7ac5ff
+    - https://github.com/openssl/openssl/commit/da5d62af75f69d6fbf7803743d7c56ac75461e43
+    - https://github.com/openssl/openssl/commit/f696c73c3e61b8c502d040af62e690c060908a16
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34180
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-34180
     PublishedDate: '2026-06-09T17:17:04.6Z'
-    LastModifiedDate: '2026-06-09T20:16:36.033Z'
+    LastModifiedDate: '2026-06-10T08:16:22.627Z'
   - VulnerabilityID: CVE-2026-34181
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -4876,7 +5125,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:ba6528d8be88f364688ae419afb40b7310c1d0cc1274f277d0508c142770249d
-    Title: 'Issue Summary: The PKCS#12 file processing fails to perform sufficient ...'
+    Title: 'openssl: PKCS#12 Files with PBMAC1 Are Accepted with Short HMAC Keys'
     Description: |-
       Issue Summary: The PKCS#12 file processing fails to perform sufficient input
       validation for files that use Password-Based Message Authentication Code 1
@@ -4899,17 +5148,24 @@
     CweIDs:
     - CWE-354
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 6.3
     References:
-    - https://github.com/openssl/security/commit/0300eb9ddce7a0895bf301a4b0c03a9da2313a0f
-    - https://github.com/openssl/security/commit/79eb76a937e474bb7610a0a3dc57131dc8dc6610
-    - https://github.com/openssl/security/commit/85dcbb3abaa4878af5c8fbbe11bce708fcf984a7
-    - https://github.com/openssl/security/commit/ec36f2417c4ddd8cabce4b4a60a3d7a7365f2d81
+    - https://access.redhat.com/security/cve/CVE-2026-34181
+    - https://github.com/openssl/openssl/commit/0300eb9ddce7a0895bf301a4b0c03a9da2313a0f
+    - https://github.com/openssl/openssl/commit/79eb76a937e474bb7610a0a3dc57131dc8dc6610
+    - https://github.com/openssl/openssl/commit/85dcbb3abaa4878af5c8fbbe11bce708fcf984a7
+    - https://github.com/openssl/openssl/commit/ec36f2417c4ddd8cabce4b4a60a3d7a7365f2d81
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34181
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-34181
     PublishedDate: '2026-06-09T17:17:04.74Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T17:16:32.29Z'
   - VulnerabilityID: CVE-2026-42766
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -4929,7 +5185,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:0a7c58539a30226c96d183177e99d2284619194c90a2333493e935c88677b583
-    Title: 'Issue summary: A specially crafted password-encrypted CMS message can  ...'
+    Title: 'openssl: Possible NULL Dereference in Password-Based CMS Decryption'
     Description: |-
       Issue summary: A specially crafted password-encrypted CMS message
       can trigger a NULL pointer dereference during CMS decryption.
@@ -4955,19 +5211,26 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.3
     References:
-    - https://github.com/openssl/security/commit/056d06c1918fafbb98c1c85a02e4c47cc4e199ce
-    - https://github.com/openssl/security/commit/12bc26ffb3a2be728c9b86e1cae277de5b33dfa4
-    - https://github.com/openssl/security/commit/3ff64913615d648cfbb6a6f1cf5529ae7ea829d7
-    - https://github.com/openssl/security/commit/ab52d88cb5374876d59aee3c91f9e4ccce2b7ce4
-    - https://github.com/openssl/security/commit/da26f368732b83e40e9d356fe61c3d3aaab6d2e8
+    - https://access.redhat.com/security/cve/CVE-2026-42766
+    - https://github.com/openssl/openssl/commit/056d06c1918fafbb98c1c85a02e4c47cc4e199ce
+    - https://github.com/openssl/openssl/commit/12bc26ffb3a2be728c9b86e1cae277de5b33dfa4
+    - https://github.com/openssl/openssl/commit/3ff64913615d648cfbb6a6f1cf5529ae7ea829d7
+    - https://github.com/openssl/openssl/commit/ab52d88cb5374876d59aee3c91f9e4ccce2b7ce4
+    - https://github.com/openssl/openssl/commit/da26f368732b83e40e9d356fe61c3d3aaab6d2e8
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42766
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-42766
     PublishedDate: '2026-06-09T17:17:07.97Z'
-    LastModifiedDate: '2026-06-09T21:17:17.287Z'
+    LastModifiedDate: '2026-06-10T08:16:23.52Z'
   - VulnerabilityID: CVE-2026-42767
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -4987,7 +5250,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:20293f1ab17d260ef658170422d803a75018f686ce913953a85c9708f148d32a
-    Title: 'Issue summary: An attacker-controlled CMP (Certificate Management Prot ...'
+    Title: 'openssl: NULL Pointer Dereference in CRMF EncryptedValue Decryption'
     Description: |-
       Issue summary: An attacker-controlled CMP (Certificate Management Protocol)
       server could trigger a NULL pointer dereference in a CMP client application.
@@ -5010,18 +5273,25 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.3
     References:
-    - https://github.com/openssl/security/commit/61a86a8cd73546c9fea916f3d304c1293e05c046
-    - https://github.com/openssl/security/commit/665d5254083affde9982efca7c41dd01cacc8774
-    - https://github.com/openssl/security/commit/810b722f772652ad48042bcc7ab07e3414b11d0f
-    - https://github.com/openssl/security/commit/b90ff3b1bd33b1c18e6a09936d097c2eddef8873
-    - https://github.com/openssl/security/commit/e6f912907fc2ec82a0fd07aae55172c5e5e3d90d
+    - https://access.redhat.com/security/cve/CVE-2026-42767
+    - https://github.com/openssl/openssl/commit/61a86a8cd73546c9fea916f3d304c1293e05c046
+    - https://github.com/openssl/openssl/commit/665d5254083affde9982efca7c41dd01cacc8774
+    - https://github.com/openssl/openssl/commit/810b722f772652ad48042bcc7ab07e3414b11d0f
+    - https://github.com/openssl/openssl/commit/b90ff3b1bd33b1c18e6a09936d097c2eddef8873
+    - https://github.com/openssl/openssl/commit/e6f912907fc2ec82a0fd07aae55172c5e5e3d90d
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42767
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42767
     PublishedDate: '2026-06-09T17:17:08.093Z'
-    LastModifiedDate: '2026-06-09T21:17:17.433Z'
+    LastModifiedDate: '2026-06-10T08:16:23.683Z'
   - VulnerabilityID: CVE-2026-42768
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -5041,7 +5311,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:2593d8008302e29f497c594555f2195a5e8b6230459823387dfb6daa51207bf8
-    Title: 'Issue summary: The CMS_decrypt and PKCS7_decrypt functions are vulnera ...'
+    Title: 'openssl: Multi-RecipientInfo Bleichenbacher Oracle in CMS_decrypt() and PKCS7_decrypt()'
     Description: |-
       Issue summary: The CMS_decrypt and PKCS7_decrypt functions are vulnerable to
       Bleichenbacher-style attack when an attacker is able to provide the CMS or
@@ -5101,17 +5371,24 @@
     CweIDs:
     - CWE-514
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 6.3
     References:
-    - https://github.com/openssl/security/commit/a2ca7b2d73e0ffc1eae183fe6e1741dac767cb4f
-    - https://github.com/openssl/security/commit/bbb151a83041705d9d001ed2f9c12f5523e1b54d
-    - https://github.com/openssl/security/commit/dd68364107a58841c0a2546812518b65d3a23abd
-    - https://github.com/openssl/security/commit/f04b377be3d821741c86d1f4bf84dee09f3d5c3e
+    - https://access.redhat.com/security/cve/CVE-2026-42768
+    - https://github.com/openssl/openssl/commit/a2ca7b2d73e0ffc1eae183fe6e1741dac767cb4f
+    - https://github.com/openssl/openssl/commit/bbb151a83041705d9d001ed2f9c12f5523e1b54d
+    - https://github.com/openssl/openssl/commit/dd68364107a58841c0a2546812518b65d3a23abd
+    - https://github.com/openssl/openssl/commit/f04b377be3d821741c86d1f4bf84dee09f3d5c3e
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42768
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42768
     PublishedDate: '2026-06-09T17:17:08.223Z'
-    LastModifiedDate: '2026-06-09T21:17:17.587Z'
+    LastModifiedDate: '2026-06-10T08:16:23.84Z'
   - VulnerabilityID: CVE-2026-42769
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -5131,7 +5408,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:2b03fca791d32124e04df2f0b5a317375c3bc88a6f6e8abf566da5730f5c61a4
-    Title: 'Issue Summary: An error in the callback used to verify the certificate ...'
+    Title: 'openssl: Trust-Anchor Substitution via cert/issuer Typo in CMP rootCaKeyUpdate'
     Description: |-
       Issue Summary: An error in the callback used to verify the certificate
       provided in a Root CA key update Certificate Management Protocol (CMP)
@@ -5172,17 +5449,24 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/54d0989997e5fc26057009a9782c3441ce3842fb
-    - https://github.com/openssl/security/commit/777b363b16fcf2153bb3ded39dc3838713667c44
-    - https://github.com/openssl/security/commit/d35cd473a271bf3ce7bf3d32af53217fb83ae92c
-    - https://github.com/openssl/security/commit/d531f21c0fe99067a66fc0ff1161ef127f9cd70b
+    - https://access.redhat.com/security/cve/CVE-2026-42769
+    - https://github.com/openssl/openssl/commit/54d0989997e5fc26057009a9782c3441ce3842fb
+    - https://github.com/openssl/openssl/commit/777b363b16fcf2153bb3ded39dc3838713667c44
+    - https://github.com/openssl/openssl/commit/d35cd473a271bf3ce7bf3d32af53217fb83ae92c
+    - https://github.com/openssl/openssl/commit/d531f21c0fe99067a66fc0ff1161ef127f9cd70b
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42769
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42769
     PublishedDate: '2026-06-09T17:17:08.377Z'
-    LastModifiedDate: '2026-06-09T21:17:17.79Z'
+    LastModifiedDate: '2026-06-10T08:16:24.027Z'
   - VulnerabilityID: CVE-2026-42770
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -5202,7 +5486,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:c9fae9080a2a1a5ae8ebba74f5cd1e08a3244d6e13d331e124fda7915b13dad3
-    Title: 'Issue summary: When EVP_PKEY_derive_set_peer() is called with a DHX (X ...'
+    Title: 'openssl: FFC-DH Peer Validation Uses Attacker-Supplied q'
     Description: |-
       Issue summary: When EVP_PKEY_derive_set_peer() is called with a DHX (X9.42)
       peer key, the peer key is not properly checked for the subgroup membership.
@@ -5236,18 +5520,25 @@
     CweIDs:
     - CWE-325
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/3da5a516cd2635a320ff748503db2cef7c4b0f02
-    - https://github.com/openssl/security/commit/3ddbb7ab50bd93dfc59cbe08e269a67605aeebdb
-    - https://github.com/openssl/security/commit/5f452bba2c681423d8fcffd120a19b757ee42e3c
-    - https://github.com/openssl/security/commit/7fbfde7677ed8808828bf00ff01c937ca04bdda2
-    - https://github.com/openssl/security/commit/ca2237ab5615641b662183b077f62c08d75e8070
+    - https://access.redhat.com/security/cve/CVE-2026-42770
+    - https://github.com/openssl/openssl/commit/3da5a516cd2635a320ff748503db2cef7c4b0f02
+    - https://github.com/openssl/openssl/commit/3ddbb7ab50bd93dfc59cbe08e269a67605aeebdb
+    - https://github.com/openssl/openssl/commit/5f452bba2c681423d8fcffd120a19b757ee42e3c
+    - https://github.com/openssl/openssl/commit/7fbfde7677ed8808828bf00ff01c937ca04bdda2
+    - https://github.com/openssl/openssl/commit/ca2237ab5615641b662183b077f62c08d75e8070
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42770
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42770
     PublishedDate: '2026-06-09T17:17:08.523Z'
-    LastModifiedDate: '2026-06-09T21:17:17.96Z'
+    LastModifiedDate: '2026-06-10T08:16:24.197Z'
   - VulnerabilityID: CVE-2026-45446
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -5267,7 +5558,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:2a5ad200d69ca9ce610e3edc6c1d5514c388332bd3e89ad5608624ed043c08b1
-    Title: 'Issue summary: The implementations of AES-SIV (RFC 5297) and AES-GCM-S ...'
+    Title: 'openssl: Incorrect Tag Processing for Empty Messages in AES-GCM-SIV and AES-SIV modes'
     Description: |-
       Issue summary: The implementations of AES-SIV (RFC 5297) and AES-GCM-SIV
       (RFC 8452) mishandle the authentication of AAD (Additional Authenticated
@@ -5310,18 +5601,25 @@
     CweIDs:
     - CWE-325
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 3.7
     References:
-    - https://github.com/openssl/security/commit/25b32cd9d41d2bc01b6abc425bb4baf2c2236fdc
-    - https://github.com/openssl/security/commit/71e2a5d263518cf5866043bd60ee4994d59e53a3
-    - https://github.com/openssl/security/commit/7fe3f33a3b3a4c487aa4dcdbc87057f66ffd2b85
-    - https://github.com/openssl/security/commit/daca0f48e4a69a2892a62262bad59e62a8a76598
-    - https://github.com/openssl/security/commit/eec5e9bf0d867333b8495e456f5235d225798a68
+    - https://access.redhat.com/security/cve/CVE-2026-45446
+    - https://github.com/openssl/openssl/commit/25b32cd9d41d2bc01b6abc425bb4baf2c2236fdc
+    - https://github.com/openssl/openssl/commit/71e2a5d263518cf5866043bd60ee4994d59e53a3
+    - https://github.com/openssl/openssl/commit/7fe3f33a3b3a4c487aa4dcdbc87057f66ffd2b85
+    - https://github.com/openssl/openssl/commit/daca0f48e4a69a2892a62262bad59e62a8a76598
+    - https://github.com/openssl/openssl/commit/eec5e9bf0d867333b8495e456f5235d225798a68
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45446
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://www.cve.org/CVERecord?id=CVE-2026-45446
     PublishedDate: '2026-06-09T17:17:19.137Z'
-    LastModifiedDate: '2026-06-09T20:16:58.34Z'
+    LastModifiedDate: '2026-06-10T08:16:24.733Z'
   - VulnerabilityID: CVE-2026-7383
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -5341,7 +5639,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:b9d7e91083f955b47dec8a70589496128051958894d4a26535715a37c5a042fb
-    Title: 'Issue summary: A signed integer overflow when sizing the destination b ...'
+    Title: 'openssl: OpenSSL: Heap buffer overflow due to signed integer overflow in Unicode output sizing'
     Description: |-
       Issue summary: A signed integer overflow when sizing the destination
       buffer for Unicode output in ASN1_mbstring_ncopy() can lead to a heap
@@ -5377,19 +5675,26 @@
     CweIDs:
     - CWE-787
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:H
+        V3Score: 5.5
     References:
-    - https://github.com/openssl/security/commit/4f8d2bddaa2c8e06f9c33390ee1717059a6e4be6
-    - https://github.com/openssl/security/commit/80c15faaf78042bbb8654a0e234c50c381732f74
-    - https://github.com/openssl/security/commit/bd17511070fb39a67bfa19682affb765e706a974
-    - https://github.com/openssl/security/commit/c332adaced43bcbb85f97410597e951c11ec3083
-    - https://github.com/openssl/security/commit/d32350ae8ef7426718f5aa9e383d4b51398ee255
+    - https://access.redhat.com/security/cve/CVE-2026-7383
+    - https://github.com/openssl/openssl/commit/4f8d2bddaa2c8e06f9c33390ee1717059a6e4be6
+    - https://github.com/openssl/openssl/commit/80c15faaf78042bbb8654a0e234c50c381732f74
+    - https://github.com/openssl/openssl/commit/bd17511070fb39a67bfa19682affb765e706a974
+    - https://github.com/openssl/openssl/commit/c332adaced43bcbb85f97410597e951c11ec3083
+    - https://github.com/openssl/openssl/commit/d32350ae8ef7426718f5aa9e383d4b51398ee255
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-7383
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-7383
     PublishedDate: '2026-06-09T17:17:50.337Z'
-    LastModifiedDate: '2026-06-09T19:38:32.463Z'
+    LastModifiedDate: '2026-06-10T08:16:25.463Z'
   - VulnerabilityID: CVE-2026-9076
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3
     PkgName: openssl-provider-legacy
@@ -5409,7 +5714,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:2b8595170944efad8967f7704c99d2ea3130387f1495c8dc5999efa6b6572798
-    Title: 'Issue summary: When CMS password-based decryption (RFC 3211 / PWRI key ...'
+    Title: 'openssl: OpenSSL: Denial of Service due to heap out-of-bounds read in CMS password-based decryption'
     Description: |-
       Issue summary: When CMS password-based decryption (RFC 3211 / PWRI key unwrap)
       processes attacker-supplied CMS data, an attacker-chosen stream-mode KEK
@@ -5446,19 +5751,26 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
-    - https://github.com/openssl/security/commit/05b066366842f930fadd9a6e94df98030af431bb
-    - https://github.com/openssl/security/commit/3d8d5bc1056b2f62da9fede23fedbf47e85187b0
-    - https://github.com/openssl/security/commit/715349a1d7c6db970e6815dafb90915f07307f98
-    - https://github.com/openssl/security/commit/77bf00ab13f6ff5e516535432f0328ed70ec0c26
-    - https://github.com/openssl/security/commit/eecbe330977e8d023aae1ca2d9bdbe983ef3fdc6
+    - https://access.redhat.com/security/cve/CVE-2026-9076
+    - https://github.com/openssl/openssl/commit/05b066366842f930fadd9a6e94df98030af431bb
+    - https://github.com/openssl/openssl/commit/3d8d5bc1056b2f62da9fede23fedbf47e85187b0
+    - https://github.com/openssl/openssl/commit/715349a1d7c6db970e6815dafb90915f07307f98
+    - https://github.com/openssl/openssl/commit/77bf00ab13f6ff5e516535432f0328ed70ec0c26
+    - https://github.com/openssl/openssl/commit/eecbe330977e8d023aae1ca2d9bdbe983ef3fdc6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-9076
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
     - https://ubuntu.com/security/notices/USN-8414-2
     - https://www.cve.org/CVERecord?id=CVE-2026-9076
     PublishedDate: '2026-06-09T17:17:50.997Z'
-    LastModifiedDate: '2026-06-09T20:17:03.29Z'
+    LastModifiedDate: '2026-06-10T08:16:26.063Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: passwd@1:4.17.4-2ubuntu3
     PkgName: passwd
@@ -5642,7 +5954,7 @@
         V3Score: 3.3
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/05/6
-    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:10950
     - https://access.redhat.com/security/cve/CVE-2026-2297
     - https://bugzilla.redhat.com/2395108
     - https://bugzilla.redhat.com/2408891
@@ -5652,7 +5964,6 @@
     - https://bugzilla.redhat.com/2444691
     - https://bugzilla.redhat.com/2448168
     - https://bugzilla.redhat.com/2448181
-    - https://bugzilla.redhat.com/2449649
     - https://bugzilla.redhat.com/2457409
     - https://bugzilla.redhat.com/2457932
     - https://bugzilla.redhat.com/2458049
@@ -5680,7 +5991,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
-    - https://errata.almalinux.org/9/ALSA-2026-19177.html
+    - https://errata.almalinux.org/8/ALSA-2026-10950.html
     - https://errata.rockylinux.org/RLSA-2026:19177
     - https://github.com/python/cpython/commit/482d6f8bdba9da3725d272e8bb4a2d25fb6a603e
     - https://github.com/python/cpython/commit/69ddd9bb2cc4bd69b1565647c18659c6a789ccd9
@@ -5731,7 +6042,7 @@
         V3Score: 3.3
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/05/6
-    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:10950
     - https://access.redhat.com/security/cve/CVE-2026-2297
     - https://bugzilla.redhat.com/2395108
     - https://bugzilla.redhat.com/2408891
@@ -5741,7 +6052,6 @@
     - https://bugzilla.redhat.com/2444691
     - https://bugzilla.redhat.com/2448168
     - https://bugzilla.redhat.com/2448181
-    - https://bugzilla.redhat.com/2449649
     - https://bugzilla.redhat.com/2457409
     - https://bugzilla.redhat.com/2457932
     - https://bugzilla.redhat.com/2458049
@@ -5769,7 +6079,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
-    - https://errata.almalinux.org/9/ALSA-2026-19177.html
+    - https://errata.almalinux.org/8/ALSA-2026-10950.html
     - https://errata.rockylinux.org/RLSA-2026:19177
     - https://github.com/python/cpython/commit/482d6f8bdba9da3725d272e8bb4a2d25fb6a603e
     - https://github.com/python/cpython/commit/69ddd9bb2cc4bd69b1565647c18659c6a789ccd9
@@ -10127,7 +10437,7 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:ed8ed8dc2342184c0ac909b4efebf9b405198951195f111e25a3bb8e4a427908
-    Title: 'opentelemetry-go: BSD kenv command not using absolute path enables PATH hijacking'
+    Title: 'github.com/open-telemetry/opentelemetry-go: OpenTelemetry-Go: Arbitrary code execution via PATH hijacking on BSD/Solaris'
     Description: OpenTelemetry-Go is the Go implementation of OpenTelemetry. From 1.15.0 to 1.42.0, the fix for CVE-2026-24051 changed the Darwin ioreg command to use an absolute path but left the BSD kenv command using a bare name, allowing the same PATH hijacking attack on BSD and Solaris platforms. This vulnerability is fixed in 1.43.0.
     Severity: HIGH
     CweIDs:
@@ -10135,6 +10445,7 @@
     VendorSeverity:
       ghsa: 3
       nvd: 3
+      redhat: 3
     CVSS:
       ghsa:
         V40Vector: CVSS:4.0/AV:L/AC:H/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
@@ -10142,11 +10453,16 @@
       nvd:
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
         V3Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 8.8
     References:
     - http://github.com/open-telemetry/opentelemetry-go/releases/tag/v1.43.0
+    - https://access.redhat.com/security/cve/CVE-2026-39883
     - https://github.com/open-telemetry/opentelemetry-go
     - https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-hfvc-g4fc-pqhx
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39883
+    - https://www.cve.org/CVERecord?id=CVE-2026-39883
     PublishedDate: '2026-04-08T21:17:00.697Z'
     LastModifiedDate: '2026-04-10T21:16:27.12Z'
   - VulnerabilityID: CVE-2026-42504
