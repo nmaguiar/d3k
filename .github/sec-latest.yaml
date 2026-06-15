@@ -8670,7 +8670,7 @@
 
 
 
-      This issue affects BC-JAVA: from 1.71 before 1.80.2, from 1.81 before 1.80.1, from 1.82 before 1.84.
+      This issue affects BC-JAVA: from 1.71 before 1.80.2, from 1.81 before 1.81.1, from 1.82 before 1.84.
     Severity: HIGH
     CweIDs:
     - CWE-385
@@ -8695,7 +8695,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5598
     - https://www.cve.org/CVERecord?id=CVE-2026-5598
     PublishedDate: '2026-04-15T10:16:49.757Z'
-    LastModifiedDate: '2026-05-19T00:16:37.773Z'
+    LastModifiedDate: '2026-06-14T10:16:37.547Z'
   - VulnerabilityID: CVE-2026-0636
     VendorIDs:
     - GHSA-c3fc-8qff-9hwx
