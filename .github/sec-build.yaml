@@ -214,12 +214,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:8414
+    - https://access.redhat.com/errata/RHSA-2025:7409
     - https://access.redhat.com/security/cve/CVE-2024-52005
     - https://bugzilla.redhat.com/2338289
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
-    - https://errata.almalinux.org/8/ALSA-2025-8414.html
+    - https://errata.almalinux.org/9/ALSA-2025-7409.html
     - https://errata.rockylinux.org/RLSA-2025:7409
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
@@ -274,12 +274,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2025:8414
+    - https://access.redhat.com/errata/RHSA-2025:7409
     - https://access.redhat.com/security/cve/CVE-2024-52005
     - https://bugzilla.redhat.com/2338289
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
-    - https://errata.almalinux.org/8/ALSA-2025-8414.html
+    - https://errata.almalinux.org/9/ALSA-2025-7409.html
     - https://errata.rockylinux.org/RLSA-2025:7409
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
@@ -1634,270 +1634,6 @@
     - https://www.openwall.com/lists/oss-security/2026/04/08/1
     PublishedDate: '2026-04-10T16:16:33.753Z'
     LastModifiedDate: '2026-05-05T02:16:04.82Z'
-  - VulnerabilityID: CVE-2026-2297
-    PkgID: libpython3.14@3.14.4-1
-    PkgName: libpython3.14
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/libpython3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
-      UID: 698bf98ba5451f67
-    InstalledVersion: 3.14.4-1
-    Status: affected
-    Layer:
-      Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
-      DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-2297
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:4859b714e35d6e53e57f542f2be0d4c4e9bf3a5afd3d086294820728d69c8000
-    Title: 'cpython: CPython: Logging Bypass in Legacy .pyc File Handling'
-    Description: The import hook in CPython that handles legacy *.pyc files (SourcelessFileLoader) is incorrectly handled in FileLoader (a base class) and so does not use io.open_code() to read the .pyc files. sys.audit handlers for this audit event therefore do not fire.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-668
-    VendorSeverity:
-      alma: 3
-      amazon: 2
-      oracle-oval: 3
-      redhat: 1
-      rocky: 3
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 3.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/03/05/6
-    - https://access.redhat.com/errata/RHSA-2026:10950
-    - https://access.redhat.com/security/cve/CVE-2026-2297
-    - https://bugzilla.redhat.com/2395108
-    - https://bugzilla.redhat.com/2408891
-    - https://bugzilla.redhat.com/2418084
-    - https://bugzilla.redhat.com/2431366
-    - https://bugzilla.redhat.com/2431374
-    - https://bugzilla.redhat.com/2444691
-    - https://bugzilla.redhat.com/2448168
-    - https://bugzilla.redhat.com/2448181
-    - https://bugzilla.redhat.com/2457409
-    - https://bugzilla.redhat.com/2457932
-    - https://bugzilla.redhat.com/2458049
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2408891
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418084
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2431366
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2431374
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13837
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15282
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6075
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0672
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
-    - https://errata.almalinux.org/8/ALSA-2026-10950.html
-    - https://errata.rockylinux.org/RLSA-2026:19177
-    - https://github.com/python/cpython/commit/482d6f8bdba9da3725d272e8bb4a2d25fb6a603e
-    - https://github.com/python/cpython/commit/69ddd9bb2cc4bd69b1565647c18659c6a789ccd9
-    - https://github.com/python/cpython/commit/876858c9f65d9ab656c7fa639f268ce7856d89dd
-    - https://github.com/python/cpython/commit/a51b1b512de1d56b3714b65628a2eae2b07e535e
-    - https://github.com/python/cpython/commit/e58e9802b9bec5cdbf48fc9bf1da5f4fda482e86
-    - https://github.com/python/cpython/issues/145506
-    - https://github.com/python/cpython/pull/145507
-    - https://linux.oracle.com/cve/CVE-2026-2297.html
-    - https://linux.oracle.com/errata/ELSA-2026-10950.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-2297
-    - https://www.cve.org/CVERecord?id=CVE-2026-2297
-    PublishedDate: '2026-03-04T23:16:10.757Z'
-    LastModifiedDate: '2026-05-01T16:16:30.11Z'
-  - VulnerabilityID: CVE-2026-2297
-    PkgID: libpython3.14-minimal@3.14.4-1
-    PkgName: libpython3.14-minimal
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
-      UID: c0091a523a4a100d
-    InstalledVersion: 3.14.4-1
-    Status: affected
-    Layer:
-      Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
-      DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-2297
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:0da6a4adad8ab179b8a76ff4884eeeb76f124a8fc74eea37f39b0c4b9e07ba66
-    Title: 'cpython: CPython: Logging Bypass in Legacy .pyc File Handling'
-    Description: The import hook in CPython that handles legacy *.pyc files (SourcelessFileLoader) is incorrectly handled in FileLoader (a base class) and so does not use io.open_code() to read the .pyc files. sys.audit handlers for this audit event therefore do not fire.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-668
-    VendorSeverity:
-      alma: 3
-      amazon: 2
-      oracle-oval: 3
-      redhat: 1
-      rocky: 3
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 3.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/03/05/6
-    - https://access.redhat.com/errata/RHSA-2026:10950
-    - https://access.redhat.com/security/cve/CVE-2026-2297
-    - https://bugzilla.redhat.com/2395108
-    - https://bugzilla.redhat.com/2408891
-    - https://bugzilla.redhat.com/2418084
-    - https://bugzilla.redhat.com/2431366
-    - https://bugzilla.redhat.com/2431374
-    - https://bugzilla.redhat.com/2444691
-    - https://bugzilla.redhat.com/2448168
-    - https://bugzilla.redhat.com/2448181
-    - https://bugzilla.redhat.com/2457409
-    - https://bugzilla.redhat.com/2457932
-    - https://bugzilla.redhat.com/2458049
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2408891
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418084
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2431366
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2431374
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13837
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15282
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6075
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0672
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
-    - https://errata.almalinux.org/8/ALSA-2026-10950.html
-    - https://errata.rockylinux.org/RLSA-2026:19177
-    - https://github.com/python/cpython/commit/482d6f8bdba9da3725d272e8bb4a2d25fb6a603e
-    - https://github.com/python/cpython/commit/69ddd9bb2cc4bd69b1565647c18659c6a789ccd9
-    - https://github.com/python/cpython/commit/876858c9f65d9ab656c7fa639f268ce7856d89dd
-    - https://github.com/python/cpython/commit/a51b1b512de1d56b3714b65628a2eae2b07e535e
-    - https://github.com/python/cpython/commit/e58e9802b9bec5cdbf48fc9bf1da5f4fda482e86
-    - https://github.com/python/cpython/issues/145506
-    - https://github.com/python/cpython/pull/145507
-    - https://linux.oracle.com/cve/CVE-2026-2297.html
-    - https://linux.oracle.com/errata/ELSA-2026-10950.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-2297
-    - https://www.cve.org/CVERecord?id=CVE-2026-2297
-    PublishedDate: '2026-03-04T23:16:10.757Z'
-    LastModifiedDate: '2026-05-01T16:16:30.11Z'
-  - VulnerabilityID: CVE-2026-2297
-    PkgID: libpython3.14-stdlib@3.14.4-1
-    PkgName: libpython3.14-stdlib
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1?arch=amd64&distro=ubuntu-26.04
-      UID: d9cfb9637e1a0676
-    InstalledVersion: 3.14.4-1
-    Status: affected
-    Layer:
-      Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
-      DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-2297
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:04610ca9ff440214ca91c1cf783a8c263c0321d22230c446d2368e428d3e9cda
-    Title: 'cpython: CPython: Logging Bypass in Legacy .pyc File Handling'
-    Description: The import hook in CPython that handles legacy *.pyc files (SourcelessFileLoader) is incorrectly handled in FileLoader (a base class) and so does not use io.open_code() to read the .pyc files. sys.audit handlers for this audit event therefore do not fire.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-668
-    VendorSeverity:
-      alma: 3
-      amazon: 2
-      oracle-oval: 3
-      redhat: 1
-      rocky: 3
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 3.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/03/05/6
-    - https://access.redhat.com/errata/RHSA-2026:10950
-    - https://access.redhat.com/security/cve/CVE-2026-2297
-    - https://bugzilla.redhat.com/2395108
-    - https://bugzilla.redhat.com/2408891
-    - https://bugzilla.redhat.com/2418084
-    - https://bugzilla.redhat.com/2431366
-    - https://bugzilla.redhat.com/2431374
-    - https://bugzilla.redhat.com/2444691
-    - https://bugzilla.redhat.com/2448168
-    - https://bugzilla.redhat.com/2448181
-    - https://bugzilla.redhat.com/2457409
-    - https://bugzilla.redhat.com/2457932
-    - https://bugzilla.redhat.com/2458049
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2408891
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418084
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2431366
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2431374
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13837
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15282
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6075
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0672
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
-    - https://errata.almalinux.org/8/ALSA-2026-10950.html
-    - https://errata.rockylinux.org/RLSA-2026:19177
-    - https://github.com/python/cpython/commit/482d6f8bdba9da3725d272e8bb4a2d25fb6a603e
-    - https://github.com/python/cpython/commit/69ddd9bb2cc4bd69b1565647c18659c6a789ccd9
-    - https://github.com/python/cpython/commit/876858c9f65d9ab656c7fa639f268ce7856d89dd
-    - https://github.com/python/cpython/commit/a51b1b512de1d56b3714b65628a2eae2b07e535e
-    - https://github.com/python/cpython/commit/e58e9802b9bec5cdbf48fc9bf1da5f4fda482e86
-    - https://github.com/python/cpython/issues/145506
-    - https://github.com/python/cpython/pull/145507
-    - https://linux.oracle.com/cve/CVE-2026-2297.html
-    - https://linux.oracle.com/errata/ELSA-2026-10950.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-2297
-    - https://www.cve.org/CVERecord?id=CVE-2026-2297
-    PublishedDate: '2026-03-04T23:16:10.757Z'
-    LastModifiedDate: '2026-05-01T16:16:30.11Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libsmartcols1@2.41.3-3ubuntu2
     PkgName: libsmartcols1
@@ -2669,182 +2405,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2021-45261
     PublishedDate: '2021-12-22T18:15:08.1Z'
     LastModifiedDate: '2024-11-21T06:32:02.633Z'
-  - VulnerabilityID: CVE-2026-2297
-    PkgID: python3.14@3.14.4-1
-    PkgName: python3.14
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/python3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
-      UID: 5c38e5558a798bb7
-    InstalledVersion: 3.14.4-1
-    Status: affected
-    Layer:
-      Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
-      DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-2297
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:ae9e72f34dc3fa04cb4586f94e1f0e91c3f8c4a8ab1d7ca6f2d17cf7d10ae569
-    Title: 'cpython: CPython: Logging Bypass in Legacy .pyc File Handling'
-    Description: The import hook in CPython that handles legacy *.pyc files (SourcelessFileLoader) is incorrectly handled in FileLoader (a base class) and so does not use io.open_code() to read the .pyc files. sys.audit handlers for this audit event therefore do not fire.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-668
-    VendorSeverity:
-      alma: 3
-      amazon: 2
-      oracle-oval: 3
-      redhat: 1
-      rocky: 3
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 3.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/03/05/6
-    - https://access.redhat.com/errata/RHSA-2026:10950
-    - https://access.redhat.com/security/cve/CVE-2026-2297
-    - https://bugzilla.redhat.com/2395108
-    - https://bugzilla.redhat.com/2408891
-    - https://bugzilla.redhat.com/2418084
-    - https://bugzilla.redhat.com/2431366
-    - https://bugzilla.redhat.com/2431374
-    - https://bugzilla.redhat.com/2444691
-    - https://bugzilla.redhat.com/2448168
-    - https://bugzilla.redhat.com/2448181
-    - https://bugzilla.redhat.com/2457409
-    - https://bugzilla.redhat.com/2457932
-    - https://bugzilla.redhat.com/2458049
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2408891
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418084
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2431366
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2431374
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13837
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15282
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6075
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0672
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
-    - https://errata.almalinux.org/8/ALSA-2026-10950.html
-    - https://errata.rockylinux.org/RLSA-2026:19177
-    - https://github.com/python/cpython/commit/482d6f8bdba9da3725d272e8bb4a2d25fb6a603e
-    - https://github.com/python/cpython/commit/69ddd9bb2cc4bd69b1565647c18659c6a789ccd9
-    - https://github.com/python/cpython/commit/876858c9f65d9ab656c7fa639f268ce7856d89dd
-    - https://github.com/python/cpython/commit/a51b1b512de1d56b3714b65628a2eae2b07e535e
-    - https://github.com/python/cpython/commit/e58e9802b9bec5cdbf48fc9bf1da5f4fda482e86
-    - https://github.com/python/cpython/issues/145506
-    - https://github.com/python/cpython/pull/145507
-    - https://linux.oracle.com/cve/CVE-2026-2297.html
-    - https://linux.oracle.com/errata/ELSA-2026-10950.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-2297
-    - https://www.cve.org/CVERecord?id=CVE-2026-2297
-    PublishedDate: '2026-03-04T23:16:10.757Z'
-    LastModifiedDate: '2026-05-01T16:16:30.11Z'
-  - VulnerabilityID: CVE-2026-2297
-    PkgID: python3.14-minimal@3.14.4-1
-    PkgName: python3.14-minimal
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
-      UID: da8e2190347b7c6
-    InstalledVersion: 3.14.4-1
-    Status: affected
-    Layer:
-      Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
-      DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-2297
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:87aaf29bdaec77d80f6e560f52798018a0dd73d70c428fa2acf00ed25617b1a4
-    Title: 'cpython: CPython: Logging Bypass in Legacy .pyc File Handling'
-    Description: The import hook in CPython that handles legacy *.pyc files (SourcelessFileLoader) is incorrectly handled in FileLoader (a base class) and so does not use io.open_code() to read the .pyc files. sys.audit handlers for this audit event therefore do not fire.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-668
-    VendorSeverity:
-      alma: 3
-      amazon: 2
-      oracle-oval: 3
-      redhat: 1
-      rocky: 3
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 3.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/03/05/6
-    - https://access.redhat.com/errata/RHSA-2026:10950
-    - https://access.redhat.com/security/cve/CVE-2026-2297
-    - https://bugzilla.redhat.com/2395108
-    - https://bugzilla.redhat.com/2408891
-    - https://bugzilla.redhat.com/2418084
-    - https://bugzilla.redhat.com/2431366
-    - https://bugzilla.redhat.com/2431374
-    - https://bugzilla.redhat.com/2444691
-    - https://bugzilla.redhat.com/2448168
-    - https://bugzilla.redhat.com/2448181
-    - https://bugzilla.redhat.com/2457409
-    - https://bugzilla.redhat.com/2457932
-    - https://bugzilla.redhat.com/2458049
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2408891
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418084
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2431366
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2431374
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13837
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15282
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6075
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0672
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
-    - https://errata.almalinux.org/8/ALSA-2026-10950.html
-    - https://errata.rockylinux.org/RLSA-2026:19177
-    - https://github.com/python/cpython/commit/482d6f8bdba9da3725d272e8bb4a2d25fb6a603e
-    - https://github.com/python/cpython/commit/69ddd9bb2cc4bd69b1565647c18659c6a789ccd9
-    - https://github.com/python/cpython/commit/876858c9f65d9ab656c7fa639f268ce7856d89dd
-    - https://github.com/python/cpython/commit/a51b1b512de1d56b3714b65628a2eae2b07e535e
-    - https://github.com/python/cpython/commit/e58e9802b9bec5cdbf48fc9bf1da5f4fda482e86
-    - https://github.com/python/cpython/issues/145506
-    - https://github.com/python/cpython/pull/145507
-    - https://linux.oracle.com/cve/CVE-2026-2297.html
-    - https://linux.oracle.com/errata/ELSA-2026-10950.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-2297
-    - https://www.cve.org/CVERecord?id=CVE-2026-2297
-    PublishedDate: '2026-03-04T23:16:10.757Z'
-    LastModifiedDate: '2026-05-01T16:16:30.11Z'
   - VulnerabilityID: CVE-2026-35341
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -4053,7 +3613,8 @@
       PURL: pkg:deb/ubuntu/vim@9.1.2141-1ubuntu4.3?arch=amd64&distro=ubuntu-26.04&epoch=2
       UID: 555ee8435879779d
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4083,6 +3644,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0495
     - https://github.com/vim/vim/security/advisories/GHSA-crm5-rh6j-2c7c
     - https://nvd.nist.gov/vuln/detail/CVE-2026-47162
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-47162
     PublishedDate: '2026-06-11T19:16:44.16Z'
     LastModifiedDate: '2026-06-13T01:04:09.357Z'
@@ -4093,7 +3655,8 @@
       PURL: pkg:deb/ubuntu/vim@9.1.2141-1ubuntu4.3?arch=amd64&distro=ubuntu-26.04&epoch=2
       UID: 555ee8435879779d
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4123,6 +3686,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0496
     - https://github.com/vim/vim/security/advisories/GHSA-4473-94jm-w5x9
     - https://nvd.nist.gov/vuln/detail/CVE-2026-47167
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-47167
     PublishedDate: '2026-06-11T19:16:44.56Z'
     LastModifiedDate: '2026-06-15T13:32:14.61Z'
@@ -4133,7 +3697,8 @@
       PURL: pkg:deb/ubuntu/vim@9.1.2141-1ubuntu4.3?arch=amd64&distro=ubuntu-26.04&epoch=2
       UID: 555ee8435879779d
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4164,6 +3729,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0561
     - https://github.com/vim/vim/security/advisories/GHSA-52mc-rq6p-rc7c
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52858
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52858
     PublishedDate: '2026-06-11T19:16:47.487Z'
     LastModifiedDate: '2026-06-15T13:32:35.193Z'
@@ -4174,7 +3740,8 @@
       PURL: pkg:deb/ubuntu/vim@9.1.2141-1ubuntu4.3?arch=amd64&distro=ubuntu-26.04&epoch=2
       UID: 555ee8435879779d
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4208,6 +3775,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0565
     - https://github.com/vim/vim/security/advisories/GHSA-47gw-8gc3-mgcm
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52859
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52859
     PublishedDate: '2026-06-11T19:16:47.627Z'
     LastModifiedDate: '2026-06-15T13:12:47.37Z'
@@ -4218,7 +3786,8 @@
       PURL: pkg:deb/ubuntu/vim@9.1.2141-1ubuntu4.3?arch=amd64&distro=ubuntu-26.04&epoch=2
       UID: 555ee8435879779d
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4248,6 +3817,7 @@
     - https://github.com/vim/vim/security/advisories/GHSA-52mc-rq6p-rc7c
     - https://github.com/vim/vim/security/advisories/GHSA-65p9-mwwx-7468
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52860
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52860
     PublishedDate: '2026-06-11T19:16:47.773Z'
     LastModifiedDate: '2026-06-15T13:24:42.873Z'
@@ -4258,7 +3828,8 @@
       PURL: pkg:deb/ubuntu/vim-common@9.1.2141-1ubuntu4.3?arch=all&distro=ubuntu-26.04&epoch=2
       UID: 9b8b48af11d4d986
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4288,6 +3859,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0495
     - https://github.com/vim/vim/security/advisories/GHSA-crm5-rh6j-2c7c
     - https://nvd.nist.gov/vuln/detail/CVE-2026-47162
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-47162
     PublishedDate: '2026-06-11T19:16:44.16Z'
     LastModifiedDate: '2026-06-13T01:04:09.357Z'
@@ -4298,7 +3870,8 @@
       PURL: pkg:deb/ubuntu/vim-common@9.1.2141-1ubuntu4.3?arch=all&distro=ubuntu-26.04&epoch=2
       UID: 9b8b48af11d4d986
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4328,6 +3901,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0496
     - https://github.com/vim/vim/security/advisories/GHSA-4473-94jm-w5x9
     - https://nvd.nist.gov/vuln/detail/CVE-2026-47167
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-47167
     PublishedDate: '2026-06-11T19:16:44.56Z'
     LastModifiedDate: '2026-06-15T13:32:14.61Z'
@@ -4338,7 +3912,8 @@
       PURL: pkg:deb/ubuntu/vim-common@9.1.2141-1ubuntu4.3?arch=all&distro=ubuntu-26.04&epoch=2
       UID: 9b8b48af11d4d986
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4369,6 +3944,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0561
     - https://github.com/vim/vim/security/advisories/GHSA-52mc-rq6p-rc7c
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52858
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52858
     PublishedDate: '2026-06-11T19:16:47.487Z'
     LastModifiedDate: '2026-06-15T13:32:35.193Z'
@@ -4379,7 +3955,8 @@
       PURL: pkg:deb/ubuntu/vim-common@9.1.2141-1ubuntu4.3?arch=all&distro=ubuntu-26.04&epoch=2
       UID: 9b8b48af11d4d986
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4413,6 +3990,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0565
     - https://github.com/vim/vim/security/advisories/GHSA-47gw-8gc3-mgcm
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52859
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52859
     PublishedDate: '2026-06-11T19:16:47.627Z'
     LastModifiedDate: '2026-06-15T13:12:47.37Z'
@@ -4423,7 +4001,8 @@
       PURL: pkg:deb/ubuntu/vim-common@9.1.2141-1ubuntu4.3?arch=all&distro=ubuntu-26.04&epoch=2
       UID: 9b8b48af11d4d986
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4453,6 +4032,7 @@
     - https://github.com/vim/vim/security/advisories/GHSA-52mc-rq6p-rc7c
     - https://github.com/vim/vim/security/advisories/GHSA-65p9-mwwx-7468
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52860
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52860
     PublishedDate: '2026-06-11T19:16:47.773Z'
     LastModifiedDate: '2026-06-15T13:24:42.873Z'
@@ -4463,7 +4043,8 @@
       PURL: pkg:deb/ubuntu/vim-runtime@9.1.2141-1ubuntu4.3?arch=all&distro=ubuntu-26.04&epoch=2
       UID: cd4b151f1a388ffc
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4493,6 +4074,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0495
     - https://github.com/vim/vim/security/advisories/GHSA-crm5-rh6j-2c7c
     - https://nvd.nist.gov/vuln/detail/CVE-2026-47162
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-47162
     PublishedDate: '2026-06-11T19:16:44.16Z'
     LastModifiedDate: '2026-06-13T01:04:09.357Z'
@@ -4503,7 +4085,8 @@
       PURL: pkg:deb/ubuntu/vim-runtime@9.1.2141-1ubuntu4.3?arch=all&distro=ubuntu-26.04&epoch=2
       UID: cd4b151f1a388ffc
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4533,6 +4116,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0496
     - https://github.com/vim/vim/security/advisories/GHSA-4473-94jm-w5x9
     - https://nvd.nist.gov/vuln/detail/CVE-2026-47167
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-47167
     PublishedDate: '2026-06-11T19:16:44.56Z'
     LastModifiedDate: '2026-06-15T13:32:14.61Z'
@@ -4543,7 +4127,8 @@
       PURL: pkg:deb/ubuntu/vim-runtime@9.1.2141-1ubuntu4.3?arch=all&distro=ubuntu-26.04&epoch=2
       UID: cd4b151f1a388ffc
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4574,6 +4159,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0561
     - https://github.com/vim/vim/security/advisories/GHSA-52mc-rq6p-rc7c
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52858
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52858
     PublishedDate: '2026-06-11T19:16:47.487Z'
     LastModifiedDate: '2026-06-15T13:32:35.193Z'
@@ -4584,7 +4170,8 @@
       PURL: pkg:deb/ubuntu/vim-runtime@9.1.2141-1ubuntu4.3?arch=all&distro=ubuntu-26.04&epoch=2
       UID: cd4b151f1a388ffc
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4618,6 +4205,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0565
     - https://github.com/vim/vim/security/advisories/GHSA-47gw-8gc3-mgcm
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52859
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52859
     PublishedDate: '2026-06-11T19:16:47.627Z'
     LastModifiedDate: '2026-06-15T13:12:47.37Z'
@@ -4628,7 +4216,8 @@
       PURL: pkg:deb/ubuntu/vim-runtime@9.1.2141-1ubuntu4.3?arch=all&distro=ubuntu-26.04&epoch=2
       UID: cd4b151f1a388ffc
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4658,6 +4247,7 @@
     - https://github.com/vim/vim/security/advisories/GHSA-52mc-rq6p-rc7c
     - https://github.com/vim/vim/security/advisories/GHSA-65p9-mwwx-7468
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52860
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52860
     PublishedDate: '2026-06-11T19:16:47.773Z'
     LastModifiedDate: '2026-06-15T13:24:42.873Z'
@@ -4716,7 +4306,8 @@
       PURL: pkg:deb/ubuntu/xxd@9.1.2141-1ubuntu4.3?arch=amd64&distro=ubuntu-26.04&epoch=2
       UID: 5e512da435067d07
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4746,6 +4337,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0495
     - https://github.com/vim/vim/security/advisories/GHSA-crm5-rh6j-2c7c
     - https://nvd.nist.gov/vuln/detail/CVE-2026-47162
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-47162
     PublishedDate: '2026-06-11T19:16:44.16Z'
     LastModifiedDate: '2026-06-13T01:04:09.357Z'
@@ -4756,7 +4348,8 @@
       PURL: pkg:deb/ubuntu/xxd@9.1.2141-1ubuntu4.3?arch=amd64&distro=ubuntu-26.04&epoch=2
       UID: 5e512da435067d07
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4786,6 +4379,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0496
     - https://github.com/vim/vim/security/advisories/GHSA-4473-94jm-w5x9
     - https://nvd.nist.gov/vuln/detail/CVE-2026-47167
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-47167
     PublishedDate: '2026-06-11T19:16:44.56Z'
     LastModifiedDate: '2026-06-15T13:32:14.61Z'
@@ -4796,7 +4390,8 @@
       PURL: pkg:deb/ubuntu/xxd@9.1.2141-1ubuntu4.3?arch=amd64&distro=ubuntu-26.04&epoch=2
       UID: 5e512da435067d07
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4827,6 +4422,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0561
     - https://github.com/vim/vim/security/advisories/GHSA-52mc-rq6p-rc7c
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52858
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52858
     PublishedDate: '2026-06-11T19:16:47.487Z'
     LastModifiedDate: '2026-06-15T13:32:35.193Z'
@@ -4837,7 +4433,8 @@
       PURL: pkg:deb/ubuntu/xxd@9.1.2141-1ubuntu4.3?arch=amd64&distro=ubuntu-26.04&epoch=2
       UID: 5e512da435067d07
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4871,6 +4468,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0565
     - https://github.com/vim/vim/security/advisories/GHSA-47gw-8gc3-mgcm
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52859
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52859
     PublishedDate: '2026-06-11T19:16:47.627Z'
     LastModifiedDate: '2026-06-15T13:12:47.37Z'
@@ -4881,7 +4479,8 @@
       PURL: pkg:deb/ubuntu/xxd@9.1.2141-1ubuntu4.3?arch=amd64&distro=ubuntu-26.04&epoch=2
       UID: 5e512da435067d07
     InstalledVersion: 2:9.1.2141-1ubuntu4.3
-    Status: affected
+    FixedVersion: 2:9.1.2141-1ubuntu4.5
+    Status: fixed
     Layer:
       Digest: sha256:eedf6297b52c5ebbda3fce1db5f5506cf2d165c5822a6853a72a462323eed7d5
       DiffID: sha256:3ccd9def16d3c79b1025b524791765afbefecc8d4da5c88a68ed16f842ea1954
@@ -4911,6 +4510,7 @@
     - https://github.com/vim/vim/security/advisories/GHSA-52mc-rq6p-rc7c
     - https://github.com/vim/vim/security/advisories/GHSA-65p9-mwwx-7468
     - https://nvd.nist.gov/vuln/detail/CVE-2026-52860
+    - https://ubuntu.com/security/notices/USN-8451-1
     - https://www.cve.org/CVERecord?id=CVE-2026-52860
     PublishedDate: '2026-06-11T19:16:47.773Z'
     LastModifiedDate: '2026-06-15T13:24:42.873Z'
@@ -5047,7 +4647,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-34040
     - https://www.cve.org/CVERecord?id=CVE-2026-34040
     PublishedDate: '2026-03-31T03:15:57.883Z'
-    LastModifiedDate: '2026-04-03T16:51:28.67Z'
+    LastModifiedDate: '2026-06-16T14:47:49.937Z'
   - VulnerabilityID: CVE-2026-41567
     VendorIDs:
     - GHSA-x86f-5xw2-fm2r
@@ -5114,8 +4714,12 @@
     VendorSeverity:
       amazon: 3
       ghsa: 3
+      nvd: 3
     CVSS:
       ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
+        V3Score: 7.2
+      nvd:
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
         V3Score: 7.2
     References:
@@ -5123,7 +4727,7 @@
     - https://github.com/moby/moby/security/advisories/GHSA-rg2x-37c3-w2rh
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42306
     PublishedDate: '2026-06-12T19:16:27.49Z'
-    LastModifiedDate: '2026-06-15T21:01:58.873Z'
+    LastModifiedDate: '2026-06-16T18:31:31.12Z'
   - VulnerabilityID: CVE-2026-33997
     VendorIDs:
     - GHSA-pxq6-2prw-chj9
@@ -5176,7 +4780,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33997
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
-    LastModifiedDate: '2026-04-03T17:23:21.307Z'
+    LastModifiedDate: '2026-06-16T14:47:38.807Z'
   - VulnerabilityID: CVE-2026-41568
     VendorIDs:
     - GHSA-vp62-88p7-qqf5
@@ -5214,7 +4818,7 @@
     - https://github.com/moby/moby/security/advisories/GHSA-vp62-88p7-qqf5
     - https://nvd.nist.gov/vuln/detail/CVE-2026-41568
     PublishedDate: '2026-06-12T19:16:26.907Z'
-    LastModifiedDate: '2026-06-15T21:01:58.873Z'
+    LastModifiedDate: '2026-06-16T18:31:54.957Z'
   - VulnerabilityID: GHSA-pmwq-pjrm-6p5r
     PkgID: github.com/in-toto/in-toto-golang@v0.10.0
     PkgName: github.com/in-toto/in-toto-golang
@@ -5441,21 +5045,27 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:33e854fd2045e4c18776899de25856541f3272fb7645800ab951e9abdd3b3157
-    Title: When returning errors, functions in the net/textproto package would in ...
+    Title: 'net/textproto: golang: Golang net/textproto: Misleading error messages via input injection'
     Description: When returning errors, functions in the net/textproto package would include its input as part of the error. This might allow an attacker to inject misleading content to errors that are printed or logged.
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-42507
     - https://go.dev/cl/777060
     - https://go.dev/issue/79346
     - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42507
     - https://pkg.go.dev/vuln/GO-2026-5039
+    - https://www.cve.org/CVERecord?id=CVE-2026-42507
     PublishedDate: '2026-06-02T23:16:38.027Z'
     LastModifiedDate: '2026-06-04T16:15:50.143Z'
 - Target: usr/bin/docker-proxy
@@ -5962,21 +5572,27 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:e90df86c00e8a40bddc6afe403f6087b19f66c7e693bb1fd4a105d90d9ec9e0a
-    Title: When returning errors, functions in the net/textproto package would in ...
+    Title: 'net/textproto: golang: Golang net/textproto: Misleading error messages via input injection'
     Description: When returning errors, functions in the net/textproto package would include its input as part of the error. This might allow an attacker to inject misleading content to errors that are printed or logged.
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-42507
     - https://go.dev/cl/777060
     - https://go.dev/issue/79346
     - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42507
     - https://pkg.go.dev/vuln/GO-2026-5039
+    - https://www.cve.org/CVERecord?id=CVE-2026-42507
     PublishedDate: '2026-06-02T23:16:38.027Z'
     LastModifiedDate: '2026-06-04T16:15:50.143Z'
 - Target: usr/bin/rootlesskit
@@ -6108,7 +5724,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-34040
     - https://www.cve.org/CVERecord?id=CVE-2026-34040
     PublishedDate: '2026-03-31T03:15:57.883Z'
-    LastModifiedDate: '2026-04-03T16:51:28.67Z'
+    LastModifiedDate: '2026-06-16T14:47:49.937Z'
   - VulnerabilityID: CVE-2026-41567
     VendorIDs:
     - GHSA-x86f-5xw2-fm2r
@@ -6175,8 +5791,12 @@
     VendorSeverity:
       amazon: 3
       ghsa: 3
+      nvd: 3
     CVSS:
       ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
+        V3Score: 7.2
+      nvd:
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
         V3Score: 7.2
     References:
@@ -6184,7 +5804,7 @@
     - https://github.com/moby/moby/security/advisories/GHSA-rg2x-37c3-w2rh
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42306
     PublishedDate: '2026-06-12T19:16:27.49Z'
-    LastModifiedDate: '2026-06-15T21:01:58.873Z'
+    LastModifiedDate: '2026-06-16T18:31:31.12Z'
   - VulnerabilityID: CVE-2026-33997
     VendorIDs:
     - GHSA-pxq6-2prw-chj9
@@ -6237,7 +5857,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33997
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
-    LastModifiedDate: '2026-04-03T17:23:21.307Z'
+    LastModifiedDate: '2026-06-16T14:47:38.807Z'
   - VulnerabilityID: CVE-2026-41568
     VendorIDs:
     - GHSA-vp62-88p7-qqf5
@@ -6275,7 +5895,7 @@
     - https://github.com/moby/moby/security/advisories/GHSA-vp62-88p7-qqf5
     - https://nvd.nist.gov/vuln/detail/CVE-2026-41568
     PublishedDate: '2026-06-12T19:16:26.907Z'
-    LastModifiedDate: '2026-06-15T21:01:58.873Z'
+    LastModifiedDate: '2026-06-16T18:31:54.957Z'
   - VulnerabilityID: CVE-2026-42504
     VendorIDs:
     - GO-2026-5038
@@ -6372,21 +5992,27 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:529c5fc85ae46ae65442ae4f6ab90638b85e7291925f02f339b98ad743587ff7
-    Title: When returning errors, functions in the net/textproto package would in ...
+    Title: 'net/textproto: golang: Golang net/textproto: Misleading error messages via input injection'
     Description: When returning errors, functions in the net/textproto package would include its input as part of the error. This might allow an attacker to inject misleading content to errors that are printed or logged.
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-42507
     - https://go.dev/cl/777060
     - https://go.dev/issue/79346
     - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42507
     - https://pkg.go.dev/vuln/GO-2026-5039
+    - https://www.cve.org/CVERecord?id=CVE-2026-42507
     PublishedDate: '2026-06-02T23:16:38.027Z'
     LastModifiedDate: '2026-06-04T16:15:50.143Z'
 - Target: usr/libexec/docker/cli-plugins/docker-compose
@@ -6514,7 +6140,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-34040
     - https://www.cve.org/CVERecord?id=CVE-2026-34040
     PublishedDate: '2026-03-31T03:15:57.883Z'
-    LastModifiedDate: '2026-04-03T16:51:28.67Z'
+    LastModifiedDate: '2026-06-16T14:47:49.937Z'
   - VulnerabilityID: CVE-2026-41567
     VendorIDs:
     - GHSA-x86f-5xw2-fm2r
@@ -6581,8 +6207,12 @@
     VendorSeverity:
       amazon: 3
       ghsa: 3
+      nvd: 3
     CVSS:
       ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
+        V3Score: 7.2
+      nvd:
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
         V3Score: 7.2
     References:
@@ -6590,7 +6220,7 @@
     - https://github.com/moby/moby/security/advisories/GHSA-rg2x-37c3-w2rh
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42306
     PublishedDate: '2026-06-12T19:16:27.49Z'
-    LastModifiedDate: '2026-06-15T21:01:58.873Z'
+    LastModifiedDate: '2026-06-16T18:31:31.12Z'
   - VulnerabilityID: CVE-2026-33997
     VendorIDs:
     - GHSA-pxq6-2prw-chj9
@@ -6643,7 +6273,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33997
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
-    LastModifiedDate: '2026-04-03T17:23:21.307Z'
+    LastModifiedDate: '2026-06-16T14:47:38.807Z'
   - VulnerabilityID: CVE-2026-41568
     VendorIDs:
     - GHSA-vp62-88p7-qqf5
@@ -6681,7 +6311,7 @@
     - https://github.com/moby/moby/security/advisories/GHSA-vp62-88p7-qqf5
     - https://nvd.nist.gov/vuln/detail/CVE-2026-41568
     PublishedDate: '2026-06-12T19:16:26.907Z'
-    LastModifiedDate: '2026-06-15T21:01:58.873Z'
+    LastModifiedDate: '2026-06-16T18:31:54.957Z'
   - VulnerabilityID: GHSA-pmwq-pjrm-6p5r
     PkgID: github.com/in-toto/in-toto-golang@v0.10.0
     PkgName: github.com/in-toto/in-toto-golang
@@ -6908,21 +6538,27 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:9d20c292250ef0260cb57e55085169d22fb59b52cbce7bc7a3a219f0e2b40e39
-    Title: When returning errors, functions in the net/textproto package would in ...
+    Title: 'net/textproto: golang: Golang net/textproto: Misleading error messages via input injection'
     Description: When returning errors, functions in the net/textproto package would include its input as part of the error. This might allow an attacker to inject misleading content to errors that are printed or logged.
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-42507
     - https://go.dev/cl/777060
     - https://go.dev/issue/79346
     - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42507
     - https://pkg.go.dev/vuln/GO-2026-5039
+    - https://www.cve.org/CVERecord?id=CVE-2026-42507
     PublishedDate: '2026-06-02T23:16:38.027Z'
     LastModifiedDate: '2026-06-04T16:15:50.143Z'
 - Target: usr/libexec/docker/cli-plugins/docker-model
@@ -7142,21 +6778,27 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:ad3f626da026d1f3b49366c0d8da7a1b2f5901f58e4adabcc8b436bdcac8a6ab
-    Title: When returning errors, functions in the net/textproto package would in ...
+    Title: 'net/textproto: golang: Golang net/textproto: Misleading error messages via input injection'
     Description: When returning errors, functions in the net/textproto package would include its input as part of the error. This might allow an attacker to inject misleading content to errors that are printed or logged.
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-42507
     - https://go.dev/cl/777060
     - https://go.dev/issue/79346
     - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42507
     - https://pkg.go.dev/vuln/GO-2026-5039
+    - https://www.cve.org/CVERecord?id=CVE-2026-42507
     PublishedDate: '2026-06-02T23:16:38.027Z'
     LastModifiedDate: '2026-06-04T16:15:50.143Z'
 - Target: usr/local/bin/k3d
@@ -7276,7 +6918,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-34040
     - https://www.cve.org/CVERecord?id=CVE-2026-34040
     PublishedDate: '2026-03-31T03:15:57.883Z'
-    LastModifiedDate: '2026-04-03T16:51:28.67Z'
+    LastModifiedDate: '2026-06-16T14:47:49.937Z'
   - VulnerabilityID: CVE-2026-41567
     VendorIDs:
     - GHSA-x86f-5xw2-fm2r
@@ -7343,8 +6985,12 @@
     VendorSeverity:
       amazon: 3
       ghsa: 3
+      nvd: 3
     CVSS:
       ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
+        V3Score: 7.2
+      nvd:
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H
         V3Score: 7.2
     References:
@@ -7352,7 +6998,7 @@
     - https://github.com/moby/moby/security/advisories/GHSA-rg2x-37c3-w2rh
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42306
     PublishedDate: '2026-06-12T19:16:27.49Z'
-    LastModifiedDate: '2026-06-15T21:01:58.873Z'
+    LastModifiedDate: '2026-06-16T18:31:31.12Z'
   - VulnerabilityID: CVE-2026-33997
     VendorIDs:
     - GHSA-pxq6-2prw-chj9
@@ -7405,7 +7051,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33997
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
-    LastModifiedDate: '2026-04-03T17:23:21.307Z'
+    LastModifiedDate: '2026-06-16T14:47:38.807Z'
   - VulnerabilityID: CVE-2026-41568
     VendorIDs:
     - GHSA-vp62-88p7-qqf5
@@ -7443,7 +7089,7 @@
     - https://github.com/moby/moby/security/advisories/GHSA-vp62-88p7-qqf5
     - https://nvd.nist.gov/vuln/detail/CVE-2026-41568
     PublishedDate: '2026-06-12T19:16:26.907Z'
-    LastModifiedDate: '2026-06-15T21:01:58.873Z'
+    LastModifiedDate: '2026-06-16T18:31:54.957Z'
   - VulnerabilityID: CVE-2026-42504
     VendorIDs:
     - GO-2026-5038
@@ -7540,21 +7186,27 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:33b3b162c486eb81a577c7cd4bd072175a6097ee7681c032c987e8565b7934b1
-    Title: When returning errors, functions in the net/textproto package would in ...
+    Title: 'net/textproto: golang: Golang net/textproto: Misleading error messages via input injection'
     Description: When returning errors, functions in the net/textproto package would include its input as part of the error. This might allow an attacker to inject misleading content to errors that are printed or logged.
     Severity: MEDIUM
     VendorSeverity:
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-42507
     - https://go.dev/cl/777060
     - https://go.dev/issue/79346
     - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42507
     - https://pkg.go.dev/vuln/GO-2026-5039
+    - https://www.cve.org/CVERecord?id=CVE-2026-42507
     PublishedDate: '2026-06-02T23:16:38.027Z'
     LastModifiedDate: '2026-06-04T16:15:50.143Z'
 - Target: /etc/ssh/ssh_host_ecdsa_key
