@@ -4063,7 +4063,7 @@
     - CWE-416
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -4570,7 +4570,7 @@
     - CWE-416
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -5077,7 +5077,7 @@
     - CWE-416
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -6823,7 +6823,7 @@
     - CWE-416
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -7330,7 +7330,7 @@
     - CWE-416
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       cbl-mariner: 2
@@ -8898,7 +8898,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 3
       cbl-mariner: 2
@@ -9027,7 +9027,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -10548,7 +10548,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -10614,7 +10614,7 @@
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 2
       cbl-mariner: 1
@@ -11180,40 +11180,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:b2b9ff9ee560a15625dfed12a24fc0eddf4d20ae81108a0cdb501e73df76d80b
-    Title: 'containerd CRI — image-config `LABEL` flows to restart-monitor `binary://` logger: host-root command execution from an image pull'
-    Description: |-
-      ### Impact
-      A bug was found in containerd where the CRI plugin propagates labels from an image config (`LABEL` instruction in Dockerfile) to a container without validation. This may result in executing an arbitrary command on the host, via a plugin that consumes container labels for some operations.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used.
-
-      ### Credits
-      The containerd project would like to thank Anthropic Research, in collaboration with Claude, the GKE Security Team using Gemini, and Robert Prast (@robertprast) for independently discovering and responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: HIGH
     VendorSeverity:
+      azure: 4
       ghsa: 3
     CVSS:
       ghsa:
@@ -11222,6 +11193,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-xhf5-7wjv-pqxp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-53488
   - VulnerabilityID: CVE-2024-40635
     VendorIDs:
     - GHSA-265r-hfxg-fhmg
@@ -11409,41 +11381,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:459da90e521fb9286936d9247221f63b0bb9549c869612e01b1eb7789ead2624
-    Title: containerd image-triggered runtime DoS via unbounded group parsing
-    Description: |-
-      ### Impact
-      A vulnerability in containerd allows a maliciously crafted image to cause a Denial of Service (DoS) condition. When creating a container from this image, memory exhaustion occurs, leading to an Out Of Memory (OOM) kill of the containerd process. This renders the container runtime API unavailable and can disrupt clients such as the Docker Engine or Kubernetes control-plane components.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used and that only trusted users have permissions to import images or schedule pods. 
-
-      ### Credits
-
-      The containerd project would like to thank Jakub Ciolek (@jake-ciolek) at AlphaSense and Kyle Elliott @ Trail of Bits who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: MEDIUM
     VendorSeverity:
+      azure: 2
       ghsa: 2
     CVSS:
       ghsa:
@@ -11452,6 +11394,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-jpcc-p29g-p8mq
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-47262
   - VulnerabilityID: CVE-2025-0495
     VendorIDs:
     - GHSA-m4gq-fm9h-8q75
@@ -12746,7 +12689,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 3
       cbl-mariner: 2
@@ -12875,7 +12818,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -14531,7 +14474,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -14597,7 +14540,7 @@
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 2
       cbl-mariner: 1
@@ -15597,7 +15540,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 3
       cbl-mariner: 2
@@ -15726,7 +15669,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -17247,7 +17190,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -17313,7 +17256,7 @@
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 2
       cbl-mariner: 1
@@ -17981,40 +17924,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:a6b90b4257b019c3ac84f9258ff3e9d961de73214a9eff102d0cf9ce76ec8bfb
-    Title: 'containerd CRI — image-config `LABEL` flows to restart-monitor `binary://` logger: host-root command execution from an image pull'
-    Description: |-
-      ### Impact
-      A bug was found in containerd where the CRI plugin propagates labels from an image config (`LABEL` instruction in Dockerfile) to a container without validation. This may result in executing an arbitrary command on the host, via a plugin that consumes container labels for some operations.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used.
-
-      ### Credits
-      The containerd project would like to thank Anthropic Research, in collaboration with Claude, the GKE Security Team using Gemini, and Robert Prast (@robertprast) for independently discovering and responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: HIGH
     VendorSeverity:
+      azure: 4
       ghsa: 3
     CVSS:
       ghsa:
@@ -18023,6 +17937,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-xhf5-7wjv-pqxp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-53488
   - VulnerabilityID: CVE-2024-40635
     VendorIDs:
     - GHSA-265r-hfxg-fhmg
@@ -18210,41 +18125,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:5999ac58b7d9d4b8bf1dd15edbaa77128c5711b4c0000a2508b73a01593a4229
-    Title: containerd image-triggered runtime DoS via unbounded group parsing
-    Description: |-
-      ### Impact
-      A vulnerability in containerd allows a maliciously crafted image to cause a Denial of Service (DoS) condition. When creating a container from this image, memory exhaustion occurs, leading to an Out Of Memory (OOM) kill of the containerd process. This renders the container runtime API unavailable and can disrupt clients such as the Docker Engine or Kubernetes control-plane components.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used and that only trusted users have permissions to import images or schedule pods. 
-
-      ### Credits
-
-      The containerd project would like to thank Jakub Ciolek (@jake-ciolek) at AlphaSense and Kyle Elliott @ Trail of Bits who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: MEDIUM
     VendorSeverity:
+      azure: 2
       ghsa: 2
     CVSS:
       ghsa:
@@ -18253,6 +18138,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-jpcc-p29g-p8mq
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-47262
   - VulnerabilityID: CVE-2026-34040
     VendorIDs:
     - GHSA-x744-4wpc-v9h2
@@ -19729,7 +19615,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 3
       cbl-mariner: 2
@@ -19858,7 +19744,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -21379,7 +21265,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -21445,7 +21331,7 @@
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 2
       cbl-mariner: 1
@@ -22011,40 +21897,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:6933178fce0ff077329114e0262da2fd800382c4f7cef5f7d40a8e43709b1af5
-    Title: 'containerd CRI — image-config `LABEL` flows to restart-monitor `binary://` logger: host-root command execution from an image pull'
-    Description: |-
-      ### Impact
-      A bug was found in containerd where the CRI plugin propagates labels from an image config (`LABEL` instruction in Dockerfile) to a container without validation. This may result in executing an arbitrary command on the host, via a plugin that consumes container labels for some operations.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used.
-
-      ### Credits
-      The containerd project would like to thank Anthropic Research, in collaboration with Claude, the GKE Security Team using Gemini, and Robert Prast (@robertprast) for independently discovering and responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: HIGH
     VendorSeverity:
+      azure: 4
       ghsa: 3
     CVSS:
       ghsa:
@@ -22053,6 +21910,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-xhf5-7wjv-pqxp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-53488
   - VulnerabilityID: CVE-2024-40635
     VendorIDs:
     - GHSA-265r-hfxg-fhmg
@@ -22189,41 +22047,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:0cb80825c3c865a7a16344f1af3370653d6d92e8934007b6edb792e419bd2a51
-    Title: containerd image-triggered runtime DoS via unbounded group parsing
-    Description: |-
-      ### Impact
-      A vulnerability in containerd allows a maliciously crafted image to cause a Denial of Service (DoS) condition. When creating a container from this image, memory exhaustion occurs, leading to an Out Of Memory (OOM) kill of the containerd process. This renders the container runtime API unavailable and can disrupt clients such as the Docker Engine or Kubernetes control-plane components.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used and that only trusted users have permissions to import images or schedule pods. 
-
-      ### Credits
-
-      The containerd project would like to thank Jakub Ciolek (@jake-ciolek) at AlphaSense and Kyle Elliott @ Trail of Bits who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: MEDIUM
     VendorSeverity:
+      azure: 2
       ghsa: 2
     CVSS:
       ghsa:
@@ -22232,6 +22060,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-jpcc-p29g-p8mq
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-47262
   - VulnerabilityID: CVE-2025-15558
     VendorIDs:
     - GHSA-p436-gjf2-799p
@@ -23129,7 +22958,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 3
       cbl-mariner: 2
@@ -23258,7 +23087,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -24843,7 +24672,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -24909,7 +24738,7 @@
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 2
       cbl-mariner: 1
@@ -25712,7 +25541,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 3
       cbl-mariner: 2
@@ -25841,7 +25670,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -27362,7 +27191,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -27428,7 +27257,7 @@
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 2
       cbl-mariner: 1
@@ -28126,7 +27955,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 3
       cbl-mariner: 2
@@ -28255,7 +28084,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -29776,7 +29605,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -29842,7 +29671,7 @@
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 2
       cbl-mariner: 1
@@ -30408,40 +30237,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:8a1a3ca0032a98d82857a47e5b03802971b625f2c8d5fa15dfb0c2029a9269a4
-    Title: 'containerd CRI — image-config `LABEL` flows to restart-monitor `binary://` logger: host-root command execution from an image pull'
-    Description: |-
-      ### Impact
-      A bug was found in containerd where the CRI plugin propagates labels from an image config (`LABEL` instruction in Dockerfile) to a container without validation. This may result in executing an arbitrary command on the host, via a plugin that consumes container labels for some operations.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used.
-
-      ### Credits
-      The containerd project would like to thank Anthropic Research, in collaboration with Claude, the GKE Security Team using Gemini, and Robert Prast (@robertprast) for independently discovering and responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: HIGH
     VendorSeverity:
+      azure: 4
       ghsa: 3
     CVSS:
       ghsa:
@@ -30450,6 +30250,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-xhf5-7wjv-pqxp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-53488
   - VulnerabilityID: CVE-2024-40635
     VendorIDs:
     - GHSA-265r-hfxg-fhmg
@@ -30637,41 +30438,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:3d60d9d7d97cc9e1352940a1dbacdff41500a9f12c849c621a2e51a0a0785d3d
-    Title: containerd image-triggered runtime DoS via unbounded group parsing
-    Description: |-
-      ### Impact
-      A vulnerability in containerd allows a maliciously crafted image to cause a Denial of Service (DoS) condition. When creating a container from this image, memory exhaustion occurs, leading to an Out Of Memory (OOM) kill of the containerd process. This renders the container runtime API unavailable and can disrupt clients such as the Docker Engine or Kubernetes control-plane components.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used and that only trusted users have permissions to import images or schedule pods. 
-
-      ### Credits
-
-      The containerd project would like to thank Jakub Ciolek (@jake-ciolek) at AlphaSense and Kyle Elliott @ Trail of Bits who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: MEDIUM
     VendorSeverity:
+      azure: 2
       ghsa: 2
     CVSS:
       ghsa:
@@ -30680,6 +30451,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-jpcc-p29g-p8mq
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-47262
   - VulnerabilityID: CVE-2025-0495
     VendorIDs:
     - GHSA-m4gq-fm9h-8q75
@@ -32028,7 +31800,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 3
       cbl-mariner: 2
@@ -32157,7 +31929,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -33678,7 +33450,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -33744,7 +33516,7 @@
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 2
       cbl-mariner: 1
@@ -34310,40 +34082,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:390993c878e4891ce224db982cbdf4ad7942f5a180caa4c6dcc702b6687c1bb1
-    Title: 'containerd CRI — image-config `LABEL` flows to restart-monitor `binary://` logger: host-root command execution from an image pull'
-    Description: |-
-      ### Impact
-      A bug was found in containerd where the CRI plugin propagates labels from an image config (`LABEL` instruction in Dockerfile) to a container without validation. This may result in executing an arbitrary command on the host, via a plugin that consumes container labels for some operations.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used.
-
-      ### Credits
-      The containerd project would like to thank Anthropic Research, in collaboration with Claude, the GKE Security Team using Gemini, and Robert Prast (@robertprast) for independently discovering and responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: HIGH
     VendorSeverity:
+      azure: 4
       ghsa: 3
     CVSS:
       ghsa:
@@ -34352,6 +34095,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-xhf5-7wjv-pqxp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-53488
   - VulnerabilityID: CVE-2024-40635
     VendorIDs:
     - GHSA-265r-hfxg-fhmg
@@ -34539,41 +34283,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:9e4b37ad1e722cf906742232e420a63594e2ca324487db731496354862e102cd
-    Title: containerd image-triggered runtime DoS via unbounded group parsing
-    Description: |-
-      ### Impact
-      A vulnerability in containerd allows a maliciously crafted image to cause a Denial of Service (DoS) condition. When creating a container from this image, memory exhaustion occurs, leading to an Out Of Memory (OOM) kill of the containerd process. This renders the container runtime API unavailable and can disrupt clients such as the Docker Engine or Kubernetes control-plane components.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used and that only trusted users have permissions to import images or schedule pods. 
-
-      ### Credits
-
-      The containerd project would like to thank Jakub Ciolek (@jake-ciolek) at AlphaSense and Kyle Elliott @ Trail of Bits who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: MEDIUM
     VendorSeverity:
+      azure: 2
       ghsa: 2
     CVSS:
       ghsa:
@@ -34582,6 +34296,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-jpcc-p29g-p8mq
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-47262
   - VulnerabilityID: CVE-2025-0495
     VendorIDs:
     - GHSA-m4gq-fm9h-8q75
@@ -35930,7 +35645,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 3
       cbl-mariner: 2
@@ -36059,7 +35774,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -37580,7 +37295,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -37646,7 +37361,7 @@
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 2
       cbl-mariner: 1
@@ -38212,40 +37927,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:ab65e83165a9939cda832abf83b45440f823fbe1988d47adc214614f4e2f13b9
-    Title: 'containerd CRI — image-config `LABEL` flows to restart-monitor `binary://` logger: host-root command execution from an image pull'
-    Description: |-
-      ### Impact
-      A bug was found in containerd where the CRI plugin propagates labels from an image config (`LABEL` instruction in Dockerfile) to a container without validation. This may result in executing an arbitrary command on the host, via a plugin that consumes container labels for some operations.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used.
-
-      ### Credits
-      The containerd project would like to thank Anthropic Research, in collaboration with Claude, the GKE Security Team using Gemini, and Robert Prast (@robertprast) for independently discovering and responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-53488 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: HIGH
     VendorSeverity:
+      azure: 4
       ghsa: 3
     CVSS:
       ghsa:
@@ -38254,6 +37940,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-xhf5-7wjv-pqxp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-53488
   - VulnerabilityID: CVE-2024-40635
     VendorIDs:
     - GHSA-265r-hfxg-fhmg
@@ -38390,41 +38077,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:bf825cd63e8803943ebf8554eaa4c1225600dfc6b2c1a3a9774f72304d8f3ecb
-    Title: containerd image-triggered runtime DoS via unbounded group parsing
-    Description: |-
-      ### Impact
-      A vulnerability in containerd allows a maliciously crafted image to cause a Denial of Service (DoS) condition. When creating a container from this image, memory exhaustion occurs, leading to an Out Of Memory (OOM) kill of the containerd process. This renders the container runtime API unavailable and can disrupt clients such as the Docker Engine or Kubernetes control-plane components.
-
-      ### Patches
-      This bug has been fixed in the following containerd versions:
-
-      * 2.3.2
-      * 2.2.5
-      * 2.1.9
-      * 2.0.10
-      * 1.7.33
-
-      Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-      Ensure that only trusted images are used and that only trusted users have permissions to import images or schedule pods. 
-
-      ### Credits
-
-      The containerd project would like to thank Jakub Ciolek (@jake-ciolek) at AlphaSense and Kyle Elliott @ Trail of Bits who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
+    Title: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3
+    Description: CVE-2026-47262 affecting package containerd2 for versions less than 2.2.4-3. A patched version of the package is available.
     Severity: MEDIUM
     VendorSeverity:
+      azure: 2
       ghsa: 2
     CVSS:
       ghsa:
@@ -38433,6 +38090,7 @@
     References:
     - https://github.com/containerd/containerd
     - https://github.com/containerd/containerd/security/advisories/GHSA-jpcc-p29g-p8mq
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-47262
   - VulnerabilityID: CVE-2025-15558
     VendorIDs:
     - GHSA-p436-gjf2-799p
@@ -39545,7 +39203,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 3
       cbl-mariner: 2
@@ -39674,7 +39332,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -41195,7 +40853,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -41261,7 +40919,7 @@
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 2
       cbl-mariner: 1
