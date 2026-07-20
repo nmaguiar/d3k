@@ -305,7 +305,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2026-06-30T11:16:21.42Z'
+    LastModifiedDate: '2026-07-19T18:16:29.707Z'
   - VulnerabilityID: CVE-2025-48384
     PkgID: git@1:2.45.2-1ubuntu1.1
     PkgName: git
@@ -2343,7 +2343,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2026-06-30T11:16:21.42Z'
+    LastModifiedDate: '2026-07-19T18:16:29.707Z'
   - VulnerabilityID: CVE-2025-4373
     PkgID: libglib2.0-data@2.82.1-0ubuntu1
     PkgName: libglib2.0-data
@@ -2414,7 +2414,7 @@
     - https://ubuntu.com/security/notices/USN-7532-1
     - https://www.cve.org/CVERecord?id=CVE-2025-4373
     PublishedDate: '2025-05-06T15:16:05.32Z'
-    LastModifiedDate: '2026-06-30T11:16:21.42Z'
+    LastModifiedDate: '2026-07-19T18:16:29.707Z'
   - VulnerabilityID: CVE-2025-24528
     PkgID: libgssapi-krb5-2@1.21.3-3ubuntu0.1
     PkgName: libgssapi-krb5-2
@@ -3384,7 +3384,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2026-06-30T11:16:26.727Z'
+    LastModifiedDate: '2026-07-19T17:16:53.6Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam-modules-bin@1.5.3-7ubuntu2
     PkgName: libpam-modules-bin
@@ -3467,7 +3467,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2026-06-30T11:16:26.727Z'
+    LastModifiedDate: '2026-07-19T17:16:53.6Z'
   - VulnerabilityID: CVE-2025-6020
     PkgID: libpam-runtime@1.5.3-7ubuntu2
     PkgName: libpam-runtime
@@ -3550,7 +3550,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2026-06-30T11:16:26.727Z'
+    LastModifiedDate: '2026-07-19T17:16:53.6Z'
   - VulnerabilityID: CVE-2025-4598
     PkgID: libpam-systemd@256.5-2ubuntu3.1
     PkgName: libpam-systemd
@@ -3714,7 +3714,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-6020
     - https://www.openwall.com/lists/oss-security/2025/06/17/1
     PublishedDate: '2025-06-17T13:15:21.66Z'
-    LastModifiedDate: '2026-06-30T11:16:26.727Z'
+    LastModifiedDate: '2026-07-19T17:16:53.6Z'
   - VulnerabilityID: CVE-2024-56406
     PkgID: libperl5.38t64@5.38.2-5
     PkgName: libperl5.38t64
@@ -15124,7 +15124,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:184d63ac54dce7262403caac29a7136eb77297896aa1b8621648eab3b93edbce
-    Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
+    Title: 'golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
     Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
     Severity: HIGH
     CweIDs:
@@ -19987,7 +19987,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:301c8fa6602e02e5364fdd7ac1d4916a1a53dbcf1674b9e4152add3cc10915f8
-    Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
+    Title: 'golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
     Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
     Severity: HIGH
     CweIDs:
@@ -26695,7 +26695,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:0a23eba7d809ab7492a6626ee4fcc71fada5ba269523ab0753dcaecc0ed83010
-    Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
+    Title: 'golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
     Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
     Severity: HIGH
     CweIDs:
@@ -33007,7 +33007,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:875cf666712d0344ad951985a6374c07e05f4ae0f546b1c7f125d2cfd8c9f807
-    Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
+    Title: 'golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
     Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
     Severity: HIGH
     CweIDs:
@@ -37688,7 +37688,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:7a179f634c5f4762d18cc6a3faa8296523d96a16c58dc3b701534ca241644187
-    Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
+    Title: 'golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
     Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
     Severity: HIGH
     CweIDs:
@@ -41834,7 +41834,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:8ecea949bfe21575566b9d0e491ce40cc967277d187f7251b79805f602806956
-    Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
+    Title: 'golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
     Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
     Severity: HIGH
     CweIDs:
@@ -48325,7 +48325,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:ff8cf8e6e9ad58181117fba8f326617995d44510173f2a4f25e72526db3864b5
-    Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
+    Title: 'golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
     Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
     Severity: HIGH
     CweIDs:
@@ -55157,7 +55157,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:40bf6475c7cd490f103383102d968582e2fd895451553c5dafbc86ee939e3bfa
-    Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
+    Title: 'golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
     Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
     Severity: HIGH
     CweIDs:
@@ -61636,7 +61636,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:d06c6ad93301ae7b524eb664e0f920a74a9a349f323755ee396caa1f19cb9295
-    Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
+    Title: 'golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
     Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
     Severity: HIGH
     CweIDs:
