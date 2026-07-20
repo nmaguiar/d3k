@@ -6139,9 +6139,9 @@
 │                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                        │      ├ Fingerprint     : sha256:06aad469edda11fa4791d8dcfa7a48ab3c57ae1ee64fddb62a69
 │                        │      │                   b685273e73b2 
-│                        │      ├ Title           : golang.org/x/net/idna: golang: golang.org/x/net/idna:
-│                        │      │                   Privilege escalation via incorrect Punycode label
-│                        │      │                   processing 
+│                        │      ├ Title           : golang.org/x/net/idna: golang: net/http:
+│                        │      │                   golang.org/x/net/idna: Privilege escalation via incorrect
+│                        │      │                   Punycode label processing 
 │                        │      ├ Description     : The ToASCII and ToUnicode functions incorrectly accept
 │                        │      │                   Punycode-encoded labels that decode to an ASCII-only label.
 │                        │      │                    For example, ToUnicode("xn--example-.com") incorrectly
@@ -6823,9 +6823,9 @@
 │                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                        │      ├ Fingerprint     : sha256:070ba034263e6c431981f689936fff315a36bd2c1f8bd63b1f5d
 │                        │      │                   319af26de2c6 
-│                        │      ├ Title           : golang.org/x/net/idna: golang: golang.org/x/net/idna:
-│                        │      │                   Privilege escalation via incorrect Punycode label
-│                        │      │                   processing 
+│                        │      ├ Title           : golang.org/x/net/idna: golang: net/http:
+│                        │      │                   golang.org/x/net/idna: Privilege escalation via incorrect
+│                        │      │                   Punycode label processing 
 │                        │      ├ Description     : The ToASCII and ToUnicode functions incorrectly accept
 │                        │      │                   Punycode-encoded labels that decode to an ASCII-only label.
 │                        │      │                    For example, ToUnicode("xn--example-.com") incorrectly
