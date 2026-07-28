@@ -228,7 +228,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
     - https://errata.almalinux.org/9/ALSA-2025-7409.html
-    - https://errata.rockylinux.org/RLSA-2025:7482
+    - https://errata.rockylinux.org/RLSA-2025:8414
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
     - https://linux.oracle.com/errata/ELSA-2025-8414.html
@@ -288,7 +288,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
     - https://errata.almalinux.org/9/ALSA-2025-7409.html
-    - https://errata.rockylinux.org/RLSA-2025:7482
+    - https://errata.rockylinux.org/RLSA-2025:8414
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
     - https://linux.oracle.com/errata/ELSA-2025-8414.html
@@ -398,7 +398,8 @@
       PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
       UID: aa471766c29fe384
     InstalledVersion: 2.43-2ubuntu2
-    Status: affected
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
     Layer:
       Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
       DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
@@ -442,7 +443,7 @@
     - https://cert-portal.siemens.com/productcert/html/ssa-082556.html
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://errata.almalinux.org/9/ALSA-2026-20597.html
-    - https://errata.rockylinux.org/RLSA-2026:20594
+    - https://errata.rockylinux.org/RLSA-2026:20587
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
     - https://linux.oracle.com/errata/ELSA-2026-50291.html
@@ -451,6 +452,7 @@
     - https://sourceware.org/bugzilla/show_bug.cgi?id=33980
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007;hb=HEAD
+    - https://ubuntu.com/security/notices/USN-8611-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4046
     PublishedDate: '2026-03-30T18:16:19.573Z'
     LastModifiedDate: '2026-07-14T13:18:57.707Z'
@@ -461,7 +463,8 @@
       PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
       UID: aa471766c29fe384
     InstalledVersion: 2.43-2ubuntu2
-    Status: affected
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
     Layer:
       Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
       DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
@@ -501,7 +504,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5928
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6238
     - https://errata.almalinux.org/9/ALSA-2026-42952.html
-    - https://errata.rockylinux.org/RLSA-2026:42694
+    - https://errata.rockylinux.org/RLSA-2026:42733
     - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
     - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
     - https://linux.oracle.com/cve/CVE-2026-5435.html
@@ -509,9 +512,128 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5435
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34033
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0011
+    - https://ubuntu.com/security/notices/USN-8611-1
     - https://www.cve.org/CVERecord?id=CVE-2026-5435
     PublishedDate: '2026-04-28T13:19:22.29Z'
     LastModifiedDate: '2026-07-14T13:19:01.36Z'
+  - VulnerabilityID: CVE-2026-5450
+    PkgID: libc-bin@2.43-2ubuntu2
+    PkgName: libc-bin
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: aa471766c29fe384
+    InstalledVersion: 2.43-2ubuntu2
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
+    Layer:
+      Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
+      DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5450
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:14b3f5e8f4792668581f270be7a42a352aa65cd64ecd18b69427652a7625fa26
+    Title: 'glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width'
+    Description: Calling the scanf family of functions with a %mc (malloc'd character match) in the GNU C Library version 2.7 to version 2.43 with a format width specifier with an explicit width greater than 1024 could result in a one byte heap buffer overflow.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-122
+    - CWE-787
+    VendorSeverity:
+      alma: 2
+      oracle-oval: 2
+      photon: 4
+      redhat: 2
+      rocky: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:H
+        V3Score: 5
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:33226
+    - https://access.redhat.com/security/cve/CVE-2026-5450
+    - https://bugzilla.redhat.com/2459853
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2459853
+    - https://cert-portal.siemens.com/productcert/html/ssa-082556.html
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5450
+    - https://errata.almalinux.org/9/ALSA-2026-33226.html
+    - https://errata.rockylinux.org/RLSA-2026:33126
+    - https://inbox.sourceware.org/libc-announce/b11f0003-6ec1-4bd6-b9de-9e38a4efeca3@redhat.com/T/#u
+    - https://linux.oracle.com/cve/CVE-2026-5450.html
+    - https://linux.oracle.com/errata/ELSA-2026-50370.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5450
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5450#range-21286997
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=CVE-2026-5450
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0009
+    - https://ubuntu.com/security/notices/USN-8611-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5450
+    PublishedDate: '2026-04-20T21:16:36.85Z'
+    LastModifiedDate: '2026-07-14T13:19:01.52Z'
+  - VulnerabilityID: CVE-2026-5928
+    PkgID: libc-bin@2.43-2ubuntu2
+    PkgName: libc-bin
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: aa471766c29fe384
+    InstalledVersion: 2.43-2ubuntu2
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
+    Layer:
+      Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
+      DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5928
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:406bc1c6c3c10ece811ac48850b00eb60e3be4be90f609a24a9f77f99d34cab8
+    Title: 'glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings'
+    Description: |-
+      Calling the ungetwc function on a FILE stream with wide characters encoded in a character set that has overlaps between its single byte and multi-byte character encodings, in the GNU C Library version 2.43 or earlier, may result in an attempt to read bytes before an allocated buffer, potentially resulting in unintentional disclosure of neighboring data in the heap, or a program crash.
+
+      A bug in the wide character pushback implementation (_IO_wdefault_pbackfail in libio/wgenops.c) causes ungetwc() to operate on the regular character buffer (fp->_IO_read_ptr) instead of the actual wide-stream read pointer (fp->_wide_data->_IO_read_ptr). The program crash may happen in cases where fp->_IO_read_ptr is not initialized and hence points to NULL. The buffer under-read requires a special situation where the input character encoding is such that there are overlaps between single byte representations and multibyte representations in that encoding, resulting in spurious matches. The spurious match case is not possible in the standard Unicode character sets.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-127
+    VendorSeverity:
+      alma: 2
+      oracle-oval: 2
+      photon: 3
+      redhat: 2
+      rocky: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:N/A:H
+        V3Score: 5
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:42952
+    - https://access.redhat.com/security/cve/CVE-2026-5928
+    - https://bugzilla.redhat.com/2459854
+    - https://bugzilla.redhat.com/2463465
+    - https://bugzilla.redhat.com/2463539
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2459854
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2463465
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2463539
+    - https://cert-portal.siemens.com/productcert/html/ssa-082556.html
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5435
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5928
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6238
+    - https://errata.almalinux.org/9/ALSA-2026-42952.html
+    - https://errata.rockylinux.org/RLSA-2026:42733
+    - https://linux.oracle.com/cve/CVE-2026-5928.html
+    - https://linux.oracle.com/errata/ELSA-2026-42952.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5928
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=33998
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0010
+    - https://ubuntu.com/security/notices/USN-8611-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5928
+    PublishedDate: '2026-04-20T21:16:36.963Z'
+    LastModifiedDate: '2026-07-14T13:19:01.69Z'
   - VulnerabilityID: CVE-2026-6238
     PkgID: libc-bin@2.43-2ubuntu2
     PkgName: libc-bin
@@ -519,7 +641,8 @@
       PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
       UID: aa471766c29fe384
     InstalledVersion: 2.43-2ubuntu2
-    Status: affected
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
     Layer:
       Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
       DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
@@ -562,7 +685,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5928
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6238
     - https://errata.almalinux.org/9/ALSA-2026-42952.html
-    - https://errata.rockylinux.org/RLSA-2026:42694
+    - https://errata.rockylinux.org/RLSA-2026:42733
     - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
     - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
     - https://linux.oracle.com/cve/CVE-2026-6238.html
@@ -570,6 +693,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6238
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34069
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0012
+    - https://ubuntu.com/security/notices/USN-8611-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6238
     PublishedDate: '2026-04-28T19:37:47.523Z'
     LastModifiedDate: '2026-07-14T13:19:09.2Z'
@@ -580,7 +704,8 @@
       PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
       UID: 229c678f3865c408
     InstalledVersion: 2.43-2ubuntu2
-    Status: affected
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
     Layer:
       Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
       DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
@@ -624,7 +749,7 @@
     - https://cert-portal.siemens.com/productcert/html/ssa-082556.html
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://errata.almalinux.org/9/ALSA-2026-20597.html
-    - https://errata.rockylinux.org/RLSA-2026:20594
+    - https://errata.rockylinux.org/RLSA-2026:20587
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
     - https://linux.oracle.com/errata/ELSA-2026-50291.html
@@ -633,6 +758,7 @@
     - https://sourceware.org/bugzilla/show_bug.cgi?id=33980
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007;hb=HEAD
+    - https://ubuntu.com/security/notices/USN-8611-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4046
     PublishedDate: '2026-03-30T18:16:19.573Z'
     LastModifiedDate: '2026-07-14T13:18:57.707Z'
@@ -643,7 +769,8 @@
       PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
       UID: 229c678f3865c408
     InstalledVersion: 2.43-2ubuntu2
-    Status: affected
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
     Layer:
       Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
       DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
@@ -683,7 +810,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5928
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6238
     - https://errata.almalinux.org/9/ALSA-2026-42952.html
-    - https://errata.rockylinux.org/RLSA-2026:42694
+    - https://errata.rockylinux.org/RLSA-2026:42733
     - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
     - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
     - https://linux.oracle.com/cve/CVE-2026-5435.html
@@ -691,9 +818,128 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5435
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34033
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0011
+    - https://ubuntu.com/security/notices/USN-8611-1
     - https://www.cve.org/CVERecord?id=CVE-2026-5435
     PublishedDate: '2026-04-28T13:19:22.29Z'
     LastModifiedDate: '2026-07-14T13:19:01.36Z'
+  - VulnerabilityID: CVE-2026-5450
+    PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
+    PkgName: libc-gconv-modules-extra
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: 229c678f3865c408
+    InstalledVersion: 2.43-2ubuntu2
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
+    Layer:
+      Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
+      DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5450
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:ec338731d9618d0e5f2cb52038ae80f34b67b29266ee1a555e5829cdfd22d6d6
+    Title: 'glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width'
+    Description: Calling the scanf family of functions with a %mc (malloc'd character match) in the GNU C Library version 2.7 to version 2.43 with a format width specifier with an explicit width greater than 1024 could result in a one byte heap buffer overflow.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-122
+    - CWE-787
+    VendorSeverity:
+      alma: 2
+      oracle-oval: 2
+      photon: 4
+      redhat: 2
+      rocky: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:H
+        V3Score: 5
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:33226
+    - https://access.redhat.com/security/cve/CVE-2026-5450
+    - https://bugzilla.redhat.com/2459853
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2459853
+    - https://cert-portal.siemens.com/productcert/html/ssa-082556.html
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5450
+    - https://errata.almalinux.org/9/ALSA-2026-33226.html
+    - https://errata.rockylinux.org/RLSA-2026:33126
+    - https://inbox.sourceware.org/libc-announce/b11f0003-6ec1-4bd6-b9de-9e38a4efeca3@redhat.com/T/#u
+    - https://linux.oracle.com/cve/CVE-2026-5450.html
+    - https://linux.oracle.com/errata/ELSA-2026-50370.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5450
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5450#range-21286997
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=CVE-2026-5450
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0009
+    - https://ubuntu.com/security/notices/USN-8611-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5450
+    PublishedDate: '2026-04-20T21:16:36.85Z'
+    LastModifiedDate: '2026-07-14T13:19:01.52Z'
+  - VulnerabilityID: CVE-2026-5928
+    PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
+    PkgName: libc-gconv-modules-extra
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: 229c678f3865c408
+    InstalledVersion: 2.43-2ubuntu2
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
+    Layer:
+      Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
+      DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5928
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:d41113f94818d71576317b49b753530e5cb9adf0208fd5f77bec1ad5c4eedc0f
+    Title: 'glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings'
+    Description: |-
+      Calling the ungetwc function on a FILE stream with wide characters encoded in a character set that has overlaps between its single byte and multi-byte character encodings, in the GNU C Library version 2.43 or earlier, may result in an attempt to read bytes before an allocated buffer, potentially resulting in unintentional disclosure of neighboring data in the heap, or a program crash.
+
+      A bug in the wide character pushback implementation (_IO_wdefault_pbackfail in libio/wgenops.c) causes ungetwc() to operate on the regular character buffer (fp->_IO_read_ptr) instead of the actual wide-stream read pointer (fp->_wide_data->_IO_read_ptr). The program crash may happen in cases where fp->_IO_read_ptr is not initialized and hence points to NULL. The buffer under-read requires a special situation where the input character encoding is such that there are overlaps between single byte representations and multibyte representations in that encoding, resulting in spurious matches. The spurious match case is not possible in the standard Unicode character sets.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-127
+    VendorSeverity:
+      alma: 2
+      oracle-oval: 2
+      photon: 3
+      redhat: 2
+      rocky: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:N/A:H
+        V3Score: 5
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:42952
+    - https://access.redhat.com/security/cve/CVE-2026-5928
+    - https://bugzilla.redhat.com/2459854
+    - https://bugzilla.redhat.com/2463465
+    - https://bugzilla.redhat.com/2463539
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2459854
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2463465
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2463539
+    - https://cert-portal.siemens.com/productcert/html/ssa-082556.html
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5435
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5928
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6238
+    - https://errata.almalinux.org/9/ALSA-2026-42952.html
+    - https://errata.rockylinux.org/RLSA-2026:42733
+    - https://linux.oracle.com/cve/CVE-2026-5928.html
+    - https://linux.oracle.com/errata/ELSA-2026-42952.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5928
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=33998
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0010
+    - https://ubuntu.com/security/notices/USN-8611-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5928
+    PublishedDate: '2026-04-20T21:16:36.963Z'
+    LastModifiedDate: '2026-07-14T13:19:01.69Z'
   - VulnerabilityID: CVE-2026-6238
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
     PkgName: libc-gconv-modules-extra
@@ -701,7 +947,8 @@
       PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
       UID: 229c678f3865c408
     InstalledVersion: 2.43-2ubuntu2
-    Status: affected
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
     Layer:
       Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
       DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
@@ -744,7 +991,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5928
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6238
     - https://errata.almalinux.org/9/ALSA-2026-42952.html
-    - https://errata.rockylinux.org/RLSA-2026:42694
+    - https://errata.rockylinux.org/RLSA-2026:42733
     - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
     - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
     - https://linux.oracle.com/cve/CVE-2026-6238.html
@@ -752,6 +999,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6238
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34069
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0012
+    - https://ubuntu.com/security/notices/USN-8611-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6238
     PublishedDate: '2026-04-28T19:37:47.523Z'
     LastModifiedDate: '2026-07-14T13:19:09.2Z'
@@ -762,7 +1010,8 @@
       PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
       UID: a6167efe03e34488
     InstalledVersion: 2.43-2ubuntu2
-    Status: affected
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
     Layer:
       Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
       DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
@@ -806,7 +1055,7 @@
     - https://cert-portal.siemens.com/productcert/html/ssa-082556.html
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://errata.almalinux.org/9/ALSA-2026-20597.html
-    - https://errata.rockylinux.org/RLSA-2026:20594
+    - https://errata.rockylinux.org/RLSA-2026:20587
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
     - https://linux.oracle.com/errata/ELSA-2026-50291.html
@@ -815,6 +1064,7 @@
     - https://sourceware.org/bugzilla/show_bug.cgi?id=33980
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007;hb=HEAD
+    - https://ubuntu.com/security/notices/USN-8611-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4046
     PublishedDate: '2026-03-30T18:16:19.573Z'
     LastModifiedDate: '2026-07-14T13:18:57.707Z'
@@ -825,7 +1075,8 @@
       PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
       UID: a6167efe03e34488
     InstalledVersion: 2.43-2ubuntu2
-    Status: affected
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
     Layer:
       Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
       DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
@@ -865,7 +1116,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5928
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6238
     - https://errata.almalinux.org/9/ALSA-2026-42952.html
-    - https://errata.rockylinux.org/RLSA-2026:42694
+    - https://errata.rockylinux.org/RLSA-2026:42733
     - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
     - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
     - https://linux.oracle.com/cve/CVE-2026-5435.html
@@ -873,9 +1124,128 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5435
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34033
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0011
+    - https://ubuntu.com/security/notices/USN-8611-1
     - https://www.cve.org/CVERecord?id=CVE-2026-5435
     PublishedDate: '2026-04-28T13:19:22.29Z'
     LastModifiedDate: '2026-07-14T13:19:01.36Z'
+  - VulnerabilityID: CVE-2026-5450
+    PkgID: libc6@2.43-2ubuntu2
+    PkgName: libc6
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: a6167efe03e34488
+    InstalledVersion: 2.43-2ubuntu2
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
+    Layer:
+      Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
+      DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5450
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:35ebe3ffb5ce28465c224c424de9be8bf02d7f596ad95e2219b1a65138293a93
+    Title: 'glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width'
+    Description: Calling the scanf family of functions with a %mc (malloc'd character match) in the GNU C Library version 2.7 to version 2.43 with a format width specifier with an explicit width greater than 1024 could result in a one byte heap buffer overflow.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-122
+    - CWE-787
+    VendorSeverity:
+      alma: 2
+      oracle-oval: 2
+      photon: 4
+      redhat: 2
+      rocky: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:H
+        V3Score: 5
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:33226
+    - https://access.redhat.com/security/cve/CVE-2026-5450
+    - https://bugzilla.redhat.com/2459853
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2459853
+    - https://cert-portal.siemens.com/productcert/html/ssa-082556.html
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5450
+    - https://errata.almalinux.org/9/ALSA-2026-33226.html
+    - https://errata.rockylinux.org/RLSA-2026:33126
+    - https://inbox.sourceware.org/libc-announce/b11f0003-6ec1-4bd6-b9de-9e38a4efeca3@redhat.com/T/#u
+    - https://linux.oracle.com/cve/CVE-2026-5450.html
+    - https://linux.oracle.com/errata/ELSA-2026-50370.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5450
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5450#range-21286997
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=CVE-2026-5450
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0009
+    - https://ubuntu.com/security/notices/USN-8611-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5450
+    PublishedDate: '2026-04-20T21:16:36.85Z'
+    LastModifiedDate: '2026-07-14T13:19:01.52Z'
+  - VulnerabilityID: CVE-2026-5928
+    PkgID: libc6@2.43-2ubuntu2
+    PkgName: libc6
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: a6167efe03e34488
+    InstalledVersion: 2.43-2ubuntu2
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
+    Layer:
+      Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
+      DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5928
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:2bead6a72605e54a1ee54ef92c6c5b1da5a606ed6df5f71b39abcdac482a2407
+    Title: 'glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings'
+    Description: |-
+      Calling the ungetwc function on a FILE stream with wide characters encoded in a character set that has overlaps between its single byte and multi-byte character encodings, in the GNU C Library version 2.43 or earlier, may result in an attempt to read bytes before an allocated buffer, potentially resulting in unintentional disclosure of neighboring data in the heap, or a program crash.
+
+      A bug in the wide character pushback implementation (_IO_wdefault_pbackfail in libio/wgenops.c) causes ungetwc() to operate on the regular character buffer (fp->_IO_read_ptr) instead of the actual wide-stream read pointer (fp->_wide_data->_IO_read_ptr). The program crash may happen in cases where fp->_IO_read_ptr is not initialized and hence points to NULL. The buffer under-read requires a special situation where the input character encoding is such that there are overlaps between single byte representations and multibyte representations in that encoding, resulting in spurious matches. The spurious match case is not possible in the standard Unicode character sets.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-127
+    VendorSeverity:
+      alma: 2
+      oracle-oval: 2
+      photon: 3
+      redhat: 2
+      rocky: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:N/A:H
+        V3Score: 5
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:42952
+    - https://access.redhat.com/security/cve/CVE-2026-5928
+    - https://bugzilla.redhat.com/2459854
+    - https://bugzilla.redhat.com/2463465
+    - https://bugzilla.redhat.com/2463539
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2459854
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2463465
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2463539
+    - https://cert-portal.siemens.com/productcert/html/ssa-082556.html
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5435
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5928
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6238
+    - https://errata.almalinux.org/9/ALSA-2026-42952.html
+    - https://errata.rockylinux.org/RLSA-2026:42733
+    - https://linux.oracle.com/cve/CVE-2026-5928.html
+    - https://linux.oracle.com/errata/ELSA-2026-42952.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5928
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=33998
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0010
+    - https://ubuntu.com/security/notices/USN-8611-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5928
+    PublishedDate: '2026-04-20T21:16:36.963Z'
+    LastModifiedDate: '2026-07-14T13:19:01.69Z'
   - VulnerabilityID: CVE-2026-6238
     PkgID: libc6@2.43-2ubuntu2
     PkgName: libc6
@@ -883,7 +1253,8 @@
       PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
       UID: a6167efe03e34488
     InstalledVersion: 2.43-2ubuntu2
-    Status: affected
+    FixedVersion: 2.43-2ubuntu2.3
+    Status: fixed
     Layer:
       Digest: sha256:c0a78c509860626986f3602272f075e9596b8effeb4086e163ea16501cd0e695
       DiffID: sha256:834302fb60597fdd58717941103ddd77ff8b2f817b74e0747e98b17b9f819e33
@@ -926,7 +1297,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5928
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6238
     - https://errata.almalinux.org/9/ALSA-2026-42952.html
-    - https://errata.rockylinux.org/RLSA-2026:42694
+    - https://errata.rockylinux.org/RLSA-2026:42733
     - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
     - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
     - https://linux.oracle.com/cve/CVE-2026-6238.html
@@ -934,6 +1305,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6238
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34069
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0012
+    - https://ubuntu.com/security/notices/USN-8611-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6238
     PublishedDate: '2026-04-28T19:37:47.523Z'
     LastModifiedDate: '2026-07-14T13:19:09.2Z'
@@ -4125,7 +4497,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54512
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54513
     - https://errata.almalinux.org/9/ALSA-2026-40895.html
-    - https://errata.rockylinux.org/RLSA-2026:40895
+    - https://errata.rockylinux.org/RLSA-2026:43400
     - https://github.com/FasterXML/jackson-databind
     - https://github.com/FasterXML/jackson-databind/commit/434d6c511de7fdd9872f29157aafb6162d12d8d5
     - https://github.com/FasterXML/jackson-databind/issues/5988
@@ -4193,11 +4565,9 @@
     - https://bugzilla.redhat.com/2492010
     - https://bugzilla.redhat.com/2492015
     - https://bugzilla.redhat.com/show_bug.cgi?id=2492010
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2492015
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54512
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54513
     - https://errata.almalinux.org/9/ALSA-2026-40895.html
-    - https://errata.rockylinux.org/RLSA-2026:40895
+    - https://errata.rockylinux.org/RLSA-2026:43218
     - https://github.com/FasterXML/jackson-databind
     - https://github.com/FasterXML/jackson-databind/commit/01d1692c8d0ed03e51a0e3c4f8a9e6908e4931e5
     - https://github.com/FasterXML/jackson-databind/commit/24529da29fdf46ff94ca38de9ebf31cd188f5e8e
@@ -4894,6 +5264,7 @@
     - https://access.redhat.com/errata/RHSA-2026:37387
     - https://access.redhat.com/errata/RHSA-2026:41030
     - https://access.redhat.com/errata/RHSA-2026:42852
+    - https://access.redhat.com/errata/RHSA-2026:44622
     - https://access.redhat.com/security/cve/CVE-2026-41567
     - https://bugzilla.redhat.com/show_bug.cgi?id=2485356
     - https://github.com/moby/moby
@@ -4902,7 +5273,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-41567.json
     - https://www.cve.org/CVERecord?id=CVE-2026-41567
     PublishedDate: '2026-06-05T02:17:13.817Z'
-    LastModifiedDate: '2026-07-24T13:18:18.037Z'
+    LastModifiedDate: '2026-07-27T13:17:57.79Z'
   - VulnerabilityID: CVE-2026-42306
     VendorIDs:
     - GHSA-rg2x-37c3-w2rh
@@ -5005,7 +5376,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-33997.json
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
-    LastModifiedDate: '2026-07-24T13:18:02.067Z'
+    LastModifiedDate: '2026-07-27T13:17:41.643Z'
   - VulnerabilityID: CVE-2026-41568
     VendorIDs:
     - GHSA-vp62-88p7-qqf5
@@ -5238,10 +5609,14 @@
     - https://access.redhat.com/errata/RHSA-2026:38878
     - https://access.redhat.com/security/cve/CVE-2026-39822
     - https://bugzilla.redhat.com/2498152
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
     - https://errata.almalinux.org/9/ALSA-2026-38878.html
-    - https://errata.rockylinux.org/RLSA-2026:38495
+    - https://errata.rockylinux.org/RLSA-2026:38995
     - https://go.dev/cl/797880
     - https://go.dev/issue/79005
     - https://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc
@@ -5878,17 +6253,19 @@
     - https://access.redhat.com/errata/RHSA-2026:43038
     - https://access.redhat.com/errata/RHSA-2026:43052
     - https://access.redhat.com/errata/RHSA-2026:43692
+    - https://access.redhat.com/errata/RHSA-2026:44622
     - https://access.redhat.com/errata/RHSA-2026:44624
+    - https://access.redhat.com/errata/RHSA-2026:46395
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2467822
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33811
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
     - https://errata.almalinux.org/9/ALSA-2026-37435.html
-    - https://errata.rockylinux.org/RLSA-2026:39573
+    - https://errata.rockylinux.org/RLSA-2026:38995
     - https://github.com/golang/go/issues/78760
     - https://go.dev/cl/767220
     - https://go.dev/issue/78760
@@ -5901,7 +6278,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-07-24T13:18:08.273Z'
+    LastModifiedDate: '2026-07-27T13:17:46.25Z'
   - VulnerabilityID: CVE-2026-25680
     VendorIDs:
     - GO-2026-5028
@@ -6473,17 +6850,19 @@
     - https://access.redhat.com/errata/RHSA-2026:43038
     - https://access.redhat.com/errata/RHSA-2026:43052
     - https://access.redhat.com/errata/RHSA-2026:43692
+    - https://access.redhat.com/errata/RHSA-2026:44622
     - https://access.redhat.com/errata/RHSA-2026:44624
+    - https://access.redhat.com/errata/RHSA-2026:46395
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2467822
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33811
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
     - https://errata.almalinux.org/9/ALSA-2026-37435.html
-    - https://errata.rockylinux.org/RLSA-2026:39573
+    - https://errata.rockylinux.org/RLSA-2026:38995
     - https://github.com/golang/go/issues/78760
     - https://go.dev/cl/767220
     - https://go.dev/issue/78760
@@ -6496,7 +6875,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-07-24T13:18:08.273Z'
+    LastModifiedDate: '2026-07-27T13:17:46.25Z'
   - VulnerabilityID: CVE-2025-47911
     VendorIDs:
     - GO-2026-4440
@@ -6838,10 +7217,14 @@
     - https://access.redhat.com/errata/RHSA-2026:38878
     - https://access.redhat.com/security/cve/CVE-2026-39822
     - https://bugzilla.redhat.com/2498152
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
     - https://errata.almalinux.org/9/ALSA-2026-38878.html
-    - https://errata.rockylinux.org/RLSA-2026:38495
+    - https://errata.rockylinux.org/RLSA-2026:38995
     - https://go.dev/cl/797880
     - https://go.dev/issue/79005
     - https://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc
@@ -7345,6 +7728,7 @@
     - https://access.redhat.com/errata/RHSA-2026:37387
     - https://access.redhat.com/errata/RHSA-2026:41030
     - https://access.redhat.com/errata/RHSA-2026:42852
+    - https://access.redhat.com/errata/RHSA-2026:44622
     - https://access.redhat.com/security/cve/CVE-2026-41567
     - https://bugzilla.redhat.com/show_bug.cgi?id=2485356
     - https://github.com/moby/moby
@@ -7353,7 +7737,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-41567.json
     - https://www.cve.org/CVERecord?id=CVE-2026-41567
     PublishedDate: '2026-06-05T02:17:13.817Z'
-    LastModifiedDate: '2026-07-24T13:18:18.037Z'
+    LastModifiedDate: '2026-07-27T13:17:57.79Z'
   - VulnerabilityID: CVE-2026-42306
     VendorIDs:
     - GHSA-rg2x-37c3-w2rh
@@ -7456,7 +7840,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-33997.json
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
-    LastModifiedDate: '2026-07-24T13:18:02.067Z'
+    LastModifiedDate: '2026-07-27T13:17:41.643Z'
   - VulnerabilityID: CVE-2026-41568
     VendorIDs:
     - GHSA-vp62-88p7-qqf5
@@ -7720,10 +8104,14 @@
     - https://access.redhat.com/errata/RHSA-2026:38878
     - https://access.redhat.com/security/cve/CVE-2026-39822
     - https://bugzilla.redhat.com/2498152
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
     - https://errata.almalinux.org/9/ALSA-2026-38878.html
-    - https://errata.rockylinux.org/RLSA-2026:38495
+    - https://errata.rockylinux.org/RLSA-2026:38995
     - https://go.dev/cl/797880
     - https://go.dev/issue/79005
     - https://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc
@@ -7880,6 +8268,7 @@
     - https://access.redhat.com/errata/RHSA-2026:37387
     - https://access.redhat.com/errata/RHSA-2026:41030
     - https://access.redhat.com/errata/RHSA-2026:42852
+    - https://access.redhat.com/errata/RHSA-2026:44622
     - https://access.redhat.com/security/cve/CVE-2026-41567
     - https://bugzilla.redhat.com/show_bug.cgi?id=2485356
     - https://github.com/moby/moby
@@ -7888,7 +8277,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-41567.json
     - https://www.cve.org/CVERecord?id=CVE-2026-41567
     PublishedDate: '2026-06-05T02:17:13.817Z'
-    LastModifiedDate: '2026-07-24T13:18:18.037Z'
+    LastModifiedDate: '2026-07-27T13:17:57.79Z'
   - VulnerabilityID: CVE-2026-42306
     VendorIDs:
     - GHSA-rg2x-37c3-w2rh
@@ -7991,7 +8380,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-33997.json
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
-    LastModifiedDate: '2026-07-24T13:18:02.067Z'
+    LastModifiedDate: '2026-07-27T13:17:41.643Z'
   - VulnerabilityID: CVE-2026-41568
     VendorIDs:
     - GHSA-vp62-88p7-qqf5
@@ -8224,10 +8613,14 @@
     - https://access.redhat.com/errata/RHSA-2026:38878
     - https://access.redhat.com/security/cve/CVE-2026-39822
     - https://bugzilla.redhat.com/2498152
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
     - https://errata.almalinux.org/9/ALSA-2026-38878.html
-    - https://errata.rockylinux.org/RLSA-2026:38495
+    - https://errata.rockylinux.org/RLSA-2026:38995
     - https://go.dev/cl/797880
     - https://go.dev/issue/79005
     - https://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc
@@ -8626,6 +9019,7 @@
     - https://access.redhat.com/errata/RHSA-2026:37387
     - https://access.redhat.com/errata/RHSA-2026:41030
     - https://access.redhat.com/errata/RHSA-2026:42852
+    - https://access.redhat.com/errata/RHSA-2026:44622
     - https://access.redhat.com/security/cve/CVE-2026-41567
     - https://bugzilla.redhat.com/show_bug.cgi?id=2485356
     - https://github.com/moby/moby
@@ -8634,7 +9028,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-41567.json
     - https://www.cve.org/CVERecord?id=CVE-2026-41567
     PublishedDate: '2026-06-05T02:17:13.817Z'
-    LastModifiedDate: '2026-07-24T13:18:18.037Z'
+    LastModifiedDate: '2026-07-27T13:17:57.79Z'
   - VulnerabilityID: CVE-2026-42306
     VendorIDs:
     - GHSA-rg2x-37c3-w2rh
@@ -8737,7 +9131,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-33997.json
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
-    LastModifiedDate: '2026-07-24T13:18:02.067Z'
+    LastModifiedDate: '2026-07-27T13:17:41.643Z'
   - VulnerabilityID: CVE-2026-41568
     VendorIDs:
     - GHSA-vp62-88p7-qqf5
@@ -9007,14 +9401,14 @@
     - https://access.redhat.com/security/cve/CVE-2026-27145
     - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2484207
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2467822
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33811
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
     - https://errata.almalinux.org/9/ALSA-2026-36317.html
-    - https://errata.rockylinux.org/RLSA-2026:39573
+    - https://errata.rockylinux.org/RLSA-2026:38995
     - https://go.dev/cl/783621
     - https://go.dev/issue/79694
     - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
@@ -9069,10 +9463,14 @@
     - https://access.redhat.com/errata/RHSA-2026:38878
     - https://access.redhat.com/security/cve/CVE-2026-39822
     - https://bugzilla.redhat.com/2498152
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
     - https://errata.almalinux.org/9/ALSA-2026-38878.html
-    - https://errata.rockylinux.org/RLSA-2026:38495
+    - https://errata.rockylinux.org/RLSA-2026:38995
     - https://go.dev/cl/797880
     - https://go.dev/issue/79005
     - https://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc
