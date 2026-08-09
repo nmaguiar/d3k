@@ -329,7 +329,7 @@
 │                        │       │                  ├ [29]: https://ubuntu.com/security/notices/USN-7532-1 
 │                        │       │                  ╰ [30]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                        │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                        │       ╰ LastModifiedDate: 2026-08-04T00:16:39.053Z 
+│                        │       ╰ LastModifiedDate: 2026-08-09T05:16:49.943Z 
 │                        ├ [6]   ╭ VulnerabilityID : CVE-2025-48384 
 │                        │       ├ PkgID           : git@1:2.45.2-1ubuntu1.1 
 │                        │       ├ PkgName         : git 
@@ -2739,7 +2739,7 @@
 │                        │       │                  ├ [29]: https://ubuntu.com/security/notices/USN-7532-1 
 │                        │       │                  ╰ [30]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                        │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                        │       ╰ LastModifiedDate: 2026-08-04T00:16:39.053Z 
+│                        │       ╰ LastModifiedDate: 2026-08-09T05:16:49.943Z 
 │                        ├ [39]  ╭ VulnerabilityID : CVE-2025-4373 
 │                        │       ├ PkgID           : libglib2.0-data@2.82.1-0ubuntu1 
 │                        │       ├ PkgName         : libglib2.0-data 
@@ -2818,7 +2818,7 @@
 │                        │       │                  ├ [29]: https://ubuntu.com/security/notices/USN-7532-1 
 │                        │       │                  ╰ [30]: https://www.cve.org/CVERecord?id=CVE-2025-4373 
 │                        │       ├ PublishedDate   : 2025-05-06T15:16:05.32Z 
-│                        │       ╰ LastModifiedDate: 2026-08-04T00:16:39.053Z 
+│                        │       ╰ LastModifiedDate: 2026-08-09T05:16:49.943Z 
 │                        ├ [40]  ╭ VulnerabilityID : CVE-2025-24528 
 │                        │       ├ PkgID           : libgssapi-krb5-2@1.21.3-3ubuntu0.1 
 │                        │       ├ PkgName         : libgssapi-krb5-2 
@@ -4842,7 +4842,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-416 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ cbl-mariner: 2 
@@ -5542,7 +5542,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-416 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ cbl-mariner: 2 
@@ -6242,7 +6242,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-416 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ cbl-mariner: 2 
@@ -8441,7 +8441,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-416 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ cbl-mariner: 2 
@@ -9141,7 +9141,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-416 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ cbl-mariner: 2 
@@ -12509,7 +12509,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -12921,7 +12921,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-425 
 │                        │      │                  ╰ [1]: CWE-1286 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -15007,23 +15007,18 @@
 │                        │      │                  ├ bitnami: 3 
 │                        │      │                  ├ photon : 3 
 │                        │      │                  ╰ redhat : 2 
-│                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                  │         │           :N/A:H 
-│                        │      │                  │         ╰ V3Score : 7.5 
-│                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                            │           :N/A:L 
-│                        │      │                            ╰ V3Score : 5.3 
+│                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                            │           :N/A:H 
+│                        │      │                            ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
 │                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58188 
-│                        │      │                  ├ [2]: https://github.com/golang/go/commit/6e4007e8cffbb870e
-│                        │      │                  │      6b606307ab7308236ecefb9 
-│                        │      │                  ├ [3]: https://go.dev/cl/709853 
-│                        │      │                  ├ [4]: https://go.dev/issue/75675 
-│                        │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2i
+│                        │      │                  ├ [2]: https://go.dev/cl/709853 
+│                        │      │                  ├ [3]: https://go.dev/issue/75675 
+│                        │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                        │      │                  │      Q_bI 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4013 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
+│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
+│                        │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4013 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                        │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T09:44:02.267Z 
 │                        ├ [27] ╭ VulnerabilityID : CVE-2025-58189 
@@ -15293,7 +15288,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ oracle-oval: 3 
@@ -15368,7 +15363,7 @@
 │                        │      │                   information disclosure if a network-local attacker can
 │                        │      │                   inject messages during the handshake. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
 │                        │      │                  ├ azure      : 1 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 1 
@@ -20354,7 +20349,7 @@
 │                        │       ├ Severity        : HIGH 
 │                        │       ├ CweIDs           ─ [0]: CWE-770 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ cbl-mariner: 2 
@@ -20767,7 +20762,7 @@
 │                        │       ├ CweIDs           ╭ [0]: CWE-425 
 │                        │       │                  ╰ [1]: CWE-1286 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 3 
+│                        │       │                  ├ amazon     : 2 
 │                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ oracle-oval: 3 
@@ -23022,24 +23017,19 @@
 │                        │       │                  ├ bitnami: 3 
 │                        │       │                  ├ photon : 3 
 │                        │       │                  ╰ redhat : 2 
-│                        │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
-│                        │       │                  │         │           I:N/A:H 
-│                        │       │                  │         ╰ V3Score : 7.5 
-│                        │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
-│                        │       │                            │           I:N/A:L 
-│                        │       │                            ╰ V3Score : 5.3 
+│                        │       ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                            │           I:N/A:H 
+│                        │       │                            ╰ V3Score : 7.5 
 │                        │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/0
 │                        │       │                  │      8/1 
 │                        │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58188 
-│                        │       │                  ├ [2]: https://github.com/golang/go/commit/6e4007e8cffbb870
-│                        │       │                  │      e6b606307ab7308236ecefb9 
-│                        │       │                  ├ [3]: https://go.dev/cl/709853 
-│                        │       │                  ├ [4]: https://go.dev/issue/75675 
-│                        │       │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2
+│                        │       │                  ├ [2]: https://go.dev/cl/709853 
+│                        │       │                  ├ [3]: https://go.dev/issue/75675 
+│                        │       │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2
 │                        │       │                  │      iQ_bI 
-│                        │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
-│                        │       │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4013 
-│                        │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
+│                        │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
+│                        │       │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4013 
+│                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                        │       ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                        │       ╰ LastModifiedDate: 2026-06-17T09:44:02.267Z 
 │                        ├ [87]  ╭ VulnerabilityID : CVE-2025-58189 
@@ -23313,7 +23303,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-770 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ oracle-oval: 3 
@@ -23388,7 +23378,7 @@
 │                        │       │                   information disclosure if a network-local attacker can
 │                        │       │                   inject messages during the handshake. 
 │                        │       ├ Severity        : MEDIUM 
-│                        │       ├ VendorSeverity   ╭ amazon     : 2 
+│                        │       ├ VendorSeverity   ╭ amazon     : 3 
 │                        │       │                  ├ azure      : 1 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ cbl-mariner: 1 
@@ -25361,7 +25351,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -25773,7 +25763,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-425 
 │                        │      │                  ╰ [1]: CWE-1286 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -27859,23 +27849,18 @@
 │                        │      │                  ├ bitnami: 3 
 │                        │      │                  ├ photon : 3 
 │                        │      │                  ╰ redhat : 2 
-│                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                  │         │           :N/A:H 
-│                        │      │                  │         ╰ V3Score : 7.5 
-│                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                            │           :N/A:L 
-│                        │      │                            ╰ V3Score : 5.3 
+│                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                            │           :N/A:H 
+│                        │      │                            ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
 │                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58188 
-│                        │      │                  ├ [2]: https://github.com/golang/go/commit/6e4007e8cffbb870e
-│                        │      │                  │      6b606307ab7308236ecefb9 
-│                        │      │                  ├ [3]: https://go.dev/cl/709853 
-│                        │      │                  ├ [4]: https://go.dev/issue/75675 
-│                        │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2i
+│                        │      │                  ├ [2]: https://go.dev/cl/709853 
+│                        │      │                  ├ [3]: https://go.dev/issue/75675 
+│                        │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                        │      │                  │      Q_bI 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4013 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
+│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
+│                        │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4013 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                        │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T09:44:02.267Z 
 │                        ├ [45] ╭ VulnerabilityID : CVE-2025-58189 
@@ -28145,7 +28130,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ oracle-oval: 3 
@@ -28220,7 +28205,7 @@
 │                        │      │                   information disclosure if a network-local attacker can
 │                        │      │                   inject messages during the handshake. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
 │                        │      │                  ├ azure      : 1 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 1 
@@ -33537,7 +33522,7 @@
 │                        │       ├ Severity        : HIGH 
 │                        │       ├ CweIDs           ─ [0]: CWE-770 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ cbl-mariner: 2 
@@ -33950,7 +33935,7 @@
 │                        │       ├ CweIDs           ╭ [0]: CWE-425 
 │                        │       │                  ╰ [1]: CWE-1286 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 3 
+│                        │       │                  ├ amazon     : 2 
 │                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ oracle-oval: 3 
@@ -36045,24 +36030,19 @@
 │                        │       │                  ├ bitnami: 3 
 │                        │       │                  ├ photon : 3 
 │                        │       │                  ╰ redhat : 2 
-│                        │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
-│                        │       │                  │         │           I:N/A:H 
-│                        │       │                  │         ╰ V3Score : 7.5 
-│                        │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
-│                        │       │                            │           I:N/A:L 
-│                        │       │                            ╰ V3Score : 5.3 
+│                        │       ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                            │           I:N/A:H 
+│                        │       │                            ╰ V3Score : 7.5 
 │                        │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/0
 │                        │       │                  │      8/1 
 │                        │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58188 
-│                        │       │                  ├ [2]: https://github.com/golang/go/commit/6e4007e8cffbb870
-│                        │       │                  │      e6b606307ab7308236ecefb9 
-│                        │       │                  ├ [3]: https://go.dev/cl/709853 
-│                        │       │                  ├ [4]: https://go.dev/issue/75675 
-│                        │       │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2
+│                        │       │                  ├ [2]: https://go.dev/cl/709853 
+│                        │       │                  ├ [3]: https://go.dev/issue/75675 
+│                        │       │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2
 │                        │       │                  │      iQ_bI 
-│                        │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
-│                        │       │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4013 
-│                        │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
+│                        │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
+│                        │       │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4013 
+│                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                        │       ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                        │       ╰ LastModifiedDate: 2026-06-17T09:44:02.267Z 
 │                        ├ [88]  ╭ VulnerabilityID : CVE-2025-58189 
@@ -36336,7 +36316,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-770 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ oracle-oval: 3 
@@ -36411,7 +36391,7 @@
 │                        │       │                   information disclosure if a network-local attacker can
 │                        │       │                   inject messages during the handshake. 
 │                        │       ├ Severity        : MEDIUM 
-│                        │       ├ VendorSeverity   ╭ amazon     : 2 
+│                        │       ├ VendorSeverity   ╭ amazon     : 3 
 │                        │       │                  ├ azure      : 1 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ cbl-mariner: 1 
@@ -40822,7 +40802,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -41234,7 +41214,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-425 
 │                        │      │                  ╰ [1]: CWE-1286 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -43396,23 +43376,18 @@
 │                        │      │                  ├ bitnami: 3 
 │                        │      │                  ├ photon : 3 
 │                        │      │                  ╰ redhat : 2 
-│                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                  │         │           :N/A:H 
-│                        │      │                  │         ╰ V3Score : 7.5 
-│                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                            │           :N/A:L 
-│                        │      │                            ╰ V3Score : 5.3 
+│                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                            │           :N/A:H 
+│                        │      │                            ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
 │                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58188 
-│                        │      │                  ├ [2]: https://github.com/golang/go/commit/6e4007e8cffbb870e
-│                        │      │                  │      6b606307ab7308236ecefb9 
-│                        │      │                  ├ [3]: https://go.dev/cl/709853 
-│                        │      │                  ├ [4]: https://go.dev/issue/75675 
-│                        │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2i
+│                        │      │                  ├ [2]: https://go.dev/cl/709853 
+│                        │      │                  ├ [3]: https://go.dev/issue/75675 
+│                        │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                        │      │                  │      Q_bI 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4013 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
+│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
+│                        │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4013 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                        │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T09:44:02.267Z 
 │                        ├ [77] ╭ VulnerabilityID : CVE-2025-58189 
@@ -43682,7 +43657,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ oracle-oval: 3 
@@ -43757,7 +43732,7 @@
 │                        │      │                   information disclosure if a network-local attacker can
 │                        │      │                   inject messages during the handshake. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
 │                        │      │                  ├ azure      : 1 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 1 
@@ -45629,7 +45604,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -46041,7 +46016,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-425 
 │                        │      │                  ╰ [1]: CWE-1286 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -48127,23 +48102,18 @@
 │                        │      │                  ├ bitnami: 3 
 │                        │      │                  ├ photon : 3 
 │                        │      │                  ╰ redhat : 2 
-│                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                  │         │           :N/A:H 
-│                        │      │                  │         ╰ V3Score : 7.5 
-│                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                            │           :N/A:L 
-│                        │      │                            ╰ V3Score : 5.3 
+│                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                            │           :N/A:H 
+│                        │      │                            ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
 │                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58188 
-│                        │      │                  ├ [2]: https://github.com/golang/go/commit/6e4007e8cffbb870e
-│                        │      │                  │      6b606307ab7308236ecefb9 
-│                        │      │                  ├ [3]: https://go.dev/cl/709853 
-│                        │      │                  ├ [4]: https://go.dev/issue/75675 
-│                        │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2i
+│                        │      │                  ├ [2]: https://go.dev/cl/709853 
+│                        │      │                  ├ [3]: https://go.dev/issue/75675 
+│                        │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                        │      │                  │      Q_bI 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4013 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
+│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
+│                        │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4013 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                        │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T09:44:02.267Z 
 │                        ├ [44] ╭ VulnerabilityID : CVE-2025-58189 
@@ -48413,7 +48383,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ oracle-oval: 3 
@@ -48488,7 +48458,7 @@
 │                        │      │                   information disclosure if a network-local attacker can
 │                        │      │                   inject messages during the handshake. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
 │                        │      │                  ├ azure      : 1 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 1 
@@ -50075,7 +50045,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -50487,7 +50457,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-425 
 │                        │      │                  ╰ [1]: CWE-1286 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -52573,23 +52543,18 @@
 │                        │      │                  ├ bitnami: 3 
 │                        │      │                  ├ photon : 3 
 │                        │      │                  ╰ redhat : 2 
-│                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                  │         │           :N/A:H 
-│                        │      │                  │         ╰ V3Score : 7.5 
-│                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                            │           :N/A:L 
-│                        │      │                            ╰ V3Score : 5.3 
+│                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                            │           :N/A:H 
+│                        │      │                            ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
 │                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58188 
-│                        │      │                  ├ [2]: https://github.com/golang/go/commit/6e4007e8cffbb870e
-│                        │      │                  │      6b606307ab7308236ecefb9 
-│                        │      │                  ├ [3]: https://go.dev/cl/709853 
-│                        │      │                  ├ [4]: https://go.dev/issue/75675 
-│                        │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2i
+│                        │      │                  ├ [2]: https://go.dev/cl/709853 
+│                        │      │                  ├ [3]: https://go.dev/issue/75675 
+│                        │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                        │      │                  │      Q_bI 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4013 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
+│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
+│                        │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4013 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                        │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T09:44:02.267Z 
 │                        ├ [40] ╭ VulnerabilityID : CVE-2025-58189 
@@ -52859,7 +52824,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ oracle-oval: 3 
@@ -52934,7 +52899,7 @@
 │                        │      │                   information disclosure if a network-local attacker can
 │                        │      │                   inject messages during the handshake. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
 │                        │      │                  ├ azure      : 1 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 1 
@@ -57987,7 +57952,7 @@
 │                        │       ├ Severity        : HIGH 
 │                        │       ├ CweIDs           ─ [0]: CWE-770 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ cbl-mariner: 2 
@@ -58400,7 +58365,7 @@
 │                        │       ├ CweIDs           ╭ [0]: CWE-425 
 │                        │       │                  ╰ [1]: CWE-1286 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 3 
+│                        │       │                  ├ amazon     : 2 
 │                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ oracle-oval: 3 
@@ -60495,24 +60460,19 @@
 │                        │       │                  ├ bitnami: 3 
 │                        │       │                  ├ photon : 3 
 │                        │       │                  ╰ redhat : 2 
-│                        │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
-│                        │       │                  │         │           I:N/A:H 
-│                        │       │                  │         ╰ V3Score : 7.5 
-│                        │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
-│                        │       │                            │           I:N/A:L 
-│                        │       │                            ╰ V3Score : 5.3 
+│                        │       ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                            │           I:N/A:H 
+│                        │       │                            ╰ V3Score : 7.5 
 │                        │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/0
 │                        │       │                  │      8/1 
 │                        │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58188 
-│                        │       │                  ├ [2]: https://github.com/golang/go/commit/6e4007e8cffbb870
-│                        │       │                  │      e6b606307ab7308236ecefb9 
-│                        │       │                  ├ [3]: https://go.dev/cl/709853 
-│                        │       │                  ├ [4]: https://go.dev/issue/75675 
-│                        │       │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2
+│                        │       │                  ├ [2]: https://go.dev/cl/709853 
+│                        │       │                  ├ [3]: https://go.dev/issue/75675 
+│                        │       │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2
 │                        │       │                  │      iQ_bI 
-│                        │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
-│                        │       │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4013 
-│                        │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
+│                        │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
+│                        │       │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4013 
+│                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                        │       ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                        │       ╰ LastModifiedDate: 2026-06-17T09:44:02.267Z 
 │                        ├ [86]  ╭ VulnerabilityID : CVE-2025-58189 
@@ -60786,7 +60746,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-770 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ oracle-oval: 3 
@@ -60861,7 +60821,7 @@
 │                        │       │                   information disclosure if a network-local attacker can
 │                        │       │                   inject messages during the handshake. 
 │                        │       ├ Severity        : MEDIUM 
-│                        │       ├ VendorSeverity   ╭ amazon     : 2 
+│                        │       ├ VendorSeverity   ╭ amazon     : 3 
 │                        │       │                  ├ azure      : 1 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ cbl-mariner: 1 
@@ -65917,7 +65877,7 @@
 │                        │       ├ Severity        : HIGH 
 │                        │       ├ CweIDs           ─ [0]: CWE-770 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ cbl-mariner: 2 
@@ -66330,7 +66290,7 @@
 │                        │       ├ CweIDs           ╭ [0]: CWE-425 
 │                        │       │                  ╰ [1]: CWE-1286 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 3 
+│                        │       │                  ├ amazon     : 2 
 │                        │       │                  ├ azure      : 3 
 │                        │       │                  ├ bitnami    : 3 
 │                        │       │                  ├ oracle-oval: 3 
@@ -68425,24 +68385,19 @@
 │                        │       │                  ├ bitnami: 3 
 │                        │       │                  ├ photon : 3 
 │                        │       │                  ╰ redhat : 2 
-│                        │       ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
-│                        │       │                  │         │           I:N/A:H 
-│                        │       │                  │         ╰ V3Score : 7.5 
-│                        │       │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
-│                        │       │                            │           I:N/A:L 
-│                        │       │                            ╰ V3Score : 5.3 
+│                        │       ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/
+│                        │       │                            │           I:N/A:H 
+│                        │       │                            ╰ V3Score : 7.5 
 │                        │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/0
 │                        │       │                  │      8/1 
 │                        │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58188 
-│                        │       │                  ├ [2]: https://github.com/golang/go/commit/6e4007e8cffbb870
-│                        │       │                  │      e6b606307ab7308236ecefb9 
-│                        │       │                  ├ [3]: https://go.dev/cl/709853 
-│                        │       │                  ├ [4]: https://go.dev/issue/75675 
-│                        │       │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2
+│                        │       │                  ├ [2]: https://go.dev/cl/709853 
+│                        │       │                  ├ [3]: https://go.dev/issue/75675 
+│                        │       │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2
 │                        │       │                  │      iQ_bI 
-│                        │       │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
-│                        │       │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4013 
-│                        │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
+│                        │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
+│                        │       │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4013 
+│                        │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                        │       ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                        │       ╰ LastModifiedDate: 2026-06-17T09:44:02.267Z 
 │                        ├ [86]  ╭ VulnerabilityID : CVE-2025-58189 
@@ -68716,7 +68671,7 @@
 │                        │       ├ Severity        : MEDIUM 
 │                        │       ├ CweIDs           ─ [0]: CWE-770 
 │                        │       ├ VendorSeverity   ╭ alma       : 3 
-│                        │       │                  ├ amazon     : 2 
+│                        │       │                  ├ amazon     : 3 
 │                        │       │                  ├ azure      : 2 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ oracle-oval: 3 
@@ -68791,7 +68746,7 @@
 │                        │       │                   information disclosure if a network-local attacker can
 │                        │       │                   inject messages during the handshake. 
 │                        │       ├ Severity        : MEDIUM 
-│                        │       ├ VendorSeverity   ╭ amazon     : 2 
+│                        │       ├ VendorSeverity   ╭ amazon     : 3 
 │                        │       │                  ├ azure      : 1 
 │                        │       │                  ├ bitnami    : 2 
 │                        │       │                  ├ cbl-mariner: 1 
@@ -73430,7 +73385,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ cbl-mariner: 2 
@@ -73842,7 +73797,7 @@
 │                        │      ├ CweIDs           ╭ [0]: CWE-425 
 │                        │      │                  ╰ [1]: CWE-1286 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 3 
+│                        │      │                  ├ amazon     : 2 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -75928,23 +75883,18 @@
 │                        │      │                  ├ bitnami: 3 
 │                        │      │                  ├ photon : 3 
 │                        │      │                  ╰ redhat : 2 
-│                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                  │         │           :N/A:H 
-│                        │      │                  │         ╰ V3Score : 7.5 
-│                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
-│                        │      │                            │           :N/A:L 
-│                        │      │                            ╰ V3Score : 5.3 
+│                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
+│                        │      │                            │           :N/A:H 
+│                        │      │                            ╰ V3Score : 7.5 
 │                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
 │                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58188 
-│                        │      │                  ├ [2]: https://github.com/golang/go/commit/6e4007e8cffbb870e
-│                        │      │                  │      6b606307ab7308236ecefb9 
-│                        │      │                  ├ [3]: https://go.dev/cl/709853 
-│                        │      │                  ├ [4]: https://go.dev/issue/75675 
-│                        │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2i
+│                        │      │                  ├ [2]: https://go.dev/cl/709853 
+│                        │      │                  ├ [3]: https://go.dev/issue/75675 
+│                        │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                        │      │                  │      Q_bI 
-│                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
-│                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4013 
-│                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
+│                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58188 
+│                        │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4013 
+│                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                        │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T09:44:02.267Z 
 │                        ├ [80] ╭ VulnerabilityID : CVE-2025-58189 
@@ -76214,7 +76164,7 @@
 │                        │      ├ Severity        : MEDIUM 
 │                        │      ├ CweIDs           ─ [0]: CWE-770 
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 2 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ oracle-oval: 3 
@@ -76289,7 +76239,7 @@
 │                        │      │                   information disclosure if a network-local attacker can
 │                        │      │                   inject messages during the handshake. 
 │                        │      ├ Severity        : MEDIUM 
-│                        │      ├ VendorSeverity   ╭ amazon     : 2 
+│                        │      ├ VendorSeverity   ╭ amazon     : 3 
 │                        │      │                  ├ azure      : 1 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ cbl-mariner: 1 
