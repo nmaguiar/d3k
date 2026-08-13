@@ -141,11 +141,13 @@
         V3Score: 7.5
     References:
     - https://access.redhat.com/errata/RHSA-2025:7409
+    - https://access.redhat.com/errata/RHSA-2025:8414
     - https://access.redhat.com/security/cve/CVE-2024-52005
     - https://bugzilla.redhat.com/2338289
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
-    - https://errata.almalinux.org/9/ALSA-2025-7409.html
+    - https://errata.almalinux.org/8/ALSA-2025-8414.html
     - https://errata.rockylinux.org/RLSA-2025:7409
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
@@ -201,11 +203,13 @@
         V3Score: 7.5
     References:
     - https://access.redhat.com/errata/RHSA-2025:7409
+    - https://access.redhat.com/errata/RHSA-2025:8414
     - https://access.redhat.com/security/cve/CVE-2024-52005
     - https://bugzilla.redhat.com/2338289
     - https://bugzilla.redhat.com/show_bug.cgi?id=2338289
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52005
-    - https://errata.almalinux.org/9/ALSA-2025-7409.html
+    - https://errata.almalinux.org/8/ALSA-2025-8414.html
     - https://errata.rockylinux.org/RLSA-2025:7409
     - https://github.com/git/git/security/advisories/GHSA-7jjc-gg6m-3329
     - https://linux.oracle.com/cve/CVE-2024-52005.html
@@ -501,6 +505,7 @@
     - https://bugzilla.redhat.com/2245218
     - https://bugzilla.redhat.com/show_bug.cgi?id=2245218
     - https://bugzilla.redhat.com/show_bug.cgi?id=2268268
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2236
     - https://dev.gnupg.org/T7136
     - https://errata.almalinux.org/9/ALSA-2024-9404.html
@@ -833,11 +838,13 @@
     - https://access.redhat.com/errata/RHSA-2026:49667
     - https://access.redhat.com/errata/RHSA-2026:49668
     - https://access.redhat.com/errata/RHSA-2026:53371
+    - https://access.redhat.com/errata/RHSA-2026:54387
     - https://access.redhat.com/security/cve/CVE-2026-13757
     - https://bugzilla.redhat.com/2494556
     - https://bugzilla.redhat.com/show_bug.cgi?id=2494556
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-13757
-    - https://errata.almalinux.org/9/ALSA-2026-49667.html
+    - https://errata.almalinux.org/10/ALSA-2026-49668.html
     - https://errata.rockylinux.org/RLSA-2026:49667
     - https://github.com/advisories/GHSA-p2wm-69qx-x25w
     - https://linux.oracle.com/cve/CVE-2026-13757.html
@@ -845,7 +852,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-13757
     - https://www.cve.org/CVERecord?id=CVE-2026-13757
     PublishedDate: '2026-06-29T19:16:40.907Z'
-    LastModifiedDate: '2026-08-11T10:17:11.68Z'
+    LastModifiedDate: '2026-08-12T16:16:52.253Z'
   - VulnerabilityID: CVE-2026-15059
     PkgID: libpam-systemd@259.5-0ubuntu3.3
     PkgName: libpam-systemd
@@ -1123,6 +1130,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
     - https://errata.rockylinux.org/RLSA-2025:20559
@@ -1795,6 +1803,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
     - https://errata.rockylinux.org/RLSA-2025:20559
@@ -1924,7 +1933,7 @@
     CweIDs:
     - CWE-923
     VendorSeverity:
-      alma: 3
+      alma: 2
       amazon: 2
       nvd: 2
       oracle-oval: 3
@@ -1944,30 +1953,29 @@
     - https://access.redhat.com/errata/RHSA-2026:47755
     - https://access.redhat.com/errata/RHSA-2026:47756
     - https://access.redhat.com/errata/RHSA-2026:47757
+    - https://access.redhat.com/errata/RHSA-2026:54387
     - https://access.redhat.com/security/cve/CVE-2026-55655
     - https://bugzilla.redhat.com/2462250
     - https://bugzilla.redhat.com/2462351
-    - https://bugzilla.redhat.com/2462493
-    - https://bugzilla.redhat.com/2497936
-    - https://bugzilla.redhat.com/2497944
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462250
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462351
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462493
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497936
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497944
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55653
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55654
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55655
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59996
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-60002
-    - https://errata.almalinux.org/9/ALSA-2026-47756.html
+    - https://errata.almalinux.org/8/ALSA-2026-47755.html
     - https://errata.rockylinux.org/RLSA-2026:47756
     - https://linux.oracle.com/cve/CVE-2026-55655.html
     - https://linux.oracle.com/errata/ELSA-2026-47757.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-55655
     - https://www.cve.org/CVERecord?id=CVE-2026-55655
     PublishedDate: '2026-06-23T04:17:40.787Z'
-    LastModifiedDate: '2026-07-30T09:16:35.46Z'
+    LastModifiedDate: '2026-08-12T16:17:07.32Z'
   - VulnerabilityID: CVE-2026-55654
     PkgID: openssh-client@1:10.2p1-2ubuntu3.5
     PkgName: openssh-client
@@ -2005,6 +2013,7 @@
     - https://access.redhat.com/errata/RHSA-2026:36759
     - https://access.redhat.com/errata/RHSA-2026:47756
     - https://access.redhat.com/errata/RHSA-2026:47757
+    - https://access.redhat.com/errata/RHSA-2026:54387
     - https://access.redhat.com/security/cve/CVE-2026-55654
     - https://bugzilla.redhat.com/2462250
     - https://bugzilla.redhat.com/2462351
@@ -2016,19 +2025,20 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462493
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497936
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497944
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55653
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55654
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55655
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59996
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-60002
-    - https://errata.almalinux.org/9/ALSA-2026-47756.html
+    - https://errata.almalinux.org/10/ALSA-2026-47757.html
     - https://errata.rockylinux.org/RLSA-2026:47756
     - https://linux.oracle.com/cve/CVE-2026-55654.html
     - https://linux.oracle.com/errata/ELSA-2026-47757.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-55654
     - https://www.cve.org/CVERecord?id=CVE-2026-55654
     PublishedDate: '2026-06-23T04:17:40.587Z'
-    LastModifiedDate: '2026-07-30T10:16:38.547Z'
+    LastModifiedDate: '2026-08-12T16:17:07.16Z'
   - VulnerabilityID: CVE-2026-55655
     PkgID: openssh-server@1:10.2p1-2ubuntu3.5
     PkgName: openssh-server
@@ -2053,7 +2063,7 @@
     CweIDs:
     - CWE-923
     VendorSeverity:
-      alma: 3
+      alma: 2
       amazon: 2
       nvd: 2
       oracle-oval: 3
@@ -2073,30 +2083,29 @@
     - https://access.redhat.com/errata/RHSA-2026:47755
     - https://access.redhat.com/errata/RHSA-2026:47756
     - https://access.redhat.com/errata/RHSA-2026:47757
+    - https://access.redhat.com/errata/RHSA-2026:54387
     - https://access.redhat.com/security/cve/CVE-2026-55655
     - https://bugzilla.redhat.com/2462250
     - https://bugzilla.redhat.com/2462351
-    - https://bugzilla.redhat.com/2462493
-    - https://bugzilla.redhat.com/2497936
-    - https://bugzilla.redhat.com/2497944
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462250
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462351
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462493
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497936
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497944
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55653
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55654
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55655
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59996
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-60002
-    - https://errata.almalinux.org/9/ALSA-2026-47756.html
+    - https://errata.almalinux.org/8/ALSA-2026-47755.html
     - https://errata.rockylinux.org/RLSA-2026:47756
     - https://linux.oracle.com/cve/CVE-2026-55655.html
     - https://linux.oracle.com/errata/ELSA-2026-47757.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-55655
     - https://www.cve.org/CVERecord?id=CVE-2026-55655
     PublishedDate: '2026-06-23T04:17:40.787Z'
-    LastModifiedDate: '2026-07-30T09:16:35.46Z'
+    LastModifiedDate: '2026-08-12T16:17:07.32Z'
   - VulnerabilityID: CVE-2026-55654
     PkgID: openssh-server@1:10.2p1-2ubuntu3.5
     PkgName: openssh-server
@@ -2134,6 +2143,7 @@
     - https://access.redhat.com/errata/RHSA-2026:36759
     - https://access.redhat.com/errata/RHSA-2026:47756
     - https://access.redhat.com/errata/RHSA-2026:47757
+    - https://access.redhat.com/errata/RHSA-2026:54387
     - https://access.redhat.com/security/cve/CVE-2026-55654
     - https://bugzilla.redhat.com/2462250
     - https://bugzilla.redhat.com/2462351
@@ -2145,19 +2155,20 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462493
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497936
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497944
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55653
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55654
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55655
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59996
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-60002
-    - https://errata.almalinux.org/9/ALSA-2026-47756.html
+    - https://errata.almalinux.org/10/ALSA-2026-47757.html
     - https://errata.rockylinux.org/RLSA-2026:47756
     - https://linux.oracle.com/cve/CVE-2026-55654.html
     - https://linux.oracle.com/errata/ELSA-2026-47757.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-55654
     - https://www.cve.org/CVERecord?id=CVE-2026-55654
     PublishedDate: '2026-06-23T04:17:40.587Z'
-    LastModifiedDate: '2026-07-30T10:16:38.547Z'
+    LastModifiedDate: '2026-08-12T16:17:07.16Z'
   - VulnerabilityID: CVE-2026-55655
     PkgID: openssh-sftp-server@1:10.2p1-2ubuntu3.5
     PkgName: openssh-sftp-server
@@ -2182,7 +2193,7 @@
     CweIDs:
     - CWE-923
     VendorSeverity:
-      alma: 3
+      alma: 2
       amazon: 2
       nvd: 2
       oracle-oval: 3
@@ -2202,30 +2213,29 @@
     - https://access.redhat.com/errata/RHSA-2026:47755
     - https://access.redhat.com/errata/RHSA-2026:47756
     - https://access.redhat.com/errata/RHSA-2026:47757
+    - https://access.redhat.com/errata/RHSA-2026:54387
     - https://access.redhat.com/security/cve/CVE-2026-55655
     - https://bugzilla.redhat.com/2462250
     - https://bugzilla.redhat.com/2462351
-    - https://bugzilla.redhat.com/2462493
-    - https://bugzilla.redhat.com/2497936
-    - https://bugzilla.redhat.com/2497944
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462250
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462351
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462493
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497936
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497944
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55653
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55654
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55655
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59996
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-60002
-    - https://errata.almalinux.org/9/ALSA-2026-47756.html
+    - https://errata.almalinux.org/8/ALSA-2026-47755.html
     - https://errata.rockylinux.org/RLSA-2026:47756
     - https://linux.oracle.com/cve/CVE-2026-55655.html
     - https://linux.oracle.com/errata/ELSA-2026-47757.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-55655
     - https://www.cve.org/CVERecord?id=CVE-2026-55655
     PublishedDate: '2026-06-23T04:17:40.787Z'
-    LastModifiedDate: '2026-07-30T09:16:35.46Z'
+    LastModifiedDate: '2026-08-12T16:17:07.32Z'
   - VulnerabilityID: CVE-2026-55654
     PkgID: openssh-sftp-server@1:10.2p1-2ubuntu3.5
     PkgName: openssh-sftp-server
@@ -2263,6 +2273,7 @@
     - https://access.redhat.com/errata/RHSA-2026:36759
     - https://access.redhat.com/errata/RHSA-2026:47756
     - https://access.redhat.com/errata/RHSA-2026:47757
+    - https://access.redhat.com/errata/RHSA-2026:54387
     - https://access.redhat.com/security/cve/CVE-2026-55654
     - https://bugzilla.redhat.com/2462250
     - https://bugzilla.redhat.com/2462351
@@ -2274,19 +2285,20 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2462493
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497936
     - https://bugzilla.redhat.com/show_bug.cgi?id=2497944
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55653
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55654
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-55655
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59996
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-60002
-    - https://errata.almalinux.org/9/ALSA-2026-47756.html
+    - https://errata.almalinux.org/10/ALSA-2026-47757.html
     - https://errata.rockylinux.org/RLSA-2026:47756
     - https://linux.oracle.com/cve/CVE-2026-55654.html
     - https://linux.oracle.com/errata/ELSA-2026-47757.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-55654
     - https://www.cve.org/CVERecord?id=CVE-2026-55654
     PublishedDate: '2026-06-23T04:17:40.587Z'
-    LastModifiedDate: '2026-07-30T10:16:38.547Z'
+    LastModifiedDate: '2026-08-12T16:17:07.16Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: passwd@1:4.17.4-2ubuntu3
     PkgName: passwd
@@ -2326,6 +2338,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
     - https://errata.rockylinux.org/RLSA-2025:20559
@@ -4007,6 +4020,7 @@
     - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
     - https://errata.rockylinux.org/RLSA-2025:20559
@@ -4976,15 +4990,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N
         V3Score: 8.1
     References:
+    - https://access.redhat.com/errata/RHSA-2026:34357
     - https://access.redhat.com/errata/RHSA-2026:37123
     - https://access.redhat.com/security/cve/CVE-2026-25681
-    - https://bugzilla.redhat.com/2480680
-    - https://bugzilla.redhat.com/2480681
-    - https://bugzilla.redhat.com/2480685
-    - https://bugzilla.redhat.com/2480688
-    - https://bugzilla.redhat.com/2480757
+    - https://bugzilla.redhat.com/2466505
+    - https://bugzilla.redhat.com/2466507
+    - https://bugzilla.redhat.com/2467822
+    - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/2480761
-    - https://bugzilla.redhat.com/2493620
+    - https://bugzilla.redhat.com/2484207
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480680
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480681
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480685
@@ -4992,6 +5006,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480757
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480761
     - https://bugzilla.redhat.com/show_bug.cgi?id=2493620
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27136
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829
@@ -4999,7 +5014,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39835
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42508
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231
-    - https://errata.almalinux.org/9/ALSA-2026-37123.html
+    - https://errata.almalinux.org/10/ALSA-2026-34357.html
     - https://errata.rockylinux.org/RLSA-2026:37123
     - https://go.dev/cl/781703
     - https://go.dev/issue/79574
@@ -5064,6 +5079,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480757
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480761
     - https://bugzilla.redhat.com/show_bug.cgi?id=2493620
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27136
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829
@@ -5295,13 +5311,24 @@
     - https://access.redhat.com/errata/RHSA-2026:51341
     - https://access.redhat.com/errata/RHSA-2026:52826
     - https://access.redhat.com/errata/RHSA-2026:53374
+    - https://access.redhat.com/errata/RHSA-2026:53412
+    - https://access.redhat.com/errata/RHSA-2026:53413
+    - https://access.redhat.com/errata/RHSA-2026:53415
+    - https://access.redhat.com/errata/RHSA-2026:53530
+    - https://access.redhat.com/errata/RHSA-2026:54191
+    - https://access.redhat.com/errata/RHSA-2026:54283
+    - https://access.redhat.com/errata/RHSA-2026:54285
+    - https://access.redhat.com/errata/RHSA-2026:54287
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
+    - https://bugzilla.redhat.com/2484207
+    - https://bugzilla.redhat.com/2498152
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
-    - https://errata.almalinux.org/9/ALSA-2026-37435.html
+    - https://errata.almalinux.org/8/ALSA-2026-38995.html
     - https://errata.rockylinux.org/RLSA-2026:37435
     - https://github.com/golang/go/issues/78760
     - https://go.dev/cl/767220
@@ -5315,7 +5342,47 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-08-11T13:18:37.553Z'
+    LastModifiedDate: '2026-08-12T12:18:59.243Z'
+  - VulnerabilityID: CVE-2026-46600
+    VendorIDs:
+    - GO-2026-5942
+    PkgID: golang.org/x/net@v0.49.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.49.0
+      UID: 73c8e80af86e88b3
+    InstalledVersion: v0.49.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8ffcd8c84df5bac4a1ed0e33f4d7acae5d5aa54713d7336b2c58d05cd55db5e8
+      DiffID: sha256:732d8dafab623f07fc0fe330969ec80e66c07835641c3288b3dbfc02159c2a7d
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-46600
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:9395728fbb795d73f66938f9bf55f9466ea5356e7163d85d1bff5439f5700bb7
+    Title: 'golang.org/x/net/dns/dnsmessage: golang.org/x/net/dns/dnsmessage: Denial of Service via invalid DNS record parsing'
+    Description: Parsing an invalid SVCB or HTTPS RR can panic when the size of a parameter value overflows the message buffer.
+    Severity: HIGH
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      redhat: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-46600
+    - https://go.dev/cl/786345
+    - https://go.dev/issue/79795
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-46600
+    - https://pkg.go.dev/vuln/GO-2026-5942
+    - https://www.cve.org/CVERecord?id=CVE-2026-46600
+    PublishedDate: '2026-07-21T20:17:01.213Z'
+    LastModifiedDate: '2026-07-23T18:27:48.877Z'
   - VulnerabilityID: CVE-2026-25680
     VendorIDs:
     - GO-2026-5028
@@ -5445,37 +5512,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-42506
     PublishedDate: '2026-05-22T16:16:20.803Z'
     LastModifiedDate: '2026-07-23T16:10:00.137Z'
-  - VulnerabilityID: CVE-2026-46600
-    VendorIDs:
-    - GO-2026-5942
-    PkgID: golang.org/x/net@v0.49.0
-    PkgName: golang.org/x/net
-    PkgIdentifier:
-      PURL: pkg:golang/golang.org/x/net@v0.49.0
-      UID: 73c8e80af86e88b3
-    InstalledVersion: v0.49.0
-    FixedVersion: 0.56.0
-    Status: fixed
-    Layer:
-      Digest: sha256:8ffcd8c84df5bac4a1ed0e33f4d7acae5d5aa54713d7336b2c58d05cd55db5e8
-      DiffID: sha256:732d8dafab623f07fc0fe330969ec80e66c07835641c3288b3dbfc02159c2a7d
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-46600
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:9395728fbb795d73f66938f9bf55f9466ea5356e7163d85d1bff5439f5700bb7
-    Title: Parsing an invalid SVCB or HTTPS RR can panic when the size of a param ...
-    Description: Parsing an invalid SVCB or HTTPS RR can panic when the size of a parameter value overflows the message buffer.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-125
-    References:
-    - https://go.dev/cl/786345
-    - https://go.dev/issue/79795
-    - https://pkg.go.dev/vuln/GO-2026-5942
-    PublishedDate: '2026-07-21T20:17:01.213Z'
-    LastModifiedDate: '2026-07-23T18:27:48.877Z'
   - VulnerabilityID: CVE-2026-39824
     VendorIDs:
     - GO-2026-5024
@@ -5603,15 +5639,24 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:f16127e41d6464cf5334f997fd49ac249ab997e0fe5a4a331f3e119440557403
-    Title: Parsing an invalid SVCB or HTTPS RR can panic when the size of a param ...
+    Title: 'golang.org/x/net/dns/dnsmessage: golang.org/x/net/dns/dnsmessage: Denial of Service via invalid DNS record parsing'
     Description: Parsing an invalid SVCB or HTTPS RR can panic when the size of a parameter value overflows the message buffer.
-    Severity: UNKNOWN
+    Severity: HIGH
     CweIDs:
     - CWE-125
+    VendorSeverity:
+      redhat: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-46600
     - https://go.dev/cl/786345
     - https://go.dev/issue/79795
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-46600
     - https://pkg.go.dev/vuln/GO-2026-5942
+    - https://www.cve.org/CVERecord?id=CVE-2026-46600
     PublishedDate: '2026-07-21T20:17:01.213Z'
     LastModifiedDate: '2026-07-23T18:27:48.877Z'
 - Target: usr/libexec/docker/cli-plugins/docker-buildx
@@ -6223,6 +6268,7 @@
       azure: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       rocky: 3
     CVSS:
@@ -6234,11 +6280,15 @@
         V3Score: 7.8
     References:
     - https://access.redhat.com/errata/RHSA-2026:38878
+    - https://access.redhat.com/errata/RHSA-2026:38995
     - https://access.redhat.com/security/cve/CVE-2026-39822
+    - https://bugzilla.redhat.com/2480756
+    - https://bugzilla.redhat.com/2484207
     - https://bugzilla.redhat.com/2498152
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
-    - https://errata.almalinux.org/9/ALSA-2026-38878.html
+    - https://errata.almalinux.org/8/ALSA-2026-38995.html
     - https://errata.rockylinux.org/RLSA-2026:38878
     - https://go.dev/cl/797880
     - https://go.dev/issue/79005
@@ -6280,6 +6330,7 @@
       amazon: 2
       azure: 2
       bitnami: 2
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -6289,10 +6340,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:37435
+    - https://access.redhat.com/errata/RHSA-2026:37436
     - https://access.redhat.com/security/cve/CVE-2026-42505
     - https://bugzilla.redhat.com/2480756
-    - https://errata.almalinux.org/9/ALSA-2026-37435.html
+    - https://errata.almalinux.org/10/ALSA-2026-37436.html
     - https://go.dev/cl/775960
     - https://go.dev/issue/79282
     - https://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc
@@ -6351,15 +6402,24 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:55b444b46a1ae9dac574739c4aa3e6dfd1ef9debaad8aa6a305fea8bf9df7e12
-    Title: Parsing an invalid SVCB or HTTPS RR can panic when the size of a param ...
+    Title: 'golang.org/x/net/dns/dnsmessage: golang.org/x/net/dns/dnsmessage: Denial of Service via invalid DNS record parsing'
     Description: Parsing an invalid SVCB or HTTPS RR can panic when the size of a parameter value overflows the message buffer.
-    Severity: UNKNOWN
+    Severity: HIGH
     CweIDs:
     - CWE-125
+    VendorSeverity:
+      redhat: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-46600
     - https://go.dev/cl/786345
     - https://go.dev/issue/79795
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-46600
     - https://pkg.go.dev/vuln/GO-2026-5942
+    - https://www.cve.org/CVERecord?id=CVE-2026-46600
     PublishedDate: '2026-07-21T20:17:01.213Z'
     LastModifiedDate: '2026-07-23T18:27:48.877Z'
   - VulnerabilityID: CVE-2026-56852
@@ -6837,15 +6897,24 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:3a152baef34974a972a4d588d77022c5a60a74657a8bb4f7a6780785fdae30cb
-    Title: Parsing an invalid SVCB or HTTPS RR can panic when the size of a param ...
+    Title: 'golang.org/x/net/dns/dnsmessage: golang.org/x/net/dns/dnsmessage: Denial of Service via invalid DNS record parsing'
     Description: Parsing an invalid SVCB or HTTPS RR can panic when the size of a parameter value overflows the message buffer.
-    Severity: UNKNOWN
+    Severity: HIGH
     CweIDs:
     - CWE-125
+    VendorSeverity:
+      redhat: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-46600
     - https://go.dev/cl/786345
     - https://go.dev/issue/79795
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-46600
     - https://pkg.go.dev/vuln/GO-2026-5942
+    - https://www.cve.org/CVERecord?id=CVE-2026-46600
     PublishedDate: '2026-07-21T20:17:01.213Z'
     LastModifiedDate: '2026-07-23T18:27:48.877Z'
   - VulnerabilityID: CVE-2026-56852
@@ -7009,6 +7078,7 @@
       azure: 2
       bitnami: 2
       oracle-oval: 3
+      photon: 3
       redhat: 3
       rocky: 3
     CVSS:
@@ -7069,14 +7139,22 @@
     - https://access.redhat.com/errata/RHSA-2026:51187
     - https://access.redhat.com/errata/RHSA-2026:52946
     - https://access.redhat.com/errata/RHSA-2026:53374
+    - https://access.redhat.com/errata/RHSA-2026:53412
+    - https://access.redhat.com/errata/RHSA-2026:53413
+    - https://access.redhat.com/errata/RHSA-2026:53415
+    - https://access.redhat.com/errata/RHSA-2026:53416
+    - https://access.redhat.com/errata/RHSA-2026:53530
+    - https://access.redhat.com/errata/RHSA-2026:54168
     - https://access.redhat.com/security/cve/CVE-2026-27145
-    - https://bugzilla.redhat.com/2445356
+    - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/2484207
+    - https://bugzilla.redhat.com/2498152
     - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
-    - https://errata.almalinux.org/9/ALSA-2026-36317.html
+    - https://errata.almalinux.org/8/ALSA-2026-38995.html
     - https://errata.rockylinux.org/RLSA-2026:36317
     - https://go.dev/cl/783621
     - https://go.dev/issue/79694
@@ -7088,7 +7166,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-27145.json
     - https://www.cve.org/CVERecord?id=CVE-2026-27145
     PublishedDate: '2026-06-02T23:16:35.57Z'
-    LastModifiedDate: '2026-08-11T13:18:11.657Z'
+    LastModifiedDate: '2026-08-12T12:18:14.25Z'
   - VulnerabilityID: CVE-2026-39822
     VendorIDs:
     - GO-2026-4970
@@ -7120,6 +7198,7 @@
       azure: 3
       bitnami: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       rocky: 3
     CVSS:
@@ -7131,11 +7210,15 @@
         V3Score: 7.8
     References:
     - https://access.redhat.com/errata/RHSA-2026:38878
+    - https://access.redhat.com/errata/RHSA-2026:38995
     - https://access.redhat.com/security/cve/CVE-2026-39822
+    - https://bugzilla.redhat.com/2480756
+    - https://bugzilla.redhat.com/2484207
     - https://bugzilla.redhat.com/2498152
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
-    - https://errata.almalinux.org/9/ALSA-2026-38878.html
+    - https://errata.almalinux.org/8/ALSA-2026-38995.html
     - https://errata.rockylinux.org/RLSA-2026:38878
     - https://go.dev/cl/797880
     - https://go.dev/issue/79005
@@ -7224,6 +7307,7 @@
       amazon: 2
       azure: 2
       bitnami: 2
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -7233,10 +7317,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:37435
+    - https://access.redhat.com/errata/RHSA-2026:37436
     - https://access.redhat.com/security/cve/CVE-2026-42505
     - https://bugzilla.redhat.com/2480756
-    - https://errata.almalinux.org/9/ALSA-2026-37435.html
+    - https://errata.almalinux.org/10/ALSA-2026-37436.html
     - https://go.dev/cl/775960
     - https://go.dev/issue/79282
     - https://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc
@@ -7274,6 +7358,7 @@
       azure: 2
       bitnami: 2
       oracle-oval: 2
+      photon: 2
       redhat: 2
       rocky: 2
     CVSS:
@@ -7284,14 +7369,16 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 5.3
     References:
+    - https://access.redhat.com/errata/RHSA-2026:29980
     - https://access.redhat.com/errata/RHSA-2026:29981
     - https://access.redhat.com/security/cve/CVE-2026-42507
     - https://bugzilla.redhat.com/2484205
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484205
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
+    - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42507
-    - https://errata.almalinux.org/9/ALSA-2026-29981.html
+    - https://errata.almalinux.org/10/ALSA-2026-29980.html
     - https://errata.rockylinux.org/RLSA-2026:29981
     - https://go.dev/cl/777060
     - https://go.dev/issue/79346
