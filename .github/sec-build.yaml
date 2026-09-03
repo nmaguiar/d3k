@@ -894,7 +894,7 @@
     - https://www.openwall.com/lists/oss-security/2026/06/29/1
     - https://www.vulncheck.com/advisories/attr-symlink-traversal-privilege-escalation-via-getfattr-setfattr
     PublishedDate: '2026-06-29T14:16:57.823Z'
-    LastModifiedDate: '2026-09-01T13:19:48.13Z'
+    LastModifiedDate: '2026-09-02T13:18:02.227Z'
   - VulnerabilityID: CVE-2026-13595
     PkgID: libblkid1@2.41.3-3ubuntu2
     PkgName: libblkid1
@@ -5468,7 +5468,9 @@
     VendorSeverity:
       alma: 2
       julia: 2
+      oracle-oval: 2
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       julia:
@@ -5486,8 +5488,17 @@
     - https://bugzilla.redhat.com/2455360
     - https://bugzilla.redhat.com/2509735
     - https://bugzilla.redhat.com/2509843
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2455360
     - https://bugzilla.redhat.com/show_bug.cgi?id=2509735
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2509843
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18477
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18508
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5704
     - https://errata.almalinux.org/9/ALSA-2026-61581.html
+    - https://errata.rockylinux.org/RLSA-2026:61581
+    - https://linux.oracle.com/cve/CVE-2026-18477.html
+    - https://linux.oracle.com/errata/ELSA-2026-61581-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-18477
     - https://www.cve.org/CVERecord?id=CVE-2026-18477
     PublishedDate: '2026-08-03T17:16:33.897Z'
@@ -5517,7 +5528,9 @@
     - CWE-59
     VendorSeverity:
       alma: 2
+      oracle-oval: 2
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -5532,8 +5545,17 @@
     - https://bugzilla.redhat.com/2455360
     - https://bugzilla.redhat.com/2509735
     - https://bugzilla.redhat.com/2509843
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2455360
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2509735
     - https://bugzilla.redhat.com/show_bug.cgi?id=2509843
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18477
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18508
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5704
     - https://errata.almalinux.org/9/ALSA-2026-61581.html
+    - https://errata.rockylinux.org/RLSA-2026:61581
+    - https://linux.oracle.com/cve/CVE-2026-18508.html
+    - https://linux.oracle.com/errata/ELSA-2026-61581-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-18508
     - https://www.cve.org/CVERecord?id=CVE-2026-18508
     PublishedDate: '2026-08-03T16:16:28.387Z'
@@ -7361,6 +7383,66 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-56854
     PublishedDate: '2026-08-28T16:18:17.607Z'
     LastModifiedDate: '2026-08-28T22:16:52.22Z'
+  - VulnerabilityID: CVE-2026-56855
+    VendorIDs:
+    - GO-2026-6355
+    PkgID: golang.org/x/crypto@v0.54.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.54.0
+      UID: 740f03579aa20d2d
+    InstalledVersion: v0.54.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56855
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:38176e961cc044d9b5b1c42a2e5197e3e4998e02a2bf044cffb30b5fc1daa0d0
+    Title: Prevent DoS on deadlocked established channel in golang.org/x/crypto/ssh
+    Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826524
+    - https://go.dev/issue/81317
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6355
+    PublishedDate: '2026-09-02T20:17:36.397Z'
+    LastModifiedDate: '2026-09-02T20:17:36.397Z'
+  - VulnerabilityID: CVE-2026-78662
+    VendorIDs:
+    - GO-2026-6354
+    PkgID: golang.org/x/crypto@v0.54.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.54.0
+      UID: 740f03579aa20d2d
+    InstalledVersion: v0.54.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-78662
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:e71d83f4f69a1079bbcd9d4a1b4d931e4bb07ac0fa025964ac59917951bf8677
+    Title: Prevent DoS on deadlocked undecided channel in golang.org/x/crypto/ssh
+    Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826504
+    - https://go.dev/issue/81316
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6354
+    PublishedDate: '2026-09-02T20:17:37.167Z'
+    LastModifiedDate: '2026-09-02T20:17:37.167Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.54.0
     PkgName: golang.org/x/crypto
@@ -8303,6 +8385,66 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-56854
     PublishedDate: '2026-08-28T16:18:17.607Z'
     LastModifiedDate: '2026-08-28T22:16:52.22Z'
+  - VulnerabilityID: CVE-2026-56855
+    VendorIDs:
+    - GO-2026-6355
+    PkgID: golang.org/x/crypto@v0.54.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.54.0
+      UID: cb4c70c83dd4184f
+    InstalledVersion: v0.54.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56855
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:db9761f5f041599ab876868fec2f23591feffae327921ed0da0d429962a2895d
+    Title: Prevent DoS on deadlocked established channel in golang.org/x/crypto/ssh
+    Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826524
+    - https://go.dev/issue/81317
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6355
+    PublishedDate: '2026-09-02T20:17:36.397Z'
+    LastModifiedDate: '2026-09-02T20:17:36.397Z'
+  - VulnerabilityID: CVE-2026-78662
+    VendorIDs:
+    - GO-2026-6354
+    PkgID: golang.org/x/crypto@v0.54.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.54.0
+      UID: cb4c70c83dd4184f
+    InstalledVersion: v0.54.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-78662
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:92c9e336655518540edead31bec29d040564ffd272d7e8b01006a6c5a6cd32e3
+    Title: Prevent DoS on deadlocked undecided channel in golang.org/x/crypto/ssh
+    Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826504
+    - https://go.dev/issue/81316
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6354
+    PublishedDate: '2026-09-02T20:17:37.167Z'
+    LastModifiedDate: '2026-09-02T20:17:37.167Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.54.0
     PkgName: golang.org/x/crypto
@@ -9181,6 +9323,66 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-56854
     PublishedDate: '2026-08-28T16:18:17.607Z'
     LastModifiedDate: '2026-08-28T22:16:52.22Z'
+  - VulnerabilityID: CVE-2026-56855
+    VendorIDs:
+    - GO-2026-6355
+    PkgID: golang.org/x/crypto@v0.54.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.54.0
+      UID: c527a3567c036841
+    InstalledVersion: v0.54.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56855
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:287308c3b3861ff45c7806292e647b89ae312ad461431b5fa7dd701bd1413e0f
+    Title: Prevent DoS on deadlocked established channel in golang.org/x/crypto/ssh
+    Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826524
+    - https://go.dev/issue/81317
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6355
+    PublishedDate: '2026-09-02T20:17:36.397Z'
+    LastModifiedDate: '2026-09-02T20:17:36.397Z'
+  - VulnerabilityID: CVE-2026-78662
+    VendorIDs:
+    - GO-2026-6354
+    PkgID: golang.org/x/crypto@v0.54.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.54.0
+      UID: c527a3567c036841
+    InstalledVersion: v0.54.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-78662
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:dc0b288197a716938e7778c78e7fdd7d640447dfec4266dd048d57244d81d16f
+    Title: Prevent DoS on deadlocked undecided channel in golang.org/x/crypto/ssh
+    Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826504
+    - https://go.dev/issue/81316
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6354
+    PublishedDate: '2026-09-02T20:17:37.167Z'
+    LastModifiedDate: '2026-09-02T20:17:37.167Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.54.0
     PkgName: golang.org/x/crypto
@@ -10663,6 +10865,66 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-56854
     PublishedDate: '2026-08-28T16:18:17.607Z'
     LastModifiedDate: '2026-08-28T22:16:52.22Z'
+  - VulnerabilityID: CVE-2026-56855
+    VendorIDs:
+    - GO-2026-6355
+    PkgID: golang.org/x/crypto@v0.52.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.52.0
+      UID: c6746a665642ce00
+    InstalledVersion: v0.52.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56855
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:1326be6dc0927efd36c6df5cef8dbfa4863332900412898ff4859d087c72a75c
+    Title: Prevent DoS on deadlocked established channel in golang.org/x/crypto/ssh
+    Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826524
+    - https://go.dev/issue/81317
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6355
+    PublishedDate: '2026-09-02T20:17:36.397Z'
+    LastModifiedDate: '2026-09-02T20:17:36.397Z'
+  - VulnerabilityID: CVE-2026-78662
+    VendorIDs:
+    - GO-2026-6354
+    PkgID: golang.org/x/crypto@v0.52.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.52.0
+      UID: c6746a665642ce00
+    InstalledVersion: v0.52.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-78662
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:26e9c6b1073e6f202fb6dcc99954430d78009b39b027574e1fc7aea81ae75e6b
+    Title: Prevent DoS on deadlocked undecided channel in golang.org/x/crypto/ssh
+    Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826504
+    - https://go.dev/issue/81316
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6354
+    PublishedDate: '2026-09-02T20:17:37.167Z'
+    LastModifiedDate: '2026-09-02T20:17:37.167Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.52.0
     PkgName: golang.org/x/crypto
@@ -11720,6 +11982,66 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-56854
     PublishedDate: '2026-08-28T16:18:17.607Z'
     LastModifiedDate: '2026-08-28T22:16:52.22Z'
+  - VulnerabilityID: CVE-2026-56855
+    VendorIDs:
+    - GO-2026-6355
+    PkgID: golang.org/x/crypto@v0.54.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.54.0
+      UID: 6ae414bf7ecce379
+    InstalledVersion: v0.54.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56855
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:480d51bd7e99cbb7cddd15b4640fa5c2eedc8c598e47e77fe9b675efdc0071da
+    Title: Prevent DoS on deadlocked established channel in golang.org/x/crypto/ssh
+    Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826524
+    - https://go.dev/issue/81317
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6355
+    PublishedDate: '2026-09-02T20:17:36.397Z'
+    LastModifiedDate: '2026-09-02T20:17:36.397Z'
+  - VulnerabilityID: CVE-2026-78662
+    VendorIDs:
+    - GO-2026-6354
+    PkgID: golang.org/x/crypto@v0.54.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.54.0
+      UID: 6ae414bf7ecce379
+    InstalledVersion: v0.54.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-78662
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:2eacfb9b29f7092306dd78831b5d0ddd18b4a41d86b272670aab6cfcf06630c4
+    Title: Prevent DoS on deadlocked undecided channel in golang.org/x/crypto/ssh
+    Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826504
+    - https://go.dev/issue/81316
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6354
+    PublishedDate: '2026-09-02T20:17:37.167Z'
+    LastModifiedDate: '2026-09-02T20:17:37.167Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.54.0
     PkgName: golang.org/x/crypto
@@ -12803,6 +13125,66 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-56854
     PublishedDate: '2026-08-28T16:18:17.607Z'
     LastModifiedDate: '2026-08-28T22:16:52.22Z'
+  - VulnerabilityID: CVE-2026-56855
+    VendorIDs:
+    - GO-2026-6355
+    PkgID: golang.org/x/crypto@v0.54.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.54.0
+      UID: 6b5ba0ba08883f8
+    InstalledVersion: v0.54.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56855
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:4de52f5c9030bb07d20d732d6f6efbc89ac7006a9a6744c18f3f0e17d7cce384
+    Title: Prevent DoS on deadlocked established channel in golang.org/x/crypto/ssh
+    Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826524
+    - https://go.dev/issue/81317
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6355
+    PublishedDate: '2026-09-02T20:17:36.397Z'
+    LastModifiedDate: '2026-09-02T20:17:36.397Z'
+  - VulnerabilityID: CVE-2026-78662
+    VendorIDs:
+    - GO-2026-6354
+    PkgID: golang.org/x/crypto@v0.54.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.54.0
+      UID: 6b5ba0ba08883f8
+    InstalledVersion: v0.54.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-78662
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:9ffa3ef6ed50b5a7b27fc9088e5e1705a7a94e676d3e650000048b285f718a2b
+    Title: Prevent DoS on deadlocked undecided channel in golang.org/x/crypto/ssh
+    Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826504
+    - https://go.dev/issue/81316
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6354
+    PublishedDate: '2026-09-02T20:17:37.167Z'
+    LastModifiedDate: '2026-09-02T20:17:37.167Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.54.0
     PkgName: golang.org/x/crypto
@@ -13004,6 +13386,66 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-56854
     PublishedDate: '2026-08-28T16:18:17.607Z'
     LastModifiedDate: '2026-08-28T22:16:52.22Z'
+  - VulnerabilityID: CVE-2026-56855
+    VendorIDs:
+    - GO-2026-6355
+    PkgID: golang.org/x/crypto@v0.53.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.53.0
+      UID: 4a75460d65c046ad
+    InstalledVersion: v0.53.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56855
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:65ea38dfd7c7613ab7e01a8ab2d9015f901220c722d86e56cc7f0407e6308633
+    Title: Prevent DoS on deadlocked established channel in golang.org/x/crypto/ssh
+    Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826524
+    - https://go.dev/issue/81317
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6355
+    PublishedDate: '2026-09-02T20:17:36.397Z'
+    LastModifiedDate: '2026-09-02T20:17:36.397Z'
+  - VulnerabilityID: CVE-2026-78662
+    VendorIDs:
+    - GO-2026-6354
+    PkgID: golang.org/x/crypto@v0.53.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.53.0
+      UID: 4a75460d65c046ad
+    InstalledVersion: v0.53.0
+    FixedVersion: 0.56.0
+    Status: fixed
+    Layer:
+      Digest: sha256:2a3e90fab44d27c60c700583e065742ef6a369e5714f776570fd1d5a837a2c5b
+      DiffID: sha256:bee77cb614bd0b8ff56b07e6ff21eb6e4d1e11ac41aadd72bd3d828ccb4423aa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-78662
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:23cdfdd6e9d3a7784de5e56dbfde24f9df89db1fece55654e6e2984e1eb6331c
+    Title: Prevent DoS on deadlocked undecided channel in golang.org/x/crypto/ssh
+    Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/826504
+    - https://go.dev/issue/81316
+    - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://pkg.go.dev/vuln/GO-2026-6354
+    PublishedDate: '2026-09-02T20:17:37.167Z'
+    LastModifiedDate: '2026-09-02T20:17:37.167Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.53.0
     PkgName: golang.org/x/crypto
