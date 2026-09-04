@@ -8,6 +8,7 @@ RUN apt-get update\
  && curl https://openaf.io/install.sh | sh\
  && chmod a+x /opt/oaf/*-sb\
  && curl https://get.docker.com | sh\
+ && sed -i "s/ulimit -Hn 524288/ulimit -Hn 524288 2>\/dev\/null || true/" /etc/init.d/docker\
  && opack install BouncyCastle\
  && opack install ojob-common\
  && opack install oafproc\
