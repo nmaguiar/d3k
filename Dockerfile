@@ -11,8 +11,8 @@ RUN apt-get update\
  && sed -i "s/ulimit -Hn 524288/ulimit -Hn 524288 2>\/dev\/null || true/" /etc/init.d/docker\
  && opack install BouncyCastle\
  && opack install ojob-common\
- && opack install oafproc\
  && opack install DockerRegistry\
+ && opack install Kube\
  && ojob ojob.io/docker/k3d\
  && ojob ojob.io/kube/getKubectl path=/usr/bin\
  && ojob ojob.io/docker/compose path=/usr/bin\
