@@ -34,9 +34,11 @@ jobs:
     - uses: actions/checkout@v6
       name: Checkout
     - name: Full image build arm64
+      env :
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run : |
         docker system prune -af
-        docker run --name buildfulla64 --privileged --cgroupns=host --platform linux/arm64 nmaguiar/d3k:build /bin/sh -c "status.js && sleep 5 && k3d cluster stop"
+        docker run --name buildfulla64 --privileged --cgroupns=host --platform linux/arm64 -e GITHUB_TOKEN nmaguiar/d3k:build /bin/sh -c "status.js && sleep 5 && k3d cluster stop"
         docker commit buildfulla64 nmaguiar/d3k:build-full-arm64
         docker push nmaguiar/d3k:build-full-arm64
 
@@ -61,9 +63,11 @@ jobs:
     - uses: actions/checkout@v6
       name: Checkout
     - name: Full image build x64
+      env :
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run : |
         docker system prune -af
-        docker run --name buildfullx64 --privileged --cgroupns=host nmaguiar/d3k:build /bin/sh -c "status.js && sleep 5 && k3d cluster stop"
+        docker run --name buildfullx64 --privileged --cgroupns=host -e GITHUB_TOKEN nmaguiar/d3k:build /bin/sh -c "status.js && sleep 5 && k3d cluster stop"
         docker commit buildfullx64 nmaguiar/d3k:build-full-amd64
         docker push nmaguiar/d3k:build-full-amd64
 

@@ -81,12 +81,18 @@ jobs:
       echo K3D creating
 
       echo "Determining latest k3s version..."
-      LATEST_K3S=$(curl -fsSL --max-time 5 https://api.github.com/repos/k3s-io/k3s/releases/latest 2>/dev/null | grep -m1 '"tag_name"' | sed -E 's/.*"tag_name": *"([^"]+)".*/\1/' | tr '+' '-')
+      if [ -n "$GITHUB_TOKEN" ]; then
+        LATEST_K3S_RAW=$(curl -sSL --max-time 15 -H "Authorization: token $GITHUB_TOKEN" -w '\nHTTPSTATUS:%{http_code}' https://api.github.com/repos/k3s-io/k3s/releases/latest 2>&1)
+      else
+        LATEST_K3S_RAW=$(curl -sSL --max-time 15 -w '\nHTTPSTATUS:%{http_code}' https://api.github.com/repos/k3s-io/k3s/releases/latest 2>&1)
+      fi
+      LATEST_K3S_STATUS=$(echo "$LATEST_K3S_RAW" | grep -o 'HTTPSTATUS:[0-9]*' | cut -d: -f2)
+      LATEST_K3S=$(echo "$LATEST_K3S_RAW" | grep -m1 '"tag_name"' | sed -E 's/.*"tag_name": *"([^"]+)".*/\1/' | tr '+' '-')
       if [ -n "$LATEST_K3S" ]; then
         echo "Latest k3s version: $LATEST_K3S"
         K3S_IMAGE_ARG="--image rancher/k3s:$LATEST_K3S"
       else
-        echo "Could not determine latest k3s version (offline/airgap?), using k3d's bundled default"
+        echo "Could not determine latest k3s version (HTTP status: ${LATEST_K3S_STATUS:-unknown}, offline/airgap/rate-limited?), using k3d's bundled default"
         K3S_IMAGE_ARG=""
       fi
 
