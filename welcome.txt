@@ -4,4 +4,6 @@
  \__,_| |___/ |_\_\  (v0.1.2)
 
  To check what is ready to use execute [1m'status.js'[m
+ For usage tips & getting started type & execute [1m'usage-help'[m
+ See more in [2mhttps://github.com/nmaguiar/d3k[m
 

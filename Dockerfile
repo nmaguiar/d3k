@@ -20,6 +20,8 @@ RUN apt-get update\
  && mkdir /opt/oaf/ojobs\
  && /opt/oaf/ojob ojob.io/get job=ojob.io/oaf/colorFormats.yaml > /opt/oaf/ojobs/colorFormats.yaml\
  && /opt/oaf/oaf --sb /opt/oaf/ojobs/colorFormats.yaml\
+ && /opt/oaf/ojob ojob.io/get job=ojob.io/util/vscTunnel.yaml > /opt/oaf/ojobs/vscTunnel.yaml\
+ && /opt/oaf/oaf --sb /opt/oaf/ojobs/vscTunnel.yaml\
  && chmod a+x /opt/oaf/ojobs/*\
  && adduser --gid 0 --uid 1001 --shell /bin/bash user\
  && echo "user ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/user\
@@ -51,6 +53,7 @@ COPY ojob_p2.yaml /tmp/.p2.yaml
 COPY ojob_p1.sh /tmp/.p1.sh
 COPY status.js /usr/bin/status.js
 COPY welcome.txt /etc/d3k
+COPY USAGE.md /USAGE.md
 
 SHELL ["/bin/bash", "-c"]
 USER root
@@ -63,7 +66,11 @@ RUN chsh --shell /bin/bash user\
  && chown user: .p1.sh\
  && chown user: .p2.yaml\
  && chmod a+x /usr/bin/status.js\
- && gzip /etc/d3k
+ && gzip /etc/d3k\
+ && gzip /USAGE.md\
+ && echo "#!/bin/sh" > /usr/bin/usage-help\
+ && echo "zcat /USAGE.md.gz | oafp in=md mdtemplate=true | less -r" >> /usr/bin/usage-help\
+ && chmod a+x /usr/bin/usage-help
 
 # -------------------
 FROM scratch as final
