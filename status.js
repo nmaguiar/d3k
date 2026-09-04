@@ -56,6 +56,7 @@ function printStatus() {
 }
 
 var ok = false
+__initializeCon()
 while(!ok) {
     checkStatus()
     printStatus()

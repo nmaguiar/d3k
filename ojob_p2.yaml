@@ -79,11 +79,22 @@ jobs:
       echo K8S not started
     {{else}}
       echo K3D creating
+
+      echo "Determining latest k3s version..."
+      LATEST_K3S=$(curl -fsSL --max-time 5 https://api.github.com/repos/k3s-io/k3s/releases/latest 2>/dev/null | grep -m1 '"tag_name"' | sed -E 's/.*"tag_name": *"([^"]+)".*/\1/' | tr '+' '-')
+      if [ -n "$LATEST_K3S" ]; then
+        echo "Latest k3s version: $LATEST_K3S"
+        K3S_IMAGE_ARG="--image rancher/k3s:$LATEST_K3S"
+      else
+        echo "Could not determine latest k3s version (offline/airgap?), using k3d's bundled default"
+        K3S_IMAGE_ARG=""
+      fi
+
       echo creating > /tmp/.kube
       {{#if NOPUBLIC}}
-      k3d cluster create --k3s-arg "--snapshotter=native@server:*" --registry-create registry:5000 -p "127.0.0.1:1080:1080@loadbalancer"
+      k3d cluster create --k3s-arg "--snapshotter=native@server:*" $K3S_IMAGE_ARG --registry-create registry:5000 -p "127.0.0.1:1080:1080@loadbalancer"
       {{else}}
-      k3d cluster create --k3s-arg "--snapshotter=native@server:*" --registry-create registry:5000 -p "0.0.0.0:1080:1080@loadbalancer"
+      k3d cluster create --k3s-arg "--snapshotter=native@server:*" $K3S_IMAGE_ARG --registry-create registry:5000 -p "0.0.0.0:1080:1080@loadbalancer"
       {{/if}}
       echo created > /tmp/.kube
       echo K3D creation end
