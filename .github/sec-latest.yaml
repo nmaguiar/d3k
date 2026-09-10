@@ -1435,6 +1435,7 @@
       azure: 1
       julia: 2
       nvd: 2
+      oracle-oval: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1448,12 +1449,14 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
         V3Score: 4.9
     References:
-    - https://access.redhat.com/errata/RHSA-2026:64809
+    - https://access.redhat.com/errata/RHSA-2026:64812
     - https://access.redhat.com/security/cve/CVE-2026-50219
     - https://bugzilla.redhat.com/2484620
     - https://bugzilla.redhat.com/2490669
-    - https://errata.almalinux.org/8/ALSA-2026-64809.html
+    - https://errata.almalinux.org/9/ALSA-2026-64812.html
     - https://github.com/libexpat/libexpat/pull/1246
+    - https://linux.oracle.com/cve/CVE-2026-50219.html
+    - https://linux.oracle.com/errata/ELSA-2026-64812-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-50219
     - https://www.cve.org/CVERecord?id=CVE-2026-50219
     PublishedDate: '2026-06-04T06:16:25.05Z'
@@ -1530,6 +1533,7 @@
       azure: 2
       julia: 2
       nvd: 2
+      oracle-oval: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1543,12 +1547,14 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L
         V3Score: 6.9
     References:
-    - https://access.redhat.com/errata/RHSA-2026:64809
+    - https://access.redhat.com/errata/RHSA-2026:64812
     - https://access.redhat.com/security/cve/CVE-2026-56132
     - https://bugzilla.redhat.com/2484620
     - https://bugzilla.redhat.com/2490669
-    - https://errata.almalinux.org/8/ALSA-2026-64809.html
+    - https://errata.almalinux.org/9/ALSA-2026-64812.html
     - https://github.com/libexpat/libexpat/pull/1272
+    - https://linux.oracle.com/cve/CVE-2026-56132.html
+    - https://linux.oracle.com/errata/ELSA-2026-64812-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56132
     - https://www.cve.org/CVERecord?id=CVE-2026-56132
     PublishedDate: '2026-06-19T06:17:10.253Z'
@@ -2661,7 +2667,7 @@
     - https://www.sqlite.org/
     - https://www.sqlite.org/sqlar.html
     PublishedDate: '2026-08-25T21:17:00.08Z'
-    LastModifiedDate: '2026-08-31T16:17:59.35Z'
+    LastModifiedDate: '2026-09-09T16:04:24.933Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: libsubid5@1:4.17.4-2ubuntu3
     PkgName: libsubid5
@@ -4599,6 +4605,7 @@
       alma: 3
       azure: 3
       ghsa: 3
+      oracle-oval: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -4620,6 +4627,8 @@
     - https://github.com/pyca/cryptography/pull/14960
     - https://github.com/pyca/cryptography/security/advisories/GHSA-jwv3-5hgf-82ww
     - https://github.com/pypa/advisory-database/tree/main/vulns/cryptography/PYSEC-2026-3553.yaml
+    - https://linux.oracle.com/cve/CVE-2026-69249.html
+    - https://linux.oracle.com/errata/ELSA-2026-64795-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-69249
     - https://www.cve.org/CVERecord?id=CVE-2026-69249
     PublishedDate: '2026-08-03T22:16:52.72Z'
@@ -6269,6 +6278,69 @@
   Type: gobinary
   Packages: []
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-53495
+    VendorIDs:
+    - GHSA-7jxh-36q5-gcqv
+    PkgID: github.com/containerd/containerd/v2@v2.3.4
+    PkgName: github.com/containerd/containerd/v2
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd/v2@v2.3.4
+      UID: c4189943ce3864be
+    InstalledVersion: v2.3.4
+    FixedVersion: 2.0.12, 2.2.8, 2.3.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-53495
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:ab034c80aa97e1cfa80cc3127060f940c927ac55a44bdc41f243536aba273b50
+    Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
+    Description: |-
+      ### Impact
+
+      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
+
+      ### Patches
+
+      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
+
+      ### Workarounds
+
+      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
+
+      ### Credits
+
+      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
+
+      ### For more information
+
+      If there are any questions or comments about this advisory:
+
+      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
+      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+
+      To report a security issue in containerd:
+      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+        V40Score: 6.8
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/releases/tag/v1.7.35
+    - https://github.com/containerd/containerd/releases/tag/v2.0.12
+    - https://github.com/containerd/containerd/releases/tag/v2.2.8
+    - https://github.com/containerd/containerd/releases/tag/v2.3.5
+    - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.56.0
     PkgName: golang.org/x/crypto
@@ -6362,6 +6434,69 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-10722
     PublishedDate: '2026-06-03T13:16:19.15Z'
     LastModifiedDate: '2026-07-22T19:10:00.12Z'
+  - VulnerabilityID: CVE-2026-53495
+    VendorIDs:
+    - GHSA-7jxh-36q5-gcqv
+    PkgID: github.com/containerd/containerd/v2@v2.3.4
+    PkgName: github.com/containerd/containerd/v2
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd/v2@v2.3.4
+      UID: 663099d219e73748
+    InstalledVersion: v2.3.4
+    FixedVersion: 2.0.12, 2.2.8, 2.3.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-53495
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:e8279ea0e8a9891e9d07e2b115d70d990657e7ef548b86062c77088902e737fb
+    Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
+    Description: |-
+      ### Impact
+
+      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
+
+      ### Patches
+
+      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
+
+      ### Workarounds
+
+      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
+
+      ### Credits
+
+      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
+
+      ### For more information
+
+      If there are any questions or comments about this advisory:
+
+      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
+      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+
+      To report a security issue in containerd:
+      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+        V40Score: 6.8
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/releases/tag/v1.7.35
+    - https://github.com/containerd/containerd/releases/tag/v2.0.12
+    - https://github.com/containerd/containerd/releases/tag/v2.2.8
+    - https://github.com/containerd/containerd/releases/tag/v2.3.5
+    - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.56.0
     PkgName: golang.org/x/crypto
@@ -6452,16 +6587,25 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:c8c4452391d189951266422957da14402bc7f6003de85891731820f15eb0d607
-    Title: Previously, after a channel has been established, a malicious peer cou ...
+    Title: 'golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted messages'
     Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-770
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-56855
     - https://go.dev/cl/826524
     - https://go.dev/issue/81317
     - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-56855
     - https://pkg.go.dev/vuln/GO-2026-6355
+    - https://www.cve.org/CVERecord?id=CVE-2026-56855
     PublishedDate: '2026-09-02T20:17:36.397Z'
     LastModifiedDate: '2026-09-04T16:34:56.823Z'
   - VulnerabilityID: CVE-2026-78662
@@ -6484,16 +6628,25 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:1b0221577566940d11da972553bbacf1c8c7326c15d3870989ca2eb07c3d75dc
-    Title: Previously, a channel registered in the mux's chanList is not usable u ...
+    Title: 'golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via channel request flooding'
     Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-770
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-78662
     - https://go.dev/cl/826504
     - https://go.dev/issue/81316
     - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-78662
     - https://pkg.go.dev/vuln/GO-2026-6354
+    - https://www.cve.org/CVERecord?id=CVE-2026-78662
     PublishedDate: '2026-09-02T20:17:37.167Z'
     LastModifiedDate: '2026-09-04T16:33:34.057Z'
   - VulnerabilityID: GO-2026-5932
@@ -6631,7 +6784,7 @@
     - https://go.dev/issue/80405
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-33818.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33818
     - https://pkg.go.dev/vuln/GO-2026-5972
     - https://www.cve.org/CVERecord?id=CVE-2026-33818
@@ -6808,6 +6961,11 @@
     - https://access.redhat.com/errata/RHSA-2026:61245
     - https://access.redhat.com/errata/RHSA-2026:61253
     - https://access.redhat.com/errata/RHSA-2026:63134
+    - https://access.redhat.com/errata/RHSA-2026:65126
+    - https://access.redhat.com/errata/RHSA-2026:65153
+    - https://access.redhat.com/errata/RHSA-2026:65359
+    - https://access.redhat.com/errata/RHSA-2026:65534
+    - https://access.redhat.com/errata/RHSA-2026:65886
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
@@ -6830,7 +6988,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-07T13:19:13.533Z'
+    LastModifiedDate: '2026-09-09T13:19:41.85Z'
   - VulnerabilityID: CVE-2026-46600
     VendorIDs:
     - GO-2026-5942
@@ -6950,7 +7108,7 @@
     - https://go.dev/issue/80205
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56853.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56853
     - https://pkg.go.dev/vuln/GO-2026-6089
     - https://www.cve.org/CVERecord?id=CVE-2026-56853
@@ -7017,7 +7175,7 @@
     - https://go.dev/issue/80435
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56858.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56858
     - https://pkg.go.dev/vuln/GO-2026-6091
     - https://www.cve.org/CVERecord?id=CVE-2026-56858
@@ -7163,7 +7321,7 @@
     - https://go.dev/issue/80494
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56860.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56860
     - https://pkg.go.dev/vuln/GO-2026-6218
     - https://www.cve.org/CVERecord?id=CVE-2026-56860
@@ -7230,7 +7388,7 @@
     - https://go.dev/issue/80528
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56862.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56862
     - https://pkg.go.dev/vuln/GO-2026-6090
     - https://www.cve.org/CVERecord?id=CVE-2026-56862
@@ -7306,7 +7464,7 @@
     - https://go.dev/issue/80405
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-33818.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33818
     - https://pkg.go.dev/vuln/GO-2026-5972
     - https://www.cve.org/CVERecord?id=CVE-2026-33818
@@ -7483,6 +7641,11 @@
     - https://access.redhat.com/errata/RHSA-2026:61245
     - https://access.redhat.com/errata/RHSA-2026:61253
     - https://access.redhat.com/errata/RHSA-2026:63134
+    - https://access.redhat.com/errata/RHSA-2026:65126
+    - https://access.redhat.com/errata/RHSA-2026:65153
+    - https://access.redhat.com/errata/RHSA-2026:65359
+    - https://access.redhat.com/errata/RHSA-2026:65534
+    - https://access.redhat.com/errata/RHSA-2026:65886
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
@@ -7505,7 +7668,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-07T13:19:13.533Z'
+    LastModifiedDate: '2026-09-09T13:19:41.85Z'
   - VulnerabilityID: CVE-2026-46600
     VendorIDs:
     - GO-2026-5942
@@ -7625,7 +7788,7 @@
     - https://go.dev/issue/80205
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56853.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56853
     - https://pkg.go.dev/vuln/GO-2026-6089
     - https://www.cve.org/CVERecord?id=CVE-2026-56853
@@ -7692,7 +7855,7 @@
     - https://go.dev/issue/80435
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56858.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56858
     - https://pkg.go.dev/vuln/GO-2026-6091
     - https://www.cve.org/CVERecord?id=CVE-2026-56858
@@ -7838,7 +8001,7 @@
     - https://go.dev/issue/80494
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56860.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56860
     - https://pkg.go.dev/vuln/GO-2026-6218
     - https://www.cve.org/CVERecord?id=CVE-2026-56860
@@ -7905,7 +8068,7 @@
     - https://go.dev/issue/80528
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56862.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56862
     - https://pkg.go.dev/vuln/GO-2026-6090
     - https://www.cve.org/CVERecord?id=CVE-2026-56862
@@ -7976,16 +8139,25 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:0356506e7729c4a42f3adb56bff8f5da761e5a2759876dd3e079fd7e4d25ce04
-    Title: Previously, after a channel has been established, a malicious peer cou ...
+    Title: 'golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted messages'
     Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-770
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-56855
     - https://go.dev/cl/826524
     - https://go.dev/issue/81317
     - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-56855
     - https://pkg.go.dev/vuln/GO-2026-6355
+    - https://www.cve.org/CVERecord?id=CVE-2026-56855
     PublishedDate: '2026-09-02T20:17:36.397Z'
     LastModifiedDate: '2026-09-04T16:34:56.823Z'
   - VulnerabilityID: CVE-2026-78662
@@ -8008,16 +8180,25 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:7c2b314f7fa8224bd0950be42d30af38f424ae836401f0581739052bc774b3ff
-    Title: Previously, a channel registered in the mux's chanList is not usable u ...
+    Title: 'golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via channel request flooding'
     Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-770
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-78662
     - https://go.dev/cl/826504
     - https://go.dev/issue/81316
     - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-78662
     - https://pkg.go.dev/vuln/GO-2026-6354
+    - https://www.cve.org/CVERecord?id=CVE-2026-78662
     PublishedDate: '2026-09-02T20:17:37.167Z'
     LastModifiedDate: '2026-09-04T16:33:34.057Z'
   - VulnerabilityID: GO-2026-5932
@@ -8096,6 +8277,69 @@
   Type: gobinary
   Packages: []
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-53495
+    VendorIDs:
+    - GHSA-7jxh-36q5-gcqv
+    PkgID: github.com/containerd/containerd/v2@v2.3.4
+    PkgName: github.com/containerd/containerd/v2
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd/v2@v2.3.4
+      UID: 11eee4b4e346979a
+    InstalledVersion: v2.3.4
+    FixedVersion: 2.0.12, 2.2.8, 2.3.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-53495
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:dae443c3a5a37d5fc34203dd9b7835dead7623d1bd3d11d7f5f83e1daae57bfe
+    Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
+    Description: |-
+      ### Impact
+
+      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
+
+      ### Patches
+
+      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
+
+      ### Workarounds
+
+      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
+
+      ### Credits
+
+      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
+
+      ### For more information
+
+      If there are any questions or comments about this advisory:
+
+      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
+      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+
+      To report a security issue in containerd:
+      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+        V40Score: 6.8
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/releases/tag/v1.7.35
+    - https://github.com/containerd/containerd/releases/tag/v2.0.12
+    - https://github.com/containerd/containerd/releases/tag/v2.2.8
+    - https://github.com/containerd/containerd/releases/tag/v2.3.5
+    - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
   - VulnerabilityID: CVE-2026-41567
     VendorIDs:
     - GHSA-x86f-5xw2-fm2r
@@ -8147,7 +8391,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-41567.json
     - https://www.cve.org/CVERecord?id=CVE-2026-41567
     PublishedDate: '2026-06-05T02:17:13.817Z'
-    LastModifiedDate: '2026-09-07T13:19:28.847Z'
+    LastModifiedDate: '2026-09-09T13:19:53.313Z'
   - VulnerabilityID: CVE-2026-42306
     VendorIDs:
     - GHSA-rg2x-37c3-w2rh
@@ -8256,7 +8500,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-33997.json
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
-    LastModifiedDate: '2026-09-07T13:19:06.793Z'
+    LastModifiedDate: '2026-09-09T13:19:32.963Z'
   - VulnerabilityID: CVE-2026-41568
     VendorIDs:
     - GHSA-vp62-88p7-qqf5
@@ -8380,16 +8624,25 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:bc2b075a76b6d8173bdb39c210a5a8d355f6f4512edb7957b1b3e7d836d8b63e
-    Title: Previously, after a channel has been established, a malicious peer cou ...
+    Title: 'golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted messages'
     Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-770
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-56855
     - https://go.dev/cl/826524
     - https://go.dev/issue/81317
     - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-56855
     - https://pkg.go.dev/vuln/GO-2026-6355
+    - https://www.cve.org/CVERecord?id=CVE-2026-56855
     PublishedDate: '2026-09-02T20:17:36.397Z'
     LastModifiedDate: '2026-09-04T16:34:56.823Z'
   - VulnerabilityID: CVE-2026-78662
@@ -8412,16 +8665,25 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:68abd5fb4b6cdc81fb1372b1bd25cdc9835d04c1578dd53dfc505590d6c74903
-    Title: Previously, a channel registered in the mux's chanList is not usable u ...
+    Title: 'golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via channel request flooding'
     Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-770
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-78662
     - https://go.dev/cl/826504
     - https://go.dev/issue/81316
     - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-78662
     - https://pkg.go.dev/vuln/GO-2026-6354
+    - https://www.cve.org/CVERecord?id=CVE-2026-78662
     PublishedDate: '2026-09-02T20:17:37.167Z'
     LastModifiedDate: '2026-09-04T16:33:34.057Z'
   - VulnerabilityID: GO-2026-5932
@@ -8454,6 +8716,69 @@
   Type: gobinary
   Packages: []
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-53495
+    VendorIDs:
+    - GHSA-7jxh-36q5-gcqv
+    PkgID: github.com/containerd/containerd/v2@v2.3.4
+    PkgName: github.com/containerd/containerd/v2
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd/v2@v2.3.4
+      UID: be9e50bbe437c5af
+    InstalledVersion: v2.3.4
+    FixedVersion: 2.0.12, 2.2.8, 2.3.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-53495
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:d28a5620d3e5f8f02fcf8f8e97e2f3e73a8855dfa31a220c79b6c881d880911e
+    Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
+    Description: |-
+      ### Impact
+
+      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
+
+      ### Patches
+
+      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
+
+      ### Workarounds
+
+      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
+
+      ### Credits
+
+      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
+
+      ### For more information
+
+      If there are any questions or comments about this advisory:
+
+      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
+      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+
+      To report a security issue in containerd:
+      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+        V40Score: 6.8
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/releases/tag/v1.7.35
+    - https://github.com/containerd/containerd/releases/tag/v2.0.12
+    - https://github.com/containerd/containerd/releases/tag/v2.2.8
+    - https://github.com/containerd/containerd/releases/tag/v2.3.5
+    - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.56.0
     PkgName: golang.org/x/crypto
@@ -8484,6 +8809,69 @@
   Type: gobinary
   Packages: []
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-53495
+    VendorIDs:
+    - GHSA-7jxh-36q5-gcqv
+    PkgID: github.com/containerd/containerd/v2@v2.2.5
+    PkgName: github.com/containerd/containerd/v2
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd/v2@v2.2.5
+      UID: 6926cc9182afd95f
+    InstalledVersion: v2.2.5
+    FixedVersion: 2.0.12, 2.2.8, 2.3.5
+    Status: fixed
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-53495
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:6992e0c7a1f083990a319ac7147a8bcdea91ec7b6470e8309dbf1120776a4016
+    Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
+    Description: |-
+      ### Impact
+
+      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
+
+      ### Patches
+
+      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
+
+      ### Workarounds
+
+      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
+
+      ### Credits
+
+      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
+
+      ### For more information
+
+      If there are any questions or comments about this advisory:
+
+      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
+      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+
+      To report a security issue in containerd:
+      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+        V40Score: 6.8
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/releases/tag/v1.7.35
+    - https://github.com/containerd/containerd/releases/tag/v2.0.12
+    - https://github.com/containerd/containerd/releases/tag/v2.2.8
+    - https://github.com/containerd/containerd/releases/tag/v2.3.5
+    - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
   - VulnerabilityID: CVE-2026-56854
     VendorIDs:
     - GO-2026-6303
@@ -8544,16 +8932,25 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:e0327e8efb47a5d095f3d91a66e873b7ad8e900cb1f41a31c76f97d1c8e17c10
-    Title: Previously, after a channel has been established, a malicious peer cou ...
+    Title: 'golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted messages'
     Description: Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-770
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-56855
     - https://go.dev/cl/826524
     - https://go.dev/issue/81317
     - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-56855
     - https://pkg.go.dev/vuln/GO-2026-6355
+    - https://www.cve.org/CVERecord?id=CVE-2026-56855
     PublishedDate: '2026-09-02T20:17:36.397Z'
     LastModifiedDate: '2026-09-04T16:34:56.823Z'
   - VulnerabilityID: CVE-2026-78662
@@ -8576,16 +8973,25 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:4e26ec2098db046bd13c27724a2602b5641af37be45f92c863bc05e1f0855f76
-    Title: Previously, a channel registered in the mux's chanList is not usable u ...
+    Title: 'golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via channel request flooding'
     Description: Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-770
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-78662
     - https://go.dev/cl/826504
     - https://go.dev/issue/81316
     - https://groups.google.com/g/golang-announce/c/1y3fb2np35U
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-78662
     - https://pkg.go.dev/vuln/GO-2026-6354
+    - https://www.cve.org/CVERecord?id=CVE-2026-78662
     PublishedDate: '2026-09-02T20:17:37.167Z'
     LastModifiedDate: '2026-09-04T16:33:34.057Z'
   - VulnerabilityID: GO-2026-5932
@@ -8743,7 +9149,7 @@
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-vp52-pcj8-j9qc
     - https://nvd.nist.gov/vuln/detail/CVE-2026-84304
     PublishedDate: '2026-09-01T19:17:30.743Z'
-    LastModifiedDate: '2026-09-01T20:17:24.507Z'
+    LastModifiedDate: '2026-09-09T21:09:13.08Z'
   - VulnerabilityID: CVE-2026-84445
     VendorIDs:
     - GHSA-2v4p-qf9q-27wj
@@ -8927,7 +9333,7 @@
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-qc2q-p7wx-3px3
     - https://nvd.nist.gov/vuln/detail/CVE-2026-84303
     PublishedDate: '2026-09-01T19:17:30.6Z'
-    LastModifiedDate: '2026-09-02T20:17:39.667Z'
+    LastModifiedDate: '2026-09-09T21:09:13.08Z'
   - VulnerabilityID: CVE-2026-33818
     VendorIDs:
     - GO-2026-5972
@@ -8989,7 +9395,7 @@
     - https://go.dev/issue/80405
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-33818.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33818
     - https://pkg.go.dev/vuln/GO-2026-5972
     - https://www.cve.org/CVERecord?id=CVE-2026-33818
@@ -9166,6 +9572,11 @@
     - https://access.redhat.com/errata/RHSA-2026:61245
     - https://access.redhat.com/errata/RHSA-2026:61253
     - https://access.redhat.com/errata/RHSA-2026:63134
+    - https://access.redhat.com/errata/RHSA-2026:65126
+    - https://access.redhat.com/errata/RHSA-2026:65153
+    - https://access.redhat.com/errata/RHSA-2026:65359
+    - https://access.redhat.com/errata/RHSA-2026:65534
+    - https://access.redhat.com/errata/RHSA-2026:65886
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
@@ -9188,7 +9599,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-07T13:19:13.533Z'
+    LastModifiedDate: '2026-09-09T13:19:41.85Z'
   - VulnerabilityID: CVE-2026-56853
     VendorIDs:
     - GO-2026-6089
@@ -9262,7 +9673,7 @@
     - https://go.dev/issue/80205
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56853.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56853
     - https://pkg.go.dev/vuln/GO-2026-6089
     - https://www.cve.org/CVERecord?id=CVE-2026-56853
@@ -9329,7 +9740,7 @@
     - https://go.dev/issue/80435
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56858.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56858
     - https://pkg.go.dev/vuln/GO-2026-6091
     - https://www.cve.org/CVERecord?id=CVE-2026-56858
@@ -9475,7 +9886,7 @@
     - https://go.dev/issue/80494
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56860.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56860
     - https://pkg.go.dev/vuln/GO-2026-6218
     - https://www.cve.org/CVERecord?id=CVE-2026-56860
@@ -9542,7 +9953,7 @@
     - https://go.dev/issue/80528
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56862.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56862
     - https://pkg.go.dev/vuln/GO-2026-6090
     - https://www.cve.org/CVERecord?id=CVE-2026-56862
@@ -9665,7 +10076,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-41567.json
     - https://www.cve.org/CVERecord?id=CVE-2026-41567
     PublishedDate: '2026-06-05T02:17:13.817Z'
-    LastModifiedDate: '2026-09-07T13:19:28.847Z'
+    LastModifiedDate: '2026-09-09T13:19:53.313Z'
   - VulnerabilityID: CVE-2026-42306
     VendorIDs:
     - GHSA-rg2x-37c3-w2rh
@@ -9774,7 +10185,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-33997.json
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
-    LastModifiedDate: '2026-09-07T13:19:06.793Z'
+    LastModifiedDate: '2026-09-09T13:19:32.963Z'
   - VulnerabilityID: CVE-2026-41568
     VendorIDs:
     - GHSA-vp62-88p7-qqf5
@@ -10096,7 +10507,7 @@
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-vp52-pcj8-j9qc
     - https://nvd.nist.gov/vuln/detail/CVE-2026-84304
     PublishedDate: '2026-09-01T19:17:30.743Z'
-    LastModifiedDate: '2026-09-01T20:17:24.507Z'
+    LastModifiedDate: '2026-09-09T21:09:13.08Z'
   - VulnerabilityID: CVE-2026-84445
     VendorIDs:
     - GHSA-2v4p-qf9q-27wj
@@ -10280,7 +10691,7 @@
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-qc2q-p7wx-3px3
     - https://nvd.nist.gov/vuln/detail/CVE-2026-84303
     PublishedDate: '2026-09-01T19:17:30.6Z'
-    LastModifiedDate: '2026-09-02T20:17:39.667Z'
+    LastModifiedDate: '2026-09-09T21:09:13.08Z'
   - VulnerabilityID: CVE-2026-27145
     VendorIDs:
     - GO-2026-5037
@@ -10495,7 +10906,7 @@
     - https://go.dev/issue/80405
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-33818.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33818
     - https://pkg.go.dev/vuln/GO-2026-5972
     - https://www.cve.org/CVERecord?id=CVE-2026-33818
@@ -10672,6 +11083,11 @@
     - https://access.redhat.com/errata/RHSA-2026:61245
     - https://access.redhat.com/errata/RHSA-2026:61253
     - https://access.redhat.com/errata/RHSA-2026:63134
+    - https://access.redhat.com/errata/RHSA-2026:65126
+    - https://access.redhat.com/errata/RHSA-2026:65153
+    - https://access.redhat.com/errata/RHSA-2026:65359
+    - https://access.redhat.com/errata/RHSA-2026:65534
+    - https://access.redhat.com/errata/RHSA-2026:65886
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
@@ -10694,7 +11110,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-07T13:19:13.533Z'
+    LastModifiedDate: '2026-09-09T13:19:41.85Z'
   - VulnerabilityID: CVE-2026-39822
     VendorIDs:
     - GO-2026-4970
@@ -10949,7 +11365,7 @@
     - https://go.dev/issue/80205
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56853.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56853
     - https://pkg.go.dev/vuln/GO-2026-6089
     - https://www.cve.org/CVERecord?id=CVE-2026-56853
@@ -11016,7 +11432,7 @@
     - https://go.dev/issue/80435
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56858.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56858
     - https://pkg.go.dev/vuln/GO-2026-6091
     - https://www.cve.org/CVERecord?id=CVE-2026-56858
@@ -11162,7 +11578,7 @@
     - https://go.dev/issue/80494
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56860.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56860
     - https://pkg.go.dev/vuln/GO-2026-6218
     - https://www.cve.org/CVERecord?id=CVE-2026-56860
@@ -11229,7 +11645,7 @@
     - https://go.dev/issue/80528
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56862.html
-    - https://linux.oracle.com/errata/ELSA-2026-63332-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-64818-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56862
     - https://pkg.go.dev/vuln/GO-2026-6090
     - https://www.cve.org/CVERecord?id=CVE-2026-56862
