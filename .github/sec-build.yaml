@@ -4815,34 +4815,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:0ac169301f13da8debb7ae83e0b38f799119ec13878ede734954482511855cfe
     Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
-    Description: |-
-      ### Impact
-
-      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
-
-      ### Patches
-
-      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-
-      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
-
-      ### Credits
-
-      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If there are any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Description: containerd is an open-source container runtime. Prior to 1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with the CRI plugin enabled can indefinitely block the drainExecSyncIO goroutine in internal/cri/server/container_execsync.go when CRI ExecSync is used by exec probes or lifecycle hooks that launch long-lived background child processes retaining standard input and output pipes. The input and output drain phase has no default timeout and did not stop when the request context was canceled, so repeated ExecSync invocations can accumulate blocked goroutines and host memory. The resulting resource exhaustion can cause the OOM killer to terminate containerd, leaving the container runtime unavailable until restart. Deployments not using containerd's CRI implementation and containers not running on Linux are not affected. This issue is fixed in versions 1.7.35, 2.0.12, 2.2.8, and 2.3.5.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-400
     VendorSeverity:
       ghsa: 2
     CVSS:
@@ -4851,11 +4827,18 @@
         V40Score: 6.8
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/22ccf4314d1fe0834f8e28f10d37d5305ef9880c
+    - https://github.com/containerd/containerd/commit/5a2a3a759b0d2ad8c821b33c3afc20890daf6d81
+    - https://github.com/containerd/containerd/commit/9ec55f024041d0641f6d79841e45c8781141ddaa
+    - https://github.com/containerd/containerd/commit/eebea8c4c912f44b656c8295c9e6607a19b76650
+    - https://github.com/containerd/containerd/commit/ff39a972369e2f12fae561a58d658bbf8f2bc318
     - https://github.com/containerd/containerd/releases/tag/v1.7.35
     - https://github.com/containerd/containerd/releases/tag/v2.0.12
     - https://github.com/containerd/containerd/releases/tag/v2.2.8
     - https://github.com/containerd/containerd/releases/tag/v2.3.5
     - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
+    PublishedDate: '2026-09-14T18:17:51.053Z'
+    LastModifiedDate: '2026-09-14T18:17:51.053Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.56.0
     PkgName: golang.org/x/crypto
@@ -4972,34 +4955,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:fab545b4eabeb109c5953b88c969c5ae2dd0b0a97cfe5272602c12c04f7e109a
     Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
-    Description: |-
-      ### Impact
-
-      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
-
-      ### Patches
-
-      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-
-      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
-
-      ### Credits
-
-      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If there are any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Description: containerd is an open-source container runtime. Prior to 1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with the CRI plugin enabled can indefinitely block the drainExecSyncIO goroutine in internal/cri/server/container_execsync.go when CRI ExecSync is used by exec probes or lifecycle hooks that launch long-lived background child processes retaining standard input and output pipes. The input and output drain phase has no default timeout and did not stop when the request context was canceled, so repeated ExecSync invocations can accumulate blocked goroutines and host memory. The resulting resource exhaustion can cause the OOM killer to terminate containerd, leaving the container runtime unavailable until restart. Deployments not using containerd's CRI implementation and containers not running on Linux are not affected. This issue is fixed in versions 1.7.35, 2.0.12, 2.2.8, and 2.3.5.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-400
     VendorSeverity:
       ghsa: 2
     CVSS:
@@ -5008,11 +4967,18 @@
         V40Score: 6.8
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/22ccf4314d1fe0834f8e28f10d37d5305ef9880c
+    - https://github.com/containerd/containerd/commit/5a2a3a759b0d2ad8c821b33c3afc20890daf6d81
+    - https://github.com/containerd/containerd/commit/9ec55f024041d0641f6d79841e45c8781141ddaa
+    - https://github.com/containerd/containerd/commit/eebea8c4c912f44b656c8295c9e6607a19b76650
+    - https://github.com/containerd/containerd/commit/ff39a972369e2f12fae561a58d658bbf8f2bc318
     - https://github.com/containerd/containerd/releases/tag/v1.7.35
     - https://github.com/containerd/containerd/releases/tag/v2.0.12
     - https://github.com/containerd/containerd/releases/tag/v2.2.8
     - https://github.com/containerd/containerd/releases/tag/v2.3.5
     - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
+    PublishedDate: '2026-09-14T18:17:51.053Z'
+    LastModifiedDate: '2026-09-14T18:17:51.053Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.56.0
     PkgName: golang.org/x/crypto
@@ -5404,6 +5370,9 @@
     - https://access.redhat.com/errata/RHSA-2026:66016
     - https://access.redhat.com/errata/RHSA-2026:66022
     - https://access.redhat.com/errata/RHSA-2026:66432
+    - https://access.redhat.com/errata/RHSA-2026:67149
+    - https://access.redhat.com/errata/RHSA-2026:67159
+    - https://access.redhat.com/errata/RHSA-2026:67160
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456333
@@ -5448,7 +5417,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-11T13:17:49.237Z'
+    LastModifiedDate: '2026-09-14T13:18:24.91Z'
   - VulnerabilityID: CVE-2026-46600
     VendorIDs:
     - GO-2026-5942
@@ -6129,34 +6098,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:4f826d45ca0f0e110e50458632f4ccc155443208ebdc8ec8a6e7af17ee6c21ee
     Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
-    Description: |-
-      ### Impact
-
-      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
-
-      ### Patches
-
-      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-
-      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
-
-      ### Credits
-
-      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If there are any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Description: containerd is an open-source container runtime. Prior to 1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with the CRI plugin enabled can indefinitely block the drainExecSyncIO goroutine in internal/cri/server/container_execsync.go when CRI ExecSync is used by exec probes or lifecycle hooks that launch long-lived background child processes retaining standard input and output pipes. The input and output drain phase has no default timeout and did not stop when the request context was canceled, so repeated ExecSync invocations can accumulate blocked goroutines and host memory. The resulting resource exhaustion can cause the OOM killer to terminate containerd, leaving the container runtime unavailable until restart. Deployments not using containerd's CRI implementation and containers not running on Linux are not affected. This issue is fixed in versions 1.7.35, 2.0.12, 2.2.8, and 2.3.5.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-400
     VendorSeverity:
       ghsa: 2
     CVSS:
@@ -6165,11 +6110,18 @@
         V40Score: 6.8
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/22ccf4314d1fe0834f8e28f10d37d5305ef9880c
+    - https://github.com/containerd/containerd/commit/5a2a3a759b0d2ad8c821b33c3afc20890daf6d81
+    - https://github.com/containerd/containerd/commit/9ec55f024041d0641f6d79841e45c8781141ddaa
+    - https://github.com/containerd/containerd/commit/eebea8c4c912f44b656c8295c9e6607a19b76650
+    - https://github.com/containerd/containerd/commit/ff39a972369e2f12fae561a58d658bbf8f2bc318
     - https://github.com/containerd/containerd/releases/tag/v1.7.35
     - https://github.com/containerd/containerd/releases/tag/v2.0.12
     - https://github.com/containerd/containerd/releases/tag/v2.2.8
     - https://github.com/containerd/containerd/releases/tag/v2.3.5
     - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
+    PublishedDate: '2026-09-14T18:17:51.053Z'
+    LastModifiedDate: '2026-09-14T18:17:51.053Z'
   - VulnerabilityID: CVE-2026-41567
     VendorIDs:
     - GHSA-x86f-5xw2-fm2r
@@ -6569,34 +6521,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:2c66e968add21bede6914b68a55e535bf8b82b2a1908f9bcb09f6b5989210ead
     Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
-    Description: |-
-      ### Impact
-
-      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
-
-      ### Patches
-
-      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-
-      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
-
-      ### Credits
-
-      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If there are any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Description: containerd is an open-source container runtime. Prior to 1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with the CRI plugin enabled can indefinitely block the drainExecSyncIO goroutine in internal/cri/server/container_execsync.go when CRI ExecSync is used by exec probes or lifecycle hooks that launch long-lived background child processes retaining standard input and output pipes. The input and output drain phase has no default timeout and did not stop when the request context was canceled, so repeated ExecSync invocations can accumulate blocked goroutines and host memory. The resulting resource exhaustion can cause the OOM killer to terminate containerd, leaving the container runtime unavailable until restart. Deployments not using containerd's CRI implementation and containers not running on Linux are not affected. This issue is fixed in versions 1.7.35, 2.0.12, 2.2.8, and 2.3.5.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-400
     VendorSeverity:
       ghsa: 2
     CVSS:
@@ -6605,11 +6533,18 @@
         V40Score: 6.8
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/22ccf4314d1fe0834f8e28f10d37d5305ef9880c
+    - https://github.com/containerd/containerd/commit/5a2a3a759b0d2ad8c821b33c3afc20890daf6d81
+    - https://github.com/containerd/containerd/commit/9ec55f024041d0641f6d79841e45c8781141ddaa
+    - https://github.com/containerd/containerd/commit/eebea8c4c912f44b656c8295c9e6607a19b76650
+    - https://github.com/containerd/containerd/commit/ff39a972369e2f12fae561a58d658bbf8f2bc318
     - https://github.com/containerd/containerd/releases/tag/v1.7.35
     - https://github.com/containerd/containerd/releases/tag/v2.0.12
     - https://github.com/containerd/containerd/releases/tag/v2.2.8
     - https://github.com/containerd/containerd/releases/tag/v2.3.5
     - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
+    PublishedDate: '2026-09-14T18:17:51.053Z'
+    LastModifiedDate: '2026-09-14T18:17:51.053Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.56.0
     PkgName: golang.org/x/crypto
@@ -6662,34 +6597,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:4836ee1f31c93099bdca63cfaf89209bd3df31fa2b965b30beca451df2dc39d7
     Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
-    Description: |-
-      ### Impact
-
-      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
-
-      ### Patches
-
-      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-
-      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
-
-      ### Credits
-
-      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If there are any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Description: containerd is an open-source container runtime. Prior to 1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with the CRI plugin enabled can indefinitely block the drainExecSyncIO goroutine in internal/cri/server/container_execsync.go when CRI ExecSync is used by exec probes or lifecycle hooks that launch long-lived background child processes retaining standard input and output pipes. The input and output drain phase has no default timeout and did not stop when the request context was canceled, so repeated ExecSync invocations can accumulate blocked goroutines and host memory. The resulting resource exhaustion can cause the OOM killer to terminate containerd, leaving the container runtime unavailable until restart. Deployments not using containerd's CRI implementation and containers not running on Linux are not affected. This issue is fixed in versions 1.7.35, 2.0.12, 2.2.8, and 2.3.5.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-400
     VendorSeverity:
       ghsa: 2
     CVSS:
@@ -6698,11 +6609,18 @@
         V40Score: 6.8
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/22ccf4314d1fe0834f8e28f10d37d5305ef9880c
+    - https://github.com/containerd/containerd/commit/5a2a3a759b0d2ad8c821b33c3afc20890daf6d81
+    - https://github.com/containerd/containerd/commit/9ec55f024041d0641f6d79841e45c8781141ddaa
+    - https://github.com/containerd/containerd/commit/eebea8c4c912f44b656c8295c9e6607a19b76650
+    - https://github.com/containerd/containerd/commit/ff39a972369e2f12fae561a58d658bbf8f2bc318
     - https://github.com/containerd/containerd/releases/tag/v1.7.35
     - https://github.com/containerd/containerd/releases/tag/v2.0.12
     - https://github.com/containerd/containerd/releases/tag/v2.2.8
     - https://github.com/containerd/containerd/releases/tag/v2.3.5
     - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
+    PublishedDate: '2026-09-14T18:17:51.053Z'
+    LastModifiedDate: '2026-09-14T18:17:51.053Z'
   - VulnerabilityID: CVE-2026-56854
     VendorIDs:
     - GO-2026-6303
@@ -7003,21 +6921,11 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:8c612a9b5e729674ada7feabc3df9ea9b9078d749c5f567f52f9a0af9f19f987
     Title: 'gRPC-Go xDS servers: Denial of Service (DoS) via crash due to missing `:authority` and `Host` headers'
-    Description: |-
-      A vulnerability exists in gRPC-Go servers configured with `xds.NewGRPCServer()` where a crafted request missing both `:authority` and `Host` headers can cause a server panic, resulting in a Denial of Service (DoS).
-
-      Servers built with `xds.NewGRPCServer` install an xDS routing interceptor on every RPC. This interceptor looks up the request’s `:authority` header to pick a virtual host. The HTTP/2 server transport previously accepted requests that had neither `:authority` nor `Host`. When this happened, the xDS routing interceptor attempted to access the first element of an empty slice of authorities, leading to an index out of bounds panic. Since the per-RPC goroutine does not recover from panics, the entire server process would terminate.
-
-      This panic occurs in the interceptor pipeline, meaning the transport credentials handshake (TLS, mTLS, or ALTS) and HTTP/2 connection establishment must complete successfully before the crafted request can reach this logic.
-      - Insecure/Standard TLS: If the server permits insecure (plaintext) connections or standard credentials (where client certs are not checked), any unauthenticated remote attacker can trigger the crash.
-      - mTLS / ALTS: If strict transport-level authentication is enforced at the network edge or transport layer (e.g., requiring a valid client certificate), the attacker must possess valid transport credentials to initiate the stream and trigger the panic.
-
-      ### Impact
-      An attacker can cause a complete outage of the gRPC server by sending a request missing both `:authority` and `Host` headers, provided they can successfully establish a transport connection.
-
-      ### Patches
-      The issue has been addressed in `master` (and backported to `1.83.2` and `1.82.2`). The fix updates the HTTP/2 transport layer to reject requests missing both `:authority` and `Host` headers early, maintaining consistency with and other gRPC language implementations.
+    Description: gRPC-Go is the Go language implementation of gRPC. Prior to 1.82.2 and 1.83.2, servers created with xds.NewGRPCServer() allow internal/transport/http2_server.go to accept an RPC containing neither the :authority header nor the Host header, while RouteAndProcess in internal/xds/server/routing.go assumes that an authority value exists and indexes the empty slice. A remote client that can complete transport connection establishment can trigger an index-out-of-bounds panic that is not recovered by the per-RPC goroutine and terminates the entire server process. In insecure or ordinary TLS deployments the request can be unauthenticated, while strict mTLS or ALTS deployments require valid transport credentials before the malformed RPC can reach the interceptor. This issue is fixed in versions 1.82.2 and 1.83.2.
     Severity: HIGH
+    CweIDs:
+    - CWE-129
+    - CWE-248
     VendorSeverity:
       ghsa: 3
     References:
@@ -7032,6 +6940,8 @@
     - https://github.com/grpc/grpc-go/releases/tag/v1.82.2
     - https://github.com/grpc/grpc-go/releases/tag/v1.83.2
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4p-qf9q-27wj
+    PublishedDate: '2026-09-14T17:17:51.743Z'
+    LastModifiedDate: '2026-09-14T17:17:51.743Z'
   - VulnerabilityID: GHSA-hrxh-6v49-42gf
     PkgID: google.golang.org/grpc@v1.79.3
     PkgName: google.golang.org/grpc
@@ -7410,6 +7320,9 @@
     - https://access.redhat.com/errata/RHSA-2026:66016
     - https://access.redhat.com/errata/RHSA-2026:66022
     - https://access.redhat.com/errata/RHSA-2026:66432
+    - https://access.redhat.com/errata/RHSA-2026:67149
+    - https://access.redhat.com/errata/RHSA-2026:67159
+    - https://access.redhat.com/errata/RHSA-2026:67160
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456333
@@ -7454,7 +7367,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-11T13:17:49.237Z'
+    LastModifiedDate: '2026-09-14T13:18:24.91Z'
   - VulnerabilityID: CVE-2026-56853
     VendorIDs:
     - GO-2026-6089
@@ -8444,21 +8357,11 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:6879bbf126fee5dcfec96d4a6ddfa2cff32a85867e47672ef5758bb4abbfbf4e
     Title: 'gRPC-Go xDS servers: Denial of Service (DoS) via crash due to missing `:authority` and `Host` headers'
-    Description: |-
-      A vulnerability exists in gRPC-Go servers configured with `xds.NewGRPCServer()` where a crafted request missing both `:authority` and `Host` headers can cause a server panic, resulting in a Denial of Service (DoS).
-
-      Servers built with `xds.NewGRPCServer` install an xDS routing interceptor on every RPC. This interceptor looks up the request’s `:authority` header to pick a virtual host. The HTTP/2 server transport previously accepted requests that had neither `:authority` nor `Host`. When this happened, the xDS routing interceptor attempted to access the first element of an empty slice of authorities, leading to an index out of bounds panic. Since the per-RPC goroutine does not recover from panics, the entire server process would terminate.
-
-      This panic occurs in the interceptor pipeline, meaning the transport credentials handshake (TLS, mTLS, or ALTS) and HTTP/2 connection establishment must complete successfully before the crafted request can reach this logic.
-      - Insecure/Standard TLS: If the server permits insecure (plaintext) connections or standard credentials (where client certs are not checked), any unauthenticated remote attacker can trigger the crash.
-      - mTLS / ALTS: If strict transport-level authentication is enforced at the network edge or transport layer (e.g., requiring a valid client certificate), the attacker must possess valid transport credentials to initiate the stream and trigger the panic.
-
-      ### Impact
-      An attacker can cause a complete outage of the gRPC server by sending a request missing both `:authority` and `Host` headers, provided they can successfully establish a transport connection.
-
-      ### Patches
-      The issue has been addressed in `master` (and backported to `1.83.2` and `1.82.2`). The fix updates the HTTP/2 transport layer to reject requests missing both `:authority` and `Host` headers early, maintaining consistency with and other gRPC language implementations.
+    Description: gRPC-Go is the Go language implementation of gRPC. Prior to 1.82.2 and 1.83.2, servers created with xds.NewGRPCServer() allow internal/transport/http2_server.go to accept an RPC containing neither the :authority header nor the Host header, while RouteAndProcess in internal/xds/server/routing.go assumes that an authority value exists and indexes the empty slice. A remote client that can complete transport connection establishment can trigger an index-out-of-bounds panic that is not recovered by the per-RPC goroutine and terminates the entire server process. In insecure or ordinary TLS deployments the request can be unauthenticated, while strict mTLS or ALTS deployments require valid transport credentials before the malformed RPC can reach the interceptor. This issue is fixed in versions 1.82.2 and 1.83.2.
     Severity: HIGH
+    CweIDs:
+    - CWE-129
+    - CWE-248
     VendorSeverity:
       ghsa: 3
     References:
@@ -8473,6 +8376,8 @@
     - https://github.com/grpc/grpc-go/releases/tag/v1.82.2
     - https://github.com/grpc/grpc-go/releases/tag/v1.83.2
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4p-qf9q-27wj
+    PublishedDate: '2026-09-14T17:17:51.743Z'
+    LastModifiedDate: '2026-09-14T17:17:51.743Z'
   - VulnerabilityID: GHSA-hrxh-6v49-42gf
     PkgID: google.golang.org/grpc@v1.81.1
     PkgName: google.golang.org/grpc
@@ -9005,6 +8910,9 @@
     - https://access.redhat.com/errata/RHSA-2026:66016
     - https://access.redhat.com/errata/RHSA-2026:66022
     - https://access.redhat.com/errata/RHSA-2026:66432
+    - https://access.redhat.com/errata/RHSA-2026:67149
+    - https://access.redhat.com/errata/RHSA-2026:67159
+    - https://access.redhat.com/errata/RHSA-2026:67160
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456333
@@ -9049,7 +8957,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-11T13:17:49.237Z'
+    LastModifiedDate: '2026-09-14T13:18:24.91Z'
   - VulnerabilityID: CVE-2026-39822
     VendorIDs:
     - GO-2026-4970
