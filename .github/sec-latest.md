@@ -619,8 +619,8 @@
 │                        │       │                                                                             
 │                        │       │                  https://errata.rockylinux.org/RLSA-2025:7409               
 │                        │       │                                                                             
-│                        │       │                  https://github.com/git/git/security/advisories/GHSA-7jjc-gg
-│                        │       │                  6m-3329                                                    
+│                        │       │                  https://www.cve.org/CVERecord?id=CVE-2026-41568            
+│                        │       │                                                                             
 │                        │       │                  https://linux.oracle.com/cve/CVE-2024-52005.html           
 │                        │       │                                                                             
 │                        │       │                  https://linux.oracle.com/errata/ELSA-2025-8414.html        
@@ -714,28 +714,45 @@
 │                        │       │                   c6d8619d3e008 
 │                        │       ├ Title           : glibc: Buffer Overflow in strfmon right-justification
 │                        │       │                   padding 
-│                        │       ├ Description     : A flaw was found in glibc. The strfmon and strfmon_l
-│                        │       │                   functions are vulnerable to a buffer overflow when
-│                        │       │                   processing right-justified width padding. This occurs
-│                        │       │                   because an incorrect length is used for an internal memory
-│                        │       │                    operation, causing data to be written beyond its intended
-│                        │       │                    buffer. An attacker could exploit this by providing
-│                        │       │                   specially crafted input, potentially leading to arbitrary
-│                        │       │                   code execution or other severe impacts. 
+│                        │       ├ Description     : Calling strfmon and strfmon_l in the GNU C Library version
+│                        │       │                    2.38 to 2.44 can write past the end of the
+│                        │       │                   caller-supplied output buffer when a conversion uses
+│                        │       │                   right-justified width padding.
+│                        │       │                   
+│                        │       │                   Exploitation requires an application code path that calls
+│                        │       │                   strfmon or strfmon_l with right-justified width padding
+│                        │       │                   into a destination buffer that is large enough for the
+│                        │       │                   padding to succeed but too small for the internal memmove
+│                        │       │                   call. The field width or format may be attacker-influenced
+│                        │       │                    or a fixed susceptible pattern in the caller.
+│                        │       │                   At the time of publication, no network-facing application
+│                        │       │                   impact is known. 
 │                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs                  
+│                        │       │                  ───────
+│                        │       │                  CWE-122
+│                        │       │                  
 │                        │       ├ VendorSeverity   ╭ redhat: 2 
 │                        │       │                  ╰ ubuntu: 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I
 │                        │       │                           │           :H/A:H 
 │                        │       │                           ╰ V3Score : 6.8 
-│                        │       ╰ References                                                            
-│                        │                          ─────────────────────────────────────────────────────
-│                        │                          https://access.redhat.com/security/cve/CVE-2026-19499
-│                        │                          https://nvd.nist.gov/vuln/detail/CVE-2026-19499      
-│                        │                          https://ubuntu.com/security/notices/USN-8737-1       
-│                        │                          https://ubuntu.com/security/notices/USN-8737-2       
-│                        │                          https://www.cve.org/CVERecord?id=CVE-2026-19499      
-│                        │                          
+│                        │       ├ References                                                                  
+│                        │       │                  ───────────────────────────────────────────────────────────
+│                        │       │                  https://access.redhat.com/security/cve/CVE-2026-19499      
+│                        │       │                  https://nvd.nist.gov/vuln/detail/CVE-2026-19499            
+│                        │       │                  https://sourceware.org/bugzilla/show_bug.cgi?id=34510      
+│                        │       │                  https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advi
+│                        │       │                  sories/GLIBC-SA-2026-0017                                  
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-1             
+│                        │       │                                                                             
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-2             
+│                        │       │                                                                             
+│                        │       │                  https://www.cve.org/CVERecord?id=CVE-2026-19499            
+│                        │       │                                                                             
+│                        │       │                  
+│                        │       ├ PublishedDate   : 2026-09-14T18:17:45.753Z 
+│                        │       ╰ LastModifiedDate: 2026-09-14T20:16:43.25Z 
 │                        ├ [13]  ╭ VulnerabilityID : CVE-2026-19542 
 │                        │       ├ PkgID           : libc-bin@2.43-2ubuntu2.3 
 │                        │       ├ PkgName         : libc-bin 
@@ -757,26 +774,50 @@
 │                        │       ├ Fingerprint     : sha256:4452a7356ea9badaf3c0d841be894584400ad28d2dd4bbb12d2
 │                        │       │                   12f4e9d3e1ffd 
 │                        │       ├ Title           : glibc: Fix out-of-bounds array write in tdelete 
-│                        │       ├ Description     : A flaw was found in glibc. An out-of-bounds array write
-│                        │       │                   vulnerability exists within the `tdelete` function. This
-│                        │       │                   issue occurs due to incorrect management of array sizes,
-│                        │       │                   which can lead to memory corruption. A local attacker with
-│                        │       │                    low privileges could potentially exploit this to cause a
-│                        │       │                   denial of service or disclose sensitive information. 
+│                        │       ├ Description     : Calling tdelete on a sufficiently deep tree in the GNU C
+│                        │       │                   Library version 2.1 to 2.44 may write one pointer past the
+│                        │       │                    end of an alloca-allocated array on the stack, which may
+│                        │       │                   crash the application.
+│                        │       │                   
+│                        │       │                   The tdelete implementation keeps an explicit stack of
+│                        │       │                   parent nodes for rebalancing, which is grown as needed
+│                        │       │                   while descending the tree.  Two rebalancing branches push
+│                        │       │                   an additional entry without checking the capacity, and
+│                        │       │                   write past the array when the stack is exactly full.
+│                        │       │                   Triggering this requires a node at a depth of exactly 40
+│                        │       │                   (or 40 plus a multiple of 20), which implies a tree with
+│                        │       │                   at least a million nodes, so an attacker must drive a
+│                        │       │                   large number of insertions and deletions through an
+│                        │       │                   application that uses tsearch and tdelete.  The written
+│                        │       │                   value is a pointer into a tree node and is not directly
+│                        │       │                   attacker controlled.  No affected application in common
+│                        │       │                   distributions has been identified. 
 │                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs                  
+│                        │       │                  ───────
+│                        │       │                  CWE-121
+│                        │       │                  
 │                        │       ├ VendorSeverity   ╭ redhat: 2 
 │                        │       │                  ╰ ubuntu: 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I
 │                        │       │                           │           :L/A:L 
 │                        │       │                           ╰ V3Score : 4.2 
-│                        │       ╰ References                                                            
-│                        │                          ─────────────────────────────────────────────────────
-│                        │                          https://access.redhat.com/security/cve/CVE-2026-19542
-│                        │                          https://nvd.nist.gov/vuln/detail/CVE-2026-19542      
-│                        │                          https://ubuntu.com/security/notices/USN-8737-1       
-│                        │                          https://ubuntu.com/security/notices/USN-8737-2       
-│                        │                          https://www.cve.org/CVERecord?id=CVE-2026-19542      
-│                        │                          
+│                        │       ├ References                                                                  
+│                        │       │                  ───────────────────────────────────────────────────────────
+│                        │       │                  https://access.redhat.com/security/cve/CVE-2026-19542      
+│                        │       │                  https://nvd.nist.gov/vuln/detail/CVE-2026-19542            
+│                        │       │                  https://sourceware.org/bugzilla/show_bug.cgi?id=34506      
+│                        │       │                  https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advi
+│                        │       │                  sories/GLIBC-SA-2026-0018                                  
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-1             
+│                        │       │                                                                             
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-2             
+│                        │       │                                                                             
+│                        │       │                  https://www.cve.org/CVERecord?id=CVE-2026-19542            
+│                        │       │                                                                             
+│                        │       │                  
+│                        │       ├ PublishedDate   : 2026-09-14T18:17:46.85Z 
+│                        │       ╰ LastModifiedDate: 2026-09-14T20:16:43.363Z 
 │                        ├ [14]  ╭ VulnerabilityID : CVE-2026-6368 
 │                        │       ├ PkgID           : libc-bin@2.43-2ubuntu2.3 
 │                        │       ├ PkgName         : libc-bin 
@@ -1055,28 +1096,45 @@
 │                        │       │                   b6090aafee41f 
 │                        │       ├ Title           : glibc: Buffer Overflow in strfmon right-justification
 │                        │       │                   padding 
-│                        │       ├ Description     : A flaw was found in glibc. The strfmon and strfmon_l
-│                        │       │                   functions are vulnerable to a buffer overflow when
-│                        │       │                   processing right-justified width padding. This occurs
-│                        │       │                   because an incorrect length is used for an internal memory
-│                        │       │                    operation, causing data to be written beyond its intended
-│                        │       │                    buffer. An attacker could exploit this by providing
-│                        │       │                   specially crafted input, potentially leading to arbitrary
-│                        │       │                   code execution or other severe impacts. 
+│                        │       ├ Description     : Calling strfmon and strfmon_l in the GNU C Library version
+│                        │       │                    2.38 to 2.44 can write past the end of the
+│                        │       │                   caller-supplied output buffer when a conversion uses
+│                        │       │                   right-justified width padding.
+│                        │       │                   
+│                        │       │                   Exploitation requires an application code path that calls
+│                        │       │                   strfmon or strfmon_l with right-justified width padding
+│                        │       │                   into a destination buffer that is large enough for the
+│                        │       │                   padding to succeed but too small for the internal memmove
+│                        │       │                   call. The field width or format may be attacker-influenced
+│                        │       │                    or a fixed susceptible pattern in the caller.
+│                        │       │                   At the time of publication, no network-facing application
+│                        │       │                   impact is known. 
 │                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs                  
+│                        │       │                  ───────
+│                        │       │                  CWE-122
+│                        │       │                  
 │                        │       ├ VendorSeverity   ╭ redhat: 2 
 │                        │       │                  ╰ ubuntu: 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I
 │                        │       │                           │           :H/A:H 
 │                        │       │                           ╰ V3Score : 6.8 
-│                        │       ╰ References                                                            
-│                        │                          ─────────────────────────────────────────────────────
-│                        │                          https://access.redhat.com/security/cve/CVE-2026-19499
-│                        │                          https://nvd.nist.gov/vuln/detail/CVE-2026-19499      
-│                        │                          https://ubuntu.com/security/notices/USN-8737-1       
-│                        │                          https://ubuntu.com/security/notices/USN-8737-2       
-│                        │                          https://www.cve.org/CVERecord?id=CVE-2026-19499      
-│                        │                          
+│                        │       ├ References                                                                  
+│                        │       │                  ───────────────────────────────────────────────────────────
+│                        │       │                  https://access.redhat.com/security/cve/CVE-2026-19499      
+│                        │       │                  https://nvd.nist.gov/vuln/detail/CVE-2026-19499            
+│                        │       │                  https://sourceware.org/bugzilla/show_bug.cgi?id=34510      
+│                        │       │                  https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advi
+│                        │       │                  sories/GLIBC-SA-2026-0017                                  
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-1             
+│                        │       │                                                                             
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-2             
+│                        │       │                                                                             
+│                        │       │                  https://www.cve.org/CVERecord?id=CVE-2026-19499            
+│                        │       │                                                                             
+│                        │       │                  
+│                        │       ├ PublishedDate   : 2026-09-14T18:17:45.753Z 
+│                        │       ╰ LastModifiedDate: 2026-09-14T20:16:43.25Z 
 │                        ├ [20]  ╭ VulnerabilityID : CVE-2026-19542 
 │                        │       ├ PkgID           : libc-gconv-modules-extra@2.43-2ubuntu2.3 
 │                        │       ├ PkgName         : libc-gconv-modules-extra 
@@ -1098,26 +1156,50 @@
 │                        │       ├ Fingerprint     : sha256:f25abfcf18e4cf154c60db59512cff44802223bc10cb936f0cf
 │                        │       │                   6ee6a0b2e7135 
 │                        │       ├ Title           : glibc: Fix out-of-bounds array write in tdelete 
-│                        │       ├ Description     : A flaw was found in glibc. An out-of-bounds array write
-│                        │       │                   vulnerability exists within the `tdelete` function. This
-│                        │       │                   issue occurs due to incorrect management of array sizes,
-│                        │       │                   which can lead to memory corruption. A local attacker with
-│                        │       │                    low privileges could potentially exploit this to cause a
-│                        │       │                   denial of service or disclose sensitive information. 
+│                        │       ├ Description     : Calling tdelete on a sufficiently deep tree in the GNU C
+│                        │       │                   Library version 2.1 to 2.44 may write one pointer past the
+│                        │       │                    end of an alloca-allocated array on the stack, which may
+│                        │       │                   crash the application.
+│                        │       │                   
+│                        │       │                   The tdelete implementation keeps an explicit stack of
+│                        │       │                   parent nodes for rebalancing, which is grown as needed
+│                        │       │                   while descending the tree.  Two rebalancing branches push
+│                        │       │                   an additional entry without checking the capacity, and
+│                        │       │                   write past the array when the stack is exactly full.
+│                        │       │                   Triggering this requires a node at a depth of exactly 40
+│                        │       │                   (or 40 plus a multiple of 20), which implies a tree with
+│                        │       │                   at least a million nodes, so an attacker must drive a
+│                        │       │                   large number of insertions and deletions through an
+│                        │       │                   application that uses tsearch and tdelete.  The written
+│                        │       │                   value is a pointer into a tree node and is not directly
+│                        │       │                   attacker controlled.  No affected application in common
+│                        │       │                   distributions has been identified. 
 │                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs                  
+│                        │       │                  ───────
+│                        │       │                  CWE-121
+│                        │       │                  
 │                        │       ├ VendorSeverity   ╭ redhat: 2 
 │                        │       │                  ╰ ubuntu: 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I
 │                        │       │                           │           :L/A:L 
 │                        │       │                           ╰ V3Score : 4.2 
-│                        │       ╰ References                                                            
-│                        │                          ─────────────────────────────────────────────────────
-│                        │                          https://access.redhat.com/security/cve/CVE-2026-19542
-│                        │                          https://nvd.nist.gov/vuln/detail/CVE-2026-19542      
-│                        │                          https://ubuntu.com/security/notices/USN-8737-1       
-│                        │                          https://ubuntu.com/security/notices/USN-8737-2       
-│                        │                          https://www.cve.org/CVERecord?id=CVE-2026-19542      
-│                        │                          
+│                        │       ├ References                                                                  
+│                        │       │                  ───────────────────────────────────────────────────────────
+│                        │       │                  https://access.redhat.com/security/cve/CVE-2026-19542      
+│                        │       │                  https://nvd.nist.gov/vuln/detail/CVE-2026-19542            
+│                        │       │                  https://sourceware.org/bugzilla/show_bug.cgi?id=34506      
+│                        │       │                  https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advi
+│                        │       │                  sories/GLIBC-SA-2026-0018                                  
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-1             
+│                        │       │                                                                             
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-2             
+│                        │       │                                                                             
+│                        │       │                  https://www.cve.org/CVERecord?id=CVE-2026-19542            
+│                        │       │                                                                             
+│                        │       │                  
+│                        │       ├ PublishedDate   : 2026-09-14T18:17:46.85Z 
+│                        │       ╰ LastModifiedDate: 2026-09-14T20:16:43.363Z 
 │                        ├ [21]  ╭ VulnerabilityID : CVE-2026-6368 
 │                        │       ├ PkgID           : libc-gconv-modules-extra@2.43-2ubuntu2.3 
 │                        │       ├ PkgName         : libc-gconv-modules-extra 
@@ -1396,28 +1478,45 @@
 │                        │       │                   c5df5d256a48a 
 │                        │       ├ Title           : glibc: Buffer Overflow in strfmon right-justification
 │                        │       │                   padding 
-│                        │       ├ Description     : A flaw was found in glibc. The strfmon and strfmon_l
-│                        │       │                   functions are vulnerable to a buffer overflow when
-│                        │       │                   processing right-justified width padding. This occurs
-│                        │       │                   because an incorrect length is used for an internal memory
-│                        │       │                    operation, causing data to be written beyond its intended
-│                        │       │                    buffer. An attacker could exploit this by providing
-│                        │       │                   specially crafted input, potentially leading to arbitrary
-│                        │       │                   code execution or other severe impacts. 
+│                        │       ├ Description     : Calling strfmon and strfmon_l in the GNU C Library version
+│                        │       │                    2.38 to 2.44 can write past the end of the
+│                        │       │                   caller-supplied output buffer when a conversion uses
+│                        │       │                   right-justified width padding.
+│                        │       │                   
+│                        │       │                   Exploitation requires an application code path that calls
+│                        │       │                   strfmon or strfmon_l with right-justified width padding
+│                        │       │                   into a destination buffer that is large enough for the
+│                        │       │                   padding to succeed but too small for the internal memmove
+│                        │       │                   call. The field width or format may be attacker-influenced
+│                        │       │                    or a fixed susceptible pattern in the caller.
+│                        │       │                   At the time of publication, no network-facing application
+│                        │       │                   impact is known. 
 │                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs                  
+│                        │       │                  ───────
+│                        │       │                  CWE-122
+│                        │       │                  
 │                        │       ├ VendorSeverity   ╭ redhat: 2 
 │                        │       │                  ╰ ubuntu: 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I
 │                        │       │                           │           :H/A:H 
 │                        │       │                           ╰ V3Score : 6.8 
-│                        │       ╰ References                                                            
-│                        │                          ─────────────────────────────────────────────────────
-│                        │                          https://access.redhat.com/security/cve/CVE-2026-19499
-│                        │                          https://nvd.nist.gov/vuln/detail/CVE-2026-19499      
-│                        │                          https://ubuntu.com/security/notices/USN-8737-1       
-│                        │                          https://ubuntu.com/security/notices/USN-8737-2       
-│                        │                          https://www.cve.org/CVERecord?id=CVE-2026-19499      
-│                        │                          
+│                        │       ├ References                                                                  
+│                        │       │                  ───────────────────────────────────────────────────────────
+│                        │       │                  https://access.redhat.com/security/cve/CVE-2026-19499      
+│                        │       │                  https://nvd.nist.gov/vuln/detail/CVE-2026-19499            
+│                        │       │                  https://sourceware.org/bugzilla/show_bug.cgi?id=34510      
+│                        │       │                  https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advi
+│                        │       │                  sories/GLIBC-SA-2026-0017                                  
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-1             
+│                        │       │                                                                             
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-2             
+│                        │       │                                                                             
+│                        │       │                  https://www.cve.org/CVERecord?id=CVE-2026-19499            
+│                        │       │                                                                             
+│                        │       │                  
+│                        │       ├ PublishedDate   : 2026-09-14T18:17:45.753Z 
+│                        │       ╰ LastModifiedDate: 2026-09-14T20:16:43.25Z 
 │                        ├ [27]  ╭ VulnerabilityID : CVE-2026-19542 
 │                        │       ├ PkgID           : libc6@2.43-2ubuntu2.3 
 │                        │       ├ PkgName         : libc6 
@@ -1439,26 +1538,50 @@
 │                        │       ├ Fingerprint     : sha256:73b4e5e6c52301a2273305c81844ab960116315f0e4cd2a2d26
 │                        │       │                   d9b9913fa3a8e 
 │                        │       ├ Title           : glibc: Fix out-of-bounds array write in tdelete 
-│                        │       ├ Description     : A flaw was found in glibc. An out-of-bounds array write
-│                        │       │                   vulnerability exists within the `tdelete` function. This
-│                        │       │                   issue occurs due to incorrect management of array sizes,
-│                        │       │                   which can lead to memory corruption. A local attacker with
-│                        │       │                    low privileges could potentially exploit this to cause a
-│                        │       │                   denial of service or disclose sensitive information. 
+│                        │       ├ Description     : Calling tdelete on a sufficiently deep tree in the GNU C
+│                        │       │                   Library version 2.1 to 2.44 may write one pointer past the
+│                        │       │                    end of an alloca-allocated array on the stack, which may
+│                        │       │                   crash the application.
+│                        │       │                   
+│                        │       │                   The tdelete implementation keeps an explicit stack of
+│                        │       │                   parent nodes for rebalancing, which is grown as needed
+│                        │       │                   while descending the tree.  Two rebalancing branches push
+│                        │       │                   an additional entry without checking the capacity, and
+│                        │       │                   write past the array when the stack is exactly full.
+│                        │       │                   Triggering this requires a node at a depth of exactly 40
+│                        │       │                   (or 40 plus a multiple of 20), which implies a tree with
+│                        │       │                   at least a million nodes, so an attacker must drive a
+│                        │       │                   large number of insertions and deletions through an
+│                        │       │                   application that uses tsearch and tdelete.  The written
+│                        │       │                   value is a pointer into a tree node and is not directly
+│                        │       │                   attacker controlled.  No affected application in common
+│                        │       │                   distributions has been identified. 
 │                        │       ├ Severity        : MEDIUM 
+│                        │       ├ CweIDs                  
+│                        │       │                  ───────
+│                        │       │                  CWE-121
+│                        │       │                  
 │                        │       ├ VendorSeverity   ╭ redhat: 2 
 │                        │       │                  ╰ ubuntu: 2 
 │                        │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I
 │                        │       │                           │           :L/A:L 
 │                        │       │                           ╰ V3Score : 4.2 
-│                        │       ╰ References                                                            
-│                        │                          ─────────────────────────────────────────────────────
-│                        │                          https://access.redhat.com/security/cve/CVE-2026-19542
-│                        │                          https://nvd.nist.gov/vuln/detail/CVE-2026-19542      
-│                        │                          https://ubuntu.com/security/notices/USN-8737-1       
-│                        │                          https://ubuntu.com/security/notices/USN-8737-2       
-│                        │                          https://www.cve.org/CVERecord?id=CVE-2026-19542      
-│                        │                          
+│                        │       ├ References                                                                  
+│                        │       │                  ───────────────────────────────────────────────────────────
+│                        │       │                  https://access.redhat.com/security/cve/CVE-2026-19542      
+│                        │       │                  https://nvd.nist.gov/vuln/detail/CVE-2026-19542            
+│                        │       │                  https://sourceware.org/bugzilla/show_bug.cgi?id=34506      
+│                        │       │                  https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advi
+│                        │       │                  sories/GLIBC-SA-2026-0018                                  
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-1             
+│                        │       │                                                                             
+│                        │       │                  https://ubuntu.com/security/notices/USN-8737-2             
+│                        │       │                                                                             
+│                        │       │                  https://www.cve.org/CVERecord?id=CVE-2026-19542            
+│                        │       │                                                                             
+│                        │       │                  
+│                        │       ├ PublishedDate   : 2026-09-14T18:17:46.85Z 
+│                        │       ╰ LastModifiedDate: 2026-09-14T20:16:43.363Z 
 │                        ├ [28]  ╭ VulnerabilityID : CVE-2026-6368 
 │                        │       ├ PkgID           : libc6@2.43-2ubuntu2.3 
 │                        │       ├ PkgName         : libc6 
@@ -4273,11 +4396,12 @@
 │                        │       │                  ───────
 │                        │       │                  CWE-190
 │                        │       │                  
-│                        │       ├ VendorSeverity   ╭ azure : 2 
-│                        │       │                  ├ nvd   : 4 
-│                        │       │                  ├ photon: 4 
-│                        │       │                  ├ redhat: 2 
-│                        │       │                  ╰ ubuntu: 2 
+│                        │       ├ VendorSeverity   ╭ azure      : 2 
+│                        │       │                  ├ nvd        : 4 
+│                        │       │                  ├ oracle-oval: 2 
+│                        │       │                  ├ photon     : 4 
+│                        │       │                  ├ redhat     : 2 
+│                        │       │                  ╰ ubuntu     : 2 
 │                        │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │       │                  │        │           :H/A:H 
 │                        │       │                  │        ╰ V3Score : 9.1 
@@ -4291,6 +4415,10 @@
 │                        │       │                  https://github.com/Perl/perl5/commit/03f74bbbd3a68350d926ee
 │                        │       │                  93d56ee4808c28c4c7.patch                                   
 │                        │       │                  https://github.com/Perl/perl5/issues/23388                 
+│                        │       │                                                                             
+│                        │       │                  https://linux.oracle.com/cve/CVE-2026-13221.html           
+│                        │       │                                                                             
+│                        │       │                  https://linux.oracle.com/errata/ELSA-2026-67156-0.html     
 │                        │       │                                                                             
 │                        │       │                  https://lists.security.metacpan.org/cve-announce/msg/417801
 │                        │       │                  04/                                                        
@@ -5986,11 +6114,12 @@
 │                        │       │                  ───────
 │                        │       │                  CWE-190
 │                        │       │                  
-│                        │       ├ VendorSeverity   ╭ azure : 2 
-│                        │       │                  ├ nvd   : 4 
-│                        │       │                  ├ photon: 4 
-│                        │       │                  ├ redhat: 2 
-│                        │       │                  ╰ ubuntu: 2 
+│                        │       ├ VendorSeverity   ╭ azure      : 2 
+│                        │       │                  ├ nvd        : 4 
+│                        │       │                  ├ oracle-oval: 2 
+│                        │       │                  ├ photon     : 4 
+│                        │       │                  ├ redhat     : 2 
+│                        │       │                  ╰ ubuntu     : 2 
 │                        │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │       │                  │        │           :H/A:H 
 │                        │       │                  │        ╰ V3Score : 9.1 
@@ -6004,6 +6133,10 @@
 │                        │       │                  https://github.com/Perl/perl5/commit/03f74bbbd3a68350d926ee
 │                        │       │                  93d56ee4808c28c4c7.patch                                   
 │                        │       │                  https://github.com/Perl/perl5/issues/23388                 
+│                        │       │                                                                             
+│                        │       │                  https://linux.oracle.com/cve/CVE-2026-13221.html           
+│                        │       │                                                                             
+│                        │       │                  https://linux.oracle.com/errata/ELSA-2026-67156-0.html     
 │                        │       │                                                                             
 │                        │       │                  https://lists.security.metacpan.org/cve-announce/msg/417801
 │                        │       │                  04/                                                        
@@ -6419,11 +6552,12 @@
 │                        │       │                  ───────
 │                        │       │                  CWE-190
 │                        │       │                  
-│                        │       ├ VendorSeverity   ╭ azure : 2 
-│                        │       │                  ├ nvd   : 4 
-│                        │       │                  ├ photon: 4 
-│                        │       │                  ├ redhat: 2 
-│                        │       │                  ╰ ubuntu: 2 
+│                        │       ├ VendorSeverity   ╭ azure      : 2 
+│                        │       │                  ├ nvd        : 4 
+│                        │       │                  ├ oracle-oval: 2 
+│                        │       │                  ├ photon     : 4 
+│                        │       │                  ├ redhat     : 2 
+│                        │       │                  ╰ ubuntu     : 2 
 │                        │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │       │                  │        │           :H/A:H 
 │                        │       │                  │        ╰ V3Score : 9.1 
@@ -6437,6 +6571,10 @@
 │                        │       │                  https://github.com/Perl/perl5/commit/03f74bbbd3a68350d926ee
 │                        │       │                  93d56ee4808c28c4c7.patch                                   
 │                        │       │                  https://github.com/Perl/perl5/issues/23388                 
+│                        │       │                                                                             
+│                        │       │                  https://linux.oracle.com/cve/CVE-2026-13221.html           
+│                        │       │                                                                             
+│                        │       │                  https://linux.oracle.com/errata/ELSA-2026-67156-0.html     
 │                        │       │                                                                             
 │                        │       │                  https://lists.security.metacpan.org/cve-announce/msg/417801
 │                        │       │                  04/                                                        
@@ -6852,11 +6990,12 @@
 │                        │       │                  ───────
 │                        │       │                  CWE-190
 │                        │       │                  
-│                        │       ├ VendorSeverity   ╭ azure : 2 
-│                        │       │                  ├ nvd   : 4 
-│                        │       │                  ├ photon: 4 
-│                        │       │                  ├ redhat: 2 
-│                        │       │                  ╰ ubuntu: 2 
+│                        │       ├ VendorSeverity   ╭ azure      : 2 
+│                        │       │                  ├ nvd        : 4 
+│                        │       │                  ├ oracle-oval: 2 
+│                        │       │                  ├ photon     : 4 
+│                        │       │                  ├ redhat     : 2 
+│                        │       │                  ╰ ubuntu     : 2 
 │                        │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I
 │                        │       │                  │        │           :H/A:H 
 │                        │       │                  │        ╰ V3Score : 9.1 
@@ -6870,6 +7009,10 @@
 │                        │       │                  https://github.com/Perl/perl5/commit/03f74bbbd3a68350d926ee
 │                        │       │                  93d56ee4808c28c4c7.patch                                   
 │                        │       │                  https://github.com/Perl/perl5/issues/23388                 
+│                        │       │                                                                             
+│                        │       │                  https://linux.oracle.com/cve/CVE-2026-13221.html           
+│                        │       │                                                                             
+│                        │       │                  https://linux.oracle.com/errata/ELSA-2026-67156-0.html     
 │                        │       │                                                                             
 │                        │       │                  https://lists.security.metacpan.org/cve-announce/msg/417801
 │                        │       │                  04/                                                        
@@ -10090,65 +10233,58 @@
 │                        │     │                   36aba273b50 
 │                        │     ├ Title           : containerd: CRI ExecSync Goroutine Leak Leads to Node-Level
 │                        │     │                   Denial of Service 
-│                        │     ├ Description     : ### Impact
-│                        │     │                   
-│                        │     │                   A bug in containerd's CRI ExecSync implementation allows
-│                        │     │                   exec probes and lifecycle hooks with background child
-│                        │     │                   processes to keep containerd's stdio-drain goroutines
-│                        │     │                   indefinitely blocked. Because the I/O drain phase lacks a
-│                        │     │                   default timeout or context cancellation handling, repeated
-│                        │     │                   ExecSync invocations (like probes) that include long-lived
-│                        │     │                   background processes against a container can cause
-│                        │     │                   containerd to leak goroutines and host memory. Over time,
-│                        │     │                   this resource exhaustion can cause the containerd daemon to
-│                        │     │                   be terminated by the OOM killer, rendering containerd
-│                        │     │                   unavailable until it is restarted. This issue affects
-│                        │     │                   containerd on Linux systems running with the CRI plugin
-│                        │     │                   enabled. Users not using containerd's CRI implementation or
-│                        │     │                   not running containers on Linux are not affected.
-│                        │     │                   ### Patches
-│                        │     │                   This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12,
-│                        │     │                   and 1.7.35. Users should update to these versions to resolve
-│                        │     │                    the issue.
-│                        │     │                   ### Workarounds
-│                        │     │                   Ensure exec probes and lifecycle hooks do not launch
-│                        │     │                   long-lived background child processes.
-│                        │     │                   ### Credits
-│                        │     │                   The containerd project would like to thank XlabAI Team of
-│                        │     │                   Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan
-│                        │     │                   Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and
-│                        │     │                   @IamwhatIamSY who independently discovered and responsibly
-│                        │     │                   disclosed this issue in accordance with the [containerd
-│                        │     │                   security
-│                        │     │                   policy](https://github.com/containerd/project/blob/main/SECU
-│                        │     │                   RITY.md).
-│                        │     │                   ### For more information
-│                        │     │                   If there are any questions or comments about this advisory:
-│                        │     │                   * Open an issue in
-│                        │     │                   [containerd](https://github.com/containerd/containerd/issues
-│                        │     │                   /new/choose)
-│                        │     │                   * Send an email to
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io)
-│                        │     │                   To report a security issue in containerd:
-│                        │     │                   * [Report a new
-│                        │     │                   vulnerability](https://github.com/containerd/containerd/secu
-│                        │     │                   rity/advisories/new)
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io) 
+│                        │     ├ Description     : containerd is an open-source container runtime. Prior to
+│                        │     │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with
+│                        │     │                   the CRI plugin enabled can indefinitely block the
+│                        │     │                   drainExecSyncIO goroutine in
+│                        │     │                   internal/cri/server/container_execsync.go when CRI ExecSync
+│                        │     │                   is used by exec probes or lifecycle hooks that launch
+│                        │     │                   long-lived background child processes retaining standard
+│                        │     │                   input and output pipes. The input and output drain phase has
+│                        │     │                    no default timeout and did not stop when the request
+│                        │     │                   context was canceled, so repeated ExecSync invocations can
+│                        │     │                   accumulate blocked goroutines and host memory. The resulting
+│                        │     │                    resource exhaustion can cause the OOM killer to terminate
+│                        │     │                   containerd, leaving the container runtime unavailable until
+│                        │     │                   restart. Deployments not using containerd's CRI
+│                        │     │                   implementation and containers not running on Linux are not
+│                        │     │                   affected. This issue is fixed in versions 1.7.35, 2.0.12,
+│                        │     │                   2.2.8, and 2.3.5. 
 │                        │     ├ Severity        : MEDIUM 
+│                        │     ├ CweIDs                  
+│                        │     │                  ───────
+│                        │     │                  CWE-400
+│                        │     │                  
 │                        │     ├ VendorSeverity   ─ ghsa: 2 
 │                        │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI
 │                        │     │                         │            :N/VA:H/SC:N/SI:N/SA:N 
 │                        │     │                         ╰ V40Score : 6.8 
-│                        │     ╰ References                                                                    
-│                        │                        ─────────────────────────────────────────────────────────────
-│                        │                        https://github.com/containerd/containerd                     
-│                        │                        https://github.com/containerd/containerd/releases/tag/v1.7.35
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.0.12
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.2.8 
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.3.5 
-│                        │                        https://github.com/containerd/containerd/security/advisories/
-│                        │                        GHSA-7jxh-36q5-gcqv                                          
-│                        │                        
+│                        │     ├ References                                                                    
+│                        │     │                  ─────────────────────────────────────────────────────────────
+│                        │     │                  https://github.com/containerd/containerd                     
+│                        │     │                  https://github.com/containerd/containerd/commit/22ccf4314d1fe
+│                        │     │                  0834f8e28f10d37d5305ef9880c                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d2
+│                        │     │                  ad8c821b33c3afc20890daf6d81                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/9ec55f024041d
+│                        │     │                  0641f6d79841e45c8781141ddaa                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/eebea8c4c912f
+│                        │     │                  44b656c8295c9e6607a19b76650                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/ff39a972369e2
+│                        │     │                  f12fae561a58d658bbf8f2bc318                                  
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v1.7.35
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.0.12
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.2.8 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.3.5 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/security/advisories/
+│                        │     │                  GHSA-7jxh-36q5-gcqv                                          
+│                        │     │                  
+│                        │     ├ PublishedDate   : 2026-09-14T18:17:51.053Z 
+│                        │     ╰ LastModifiedDate: 2026-09-14T18:17:51.053Z 
 │                        ╰ [1] ╭ VulnerabilityID : GO-2026-5932 
 │                              ├ PkgID           : golang.org/x/crypto@v0.56.0 
 │                              ├ PkgName         : golang.org/x/crypto 
@@ -10193,7 +10329,7 @@
 │      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-10722 
 │                        │     ├ VendorIDs                           
 │                        │     │                  ───────────────────
-│                        │     │                  GHSA-p436-gjf2-799p
+│                        │     │                  GHSA-xhgw-qwwf-pg32
 │                        │     │                  
 │                        │     ├ PkgID           : github.com/cilium/ebpf@v0.17.3 
 │                        │     ├ PkgName         : github.com/cilium/ebpf 
@@ -10304,65 +10440,58 @@
 │                        │     │                   88902e737fb 
 │                        │     ├ Title           : containerd: CRI ExecSync Goroutine Leak Leads to Node-Level
 │                        │     │                   Denial of Service 
-│                        │     ├ Description     : ### Impact
-│                        │     │                   
-│                        │     │                   A bug in containerd's CRI ExecSync implementation allows
-│                        │     │                   exec probes and lifecycle hooks with background child
-│                        │     │                   processes to keep containerd's stdio-drain goroutines
-│                        │     │                   indefinitely blocked. Because the I/O drain phase lacks a
-│                        │     │                   default timeout or context cancellation handling, repeated
-│                        │     │                   ExecSync invocations (like probes) that include long-lived
-│                        │     │                   background processes against a container can cause
-│                        │     │                   containerd to leak goroutines and host memory. Over time,
-│                        │     │                   this resource exhaustion can cause the containerd daemon to
-│                        │     │                   be terminated by the OOM killer, rendering containerd
-│                        │     │                   unavailable until it is restarted. This issue affects
-│                        │     │                   containerd on Linux systems running with the CRI plugin
-│                        │     │                   enabled. Users not using containerd's CRI implementation or
-│                        │     │                   not running containers on Linux are not affected.
-│                        │     │                   ### Patches
-│                        │     │                   This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12,
-│                        │     │                   and 1.7.35. Users should update to these versions to resolve
-│                        │     │                    the issue.
-│                        │     │                   ### Workarounds
-│                        │     │                   Ensure exec probes and lifecycle hooks do not launch
-│                        │     │                   long-lived background child processes.
-│                        │     │                   ### Credits
-│                        │     │                   The containerd project would like to thank XlabAI Team of
-│                        │     │                   Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan
-│                        │     │                   Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and
-│                        │     │                   @IamwhatIamSY who independently discovered and responsibly
-│                        │     │                   disclosed this issue in accordance with the [containerd
-│                        │     │                   security
-│                        │     │                   policy](https://github.com/containerd/project/blob/main/SECU
-│                        │     │                   RITY.md).
-│                        │     │                   ### For more information
-│                        │     │                   If there are any questions or comments about this advisory:
-│                        │     │                   * Open an issue in
-│                        │     │                   [containerd](https://github.com/containerd/containerd/issues
-│                        │     │                   /new/choose)
-│                        │     │                   * Send an email to
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io)
-│                        │     │                   To report a security issue in containerd:
-│                        │     │                   * [Report a new
-│                        │     │                   vulnerability](https://github.com/containerd/containerd/secu
-│                        │     │                   rity/advisories/new)
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io) 
+│                        │     ├ Description     : containerd is an open-source container runtime. Prior to
+│                        │     │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with
+│                        │     │                   the CRI plugin enabled can indefinitely block the
+│                        │     │                   drainExecSyncIO goroutine in
+│                        │     │                   internal/cri/server/container_execsync.go when CRI ExecSync
+│                        │     │                   is used by exec probes or lifecycle hooks that launch
+│                        │     │                   long-lived background child processes retaining standard
+│                        │     │                   input and output pipes. The input and output drain phase has
+│                        │     │                    no default timeout and did not stop when the request
+│                        │     │                   context was canceled, so repeated ExecSync invocations can
+│                        │     │                   accumulate blocked goroutines and host memory. The resulting
+│                        │     │                    resource exhaustion can cause the OOM killer to terminate
+│                        │     │                   containerd, leaving the container runtime unavailable until
+│                        │     │                   restart. Deployments not using containerd's CRI
+│                        │     │                   implementation and containers not running on Linux are not
+│                        │     │                   affected. This issue is fixed in versions 1.7.35, 2.0.12,
+│                        │     │                   2.2.8, and 2.3.5. 
 │                        │     ├ Severity        : MEDIUM 
+│                        │     ├ CweIDs                  
+│                        │     │                  ───────
+│                        │     │                  CWE-400
+│                        │     │                  
 │                        │     ├ VendorSeverity   ─ ghsa: 2 
 │                        │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI
 │                        │     │                         │            :N/VA:H/SC:N/SI:N/SA:N 
 │                        │     │                         ╰ V40Score : 6.8 
-│                        │     ╰ References                                                                    
-│                        │                        ─────────────────────────────────────────────────────────────
-│                        │                        https://github.com/containerd/containerd                     
-│                        │                        https://github.com/containerd/containerd/releases/tag/v1.7.35
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.0.12
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.2.8 
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.3.5 
-│                        │                        https://github.com/containerd/containerd/security/advisories/
-│                        │                        GHSA-7jxh-36q5-gcqv                                          
-│                        │                        
+│                        │     ├ References                                                                    
+│                        │     │                  ─────────────────────────────────────────────────────────────
+│                        │     │                  https://github.com/containerd/containerd                     
+│                        │     │                  https://github.com/containerd/containerd/commit/22ccf4314d1fe
+│                        │     │                  0834f8e28f10d37d5305ef9880c                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d2
+│                        │     │                  ad8c821b33c3afc20890daf6d81                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/9ec55f024041d
+│                        │     │                  0641f6d79841e45c8781141ddaa                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/eebea8c4c912f
+│                        │     │                  44b656c8295c9e6607a19b76650                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/ff39a972369e2
+│                        │     │                  f12fae561a58d658bbf8f2bc318                                  
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v1.7.35
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.0.12
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.2.8 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.3.5 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/security/advisories/
+│                        │     │                  GHSA-7jxh-36q5-gcqv                                          
+│                        │     │                  
+│                        │     ├ PublishedDate   : 2026-09-14T18:17:51.053Z 
+│                        │     ╰ LastModifiedDate: 2026-09-14T18:17:51.053Z 
 │                        ╰ [2] ╭ VulnerabilityID : GO-2026-5932 
 │                              ├ PkgID           : golang.org/x/crypto@v0.56.0 
 │                              ├ PkgName         : golang.org/x/crypto 
@@ -10934,6 +11063,9 @@
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66016            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66022            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66432            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67149            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67159            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67160            
 │                        │      │                  https://access.redhat.com/security/cve/CVE-2026-39821       
 │                        │      │                  https://bugzilla.redhat.com/2480756                         
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2456333         
@@ -11006,7 +11138,7 @@
 │                        │      │                                                                              
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-│                        │      ╰ LastModifiedDate: 2026-09-11T13:17:49.237Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T13:18:24.91Z 
 │                        ├ [7]  ╭ VulnerabilityID : CVE-2026-46600 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
@@ -11788,6 +11920,9 @@
 │                        │     │                  https://access.redhat.com/errata/RHSA-2026:66016             
 │                        │     │                  https://access.redhat.com/errata/RHSA-2026:66022             
 │                        │     │                  https://access.redhat.com/errata/RHSA-2026:66432             
+│                        │     │                  https://access.redhat.com/errata/RHSA-2026:67149             
+│                        │     │                  https://access.redhat.com/errata/RHSA-2026:67159             
+│                        │     │                  https://access.redhat.com/errata/RHSA-2026:67160             
 │                        │     │                  https://access.redhat.com/security/cve/CVE-2026-39821        
 │                        │     │                  https://bugzilla.redhat.com/2480756                          
 │                        │     │                  https://bugzilla.redhat.com/show_bug.cgi?id=2456333          
@@ -11836,7 +11971,7 @@
 │                        │     │                                                                               
 │                        │     │                  
 │                        │     ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-│                        │     ╰ LastModifiedDate: 2026-09-11T13:17:49.237Z 
+│                        │     ╰ LastModifiedDate: 2026-09-14T13:18:24.91Z 
 │                        ├ [2] ╭ VulnerabilityID : CVE-2026-46600 
 │                        │     ├ VendorIDs                    
 │                        │     │                  ────────────
@@ -12086,7 +12221,7 @@
 │                        │     │                  https://linux.oracle.com/cve/CVE-2026-56858.html             
 │                        │     │                  https://linux.oracle.com/errata/ELSA-2026-65895-0.html       
 │                        │     │                  https://nvd.nist.gov/vuln/detail/CVE-2026-56858              
-│                        │     │                  https://errata.rockylinux.org/RLSA-2026:65886                
+│                        │     │                  https://pkg.go.dev/vuln/GO-2026-6091                         
 │                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-56858              
 │                        │     │                  
 │                        │     ├ PublishedDate   : 2026-08-13T22:17:22.207Z 
@@ -12347,9 +12482,9 @@
 │      ├ Type           : gobinary 
 │      ├ Packages        
 │      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-56854 
-│                        │     ├ VendorIDs                           
-│                        │     │                  ───────────────────
-│                        │     │                  GHSA-p436-gjf2-799p
+│                        │     ├ VendorIDs                    
+│                        │     │                  ────────────
+│                        │     │                  GO-2026-6303
 │                        │     │                  
 │                        │     ├ PkgID           : golang.org/x/crypto@v0.52.0 
 │                        │     ├ PkgName         : golang.org/x/crypto 
@@ -12621,65 +12756,58 @@
 │                        │     │                   e1daae57bfe 
 │                        │     ├ Title           : containerd: CRI ExecSync Goroutine Leak Leads to Node-Level
 │                        │     │                   Denial of Service 
-│                        │     ├ Description     : ### Impact
-│                        │     │                   
-│                        │     │                   A bug in containerd's CRI ExecSync implementation allows
-│                        │     │                   exec probes and lifecycle hooks with background child
-│                        │     │                   processes to keep containerd's stdio-drain goroutines
-│                        │     │                   indefinitely blocked. Because the I/O drain phase lacks a
-│                        │     │                   default timeout or context cancellation handling, repeated
-│                        │     │                   ExecSync invocations (like probes) that include long-lived
-│                        │     │                   background processes against a container can cause
-│                        │     │                   containerd to leak goroutines and host memory. Over time,
-│                        │     │                   this resource exhaustion can cause the containerd daemon to
-│                        │     │                   be terminated by the OOM killer, rendering containerd
-│                        │     │                   unavailable until it is restarted. This issue affects
-│                        │     │                   containerd on Linux systems running with the CRI plugin
-│                        │     │                   enabled. Users not using containerd's CRI implementation or
-│                        │     │                   not running containers on Linux are not affected.
-│                        │     │                   ### Patches
-│                        │     │                   This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12,
-│                        │     │                   and 1.7.35. Users should update to these versions to resolve
-│                        │     │                    the issue.
-│                        │     │                   ### Workarounds
-│                        │     │                   Ensure exec probes and lifecycle hooks do not launch
-│                        │     │                   long-lived background child processes.
-│                        │     │                   ### Credits
-│                        │     │                   The containerd project would like to thank XlabAI Team of
-│                        │     │                   Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan
-│                        │     │                   Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and
-│                        │     │                   @IamwhatIamSY who independently discovered and responsibly
-│                        │     │                   disclosed this issue in accordance with the [containerd
-│                        │     │                   security
-│                        │     │                   policy](https://github.com/containerd/project/blob/main/SECU
-│                        │     │                   RITY.md).
-│                        │     │                   ### For more information
-│                        │     │                   If there are any questions or comments about this advisory:
-│                        │     │                   * Open an issue in
-│                        │     │                   [containerd](https://github.com/containerd/containerd/issues
-│                        │     │                   /new/choose)
-│                        │     │                   * Send an email to
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io)
-│                        │     │                   To report a security issue in containerd:
-│                        │     │                   * [Report a new
-│                        │     │                   vulnerability](https://github.com/containerd/containerd/secu
-│                        │     │                   rity/advisories/new)
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io) 
+│                        │     ├ Description     : containerd is an open-source container runtime. Prior to
+│                        │     │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with
+│                        │     │                   the CRI plugin enabled can indefinitely block the
+│                        │     │                   drainExecSyncIO goroutine in
+│                        │     │                   internal/cri/server/container_execsync.go when CRI ExecSync
+│                        │     │                   is used by exec probes or lifecycle hooks that launch
+│                        │     │                   long-lived background child processes retaining standard
+│                        │     │                   input and output pipes. The input and output drain phase has
+│                        │     │                    no default timeout and did not stop when the request
+│                        │     │                   context was canceled, so repeated ExecSync invocations can
+│                        │     │                   accumulate blocked goroutines and host memory. The resulting
+│                        │     │                    resource exhaustion can cause the OOM killer to terminate
+│                        │     │                   containerd, leaving the container runtime unavailable until
+│                        │     │                   restart. Deployments not using containerd's CRI
+│                        │     │                   implementation and containers not running on Linux are not
+│                        │     │                   affected. This issue is fixed in versions 1.7.35, 2.0.12,
+│                        │     │                   2.2.8, and 2.3.5. 
 │                        │     ├ Severity        : MEDIUM 
+│                        │     ├ CweIDs                  
+│                        │     │                  ───────
+│                        │     │                  CWE-400
+│                        │     │                  
 │                        │     ├ VendorSeverity   ─ ghsa: 2 
 │                        │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI
 │                        │     │                         │            :N/VA:H/SC:N/SI:N/SA:N 
 │                        │     │                         ╰ V40Score : 6.8 
-│                        │     ╰ References                                                                    
-│                        │                        ─────────────────────────────────────────────────────────────
-│                        │                        https://github.com/containerd/containerd                     
-│                        │                        https://github.com/containerd/containerd/releases/tag/v1.7.35
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.0.12
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.2.8 
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.3.5 
-│                        │                        https://github.com/containerd/containerd/security/advisories/
-│                        │                        GHSA-7jxh-36q5-gcqv                                          
-│                        │                        
+│                        │     ├ References                                                                    
+│                        │     │                  ─────────────────────────────────────────────────────────────
+│                        │     │                  https://github.com/containerd/containerd                     
+│                        │     │                  https://github.com/containerd/containerd/commit/22ccf4314d1fe
+│                        │     │                  0834f8e28f10d37d5305ef9880c                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d2
+│                        │     │                  ad8c821b33c3afc20890daf6d81                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/9ec55f024041d
+│                        │     │                  0641f6d79841e45c8781141ddaa                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/eebea8c4c912f
+│                        │     │                  44b656c8295c9e6607a19b76650                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/ff39a972369e2
+│                        │     │                  f12fae561a58d658bbf8f2bc318                                  
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v1.7.35
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.0.12
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.2.8 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.3.5 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/security/advisories/
+│                        │     │                  GHSA-7jxh-36q5-gcqv                                          
+│                        │     │                  
+│                        │     ├ PublishedDate   : 2026-09-14T18:17:51.053Z 
+│                        │     ╰ LastModifiedDate: 2026-09-14T18:17:51.053Z 
 │                        ├ [1] ╭ VulnerabilityID : CVE-2026-41567 
 │                        │     ├ VendorIDs                           
 │                        │     │                  ───────────────────
@@ -13157,7 +13285,7 @@
 │                        │     │                  https://go.dev/cl/826504                                 
 │                        │     │                  https://go.dev/issue/81316                               
 │                        │     │                  https://groups.google.com/g/golang-announce/c/1y3fb2np35U
-│                        │     │                  https://nvd.nist.gov/vuln/detail/CVE-2026-78662          
+│                        │     │                  https://ubuntu.com/security/notices/USN-8737-2           
 │                        │     │                  https://pkg.go.dev/vuln/GO-2026-6354                     
 │                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-78662          
 │                        │     │                  
@@ -13226,65 +13354,58 @@
 │                        │     │                   881d880911e 
 │                        │     ├ Title           : containerd: CRI ExecSync Goroutine Leak Leads to Node-Level
 │                        │     │                   Denial of Service 
-│                        │     ├ Description     : ### Impact
-│                        │     │                   
-│                        │     │                   A bug in containerd's CRI ExecSync implementation allows
-│                        │     │                   exec probes and lifecycle hooks with background child
-│                        │     │                   processes to keep containerd's stdio-drain goroutines
-│                        │     │                   indefinitely blocked. Because the I/O drain phase lacks a
-│                        │     │                   default timeout or context cancellation handling, repeated
-│                        │     │                   ExecSync invocations (like probes) that include long-lived
-│                        │     │                   background processes against a container can cause
-│                        │     │                   containerd to leak goroutines and host memory. Over time,
-│                        │     │                   this resource exhaustion can cause the containerd daemon to
-│                        │     │                   be terminated by the OOM killer, rendering containerd
-│                        │     │                   unavailable until it is restarted. This issue affects
-│                        │     │                   containerd on Linux systems running with the CRI plugin
-│                        │     │                   enabled. Users not using containerd's CRI implementation or
-│                        │     │                   not running containers on Linux are not affected.
-│                        │     │                   ### Patches
-│                        │     │                   This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12,
-│                        │     │                   and 1.7.35. Users should update to these versions to resolve
-│                        │     │                    the issue.
-│                        │     │                   ### Workarounds
-│                        │     │                   Ensure exec probes and lifecycle hooks do not launch
-│                        │     │                   long-lived background child processes.
-│                        │     │                   ### Credits
-│                        │     │                   The containerd project would like to thank XlabAI Team of
-│                        │     │                   Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan
-│                        │     │                   Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and
-│                        │     │                   @IamwhatIamSY who independently discovered and responsibly
-│                        │     │                   disclosed this issue in accordance with the [containerd
-│                        │     │                   security
-│                        │     │                   policy](https://github.com/containerd/project/blob/main/SECU
-│                        │     │                   RITY.md).
-│                        │     │                   ### For more information
-│                        │     │                   If there are any questions or comments about this advisory:
-│                        │     │                   * Open an issue in
-│                        │     │                   [containerd](https://github.com/containerd/containerd/issues
-│                        │     │                   /new/choose)
-│                        │     │                   * Send an email to
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io)
-│                        │     │                   To report a security issue in containerd:
-│                        │     │                   * [Report a new
-│                        │     │                   vulnerability](https://github.com/containerd/containerd/secu
-│                        │     │                   rity/advisories/new)
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io) 
+│                        │     ├ Description     : containerd is an open-source container runtime. Prior to
+│                        │     │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with
+│                        │     │                   the CRI plugin enabled can indefinitely block the
+│                        │     │                   drainExecSyncIO goroutine in
+│                        │     │                   internal/cri/server/container_execsync.go when CRI ExecSync
+│                        │     │                   is used by exec probes or lifecycle hooks that launch
+│                        │     │                   long-lived background child processes retaining standard
+│                        │     │                   input and output pipes. The input and output drain phase has
+│                        │     │                    no default timeout and did not stop when the request
+│                        │     │                   context was canceled, so repeated ExecSync invocations can
+│                        │     │                   accumulate blocked goroutines and host memory. The resulting
+│                        │     │                    resource exhaustion can cause the OOM killer to terminate
+│                        │     │                   containerd, leaving the container runtime unavailable until
+│                        │     │                   restart. Deployments not using containerd's CRI
+│                        │     │                   implementation and containers not running on Linux are not
+│                        │     │                   affected. This issue is fixed in versions 1.7.35, 2.0.12,
+│                        │     │                   2.2.8, and 2.3.5. 
 │                        │     ├ Severity        : MEDIUM 
+│                        │     ├ CweIDs                  
+│                        │     │                  ───────
+│                        │     │                  CWE-400
+│                        │     │                  
 │                        │     ├ VendorSeverity   ─ ghsa: 2 
 │                        │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI
 │                        │     │                         │            :N/VA:H/SC:N/SI:N/SA:N 
 │                        │     │                         ╰ V40Score : 6.8 
-│                        │     ╰ References                                                                    
-│                        │                        ─────────────────────────────────────────────────────────────
-│                        │                        https://github.com/containerd/containerd                     
-│                        │                        https://github.com/containerd/containerd/releases/tag/v1.7.35
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.0.12
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.2.8 
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.3.5 
-│                        │                        https://github.com/containerd/containerd/security/advisories/
-│                        │                        GHSA-7jxh-36q5-gcqv                                          
-│                        │                        
+│                        │     ├ References                                                                    
+│                        │     │                  ─────────────────────────────────────────────────────────────
+│                        │     │                  https://github.com/containerd/containerd                     
+│                        │     │                  https://github.com/containerd/containerd/commit/22ccf4314d1fe
+│                        │     │                  0834f8e28f10d37d5305ef9880c                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d2
+│                        │     │                  ad8c821b33c3afc20890daf6d81                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/9ec55f024041d
+│                        │     │                  0641f6d79841e45c8781141ddaa                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/eebea8c4c912f
+│                        │     │                  44b656c8295c9e6607a19b76650                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/ff39a972369e2
+│                        │     │                  f12fae561a58d658bbf8f2bc318                                  
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v1.7.35
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.0.12
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.2.8 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.3.5 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/security/advisories/
+│                        │     │                  GHSA-7jxh-36q5-gcqv                                          
+│                        │     │                  
+│                        │     ├ PublishedDate   : 2026-09-14T18:17:51.053Z 
+│                        │     ╰ LastModifiedDate: 2026-09-14T18:17:51.053Z 
 │                        ╰ [1] ╭ VulnerabilityID : GO-2026-5932 
 │                              ├ PkgID           : golang.org/x/crypto@v0.56.0 
 │                              ├ PkgName         : golang.org/x/crypto 
@@ -13348,70 +13469,58 @@
 │                        │      │                   1120776a4016 
 │                        │      ├ Title           : containerd: CRI ExecSync Goroutine Leak Leads to Node-Level
 │                        │      │                    Denial of Service 
-│                        │      ├ Description     : ### Impact
-│                        │      │                   
-│                        │      │                   A bug in containerd's CRI ExecSync implementation allows
-│                        │      │                   exec probes and lifecycle hooks with background child
-│                        │      │                   processes to keep containerd's stdio-drain goroutines
-│                        │      │                   indefinitely blocked. Because the I/O drain phase lacks a
-│                        │      │                   default timeout or context cancellation handling, repeated
-│                        │      │                   ExecSync invocations (like probes) that include long-lived
-│                        │      │                   background processes against a container can cause
-│                        │      │                   containerd to leak goroutines and host memory. Over time,
-│                        │      │                   this resource exhaustion can cause the containerd daemon to
-│                        │      │                    be terminated by the OOM killer, rendering containerd
-│                        │      │                   unavailable until it is restarted. This issue affects
-│                        │      │                   containerd on Linux systems running with the CRI plugin
-│                        │      │                   enabled. Users not using containerd's CRI implementation or
-│                        │      │                    not running containers on Linux are not affected.
-│                        │      │                   ### Patches
-│                        │      │                   This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12,
-│                        │      │                    and 1.7.35. Users should update to these versions to
-│                        │      │                   resolve the issue.
-│                        │      │                   ### Workarounds
-│                        │      │                   Ensure exec probes and lifecycle hooks do not launch
-│                        │      │                   long-lived background child processes.
-│                        │      │                   ### Credits
-│                        │      │                   The containerd project would like to thank XlabAI Team of
-│                        │      │                   Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan
-│                        │      │                   Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and
-│                        │      │                   @IamwhatIamSY who independently discovered and responsibly
-│                        │      │                   disclosed this issue in accordance with the [containerd
-│                        │      │                   security
-│                        │      │                   policy](https://github.com/containerd/project/blob/main/SEC
-│                        │      │                   URITY.md).
-│                        │      │                   ### For more information
-│                        │      │                   If there are any questions or comments about this
-│                        │      │                   advisory:
-│                        │      │                   * Open an issue in
-│                        │      │                   [containerd](https://github.com/containerd/containerd/issue
-│                        │      │                   s/new/choose)
-│                        │      │                   * Send an email to
-│                        │      │                   [security@containerd.io](mailto:security@containerd.io)
-│                        │      │                   To report a security issue in containerd:
-│                        │      │                   * [Report a new
-│                        │      │                   vulnerability](https://github.com/containerd/containerd/sec
-│                        │      │                   urity/advisories/new)
-│                        │      │                   [security@containerd.io](mailto:security@containerd.io) 
+│                        │      ├ Description     : containerd is an open-source container runtime. Prior to
+│                        │      │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with
+│                        │      │                   the CRI plugin enabled can indefinitely block the
+│                        │      │                   drainExecSyncIO goroutine in
+│                        │      │                   internal/cri/server/container_execsync.go when CRI ExecSync
+│                        │      │                    is used by exec probes or lifecycle hooks that launch
+│                        │      │                   long-lived background child processes retaining standard
+│                        │      │                   input and output pipes. The input and output drain phase
+│                        │      │                   has no default timeout and did not stop when the request
+│                        │      │                   context was canceled, so repeated ExecSync invocations can
+│                        │      │                   accumulate blocked goroutines and host memory. The
+│                        │      │                   resulting resource exhaustion can cause the OOM killer to
+│                        │      │                   terminate containerd, leaving the container runtime
+│                        │      │                   unavailable until restart. Deployments not using
+│                        │      │                   containerd's CRI implementation and containers not running
+│                        │      │                   on Linux are not affected. This issue is fixed in versions
+│                        │      │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-400
+│                        │      │                  
 │                        │      ├ VendorSeverity   ─ ghsa: 2 
 │                        │      ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/V
 │                        │      │                         │            I:N/VA:H/SC:N/SI:N/SA:N 
 │                        │      │                         ╰ V40Score : 6.8 
-│                        │      ╰ References                                                                   
-│                        │                         ────────────────────────────────────────────────────────────
-│                        │                         https://github.com/containerd/containerd                    
-│                        │                         https://github.com/containerd/containerd/releases/tag/v1.7.3
-│                        │                         5                                                           
-│                        │                         https://github.com/containerd/containerd/releases/tag/v2.0.1
-│                        │                         2                                                           
-│                        │                         https://github.com/containerd/containerd/releases/tag/v2.2.8
-│                        │                                                                                     
-│                        │                         https://github.com/containerd/containerd/releases/tag/v2.3.5
-│                        │                                                                                     
-│                        │                         https://github.com/containerd/containerd/security/advisories
-│                        │                         /GHSA-7jxh-36q5-gcqv                                        
-│                        │                         
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://github.com/containerd/containerd                    
+│                        │      │                  https://github.com/containerd/containerd/commit/22ccf4314d1f
+│                        │      │                  e0834f8e28f10d37d5305ef9880c                                
+│                        │      │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d
+│                        │      │                  2ad8c821b33c3afc20890daf6d81                                
+│                        │      │                  https://github.com/containerd/containerd/commit/9ec55f024041
+│                        │      │                  d0641f6d79841e45c8781141ddaa                                
+│                        │      │                  https://github.com/containerd/containerd/commit/eebea8c4c912
+│                        │      │                  f44b656c8295c9e6607a19b76650                                
+│                        │      │                  https://github.com/containerd/containerd/commit/ff39a972369e
+│                        │      │                  2f12fae561a58d658bbf8f2bc318                                
+│                        │      │                  https://github.com/containerd/containerd/releases/tag/v1.7.3
+│                        │      │                  5                                                           
+│                        │      │                  https://github.com/containerd/containerd/releases/tag/v2.0.1
+│                        │      │                  2                                                           
+│                        │      │                  https://github.com/containerd/containerd/releases/tag/v2.2.8
+│                        │      │                                                                              
+│                        │      │                  https://github.com/containerd/containerd/releases/tag/v2.3.5
+│                        │      │                                                                              
+│                        │      │                  https://github.com/containerd/containerd/security/advisories
+│                        │      │                  /GHSA-7jxh-36q5-gcqv                                        
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-14T18:17:51.053Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T18:17:51.053Z 
 │                        ├ [1]  ╭ VulnerabilityID : CVE-2026-56854 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
@@ -13509,7 +13618,7 @@
 │                        │      │                           ╰ V3Score : 5.3 
 │                        │      ├ References                                                                
 │                        │      │                  ─────────────────────────────────────────────────────────
-│                        │      │                  https://access.redhat.com/security/cve/CVE-2026-56855    
+│                        │      │                  CWE-121                                                  
 │                        │      │                  https://go.dev/cl/826524                                 
 │                        │      │                  https://go.dev/issue/81317                               
 │                        │      │                  https://groups.google.com/g/golang-announce/c/1y3fb2np35U
@@ -13777,7 +13886,7 @@
 │                        ├ [8]  ╭ VulnerabilityID : CVE-2026-84445 
 │                        │      ├ VendorIDs                           
 │                        │      │                  ───────────────────
-│                        │      │                  GHSA-2v4p-qf9q-27wj
+│                        │      │                  CWE-407            
 │                        │      │                  
 │                        │      ├ PkgID           : google.golang.org/grpc@v1.79.3 
 │                        │      ├ PkgName         : google.golang.org/grpc 
@@ -13800,72 +13909,55 @@
 │                        │      │                   59afe8ab5641 
 │                        │      ├ Title           : gRPC-Go xDS servers: Denial of Service (DoS) via crash due
 │                        │      │                   to missing `:authority` and `Host` headers 
-│                        │      ├ Description     : A vulnerability exists in gRPC-Go servers configured with
-│                        │      │                   `xds.NewGRPCServer()` where a crafted request missing both
-│                        │      │                   `:authority` and `Host` headers can cause a server panic,
-│                        │      │                   resulting in a Denial of Service (DoS).
-│                        │      │                   
-│                        │      │                   Servers built with `xds.NewGRPCServer` install an xDS
-│                        │      │                   routing interceptor on every RPC. This interceptor looks up
-│                        │      │                    the request’s `:authority` header to pick a virtual host.
-│                        │      │                   The HTTP/2 server transport previously accepted requests
-│                        │      │                   that had neither `:authority` nor `Host`. When this
-│                        │      │                   happened, the xDS routing interceptor attempted to access
-│                        │      │                   the first element of an empty slice of authorities, leading
-│                        │      │                    to an index out of bounds panic. Since the per-RPC
-│                        │      │                   goroutine does not recover from panics, the entire server
-│                        │      │                   process would terminate.
-│                        │      │                   This panic occurs in the interceptor pipeline, meaning the
-│                        │      │                   transport credentials handshake (TLS, mTLS, or ALTS) and
-│                        │      │                   HTTP/2 connection establishment must complete successfully
-│                        │      │                   before the crafted request can reach this logic.
-│                        │      │                   - Insecure/Standard TLS: If the server permits insecure
-│                        │      │                   (plaintext) connections or standard credentials (where
-│                        │      │                   client certs are not checked), any unauthenticated remote
-│                        │      │                   attacker can trigger the crash.
-│                        │      │                   - mTLS / ALTS: If strict transport-level authentication is
-│                        │      │                   enforced at the network edge or transport layer (e.g.,
-│                        │      │                   requiring a valid client certificate), the attacker must
-│                        │      │                   possess valid transport credentials to initiate the stream
-│                        │      │                   and trigger the panic.
-│                        │      │                   ### Impact
-│                        │      │                   An attacker can cause a complete outage of the gRPC server
-│                        │      │                   by sending a request missing both `:authority` and `Host`
-│                        │      │                   headers, provided they can successfully establish a
-│                        │      │                   transport connection.
-│                        │      │                   ### Patches
-│                        │      │                   The issue has been addressed in `master` (and backported to
-│                        │      │                    `1.83.2` and `1.82.2`). The fix updates the HTTP/2
-│                        │      │                   transport layer to reject requests missing both
-│                        │      │                   `:authority` and `Host` headers early, maintaining
-│                        │      │                   consistency with and other gRPC language implementations.[
-│                        │      │                   m 
+│                        │      ├ Description     : gRPC-Go is the Go language implementation of gRPC. Prior to
+│                        │      │                    1.82.2 and 1.83.2, servers created with
+│                        │      │                   xds.NewGRPCServer() allow
+│                        │      │                   internal/transport/http2_server.go to accept an RPC
+│                        │      │                   containing neither the :authority header nor the Host
+│                        │      │                   header, while RouteAndProcess in
+│                        │      │                   internal/xds/server/routing.go assumes that an authority
+│                        │      │                   value exists and indexes the empty slice. A remote client
+│                        │      │                   that can complete transport connection establishment can
+│                        │      │                   trigger an index-out-of-bounds panic that is not recovered
+│                        │      │                   by the per-RPC goroutine and terminates the entire server
+│                        │      │                   process. In insecure or ordinary TLS deployments the
+│                        │      │                   request can be unauthenticated, while strict mTLS or ALTS
+│                        │      │                   deployments require valid transport credentials before the
+│                        │      │                   malformed RPC can reach the interceptor. This issue is
+│                        │      │                   fixed in versions 1.82.2 and 1.83.2. 
 │                        │      ├ Severity        : HIGH 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-129
+│                        │      │                  CWE-248
+│                        │      │                  
 │                        │      ├ VendorSeverity   ─ ghsa: 3 
-│                        │      ╰ References                                                                   
-│                        │                         ────────────────────────────────────────────────────────────
-│                        │                         https://github.com/grpc/grpc-go                             
-│                        │                         https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089
-│                        │                         fd2a195f041762fffb7                                         
-│                        │                         https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
-│                        │                         66dcbf40992b9e932a4                                         
-│                        │                         https://github.com/grpc/grpc-go/commit/93e31b48545e2a8aaeb6e
-│                        │                         06b47fb249f94e6297f                                         
-│                        │                         https://github.com/grpc/grpc-go/issues/9354                 
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9365                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9366                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9367                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/releases/tag/v1.82.2        
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/releases/tag/v1.83.2        
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4
-│                        │                         p-qf9q-27wj                                                 
-│                        │                         
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://github.com/grpc/grpc-go                             
+│                        │      │                  https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089
+│                        │      │                  fd2a195f041762fffb7                                         
+│                        │      │                  https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
+│                        │      │                  66dcbf40992b9e932a4                                         
+│                        │      │                  https://github.com/grpc/grpc-go/commit/93e31b48545e2a8aaeb6e
+│                        │      │                  06b47fb249f94e6297f                                         
+│                        │      │                  https://github.com/grpc/grpc-go/issues/9354                 
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9365                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9366                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9367                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/releases/tag/v1.82.2        
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/releases/tag/v1.83.2        
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4
+│                        │      │                  p-qf9q-27wj                                                 
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-14T17:17:51.743Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T17:17:51.743Z 
 │                        ├ [9]  ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
 │                        │      ├ PkgID           : google.golang.org/grpc@v1.79.3 
 │                        │      ├ PkgName         : google.golang.org/grpc 
@@ -14332,6 +14424,9 @@
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66016            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66022            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66432            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67149            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67159            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67160            
 │                        │      │                  https://access.redhat.com/security/cve/CVE-2026-39821       
 │                        │      │                  https://bugzilla.redhat.com/2480756                         
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2456333         
@@ -14404,7 +14499,7 @@
 │                        │      │                                                                              
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-│                        │      ╰ LastModifiedDate: 2026-09-11T13:17:49.237Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T13:18:24.91Z 
 │                        ├ [13] ╭ VulnerabilityID : CVE-2026-56853 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
@@ -14559,7 +14654,7 @@
 │                        │      │                  https://bugzilla.redhat.com/2467809                          
 │                        │      │                  https://bugzilla.redhat.com/2467820                          
 │                        │      │                  https://bugzilla.redhat.com/2484204                          
-│                        │      │                  CWE-770                                                      
+│                        │      │                  https://bugzilla.redhat.com/2484830                          
 │                        │      │                  https://bugzilla.redhat.com/2515815                          
 │                        │      │                  https://bugzilla.redhat.com/2515820                          
 │                        │      │                  https://bugzilla.redhat.com/2515827                          
@@ -14741,7 +14836,7 @@
 │                        │      ├ Severity        : HIGH 
 │                        │      ├ CweIDs                  
 │                        │      │                  ───────
-│                        │      │                  CWE-331
+│                        │      │                  CWE-407
 │                        │      │                  
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 3 
@@ -15653,72 +15748,55 @@
 │                        │      │                   104a234ba11c 
 │                        │      ├ Title           : gRPC-Go xDS servers: Denial of Service (DoS) via crash due
 │                        │      │                   to missing `:authority` and `Host` headers 
-│                        │      ├ Description     : A vulnerability exists in gRPC-Go servers configured with
-│                        │      │                   `xds.NewGRPCServer()` where a crafted request missing both
-│                        │      │                   `:authority` and `Host` headers can cause a server panic,
-│                        │      │                   resulting in a Denial of Service (DoS).
-│                        │      │                   
-│                        │      │                   Servers built with `xds.NewGRPCServer` install an xDS
-│                        │      │                   routing interceptor on every RPC. This interceptor looks up
-│                        │      │                    the request’s `:authority` header to pick a virtual host.
-│                        │      │                   The HTTP/2 server transport previously accepted requests
-│                        │      │                   that had neither `:authority` nor `Host`. When this
-│                        │      │                   happened, the xDS routing interceptor attempted to access
-│                        │      │                   the first element of an empty slice of authorities, leading
-│                        │      │                    to an index out of bounds panic. Since the per-RPC
-│                        │      │                   goroutine does not recover from panics, the entire server
-│                        │      │                   process would terminate.
-│                        │      │                   This panic occurs in the interceptor pipeline, meaning the
-│                        │      │                   transport credentials handshake (TLS, mTLS, or ALTS) and
-│                        │      │                   HTTP/2 connection establishment must complete successfully
-│                        │      │                   before the crafted request can reach this logic.
-│                        │      │                   - Insecure/Standard TLS: If the server permits insecure
-│                        │      │                   (plaintext) connections or standard credentials (where
-│                        │      │                   client certs are not checked), any unauthenticated remote
-│                        │      │                   attacker can trigger the crash.
-│                        │      │                   - mTLS / ALTS: If strict transport-level authentication is
-│                        │      │                   enforced at the network edge or transport layer (e.g.,
-│                        │      │                   requiring a valid client certificate), the attacker must
-│                        │      │                   possess valid transport credentials to initiate the stream
-│                        │      │                   and trigger the panic.
-│                        │      │                   ### Impact
-│                        │      │                   An attacker can cause a complete outage of the gRPC server
-│                        │      │                   by sending a request missing both `:authority` and `Host`
-│                        │      │                   headers, provided they can successfully establish a
-│                        │      │                   transport connection.
-│                        │      │                   ### Patches
-│                        │      │                   The issue has been addressed in `master` (and backported to
-│                        │      │                    `1.83.2` and `1.82.2`). The fix updates the HTTP/2
-│                        │      │                   transport layer to reject requests missing both
-│                        │      │                   `:authority` and `Host` headers early, maintaining
-│                        │      │                   consistency with and other gRPC language implementations.[
-│                        │      │                   m 
+│                        │      ├ Description     : gRPC-Go is the Go language implementation of gRPC. Prior to
+│                        │      │                    1.82.2 and 1.83.2, servers created with
+│                        │      │                   xds.NewGRPCServer() allow
+│                        │      │                   internal/transport/http2_server.go to accept an RPC
+│                        │      │                   containing neither the :authority header nor the Host
+│                        │      │                   header, while RouteAndProcess in
+│                        │      │                   internal/xds/server/routing.go assumes that an authority
+│                        │      │                   value exists and indexes the empty slice. A remote client
+│                        │      │                   that can complete transport connection establishment can
+│                        │      │                   trigger an index-out-of-bounds panic that is not recovered
+│                        │      │                   by the per-RPC goroutine and terminates the entire server
+│                        │      │                   process. In insecure or ordinary TLS deployments the
+│                        │      │                   request can be unauthenticated, while strict mTLS or ALTS
+│                        │      │                   deployments require valid transport credentials before the
+│                        │      │                   malformed RPC can reach the interceptor. This issue is
+│                        │      │                   fixed in versions 1.82.2 and 1.83.2. 
 │                        │      ├ Severity        : HIGH 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-129
+│                        │      │                  CWE-248
+│                        │      │                  
 │                        │      ├ VendorSeverity   ─ ghsa: 3 
-│                        │      ╰ References                                                                   
-│                        │                         ────────────────────────────────────────────────────────────
-│                        │                         https://github.com/grpc/grpc-go                             
-│                        │                         https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089
-│                        │                         fd2a195f041762fffb7                                         
-│                        │                         https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
-│                        │                         66dcbf40992b9e932a4                                         
-│                        │                         https://github.com/grpc/grpc-go/commit/93e31b48545e2a8aaeb6e
-│                        │                         06b47fb249f94e6297f                                         
-│                        │                         https://github.com/grpc/grpc-go/issues/9354                 
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9365                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9366                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9367                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/releases/tag/v1.82.2        
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/releases/tag/v1.83.2        
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4
-│                        │                         p-qf9q-27wj                                                 
-│                        │                         
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://github.com/grpc/grpc-go                             
+│                        │      │                  https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089
+│                        │      │                  fd2a195f041762fffb7                                         
+│                        │      │                  https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
+│                        │      │                  66dcbf40992b9e932a4                                         
+│                        │      │                  https://github.com/grpc/grpc-go/commit/93e31b48545e2a8aaeb6e
+│                        │      │                  06b47fb249f94e6297f                                         
+│                        │      │                  https://github.com/grpc/grpc-go/issues/9354                 
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9365                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9366                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9367                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/releases/tag/v1.82.2        
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/releases/tag/v1.83.2        
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4
+│                        │      │                  p-qf9q-27wj                                                 
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-14T17:17:51.743Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T17:17:51.743Z 
 │                        ├ [12] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
 │                        │      ├ PkgID           : google.golang.org/grpc@v1.81.1 
 │                        │      ├ PkgName         : google.golang.org/grpc 
@@ -16049,46 +16127,26 @@
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:59557            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:59558            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:59559            
-│                        │      │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3381
-│                        │      │                  1                                                           
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:59579            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:59593            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60025            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60315            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60354            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60386            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60387            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60388            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60390            
-│                        │      │                                                                              
-│                        │      │                  https://groups.google.com/g/golang-announce/c/94pEornpRlI   
-│                        │      │                                                                              
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:60391            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:61253            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:61314            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:63016            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66022            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/security/cve/CVE-2026-27145       
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/2445356                         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/2484207                         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2445356         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2484207         
-│                        │      │                                                                              
 │                        │      │                  https://creativecommons.org/licenses/by/4.0/                
-│                        │      │                                                                              
 │                        │      │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2567
 │                        │      │                  9                                                           
 │                        │      │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2714
@@ -16310,188 +16368,100 @@
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42079            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42080            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42082            
-│                        │      │                  https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
-│                        │      │                  66dcbf40992b9e932a4                                         
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:42132            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42142            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42146            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42150            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42151            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42240            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42644            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42796            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:42852            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:43038            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:43052            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:43692            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:44622            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:44624            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:46395            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:47149            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:47735            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:47737            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:47952            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:49702            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:49712            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:50300            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:50843            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:51033            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:51112            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:51187            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:51194            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:51341            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:52826            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:53374            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:53412            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:53413            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:53415            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:53530            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54191            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54274            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54283            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54284            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54285            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54286            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54287            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54395            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54401            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54435            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54441            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54531            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54580            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54757            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:56143            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:56223            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:56340            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:56431            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:57194            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:57541            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:57649            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:57845            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:59546            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:59549            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:59562            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60315            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60354            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60387            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:60520            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:61245            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:61253            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:62549            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:63134            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:65126            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:65153            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:65359            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:65534            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:65886            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66016            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66022            
-│                        │      │                                                                              
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66432            
-│                        │      │                                                                              
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67149            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67159            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67160            
 │                        │      │                  https://access.redhat.com/security/cve/CVE-2026-39821       
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/2480756                         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2456333         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2456339         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2467809         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2467820         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2467822         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2480756         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2484204         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2515815         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2515820         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2515827         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2515838         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2515839         
-│                        │      │                                                                              
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2515840         
-│                        │      │                                                                              
 │                        │      │                  https://creativecommons.org/licenses/by/4.0/                
-│                        │      │                                                                              
 │                        │      │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3228
 │                        │      │                  0                                                           
 │                        │      │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3228
@@ -16548,7 +16518,7 @@
 │                        │      │                                                                              
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-│                        │      ╰ LastModifiedDate: 2026-09-11T13:17:49.237Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T13:18:24.91Z 
 │                        ├ [17] ╭ VulnerabilityID : CVE-2026-39822 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
