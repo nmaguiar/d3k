@@ -225,9 +225,9 @@
 │                        │       │                   unauthenticated connections to succeed when they should be
 │                        │       │                    rejected. 
 │                        │       ├ Severity        : MEDIUM 
-│                        │       ├ CweIDs                                                                
-│                        │       │                  ─────────────────────────────────────────────────────
-│                        │       │                  https://access.redhat.com/security/cve/CVE-2026-42306
+│                        │       ├ CweIDs                  
+│                        │       │                  ───────
+│                        │       │                  CWE-295
 │                        │       │                  
 │                        │       ├ VendorSeverity   ─ ubuntu: 2 
 │                        │       ├ References                                                                
@@ -2058,9 +2058,9 @@
 │                        │       ├ References                                                                    
 │                        │       │                  ─────────────────────────────────────────────────────────────
 │                        │       │                  https://access.redhat.com/errata/RHSA-2026:64812             
-│                        │       │                  https://errata.rockylinux.org/RLSA-2026:66364                
+│                        │       │                  https://access.redhat.com/security/cve/CVE-2026-50219        
 │                        │       │                  https://bugzilla.redhat.com/2484620                          
-│                        │       │                  https://go.dev/issue/80528                                   
+│                        │       │                  https://bugzilla.redhat.com/2490669                          
 │                        │       │                  https://bugzilla.redhat.com/show_bug.cgi?id=2484620          
 │                        │       │                  https://bugzilla.redhat.com/show_bug.cgi?id=2490669          
 │                        │       │                  https://creativecommons.org/licenses/by/4.0/                 
@@ -2823,7 +2823,7 @@
 │                        │       │                  ───────────────────────────────────────────────────────────
 │                        │       │                  https://github.com/libexpat/libexpat/commit/98599f6dcc2b460
 │                        │       │                  410881fe420f5f55d6bec63bf                                  
-│                        │       │                  https://github.com/libexpat/libexpat/pull/1331             
+│                        │       │                  false                                                      
 │                        │       │                                                                             
 │                        │       │                  https://nvd.nist.gov/vuln/detail/CVE-2026-76641            
 │                        │       │                                                                             
@@ -6156,65 +6156,58 @@
 │                        │     │                   82511855cfe 
 │                        │     ├ Title           : containerd: CRI ExecSync Goroutine Leak Leads to Node-Level
 │                        │     │                   Denial of Service 
-│                        │     ├ Description     : ### Impact
-│                        │     │                   
-│                        │     │                   A bug in containerd's CRI ExecSync implementation allows
-│                        │     │                   exec probes and lifecycle hooks with background child
-│                        │     │                   processes to keep containerd's stdio-drain goroutines
-│                        │     │                   indefinitely blocked. Because the I/O drain phase lacks a
-│                        │     │                   default timeout or context cancellation handling, repeated
-│                        │     │                   ExecSync invocations (like probes) that include long-lived
-│                        │     │                   background processes against a container can cause
-│                        │     │                   containerd to leak goroutines and host memory. Over time,
-│                        │     │                   this resource exhaustion can cause the containerd daemon to
-│                        │     │                   be terminated by the OOM killer, rendering containerd
-│                        │     │                   unavailable until it is restarted. This issue affects
-│                        │     │                   containerd on Linux systems running with the CRI plugin
-│                        │     │                   enabled. Users not using containerd's CRI implementation or
-│                        │     │                   not running containers on Linux are not affected.
-│                        │     │                   ### Patches
-│                        │     │                   This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12,
-│                        │     │                   and 1.7.35. Users should update to these versions to resolve
-│                        │     │                    the issue.
-│                        │     │                   ### Workarounds
-│                        │     │                   Ensure exec probes and lifecycle hooks do not launch
-│                        │     │                   long-lived background child processes.
-│                        │     │                   ### Credits
-│                        │     │                   The containerd project would like to thank XlabAI Team of
-│                        │     │                   Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan
-│                        │     │                   Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and
-│                        │     │                   @IamwhatIamSY who independently discovered and responsibly
-│                        │     │                   disclosed this issue in accordance with the [containerd
-│                        │     │                   security
-│                        │     │                   policy](https://github.com/containerd/project/blob/main/SECU
-│                        │     │                   RITY.md).
-│                        │     │                   ### For more information
-│                        │     │                   If there are any questions or comments about this advisory:
-│                        │     │                   * Open an issue in
-│                        │     │                   [containerd](https://github.com/containerd/containerd/issues
-│                        │     │                   /new/choose)
-│                        │     │                   * Send an email to
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io)
-│                        │     │                   To report a security issue in containerd:
-│                        │     │                   * [Report a new
-│                        │     │                   vulnerability](https://github.com/containerd/containerd/secu
-│                        │     │                   rity/advisories/new)
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io) 
+│                        │     ├ Description     : containerd is an open-source container runtime. Prior to
+│                        │     │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with
+│                        │     │                   the CRI plugin enabled can indefinitely block the
+│                        │     │                   drainExecSyncIO goroutine in
+│                        │     │                   internal/cri/server/container_execsync.go when CRI ExecSync
+│                        │     │                   is used by exec probes or lifecycle hooks that launch
+│                        │     │                   long-lived background child processes retaining standard
+│                        │     │                   input and output pipes. The input and output drain phase has
+│                        │     │                    no default timeout and did not stop when the request
+│                        │     │                   context was canceled, so repeated ExecSync invocations can
+│                        │     │                   accumulate blocked goroutines and host memory. The resulting
+│                        │     │                    resource exhaustion can cause the OOM killer to terminate
+│                        │     │                   containerd, leaving the container runtime unavailable until
+│                        │     │                   restart. Deployments not using containerd's CRI
+│                        │     │                   implementation and containers not running on Linux are not
+│                        │     │                   affected. This issue is fixed in versions 1.7.35, 2.0.12,
+│                        │     │                   2.2.8, and 2.3.5. 
 │                        │     ├ Severity        : MEDIUM 
+│                        │     ├ CweIDs                  
+│                        │     │                  ───────
+│                        │     │                  CWE-400
+│                        │     │                  
 │                        │     ├ VendorSeverity   ─ ghsa: 2 
 │                        │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI
 │                        │     │                         │            :N/VA:H/SC:N/SI:N/SA:N 
 │                        │     │                         ╰ V40Score : 6.8 
-│                        │     ╰ References                                                                    
-│                        │                        ─────────────────────────────────────────────────────────────
-│                        │                        https://github.com/containerd/containerd                     
-│                        │                        https://github.com/containerd/containerd/releases/tag/v1.7.35
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.0.12
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.2.8 
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.3.5 
-│                        │                        https://github.com/containerd/containerd/security/advisories/
-│                        │                        GHSA-7jxh-36q5-gcqv                                          
-│                        │                        
+│                        │     ├ References                                                                    
+│                        │     │                  ─────────────────────────────────────────────────────────────
+│                        │     │                  https://github.com/containerd/containerd                     
+│                        │     │                  https://github.com/containerd/containerd/commit/22ccf4314d1fe
+│                        │     │                  0834f8e28f10d37d5305ef9880c                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d2
+│                        │     │                  ad8c821b33c3afc20890daf6d81                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/9ec55f024041d
+│                        │     │                  0641f6d79841e45c8781141ddaa                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/eebea8c4c912f
+│                        │     │                  44b656c8295c9e6607a19b76650                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/ff39a972369e2
+│                        │     │                  f12fae561a58d658bbf8f2bc318                                  
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v1.7.35
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.0.12
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.2.8 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.3.5 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/security/advisories/
+│                        │     │                  GHSA-7jxh-36q5-gcqv                                          
+│                        │     │                  
+│                        │     ├ PublishedDate   : 2026-09-14T18:17:51.053Z 
+│                        │     ╰ LastModifiedDate: 2026-09-14T18:17:51.053Z 
 │                        ╰ [1] ╭ VulnerabilityID : GO-2026-5932 
 │                              ├ PkgID           : golang.org/x/crypto@v0.56.0 
 │                              ├ PkgName         : golang.org/x/crypto 
@@ -6370,65 +6363,58 @@
 │                        │     │                   2c04f7e109a 
 │                        │     ├ Title           : containerd: CRI ExecSync Goroutine Leak Leads to Node-Level
 │                        │     │                   Denial of Service 
-│                        │     ├ Description     : ### Impact
-│                        │     │                   
-│                        │     │                   A bug in containerd's CRI ExecSync implementation allows
-│                        │     │                   exec probes and lifecycle hooks with background child
-│                        │     │                   processes to keep containerd's stdio-drain goroutines
-│                        │     │                   indefinitely blocked. Because the I/O drain phase lacks a
-│                        │     │                   default timeout or context cancellation handling, repeated
-│                        │     │                   ExecSync invocations (like probes) that include long-lived
-│                        │     │                   background processes against a container can cause
-│                        │     │                   containerd to leak goroutines and host memory. Over time,
-│                        │     │                   this resource exhaustion can cause the containerd daemon to
-│                        │     │                   be terminated by the OOM killer, rendering containerd
-│                        │     │                   unavailable until it is restarted. This issue affects
-│                        │     │                   containerd on Linux systems running with the CRI plugin
-│                        │     │                   enabled. Users not using containerd's CRI implementation or
-│                        │     │                   not running containers on Linux are not affected.
-│                        │     │                   ### Patches
-│                        │     │                   This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12,
-│                        │     │                   and 1.7.35. Users should update to these versions to resolve
-│                        │     │                    the issue.
-│                        │     │                   ### Workarounds
-│                        │     │                   Ensure exec probes and lifecycle hooks do not launch
-│                        │     │                   long-lived background child processes.
-│                        │     │                   ### Credits
-│                        │     │                   The containerd project would like to thank XlabAI Team of
-│                        │     │                   Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan
-│                        │     │                   Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and
-│                        │     │                   @IamwhatIamSY who independently discovered and responsibly
-│                        │     │                   disclosed this issue in accordance with the [containerd
-│                        │     │                   security
-│                        │     │                   policy](https://github.com/containerd/project/blob/main/SECU
-│                        │     │                   RITY.md).
-│                        │     │                   ### For more information
-│                        │     │                   If there are any questions or comments about this advisory:
-│                        │     │                   * Open an issue in
-│                        │     │                   [containerd](https://github.com/containerd/containerd/issues
-│                        │     │                   /new/choose)
-│                        │     │                   * Send an email to
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io)
-│                        │     │                   To report a security issue in containerd:
-│                        │     │                   * [Report a new
-│                        │     │                   vulnerability](https://github.com/containerd/containerd/secu
-│                        │     │                   rity/advisories/new)
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io) 
+│                        │     ├ Description     : containerd is an open-source container runtime. Prior to
+│                        │     │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with
+│                        │     │                   the CRI plugin enabled can indefinitely block the
+│                        │     │                   drainExecSyncIO goroutine in
+│                        │     │                   internal/cri/server/container_execsync.go when CRI ExecSync
+│                        │     │                   is used by exec probes or lifecycle hooks that launch
+│                        │     │                   long-lived background child processes retaining standard
+│                        │     │                   input and output pipes. The input and output drain phase has
+│                        │     │                    no default timeout and did not stop when the request
+│                        │     │                   context was canceled, so repeated ExecSync invocations can
+│                        │     │                   accumulate blocked goroutines and host memory. The resulting
+│                        │     │                    resource exhaustion can cause the OOM killer to terminate
+│                        │     │                   containerd, leaving the container runtime unavailable until
+│                        │     │                   restart. Deployments not using containerd's CRI
+│                        │     │                   implementation and containers not running on Linux are not
+│                        │     │                   affected. This issue is fixed in versions 1.7.35, 2.0.12,
+│                        │     │                   2.2.8, and 2.3.5. 
 │                        │     ├ Severity        : MEDIUM 
+│                        │     ├ CweIDs                  
+│                        │     │                  ───────
+│                        │     │                  CWE-400
+│                        │     │                  
 │                        │     ├ VendorSeverity   ─ ghsa: 2 
 │                        │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI
 │                        │     │                         │            :N/VA:H/SC:N/SI:N/SA:N 
 │                        │     │                         ╰ V40Score : 6.8 
-│                        │     ╰ References                                                                    
-│                        │                        ─────────────────────────────────────────────────────────────
-│                        │                        https://github.com/containerd/containerd                     
-│                        │                        https://github.com/containerd/containerd/releases/tag/v1.7.35
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.0.12
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.2.8 
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.3.5 
-│                        │                        https://github.com/containerd/containerd/security/advisories/
-│                        │                        GHSA-7jxh-36q5-gcqv                                          
-│                        │                        
+│                        │     ├ References                                                                    
+│                        │     │                  ─────────────────────────────────────────────────────────────
+│                        │     │                  https://github.com/containerd/containerd                     
+│                        │     │                  https://github.com/containerd/containerd/commit/22ccf4314d1fe
+│                        │     │                  0834f8e28f10d37d5305ef9880c                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d2
+│                        │     │                  ad8c821b33c3afc20890daf6d81                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/9ec55f024041d
+│                        │     │                  0641f6d79841e45c8781141ddaa                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/eebea8c4c912f
+│                        │     │                  44b656c8295c9e6607a19b76650                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/ff39a972369e2
+│                        │     │                  f12fae561a58d658bbf8f2bc318                                  
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v1.7.35
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.0.12
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.2.8 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.3.5 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/security/advisories/
+│                        │     │                  GHSA-7jxh-36q5-gcqv                                          
+│                        │     │                  
+│                        │     ├ PublishedDate   : 2026-09-14T18:17:51.053Z 
+│                        │     ╰ LastModifiedDate: 2026-09-14T18:17:51.053Z 
 │                        ╰ [2] ╭ VulnerabilityID : GO-2026-5932 
 │                              ├ PkgID           : golang.org/x/crypto@v0.56.0 
 │                              ├ PkgName         : golang.org/x/crypto 
@@ -6612,9 +6598,9 @@
 │      ├ Type           : gobinary 
 │      ├ Packages        
 │      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-33818 
-│                        │     ├ VendorIDs                    
-│                        │     │                  ────────────
-│                        │     │                  GO-2026-5972
+│                        │     ├ VendorIDs                           
+│                        │     │                  ───────────────────
+│                        │     │                  GHSA-rg2x-37c3-w2rh
 │                        │     │                  
 │                        │     ├ PkgID           : stdlib@v1.26.5 
 │                        │     ├ PkgName         : stdlib 
@@ -6878,6 +6864,9 @@
 │                        │     │                  https://access.redhat.com/errata/RHSA-2026:66016             
 │                        │     │                  https://access.redhat.com/errata/RHSA-2026:66022             
 │                        │     │                  https://access.redhat.com/errata/RHSA-2026:66432             
+│                        │     │                  https://access.redhat.com/errata/RHSA-2026:67149             
+│                        │     │                  https://access.redhat.com/errata/RHSA-2026:67159             
+│                        │     │                  https://access.redhat.com/errata/RHSA-2026:67160             
 │                        │     │                  https://access.redhat.com/security/cve/CVE-2026-39821        
 │                        │     │                  https://bugzilla.redhat.com/2480756                          
 │                        │     │                  https://bugzilla.redhat.com/show_bug.cgi?id=2456333          
@@ -6926,7 +6915,7 @@
 │                        │     │                                                                               
 │                        │     │                  
 │                        │     ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-│                        │     ╰ LastModifiedDate: 2026-09-11T13:17:49.237Z 
+│                        │     ╰ LastModifiedDate: 2026-09-14T13:18:24.91Z 
 │                        ├ [2] ╭ VulnerabilityID : CVE-2026-46600 
 │                        │     ├ VendorIDs                    
 │                        │     │                  ────────────
@@ -7128,7 +7117,7 @@
 │                        │     │                            ╰ V3Score : 8.1 
 │                        │     ├ References                                                                    
 │                        │     │                  ─────────────────────────────────────────────────────────────
-│                        │     │                  https://access.redhat.com/errata/RHSA-2026:29980             
+│                        │     │                  https://access.redhat.com/errata/RHSA-2026:65117             
 │                        │     │                  https://access.redhat.com/errata/RHSA-2026:65886             
 │                        │     │                  https://access.redhat.com/security/cve/CVE-2026-56858        
 │                        │     │                  https://bugzilla.redhat.com/2467809                          
@@ -7711,65 +7700,58 @@
 │                        │     │                   f17ee6c21ee 
 │                        │     ├ Title           : containerd: CRI ExecSync Goroutine Leak Leads to Node-Level
 │                        │     │                   Denial of Service 
-│                        │     ├ Description     : ### Impact
-│                        │     │                   
-│                        │     │                   A bug in containerd's CRI ExecSync implementation allows
-│                        │     │                   exec probes and lifecycle hooks with background child
-│                        │     │                   processes to keep containerd's stdio-drain goroutines
-│                        │     │                   indefinitely blocked. Because the I/O drain phase lacks a
-│                        │     │                   default timeout or context cancellation handling, repeated
-│                        │     │                   ExecSync invocations (like probes) that include long-lived
-│                        │     │                   background processes against a container can cause
-│                        │     │                   containerd to leak goroutines and host memory. Over time,
-│                        │     │                   this resource exhaustion can cause the containerd daemon to
-│                        │     │                   be terminated by the OOM killer, rendering containerd
-│                        │     │                   unavailable until it is restarted. This issue affects
-│                        │     │                   containerd on Linux systems running with the CRI plugin
-│                        │     │                   enabled. Users not using containerd's CRI implementation or
-│                        │     │                   not running containers on Linux are not affected.
-│                        │     │                   ### Patches
-│                        │     │                   This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12,
-│                        │     │                   and 1.7.35. Users should update to these versions to resolve
-│                        │     │                    the issue.
-│                        │     │                   ### Workarounds
-│                        │     │                   Ensure exec probes and lifecycle hooks do not launch
-│                        │     │                   long-lived background child processes.
-│                        │     │                   ### Credits
-│                        │     │                   The containerd project would like to thank XlabAI Team of
-│                        │     │                   Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan
-│                        │     │                   Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and
-│                        │     │                   @IamwhatIamSY who independently discovered and responsibly
-│                        │     │                   disclosed this issue in accordance with the [containerd
-│                        │     │                   security
-│                        │     │                   policy](https://github.com/containerd/project/blob/main/SECU
-│                        │     │                   RITY.md).
-│                        │     │                   ### For more information
-│                        │     │                   If there are any questions or comments about this advisory:
-│                        │     │                   * Open an issue in
-│                        │     │                   [containerd](https://github.com/containerd/containerd/issues
-│                        │     │                   /new/choose)
-│                        │     │                   * Send an email to
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io)
-│                        │     │                   To report a security issue in containerd:
-│                        │     │                   * [Report a new
-│                        │     │                   vulnerability](https://github.com/containerd/containerd/secu
-│                        │     │                   rity/advisories/new)
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io) 
+│                        │     ├ Description     : containerd is an open-source container runtime. Prior to
+│                        │     │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with
+│                        │     │                   the CRI plugin enabled can indefinitely block the
+│                        │     │                   drainExecSyncIO goroutine in
+│                        │     │                   internal/cri/server/container_execsync.go when CRI ExecSync
+│                        │     │                   is used by exec probes or lifecycle hooks that launch
+│                        │     │                   long-lived background child processes retaining standard
+│                        │     │                   input and output pipes. The input and output drain phase has
+│                        │     │                    no default timeout and did not stop when the request
+│                        │     │                   context was canceled, so repeated ExecSync invocations can
+│                        │     │                   accumulate blocked goroutines and host memory. The resulting
+│                        │     │                    resource exhaustion can cause the OOM killer to terminate
+│                        │     │                   containerd, leaving the container runtime unavailable until
+│                        │     │                   restart. Deployments not using containerd's CRI
+│                        │     │                   implementation and containers not running on Linux are not
+│                        │     │                   affected. This issue is fixed in versions 1.7.35, 2.0.12,
+│                        │     │                   2.2.8, and 2.3.5. 
 │                        │     ├ Severity        : MEDIUM 
+│                        │     ├ CweIDs                  
+│                        │     │                  ───────
+│                        │     │                  CWE-400
+│                        │     │                  
 │                        │     ├ VendorSeverity   ─ ghsa: 2 
 │                        │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI
 │                        │     │                         │            :N/VA:H/SC:N/SI:N/SA:N 
 │                        │     │                         ╰ V40Score : 6.8 
-│                        │     ╰ References                                                                    
-│                        │                        ─────────────────────────────────────────────────────────────
-│                        │                        https://github.com/containerd/containerd                     
-│                        │                        https://github.com/containerd/containerd/releases/tag/v1.7.35
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.0.12
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.2.8 
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.3.5 
-│                        │                        https://github.com/containerd/containerd/security/advisories/
-│                        │                        GHSA-7jxh-36q5-gcqv                                          
-│                        │                        
+│                        │     ├ References                                                                    
+│                        │     │                  ─────────────────────────────────────────────────────────────
+│                        │     │                  https://github.com/containerd/containerd                     
+│                        │     │                  https://github.com/containerd/containerd/commit/22ccf4314d1fe
+│                        │     │                  0834f8e28f10d37d5305ef9880c                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d2
+│                        │     │                  ad8c821b33c3afc20890daf6d81                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/9ec55f024041d
+│                        │     │                  0641f6d79841e45c8781141ddaa                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/eebea8c4c912f
+│                        │     │                  44b656c8295c9e6607a19b76650                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/ff39a972369e2
+│                        │     │                  f12fae561a58d658bbf8f2bc318                                  
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v1.7.35
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.0.12
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.2.8 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.3.5 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/security/advisories/
+│                        │     │                  GHSA-7jxh-36q5-gcqv                                          
+│                        │     │                  
+│                        │     ├ PublishedDate   : 2026-09-14T18:17:51.053Z 
+│                        │     ╰ LastModifiedDate: 2026-09-14T18:17:51.053Z 
 │                        ├ [1] ╭ VulnerabilityID : CVE-2026-41567 
 │                        │     ├ VendorIDs                           
 │                        │     │                  ───────────────────
@@ -8316,65 +8298,58 @@
 │                        │     │                   b5989210ead 
 │                        │     ├ Title           : containerd: CRI ExecSync Goroutine Leak Leads to Node-Level
 │                        │     │                   Denial of Service 
-│                        │     ├ Description     : ### Impact
-│                        │     │                   
-│                        │     │                   A bug in containerd's CRI ExecSync implementation allows
-│                        │     │                   exec probes and lifecycle hooks with background child
-│                        │     │                   processes to keep containerd's stdio-drain goroutines
-│                        │     │                   indefinitely blocked. Because the I/O drain phase lacks a
-│                        │     │                   default timeout or context cancellation handling, repeated
-│                        │     │                   ExecSync invocations (like probes) that include long-lived
-│                        │     │                   background processes against a container can cause
-│                        │     │                   containerd to leak goroutines and host memory. Over time,
-│                        │     │                   this resource exhaustion can cause the containerd daemon to
-│                        │     │                   be terminated by the OOM killer, rendering containerd
-│                        │     │                   unavailable until it is restarted. This issue affects
-│                        │     │                   containerd on Linux systems running with the CRI plugin
-│                        │     │                   enabled. Users not using containerd's CRI implementation or
-│                        │     │                   not running containers on Linux are not affected.
-│                        │     │                   ### Patches
-│                        │     │                   This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12,
-│                        │     │                   and 1.7.35. Users should update to these versions to resolve
-│                        │     │                    the issue.
-│                        │     │                   ### Workarounds
-│                        │     │                   Ensure exec probes and lifecycle hooks do not launch
-│                        │     │                   long-lived background child processes.
-│                        │     │                   ### Credits
-│                        │     │                   The containerd project would like to thank XlabAI Team of
-│                        │     │                   Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan
-│                        │     │                   Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and
-│                        │     │                   @IamwhatIamSY who independently discovered and responsibly
-│                        │     │                   disclosed this issue in accordance with the [containerd
-│                        │     │                   security
-│                        │     │                   policy](https://github.com/containerd/project/blob/main/SECU
-│                        │     │                   RITY.md).
-│                        │     │                   ### For more information
-│                        │     │                   If there are any questions or comments about this advisory:
-│                        │     │                   * Open an issue in
-│                        │     │                   [containerd](https://github.com/containerd/containerd/issues
-│                        │     │                   /new/choose)
-│                        │     │                   * Send an email to
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io)
-│                        │     │                   To report a security issue in containerd:
-│                        │     │                   * [Report a new
-│                        │     │                   vulnerability](https://github.com/containerd/containerd/secu
-│                        │     │                   rity/advisories/new)
-│                        │     │                   [security@containerd.io](mailto:security@containerd.io) 
+│                        │     ├ Description     : containerd is an open-source container runtime. Prior to
+│                        │     │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with
+│                        │     │                   the CRI plugin enabled can indefinitely block the
+│                        │     │                   drainExecSyncIO goroutine in
+│                        │     │                   internal/cri/server/container_execsync.go when CRI ExecSync
+│                        │     │                   is used by exec probes or lifecycle hooks that launch
+│                        │     │                   long-lived background child processes retaining standard
+│                        │     │                   input and output pipes. The input and output drain phase has
+│                        │     │                    no default timeout and did not stop when the request
+│                        │     │                   context was canceled, so repeated ExecSync invocations can
+│                        │     │                   accumulate blocked goroutines and host memory. The resulting
+│                        │     │                    resource exhaustion can cause the OOM killer to terminate
+│                        │     │                   containerd, leaving the container runtime unavailable until
+│                        │     │                   restart. Deployments not using containerd's CRI
+│                        │     │                   implementation and containers not running on Linux are not
+│                        │     │                   affected. This issue is fixed in versions 1.7.35, 2.0.12,
+│                        │     │                   2.2.8, and 2.3.5. 
 │                        │     ├ Severity        : MEDIUM 
+│                        │     ├ CweIDs                  
+│                        │     │                  ───────
+│                        │     │                  CWE-400
+│                        │     │                  
 │                        │     ├ VendorSeverity   ─ ghsa: 2 
 │                        │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI
 │                        │     │                         │            :N/VA:H/SC:N/SI:N/SA:N 
 │                        │     │                         ╰ V40Score : 6.8 
-│                        │     ╰ References                                                                    
-│                        │                        ─────────────────────────────────────────────────────────────
-│                        │                        https://github.com/containerd/containerd                     
-│                        │                        https://github.com/containerd/containerd/releases/tag/v1.7.35
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.0.12
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.2.8 
-│                        │                        https://github.com/containerd/containerd/releases/tag/v2.3.5 
-│                        │                        https://github.com/containerd/containerd/security/advisories/
-│                        │                        GHSA-7jxh-36q5-gcqv                                          
-│                        │                        
+│                        │     ├ References                                                                    
+│                        │     │                  ─────────────────────────────────────────────────────────────
+│                        │     │                  https://github.com/containerd/containerd                     
+│                        │     │                  https://github.com/containerd/containerd/commit/22ccf4314d1fe
+│                        │     │                  0834f8e28f10d37d5305ef9880c                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d2
+│                        │     │                  ad8c821b33c3afc20890daf6d81                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/9ec55f024041d
+│                        │     │                  0641f6d79841e45c8781141ddaa                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/eebea8c4c912f
+│                        │     │                  44b656c8295c9e6607a19b76650                                  
+│                        │     │                  https://github.com/containerd/containerd/commit/ff39a972369e2
+│                        │     │                  f12fae561a58d658bbf8f2bc318                                  
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v1.7.35
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.0.12
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.2.8 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/releases/tag/v2.3.5 
+│                        │     │                                                                               
+│                        │     │                  https://github.com/containerd/containerd/security/advisories/
+│                        │     │                  GHSA-7jxh-36q5-gcqv                                          
+│                        │     │                  
+│                        │     ├ PublishedDate   : 2026-09-14T18:17:51.053Z 
+│                        │     ╰ LastModifiedDate: 2026-09-14T18:17:51.053Z 
 │                        ╰ [1] ╭ VulnerabilityID : GO-2026-5932 
 │                              ├ PkgID           : golang.org/x/crypto@v0.56.0 
 │                              ├ PkgName         : golang.org/x/crypto 
@@ -8438,70 +8413,58 @@
 │                        │      │                   451df2dc39d7 
 │                        │      ├ Title           : containerd: CRI ExecSync Goroutine Leak Leads to Node-Level
 │                        │      │                    Denial of Service 
-│                        │      ├ Description     : ### Impact
-│                        │      │                   
-│                        │      │                   A bug in containerd's CRI ExecSync implementation allows
-│                        │      │                   exec probes and lifecycle hooks with background child
-│                        │      │                   processes to keep containerd's stdio-drain goroutines
-│                        │      │                   indefinitely blocked. Because the I/O drain phase lacks a
-│                        │      │                   default timeout or context cancellation handling, repeated
-│                        │      │                   ExecSync invocations (like probes) that include long-lived
-│                        │      │                   background processes against a container can cause
-│                        │      │                   containerd to leak goroutines and host memory. Over time,
-│                        │      │                   this resource exhaustion can cause the containerd daemon to
-│                        │      │                    be terminated by the OOM killer, rendering containerd
-│                        │      │                   unavailable until it is restarted. This issue affects
-│                        │      │                   containerd on Linux systems running with the CRI plugin
-│                        │      │                   enabled. Users not using containerd's CRI implementation or
-│                        │      │                    not running containers on Linux are not affected.
-│                        │      │                   ### Patches
-│                        │      │                   This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12,
-│                        │      │                    and 1.7.35. Users should update to these versions to
-│                        │      │                   resolve the issue.
-│                        │      │                   ### Workarounds
-│                        │      │                   Ensure exec probes and lifecycle hooks do not launch
-│                        │      │                   long-lived background child processes.
-│                        │      │                   ### Credits
-│                        │      │                   The containerd project would like to thank XlabAI Team of
-│                        │      │                   Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan
-│                        │      │                   Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and
-│                        │      │                   @IamwhatIamSY who independently discovered and responsibly
-│                        │      │                   disclosed this issue in accordance with the [containerd
-│                        │      │                   security
-│                        │      │                   policy](https://github.com/containerd/project/blob/main/SEC
-│                        │      │                   URITY.md).
-│                        │      │                   ### For more information
-│                        │      │                   If there are any questions or comments about this
-│                        │      │                   advisory:
-│                        │      │                   * Open an issue in
-│                        │      │                   [containerd](https://github.com/containerd/containerd/issue
-│                        │      │                   s/new/choose)
-│                        │      │                   * Send an email to
-│                        │      │                   [security@containerd.io](mailto:security@containerd.io)
-│                        │      │                   To report a security issue in containerd:
-│                        │      │                   * [Report a new
-│                        │      │                   vulnerability](https://github.com/containerd/containerd/sec
-│                        │      │                   urity/advisories/new)
-│                        │      │                   [security@containerd.io](mailto:security@containerd.io) 
+│                        │      ├ Description     : containerd is an open-source container runtime. Prior to
+│                        │      │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with
+│                        │      │                   the CRI plugin enabled can indefinitely block the
+│                        │      │                   drainExecSyncIO goroutine in
+│                        │      │                   internal/cri/server/container_execsync.go when CRI ExecSync
+│                        │      │                    is used by exec probes or lifecycle hooks that launch
+│                        │      │                   long-lived background child processes retaining standard
+│                        │      │                   input and output pipes. The input and output drain phase
+│                        │      │                   has no default timeout and did not stop when the request
+│                        │      │                   context was canceled, so repeated ExecSync invocations can
+│                        │      │                   accumulate blocked goroutines and host memory. The
+│                        │      │                   resulting resource exhaustion can cause the OOM killer to
+│                        │      │                   terminate containerd, leaving the container runtime
+│                        │      │                   unavailable until restart. Deployments not using
+│                        │      │                   containerd's CRI implementation and containers not running
+│                        │      │                   on Linux are not affected. This issue is fixed in versions
+│                        │      │                   1.7.35, 2.0.12, 2.2.8, and 2.3.5. 
 │                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-400
+│                        │      │                  
 │                        │      ├ VendorSeverity   ─ ghsa: 2 
 │                        │      ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/V
 │                        │      │                         │            I:N/VA:H/SC:N/SI:N/SA:N 
 │                        │      │                         ╰ V40Score : 6.8 
-│                        │      ╰ References                                                                   
-│                        │                         ────────────────────────────────────────────────────────────
-│                        │                         https://github.com/grpc/grpc-go                             
-│                        │                         https://github.com/containerd/containerd/releases/tag/v1.7.3
-│                        │                         5                                                           
-│                        │                         https://github.com/containerd/containerd/releases/tag/v2.0.1
-│                        │                         2                                                           
-│                        │                         https://github.com/containerd/containerd/releases/tag/v2.2.8
-│                        │                                                                                     
-│                        │                         https://github.com/containerd/containerd/releases/tag/v2.3.5
-│                        │                                                                                     
-│                        │                         https://github.com/containerd/containerd/security/advisories
-│                        │                         /GHSA-7jxh-36q5-gcqv                                        
-│                        │                         
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://github.com/containerd/containerd                    
+│                        │      │                  https://github.com/containerd/containerd/commit/22ccf4314d1f
+│                        │      │                  e0834f8e28f10d37d5305ef9880c                                
+│                        │      │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d
+│                        │      │                  2ad8c821b33c3afc20890daf6d81                                
+│                        │      │                  https://github.com/containerd/containerd/commit/9ec55f024041
+│                        │      │                  d0641f6d79841e45c8781141ddaa                                
+│                        │      │                  https://github.com/containerd/containerd/commit/eebea8c4c912
+│                        │      │                  f44b656c8295c9e6607a19b76650                                
+│                        │      │                  https://github.com/containerd/containerd/commit/ff39a972369e
+│                        │      │                  2f12fae561a58d658bbf8f2bc318                                
+│                        │      │                  https://github.com/containerd/containerd/releases/tag/v1.7.3
+│                        │      │                  5                                                           
+│                        │      │                  https://github.com/containerd/containerd/releases/tag/v2.0.1
+│                        │      │                  2                                                           
+│                        │      │                  https://github.com/containerd/containerd/releases/tag/v2.2.8
+│                        │      │                                                                              
+│                        │      │                  https://github.com/containerd/containerd/releases/tag/v2.3.5
+│                        │      │                                                                              
+│                        │      │                  https://github.com/containerd/containerd/security/advisories
+│                        │      │                  /GHSA-7jxh-36q5-gcqv                                        
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-14T18:17:51.053Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T18:17:51.053Z 
 │                        ├ [1]  ╭ VulnerabilityID : CVE-2026-56854 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
@@ -8890,72 +8853,55 @@
 │                        │      │                   a0af9f19f987 
 │                        │      ├ Title           : gRPC-Go xDS servers: Denial of Service (DoS) via crash due
 │                        │      │                   to missing `:authority` and `Host` headers 
-│                        │      ├ Description     : A vulnerability exists in gRPC-Go servers configured with
-│                        │      │                   `xds.NewGRPCServer()` where a crafted request missing both
-│                        │      │                   `:authority` and `Host` headers can cause a server panic,
-│                        │      │                   resulting in a Denial of Service (DoS).
-│                        │      │                   
-│                        │      │                   Servers built with `xds.NewGRPCServer` install an xDS
-│                        │      │                   routing interceptor on every RPC. This interceptor looks up
-│                        │      │                    the request’s `:authority` header to pick a virtual host.
-│                        │      │                   The HTTP/2 server transport previously accepted requests
-│                        │      │                   that had neither `:authority` nor `Host`. When this
-│                        │      │                   happened, the xDS routing interceptor attempted to access
-│                        │      │                   the first element of an empty slice of authorities, leading
-│                        │      │                    to an index out of bounds panic. Since the per-RPC
-│                        │      │                   goroutine does not recover from panics, the entire server
-│                        │      │                   process would terminate.
-│                        │      │                   This panic occurs in the interceptor pipeline, meaning the
-│                        │      │                   transport credentials handshake (TLS, mTLS, or ALTS) and
-│                        │      │                   HTTP/2 connection establishment must complete successfully
-│                        │      │                   before the crafted request can reach this logic.
-│                        │      │                   - Insecure/Standard TLS: If the server permits insecure
-│                        │      │                   (plaintext) connections or standard credentials (where
-│                        │      │                   client certs are not checked), any unauthenticated remote
-│                        │      │                   attacker can trigger the crash.
-│                        │      │                   - mTLS / ALTS: If strict transport-level authentication is
-│                        │      │                   enforced at the network edge or transport layer (e.g.,
-│                        │      │                   requiring a valid client certificate), the attacker must
-│                        │      │                   possess valid transport credentials to initiate the stream
-│                        │      │                   and trigger the panic.
-│                        │      │                   ### Impact
-│                        │      │                   An attacker can cause a complete outage of the gRPC server
-│                        │      │                   by sending a request missing both `:authority` and `Host`
-│                        │      │                   headers, provided they can successfully establish a
-│                        │      │                   transport connection.
-│                        │      │                   ### Patches
-│                        │      │                   The issue has been addressed in `master` (and backported to
-│                        │      │                    `1.83.2` and `1.82.2`). The fix updates the HTTP/2
-│                        │      │                   transport layer to reject requests missing both
-│                        │      │                   `:authority` and `Host` headers early, maintaining
-│                        │      │                   consistency with and other gRPC language implementations.[
-│                        │      │                   m 
+│                        │      ├ Description     : gRPC-Go is the Go language implementation of gRPC. Prior to
+│                        │      │                    1.82.2 and 1.83.2, servers created with
+│                        │      │                   xds.NewGRPCServer() allow
+│                        │      │                   internal/transport/http2_server.go to accept an RPC
+│                        │      │                   containing neither the :authority header nor the Host
+│                        │      │                   header, while RouteAndProcess in
+│                        │      │                   internal/xds/server/routing.go assumes that an authority
+│                        │      │                   value exists and indexes the empty slice. A remote client
+│                        │      │                   that can complete transport connection establishment can
+│                        │      │                   trigger an index-out-of-bounds panic that is not recovered
+│                        │      │                   by the per-RPC goroutine and terminates the entire server
+│                        │      │                   process. In insecure or ordinary TLS deployments the
+│                        │      │                   request can be unauthenticated, while strict mTLS or ALTS
+│                        │      │                   deployments require valid transport credentials before the
+│                        │      │                   malformed RPC can reach the interceptor. This issue is
+│                        │      │                   fixed in versions 1.82.2 and 1.83.2. 
 │                        │      ├ Severity        : HIGH 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-129
+│                        │      │                  CWE-248
+│                        │      │                  
 │                        │      ├ VendorSeverity   ─ ghsa: 3 
-│                        │      ╰ References                                                                   
-│                        │                         ────────────────────────────────────────────────────────────
-│                        │                         https://github.com/grpc/grpc-go                             
-│                        │                         https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089
-│                        │                         fd2a195f041762fffb7                                         
-│                        │                         https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
-│                        │                         66dcbf40992b9e932a4                                         
-│                        │                         https://github.com/grpc/grpc-go/commit/93e31b48545e2a8aaeb6e
-│                        │                         06b47fb249f94e6297f                                         
-│                        │                         https://github.com/grpc/grpc-go/issues/9354                 
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9365                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9366                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9367                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/releases/tag/v1.82.2        
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/releases/tag/v1.83.2        
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4
-│                        │                         p-qf9q-27wj                                                 
-│                        │                         
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://github.com/grpc/grpc-go                             
+│                        │      │                  https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089
+│                        │      │                  fd2a195f041762fffb7                                         
+│                        │      │                  https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
+│                        │      │                  66dcbf40992b9e932a4                                         
+│                        │      │                  https://github.com/grpc/grpc-go/commit/93e31b48545e2a8aaeb6e
+│                        │      │                  06b47fb249f94e6297f                                         
+│                        │      │                  https://github.com/grpc/grpc-go/issues/9354                 
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9365                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9366                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9367                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/releases/tag/v1.82.2        
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/releases/tag/v1.83.2        
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4
+│                        │      │                  p-qf9q-27wj                                                 
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-14T17:17:51.743Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T17:17:51.743Z 
 │                        ├ [9]  ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
 │                        │      ├ PkgID           : google.golang.org/grpc@v1.79.3 
 │                        │      ├ PkgName         : google.golang.org/grpc 
@@ -9415,13 +9361,16 @@
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:62549            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:63134            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:65126            
-│                        │      │                  https://linux.oracle.com/errata/ELSA-2026-38995.html        
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:65153            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:65359            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:65534            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:65886            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66016            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66022            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66432            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67149            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67159            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67160            
 │                        │      │                  https://access.redhat.com/security/cve/CVE-2026-39821       
 │                        │      │                  https://bugzilla.redhat.com/2480756                         
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2456333         
@@ -9494,7 +9443,7 @@
 │                        │      │                                                                              
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-│                        │      ╰ LastModifiedDate: 2026-09-11T13:17:49.237Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T13:18:24.91Z 
 │                        ├ [13] ╭ VulnerabilityID : CVE-2026-56853 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
@@ -10032,7 +9981,7 @@
 │                        │      │                  gjf2-799p                                                   
 │                        │      │                  https://github.com/docker/compose/pull/12300                
 │                        │      │                                                                              
-│                        │      │                  https://groups.google.com/g/golang-announce/c/1y3fb2np35U   
+│                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2025-15558             
 │                        │      │                                                                              
 │                        │      │                  https://security.access.redhat.com/data/csaf/v2/vex/2025/cve
 │                        │      │                  -2025-15558.json                                            
@@ -10743,72 +10692,55 @@
 │                        │      │                   8bb4abbfbf4e 
 │                        │      ├ Title           : gRPC-Go xDS servers: Denial of Service (DoS) via crash due
 │                        │      │                   to missing `:authority` and `Host` headers 
-│                        │      ├ Description     : A vulnerability exists in gRPC-Go servers configured with
-│                        │      │                   `xds.NewGRPCServer()` where a crafted request missing both
-│                        │      │                   `:authority` and `Host` headers can cause a server panic,
-│                        │      │                   resulting in a Denial of Service (DoS).
-│                        │      │                   
-│                        │      │                   Servers built with `xds.NewGRPCServer` install an xDS
-│                        │      │                   routing interceptor on every RPC. This interceptor looks up
-│                        │      │                    the request’s `:authority` header to pick a virtual host.
-│                        │      │                   The HTTP/2 server transport previously accepted requests
-│                        │      │                   that had neither `:authority` nor `Host`. When this
-│                        │      │                   happened, the xDS routing interceptor attempted to access
-│                        │      │                   the first element of an empty slice of authorities, leading
-│                        │      │                    to an index out of bounds panic. Since the per-RPC
-│                        │      │                   goroutine does not recover from panics, the entire server
-│                        │      │                   process would terminate.
-│                        │      │                   This panic occurs in the interceptor pipeline, meaning the
-│                        │      │                   transport credentials handshake (TLS, mTLS, or ALTS) and
-│                        │      │                   HTTP/2 connection establishment must complete successfully
-│                        │      │                   before the crafted request can reach this logic.
-│                        │      │                   - Insecure/Standard TLS: If the server permits insecure
-│                        │      │                   (plaintext) connections or standard credentials (where
-│                        │      │                   client certs are not checked), any unauthenticated remote
-│                        │      │                   attacker can trigger the crash.
-│                        │      │                   - mTLS / ALTS: If strict transport-level authentication is
-│                        │      │                   enforced at the network edge or transport layer (e.g.,
-│                        │      │                   requiring a valid client certificate), the attacker must
-│                        │      │                   possess valid transport credentials to initiate the stream
-│                        │      │                   and trigger the panic.
-│                        │      │                   ### Impact
-│                        │      │                   An attacker can cause a complete outage of the gRPC server
-│                        │      │                   by sending a request missing both `:authority` and `Host`
-│                        │      │                   headers, provided they can successfully establish a
-│                        │      │                   transport connection.
-│                        │      │                   ### Patches
-│                        │      │                   The issue has been addressed in `master` (and backported to
-│                        │      │                    `1.83.2` and `1.82.2`). The fix updates the HTTP/2
-│                        │      │                   transport layer to reject requests missing both
-│                        │      │                   `:authority` and `Host` headers early, maintaining
-│                        │      │                   consistency with and other gRPC language implementations.[
-│                        │      │                   m 
+│                        │      ├ Description     : gRPC-Go is the Go language implementation of gRPC. Prior to
+│                        │      │                    1.82.2 and 1.83.2, servers created with
+│                        │      │                   xds.NewGRPCServer() allow
+│                        │      │                   internal/transport/http2_server.go to accept an RPC
+│                        │      │                   containing neither the :authority header nor the Host
+│                        │      │                   header, while RouteAndProcess in
+│                        │      │                   internal/xds/server/routing.go assumes that an authority
+│                        │      │                   value exists and indexes the empty slice. A remote client
+│                        │      │                   that can complete transport connection establishment can
+│                        │      │                   trigger an index-out-of-bounds panic that is not recovered
+│                        │      │                   by the per-RPC goroutine and terminates the entire server
+│                        │      │                   process. In insecure or ordinary TLS deployments the
+│                        │      │                   request can be unauthenticated, while strict mTLS or ALTS
+│                        │      │                   deployments require valid transport credentials before the
+│                        │      │                   malformed RPC can reach the interceptor. This issue is
+│                        │      │                   fixed in versions 1.82.2 and 1.83.2. 
 │                        │      ├ Severity        : HIGH 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-129
+│                        │      │                  CWE-248
+│                        │      │                  
 │                        │      ├ VendorSeverity   ─ ghsa: 3 
-│                        │      ╰ References                                                                   
-│                        │                         ────────────────────────────────────────────────────────────
-│                        │                         https://github.com/grpc/grpc-go                             
-│                        │                         https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089
-│                        │                         fd2a195f041762fffb7                                         
-│                        │                         https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
-│                        │                         66dcbf40992b9e932a4                                         
-│                        │                         https://github.com/grpc/grpc-go/commit/93e31b48545e2a8aaeb6e
-│                        │                         06b47fb249f94e6297f                                         
-│                        │                         https://github.com/grpc/grpc-go/issues/9354                 
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9365                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9366                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/pull/9367                   
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/releases/tag/v1.82.2        
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/releases/tag/v1.83.2        
-│                        │                                                                                     
-│                        │                         https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4
-│                        │                         p-qf9q-27wj                                                 
-│                        │                         
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://github.com/grpc/grpc-go                             
+│                        │      │                  https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089
+│                        │      │                  fd2a195f041762fffb7                                         
+│                        │      │                  https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
+│                        │      │                  66dcbf40992b9e932a4                                         
+│                        │      │                  https://github.com/grpc/grpc-go/commit/93e31b48545e2a8aaeb6e
+│                        │      │                  06b47fb249f94e6297f                                         
+│                        │      │                  https://github.com/grpc/grpc-go/issues/9354                 
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9365                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9366                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/pull/9367                   
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/releases/tag/v1.82.2        
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/releases/tag/v1.83.2        
+│                        │      │                                                                              
+│                        │      │                  https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4
+│                        │      │                  p-qf9q-27wj                                                 
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-14T17:17:51.743Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T17:17:51.743Z 
 │                        ├ [12] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
 │                        │      ├ PkgID           : google.golang.org/grpc@v1.81.1 
 │                        │      ├ PkgName         : google.golang.org/grpc 
@@ -11413,7 +11345,7 @@
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:53412            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:53413            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:53415            
-│                        │      │                  https://access.redhat.com/errata/RHSA-2026:53530            
+│                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-56862             
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54191            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54274            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:54283            
@@ -11455,6 +11387,9 @@
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66016            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66022            
 │                        │      │                  https://access.redhat.com/errata/RHSA-2026:66432            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67149            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67159            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:67160            
 │                        │      │                  https://access.redhat.com/security/cve/CVE-2026-39821       
 │                        │      │                  https://bugzilla.redhat.com/2480756                         
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2456333         
@@ -11503,8 +11438,8 @@
 │                        │      │                                                                              
 │                        │      │                  https://github.com/golang/go/issues/78760                   
 │                        │      │                                                                              
-│                        │      │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3381
-│                        │      │                  8                                                           
+│                        │      │                  https://go.dev/cl/767220                                    
+│                        │      │                                                                              
 │                        │      │                  https://go.dev/issue/78760                                  
 │                        │      │                                                                              
 │                        │      │                  https://groups.google.com/g/golang-announce/c/94pEornpRlI   
@@ -11527,7 +11462,7 @@
 │                        │      │                                                                              
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-│                        │      ╰ LastModifiedDate: 2026-09-11T13:17:49.237Z 
+│                        │      ╰ LastModifiedDate: 2026-09-14T13:18:24.91Z 
 │                        ├ [17] ╭ VulnerabilityID : CVE-2026-39822 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
@@ -11658,7 +11593,7 @@
 │                        │      │                  https://bugzilla.redhat.com/2515838                          
 │                        │      │                  https://bugzilla.redhat.com/2515839                          
 │                        │      │                  https://bugzilla.redhat.com/2515840                          
-│                        │      │                  https://ubuntu.com/security/notices/USN-8416-1               
+│                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2456333          
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2456339          
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2467809          
 │                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2467820          
@@ -12193,9 +12128,9 @@
 │                        │      │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56862
 │                        │      │                  https://errata.almalinux.org/9/ALSA-2026-66364.html          
 │                        │      │                  https://errata.rockylinux.org/RLSA-2026:66364                
-│                        │      │                  https://bugzilla.redhat.com/2484620                          
+│                        │      │                  https://go.dev/cl/804261                                     
 │                        │      │                  https://go.dev/issue/80528                                   
-│                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2484620          
+│                        │      │                  https://groups.google.com/g/golang-announce/c/94pEornpRlI    
 │                        │      │                  https://linux.oracle.com/cve/CVE-2026-56862.html             
 │                        │      │                  https://linux.oracle.com/errata/ELSA-2026-66364-0.html       
 │                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-56862              
