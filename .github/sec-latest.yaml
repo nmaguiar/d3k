@@ -554,8 +554,15 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:ae1e7dbd4927a1368179b972c8f0b088114ceb753865c55932ac6d8619d3e008
     Title: 'glibc: Buffer Overflow in strfmon right-justification padding'
-    Description: A flaw was found in glibc. The strfmon and strfmon_l functions are vulnerable to a buffer overflow when processing right-justified width padding. This occurs because an incorrect length is used for an internal memory operation, causing data to be written beyond its intended buffer. An attacker could exploit this by providing specially crafted input, potentially leading to arbitrary code execution or other severe impacts.
+    Description: |-
+      Calling strfmon and strfmon_l in the GNU C Library version 2.38 to 2.44 can write past the end of the caller-supplied output buffer when a conversion uses right-justified width padding.
+
+      Exploitation requires an application code path that calls strfmon or strfmon_l with right-justified width padding into a destination buffer that is large enough for the padding to succeed but too small for the internal memmove call. The field width or format may be attacker-influenced or a fixed susceptible pattern in the caller.
+
+      At the time of publication, no network-facing application impact is known.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-122
     VendorSeverity:
       redhat: 2
       ubuntu: 2
@@ -566,9 +573,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2026-19499
     - https://nvd.nist.gov/vuln/detail/CVE-2026-19499
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34510
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0017
     - https://ubuntu.com/security/notices/USN-8737-1
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19499
+    PublishedDate: '2026-09-14T18:17:45.753Z'
+    LastModifiedDate: '2026-09-14T20:16:43.25Z'
   - VulnerabilityID: CVE-2026-19542
     PkgID: libc-bin@2.43-2ubuntu2.3
     PkgName: libc-bin
@@ -589,8 +600,13 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:4452a7356ea9badaf3c0d841be894584400ad28d2dd4bbb12d212f4e9d3e1ffd
     Title: 'glibc: Fix out-of-bounds array write in tdelete'
-    Description: A flaw was found in glibc. An out-of-bounds array write vulnerability exists within the `tdelete` function. This issue occurs due to incorrect management of array sizes, which can lead to memory corruption. A local attacker with low privileges could potentially exploit this to cause a denial of service or disclose sensitive information.
+    Description: |-
+      Calling tdelete on a sufficiently deep tree in the GNU C Library version 2.1 to 2.44 may write one pointer past the end of an alloca-allocated array on the stack, which may crash the application.
+
+      The tdelete implementation keeps an explicit stack of parent nodes for rebalancing, which is grown as needed while descending the tree.  Two rebalancing branches push an additional entry without checking the capacity, and write past the array when the stack is exactly full. Triggering this requires a node at a depth of exactly 40 (or 40 plus a multiple of 20), which implies a tree with at least a million nodes, so an attacker must drive a large number of insertions and deletions through an application that uses tsearch and tdelete.  The written value is a pointer into a tree node and is not directly attacker controlled.  No affected application in common distributions has been identified.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-121
     VendorSeverity:
       redhat: 2
       ubuntu: 2
@@ -601,9 +617,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2026-19542
     - https://nvd.nist.gov/vuln/detail/CVE-2026-19542
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34506
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0018
     - https://ubuntu.com/security/notices/USN-8737-1
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19542
+    PublishedDate: '2026-09-14T18:17:46.85Z'
+    LastModifiedDate: '2026-09-14T20:16:43.363Z'
   - VulnerabilityID: CVE-2026-6368
     PkgID: libc-bin@2.43-2ubuntu2.3
     PkgName: libc-bin
@@ -822,8 +842,15 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:ede30153868bbcce23b05e11c972e42874582358eef35785f3cb6090aafee41f
     Title: 'glibc: Buffer Overflow in strfmon right-justification padding'
-    Description: A flaw was found in glibc. The strfmon and strfmon_l functions are vulnerable to a buffer overflow when processing right-justified width padding. This occurs because an incorrect length is used for an internal memory operation, causing data to be written beyond its intended buffer. An attacker could exploit this by providing specially crafted input, potentially leading to arbitrary code execution or other severe impacts.
+    Description: |-
+      Calling strfmon and strfmon_l in the GNU C Library version 2.38 to 2.44 can write past the end of the caller-supplied output buffer when a conversion uses right-justified width padding.
+
+      Exploitation requires an application code path that calls strfmon or strfmon_l with right-justified width padding into a destination buffer that is large enough for the padding to succeed but too small for the internal memmove call. The field width or format may be attacker-influenced or a fixed susceptible pattern in the caller.
+
+      At the time of publication, no network-facing application impact is known.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-122
     VendorSeverity:
       redhat: 2
       ubuntu: 2
@@ -834,9 +861,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2026-19499
     - https://nvd.nist.gov/vuln/detail/CVE-2026-19499
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34510
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0017
     - https://ubuntu.com/security/notices/USN-8737-1
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19499
+    PublishedDate: '2026-09-14T18:17:45.753Z'
+    LastModifiedDate: '2026-09-14T20:16:43.25Z'
   - VulnerabilityID: CVE-2026-19542
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2.3
     PkgName: libc-gconv-modules-extra
@@ -857,8 +888,13 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:f25abfcf18e4cf154c60db59512cff44802223bc10cb936f0cf6ee6a0b2e7135
     Title: 'glibc: Fix out-of-bounds array write in tdelete'
-    Description: A flaw was found in glibc. An out-of-bounds array write vulnerability exists within the `tdelete` function. This issue occurs due to incorrect management of array sizes, which can lead to memory corruption. A local attacker with low privileges could potentially exploit this to cause a denial of service or disclose sensitive information.
+    Description: |-
+      Calling tdelete on a sufficiently deep tree in the GNU C Library version 2.1 to 2.44 may write one pointer past the end of an alloca-allocated array on the stack, which may crash the application.
+
+      The tdelete implementation keeps an explicit stack of parent nodes for rebalancing, which is grown as needed while descending the tree.  Two rebalancing branches push an additional entry without checking the capacity, and write past the array when the stack is exactly full. Triggering this requires a node at a depth of exactly 40 (or 40 plus a multiple of 20), which implies a tree with at least a million nodes, so an attacker must drive a large number of insertions and deletions through an application that uses tsearch and tdelete.  The written value is a pointer into a tree node and is not directly attacker controlled.  No affected application in common distributions has been identified.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-121
     VendorSeverity:
       redhat: 2
       ubuntu: 2
@@ -869,9 +905,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2026-19542
     - https://nvd.nist.gov/vuln/detail/CVE-2026-19542
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34506
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0018
     - https://ubuntu.com/security/notices/USN-8737-1
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19542
+    PublishedDate: '2026-09-14T18:17:46.85Z'
+    LastModifiedDate: '2026-09-14T20:16:43.363Z'
   - VulnerabilityID: CVE-2026-6368
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2.3
     PkgName: libc-gconv-modules-extra
@@ -1090,8 +1130,15 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:f21ec3f82450705ed97dfe60805743336fa4fa5c3d3a964c316c5df5d256a48a
     Title: 'glibc: Buffer Overflow in strfmon right-justification padding'
-    Description: A flaw was found in glibc. The strfmon and strfmon_l functions are vulnerable to a buffer overflow when processing right-justified width padding. This occurs because an incorrect length is used for an internal memory operation, causing data to be written beyond its intended buffer. An attacker could exploit this by providing specially crafted input, potentially leading to arbitrary code execution or other severe impacts.
+    Description: |-
+      Calling strfmon and strfmon_l in the GNU C Library version 2.38 to 2.44 can write past the end of the caller-supplied output buffer when a conversion uses right-justified width padding.
+
+      Exploitation requires an application code path that calls strfmon or strfmon_l with right-justified width padding into a destination buffer that is large enough for the padding to succeed but too small for the internal memmove call. The field width or format may be attacker-influenced or a fixed susceptible pattern in the caller.
+
+      At the time of publication, no network-facing application impact is known.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-122
     VendorSeverity:
       redhat: 2
       ubuntu: 2
@@ -1102,9 +1149,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2026-19499
     - https://nvd.nist.gov/vuln/detail/CVE-2026-19499
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34510
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0017
     - https://ubuntu.com/security/notices/USN-8737-1
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19499
+    PublishedDate: '2026-09-14T18:17:45.753Z'
+    LastModifiedDate: '2026-09-14T20:16:43.25Z'
   - VulnerabilityID: CVE-2026-19542
     PkgID: libc6@2.43-2ubuntu2.3
     PkgName: libc6
@@ -1125,8 +1176,13 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:73b4e5e6c52301a2273305c81844ab960116315f0e4cd2a2d26d9b9913fa3a8e
     Title: 'glibc: Fix out-of-bounds array write in tdelete'
-    Description: A flaw was found in glibc. An out-of-bounds array write vulnerability exists within the `tdelete` function. This issue occurs due to incorrect management of array sizes, which can lead to memory corruption. A local attacker with low privileges could potentially exploit this to cause a denial of service or disclose sensitive information.
+    Description: |-
+      Calling tdelete on a sufficiently deep tree in the GNU C Library version 2.1 to 2.44 may write one pointer past the end of an alloca-allocated array on the stack, which may crash the application.
+
+      The tdelete implementation keeps an explicit stack of parent nodes for rebalancing, which is grown as needed while descending the tree.  Two rebalancing branches push an additional entry without checking the capacity, and write past the array when the stack is exactly full. Triggering this requires a node at a depth of exactly 40 (or 40 plus a multiple of 20), which implies a tree with at least a million nodes, so an attacker must drive a large number of insertions and deletions through an application that uses tsearch and tdelete.  The written value is a pointer into a tree node and is not directly attacker controlled.  No affected application in common distributions has been identified.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-121
     VendorSeverity:
       redhat: 2
       ubuntu: 2
@@ -1137,9 +1193,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2026-19542
     - https://nvd.nist.gov/vuln/detail/CVE-2026-19542
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34506
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0018
     - https://ubuntu.com/security/notices/USN-8737-1
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19542
+    PublishedDate: '2026-09-14T18:17:46.85Z'
+    LastModifiedDate: '2026-09-14T20:16:43.363Z'
   - VulnerabilityID: CVE-2026-6368
     PkgID: libc6@2.43-2ubuntu2.3
     PkgName: libc6
@@ -3425,6 +3485,7 @@
     VendorSeverity:
       azure: 2
       nvd: 4
+      oracle-oval: 2
       photon: 4
       redhat: 2
       ubuntu: 2
@@ -3440,6 +3501,8 @@
     - https://access.redhat.com/security/cve/CVE-2026-13221
     - https://github.com/Perl/perl5/commit/03f74bbbd3a68350d926ee93d56ee4808c28c4c7.patch
     - https://github.com/Perl/perl5/issues/23388
+    - https://linux.oracle.com/cve/CVE-2026-13221.html
+    - https://linux.oracle.com/errata/ELSA-2026-67156-0.html
     - https://lists.security.metacpan.org/cve-announce/msg/41780104/
     - https://nvd.nist.gov/vuln/detail/CVE-2026-13221
     - https://ubuntu.com/security/notices/USN-8675-1
@@ -4724,6 +4787,7 @@
     VendorSeverity:
       azure: 2
       nvd: 4
+      oracle-oval: 2
       photon: 4
       redhat: 2
       ubuntu: 2
@@ -4739,6 +4803,8 @@
     - https://access.redhat.com/security/cve/CVE-2026-13221
     - https://github.com/Perl/perl5/commit/03f74bbbd3a68350d926ee93d56ee4808c28c4c7.patch
     - https://github.com/Perl/perl5/issues/23388
+    - https://linux.oracle.com/cve/CVE-2026-13221.html
+    - https://linux.oracle.com/errata/ELSA-2026-67156-0.html
     - https://lists.security.metacpan.org/cve-announce/msg/41780104/
     - https://nvd.nist.gov/vuln/detail/CVE-2026-13221
     - https://ubuntu.com/security/notices/USN-8675-1
@@ -5038,6 +5104,7 @@
     VendorSeverity:
       azure: 2
       nvd: 4
+      oracle-oval: 2
       photon: 4
       redhat: 2
       ubuntu: 2
@@ -5053,6 +5120,8 @@
     - https://access.redhat.com/security/cve/CVE-2026-13221
     - https://github.com/Perl/perl5/commit/03f74bbbd3a68350d926ee93d56ee4808c28c4c7.patch
     - https://github.com/Perl/perl5/issues/23388
+    - https://linux.oracle.com/cve/CVE-2026-13221.html
+    - https://linux.oracle.com/errata/ELSA-2026-67156-0.html
     - https://lists.security.metacpan.org/cve-announce/msg/41780104/
     - https://nvd.nist.gov/vuln/detail/CVE-2026-13221
     - https://ubuntu.com/security/notices/USN-8675-1
@@ -5352,6 +5421,7 @@
     VendorSeverity:
       azure: 2
       nvd: 4
+      oracle-oval: 2
       photon: 4
       redhat: 2
       ubuntu: 2
@@ -5367,6 +5437,8 @@
     - https://access.redhat.com/security/cve/CVE-2026-13221
     - https://github.com/Perl/perl5/commit/03f74bbbd3a68350d926ee93d56ee4808c28c4c7.patch
     - https://github.com/Perl/perl5/issues/23388
+    - https://linux.oracle.com/cve/CVE-2026-13221.html
+    - https://linux.oracle.com/errata/ELSA-2026-67156-0.html
     - https://lists.security.metacpan.org/cve-announce/msg/41780104/
     - https://nvd.nist.gov/vuln/detail/CVE-2026-13221
     - https://ubuntu.com/security/notices/USN-8675-1
@@ -7761,34 +7833,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:ab034c80aa97e1cfa80cc3127060f940c927ac55a44bdc41f243536aba273b50
     Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
-    Description: |-
-      ### Impact
-
-      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
-
-      ### Patches
-
-      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-
-      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
-
-      ### Credits
-
-      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If there are any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Description: containerd is an open-source container runtime. Prior to 1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with the CRI plugin enabled can indefinitely block the drainExecSyncIO goroutine in internal/cri/server/container_execsync.go when CRI ExecSync is used by exec probes or lifecycle hooks that launch long-lived background child processes retaining standard input and output pipes. The input and output drain phase has no default timeout and did not stop when the request context was canceled, so repeated ExecSync invocations can accumulate blocked goroutines and host memory. The resulting resource exhaustion can cause the OOM killer to terminate containerd, leaving the container runtime unavailable until restart. Deployments not using containerd's CRI implementation and containers not running on Linux are not affected. This issue is fixed in versions 1.7.35, 2.0.12, 2.2.8, and 2.3.5.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-400
     VendorSeverity:
       ghsa: 2
     CVSS:
@@ -7797,11 +7845,18 @@
         V40Score: 6.8
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/22ccf4314d1fe0834f8e28f10d37d5305ef9880c
+    - https://github.com/containerd/containerd/commit/5a2a3a759b0d2ad8c821b33c3afc20890daf6d81
+    - https://github.com/containerd/containerd/commit/9ec55f024041d0641f6d79841e45c8781141ddaa
+    - https://github.com/containerd/containerd/commit/eebea8c4c912f44b656c8295c9e6607a19b76650
+    - https://github.com/containerd/containerd/commit/ff39a972369e2f12fae561a58d658bbf8f2bc318
     - https://github.com/containerd/containerd/releases/tag/v1.7.35
     - https://github.com/containerd/containerd/releases/tag/v2.0.12
     - https://github.com/containerd/containerd/releases/tag/v2.2.8
     - https://github.com/containerd/containerd/releases/tag/v2.3.5
     - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
+    PublishedDate: '2026-09-14T18:17:51.053Z'
+    LastModifiedDate: '2026-09-14T18:17:51.053Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.56.0
     PkgName: golang.org/x/crypto
@@ -7918,34 +7973,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:e8279ea0e8a9891e9d07e2b115d70d990657e7ef548b86062c77088902e737fb
     Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
-    Description: |-
-      ### Impact
-
-      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
-
-      ### Patches
-
-      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-
-      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
-
-      ### Credits
-
-      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If there are any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Description: containerd is an open-source container runtime. Prior to 1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with the CRI plugin enabled can indefinitely block the drainExecSyncIO goroutine in internal/cri/server/container_execsync.go when CRI ExecSync is used by exec probes or lifecycle hooks that launch long-lived background child processes retaining standard input and output pipes. The input and output drain phase has no default timeout and did not stop when the request context was canceled, so repeated ExecSync invocations can accumulate blocked goroutines and host memory. The resulting resource exhaustion can cause the OOM killer to terminate containerd, leaving the container runtime unavailable until restart. Deployments not using containerd's CRI implementation and containers not running on Linux are not affected. This issue is fixed in versions 1.7.35, 2.0.12, 2.2.8, and 2.3.5.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-400
     VendorSeverity:
       ghsa: 2
     CVSS:
@@ -7954,11 +7985,18 @@
         V40Score: 6.8
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/22ccf4314d1fe0834f8e28f10d37d5305ef9880c
+    - https://github.com/containerd/containerd/commit/5a2a3a759b0d2ad8c821b33c3afc20890daf6d81
+    - https://github.com/containerd/containerd/commit/9ec55f024041d0641f6d79841e45c8781141ddaa
+    - https://github.com/containerd/containerd/commit/eebea8c4c912f44b656c8295c9e6607a19b76650
+    - https://github.com/containerd/containerd/commit/ff39a972369e2f12fae561a58d658bbf8f2bc318
     - https://github.com/containerd/containerd/releases/tag/v1.7.35
     - https://github.com/containerd/containerd/releases/tag/v2.0.12
     - https://github.com/containerd/containerd/releases/tag/v2.2.8
     - https://github.com/containerd/containerd/releases/tag/v2.3.5
     - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
+    PublishedDate: '2026-09-14T18:17:51.053Z'
+    LastModifiedDate: '2026-09-14T18:17:51.053Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.56.0
     PkgName: golang.org/x/crypto
@@ -8430,6 +8468,9 @@
     - https://access.redhat.com/errata/RHSA-2026:66016
     - https://access.redhat.com/errata/RHSA-2026:66022
     - https://access.redhat.com/errata/RHSA-2026:66432
+    - https://access.redhat.com/errata/RHSA-2026:67149
+    - https://access.redhat.com/errata/RHSA-2026:67159
+    - https://access.redhat.com/errata/RHSA-2026:67160
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456333
@@ -8474,7 +8515,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-11T13:17:49.237Z'
+    LastModifiedDate: '2026-09-14T13:18:24.91Z'
   - VulnerabilityID: CVE-2026-46600
     VendorIDs:
     - GO-2026-5942
@@ -9184,6 +9225,9 @@
     - https://access.redhat.com/errata/RHSA-2026:66016
     - https://access.redhat.com/errata/RHSA-2026:66022
     - https://access.redhat.com/errata/RHSA-2026:66432
+    - https://access.redhat.com/errata/RHSA-2026:67149
+    - https://access.redhat.com/errata/RHSA-2026:67159
+    - https://access.redhat.com/errata/RHSA-2026:67160
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456333
@@ -9228,7 +9272,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-11T13:17:49.237Z'
+    LastModifiedDate: '2026-09-14T13:18:24.91Z'
   - VulnerabilityID: CVE-2026-46600
     VendorIDs:
     - GO-2026-5942
@@ -9909,34 +9953,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:dae443c3a5a37d5fc34203dd9b7835dead7623d1bd3d11d7f5f83e1daae57bfe
     Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
-    Description: |-
-      ### Impact
-
-      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
-
-      ### Patches
-
-      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-
-      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
-
-      ### Credits
-
-      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If there are any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Description: containerd is an open-source container runtime. Prior to 1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with the CRI plugin enabled can indefinitely block the drainExecSyncIO goroutine in internal/cri/server/container_execsync.go when CRI ExecSync is used by exec probes or lifecycle hooks that launch long-lived background child processes retaining standard input and output pipes. The input and output drain phase has no default timeout and did not stop when the request context was canceled, so repeated ExecSync invocations can accumulate blocked goroutines and host memory. The resulting resource exhaustion can cause the OOM killer to terminate containerd, leaving the container runtime unavailable until restart. Deployments not using containerd's CRI implementation and containers not running on Linux are not affected. This issue is fixed in versions 1.7.35, 2.0.12, 2.2.8, and 2.3.5.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-400
     VendorSeverity:
       ghsa: 2
     CVSS:
@@ -9945,11 +9965,18 @@
         V40Score: 6.8
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/22ccf4314d1fe0834f8e28f10d37d5305ef9880c
+    - https://github.com/containerd/containerd/commit/5a2a3a759b0d2ad8c821b33c3afc20890daf6d81
+    - https://github.com/containerd/containerd/commit/9ec55f024041d0641f6d79841e45c8781141ddaa
+    - https://github.com/containerd/containerd/commit/eebea8c4c912f44b656c8295c9e6607a19b76650
+    - https://github.com/containerd/containerd/commit/ff39a972369e2f12fae561a58d658bbf8f2bc318
     - https://github.com/containerd/containerd/releases/tag/v1.7.35
     - https://github.com/containerd/containerd/releases/tag/v2.0.12
     - https://github.com/containerd/containerd/releases/tag/v2.2.8
     - https://github.com/containerd/containerd/releases/tag/v2.3.5
     - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
+    PublishedDate: '2026-09-14T18:17:51.053Z'
+    LastModifiedDate: '2026-09-14T18:17:51.053Z'
   - VulnerabilityID: CVE-2026-41567
     VendorIDs:
     - GHSA-x86f-5xw2-fm2r
@@ -10349,34 +10376,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:d28a5620d3e5f8f02fcf8f8e97e2f3e73a8855dfa31a220c79b6c881d880911e
     Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
-    Description: |-
-      ### Impact
-
-      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
-
-      ### Patches
-
-      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-
-      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
-
-      ### Credits
-
-      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If there are any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Description: containerd is an open-source container runtime. Prior to 1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with the CRI plugin enabled can indefinitely block the drainExecSyncIO goroutine in internal/cri/server/container_execsync.go when CRI ExecSync is used by exec probes or lifecycle hooks that launch long-lived background child processes retaining standard input and output pipes. The input and output drain phase has no default timeout and did not stop when the request context was canceled, so repeated ExecSync invocations can accumulate blocked goroutines and host memory. The resulting resource exhaustion can cause the OOM killer to terminate containerd, leaving the container runtime unavailable until restart. Deployments not using containerd's CRI implementation and containers not running on Linux are not affected. This issue is fixed in versions 1.7.35, 2.0.12, 2.2.8, and 2.3.5.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-400
     VendorSeverity:
       ghsa: 2
     CVSS:
@@ -10385,11 +10388,18 @@
         V40Score: 6.8
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/22ccf4314d1fe0834f8e28f10d37d5305ef9880c
+    - https://github.com/containerd/containerd/commit/5a2a3a759b0d2ad8c821b33c3afc20890daf6d81
+    - https://github.com/containerd/containerd/commit/9ec55f024041d0641f6d79841e45c8781141ddaa
+    - https://github.com/containerd/containerd/commit/eebea8c4c912f44b656c8295c9e6607a19b76650
+    - https://github.com/containerd/containerd/commit/ff39a972369e2f12fae561a58d658bbf8f2bc318
     - https://github.com/containerd/containerd/releases/tag/v1.7.35
     - https://github.com/containerd/containerd/releases/tag/v2.0.12
     - https://github.com/containerd/containerd/releases/tag/v2.2.8
     - https://github.com/containerd/containerd/releases/tag/v2.3.5
     - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
+    PublishedDate: '2026-09-14T18:17:51.053Z'
+    LastModifiedDate: '2026-09-14T18:17:51.053Z'
   - VulnerabilityID: GO-2026-5932
     PkgID: golang.org/x/crypto@v0.56.0
     PkgName: golang.org/x/crypto
@@ -10442,34 +10452,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:6992e0c7a1f083990a319ac7147a8bcdea91ec7b6470e8309dbf1120776a4016
     Title: 'containerd: CRI ExecSync Goroutine Leak Leads to Node-Level Denial of Service'
-    Description: |-
-      ### Impact
-
-      A bug in containerd's CRI ExecSync implementation allows exec probes and lifecycle hooks with background child processes to keep containerd's stdio-drain goroutines indefinitely blocked. Because the I/O drain phase lacks a default timeout or context cancellation handling, repeated ExecSync invocations (like probes) that include long-lived background processes against a container can cause containerd to leak goroutines and host memory. Over time, this resource exhaustion can cause the containerd daemon to be terminated by the OOM killer, rendering containerd unavailable until it is restarted. This issue affects containerd on Linux systems running with the CRI plugin enabled. Users not using containerd's CRI implementation or not running containers on Linux are not affected.
-
-      ### Patches
-
-      This bug has been fixed in containerd 2.3.5, 2.2.8, 2.0.12, and 1.7.35. Users should update to these versions to resolve the issue.
-
-      ### Workarounds
-
-      Ensure exec probes and lifecycle hooks do not launch long-lived background child processes.
-
-      ### Credits
-
-      The containerd project would like to thank XlabAI Team of Tencent Xuanwu Lab (xlabai@tencent.com), including Guannan Wang, Zhanpeng Liu, Jiashuo Liang, and Guancheng Li, and @IamwhatIamSY who independently discovered and responsibly disclosed this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If there are any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
-      * Send an email to [security@containerd.io](mailto:security@containerd.io)
+    Description: containerd is an open-source container runtime. Prior to 1.7.35, 2.0.12, 2.2.8, and 2.3.5, containerd on Linux with the CRI plugin enabled can indefinitely block the drainExecSyncIO goroutine in internal/cri/server/container_execsync.go when CRI ExecSync is used by exec probes or lifecycle hooks that launch long-lived background child processes retaining standard input and output pipes. The input and output drain phase has no default timeout and did not stop when the request context was canceled, so repeated ExecSync invocations can accumulate blocked goroutines and host memory. The resulting resource exhaustion can cause the OOM killer to terminate containerd, leaving the container runtime unavailable until restart. Deployments not using containerd's CRI implementation and containers not running on Linux are not affected. This issue is fixed in versions 1.7.35, 2.0.12, 2.2.8, and 2.3.5.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-400
     VendorSeverity:
       ghsa: 2
     CVSS:
@@ -10478,11 +10464,18 @@
         V40Score: 6.8
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/22ccf4314d1fe0834f8e28f10d37d5305ef9880c
+    - https://github.com/containerd/containerd/commit/5a2a3a759b0d2ad8c821b33c3afc20890daf6d81
+    - https://github.com/containerd/containerd/commit/9ec55f024041d0641f6d79841e45c8781141ddaa
+    - https://github.com/containerd/containerd/commit/eebea8c4c912f44b656c8295c9e6607a19b76650
+    - https://github.com/containerd/containerd/commit/ff39a972369e2f12fae561a58d658bbf8f2bc318
     - https://github.com/containerd/containerd/releases/tag/v1.7.35
     - https://github.com/containerd/containerd/releases/tag/v2.0.12
     - https://github.com/containerd/containerd/releases/tag/v2.2.8
     - https://github.com/containerd/containerd/releases/tag/v2.3.5
     - https://github.com/containerd/containerd/security/advisories/GHSA-7jxh-36q5-gcqv
+    PublishedDate: '2026-09-14T18:17:51.053Z'
+    LastModifiedDate: '2026-09-14T18:17:51.053Z'
   - VulnerabilityID: CVE-2026-56854
     VendorIDs:
     - GO-2026-6303
@@ -10783,21 +10776,11 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:890912bec6804394f6a173d4508acf5c38b624aa4d9eae542eb859afe8ab5641
     Title: 'gRPC-Go xDS servers: Denial of Service (DoS) via crash due to missing `:authority` and `Host` headers'
-    Description: |-
-      A vulnerability exists in gRPC-Go servers configured with `xds.NewGRPCServer()` where a crafted request missing both `:authority` and `Host` headers can cause a server panic, resulting in a Denial of Service (DoS).
-
-      Servers built with `xds.NewGRPCServer` install an xDS routing interceptor on every RPC. This interceptor looks up the request’s `:authority` header to pick a virtual host. The HTTP/2 server transport previously accepted requests that had neither `:authority` nor `Host`. When this happened, the xDS routing interceptor attempted to access the first element of an empty slice of authorities, leading to an index out of bounds panic. Since the per-RPC goroutine does not recover from panics, the entire server process would terminate.
-
-      This panic occurs in the interceptor pipeline, meaning the transport credentials handshake (TLS, mTLS, or ALTS) and HTTP/2 connection establishment must complete successfully before the crafted request can reach this logic.
-      - Insecure/Standard TLS: If the server permits insecure (plaintext) connections or standard credentials (where client certs are not checked), any unauthenticated remote attacker can trigger the crash.
-      - mTLS / ALTS: If strict transport-level authentication is enforced at the network edge or transport layer (e.g., requiring a valid client certificate), the attacker must possess valid transport credentials to initiate the stream and trigger the panic.
-
-      ### Impact
-      An attacker can cause a complete outage of the gRPC server by sending a request missing both `:authority` and `Host` headers, provided they can successfully establish a transport connection.
-
-      ### Patches
-      The issue has been addressed in `master` (and backported to `1.83.2` and `1.82.2`). The fix updates the HTTP/2 transport layer to reject requests missing both `:authority` and `Host` headers early, maintaining consistency with and other gRPC language implementations.
+    Description: gRPC-Go is the Go language implementation of gRPC. Prior to 1.82.2 and 1.83.2, servers created with xds.NewGRPCServer() allow internal/transport/http2_server.go to accept an RPC containing neither the :authority header nor the Host header, while RouteAndProcess in internal/xds/server/routing.go assumes that an authority value exists and indexes the empty slice. A remote client that can complete transport connection establishment can trigger an index-out-of-bounds panic that is not recovered by the per-RPC goroutine and terminates the entire server process. In insecure or ordinary TLS deployments the request can be unauthenticated, while strict mTLS or ALTS deployments require valid transport credentials before the malformed RPC can reach the interceptor. This issue is fixed in versions 1.82.2 and 1.83.2.
     Severity: HIGH
+    CweIDs:
+    - CWE-129
+    - CWE-248
     VendorSeverity:
       ghsa: 3
     References:
@@ -10812,6 +10795,8 @@
     - https://github.com/grpc/grpc-go/releases/tag/v1.82.2
     - https://github.com/grpc/grpc-go/releases/tag/v1.83.2
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4p-qf9q-27wj
+    PublishedDate: '2026-09-14T17:17:51.743Z'
+    LastModifiedDate: '2026-09-14T17:17:51.743Z'
   - VulnerabilityID: GHSA-hrxh-6v49-42gf
     PkgID: google.golang.org/grpc@v1.79.3
     PkgName: google.golang.org/grpc
@@ -11190,6 +11175,9 @@
     - https://access.redhat.com/errata/RHSA-2026:66016
     - https://access.redhat.com/errata/RHSA-2026:66022
     - https://access.redhat.com/errata/RHSA-2026:66432
+    - https://access.redhat.com/errata/RHSA-2026:67149
+    - https://access.redhat.com/errata/RHSA-2026:67159
+    - https://access.redhat.com/errata/RHSA-2026:67160
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456333
@@ -11234,7 +11222,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-11T13:17:49.237Z'
+    LastModifiedDate: '2026-09-14T13:18:24.91Z'
   - VulnerabilityID: CVE-2026-56853
     VendorIDs:
     - GO-2026-6089
@@ -12224,21 +12212,11 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:ef5adf1ac7f0ecea2a1bd5f453ec0a2165d6c07b4cb3a4d94661104a234ba11c
     Title: 'gRPC-Go xDS servers: Denial of Service (DoS) via crash due to missing `:authority` and `Host` headers'
-    Description: |-
-      A vulnerability exists in gRPC-Go servers configured with `xds.NewGRPCServer()` where a crafted request missing both `:authority` and `Host` headers can cause a server panic, resulting in a Denial of Service (DoS).
-
-      Servers built with `xds.NewGRPCServer` install an xDS routing interceptor on every RPC. This interceptor looks up the request’s `:authority` header to pick a virtual host. The HTTP/2 server transport previously accepted requests that had neither `:authority` nor `Host`. When this happened, the xDS routing interceptor attempted to access the first element of an empty slice of authorities, leading to an index out of bounds panic. Since the per-RPC goroutine does not recover from panics, the entire server process would terminate.
-
-      This panic occurs in the interceptor pipeline, meaning the transport credentials handshake (TLS, mTLS, or ALTS) and HTTP/2 connection establishment must complete successfully before the crafted request can reach this logic.
-      - Insecure/Standard TLS: If the server permits insecure (plaintext) connections or standard credentials (where client certs are not checked), any unauthenticated remote attacker can trigger the crash.
-      - mTLS / ALTS: If strict transport-level authentication is enforced at the network edge or transport layer (e.g., requiring a valid client certificate), the attacker must possess valid transport credentials to initiate the stream and trigger the panic.
-
-      ### Impact
-      An attacker can cause a complete outage of the gRPC server by sending a request missing both `:authority` and `Host` headers, provided they can successfully establish a transport connection.
-
-      ### Patches
-      The issue has been addressed in `master` (and backported to `1.83.2` and `1.82.2`). The fix updates the HTTP/2 transport layer to reject requests missing both `:authority` and `Host` headers early, maintaining consistency with and other gRPC language implementations.
+    Description: gRPC-Go is the Go language implementation of gRPC. Prior to 1.82.2 and 1.83.2, servers created with xds.NewGRPCServer() allow internal/transport/http2_server.go to accept an RPC containing neither the :authority header nor the Host header, while RouteAndProcess in internal/xds/server/routing.go assumes that an authority value exists and indexes the empty slice. A remote client that can complete transport connection establishment can trigger an index-out-of-bounds panic that is not recovered by the per-RPC goroutine and terminates the entire server process. In insecure or ordinary TLS deployments the request can be unauthenticated, while strict mTLS or ALTS deployments require valid transport credentials before the malformed RPC can reach the interceptor. This issue is fixed in versions 1.82.2 and 1.83.2.
     Severity: HIGH
+    CweIDs:
+    - CWE-129
+    - CWE-248
     VendorSeverity:
       ghsa: 3
     References:
@@ -12253,6 +12231,8 @@
     - https://github.com/grpc/grpc-go/releases/tag/v1.82.2
     - https://github.com/grpc/grpc-go/releases/tag/v1.83.2
     - https://github.com/grpc/grpc-go/security/advisories/GHSA-2v4p-qf9q-27wj
+    PublishedDate: '2026-09-14T17:17:51.743Z'
+    LastModifiedDate: '2026-09-14T17:17:51.743Z'
   - VulnerabilityID: GHSA-hrxh-6v49-42gf
     PkgID: google.golang.org/grpc@v1.81.1
     PkgName: google.golang.org/grpc
@@ -12785,6 +12765,9 @@
     - https://access.redhat.com/errata/RHSA-2026:66016
     - https://access.redhat.com/errata/RHSA-2026:66022
     - https://access.redhat.com/errata/RHSA-2026:66432
+    - https://access.redhat.com/errata/RHSA-2026:67149
+    - https://access.redhat.com/errata/RHSA-2026:67159
+    - https://access.redhat.com/errata/RHSA-2026:67160
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456333
@@ -12829,7 +12812,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-09-11T13:17:49.237Z'
+    LastModifiedDate: '2026-09-14T13:18:24.91Z'
   - VulnerabilityID: CVE-2026-39822
     VendorIDs:
     - GO-2026-4970
