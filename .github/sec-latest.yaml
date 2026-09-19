@@ -262,7 +262,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:2441d1b6bf5728b58518db9de3e591dabb8aadc297a81c132e2503d96d6546e8
-    Title: When libpsl support is enabled, libcurl fails to enforce the Public Su ...
+    Title: 'curl: libcurl: Information disclosure via improper Public Suffix List boundary check'
     Description: |-
       When libpsl support is enabled, libcurl fails to enforce the Public Suffix
       List boundary check when processing a `Set-Cookie` header where the `Domain`
@@ -278,12 +278,19 @@
     CweIDs:
     - CWE-201
     VendorSeverity:
+      redhat: 1
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N
+        V3Score: 3.1
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-82209
     - https://curl.se/docs/CVE-2026-82209.html
     - https://curl.se/docs/CVE-2026-82209.json
     - https://github.com/curl/curl/commit/95c1e8915dce64606bd753fd47f
     - https://hackerone.com/reports/3972385
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-82209
     - https://www.cve.org/CVERecord?id=CVE-2026-82209
     PublishedDate: '2026-09-06T18:17:22.847Z'
     LastModifiedDate: '2026-09-15T07:16:31.233Z'
@@ -598,7 +605,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19499
     PublishedDate: '2026-09-14T18:17:45.753Z'
-    LastModifiedDate: '2026-09-14T20:16:43.25Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-19542
     PkgID: libc-bin@2.43-2ubuntu2.3
     PkgName: libc-bin
@@ -642,7 +649,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19542
     PublishedDate: '2026-09-14T18:17:46.85Z'
-    LastModifiedDate: '2026-09-14T20:16:43.363Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-6368
     PkgID: libc-bin@2.43-2ubuntu2.3
     PkgName: libc-bin
@@ -769,7 +776,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-77117
     PublishedDate: '2026-09-15T11:17:12.063Z'
-    LastModifiedDate: '2026-09-15T13:16:43.34Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-80489
     PkgID: libc-bin@2.43-2ubuntu2.3
     PkgName: libc-bin
@@ -813,7 +820,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-80489
     PublishedDate: '2026-09-15T11:17:12.193Z'
-    LastModifiedDate: '2026-09-15T13:16:43.463Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-18374
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2.3
     PkgName: libc-gconv-modules-extra
@@ -904,7 +911,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19499
     PublishedDate: '2026-09-14T18:17:45.753Z'
-    LastModifiedDate: '2026-09-14T20:16:43.25Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-19542
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2.3
     PkgName: libc-gconv-modules-extra
@@ -948,7 +955,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19542
     PublishedDate: '2026-09-14T18:17:46.85Z'
-    LastModifiedDate: '2026-09-14T20:16:43.363Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-6368
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2.3
     PkgName: libc-gconv-modules-extra
@@ -1075,7 +1082,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-77117
     PublishedDate: '2026-09-15T11:17:12.063Z'
-    LastModifiedDate: '2026-09-15T13:16:43.34Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-80489
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2.3
     PkgName: libc-gconv-modules-extra
@@ -1119,7 +1126,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-80489
     PublishedDate: '2026-09-15T11:17:12.193Z'
-    LastModifiedDate: '2026-09-15T13:16:43.463Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-18374
     PkgID: libc6@2.43-2ubuntu2.3
     PkgName: libc6
@@ -1210,7 +1217,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19499
     PublishedDate: '2026-09-14T18:17:45.753Z'
-    LastModifiedDate: '2026-09-14T20:16:43.25Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-19542
     PkgID: libc6@2.43-2ubuntu2.3
     PkgName: libc6
@@ -1254,7 +1261,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-19542
     PublishedDate: '2026-09-14T18:17:46.85Z'
-    LastModifiedDate: '2026-09-14T20:16:43.363Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-6368
     PkgID: libc6@2.43-2ubuntu2.3
     PkgName: libc6
@@ -1381,7 +1388,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-77117
     PublishedDate: '2026-09-15T11:17:12.063Z'
-    LastModifiedDate: '2026-09-15T13:16:43.34Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-80489
     PkgID: libc6@2.43-2ubuntu2.3
     PkgName: libc6
@@ -1425,7 +1432,7 @@
     - https://ubuntu.com/security/notices/USN-8737-2
     - https://www.cve.org/CVERecord?id=CVE-2026-80489
     PublishedDate: '2026-09-15T11:17:12.193Z'
-    LastModifiedDate: '2026-09-15T13:16:43.463Z'
+    LastModifiedDate: '2026-09-18T18:17:47.257Z'
   - VulnerabilityID: CVE-2026-13608
     PkgID: libcurl3t64-gnutls@8.18.0-1ubuntu2.4
     PkgName: libcurl3t64-gnutls
@@ -1685,7 +1692,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:0f9603ec3991e318469d162106e838c6dd4ef3285d6e1113b1396141772ac7e1
-    Title: When libpsl support is enabled, libcurl fails to enforce the Public Su ...
+    Title: 'curl: libcurl: Information disclosure via improper Public Suffix List boundary check'
     Description: |-
       When libpsl support is enabled, libcurl fails to enforce the Public Suffix
       List boundary check when processing a `Set-Cookie` header where the `Domain`
@@ -1701,12 +1708,19 @@
     CweIDs:
     - CWE-201
     VendorSeverity:
+      redhat: 1
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N
+        V3Score: 3.1
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-82209
     - https://curl.se/docs/CVE-2026-82209.html
     - https://curl.se/docs/CVE-2026-82209.json
     - https://github.com/curl/curl/commit/95c1e8915dce64606bd753fd47f
     - https://hackerone.com/reports/3972385
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-82209
     - https://www.cve.org/CVERecord?id=CVE-2026-82209
     PublishedDate: '2026-09-06T18:17:22.847Z'
     LastModifiedDate: '2026-09-15T07:16:31.233Z'
@@ -2029,7 +2043,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:8dffda125c4e231ec06ac9c768ff3c497520b6c02647a5931976b519c209a886
-    Title: When libpsl support is enabled, libcurl fails to enforce the Public Su ...
+    Title: 'curl: libcurl: Information disclosure via improper Public Suffix List boundary check'
     Description: |-
       When libpsl support is enabled, libcurl fails to enforce the Public Suffix
       List boundary check when processing a `Set-Cookie` header where the `Domain`
@@ -2045,12 +2059,19 @@
     CweIDs:
     - CWE-201
     VendorSeverity:
+      redhat: 1
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N
+        V3Score: 3.1
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-82209
     - https://curl.se/docs/CVE-2026-82209.html
     - https://curl.se/docs/CVE-2026-82209.json
     - https://github.com/curl/curl/commit/95c1e8915dce64606bd753fd47f
     - https://hackerone.com/reports/3972385
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-82209
     - https://www.cve.org/CVERecord?id=CVE-2026-82209
     PublishedDate: '2026-09-06T18:17:22.847Z'
     LastModifiedDate: '2026-09-15T07:16:31.233Z'
@@ -3216,7 +3237,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-66046
     - https://www.vulncheck.com/advisories/expat-denial-of-service-via-storeatts-quadratic-complexity
     PublishedDate: '2026-08-18T15:16:57Z'
-    LastModifiedDate: '2026-08-20T16:17:40.66Z'
+    LastModifiedDate: '2026-09-18T15:07:24.37Z'
   - VulnerabilityID: CVE-2026-72522
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -7888,7 +7909,7 @@
     - https://ubuntu.com/security/notices/USN-8679-2
     - https://www.cve.org/CVERecord?id=CVE-2026-73073
     PublishedDate: '2026-08-18T16:18:16.73Z'
-    LastModifiedDate: '2026-08-18T16:18:16.73Z'
+    LastModifiedDate: '2026-09-18T20:05:53.723Z'
   - VulnerabilityID: CVE-2026-51400
     PkgID: vim-common@2:9.1.2141-1ubuntu4.8
     PkgName: vim-common
@@ -8009,7 +8030,7 @@
     - https://ubuntu.com/security/notices/USN-8679-2
     - https://www.cve.org/CVERecord?id=CVE-2026-73073
     PublishedDate: '2026-08-18T16:18:16.73Z'
-    LastModifiedDate: '2026-08-18T16:18:16.73Z'
+    LastModifiedDate: '2026-09-18T20:05:53.723Z'
   - VulnerabilityID: CVE-2026-51400
     PkgID: vim-runtime@2:9.1.2141-1ubuntu4.8
     PkgName: vim-runtime
@@ -8130,7 +8151,7 @@
     - https://ubuntu.com/security/notices/USN-8679-2
     - https://www.cve.org/CVERecord?id=CVE-2026-73073
     PublishedDate: '2026-08-18T16:18:16.73Z'
-    LastModifiedDate: '2026-08-18T16:18:16.73Z'
+    LastModifiedDate: '2026-09-18T20:05:53.723Z'
   - VulnerabilityID: CVE-2021-31879
     PkgID: wget@1.25.0-2ubuntu4.4
     PkgName: wget
@@ -8303,7 +8324,7 @@
     - https://ubuntu.com/security/notices/USN-8679-2
     - https://www.cve.org/CVERecord?id=CVE-2026-73073
     PublishedDate: '2026-08-18T16:18:16.73Z'
-    LastModifiedDate: '2026-08-18T16:18:16.73Z'
+    LastModifiedDate: '2026-09-18T20:05:53.723Z'
   - VulnerabilityID: CVE-2026-85091
     PkgID: zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu3.1
     PkgName: zlib1g
@@ -8797,7 +8818,7 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:52735700ed0471c1c3460cb231a380e9bc184149ebb3e366239d34f1c82d399d
-    Title: 'oras-go: Arbitrary file write outside file.Store root via symlink-chain bypass in tar extraction (pushDir)'
+    Title: oras-go is a Go library for managing OCI artifacts. Prior to 2.6.2, co ...
     Description: oras-go is a Go library for managing OCI artifacts. Prior to 2.6.2, content/file.Store extraction of OCI layers marked with io.deis.oras.content.unpack=true can write outside the store working directory. The pushDir path through extractTarDirectory and ensureLinkPath validates symlink targets lexically, resolveRelToBase skips its parent-symlink walk for root-level entries, and writeFile follows a terminal symlink when opening a regular file. A malicious archive can therefore create a symlink chain whose lexical target remains inside the extraction root but whose resolved target is an attacker-selected absolute path, then overwrite that target with a same-named regular-file entry even when AllowPathTraversalOnWrite is false. Pulling an attacker-controlled artifact can create or overwrite any file writable by the process and may lead to code execution. This issue is fixed in version 2.6.2.
     Severity: HIGH
     CweIDs:
@@ -8838,7 +8859,7 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:7aab43a4c27d25886d7ca90fc2a812194af31e666a0cc43c7f02d79b9e1f5d50
-    Title: 'oras-go: Blind SSRF via unvalidated Link header URL in pagination allows internal network probing'
+    Title: oras-go is a Go library for managing OCI artifacts. Prior to 2.6.2, th ...
     Description: oras-go is a Go library for managing OCI artifacts. Prior to 2.6.2, the parseLink function in registry/remote/utils.go accepts an absolute URL from a registry-controlled Link response header without validating its scheme, host, or port. Tags, Referrers, and Repositories pagination operations then issue a GET request to the attacker-selected URL from the victim's network, allowing blind server-side request forgery against internal services. The response body is not returned to the attacker, but timing and error differences can reveal service reachability, and credentials may be attached when the credential store has an entry for the target host. Exploitation requires a victim to perform a pagination-based listing operation against a malicious registry. The maintainer identifies this report as a duplicate of GHSA-3hr5-mjrr-hfjh and states that remediation is consolidated in that earlier advisory. The consolidated issue is fixed in version 2.6.2.
     Severity: MEDIUM
     CweIDs:
@@ -13505,7 +13526,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-27145.json
     - https://www.cve.org/CVERecord?id=CVE-2026-27145
     PublishedDate: '2026-06-02T23:16:35.57Z'
-    LastModifiedDate: '2026-09-17T12:17:42.313Z'
+    LastModifiedDate: '2026-09-18T13:17:43.283Z'
   - VulnerabilityID: CVE-2026-33818
     VendorIDs:
     - GO-2026-5972
