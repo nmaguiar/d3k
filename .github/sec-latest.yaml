@@ -698,6 +698,7 @@
     CweIDs:
     - CWE-908
     VendorSeverity:
+      alma: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -705,7 +706,9 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.5
     References:
+    - https://access.redhat.com/errata/RHSA-2026:76777
     - https://access.redhat.com/security/cve/CVE-2026-6368
+    - https://errata.almalinux.org/8/ALSA-2026-76777.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6368
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34090
     - https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2026-0014
@@ -740,6 +743,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      alma: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -747,7 +751,9 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
+    - https://access.redhat.com/errata/RHSA-2026:76777
     - https://access.redhat.com/security/cve/CVE-2026-6791
+    - https://errata.almalinux.org/8/ALSA-2026-76777.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6791
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34091
     - https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2026-0013
@@ -1044,6 +1050,7 @@
     CweIDs:
     - CWE-908
     VendorSeverity:
+      alma: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1051,7 +1058,9 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.5
     References:
+    - https://access.redhat.com/errata/RHSA-2026:76777
     - https://access.redhat.com/security/cve/CVE-2026-6368
+    - https://errata.almalinux.org/8/ALSA-2026-76777.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6368
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34090
     - https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2026-0014
@@ -1086,6 +1095,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      alma: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1093,7 +1103,9 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
+    - https://access.redhat.com/errata/RHSA-2026:76777
     - https://access.redhat.com/security/cve/CVE-2026-6791
+    - https://errata.almalinux.org/8/ALSA-2026-76777.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6791
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34091
     - https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2026-0013
@@ -1390,6 +1402,7 @@
     CweIDs:
     - CWE-908
     VendorSeverity:
+      alma: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1397,7 +1410,9 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.5
     References:
+    - https://access.redhat.com/errata/RHSA-2026:76777
     - https://access.redhat.com/security/cve/CVE-2026-6368
+    - https://errata.almalinux.org/8/ALSA-2026-76777.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6368
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34090
     - https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2026-0014
@@ -1432,6 +1447,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      alma: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1439,7 +1455,9 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
+    - https://access.redhat.com/errata/RHSA-2026:76777
     - https://access.redhat.com/security/cve/CVE-2026-6791
+    - https://errata.almalinux.org/8/ALSA-2026-76777.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6791
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34091
     - https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2026-0013
@@ -4194,7 +4212,7 @@
     - CWE-787
     VendorSeverity:
       azure: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -4900,7 +4918,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-84782
     PublishedDate: '2026-09-29T16:17:12.5Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:56.003Z'
   - VulnerabilityID: CVE-2026-35189
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -4968,7 +4986,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-35189
     PublishedDate: '2026-09-29T16:17:07.33Z'
-    LastModifiedDate: '2026-09-30T21:17:10.43Z'
+    LastModifiedDate: '2026-10-08T01:01:54.577Z'
   - VulnerabilityID: CVE-2026-35191
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5041,7 +5059,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-35191
     PublishedDate: '2026-09-29T16:17:07.49Z'
-    LastModifiedDate: '2026-09-30T21:17:10.617Z'
+    LastModifiedDate: '2026-10-08T01:02:06.293Z'
   - VulnerabilityID: CVE-2026-42772
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5108,7 +5126,7 @@
     - https://ubuntu.com/security/notices/USN-8861-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42772
     PublishedDate: '2026-09-29T16:17:07.64Z'
-    LastModifiedDate: '2026-09-30T21:17:10.803Z'
+    LastModifiedDate: '2026-10-08T01:18:57.547Z'
   - VulnerabilityID: CVE-2026-54872
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5183,7 +5201,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-54872
     PublishedDate: '2026-09-29T16:17:08.623Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:19:04.663Z'
   - VulnerabilityID: CVE-2026-54873
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5260,7 +5278,7 @@
     - https://ubuntu.com/security/notices/USN-8861-1
     - https://www.cve.org/CVERecord?id=CVE-2026-54873
     PublishedDate: '2026-09-29T16:17:08.763Z'
-    LastModifiedDate: '2026-09-30T21:17:13.18Z'
+    LastModifiedDate: '2026-10-08T01:19:18.2Z'
   - VulnerabilityID: CVE-2026-54875
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5341,7 +5359,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-54875
     PublishedDate: '2026-09-29T16:17:08.92Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:19:29.883Z'
   - VulnerabilityID: CVE-2026-72897
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5434,7 +5452,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-72897
     PublishedDate: '2026-09-29T16:17:09.903Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:19:41.567Z'
   - VulnerabilityID: CVE-2026-75804
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5513,7 +5531,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-75804
     PublishedDate: '2026-09-29T16:17:10.887Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:01.25Z'
   - VulnerabilityID: CVE-2026-75805
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5589,7 +5607,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-75805
     PublishedDate: '2026-09-29T16:17:11.063Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:24.147Z'
   - VulnerabilityID: CVE-2026-75806
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5664,7 +5682,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-75806
     PublishedDate: '2026-09-29T16:17:11.217Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:33.453Z'
   - VulnerabilityID: CVE-2026-77696
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5728,7 +5746,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-77696
     PublishedDate: '2026-09-29T16:17:11.493Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:41.353Z'
   - VulnerabilityID: CVE-2026-84784
     PkgID: libssl3t64@3.5.5-1ubuntu3.5
     PkgName: libssl3t64
@@ -5813,7 +5831,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-84784
     PublishedDate: '2026-09-29T16:17:12.81Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:21:22.543Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: libsubid5@1:4.17.4-2ubuntu3
     PkgName: libsubid5
@@ -6280,7 +6298,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-84782
     PublishedDate: '2026-09-29T16:17:12.5Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:56.003Z'
   - VulnerabilityID: CVE-2026-35189
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -6348,7 +6366,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-35189
     PublishedDate: '2026-09-29T16:17:07.33Z'
-    LastModifiedDate: '2026-09-30T21:17:10.43Z'
+    LastModifiedDate: '2026-10-08T01:01:54.577Z'
   - VulnerabilityID: CVE-2026-35191
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -6421,7 +6439,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-35191
     PublishedDate: '2026-09-29T16:17:07.49Z'
-    LastModifiedDate: '2026-09-30T21:17:10.617Z'
+    LastModifiedDate: '2026-10-08T01:02:06.293Z'
   - VulnerabilityID: CVE-2026-42772
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -6488,7 +6506,7 @@
     - https://ubuntu.com/security/notices/USN-8861-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42772
     PublishedDate: '2026-09-29T16:17:07.64Z'
-    LastModifiedDate: '2026-09-30T21:17:10.803Z'
+    LastModifiedDate: '2026-10-08T01:18:57.547Z'
   - VulnerabilityID: CVE-2026-54872
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -6563,7 +6581,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-54872
     PublishedDate: '2026-09-29T16:17:08.623Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:19:04.663Z'
   - VulnerabilityID: CVE-2026-54873
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -6640,7 +6658,7 @@
     - https://ubuntu.com/security/notices/USN-8861-1
     - https://www.cve.org/CVERecord?id=CVE-2026-54873
     PublishedDate: '2026-09-29T16:17:08.763Z'
-    LastModifiedDate: '2026-09-30T21:17:13.18Z'
+    LastModifiedDate: '2026-10-08T01:19:18.2Z'
   - VulnerabilityID: CVE-2026-54875
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -6721,7 +6739,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-54875
     PublishedDate: '2026-09-29T16:17:08.92Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:19:29.883Z'
   - VulnerabilityID: CVE-2026-72897
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -6814,7 +6832,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-72897
     PublishedDate: '2026-09-29T16:17:09.903Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:19:41.567Z'
   - VulnerabilityID: CVE-2026-75804
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -6893,7 +6911,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-75804
     PublishedDate: '2026-09-29T16:17:10.887Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:01.25Z'
   - VulnerabilityID: CVE-2026-75805
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -6969,7 +6987,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-75805
     PublishedDate: '2026-09-29T16:17:11.063Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:24.147Z'
   - VulnerabilityID: CVE-2026-75806
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -7044,7 +7062,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-75806
     PublishedDate: '2026-09-29T16:17:11.217Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:33.453Z'
   - VulnerabilityID: CVE-2026-77696
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -7108,7 +7126,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-77696
     PublishedDate: '2026-09-29T16:17:11.493Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:41.353Z'
   - VulnerabilityID: CVE-2026-84784
     PkgID: openssl@3.5.5-1ubuntu3.5
     PkgName: openssl
@@ -7193,7 +7211,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-84784
     PublishedDate: '2026-09-29T16:17:12.81Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:21:22.543Z'
   - VulnerabilityID: CVE-2026-84782
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -7283,7 +7301,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-84782
     PublishedDate: '2026-09-29T16:17:12.5Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:56.003Z'
   - VulnerabilityID: CVE-2026-35189
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -7351,7 +7369,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-35189
     PublishedDate: '2026-09-29T16:17:07.33Z'
-    LastModifiedDate: '2026-09-30T21:17:10.43Z'
+    LastModifiedDate: '2026-10-08T01:01:54.577Z'
   - VulnerabilityID: CVE-2026-35191
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -7424,7 +7442,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-35191
     PublishedDate: '2026-09-29T16:17:07.49Z'
-    LastModifiedDate: '2026-09-30T21:17:10.617Z'
+    LastModifiedDate: '2026-10-08T01:02:06.293Z'
   - VulnerabilityID: CVE-2026-42772
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -7491,7 +7509,7 @@
     - https://ubuntu.com/security/notices/USN-8861-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42772
     PublishedDate: '2026-09-29T16:17:07.64Z'
-    LastModifiedDate: '2026-09-30T21:17:10.803Z'
+    LastModifiedDate: '2026-10-08T01:18:57.547Z'
   - VulnerabilityID: CVE-2026-54872
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -7566,7 +7584,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-54872
     PublishedDate: '2026-09-29T16:17:08.623Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:19:04.663Z'
   - VulnerabilityID: CVE-2026-54873
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -7643,7 +7661,7 @@
     - https://ubuntu.com/security/notices/USN-8861-1
     - https://www.cve.org/CVERecord?id=CVE-2026-54873
     PublishedDate: '2026-09-29T16:17:08.763Z'
-    LastModifiedDate: '2026-09-30T21:17:13.18Z'
+    LastModifiedDate: '2026-10-08T01:19:18.2Z'
   - VulnerabilityID: CVE-2026-54875
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -7724,7 +7742,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-54875
     PublishedDate: '2026-09-29T16:17:08.92Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:19:29.883Z'
   - VulnerabilityID: CVE-2026-72897
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -7817,7 +7835,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-72897
     PublishedDate: '2026-09-29T16:17:09.903Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:19:41.567Z'
   - VulnerabilityID: CVE-2026-75804
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -7896,7 +7914,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-75804
     PublishedDate: '2026-09-29T16:17:10.887Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:01.25Z'
   - VulnerabilityID: CVE-2026-75805
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -7972,7 +7990,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-75805
     PublishedDate: '2026-09-29T16:17:11.063Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:24.147Z'
   - VulnerabilityID: CVE-2026-75806
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -8047,7 +8065,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-75806
     PublishedDate: '2026-09-29T16:17:11.217Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:33.453Z'
   - VulnerabilityID: CVE-2026-77696
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -8111,7 +8129,7 @@
     - https://ubuntu.com/security/notices/USN-8847-2
     - https://www.cve.org/CVERecord?id=CVE-2026-77696
     PublishedDate: '2026-09-29T16:17:11.493Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:20:41.353Z'
   - VulnerabilityID: CVE-2026-84784
     PkgID: openssl-provider-legacy@3.5.5-1ubuntu3.5
     PkgName: openssl-provider-legacy
@@ -8196,7 +8214,7 @@
     - https://ubuntu.com/security/notices/USN-8847-1
     - https://www.cve.org/CVERecord?id=CVE-2026-84784
     PublishedDate: '2026-09-29T16:17:12.81Z'
-    LastModifiedDate: '2026-09-29T21:27:41.13Z'
+    LastModifiedDate: '2026-10-08T01:21:22.543Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: passwd@1:4.17.4-2ubuntu3
     PkgName: passwd
@@ -8668,7 +8686,7 @@
     - CWE-787
     VendorSeverity:
       azure: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -8999,7 +9017,7 @@
     - CWE-787
     VendorSeverity:
       azure: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -9330,7 +9348,7 @@
     - CWE-787
     VendorSeverity:
       azure: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -9685,6 +9703,287 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-69249
     PublishedDate: '2026-08-03T22:16:52.72Z'
     LastModifiedDate: '2026-09-10T20:36:14.34Z'
+  - VulnerabilityID: CVE-2026-102266
+    PkgID: python3-jwt@2.10.1-4ubuntu1
+    PkgName: python3-jwt
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1?arch=all&distro=ubuntu-26.04
+      UID: 7c706ebb0117f2a7
+    InstalledVersion: 2.10.1-4ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-102266
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:d9be690a86fda486a6ad3544029b31c5781b8f24a03f577a74f9dec878725236
+    Title: 'pyjwt: pyjwt: Authentication bypass via empty HMAC key acceptance'
+    Description: PyJWT is a Python implementation of JSON Web Token standards. From 2.13.0 until 2.14.0, HMACAlgorithm.from_jwk is affected because PyJWK verification path used the decoded key without applying prepare_key validation. This occurs when a trusted JWK Set contains an oct entry with an empty k value. As a result, an attacker signs an HMAC token with the same zero-length key accepted by PyJWT. Consequently, forged token can carry arbitrary authenticated claims. This issue is fixed in version 2.14.0.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 3
+      ghsa: 3
+      nvd: 4
+      redhat: 3
+      ubuntu: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 9.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-102266
+    - https://advisory.echohq.com/cve/CVE-2026-102266
+    - https://github.com/jpadilla/pyjwt
+    - https://github.com/jpadilla/pyjwt/commit/f91ed44dd65baaf457f4b3353ed35e98a753934c
+    - https://github.com/jpadilla/pyjwt/releases/tag/2.14.0
+    - https://github.com/jpadilla/pyjwt/security/advisories/GHSA-9j54-fg26-wv3r
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-102266
+    - https://www.cve.org/CVERecord?id=CVE-2026-102266
+    PublishedDate: '2026-09-28T21:17:14.257Z'
+    LastModifiedDate: '2026-10-07T20:55:07.653Z'
+  - VulnerabilityID: CVE-2026-102267
+    PkgID: python3-jwt@2.10.1-4ubuntu1
+    PkgName: python3-jwt
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1?arch=all&distro=ubuntu-26.04
+      UID: 7c706ebb0117f2a7
+    InstalledVersion: 2.10.1-4ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-102267
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:6eaca9366cdce0606c04be5a75f1f67c9581219c1020eb858c8a089c86df67ea
+    Title: 'pyjwt: pyjwt: Verification key substitution via unvalidated JWKS redirects'
+    Description: PyJWT is a Python implementation of JSON Web Token standards. Prior to 2.14.0, PyJWT PyJWKClient is affected because redirect destinations are not revalidated against the JWKS trust boundary. This occurs when a configured trusted JWKS endpoint returns an attacker-influenced redirect. As a result, PyJWKClient follows the redirect and consumes the redirected response as key material. Consequently, forwarded credentials may be disclosed or verification keys may be substituted. This issue is fixed in version 2.14.0.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-200
+    - CWE-345
+    - CWE-918
+    VendorSeverity:
+      azure: 3
+      ghsa: 3
+      nvd: 4
+      redhat: 3
+      ubuntu: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 9.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-102267
+    - https://advisory.echohq.com/cve/CVE-2026-102267
+    - https://github.com/jpadilla/pyjwt
+    - https://github.com/jpadilla/pyjwt/commit/0a795b8e1f6ef08f634aa7086fc41cc6d5ce3e56
+    - https://github.com/jpadilla/pyjwt/releases/tag/2.14.0
+    - https://github.com/jpadilla/pyjwt/security/advisories/GHSA-9v7f-9g4p-ffgj
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-102267
+    - https://www.cve.org/CVERecord?id=CVE-2026-102267
+    PublishedDate: '2026-09-28T21:17:14.43Z'
+    LastModifiedDate: '2026-10-07T20:27:45.713Z'
+  - VulnerabilityID: CVE-2026-102268
+    PkgID: python3-jwt@2.10.1-4ubuntu1
+    PkgName: python3-jwt
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1?arch=all&distro=ubuntu-26.04
+      UID: 7c706ebb0117f2a7
+    InstalledVersion: 2.10.1-4ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-102268
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:723874183547a3695b73f3d2f91a31e4cc9c27e889edcc1a8cf904b6d1d33337
+    Title: PyJWT is a Python implementation of JSON Web Token standards. Prior to ...
+    Description: PyJWT is a Python implementation of JSON Web Token standards. Prior to 2.14.0, is_pem_format in jwt/utils.py is affected because is_pem_format does not recognize every PEM representation accepted by the cryptography loader. This occurs when an application mixes HMAC and asymmetric algorithms and supplies a mutated public-key PEM as raw key bytes. As a result, HMACAlgorithm.prepare_key treats the unrecognized asymmetric public key as an HMAC secret. Consequently, an attacker who knows the public key can forge authenticated HMAC tokens. This issue is fixed in version 2.14.0.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 4
+      ghsa: 4
+      ubuntu: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 9.1
+    References:
+    - https://advisory.echohq.com/cve/CVE-2026-102268
+    - https://github.com/jpadilla/pyjwt
+    - https://github.com/jpadilla/pyjwt/commit/8b4e233a22206b34ec1186e912e75c0b2396ac07
+    - https://github.com/jpadilla/pyjwt/releases/tag/2.14.0
+    - https://github.com/jpadilla/pyjwt/security/advisories/GHSA-ffc3-869f-jxw9
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-102268
+    - https://www.cve.org/CVERecord?id=CVE-2026-102268
+    PublishedDate: '2026-09-28T21:17:14.6Z'
+    LastModifiedDate: '2026-10-07T20:25:03.03Z'
+  - VulnerabilityID: CVE-2026-102271
+    PkgID: python3-jwt@2.10.1-4ubuntu1
+    PkgName: python3-jwt
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1?arch=all&distro=ubuntu-26.04
+      UID: 7c706ebb0117f2a7
+    InstalledVersion: 2.10.1-4ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-102271
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:b225371b67f72ab86731e8d256bfb9da6d31cffeb7928ac3cc07f8782bbdf8f8
+    Title: 'pyjwt: PyJWT: Authentication bypass via acceptance of DER public keys as HMAC secrets'
+    Description: PyJWT is a Python implementation of JSON Web Token standards. From 2.4.0 until 2.14.0, PyJWT HMACAlgorithm.prepare_key is affected because asymmetric-key guard relies on textual markers that are absent from DER encoding. This occurs when an application mixes HMAC and asymmetric algorithms and supplies a DER public key as the shared verification key. As a result, PyJWT uses public DER bytes as an HMAC secret. Consequently, an attacker who knows the public key can forge authenticated HMAC tokens. This issue is fixed in version 2.14.0.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 3
+      ghsa: 3
+      redhat: 3
+      ubuntu: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-102271
+    - https://advisory.echohq.com/cve/CVE-2026-102271
+    - https://github.com/jpadilla/pyjwt
+    - https://github.com/jpadilla/pyjwt/commit/2798504fa2663364573cf2d1043d8d7fef389499
+    - https://github.com/jpadilla/pyjwt/releases/tag/2.14.0
+    - https://github.com/jpadilla/pyjwt/security/advisories/GHSA-p4g4-x82p-q773
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-102271
+    - https://www.cve.org/CVERecord?id=CVE-2026-102271
+    PublishedDate: '2026-09-28T21:17:15.11Z'
+    LastModifiedDate: '2026-10-06T18:36:16.047Z'
+  - VulnerabilityID: CVE-2026-102272
+    PkgID: python3-jwt@2.10.1-4ubuntu1
+    PkgName: python3-jwt
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1?arch=all&distro=ubuntu-26.04
+      UID: 7c706ebb0117f2a7
+    InstalledVersion: 2.10.1-4ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-102272
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:37486416dc04bf3cd6070b88ca595b44c221c5577518dfa4c2b44369b5634cf6
+    Title: 'pyjwt: pyjwt: Token forgery via improper Unicode byte-order mark handling'
+    Description: PyJWT is a Python implementation of JSON Web Token standards. From 2.13.0 until 2.14.0, HMACAlgorithm.prepare_key in jwt/algorithms.py is affected because raw-JWK detector does not normalize accepted Unicode byte-order marks before checking for JSON. This occurs when a public JWK is prefixed with a UTF-8 BOM and used in a mixed-algorithm verification path. As a result, public JWK bypasses asymmetric-key detection and becomes the HMAC secret. Consequently, an attacker who knows the public key can forge authenticated tokens. This issue is fixed in version 2.14.0.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 3
+      ghsa: 3
+      redhat: 3
+      ubuntu: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-102272
+    - https://advisory.echohq.com/cve/CVE-2026-102272
+    - https://github.com/jpadilla/pyjwt
+    - https://github.com/jpadilla/pyjwt/commit/180783930de91876bc0d601f826a1f2956057291
+    - https://github.com/jpadilla/pyjwt/releases/tag/2.14.0
+    - https://github.com/jpadilla/pyjwt/security/advisories/GHSA-r6x4-923q-g947
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-102272
+    - https://www.cve.org/CVERecord?id=CVE-2026-102272
+    PublishedDate: '2026-09-28T21:17:15.28Z'
+    LastModifiedDate: '2026-10-06T18:34:24.71Z'
+  - VulnerabilityID: CVE-2026-102273
+    PkgID: python3-jwt@2.10.1-4ubuntu1
+    PkgName: python3-jwt
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1?arch=all&distro=ubuntu-26.04
+      UID: 7c706ebb0117f2a7
+    InstalledVersion: 2.10.1-4ubuntu1
+    Status: affected
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-102273
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:0e7f1dbfbc52d1aeeb59d25df1acf4090e397e32c38322b47c6497758893d84d
+    Title: 'pyjwt: pyjwt: Token forgery via acceptance of public JWK containers as HMAC secrets'
+    Description: PyJWT is a Python implementation of JSON Web Token standards. From 2.13.0 until 2.14.0, PyJWT HMACAlgorithm.prepare_key is affected because HMAC key guard only recognizes top-level public JWK forms and misses container representations. This occurs when an application allows HMAC and asymmetric algorithms and passes a public JWK container as the raw key. As a result, public asymmetric key material is accepted as the HMAC secret. Consequently, an attacker who knows the public key can forge a token with arbitrary authenticated claims. This issue is fixed in version 2.14.0.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-347
+    VendorSeverity:
+      azure: 3
+      ghsa: 3
+      redhat: 3
+      ubuntu: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-102273
+    - https://advisory.echohq.com/cve/CVE-2026-102273
+    - https://github.com/jpadilla/pyjwt
+    - https://github.com/jpadilla/pyjwt/commit/801cd128528c62d9b23fcd161d1a2e1c17982f95
+    - https://github.com/jpadilla/pyjwt/releases/tag/2.14.0
+    - https://github.com/jpadilla/pyjwt/security/advisories/GHSA-w2cx-738m-mc7w
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-102273
+    - https://www.cve.org/CVERecord?id=CVE-2026-102273
+    PublishedDate: '2026-09-28T21:17:15.497Z'
+    LastModifiedDate: '2026-10-06T18:29:42.883Z'
   - VulnerabilityID: CVE-2026-48522
     PkgID: python3-jwt@2.10.1-4ubuntu1
     PkgName: python3-jwt
@@ -11058,6 +11357,62 @@
     - https://www.vulncheck.com/advisories/sudo-through-1.9-17p2-intercept-policy-bypass-via-execveat
     PublishedDate: '2026-08-29T17:17:59.91Z'
     LastModifiedDate: '2026-09-10T19:54:25.81Z'
+  - VulnerabilityID: CVE-2026-96512
+    PkgID: sudo@1.9.17p2-1ubuntu3
+    PkgName: sudo
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/sudo@1.9.17p2-1ubuntu3?arch=amd64&distro=ubuntu-26.04
+      UID: e4666e680f22c6ca
+    InstalledVersion: 1.9.17p2-1ubuntu3
+    FixedVersion: 1.9.17p2-1ubuntu3.2
+    Status: fixed
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-96512
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:e1ef44a25ca2f361b0a81452d9ccca24c3f29698e1db3a6e7d301d042baa404f
+    Title: 'sudo: sudo: TZ environment variable allows bypass of NOTBEFORE/NOTAFTER time-based authorization'
+    Description: A flaw was found in sudo. When sudoers rules use NOTBEFORE or NOTAFTER time-based access restrictions with timestamps that omit the trailing 'Z' timezone indicator, the time evaluation relies on the TZ environment variable inherited from the calling user. Because sudo is a setuid-root program, an unprivileged local user can set TZ to an extreme timezone offset to shift the authorization window by up to approximately 25 hours, causing expired rules to be treated as valid. This allows the user to execute commands outside the intended time window. Authentication is not bypassed; only the time-based authorization check is affected.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-863
+    VendorSeverity:
+      alma: 3
+      azure: 3
+      oracle-oval: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/09/24/4
+    - https://access.redhat.com/errata/RHSA-2026:71609
+    - https://access.redhat.com/errata/RHSA-2026:75571
+    - https://access.redhat.com/errata/RHSA-2026:75579
+    - https://access.redhat.com/errata/RHSA-2026:75580
+    - https://access.redhat.com/security/cve/CVE-2026-96512
+    - https://bugzilla.redhat.com/2539327
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2539327
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-96512
+    - https://errata.almalinux.org/9/ALSA-2026-75571.html
+    - https://errata.rockylinux.org/RLSA-2026:75571
+    - https://github.com/sudo-project/sudo/commit/1820a349687522f51023d1ae5925125f59679a8c
+    - https://linux.oracle.com/cve/CVE-2026-96512.html
+    - https://linux.oracle.com/errata/ELSA-2026-75580.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-96512
+    - https://ubuntu.com/security/notices/USN-8895-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-96512
+    PublishedDate: '2026-09-23T14:17:10.747Z'
+    LastModifiedDate: '2026-10-05T11:17:01.93Z'
   - VulnerabilityID: CVE-2026-40228
     PkgID: systemd@259.5-0ubuntu3.4
     PkgName: systemd
@@ -11551,20 +11906,25 @@
       azure: 3
       oracle-oval: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:75769
+    - https://access.redhat.com/errata/RHSA-2026:75768
     - https://access.redhat.com/security/cve/CVE-2026-73073
-    - https://errata.almalinux.org/10/ALSA-2026-75769.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2517950
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73073
+    - https://errata.almalinux.org/9/ALSA-2026-75768.html
+    - https://errata.rockylinux.org/RLSA-2026:75768
     - https://github.com/vim/vim/commit/2f628d8104958fa7421664f792ca6d4f7a39a10f
     - https://github.com/vim/vim/releases/tag/v9.2.0845
     - https://github.com/vim/vim/security/advisories/GHSA-cx73-phcg-3j5g
     - https://linux.oracle.com/cve/CVE-2026-73073.html
-    - https://linux.oracle.com/errata/ELSA-2026-75768.html
+    - https://linux.oracle.com/errata/ELSA-2026-77359.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-73073
     - https://ubuntu.com/security/notices/USN-8679-1
     - https://ubuntu.com/security/notices/USN-8679-2
@@ -11680,20 +12040,25 @@
       azure: 3
       oracle-oval: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:75769
+    - https://access.redhat.com/errata/RHSA-2026:75768
     - https://access.redhat.com/security/cve/CVE-2026-73073
-    - https://errata.almalinux.org/10/ALSA-2026-75769.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2517950
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73073
+    - https://errata.almalinux.org/9/ALSA-2026-75768.html
+    - https://errata.rockylinux.org/RLSA-2026:75768
     - https://github.com/vim/vim/commit/2f628d8104958fa7421664f792ca6d4f7a39a10f
     - https://github.com/vim/vim/releases/tag/v9.2.0845
     - https://github.com/vim/vim/security/advisories/GHSA-cx73-phcg-3j5g
     - https://linux.oracle.com/cve/CVE-2026-73073.html
-    - https://linux.oracle.com/errata/ELSA-2026-75768.html
+    - https://linux.oracle.com/errata/ELSA-2026-77359.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-73073
     - https://ubuntu.com/security/notices/USN-8679-1
     - https://ubuntu.com/security/notices/USN-8679-2
@@ -11809,20 +12174,25 @@
       azure: 3
       oracle-oval: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:75769
+    - https://access.redhat.com/errata/RHSA-2026:75768
     - https://access.redhat.com/security/cve/CVE-2026-73073
-    - https://errata.almalinux.org/10/ALSA-2026-75769.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2517950
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73073
+    - https://errata.almalinux.org/9/ALSA-2026-75768.html
+    - https://errata.rockylinux.org/RLSA-2026:75768
     - https://github.com/vim/vim/commit/2f628d8104958fa7421664f792ca6d4f7a39a10f
     - https://github.com/vim/vim/releases/tag/v9.2.0845
     - https://github.com/vim/vim/security/advisories/GHSA-cx73-phcg-3j5g
     - https://linux.oracle.com/cve/CVE-2026-73073.html
-    - https://linux.oracle.com/errata/ELSA-2026-75768.html
+    - https://linux.oracle.com/errata/ELSA-2026-77359.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-73073
     - https://ubuntu.com/security/notices/USN-8679-1
     - https://ubuntu.com/security/notices/USN-8679-2
@@ -11857,7 +12227,7 @@
       cbl-mariner: 2
       julia: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -11990,20 +12360,25 @@
       azure: 3
       oracle-oval: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:75769
+    - https://access.redhat.com/errata/RHSA-2026:75768
     - https://access.redhat.com/security/cve/CVE-2026-73073
-    - https://errata.almalinux.org/10/ALSA-2026-75769.html
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2517950
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73073
+    - https://errata.almalinux.org/9/ALSA-2026-75768.html
+    - https://errata.rockylinux.org/RLSA-2026:75768
     - https://github.com/vim/vim/commit/2f628d8104958fa7421664f792ca6d4f7a39a10f
     - https://github.com/vim/vim/releases/tag/v9.2.0845
     - https://github.com/vim/vim/security/advisories/GHSA-cx73-phcg-3j5g
     - https://linux.oracle.com/cve/CVE-2026-73073.html
-    - https://linux.oracle.com/errata/ELSA-2026-75768.html
+    - https://linux.oracle.com/errata/ELSA-2026-77359.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-73073
     - https://ubuntu.com/security/notices/USN-8679-1
     - https://ubuntu.com/security/notices/USN-8679-2
@@ -12177,6 +12552,7 @@
     VendorSeverity:
       ghsa: 3
       redhat: 3
+      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
@@ -12583,7 +12959,7 @@
     - CWE-189
     - CWE-190
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       ghsa: 1
       nvd: 2
       redhat: 2
@@ -12930,6 +13306,35 @@
     References:
     - https://go.dev/issue/44226
     - https://pkg.go.dev/vuln/GO-2026-5932
+  - VulnerabilityID: CVE-2026-56851
+    VendorIDs:
+    - GO-2026-6629
+    PkgID: golang.org/x/text@v0.40.0
+    PkgName: golang.org/x/text
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/text@v0.40.0
+      UID: a67713eac7010cc1
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.41.0
+    Status: fixed
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56851
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:0659fe3e7b8107c26529842ae3ee6e535fabd5e01eaea3ccd8155ad68fe795a1
+    Title: The Nickname profile can panic with an out-of-bounds slice error when  ...
+    Description: The Nickname profile can panic with an out-of-bounds slice error when transforming crafted input into a short destination buffer.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/793360
+    - https://go.dev/issue/80112
+    - https://pkg.go.dev/vuln/GO-2026-6629
+    PublishedDate: '2026-10-07T18:17:20.903Z'
+    LastModifiedDate: '2026-10-07T18:17:20.903Z'
   - VulnerabilityID: CVE-2026-50163
     VendorIDs:
     - GHSA-fxhp-mv3v-67qp
@@ -13373,6 +13778,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-39821.json
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://ubuntu.com/security/notices/USN-8883-1
+    - https://ubuntu.com/security/notices/USN-8900-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
     LastModifiedDate: '2026-09-17T12:18:05.767Z'
@@ -13525,7 +13931,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
-      photon: 4
+      photon: 2
       redhat: 3
       rocky: 3
     CVSS:
@@ -13680,7 +14086,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
-      photon: 3
+      photon: 2
       redhat: 3
       rocky: 3
     CVSS:
@@ -13800,6 +14206,36 @@
   Class: lang-pkgs
   Type: gobinary
   Packages: []
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2026-56851
+    VendorIDs:
+    - GO-2026-6629
+    PkgID: golang.org/x/text@v0.40.0
+    PkgName: golang.org/x/text
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/text@v0.40.0
+      UID: 966c369de131ff49
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.41.0
+    Status: fixed
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56851
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:aeb6ac9e1937773f58d09602633230aa9916ba17fe43cdda31c6778b287135da
+    Title: The Nickname profile can panic with an out-of-bounds slice error when  ...
+    Description: The Nickname profile can panic with an out-of-bounds slice error when transforming crafted input into a short destination buffer.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/793360
+    - https://go.dev/issue/80112
+    - https://pkg.go.dev/vuln/GO-2026-6629
+    PublishedDate: '2026-10-07T18:17:20.903Z'
+    LastModifiedDate: '2026-10-07T18:17:20.903Z'
 - Target: usr/bin/pebble
   Class: lang-pkgs
   Type: gobinary
@@ -14118,6 +14554,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-39821.json
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://ubuntu.com/security/notices/USN-8883-1
+    - https://ubuntu.com/security/notices/USN-8900-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
     LastModifiedDate: '2026-09-17T12:18:05.767Z'
@@ -14270,7 +14707,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
-      photon: 4
+      photon: 2
       redhat: 3
       rocky: 3
     CVSS:
@@ -14425,7 +14862,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
-      photon: 3
+      photon: 2
       redhat: 3
       rocky: 3
     CVSS:
@@ -16023,6 +16460,35 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-56852
     PublishedDate: '2026-07-21T20:17:02.867Z'
     LastModifiedDate: '2026-07-23T18:27:48.877Z'
+  - VulnerabilityID: CVE-2026-56851
+    VendorIDs:
+    - GO-2026-6629
+    PkgID: golang.org/x/text@v0.38.0
+    PkgName: golang.org/x/text
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/text@v0.38.0
+      UID: 23d84dcd6ab5ac00
+    InstalledVersion: v0.38.0
+    FixedVersion: 0.41.0
+    Status: fixed
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56851
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:ca39bf0ae06171c079351db1b6e8de0ebbd97a0cddefb42072e889b1d34ece32
+    Title: The Nickname profile can panic with an out-of-bounds slice error when  ...
+    Description: The Nickname profile can panic with an out-of-bounds slice error when transforming crafted input into a short destination buffer.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/793360
+    - https://go.dev/issue/80112
+    - https://pkg.go.dev/vuln/GO-2026-6629
+    PublishedDate: '2026-10-07T18:17:20.903Z'
+    LastModifiedDate: '2026-10-07T18:17:20.903Z'
   - VulnerabilityID: CVE-2026-84304
     VendorIDs:
     - GHSA-vp52-pcj8-j9qc
@@ -16104,6 +16570,7 @@
       azure: 3
       ghsa: 3
       redhat: 3
+      rocky: 3
     CVSS:
       ghsa:
         V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
@@ -16112,7 +16579,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
+    - https://access.redhat.com/errata/RHSA-2026:76743
     - https://access.redhat.com/security/cve/CVE-2026-84445
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2533175
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-84445
+    - https://errata.rockylinux.org/RLSA-2026:76743
     - https://github.com/grpc/grpc-go
     - https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089fd2a195f041762fffb7
     - https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b3666dcbf40992b9e932a4
@@ -16574,6 +17046,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-39821.json
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://ubuntu.com/security/notices/USN-8883-1
+    - https://ubuntu.com/security/notices/USN-8900-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
     LastModifiedDate: '2026-09-17T12:18:05.767Z'
@@ -16680,7 +17153,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
-      photon: 4
+      photon: 2
       redhat: 3
       rocky: 3
     CVSS:
@@ -16835,7 +17308,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
-      photon: 3
+      photon: 2
       redhat: 3
       rocky: 3
     CVSS:
@@ -17691,6 +18164,35 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-56852
     PublishedDate: '2026-07-21T20:17:02.867Z'
     LastModifiedDate: '2026-07-23T18:27:48.877Z'
+  - VulnerabilityID: CVE-2026-56851
+    VendorIDs:
+    - GO-2026-6629
+    PkgID: golang.org/x/text@v0.37.0
+    PkgName: golang.org/x/text
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/text@v0.37.0
+      UID: 8481703a747ddd9e
+    InstalledVersion: v0.37.0
+    FixedVersion: 0.41.0
+    Status: fixed
+    Layer:
+      Digest: sha256:e773d3e19fa734b1b427f77cf364d57a7503c6aa487db3e6bf484fead2c604d6
+      DiffID: sha256:583cb57a7a8d865ac0dedb2159cd48593b02804d9db11805c0077fc9f6189fb0
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-56851
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:36d78b28625d8581684e1159f575e93e069b4c5870c29a0bfcb41f531697bbf3
+    Title: The Nickname profile can panic with an out-of-bounds slice error when  ...
+    Description: The Nickname profile can panic with an out-of-bounds slice error when transforming crafted input into a short destination buffer.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/793360
+    - https://go.dev/issue/80112
+    - https://pkg.go.dev/vuln/GO-2026-6629
+    PublishedDate: '2026-10-07T18:17:20.903Z'
+    LastModifiedDate: '2026-10-07T18:17:20.903Z'
   - VulnerabilityID: CVE-2026-84304
     VendorIDs:
     - GHSA-vp52-pcj8-j9qc
@@ -17772,6 +18274,7 @@
       azure: 3
       ghsa: 3
       redhat: 3
+      rocky: 3
     CVSS:
       ghsa:
         V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
@@ -17780,7 +18283,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
+    - https://access.redhat.com/errata/RHSA-2026:76743
     - https://access.redhat.com/security/cve/CVE-2026-84445
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2533175
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-84445
+    - https://errata.rockylinux.org/RLSA-2026:76743
     - https://github.com/grpc/grpc-go
     - https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089fd2a195f041762fffb7
     - https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b3666dcbf40992b9e932a4
@@ -18398,6 +18906,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-39821.json
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://ubuntu.com/security/notices/USN-8883-1
+    - https://ubuntu.com/security/notices/USN-8900-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
     LastModifiedDate: '2026-09-17T12:18:05.767Z'
@@ -18428,7 +18937,7 @@
     - CWE-61
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -18704,7 +19213,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
-      photon: 4
+      photon: 2
       redhat: 3
       rocky: 3
     CVSS:
@@ -18859,7 +19368,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
-      photon: 3
+      photon: 2
       redhat: 3
       rocky: 3
     CVSS:
