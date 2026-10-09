@@ -1073,7 +1073,7 @@
 │                        │      │                  https://github.com/advisories/GHSA-p2wm-69qx-x25w            
 │                        │      │                  https://linux.oracle.com/cve/CVE-2026-13757.html             
 │                        │      │                  https://linux.oracle.com/errata/ELSA-2026-49668.html         
-│                        │      │                  CWE-770                                                      
+│                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-13757              
 │                        │      │                  https://ubuntu.com/security/notices/USN-8687-1               
 │                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-13757              
 │                        │      │                  
@@ -1926,7 +1926,400 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-07-09T11:16:40.84Z 
 │                        │      ╰ LastModifiedDate: 2026-07-13T14:10:56.943Z 
-│                        ├ [30] ╭ VulnerabilityID : CVE-2026-35341 
+│                        ├ [30] ╭ VulnerabilityID : CVE-2026-102266 
+│                        │      ├ PkgID           : python3-jwt@2.10.1-4ubuntu1.1 
+│                        │      ├ PkgName         : python3-jwt 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1.1?arch=al
+│                        │      │                  │       l&distro=ubuntu-26.04 
+│                        │      │                  ╰ UID : 5b46fac26345df59 
+│                        │      ├ InstalledVersion: 2.10.1-4ubuntu1.1 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:61cefe04854a96eb5445bb255bdd53cbe7eec6fc9b6
+│                        │      │                  │         55fe4419ff6a139c1bc5b 
+│                        │      │                  ╰ DiffID: sha256:d432703a575655a9cb25577f22ccca98fb41d54b351
+│                        │      │                            5132d0fc1ecb94bc8f1c7 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-102266 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Fingerprint     : sha256:faae4c0b441836562b20a1e5ff1fa89527e28aabd64406e55dfd
+│                        │      │                   d6353f784fef 
+│                        │      ├ Title           : pyjwt: pyjwt: Authentication bypass via empty HMAC key
+│                        │      │                   acceptance 
+│                        │      ├ Description     : PyJWT is a Python implementation of JSON Web Token
+│                        │      │                   standards. From 2.13.0 until 2.14.0, HMACAlgorithm.from_jwk
+│                        │      │                    is affected because PyJWK verification path used the
+│                        │      │                   decoded key without applying prepare_key validation. This
+│                        │      │                   occurs when a trusted JWK Set contains an oct entry with an
+│                        │      │                    empty k value. As a result, an attacker signs an HMAC
+│                        │      │                   token with the same zero-length key accepted by PyJWT.
+│                        │      │                   Consequently, forged token can carry arbitrary
+│                        │      │                   authenticated claims. This issue is fixed in version
+│                        │      │                   2.14.0. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-347
+│                        │      │                  
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ ghsa  : 3 
+│                        │      │                  ├ nvd   : 4 
+│                        │      │                  ├ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                  │        │           H/A:N 
+│                        │      │                  │        ╰ V3Score : 7.4 
+│                        │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                  │        │           H/A:N 
+│                        │      │                  │        ╰ V3Score : 9.1 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                           │           H/A:N 
+│                        │      │                           ╰ V3Score : 7.4 
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://access.redhat.com/security/cve/CVE-2026-102266      
+│                        │      │                  https://advisory.echohq.com/cve/CVE-2026-102266             
+│                        │      │                  https://github.com/jpadilla/pyjwt                           
+│                        │      │                  https://github.com/jpadilla/pyjwt/commit/f91ed44dd65baaf457f
+│                        │      │                  4b3353ed35e98a753934c                                       
+│                        │      │                  https://github.com/jpadilla/pyjwt/releases/tag/2.14.0       
+│                        │      │                                                                              
+│                        │      │                  https://github.com/jpadilla/pyjwt/security/advisories/GHSA-9
+│                        │      │                  j54-fg26-wv3r                                               
+│                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-102266            
+│                        │      │                                                                              
+│                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-102266            
+│                        │      │                                                                              
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-28T21:17:14.257Z 
+│                        │      ╰ LastModifiedDate: 2026-10-07T20:55:07.653Z 
+│                        ├ [31] ╭ VulnerabilityID : CVE-2026-102267 
+│                        │      ├ PkgID           : python3-jwt@2.10.1-4ubuntu1.1 
+│                        │      ├ PkgName         : python3-jwt 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1.1?arch=al
+│                        │      │                  │       l&distro=ubuntu-26.04 
+│                        │      │                  ╰ UID : 5b46fac26345df59 
+│                        │      ├ InstalledVersion: 2.10.1-4ubuntu1.1 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:61cefe04854a96eb5445bb255bdd53cbe7eec6fc9b6
+│                        │      │                  │         55fe4419ff6a139c1bc5b 
+│                        │      │                  ╰ DiffID: sha256:d432703a575655a9cb25577f22ccca98fb41d54b351
+│                        │      │                            5132d0fc1ecb94bc8f1c7 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-102267 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Fingerprint     : sha256:baf762518572fef9f65ddae4081f53e0f507f6a0e261aacf9a9a
+│                        │      │                   b9820e3c248a 
+│                        │      ├ Title           : pyjwt: pyjwt: Verification key substitution via unvalidated
+│                        │      │                    JWKS redirects 
+│                        │      ├ Description     : PyJWT is a Python implementation of JSON Web Token
+│                        │      │                   standards. Prior to 2.14.0, PyJWT PyJWKClient is affected
+│                        │      │                   because redirect destinations are not revalidated against
+│                        │      │                   the JWKS trust boundary. This occurs when a configured
+│                        │      │                   trusted JWKS endpoint returns an attacker-influenced
+│                        │      │                   redirect. As a result, PyJWKClient follows the redirect and
+│                        │      │                    consumes the redirected response as key material.
+│                        │      │                   Consequently, forwarded credentials may be disclosed or
+│                        │      │                   verification keys may be substituted. This issue is fixed
+│                        │      │                   in version 2.14.0. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-200
+│                        │      │                  CWE-345
+│                        │      │                  CWE-918
+│                        │      │                  
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ ghsa  : 3 
+│                        │      │                  ├ nvd   : 4 
+│                        │      │                  ├ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                  │        │           H/A:N 
+│                        │      │                  │        ╰ V3Score : 7.4 
+│                        │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                  │        │           H/A:N 
+│                        │      │                  │        ╰ V3Score : 9.1 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                           │           H/A:N 
+│                        │      │                           ╰ V3Score : 7.4 
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://access.redhat.com/security/cve/CVE-2026-102267      
+│                        │      │                  https://advisory.echohq.com/cve/CVE-2026-102267             
+│                        │      │                  https://github.com/jpadilla/pyjwt                           
+│                        │      │                  https://github.com/jpadilla/pyjwt/commit/0a795b8e1f6ef08f634
+│                        │      │                  aa7086fc41cc6d5ce3e56                                       
+│                        │      │                  https://github.com/jpadilla/pyjwt/releases/tag/2.14.0       
+│                        │      │                                                                              
+│                        │      │                  https://github.com/jpadilla/pyjwt/security/advisories/GHSA-9
+│                        │      │                  v7f-9g4p-ffgj                                               
+│                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-102267            
+│                        │      │                                                                              
+│                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-102267            
+│                        │      │                                                                              
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-28T21:17:14.43Z 
+│                        │      ╰ LastModifiedDate: 2026-10-07T20:27:45.713Z 
+│                        ├ [32] ╭ VulnerabilityID : CVE-2026-102268 
+│                        │      ├ PkgID           : python3-jwt@2.10.1-4ubuntu1.1 
+│                        │      ├ PkgName         : python3-jwt 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1.1?arch=al
+│                        │      │                  │       l&distro=ubuntu-26.04 
+│                        │      │                  ╰ UID : 5b46fac26345df59 
+│                        │      ├ InstalledVersion: 2.10.1-4ubuntu1.1 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:61cefe04854a96eb5445bb255bdd53cbe7eec6fc9b6
+│                        │      │                  │         55fe4419ff6a139c1bc5b 
+│                        │      │                  ╰ DiffID: sha256:d432703a575655a9cb25577f22ccca98fb41d54b351
+│                        │      │                            5132d0fc1ecb94bc8f1c7 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-102268 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Fingerprint     : sha256:70968f8d9ab20201849ff7f5eec2af1ed970085892d3ff94e388
+│                        │      │                   9aaad94f4ee2 
+│                        │      ├ Title           : PyJWT is a Python implementation of JSON Web Token
+│                        │      │                   standards. Prior to ... 
+│                        │      ├ Description     : PyJWT is a Python implementation of JSON Web Token
+│                        │      │                   standards. Prior to 2.14.0, is_pem_format in jwt/utils.py
+│                        │      │                   is affected because is_pem_format does not recognize every
+│                        │      │                   PEM representation accepted by the cryptography loader.
+│                        │      │                   This occurs when an application mixes HMAC and asymmetric
+│                        │      │                   algorithms and supplies a mutated public-key PEM as raw key
+│                        │      │                    bytes. As a result, HMACAlgorithm.prepare_key treats the
+│                        │      │                   unrecognized asymmetric public key as an HMAC secret.
+│                        │      │                   Consequently, an attacker who knows the public key can
+│                        │      │                   forge authenticated HMAC tokens. This issue is fixed in
+│                        │      │                   version 2.14.0. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-347
+│                        │      │                  
+│                        │      ├ VendorSeverity   ╭ azure : 4 
+│                        │      │                  ├ ghsa  : 4 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/
+│                        │      │                         │           A:N 
+│                        │      │                         ╰ V3Score : 9.1 
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://advisory.echohq.com/cve/CVE-2026-102268             
+│                        │      │                  https://github.com/jpadilla/pyjwt                           
+│                        │      │                  https://github.com/jpadilla/pyjwt/commit/8b4e233a22206b34ec1
+│                        │      │                  186e912e75c0b2396ac07                                       
+│                        │      │                  https://github.com/jpadilla/pyjwt/releases/tag/2.14.0       
+│                        │      │                                                                              
+│                        │      │                  https://github.com/jpadilla/pyjwt/security/advisories/GHSA-f
+│                        │      │                  fc3-869f-jxw9                                               
+│                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-102268            
+│                        │      │                                                                              
+│                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-102268            
+│                        │      │                                                                              
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-28T21:17:14.6Z 
+│                        │      ╰ LastModifiedDate: 2026-10-07T20:25:03.03Z 
+│                        ├ [33] ╭ VulnerabilityID : CVE-2026-102271 
+│                        │      ├ PkgID           : python3-jwt@2.10.1-4ubuntu1.1 
+│                        │      ├ PkgName         : python3-jwt 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1.1?arch=al
+│                        │      │                  │       l&distro=ubuntu-26.04 
+│                        │      │                  ╰ UID : 5b46fac26345df59 
+│                        │      ├ InstalledVersion: 2.10.1-4ubuntu1.1 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:61cefe04854a96eb5445bb255bdd53cbe7eec6fc9b6
+│                        │      │                  │         55fe4419ff6a139c1bc5b 
+│                        │      │                  ╰ DiffID: sha256:d432703a575655a9cb25577f22ccca98fb41d54b351
+│                        │      │                            5132d0fc1ecb94bc8f1c7 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-102271 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Fingerprint     : sha256:396ccde0e76ccc78c54e93f368fc591e840af7e192cef43b94f2
+│                        │      │                   a50e5efc42bd 
+│                        │      ├ Title           : pyjwt: PyJWT: Authentication bypass via acceptance of DER
+│                        │      │                   public keys as HMAC secrets 
+│                        │      ├ Description     : PyJWT is a Python implementation of JSON Web Token
+│                        │      │                   standards. From 2.4.0 until 2.14.0, PyJWT
+│                        │      │                   HMACAlgorithm.prepare_key is affected because
+│                        │      │                   asymmetric-key guard relies on textual markers that are
+│                        │      │                   absent from DER encoding. This occurs when an application
+│                        │      │                   mixes HMAC and asymmetric algorithms and supplies a DER
+│                        │      │                   public key as the shared verification key. As a result,
+│                        │      │                   PyJWT uses public DER bytes as an HMAC secret.
+│                        │      │                   Consequently, an attacker who knows the public key can
+│                        │      │                   forge authenticated HMAC tokens. This issue is fixed in
+│                        │      │                   version 2.14.0. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs                                                                
+│                        │      │                  ─────────────────────────────────────────────────────
+│                        │      │                  https://access.redhat.com/security/cve/CVE-2026-46600
+│                        │      │                  
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ ghsa  : 3 
+│                        │      │                  ├ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                  │        │           H/A:N 
+│                        │      │                  │        ╰ V3Score : 7.4 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                           │           H/A:N 
+│                        │      │                           ╰ V3Score : 7.4 
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://access.redhat.com/security/cve/CVE-2026-102271      
+│                        │      │                  https://advisory.echohq.com/cve/CVE-2026-102271             
+│                        │      │                  https://github.com/jpadilla/pyjwt                           
+│                        │      │                  https://github.com/jpadilla/pyjwt/commit/2798504fa2663364573
+│                        │      │                  cf2d1043d8d7fef389499                                       
+│                        │      │                  https://github.com/jpadilla/pyjwt/releases/tag/2.14.0       
+│                        │      │                                                                              
+│                        │      │                  https://github.com/jpadilla/pyjwt/security/advisories/GHSA-p
+│                        │      │                  4g4-x82p-q773                                               
+│                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-102271            
+│                        │      │                                                                              
+│                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-102271            
+│                        │      │                                                                              
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-28T21:17:15.11Z 
+│                        │      ╰ LastModifiedDate: 2026-10-06T18:36:16.047Z 
+│                        ├ [34] ╭ VulnerabilityID : CVE-2026-102272 
+│                        │      ├ PkgID           : python3-jwt@2.10.1-4ubuntu1.1 
+│                        │      ├ PkgName         : python3-jwt 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1.1?arch=al
+│                        │      │                  │       l&distro=ubuntu-26.04 
+│                        │      │                  ╰ UID : 5b46fac26345df59 
+│                        │      ├ InstalledVersion: 2.10.1-4ubuntu1.1 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:61cefe04854a96eb5445bb255bdd53cbe7eec6fc9b6
+│                        │      │                  │         55fe4419ff6a139c1bc5b 
+│                        │      │                  ╰ DiffID: sha256:d432703a575655a9cb25577f22ccca98fb41d54b351
+│                        │      │                            5132d0fc1ecb94bc8f1c7 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-102272 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Fingerprint     : sha256:da2e904f2bd5ce46e00374f4ca0385075ad3a58c201b8136aa32
+│                        │      │                   3a60112b925b 
+│                        │      ├ Title           : pyjwt: pyjwt: Token forgery via improper Unicode byte-order
+│                        │      │                    mark handling 
+│                        │      ├ Description     : PyJWT is a Python implementation of JSON Web Token
+│                        │      │                   standards. From 2.13.0 until 2.14.0,
+│                        │      │                   HMACAlgorithm.prepare_key in jwt/algorithms.py is affected
+│                        │      │                   because raw-JWK detector does not normalize accepted
+│                        │      │                   Unicode byte-order marks before checking for JSON. This
+│                        │      │                   occurs when a public JWK is prefixed with a UTF-8 BOM and
+│                        │      │                   used in a mixed-algorithm verification path. As a result,
+│                        │      │                   public JWK bypasses asymmetric-key detection and becomes
+│                        │      │                   the HMAC secret. Consequently, an attacker who knows the
+│                        │      │                   public key can forge authenticated tokens. This issue is
+│                        │      │                   fixed in version 2.14.0. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-347
+│                        │      │                  
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ ghsa  : 3 
+│                        │      │                  ├ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                  │        │           H/A:N 
+│                        │      │                  │        ╰ V3Score : 7.4 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                           │           H/A:N 
+│                        │      │                           ╰ V3Score : 7.4 
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://access.redhat.com/security/cve/CVE-2026-102272      
+│                        │      │                  https://advisory.echohq.com/cve/CVE-2026-102272             
+│                        │      │                  https://github.com/jpadilla/pyjwt                           
+│                        │      │                  https://github.com/jpadilla/pyjwt/commit/180783930de91876bc0
+│                        │      │                  d601f826a1f2956057291                                       
+│                        │      │                  https://github.com/jpadilla/pyjwt/releases/tag/2.14.0       
+│                        │      │                                                                              
+│                        │      │                  https://github.com/jpadilla/pyjwt/security/advisories/GHSA-r
+│                        │      │                  6x4-923q-g947                                               
+│                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-102272            
+│                        │      │                                                                              
+│                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-102272            
+│                        │      │                                                                              
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-28T21:17:15.28Z 
+│                        │      ╰ LastModifiedDate: 2026-10-06T18:34:24.71Z 
+│                        ├ [35] ╭ VulnerabilityID : CVE-2026-102273 
+│                        │      ├ PkgID           : python3-jwt@2.10.1-4ubuntu1.1 
+│                        │      ├ PkgName         : python3-jwt 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3-jwt@2.10.1-4ubuntu1.1?arch=al
+│                        │      │                  │       l&distro=ubuntu-26.04 
+│                        │      │                  ╰ UID : 5b46fac26345df59 
+│                        │      ├ InstalledVersion: 2.10.1-4ubuntu1.1 
+│                        │      ├ Status          : affected 
+│                        │      ├ Layer            ╭ Digest: sha256:61cefe04854a96eb5445bb255bdd53cbe7eec6fc9b6
+│                        │      │                  │         55fe4419ff6a139c1bc5b 
+│                        │      │                  ╰ DiffID: sha256:d432703a575655a9cb25577f22ccca98fb41d54b351
+│                        │      │                            5132d0fc1ecb94bc8f1c7 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-102273 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Fingerprint     : sha256:f45a461a7524eeca9e5ce0f9b628bffc53b3c433e14ab265f028
+│                        │      │                   124219b068b1 
+│                        │      ├ Title           : pyjwt: pyjwt: Token forgery via acceptance of public JWK
+│                        │      │                   containers as HMAC secrets 
+│                        │      ├ Description     : PyJWT is a Python implementation of JSON Web Token
+│                        │      │                   standards. From 2.13.0 until 2.14.0, PyJWT
+│                        │      │                   HMACAlgorithm.prepare_key is affected because HMAC key
+│                        │      │                   guard only recognizes top-level public JWK forms and misses
+│                        │      │                    container representations. This occurs when an application
+│                        │      │                    allows HMAC and asymmetric algorithms and passes a public
+│                        │      │                   JWK container as the raw key. As a result, public
+│                        │      │                   asymmetric key material is accepted as the HMAC secret.
+│                        │      │                   Consequently, an attacker who knows the public key can
+│                        │      │                   forge a token with arbitrary authenticated claims. This
+│                        │      │                   issue is fixed in version 2.14.0. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-347
+│                        │      │                  
+│                        │      ├ VendorSeverity   ╭ azure : 3 
+│                        │      │                  ├ ghsa  : 3 
+│                        │      │                  ├ redhat: 3 
+│                        │      │                  ╰ ubuntu: 2 
+│                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                  │        │           H/A:N 
+│                        │      │                  │        ╰ V3Score : 7.4 
+│                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
+│                        │      │                           │           H/A:N 
+│                        │      │                           ╰ V3Score : 7.4 
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://access.redhat.com/security/cve/CVE-2026-102273      
+│                        │      │                  https://advisory.echohq.com/cve/CVE-2026-102273             
+│                        │      │                  https://github.com/jpadilla/pyjwt                           
+│                        │      │                  https://github.com/jpadilla/pyjwt/commit/801cd128528c62d9b23
+│                        │      │                  fcd161d1a2e1c17982f95                                       
+│                        │      │                  https://github.com/jpadilla/pyjwt/releases/tag/2.14.0       
+│                        │      │                                                                              
+│                        │      │                  https://github.com/jpadilla/pyjwt/security/advisories/GHSA-w
+│                        │      │                  2cx-738m-mc7w                                               
+│                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-102273            
+│                        │      │                                                                              
+│                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-102273            
+│                        │      │                                                                              
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-28T21:17:15.497Z 
+│                        │      ╰ LastModifiedDate: 2026-10-06T18:29:42.883Z 
+│                        ├ [36] ╭ VulnerabilityID : CVE-2026-35341 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -1970,7 +2363,7 @@
 │                        │      ├ References                                                                   
 │                        │      │                  ────────────────────────────────────────────────────────────
 │                        │      │                  https://github.com/uutils/coreutils                         
-│                        │      │                  https://github.com/uutils/coreutils/issues/10020            
+│                        │      │                  https://access.redhat.com/security/cve/CVE-2026-84445       
 │                        │      │                  https://github.com/uutils/coreutils/pull/10376              
 │                        │      │                  https://github.com/uutils/coreutils/security/advisories/GHSA
 │                        │      │                  -pmf6-rcx4-v53v                                             
@@ -1981,7 +2374,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:36.06Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:25.5Z 
-│                        ├ [31] ╭ VulnerabilityID : CVE-2026-35344 
+│                        ├ [37] ╭ VulnerabilityID : CVE-2026-35344 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2031,7 +2424,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:36.49Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:25.833Z 
-│                        ├ [32] ╭ VulnerabilityID : CVE-2026-35345 
+│                        ├ [38] ╭ VulnerabilityID : CVE-2026-35345 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2083,7 +2476,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:36.627Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:25.943Z 
-│                        ├ [33] ╭ VulnerabilityID : CVE-2026-35348 
+│                        ├ [39] ╭ VulnerabilityID : CVE-2026-35348 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2131,7 +2524,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:37.04Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:26.27Z 
-│                        ├ [34] ╭ VulnerabilityID : CVE-2026-35350 
+│                        ├ [40] ╭ VulnerabilityID : CVE-2026-35350 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2180,7 +2573,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:37.327Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:26.48Z 
-│                        ├ [35] ╭ VulnerabilityID : CVE-2026-35351 
+│                        ├ [41] ╭ VulnerabilityID : CVE-2026-35351 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2230,7 +2623,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:37.457Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:26.587Z 
-│                        ├ [36] ╭ VulnerabilityID : CVE-2026-35352 
+│                        ├ [42] ╭ VulnerabilityID : CVE-2026-35352 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2282,7 +2675,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:37.597Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:26.69Z 
-│                        ├ [37] ╭ VulnerabilityID : CVE-2026-35354 
+│                        ├ [43] ╭ VulnerabilityID : CVE-2026-35354 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2332,7 +2725,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:37.867Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:26.907Z 
-│                        ├ [38] ╭ VulnerabilityID : CVE-2026-35357 
+│                        ├ [44] ╭ VulnerabilityID : CVE-2026-35357 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2381,7 +2774,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:38.267Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:27.223Z 
-│                        ├ [39] ╭ VulnerabilityID : CVE-2026-35359 
+│                        ├ [45] ╭ VulnerabilityID : CVE-2026-35359 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2432,7 +2825,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:38.537Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:27.437Z 
-│                        ├ [40] ╭ VulnerabilityID : CVE-2026-35360 
+│                        ├ [46] ╭ VulnerabilityID : CVE-2026-35360 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2480,7 +2873,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:38.673Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:27.543Z 
-│                        ├ [41] ╭ VulnerabilityID : CVE-2026-35363 
+│                        ├ [47] ╭ VulnerabilityID : CVE-2026-35363 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2535,7 +2928,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:39.12Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:27.867Z 
-│                        ├ [42] ╭ VulnerabilityID : CVE-2026-35364 
+│                        ├ [48] ╭ VulnerabilityID : CVE-2026-35364 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2585,7 +2978,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:39.737Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:27.97Z 
-│                        ├ [43] ╭ VulnerabilityID : CVE-2026-35367 
+│                        ├ [49] ╭ VulnerabilityID : CVE-2026-35367 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2635,7 +3028,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:40.423Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:28.297Z 
-│                        ├ [44] ╭ VulnerabilityID : CVE-2026-35368 
+│                        ├ [50] ╭ VulnerabilityID : CVE-2026-35368 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2685,7 +3078,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:40.56Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:28.4Z 
-│                        ├ [45] ╭ VulnerabilityID : CVE-2026-35370 
+│                        ├ [51] ╭ VulnerabilityID : CVE-2026-35370 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2738,7 +3131,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:40.833Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:28.613Z 
-│                        ├ [46] ╭ VulnerabilityID : CVE-2026-35371 
+│                        ├ [52] ╭ VulnerabilityID : CVE-2026-35371 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2791,7 +3184,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:40.987Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:28.723Z 
-│                        ├ [47] ╭ VulnerabilityID : CVE-2026-35373 
+│                        ├ [53] ╭ VulnerabilityID : CVE-2026-35373 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2851,7 +3244,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:41.997Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:28.933Z 
-│                        ├ [48] ╭ VulnerabilityID : CVE-2026-35374 
+│                        ├ [54] ╭ VulnerabilityID : CVE-2026-35374 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2905,7 +3298,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:42.127Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:29.04Z 
-│                        ├ [49] ╭ VulnerabilityID : CVE-2026-35377 
+│                        ├ [55] ╭ VulnerabilityID : CVE-2026-35377 
 │                        │      ├ PkgID           : rust-coreutils@0.10.0-1ubuntu2~26.04.1 
 │                        │      ├ PkgName         : rust-coreutils 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.10.0-1ubuntu2~26.04.
@@ -2959,7 +3352,87 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-22T17:16:42.577Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:40:29.357Z 
-│                        ├ [50] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [56] ╭ VulnerabilityID : CVE-2026-96512 
+│                        │      ├ PkgID           : sudo@1.9.17p2-1ubuntu3.1 
+│                        │      ├ PkgName         : sudo 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/sudo@1.9.17p2-1ubuntu3.1?arch=amd64&d
+│                        │      │                  │       istro=ubuntu-26.04 
+│                        │      │                  ╰ UID : fee291dd6b78bbc8 
+│                        │      ├ InstalledVersion: 1.9.17p2-1ubuntu3.1 
+│                        │      ├ FixedVersion    : 1.9.17p2-1ubuntu3.2 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:61cefe04854a96eb5445bb255bdd53cbe7eec6fc9b6
+│                        │      │                  │         55fe4419ff6a139c1bc5b 
+│                        │      │                  ╰ DiffID: sha256:d432703a575655a9cb25577f22ccca98fb41d54b351
+│                        │      │                            5132d0fc1ecb94bc8f1c7 
+│                        │      ├ SeveritySource  : ubuntu 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-96512 
+│                        │      ├ DataSource       ╭ ID  : ubuntu 
+│                        │      │                  ├ Name: Ubuntu CVE Tracker 
+│                        │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                        │      ├ Fingerprint     : sha256:9e9cea80f33491f37f3f762f9d5730f0bdd61d89750a1aef10ba
+│                        │      │                   9db62ffd2ea3 
+│                        │      ├ Title           : sudo: sudo: TZ environment variable allows bypass of
+│                        │      │                   NOTBEFORE/NOTAFTER time-based authorization 
+│                        │      ├ Description     : A flaw was found in sudo. When sudoers rules use NOTBEFORE
+│                        │      │                   or NOTAFTER time-based access restrictions with timestamps
+│                        │      │                   that omit the trailing 'Z' timezone indicator, the time
+│                        │      │                   evaluation relies on the TZ environment variable inherited
+│                        │      │                   from the calling user. Because sudo is a setuid-root
+│                        │      │                   program, an unprivileged local user can set TZ to an
+│                        │      │                   extreme timezone offset to shift the authorization window
+│                        │      │                   by up to approximately 25 hours, causing expired rules to
+│                        │      │                   be treated as valid. This allows the user to execute
+│                        │      │                   commands outside the intended time window. Authentication
+│                        │      │                   is not bypassed; only the time-based authorization check is
+│                        │      │                    affected. 
+│                        │      ├ Severity        : MEDIUM 
+│                        │      ├ CweIDs                  
+│                        │      │                  ───────
+│                        │      │                  CWE-863
+│                        │      │                  
+│                        │      ├ VendorSeverity   ╭ alma       : 3 
+│                        │      │                  ├ azure      : 3 
+│                        │      │                  ├ oracle-oval: 3 
+│                        │      │                  ├ redhat     : 3 
+│                        │      │                  ├ rocky      : 3 
+│                        │      │                  ╰ ubuntu     : 2 
+│                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
+│                        │      │                           │           H/A:H 
+│                        │      │                           ╰ V3Score : 7.8 
+│                        │      ├ References                                                                   
+│                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  http://www.openwall.com/lists/oss-security/2026/09/24/4     
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:71609            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:75571            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:75579            
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:75580            
+│                        │      │                  https://access.redhat.com/security/cve/CVE-2026-96512       
+│                        │      │                  https://bugzilla.redhat.com/2539327                         
+│                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2539327         
+│                        │      │                  https://creativecommons.org/licenses/by/4.0/                
+│                        │      │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-9651
+│                        │      │                  2                                                           
+│                        │      │                  https://errata.almalinux.org/9/ALSA-2026-75571.html         
+│                        │      │                                                                              
+│                        │      │                  https://errata.rockylinux.org/RLSA-2026:75571               
+│                        │      │                                                                              
+│                        │      │                  https://github.com/sudo-project/sudo/commit/1820a349687522f5
+│                        │      │                  1023d1ae5925125f59679a8c                                    
+│                        │      │                  https://linux.oracle.com/cve/CVE-2026-96512.html            
+│                        │      │                                                                              
+│                        │      │                  https://linux.oracle.com/errata/ELSA-2026-75580.html        
+│                        │      │                                                                              
+│                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-96512             
+│                        │      │                                                                              
+│                        │      │                  https://ubuntu.com/security/notices/USN-8895-1              
+│                        │      │                                                                              
+│                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-96512             
+│                        │      │                                                                              
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-09-23T14:17:10.747Z 
+│                        │      ╰ LastModifiedDate: 2026-10-05T11:17:01.93Z 
+│                        ├ [57] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : systemd@259.5-0ubuntu3.4 
 │                        │      ├ PkgName         : systemd 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd@259.5-0ubuntu3.4?arch=amd64&d
@@ -3008,7 +3481,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [51] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [58] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : systemd-cryptsetup@259.5-0ubuntu3.4 
 │                        │      ├ PkgName         : systemd-cryptsetup 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-cryptsetup@259.5-0ubuntu3.4?a
@@ -3057,7 +3530,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [52] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [59] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : systemd-resolved@259.5-0ubuntu3.4 
 │                        │      ├ PkgName         : systemd-resolved 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-resolved@259.5-0ubuntu3.4?arc
@@ -3106,7 +3579,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [53] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [60] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : systemd-sysv@259.5-0ubuntu3.4 
 │                        │      ├ PkgName         : systemd-sysv 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-sysv@259.5-0ubuntu3.4?arch=am
@@ -3155,7 +3628,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [54] ╭ VulnerabilityID : CVE-2026-40228 
+│                        ├ [61] ╭ VulnerabilityID : CVE-2026-40228 
 │                        │      ├ PkgID           : systemd-timesyncd@259.5-0ubuntu3.4 
 │                        │      ├ PkgName         : systemd-timesyncd 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/systemd-timesyncd@259.5-0ubuntu3.4?ar
@@ -3204,7 +3677,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                        ├ [55] ╭ VulnerabilityID : CVE-2026-18477 
+│                        ├ [62] ╭ VulnerabilityID : CVE-2026-18477 
 │                        │      ├ PkgID           : tar@1.35+dfsg-4ubuntu0.4 
 │                        │      ├ PkgName         : tar 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-4ubuntu0.4?arch=amd64
@@ -3284,7 +3757,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-03T17:16:33.897Z 
 │                        │      ╰ LastModifiedDate: 2026-09-22T22:17:11.233Z 
-│                        ├ [56] ╭ VulnerabilityID : CVE-2026-18508 
+│                        ├ [63] ╭ VulnerabilityID : CVE-2026-18508 
 │                        │      ├ PkgID           : tar@1.35+dfsg-4ubuntu0.4 
 │                        │      ├ PkgName         : tar 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-4ubuntu0.4?arch=amd64
@@ -3355,7 +3828,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-03T16:16:28.387Z 
 │                        │      ╰ LastModifiedDate: 2026-09-22T22:17:11.493Z 
-│                        ├ [57] ╭ VulnerabilityID : CVE-2024-56433 
+│                        ├ [64] ╭ VulnerabilityID : CVE-2024-56433 
 │                        │      ├ PkgID           : uidmap@1:4.17.4-2ubuntu3 
 │                        │      ├ PkgName         : uidmap 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/uidmap@4.17.4-2ubuntu3?arch=amd64&dis
@@ -3431,7 +3904,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T08:12:10.903Z 
-│                        ├ [58] ╭ VulnerabilityID : CVE-2026-51400 
+│                        ├ [65] ╭ VulnerabilityID : CVE-2026-51400 
 │                        │      ├ PkgID           : vim@2:9.1.2141-1ubuntu4.9 
 │                        │      ├ PkgName         : vim 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.2141-1ubuntu4.9?arch=amd64&di
@@ -3473,12 +3946,12 @@
 │                        │      │                  8330cc9f5d4e5#file-vim-os_vms-cves-md                       
 │                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-51400             
 │                        │      │                                                                              
-│                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-51400             
-│                        │      │                                                                              
+│                        │      │                  ************************************************************
+│                        │      │                  **********                                                  
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-04T21:16:36.433Z 
 │                        │      ╰ LastModifiedDate: 2026-09-04T13:38:03.09Z 
-│                        ├ [59] ╭ VulnerabilityID : CVE-2026-51401 
+│                        ├ [66] ╭ VulnerabilityID : CVE-2026-51401 
 │                        │      ├ PkgID           : vim@2:9.1.2141-1ubuntu4.9 
 │                        │      ├ PkgName         : vim 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim@9.1.2141-1ubuntu4.9?arch=amd64&di
@@ -3529,7 +4002,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-04T21:16:36.567Z 
 │                        │      ╰ LastModifiedDate: 2026-09-04T13:33:02.03Z 
-│                        ├ [60] ╭ VulnerabilityID : CVE-2026-51400 
+│                        ├ [67] ╭ VulnerabilityID : CVE-2026-51400 
 │                        │      ├ PkgID           : vim-common@2:9.1.2141-1ubuntu4.9 
 │                        │      ├ PkgName         : vim-common 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.2141-1ubuntu4.9?arch=a
@@ -3576,7 +4049,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-04T21:16:36.433Z 
 │                        │      ╰ LastModifiedDate: 2026-09-04T13:38:03.09Z 
-│                        ├ [61] ╭ VulnerabilityID : CVE-2026-51401 
+│                        ├ [68] ╭ VulnerabilityID : CVE-2026-51401 
 │                        │      ├ PkgID           : vim-common@2:9.1.2141-1ubuntu4.9 
 │                        │      ├ PkgName         : vim-common 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-common@9.1.2141-1ubuntu4.9?arch=a
@@ -3627,7 +4100,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-04T21:16:36.567Z 
 │                        │      ╰ LastModifiedDate: 2026-09-04T13:33:02.03Z 
-│                        ├ [62] ╭ VulnerabilityID : CVE-2026-51400 
+│                        ├ [69] ╭ VulnerabilityID : CVE-2026-51400 
 │                        │      ├ PkgID           : vim-runtime@2:9.1.2141-1ubuntu4.9 
 │                        │      ├ PkgName         : vim-runtime 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.2141-1ubuntu4.9?arch=
@@ -3674,7 +4147,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-04T21:16:36.433Z 
 │                        │      ╰ LastModifiedDate: 2026-09-04T13:38:03.09Z 
-│                        ├ [63] ╭ VulnerabilityID : CVE-2026-51401 
+│                        ├ [70] ╭ VulnerabilityID : CVE-2026-51401 
 │                        │      ├ PkgID           : vim-runtime@2:9.1.2141-1ubuntu4.9 
 │                        │      ├ PkgName         : vim-runtime 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/vim-runtime@9.1.2141-1ubuntu4.9?arch=
@@ -3725,7 +4198,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-04T21:16:36.567Z 
 │                        │      ╰ LastModifiedDate: 2026-09-04T13:33:02.03Z 
-│                        ├ [64] ╭ VulnerabilityID : CVE-2021-31879 
+│                        ├ [71] ╭ VulnerabilityID : CVE-2021-31879 
 │                        │      ├ PkgID           : wget@1.25.0-2ubuntu4.4 
 │                        │      ├ PkgName         : wget 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/wget@1.25.0-2ubuntu4.4?arch=amd64&dis
@@ -3757,7 +4230,7 @@
 │                        │      │                  ├ cbl-mariner: 2 
 │                        │      │                  ├ julia      : 2 
 │                        │      │                  ├ nvd        : 2 
-│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ photon     : 2 
 │                        │      │                  ├ redhat     : 2 
 │                        │      │                  ╰ ubuntu     : 2 
 │                        │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
@@ -3787,7 +4260,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2021-04-29T05:15:08.707Z 
 │                        │      ╰ LastModifiedDate: 2026-06-17T03:52:23.987Z 
-│                        ├ [65] ╭ VulnerabilityID : CVE-2026-51400 
+│                        ├ [72] ╭ VulnerabilityID : CVE-2026-51400 
 │                        │      ├ PkgID           : xxd@2:9.1.2141-1ubuntu4.9 
 │                        │      ├ PkgName         : xxd 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.2141-1ubuntu4.9?arch=amd64&di
@@ -3834,7 +4307,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-04T21:16:36.433Z 
 │                        │      ╰ LastModifiedDate: 2026-09-04T13:38:03.09Z 
-│                        ├ [66] ╭ VulnerabilityID : CVE-2026-51401 
+│                        ├ [73] ╭ VulnerabilityID : CVE-2026-51401 
 │                        │      ├ PkgID           : xxd@2:9.1.2141-1ubuntu4.9 
 │                        │      ├ PkgName         : xxd 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/xxd@9.1.2141-1ubuntu4.9?arch=amd64&di
@@ -3885,7 +4358,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-04T21:16:36.567Z 
 │                        │      ╰ LastModifiedDate: 2026-09-04T13:33:02.03Z 
-│                        ╰ [67] ╭ VulnerabilityID : CVE-2026-85091 
+│                        ╰ [74] ╭ VulnerabilityID : CVE-2026-85091 
 │                               ├ PkgID           : zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu3.1 
 │                               ├ PkgName         : zlib1g 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/zlib1g@1.3.dfsg%2Breally1.3.1-1ubuntu
@@ -4037,7 +4510,7 @@
 │                        ├ [1] ╭ VulnerabilityID : CVE-2026-89425 
 │                        │     ├ VendorIDs                           
 │                        │     │                  ───────────────────
-│                        │     │                  GO-2026-6180       
+│                        │     │                  GHSA-7hhh-6rmp-j9qf
 │                        │     │                  
 │                        │     ├ PkgName         : com.fasterxml.jackson.core:jackson-core 
 │                        │     ├ PkgPath         : opt/oaf/openaf.jar 
@@ -4186,7 +4659,8 @@
 │                        │     │                  CWE-1333
 │                        │     │                  
 │                        │     ├ VendorSeverity   ╭ ghsa  : 3 
-│                        │     │                  ╰ redhat: 3 
+│                        │     │                  ├ redhat: 3 
+│                        │     │                  ╰ ubuntu: 2 
 │                        │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                        │     │                  │        │           /A:H 
 │                        │     │                  │        ╰ V3Score : 7.5 
@@ -4486,8 +4960,8 @@
 │                        │     │                  ckson-databind-2.18.10                                       
 │                        │     │                  https://github.com/FasterXML/jackson-databind/releases/tag/ja
 │                        │     │                  ckson-databind-2.21.6                                        
-│                        │     │                  https://access.redhat.com/errata/RHSA-2026:39879             
-│                        │     │                                                                               
+│                        │     │                  https://github.com/FasterXML/jackson-databind/releases/tag/ja
+│                        │     │                  ckson-databind-2.22.2                                        
 │                        │     │                  https://github.com/FasterXML/jackson-databind/releases/tag/ja
 │                        │     │                  ckson-databind-3.1.6                                         
 │                        │     │                  https://github.com/FasterXML/jackson-databind/releases/tag/ja
@@ -4692,7 +5166,7 @@
 │                        │     │                  CWE-189
 │                        │     │                  CWE-190
 │                        │     │                  
-│                        │     ├ VendorSeverity   ╭ amazon: 2 
+│                        │     ├ VendorSeverity   ╭ amazon: 3 
 │                        │     │                  ├ ghsa  : 1 
 │                        │     │                  ├ nvd   : 2 
 │                        │     │                  ╰ redhat: 2 
@@ -4946,10 +5420,46 @@
 │                                                 https://go.dev/issue/44226          
 │                                                 https://pkg.go.dev/vuln/GO-2026-5932
 │                                                 
-├ [7]  ╭ Target  : usr/bin/kubectl 
-│      ├ Class   : lang-pkgs 
-│      ├ Type    : gobinary 
-│      ╰ Packages 
+├ [7]  ╭ Target         : usr/bin/kubectl 
+│      ├ Class          : lang-pkgs 
+│      ├ Type           : gobinary 
+│      ├ Packages        
+│      ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2026-56851 
+│                              ├ VendorIDs                    
+│                              │                  ────────────
+│                              │                  GO-2026-6629
+│                              │                  
+│                              ├ PkgID           : golang.org/x/text@v0.40.0 
+│                              ├ PkgName         : golang.org/x/text 
+│                              ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/text@v0.40.0 
+│                              │                  ╰ UID : 966c369de131ff49 
+│                              ├ InstalledVersion: v0.40.0 
+│                              ├ FixedVersion    : 0.41.0 
+│                              ├ Status          : fixed 
+│                              ├ Layer            ╭ Digest: sha256:61cefe04854a96eb5445bb255bdd53cbe7eec6fc9b65
+│                              │                  │         5fe4419ff6a139c1bc5b 
+│                              │                  ╰ DiffID: sha256:d432703a575655a9cb25577f22ccca98fb41d54b3515
+│                              │                            132d0fc1ecb94bc8f1c7 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56851 
+│                              ├ DataSource       ╭ ID  : govulndb 
+│                              │                  ├ Name: The Go Vulnerability Database 
+│                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                              ├ Fingerprint     : sha256:2954e15b6ebcd642f580fac03b0eff94963cb2c296f73edb03466
+│                              │                   10cdeaf8b45 
+│                              ├ Title           : The Nickname profile can panic with an out-of-bounds slice
+│                              │                   error when  ... 
+│                              ├ Description     : The Nickname profile can panic with an out-of-bounds slice
+│                              │                   error when transforming crafted input into a short
+│                              │                   destination buffer. 
+│                              ├ Severity        : UNKNOWN 
+│                              ├ References                                           
+│                              │                  ────────────────────────────────────
+│                              │                  https://go.dev/cl/793360            
+│                              │                  https://go.dev/issue/80112          
+│                              │                  https://pkg.go.dev/vuln/GO-2026-6629
+│                              │                  
+│                              ├ PublishedDate   : 2026-10-07T18:17:20.903Z 
+│                              ╰ LastModifiedDate: 2026-10-07T18:17:20.903Z 
 ├ [8]  ╭ Target  : usr/bin/pebble 
 │      ├ Class   : lang-pkgs 
 │      ├ Type    : gobinary 
@@ -5377,8 +5887,8 @@
 │                        │     │                                                                               
 │                        │     │                  https://github.com/containerd/containerd/commit/22ccf4314d1fe
 │                        │     │                  0834f8e28f10d37d5305ef9880c                                  
-│                        │     │                  https://github.com/containerd/containerd/commit/5a2a3a759b0d2
-│                        │     │                  ad8c821b33c3afc20890daf6d81                                  
+│                        │     │                  https://sourceware.org/bugzilla/show_bug.cgi?id=34624        
+│                        │     │                                                                               
 │                        │     │                  https://github.com/containerd/containerd/commit/9ec55f024041d
 │                        │     │                  0641f6d79841e45c8781141ddaa                                  
 │                        │     │                  https://github.com/containerd/containerd/commit/eebea8c4c912f
@@ -5666,10 +6176,10 @@
 │                        │     │                   has been patched in Docker Engine version 29.5.1 and Moby
 │                        │     │                   Daemon version 2.0.0-beta.14. 
 │                        │     ├ Severity        : MEDIUM 
-│                        │     ├ CweIDs                  
-│                        │     │                  ───────
-│                        │     │                  CWE-81 
-│                        │     │                  CWE-367
+│                        │     ├ CweIDs                              
+│                        │     │                  ───────────────────
+│                        │     │                  GHSA-8wmf-6v46-5gfg
+│                        │     │                  CWE-367            
 │                        │     │                  
 │                        │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                        │     │                  ╰ redhat: 1 
@@ -6799,7 +7309,43 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-07-21T20:17:02.867Z 
 │                        │      ╰ LastModifiedDate: 2026-07-23T18:27:48.877Z 
-│                        ├ [11] ╭ VulnerabilityID : CVE-2026-84304 
+│                        ├ [11] ╭ VulnerabilityID : CVE-2026-56851 
+│                        │      ├ VendorIDs                    
+│                        │      │                  ────────────
+│                        │      │                  GO-2026-6629
+│                        │      │                  
+│                        │      ├ PkgID           : golang.org/x/text@v0.38.0 
+│                        │      ├ PkgName         : golang.org/x/text 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/text@v0.38.0 
+│                        │      │                  ╰ UID : 23d84dcd6ab5ac00 
+│                        │      ├ InstalledVersion: v0.38.0 
+│                        │      ├ FixedVersion    : 0.41.0 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:61cefe04854a96eb5445bb255bdd53cbe7eec6fc9b6
+│                        │      │                  │         55fe4419ff6a139c1bc5b 
+│                        │      │                  ╰ DiffID: sha256:d432703a575655a9cb25577f22ccca98fb41d54b351
+│                        │      │                            5132d0fc1ecb94bc8f1c7 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56851 
+│                        │      ├ DataSource       ╭ ID  : govulndb 
+│                        │      │                  ├ Name: The Go Vulnerability Database 
+│                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                        │      ├ Fingerprint     : sha256:bf06d875484b88fbb6e4ef50b976a875e566c9c7160e8aa8a74e
+│                        │      │                   a40993d1f375 
+│                        │      ├ Title           : The Nickname profile can panic with an out-of-bounds slice
+│                        │      │                   error when  ... 
+│                        │      ├ Description     : The Nickname profile can panic with an out-of-bounds slice
+│                        │      │                   error when transforming crafted input into a short
+│                        │      │                   destination buffer. 
+│                        │      ├ Severity        : UNKNOWN 
+│                        │      ├ References                                           
+│                        │      │                  ────────────────────────────────────
+│                        │      │                  https://go.dev/cl/793360            
+│                        │      │                  https://go.dev/issue/80112          
+│                        │      │                  https://pkg.go.dev/vuln/GO-2026-6629
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-10-07T18:17:20.903Z 
+│                        │      ╰ LastModifiedDate: 2026-10-07T18:17:20.903Z 
+│                        ├ [12] ╭ VulnerabilityID : CVE-2026-84304 
 │                        │      ├ VendorIDs                           
 │                        │      │                  ───────────────────
 │                        │      │                  GHSA-vp52-pcj8-j9qc
@@ -6875,7 +7421,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-09-01T19:17:30.743Z 
 │                        │      ╰ LastModifiedDate: 2026-09-09T21:09:13.08Z 
-│                        ├ [12] ╭ VulnerabilityID : CVE-2026-84445 
+│                        ├ [13] ╭ VulnerabilityID : CVE-2026-84445 
 │                        │      ├ VendorIDs                           
 │                        │      │                  ───────────────────
 │                        │      │                  GHSA-2v4p-qf9q-27wj
@@ -6926,7 +7472,8 @@
 │                        │      │                  
 │                        │      ├ VendorSeverity   ╭ azure : 3 
 │                        │      │                  ├ ghsa  : 3 
-│                        │      │                  ╰ redhat: 3 
+│                        │      │                  ├ redhat: 3 
+│                        │      │                  ╰ rocky : 3 
 │                        │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N
 │                        │      │                  │        │            /VI:N/VA:H/SC:N/SI:N/SA:N 
 │                        │      │                  │        ╰ V40Score : 8.7 
@@ -6935,8 +7482,16 @@
 │                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References                                                                   
 │                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://github.com/uutils/coreutils                         
 │                        │      │                  https://access.redhat.com/security/cve/CVE-2026-84445       
+│                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2533175         
+│                        │      │                  https://creativecommons.org/licenses/by/4.0/                
+│                        │      │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-8444
+│                        │      │                  5                                                           
+│                        │      │                  https://errata.rockylinux.org/RLSA-2026:76743               
+│                        │      │                                                                              
 │                        │      │                  https://github.com/grpc/grpc-go                             
+│                        │      │                                                                              
 │                        │      │                  https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089
 │                        │      │                  fd2a195f041762fffb7                                         
 │                        │      │                  https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
@@ -6964,7 +7519,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-09-14T17:17:51.743Z 
 │                        │      ╰ LastModifiedDate: 2026-09-25T14:10:13.927Z 
-│                        ├ [13] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
+│                        ├ [14] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
 │                        │      ├ PkgID           : google.golang.org/grpc@v1.79.3 
 │                        │      ├ PkgName         : google.golang.org/grpc 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.79.3 
@@ -7096,7 +7651,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-07-21T22:03:55Z 
 │                        │      ╰ LastModifiedDate: 2026-07-21T22:03:56Z 
-│                        ├ [14] ╭ VulnerabilityID : CVE-2026-84303 
+│                        ├ [15] ╭ VulnerabilityID : CVE-2026-84303 
 │                        │      ├ VendorIDs                           
 │                        │      │                  ───────────────────
 │                        │      │                  GHSA-qc2q-p7wx-3px3
@@ -7163,7 +7718,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-09-01T19:17:30.6Z 
 │                        │      ╰ LastModifiedDate: 2026-09-09T21:09:13.08Z 
-│                        ├ [15] ╭ VulnerabilityID : CVE-2026-33818 
+│                        ├ [16] ╭ VulnerabilityID : CVE-2026-33818 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-5972
@@ -7243,7 +7798,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:19.84Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ├ [16] ╭ VulnerabilityID : CVE-2026-39821 
+│                        ├ [17] ╭ VulnerabilityID : CVE-2026-39821 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-5026
@@ -7524,12 +8079,14 @@
 │                        │      │                                                                              
 │                        │      │                  https://ubuntu.com/security/notices/USN-8883-1              
 │                        │      │                                                                              
+│                        │      │                  https://ubuntu.com/security/notices/USN-8900-1              
+│                        │      │                                                                              
 │                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-39821             
 │                        │      │                                                                              
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
 │                        │      ╰ LastModifiedDate: 2026-09-17T12:18:05.767Z 
-│                        ├ [17] ╭ VulnerabilityID : CVE-2026-56853 
+│                        ├ [18] ╭ VulnerabilityID : CVE-2026-56853 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-6089
@@ -7558,9 +8115,9 @@
 │                        │      │                   they contain the HTTP/2 client preface. ReadHeaderTimeout
 │                        │      │                   is unexpectedly not being applied when doing this. 
 │                        │      ├ Severity        : HIGH 
-│                        │      ├ CweIDs                  
-│                        │      │                  ───────
-│                        │      │                  CWE-770
+│                        │      ├ CweIDs                       
+│                        │      │                  ────────────
+│                        │      │                  GO-2026-6091
 │                        │      │                  
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
 │                        │      │                  ├ amazon     : 3 
@@ -7610,7 +8167,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:22.093Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ├ [18] ╭ VulnerabilityID : CVE-2026-56858 
+│                        ├ [19] ╭ VulnerabilityID : CVE-2026-56858 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-6091
@@ -7646,7 +8203,7 @@
 │                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ oracle-oval: 3 
-│                        │      │                  ├ photon     : 4 
+│                        │      │                  ├ photon     : 2 
 │                        │      │                  ├ redhat     : 3 
 │                        │      │                  ╰ rocky      : 3 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I
@@ -7690,7 +8247,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:22.207Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ├ [19] ╭ VulnerabilityID : CVE-2026-56859 
+│                        ├ [20] ╭ VulnerabilityID : CVE-2026-56859 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-6088
@@ -7779,7 +8336,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:22.32Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ├ [20] ╭ VulnerabilityID : CVE-2026-56860 
+│                        ├ [21] ╭ VulnerabilityID : CVE-2026-56860 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-6218
@@ -7820,7 +8377,7 @@
 │                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ oracle-oval: 3 
-│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ photon     : 2 
 │                        │      │                  ├ redhat     : 3 
 │                        │      │                  ╰ rocky      : 3 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
@@ -7864,7 +8421,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:22.44Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ╰ [21] ╭ VulnerabilityID : CVE-2026-56862 
+│                        ╰ [22] ╭ VulnerabilityID : CVE-2026-56862 
 │                               ├ VendorIDs                    
 │                               │                  ────────────
 │                               │                  GO-2026-6090
@@ -8979,7 +9536,43 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-07-21T20:17:02.867Z 
 │                        │      ╰ LastModifiedDate: 2026-07-23T18:27:48.877Z 
-│                        ├ [13] ╭ VulnerabilityID : CVE-2026-84304 
+│                        ├ [13] ╭ VulnerabilityID : CVE-2026-56851 
+│                        │      ├ VendorIDs                    
+│                        │      │                  ────────────
+│                        │      │                  GO-2026-6629
+│                        │      │                  
+│                        │      ├ PkgID           : golang.org/x/text@v0.37.0 
+│                        │      ├ PkgName         : golang.org/x/text 
+│                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/text@v0.37.0 
+│                        │      │                  ╰ UID : 8481703a747ddd9e 
+│                        │      ├ InstalledVersion: v0.37.0 
+│                        │      ├ FixedVersion    : 0.41.0 
+│                        │      ├ Status          : fixed 
+│                        │      ├ Layer            ╭ Digest: sha256:61cefe04854a96eb5445bb255bdd53cbe7eec6fc9b6
+│                        │      │                  │         55fe4419ff6a139c1bc5b 
+│                        │      │                  ╰ DiffID: sha256:d432703a575655a9cb25577f22ccca98fb41d54b351
+│                        │      │                            5132d0fc1ecb94bc8f1c7 
+│                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56851 
+│                        │      ├ DataSource       ╭ ID  : govulndb 
+│                        │      │                  ├ Name: The Go Vulnerability Database 
+│                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                        │      ├ Fingerprint     : sha256:929f45b0ba18f744a9f141691f65341934640af884feea18045b
+│                        │      │                   33a4a0069a94 
+│                        │      ├ Title           : The Nickname profile can panic with an out-of-bounds slice
+│                        │      │                   error when  ... 
+│                        │      ├ Description     : The Nickname profile can panic with an out-of-bounds slice
+│                        │      │                   error when transforming crafted input into a short
+│                        │      │                   destination buffer. 
+│                        │      ├ Severity        : UNKNOWN 
+│                        │      ├ References                                           
+│                        │      │                  ────────────────────────────────────
+│                        │      │                  https://go.dev/cl/793360            
+│                        │      │                  https://go.dev/issue/80112          
+│                        │      │                  https://pkg.go.dev/vuln/GO-2026-6629
+│                        │      │                  
+│                        │      ├ PublishedDate   : 2026-10-07T18:17:20.903Z 
+│                        │      ╰ LastModifiedDate: 2026-10-07T18:17:20.903Z 
+│                        ├ [14] ╭ VulnerabilityID : CVE-2026-84304 
 │                        │      ├ VendorIDs                           
 │                        │      │                  ───────────────────
 │                        │      │                  GHSA-vp52-pcj8-j9qc
@@ -9055,7 +9648,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-09-01T19:17:30.743Z 
 │                        │      ╰ LastModifiedDate: 2026-09-09T21:09:13.08Z 
-│                        ├ [14] ╭ VulnerabilityID : CVE-2026-84445 
+│                        ├ [15] ╭ VulnerabilityID : CVE-2026-84445 
 │                        │      ├ VendorIDs                           
 │                        │      │                  ───────────────────
 │                        │      │                  GHSA-2v4p-qf9q-27wj
@@ -9106,7 +9699,8 @@
 │                        │      │                  
 │                        │      ├ VendorSeverity   ╭ azure : 3 
 │                        │      │                  ├ ghsa  : 3 
-│                        │      │                  ╰ redhat: 3 
+│                        │      │                  ├ redhat: 3 
+│                        │      │                  ╰ rocky : 3 
 │                        │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N
 │                        │      │                  │        │            /VI:N/VA:H/SC:N/SI:N/SA:N 
 │                        │      │                  │        ╰ V40Score : 8.7 
@@ -9115,8 +9709,16 @@
 │                        │      │                           ╰ V3Score : 7.5 
 │                        │      ├ References                                                                   
 │                        │      │                  ────────────────────────────────────────────────────────────
+│                        │      │                  https://access.redhat.com/errata/RHSA-2026:76743            
 │                        │      │                  https://access.redhat.com/security/cve/CVE-2026-84445       
+│                        │      │                  https://bugzilla.redhat.com/show_bug.cgi?id=2533175         
+│                        │      │                  https://creativecommons.org/licenses/by/4.0/                
+│                        │      │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-8444
+│                        │      │                  5                                                           
+│                        │      │                  https://errata.rockylinux.org/RLSA-2026:76743               
+│                        │      │                                                                              
 │                        │      │                  https://github.com/grpc/grpc-go                             
+│                        │      │                                                                              
 │                        │      │                  https://github.com/grpc/grpc-go/commit/3822494d8ea03b992c089
 │                        │      │                  fd2a195f041762fffb7                                         
 │                        │      │                  https://github.com/grpc/grpc-go/commit/8668b69c167df908b6b36
@@ -9144,7 +9746,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-09-14T17:17:51.743Z 
 │                        │      ╰ LastModifiedDate: 2026-09-25T14:10:13.927Z 
-│                        ├ [15] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
+│                        ├ [16] ╭ VulnerabilityID : GHSA-hrxh-6v49-42gf 
 │                        │      ├ PkgID           : google.golang.org/grpc@v1.81.1 
 │                        │      ├ PkgName         : google.golang.org/grpc 
 │                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/google.golang.org/grpc@v1.81.1 
@@ -9276,7 +9878,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-07-21T22:03:55Z 
 │                        │      ╰ LastModifiedDate: 2026-07-21T22:03:56Z 
-│                        ├ [16] ╭ VulnerabilityID : CVE-2026-84303 
+│                        ├ [17] ╭ VulnerabilityID : CVE-2026-84303 
 │                        │      ├ VendorIDs                           
 │                        │      │                  ───────────────────
 │                        │      │                  GHSA-qc2q-p7wx-3px3
@@ -9343,7 +9945,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-09-01T19:17:30.6Z 
 │                        │      ╰ LastModifiedDate: 2026-09-09T21:09:13.08Z 
-│                        ├ [17] ╭ VulnerabilityID : CVE-2026-27145 
+│                        ├ [18] ╭ VulnerabilityID : CVE-2026-27145 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-5037
@@ -9525,7 +10127,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-06-02T23:16:35.57Z 
 │                        │      ╰ LastModifiedDate: 2026-09-18T13:17:43.283Z 
-│                        ├ [18] ╭ VulnerabilityID : CVE-2026-33818 
+│                        ├ [19] ╭ VulnerabilityID : CVE-2026-33818 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-5972
@@ -9605,7 +10207,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:19.84Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ├ [19] ╭ VulnerabilityID : CVE-2026-39821 
+│                        ├ [20] ╭ VulnerabilityID : CVE-2026-39821 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-5026
@@ -9886,12 +10488,14 @@
 │                        │      │                                                                              
 │                        │      │                  https://ubuntu.com/security/notices/USN-8883-1              
 │                        │      │                                                                              
+│                        │      │                  https://ubuntu.com/security/notices/USN-8900-1              
+│                        │      │                                                                              
 │                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-39821             
 │                        │      │                                                                              
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
 │                        │      ╰ LastModifiedDate: 2026-09-17T12:18:05.767Z 
-│                        ├ [20] ╭ VulnerabilityID : CVE-2026-39822 
+│                        ├ [21] ╭ VulnerabilityID : CVE-2026-39822 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-4970
@@ -9927,7 +10531,7 @@
 │                        │      │                  CWE-61
 │                        │      │                  
 │                        │      ├ VendorSeverity   ╭ alma       : 3 
-│                        │      │                  ├ amazon     : 2 
+│                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ azure      : 3 
 │                        │      │                  ├ bitnami    : 3 
 │                        │      │                  ├ oracle-oval: 3 
@@ -9961,7 +10565,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-07-08T17:17:21.31Z 
 │                        │      ╰ LastModifiedDate: 2026-09-17T17:10:20.047Z 
-│                        ├ [21] ╭ VulnerabilityID : CVE-2026-42504 
+│                        ├ [22] ╭ VulnerabilityID : CVE-2026-42504 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-5038
@@ -10061,7 +10665,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-06-02T23:16:37.927Z 
 │                        │      ╰ LastModifiedDate: 2026-07-22T19:10:00.12Z 
-│                        ├ [22] ╭ VulnerabilityID : CVE-2026-46600 
+│                        ├ [23] ╭ VulnerabilityID : CVE-2026-46600 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-5942
@@ -10114,7 +10718,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-07-21T20:17:01.213Z 
 │                        │      ╰ LastModifiedDate: 2026-08-14T16:16:55.673Z 
-│                        ├ [23] ╭ VulnerabilityID : CVE-2026-56853 
+│                        ├ [24] ╭ VulnerabilityID : CVE-2026-56853 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-6089
@@ -10195,7 +10799,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:22.093Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ├ [24] ╭ VulnerabilityID : CVE-2026-56858 
+│                        ├ [25] ╭ VulnerabilityID : CVE-2026-56858 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-6091
@@ -10231,7 +10835,7 @@
 │                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ oracle-oval: 3 
-│                        │      │                  ├ photon     : 4 
+│                        │      │                  ├ photon     : 2 
 │                        │      │                  ├ redhat     : 3 
 │                        │      │                  ╰ rocky      : 3 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I
@@ -10275,7 +10879,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:22.207Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ├ [25] ╭ VulnerabilityID : CVE-2026-56859 
+│                        ├ [26] ╭ VulnerabilityID : CVE-2026-56859 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-6088
@@ -10364,7 +10968,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:22.32Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ├ [26] ╭ VulnerabilityID : CVE-2026-56860 
+│                        ├ [27] ╭ VulnerabilityID : CVE-2026-56860 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-6218
@@ -10405,7 +11009,7 @@
 │                        │      │                  ├ amazon     : 3 
 │                        │      │                  ├ bitnami    : 2 
 │                        │      │                  ├ oracle-oval: 3 
-│                        │      │                  ├ photon     : 3 
+│                        │      │                  ├ photon     : 2 
 │                        │      │                  ├ redhat     : 3 
 │                        │      │                  ╰ rocky      : 3 
 │                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I
@@ -10449,7 +11053,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:22.44Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ├ [27] ╭ VulnerabilityID : CVE-2026-56862 
+│                        ├ [28] ╭ VulnerabilityID : CVE-2026-56862 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-6090
@@ -10532,7 +11136,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-08-13T22:17:22.55Z 
 │                        │      ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
-│                        ├ [28] ╭ VulnerabilityID : CVE-2026-42505 
+│                        ├ [29] ╭ VulnerabilityID : CVE-2026-42505 
 │                        │      ├ VendorIDs                    
 │                        │      │                  ────────────
 │                        │      │                  GO-2026-5856
@@ -10594,7 +11198,7 @@
 │                        │      │                  
 │                        │      ├ PublishedDate   : 2026-07-08T17:17:21.497Z 
 │                        │      ╰ LastModifiedDate: 2026-09-16T20:14:44.473Z 
-│                        ╰ [29] ╭ VulnerabilityID : CVE-2026-42507 
+│                        ╰ [30] ╭ VulnerabilityID : CVE-2026-42507 
 │                               ├ VendorIDs                    
 │                               │                  ────────────
 │                               │                  GO-2026-5039
