@@ -70,13 +70,16 @@ exec "$@"
 SH
 cat > "$tmp/bin/kubectl" <<'SH'
 #!/usr/bin/env bash
-case "$*" in *'wait node'*) exit 1;; *'get pods'*) echo '{"items":[{"status":{"phase":"Running"}}]}';; esac
+case "$*" in *'wait node'*) echo 'fixture node not Ready' >&2; exit 1;; *'get pods'*) echo '{"items":[{"status":{"phase":"Running"}}]}';; esac
 SH
 printf '#!/usr/bin/env bash\nexit 0\n' > "$tmp/bin/docker"
 printf '#!/usr/bin/env bash\nexit 0\n' > "$tmp/bin/curl"
 chmod +x "$tmp/bin/timeout" "$tmp/bin/kubectl" "$tmp/bin/docker" "$tmp/bin/curl"
 PATH="$tmp/bin:$PATH" D3K_LIB_DIR="$root/scripts" D3K_RUNTIME_DIR="$tmp/run" NODOCKER=false NOK8S=false NOSSH=true bash scripts/runtime.sh snapshot > "$tmp/unready"
 awk -F '\t' '$1=="Kubernetes" && $2!="ready"{found=1} END{exit !found}' "$tmp/unready"
+grep -q 'fixture node not Ready' "$tmp/run/kube-nodes.log"
+test -s "$tmp/run/kube-api.log"
+test ! -e "$tmp/run/kube-coredns.log"
 printf '#!/usr/bin/env bash\nprintf "<%%s>\\n" "$@"\n' > "$tmp/bin/docker"
 PATH="$tmp/bin:$PATH" sh scripts/docker-compose.sh -f 'a b.yaml' config > "$tmp/compose"
 printf '<compose>\n<-f>\n<a b.yaml>\n<config>\n' > "$tmp/compose.expected"
@@ -105,3 +108,4 @@ done
 (export PATH="$tmp/bin:$PATH" D3K_RUNTIME_DIR="$tmp/run" D3K_TEST_CGROUP_DRIVER=systemd D3K_TEST_CGROUP_VERSION=2; d3k_rootless_cgroups)
 grep -q 'effective_resource_limits=NOT TESTED' "$tmp/run/rootless-cgroups.txt"
 echo 'PASS: syntax, booleans, mode/endpoint/timeout rejection, argv/stdin/stderr/exit status, NODOCKER probes'
+bash tests/scan.sh

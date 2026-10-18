@@ -67,30 +67,64 @@ jobs:
         D3K_TEST_PRIVILEGED: '1'
       run: bash scripts/measure.sh d3k-ci:candidate .evidence/measurements
     - name: Experimental rootless feasibility and shared workflows (no promotion gate)
+      id: rootless
       if: always()
       continue-on-error: true
       env:
         D3K_TEST_PRIVILEGED: '1'
         D3K_TEST_MODE: rootless
       run: bash tests/integration.sh d3k-ci:candidate .evidence/rootless-integration
-    - name: Scan the retained archive
+    - name: Report experimental rootless outcome
       if: always()
+      env:
+        OUTCOME: ${{ steps.rootless.outcome }}
+      run: |
+        {
+          echo '### Experimental rootless workflows'
+          case "$OUTCOME" in
+            success) echo 'Workflow suite: PASS. This does not promote rootless support.';;
+            failure) echo '**FAIL — rootless feasibility/workflows did not pass.** No rootful fallback or automatic Kubernetes disablement.';;
+            *) echo 'Workflow suite: NOT TESTED.';;
+          esac
+          if [ -f .evidence/rootless-integration/docker-only/runtime/rootless-cgroups.txt ]; then
+            echo '```text'
+            cat .evidence/rootless-integration/docker-only/runtime/rootless-cgroups.txt
+            echo '```'
+          fi
+          echo 'See retained rootless-integration logs for the failing prerequisite or test.'
+        } >> "$GITHUB_STEP_SUMMARY"
+    - name: Prepare one shared scanner database snapshot
+      id: scan-db
+      if: always()
+      run: bash scripts/scan.sh prepare .evidence/scanner
+    - name: Scan the retained OCI candidate
+      if: always() && steps.scan-db.outcome == 'success'
+      env:
+        D3K_SCAN_PLATFORM: linux/${{ matrix.arch }}
+      run: bash scripts/scan.sh oci-archive .evidence/candidate.tar .evidence/scanner .evidence/candidate-scan.json
+    - name: Scan immutable published reference independently
+      if: always() && steps.scan-db.outcome == 'success'
       env:
         D3K_SCAN_PLATFORM: linux/${{ matrix.arch }}
       run: |
-        if [ -f .evidence/candidate.tar ]; then
-          bash scripts/scan.sh prepare .evidence/scanner
-          bash scripts/scan.sh archive .evidence/candidate.tar .evidence/scanner .evidence/candidate-scan.json
-          source scripts/lock.sh
-          export D3K_LOCK_FILE=$PWD/versions.yaml
-          bash scripts/scan.sh image "$(lock_get PUBLISHED_BUILD)" .evidence/scanner .evidence/reference-scan.json
-          mkdir -p .evidence/nested-scans
-          for key in K3S_IMAGE REGISTRY_IMAGE K3D_PROXY_IMAGE K3D_TOOLS_IMAGE SOCKS_IMAGE; do
-            bash scripts/scan.sh image "$(lock_get "$key")" .evidence/scanner ".evidence/nested-scans/$key.json"
-          done
-        fi
+        source scripts/lock.sh
+        export D3K_LOCK_FILE=$PWD/versions.yaml
+        bash scripts/scan.sh image "$(lock_get PUBLISHED_BUILD)" .evidence/scanner .evidence/reference-scan.json
+    - name: Scan all nested inputs independently
+      if: always() && steps.scan-db.outcome == 'success'
+      env:
+        D3K_SCAN_PLATFORM: linux/${{ matrix.arch }}
+      run: |
+        source scripts/lock.sh
+        export D3K_LOCK_FILE=$PWD/versions.yaml
+        mkdir -p .evidence/nested-scans
+        result=0
+        for key in K3S_IMAGE REGISTRY_IMAGE K3D_PROXY_IMAGE K3D_TOOLS_IMAGE SOCKS_IMAGE; do
+          if ! bash scripts/scan.sh image "$(lock_get "$key")" .evidence/scanner ".evidence/nested-scans/$key.json"; then result=1; fi
+        done
+        exit "$result"
     - name: Build and scan a labelled fresh Ubuntu control
-      if: always()
+      if: always() && steps.scan-db.outcome == 'success'
       env:
         D3K_SCAN_PLATFORM: linux/${{ matrix.arch }}
       run: |

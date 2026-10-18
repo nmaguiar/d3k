@@ -14,6 +14,8 @@ if ! docker info >/dev/null 2>&1; then
 fi
 name=d3k-test-$(date +%s)-$$
 cleanup() {
+  local code=$?
+  if [ "$code" != 0 ]; then bash "$root/tests/diagnostics.sh" "$name" "$out/diagnostics" || true; fi
   docker logs "$name" > "$out/container.log" 2>&1 || true
   docker cp "$name:/run/d3k/startup.log" "$out/startup.log" 2>/dev/null || true
   docker rm -f "$name" >/dev/null 2>&1 || true

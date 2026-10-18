@@ -369,3 +369,46 @@ Gate outcome: **experimental, not accepted**. Phase 1 remains closed and Phase 3
 has not started. Full-image, release, publishing, latest/default changes and
 native support approval remain outstanding. Rollback uses the retained Phase 1
 image and its rootful volume; no rootless data is migrated or deleted.
+
+## CI diagnostic and scan patch — 2026-10-18
+
+Run `39142972784` built/imported both native candidates, passed the ordinary
+regressions and rootful Docker-only SOCKS, then timed out on Kubernetes readiness.
+k3d logged successful cluster creation; the retained evidence did not identify
+which API/node/CoreDNS probe failed. No Kubernetes root cause or fix is claimed.
+
+The patch retains timestamped probe outputs and, before failed-test cleanup,
+collects bounded API/node/pod/event/CoreDNS and inner node log diagnostics.
+Diagnostic output excludes raw kubeconfig, Secret objects and full container
+configuration; credential-related log lines are redacted. It does not loosen
+readiness, alter host policy or disable Kubernetes.
+
+The candidate scan failed because Trivy was given a BuildKit OCI tar as if it
+were a Docker archive. The `oci-archive` scan action now extracts the original
+candidate into a temporary OCI layout and mounts that layout read-only. Original
+manifests/attestations remain in the retained archive. Reports are published
+atomically after scanner success; errors retain stderr without an empty success
+report. Candidate/reference/nested scans run independently against one DB
+snapshot. Comparisons record NOT TESTED and fail explicitly for missing inputs.
+
+Local verification used the **original arm64 candidate archive downloaded from
+that failed run**, with the frozen Phase 1 scanner DB. The OCI scan succeeded;
+its reported ImageID exactly matched CI's imported/tested image:
+`sha256:3db3cc03189cb80c06c309ab8f080478a13f0a3861a4e34e16c45732432fdbcd`.
+This verifies the archive path against CI evidence without rebuilding the image.
+The local default buildx driver rejected attestation output; no host settings or
+privileged local builder were added to bypass that restriction.
+
+Also passed: `bash tests/fast.sh` (including retained node-probe error and OCI
+transport/atomic-failure/cleanup regressions with a mocked scanner), ShellCheck
+warning/error checks, YAML parsing and `git diff --check`; actual OpenAF/oJob
+missing-input comparison returned 1 with a NOT TESTED report, and same-scan
+comparison returned 0. The read-only diagnostics helper captured expected
+missing-cluster errors in an owned ordinary container, then that container was
+removed. Evidence is in ignored `.evidence/ci-patch/`.
+
+Rootless native execution in the failed run reached daemon identity, then
+reported cgroup v2 with driver `none` and stopped at the intended feasibility gate.
+No effective resource limits or rootless workflow parity passed. A new job
+summary displays this failure even though the experimental step remains
+non-blocking. Phase 1/2 support and release gates remain closed.

@@ -8,6 +8,15 @@ d3k_resolve
 state() { printf '%s\n' "$2" > "$D3K_RUNTIME_DIR/$1.state.tmp"; mv "$D3K_RUNTIME_DIR/$1.state.tmp" "$D3K_RUNTIME_DIR/$1.state"; }
 remaining() { local n=$((deadline - SECONDS)); [ "$n" -gt 0 ] || return 1; printf '%s' "$n"; }
 run() { local n; n=$(remaining) || return 124; timeout --foreground -k 2 "$n" "$@"; }
+kube_check() {
+  local label=$1 code=0
+  shift
+  # Retain the last individual probe result instead of discarding its error.
+  # No kubeconfig credentials or Secret objects are queried here.
+  { date -u '+%Y-%m-%dT%H:%M:%SZ'; timeout 5 kubectl --context k3d-k3s-default --request-timeout=4s "$@"; } > "$D3K_RUNTIME_DIR/kube-$label.log.tmp" 2>&1 || code=$?
+  mv "$D3K_RUNTIME_DIR/kube-$label.log.tmp" "$D3K_RUNTIME_DIR/kube-$label.log"
+  return "$code"
+}
 probe() {
   case "$1" in
     Docker)
@@ -15,9 +24,9 @@ probe() {
         [ "$(cat "$D3K_RUNTIME_DIR/rootless-feasibility.state" 2>/dev/null)" = ready ] && d3k_rootless_identity
       else timeout 5 docker info >/dev/null 2>&1; fi ;;
     Kubernetes)
-      timeout 5 kubectl --context k3d-k3s-default --request-timeout=4s get --raw=/readyz >/dev/null 2>&1 &&
-      timeout 5 kubectl --context k3d-k3s-default --request-timeout=4s wait node --all --for=condition=Ready --timeout=1s >/dev/null 2>&1 &&
-      timeout 5 kubectl --context k3d-k3s-default --request-timeout=4s -n kube-system rollout status deployment/coredns --timeout=1s >/dev/null 2>&1
+      kube_check api get --raw=/readyz &&
+      kube_check nodes wait node --all --for=condition=Ready --timeout=1s &&
+      kube_check coredns -n kube-system rollout status deployment/coredns --timeout=1s
       ;;
     SOCKS)
       if [ "$NOK8S" = true ]; then

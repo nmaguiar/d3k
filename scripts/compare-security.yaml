@@ -3,6 +3,15 @@ todo:
 jobs:
 - name: Compare retained scans
   exec: |
+    var missing = [args.baseline, args.candidate].filter(function(path) {
+      return !isString(path) || !io.fileExists(path) || io.readFileString(path).trim().length === 0
+    })
+    if (missing.length > 0) {
+      var reason = "Security comparison NOT TESTED: missing or empty scan inputs"
+      io.writeFileJSON(args.output, { status: "NOT TESTED", reason: reason, inputs: missing })
+      printErr(reason + ": " + missing.join(", "))
+      exit(1)
+    }
     var result = $sh([getOpenAFPath().replace(/\/?$/, "/") + "oaf-sb", "scripts/security-report.js", "baseline=" + args.baseline, "candidate=" + args.candidate, "gate=true"]).get(0)
     io.writeFileString(args.output, result.stdout)
     if (result.exitcode != 0) {

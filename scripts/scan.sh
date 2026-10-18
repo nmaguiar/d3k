@@ -5,7 +5,7 @@ root=$(cd "$(dirname "$0")/.." && pwd)
 source "$root/scripts/lock.sh"
 export D3K_LOCK_FILE=$root/versions.yaml
 scanner=$(lock_get TRIVY_IMAGE)
-action=${1:?prepare|archive|image}
+action=${1:?prepare|archive|oci-archive|image}
 if [ "$action" = prepare ]; then
   mkdir -p "${2:?cache directory}"
   cache=$(cd "$2" && pwd)
@@ -23,8 +23,22 @@ case "$platform" in linux/amd64|linux/arm64) ;; *) exit 2;; esac
 [ -s "$cache/database.sha256" ] || { echo 'Prepare one shared scanner database snapshot first' >&2; exit 2; }
 mkdir -p "$(dirname "$out")"
 destination=$(cd "$(dirname "$out")" && pwd)/$(basename "$out")
+layout='' report=''
+cleanup() { [ -z "$report" ] || rm -f "$report"; [ -z "$layout" ] || rm -rf "$layout"; }
+trap cleanup EXIT
+rm -f "$destination" "$destination.sha256" "$destination.stderr"
+report=$(mktemp "${destination}.partial.XXXXXXXX")
 command=(docker run --rm -v "$cache/db:/root/.cache/trivy/db:ro" -v "$cache/java-db:/root/.cache/trivy/java-db:ro" --tmpfs '/root/.cache/trivy/fanal:rw,size=268435456')
-if [ "$action" = archive ]; then
+if [ "$action" = oci-archive ]; then
+  # Trivy accepts an OCI layout directory, not a BuildKit OCI tar as --input.
+  # Extract only our built candidate into a private temporary directory. Keep
+  # its original archive, manifests and attestations unchanged for release review.
+  layout=$(mktemp -d "${TMPDIR:-/tmp}/d3k-oci.XXXXXXXX")
+  tar -xf "$input" -C "$layout"
+  test -s "$layout/index.json" && test -s "$layout/oci-layout"
+  command+=(-v "$layout:/input-oci:ro")
+  target=(--input /input-oci)
+elif [ "$action" = archive ]; then
   archive=$(cd "$(dirname "$input")" && pwd)/$(basename "$input")
   command+=(-v "$archive:/input.tar:ro")
   target=(--input /input.tar)
@@ -33,5 +47,13 @@ elif [ "$action" = image ]; then
   target=("$input")
 else exit 2; fi
 # Avoid an image socket mount. Archive scanning cannot control the host daemon.
-"${command[@]}" "$scanner" image --platform "$platform" --skip-db-update --skip-java-db-update --scanners vuln --format json --list-all-pkgs "${target[@]}" > "$destination"
+if "${command[@]}" "$scanner" image --platform "$platform" --skip-db-update --skip-java-db-update --scanners vuln --format json --list-all-pkgs "${target[@]}" > "$report" 2> "$destination.stderr"; then
+  test -s "$report"
+  mv "$report" "$destination"
+else
+  code=$?
+  cat "$destination.stderr" >&2
+  echo "d3k: scan failed (exit $code); no complete report at $destination" >&2
+  exit "$code"
+fi
 shasum -a 256 "$destination" > "$destination.sha256"
