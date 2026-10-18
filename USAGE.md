@@ -43,6 +43,9 @@ for the selected Docker/K3s versions.
 > Execute `status.js` to wait for enabled components, or use
 > `status.js check=true json=true timeout=300` for bounded automation. Startup
 > happens at container entry, independently of login shells.
+> Automated checks retry transient degradation within the deadline; an explicit
+> failed component returns nonzero immediately. Ordinary status reports degradation
+> immediately.
 
 This privileged compatibility profile retains unrestricted sudo and rootful
 Docker. It is a development playground, not a proven isolation boundary for

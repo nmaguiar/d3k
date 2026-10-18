@@ -4,6 +4,7 @@ lib=${D3K_LIB_DIR:-/usr/local/lib/d3k}
 source "$lib/environment.sh"
 source "$lib/lock.sh"
 source "$lib/rootless.sh"
+source "$lib/engine.sh"
 d3k_resolve
 state() { printf '%s\n' "$2" > "$D3K_RUNTIME_DIR/$1.state.tmp"; mv "$D3K_RUNTIME_DIR/$1.state.tmp" "$D3K_RUNTIME_DIR/$1.state"; }
 remaining() { local n=$((deadline - SECONDS)); [ "$n" -gt 0 ] || return 1; printf '%s' "$n"; }
@@ -24,15 +25,17 @@ kube_endpoint() {
   [ "$endpoint" = "https://127.0.0.1:$port" ] || return 1
   echo "d3k: Kubernetes API endpoint $endpoint"
 }
-kube_check() {
-  local label=$1 code=0
+kube_check() (
+  local label=$1 code=0 temporary
   shift
   # Retain the last individual probe result instead of discarding its error.
   # No kubeconfig credentials or Secret objects are queried here.
-  { date -u '+%Y-%m-%dT%H:%M:%SZ'; timeout 5 kubectl --context k3d-k3s-default --request-timeout=4s "$@"; } > "$D3K_RUNTIME_DIR/kube-$label.log.tmp" 2>&1 || code=$?
-  mv "$D3K_RUNTIME_DIR/kube-$label.log.tmp" "$D3K_RUNTIME_DIR/kube-$label.log"
+  temporary=$(mktemp "$D3K_RUNTIME_DIR/kube-$label.XXXXXXXX")
+  trap 'rm -f "$temporary"' EXIT
+  { date -u '+%Y-%m-%dT%H:%M:%SZ'; timeout 5 kubectl --context k3d-k3s-default --request-timeout=4s "$@"; } > "$temporary" 2>&1 || code=$?
+  mv "$temporary" "$D3K_RUNTIME_DIR/kube-$label.log"
   return "$code"
-}
+)
 probe() {
   case "$1" in
     Docker)
@@ -57,7 +60,20 @@ probe() {
     *) return 2 ;;
   esac
 }
-wait_for() { until run "$0" probe "$1"; do remaining >/dev/null || return 124; sleep 1; done; }
+wait_for() {
+  local engine_code
+  until run "$0" probe "$1"; do
+    if [ -n "${engine_child:-}" ] && ! d3k_child_alive "$engine_child"; then
+      engine_code=0
+      wait "$engine_child" || engine_code=$?
+      state Docker failed
+      echo "d3k: managed engine exited (exit $engine_code) before $1 readiness; see startup.log" >&2
+      return 1
+    fi
+    remaining >/dev/null || return 124
+    sleep 1
+  done
+}
 check_bindings() {
   [ "$NOPUBLIC" = true ] || return 0
   local resource addresses address
@@ -76,10 +92,12 @@ snapshot() {
     enabled=true
     case "$component" in SSH) [ "$NOSSH" = false ] || enabled=false;; Docker|SOCKS) [ "$NODOCKER" = false ] || enabled=false;; Kubernetes) [ "$NODOCKER" = false ] && [ "$NOK8S" = false ] || enabled=false;; esac
     if [ "$enabled" = false ]; then printf '%s\tdisabled\tdisabled by configuration\n' "$component"; continue; fi
+    # Observe the journal before probing: a concurrent transition to ready must
+    # not turn an earlier startup probe failure into a new degradation.
+    value=$(cat "$D3K_RUNTIME_DIR/$component.state" 2>/dev/null) || value=starting
     if probe "$component"; then
       printf '%s\tready\tprobe succeeded\n' "$component"
     else
-      value=starting; [ ! -f "$D3K_RUNTIME_DIR/$component.state" ] || value=$(cat "$D3K_RUNTIME_DIR/$component.state")
       case "$value" in ready) value=degraded;; failed) ;; *) value=starting;; esac
       printf '%s\t%s\tsee %s/startup.log\n' "$component" "$value" "$D3K_RUNTIME_DIR"
     fi
@@ -102,17 +120,16 @@ stop() {
     sleep 1
   done
 }
-start() {
-  deadline=$((SECONDS + D3K_STARTUP_TIMEOUT))
-  active=SSH
-  startup_error() {
+startup_error() {
     local code=$?
     state "$active" failed
     echo "d3k: $active startup failed (exit $code); inspect $D3K_RUNTIME_DIR/startup.log" >&2
     if [ "$D3K_DOCKER_MODE" = rootless ]; then d3k_rootless_stop || true; fi
     exit "$code"
-  }
-  trap startup_error ERR
+}
+start() {
+  deadline=$((SECONDS + D3K_STARTUP_TIMEOUT))
+  active=SSH
   if [ "$NOSSH" = false ]; then
     if [ "${SSH_PASS+x}" ]; then
       [ -n "$SSH_PASS" ] && [[ "$SSH_PASS" != *$'\n'* ]] && [[ "$SSH_PASS" != *$'\r'* ]] || { echo 'Invalid SSH_PASS' >&2; return 2; }
@@ -147,6 +164,7 @@ start() {
       --data-root="$d3k_rootless_data" --exec-root="$XDG_RUNTIME_DIR/docker-exec" \
       --pidfile="$XDG_RUNTIME_DIR/docker.pid" --storage-driver=vfs --feature=containerd-snapshotter=false &
     printf '%s\n' "$!" > "$D3K_RUNTIME_DIR/rootless.pid"
+    engine_child=$!
     until run "$0" rootless-identity; do
       remaining >/dev/null || return 124
       pid=$(cat "$D3K_RUNTIME_DIR/rootless.pid")
@@ -156,11 +174,15 @@ start() {
     run "$0" rootless-cgroups
     state rootless-feasibility ready
   else
+    d3k_engine_runtime
     if [ -L /var/run/docker.sock ]; then
       [ "$(readlink /var/run/docker.sock)" = /run/user/1001/docker.sock ] || return 1
       sudo -n rm /var/run/docker.sock
     fi
-    sudo -n dockerd --config-file=/etc/docker/daemon.json --pidfile="$D3K_RUNTIME_DIR/docker.pid" &
+    # Fixed execution-state path is assigned by the sourced engine.sh helper.
+    # shellcheck disable=SC2154
+    sudo -n dockerd --config-file=/etc/docker/daemon.json --exec-root="$engine_runtime" --pidfile="$D3K_RUNTIME_DIR/docker.pid" &
+    engine_child=$!
     wait_for Docker
   fi
   state Docker ready
@@ -214,6 +236,8 @@ case "${1:-}" in
     # output until its long-lived monitoring job exits.
     exec >> "$D3K_RUNTIME_DIR/startup.log" 2>&1
     trap 'stop; exit 0' TERM INT HUP
+    active=SSH
+    trap startup_error ERR
     start
     # Keep the helper alive to forward shutdown to root-owned daemons and
     # observe unexpected process exits. No service manager is assumed.

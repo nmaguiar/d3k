@@ -80,6 +80,14 @@ awk -F '\t' '$1=="Kubernetes" && $2!="ready"{found=1} END{exit !found}' "$tmp/un
 grep -q 'fixture node not Ready' "$tmp/run/kube-nodes.log"
 test -s "$tmp/run/kube-api.log"
 test ! -e "$tmp/run/kube-coredns.log"
+# A journal transition during an in-flight failed probe is still startup,
+# rather than proof that an already-ready component has degraded.
+cat > "$tmp/bin/kubectl" <<'SH'
+#!/usr/bin/env bash
+case "$*" in *'get --raw='*) echo ready > "$D3K_RUNTIME_DIR/Kubernetes.state"; exit 1;; esac
+SH
+PATH="$tmp/bin:$PATH" D3K_LIB_DIR="$root/scripts" D3K_RUNTIME_DIR="$tmp/run" NODOCKER=false NOK8S=false NOSSH=true bash scripts/runtime.sh snapshot > "$tmp/transition"
+awk -F '\t' '$1=="Kubernetes" && $2=="starting"{found=1} END{exit !found}' "$tmp/transition"
 printf '#!/usr/bin/env bash\nprintf "<%%s>\\n" "$@"\n' > "$tmp/bin/docker"
 PATH="$tmp/bin:$PATH" sh scripts/docker-compose.sh -f 'a b.yaml' config > "$tmp/compose"
 printf '<compose>\n<-f>\n<a b.yaml>\n<config>\n' > "$tmp/compose.expected"
@@ -111,3 +119,4 @@ echo 'PASS: syntax, booleans, mode/endpoint/timeout rejection, argv/stdin/stderr
 bash tests/scan.sh
 bash tests/kube-endpoint.sh
 bash tests/topology-readiness-unit.sh
+bash tests/restart-unit.sh

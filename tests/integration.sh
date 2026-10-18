@@ -41,6 +41,8 @@ record argv PASS 'boundaries, empty args, literal glob, exit status, stderr'
 testcase tools docker run --rm --network none -e NODOCKER=true -e NOSSH=true "$image" /bin/bash -c 'set -e; id; test "$(id -u)" = 1001; test ! -w /etc/passwd; test -L /usr/local/bin/k3d; oaf -c "print(getVersion())"; oafp data="{\"test\":1}" out=json; printf "todo: [fixture]\njobs:\n- name: fixture\n  exec: print(123456789)\n" > /tmp/fixture.yaml; ojob /tmp/fixture.yaml | grep 123456789; opack list; docker --version; docker-compose version; docker-compose --version | grep "Docker Compose version"; docker buildx version; kubectl version --client; helm version; skopeo --version; test -s /home/user/.openaf_completion_bash.sh; test -x /opt/oaf/ojobs/vscTunnel.yaml; usage-help > /tmp/usage.txt; grep -q "d3k usage" /tmp/usage.txt; bash -ic "type help oafptab; complete -p oaf ojob docker kubectl helm skopeo k3d"'
 testcase session bash "$root/tests/session.sh" "$image" "$out/session"
 testcase negative-prerequisites bash "$root/tests/negative.sh" "$image" "$out/negative"
+testcase engine-runtime-state bash "$root/tests/engine-runtime.sh" "$image" "$out/engine-runtime"
+testcase status-retries bash "$root/tests/status-retry.sh" "$image" "$out/status-retries"
 testcase rootless-negative-prerequisites bash "$root/tests/rootless-negative.sh" "$image" "$out/rootless-negative"
 if [ "${D3K_TEST_PRIVILEGED:-0}" != 1 ]; then
   record integration 'NOT TESTED' 'requires D3K_TEST_PRIVILEGED=1 on a disposable runner'

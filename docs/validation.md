@@ -517,3 +517,54 @@ three buildx CVEs still block the fresh-Ubuntu security comparison; scans and
 the published-reference comparison passed in the completed run. Rootless still
 fails its cgroup feasibility gate. No support/default, host-policy, publishing
 or security-waiver change is included.
+
+## Outer restart readiness patch — 2026-10-18
+
+Native run [39151852516](https://github.com/nmaguiar/d3k/actions/runs/39151852516)
+passed both multi-node topologies, including server-plus-agents DNS, and effective
+Docker memory/CPU/PID controls on amd64 and arm64. Outer restart still failed:
+amd64 dockerd reused an existing containerd PID and timed out; arm64 status
+returned early while CoreDNS was degraded. Concurrent probes also collided on
+shared temporary log filenames. The containerd log suggests stale runtime state;
+it does not establish what process, if any, held that PID after restart.
+
+Rootful startup now checks for an identified live engine, then creates a fresh
+root-owned 0700 `/run/d3k-rootful.*` execution-state directory. Docker's
+[`--exec-root`](https://docs.docker.com/reference/cli/dockerd/) separates this
+transient state from persistent data. The existing `/var/lib/docker`, image-store
+settings and storage driver remain unchanged. No retained runtime directory is
+deleted, and no process is killed based on a retained PID. Only the new path is
+recorded under `/run/d3k`, keeping containerd sockets outside diagnostic copies.
+Old runtime directories may remain until container recreation.
+
+Startup detects early managed-engine exit, marks failure and reports the exit
+code. Its error trap also covers startup errors returned from helper functions.
+Kubernetes probes write unique temporary files and atomically publish completed
+logs. Status samples the journal before probing to avoid misclassifying an
+in-flight startup probe, and `check=true` retries transient degradation until
+readiness or the existing deadline. Explicit failures still return nonzero
+immediately; ordinary status still reports degradation immediately.
+
+Local verification against rebuilt native arm64 `d3k-local:restart-patch`:
+
+- `bash tests/fast.sh`: PASS; the Linux-only mocked startup subcase was NOT TESTED
+  on macOS, then passed when the same unit script ran in an ordinary Linux container.
+- ShellCheck warning/error checks, `node --check status.js`, workflow YAML parsing
+  and `git diff --check`: PASS.
+- `bash tests/integration.sh d3k-local:restart-patch .evidence/restart-patch/verified-integration`:
+  eight ordinary-container groups PASS, then exit 77 for privileged integration
+  NOT TESTED. This includes existing shell/tool/session/negative checks.
+- Packaged OpenAF/status tests: PASS for delayed recovery, bounded persistent
+  degradation, immediate human degradation and immediate fatal failure.
+- Actual packaged dockerd/containerd initialization: PASS for a fresh execution
+  socket, preservation of a deliberately stale PID pointing to an unrelated live
+  process, preservation of a data sentinel, and prompt failure on missing network
+  privileges. The unrelated process remains alive. This is an ordinary-container
+  negative prerequisite test, not proof of successful privileged startup.
+- Concurrent mocked Kubernetes probes and early daemon exit detection: PASS.
+
+Evidence is retained under ignored `.evidence/restart-patch/`. No new privileged
+local execution or native amd64 runtime acceptance was performed. Actual outer
+restart, retained Kubernetes storage and complete native parity await CI. The
+three known buildx HIGH findings still block the fresh-Ubuntu comparison; no
+waiver, dependency/default, publication or host-policy change is included.

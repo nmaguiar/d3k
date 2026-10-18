@@ -2,6 +2,7 @@
 // Bounded human output and noninteractive check=true json=true timeout=60.
 var args = processExpr(" ");
 var json = String(args.json || "false") === "true";
+var check = String(args.check || "false") === "true";
 var seconds = String(isDef(args.timeout) ? args.timeout : (getEnv("D3K_STARTUP_TIMEOUT") || "300"));
 if (!/^[1-9][0-9]{0,4}$/.test(seconds) || Number(seconds) > 86400) {
     printErr("status.js: timeout must be an integer from 1 to 86400"); exit(2);
@@ -22,7 +23,7 @@ do {
         if (["ready", "disabled"].indexOf(result[name].state) < 0) code = 1;
     });
     if (code === 0 || now() >= deadline || Object.keys(result).some(function(name) {
-        return ["failed", "degraded"].indexOf(result[name].state) >= 0;
+        return result[name].state === "failed" || (!check && result[name].state === "degraded");
     })) break;
     sleep(250, true);
 } while (true);
