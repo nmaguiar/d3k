@@ -14,8 +14,9 @@ Each stage is independently reviewable. Implementation completion is distinct
 from a support gate: native Linux amd64 and arm64 workflow evidence is required
 for Phase 1. Missing prerequisites produce NOT TESTED, never PASS.
 
-Current gate: **CLOSED**. Native privileged Linux amd64/arm64 workflows have not
-run, and the fresh Ubuntu control exposes a buildx compiler-version difference
+Current gate: **CLOSED**. Completed native Linux amd64/arm64 CI runs passed
+Docker-only tests but failed Kubernetes API readiness; the endpoint repair awaits
+native acceptance. The fresh Ubuntu control also exposes a buildx compiler-version difference
 with three additional reported fixable HIGH findings in Debian. No waiver was
 added. Phase 1c reporting/CI is implemented, but release evidence, full-image
 prewarming and performance validation remain incomplete. Phases 2/3 are not

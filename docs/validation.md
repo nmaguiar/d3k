@@ -412,3 +412,65 @@ reported cgroup v2 with driver `none` and stopped at the intended feasibility ga
 No effective resource limits or rootless workflow parity passed. A new job
 summary displays this failure even though the experimental step remains
 non-blocking. Phase 1/2 support and release gates remain closed.
+
+## Kubernetes endpoint repair and buildx investigation — 2026-10-18
+
+Run `39147729633` successfully scanned candidate, published reference and nested
+inputs on both architectures. The published comparison passed. The new diagnostics
+identified Kubernetes readiness's concrete cause: kubeconfig contained
+`https://0.0.0.0:0`, produced by the explicit `--api-port "$bind:0"` argument.
+The API probe failed before node/CoreDNS readiness could be evaluated.
+
+New clusters now use k3d 5.9.0's explicit `:random` form, which resolves a nonzero
+port before creating the cluster. After both create and restart, the helper reads
+the effective server load-balancer Docker publication, validates that it is one
+nonzero IPv4 port, and updates only the intended kubeconfig cluster's server to
+`https://127.0.0.1:<published-port>`. This also repairs retained port-zero configs
+without deleting clusters or volumes. The publication still follows NOPUBLIC;
+advertised loopback does not change that binding. New server certificates explicitly
+include 127.0.0.1. Certificate authorities, client credentials and TLS verification
+are preserved; no insecure-skip option is introduced.
+
+The implementation follows the pinned [k3d port parser](https://github.com/k3d-io/k3d/blob/v5.9.0/cmd/util/ports.go),
+which distinguishes `random` from a literal zero. The native integration suite
+now checks the advertised loopback/nonzero endpoint and performs a TLS-verified
+API readiness request after startup.
+
+Local checks passed: fast tests including valid/invalid/ambiguous publication and
+unrelated-cluster rejection, ShellCheck warning/error checks, workflow YAML and
+diff checks. A real Docker publication validated the exact Go inspect template.
+Real kubectl in an offline ordinary container repaired a fixture endpoint while
+preserving hashes of the fixture CA/client credentials and keeping TLS verification.
+The rebuilt arm64 image passed the six ordinary-container regression groups;
+the suite returned 77 for privileged integration NOT TESTED. Actual new/retained
+Kubernetes cluster execution, API certificate/SAN acceptance and native amd64/arm64
+runtime acceptance await CI. No privileged local execution was used.
+
+The remaining fresh-Ubuntu security comparison is a genuine failed gate on both
+architectures: buildx's Go 1.26.8 standard library introduces fixable HIGH
+`CVE-2026-78667`, `CVE-2026-78669` and `CVE-2026-97031` relative to that control.
+The supported Debian repository still lists no buildx version newer than locked
+0.38.0. The official [upstream v0.38.0 release](https://github.com/docker/buildx/releases/tag/v0.38.0)
+was investigated as an alternative; both architecture downloads match GitHub's
+published SHA-256 digests and still report Go 1.26.8:
+
+| Official release executable | SHA-256 |
+|---|---|
+| linux/amd64 | `4fe4cc38adf48169132749b6ca22a990928db0118e3407584ee553723115d287` |
+| linux/arm64 | `38e890e1a162bfdbf32fbe91404991dc4fc28e55b0de901b34374a061bab4d2c` |
+
+Trivy 0.76.0 with the existing frozen database analyzed both executables using
+its rootfs scanner and reported all three CVE IDs in each. An initial scan of
+non-executable downloads discovered no binary packages and was rejected as
+insufficient coverage; executable permissions were set and actual binary
+coverage checked before drawing this conclusion. These scans test a proposed
+replacement, not a new full-image comparison.
+
+Neither downloaded binary was installed. The signed Debian package/version lock
+and security gate are unchanged; no waiver or unsupported cross-distribution
+package replacement was introduced. The image still has the known buildx
+findings, and CI is expected to keep that gate failed until a verified fixed
+artifact is available or a separately reviewed build strategy is implemented.
+Investigation/build/scan/test evidence is retained under ignored
+`.evidence/endpoint-buildx/`. Rootful remains default, rootless remains gated,
+and no image publication or promotion is authorized by this patch.

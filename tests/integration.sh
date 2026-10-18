@@ -51,6 +51,12 @@ testcase docker-only-flags bash "$root/tests/docker-only.sh" "$image" "$out/dock
 docker run -d --name "$name" --label io.d3k.test=true --privileged --cgroupns=host -e "D3K_DOCKER_MODE=$mode" -e NOSSH=true -e D3K_STARTUP_TIMEOUT=300 -p 127.0.0.1::1080 "$image" > "$out/container-id.txt"
 inside() { docker exec "$name" "$@"; }
 testcase readiness inside status.js check=true json=true timeout=300
+testcase api-endpoint inside bash -c '
+set -euo pipefail
+endpoint=$(kubectl --context k3d-k3s-default config view --minify -o "jsonpath={.clusters[0].cluster.server}")
+[[ "$endpoint" =~ ^https://127\.0\.0\.1:[1-9][0-9]{0,4}$ ]]
+kubectl --context k3d-k3s-default --request-timeout=5s get --raw=/readyz
+'
 if [ "$mode" = rootless ]; then
   testcase rootless-identity inside /usr/local/lib/d3k/runtime.sh rootless-identity
   testcase canonical-endpoint inside bash -c 'set -e; test "$DOCKER_HOST" = unix:///var/run/docker.sock; env -u DOCKER_HOST docker info; docker compose ls; docker-compose ls; cat /run/d3k/rootless-mappings.txt /run/d3k/rootless-cgroups.txt; test ! -e /run/d3k/docker.pid'

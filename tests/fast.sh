@@ -109,3 +109,4 @@ done
 grep -q 'effective_resource_limits=NOT TESTED' "$tmp/run/rootless-cgroups.txt"
 echo 'PASS: syntax, booleans, mode/endpoint/timeout rejection, argv/stdin/stderr/exit status, NODOCKER probes'
 bash tests/scan.sh
+bash tests/kube-endpoint.sh

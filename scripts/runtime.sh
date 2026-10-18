@@ -8,6 +8,22 @@ d3k_resolve
 state() { printf '%s\n' "$2" > "$D3K_RUNTIME_DIR/$1.state.tmp"; mv "$D3K_RUNTIME_DIR/$1.state.tmp" "$D3K_RUNTIME_DIR/$1.state"; }
 remaining() { local n=$((deadline - SECONDS)); [ "$n" -gt 0 ] || return 1; printf '%s' "$n"; }
 run() { local n; n=$(remaining) || return 124; timeout --foreground -k 2 "$n" "$@"; }
+kube_endpoint() {
+  local port cluster endpoint
+  # Use the effective Docker publication, including retained clusters created
+  # with the old literal :0 setting. Never connect to a wildcard address/port 0.
+  port=$(timeout 5 docker inspect --format '{{range (index .NetworkSettings.Ports "6443/tcp")}}{{if or (eq .HostIp "0.0.0.0") (eq .HostIp "127.0.0.1")}}{{println .HostPort}}{{end}}{{end}}' k3d-k3s-default-serverlb)
+  [[ "$port" =~ ^[1-9][0-9]{0,4}$ ]] && [ "$port" -le 65535 ] || {
+    echo 'd3k: missing, ambiguous or invalid Kubernetes API publication; inspect k3d-k3s-default-serverlb' >&2; return 1;
+  }
+  cluster=$(timeout 5 kubectl --context k3d-k3s-default config view --minify -o 'jsonpath={.contexts[0].context.cluster}')
+  [ "$cluster" = k3d-k3s-default ] || { echo 'd3k: unexpected Kubernetes cluster reference' >&2; return 1; }
+  # Merge only the server field. Keep certificate authorities and TLS verification.
+  timeout 5 kubectl config set-cluster "$cluster" --server="https://127.0.0.1:$port"
+  endpoint=$(timeout 5 kubectl --context k3d-k3s-default config view --minify -o 'jsonpath={.clusters[0].cluster.server}')
+  [ "$endpoint" = "https://127.0.0.1:$port" ] || return 1
+  echo "d3k: Kubernetes API endpoint $endpoint"
+}
 kube_check() {
   local label=$1 code=0
   shift
@@ -171,8 +187,9 @@ start() {
         run k3d registry create registry --image "$(lock_get REGISTRY_IMAGE)" --port "$bind:5000"
       fi
       check_bindings k3d-registry
-      run k3d cluster create k3s-default --image "$image" --api-port "$bind:0" --timeout "$(remaining)s" --k3s-arg '--snapshotter=native@server:*' --k3s-arg '--snapshotter=native@agent:*' --registry-use k3d-registry:5000 -p "$bind:1080:1080@loadbalancer"
+      run k3d cluster create k3s-default --image "$image" --api-port "$bind:random" --timeout "$(remaining)s" --k3s-arg '--snapshotter=native@server:*' --k3s-arg '--snapshotter=native@agent:*' --k3s-arg '--tls-san=127.0.0.1@server:*' --registry-use k3d-registry:5000 -p "$bind:1080:1080@loadbalancer"
     fi
+    run "$0" kube-endpoint
     wait_for Kubernetes
     run kubectl --context k3d-k3s-default config view --raw --minify --flatten -o 'jsonpath={.clusters[0].cluster.certificate-authority-data}' | base64 -d > "$D3K_RUNTIME_DIR/cluster-ca.crt"
     state Kubernetes ready
@@ -214,6 +231,7 @@ case "${1:-}" in
   probe) probe "${2:?component required}" ;;
   rootless-identity) d3k_rootless_identity ;;
   rootless-cgroups) d3k_rootless_cgroups ;;
+  kube-endpoint) kube_endpoint ;;
   mode) printf '%s\n' "$D3K_DOCKER_MODE" ;;
   snapshot) snapshot ;;
   stop) stop ;;
