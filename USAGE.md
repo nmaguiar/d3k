@@ -1,5 +1,9 @@
 # d3k usage
 
+These instructions describe the Debian rootful candidate built from this
+checkout as `d3k-local:debian-rootful`. Published tags are unchanged. Full native
+integration validation is still required; see [MIGRATION.md](MIGRATION.md).
+
 Welcome to the d3k image. In-container docker and a multi-node Kubernetes (K3D), ready to learn and experiment with. Check the deployment options below and the getting started tips further down.
 
 ---
@@ -8,31 +12,43 @@ Welcome to the d3k image. In-container docker and a multi-node Kubernetes (K3D),
 
 **With included socks proxy:**
 
-{{{$acolor 'FAINT,ITALIC' 'docker run --rm -ti -p 127.0.0.1:10080:1080 --privileged --cgroupns=host -e NOSSH=true nmaguiar/d3k /bin/bash'}}}
+{{{$acolor 'FAINT,ITALIC' 'docker run --rm -ti -p 127.0.0.1:10080:1080 --privileged --cgroupns=host -e NOSSH=true d3k-local:debian-rootful /bin/bash'}}}
 
 **With included ssh server:**
 
-{{{$acolor 'FAINT,ITALIC' 'docker run --rm -ti -d -p 127.0.0.1:2222:22 --privileged --cgroupns=host nmaguiar/d3k'}}}
+Set `SSH_PASS` privately in the calling shell first, or mount authorized keys as
+described in README.md. There is no embedded password.
+
+{{{$acolor 'FAINT,ITALIC' 'docker run --rm -ti -d -p 127.0.0.1:2222:22 --privileged --cgroupns=host -e SSH_PASS d3k-local:debian-rootful'}}}
 
 ---
 
 ## 🐢 Old Linux/Windows (Linux kernel < 5.8.x)
 
+Legacy kernels are NOT TESTED. These historical forms do not establish support
+for the selected Docker/K3s versions.
+
 **With included socks proxy:**
 
-{{{$acolor 'FAINT,ITALIC' 'docker run --rm -ti -p 127.0.0.1:10080:1080 --privileged -e NOSSH=true nmaguiar/d3k /bin/bash'}}}
+{{{$acolor 'FAINT,ITALIC' 'docker run --rm -ti -p 127.0.0.1:10080:1080 --privileged -e NOSSH=true d3k-local:debian-rootful /bin/bash'}}}
 
 **With included ssh server:**
 
-{{{$acolor 'FAINT,ITALIC' 'docker run --rm -ti -d -p 127.0.0.1:2222:22 --privileged nmaguiar/d3k'}}}
+{{{$acolor 'FAINT,ITALIC' 'docker run --rm -ti -d -p 127.0.0.1:2222:22 --privileged -e SSH_PASS d3k-local:debian-rootful'}}}
 
 ---
 
 ## 🚀 Getting started
 
-> Once the container is running execute the built-in ```status.js``` command to check when docker and Kubernetes are ready to use (this happens automatically at login too).
+> Execute `status.js` to wait for enabled components, or use
+> `status.js check=true json=true timeout=300` for bounded automation. Startup
+> happens at container entry, independently of login shells.
 
-Any docker containers you start, any Kubernetes deployments you apply or any helm chart you install only affect this container, so this is your "playground" to learn and experiment. If you ever need to go back to how it was in the beginning, just restart the container.
+This privileged compatibility profile retains unrestricted sudo and rootful
+Docker. It is a development playground, not a proven isolation boundary for
+untrusted workloads. Use a dedicated disposable VM for those. Restart resumes
+existing state; recreate a disposable container for a fresh workspace. Mounted
+volumes retain their data and are never automatically deleted.
 
 ### 🏆 Launching your first Kubernetes deployment
 
@@ -104,7 +120,8 @@ Before testing the connection configure the proxy on the "Proxy" tab: enable "Us
 Create an extra cluster with 3 nodes, a load balancer on port 8080 and its own container registry:
 
 ```bash
-k3d cluster create test -s 3 -p "8080:8080@loadbalancer" --k3s-arg "--snapshotter=native@server:*" --registry-create registry2:0.0.0.0:5500
+source /usr/local/lib/d3k/lock.sh
+k3d cluster create test -s 3 --image "$(lock_get K3S_IMAGE)" -p "8080:8080@loadbalancer" --k3s-arg "--snapshotter=native@server:*" --registry-create registry2:0.0.0.0:5500
 kubectl get nodes
 ```
 
@@ -180,6 +197,11 @@ k3d cluster delete test
 
 ## 🛠️  Utils available in this image
 
+For a server-plus-agents topology use `-s 1 -a 2` and include
+`--k3s-arg "--snapshotter=native@agent:*"`. Managed startup pins K3s, registry,
+k3d helpers, and SOCKS. Tutorial app/chart downloads remain experiments; the
+automated gate uses pinned, controlled fixtures.
+
 | Utility | Use for |
 |---------|---------|
 | docker | Docker client/daemon to build and run containers |
@@ -204,5 +226,25 @@ k3d cluster delete test
 | Alias | oafptab | Parses the stdin input ascii table into an ascii table with oafp query functionality |
 | Command | status.js | Waits/reports on docker and Kubernetes readiness |
 | Command | usage-help | Displays this usage help |
+
+## Configuration and status
+
+`NOSSH`, `NODOCKER`, `NOK8S`, and `NOPUBLIC` accept true/1/yes/on or false/0/no/off
+(case insensitive). Empty/unset means false. Unknown values fail before startup.
+This deliberately fixes the previous behavior where the string `false` enabled
+a flag. `NODOCKER=true` skips all Docker, Kubernetes, and SOCKS probes and startup;
+`NOK8S=true` keeps Docker-only SOCKS. SSH remains independent.
+
+`D3K_DOCKER_MODE` defaults to rootful; rootless/external are gated and rejected in
+this candidate. `D3K_STARTUP_TIMEOUT` defaults to 300 seconds. An explicit
+`D3K_K3S_IMAGE` selects an experimental image override, logged with its digest.
+`DOCKER_HOST` and `DOCKER_CONTEXT` must identify the managed rootful daemon.
+
+Status distinguishes disabled, starting, ready, degraded, and failed components.
+Exit codes are 0 for enabled components ready, 1 for failure/degradation/timeout,
+and 2 for configuration errors. Logs are in `/run/d3k/startup.log`.
+
+`NOPUBLIC` affects inner Docker publications. Restrict outer-host exposure
+independently with localhost-bound `docker run -p` mappings.
 
 ---

@@ -1,70 +1,35 @@
 #!/usr/bin/env /opt/oaf/oaf-sb
-
-ow.loadFormat()
-ow.loadTemplate()
-
-if (isDef(getEnv("NODOCKER"))) {
-    printErr( ow.format.string.bool(false, true) + " Since the NODOCKER env variable is defined neither docker or K8S will start." )
-    exit(-1)
+// Bounded human output and noninteractive check=true json=true timeout=60.
+var args = processExpr(" ");
+var json = String(args.json || "false") === "true";
+var seconds = String(isDef(args.timeout) ? args.timeout : (getEnv("D3K_STARTUP_TIMEOUT") || "300"));
+if (!/^[1-9][0-9]{0,4}$/.test(seconds) || Number(seconds) > 86400) {
+    printErr("status.js: timeout must be an integer from 1 to 86400"); exit(2);
 }
-
-var status = {
-    Docker: false,
-    K8SStart: false,
-    K8SReady: false,
-    K8S: isUnDef(getEnv("NOK8S"))
+var deadline = now() + Number(seconds) * 1000, result, code;
+do {
+    var remaining = Math.max(1, Math.ceil((deadline - now()) / 1000));
+    var probe = $sh(["timeout", "--foreground", "-k", "2", String(remaining),
+        "/usr/local/lib/d3k/runtime.sh", "snapshot"]).get(0);
+    if (probe.exitcode === 2) { printErr(probe.stderr); exit(2); }
+    result = {};
+    String(probe.stdout || "").trim().split("\n").forEach(function(line) {
+        var fields = line.split("\t");
+        if (fields.length >= 3) result[fields[0]] = {state: fields[1], reason: fields.slice(2).join("\t")};
+    });
+    code = Object.keys(result).length === 4 ? 0 : 1;
+    Object.keys(result).forEach(function(name) {
+        if (["ready", "disabled"].indexOf(result[name].state) < 0) code = 1;
+    });
+    if (code === 0 || now() >= deadline || Object.keys(result).some(function(name) {
+        return ["failed", "degraded"].indexOf(result[name].state) >= 0;
+    })) break;
+    sleep(250, true);
+} while (true);
+if (json) print(stringify({mode: getEnv("D3K_DOCKER_MODE") || "rootful", components: result, ready: code === 0}, __, ""));
+else {
+    print("d3k status");
+    Object.keys(result).forEach(function(name) { print(name + ": " + result[name].state + " - " + result[name].reason); });
+    if (code !== 0) printErr("Readiness failed or timed out. Inspect /run/d3k/startup.log.");
 }
-
-var text = `# d3k status
-
-{{bool Docker}} Docker is ready to use
-{{#if K8S}}{{bool K8SStart}} Kubernetes has started
-{{bool K8SReady}} Kubernetes is ready to use{{/if}}
-
-(Wait until the component you need gets a green check. You can exit anytime by hiting Ctrl-C)`
-
-ow.template.addHelper("bool", v => ow.format.string.bool(v, true))
-
-function checkStatus() {
-    var _r
-    // Check docker
-    _r = $sh("docker ps").get(0)
-    status.Docker = (_r.exitcode == 0)
-
-    // Check k8s start
-    _r = $sh("kubectl get pods").get(0)
-    status.K8SStart = (_r.exitcode == 0)
-
-    // Check k8s ready
-    if (status.K8SStart) {
-        var _items = $sh("kubectl get pods -A -o json").getJson(0).stdout.items
-
-        _r = $from( _items )
-             .equals("metadata.namespace", "kube-system")
-             .notEquals("status.phase", "Running")
-             .notEquals("status.phase", "Succeeded")
-             .count()
-
-        status.K8SReady = (_r == 0 && _items.length > 0)
-    } else {
-        status.K8SReady = false
-    }
-}
-
-function printStatus() {
-    print(ow.format.withMD($t(text, status)))
-}
-
-var ok = false
-__initializeCon()
-while(!ok) {
-    checkStatus()
-    printStatus()
-    if ((status.Docker && !status.K8S) ||
-        (status.Docker && status.K8S && status.K8SStart && status.K8SReady)) {
-        ok = true 
-    } else {
-        sleep(1000, true)
-        printnl("\x1B[" + text.split("\n").length + "A")
-    }
-}
+exit(code);

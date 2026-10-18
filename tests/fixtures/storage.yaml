@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: fixture-data
+spec:
+  accessModes: [ReadWriteOnce]
+  resources:
+    requests:
+      storage: 16Mi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: storage-fixture
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: storage-fixture
+  template:
+    metadata:
+      labels:
+        app: storage-fixture
+    spec:
+      containers:
+      - name: storage
+        image: D3K_TEST_WEB_IMAGE
+        command: [/bin/sh, -c]
+        args:
+        - test -f /data/value || echo retained > /data/value; exec sleep 86400
+        volumeMounts:
+        - name: data
+          mountPath: /data
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: fixture-data

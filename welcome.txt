@@ -7,3 +7,6 @@
  For usage tips & getting started type & execute [1m'usage-help'[m
  See more in [2mhttps://github.com/nmaguiar/d3k[m
 
+ Debian rootful candidate: native integration gates pending.
+ Privileged Docker and unrestricted sudo are not an untrusted-workload sandbox.
+ SSH requires supplied credentials. Restart retains existing state.
