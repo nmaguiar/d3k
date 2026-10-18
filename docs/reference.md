@@ -32,3 +32,11 @@ The local legacy full-image ID
 has no `GITHUB_TOKEN` variable in its image configuration. Its repository digest
 differs from today's published full-image index. This limited check is neither
 a layer audit nor proof about other published images.
+
+The **current published** full-image arm64 manifest listed above was checked
+separately through `skopeo inspect --config --override-os linux --override-arch
+arm64`. Its configuration contains a nonempty `GITHUB_TOKEN`. Only presence
+booleans were retained; the value was not displayed. Treat that artifact as
+credential-exposed pending credential-owner review. Full-image publication is
+withheld. No token revocation, remote artifact deletion, or release change was
+performed as part of this local implementation.

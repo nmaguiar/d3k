@@ -3,8 +3,8 @@
 Starting revision: `ad705d18d4cdd82c09e3adc966b9d863199d64b7`.
 The untracked `.mini-a` file is unrelated and must remain untouched.
 
-- [ ] 1a: immutable references, CI containment, shared tests, startup/status fixes.
-- [ ] 1b: Debian 13 rootful candidate and verified installation inputs.
+- [x] 1a implementation: immutable references, CI containment, shared tests, startup/status fixes.
+- [x] 1b implementation: Debian 13 rootful candidate and verified installation inputs.
 - [ ] 1c: comparison, scans, safe full-image handling, release gates.
 - [ ] 2: optional rootless mode, only after Phase 1 passes.
 - [ ] 3a: reduced-privilege all-in-one, only after Phase 2 passes.
@@ -13,6 +13,14 @@ The untracked `.mini-a` file is unrelated and must remain untouched.
 Each stage is independently reviewable. Implementation completion is distinct
 from a support gate: native Linux amd64 and arm64 workflow evidence is required
 for Phase 1. Missing prerequisites produce NOT TESTED, never PASS.
+
+Current gate: **CLOSED**. Native privileged Linux amd64/arm64 workflows have not
+run, and the fresh Ubuntu control exposes a buildx compiler-version difference
+with three additional reported fixable HIGH findings in Debian. No waiver was
+added. Phase 1c reporting/CI is implemented, but release evidence, full-image
+prewarming and performance validation remain incomplete. Phases 2/3 are not
+implemented because their preceding gate is closed. See
+[the measured report](docs/validation.md).
 
 ## Compatibility matrix
 

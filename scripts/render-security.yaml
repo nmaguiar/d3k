@@ -1,0 +1,37 @@
+# Reuse the existing OpenAF/Badgen/YAML/Markdown reporting stack; scanning is
+# performed separately by scripts/scan.sh with retained raw JSON and DB hashes.
+include:
+- badgen.yaml
+ojob:
+  opacks:
+  - openaf: 20230520
+  - Badgen: 20230603
+  logToConsole: true
+todo:
+- Render security report
+jobs:
+- name: Render security report
+  exec: |
+    var report = io.readFileJSON(args.input)
+    if (!isArray(report.Results)) throw "Incomplete scanner output"
+    // Preserve the existing compact view; full package inventories stay in the
+    // immutable raw JSON artifact used by comparisons. Keep every finding.
+    var view = clone(report.Results)
+    view.forEach(function(target) { target.Packages = [] })
+    io.writeFileYAML(args.reportFile, view)
+    var counts = { CRITICAL: 0, HIGH: 0, MEDIUM: 0, LOW: 0 }
+    report.Results.forEach(function(target) {
+      var seen = {}
+      ;(target.Vulnerabilities || []).forEach(function(v) {
+        var key = v.VulnerabilityID + ":" + v.Severity
+        if (!seen[key] && isDef(counts[v.Severity])) counts[v.Severity]++
+        seen[key] = true
+      })
+    })
+    args.label = args.image
+    args.status = "(CRIT: " + counts.CRITICAL + ", HIGH: " + counts.HIGH + ", MED: " + counts.MEDIUM + ", LOW: " + counts.LOW + ")"
+    args.color = counts.CRITICAL ? "red" : counts.HIGH ? "orange" : counts.MEDIUM ? "yellow" : counts.LOW ? "yellowgreen" : "green"
+    args.labelColor = "grey3"
+    args.icon = "nattrmon.svg"
+  to:
+  - Badgen generate file

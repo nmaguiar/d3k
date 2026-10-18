@@ -1,65 +1,79 @@
 name: Scan Images
-
 on:
   workflow_dispatch:
   schedule:
   - cron: '20 7 * * *'
-
+permissions:
+  contents: read
 jobs:
   Scan-Images:
-    runs-on    : ubuntu-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
-    name       : Scan images
-    steps      :
+    steps:
     - uses: actions/checkout@v6
-      name: Checkout
-
+      with:
+        persist-credentials: false
     - name: Cache OpenAF runtime
       uses: actions/cache@v5
       with:
-        key : oaf-t8
+        key: oaf-t8
         path: /tmp/oaf
-
-    - name: Restore the trivy databases from cache
-      run : |
-        wget https://openaf.io/trivy-db.tgz
-        docker run --rm -v trivy-db:/volume -v $(pwd):/backup busybox tar xzf /backup/trivy-db.tgz -C /volume
-
+    - name: Install manifest reader
+      run: sudo apt-get update && sudo apt-get install -y --no-install-recommends skopeo
+    - name: Scan immutable references with one database snapshot
+      env:
+        D3K_SCAN_PLATFORM: linux/amd64
+      run: |
+        mkdir -p .evidence
+        bash scripts/scan.sh prepare .evidence/scanner
+        for tag in latest build; do
+          skopeo inspect --raw docker://docker.io/nmaguiar/d3k:$tag > .evidence/$tag.index.json
+          digest=sha256:$(sha256sum .evidence/$tag.index.json | cut -d' ' -f1)
+          ref=nmaguiar/d3k@$digest
+          bash scripts/scan.sh image "$ref" .evidence/scanner .evidence/$tag.json
+          export D3K_LOCK_FILE=$PWD/versions.yaml
+          source scripts/lock.sh
+          printf '{"image":"%s","platform":"linux/amd64","runId":"%s","scanner":"%s"}\n' "$ref" "$GITHUB_RUN_ID" "$(lock_get TRIVY_IMAGE)" > .github/sec-$tag.identity.json
+        done
     - uses: openaf/ojob-action@v7
-      name: Check latest
+      name: Render latest badge and YAML
       with:
-        ojob: 'ojob.io/sec/genSecBadge'
-        args: 'image=nmaguiar/d3k:latest file=.github/sec-latest.svg reportFile=.github/sec-latest.yaml'
-        dist: 't8'
-
+        ojob: scripts/render-security.yaml
+        args: 'input=.evidence/latest.json image=nmaguiar/d3k:latest file=.github/sec-latest.svg reportFile=.github/sec-latest.yaml'
+        dist: t8
     - uses: openaf/ojob-action@v7
-      name: Check build
+      name: Render build badge and YAML
       with:
-        ojob: 'ojob.io/sec/genSecBadge'
-        args: 'image=nmaguiar/d3k:build file=.github/sec-build.svg reportFile=.github/sec-build.yaml'
-        dist: 't8'
-
+        ojob: scripts/render-security.yaml
+        args: 'input=.evidence/build.json image=nmaguiar/d3k:build file=.github/sec-build.svg reportFile=.github/sec-build.yaml'
+        dist: t8
     - uses: openaf/ojob-action@v7
-      name: Generate sec-latest.md
+      name: Generate latest Markdown
       with:
-        ojob: 'ojob.io/util/toMDTree'
+        ojob: ojob.io/util/toMDTree
         args: 'inputFile=.github/sec-latest.yaml file=.github/sec-latest.md'
-        dist: 't8'
-
+        dist: t8
     - uses: openaf/ojob-action@v7
-      name: Generate sec-build.md
+      name: Generate build Markdown
       with:
-        ojob: 'ojob.io/util/toMDTree'
+        ojob: ojob.io/util/toMDTree
         args: 'inputFile=.github/sec-build.yaml file=.github/sec-build.md'
-        dist: 't8'
-        
+        dist: t8
+    - name: Retain raw scans and database identity
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: security-evidence-${{ github.run_id }}
+        path: .evidence/
+        include-hidden-files: true
+        retention-days: 14
     - uses: openaf/ojob-action@v7
-      name: Update badges
-      env :
+      name: Update existing security reports
+      env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        ojob: 'ojob.io/git/hub/contentIn'
+        ojob: ojob.io/git/hub/contentIn
         args: 'message="update\ badge\ {{date}}/{{time}}" title="Scan\ images\ result" paths=.github/'
-        dist: 't8'
+        dist: t8

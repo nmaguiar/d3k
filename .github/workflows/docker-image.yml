@@ -1,86 +1,118 @@
-name: Docker Image CI
-
+name: Docker candidate validation
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches: [main]
     paths-ignore:
-    - '.github/**'
+    - '.github/sec-*'
   pull_request:
-    branches: [ "main" ]
+    branches: [main]
     paths-ignore:
-    - '.github/**'
+    - '.github/sec-*'
   schedule:
-    - cron: '28 0 * * 6'
-
+  - cron: '28 0 * * 6'
+permissions:
+  contents: read
 jobs:
-
-  build:
-
+  fast:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v4
-    - name: Login to DockerHub
-      uses: docker/login-action@v4
-      with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
     - uses: actions/checkout@v6
-      name: Checkout
-    - uses: docker/build-push-action@v7
-      name: Build and push amd64
       with:
-        platforms: linux/amd64
-        context: "{{defaultContext}}"
-        push: true
-        provenance: false
-        sbom: false
-        tags: nmaguiar/d3k:build-amd64
-        file: Dockerfile
-
-  build-arm64:
-
-    runs-on: ubuntu-24.04-arm
-
+        persist-credentials: false
+    - run: bash tests/fast.sh
+  candidate:
+    needs: fast
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+        - arch: amd64
+          runner: ubuntu-latest
+        - arch: arm64
+          runner: ubuntu-24.04-arm
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
     steps:
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v4
-    - name: Login to DockerHub
-      uses: docker/login-action@v4
-      with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
     - uses: actions/checkout@v6
-      name: Checkout
-    - uses: docker/build-push-action@v7
-      name: Build and push arm64
       with:
-        platforms: linux/arm64
-        context: "{{defaultContext}}"
-        push: true
-        provenance: false
-        sbom: false
-        tags: nmaguiar/d3k:build-arm64
-        file: Dockerfile
-
-  build_manifest:
-    runs-on: ubuntu-latest
-    needs:
-    - build
-    - build-arm64
-
-    steps:
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v4
-    - name: Login to DockerHub
-      uses: docker/login-action@v4
+        persist-credentials: false
+        fetch-depth: 0
+    - uses: docker/setup-buildx-action@v4
+    - name: Install archive transport
+      run: sudo apt-get update && sudo apt-get install -y --no-install-recommends skopeo
+    - name: Discover dependency refreshes without changing locked inputs
+      if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+      run: bash scripts/check-dependencies.sh .evidence/dependencies
+    - name: Build one native candidate archive with attestations
+      run: |
+        mkdir -p .evidence
+        docker buildx build --platform linux/${{ matrix.arch }} --no-cache \
+          --provenance=mode=max --sbom=true \
+          --output type=oci,dest=.evidence/candidate.tar \
+          --metadata-file .evidence/build-metadata.json .
+    - name: Import the exact candidate filesystem for runtime tests
+      run: |
+        skopeo inspect --override-os linux --override-arch ${{ matrix.arch }} --config --raw oci-archive:.evidence/candidate.tar > .evidence/candidate-config.json
+        skopeo copy --override-os linux --override-arch ${{ matrix.arch }} oci-archive:.evidence/candidate.tar docker-daemon:d3k-ci:candidate
+        expected=sha256:$(sha256sum .evidence/candidate-config.json | cut -d' ' -f1)
+        actual=$(docker image inspect d3k-ci:candidate --format '{{.Id}}')
+        test "$expected" = "$actual"
+    - name: Workflow compatibility
+      env:
+        D3K_TEST_PRIVILEGED: '1'
+      run: bash tests/integration.sh d3k-ci:candidate .evidence/integration
+    - name: Cold and warm readiness and initialized disk usage
+      env:
+        D3K_TEST_PRIVILEGED: '1'
+      run: bash scripts/measure.sh d3k-ci:candidate .evidence/measurements
+    - name: Scan the retained archive
+      if: always()
+      env:
+        D3K_SCAN_PLATFORM: linux/${{ matrix.arch }}
+      run: |
+        if [ -f .evidence/candidate.tar ]; then
+          bash scripts/scan.sh prepare .evidence/scanner
+          bash scripts/scan.sh archive .evidence/candidate.tar .evidence/scanner .evidence/candidate-scan.json
+          source scripts/lock.sh
+          export D3K_LOCK_FILE=$PWD/versions.yaml
+          bash scripts/scan.sh image "$(lock_get PUBLISHED_BUILD)" .evidence/scanner .evidence/reference-scan.json
+          mkdir -p .evidence/nested-scans
+          for key in K3S_IMAGE REGISTRY_IMAGE K3D_PROXY_IMAGE K3D_TOOLS_IMAGE SOCKS_IMAGE; do
+            bash scripts/scan.sh image "$(lock_get "$key")" .evidence/scanner ".evidence/nested-scans/$key.json"
+          done
+        fi
+    - name: Build and scan a labelled fresh Ubuntu control
+      if: always()
+      env:
+        D3K_SCAN_PLATFORM: linux/${{ matrix.arch }}
+      run: |
+        mkdir -p .evidence
+        bash scripts/build-control.sh .evidence/control-context --repair-adduser \
+          --platform linux/${{ matrix.arch }} --load -t d3k-ci:ubuntu-control > .evidence/control-build.log 2>&1
+        control_archive="$RUNNER_TEMP/d3k-control-$GITHUB_RUN_ID-${{ matrix.arch }}.tar"
+        trap 'rm -f "$control_archive"' EXIT
+        docker image save d3k-ci:ubuntu-control -o "$control_archive"
+        bash scripts/scan.sh archive "$control_archive" .evidence/scanner .evidence/control-scan.json
+    - name: Compare new fixable findings against published Ubuntu
+      if: always()
+      uses: openaf/ojob-action@v7
       with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - name: Create and push multi-arch manifest
-      run : |
-        docker buildx imagetools create -t nmaguiar/d3k:build \
-          nmaguiar/d3k:build-amd64 \
-          nmaguiar/d3k:build-arm64
+        ojob: scripts/compare-security.yaml
+        args: 'baseline=.evidence/reference-scan.json candidate=.evidence/candidate-scan.json output=.evidence/security-comparison.json'
+        dist: t8
+    - name: Compare new fixable findings against fresh Ubuntu control
+      if: always()
+      uses: openaf/ojob-action@v7
+      with:
+        ojob: scripts/compare-security.yaml
+        args: 'baseline=.evidence/control-scan.json candidate=.evidence/candidate-scan.json output=.evidence/control-security-comparison.json'
+        dist: t8
+    - name: Retain evidence and immutable candidate; never publish
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: candidate-${{ matrix.arch }}-${{ github.run_id }}
+        path: .evidence/
+        include-hidden-files: true
+        retention-days: 14

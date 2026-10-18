@@ -1,0 +1,11 @@
+todo:
+- Compare retained scans
+jobs:
+- name: Compare retained scans
+  exec: |
+    var result = $sh([getOpenAFPath().replace(/\/?$/, "/") + "oaf-sb", "scripts/security-report.js", "baseline=" + args.baseline, "candidate=" + args.candidate, "gate=true"]).get(0)
+    io.writeFileString(args.output, result.stdout)
+    if (result.exitcode != 0) {
+      printErr(result.stderr)
+      exit(1)
+    }
