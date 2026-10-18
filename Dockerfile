@@ -5,7 +5,7 @@ USER root
 COPY versions.yaml /etc/d3k-versions.yaml
 COPY scripts/install.sh scripts/lock.sh /usr/local/lib/d3k/
 RUN chmod +x /usr/local/lib/d3k/*.sh && /usr/local/lib/d3k/install.sh
-COPY scripts/environment.sh scripts/runtime.sh scripts/engine.sh scripts/rootless.sh scripts/interactive.sh scripts/socks.yaml /usr/local/lib/d3k/
+COPY scripts/environment.sh scripts/runtime.sh scripts/engine.sh scripts/cluster.sh scripts/rootless.sh scripts/interactive.sh scripts/socks.yaml /usr/local/lib/d3k/
 COPY scripts/docker-compose.sh /usr/bin/docker-compose
 COPY ojob_p1.sh /home/user/.p1.sh
 COPY ojob_p2.yaml /home/user/.p2.yaml

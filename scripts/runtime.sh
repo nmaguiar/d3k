@@ -5,6 +5,7 @@ source "$lib/environment.sh"
 source "$lib/lock.sh"
 source "$lib/rootless.sh"
 source "$lib/engine.sh"
+source "$lib/cluster.sh"
 d3k_resolve
 state() { printf '%s\n' "$2" > "$D3K_RUNTIME_DIR/$1.state.tmp"; mv "$D3K_RUNTIME_DIR/$1.state.tmp" "$D3K_RUNTIME_DIR/$1.state"; }
 remaining() { local n=$((deadline - SECONDS)); [ "$n" -gt 0 ] || return 1; printf '%s' "$n"; }
@@ -195,7 +196,7 @@ start() {
     run docker image inspect "$image" --format '{{json .RepoDigests}}'
     if run docker inspect k3d-k3s-default-server-0 >/dev/null 2>&1; then
       check_bindings k3d-k3s-default-serverlb k3d-registry
-      run k3d cluster start k3s-default --wait --timeout "$(remaining)s"
+      d3k_start_retained_cluster
     else
       bind=0.0.0.0; [ "$NOPUBLIC" = false ] || bind=127.0.0.1
       # k3d 5.9.0 has fixed default helper tags, not CLI override flags.

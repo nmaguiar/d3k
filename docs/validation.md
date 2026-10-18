@@ -568,3 +568,45 @@ local execution or native amd64 runtime acceptance was performed. Actual outer
 restart, retained Kubernetes storage and complete native parity await CI. The
 three known buildx HIGH findings still block the fresh-Ubuntu comparison; no
 waiver, dependency/default, publication or host-policy change is included.
+
+## Retained-cluster recovery and measurements — 2026-10-18
+
+Run [39165568073](https://github.com/nmaguiar/d3k/actions/runs/39165568073) passed
+amd64 workflow compatibility, including outer restart and persistence. Its first
+measurement sample reached both cold and warm readiness, then failed with
+`No help topic for 'crictl'`. The pinned K3s image dispatches the standalone
+`crictl` executable successfully; an ordinary offline container verified its
+version/help. Measurement inventory now invokes that executable with the explicit
+K3s containerd socket. Completed timings are written before image inventory, and
+failed measurements retain bounded diagnostics before removing their own container.
+
+arm64 passed both topologies and Docker resource controls, restarted Docker,
+then failed `k3d cluster start` when the server restarted during post-start
+preparation. The daemon log also records a cgroup.procs `device or resource busy`
+error during restoration. Later node logs show K3s starting again. This evidence
+does not establish the underlying cgroup cause or prove eventual recovery.
+
+Retained-default-cluster startup now permits at most three attempts under the
+same startup deadline. After a failed attempt it stops only `k3s-default`, waits
+two seconds within that deadline, and retries. A failed stop aborts recovery.
+This scoped stop matters because [k3d v5.9.0 ClusterStart](https://github.com/k3d-io/k3d/blob/v5.9.0/pkg/client/cluster.go)
+skips post-start preparation for nodes it finds already running. Logs preserve
+each failed attempt. Existing endpoint validation, API/node/CoreDNS readiness and
+SOCKS checks still follow successful startup; retry exhaustion remains a failure.
+New-cluster creation is unchanged. No cluster deletion, cgroup mutation, volume
+removal or automatic mode change is performed.
+
+Focused checks passed: `bash tests/fast.sh`, ShellCheck warning/error checks,
+workflow YAML parsing and `git diff --check`. New command-mocked regressions cover
+first-attempt success, recovery, scoped stop sequencing, attempt exhaustion,
+decreasing timeout budgets, deadline expiry and stop failure. Measurement fixtures
+cover all three samples, the corrected inventory argv, retained timings, failure
+diagnostics and preservation of the original error status. The Linux-only mocked
+engine-exit regression also passed in an ordinary container.
+
+The rebuilt native arm64 image is `d3k-local:cluster-retry`. Local evidence is in
+ignored `.evidence/cluster-retry-patch/`. Privileged retained-cluster recovery and
+complete measurement samples remain NOT TESTED locally and require native CI.
+All eight ordinary-container integration groups passed; the suite returned 77
+for privileged integration NOT TESTED. The known buildx security findings and
+rootless feasibility failures remain unresolved.
