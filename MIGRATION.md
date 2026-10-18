@@ -14,9 +14,10 @@ Each stage is independently reviewable. Implementation completion is distinct
 from a support gate: native Linux amd64 and arm64 workflow evidence is required
 for Phase 1. Missing prerequisites produce NOT TESTED, never PASS.
 
-Current gate: **CLOSED**. Completed native Linux amd64/arm64 CI runs passed
-Docker-only tests but failed Kubernetes API readiness; the endpoint repair awaits
-native acceptance. The fresh Ubuntu control also exposes a buildx compiler-version difference
+Current gate: **CLOSED**. The latest completed native Linux amd64/arm64 CI run
+passed the API repair, base Kubernetes/Docker/SOCKS workflows and three-server
+topology, then failed server-plus-agents DNS. The bounded DNS readiness patch
+awaits native acceptance. The fresh Ubuntu control also exposes a buildx compiler-version difference
 with three additional reported fixable HIGH findings in Debian. No waiver was
 added. Phase 1c reporting/CI is implemented, but release evidence, full-image
 prewarming and performance validation remain incomplete. Phases 2/3 are not
@@ -48,7 +49,7 @@ Phase 2 prototype implementation checklist (support gate remains closed):
 | SSH authentication and forwarding | Supplied credentials | Supplied credentials | Keys by default, port 2222 | Supplied credentials |
 | Effective Docker and pod resource limits | Measure | Hard gate | Hard gate | Daemon gate |
 | Universal privileged Docker operations | Compatibility option | Not promised | Restricted | Daemon dependent |
-| Actual runtime results | NOT TESTED | NOT TESTED | NOT TESTED | NOT TESTED |
+| Latest native acceptance | FAIL (server/agent DNS) | FAIL (cgroup feasibility) | NOT TESTED | NOT TESTED |
 
 Test native Linux amd64/arm64 first; add Docker Desktop macOS Apple Silicon and
 Windows/WSL2 only with actual evidence. Emulation is build proof only.

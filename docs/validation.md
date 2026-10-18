@@ -474,3 +474,46 @@ artifact is available or a separately reviewed build strategy is implemented.
 Investigation/build/scan/test evidence is retained under ignored
 `.evidence/endpoint-buildx/`. Rootful remains default, rootless remains gated,
 and no image publication or promotion is authorized by this patch.
+
+## Topology DNS readiness patch — 2026-10-18
+
+Run `39149986122` passed base readiness, API endpoint validation, Docker/Kubernetes
+workflows, host SOCKS, and the three-server topology on both native architectures.
+The server-plus-two-agents topology reached three Ready nodes and a fully rolled
+out fixture DaemonSet, then its first DNS/Service request failed with
+`wget: bad address 'node-echo.default.svc.cluster.local:8080'`. CoreDNS startup
+timestamps coincide with the failed request. A readiness race is strongly
+indicated; persistent DNS/network faults are not ruled out by that evidence.
+
+The topology suite now waits for CoreDNS rollout, then validates DNS plus HTTP
+Service connectivity from **every** fixture pod, accepting only a response naming
+one of the actual fixture pods. CoreDNS and all pod probes share a 120-second
+deadline; each request is bounded. This barrier runs after creation and after
+restart with a refreshed pod inventory. Permanent DNS failure, missing pods,
+CoreDNS rollout failure and unexpected responses still fail. Existing per-node
+DNS assertions, all-pairs pod-IP connectivity, multi-backend load-balancing,
+independent default-cluster checks and stop/start checks are retained.
+
+On any topology failure, an EXIT handler preserves the original failure status
+and records context/phase. Before outer teardown, it collects that topology's
+API/node/pod status, kube-dns Service/EndpointSlices, CoreDNS rollout state/logs
+and events under a separate 45-second deadline. Output stays in the existing
+per-topology artifact log, with credential-related lines redacted. It does not
+query Secret objects or dump raw kubeconfig.
+
+Local verification: `bash tests/fast.sh` passed, including command-mocked tests
+for delayed DNS, checking every pod, CoreDNS-first sequencing, repeat checks on
+restart, empty inventories, unavailable CoreDNS, the failing context's diagnostic
+queries and a bounded permanent DNS failure. An actual offline ordinary-container
+invocation of the topology script with failed mock cluster commands preserved
+exit 17, queried `k3d-server-agents`, and redacted a fixture credential-related
+line. ShellCheck warning/error checks, workflow YAML parsing and diff checks
+passed. These are focused logic/diagnostic checks, not native networking proof.
+Evidence is retained locally under ignored `.evidence/topology-dns/`.
+
+Actual agent-topology DNS, cross-node networking and restart acceptance of this
+patch are NOT TESTED locally and await the fresh native CI execution. The known
+three buildx CVEs still block the fresh-Ubuntu security comparison; scans and
+the published-reference comparison passed in the completed run. Rootless still
+fails its cgroup feasibility gate. No support/default, host-policy, publishing
+or security-waiver change is included.
