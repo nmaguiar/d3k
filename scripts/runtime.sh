@@ -3,13 +3,17 @@ set -Eeuo pipefail
 lib=${D3K_LIB_DIR:-/usr/local/lib/d3k}
 source "$lib/environment.sh"
 source "$lib/lock.sh"
+source "$lib/rootless.sh"
 d3k_resolve
 state() { printf '%s\n' "$2" > "$D3K_RUNTIME_DIR/$1.state.tmp"; mv "$D3K_RUNTIME_DIR/$1.state.tmp" "$D3K_RUNTIME_DIR/$1.state"; }
 remaining() { local n=$((deadline - SECONDS)); [ "$n" -gt 0 ] || return 1; printf '%s' "$n"; }
 run() { local n; n=$(remaining) || return 124; timeout --foreground -k 2 "$n" "$@"; }
 probe() {
   case "$1" in
-    Docker) timeout 5 docker info >/dev/null 2>&1 ;;
+    Docker)
+      if [ "$D3K_DOCKER_MODE" = rootless ]; then
+        [ "$(cat "$D3K_RUNTIME_DIR/rootless-feasibility.state" 2>/dev/null)" = ready ] && d3k_rootless_identity
+      else timeout 5 docker info >/dev/null 2>&1; fi ;;
     Kubernetes)
       timeout 5 kubectl --context k3d-k3s-default --request-timeout=4s get --raw=/readyz >/dev/null 2>&1 &&
       timeout 5 kubectl --context k3d-k3s-default --request-timeout=4s wait node --all --for=condition=Ready --timeout=1s >/dev/null 2>&1 &&
@@ -57,9 +61,11 @@ snapshot() {
   done
 }
 stop() {
+  if [ "$D3K_DOCKER_MODE" = rootless ]; then d3k_rootless_stop || true; fi
   # Verify the process executable before using invocation-owned PID files.
   local name pid exe
   for name in docker ssh; do
+    [ "$name" != docker ] || [ "$D3K_DOCKER_MODE" != rootless ] || continue
     [ -s "$D3K_RUNTIME_DIR/$name.pid" ] || continue
     pid=$(sudo -n cat "$D3K_RUNTIME_DIR/$name.pid" 2>/dev/null) || continue
     case "$pid" in ''|*[!0-9]*) continue;; esac
@@ -78,6 +84,7 @@ start() {
     local code=$?
     state "$active" failed
     echo "d3k: $active startup failed (exit $code); inspect $D3K_RUNTIME_DIR/startup.log" >&2
+    if [ "$D3K_DOCKER_MODE" = rootless ]; then d3k_rootless_stop || true; fi
     exit "$code"
   }
   trap startup_error ERR
@@ -103,9 +110,34 @@ start() {
   fi
   [ "$NODOCKER" = false ] || return 0
   active=Docker
-  if probe Docker; then echo 'd3k: refusing a pre-existing daemon during managed startup' >&2; return 1; fi
-  sudo -n dockerd --config-file=/etc/docker/daemon.json --pidfile="$D3K_RUNTIME_DIR/docker.pid" &
-  wait_for Docker
+  if timeout 5 docker info >/dev/null 2>&1; then echo 'd3k: refusing a pre-existing daemon during managed startup' >&2; return 1; fi
+  if [ "$D3K_DOCKER_MODE" = rootless ]; then
+    d3k_rootless_prepare
+    # Do not inherit rootful daemon configuration or user-selected stores.
+    printf '{}\n' > "$XDG_RUNTIME_DIR/daemon.json"
+    # Fixed data path is assigned by the sourced rootless.sh helper.
+    # shellcheck disable=SC2154
+    env -u _DOCKERD_ROOTLESS_CHILD -u _DOCKERD_ROOTLESS_SELINUX -u DOCKERD_ROOTLESS_ROOTLESSKIT_FLAGS \
+      DOCKERD=/usr/bin/dockerd dockerd-rootless.sh --config-file="$XDG_RUNTIME_DIR/daemon.json" --host="unix://$XDG_RUNTIME_DIR/docker.sock" \
+      --data-root="$d3k_rootless_data" --exec-root="$XDG_RUNTIME_DIR/docker-exec" \
+      --pidfile="$XDG_RUNTIME_DIR/docker.pid" --storage-driver=vfs --feature=containerd-snapshotter=false &
+    printf '%s\n' "$!" > "$D3K_RUNTIME_DIR/rootless.pid"
+    until run "$0" rootless-identity; do
+      remaining >/dev/null || return 124
+      pid=$(cat "$D3K_RUNTIME_DIR/rootless.pid")
+      kill -0 "$pid" 2>/dev/null && [[ "$(ps -o stat= -p "$pid")" != Z* ]] || return 1
+      sleep 1
+    done
+    run "$0" rootless-cgroups
+    state rootless-feasibility ready
+  else
+    if [ -L /var/run/docker.sock ]; then
+      [ "$(readlink /var/run/docker.sock)" = /run/user/1001/docker.sock ] || return 1
+      sudo -n rm /var/run/docker.sock
+    fi
+    sudo -n dockerd --config-file=/etc/docker/daemon.json --pidfile="$D3K_RUNTIME_DIR/docker.pid" &
+    wait_for Docker
+  fi
   state Docker ready
   if [ "$NOK8S" = false ]; then
     active=Kubernetes
@@ -166,10 +198,14 @@ case "${1:-}" in
       code=$?
       if [ "$NODOCKER" = false ] && ! probe Docker; then state Docker failed; fi
       if [ "$NOSSH" = false ] && ! probe SSH; then state SSH failed; fi
+      if [ "$D3K_DOCKER_MODE" = rootless ]; then d3k_rootless_stop || true; fi
       echo "d3k: a managed daemon exited unexpectedly (exit $code)" >&2
       exit 1
     fi ;;
   probe) probe "${2:?component required}" ;;
+  rootless-identity) d3k_rootless_identity ;;
+  rootless-cgroups) d3k_rootless_cgroups ;;
+  mode) printf '%s\n' "$D3K_DOCKER_MODE" ;;
   snapshot) snapshot ;;
   stop) stop ;;
   *) echo 'usage: runtime.sh start|snapshot|probe COMPONENT|stop' >&2; exit 2 ;;

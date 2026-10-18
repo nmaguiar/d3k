@@ -17,7 +17,7 @@ install -d -m 0755 /etc/apt/keyrings
 download https://download.docker.com/linux/debian/gpg /etc/apt/keyrings/docker.asc "$(lock_get DOCKER_KEY_SHA256)"
 printf 'deb [arch=%s signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian trixie stable\n' "$arch" > /etc/apt/sources.list.d/docker.list
 apt-get update
-apt-get install -y --no-install-recommends "docker-ce=$(lock_get DOCKER_VERSION)" "docker-ce-cli=$(lock_get DOCKER_VERSION)" "containerd.io=$(lock_get CONTAINERD_VERSION)" "docker-buildx-plugin=$(lock_get BUILDX_VERSION)" "docker-compose-plugin=$(lock_get COMPOSE_VERSION)"
+apt-get install -y --no-install-recommends "docker-ce=$(lock_get DOCKER_VERSION)" "docker-ce-cli=$(lock_get DOCKER_VERSION)" "docker-ce-rootless-extras=$(lock_get DOCKER_VERSION)" "slirp4netns=$(lock_get SLIRP4NETNS_VERSION)" "containerd.io=$(lock_get CONTAINERD_VERSION)" "docker-buildx-plugin=$(lock_get BUILDX_VERSION)" "docker-compose-plugin=$(lock_get COMPOSE_VERSION)"
 update-alternatives --set iptables /usr/sbin/iptables-legacy
 update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 install -d /etc/docker
@@ -56,14 +56,22 @@ printf '#!/bin/sh\nexec docker compose "$@"\n' > /usr/bin/docker-compose
 chmod +x /usr/bin/docker-compose
 groupadd -g 1001 user
 useradd -m -u 1001 -g 1001 -G docker -s /bin/bash user
+# useradd normally creates these; require explicit, non-overlapping mappings.
+sed -i '/^user:/d' /etc/subuid /etc/subgid
+printf 'user:100000:65536\n' >> /etc/subuid
+printf 'user:100000:65536\n' >> /etc/subgid
 printf 'user ALL=(ALL) NOPASSWD: ALL\n' > /etc/sudoers.d/user
 chmod 440 /etc/sudoers.d/user
 # No embedded password, host identity, or writable passwd database.
 passwd -l user
 rm -f /etc/ssh/ssh_host_*
 install -d -o 1001 -g 1001 -m 0700 /run/d3k
+install -d -o 1001 -g 1001 -m 0700 /run/user/1001
 mkdir -p /usr/share/d3k
 dpkg-query -W > /usr/share/d3k/packages.tsv
+rootlesskit --version > /usr/share/d3k/rootless-toolchain.txt
+slirp4netns --version >> /usr/share/d3k/rootless-toolchain.txt
+sha256sum /usr/bin/rootlesskit /usr/bin/dockerd-rootless.sh /usr/bin/slirp4netns /usr/bin/newuidmap /usr/bin/newgidmap > /usr/share/d3k/rootless-toolchain.sha256
 opack list > /usr/share/d3k/opacks.txt
 oaf -c 'print(getVersion())' > /usr/share/d3k/openaf-version.txt
 test "$(cat /usr/share/d3k/openaf-version.txt)" = "$(lock_get OPENAF_VERSION)"

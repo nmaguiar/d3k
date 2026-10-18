@@ -18,7 +18,9 @@ source scripts/environment.sh
 for value in true TRUE 1 yes On; do flag=$value; d3k_bool flag; [ "$flag" = true ]; done
 for value in '' false FALSE 0 no OFF; do flag=$value; d3k_bool flag; [ "$flag" = false ]; done
 if (flag=maybe; d3k_bool flag) 2>/dev/null; then echo 'FAIL invalid boolean accepted'; exit 1; fi
-if (D3K_DOCKER_MODE=rootless; d3k_resolve) 2>/dev/null; then echo 'FAIL gated mode accepted'; exit 1; fi
+(D3K_DOCKER_MODE=rootless; d3k_resolve; [ "$DOCKER_HOST" = unix:///var/run/docker.sock ])
+if (D3K_DOCKER_MODE=external; d3k_resolve) 2>/dev/null; then echo 'FAIL reserved mode accepted'; exit 1; fi
+if (D3K_DOCKER_MODE=typo; d3k_resolve) 2>/dev/null; then echo 'FAIL unknown mode accepted'; exit 1; fi
 if (DOCKER_HOST=tcp://example.invalid:2375; d3k_resolve) 2>/dev/null; then echo 'FAIL foreign endpoint accepted'; exit 1; fi
 if (DOCKER_CONTEXT=foreign; d3k_resolve) 2>/dev/null; then echo 'FAIL foreign context accepted'; exit 1; fi
 for value in 0 -1 1.5 abc 01 86401; do
@@ -84,4 +86,22 @@ printf '<compose>\n<version>\n' > "$tmp/compose.expected"
 cmp "$tmp/compose" "$tmp/compose.expected"
 if (D3K_K3S_IMAGE='--bad image'; d3k_resolve) 2>/dev/null; then echo 'FAIL invalid image accepted'; exit 1; fi
 if (SSH_PASS=''; d3k_resolve) 2>/dev/null; then echo 'FAIL empty password accepted'; exit 1; fi
+# Exercise the feasibility decision independently of available host cgroups.
+# These mocks prove rejection logic, never effective resource enforcement.
+source scripts/rootless.sh
+cat > "$tmp/bin/docker" <<'SH'
+#!/usr/bin/env bash
+case "$*" in
+  *CgroupDriver*) printf '%s\n' "$D3K_TEST_CGROUP_DRIVER";;
+  *CgroupVersion*) printf '%s\n' "$D3K_TEST_CGROUP_VERSION";;
+esac
+SH
+for pair in 'none 2' 'cgroupfs 2' 'systemd 1'; do
+  read -r driver version <<< "$pair"
+  if (export PATH="$tmp/bin:$PATH" D3K_RUNTIME_DIR="$tmp/run" D3K_TEST_CGROUP_DRIVER=$driver D3K_TEST_CGROUP_VERSION=$version; d3k_rootless_cgroups) 2>/dev/null; then
+    echo 'FAIL unusable rootless cgroups accepted'; exit 1
+  fi
+done
+(export PATH="$tmp/bin:$PATH" D3K_RUNTIME_DIR="$tmp/run" D3K_TEST_CGROUP_DRIVER=systemd D3K_TEST_CGROUP_VERSION=2; d3k_rootless_cgroups)
+grep -q 'effective_resource_limits=NOT TESTED' "$tmp/run/rootless-cgroups.txt"
 echo 'PASS: syntax, booleans, mode/endpoint/timeout rejection, argv/stdin/stderr/exit status, NODOCKER probes'

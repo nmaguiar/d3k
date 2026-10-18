@@ -23,8 +23,8 @@ d3k_resolve() {
   for flag in NOSSH NODOCKER NOK8S NOPUBLIC; do d3k_bool "$flag" || return; done
   export D3K_DOCKER_MODE=${D3K_DOCKER_MODE:-rootful}
   case "$D3K_DOCKER_MODE" in
-    rootful) ;;
-    rootless|external) d3k_error "$D3K_DOCKER_MODE is gated and not implemented in this Phase 1 candidate"; return 2 ;;
+    rootful|rootless) ;;
+    external) d3k_error "external is reserved for Phase 3 and not implemented"; return 2 ;;
     *) d3k_error "unknown D3K_DOCKER_MODE"; return 2 ;;
   esac
   export D3K_STARTUP_TIMEOUT=${D3K_STARTUP_TIMEOUT:-300}

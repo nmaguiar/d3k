@@ -26,7 +26,8 @@ do {
     })) break;
     sleep(250, true);
 } while (true);
-if (json) print(stringify({mode: getEnv("D3K_DOCKER_MODE") || "rootful", components: result, ready: code === 0}, __, ""));
+var mode = $sh(["/usr/local/lib/d3k/runtime.sh", "mode"]).get(0);
+if (json) print(stringify({mode: String(mode.stdout || "unknown").trim(), components: result, ready: code === 0}, __, ""));
 else {
     print("d3k status");
     Object.keys(result).forEach(function(name) { print(name + ": " + result[name].state + " - " + result[name].reason); });
