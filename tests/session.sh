@@ -2,6 +2,8 @@
 # Nonprivileged container tests: signals, stale markers, SSH login and forwarding.
 set -euo pipefail
 image=${1:?}; out=${2:?}
+mode=${D3K_TEST_MODE:-rootful}
+case "$mode" in rootful|rootless) ;; *) exit 2;; esac
 mkdir -p "$out"
 out=$(cd "$out" && pwd)
 tmp=$(mktemp -d)
@@ -17,7 +19,7 @@ bounded() {
   wait "$timer" 2>/dev/null || true
   return "$code"
 }
-docker run -d --name "$name" --network none -e NOSSH=true -e NODOCKER=true "$image" bash -c 'trap "exit 42" TERM; echo ready; while :; do sleep 1; done' >/dev/null
+docker run -d --name "$name" --network none -e "D3K_DOCKER_MODE=$mode" -e NOSSH=true -e NODOCKER=true "$image" bash -c 'trap "exit 42" TERM; echo ready; while :; do sleep 1; done' >/dev/null
 for ((i=0; i<50; i++)); do
   docker logs "$name" 2>/dev/null | grep -q ready && break
   sleep 0.1
@@ -27,7 +29,7 @@ docker stop -t 5 "$name" >/dev/null
 docker rm "$name" >/dev/null
 echo 'PASS: foreground TERM and exit status'
 ssh-keygen -q -t ed25519 -N '' -f "$tmp/key"
-docker run -d --name "$name" -e NODOCKER=true --mount "type=bind,src=$tmp/key.pub,dst=/home/user/.ssh/authorized_keys,readonly" -p 127.0.0.1::22 "$image" >/dev/null
+docker run -d --name "$name" -e "D3K_DOCKER_MODE=$mode" -e NODOCKER=true --mount "type=bind,src=$tmp/key.pub,dst=/home/user/.ssh/authorized_keys,readonly" -p 127.0.0.1::22 "$image" >/dev/null
 docker exec "$name" status.js check=true json=true timeout=30 > "$out/keys-only-status.json"
 port=$(docker port "$name" 22/tcp); port=${port##*:}
 bounded ssh -F /dev/null -o StrictHostKeyChecking=accept-new -o "UserKnownHostsFile=$tmp/key-only-hosts" -o ConnectTimeout=5 -o BatchMode=yes -p "$port" -i "$tmp/key" user@127.0.0.1 'test "$(id -u)" = 1001'
@@ -36,13 +38,14 @@ echo 'PASS: mounted authorized keys without SSH_PASS'
 # Explicit test-only password contains shell metacharacters; never interpolate it.
 export SSH_PASS='literal-$(touch /tmp/d3k-password-injection)-;"quoted'
 export D3K_TEST_PASSWORD=$SSH_PASS
-docker run -d --name "$name" -e NODOCKER=true -e SSH_PASS -p 127.0.0.1::22 "$image" >/dev/null
+docker run -d --name "$name" -e "D3K_DOCKER_MODE=$mode" -e NODOCKER=true -e SSH_PASS -p 127.0.0.1::22 "$image" >/dev/null
 docker exec -i "$name" bash -c 'umask 077; mkdir -p ~/.ssh; cat > ~/.ssh/authorized_keys' < "$tmp/key.pub"
 docker exec "$name" status.js check=true json=true timeout=30 > "$out/ssh-status.json"
 port=$(docker port "$name" 22/tcp)
 port=${port##*:}
 options=(-F /dev/null -o HostKeyAlias=d3k-session -o StrictHostKeyChecking=accept-new -o "UserKnownHostsFile=$tmp/known_hosts" -o ConnectTimeout=5 -p "$port")
 bounded ssh "${options[@]}" -o BatchMode=yes -i "$tmp/key" user@127.0.0.1 'test "$(id -u)" = 1001; test ! -e /tmp/d3k-password-injection; status.js check=true json=true timeout=5' > "$out/ssh-command.json"
+grep -q "\"mode\":\"$mode\"" "$out/ssh-command.json"
 bounded ssh "${options[@]}" -o BatchMode=yes -i "$tmp/key" -W 127.0.0.1:22 user@127.0.0.1 > "$out/ssh-forward.txt" || true
 grep -q '^SSH-2.0-' "$out/ssh-forward.txt"
 cat > "$tmp/askpass" <<'ASKPASS'

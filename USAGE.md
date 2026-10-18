@@ -235,10 +235,13 @@ This deliberately fixes the previous behavior where the string `false` enabled
 a flag. `NODOCKER=true` skips all Docker, Kubernetes, and SOCKS probes and startup;
 `NOK8S=true` keeps Docker-only SOCKS. SSH remains independent.
 
-`D3K_DOCKER_MODE` defaults to rootful; rootless/external are gated and rejected in
-this candidate. `D3K_STARTUP_TIMEOUT` defaults to 300 seconds. An explicit
+`D3K_DOCKER_MODE` defaults to rootful. `rootless` selects an experimental prototype
+with namespace and cgroup feasibility checks; see [rootless experiment](docs/rootless.md).
+`external` remains reserved and rejected. `D3K_STARTUP_TIMEOUT` defaults to 300 seconds. An explicit
 `D3K_K3S_IMAGE` selects an experimental image override, logged with its digest.
-`DOCKER_HOST` and `DOCKER_CONTEXT` must identify the managed rootful daemon.
+`DOCKER_HOST` and `DOCKER_CONTEXT` must identify the managed daemon through
+`unix:///var/run/docker.sock` (or the default context). A different endpoint is
+rejected rather than used or silently replaced.
 
 Status distinguishes disabled, starting, ready, degraded, and failed components.
 Exit codes are 0 for enabled components ready, 1 for failure/degradation/timeout,

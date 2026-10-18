@@ -6,7 +6,7 @@ The untracked `.mini-a` file is unrelated and must remain untouched.
 - [x] 1a implementation: immutable references, CI containment, shared tests, startup/status fixes.
 - [x] 1b implementation: Debian 13 rootful candidate and verified installation inputs.
 - [ ] 1c: comparison, scans, safe full-image handling, release gates.
-- [ ] 2: optional rootless mode, only after Phase 1 passes.
+- [ ] 2: experimental rootless prototype; support remains gated on Phase 1 and native parity.
 - [ ] 3a: reduced-privilege all-in-one, only after Phase 2 passes.
 - [ ] 3b: dedicated client/daemon experiment, only after Phase 2 passes.
 
@@ -19,8 +19,20 @@ run, and the fresh Ubuntu control exposes a buildx compiler-version difference
 with three additional reported fixable HIGH findings in Debian. No waiver was
 added. Phase 1c reporting/CI is implemented, but release evidence, full-image
 prewarming and performance validation remain incomplete. Phases 2/3 are not
-implemented because their preceding gate is closed. See
+promoted while their preceding gate is closed. The requested Phase 2 prototype
+may be developed without treating either gate as passed. See
 [the measured report](docs/validation.md).
+
+Phase 2 prototype implementation checklist (support gate remains closed):
+
+- [x] Install versioned extras/network helper and implement actual UID mapping probe.
+- [x] Implement canonical socket contract and reject foreign endpoints.
+- [x] Separate runtime/storage and implement bounded daemon identity/startup/cleanup.
+- [x] Reject failed namespace/cgroup feasibility; never fall back.
+- [x] Extend shared tests with negative, identity and endpoint checks.
+- [x] Record local results and retain experimental status after prerequisite rejection.
+- [ ] Native privileged daemon/consumer parity, usable delegation, effective Docker/pod limits.
+- [ ] Rootless multi-node networking/storage/SSH/restart/performance acceptance.
 
 ## Compatibility matrix
 

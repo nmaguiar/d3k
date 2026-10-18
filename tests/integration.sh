@@ -3,6 +3,8 @@
 set -euo pipefail
 root=$(cd "$(dirname "$0")/.." && pwd)
 image=${1:?image under test}; out=${2:?evidence directory}
+mode=${D3K_TEST_MODE:-rootful}
+case "$mode" in rootful|rootless) ;; *) echo 'unsupported test mode' >&2; exit 2;; esac
 mkdir -p "$out"; out=$(cd "$out" && pwd)
 results=$out/results.tsv
 printf 'test\tstatus\tdetail\n' > "$results"
@@ -19,6 +21,7 @@ cleanup() {
 trap cleanup EXIT
 docker info --format 'os={{.OperatingSystem}} arch={{.Architecture}} kernel={{.KernelVersion}} engine={{.ServerVersion}} cgroups={{.CgroupVersion}} driver={{.CgroupDriver}} storage={{.Driver}} fs={{json .DriverStatus}}' > "$out/platform.txt"
 docker image inspect "$image" --format 'id={{.Id}} digests={{json .RepoDigests}} arch={{.Architecture}} size={{.Size}}' > "$out/image.txt"
+printf '%s\n' "$mode" > "$out/mode.txt"
 testcase() {
   local test=$1; shift
   if "$@" > "$out/$test.log" 2>&1; then record "$test" PASS 'see log'
@@ -36,15 +39,20 @@ record argv PASS 'boundaries, empty args, literal glob, exit status, stderr'
 testcase tools docker run --rm --network none -e NODOCKER=true -e NOSSH=true "$image" /bin/bash -c 'set -e; id; test "$(id -u)" = 1001; test ! -w /etc/passwd; test -L /usr/local/bin/k3d; oaf -c "print(getVersion())"; oafp data="{\"test\":1}" out=json; printf "todo: [fixture]\njobs:\n- name: fixture\n  exec: print(123456789)\n" > /tmp/fixture.yaml; ojob /tmp/fixture.yaml | grep 123456789; opack list; docker --version; docker-compose version; docker-compose --version | grep "Docker Compose version"; docker buildx version; kubectl version --client; helm version; skopeo --version; test -s /home/user/.openaf_completion_bash.sh; test -x /opt/oaf/ojobs/vscTunnel.yaml; usage-help > /tmp/usage.txt; grep -q "d3k usage" /tmp/usage.txt; bash -ic "type help oafptab; complete -p oaf ojob docker kubectl helm skopeo k3d"'
 testcase session bash "$root/tests/session.sh" "$image" "$out/session"
 testcase negative-prerequisites bash "$root/tests/negative.sh" "$image" "$out/negative"
+testcase rootless-negative-prerequisites bash "$root/tests/rootless-negative.sh" "$image" "$out/rootless-negative"
 if [ "${D3K_TEST_PRIVILEGED:-0}" != 1 ]; then
   record integration 'NOT TESTED' 'requires D3K_TEST_PRIVILEGED=1 on a disposable runner'
   exit 77
 fi
 testcase docker-only-flags bash "$root/tests/docker-only.sh" "$image" "$out/docker-only"
 # Namespace and publications belong only to this disposable test container.
-docker run -d --name "$name" --label io.d3k.test=true --privileged --cgroupns=host -e NOSSH=true -e D3K_STARTUP_TIMEOUT=300 -p 127.0.0.1::1080 "$image" > "$out/container-id.txt"
+docker run -d --name "$name" --label io.d3k.test=true --privileged --cgroupns=host -e "D3K_DOCKER_MODE=$mode" -e NOSSH=true -e D3K_STARTUP_TIMEOUT=300 -p 127.0.0.1::1080 "$image" > "$out/container-id.txt"
 inside() { docker exec "$name" "$@"; }
 testcase readiness inside status.js check=true json=true timeout=300
+if [ "$mode" = rootless ]; then
+  testcase rootless-identity inside /usr/local/lib/d3k/runtime.sh rootless-identity
+  testcase canonical-endpoint inside bash -c 'set -e; test "$DOCKER_HOST" = unix:///var/run/docker.sock; env -u DOCKER_HOST docker info; docker compose ls; docker-compose ls; cat /run/d3k/rootless-mappings.txt /run/d3k/rootless-cgroups.txt; test ! -e /run/d3k/docker.pid'
+fi
 docker cp "$root/tests/." "$name:/tmp/d3k-tests"
 testcase inventory inside bash -c 'cat /etc/os-release; cat /usr/share/d3k/packages.tsv; cat /usr/share/d3k/opacks.txt; cat /usr/share/d3k/java-version.txt; docker info; docker images --digests'
 testcase docker-workflows inside bash -c '

@@ -7,8 +7,10 @@ In-container Docker and multi-node Kubernetes (k3d), with OpenAF tools.
 
 This checkout contains a **Debian 13 rootful candidate**. Published tags and the
 rootful default have not changed. Native Linux amd64/arm64 integration gates
-remain outstanding; rootless and external modes are rejected until their gates
-are implemented. See [migration status](MIGRATION.md) and [validation](docs/validation.md).
+remain outstanding. An optional rootless prototype stops when namespace or
+cgroup feasibility fails; it has no validated workflow support yet. External
+mode remains rejected. See [migration status](MIGRATION.md),
+[validation](docs/validation.md), and [rootless experiment](docs/rootless.md).
 
 Build locally (no publication):
 

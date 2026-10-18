@@ -66,6 +66,13 @@ jobs:
       env:
         D3K_TEST_PRIVILEGED: '1'
       run: bash scripts/measure.sh d3k-ci:candidate .evidence/measurements
+    - name: Experimental rootless feasibility and shared workflows (no promotion gate)
+      if: always()
+      continue-on-error: true
+      env:
+        D3K_TEST_PRIVILEGED: '1'
+        D3K_TEST_MODE: rootless
+      run: bash tests/integration.sh d3k-ci:candidate .evidence/rootless-integration
     - name: Scan the retained archive
       if: always()
       env:

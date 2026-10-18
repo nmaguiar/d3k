@@ -5,9 +5,9 @@ image=${1:?}; out=${2:?}
 mkdir -p "$out"
 [ "${D3K_TEST_PRIVILEGED:-0}" = 1 ] || { echo 'NOT TESTED: disposable privileged runner not selected'; exit 77; }
 name=d3k-docker-only-$(date +%s)-$$
-cleanup() { docker cp "$name:/run/d3k/startup.log" "$out/startup.log" 2>/dev/null || true; docker rm -f "$name" >/dev/null 2>&1 || true; }
+cleanup() { docker cp "$name:/run/d3k/." "$out/runtime" 2>/dev/null || true; docker rm -f "$name" >/dev/null 2>&1 || true; }
 trap cleanup EXIT
-docker run -d --name "$name" --privileged --cgroupns=host -e NOK8S=true -e NOPUBLIC=true -e NOSSH=true -p 127.0.0.1::1080 "$image" >/dev/null
+docker run -d --name "$name" --privileged --cgroupns=host -e "D3K_DOCKER_MODE=${D3K_TEST_MODE:-rootful}" -e NOK8S=true -e NOPUBLIC=true -e NOSSH=true -p 127.0.0.1::1080 "$image" >/dev/null
 docker exec "$name" status.js check=true json=true timeout=180 > "$out/status.json"
 docker exec "$name" bash -c '
   set -euo pipefail

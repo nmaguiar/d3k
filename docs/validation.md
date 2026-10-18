@@ -135,7 +135,8 @@ never migrate engine stores.
 
 Before promotion: require native Linux amd64 and arm64 results, explain security
 differences, resolve any new fixable findings, verify artifact attestations and
-index assembly, and complete the declared manual checks. Phase 2/3 remain gated.
+index assembly, and complete the declared manual checks. Phase 2 support and
+Phase 3 remain gated; the experimental Phase 2 prototype is described below.
 
 ## Observed results
 
@@ -265,3 +266,106 @@ contain sensitive data. It is not silently represented as committed evidence.
 - Documentation: `README.md`, `USAGE.md`, `welcome.txt`, `MIGRATION.md`, this file
   and `docs/reference.md`; `.gitignore` excludes local evidence. `.mini-a` is
   unrelated and untouched.
+
+## Phase 2 prototype — 2026-10-18
+
+Implemented explicit `D3K_DOCKER_MODE=rootless` selection, signed version-matched
+Docker rootless extras, pinned slirp4netns, actual subordinate mapping probe,
+owned ephemeral runtime, separate marked classic-vfs storage, canonical socket
+link, daemon identity verification, cgroup feasibility rejection and owned-process
+shutdown. Rootful remains default. External remains rejected. No systemd service
+manager, host-policy workaround, automatic Docker-mode fallback or automatic
+Kubernetes disablement was added. See [commands and constraints](rootless.md).
+
+Final locally built artifacts (image IDs, not published manifest digests):
+
+| Platform | Image ID | Uncompressed bytes | Build result |
+|---|---|---:|---|
+| linux/arm64 | `sha256:069d56d13639ac64f5ef8baa9996f4b4aaa999886f82239924b61e5a0fdbe9c3` | 1,191,534,701 | PASS, native Desktop VM architecture |
+| linux/amd64 | `sha256:8d987c450faba04e8b6754fb8f875a7394b9a932e5f8649e15f039b0b542c77e` | 1,190,593,274 | PASS, emulated build only |
+
+Both architectures resolved signed Docker extras `5:29.9.1-1~debian.13~trixie`
+and slirp4netns `1.2.1-1.1`. The arm64 tool inventory records RootlessKit 3.3.0,
+slirp4netns 1.2.1/libslirp 4.8.0, root-owned 4755 mapping helpers, and their hashes.
+The extras package brings `dbus-user-session` and systemd-related dependencies;
+their presence is not usable service-manager/cgroup delegation.
+
+Execution host: macOS 27.0 arm64, Docker Desktop 4.93.0, Engine 29.8.1,
+Linux VM 7.0.14-linuxkit aarch64, cgroup v2/cgroupfs, extfs/overlay2.
+Rechecked Desktop settings: Virtualization Framework, Rosetta, VirtioFS and
+Grpcfuse configured true; Enhanced Container Isolation false. These are configured
+backend settings, not proof that every backend is simultaneously active.
+
+| Check | Result | Scope |
+|---|---|---|
+| Fast shell/configuration/argv/timeout/cgroup decision checks | PASS | Host checks; cgroup decisions mocked |
+| ShellCheck warning/error checks, workflow YAML, JS syntax, diff check | PASS | Static checks only |
+| Disabled readiness, argv, tools, sessions, rootful negative, rootless negative | PASS | Six ordinary arm64-container groups |
+| Rootless selection with NODOCKER: SSH keys/password/forwarding/restart | PASS | Mode persistence verified through noninteractive SSH; engine explicitly disabled |
+| Namespace/mapping prerequisite in ordinary negative container | FAIL | `fork/exec /proc/self/exe: operation not permitted`; rejection path PASS |
+| Live rootless daemon identity and canonical endpoint consumers | NOT TESTED | Namespace prerequisite blocks local path |
+| Actual rootless cgroup delegation and resource enforcement | NOT TESTED | No privileged disposable runner used |
+| Rootless k3d single/multi-node, SOCKS, registry, storage, restart/performance | NOT TESTED | No privileged disposable runner used |
+| Native Linux amd64 and arm64 integration | NOT TESTED | Emulation and Desktop ordinary containers do not substitute |
+| Other Docker Desktop platforms | NOT TESTED | No runners available |
+
+Exact final verification commands:
+
+```bash
+bash tests/fast.sh
+docker run --rm -v "$PWD:/mnt:ro" koalaman/shellcheck:stable \
+  --severity=warning --exclude=SC1090,SC1091 ojob_p1.sh scripts/*.sh tests/*.sh
+ruby -e 'require "yaml"; Dir[".github/workflows/*.{yml,yaml}"].each { |f| YAML.load_file(f) }'
+node --check status.js
+git diff --check
+bash tests/integration.sh d3k-local:rootless-prototype .evidence/phase2/verified-integration
+D3K_TEST_MODE=rootless bash tests/session.sh d3k-local:rootless-prototype \
+  .evidence/phase2/verified-rootless-disabled-session
+docker image save d3k-local:rootless-prototype -o .evidence/phase2/verified-arm64.tar
+D3K_SCAN_PLATFORM=linux/arm64 bash scripts/scan.sh archive \
+  .evidence/phase2/verified-arm64.tar .evidence/scanner .evidence/phase2/verified-scan-arm64.json
+/Applications/OpenAF/oaf-sb scripts/security-report.js \
+  baseline=.evidence/debian-final-scan.json \
+  candidate=.evidence/phase2/verified-scan-arm64.json gate=true
+```
+
+The integration suite returned **77**, with six PASS groups and privileged
+integration explicitly NOT TESTED. The negative rootless fixture deliberately
+uses no-new-privileges; it is not a working deployment recommendation. Its log
+confirms failed readiness and no rootful daemon fallback. The separate disabled
+rootless session returned zero and reported `mode=rootless` through SSH.
+
+The retained final scan ImageID matches the tested arm64 image above. Using the
+same Trivy 0.76.0 image and frozen DB hashes as Phase 1, OS HIGH/CRITICAL occurrences
+changed from 153/7 to **155/7**, all 162 unfixed. The two additional HIGH occurrences
+are `CVE-2026-16742` in `libpam-systemd` and `systemd-sysv`. Go findings remain
+43 HIGH, zero CRITICAL (39 fixable, four unfixed); JAR HIGH/CRITICAL remain zero.
+The Phase-2-versus-Phase-1 fixable comparison returned zero introduced findings
+and exit zero; it does not clear the older Ubuntu-comparison release blocker.
+No rootless vulnerability-reduction claim is made. amd64 scanning was NOT TESTED
+locally; the native CI matrix retains that requirement.
+
+Arm64 uncompressed size increased 32,241,105 bytes (about 2.8%) against the
+Phase 1 candidate. Rootless initialized disk usage, compressed transfer size and
+readiness/performance changes are NOT TESTED. Nested inputs were unchanged; no
+new nested scan or rootless cluster security claim is made.
+
+Evidence is retained locally under ignored `.evidence/phase2/`: final build logs,
+`final-images.txt`, `verified-integration/`, `verified-rootless-disabled-session/`,
+`verified-arm64.tar`, raw scan and hash, comparison JSON, toolchain inventory,
+platform/backend settings and static-check logs. CI now attempts the same suite
+with `D3K_TEST_MODE=rootless` on its existing disposable native matrix against
+the same built candidate; the experimental step can fail without masking its
+retained results. No remote CI run is claimed.
+
+Changed files: `Dockerfile`, `versions.yaml`, `scripts/install.sh`,
+`scripts/environment.sh`, new `scripts/rootless.sh`, `scripts/runtime.sh`,
+`status.js`, `tests/fast.sh`, `tests/integration.sh`, `tests/docker-only.sh`,
+`tests/session.sh`, new `tests/rootless-negative.sh`, the candidate workflow,
+`README.md`, `USAGE.md`, `welcome.txt`, `MIGRATION.md`, new `docs/rootless.md`
+and this report. The unrelated `.mini-a` remains untouched.
+
+Gate outcome: **experimental, not accepted**. Phase 1 remains closed and Phase 3
+has not started. Full-image, release, publishing, latest/default changes and
+native support approval remain outstanding. Rollback uses the retained Phase 1
+image and its rootful volume; no rootless data is migrated or deleted.
