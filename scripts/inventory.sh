@@ -9,6 +9,7 @@ for command in docker k3d kubectl helm skopeo; do
 done
 docker-compose version
 docker buildx version
+cat /usr/share/d3k/buildx-build.txt
 /opt/oaf/jre/bin/java -version 2>&1
 oaf -c 'print(getVersion())'
 opack list

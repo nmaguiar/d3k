@@ -39,6 +39,7 @@ printf '<a b>\n<>\n<*literal>\n' > "$out/argv.expected"
 cmp "$out/argv.expected" "$out/argv.stdout"
 record argv PASS 'boundaries, empty args, literal glob, exit status, stderr'
 testcase tools docker run --rm --network none -e NODOCKER=true -e NOSSH=true "$image" /bin/bash -c 'set -e; id; test "$(id -u)" = 1001; test ! -w /etc/passwd; test -L /usr/local/bin/k3d; oaf -c "print(getVersion())"; oafp data="{\"test\":1}" out=json; printf "todo: [fixture]\njobs:\n- name: fixture\n  exec: print(123456789)\n" > /tmp/fixture.yaml; ojob /tmp/fixture.yaml | grep 123456789; opack list; docker --version; docker-compose version; docker-compose --version | grep "Docker Compose version"; docker buildx version; kubectl version --client; helm version; skopeo --version; test -s /home/user/.openaf_completion_bash.sh; test -x /opt/oaf/ojobs/vscTunnel.yaml; usage-help > /tmp/usage.txt; grep -q "d3k usage" /tmp/usage.txt; bash -ic "type help oafptab; complete -p oaf ojob docker kubectl helm skopeo k3d"'
+testcase buildx-provenance bash "$root/tests/buildx.sh" "$image" "$out/buildx"
 testcase session bash "$root/tests/session.sh" "$image" "$out/session"
 testcase negative-prerequisites bash "$root/tests/negative.sh" "$image" "$out/negative"
 testcase engine-runtime-state bash "$root/tests/engine-runtime.sh" "$image" "$out/engine-runtime"
@@ -64,7 +65,7 @@ if [ "$mode" = rootless ]; then
   testcase canonical-endpoint inside bash -c 'set -e; test "$DOCKER_HOST" = unix:///var/run/docker.sock; env -u DOCKER_HOST docker info; docker compose ls; docker-compose ls; cat /run/d3k/rootless-mappings.txt /run/d3k/rootless-cgroups.txt; test ! -e /run/d3k/docker.pid'
 fi
 docker cp "$root/tests/." "$name:/tmp/d3k-tests"
-testcase inventory inside bash -c 'cat /etc/os-release; cat /usr/share/d3k/packages.tsv; cat /usr/share/d3k/opacks.txt; cat /usr/share/d3k/java-version.txt; docker info; docker images --digests'
+testcase inventory inside bash -c 'cat /etc/os-release; cat /usr/share/d3k/packages.tsv; cat /usr/share/d3k/buildx-build.txt; cat /usr/share/d3k/opacks.txt; cat /usr/share/d3k/java-version.txt; docker info; docker images --digests'
 testcase docker-workflows inside bash -c '
 set -euo pipefail
 source /usr/local/lib/d3k/lock.sh

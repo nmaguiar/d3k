@@ -102,6 +102,13 @@ jobs:
       env:
         D3K_SCAN_PLATFORM: linux/${{ matrix.arch }}
       run: bash scripts/scan.sh oci-archive .evidence/candidate.tar .evidence/scanner .evidence/candidate-scan.json
+    - name: Verify buildx scan coverage and fixed compiler
+      if: always() && steps.scan-db.outcome == 'success'
+      uses: openaf/ojob-action@v7
+      with:
+        oaf: scripts/check-buildx-scan.js
+        args: 'input=.evidence/candidate-scan.json'
+        dist: t8
     - name: Scan immutable published reference independently
       if: always() && steps.scan-db.outcome == 'success'
       env:

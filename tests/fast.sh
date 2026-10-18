@@ -5,13 +5,15 @@ root=$PWD
 source scripts/lock.sh
 export D3K_LOCK_FILE=$root/versions.yaml
 awk '/^[A-Za-z][A-Za-z0-9_]*:/ { if (++seen[$1] > 1) exit 1 }' versions.yaml
-for key in DEBIAN_BASE UBUNTU_BASE PUBLISHED_BUILD K3S_IMAGE REGISTRY_IMAGE K3D_PROXY_IMAGE K3D_TOOLS_IMAGE SOCKS_IMAGE TRIVY_IMAGE TEST_WEB_IMAGE; do
+for key in DEBIAN_BASE UBUNTU_BASE BUILDX_GO_BASE PUBLISHED_BUILD K3S_IMAGE REGISTRY_IMAGE K3D_PROXY_IMAGE K3D_TOOLS_IMAGE SOCKS_IMAGE TRIVY_IMAGE TEST_WEB_IMAGE; do
   [[ "$(lock_get "$key")" =~ @sha256:[a-f0-9]{64}$ ]]
 done
 while read -r key _; do
   case "$key" in *_SHA256:) [[ "$(lock_get "${key%:}")" =~ ^[a-f0-9]{64}$ ]];; esac
 done < versions.yaml
 grep -Fxq "ARG BASE_IMAGE=$(lock_get DEBIAN_BASE)" Dockerfile
+grep -Fxq "ARG BUILDX_GO_BASE=$(lock_get BUILDX_GO_BASE)" Dockerfile
+[[ "$(lock_get BUILDX_REVISION)" =~ ^[a-f0-9]{40}$ ]]
 grep -Fq "image: $(lock_get SOCKS_IMAGE)" scripts/socks.yaml
 for file in ojob_p1.sh scripts/*.sh tests/*.sh; do bash -n "$file"; done
 source scripts/environment.sh

@@ -14,14 +14,11 @@ Each stage is independently reviewable. Implementation completion is distinct
 from a support gate: native Linux amd64 and arm64 workflow evidence is required
 for Phase 1. Missing prerequisites produce NOT TESTED, never PASS.
 
-Current gate: **CLOSED**. The latest completed native Linux amd64/arm64 CI run
-passed the API repair, base Kubernetes/Docker/SOCKS workflows, three-server and
-server-plus-agents topologies, and effective Docker resource limits. amd64 also
-passed outer restart and persistence, then failed the measurement image-inventory
-command. arm64 restarted Docker but failed k3d post-start preparation during a
-node restart. The bounded retained-cluster recovery and measurement patch awaits
-native acceptance. The fresh Ubuntu control also exposes a buildx compiler-version difference
-with three additional reported fixable HIGH findings in Debian. No waiver was
+Current gate: **CLOSED**. Native run `39167666961` passed the implemented rootful
+workflow suite, outer restart/persistence and all three readiness measurement
+samples on amd64 and arm64. Only the fresh-Ubuntu security comparison failed:
+three additional fixable HIGH findings in buildx's Go standard library. The
+fixed-compiler source-build patch awaits native CI acceptance. No waiver was
 added. Phase 1c reporting/CI is implemented, but release evidence, full-image
 prewarming and performance validation remain incomplete. Phases 2/3 are not
 promoted while their preceding gate is closed. The requested Phase 2 prototype
@@ -52,7 +49,7 @@ Phase 2 prototype implementation checklist (support gate remains closed):
 | SSH authentication and forwarding | Supplied credentials | Supplied credentials | Keys by default, port 2222 | Supplied credentials |
 | Effective Docker and pod resource limits | Measure | Hard gate | Hard gate | Daemon gate |
 | Universal privileged Docker operations | Compatibility option | Not promised | Restricted | Daemon dependent |
-| Latest native acceptance | amd64 workflows PASS, measurements FAIL; arm64 restart FAIL | FAIL (cgroup feasibility) | NOT TESTED | NOT TESTED |
+| Latest native acceptance | Implemented workflows/measurements PASS; security comparison FAIL | FAIL (cgroup feasibility) | NOT TESTED | NOT TESTED |
 
 Test native Linux amd64/arm64 first; add Docker Desktop macOS Apple Silicon and
 Windows/WSL2 only with actual evidence. Emulation is build proof only.

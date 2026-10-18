@@ -17,7 +17,13 @@ install -d -m 0755 /etc/apt/keyrings
 download https://download.docker.com/linux/debian/gpg /etc/apt/keyrings/docker.asc "$(lock_get DOCKER_KEY_SHA256)"
 printf 'deb [arch=%s signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian trixie stable\n' "$arch" > /etc/apt/sources.list.d/docker.list
 apt-get update
-apt-get install -y --no-install-recommends "docker-ce=$(lock_get DOCKER_VERSION)" "docker-ce-cli=$(lock_get DOCKER_VERSION)" "docker-ce-rootless-extras=$(lock_get DOCKER_VERSION)" "slirp4netns=$(lock_get SLIRP4NETNS_VERSION)" "containerd.io=$(lock_get CONTAINERD_VERSION)" "docker-buildx-plugin=$(lock_get BUILDX_VERSION)" "docker-compose-plugin=$(lock_get COMPOSE_VERSION)"
+apt-get install -y --no-install-recommends "docker-ce=$(lock_get DOCKER_VERSION)" "docker-ce-cli=$(lock_get DOCKER_VERSION)" "docker-ce-rootless-extras=$(lock_get DOCKER_VERSION)" "slirp4netns=$(lock_get SLIRP4NETNS_VERSION)" "containerd.io=$(lock_get CONTAINERD_VERSION)" "docker-compose-plugin=$(lock_get COMPOSE_VERSION)"
+# Buildx is source-built in a separate stage; don't retain the vulnerable package.
+if dpkg-query -W -f='${Status}' docker-buildx-plugin 2>/dev/null | grep -q 'install ok installed'; then
+  echo 'Unexpected packaged buildx installation' >&2; exit 1
+fi
+docker buildx version | grep -F "$(lock_get BUILDX_VERSION) $(lock_get BUILDX_REVISION)"
+(cd /usr/libexec/docker/cli-plugins && grep '^sha256:' /usr/share/d3k/buildx-build.txt | sed 's/^sha256: //' | sha256sum -c -)
 update-alternatives --set iptables /usr/sbin/iptables-legacy
 update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 install -d /etc/docker

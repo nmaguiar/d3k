@@ -610,3 +610,63 @@ complete measurement samples remain NOT TESTED locally and require native CI.
 All eight ordinary-container integration groups passed; the suite returned 77
 for privileged integration NOT TESTED. The known buildx security findings and
 rootless feasibility failures remain unresolved.
+
+## Fixed-compiler buildx — 2026-10-18
+
+Native run [39167666961](https://github.com/nmaguiar/d3k/actions/runs/39167666961)
+passed the implemented rootful workflow suite, restart/persistence and three
+measurement samples on both architectures. Median cold/warm readiness was
+70.173/27.294 seconds on amd64 and 60.574/27.383 seconds on arm64. The only blocking
+steps were the fresh-Ubuntu comparison's three buildx standard-library findings.
+Pod resource-limit enforcement and authenticated tunnel checks remain NOT TESTED;
+rootless remains experimental after cgroup feasibility failure.
+
+The official buildx v0.38.0 binaries and signed Debian package still use Go 1.26.8.
+The candidate builds the same upstream source with fixed Go 1.26.9 in a separate
+multi-architecture build stage. The compiler image digest, source archive SHA-256,
+upstream version and revision are locked in `versions.yaml`. Compilation uses
+upstream linker fields, vendored dependencies, `GOTOOLCHAIN=local`, disabled
+module downloads and a network-disabled build step. The final image receives no
+Go toolchain or source tree. Buildx and Go licenses are retained.
+
+The vulnerable APT buildx package is omitted rather than overwritten or shadowed;
+the installer rejects an unexpected installed package. Other Docker packages
+still come from the signed Debian repository. The plugin stays at
+`/usr/libexec/docker/cli-plugins/docker-buildx`, with upstream version/revision.
+`/usr/share/d3k/buildx-build.txt` records source, compiler image, full `go version -m`
+metadata and binary checksum; inventories include it. Rebuilt artifact checksums:
+
+| Architecture | SHA-256 |
+|---|---|
+| amd64 | `85fb68311b6be23d469366b4a1e676ac89f77e6586ebf85d20c280c4bd522ca0` |
+| arm64 | `eaf13129c33d17a33849b286eb724192c20819519333619ae7c5ef64b3e7dc10` |
+
+CI additionally requires exactly one scanned buildx executable, Go 1.26.9 stdlib
+and module coverage, and absence of the original three **stdlib** findings.
+Other dependency findings, including the same CVE ID against `golang.org/x/net`,
+remain visible to the unchanged complete comparison gate. The checker has actual
+binary scan evidence and synthetic missing/duplicate/compiler/module/CVE rejection
+fixtures. No vulnerability suppression or metadata removal was introduced.
+
+Local verification: native arm64 image build and amd64 cross-compilation passed.
+Frozen Trivy 0.76.0 database scans of both rebuilt executables retain module/stdlib
+coverage and omit the original stdlib findings. The complete arm64 image scan
+passes the existing local fresh-Ubuntu-control comparison with zero newly
+introduced fixable HIGH/CRITICAL findings. Other fixable/unfixed findings remain
+reported. This is a local frozen-database comparison; fresh native CI must repeat
+it against that run's shared database snapshot.
+
+`bash tests/fast.sh`, ShellCheck warning/error checks, JavaScript syntax and
+workflow YAML checks passed. Packaged buildx version/help, offline bake,
+provenance/checksum, no duplicate package/toolchain, license and real OpenAF
+coverage-check regressions are included in the ordinary-container integration
+suite. Privileged buildx `build --load` and native amd64 execution of the new
+artifact remain NOT TESTED locally; the existing native CI integration suite
+executes them before any release decision. No default, privilege, publishing or
+promotion setting changes. Reverting this source-build change would restore the
+previous package and its known standard-library findings without migrating data.
+
+Final local arm64 image ID: `sha256:5ab934459047b2ad95848760fa4431682e7f81c0177ab5e06ea3ccb94e2ebda6`.
+All nine ordinary-container groups passed; integration returned 77 for privileged
+tests NOT TESTED. Raw scans, build metadata and comparisons are retained in the
+local Codex Security artifact collection; CI retains its own candidate evidence.
