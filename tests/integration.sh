@@ -27,7 +27,12 @@ printf '%s\n' "$mode" > "$out/mode.txt"
 testcase() {
   local test=$1; shift
   if "$@" > "$out/$test.log" 2>&1; then record "$test" PASS 'see log'
-  else record "$test" FAIL 'see log'; return 1; fi
+  else
+    local code=$?
+    if [ "$code" = 77 ]; then record "$test" 'NOT TESTED' 'missing prerequisite; see log'
+    else record "$test" FAIL 'see log'; fi
+    return "$code"
+  fi
 }
 testcase disabled docker run --rm --network none -e NODOCKER=true -e NOSSH=true "$image" status.js check=true json=true timeout=5
 set +e
@@ -131,5 +136,5 @@ testcase docker-limits inside bash /tmp/d3k-tests/limits.sh
 testcase restart docker restart -t 20 "$name"
 testcase restart-readiness inside status.js check=true json=true timeout=300
 testcase persistence inside kubectl --context k3d-k3s-default exec deployment/storage-fixture -- grep retained /data/value
-record pod-limits 'NOT TESTED' 'requires bounded Kubernetes CPU and OOM fixtures before Phase 2 support'
+testcase pod-limits inside bash /tmp/d3k-tests/pod-limits.sh
 record vsc-auth 'NOT TESTED' 'manual authentication required'

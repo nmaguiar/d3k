@@ -1,0 +1,63 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cpu-limit
+spec:
+  automountServiceAccountToken: false
+  restartPolicy: Never
+  activeDeadlineSeconds: 60
+  containers:
+  - name: fixture
+    image: D3K_TEST_WEB_IMAGE
+    command: [/bin/sh, -c]
+    args:
+    - |
+      set -eu
+      if [ ! -r /sys/fs/cgroup/cpu.max ] || [ ! -r /sys/fs/cgroup/cpu.stat ]; then
+        echo 'NOT TESTED: readable cgroup v2 CPU controls required'; exit 77
+      fi
+      cat /sys/fs/cgroup/cpu.max
+      awk '$1=="max" || $1/$2 < 0.24 || $1/$2 > 0.26 {exit 1}' /sys/fs/cgroup/cpu.max
+      before=$(awk '$1=="nr_throttled" {print $2}' /sys/fs/cgroup/cpu.stat)
+      test -n "$before"
+      result=0
+      timeout 5 sh -c 'while :; do :; done' || result=$?
+      test "$result" = 124 || test "$result" = 143
+      after=$(awk '$1=="nr_throttled" {print $2}' /sys/fs/cgroup/cpu.stat)
+      cat /sys/fs/cgroup/cpu.stat
+      test "$after" -gt "$before"
+      echo 'PASS: effective CPU quota and increased throttling'
+    resources:
+      requests: {cpu: 250m, memory: 32Mi}
+      limits: {cpu: 250m, memory: 32Mi}
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: memory-limit
+spec:
+  automountServiceAccountToken: false
+  restartPolicy: Never
+  activeDeadlineSeconds: 60
+  containers:
+  - name: fixture
+    image: D3K_TEST_WEB_IMAGE
+    command: [/bin/sh, -c]
+    args:
+    - |
+      set -eu
+      if [ ! -r /sys/fs/cgroup/memory.max ]; then
+        echo 'NOT TESTED: readable cgroup v2 memory controls required'; exit 77
+      fi
+      limit=$(cat /sys/fs/cgroup/memory.max)
+      echo "memory.max=$limit"
+      test "$limit" = 33554432
+      exec dd if=/dev/zero of=/allocation/value bs=1M count=64
+    resources:
+      requests: {cpu: 250m, memory: 32Mi}
+      limits: {cpu: 250m, memory: 32Mi}
+    volumeMounts:
+    - {name: allocation, mountPath: /allocation}
+  volumes:
+  - name: allocation
+    emptyDir: {medium: Memory, sizeLimit: 64Mi}

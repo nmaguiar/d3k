@@ -124,3 +124,4 @@ bash tests/topology-readiness-unit.sh
 bash tests/restart-unit.sh
 bash tests/cluster-retry.sh
 bash tests/measure.sh
+bash tests/pod-limits-unit.sh

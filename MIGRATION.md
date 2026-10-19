@@ -6,6 +6,9 @@ The untracked `.mini-a` file is unrelated and must remain untouched.
 - [x] 1a implementation: immutable references, CI containment, shared tests, startup/status fixes.
 - [x] 1b implementation: Debian 13 rootful candidate and verified installation inputs.
 - [ ] 1c: comparison, scans, safe full-image handling, release gates.
+  - [x] Native rootful candidate workflow, measurement and security-comparison gates.
+  - [ ] Kubernetes pod-limit execution, authenticated tunnel check, control OS/scan coverage review.
+  - [ ] Safe full-image disposition, release/rollback evidence and platform expansion.
 - [ ] 2: experimental rootless prototype; support remains gated on Phase 1 and native parity.
 - [ ] 3a: reduced-privilege all-in-one, only after Phase 2 passes.
 - [ ] 3b: dedicated client/daemon experiment, only after Phase 2 passes.
@@ -14,14 +17,14 @@ Each stage is independently reviewable. Implementation completion is distinct
 from a support gate: native Linux amd64 and arm64 workflow evidence is required
 for Phase 1. Missing prerequisites produce NOT TESTED, never PASS.
 
-Current gate: **CLOSED**. Native run `39167666961` passed the implemented rootful
-workflow suite, outer restart/persistence and all three readiness measurement
-samples on amd64 and arm64. Only the fresh-Ubuntu security comparison failed:
-three additional fixable HIGH findings in buildx's Go standard library. The
-fixed-compiler source-build patch awaits native CI acceptance. No waiver was
-added. Phase 1c reporting/CI is implemented, but release evidence, full-image
-prewarming and performance validation remain incomplete. Phases 2/3 are not
-promoted while their preceding gate is closed. The requested Phase 2 prototype
+Phase 1 release gate: **CLOSED**, despite successful candidate CI. Native run
+`39172295738` at `975c015` passed the implemented rootful workflows, restart,
+persistence, all three measurement samples and both security comparisons on
+amd64 and arm64. The buildx compiler fix passed without a waiver. New pod-limit
+fixtures await native execution; authenticated tunnel, full-image and release
+evidence remain incomplete. The historical control's scanner OS identity and
+coverage also require review. See the [baseline report](docs/baseline-39172295738.md).
+Phases 2/3 are not promoted while their preceding gate is closed. The requested Phase 2 prototype
 may be developed without treating either gate as passed. See
 [the measured report](docs/validation.md).
 
@@ -49,7 +52,7 @@ Phase 2 prototype implementation checklist (support gate remains closed):
 | SSH authentication and forwarding | Supplied credentials | Supplied credentials | Keys by default, port 2222 | Supplied credentials |
 | Effective Docker and pod resource limits | Measure | Hard gate | Hard gate | Daemon gate |
 | Universal privileged Docker operations | Compatibility option | Not promised | Restricted | Daemon dependent |
-| Latest native acceptance | Implemented workflows/measurements PASS; security comparison FAIL | FAIL (cgroup feasibility) | NOT TESTED | NOT TESTED |
+| Latest native acceptance | Implemented workflows/measurements/security gates PASS; new pod limits NOT TESTED | FAIL (cgroup feasibility) | NOT TESTED | NOT TESTED |
 
 Test native Linux amd64/arm64 first; add Docker Desktop macOS Apple Silicon and
 Windows/WSL2 only with actual evidence. Emulation is build proof only.

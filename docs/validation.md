@@ -1,8 +1,10 @@
 # Validation, limits, and rollback
 
 This is a **gated Debian rootful candidate**, not a completed three-phase
-migration or a released image. Rootful remains the default. Rootless and
-external modes fail explicitly until their preceding gates pass.
+migration or a released image. Rootful remains the default. Rootless is
+experimental and fails unmet prerequisites explicitly; external is reserved.
+The latest recorded native candidate passed its implemented gates; see the
+[immutable baseline and remaining checks](baseline-39172295738.md).
 
 ## Implemented behavior
 
@@ -47,8 +49,9 @@ D3K_TEST_PRIVILEGED=1 bash scripts/measure.sh d3k-local:debian-rootful .evidence
 Privileged fixtures cover inner Docker build/lifecycle/archive/Compose/mounts,
 registry, controlled Helm, three-server/server-agent clusters, simultaneous
 clusters, cross-node DNS/traffic, load balancing, PVC persistence and restarts.
-They are not an assertion that these cases have run. Kubernetes effective-limit
-fixtures and the VS Code tunnel authenticated check remain outstanding.
+Run `39172295738` passed those implemented workflows on native amd64 and arm64.
+The new Kubernetes effective-limit fixtures are implemented and await native
+execution; the VS Code tunnel authenticated check remains outstanding.
 
 For comparable scans, prepare databases once and scan every artifact against
 that snapshot. Never replace a missing/failed scan with zero findings:
@@ -670,3 +673,54 @@ Final local arm64 image ID: `sha256:5ab934459047b2ad95848760fa4431682e7f81c0177a
 All nine ordinary-container groups passed; integration returned 77 for privileged
 tests NOT TESTED. Raw scans, build metadata and comparisons are retained in the
 local Codex Security artifact collection; CI retains its own candidate evidence.
+
+## Baseline closeout and pod resource fixtures — 2026-10-19
+
+The [successful-run baseline](baseline-39172295738.md) records exact per-architecture
+OCI/config identities, native host/engine/cgroup/filesystem data, measurement
+ranges, outer finding counts and shared scanner database hashes. The previous
+buildx security failure is resolved in native run `39172295738`. The report also
+records the remaining rootless failure, missing checks, and the fresh control's
+unexpected `forky/sid` scanner OS identity. Phase 1 release acceptance remains
+closed; neither a distribution-level vulnerability reduction nor full migration
+completion is claimed.
+
+The shared suite now runs `tests/pod-limits.sh` after restart/persistence. It
+creates one uniquely named namespace, using the existing pinned web fixture
+image and explicit default test-cluster context. Two restart-disabled pods each
+have 250m CPU and 32 MiB memory limits/requests, no service-account token mount,
+and 60-second active deadlines. CPU proof requires the actual cgroup quota and
+an increase in throttling during a five-second busy loop. Memory proof requires
+`memory.max=33554432`, then a failed pod container terminated as `OOMKilled` with
+exit 137 after a bounded 64 MiB tmpfs write. An arbitrary exit 137 is insufficient.
+Missing readable cgroup v2 controls return 77/NOT TESTED; no privileges or host
+policies are changed to force a pass.
+
+Both pods share a 120-second test deadline (test-only override capped at 180).
+Kubernetes calls are bounded. Failure diagnostics query only the created
+namespace before bounded cleanup; a namespace creation conflict never triggers
+deletion of that namespace. Cleanup never prunes global resources. The shared
+test runner preserves exit 77 as NOT TESTED and other nonzero failure statuses;
+a required missing prerequisite still exits nonzero and cannot yield a green job.
+
+Local validation:
+
+- `bash tests/fast.sh`: PASS, including mock Kubernetes success/delayed completion,
+  CPU/OOM rejection, misleading exit 137, missing controls, deadline expiry,
+  namespace collision, scoped diagnostics/cleanup, and result-status propagation.
+- The same mocked pod tests in an ordinary Linux container: PASS.
+- OpenAF fixture parsing/bounds checks, shell syntax, ShellCheck warning/error,
+  YAML parsing and `git diff --check`: PASS.
+- Actual pinned-image payloads in ordinary Docker Desktop containers: CPU quota
+  `25000 100000` with increasing throttling PASS; 32 MiB tmpfs OOM with Docker's
+  OOMKilled=true and exit 137 PASS. Unlimited CPU and an incorrect 64 MiB memory
+  ceiling were rejected before their workloads. These are payload tests, not
+  Kubernetes enforcement evidence.
+- The existing nine ordinary-container integration groups: PASS; suite exit 77
+  for privileged integration NOT TESTED. Test/docs-only changes required no new
+  application-image build.
+
+Actual pod enforcement on native amd64/arm64 Kubernetes remains NOT TESTED locally
+and must pass the existing CI suite before the new matrix row can be promoted.
+Authentication-dependent tunnel checks, safe full-image prewarming, the control
+coverage review and Phase 2/3 acceptance remain separate outstanding work.
