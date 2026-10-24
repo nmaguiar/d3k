@@ -5,20 +5,19 @@ UBUNTU_BASE: ubuntu:rolling@sha256:93e29beff5257b2cdf1c024d831f6d2997e53655a653f
 PUBLISHED_BUILD: nmaguiar/d3k@sha256:d1729ff13cc4b9d124b2bb93b03fd0f066df0704e791dd36ffd44d36e264965c
 PUBLISHED_LATEST: nmaguiar/d3k@sha256:3f5f0b6318ff9876f6ceca2813622a21528c1140fcfd5c0fe7261f68644be182
 PUBLISHED_FULL: nmaguiar/d3k@sha256:a140b93a0d49826a3123f3ac807798dedf8fe4bca1d671222308224e57c49682
-DOCKER_VERSION: 5:29.9.1-1~debian.13~trixie
+DOCKER_VERSION: 5:29.9.2-1~debian.13~trixie
 SLIRP4NETNS_VERSION: 1.2.1-1.1
-CONTAINERD_VERSION: 2.4.2-2~debian.13~trixie
+CONTAINERD_VERSION: 2.4.2-3~debian.13~trixie
 # Same upstream source as the Debian package, rebuilt with a fixed compiler.
 BUILDX_VERSION: v0.38.0
 BUILDX_REVISION: 0dbe87f36ed472fe36b6796c3f70b4210a731fc5
 BUILDX_SOURCE_SHA256: f4705415fe4e011f19c6fe0fa324fef81236791815c51bb6210b3bbbca5b1319
-BUILDX_GO_VERSION: go1.26.9
-BUILDX_GO_BASE: golang:1.26.9-bookworm@sha256:d9c68c2c51161e12fd77e4c6320687c9cd86e1af1e3ad6e6cd63ff970641453c
-COMPOSE_VERSION: 5.6.0-1~debian.13~trixie
+BUILDX_GO_VERSION: go1.26.10
+BUILDX_GO_BASE: golang:1.26.10-bookworm@sha256:632dff7351799a5a9954a48dc06670ade72ee44e8c351cdc0e5a57af2fea21af
+COMPOSE_VERSION: 5.6.1-1~debian.13~trixie
 DOCKER_KEY_SHA256: 1500c1f56fa9e26b9b8f42452a553675796ade0807cdce11975eb98170b3a570
-OPENAF_VERSION: 20261015
-OPENAF_JAR_SHA256: 6ded5657d44577c9bf94fef19de151a2ebebac78d5c22dc6f7e55a3e8ad58dbf
-OPENAF_REPACKED_SHA256: ddd6a9fcba934cee97dbf89b87000f647af40fed30c9577295357b01f20a8766
+# OpenAF follows nightly; downloaded hashes/version are recorded in the image.
+# oPacks follow upstream; installed versions are recorded in the image.
 JVM_amd64_URL: https://openaf.io/java/java21_64.tgz
 JVM_amd64_SHA256: 2413149700df0f7d440500a84a8f764c535f21e5a5e87d38328b64eec2c5b500
 JVM_arm64_URL: https://openaf.io/java/java21_A64.tgz

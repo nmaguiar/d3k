@@ -117,8 +117,25 @@ for pair in 'none 2' 'cgroupfs 2' 'systemd 1'; do
 done
 (export PATH="$tmp/bin:$PATH" D3K_RUNTIME_DIR="$tmp/run" D3K_TEST_CGROUP_DRIVER=systemd D3K_TEST_CGROUP_VERSION=2; d3k_rootless_cgroups)
 grep -q 'effective_resource_limits=NOT TESTED' "$tmp/run/rootless-cgroups.txt"
+# The diagnostic exception requires explicit Docker-only selection.
+(D3K_DOCKER_MODE=rootless NOK8S=true D3K_ROOTLESS_DIAGNOSTIC=true; d3k_resolve)
+for mode in rootful rootless; do
+  if (D3K_DOCKER_MODE=$mode NOK8S=false D3K_ROOTLESS_DIAGNOSTIC=true; d3k_resolve) 2>/dev/null; then
+    echo 'FAIL diagnostic accepted without Docker-only selection'; exit 1
+  fi
+done
+if (D3K_DOCKER_MODE=rootful NOK8S=true D3K_ROOTLESS_DIAGNOSTIC=true; d3k_resolve) 2>/dev/null; then
+  echo 'FAIL rootful diagnostic accepted'; exit 1
+fi
+(export PATH="$tmp/bin:$PATH" D3K_RUNTIME_DIR="$tmp/run" D3K_TEST_CGROUP_DRIVER=none D3K_TEST_CGROUP_VERSION=2 D3K_ROOTLESS_DIAGNOSTIC=true NOK8S=true; d3k_rootless_cgroups)
+grep -q 'effective_resource_limits=UNSUPPORTED' "$tmp/run/rootless-cgroups.txt"
+if (export PATH="$tmp/bin:$PATH" D3K_RUNTIME_DIR="$tmp/run" D3K_TEST_CGROUP_DRIVER=none D3K_TEST_CGROUP_VERSION=2 D3K_ROOTLESS_DIAGNOSTIC=true NOK8S=false; d3k_rootless_cgroups) 2>/dev/null; then
+  echo 'FAIL cgroup diagnostic bypass accepted for Kubernetes'; exit 1
+fi
 echo 'PASS: syntax, booleans, mode/endpoint/timeout rejection, argv/stdin/stderr/exit status, NODOCKER probes'
 bash tests/scan.sh
+python3 tests/update-versions.py
+bash tests/import-candidate.sh
 bash tests/kube-endpoint.sh
 bash tests/topology-readiness-unit.sh
 bash tests/restart-unit.sh

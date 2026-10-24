@@ -246,6 +246,11 @@ with namespace and cgroup feasibility checks; see [rootless experiment](docs/roo
 `unix:///var/run/docker.sock` (or the default context). A different endpoint is
 rejected rather than used or silently replaced.
 
+For an explicit Docker-only rootless experiment, also set `NOK8S=true` and
+`D3K_ROOTLESS_DIAGNOSTIC=true`. This permits missing cgroup delegation and reports
+resource controls as unsupported; it does not validate Kubernetes or limits.
+See [rootless diagnostics](docs/rootless.md).
+
 Status distinguishes disabled, starting, ready, degraded, and failed components.
 Exit codes are 0 for enabled components ready, 1 for failure/degradation/timeout,
 and 2 for configuration errors. Logs are in `/run/d3k/startup.log`.

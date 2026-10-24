@@ -19,7 +19,7 @@ The outer privileged requirement remains. The compatibility image retains
 unrestricted sudo and the rootful daemon binaries. Rootless mode is not an
 enforceable sandbox. This image does not provide a hardened target.
 
-Docker-only operation requires explicitly adding `-e NOK8S=true`. It still must
+Docker-only operation requires explicitly adding `-e NOK8S=true`. It normally must
 pass cgroup feasibility; no failure disables Kubernetes or selects rootful.
 `NODOCKER=true` disables all engine prerequisites/startup/probes in either mode.
 
@@ -69,6 +69,25 @@ workaround is included. Passing the metadata check alone would still not prove
 effective limits: bounded Docker memory/CPU/PID and Kubernetes pod enforcement
 tests are required before any support claim.
 
+For the separate Docker-only diagnostic, explicitly select all three:
+`D3K_DOCKER_MODE=rootless`, `NOK8S=true`, and
+`D3K_ROOTLESS_DIAGNOSTIC=true`. The diagnostic flag is rejected with rootful mode
+or without explicit Docker-only selection. It permits startup when the cgroup
+metadata check fails and records resource controls as **UNSUPPORTED**. Namespace,
+identity, storage and endpoint checks still apply. The default strict path remains
+unchanged. This diagnostic does not test Kubernetes or claim resource enforcement.
+
+```bash
+D3K_TEST_PRIVILEGED=1 bash tests/rootless-diagnostic.sh \
+  d3k-local:rootless-prototype .evidence/rootless-diagnostic
+```
+
+The diagnostic exercises containers, network DNS, volumes, bind ownership,
+Docker/Buildx builds, both Compose commands and restart persistence in a disposable
+container. Each stage has a bounded timeout and retained logs. CI runs this
+independently before the strict rootless suite so the cgroup prerequisite cannot
+hide Docker-only results.
+
 Diagnostics are `/run/d3k/startup.log`, `rootless-prerequisites.log`,
 `rootless-mappings.txt` and, if the daemon starts, `rootless-cgroups.txt`.
 Readiness becomes failed after a feasibility error. An accepted `--memory` flag
@@ -89,9 +108,10 @@ The ordinary-container negative fixture deliberately enables `no-new-privileges`
 to make setuid mapping unavailable. This verifies rejection rather than proposing
 that setting for a working rootless profile.
 
-Actual results and remaining tests are in [validation](validation.md). Rootless
-Kubernetes, networking, storage, SSH endpoint parity, cgroup enforcement and
-restart support remain NOT TESTED until native privileged execution is available.
+Actual results and remaining tests are in [validation](validation.md). The local
+Docker-only diagnostic passed networking, volumes, builds, Compose and restart,
+but failed rootful-compatible bind ownership. Native GitHub diagnostic execution,
+rootless Kubernetes, SSH endpoint parity and cgroup enforcement remain NOT TESTED.
 Unsupported advanced privileged Docker operations keep the rootful compatibility
 path. Do not describe this prototype as equivalent support.
 

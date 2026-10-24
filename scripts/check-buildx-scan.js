@@ -16,7 +16,7 @@ try {
         throw "Missing buildx module coverage";
     }
     var unresolved = (binaries[0].Vulnerabilities || []).filter(function(v) {
-        return v.PkgName === "stdlib" && ["CVE-2026-78667", "CVE-2026-78669", "CVE-2026-97031"].indexOf(v.VulnerabilityID) >= 0;
+        return v.PkgName === "stdlib" && ["CVE-2026-78667", "CVE-2026-78669", "CVE-2026-97031", "CVE-2026-111943"].indexOf(v.VulnerabilityID) >= 0;
     });
     if (unresolved.length) throw "Fixed-compiler buildx still reports the original findings";
     print("PASS: buildx compiler/module scan coverage and original stdlib findings absent");

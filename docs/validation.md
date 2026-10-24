@@ -17,7 +17,8 @@ The latest recorded native candidate passed its implemented gates; see the
   component readiness/JSON output, explicit failure states and streamed logs.
 - Supplied SSH keys/passwords and per-instance host keys; no embedded password.
 - Native candidate CI without publishing credentials, OCI artifact retention,
-  configuration-ID checks, scans, and a conservative new-fixable-findings gate.
+  imported platform/configuration/rootfs checks, scans, and a conservative
+  new-fixable-findings gate.
 - Existing OpenAF/Badgen/YAML/Markdown reports with pinned Trivy and retained raw
   output/database identity. Full-image publication is withheld.
 
@@ -90,20 +91,75 @@ That control still uses historical mutable installers and is not reconstruction
 of historical packages. Its tool/version differences must accompany comparison
 results. It is not a release candidate.
 
-The checksum-locked OpenAF/JVM URLs are mutable upstream URLs: a content change
+oPacks follow current upstream releases and use their own file-integrity
+verification, without d3k version/checksum pins. Kube is installed directly
+from the official GitHub source to avoid packaged-mirror lag; its current
+upstream Jackson dependency replaces the temporary downstream patch. Installed
+oPack versions and Kube JAR hashes are retained under `/usr/share/d3k`.
+Kube's remote copies run with one JVM processor for that install command to
+avoid nightly parallel-copy races. An explicit manifest check fails the build
+on missing or mismatched files, including failures that `opack` only logs.
+
+OpenAF intentionally follows the daily nightly artifacts, without release
+checksum or version pins. Each build records their URLs, download time, SHA-256
+hashes and installed version under `/usr/share/d3k/openaf-*`. A cached build can
+reuse an earlier nightly; use `--no-cache` to fetch the current artifacts.
+
+The checksum-locked JVM URLs are mutable upstream URLs: a content change
 fails the build, rather than silently adopting it. Mirror reviewed artifacts
-before claiming long-term replay. OpenAF's oPack installs, downloaded
+before claiming long-term replay. Other OpenAF oPack installs, downloaded
 colorFormats/vscTunnel jobs and their transitive inputs remain mutable; built
 version/job inventories are retained under `/usr/share/d3k`. APT repositories,
 reporting oJobs/oPacks, GitHub Action tags and builder/SBOM tooling are also not
 fully frozen. Complete reproducibility is **not claimed**.
 
-Weekly candidate CI uses `--no-cache`, refreshes signed APT packages, discovers
-base/nested digest and release changes, and reruns the gates. Discovery does not
-edit inputs, publish, or promote. Review updates to `versions.yaml`, the matching
-Dockerfile base default and SOCKS manifest together; fast checks enforce those
-duplicate values. Security reporting refreshes its DB daily, while each
-comparison run freezes and hashes its own shared DB snapshot.
+Weekly candidate CI uses `--no-cache`, refreshes compatible dependency pins once
+for both native architectures, and reruns the gates. Manual runs default to
+refreshing; push/PR runs validate the checked-in lock. Local `scripts/build.sh`
+also refreshes by default; pass `--locked` first to reproduce existing pins.
+See [dependency refresh](dependency-refresh.md) for its scope, retained lock
+artifacts and manual inputs. CI does not commit, publish or promote the updates.
+Security reporting refreshes its DB daily, while each comparison run freezes
+and hashes its own shared DB snapshot.
+
+### Run 40064086386 remediation
+
+The amd64 import completed, but its config-hash versus Docker-image-ID assertion
+failed before rootful compatibility/readiness tests ran. The import helper now
+retains both IDs, Docker/store details and both configurations, and compares
+platform, runtime configuration and ordered rootfs diff IDs directly. It does
+not require Docker's image ID to use the config-digest representation.
+
+Buildx uses Go 1.26.10; Docker 29.9.2, Compose 5.6.1 and containerd 2.4.2-3
+refresh the affected packaged Go runtimes. Security comparison JSON is also
+printed in Actions logs so future gate failures show the actual findings.
+The fresh control retains `/etc/os-release` and fails explicitly if its
+filesystem or scanner identity is not Ubuntu. Its previous `forky/sid` scan
+cannot establish a distribution-level vulnerability comparison.
+
+These changes require a new native amd64/arm64 CI run before acceptance.
+Rootless networking remains a separate experiment: this run failed creating
+the iptables-legacy NAT chain, before reaching cgroup feasibility. No rootless
+support or host kernel/backend change follows from this remediation.
+
+Local checks passed the fast suite, real OCI-fixture import, compiler builds
+for both architectures and Dockerfile validation. The final native arm64 image
+built with OpenAF nightly 20261024 and upstream Kube 20261024/Jackson 2.22.4.
+Kube's files match its upstream manifest; deliberately corrupted package files
+are rejected with a nonzero exit status.
+
+Trivy 0.76.0 with the 2026-10-24 database scanned the final arm64 image and
+confirmed the targeted stdlib/Jackson findings are absent from the changed
+Docker/buildx components and Java dependency. Helm, k3d and kubectl retain nine
+stdlib finding occurrences also present in the original CI candidate. This is
+not whole-image vulnerability clearance or native integration acceptance.
+Reports are under `.evidence/ci-remediation/`.
+
+The current Kube client smoke still fails with missing
+`tools.jackson.databind.JacksonModule`, also seen in the earlier unmodified
+upstream package. That runtime result is separate from successful image builds
+and the upstream Jackson core update. No downstream package or JAR patch is
+applied.
 
 ## Release and rollback
 
@@ -724,3 +780,36 @@ Actual pod enforcement on native amd64/arm64 Kubernetes remains NOT TESTED local
 and must pass the existing CI suite before the new matrix row can be promoted.
 Authentication-dependent tunnel checks, safe full-image prewarming, the control
 coverage review and Phase 2/3 acceptance remain separate outstanding work.
+
+## Docker-only rootless diagnostic (2026-10-24)
+
+Executed `tests/rootless-diagnostic.sh` on the local ARM64 Docker Desktop Linux
+VM (kernel `7.0.14-linuxkit`, outer Docker `29.9.2`, inner Docker `29.9.1`).
+The test image was a local overlay of the current runtime/entrypoint/status on
+`d3k-local:buildx-fixed`, not a fresh dependency build or the GitHub candidate.
+Test image ID: `sha256:c4602a1fa3b4215fd3ed9a4c724e8e82fbaa3bf3b43d95f4ce76218c43ce162d`.
+Evidence: `.evidence/rootless-diagnostic-local-complete/`.
+
+- PASS: readiness, rootless process identity, canonical Docker endpoint, no
+  rootful daemon, explicit Kubernetes disablement.
+- PASS: image pull, container run/exec/logs, custom network DNS/HTTP.
+- PASS: bind writes as inner root (outer owner UID 1001), named volume writes
+  and reads, Docker and Buildx builds, both Compose commands.
+- PASS: outer container restart, readiness and rootless identity after restart,
+  named-volume and built-image persistence.
+- FAIL: rootful-compatible bind write using inner `--user 1001:1001` against a
+  directory owned by outer UID 1001 (`Permission denied`). This ownership contract
+  differs under rootless UID mapping. The experiment retains a failing result
+  while completing independent checks; it does not chmod/chown the directory to
+  conceal the incompatibility.
+- NOT TESTED: resource enforcement and Kubernetes. Docker reports cgroup v2 with
+  driver `none`; explicit diagnostic mode permits this and marks controls
+  unsupported. A separate strict rootless run still rejected that configuration
+  and stopped the daemon. Neither experiment changes host delegation.
+
+`bash tests/fast.sh` passed, including diagnostic selection validation and the
+strict cgroup rejection / explicit Docker-only exception. Workflow YAML parsing
+and `git diff --check` passed. Native GitHub amd64/arm64 diagnostic runs remain
+NOT TESTED; the workflow now includes an independent nonblocking diagnostic step
+with retained per-stage results. This is evidence that Docker-only workloads can
+run rootless on the local VM, not promotion of rootless support.

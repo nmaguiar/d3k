@@ -89,12 +89,17 @@ d3k_rootless_cgroups() {
     printf 'cgroup_version=%s\ncgroup_driver=%s\n' "$version" "$driver"
     if [ -r /proc/self/cgroup ]; then cat /proc/self/cgroup; else echo 'process_cgroup=unavailable'; fi
     [ ! -r /sys/fs/cgroup/cgroup.controllers ] || cat /sys/fs/cgroup/cgroup.controllers
-    printf 'effective_resource_limits=NOT TESTED (requires bounded integration workloads)\n'
   } > "$D3K_RUNTIME_DIR/rootless-cgroups.txt"
   if [ "$version" != 2 ] || [ "$driver" != systemd ]; then
+    if [ "${D3K_ROOTLESS_DIAGNOSTIC:-false}" = true ] && [ "${NOK8S:-false}" = true ]; then
+      echo 'effective_resource_limits=UNSUPPORTED (explicit Docker-only diagnostic)' >> "$D3K_RUNTIME_DIR/rootless-cgroups.txt"
+      echo 'd3k: diagnostic rootless Docker-only mode: proceeding without usable cgroup delegation; resource controls UNSUPPORTED; Kubernetes disabled explicitly' >&2
+      return 0
+    fi
     echo "d3k: rootless cgroup feasibility failed: version=$version driver=$driver; resource controls require usable v2/systemd delegation. Stopping experimental daemon; no host changes, no fallback, no automatic NOK8S." >&2
     return 1
   fi
+  echo 'effective_resource_limits=NOT TESTED (requires bounded integration workloads)' >> "$D3K_RUNTIME_DIR/rootless-cgroups.txt"
 }
 d3k_rootless_stop() {
   local pid executable i directory

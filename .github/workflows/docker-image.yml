@@ -1,6 +1,11 @@
 name: Docker candidate validation
 on:
   workflow_dispatch:
+    inputs:
+      refresh_dependencies:
+        description: Refresh compatible build dependencies before native builds
+        type: boolean
+        default: true
   push:
     branches: [main]
     paths-ignore:
@@ -21,8 +26,36 @@ jobs:
       with:
         persist-credentials: false
     - run: bash tests/fast.sh
-  candidate:
+  build-inputs:
     needs: fast
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        persist-credentials: false
+    - name: Install dependency refresh tools
+      if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_dependencies)
+      run: sudo apt-get update && sudo apt-get install -y --no-install-recommends skopeo
+    - name: Resolve one shared dependency lock for both architectures
+      if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh_dependencies)
+      run: |
+        python3 scripts/update-versions.py --evidence .evidence/build-inputs
+        bash tests/fast.sh
+    - name: Retain existing lock for push, PR or locked manual builds
+      if: github.event_name != 'schedule' && !(github.event_name == 'workflow_dispatch' && inputs.refresh_dependencies)
+      run: |
+        mkdir -p .evidence/build-inputs
+        cp versions.yaml Dockerfile .evidence/build-inputs/
+        printf '{"status":"LOCKED","changes":{}}\n' > .evidence/build-inputs/refresh.json
+    - name: Retain resolved build inputs
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-inputs-${{ github.run_id }}
+        path: .evidence/build-inputs/
+        retention-days: 14
+  candidate:
+    needs: build-inputs
     strategy:
       fail-fast: false
       matrix:
@@ -39,8 +72,15 @@ jobs:
         persist-credentials: false
         fetch-depth: 0
     - uses: docker/setup-buildx-action@v4
+    - name: Download shared build inputs
+      uses: actions/download-artifact@v4
+      with:
+        name: build-inputs-${{ github.run_id }}
+        path: .evidence/build-inputs
+    - name: Apply resolved lock and matching Dockerfile defaults
+      run: cp .evidence/build-inputs/versions.yaml .evidence/build-inputs/Dockerfile .
     - name: Install archive transport
-      run: sudo apt-get update && sudo apt-get install -y --no-install-recommends skopeo
+      run: sudo apt-get update && sudo apt-get install -y --no-install-recommends skopeo jq
     - name: Discover dependency refreshes without changing locked inputs
       if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
       run: bash scripts/check-dependencies.sh .evidence/dependencies
@@ -52,12 +92,7 @@ jobs:
           --output type=oci,dest=.evidence/candidate.tar \
           --metadata-file .evidence/build-metadata.json .
     - name: Import the exact candidate filesystem for runtime tests
-      run: |
-        skopeo inspect --override-os linux --override-arch ${{ matrix.arch }} --config --raw oci-archive:.evidence/candidate.tar > .evidence/candidate-config.json
-        skopeo copy --override-os linux --override-arch ${{ matrix.arch }} oci-archive:.evidence/candidate.tar docker-daemon:d3k-ci:candidate
-        expected=sha256:$(sha256sum .evidence/candidate-config.json | cut -d' ' -f1)
-        actual=$(docker image inspect d3k-ci:candidate --format '{{.Id}}')
-        test "$expected" = "$actual"
+      run: bash scripts/import-candidate.sh .evidence/candidate.tar d3k-ci:candidate ${{ matrix.arch }} .evidence
     - name: Workflow compatibility
       env:
         D3K_TEST_PRIVILEGED: '1'
@@ -66,6 +101,27 @@ jobs:
       env:
         D3K_TEST_PRIVILEGED: '1'
       run: bash scripts/measure.sh d3k-ci:candidate .evidence/measurements
+    - name: Experimental rootless Docker-only diagnostic (resource controls unsupported)
+      id: rootless-diagnostic
+      if: always()
+      continue-on-error: true
+      env:
+        D3K_TEST_PRIVILEGED: '1'
+      run: bash tests/rootless-diagnostic.sh d3k-ci:candidate .evidence/rootless-diagnostic
+    - name: Report rootless Docker-only diagnostic
+      if: always()
+      env:
+        OUTCOME: ${{ steps.rootless-diagnostic.outcome }}
+      run: |
+        {
+          echo '### Rootless Docker-only diagnostic'
+          echo "Experiment outcome: $OUTCOME. Resource controls and Kubernetes are not validated."
+          if [ -f .evidence/rootless-diagnostic/results.tsv ]; then
+            echo '```text'
+            cat .evidence/rootless-diagnostic/results.tsv
+            echo '```'
+          fi
+        } >> "$GITHUB_STEP_SUMMARY"
     - name: Experimental rootless feasibility and shared workflows (no promotion gate)
       id: rootless
       if: always()
@@ -138,10 +194,20 @@ jobs:
         mkdir -p .evidence
         bash scripts/build-control.sh .evidence/control-context --repair-adduser \
           --platform linux/${{ matrix.arch }} --load -t d3k-ci:ubuntu-control > .evidence/control-build.log 2>&1
+        docker run --rm --network none --entrypoint cat d3k-ci:ubuntu-control /etc/os-release > .evidence/control-os-release.txt
         control_archive="$RUNNER_TEMP/d3k-control-$GITHUB_RUN_ID-${{ matrix.arch }}.tar"
         trap 'rm -f "$control_archive"' EXIT
         docker image save d3k-ci:ubuntu-control -o "$control_archive"
         bash scripts/scan.sh archive "$control_archive" .evidence/scanner .evidence/control-scan.json
+        echo 'Control filesystem OS identity:'
+        cat .evidence/control-os-release.txt
+        echo 'Control scanner OS identity:'
+        jq '.Metadata.OS' .evidence/control-scan.json
+        if ! grep -Eq '^ID="?ubuntu"?$' .evidence/control-os-release.txt || \
+           ! jq -e '.Metadata.OS.Family == "ubuntu"' .evidence/control-scan.json; then
+          echo '::error::Fresh Ubuntu control filesystem/scanner identity mismatch; distribution comparison is not validated'
+          exit 1
+        fi
     - name: Compare new fixable findings against published Ubuntu
       if: always()
       uses: openaf/ojob-action@v7

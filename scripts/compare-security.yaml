@@ -14,6 +14,8 @@ jobs:
     }
     var result = $sh([getOpenAFPath().replace(/\/?$/, "/") + "oaf-sb", "scripts/security-report.js", "baseline=" + args.baseline, "candidate=" + args.candidate, "gate=true"]).get(0)
     io.writeFileString(args.output, result.stdout)
+    // Keep the report artifact and expose the gate reason in the Actions log.
+    print(result.stdout)
     if (result.exitcode != 0) {
       printErr(result.stderr)
       exit(1)

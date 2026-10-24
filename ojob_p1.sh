@@ -8,7 +8,7 @@ mkdir -p "$D3K_RUNTIME_DIR"
 [ ! -L "$D3K_RUNTIME_DIR" ] && [ -O "$D3K_RUNTIME_DIR" ] || { echo 'd3k: runtime directory must be owned and not a symlink' >&2; exit 2; }
 chmod 700 "$D3K_RUNTIME_DIR"
 rm -f "$D3K_RUNTIME_DIR/"*.state "$D3K_RUNTIME_DIR/"*.pid
-for field in NOSSH NODOCKER NOK8S NOPUBLIC D3K_DOCKER_MODE D3K_STARTUP_TIMEOUT; do
+for field in NOSSH NODOCKER NOK8S NOPUBLIC D3K_ROOTLESS_DIAGNOSTIC D3K_DOCKER_MODE D3K_STARTUP_TIMEOUT; do
   printf '%s=%s\n' "$field" "${!field}"
 done > "$D3K_RUNTIME_DIR/environment"
 if [ "$NODOCKER" = false ]; then printf 'DOCKER_HOST=%s\n' "$DOCKER_HOST" >> "$D3K_RUNTIME_DIR/environment"; fi
