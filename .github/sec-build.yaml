@@ -2474,7 +2474,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56288
     - https://www.cve.org/CVERecord?id=CVE-2026-56288
     PublishedDate: '2026-07-09T11:16:40.713Z'
-    LastModifiedDate: '2026-07-13T14:08:47.08Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-56289
     PkgID: patch@2.8-2build1
     PkgName: patch
@@ -2533,7 +2533,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56289
     - https://www.cve.org/CVERecord?id=CVE-2026-56289
     PublishedDate: '2026-07-09T11:16:40.84Z'
-    LastModifiedDate: '2026-07-13T14:10:56.943Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-101917
     PkgID: python3-jwt@2.10.1-4ubuntu1.2
     PkgName: python3-jwt
@@ -3112,7 +3112,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35344
     - https://www.cve.org/CVERecord?id=CVE-2026-35344
     PublishedDate: '2026-04-22T17:16:36.49Z'
-    LastModifiedDate: '2026-06-17T10:40:25.833Z'
+    LastModifiedDate: '2026-10-26T00:10:00.15Z'
   - VulnerabilityID: CVE-2026-35345
     PkgID: rust-coreutils@0.10.0-1ubuntu2~26.04.1
     PkgName: rust-coreutils
@@ -3676,7 +3676,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35371
     - https://www.cve.org/CVERecord?id=CVE-2026-35371
     PublishedDate: '2026-04-22T17:16:40.987Z'
-    LastModifiedDate: '2026-06-17T10:40:28.723Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-35373
     PkgID: rust-coreutils@0.10.0-1ubuntu2~26.04.1
     PkgName: rust-coreutils
@@ -18139,7 +18139,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4970
     - https://www.cve.org/CVERecord?id=CVE-2026-39822
     PublishedDate: '2026-07-08T17:17:21.31Z'
-    LastModifiedDate: '2026-09-17T17:10:20.047Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-42504
     VendorIDs:
     - GO-2026-5038
@@ -18941,7 +18941,7 @@
     - https://pkg.go.dev/vuln/GO-2026-5856
     - https://www.cve.org/CVERecord?id=CVE-2026-42505
     PublishedDate: '2026-07-08T17:17:21.497Z'
-    LastModifiedDate: '2026-09-16T20:14:44.473Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-42507
     VendorIDs:
     - GO-2026-5039
