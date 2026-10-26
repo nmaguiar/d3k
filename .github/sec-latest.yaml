@@ -31,6 +31,7 @@
     - CWE-349
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -76,6 +77,7 @@
     - CWE-416
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -121,6 +123,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -184,6 +187,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -246,6 +250,7 @@
     - CWE-407
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -291,6 +296,7 @@
     - CWE-345
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -336,6 +342,7 @@
     - CWE-405
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -380,6 +387,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -470,6 +478,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -515,6 +524,7 @@
     - CWE-349
     VendorSeverity:
       amazon: 3
+      azure: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -560,6 +570,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -623,6 +634,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -692,6 +704,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -803,6 +816,7 @@
     - CWE-349
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -848,6 +862,7 @@
     - CWE-416
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -893,6 +908,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -956,6 +972,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -1018,6 +1035,7 @@
     - CWE-407
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -1063,6 +1081,7 @@
     - CWE-345
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -1108,6 +1127,7 @@
     - CWE-405
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -1152,6 +1172,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -1242,6 +1263,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -1287,6 +1309,7 @@
     - CWE-349
     VendorSeverity:
       amazon: 3
+      azure: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1332,6 +1355,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -1395,6 +1419,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -1464,6 +1489,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -1575,6 +1601,7 @@
     - CWE-349
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -1620,6 +1647,7 @@
     - CWE-416
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -1665,6 +1693,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -1728,6 +1757,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -1790,6 +1820,7 @@
     - CWE-407
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -1835,6 +1866,7 @@
     - CWE-345
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -1880,6 +1912,7 @@
     - CWE-405
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -1924,6 +1957,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -2014,6 +2048,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      azure: 3
       photon: 3
       redhat: 3
       ubuntu: 2
@@ -2059,6 +2094,7 @@
     - CWE-349
     VendorSeverity:
       amazon: 3
+      azure: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2104,6 +2140,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -2167,6 +2204,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -2236,6 +2274,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -8523,7 +8562,7 @@
     - https://ubuntu.com/security/notices/USN-8790-1
     - https://www.cve.org/CVERecord?id=CVE-2026-56403
     PublishedDate: '2026-06-21T16:16:26.59Z'
-    LastModifiedDate: '2026-06-23T20:15:16.76Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-56404
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -8573,7 +8612,7 @@
     - https://ubuntu.com/security/notices/USN-8872-1
     - https://www.cve.org/CVERecord?id=CVE-2026-56404
     PublishedDate: '2026-06-21T16:16:27.62Z'
-    LastModifiedDate: '2026-06-23T20:15:05.85Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-56405
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -8623,7 +8662,7 @@
     - https://ubuntu.com/security/notices/USN-8872-1
     - https://www.cve.org/CVERecord?id=CVE-2026-56405
     PublishedDate: '2026-06-21T16:16:27.74Z'
-    LastModifiedDate: '2026-06-23T20:14:51.73Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-56406
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -8668,7 +8707,7 @@
     - https://ubuntu.com/security/notices/USN-8813-1
     - https://www.cve.org/CVERecord?id=CVE-2026-56406
     PublishedDate: '2026-06-21T16:16:27.87Z'
-    LastModifiedDate: '2026-06-23T16:29:06.077Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-56407
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -8713,7 +8752,7 @@
     - https://ubuntu.com/security/notices/USN-8813-1
     - https://www.cve.org/CVERecord?id=CVE-2026-56407
     PublishedDate: '2026-06-21T16:16:27.987Z'
-    LastModifiedDate: '2026-06-23T16:28:29.983Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-56408
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -8753,7 +8792,7 @@
     - https://ubuntu.com/security/notices/USN-8790-1
     - https://www.cve.org/CVERecord?id=CVE-2026-56408
     PublishedDate: '2026-06-21T16:16:28.11Z'
-    LastModifiedDate: '2026-06-23T16:27:26.523Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-56409
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -8793,7 +8832,7 @@
     - https://ubuntu.com/security/notices/USN-8813-1
     - https://www.cve.org/CVERecord?id=CVE-2026-56409
     PublishedDate: '2026-06-21T16:16:28.23Z'
-    LastModifiedDate: '2026-06-23T16:21:55.607Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-56410
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -8838,7 +8877,7 @@
     - https://ubuntu.com/security/notices/USN-8813-1
     - https://www.cve.org/CVERecord?id=CVE-2026-56410
     PublishedDate: '2026-06-21T16:16:28.36Z'
-    LastModifiedDate: '2026-06-23T16:18:16.427Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-56411
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -8883,7 +8922,7 @@
     - https://ubuntu.com/security/notices/USN-8813-1
     - https://www.cve.org/CVERecord?id=CVE-2026-56411
     PublishedDate: '2026-06-21T17:16:44.523Z'
-    LastModifiedDate: '2026-06-23T16:16:36.417Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-56412
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -8932,7 +8971,7 @@
     - https://ubuntu.com/security/notices/USN-8790-1
     - https://www.cve.org/CVERecord?id=CVE-2026-56412
     PublishedDate: '2026-06-21T17:16:44.657Z'
-    LastModifiedDate: '2026-06-23T15:31:30.853Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-66046
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -10157,7 +10196,7 @@
     - https://ubuntu.com/security/notices/USN-8684-1
     - https://www.cve.org/CVERecord?id=CVE-2026-12087
     PublishedDate: '2026-06-15T22:16:16.197Z'
-    LastModifiedDate: '2026-06-17T10:14:37.383Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-13221
     PkgID: libperl5.40@5.40.1-7ubuntu0.1
     PkgName: libperl5.40
@@ -10516,7 +10555,7 @@
     - https://ubuntu.com/security/notices/USN-8744-1
     - https://www.cve.org/CVERecord?id=CVE-2026-15308
     PublishedDate: '2026-07-09T17:16:58.26Z'
-    LastModifiedDate: '2026-08-20T17:02:59.313Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-4360
     PkgID: libpython3.14@3.14.4-1ubuntu0.1
     PkgName: libpython3.14
@@ -10574,7 +10613,7 @@
     - https://ubuntu.com/security/notices/USN-8744-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4360
     PublishedDate: '2026-06-30T15:16:57.193Z'
-    LastModifiedDate: '2026-08-13T01:16:53.42Z'
+    LastModifiedDate: '2026-10-25T21:10:00.77Z'
   - VulnerabilityID: CVE-2026-15308
     PkgID: libpython3.14-minimal@3.14.4-1ubuntu0.1
     PkgName: libpython3.14-minimal
@@ -10650,7 +10689,7 @@
     - https://ubuntu.com/security/notices/USN-8744-1
     - https://www.cve.org/CVERecord?id=CVE-2026-15308
     PublishedDate: '2026-07-09T17:16:58.26Z'
-    LastModifiedDate: '2026-08-20T17:02:59.313Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-4360
     PkgID: libpython3.14-minimal@3.14.4-1ubuntu0.1
     PkgName: libpython3.14-minimal
@@ -10708,7 +10747,7 @@
     - https://ubuntu.com/security/notices/USN-8744-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4360
     PublishedDate: '2026-06-30T15:16:57.193Z'
-    LastModifiedDate: '2026-08-13T01:16:53.42Z'
+    LastModifiedDate: '2026-10-25T21:10:00.77Z'
   - VulnerabilityID: CVE-2026-15308
     PkgID: libpython3.14-stdlib@3.14.4-1ubuntu0.1
     PkgName: libpython3.14-stdlib
@@ -10784,7 +10823,7 @@
     - https://ubuntu.com/security/notices/USN-8744-1
     - https://www.cve.org/CVERecord?id=CVE-2026-15308
     PublishedDate: '2026-07-09T17:16:58.26Z'
-    LastModifiedDate: '2026-08-20T17:02:59.313Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-4360
     PkgID: libpython3.14-stdlib@3.14.4-1ubuntu0.1
     PkgName: libpython3.14-stdlib
@@ -10842,7 +10881,7 @@
     - https://ubuntu.com/security/notices/USN-8744-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4360
     PublishedDate: '2026-06-30T15:16:57.193Z'
-    LastModifiedDate: '2026-08-13T01:16:53.42Z'
+    LastModifiedDate: '2026-10-25T21:10:00.77Z'
   - VulnerabilityID: CVE-2026-107161
     PkgID: libsasl2-2@2.1.28+dfsg1-9ubuntu3
     PkgName: libsasl2-2
@@ -16653,7 +16692,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56288
     - https://www.cve.org/CVERecord?id=CVE-2026-56288
     PublishedDate: '2026-07-09T11:16:40.713Z'
-    LastModifiedDate: '2026-07-13T14:08:47.08Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-56289
     PkgID: patch@2.8-2build1
     PkgName: patch
@@ -16712,7 +16751,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56289
     - https://www.cve.org/CVERecord?id=CVE-2026-56289
     PublishedDate: '2026-07-09T11:16:40.84Z'
-    LastModifiedDate: '2026-07-13T14:10:56.943Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-12087
     PkgID: perl@5.40.1-7ubuntu0.1
     PkgName: perl
@@ -16765,7 +16804,7 @@
     - https://ubuntu.com/security/notices/USN-8684-1
     - https://www.cve.org/CVERecord?id=CVE-2026-12087
     PublishedDate: '2026-06-15T22:16:16.197Z'
-    LastModifiedDate: '2026-06-17T10:14:37.383Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-13221
     PkgID: perl@5.40.1-7ubuntu0.1
     PkgName: perl
@@ -17101,7 +17140,7 @@
     - https://ubuntu.com/security/notices/USN-8684-1
     - https://www.cve.org/CVERecord?id=CVE-2026-12087
     PublishedDate: '2026-06-15T22:16:16.197Z'
-    LastModifiedDate: '2026-06-17T10:14:37.383Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-13221
     PkgID: perl-base@5.40.1-7ubuntu0.1
     PkgName: perl-base
@@ -17437,7 +17476,7 @@
     - https://ubuntu.com/security/notices/USN-8684-1
     - https://www.cve.org/CVERecord?id=CVE-2026-12087
     PublishedDate: '2026-06-15T22:16:16.197Z'
-    LastModifiedDate: '2026-06-17T10:14:37.383Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-13221
     PkgID: perl-modules-5.40@5.40.1-7ubuntu0.1
     PkgName: perl-modules-5.40
@@ -18500,7 +18539,7 @@
     - https://ubuntu.com/security/notices/USN-8823-1
     - https://www.cve.org/CVERecord?id=CVE-2026-48523
     PublishedDate: '2026-05-28T16:16:29.28Z'
-    LastModifiedDate: '2026-09-16T20:16:33.817Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-48524
     PkgID: python3-jwt@2.10.1-4ubuntu1
     PkgName: python3-jwt
@@ -18599,7 +18638,7 @@
     - https://ubuntu.com/security/notices/USN-8823-1
     - https://www.cve.org/CVERecord?id=CVE-2026-48525
     PublishedDate: '2026-05-28T16:16:29.533Z'
-    LastModifiedDate: '2026-06-17T10:55:04.01Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-48526
     PkgID: python3-jwt@2.10.1-4ubuntu1
     PkgName: python3-jwt
@@ -18771,7 +18810,7 @@
     - https://ubuntu.com/security/notices/USN-8744-1
     - https://www.cve.org/CVERecord?id=CVE-2026-15308
     PublishedDate: '2026-07-09T17:16:58.26Z'
-    LastModifiedDate: '2026-08-20T17:02:59.313Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-4360
     PkgID: python3.14@3.14.4-1ubuntu0.1
     PkgName: python3.14
@@ -18829,7 +18868,7 @@
     - https://ubuntu.com/security/notices/USN-8744-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4360
     PublishedDate: '2026-06-30T15:16:57.193Z'
-    LastModifiedDate: '2026-08-13T01:16:53.42Z'
+    LastModifiedDate: '2026-10-25T21:10:00.77Z'
   - VulnerabilityID: CVE-2026-15308
     PkgID: python3.14-minimal@3.14.4-1ubuntu0.1
     PkgName: python3.14-minimal
@@ -18905,7 +18944,7 @@
     - https://ubuntu.com/security/notices/USN-8744-1
     - https://www.cve.org/CVERecord?id=CVE-2026-15308
     PublishedDate: '2026-07-09T17:16:58.26Z'
-    LastModifiedDate: '2026-08-20T17:02:59.313Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-4360
     PkgID: python3.14-minimal@3.14.4-1ubuntu0.1
     PkgName: python3.14-minimal
@@ -18963,7 +19002,7 @@
     - https://ubuntu.com/security/notices/USN-8744-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4360
     PublishedDate: '2026-06-30T15:16:57.193Z'
-    LastModifiedDate: '2026-08-13T01:16:53.42Z'
+    LastModifiedDate: '2026-10-25T21:10:00.77Z'
   - VulnerabilityID: CVE-2026-35341
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -19039,7 +19078,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35344
     - https://www.cve.org/CVERecord?id=CVE-2026-35344
     PublishedDate: '2026-04-22T17:16:36.49Z'
-    LastModifiedDate: '2026-06-17T10:40:25.833Z'
+    LastModifiedDate: '2026-10-26T00:10:00.15Z'
   - VulnerabilityID: CVE-2026-35345
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -19603,7 +19642,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35371
     - https://www.cve.org/CVERecord?id=CVE-2026-35371
     PublishedDate: '2026-04-22T17:16:40.987Z'
-    LastModifiedDate: '2026-06-17T10:40:28.723Z'
+    LastModifiedDate: '2026-10-25T23:10:00.167Z'
   - VulnerabilityID: CVE-2026-35373
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -44873,7 +44912,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4970
     - https://www.cve.org/CVERecord?id=CVE-2026-39822
     PublishedDate: '2026-07-08T17:17:21.31Z'
-    LastModifiedDate: '2026-09-17T17:10:20.047Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-42504
     VendorIDs:
     - GO-2026-5038
@@ -45675,7 +45714,7 @@
     - https://pkg.go.dev/vuln/GO-2026-5856
     - https://www.cve.org/CVERecord?id=CVE-2026-42505
     PublishedDate: '2026-07-08T17:17:21.497Z'
-    LastModifiedDate: '2026-09-16T20:14:44.473Z'
+    LastModifiedDate: '2026-10-25T17:10:00.197Z'
   - VulnerabilityID: CVE-2026-42507
     VendorIDs:
     - GO-2026-5039
