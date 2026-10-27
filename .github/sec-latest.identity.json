@@ -1,1 +1,1 @@
-{"image":"nmaguiar/d3k@sha256:3f5f0b6318ff9876f6ceca2813622a21528c1140fcfd5c0fe7261f68644be182","platform":"linux/amd64","runId":"40287878122","scanner":"docker.io/aquasec/trivy:0.76.0@sha256:2416d1f74045b57274df1a340eee6b510cacd73c66a6ccb8da092b117eb7d222"}
+{"image":"nmaguiar/d3k@sha256:3f5f0b6318ff9876f6ceca2813622a21528c1140fcfd5c0fe7261f68644be182","platform":"linux/amd64","runId":"40468380607","scanner":"docker.io/aquasec/trivy:0.76.0@sha256:2416d1f74045b57274df1a340eee6b510cacd73c66a6ccb8da092b117eb7d222"}
